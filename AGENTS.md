@@ -128,14 +128,56 @@ Then smoke-test the API: `/api/health`, `/api/curriculum`, a chapter, `/api/exam
 - `jev-ultrafast` needs `TYPESAFE_API_KEY` + `TEXT_MODEL_API_KEY` and has no `.venv`; not usable offline. `supermemory` CLI has no API key; not usable offline. Existing `n8n` workflows need OpenAI/vector-store credentials.
 - Tutor env keys are present (`openAI_API_KEY`, `OPENROUTER_API_KEY`, `OPENAI_BASE_URL`) but provider calls fail with `fetch failed`; the tutor correctly serves `grounded-fallback`. Do not treat that as a code regression.
 
-## Deployment (free, no credit card)
+## Deployment (free, no credit card) — READ THIS FIRST
 
-- `Dockerfile`: multi-stage Node 26 alpine build + runner, healthcheck on `:8787/api/health`
-- `docker-compose.yml`: classx-api + redis + postgres + nginx (ports 80/443), `restart: always`
-- `nginx.conf`: reverse proxy with health endpoint and timeout tuning
-- `render.yaml`: Render web service config (region: singapore, free tier, healthCheckPath: /api/health)
-- To deploy free: push to GitHub (`usp1904/classx-platform`), connect on Render.com, auto-deploys from `render.yaml` to `https://classx-platform.onrender.com`
-- Server running locally: `http://localhost:8787` (health: `GET /api/health`)
+### Prerequisites
+- GitHub account
+- Render.com account (free tier, no credit card required)
+- Your repo is already pushed to: `https://github.com/usp1904/classx-platform`
+
+### Step 1: Create Render Web Service
+1. Go to **render.com** and sign in with your GitHub account
+2. Click **New +** → **Web Service**
+3. Connect your GitHub account if prompted
+4. Select repo: **`usp1904/classx-platform`**
+5. Render will detect `render.yaml` — click **"Use existing configuration"** or confirm these settings:
+   - **Name**: `classx-platform-2` (if `classx-platform` is taken)
+   - **Runtime**: Docker
+   - **Region**: Singapore (closest to India)
+   - **Instance type**: Free
+   - **Auto deploy**: Yes
+6. Click **Create Web Service**
+
+### Step 2: Add Environment Variables (REQUIRED)
+In the Render dashboard, go to your service → **Environment** tab. Add these variables:
+
+| Key | Value |
+|-----|-------|
+| `NODE_OPTIONS` | `--max-old-space-size=256` |
+| `OPENROUTER_API_KEY` | Your OpenRouter API key |
+| `OPENAI_BASE_URL` | `https://openrouter.ai/api/v1` |
+| `TUTOR_MODEL` | `openai/gpt-4o-mini` |
+
+**Important**: The `NODE_OPTIONS=--max-old-space-size=256` is **mandatory** — without it, the build will crash with "JavaScript heap out of memory" on Render's free tier.
+
+### Step 3: Deploy
+1. Click **Create Web Service**
+2. Wait for build to complete (5-10 minutes)
+3. Your app will be live at: `https://classx-platform-2.onrender.com` (or whatever name you chose)
+4. Health check: `https://classx-platform-2.onrender.com/api/health`
+
+### Step 3: Verify
+- Open `https://classx-platform-2.onrender.com/api/health` — should return `{"ok":true,...}`
+- Open `https://classx-platform-2.onrender.com` — should show the ClassX Platform homepage
+
+### Troubleshooting
+| Issue | Fix |
+|-------|-----|
+| Build fails with "JavaScript heap out of memory" | Add `NODE_OPTIONS=--max-old-space-size=256` env var |
+| Build fails with "Module not found" | Ensure all files are committed and pushed to GitHub |
+| App shows 404 | Wait 2-3 minutes for build to complete, then refresh |
+| Tutor returns fallback only | Add `OPENROUTER_API_KEY` env var |
+
 
 ## Progress log
 - 2026-10-26: baseline verified (15 full Maths, 8 starters, 44 maps, 778 questions).
