@@ -3,7 +3,7 @@
 FROM node:26-alpine AS builder
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci --omit=dev
+RUN npm ci
 ENV VITE_API_BASE_URL=/api
 COPY . .
 RUN npm run build
