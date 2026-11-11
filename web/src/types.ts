@@ -384,6 +384,11 @@ export interface VideoLesson {
   title: string;
   durationSec: number;
   chapterId: string;
+  channel?: string;
+  safe?: boolean;
+  rating?: number;
+  summary?: string;
+  validityScore?: number;
 }
 export interface VideoCatalog {
   ok: boolean;

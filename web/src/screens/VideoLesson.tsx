@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Play, Pause, BookOpen, Clock, Maximize2, Film, AlertCircle, RefreshCw, ExternalLink } from 'lucide-react';
+import { Play, Pause, BookOpen, Clock, Maximize2, Film, AlertCircle, RefreshCw, ExternalLink, ShieldCheck, TrendingUp, Clock as ClockIcon } from 'lucide-react';
 import { Badge, Button, Card, SectionHeader, Stat } from '../components/ui';
 import { api } from '../api';
 import { useApp } from '../lib/store';
@@ -48,6 +48,21 @@ export default function VideoLesson() {
   return (
     <div className="space-y-4">
       <SectionHeader title={video.video.title} description={`Chapter · ${video.gating.requiredMastery}% mastery to unlock next`}/>
+
+      {/* Educational disclaimer banner */}
+      <div className="p-4 rounded-xl bg-amber-500/10 border border-amber-500/20">
+        <div className="flex items-start gap-3">
+          <AlertCircle size={18} className="text-amber-500 flex-shrink-0 mt-0.5"/>
+          <div>
+            <h4 className="text-sm font-semibold text-amber-800">Educational Purpose Only</h4>
+            <p className="text-xs text-amber-700 mt-1">
+              This video is shared for educational purposes only. No monetary benefit is derived. Content is sourced from YouTube and verified for educational suitability.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Video player card */}
       <Card className="aspect-video bg-gray-900 rounded-xl flex items-center justify-center relative overflow-hidden">
         {videoUrl && !videoError ? (
           <>
@@ -69,9 +84,9 @@ export default function VideoLesson() {
             <AlertCircle size={48} className="mx-auto mb-4 text-rose-400"/>
             <h3 className="text-lg font-semibold text-white mb-2">Video Unavailable</h3>
             <p className="text-gray-400 text-sm mb-4">The video for this chapter is not available on YouTube.</p>
-          <Button variant="ghost" size="sm" onClick={() => window.open(videoUrlExternal, '_blank')}>
-            Search on YouTube
-          </Button>
+            <Button variant="ghost" size="sm" onClick={() => window.open(videoUrlExternal, '_blank')}>
+              Search on YouTube
+            </Button>
           </div>
         ) : (
           <div className="text-center">
@@ -82,6 +97,8 @@ export default function VideoLesson() {
           {Math.floor(resume / 60)}:{String(resume % 60).padStart(2,'0')} / {Math.floor(video.video.durationSec / 60)}:{String(video.video.durationSec % 60).padStart(2,'0')}
         </div>
       </Card>
+
+      {/* Video info cards */}
       <div className="flex gap-2">
         <Button onClick={() => setResume(Math.max(0, resume - 10))}>← 10s</Button>
         <Button onClick={() => setResume(resume + 10)}>10s →</Button>
@@ -91,6 +108,32 @@ export default function VideoLesson() {
         <Stat label="Duration" value={`${Math.floor(video.video.durationSec / 60)} min`}/>
         <Stat label="Provider" value={video.video.provider}/>
         <Stat label="Gating" value={`${video.gating.requiredMastery}% mastery`}/>
+        <Stat label="Rating" value={(video.video.rating ?? 0).toFixed(1)} icon={<TrendingUp size={16} className="text-green-400"/>}/>
+        <Stat label="Validity" value={`${(video.video.validityScore ?? 0) * 100}%`}/>
+      </div>
+
+      {/* Video summary */}
+      {video.video.summary && (
+        <Card className="p-4">
+          <SectionHeader title="Video Summary" description="Quick overview of what you'll learn"/>
+          <p className="text-sm text-gray-300">{video.video.summary}</p>
+          </Card>
+        )}
+
+      {/* Short reels section */}
+      <div className="mt-6">
+        <SectionHeader title="Quick Review Reels" description="Short 30-60 second revision clips" action={<Badge tone="neutral" className="text-xs">60s max</Badge>} />
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          {[1, 2, 3, 4].map((i) => (
+            <Card key={i} className="p-3 cursor-pointer hover:bg-indigo-500/5 border-indigo-500/10 transition group" onClick={() => {}}>
+              <div className="aspect-[9/16] bg-gray-900 rounded-lg flex items-center justify-center mb-3">
+                <Play size={24} className="text-indigo-400 opacity-70 group-hover:opacity-100 transition-opacity"/>
+              </div>
+              <h4 className="text-sm font-semibold text-gray-200 mb-1">Quick Revision {i}</h4>
+              <p className="text-xs text-gray-400">60 seconds</p>
+            </Card>
+          ))}
+        </div>
       </div>
     </div>
   );

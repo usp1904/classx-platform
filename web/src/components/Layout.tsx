@@ -32,25 +32,25 @@ const nav = [
   { section: 'Learn', items: [
     { to: '/', label: 'Home', icon: Compass, end: true },
     { to: '/courses', label: 'Courses', icon: BookOpen },
-    { to: '/video/mathematics/real-numbers', label: 'Video lessons', icon: Film },
+    { to: '/video/mathematics/real-numbers', label: 'Video Lessons', icon: Film },
     { to: '/practice', label: 'Practice', icon: Target },
-    { to: '/adaptive-practice', label: 'Adaptive practice', icon: Zap },
-    { to: '/mock-tests', label: 'Mock tests', icon: FileQuestion },
-    { to: '/tutor', label: 'AI tutor', icon: Sparkles },
+    { to: '/adaptive-practice', label: 'Adaptive Practice', icon: Zap },
+    { to: '/mock-tests', label: 'Mock Tests', icon: FileQuestion },
+    { to: '/tutor', label: 'AI Tutor', icon: Sparkles },
     { to: '/learning-aids/mathematics/real-numbers', label: 'Learning Aids', icon: Lightbulb },
   ] },
   { section: 'Plan', items: [
-    { to: '/planner', label: 'Study planner', icon: CalendarDays },
-    { to: '/library', label: 'Revision library', icon: LibraryBig },
+    { to: '/planner', label: 'Study Planner', icon: CalendarDays },
+    { to: '/library', label: 'Revision Library', icon: LibraryBig },
     { to: '/progress', label: 'Progress', icon: ChartNoAxesColumnIncreasing },
     { to: '/gamification', label: 'Gamification', icon: Trophy },
-    { to: '/parent', label: 'Parent dashboard', icon: Users },
+    { to: '/parent', label: 'Parent Dashboard', icon: Users },
   ] },
   { section: 'Data', items: [
-    { to: '/concept-map/mathematics/real-numbers', label: 'Concept maps', icon: Network },
-    { to: '/okf-metadata', label: 'OKF metadata', icon: BookOpen },
-    { to: '/rag-search', label: 'RAG search', icon: Search },
-    { to: '/offline-status', label: 'Offline status', icon: Cloud },
+    { to: '/concept-map/mathematics/real-numbers', label: 'Concept Maps', icon: Network },
+    { to: '/okf-metadata', label: 'OKF Metadata', icon: BookOpen },
+    { to: '/rag-search', label: 'RAG Search', icon: Search },
+    { to: '/offline-status', label: 'Offline Status', icon: Cloud },
   ] },
 ];
 
@@ -100,6 +100,11 @@ export function Layout() {
 
   const daysToBoards = Math.max(0, Math.ceil((new Date('2027-02-15').getTime() - Date.now()) / 86400000));
 
+  // Get first authored chapter for dynamic video link
+  const firstAuthoredChapter = curriculum?.subjects?.find((s) =>
+    s.chapters.some((c) => c.hasContent && !c.isPartial)
+  )?.chapters.find((c) => c.hasContent && !c.isPartial);
+
   return (
     <div className="app-shell">
       <aside className={`sidebar ${mobileOpen ? 'open' : ''}`} aria-label="Primary navigation">
@@ -107,7 +112,7 @@ export function Layout() {
           <NavLink to="/" className="brand" aria-label="Peak home">
             <span className="brand-mark"><GraduationCap size={22} /></span>
             <span>
-              <strong>Peak</strong>
+              <strong className="text-gradient">Peak</strong>
               <small>Class X Mastery</small>
             </span>
           </NavLink>

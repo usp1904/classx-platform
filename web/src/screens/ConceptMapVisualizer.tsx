@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Network, Zap, Play, Share2 } from 'lucide-react';
+import { Network, Zap, Play, Share2, RefreshCw, AlertCircle } from 'lucide-react';
 import { Badge, Button, Card, SectionHeader, Stat } from '../components/ui';
 import { api } from '../api';
 import { useApp } from '../lib/store';
@@ -21,16 +21,35 @@ export default function ConceptMapVisualizer() {
   const { curriculum } = useApp();
   const [graph, setGraph] = useState<{ nodes: { id: string; label: string; group?: string }[]; edges: [string, string][]; title?: string; source?: string } | null>(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     api.graph(subjectId, chapterId).then((payload) => {
-      if (payload.ok && payload.graph) setGraph(payload.graph);
+      if (payload.ok && payload.graph && payload.graph.nodes && payload.graph.nodes.length > 0) {
+        setGraph(payload.graph);
+        setError(false);
+      } else {
+        setError(true);
+      }
       setLoading(false);
-    }).catch(() => setLoading(false));
+    }).catch(() => {
+      setError(true);
+      setLoading(false);
+    });
   }, [subjectId, chapterId]);
 
   if (loading) return <div className="p-6 text-center text-muted">Loading concept map…</div>;
-  if (!graph || !graph.nodes.length) return <div className="p-6 text-center text-muted">No concept map for this chapter.</div>;
+  if (error || !graph || !graph.nodes.length) return (
+    <div className="p-6 text-center">
+      <AlertCircle size={32} className="mx-auto mb-4 text-gray-400"/>
+      <h3 className="text-lg font-semibold text-white mb-2">No Concept Map Available</h3>
+      <p className="text-gray-400 text-sm mb-4">No concept map data available for this chapter. Try the chapter reader or AI tutor instead.</p>
+        <div className="flex gap-2 justify-center">
+          <Button variant="ghost" size="sm" onClick={() => window.location.reload()}>Retry</Button>
+          <Button variant="ghost" size="sm" onClick={() => window.location.href = `/courses/${subjectId}/${chapterId}`}>Go to Chapter</Button>
+        </div>
+    </div>
+  );
 
   const subject = curriculum?.subjects.find((s) => s.id === subjectId);
   const chapter = subject?.chapters.find((c) => c.id === chapterId);
