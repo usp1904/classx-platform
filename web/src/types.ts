@@ -488,6 +488,10 @@ export interface LearningAidsData {
   stats: any;
   aids: LearningAid[];
   aidsWithContent: LearningAid[];
+  scienceExperiments: any[];
+  mcqAnswers: any[];
+  bibliographyAndEquations: any;
+  socialStudiesData: any;
 }
 export interface LearningAidsIds {
   aidIds: string[];

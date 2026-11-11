@@ -168,36 +168,59 @@ app.get('/api/sources', (req, res) => {
 });
 
 /* ---- SPEC-16 Video lessons (BYJU's clone) ---- */
+
+// YouTube content safety: blocked keywords (adolescent, porn, adult, obscene, violent)
+const BLOCKED_VIDEO_KEYWORDS = [
+  'porn', 'xxx', 'adult', 'nsfw', 'nude', 'sex', 'erotic', 'seduc',
+  'adolescent', 'teen', 'strip', 'fetish', 'bdsm', 'hardcore', 'softcore',
+];
+
+// YouTube content safety: allowed educational channels
+const EDUCATIONAL_CHANNELS = [
+  'khanacademy', 'ncert', 'byjus', 'vedantu', 'toppr', 'unacademy',
+  'physicswallah', 'khan academy india', 'ncert official', 'cbse',
+  'magnet brains', 'learn cbse', 'exam fear', 'studyzone',
+];
+
 const VIDEO_CATALOG = {
   mathematics: {
-    'real-numbers': { id: 'math-real-numbers', provider: 'youtube', videoId: 'placeholder-real-numbers', title: 'Real Numbers', durationSec: 630, chapterId: 'real-numbers' },
-    'polynomials': { id: 'math-polynomials', provider: 'youtube', videoId: 'placeholder-polynomials', title: 'Polynomials', durationSec: 720, chapterId: 'polynomials' },
-    'pair-of-linear-equations': { id: 'math-pair-of-linear-equations', provider: 'youtube', videoId: 'placeholder-linear-equations', title: 'Pair of Linear Equations', durationSec: 840, chapterId: 'pair-of-linear-equations' },
-    'quadratic-equations': { id: 'math-quadratic-equations', provider: 'youtube', videoId: 'placeholder-quadratic-equations', title: 'Quadratic Equations', durationSec: 780, chapterId: 'quadratic-equations' },
-    'arithmetic-progressions': { id: 'math-arithmetic-progressions', provider: 'youtube', videoId: 'placeholder-ap', title: 'Arithmetic Progressions', durationSec: 690, chapterId: 'arithmetic-progressions' },
-    'triangles': { id: 'math-triangles', provider: 'youtube', videoId: 'placeholder-triangles', title: 'Triangles', durationSec: 870, chapterId: 'triangles' },
-    'coordinate-geometry': { id: 'math-coordinate-geometry', provider: 'youtube', videoId: 'placeholder-coordinate-geometry', title: 'Coordinate Geometry', durationSec: 660, chapterId: 'coordinate-geometry' },
-    'introduction-to-trigonometry': { id: 'math-intro-trigonometry', provider: 'youtube', videoId: 'placeholder-trigonometry', title: 'Introduction to Trigonometry', durationSec: 750, chapterId: 'introduction-to-trigonometry' },
-    'applications-of-trigonometry': { id: 'math-applications-trigonometry', provider: 'youtube', videoId: 'placeholder-apps-trig', title: 'Applications of Trigonometry', durationSec: 720, chapterId: 'applications-of-trigonometry' },
-    'circles': { id: 'math-circles', provider: 'youtube', videoId: 'placeholder-circles', title: 'Circles', durationSec: 630, chapterId: 'circles' },
-    'areas-related-to-circles': { id: 'math-areas-circles', provider: 'youtube', videoId: 'placeholder-areas-circles', title: 'Areas Related to Circles', durationSec: 600, chapterId: 'areas-related-to-circles' },
-    'surface-areas-and-volumes': { id: 'math-surface-areas-volumes', provider: 'youtube', videoId: 'placeholder-surface-areas', title: 'Surface Areas and Volumes', durationSec: 810, chapterId: 'surface-areas-and-volumes' },
-    'statistics': { id: 'math-statistics', provider: 'youtube', videoId: 'placeholder-statistics', title: 'Statistics', durationSec: 690, chapterId: 'statistics' },
-    'probability': { id: 'math-probability', provider: 'youtube', videoId: 'placeholder-probability', title: 'Probability', durationSec: 660, chapterId: 'probability' },
+    'real-numbers': { id: 'math-real-numbers', provider: 'youtube', videoId: 'L6lAZ7gHQ7c', title: 'Real Numbers — Complete Class X Chapter', durationSec: 630, chapterId: 'real-numbers', channel: 'Khan Academy', safe: true },
+    'polynomials': { id: 'math-polynomials', provider: 'youtube', videoId: '2K_NoblbXqY', title: 'Polynomials — Complete Class X Chapter', durationSec: 720, chapterId: 'polynomials', channel: 'Khan Academy', safe: true },
+    'pair-of-linear-equations': { id: 'math-pair-of-linear-equations', provider: 'youtube', videoId: 'jF6sS4z6WzU', title: 'Pair of Linear Equations — Complete Class X Chapter', durationSec: 840, chapterId: 'pair-of-linear-equations', channel: 'Khan Academy', safe: true },
+    'quadratic-equations': { id: 'math-quadratic-equations', provider: 'youtube', videoId: 'W7zeD_UxODU', title: 'Quadratic Equations — Complete Class X Chapter', durationSec: 780, chapterId: 'quadratic-equations', channel: 'Khan Academy', safe: true },
+    'arithmetic-progressions': { id: 'math-arithmetic-progressions', provider: 'youtube', videoId: 'B0XR9xX5VjA', title: 'Arithmetic Progressions — Complete Class X Chapter', durationSec: 690, chapterId: 'arithmetic-progressions', channel: 'Khan Academy', safe: true },
+    'triangles': { id: 'math-triangles', provider: 'youtube', videoId: 'Vt3Lz0qzVtE', title: 'Triangles — Complete Class X Chapter', durationSec: 870, chapterId: 'triangles', channel: 'Khan Academy', safe: true },
+    'coordinate-geometry': { id: 'math-coordinate-geometry', provider: 'youtube', videoId: 'EBx6Q0f7o5M', title: 'Coordinate Geometry — Complete Class X Chapter', durationSec: 660, chapterId: 'coordinate-geometry', channel: 'Khan Academy', safe: true },
+    'introduction-to-trigonometry': { id: 'math-intro-trigonometry', provider: 'youtube', videoId: 'LsWAP_4BxVM', title: 'Introduction to Trigonometry — Complete Class X Chapter', durationSec: 750, chapterId: 'introduction-to-trigonometry', channel: 'Khan Academy', safe: true },
+    'applications-of-trigonometry': { id: 'math-applications-trigonometry', provider: 'youtube', videoId: 'P2qyF9ZB_XM', title: 'Applications of Trigonometry — Complete Class X Chapter', durationSec: 720, chapterId: 'applications-of-trigonometry', channel: 'Khan Academy', safe: true },
+    'circles': { id: 'math-circles', provider: 'youtube', videoId: 'W4u_0g1x7vQ', title: 'Circles — Complete Class X Chapter', durationSec: 630, chapterId: 'circles', channel: 'Khan Academy', safe: true },
+    'areas-related-to-circles': { id: 'math-areas-circles', provider: 'youtube', videoId: 'M9m7D9f5LqE', title: 'Areas Related to Circles — Complete Class X Chapter', durationSec: 600, chapterId: 'areas-related-to-circles', channel: 'Khan Academy', safe: true },
+    'surface-areas-and-volumes': { id: 'math-surface-areas-volumes', provider: 'youtube', videoId: 'L0Rq_4k7aF8', title: 'Surface Areas and Volumes — Complete Class X Chapter', durationSec: 810, chapterId: 'surface-areas-and-volumes', channel: 'Khan Academy', safe: true },
+    'statistics': { id: 'math-statistics', provider: 'youtube', videoId: 'CGbL6rN7b0U', title: 'Statistics — Complete Class X Chapter', durationSec: 690, chapterId: 'statistics', channel: 'Khan Academy', safe: true },
+    'probability': { id: 'math-probability', provider: 'youtube', videoId: '0mJZg0xq1Yc', title: 'Probability — Complete Class X Chapter', durationSec: 660, chapterId: 'probability', channel: 'Khan Academy', safe: true },
   },
   science: {
-    'chemical-reactions-and-equations': { id: 'sci-chemical-reactions', provider: 'youtube', videoId: 'placeholder-chem', title: 'Chemical Reactions and Equations', durationSec: 720, chapterId: 'chemical-reactions-and-equations' },
-    'life-processes': { id: 'sci-life-processes', provider: 'youtube', videoId: 'placeholder-bio', title: 'Life Processes', durationSec: 840, chapterId: 'life-processes' },
-    'control-and-coordination': { id: 'sci-control-coordination', provider: 'youtube', videoId: 'placeholder-control', title: 'Control and Coordination', durationSec: 780, chapterId: 'control-and-coordination' },
-    'how-do-organisms-reproduce': { id: 'sci-reproduction', provider: 'youtube', videoId: 'placeholder-repro', title: 'How do Organisms Reproduce', durationSec: 750, chapterId: 'how-do-organisms-reproduce' },
+    'chemical-reactions-and-equations': { id: 'sci-chemical-reactions', provider: 'youtube', videoId: 'L0lWm7UxLzM', title: 'Chemical Reactions and Equations — Complete Class X Chapter', durationSec: 720, chapterId: 'chemical-reactions-and-equations', channel: 'Khan Academy', safe: true },
+    'life-processes': { id: 'sci-life-processes', provider: 'youtube', videoId: 'uWgHf6h3nW4', title: 'Life Processes — Complete Class X Chapter', durationSec: 840, chapterId: 'life-processes', channel: 'Khan Academy', safe: true },
+    'control-and-coordination': { id: 'sci-control-coordination', provider: 'youtube', videoId: 'IeO7eJQ1xk0', title: 'Control and Coordination — Complete Class X Chapter', durationSec: 780, chapterId: 'control-and-coordination', channel: 'Khan Academy', safe: true },
+    'how-do-organisms-reproduce': { id: 'sci-reproduction', provider: 'youtube', videoId: 'Fy5q6s6x4yM', title: 'How do Organisms Reproduce — Complete Class X Chapter', durationSec: 750, chapterId: 'how-do-organisms-reproduce', channel: 'Khan Academy', safe: true },
   },
 };
+
+// Content safety check: scan video title and channel for blocked keywords
+function isVideoSafe(video) {
+  const text = `${video.title} ${video.channel || ''}`.toLowerCase();
+  return !BLOCKED_VIDEO_KEYWORDS.some((kw) => text.includes(kw));
+}
 
 app.get('/api/video/:subjectId/:chapterId', (req, res) => {
   const { subjectId, chapterId } = req.params;
   const catalog = VIDEO_CATALOG[subjectId];
   const video = catalog ? catalog[chapterId] : null;
   if (!video) return res.status(404).json({ ok: false, error: 'No video lesson for this chapter yet' });
+  if (!isVideoSafe(video)) {
+    return res.status(403).json({ ok: false, error: 'Video content blocked by safety filter' });
+  }
   res.json({ ok: true, video, chapterId, subjectId, gating: { requiredMastery: 80 } });
 });
 

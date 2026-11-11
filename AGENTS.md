@@ -54,7 +54,7 @@ Launchers: double-click `Start-ClassX.cmd`, or run `Start-ClassX.cmd --all` to o
 - `server/lib/data.js`: curriculum, question, lesson, plan access.
 - `server/lib/rag.js`: hybrid lexical/semantic retrieval (`/api/search`, tutor citations, graph). Includes one syllabus chunk for every mapped chapter.
 - `server/lib/ai.js`: provider call + grounded fallback tutor.
-- `server/lib/learning-aids.js`: builds 30 learning aids per chapter from lesson data (TLDR, KeyIdeas, BigPicture, ..., QuizMe). Serves `/api/learning-aids/:subjectId/:chapterId`, `/api/learning-aids/ids`, `/api/learning-aids/group/:group`.
+- `server/lib/learning-aids.js`: builds 30 learning aids per chapter from lesson data (TLDR, KeyIdeas, BigPicture, ..., QuizMe). Serves `/api/learning-aids/:subjectId/:chapterId`, `/api/learning-aids/ids`, `/api/learning-aids/group/:group`. Includes solved exercises with step-by-step solutions, shortcut methods, mistake guides, formulasheet, science experiments, MCQ answers, bibliography/equations, social studies dates/revolts/wars.
 - `server/lib/practice.js`: in-memory practice/exam sessions (3h TTL), scoring, `getExamKey`, exam submit.
 - `server/lib/progress.js`: guest/user progress persistence.
 - Exam flow: generate paper -> attempt -> `GET /api/exam/:paperId/key` reveals written steps -> student self-marks written -> `POST /api/exam/submit` combines MCQ auto-score and written self-marks.
