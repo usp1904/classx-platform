@@ -7,6 +7,9 @@ import type {
   ExamKey,
   GamifyXpResult,
   LeaderboardEntry,
+  LearningAid,
+  LearningAidsData,
+  LearningAidsIds,
   LibraryData,
   OkfSearchResult,
   OkfStats,
@@ -78,4 +81,8 @@ export const api = {
     json<{ ok: boolean; query: string; results: OkfSearchResult[]; diagnostics: any }>(
       `/api/search/multimodel?q=${encodeURIComponent(q)}&limit=${opts?.limit || 10}${opts?.subjectId ? `&subjectId=${encodeURIComponent(opts.subjectId)}` : ''}${opts?.chapterId ? `&chapterId=${encodeURIComponent(opts.chapterId)}` : ''}${opts?.difficulty ? `&difficulty=${encodeURIComponent(opts.difficulty)}` : ''}${opts?.tags ? `&tags=${encodeURIComponent(opts.tags)}` : ''}`,
     ),
+  learningAids: (subjectId: string, chapterId: string) =>
+    json<{ ok: boolean } & LearningAidsData>(`/api/learning-aids/${subjectId}/${chapterId}`),
+  learningAidsIds: () => json<{ ok: boolean } & LearningAidsIds>('/api/learning-aids/ids'),
+  learningAidsGroup: (group: string) => json<{ ok: boolean; group: string; aids: string[] }>(`/api/learning-aids/group/${group}`),
 };

@@ -11,6 +11,7 @@ import { curriculum, subjects, getChapter, getLesson, getPlan, getStats, getSubj
 import { getConceptGraph, getIndex, ragStats } from './lib/rag.js';
 import { getMultimodelRag } from './lib/rag-multimodel.js';
 import { okfIndex } from './lib/okf-metadata.js';
+import { getLearningAids, getAllAidIds, getAidLabel, getAidGroups, getAidGroup } from './lib/learning-aids.js';
 import { askTutor } from './lib/ai.js';
 import { startPractice, startExam, submitSession, getExamKey } from './lib/practice.js';
 import { getProgress, updateProgress, awardXp, getBadges, getLeaderboard, getParentView, linkParent } from './lib/progress.js';
@@ -264,6 +265,21 @@ app.get('/api/search/multimodel', (req, res) => {
     academicYear: req.query.academicYear || '2026-27',
   });
   res.json(out);
+});
+
+/* ---- SPEC-23 Learning Aids ---- */
+app.get('/api/learning-aids/:subjectId/:chapterId', (req, res) => {
+  const { subjectId, chapterId } = req.params;
+  const aids = getLearningAids(subjectId, chapterId);
+  res.json({ ok: true, ...aids });
+});
+app.get('/api/learning-aids/ids', (req, res) => {
+  res.json({ ok: true, aidIds: getAllAidIds(), aidLabels: AID_LABELS, aidGroups: getAidGroups() });
+});
+app.get('/api/learning-aids/group/:group', (req, res) => {
+  const { group } = req.params;
+  const aids = getAllAidIds().filter((id) => getAidGroup(id) === group);
+  res.json({ ok: true, group, aids });
 });
 
 app.get('/api/graph/:subjectId/:chapterId', (req, res) => {

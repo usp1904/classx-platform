@@ -30,7 +30,7 @@ npm run verify           # typecheck + check + coverage + tests + e2e
 Launchers: double-click `Start-ClassX.cmd`, or run `Start-ClassX.cmd --all` to open every installed browser. The launcher starts the API, waits for health, opens the app, and logs to `%TEMP%\classx-platform.log`.
 
 ## Spec and test contract
-- `SPEC.md` is the acceptance source of truth: SPEC-01 through SPEC-15 cover launch, curriculum, honest depth, maths depth, chapter reader, practice, mock exams, tutor grounding, planner, progress/library, search, responsive/a11y, cross-browser, data integrity, and the regression gate. SPEC-16 through SPEC-22 (docs/specs/byjus-clone/) add BYJU'S-style engagement: video lessons, adaptive practice, gamification, parent dashboard, doubt tutor bubble, offline/PWA, and ELI5 tutor mode.
+- `SPEC.md` is the acceptance source of truth: SPEC-01 through SPEC-15 cover launch, curriculum, honest depth, maths depth, chapter reader, practice, mock exams, tutor grounding, planner, progress/library, search, responsive/a11y, cross-browser, data integrity, and the regression gate. SPEC-16 through SPEC-22 (docs/specs/byjus-clone/) add BYJU'S-style engagement: video lessons, adaptive practice, gamification, parent dashboard, doubt tutor bubble, offline/PWA, and ELI5 tutor mode. SPEC-23 adds 30 Learning Aids per chapter (TLDR, KeyIdeas, BigPicture, ChapterOverview, WhyItMatters, CheatSheet, Recap, ExamNotes, MindMap, ConceptMap, FlowChart, Diagram, VisualSummary, FormulaSheet, SolveLikeATeacher, ShortcutMethods, MistakeGuide, ProblemPatterns, WorkedExamples, CauseEffect, ProcessBreakdown, Mechanism, ScientificStory, BreakItDown, LearnFromScratch, TutorMode, StoryMethodwithMemoryHooks, ConceptConnections, LearningPath, QuizMe).
 - Every E2E assertion must map to a SPEC id. Update the spec before changing behaviour; never weaken a check to hide a failure.
 - `scripts/e2e.mjs` starts its own fresh API on `:8799` (does not touch a running dev server), runs core flows in Chrome, Edge, and Firefox, then runs the full suite plus mobile overflow in Chrome. Screenshots go to `artifacts/e2e/`.
 - `scripts/coverage.mjs` writes `COVERAGE.md` from generated data and validates every MCQ index, subjective steps/answer, chapter reference, official topic attachment, planner chapter reference, and source PDF. Structural failures exit 1.
@@ -54,6 +54,7 @@ Launchers: double-click `Start-ClassX.cmd`, or run `Start-ClassX.cmd --all` to o
 - `server/lib/data.js`: curriculum, question, lesson, plan access.
 - `server/lib/rag.js`: hybrid lexical/semantic retrieval (`/api/search`, tutor citations, graph). Includes one syllabus chunk for every mapped chapter.
 - `server/lib/ai.js`: provider call + grounded fallback tutor.
+- `server/lib/learning-aids.js`: builds 30 learning aids per chapter from lesson data (TLDR, KeyIdeas, BigPicture, ..., QuizMe). Serves `/api/learning-aids/:subjectId/:chapterId`, `/api/learning-aids/ids`, `/api/learning-aids/group/:group`.
 - `server/lib/practice.js`: in-memory practice/exam sessions (3h TTL), scoring, `getExamKey`, exam submit.
 - `server/lib/progress.js`: guest/user progress persistence.
 - Exam flow: generate paper -> attempt -> `GET /api/exam/:paperId/key` reveals written steps -> student self-marks written -> `POST /api/exam/submit` combines MCQ auto-score and written self-marks.
@@ -61,7 +62,7 @@ Launchers: double-click `Start-ClassX.cmd`, or run `Start-ClassX.cmd --all` to o
 
 ## Frontend map
 - `web/src/App.tsx`: all routes + `BrowserRouter` + `AppDataProvider`. `main.tsx` renders `<App />` and owns global CSS import order.
-- Screens: `Dashboard`, `Courses`, `Chapter`, `Practice`, `MockTests`, `Tutor`, `Planner`, `Progress`, `Library`.
+- Screens: `Dashboard`, `Courses`, `Chapter`, `Practice`, `MockTests`, `Tutor`, `Planner`, `Progress`, `Library`, `VideoLesson`, `Gamification`, `ParentDashboard`, `AdaptivePractice`, `DoubtTutor`, `ConceptMapVisualizer`, `OKFMetadataBrowser`, `OfflineStatus`, `RAGSearchViewer`, `LearningAids`.
 - Components: `Layout`, `CommandPalette`, `PracticeRunner`, `RichText`, `VisualBlock`, `ConceptMap`, `ui`.
 - API client/types: `web/src/api.ts`, `web/src/types.ts`.
 - State: `web/src/lib/store.tsx` (curriculum, progress, plan, bookmarks, toasts).

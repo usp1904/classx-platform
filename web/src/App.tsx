@@ -19,6 +19,7 @@ import ConceptMapVisualizer from './screens/ConceptMapVisualizer';
 import OKFMetadataBrowser from './screens/OKFMetadataBrowser';
 import OfflineStatus from './screens/OfflineStatus';
 import RAGSearchViewer from './screens/RAGSearchViewer';
+import LearningAids from './screens/LearningAids';
 import { Card } from './components/ui';
 
 function NotFound() {
@@ -50,6 +51,7 @@ export default function App() {
               <Route path="rag-search" element={<RAGSearchViewer />} />
               <Route path="gamification" element={<Gamification />} />
               <Route path="parent" element={<ParentDashboard />} />
+              <Route path="learning-aids/:subjectId/:chapterId" element={<LearningAids />} />
               <Route path="dashboard" element={<Navigate to="/" replace />} />
               <Route path="*" element={<NotFound />} />
             </Route>

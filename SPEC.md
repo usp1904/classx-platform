@@ -177,6 +177,30 @@ npm run e2e
 - Ends with one check-for-understanding question in child-friendly language
 - Grounded in curriculum citations; no fabricated facts
 
+## SPEC-22 Explain Like I'm 5 (ELI5) — all subjects
+
+- Tutor supports `eli5` mode alongside `socratic`, `board`, `competitive`
+- ELI5 answers use tiny words, short sentences, real-life examples a 5-year-old knows (toys, food, games, family)
+- Works across Maths, Science, and Social Science: fractions like sharing chocolate, photosynthesis like a plant kitchen, democracy like choosing a class monitor
+- No jargon without an immediate simple explanation
+- Ends with one check-for-understanding question in child-friendly language
+- Grounded in curriculum citations; no fabricated facts
+
+## SPEC-23 Learning Aids — 30 understanding features per chapter
+
+- Every authored chapter exposes 30 learning aids: TLDR, KeyIdeas, BigPicture, ChapterOverview, WhyItMatters, CheatSheet, Recap, ExamNotes, MindMap, ConceptMap, FlowChart, Diagram, VisualSummary, FormulaSheet, SolveLikeATeacher, ShortcutMethods, MistakeGuide, ProblemPatterns, WorkedExamples, CauseEffect, ProcessBreakdown, Mechanism, ScientificStory, BreakItDown, LearnFromScratch, TutorMode, StoryMethodwithMemoryHooks, ConceptConnections, LearningPath, QuizMe
+- Each aid is optional; chapters show only aids that have authored content
+- Aids render in a unified Learning Aids viewer accessible from the chapter reader
+- QuizMe generates practice questions from the chapter's question bank
+- MindMap/ConceptMap/FlowChart/Diagram render as SVG visuals
+- FormulaSheet extracts theorems, shortcuts, and key formulas
+- ExamNotes and CheatSheet are concise revision summaries
+- SolveLikeATeacher walks through a worked example step by step
+- ShortcutMethods lists speed tricks and competitive shortcuts
+- MistakeGuide lists common misconceptions and corrections
+- TutorMode opens the grounded AI tutor for the chapter
+- LearningPath shows the chapter's position in the subject curriculum
+
 ## Known accepted decisions
 
 - The ~622 kB JS chunk is accepted. Gzip is ~182 kB, the app is local-first, and code splitting is not needed. Do not revisit unless the chunk grows past 750 kB or load time regresses.

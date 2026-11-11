@@ -470,3 +470,32 @@ export interface OkfSearchResult extends SearchResult {
 export interface AdaptivePracticeSession extends PracticeSession {
   adaptive: { difficulty: string; accuracy?: number };
 }
+
+/* ---- SPEC-23 Learning Aids ---- */
+export interface LearningAid {
+  id: string;
+  label: string;
+  group: string;
+  hasContent: boolean;
+  data: any;
+}
+export interface LearningAidsData {
+  subjectId: string;
+  chapterId: string;
+  chapterName: string | null;
+  subjectName: string | null;
+  hasLesson: boolean;
+  stats: any;
+  aids: LearningAid[];
+  aidsWithContent: LearningAid[];
+}
+export interface LearningAidsIds {
+  aidIds: string[];
+  aidLabels: Record<string, string>;
+  aidGroups: Record<string, string[]>;
+}
+export interface LearningAidGroup {
+  group: string;
+  aids: string[];
+}
+

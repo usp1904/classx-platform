@@ -14,6 +14,7 @@ import {
   Flame,
   GraduationCap,
   LibraryBig,
+  Lightbulb,
   Menu,
   Network,
   Search,
@@ -36,6 +37,7 @@ const nav = [
     { to: '/adaptive-practice', label: 'Adaptive practice', icon: Zap },
     { to: '/mock-tests', label: 'Mock tests', icon: FileQuestion },
     { to: '/tutor', label: 'AI tutor', icon: Sparkles },
+    { to: '/learning-aids/mathematics/real-numbers', label: 'Learning Aids', icon: Lightbulb },
   ] },
   { section: 'Plan', items: [
     { to: '/planner', label: 'Study planner', icon: CalendarDays },
@@ -69,6 +71,7 @@ const titleFor = (path: string) => {
   if (path.startsWith('/okf-metadata')) return 'OKF Metadata';
   if (path.startsWith('/rag-search')) return 'RAG Search';
   if (path.startsWith('/offline-status')) return 'Offline Status';
+  if (path.startsWith('/learning-aids')) return 'Learning Aids';
   return 'Peak';
 };
 
