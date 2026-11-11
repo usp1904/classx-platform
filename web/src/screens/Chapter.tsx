@@ -24,6 +24,7 @@ import {
   Target,
   Triangle,
   Zap,
+  Film,
 } from 'lucide-react';
 import { api } from '../api';
 import type { ChapterDetail, Lesson } from '../types';
@@ -456,10 +457,12 @@ export default function ChapterPage() {
 
       <div className="chapter-tabs-row">
         <Tabs items={tabs} value={tab} onChange={setTab} className="chapter-tabs" />
-        <div className="chapter-quick-actions">
-          <Button variant="ghost" size="sm" icon={<Sparkles size={15} />} onClick={() => navigate(`/tutor?subject=${subjectId}&chapter=${chapterId}`)}>Ask tutor</Button>
-          <Button variant="ghost" size="sm" icon={<Target size={15} />} onClick={() => navigate(`/practice?subject=${subjectId}&chapter=${chapterId}`)}>Practice</Button>
-        </div>
+          <div className="chapter-quick-actions">
+            <Button variant="ghost" size="sm" icon={<Sparkles size={15} />} onClick={() => navigate(`/tutor?subject=${subjectId}&chapter=${chapterId}`)}>Ask tutor</Button>
+            <Button variant="ghost" size="sm" icon={<Target size={15} />} onClick={() => navigate(`/practice?subject=${subjectId}&chapter=${chapterId}`)}>Practice</Button>
+            <Button variant="ghost" size="sm" icon={<Film size={15} />} onClick={() => navigate(`/video/${subjectId}/${chapterId}`)}>Video lesson</Button>
+            <Button variant="ghost" size="sm" icon={<Network size={15} />} onClick={() => navigate(`/concept-map/${subjectId}/${chapterId}`)}>Concept map</Button>
+          </div>
       </div>
 
       <div className="chapter-layout">
