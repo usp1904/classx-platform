@@ -1,0 +1,1157 @@
+{
+  "subject": "History",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 3,
+  "chapter": "The Making of a Global World",
+  "lesson": 1,
+  "title": "The Making of a Global World - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "id": "the-making-of-a-global-world",
+  "outcomes": [
+    "Explain how the silk routes linked trade, religion, and culture across Asia, Europe, and Africa",
+    "Describe the Columbian exchange and its effects on food, people, and disease",
+    "Analyse how colonialism changed India's role in the world economy",
+    "Explain the system of indentured labour and its global consequences",
+    "Describe the causes and worldwide impact of the Great Depression",
+    "Explain the Bretton Woods system and the post-war reconstruction of the world economy",
+    "Trace the shift from nineteenth-century globalisation to the globalisation of the late twentieth century",
+    "Evaluate the human costs and benefits of global economic integration"
+  ],
+  "prerequisite_nodes": [
+    "HIST_CLASS9_COLONIALISM",
+    "GEO_CLASS9_RESOURCES_AND_TRADE",
+    "HIST_CLASS8_INDUSTRIAL_REVOLUTION",
+    "ECON_CLASS10_GLOBALISATION"
+  ],
+  "concepts": [
+    {
+      "id": "glb-c1",
+      "title": "Silk Routes, Trade, and Cultural Exchange",
+      "name": "Silk Routes, Trade, and Cultural Exchange",
+      "explanation": "The silk routes were a network of overland and sea routes that linked China, India, Central Asia, West Asia, Africa, and Europe for more than two thousand years. Chinese silk, Indian spices and cotton, and Central Asian horses moved along these routes. They also carried religions, art, technologies, and languages. Buddhism travelled from India to Central Asia and China, Islam spread across trading communities, and Christian missionaries used the same networks. Travellers such as Chinese Buddhist pilgrims went to India and returned with texts and ideas. The routes were not a single road, and they did not carry only goods.",
+      "purpose": "The silk routes show that long-distance trade and cultural exchange existed long before modern globalisation.",
+      "real_life_application": "Modern trade corridors and shipping lanes still connect distant markets and carry both goods and ideas.",
+      "key_points": [
+        "The silk routes were a network of overland and sea routes, not a single road.",
+        "They linked China, India, Central Asia, West Asia, Africa, and Europe.",
+        "Chinese silk, Indian spices and cotton, and Central Asian horses were major goods.",
+        "Buddhism, Islam, and Christianity spread along the same trade networks.",
+        "Art, technology, language, and disease also travelled along the routes.",
+        "Chinese Buddhist pilgrims travelled to India and carried back texts and ideas.",
+        "The routes flourished for more than two thousand years before modern transport."
+      ],
+      "day_to_day_usage": [
+        "Understanding how trade routes also spread culture and religion",
+        "Recognising the long history of goods such as silk and spices",
+        "Seeing how ideas travel with merchants and travellers",
+        "Understanding why ports and trade corridors are strategically important",
+        "Learning how exchange can spread both benefits and diseases"
+      ]
+    },
+    {
+      "id": "glb-c2",
+      "title": "The Columbian Exchange and the Conquest of the Americas",
+      "name": "The Columbian Exchange and the Conquest of the Americas",
+      "explanation": "Christopher Columbus reached the Caribbean in 1492, opening regular contact between the Americas and the rest of the world. Spanish and Portuguese conquerors followed, and European colonisation transformed the Americas. Food crops, animals, people, and diseases crossed the Atlantic in both directions. Potatoes, maize, tomatoes, chillies, sweet potatoes, beans, cocoa, and tobacco moved from the Americas to Europe, Africa, and Asia. Wheat, rice, sugarcane, cattle, horses, sheep, goats, and pigs moved to the Americas. Smallpox and other diseases devastated Native American populations. Silver from Mexico and Peru, mined with forced labour, flowed into the global economy, while enslaved Africans were transported to work on plantations.",
+      "purpose": "The Columbian exchange explains how the modern global food system, plantation economy, and Atlantic slave trade were created.",
+      "real_life_application": "The potato, tomato, chilli, and maize in Indian food are all results of the Columbian exchange.",
+      "key_points": [
+        "Columbus reached the Caribbean in 1492, linking the Americas with Europe.",
+        "Spanish and Portuguese conquests brought large parts of the Americas under colonial rule.",
+        "Potatoes, maize, tomatoes, chillies, cocoa, and tobacco spread from the Americas.",
+        "Wheat, rice, sugarcane, cattle, horses, and pigs were carried to the Americas.",
+        "Smallpox and other diseases killed a large share of the Native American population.",
+        "Silver from Mexico and Peru became a major part of global trade.",
+        "Enslaved Africans were transported to the Americas to work on plantations."
+      ],
+      "day_to_day_usage": [
+        "Recognising that chillies and potatoes in Indian food came from the Americas",
+        "Understanding how plantations and slave labour shaped global trade",
+        "Seeing how migration of plants and animals changes diets and farming",
+        "Learning how disease can destroy societies during conquest",
+        "Understanding the long history behind modern global food supply chains"
+      ]
+    },
+    {
+      "id": "glb-c3",
+      "title": "Colonialism, Indian Trade, and the Global Economy",
+      "name": "Colonialism, Indian Trade, and the Global Economy",
+      "explanation": "In the seventeenth and eighteenth centuries Indian cotton textiles were among the most sought-after goods in world trade. Fine muslin from Dhaka and cotton cloth from Surat and other centres reached Europe, Africa, and Asia. British industrialisation in the nineteenth century changed this relationship. Machine-made cloth from Britain, protected by tariffs and supported by railways and steamships, flooded Indian markets. Indian weavers lost their livelihoods, and India increasingly exported raw cotton, indigo, tea, and jute instead of finished cloth. Britain also used India to balance its trade with China by exporting opium from India to China. Colonial accounts charged home charges to Indian revenues. In Africa, the rinderpest cattle plague of the 1890s killed a large share of cattle and weakened societies, while the Berlin Conference of 1884-85 set rules for the European scramble for Africa.",
+      "purpose": "Colonialism reshaped global trade so that colonies supplied raw materials and markets while industrial powers captured most of the value.",
+      "real_life_application": "Debates about unequal trade, raw material exports, and protection of local industry still echo the colonial pattern.",
+      "key_points": [
+        "Indian cotton textiles, including Dhaka muslin, were major exports before the nineteenth century.",
+        "British machine-made cloth, tariffs, railways, and steamships undermined Indian handloom production.",
+        "India increasingly exported raw cotton, indigo, tea, and jute instead of finished goods.",
+        "Britain exported opium from India to China to balance its trade.",
+        "Home charges transferred the costs of colonial administration to Indian revenues.",
+        "The rinderpest cattle plague of the 1890s devastated cattle in parts of Africa.",
+        "The Berlin Conference of 1884-85 laid down rules for the European partition of Africa."
+      ],
+      "day_to_day_usage": [
+        "Understanding why colonial economies exported raw materials rather than manufactures",
+        "Seeing how tariffs can protect or destroy local industries",
+        "Recognising the link between railways and market integration",
+        "Understanding how trade in opium shaped modern Asia",
+        "Learning why unequal exchange is still debated in trade negotiations"
+      ]
+    },
+    {
+      "id": "glb-c4",
+      "title": "Indentured Labour and Global Migration",
+      "name": "Indentured Labour and Global Migration",
+      "explanation": "After Britain abolished slavery in its colonies in 1833, plantation owners needed new workers. They turned to indentured labour, in which workers signed a contract, usually for five years, in exchange for passage and wages. Labourers came mainly from India and China and were sent to the Caribbean, Mauritius, Fiji, Southeast Asia, and Africa. Recruiters often used deception, and the contracts could be enforced with penal sanctions. Living and working conditions were harsh. The labourers were sometimes called coolies, a term now considered derogatory. Many stayed and created mixed cultures, as seen in Hosay in Trinidad and chutney music. India banned further indentured emigration in 1917, and the system ended in the 1920s.",
+      "purpose": "Indentured labour shows how abolition did not end coerced labour and how migration created new multicultural societies.",
+      "real_life_application": "Indian diaspora communities in Mauritius, Fiji, Trinidad, and Guyana trace their origins to indentured migration.",
+      "key_points": [
+        "Slavery was abolished in the British Empire in 1833.",
+        "Plantation owners replaced enslaved workers with indentured labourers.",
+        "Indentured contracts usually lasted five years.",
+        "Labourers came mainly from India and China.",
+        "Destinations included the Caribbean, Mauritius, Fiji, Southeast Asia, and Africa.",
+        "Recruitment often involved deception, and conditions were harsh.",
+        "The term coolie is now considered derogatory.",
+        "India banned further indentured emigration in 1917, and the system ended in the 1920s."
+      ],
+      "day_to_day_usage": [
+        "Understanding the origins of Indian diaspora communities",
+        "Recognising how labour migration shapes food, music, and festivals",
+        "Learning that abolition of slavery did not end forced labour",
+        "Seeing how contracts can hide coercion",
+        "Understanding multicultural societies created by migration"
+      ]
+    },
+    {
+      "id": "glb-c5",
+      "title": "The Great Depression",
+      "name": "The Great Depression",
+      "explanation": "The Great Depression began with the Wall Street crash of October 1929 in the United States and spread across the world. Banks failed, businesses closed, production fell, and unemployment rose sharply. By 1933 about a quarter of the American workforce was unemployed. The depression hit agriculture hard as prices collapsed. In India, exports fell, peasants fell into debt, and gold flowed out of the country. Governments raised tariffs to protect domestic industry, but protectionism reduced world trade further. The depression lasted through the 1930s and contributed to political instability in Europe.",
+      "purpose": "The Great Depression shows how closely national economies are connected and how a financial crisis in one country can become a global slump.",
+      "real_life_application": "The 2008 financial crisis and the COVID-19 recession show similar patterns of job losses and government intervention.",
+      "key_points": [
+        "The Great Depression began with the Wall Street crash of October 1929.",
+        "Banks failed, production fell, and unemployment rose sharply.",
+        "By 1933 about a quarter of the American workforce was unemployed.",
+        "Agricultural prices collapsed, hurting farmers across the world.",
+        "In India, exports fell and peasants fell deeper into debt.",
+        "Governments raised tariffs, which reduced international trade.",
+        "The depression lasted through the 1930s and weakened democratic stability."
+      ],
+      "day_to_day_usage": [
+        "Understanding how bank failures affect jobs and savings",
+        "Seeing how global financial crises reach ordinary households",
+        "Recognising the dangers of protectionism during a slump",
+        "Learning why governments intervene in economies during recessions",
+        "Understanding how economic distress can weaken political stability"
+      ]
+    },
+    {
+      "id": "glb-c6",
+      "title": "Bretton Woods, Decolonisation, and Modern Globalisation",
+      "name": "Bretton Woods, Decolonisation, and Modern Globalisation",
+      "explanation": "In July 1944 representatives of the Allied countries met at Bretton Woods in New Hampshire, USA, to design a stable post-war economy. They created the International Monetary Fund and the International Bank for Reconstruction and Development, known as the World Bank. The system fixed exchange rates, with the US dollar linked to gold, and aimed to prevent the competitive devaluations of the 1930s. The IMF and the World Bank are often called the Bretton Woods twins. After the Second World War, decolonisation created many new states, and the General Agreement on Tariffs and Trade of 1948 promoted trade liberalisation. The Bretton Woods system ended in the early 1970s when the United States stopped linking the dollar to gold. Container shipping, computers, and later the World Trade Organization of 1995 accelerated globalisation.",
+      "purpose": "Bretton Woods created the institutions and rules that shaped the post-war world economy and prepared the ground for modern globalisation.",
+      "real_life_application": "IMF loans during balance-of-payments crises and World Bank development projects still affect countries today.",
+      "key_points": [
+        "The Bretton Woods conference was held in July 1944 in New Hampshire, USA.",
+        "It created the International Monetary Fund and the World Bank.",
+        "The IMF and the World Bank are called the Bretton Woods twins.",
+        "The system used fixed exchange rates, with the dollar linked to gold.",
+        "It was designed to prevent the competitive devaluations of the 1930s.",
+        "GATT was established in 1948 to promote trade liberalisation.",
+        "Decolonisation created many new states after the Second World War.",
+        "The Bretton Woods system ended in the early 1970s.",
+        "The World Trade Organization was established in 1995."
+      ],
+      "day_to_day_usage": [
+        "Understanding why countries borrow from the IMF in a crisis",
+        "Seeing how the World Bank funds development projects",
+        "Recognising the role of trade rules in everyday prices",
+        "Understanding how container shipping made global supply chains possible",
+        "Following debates about globalisation and national sovereignty"
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-glb-1",
+      "title": "Silk routes as networks of exchange",
+      "topic": "Silk Routes, Trade, and Cultural Exchange",
+      "problem": "How did the silk routes link different parts of the world before modern transport?",
+      "solution": [
+        "Step 1: The silk routes were a network of overland and sea routes linking China, India, Central Asia, West Asia, Africa, and Europe.",
+        "Step 2: Chinese silk, Indian spices and cotton, and Central Asian horses moved along these routes.",
+        "Step 3: Merchants, pilgrims, and missionaries travelled with the goods.",
+        "Step 4: Buddhism spread from India to Central Asia and China, and Islam spread through trading communities.",
+        "Step 5: Art, technology, languages, and diseases also travelled along the same routes.",
+        "Step 6: The routes flourished for more than two thousand years and connected distant societies."
+      ],
+      "board_mode": [
+        "Step 1: Define the silk routes as a network, not a single road.",
+        "Step 2: Name the regions linked.",
+        "Step 3: Give two goods moving in trade.",
+        "Step 4: Give two religions or ideas that spread.",
+        "Step 5: Mention travellers such as Chinese Buddhist pilgrims.",
+        "Step 6: Conclude that the routes carried culture as well as goods."
+      ],
+      "answer": "The silk routes connected Asia, Africa, and Europe through trade and also carried religions, ideas, technologies, and diseases.",
+      "board_tip": "Write network, not road. Mention at least one religion and one non-religious idea to show cultural exchange."
+    },
+    {
+      "id": "we-glb-2",
+      "title": "The Columbian exchange",
+      "topic": "The Columbian Exchange and the Conquest of the Americas",
+      "problem": "Explain the Columbian exchange with examples of its effects.",
+      "solution": [
+        "Step 1: Columbus reached the Caribbean in 1492, opening regular contact between the Americas and the rest of the world.",
+        "Step 2: Potatoes, maize, tomatoes, chillies, sweet potatoes, cocoa, and tobacco moved from the Americas to Europe, Africa, and Asia.",
+        "Step 3: Wheat, rice, sugarcane, cattle, horses, sheep, goats, and pigs moved to the Americas.",
+        "Step 4: Smallpox and other diseases devastated Native American populations.",
+        "Step 5: Silver from Mexico and Peru entered global trade, and enslaved Africans were transported to American plantations.",
+        "Step 6: The exchange transformed diets, farming, populations, and the world economy."
+      ],
+      "board_mode": [
+        "Step 1: State the date and the contact: 1492, Columbus reached the Caribbean.",
+        "Step 2: Give three American crops that spread to the rest of the world.",
+        "Step 3: Give three Eurasian crops or animals that reached the Americas.",
+        "Step 4: Explain the effect of disease on Native Americans.",
+        "Step 5: Mention silver and the slave trade.",
+        "Step 6: Conclude that the exchange was biological, economic, and demographic."
+      ],
+      "answer": "The Columbian exchange moved crops, animals, people, and diseases between the Americas and the rest of the world, transforming diets and populations.",
+      "board_tip": "Give examples in both directions. A list of only American crops is incomplete."
+    },
+    {
+      "id": "we-glb-3",
+      "title": "Colonialism and Indian textiles",
+      "topic": "Colonialism, Indian Trade, and the Global Economy",
+      "problem": "How did British colonialism change India's role in the global economy?",
+      "solution": [
+        "Step 1: Before the nineteenth century, Indian cotton textiles, including Dhaka muslin, were major exports.",
+        "Step 2: British industrialisation produced cheap machine-made cloth.",
+        "Step 3: Tariffs and transport improvements helped British cloth enter Indian markets.",
+        "Step 4: Indian handloom weavers lost their livelihoods as demand for their cloth fell.",
+        "Step 5: India increasingly exported raw cotton, indigo, tea, and jute instead of finished goods.",
+        "Step 6: Britain used opium exports from India to China and charged home charges to Indian revenues.",
+        "Step 7: India became a supplier of raw materials and a market for British manufactures."
+      ],
+      "board_mode": [
+        "Step 1: State India's earlier strength in cotton textiles.",
+        "Step 2: Explain the Industrial Revolution and machine-made cloth.",
+        "Step 3: Explain tariffs and transport.",
+        "Step 4: Describe the decline of the handloom weavers.",
+        "Step 5: List the new exports: raw cotton, indigo, tea, jute.",
+        "Step 6: Mention opium and home charges.",
+        "Step 7: Conclude with the colonial division of labour."
+      ],
+      "answer": "British colonialism turned India from a major exporter of cloth into a supplier of raw materials and a market for British manufactured goods.",
+      "board_tip": "Use the phrase deindustrialisation carefully and support it with the decline of handloom weaving."
+    },
+    {
+      "id": "we-glb-4",
+      "title": "Indentured labour",
+      "topic": "Indentured Labour and Global Migration",
+      "problem": "Explain the system of indentured labour and its effects on workers and societies.",
+      "solution": [
+        "Step 1: Britain abolished slavery in its colonies in 1833, creating a labour shortage on plantations.",
+        "Step 2: Plantation owners recruited indentured labourers, mainly from India and China.",
+        "Step 3: Contracts usually lasted five years and promised passage and wages.",
+        "Step 4: Recruiters often used deception, and penal sanctions enforced the contracts.",
+        "Step 5: Workers faced harsh conditions on plantations in the Caribbean, Mauritius, Fiji, and Africa.",
+        "Step 6: Many stayed after their contracts and created multicultural communities.",
+        "Step 7: India banned further indentured emigration in 1917, and the system ended in the 1920s."
+      ],
+      "board_mode": [
+        "Step 1: State the link with the abolition of slavery in 1833.",
+        "Step 2: Define the contract and its usual length.",
+        "Step 3: Name the main source regions and destinations.",
+        "Step 4: Explain deception and penal sanctions.",
+        "Step 5: Describe the harsh conditions.",
+        "Step 6: Mention cultural fusion and the 1917 ban.",
+        "Step 7: Conclude with the mixed legacy."
+      ],
+      "answer": "Indentured labour replaced slavery with five-year contracts, but recruitment was often deceptive and conditions were harsh; it created lasting diaspora communities.",
+      "board_tip": "Do not call indentured labour voluntary migration without qualification. Explain the deception and penalties."
+    },
+    {
+      "id": "we-glb-5",
+      "title": "Bretton Woods and the post-war economy",
+      "topic": "Bretton Woods, Decolonisation, and Modern Globalisation",
+      "problem": "Explain the Bretton Woods system and its significance for the post-war world.",
+      "solution": [
+        "Step 1: The conference was held in July 1944 at Bretton Woods, New Hampshire, USA.",
+        "Step 2: It created the International Monetary Fund and the World Bank.",
+        "Step 3: The system fixed exchange rates, with the US dollar linked to gold.",
+        "Step 4: It aimed to prevent the competitive devaluations and protectionism of the 1930s.",
+        "Step 5: The IMF and World Bank supported reconstruction and development.",
+        "Step 6: GATT, established in 1948, promoted trade liberalisation.",
+        "Step 7: The system ended in the early 1970s, but the IMF and World Bank continued.",
+        "Step 8: Container shipping and the WTO of 1995 accelerated modern globalisation."
+      ],
+      "board_mode": [
+        "Step 1: Write the date and place: July 1944, Bretton Woods, USA.",
+        "Step 2: Name the two institutions created.",
+        "Step 3: Explain fixed exchange rates and the dollar-gold link.",
+        "Step 4: Explain the aim: stability and reconstruction.",
+        "Step 5: Mention GATT in 1948.",
+        "Step 6: Mention the end of the system in the early 1970s.",
+        "Step 7: Mention the WTO in 1995.",
+        "Step 8: Conclude with its role in post-war stability and globalisation."
+      ],
+      "answer": "Bretton Woods created the IMF and World Bank, fixed exchange rates, and a framework for post-war trade that shaped modern globalisation.",
+      "board_tip": "Do not confuse the IMF and the World Bank with the WTO. The WTO came later, in 1995."
+    }
+  ],
+  "exercises": {
+    "simple": {
+      "title": "Simple Practice",
+      "objective": "Recall key terms, dates, institutions, and examples",
+      "problems": [
+        {
+          "id": "glb-s1",
+          "question": "What are the silk routes?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: The silk routes were a network of overland and sea trade routes.",
+            "Step 2: They linked China, India, Central Asia, West Asia, Africa, and Europe.",
+            "Step 3: They carried goods, religions, ideas, and diseases for more than two thousand years."
+          ],
+          "final_answer": "The silk routes were a network of trade routes linking Asia, Africa, and Europe over more than two thousand years.",
+          "marks": 2
+        },
+        {
+          "id": "glb-s2",
+          "question": "Who reached the Caribbean in 1492?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Christopher Columbus sailed westward from Spain.",
+            "Step 2: He reached the Caribbean in 1492."
+          ],
+          "final_answer": "Christopher Columbus.",
+          "marks": 1
+        },
+        {
+          "id": "glb-s3",
+          "question": "Name two crops from the Americas that changed diets in Europe and Asia.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Potatoes, maize, tomatoes, chillies, and sweet potatoes all came from the Americas.",
+            "Step 2: Any two of these are correct."
+          ],
+          "final_answer": "Examples: potato and maize, or tomato and chilli.",
+          "marks": 2
+        },
+        {
+          "id": "glb-s4",
+          "question": "What is indentured labour?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Indentured labour is work under a contract for a fixed period.",
+            "Step 2: Workers usually received passage and wages in exchange for their labour.",
+            "Step 3: In the nineteenth century the contracts often involved coercion and harsh conditions."
+          ],
+          "final_answer": "Indentured labour is contracted labour, usually for five years, under conditions that were often coercive.",
+          "marks": 1
+        },
+        {
+          "id": "glb-s5",
+          "question": "When did the Great Depression begin?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: The Wall Street crash occurred in October 1929.",
+            "Step 2: It triggered a worldwide depression."
+          ],
+          "final_answer": "1929.",
+          "marks": 1
+        },
+        {
+          "id": "glb-s6",
+          "question": "Name the two institutions created at Bretton Woods.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: The Bretton Woods conference took place in 1944.",
+            "Step 2: It created the International Monetary Fund.",
+            "Step 3: It created the International Bank for Reconstruction and Development, the World Bank."
+          ],
+          "final_answer": "The International Monetary Fund and the World Bank.",
+          "marks": 1
+        }
+      ]
+    },
+    "medium": {
+      "title": "Medium Practice",
+      "objective": "Explain processes, causes, and consequences in structured answers",
+      "problems": [
+        {
+          "id": "glb-m1",
+          "question": "Explain how the silk routes promoted cultural exchange.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Merchants, pilgrims, and missionaries travelled along the silk routes.",
+            "Step 2: Buddhism spread from India to Central Asia and China.",
+            "Step 3: Islam spread through trading communities across Asia and Africa.",
+            "Step 4: Christian missionaries also used the trade networks.",
+            "Step 5: Art, technology, languages, and diseases travelled with goods.",
+            "Step 6: Chinese Buddhist pilgrims visited India and carried back texts."
+          ],
+          "final_answer": "The silk routes promoted cultural exchange because trade networks also carried religions, ideas, technologies, and travellers.",
+          "marks": 3
+        },
+        {
+          "id": "glb-m2",
+          "question": "Describe the main effects of the Columbian exchange.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: American crops such as potato, maize, tomato, and chilli spread to Europe, Africa, and Asia.",
+            "Step 2: Eurasian crops and animals such as wheat, rice, sugarcane, cattle, and horses reached the Americas.",
+            "Step 3: Smallpox and other diseases caused a catastrophic decline in Native American populations.",
+            "Step 4: Silver from Mexico and Peru entered global trade.",
+            "Step 5: Enslaved Africans were transported to work on plantations.",
+            "Step 6: Diets, farming, and populations changed across the world."
+          ],
+          "final_answer": "The Columbian exchange transformed world diets and farming, caused demographic collapse through disease, and expanded silver and slave trade.",
+          "marks": 3
+        },
+        {
+          "id": "glb-m3",
+          "question": "Why did Indian cotton textiles decline in the nineteenth century?",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: British factories produced cheap machine-made cloth.",
+            "Step 2: Tariffs and colonial policy favoured British goods in Indian markets.",
+            "Step 3: Railways and steamships improved the reach of imported cloth.",
+            "Step 4: Indian handloom weavers could not compete on price.",
+            "Step 5: Many weavers lost their livelihoods and turned to agriculture or other work.",
+            "Step 6: India increasingly exported raw cotton instead of finished cloth."
+          ],
+          "final_answer": "Indian textiles declined because machine-made British cloth, tariffs, and better transport destroyed the competitiveness of handloom weaving.",
+          "marks": 3
+        },
+        {
+          "id": "glb-m4",
+          "question": "Describe the conditions faced by indentured labourers.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Labourers signed contracts, usually for five years.",
+            "Step 2: Recruiters often used deception about wages and conditions.",
+            "Step 3: Contracts could be enforced with penal sanctions.",
+            "Step 4: Work on plantations was hard and living conditions were poor.",
+            "Step 5: Labourers were far from home and had limited legal protection.",
+            "Step 6: Many died or returned poor, while some stayed and built new communities."
+          ],
+          "final_answer": "Indentured labourers faced deceptive recruitment, penal contracts, harsh plantation work, and poor living conditions.",
+          "marks": 3
+        },
+        {
+          "id": "glb-m5",
+          "question": "How did the Great Depression affect India?",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Indian exports fell as world demand contracted.",
+            "Step 2: Agricultural prices collapsed, reducing peasant incomes.",
+            "Step 3: Peasants fell deeper into debt.",
+            "Step 4: Gold flowed out of India as people used it to pay debts.",
+            "Step 5: The colonial government raised tariffs to protect some industries.",
+            "Step 6: The depression deepened rural distress and political discontent."
+          ],
+          "final_answer": "The depression reduced Indian exports and farm prices, pushed peasants into debt, and drained gold from the country.",
+          "marks": 3
+        },
+        {
+          "id": "glb-m6",
+          "question": "Explain the main features of the Bretton Woods system.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: The conference was held in 1944 in New Hampshire, USA.",
+            "Step 2: It created the IMF and the World Bank.",
+            "Step 3: Exchange rates were fixed, with the US dollar linked to gold.",
+            "Step 4: The system aimed to prevent the competitive devaluations of the 1930s.",
+            "Step 5: It supported post-war reconstruction and development.",
+            "Step 6: It ended in the early 1970s, but the institutions survived."
+          ],
+          "final_answer": "Bretton Woods created the IMF and World Bank, fixed exchange rates, and a framework for post-war economic stability.",
+          "marks": 3
+        }
+      ]
+    },
+    "complex": {
+      "title": "Complex Practice",
+      "objective": "Analyse long-term change, compare phases of globalisation, and evaluate consequences",
+      "problems": [
+        {
+          "id": "glb-c1",
+          "question": "Globalisation is not new. Analyse this statement with reference to the silk routes and the Columbian exchange.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Globalisation means the growing integration of economies and societies through trade, migration, and communication.",
+            "Step 2: The silk routes linked Asia, Africa, and Europe for more than two thousand years.",
+            "Step 3: They carried goods, religions, technologies, and diseases across long distances.",
+            "Step 4: The Columbian exchange after 1492 connected the Americas to the rest of the world.",
+            "Step 5: It moved crops, animals, people, and diseases across the Atlantic.",
+            "Step 6: Colonial trade and indentured migration further integrated distant regions in the nineteenth century.",
+            "Step 7: Therefore, globalisation has a long history, although its speed and scale increased after 1945."
+          ],
+          "final_answer": "Globalisation is not new: the silk routes and the Columbian exchange already integrated distant societies, though modern transport and institutions accelerated the process.",
+          "marks": 5
+        },
+        {
+          "id": "glb-c2",
+          "question": "How did colonialism deindustrialise India? Explain with reference to cotton textiles.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Indian cotton textiles were internationally competitive before the nineteenth century.",
+            "Step 2: British industrialisation produced cheap machine-made cloth.",
+            "Step 3: Tariffs and colonial policy protected British cloth in Indian markets.",
+            "Step 4: Railways and steamships expanded the reach of imported goods.",
+            "Step 5: Indian weavers could not compete and lost their livelihoods.",
+            "Step 6: India shifted to exporting raw cotton, indigo, tea, and jute.",
+            "Step 7: The result was a colonial division of labour that favoured British industry."
+          ],
+          "final_answer": "Colonialism deindustrialised India by using machine production, tariffs, and transport to replace Indian handloom cloth with British manufactures.",
+          "marks": 5
+        },
+        {
+          "id": "glb-c3",
+          "question": "Indentured labour is often described as a new system of slavery. Evaluate this view.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Indentured labour began after slavery was abolished in the British Empire in 1833.",
+            "Step 2: Workers signed contracts, usually for five years.",
+            "Step 3: Recruitment often involved deception about wages and conditions.",
+            "Step 4: Penal sanctions made it difficult to leave before the contract ended.",
+            "Step 5: Living and working conditions on plantations were harsh.",
+            "Step 6: However, indentured labourers had legal contracts and some wages, unlike enslaved people who were property.",
+            "Step 7: The description captures the coercive reality but should not erase the legal and economic differences."
+          ],
+          "final_answer": "Indentured labour was coercive and often resembled slavery in practice, but it was based on contracts and wages rather than legal ownership.",
+          "marks": 5
+        },
+        {
+          "id": "glb-c4",
+          "question": "Explain the causes and worldwide consequences of the Great Depression.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: The Wall Street crash of October 1929 exposed financial speculation and weak banking.",
+            "Step 2: Bank failures reduced credit and investment.",
+            "Step 3: Production and employment fell sharply in the United States and Europe.",
+            "Step 4: Agricultural prices collapsed, hurting farmers in many countries.",
+            "Step 5: Governments raised tariffs, which reduced world trade further.",
+            "Step 6: Colonial economies such as India suffered from falling exports and peasant debt.",
+            "Step 7: The depression weakened democratic governments and contributed to political extremism."
+          ],
+          "final_answer": "The Great Depression began with the 1929 Wall Street crash and spread through bank failures, falling demand, and protectionism, causing global unemployment and political instability.",
+          "marks": 5
+        },
+        {
+          "id": "glb-c5",
+          "question": "Trace the shift from the Bretton Woods system to modern globalisation.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Bretton Woods in 1944 created the IMF and World Bank and fixed exchange rates.",
+            "Step 2: GATT in 1948 promoted trade liberalisation.",
+            "Step 3: Decolonisation created many new states that joined the world economy.",
+            "Step 4: The Bretton Woods system ended in the early 1970s when the dollar-gold link was abandoned.",
+            "Step 5: Container shipping and information technology reduced transport and communication costs.",
+            "Step 6: Multinational companies expanded production across borders.",
+            "Step 7: The WTO was established in 1995 to regulate global trade.",
+            "Step 8: The result was deeper global integration, with both opportunities and inequalities."
+          ],
+          "final_answer": "Post-war institutions, trade liberalisation, decolonisation, technology, and multinational companies produced modern globalisation after the Bretton Woods system ended.",
+          "marks": 5
+        },
+        {
+          "id": "glb-c6",
+          "question": "Evaluate the positive and negative effects of the Columbian exchange.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: The exchange increased food variety and agricultural productivity in many regions.",
+            "Step 2: Potatoes and maize became staple crops in Europe, Africa, and Asia.",
+            "Step 3: New animals transformed farming and transport in the Americas.",
+            "Step 4: However, smallpox and other diseases devastated Native American populations.",
+            "Step 5: The plantation economy depended on the enslavement of Africans.",
+            "Step 6: Silver mining caused forced labour and environmental damage.",
+            "Step 7: The benefits were unevenly distributed, while the costs fell heavily on colonised peoples.",
+            "Step 8: Overall, the exchange was transformative but deeply unequal."
+          ],
+          "final_answer": "The Columbian exchange raised food variety and productivity but also caused demographic collapse, slavery, and colonial exploitation.",
+          "marks": 5
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-glb-s1",
+        "question": "Which goods gave the silk routes their name?",
+        "options": ["Silk", "Silver", "Sugar", "Salt"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Chinese silk was the most famous good carried along the routes.",
+          "wrong_options": {
+            "1": "Silver was important in the Columbian exchange.",
+            "2": "Sugar was a plantation crop.",
+            "3": "Salt was taxed in colonial India."
+          }
+        }
+      },
+      {
+        "id": "q-glb-s2",
+        "question": "In which year did Columbus reach the Caribbean?",
+        "options": ["1453", "1492", "1498", "1519"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Columbus reached the Caribbean in 1492.",
+          "wrong_options": {
+            "0": "1453 was the fall of Constantinople.",
+            "2": "1498 was Vasco da Gama's arrival in India.",
+            "3": "1519 was the beginning of the Spanish conquest of Mexico."
+          }
+        }
+      },
+      {
+        "id": "q-glb-s3",
+        "question": "The potato originally came from which region?",
+        "options": ["The Americas", "India", "West Asia", "Europe"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The potato is native to the Americas and spread through the Columbian exchange.",
+          "wrong_options": {
+            "1": "India received the potato after 1492.",
+            "2": "West Asia was not its origin.",
+            "3": "Europe adopted the potato after the sixteenth century."
+          }
+        }
+      },
+      {
+        "id": "q-glb-s4",
+        "question": "Indentured labour expanded after the abolition of which system?",
+        "options": ["Feudalism", "Slavery", "Mercantilism", "Guilds"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Indentured labour replaced enslaved workers after slavery was abolished.",
+          "wrong_options": {
+            "0": "Feudalism declined much earlier.",
+            "2": "Mercantilism was an economic policy.",
+            "3": "Guilds were craft associations."
+          }
+        }
+      },
+      {
+        "id": "q-glb-s5",
+        "question": "In which year did the Great Depression begin?",
+        "options": ["1919", "1929", "1939", "1945"],
+        "correct": 1,
+        "explanation": {
+          "correct": "The Great Depression began with the Wall Street crash of 1929.",
+          "wrong_options": {
+            "0": "1919 was the year of the Treaty of Versailles.",
+            "2": "1939 was the start of the Second World War.",
+            "3": "1945 was the end of the Second World War."
+          }
+        }
+      },
+      {
+        "id": "q-glb-s6",
+        "question": "In which year was the Bretton Woods conference held?",
+        "options": ["1919", "1929", "1944", "1995"],
+        "correct": 2,
+        "explanation": {
+          "correct": "The Bretton Woods conference was held in July 1944.",
+          "wrong_options": {
+            "0": "1919 was the Paris Peace Conference.",
+            "1": "1929 was the Wall Street crash.",
+            "3": "1995 was the establishment of the WTO."
+          }
+        }
+      },
+      {
+        "id": "q-glb-s7",
+        "question": "Which two institutions are called the Bretton Woods twins?",
+        "options": ["IMF and World Bank", "WTO and UN", "NATO and EU", "GATT and ILO"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The IMF and the World Bank were created at Bretton Woods and are called the twins.",
+          "wrong_options": {
+            "1": "The WTO and UN were not created at Bretton Woods.",
+            "2": "NATO and the EU are not Bretton Woods institutions.",
+            "3": "GATT came later, and the ILO was founded in 1919."
+          }
+        }
+      },
+      {
+        "id": "q-glb-s8",
+        "question": "What was rinderpest?",
+        "options": ["A cattle plague", "A trade treaty", "A type of cloth", "A colonial tax"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Rinderpest was a cattle plague that devastated herds in Africa in the 1890s.",
+          "wrong_options": {
+            "1": "It was a disease, not a treaty.",
+            "2": "It was not a textile.",
+            "3": "It was not a tax."
+          }
+        }
+      },
+      {
+        "id": "q-glb-s9",
+        "question": "Britain exported opium from India mainly to which country?",
+        "options": ["China", "Japan", "Egypt", "Brazil"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Opium from India was exported to China, especially in the nineteenth century.",
+          "wrong_options": {
+            "1": "Japan was not the main destination.",
+            "2": "Egypt was not the main destination.",
+            "3": "Brazil was not the main destination."
+          }
+        }
+      },
+      {
+        "id": "q-glb-s10",
+        "question": "In which year was the World Trade Organization established?",
+        "options": ["1944", "1948", "1971", "1995"],
+        "correct": 3,
+        "explanation": {
+          "correct": "The WTO was established in 1995.",
+          "wrong_options": {
+            "0": "1944 was Bretton Woods.",
+            "1": "1948 was the beginning of GATT.",
+            "2": "1971 marked the end of the dollar-gold link."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-glb-m1",
+        "question": "Besides goods, what else travelled along the silk routes?",
+        "options": ["Only soldiers", "Religions, ideas, and diseases", "Only silver", "Only enslaved people"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Religions, ideas, technologies, and diseases also travelled along the routes.",
+          "wrong_options": {
+            "0": "Trade was not mainly military.",
+            "2": "Silver was important later, especially from the Americas.",
+            "3": "The Atlantic slave trade was a different system."
+          }
+        }
+      },
+      {
+        "id": "q-glb-m2",
+        "question": "What was one major demographic effect of the Columbian exchange?",
+        "options": ["Native American populations rose sharply", "Smallpox killed a large share of Native Americans", "Europe lost most of its population", "Africa gained population rapidly"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Smallpox and other diseases caused a catastrophic decline in Native American populations.",
+          "wrong_options": {
+            "0": "Their populations collapsed rather than rose.",
+            "2": "Europe's population did not collapse in this period.",
+            "3": "The slave trade forcibly moved Africans to the Americas."
+          }
+        }
+      },
+      {
+        "id": "q-glb-m3",
+        "question": "Where was the silver of Potosi located?",
+        "options": ["In modern Bolivia", "In India", "In China", "In Portugal"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Potosi was in the Andes, in modern Bolivia, then part of Spanish Peru.",
+          "wrong_options": {
+            "1": "India was not the source of Potosi silver.",
+            "2": "China imported silver but did not mine Potosi.",
+            "3": "Portugal was a colonial power, not the location."
+          }
+        }
+      },
+      {
+        "id": "q-glb-m4",
+        "question": "Why did Indian handloom weaving decline in the nineteenth century?",
+        "options": ["Indian weavers stopped working", "Machine-made British cloth and tariffs undercut Indian cloth", "Indian cotton was banned", "There was no demand for cloth"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Cheap machine-made cloth and colonial tariffs made Indian handloom cloth uncompetitive.",
+          "wrong_options": {
+            "0": "Weavers lost work because they could not compete.",
+            "2": "Indian cotton was exported, not banned.",
+            "3": "Demand existed, but it shifted to cheaper imports."
+          }
+        }
+      },
+      {
+        "id": "q-glb-m5",
+        "question": "Which regions received large numbers of Indian indentured labourers?",
+        "options": ["Mauritius, Fiji, and Trinidad", "Canada and Norway", "Japan and Korea", "Russia and Poland"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Indian indentured labourers went to Mauritius, Fiji, Trinidad, and other plantation colonies.",
+          "wrong_options": {
+            "1": "These were not major destinations for Indian indentured labour.",
+            "2": "These were not major destinations.",
+            "3": "These were not major destinations."
+          }
+        }
+      },
+      {
+        "id": "q-glb-m6",
+        "question": "What did the term girmitiya refer to?",
+        "options": ["Indentured labourers bound by a contract", "British planters", "Indian merchants", "Colonial officials"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Girmitiya came from agreement and referred to indentured labourers.",
+          "wrong_options": {
+            "1": "Planters were the employers.",
+            "2": "Merchants were not the same as contracted labourers.",
+            "3": "Officials administered the colonies."
+          }
+        }
+      },
+      {
+        "id": "q-glb-m7",
+        "question": "By 1933, roughly what share of the American workforce was unemployed?",
+        "options": ["About 5 per cent", "About 10 per cent", "About 25 per cent", "About 60 per cent"],
+        "correct": 2,
+        "explanation": {
+          "correct": "About a quarter of the American workforce was unemployed by 1933.",
+          "wrong_options": {
+            "0": "The figure was much higher.",
+            "1": "The figure was higher than 10 per cent.",
+            "3": "The figure was not as high as 60 per cent."
+          }
+        }
+      },
+      {
+        "id": "q-glb-m8",
+        "question": "How did the Great Depression affect Indian peasants?",
+        "options": ["Their incomes rose", "They faced falling prices and deeper debt", "They gained new factories", "They stopped growing food"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Falling agricultural prices and exports pushed peasants into deeper debt.",
+          "wrong_options": {
+            "0": "Incomes fell rather than rose.",
+            "2": "Industrial jobs were not expanding for them.",
+            "3": "They continued farming, but at lower prices."
+          }
+        }
+      },
+      {
+        "id": "q-glb-m9",
+        "question": "Under the Bretton Woods system, the US dollar was linked to which metal?",
+        "options": ["Silver", "Gold", "Copper", "Iron"],
+        "correct": 1,
+        "explanation": {
+          "correct": "The dollar was linked to gold, and other currencies were fixed to the dollar.",
+          "wrong_options": {
+            "0": "Silver was important in the early modern period.",
+            "2": "Copper was not the anchor.",
+            "3": "Iron was not the anchor."
+          }
+        }
+      },
+      {
+        "id": "q-glb-m10",
+        "question": "What did decolonisation after the Second World War create?",
+        "options": ["More colonies", "Many new independent states", "The League of Nations", "The slave trade"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Decolonisation created many new independent states in Asia and Africa.",
+          "wrong_options": {
+            "0": "It ended colonial rule rather than expanding it.",
+            "2": "The League of Nations was created in 1920.",
+            "3": "The slave trade had ended in the nineteenth century."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-glb-c1",
+        "question": "Why was Britain's trade surplus with India important to the British Empire?",
+        "options": ["It helped finance Britain's deficits and home charges", "It ended the opium trade", "It reduced British exports", "It made India a creditor to Britain"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Britain used the surplus with India to offset deficits elsewhere and to pay home charges.",
+          "wrong_options": {
+            "1": "Opium was part of the trade system.",
+            "2": "It supported British exports and finance.",
+            "3": "India was a debtor, not a creditor, in this relationship."
+          }
+        }
+      },
+      {
+        "id": "q-glb-c2",
+        "question": "How did rinderpest help European colonial conquest in Africa?",
+        "options": ["It destroyed cattle and weakened African livelihoods, forcing people into labour", "It improved African farming", "It ended the slave trade", "It united African states"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The loss of cattle destroyed livelihoods and made African societies more vulnerable to colonial control.",
+          "wrong_options": {
+            "1": "It damaged farming rather than improving it.",
+            "2": "It was not the cause of the end of the slave trade.",
+            "3": "It weakened rather than united societies."
+          }
+        }
+      },
+      {
+        "id": "q-glb-c3",
+        "question": "Which statement best captures the Columbian exchange?",
+        "options": ["It was only a transfer of food crops", "It was a biological and economic exchange with uneven benefits", "It benefited Native Americans most", "It had no effect on Africa"],
+        "correct": 1,
+        "explanation": {
+          "correct": "The exchange moved crops, animals, people, and diseases, with benefits and costs distributed unequally.",
+          "wrong_options": {
+            "0": "It included animals, people, and diseases.",
+            "2": "Native Americans suffered catastrophic population loss.",
+            "3": "Africa was deeply affected through the slave trade."
+          }
+        }
+      },
+      {
+        "id": "q-glb-c4",
+        "question": "Why is indentured labour described as coercive despite being contractual?",
+        "options": ["Because workers were paid nothing", "Because recruitment involved deception and penal sanctions", "Because contracts lasted one month", "Because only skilled workers were recruited"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Deception in recruitment and penal enforcement made the contracts coercive.",
+          "wrong_options": {
+            "0": "Workers received wages, though low.",
+            "2": "Contracts usually lasted five years.",
+            "3": "Most recruits were unskilled labourers."
+          }
+        }
+      },
+      {
+        "id": "q-glb-c5",
+        "question": "How did protectionism worsen the Great Depression?",
+        "options": ["It increased world trade", "It reduced world trade by raising tariffs", "It ended unemployment", "It stabilized all currencies"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Higher tariffs reduced international trade and deepened the slump.",
+          "wrong_options": {
+            "0": "It reduced trade.",
+            "2": "It did not end unemployment.",
+            "3": "It did not stabilise all currencies."
+          }
+        }
+      },
+      {
+        "id": "q-glb-c6",
+        "question": "When did the Bretton Woods system of fixed exchange rates end?",
+        "options": ["In 1944", "In the early 1970s", "In 1995", "In 2008"],
+        "correct": 1,
+        "explanation": {
+          "correct": "The United States ended the dollar-gold link in 1971, and the system collapsed in the early 1970s.",
+          "wrong_options": {
+            "0": "1944 was the beginning.",
+            "2": "1995 was the WTO's founding.",
+            "3": "2008 was a later financial crisis."
+          }
+        }
+      },
+      {
+        "id": "q-glb-c7",
+        "question": "Which factors accelerated globalisation in the late twentieth century?",
+        "options": ["Container shipping, information technology, and trade liberalisation", "The Berlin Conference", "The invention of the steam engine only", "The end of all trade"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Cheaper transport, information technology, and trade liberalisation deepened global integration.",
+          "wrong_options": {
+            "1": "The Berlin Conference was in 1884-85.",
+            "2": "The steam engine was earlier and only one factor.",
+            "3": "Globalisation increased trade rather than ending it."
+          }
+        }
+      },
+      {
+        "id": "q-glb-c8",
+        "question": "Why did Indian weavers suffer under colonial rule?",
+        "options": ["They refused to work", "Machine-made imports and tariffs destroyed their market", "They had no cotton", "They were banned from weaving"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Cheap imported cloth and colonial tariffs ruined the handloom market.",
+          "wrong_options": {
+            "0": "They wanted work but lost their market.",
+            "2": "India produced cotton.",
+            "3": "Weaving was not formally banned."
+          }
+        }
+      },
+      {
+        "id": "q-glb-c9",
+        "question": "What are the three main flows in the history of globalisation?",
+        "options": ["Trade, labour, and capital", "Only goods", "Only religion", "Only soldiers"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Globalisation is usually analysed through flows of trade, labour, and capital.",
+          "wrong_options": {
+            "1": "Goods are only one flow.",
+            "2": "Religion matters culturally but is not the standard economic triad.",
+            "3": "Military movement is not the main economic definition."
+          }
+        }
+      },
+      {
+        "id": "q-glb-c10",
+        "question": "Which statement about the silk routes is most accurate?",
+        "options": ["They were a single road from China to Rome", "They were a network of overland and sea routes", "They carried only silk", "They stopped after 1492"],
+        "correct": 1,
+        "explanation": {
+          "correct": "The silk routes were a network, not a single road, and they carried many goods and ideas.",
+          "wrong_options": {
+            "0": "There was no single road.",
+            "2": "Many goods besides silk moved along them.",
+            "3": "They continued after 1492."
+          }
+        }
+      }
+    ]
+  },
+  "mind_maps": {
+    "title": "The Making of a Global World - Complete Mind Map",
+    "type": "hierarchical",
+    "root": "The Making of a Global World",
+    "branches": [
+      {
+        "concept": "Pre-modern trade",
+        "sub_nodes": [
+          "Silk routes as a network of land and sea routes",
+          "Chinese silk, Indian spices and cotton, Central Asian horses",
+          "Buddhism, Islam, and Christianity spread",
+          "Chinese Buddhist pilgrims visited India",
+          "Art, technology, and disease travelled too",
+          "More than two thousand years of exchange"
+        ],
+        "connections": "Trade and culture moved together long before modern transport"
+      },
+      {
+        "concept": "Columbian exchange",
+        "sub_nodes": [
+          "Columbus reached the Caribbean in 1492",
+          "Potato, maize, tomato, chilli, cocoa, and tobacco left the Americas",
+          "Wheat, rice, sugarcane, cattle, and horses entered the Americas",
+          "Smallpox devastated Native American populations",
+          "Silver from Mexico and Peru entered global trade",
+          "Enslaved Africans worked on plantations"
+        ],
+        "connections": "Biological exchange reshaped diets, populations, and labour"
+      },
+      {
+        "concept": "Colonial economy and India",
+        "sub_nodes": [
+          "Indian cotton textiles were globally competitive",
+          "British machine-made cloth and tariffs",
+          "Decline of handloom weaving",
+          "Exports of raw cotton, indigo, tea, and jute",
+          "Opium exports to China",
+          "Home charges",
+          "Rinderpest and the scramble for Africa"
+        ],
+        "connections": "Colonies supplied raw materials and markets, not finished goods"
+      },
+      {
+        "concept": "Indentured labour",
+        "sub_nodes": [
+          "Slavery abolished in the British Empire in 1833",
+          "Five-year contracts",
+          "Recruitment from India and China",
+          "Destinations: Caribbean, Mauritius, Fiji, Africa",
+          "Deception and penal sanctions",
+          "Hosay and chutney music",
+          "India banned emigration in 1917"
+        ],
+        "connections": "Coerced migration created lasting diaspora communities"
+      },
+      {
+        "concept": "Great Depression",
+        "sub_nodes": [
+          "Wall Street crash, October 1929",
+          "Bank failures and falling production",
+          "Unemployment reached about a quarter of US workers",
+          "Farm prices collapsed",
+          "Indian exports fell and peasants went into debt",
+          "Protectionism reduced world trade",
+          "Political instability in the 1930s"
+        ],
+        "connections": "A national financial crisis became a global slump"
+      },
+      {
+        "concept": "Bretton Woods and globalisation",
+        "sub_nodes": [
+          "Conference in July 1944",
+          "IMF and World Bank",
+          "Fixed exchange rates and the dollar-gold link",
+          "GATT, 1948",
+          "Decolonisation and new states",
+          "System ended in the early 1970s",
+          "WTO, 1995",
+          "Container shipping and information technology"
+        ],
+        "connections": "Post-war institutions and technology produced modern globalisation"
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "From Silk Routes to Modern Globalisation",
+    "nodes": [
+      { "id": "n1", "label": "Silk Routes", "group": "pre-modern" },
+      { "id": "n2", "label": "Columbian Exchange", "group": "early modern" },
+      { "id": "n3", "label": "Colonialism", "group": "colonial" },
+      { "id": "n4", "label": "Indian Textiles", "group": "colonial" },
+      { "id": "n5", "label": "Indentured Labour", "group": "migration" },
+      { "id": "n6", "label": "Great Depression", "group": "crisis" },
+      { "id": "n7", "label": "Bretton Woods 1944", "group": "institutions" },
+      { "id": "n8", "label": "IMF and World Bank", "group": "institutions" },
+      { "id": "n9", "label": "Decolonisation", "group": "post-war" },
+      { "id": "n10", "label": "Modern Globalisation", "group": "outcome" }
+    ],
+    "edges": [
+      ["n1", "n2"],
+      ["n1", "n3"],
+      ["n2", "n3"],
+      ["n3", "n4"],
+      ["n3", "n5"],
+      ["n5", "n10"],
+      ["n6", "n7"],
+      ["n7", "n8"],
+      ["n7", "n9"],
+      ["n9", "n10"],
+      ["n4", "n10"],
+      ["n6", "n10"]
+    ]
+  },
+  "common_misconceptions": [
+    {
+      "misconception": "Globalisation began in the late twentieth century.",
+      "correction": "Globalisation has a long history: the silk routes, the Columbian exchange, and colonial trade integrated distant societies centuries ago."
+    },
+    {
+      "misconception": "The silk routes carried only silk and other goods.",
+      "correction": "They also carried religions, ideas, technologies, languages, and diseases, and they were a network rather than a single road."
+    },
+    {
+      "misconception": "The Columbian exchange benefited everyone equally.",
+      "correction": "It increased food variety and trade, but it also caused disease, slavery, forced labour, and the destruction of Native American societies."
+    },
+    {
+      "misconception": "Indentured labour was voluntary and fair.",
+      "correction": "Recruitment often involved deception, contracts were enforced with penalties, and conditions were harsh."
+    },
+    {
+      "misconception": "The Great Depression affected only the United States.",
+      "correction": "It spread through trade, finance, and commodity prices to Europe, Asia, Africa, and Latin America."
+    },
+    {
+      "misconception": "Bretton Woods created the World Trade Organization.",
+      "correction": "Bretton Woods created the IMF and the World Bank. GATT came in 1948, and the WTO was established in 1995."
+    },
+    {
+      "misconception": "Britain colonised India mainly to help Indians develop.",
+      "correction": "Colonial policy served British industry, trade, and revenue; Indian handloom weavers and peasants bore heavy costs."
+    },
+    {
+      "misconception": "Globalisation only means foreign goods in local markets.",
+      "correction": "Globalisation also involves flows of capital, labour, technology, information, and culture, and it has political and social effects."
+    }
+  ]
+}

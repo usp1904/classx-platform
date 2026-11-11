@@ -1,0 +1,1183 @@
+{
+  "subject": "Chemistry",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 5,
+  "chapter": "Periodic Classification of Elements",
+  "lesson": 1,
+  "title": "Periodic Classification of Elements — Complete Learning Module",
+  "schemaVersion": "2.0",
+  "id": "periodic-classification-of-elements",
+  "outcomes": [
+    "Describe early attempts at classification by Dobereiner and Newlands",
+    "State Mendeleev's periodic law and explain the strengths and limitations of his table",
+    "State the modern periodic law and explain why atomic number is the correct basis",
+    "Locate an element's period, group, and block from its atomic number",
+    "Explain trends in atomic radius, metallic character, valency, and electronegativity",
+    "Justify the separate position of hydrogen in the modern periodic table",
+    "Explain anomalies such as Ar/K and Co/Ni and how the modern table resolves them",
+    "Predict the formulas of oxides and chlorides from an element's group"
+  ],
+  "prerequisite_nodes": [
+    "SCI_CLASS9_ATOMS_AND_MOLECULES",
+    "SCI_CLASS9_STRUCTURE_OF_ATOM",
+    "SCI_CLASS10_CHEMICAL_REACTIONS",
+    "SCI_CLASS10_METALS_AND_NONMETALS"
+  ],
+  "concepts": [
+    {
+      "id": "periodic-c1",
+      "title": "Early Attempts: Dobereiner's Triads and Newlands' Law of Octaves",
+      "name": "Early Attempts: Dobereiner's Triads and Newlands' Law of Octaves",
+      "explanation": "Dobereiner in 1829 grouped elements with similar properties into triads, in which the atomic mass of the middle element was approximately the average of the other two. Newlands in 1864 arranged the known elements in order of increasing atomic mass and noticed that every eighth element resembled the first, calling this the law of octaves. These attempts showed that elements could be ordered systematically, but they were limited. Dobereiner could identify only a few triads, and Newlands' pattern held only up to calcium. Neither scheme provided a general law that could accommodate all known elements.",
+      "purpose": "Early classification schemes tried to find order among the growing list of elements. Their partial success showed that a periodic relationship existed, while their failures set the problems that Mendeleev and later chemists had to solve.",
+      "key_points": [
+        "Dobereiner's triads group three similar elements; the middle atomic mass is roughly the mean of the other two.",
+        "Newlands' law of octaves states that every eighth element has properties similar to the first.",
+        "Dobereiner's triads applied to only a few groups of elements.",
+        "Newlands' law worked only up to calcium and did not allow for undiscovered elements."
+      ],
+      "real_life_application": "Early classification resembles arranging books by height or colour before a proper catalogue exists: useful patterns appear, but the system cannot cover every case.",
+      "real_life_example": "The triad Li (7), Na (23), and K (39) shows the middle atomic mass close to the average of 7 and 39.",
+      "day_to_day_usage": [
+        "Understanding how scientific classification develops over time",
+        "Recognising patterns in the modern periodic table",
+        "Comparing early and modern models of the atom",
+        "Reading historical accounts of chemistry",
+        "Learning why a law must apply to all known cases"
+      ]
+    },
+    {
+      "id": "periodic-c2",
+      "title": "Mendeleev's Periodic Table and Its Limitations",
+      "name": "Mendeleev's Periodic Table and Its Limitations",
+      "explanation": "Mendeleev arranged the known elements in order of increasing atomic mass and proposed that the properties of elements are a periodic function of their atomic mass. He left gaps for undiscovered elements and predicted their properties; gallium and germanium were later discovered and matched his predictions. However, his table placed argon before potassium even though argon has the higher atomic mass, and cobalt before nickel despite a similar reversal. It also could not explain the position of hydrogen, the existence of isotopes, or the placement of lanthanides and actinides. These limitations pointed to a deeper basis for periodicity.",
+      "purpose": "Mendeleev turned classification into a predictive law by leaving gaps and forecasting unknown elements. His table was powerful, but anomalies in mass order showed that atomic mass could not be the fundamental basis.",
+      "key_points": [
+        "Mendeleev's periodic law: properties of elements are a periodic function of their atomic mass.",
+        "He left gaps for eka-aluminium, eka-silicon, and eka-boron, later identified as gallium, germanium, and scandium.",
+        "The Ar/K and Co/Ni pairs break strict atomic-mass order.",
+        "The table could not explain isotopes, hydrogen's position, or the lanthanides and actinides."
+      ],
+      "real_life_application": "Mendeleev's predictions guided the discovery of new elements and helped industry locate suitable metals for alloys and catalysts.",
+      "real_life_example": "Eka-aluminium was predicted to have a low melting point and a density near 5.9 g/cm3; gallium, discovered later, matched these predictions closely.",
+      "day_to_day_usage": [
+        "Understanding how the periodic table predicts element properties",
+        "Recognising the historical basis of modern chemistry",
+        "Explaining why element order changed after 1913",
+        "Reading about gallium in semiconductors and LEDs",
+        "Comparing periodic laws in textbooks"
+      ]
+    },
+    {
+      "id": "periodic-c3",
+      "title": "Modern Periodic Law, Groups, Periods, and Position of Hydrogen",
+      "name": "Modern Periodic Law, Groups, Periods, and Position of Hydrogen",
+      "explanation": "In 1913 Moseley showed that the appropriate basis for ordering elements is atomic number, not atomic mass. The modern periodic law states that the properties of elements are a periodic function of their atomic number. The modern periodic table has 7 periods and 18 groups, with elements arranged by increasing atomic number. Hydrogen has one valence electron like the alkali metals, but it is a non-metal gas that forms covalent bonds and can gain or lose one electron, so it is placed separately. The table is divided into s-, p-, d-, and f-blocks according to the subshell that receives the last electron.",
+      "purpose": "Using atomic number removes the mass-order anomalies and gives every element a unique position. The group-and-period layout then links electron configuration directly to chemical behaviour.",
+      "key_points": [
+        "Modern periodic law: properties are a periodic function of atomic number.",
+        "The table has 7 periods and 18 groups.",
+        "Elements in the same group have the same number of valence electrons; elements in the same period have the same number of shells.",
+        "Hydrogen is placed separately because it shows both alkali-metal and halogen-like behaviour."
+      ],
+      "real_life_application": "The table lets chemists predict an element's reactivity and likely compounds before experimenting, which saves time in designing medicines, alloys, and catalysts.",
+      "real_life_example": "Because chlorine is in group 17 with seven valence electrons, it typically forms one bond, as in HCl and NaCl.",
+      "day_to_day_usage": [
+        "Reading the periodic table printed in a science textbook",
+        "Predicting the charge on common ions such as Na+ and Cl-",
+        "Understanding why noble gases are unreactive",
+        "Choosing metals for wires and alloys",
+        "Interpreting safety labels on chemical containers"
+      ]
+    },
+    {
+      "id": "periodic-c4",
+      "title": "Periodic Trends: Atomic Radius and Metallic Character",
+      "name": "Periodic Trends: Atomic Radius and Metallic Character",
+      "explanation": "Atomic radius decreases across a period because the nuclear charge increases while electrons are added to the same shell, so the outer electrons are pulled closer. Atomic radius increases down a group because new shells are added and the outer electrons are farther from the nucleus despite a larger nuclear charge. Metallic character decreases across a period and increases down a group, while non-metallic character shows the opposite trend. These trends are reflected in chemical behaviour: sodium is more metallic than chlorine, and potassium is more reactive than sodium. The trends are useful for predicting whether an element will lose, gain, or share electrons.",
+      "purpose": "Atomic radius and metallic character explain why elements in different parts of the table behave so differently. They connect the structure of the atom to observable chemistry such as reactivity with water and acid.",
+      "key_points": [
+        "Atomic radius decreases across a period and increases down a group.",
+        "Metallic character decreases across a period and increases down a group.",
+        "Non-metallic character increases across a period and decreases down a group.",
+        "Larger atoms lose valence electrons more easily, so metallic character increases down a group."
+      ],
+      "real_life_application": "Alkali metals are stored under oil because they are highly reactive metals, while noble gases are used in signs because they are unreactive.",
+      "real_life_example": "Potassium reacts more violently with water than sodium because potassium is larger and loses its single valence electron more easily.",
+      "day_to_day_usage": [
+        "Choosing aluminium for lightweight structures",
+        "Using copper and silver for electrical wiring",
+        "Understanding why sodium is stored in kerosene",
+        "Explaining the inertness of helium in balloons",
+        "Comparing the reactivity of household metals"
+      ]
+    },
+    {
+      "id": "periodic-c5",
+      "title": "Valency and Electronegativity Trends",
+      "name": "Valency and Electronegativity Trends",
+      "explanation": "Valency is the combining capacity of an element, determined by the number of electrons it loses, gains, or shares to complete its octet. Across a period, valency first rises from 1 to 4 and then falls to zero at the noble gas, while down a group the valency remains the same. Electronegativity is the tendency of an atom to attract a shared pair of electrons toward itself. It increases across a period and decreases down a group, so fluorine is the most electronegative element and caesium is among the least. These two properties help predict bond type and chemical reactivity.",
+      "purpose": "Valency predicts formulas, while electronegativity predicts whether a bond will be ionic or covalent and which atom will carry the partial negative charge.",
+      "key_points": [
+        "Valency across period 3: Na 1, Mg 2, Al 3, Si 4, P 3, S 2, Cl 1, Ar 0.",
+        "Valency down a group stays the same because the number of valence electrons stays the same.",
+        "Electronegativity increases across a period and decreases down a group.",
+        "Fluorine is the most electronegative element; noble gases are generally not assigned electronegativity values."
+      ],
+      "real_life_application": "Electronegativity differences explain why NaCl is ionic while HCl is covalent, and why water is a polar solvent.",
+      "real_life_example": "In HCl, chlorine is more electronegative than hydrogen, so the shared pair lies closer to chlorine and the molecule is polar.",
+      "day_to_day_usage": [
+        "Predicting the formula of common salts",
+        "Understanding why water dissolves ionic compounds",
+        "Explaining polarity in soaps and detergents",
+        "Reading bond polarity in organic molecules",
+        "Comparing acid strength in chemistry"
+      ]
+    },
+    {
+      "id": "periodic-c6",
+      "title": "Anomalies, Exceptions, and the Position of Hydrogen",
+      "name": "Anomalies, Exceptions, and the Position of Hydrogen",
+      "explanation": "The modern periodic law removed the anomalies caused by ordering by atomic mass, but the table still needs special arrangements. Hydrogen is placed separately because it resembles both alkali metals and halogens. Helium, with two electrons, is placed in group 18 even though its configuration is 1s2. Lanthanides and actinides are placed separately in the f-block to keep the table compact. Some trends show small irregularities, such as gallium having a smaller atomic radius than aluminium because of the intervening d-block, but the overall periodic pattern remains valid.",
+      "purpose": "Special positions and small exceptions show that the periodic table is a model, not a perfect set of rules. Understanding them prevents overgeneralising trends and prepares students for higher-level chemistry.",
+      "key_points": [
+        "Hydrogen shows similarities to both group 1 metals and group 17 halogens, so it is placed separately.",
+        "Helium is in group 18 because its first shell is full, even though it is an s-block element.",
+        "Lanthanides and actinides are f-block elements placed below the main table.",
+        "Small trend reversals occur, such as Ga having a smaller radius than Al due to d-block contraction."
+      ],
+      "real_life_application": "Rare-earth lanthanides are used in magnets, phosphors, and rechargeable batteries, so their separate placement reflects a distinct chemistry.",
+      "real_life_example": "Gallium, used in LEDs and low-melting alloys, has a smaller atomic radius than aluminium even though it lies below aluminium in group 13.",
+      "day_to_day_usage": [
+        "Understanding why hydrogen is not grouped with a single family",
+        "Reading about rare-earth elements in electronics",
+        "Explaining helium's use in balloons and cooling",
+        "Recognising exceptions in periodic trends",
+        "Studying transition metals used in alloys"
+      ]
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Mendeleev's Periodic Law",
+      "statement": "The properties of elements are a periodic function of their atomic mass.",
+      "proposed_by": {
+        "name": "Dmitri Mendeleev",
+        "era": "1834–1907",
+        "location": "Russia",
+        "book": "Principles of Chemistry (1869)",
+        "known_as": "Father of the periodic table"
+      },
+      "historical_context": "Mendeleev arranged the 63 known elements by atomic mass and noticed repeating patterns of properties. He left gaps for unknown elements and predicted their properties, which helped establish the periodic table as a predictive tool.",
+      "why_proposed": "Chemists needed a systematic way to organise elements and predict the properties of those not yet discovered.",
+      "real_world_utility": "It guided the discovery of gallium, germanium, and scandium, and it underpins modern periodic trends.",
+      "why_students_learn": "It explains the logic behind the periodic table and the meaning of a periodic law.",
+      "examples": [
+        "Eka-aluminium was predicted and later found as gallium.",
+        "Eka-silicon was predicted and later found as germanium."
+      ]
+    },
+    {
+      "name": "Modern Periodic Law",
+      "statement": "The properties of elements are a periodic function of their atomic number.",
+      "proposed_by": {
+        "name": "Henry Moseley",
+        "era": "1887–1915",
+        "location": "United Kingdom",
+        "book": "The High-Frequency Spectra of the Elements (1913)",
+        "known_as": "Discoverer of the atomic-number basis of the periodic table"
+      },
+      "historical_context": "Moseley measured the X-ray spectra of elements and found that the frequency depended on a whole-number property of the nucleus, which we now call atomic number. This resolved anomalies such as Ar/K and Co/Ni that atomic mass could not explain.",
+      "why_proposed": "Atomic mass ordering produced exceptions, so a more fundamental property was needed to define an element's position.",
+      "real_world_utility": "It gives every element a unique position and makes periodic trends predictable from electron configuration.",
+      "why_students_learn": "It explains why the modern table is ordered by atomic number and why anomalies disappear.",
+      "examples": [
+        "Argon (Z = 18) correctly comes before potassium (Z = 19) despite argon's higher atomic mass.",
+        "Cobalt (Z = 27) correctly comes before nickel (Z = 28)."
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-periodic-1",
+      "title": "Using Dobereiner's triad to find the middle atomic mass",
+      "topic": "Using Dobereiner's triad to find the middle atomic mass",
+      "problem": "Lithium (atomic mass 7) and potassium (atomic mass 39) form a Dobereiner triad with sodium. Calculate the expected atomic mass of sodium and state whether the triad supports Dobereiner's law.",
+      "solution": [
+        "Step 1: Dobereiner's law states that in a triad the atomic mass of the middle element is approximately the mean of the other two.",
+        "Step 2: Expected atomic mass of sodium = (7 + 39) ÷ 2.",
+        "Step 3: (7 + 39) = 46, and 46 ÷ 2 = 23.",
+        "Step 4: The actual atomic mass of sodium is about 23, so the prediction is accurate.",
+        "Step 5: The triad supports Dobereiner's law, but only a few such triads exist, which limits the law."
+      ],
+      "board_mode": [
+        "Step 1: Dobereiner's law states that in a triad the atomic mass of the middle element is approximately the mean of the other two.",
+        "Step 2: Expected atomic mass of sodium = (7 + 39) ÷ 2.",
+        "Step 3: (7 + 39) = 46, and 46 ÷ 2 = 23.",
+        "Step 4: The actual atomic mass of sodium is about 23, so the prediction is accurate.",
+        "Step 5: The triad supports Dobereiner's law, but only a few such triads exist, which limits the law."
+      ],
+      "answer": "Expected atomic mass of sodium = 23; the Li-Na-K triad supports Dobereiner's law, though the law applies to very few triads.",
+      "board_tip": "Show the averaging calculation clearly; one mark is usually for the formula and one for the result.",
+      "exam_tip": "Dobereiner's law is approximate and limited, so do not claim it applies to all elements.",
+      "speed_mode": "Middle mass = average of the two outer masses.",
+      "competitive_shortcut": "Known triads: Li-Na-K (7, 23, 39), Ca-Sr-Ba (40, 88, 137), Cl-Br-I (35.5, 80, 127)."
+    },
+    {
+      "id": "we-periodic-2",
+      "title": "Explaining the argon-potassium anomaly",
+      "topic": "Explaining the argon-potassium anomaly",
+      "problem": "Argon has atomic mass 39.9 and potassium has atomic mass 39.1, yet argon is placed before potassium in the modern periodic table. Explain why Mendeleev had to place argon before potassium and how the modern table justifies this order.",
+      "solution": [
+        "Step 1: Strict ordering by atomic mass would place potassium (39.1) before argon (39.9).",
+        "Step 2: But argon is a noble gas with a full outer shell, while potassium is a highly reactive alkali metal; their chemical properties are completely different.",
+        "Step 3: To keep chemically similar elements in the same group, Mendeleev placed argon before potassium, creating an anomaly in the mass order.",
+        "Step 4: The modern table orders elements by atomic number: argon has Z = 18 and potassium has Z = 19.",
+        "Step 5: Therefore argon naturally comes before potassium, and the anomaly disappears.",
+        "Step 6: The same reasoning resolves the cobalt-nickel pair, where Co (Z = 27) precedes Ni (Z = 28)."
+      ],
+      "board_mode": [
+        "Step 1: Strict ordering by atomic mass would place potassium (39.1) before argon (39.9).",
+        "Step 2: But argon is a noble gas with a full outer shell, while potassium is a highly reactive alkali metal; their chemical properties are completely different.",
+        "Step 3: To keep chemically similar elements in the same group, Mendeleev placed argon before potassium, creating an anomaly in the mass order.",
+        "Step 4: The modern table orders elements by atomic number: argon has Z = 18 and potassium has Z = 19.",
+        "Step 5: Therefore argon naturally comes before potassium, and the anomaly disappears.",
+        "Step 6: The same reasoning resolves the cobalt-nickel pair, where Co (Z = 27) precedes Ni (Z = 28)."
+      ],
+      "answer": "Mendeleev reversed the mass order to keep chemical families together; the modern table places Ar (Z = 18) before K (Z = 19) by atomic number, so the anomaly vanishes.",
+      "board_tip": "State both the Mendeleev compromise and the modern atomic-number solution; the comparison earns full marks.",
+      "exam_tip": "Do not say Mendeleev was wrong about argon. He made a deliberate adjustment, but his basis could not explain it.",
+      "speed_mode": "Ar/K anomaly: mass says K first, chemistry says Ar first; atomic number says Ar (18) first.",
+      "competitive_shortcut": "Modern anomalies are resolved by Z, not by mass. Remember Ar 18/K 19 and Co 27/Ni 28."
+    },
+    {
+      "id": "we-periodic-3",
+      "title": "Finding period, group, and valency from atomic number",
+      "topic": "Finding period, group, and valency from atomic number",
+      "problem": "An element has atomic number 17. Write its electronic configuration and determine its period, group, valency, and whether it is a metal or a non-metal.",
+      "solution": [
+        "Step 1: The atomic number 17 means there are 17 electrons.",
+        "Step 2: Fill the shells: 2 in the first, 8 in the second, and 7 in the third, so the configuration is 2, 8, 7.",
+        "Step 3: Three shells means the element is in period 3.",
+        "Step 4: Seven valence electrons place it in group 17, the halogen group.",
+        "Step 5: It needs one electron to complete its octet, so its valency is 1.",
+        "Step 6: With seven valence electrons and a strong tendency to gain one, the element is a non-metal; it is chlorine."
+      ],
+      "board_mode": [
+        "Step 1: The atomic number 17 means there are 17 electrons.",
+        "Step 2: Fill the shells: 2 in the first, 8 in the second, and 7 in the third, so the configuration is 2, 8, 7.",
+        "Step 3: Three shells means the element is in period 3.",
+        "Step 4: Seven valence electrons place it in group 17, the halogen group.",
+        "Step 5: It needs one electron to complete its octet, so its valency is 1.",
+        "Step 6: With seven valence electrons and a strong tendency to gain one, the element is a non-metal; it is chlorine."
+      ],
+      "answer": "Configuration 2, 8, 7; period 3; group 17; valency 1; non-metal (chlorine).",
+      "board_tip": "Write the configuration first. Period equals the number of shells, and group follows from the valence electrons.",
+      "exam_tip": "For groups 13 to 17, group number is not simply the number of valence electrons; group 17 has 7 valence electrons, not 17.",
+      "speed_mode": "Shells = period, valence electrons = group for main-group elements, valency = 8 minus valence electrons for non-metals.",
+      "competitive_shortcut": "Z = 17 gives Cl: period 3, group 17, valency 1, and it forms Cl- by gaining one electron."
+    },
+    {
+      "id": "we-periodic-4",
+      "title": "Comparing atomic radius and metallic character across a period",
+      "topic": "Comparing atomic radius and metallic character across a period",
+      "problem": "Arrange Na, Mg, Al, Si, P, S, and Cl in order of decreasing atomic radius and in order of increasing metallic character. Explain the trends.",
+      "solution": [
+        "Step 1: All seven elements are in period 3, so their outer electrons are in the same shell.",
+        "Step 2: Nuclear charge increases from Na to Cl, so the outer electrons are pulled closer and the atomic radius decreases.",
+        "Step 3: Decreasing atomic radius order: Na > Mg > Al > Si > P > S > Cl.",
+        "Step 4: Metallic character decreases as the tendency to lose electrons decreases across the period.",
+        "Step 5: Increasing metallic character order is the reverse: Cl < S < P < Si < Al < Mg < Na.",
+        "Step 6: Sodium is the most metallic and chlorine is the most non-metallic of the set."
+      ],
+      "board_mode": [
+        "Step 1: All seven elements are in period 3, so their outer electrons are in the same shell.",
+        "Step 2: Nuclear charge increases from Na to Cl, so the outer electrons are pulled closer and the atomic radius decreases.",
+        "Step 3: Decreasing atomic radius order: Na > Mg > Al > Si > P > S > Cl.",
+        "Step 4: Metallic character decreases as the tendency to lose electrons decreases across the period.",
+        "Step 5: Increasing metallic character order is the reverse: Cl < S < P < Si < Al < Mg < Na.",
+        "Step 6: Sodium is the most metallic and chlorine is the most non-metallic of the set."
+      ],
+      "answer": "Decreasing radius: Na > Mg > Al > Si > P > S > Cl. Increasing metallic character: Cl < S < P < Si < Al < Mg < Na.",
+      "board_tip": "Mention that all are in the same period and that nuclear charge increases while the shell number stays the same.",
+      "exam_tip": "Do not reverse the two orders. Radius and metallic character both decrease left to right, so their increasing order is right to left.",
+      "speed_mode": "Left to right in a period: radius down, metallic character down, non-metallic character up.",
+      "competitive_shortcut": "Across a period, effective nuclear charge rises and radius falls; down a group, new shells dominate and radius rises."
+    },
+    {
+      "id": "we-periodic-5",
+      "title": "Testing Dobereiner's law with the halogen triad",
+      "topic": "Testing Dobereiner's law with the halogen triad",
+      "problem": "Chlorine (35.5), bromine (80), and iodine (127) form a triad. Calculate the atomic mass predicted for bromine from chlorine and iodine, compare it with the actual value, and comment on Dobereiner's law.",
+      "solution": [
+        "Step 1: In a Dobereiner triad, the middle atomic mass should be the average of the outer two.",
+        "Step 2: Predicted mass of bromine = (35.5 + 127) ÷ 2.",
+        "Step 3: 35.5 + 127 = 162.5, and 162.5 ÷ 2 = 81.25.",
+        "Step 4: The actual atomic mass of bromine is about 80, which is close to 81.25 but not exact.",
+        "Step 5: The triad supports the general idea of a periodic relationship but shows that Dobereiner's law is only approximate.",
+        "Step 6: Because only a few such triads exist, the law could not organise all elements."
+      ],
+      "board_mode": [
+        "Step 1: In a Dobereiner triad, the middle atomic mass should be the average of the outer two.",
+        "Step 2: Predicted mass of bromine = (35.5 + 127) ÷ 2.",
+        "Step 3: 35.5 + 127 = 162.5, and 162.5 ÷ 2 = 81.25.",
+        "Step 4: The actual atomic mass of bromine is about 80, which is close to 81.25 but not exact.",
+        "Step 5: The triad supports the general idea of a periodic relationship but shows that Dobereiner's law is only approximate.",
+        "Step 6: Because only a few such triads exist, the law could not organise all elements."
+      ],
+      "answer": "Predicted mass of Br = 81.25; actual value is about 80. The close match supports Dobereiner's law approximately, but the law is limited to a few triads.",
+      "board_tip": "Show the substitution and the average, then state both the agreement and the deviation.",
+      "exam_tip": "A close value is not an exact value. Call the law approximate, not exact.",
+      "speed_mode": "Average the outer masses and compare with the middle one.",
+      "competitive_shortcut": "Cl-Br-I also illustrates that all three are halogens, so chemical similarity is strong even when the mass rule is imperfect."
+    }
+  ],
+  "exercises": {
+    "exercise_5_1": {
+      "title": "NCERT Exercise 5.1 — Early Classification and Periodic Laws",
+      "objective": "Build the foundation: Dobereiner, Newlands, Mendeleev, modern law, table dimensions, and hydrogen",
+      "problems": [
+        {
+          "id": "periodic-ex1-1",
+          "book_source": "NCERT Exercise 5.1",
+          "question": "State Dobereiner's law of triads with one example.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Dobereiner arranged elements with similar properties in groups of three called triads.",
+            "Step 2: In a triad, the atomic mass of the middle element is approximately the average of the other two.",
+            "Step 3: Example: lithium (7), sodium (23), and potassium (39); the average of 7 and 39 is 23.",
+            "Step 4: The law worked only for a few triads, so it could not classify all elements."
+          ],
+          "final_answer": "In a triad, the middle atomic mass is about the mean of the other two, as in Li (7), Na (23), K (39)."
+        },
+        {
+          "id": "periodic-ex1-2",
+          "book_source": "NCERT Exercise 5.1",
+          "question": "State Newlands' law of octaves.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Newlands arranged the known elements in order of increasing atomic mass.",
+            "Step 2: He observed that every eighth element had properties similar to the first, like the eighth note of a musical scale.",
+            "Step 3: He called this pattern the law of octaves.",
+            "Step 4: The pattern held only up to calcium and did not apply to heavier elements."
+          ],
+          "final_answer": "Newlands' law of octaves states that every eighth element, when arranged by increasing atomic mass, resembles the first."
+        },
+        {
+          "id": "periodic-ex1-3",
+          "book_source": "NCERT Exercise 5.1",
+          "question": "State Mendeleev's periodic law.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Mendeleev arranged the elements in order of increasing atomic mass.",
+            "Step 2: He found that elements with similar properties appeared at regular intervals.",
+            "Step 3: He stated that the properties of elements are a periodic function of their atomic mass.",
+            "Step 4: His table left gaps for undiscovered elements and predicted their properties."
+          ],
+          "final_answer": "Mendeleev's periodic law: the properties of elements are a periodic function of their atomic mass."
+        },
+        {
+          "id": "periodic-ex1-4",
+          "book_source": "NCERT Exercise 5.1",
+          "question": "State the modern periodic law and name the property on which the modern table is based.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Moseley showed that atomic number, not atomic mass, is the fundamental property of an element.",
+            "Step 2: The modern periodic law states that the properties of elements are a periodic function of their atomic number.",
+            "Step 3: The modern table is therefore arranged by increasing atomic number.",
+            "Step 4: This removes anomalies such as the Ar/K and Co/Ni mass-order reversals."
+          ],
+          "final_answer": "Modern periodic law: properties are a periodic function of atomic number; the table is based on atomic number."
+        },
+        {
+          "id": "periodic-ex1-5",
+          "book_source": "NCERT Exercise 5.1",
+          "question": "How many periods and groups are there in the modern periodic table?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The modern periodic table is arranged in horizontal rows called periods.",
+            "Step 2: There are 7 periods.",
+            "Step 3: The vertical columns are called groups.",
+            "Step 4: There are 18 groups."
+          ],
+          "final_answer": "The modern periodic table has 7 periods and 18 groups."
+        },
+        {
+          "id": "periodic-ex1-6",
+          "book_source": "NCERT Exercise 5.1",
+          "question": "Why is hydrogen placed separately in the modern periodic table?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Hydrogen has one valence electron, like the alkali metals of group 1.",
+            "Step 2: It can lose one electron to form H+, which resembles alkali-metal behaviour.",
+            "Step 3: It can also gain one electron to form H-, which resembles halogen behaviour.",
+            "Step 4: Hydrogen is a non-metal gas and forms covalent bonds, so it does not fit completely in either group.",
+            "Step 5: Therefore it is placed separately above the table rather than inside group 1 or group 17."
+          ],
+          "final_answer": "Hydrogen resembles both alkali metals and halogens, so it is placed separately."
+        }
+      ]
+    },
+    "exercise_5_2": {
+      "title": "NCERT Exercise 5.2 — Limitations, Position, and Trends",
+      "objective": "Apply periodic laws to element positions, atomic radius, metallic character, valency, and electronegativity",
+      "problems": [
+        {
+          "id": "periodic-ex2-1",
+          "book_source": "NCERT Exercise 5.2",
+          "question": "State any three limitations of Mendeleev's periodic table.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Mendeleev could not explain the position of hydrogen, which resembles both alkali metals and halogens.",
+            "Step 2: His table could not accommodate isotopes, because isotopes of an element have different atomic masses but the same chemical properties.",
+            "Step 3: Some pairs, such as Ar/K and Co/Ni, had to be placed out of strict atomic-mass order to keep similar elements together.",
+            "Step 4: Lanthanides and actinides did not fit naturally into the main table and were difficult to place.",
+            "Step 5: The table could not explain the underlying cause of periodicity."
+          ],
+          "final_answer": "Limitations include hydrogen's position, isotopes, mass-order anomalies such as Ar/K, and the placement of lanthanides and actinides."
+        },
+        {
+          "id": "periodic-ex2-2",
+          "book_source": "NCERT Exercise 5.2",
+          "question": "An element has atomic number 12. Write its electronic configuration and determine its period, group, valency, and type (metal or non-metal).",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Atomic number 12 means 12 electrons.",
+            "Step 2: The configuration is 2, 8, 2.",
+            "Step 3: Three shells mean period 3.",
+            "Step 4: Two valence electrons place it in group 2.",
+            "Step 5: It loses two electrons to complete its octet, so its valency is 2.",
+            "Step 6: It is a metal; the element is magnesium."
+          ],
+          "final_answer": "Configuration 2, 8, 2; period 3; group 2; valency 2; metal (magnesium)."
+        },
+        {
+          "id": "periodic-ex2-3",
+          "book_source": "NCERT Exercise 5.2",
+          "question": "Arrange lithium, sodium, and potassium in increasing order of atomic radius and explain the order.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Lithium, sodium, and potassium are in group 1 and lie one below the other.",
+            "Step 2: Moving down a group adds a new electron shell, so the outer electron is farther from the nucleus.",
+            "Step 3: The increasing number of shells outweighs the increase in nuclear charge.",
+            "Step 4: Therefore atomic radius increases in the order Li < Na < K.",
+            "Step 5: Potassium has the largest radius and lithium the smallest."
+          ],
+          "final_answer": "Li < Na < K; radius increases down the group because new shells are added."
+        },
+        {
+          "id": "periodic-ex2-4",
+          "book_source": "NCERT Exercise 5.2",
+          "question": "Describe the trend of metallic character across a period and down a group. Give one example for each trend.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Across a period from left to right, metallic character decreases and non-metallic character increases.",
+            "Step 2: Example: in period 3, sodium is a metal while chlorine is a non-metal.",
+            "Step 3: Down a group, metallic character increases because the atoms become larger and lose valence electrons more easily.",
+            "Step 4: Example: potassium is more metallic and more reactive than sodium.",
+            "Step 5: The opposite trend holds for non-metallic character."
+          ],
+          "final_answer": "Metallic character decreases across a period and increases down a group; Na is more metallic than Cl, and K is more metallic than Na."
+        },
+        {
+          "id": "periodic-ex2-5",
+          "book_source": "NCERT Exercise 5.2",
+          "question": "Define electronegativity. State its trend across a period and down a group, and name the most electronegative element.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Electronegativity is the tendency of an atom to attract a shared pair of electrons toward itself in a bond.",
+            "Step 2: Across a period, electronegativity increases because nuclear charge increases and atomic radius decreases.",
+            "Step 3: Down a group, electronegativity decreases because atomic radius increases and the outer electrons are farther from the nucleus.",
+            "Step 4: Fluorine is the most electronegative element.",
+            "Step 5: Noble gases are generally not assigned electronegativity values because they do not readily form bonds."
+          ],
+          "final_answer": "Electronegativity increases across a period and decreases down a group; fluorine is the most electronegative element."
+        },
+        {
+          "id": "periodic-ex2-6",
+          "book_source": "NCERT Exercise 5.2",
+          "question": "An element has atomic number 13. Identify its group and period, and predict the formulas of its oxide and chloride.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Atomic number 13 gives the configuration 2, 8, 3.",
+            "Step 2: Three shells mean period 3; three valence electrons place it in group 13.",
+            "Step 3: It loses three electrons to form a 3+ ion, so its valency is 3.",
+            "Step 4: The oxide is M2O3, and the chloride is MCl3.",
+            "Step 5: The element is aluminium, so its oxide is Al2O3 and its chloride is AlCl3."
+          ],
+          "final_answer": "Period 3, group 13; valency 3; oxide M2O3 (Al2O3); chloride MCl3 (AlCl3)."
+        }
+      ]
+    },
+    "exercise_5_3": {
+      "title": "NCERT Exercise 5.3 — Anomalies, Comparisons, and Numerical Reasoning",
+      "objective": "Synthesise ideas: compare tables, explain radius trends, handle anomalies, and evaluate Dobereiner's triads",
+      "problems": [
+        {
+          "id": "periodic-ex3-1",
+          "book_source": "NCERT Exercise 5.3",
+          "question": "Compare Mendeleev's periodic table with the modern periodic table on any four points.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Basis: Mendeleev used atomic mass; the modern table uses atomic number.",
+            "Step 2: Anomalies: Mendeleev had to place Ar before K and Co before Ni; the modern table resolves these because Z increases in the correct order.",
+            "Step 3: Isotopes: Mendeleev's table could not place isotopes, while the modern table gives all isotopes of an element the same position because they have the same atomic number.",
+            "Step 4: Gaps: Mendeleev left gaps and predicted unknown elements; the modern table is complete for naturally occurring elements up to oganesson.",
+            "Step 5: Cause of periodicity: Mendeleev could not explain it, while the modern table explains periodicity through valence-shell electron configuration."
+          ],
+          "final_answer": "Mendeleev used atomic mass and had anomalies; the modern table uses atomic number, naturally places isotopes, and explains periodicity through electron configuration."
+        },
+        {
+          "id": "periodic-ex3-2",
+          "book_source": "NCERT Exercise 5.3",
+          "question": "Explain why atomic radius decreases across a period and increases down a group.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Across a period, electrons are added to the same outermost shell.",
+            "Step 2: At the same time, the number of protons in the nucleus increases, so the effective nuclear charge increases.",
+            "Step 3: The stronger pull draws the outer electrons closer, so atomic radius decreases from left to right.",
+            "Step 4: Down a group, a new shell is added at each step, so the outermost electrons are farther from the nucleus.",
+            "Step 5: Although nuclear charge also increases, the extra shells and increased shielding outweigh it, so atomic radius increases down the group.",
+            "Step 6: Small irregularities such as the Ga/Al comparison arise from intervening d-block contraction, but the overall trends hold."
+          ],
+          "final_answer": "Across a period, increasing nuclear charge with the same shell decreases radius; down a group, added shells increase radius."
+        },
+        {
+          "id": "periodic-ex3-3",
+          "book_source": "NCERT Exercise 5.3",
+          "question": "An element X has atomic number 19. Write its electronic configuration and state its period, group, valency, and type. Predict the formulas of its oxide and chloride, and compare its reactivity with sodium.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Atomic number 19 gives the configuration 2, 8, 8, 1.",
+            "Step 2: Four shells mean period 4; one valence electron places it in group 1.",
+            "Step 3: It loses one electron, so its valency is 1.",
+            "Step 4: It is a metal; the element is potassium.",
+            "Step 5: Its oxide is K2O and its chloride is KCl.",
+            "Step 6: Potassium is below sodium in group 1, so it is larger and loses its valence electron more easily; therefore potassium is more reactive than sodium."
+          ],
+          "final_answer": "Configuration 2, 8, 8, 1; period 4, group 1, valency 1, metal (K); oxide K2O, chloride KCl; more reactive than sodium."
+        },
+        {
+          "id": "periodic-ex3-4",
+          "book_source": "NCERT Exercise 5.3",
+          "question": "Explain how the modern periodic table deals with the anomalies of Mendeleev's table: the Ar/K pair, the Co/Ni pair, isotopes, and hydrogen.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Ar/K: atomic masses are Ar 39.9 and K 39.1, but atomic numbers are Ar 18 and K 19, so ordering by Z places Ar before K and preserves chemical families.",
+            "Step 2: Co/Ni: cobalt has Z = 27 and nickel has Z = 28, so Co comes before Ni even though their masses are close and reversed in mass order.",
+            "Step 3: Isotopes: isotopes have the same atomic number but different masses, so they occupy the same position in the modern table.",
+            "Step 4: Hydrogen: it has one valence electron but also behaves like a halogen, so it is placed separately rather than forced into group 1 or group 17.",
+            "Step 5: The modern table therefore replaces a mass-based rule with an atomic-number rule and treats special cases explicitly."
+          ],
+          "final_answer": "Ordering by atomic number resolves Ar/K and Co/Ni, gives isotopes one position, and hydrogen is placed separately."
+        },
+        {
+          "id": "periodic-ex3-5",
+          "book_source": "NCERT Exercise 5.3",
+          "question": "Chlorine (35.5), bromine (80), and iodine (127) form a Dobereiner triad. Calculate the mass predicted for bromine, compare it with the actual value, and evaluate the strength of Dobereiner's law.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Predicted middle mass = average of the outer masses.",
+            "Step 2: Predicted Br mass = (35.5 + 127) ÷ 2 = 162.5 ÷ 2 = 81.25.",
+            "Step 3: The actual atomic mass of bromine is about 80.",
+            "Step 4: The prediction is close but not exact, showing that Dobereiner's law is approximate.",
+            "Step 5: The triad works because all three are halogens with similar chemical properties, but only a few such triads exist.",
+            "Step 6: Therefore Dobereiner's law was a useful first step but could not serve as a general classification."
+          ],
+          "final_answer": "Predicted Br mass = 81.25; actual is about 80. The close match supports the triad idea, but the law is approximate and limited to a few triads."
+        },
+        {
+          "id": "periodic-ex3-6",
+          "book_source": "NCERT Exercise 5.3",
+          "question": "Explain why metallic character increases down a group and decreases across a period. Arrange Li, Na, K, and Rb in increasing order of metallic character, and state which reacts most vigorously with water.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Metallic character depends on how easily an atom loses its valence electrons.",
+            "Step 2: Down a group, atomic radius increases and the valence electron is farther from the nucleus, so it is lost more easily; metallic character increases.",
+            "Step 3: Across a period, nuclear charge increases and atomic radius decreases, so electrons are held more tightly; metallic character decreases.",
+            "Step 4: Li, Na, K, and Rb are all group 1 metals, so metallic character increases down the group.",
+            "Step 5: Increasing metallic character order: Li < Na < K < Rb.",
+            "Step 6: Rubidium is the largest and most metallic, so it reacts most vigorously with water."
+          ],
+          "final_answer": "Metallic character decreases across a period and increases down a group; Li < Na < K < Rb, and Rb reacts most vigorously with water."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-periodic-s-1",
+        "question": "Dobereiner arranged elements with similar properties into:",
+        "options": ["Periods", "Triads", "Octaves", "Blocks"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Dobereiner grouped similar elements in threes, called triads.",
+          "wrong_options": {
+            "0": "Periods are horizontal rows of the modern table, not Dobereiner's groups.",
+            "2": "Octaves are associated with Newlands, not Dobereiner.",
+            "3": "Blocks refer to s-, p-, d-, and f-blocks in the modern table."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-s-2",
+        "question": "Newlands' law of octaves states that every eighth element has properties similar to the:",
+        "options": ["First", "Second", "Third", "Fourth"],
+        "correct": 0,
+        "explanation": {
+          "correct": "When elements are arranged by increasing atomic mass, the eighth element resembles the first, like the octave in music.",
+          "wrong_options": {
+            "1": "The second element is not the reference point in the octave pattern.",
+            "2": "The third element is not the reference point in the octave pattern.",
+            "3": "The fourth element is not the reference point in the octave pattern."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-s-3",
+        "question": "Mendeleev arranged the elements in order of increasing:",
+        "options": ["Atomic number", "Atomic mass", "Valency", "Electronegativity"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Mendeleev's table was based on increasing atomic mass.",
+          "wrong_options": {
+            "0": "Atomic number became the basis only in the modern table after Moseley.",
+            "2": "Valency was a property used to compare elements, not the ordering principle.",
+            "3": "Electronegativity was developed later and was not Mendeleev's basis."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-s-4",
+        "question": "The modern periodic table is based on:",
+        "options": ["Atomic mass", "Atomic number", "Density", "Valency"],
+        "correct": 1,
+        "explanation": {
+          "correct": "The modern periodic law orders elements by increasing atomic number.",
+          "wrong_options": {
+            "0": "Atomic mass was Mendeleev's basis and caused anomalies.",
+            "2": "Density is not the ordering principle of the periodic table.",
+            "3": "Valency is a periodic property, not the basis of the table."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-s-5",
+        "question": "How many groups are there in the modern periodic table?",
+        "options": ["7", "8", "16", "18"],
+        "correct": 3,
+        "explanation": {
+          "correct": "The modern periodic table has 18 vertical columns called groups.",
+          "wrong_options": {
+            "0": "Seven is the number of periods, not groups.",
+            "1": "Eight was the number of groups in some older short-form tables.",
+            "2": "Sixteen is not the number of groups in the modern long-form table."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-s-6",
+        "question": "How many periods are there in the modern periodic table?",
+        "options": ["7", "8", "18", "9"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The modern periodic table has 7 horizontal rows called periods.",
+          "wrong_options": {
+            "1": "Eight is the number of groups in older short-form tables, not periods.",
+            "2": "Eighteen is the number of groups, not periods.",
+            "3": "Nine is not the number of periods."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-s-7",
+        "question": "Which element is the most electronegative?",
+        "options": ["Fluorine", "Chlorine", "Oxygen", "Sodium"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Fluorine has the greatest tendency to attract a shared pair of electrons.",
+          "wrong_options": {
+            "1": "Chlorine is electronegative but less so than fluorine.",
+            "2": "Oxygen is highly electronegative but less than fluorine.",
+            "3": "Sodium is a metal with low electronegativity and tends to lose electrons."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-s-8",
+        "question": "Atomic radius generally ______ across a period from left to right.",
+        "options": ["Increases", "Decreases", "Remains constant", "Doubles"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Nuclear charge increases while electrons stay in the same shell, so the radius decreases.",
+          "wrong_options": {
+            "0": "Radius increases down a group, not across a period.",
+            "2": "The radius changes systematically; it is not constant.",
+            "3": "There is no doubling rule for atomic radius across a period."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-s-9",
+        "question": "Metallic character generally ______ down a group.",
+        "options": ["Increases", "Decreases", "Remains constant", "Becomes zero"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Atoms become larger down a group and lose valence electrons more easily, so metallic character increases.",
+          "wrong_options": {
+            "1": "Metallic character decreases across a period, not down a group.",
+            "2": "It changes systematically and is not constant.",
+            "3": "Metallic character does not become zero in a group of metals."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-s-10",
+        "question": "Hydrogen is placed in the modern periodic table:",
+        "options": ["With alkali metals only", "With halogens only", "Separately", "With noble gases"],
+        "correct": 2,
+        "explanation": {
+          "correct": "Hydrogen resembles both alkali metals and halogens, so it is placed separately.",
+          "wrong_options": {
+            "0": "Hydrogen resembles alkali metals in losing one electron but also resembles halogens.",
+            "1": "Hydrogen resembles halogens in gaining one electron but also resembles alkali metals.",
+            "3": "Hydrogen is not a noble gas and does not have a full outer shell."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-periodic-m-1",
+        "question": "In the triad Li (7), Na (?), K (39), the expected atomic mass of sodium is:",
+        "options": ["23", "32", "46", "39"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The middle mass is the average of 7 and 39, which is 23.",
+          "wrong_options": {
+            "1": "32 is not the average of 7 and 39.",
+            "2": "46 is the sum, not the average.",
+            "3": "39 is the mass of potassium, not sodium."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-m-2",
+        "question": "Newlands' law of octaves failed because:",
+        "options": ["It worked only up to calcium", "It assumed only 56 elements existed", "It left no gaps for undiscovered elements", "All of these"],
+        "correct": 3,
+        "explanation": {
+          "correct": "The law was limited to calcium, assumed a fixed number of elements, and provided no gaps for new discoveries.",
+          "wrong_options": {
+            "0": "This is one reason, but not the only one.",
+            "1": "This is one reason, but not the only one.",
+            "2": "This is one reason, but not the only one."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-m-3",
+        "question": "Mendeleev left gaps in his periodic table for:",
+        "options": ["Noble gases", "Undiscovered elements", "Isotopes", "Ions"],
+        "correct": 1,
+        "explanation": {
+          "correct": "The gaps allowed Mendeleev to predict the properties of elements not yet discovered.",
+          "wrong_options": {
+            "0": "Noble gases were discovered later and were not the main gaps he predicted.",
+            "2": "Isotopes were not understood in Mendeleev's time.",
+            "3": "Ions are charged particles, not table positions."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-m-4",
+        "question": "Mendeleev placed argon (atomic mass 39.9) before potassium (atomic mass 39.1) mainly because:",
+        "options": ["Argon has the lower mass", "Their chemical properties required that order", "Alphabetical order", "Argon has higher density"],
+        "correct": 1,
+        "explanation": {
+          "correct": "He kept chemically similar elements together, so the noble gas argon was placed before the alkali metal potassium.",
+          "wrong_options": {
+            "0": "Argon has the higher mass, so mass alone would put potassium first.",
+            "2": "The table was not arranged alphabetically.",
+            "3": "Density was not the deciding factor."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-m-5",
+        "question": "The modern periodic table resolves the Ar/K anomaly because it orders elements by:",
+        "options": ["Atomic mass", "Atomic number", "Valency", "Density"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Argon has Z = 18 and potassium has Z = 19, so atomic number places argon first.",
+          "wrong_options": {
+            "0": "Atomic mass would place potassium before argon.",
+            "2": "Valency is a property, not the ordering principle.",
+            "3": "Density is not the ordering principle."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-m-6",
+        "question": "An element with atomic number 17 is in:",
+        "options": ["Period 2, group 17", "Period 3, group 17", "Period 3, group 7", "Period 4, group 17"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Chlorine has the configuration 2, 8, 7, so it is in period 3 and group 17.",
+          "wrong_options": {
+            "0": "Two shells would mean period 2, but chlorine has three shells.",
+            "2": "Group 7 is the older numbering; the modern group is 17.",
+            "3": "Four shells would mean period 4, but chlorine has only three."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-m-7",
+        "question": "The valency of magnesium (atomic number 12) is:",
+        "options": ["1", "2", "3", "4"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Magnesium has the configuration 2, 8, 2 and loses two electrons, so its valency is 2.",
+          "wrong_options": {
+            "0": "One valence electron is characteristic of group 1, not magnesium.",
+            "2": "Three valence electrons are characteristic of group 13, not magnesium.",
+            "3": "Four valence electrons are characteristic of group 14, not magnesium."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-m-8",
+        "question": "Which of these has the largest atomic radius?",
+        "options": ["Li", "Na", "K", "Rb"],
+        "correct": 3,
+        "explanation": {
+          "correct": "Radius increases down group 1, so rubidium has the largest radius among these.",
+          "wrong_options": {
+            "0": "Lithium is at the top of the group and has the smallest radius.",
+            "1": "Sodium is below lithium but above potassium and rubidium.",
+            "2": "Potassium is large, but rubidium is below it and still larger."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-m-9",
+        "question": "Which property decreases across a period from left to right?",
+        "options": ["Atomic radius", "Electronegativity", "Non-metallic character", "Nuclear charge"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Atomic radius decreases as nuclear charge increases with electrons in the same shell.",
+          "wrong_options": {
+            "1": "Electronegativity increases across a period.",
+            "2": "Non-metallic character increases across a period.",
+            "3": "Nuclear charge increases across a period."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-m-10",
+        "question": "Elements of group 18 are called:",
+        "options": ["Alkali metals", "Halogens", "Noble gases", "Transition metals"],
+        "correct": 2,
+        "explanation": {
+          "correct": "Group 18 contains the noble gases, which have full outer shells and are largely unreactive.",
+          "wrong_options": {
+            "0": "Alkali metals are in group 1.",
+            "1": "Halogens are in group 17.",
+            "3": "Transition metals occupy groups 3 to 12."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-periodic-x-1",
+        "question": "An element with atomic number 13 is in which period, group, and valency, and what are the formulas of its oxide and chloride?",
+        "options": ["Period 3, group 13, valency 3; oxide M2O3, chloride MCl3", "Period 3, group 3, valency 3; oxide M2O3, chloride MCl3", "Period 2, group 13, valency 2; oxide MO, chloride MCl2", "Period 3, group 17, valency 1; oxide M2O, chloride MCl"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Aluminium has configuration 2, 8, 3, so period 3, group 13, valency 3; Al2O3 and AlCl3.",
+          "wrong_options": {
+            "1": "Group 3 is the older numbering; the modern group is 13.",
+            "2": "Two shells and valency 2 do not match configuration 2, 8, 3.",
+            "3": "Group 17 and valency 1 describe a halogen, not aluminium."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-x-2",
+        "question": "An element has the electronic configuration 2, 8, 8, 1. Its period, group, and type are:",
+        "options": ["Period 4, group 1, metal", "Period 3, group 1, metal", "Period 4, group 17, non-metal", "Period 4, group 2, metal"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Four shells mean period 4; one valence electron means group 1; the element is potassium, a metal.",
+          "wrong_options": {
+            "1": "Three shells would give configuration 2, 8, 1, not 2, 8, 8, 1.",
+            "2": "Seven valence electrons would place it in group 17, but it has one.",
+            "3": "Two valence electrons would place it in group 2, but it has one."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-x-3",
+        "question": "Which pair is a well-known anomaly in Mendeleev's atomic-mass ordering?",
+        "options": ["Ar and K", "Li and Na", "F and Cl", "Mg and Ca"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Argon (39.9) has a higher atomic mass than potassium (39.1) but was placed before it to keep chemical families together.",
+          "wrong_options": {
+            "1": "Li and Na are in the correct mass order.",
+            "2": "F and Cl are in the correct mass order.",
+            "3": "Mg and Ca are in the correct mass order."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-x-4",
+        "question": "Atomic radius decreases across a period mainly because:",
+        "options": ["Nuclear charge increases while electrons enter the same shell", "Nuclear charge decreases", "New shells are added", "Shielding increases sharply"],
+        "correct": 0,
+        "explanation": {
+          "correct": "More protons pull the same-shell electrons closer, so the radius decreases.",
+          "wrong_options": {
+            "1": "Nuclear charge increases, not decreases, across a period.",
+            "2": "New shells are added down a group, not across a period.",
+            "3": "Shielding does not increase sharply across a period; the dominant change is the higher nuclear charge."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-x-5",
+        "question": "Atomic radius increases down a group mainly because:",
+        "options": ["New electron shells are added", "Nuclear charge decreases", "Electrons are lost", "Valency decreases"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Each step down adds a shell, so the outermost electrons are farther from the nucleus.",
+          "wrong_options": {
+            "1": "Nuclear charge increases down a group, not decreases.",
+            "2": "Neutral atoms do not lose electrons simply by moving down a group.",
+            "3": "Valency is not the cause of the radius increase."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-x-6",
+        "question": "Which of Li, Na, K, and Rb is the most metallic?",
+        "options": ["Li", "Na", "K", "Rb"],
+        "correct": 3,
+        "explanation": {
+          "correct": "Metallic character increases down group 1, so rubidium is the most metallic of these.",
+          "wrong_options": {
+            "0": "Lithium is at the top and is the least metallic of the four.",
+            "1": "Sodium is below lithium but above potassium and rubidium.",
+            "2": "Potassium is highly metallic, but rubidium is below it and more metallic."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-x-7",
+        "question": "For the triad Cl (35.5), Br (?), I (127), Dobereiner's law predicts the atomic mass of bromine as:",
+        "options": ["80", "81.25", "90", "79"],
+        "correct": 1,
+        "explanation": {
+          "correct": "The predicted value is (35.5 + 127) ÷ 2 = 81.25.",
+          "wrong_options": {
+            "0": "80 is the actual atomic mass of bromine, not the Dobereiner prediction.",
+            "2": "90 is not the average of 35.5 and 127.",
+            "3": "79 is not the average of the outer masses."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-x-8",
+        "question": "Which statement about hydrogen is correct?",
+        "options": ["It resembles alkali metals by losing one electron and halogens by gaining one electron", "It is a noble gas", "It has two valence electrons", "It is a metal"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Hydrogen can form H+ like alkali metals and H- like halogens, so it is placed separately.",
+          "wrong_options": {
+            "1": "Hydrogen does not have a full outer shell and is not a noble gas.",
+            "2": "Hydrogen has one valence electron, not two; helium has two.",
+            "3": "Hydrogen is a non-metal."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-x-9",
+        "question": "The correct trend of electronegativity is:",
+        "options": ["Increases across a period and decreases down a group", "Decreases across a period and increases down a group", "Increases in both directions", "Decreases in both directions"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Electronegativity rises as radius falls across a period and falls as radius rises down a group.",
+          "wrong_options": {
+            "1": "This is the reverse of the correct trend.",
+            "2": "It does not increase in both directions; it decreases down a group.",
+            "3": "It does not decrease in both directions; it increases across a period."
+          }
+        }
+      },
+      {
+        "id": "q-periodic-x-10",
+        "question": "The modern periodic law states that the properties of elements are a periodic function of their:",
+        "options": ["Atomic mass", "Atomic number", "Valency", "Neutron number"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Moseley's work established atomic number as the basis of the modern periodic law.",
+          "wrong_options": {
+            "0": "Atomic mass was Mendeleev's basis and produced anomalies.",
+            "2": "Valency is a periodic property, not the fundamental basis.",
+            "3": "Neutron number varies among isotopes and is not the basis of the table."
+          }
+        }
+      }
+    ]
+  },
+  "mind_maps": {
+    "title": "Periodic Classification of Elements — Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Periodic Classification of Elements",
+    "branches": [
+      {
+        "concept": "Early Attempts",
+        "sub_nodes": [
+          "Dobereiner's triads: middle mass is the average",
+          "Newlands' law of octaves: every eighth element is similar",
+          "Dobereiner worked for only a few triads",
+          "Newlands worked only up to calcium"
+        ],
+        "connections": "Early patterns showed periodicity but could not cover all elements"
+      },
+      {
+        "concept": "Mendeleev's Table",
+        "sub_nodes": [
+          "Ordered by increasing atomic mass",
+          "Periodic law based on atomic mass",
+          "Gaps predicted Ga, Ge, and Sc",
+          "Ar/K and Co/Ni anomalies",
+          "Could not explain isotopes or hydrogen"
+        ]
+      },
+      {
+        "concept": "Modern Periodic Law",
+        "sub_nodes": [
+          "Moseley: atomic number is the basis",
+          "Properties are a periodic function of Z",
+          "Removes mass-order anomalies",
+          "Explains periodicity through valence electrons"
+        ]
+      },
+      {
+        "concept": "Structure of the Modern Table",
+        "sub_nodes": [
+          "7 periods and 18 groups",
+          "s-, p-, d-, and f-blocks",
+          "Group number relates to valence electrons",
+          "Period number equals the number of shells"
+        ]
+      },
+      {
+        "concept": "Periodic Trends",
+        "sub_nodes": [
+          "Atomic radius decreases across, increases down",
+          "Metallic character decreases across, increases down",
+          "Valency rises to 4 then falls across a period",
+          "Electronegativity increases across, decreases down"
+        ]
+      },
+      {
+        "concept": "Special Positions and Anomalies",
+        "sub_nodes": [
+          "Hydrogen placed separately",
+          "Helium in group 18 despite 1s2",
+          "Lanthanides and actinides in the f-block",
+          "Ga smaller than Al due to d-block contraction"
+        ]
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "How Periodic Classification Connects — Concept Map",
+    "nodes": [
+      { "id": "n1", "label": "Periodic Classification", "group": "foundation" },
+      { "id": "n2", "label": "Early Attempts", "group": "history" },
+      { "id": "n3", "label": "Dobereiner's Triads", "group": "history" },
+      { "id": "n4", "label": "Newlands' Octaves", "group": "history" },
+      { "id": "n5", "label": "Mendeleev's Table", "group": "model" },
+      { "id": "n6", "label": "Modern Periodic Law", "group": "model" },
+      { "id": "n7", "label": "Groups and Periods", "group": "structure" },
+      { "id": "n8", "label": "Periodic Trends", "group": "trends" },
+      { "id": "n9", "label": "Anomalies and Exceptions", "group": "limits" }
+    ],
+    "edges": [
+      ["n1", "n2"],
+      ["n2", "n3"],
+      ["n2", "n4"],
+      ["n1", "n5"],
+      ["n4", "n5"],
+      ["n5", "n6"],
+      ["n1", "n6"],
+      ["n6", "n7"],
+      ["n7", "n8"],
+      ["n8", "n9"],
+      ["n5", "n9"]
+    ]
+  },
+  "common_misconceptions": [
+    "Mendeleev arranged elements by atomic number — FALSE: he arranged them by increasing atomic mass.",
+    "The modern periodic table is arranged by atomic mass — FALSE: it is arranged by increasing atomic number.",
+    "Atomic radius increases across a period — FALSE: it generally decreases because nuclear charge increases while the shell number stays the same.",
+    "Metallic character increases across a period — FALSE: it decreases from left to right and increases down a group.",
+    "Hydrogen is a typical alkali metal — FALSE: it resembles both alkali metals and halogens and is placed separately.",
+    "Noble gases are highly electronegative — FALSE: they have full outer shells and generally do not attract shared electrons to form bonds.",
+    "Dobereiner's triads classified all known elements — FALSE: they worked for only a few groups of three similar elements.",
+    "Newlands' law of octaves applied to all elements — FALSE: it held only up to calcium and failed for heavier elements."
+  ],
+  "meta": {
+    "sources": [
+      {
+        "type": "NCERT Textbook",
+        "title": "NCERT Class X Science — Chapter 5: Periodic Classification of Elements",
+        "publisher": "NCERT",
+        "class": "X",
+        "subject": "Science",
+        "edition": "2026-27"
+      },
+      {
+        "type": "CBSE Syllabus",
+        "title": "CBSE Class X Science Syllabus 2026-27 — Chemical Substances: Nature and Behaviour",
+        "publisher": "CBSE",
+        "class": "X",
+        "subject": "Science",
+        "unit": "Chemical Substances - Nature and Behaviour"
+      }
+    ],
+    "curriculum_tags": [
+      "science",
+      "Chemistry",
+      "periodic_classification_of_elements",
+      "periodic_law",
+      "periodic_trends",
+      "atomic_radius",
+      "electronegativity"
+    ],
+    "notes": "Aligned to the CBSE Class X Science syllabus and NCERT Chapter 5. Atomic numbers and masses follow standard IUPAC values; trends are stated with their common exceptions."
+  }
+}

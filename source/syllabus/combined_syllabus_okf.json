@@ -1,0 +1,4528 @@
+{
+  "metadata": {
+    "board": "CBSE",
+    "class": "X",
+    "academic_year": "2026-27",
+    "subjects": [
+      "mathematics",
+      "science",
+      "social_science",
+      "english"
+    ],
+    "total_knowledge_units": 19,
+    "total_topics": 76
+  },
+  "okf": {
+    "mathematics": {
+      "metadata": {
+        "subject": "mathematics",
+        "class": "X",
+        "board": "CBSE",
+        "academic_year": "2026-27",
+        "source": "CBSE Official Syllabus PDF",
+        "version": "1.0",
+        "format": "OKF-v1"
+      },
+      "course_structure": {
+        "subject": "Mathematics",
+        "class": "X",
+        "academic_year": "2026-27",
+        "code": "041",
+        "max_marks": 80,
+        "internal_assessment": 20,
+        "total_periods": 180
+      },
+      "knowledge_units": [
+        {
+          "id": "mathematics_1",
+          "name": "Number Systems",
+          "section": "",
+          "marks": 6,
+          "periods": 15,
+          "topics": [
+            {
+              "id": "mathematics_1_topic_1",
+              "name": "Real Numbers",
+              "parent_unit": "mathematics_1",
+              "difficulty": "medium",
+              "estimated_periods": 3,
+              "tags": [
+                "mathematics",
+                "",
+                "real_numbers"
+              ]
+            },
+            {
+              "id": "mathematics_1_topic_2",
+              "name": "Euclid's Division Lemma",
+              "parent_unit": "mathematics_1",
+              "difficulty": "medium",
+              "estimated_periods": 3,
+              "tags": [
+                "mathematics",
+                "",
+                "euclid's_division_lemma"
+              ]
+            },
+            {
+              "id": "mathematics_1_topic_3",
+              "name": "Fundamental Theorem of Arithmetic",
+              "parent_unit": "mathematics_1",
+              "difficulty": "medium",
+              "estimated_periods": 3,
+              "tags": [
+                "mathematics",
+                "",
+                "fundamental_theorem_of_arithme"
+              ]
+            },
+            {
+              "id": "mathematics_1_topic_4",
+              "name": "Revisiting Irrational Numbers",
+              "parent_unit": "mathematics_1",
+              "difficulty": "medium",
+              "estimated_periods": 3,
+              "tags": [
+                "mathematics",
+                "",
+                "revisiting_irrational_numbers"
+              ]
+            },
+            {
+              "id": "mathematics_1_topic_5",
+              "name": "Revisiting Rational Numbers and Decimal Expansions",
+              "parent_unit": "mathematics_1",
+              "difficulty": "medium",
+              "estimated_periods": 3,
+              "tags": [
+                "mathematics",
+                "",
+                "revisiting_rational_numbers_an"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        },
+        {
+          "id": "mathematics_2",
+          "name": "Algebra",
+          "section": "",
+          "marks": 20,
+          "periods": 45,
+          "topics": [
+            {
+              "id": "mathematics_2_topic_1",
+              "name": "Polynomials",
+              "parent_unit": "mathematics_2",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "mathematics",
+                "",
+                "polynomials"
+              ]
+            },
+            {
+              "id": "mathematics_2_topic_2",
+              "name": "Pair of Linear Equations in Two Variables",
+              "parent_unit": "mathematics_2",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "mathematics",
+                "",
+                "pair_of_linear_equations_in_tw"
+              ]
+            },
+            {
+              "id": "mathematics_2_topic_3",
+              "name": "Quadratic Equations",
+              "parent_unit": "mathematics_2",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "mathematics",
+                "",
+                "quadratic_equations"
+              ]
+            },
+            {
+              "id": "mathematics_2_topic_4",
+              "name": "Arithmetic Progressions",
+              "parent_unit": "mathematics_2",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "mathematics",
+                "",
+                "arithmetic_progressions"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        },
+        {
+          "id": "mathematics_3",
+          "name": "Coordinate Geometry",
+          "section": "",
+          "marks": 6,
+          "periods": 14,
+          "topics": [
+            {
+              "id": "mathematics_3_topic_1",
+              "name": "Lines (In two-dimensions)",
+              "parent_unit": "mathematics_3",
+              "difficulty": "medium",
+              "estimated_periods": 3,
+              "tags": [
+                "mathematics",
+                "",
+                "lines_(in_two-dimensions)"
+              ]
+            },
+            {
+              "id": "mathematics_3_topic_2",
+              "name": "Distance Formula",
+              "parent_unit": "mathematics_3",
+              "difficulty": "medium",
+              "estimated_periods": 3,
+              "tags": [
+                "mathematics",
+                "",
+                "distance_formula"
+              ]
+            },
+            {
+              "id": "mathematics_3_topic_3",
+              "name": "Section Formula",
+              "parent_unit": "mathematics_3",
+              "difficulty": "medium",
+              "estimated_periods": 3,
+              "tags": [
+                "mathematics",
+                "",
+                "section_formula"
+              ]
+            },
+            {
+              "id": "mathematics_3_topic_4",
+              "name": "Area of Triangle",
+              "parent_unit": "mathematics_3",
+              "difficulty": "medium",
+              "estimated_periods": 3,
+              "tags": [
+                "mathematics",
+                "",
+                "area_of_triangle"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        },
+        {
+          "id": "mathematics_4",
+          "name": "Geometry",
+          "section": "",
+          "marks": 15,
+          "periods": 35,
+          "topics": [
+            {
+              "id": "mathematics_4_topic_1",
+              "name": "Triangles",
+              "parent_unit": "mathematics_4",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "mathematics",
+                "",
+                "triangles"
+              ]
+            },
+            {
+              "id": "mathematics_4_topic_2",
+              "name": "Circles",
+              "parent_unit": "mathematics_4",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "mathematics",
+                "",
+                "circles"
+              ]
+            },
+            {
+              "id": "mathematics_4_topic_3",
+              "name": "Constructions",
+              "parent_unit": "mathematics_4",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "mathematics",
+                "",
+                "constructions"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        },
+        {
+          "id": "mathematics_5",
+          "name": "Trigonometry",
+          "section": "",
+          "marks": 12,
+          "periods": 25,
+          "topics": [
+            {
+              "id": "mathematics_5_topic_1",
+              "name": "Introduction to Trigonometry",
+              "parent_unit": "mathematics_5",
+              "difficulty": "medium",
+              "estimated_periods": 6,
+              "tags": [
+                "mathematics",
+                "",
+                "introduction_to_trigonometry"
+              ]
+            },
+            {
+              "id": "mathematics_5_topic_2",
+              "name": "Trigonometric Identities",
+              "parent_unit": "mathematics_5",
+              "difficulty": "medium",
+              "estimated_periods": 6,
+              "tags": [
+                "mathematics",
+                "",
+                "trigonometric_identities"
+              ]
+            },
+            {
+              "id": "mathematics_5_topic_3",
+              "name": "Heights and Distances",
+              "parent_unit": "mathematics_5",
+              "difficulty": "medium",
+              "estimated_periods": 6,
+              "tags": [
+                "mathematics",
+                "",
+                "heights_and_distances"
+              ]
+            },
+            {
+              "id": "mathematics_5_topic_4",
+              "name": "Applications of Trigonometry",
+              "parent_unit": "mathematics_5",
+              "difficulty": "medium",
+              "estimated_periods": 6,
+              "tags": [
+                "mathematics",
+                "",
+                "applications_of_trigonometry"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        },
+        {
+          "id": "mathematics_6",
+          "name": "Mensuration",
+          "section": "",
+          "marks": 10,
+          "periods": 24,
+          "topics": [
+            {
+              "id": "mathematics_6_topic_1",
+              "name": "Areas Related to Circles",
+              "parent_unit": "mathematics_6",
+              "difficulty": "medium",
+              "estimated_periods": 12,
+              "tags": [
+                "mathematics",
+                "",
+                "areas_related_to_circles"
+              ]
+            },
+            {
+              "id": "mathematics_6_topic_2",
+              "name": "Surface Areas and Volumes",
+              "parent_unit": "mathematics_6",
+              "difficulty": "medium",
+              "estimated_periods": 12,
+              "tags": [
+                "mathematics",
+                "",
+                "surface_areas_and_volumes"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        },
+        {
+          "id": "mathematics_7",
+          "name": "Statistics and Probability",
+          "section": "",
+          "marks": 11,
+          "periods": 22,
+          "topics": [
+            {
+              "id": "mathematics_7_topic_1",
+              "name": "Statistics",
+              "parent_unit": "mathematics_7",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "mathematics",
+                "",
+                "statistics"
+              ]
+            },
+            {
+              "id": "mathematics_7_topic_2",
+              "name": "Probability",
+              "parent_unit": "mathematics_7",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "mathematics",
+                "",
+                "probability"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        }
+      ]
+    },
+    "science": {
+      "metadata": {
+        "subject": "science",
+        "class": "X",
+        "board": "CBSE",
+        "academic_year": "2026-27",
+        "source": "CBSE Official Syllabus PDF",
+        "version": "1.0",
+        "format": "OKF-v1"
+      },
+      "course_structure": {
+        "subject": "Science",
+        "class": "X",
+        "academic_year": "2026-27",
+        "code": "086",
+        "max_marks": 80,
+        "internal_assessment": 20,
+        "sections": [
+          "Physics",
+          "Chemistry",
+          "Biology"
+        ],
+        "total_periods": 180
+      },
+      "knowledge_units": [
+        {
+          "id": "science_1",
+          "name": "Chemical Substances - Nature and Behaviour",
+          "section": "Chemistry",
+          "marks": 25,
+          "periods": 55,
+          "topics": [
+            {
+              "id": "science_1_topic_1",
+              "name": "Chemical Reactions and Equations",
+              "parent_unit": "science_1",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "science",
+                "Chemistry",
+                "chemical_reactions_and_equatio"
+              ]
+            },
+            {
+              "id": "science_1_topic_2",
+              "name": "Acids, Bases and Salts",
+              "parent_unit": "science_1",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "science",
+                "Chemistry",
+                "acids,_bases_and_salts"
+              ]
+            },
+            {
+              "id": "science_1_topic_3",
+              "name": "Metals and Non-metals",
+              "parent_unit": "science_1",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "science",
+                "Chemistry",
+                "metals_and_non-metals"
+              ]
+            },
+            {
+              "id": "science_1_topic_4",
+              "name": "Carbon and its Compounds",
+              "parent_unit": "science_1",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "science",
+                "Chemistry",
+                "carbon_and_its_compounds"
+              ]
+            },
+            {
+              "id": "science_1_topic_5",
+              "name": "Periodic Classification of Elements",
+              "parent_unit": "science_1",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "science",
+                "Chemistry",
+                "periodic_classification_of_ele"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        },
+        {
+          "id": "science_2",
+          "name": "World of Living",
+          "section": "Biology",
+          "marks": 25,
+          "periods": 50,
+          "topics": [
+            {
+              "id": "science_2_topic_1",
+              "name": "Life Processes",
+              "parent_unit": "science_2",
+              "difficulty": "medium",
+              "estimated_periods": 12,
+              "tags": [
+                "science",
+                "Biology",
+                "life_processes"
+              ]
+            },
+            {
+              "id": "science_2_topic_2",
+              "name": "Control and Coordination",
+              "parent_unit": "science_2",
+              "difficulty": "medium",
+              "estimated_periods": 12,
+              "tags": [
+                "science",
+                "Biology",
+                "control_and_coordination"
+              ]
+            },
+            {
+              "id": "science_2_topic_3",
+              "name": "How do Organisms Reproduce",
+              "parent_unit": "science_2",
+              "difficulty": "medium",
+              "estimated_periods": 12,
+              "tags": [
+                "science",
+                "Biology",
+                "how_do_organisms_reproduce"
+              ]
+            },
+            {
+              "id": "science_2_topic_4",
+              "name": "Heredity and Evolution",
+              "parent_unit": "science_2",
+              "difficulty": "medium",
+              "estimated_periods": 12,
+              "tags": [
+                "science",
+                "Biology",
+                "heredity_and_evolution"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        },
+        {
+          "id": "science_3",
+          "name": "Natural Phenomena",
+          "section": "Physics",
+          "marks": 12,
+          "periods": 23,
+          "topics": [
+            {
+              "id": "science_3_topic_1",
+              "name": "Light - Reflection and Refraction",
+              "parent_unit": "science_3",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "science",
+                "Physics",
+                "light_-_reflection_and_refract"
+              ]
+            },
+            {
+              "id": "science_3_topic_2",
+              "name": "Human Eye and Colourful World",
+              "parent_unit": "science_3",
+              "difficulty": "medium",
+              "estimated_periods": 11,
+              "tags": [
+                "science",
+                "Physics",
+                "human_eye_and_colourful_world"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        },
+        {
+          "id": "science_4",
+          "name": "Effects of Current",
+          "section": "Physics",
+          "marks": 13,
+          "periods": 32,
+          "topics": [
+            {
+              "id": "science_4_topic_1",
+              "name": "Electricity",
+              "parent_unit": "science_4",
+              "difficulty": "medium",
+              "estimated_periods": 16,
+              "tags": [
+                "science",
+                "Physics",
+                "electricity"
+              ]
+            },
+            {
+              "id": "science_4_topic_2",
+              "name": "Magnetic Effects of Electric Current",
+              "parent_unit": "science_4",
+              "difficulty": "medium",
+              "estimated_periods": 16,
+              "tags": [
+                "science",
+                "Physics",
+                "magnetic_effects_of_electric_c"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        },
+        {
+          "id": "science_5",
+          "name": "Natural Resources",
+          "section": "Interdisciplinary",
+          "marks": 5,
+          "periods": 20,
+          "topics": [
+            {
+              "id": "science_5_topic_1",
+              "name": "Our Environment",
+              "parent_unit": "science_5",
+              "difficulty": "medium",
+              "estimated_periods": 10,
+              "tags": [
+                "science",
+                "Interdisciplinary",
+                "our_environment"
+              ]
+            },
+            {
+              "id": "science_5_topic_2",
+              "name": "Management of Natural Resources",
+              "parent_unit": "science_5",
+              "difficulty": "medium",
+              "estimated_periods": 10,
+              "tags": [
+                "science",
+                "Interdisciplinary",
+                "management_of_natural_resource"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        }
+      ]
+    },
+    "social_science": {
+      "metadata": {
+        "subject": "social_science",
+        "class": "X",
+        "board": "CBSE",
+        "academic_year": "2026-27",
+        "source": "CBSE Official Syllabus PDF",
+        "version": "1.0",
+        "format": "OKF-v1"
+      },
+      "course_structure": {
+        "subject": "Social Science",
+        "class": "X",
+        "academic_year": "2026-27",
+        "code": "087",
+        "max_marks": 80,
+        "internal_assessment": 20,
+        "sections": [
+          "History",
+          "Geography",
+          "Political Science",
+          "Economics"
+        ],
+        "total_periods": 180
+      },
+      "knowledge_units": [
+        {
+          "id": "social_science_1",
+          "name": "India and the Contemporary World - II",
+          "section": "History",
+          "marks": 20,
+          "periods": 46,
+          "topics": [
+            {
+              "id": "social_science_1_topic_1",
+              "name": "The Rise of Nationalism in Europe",
+              "parent_unit": "social_science_1",
+              "difficulty": "medium",
+              "estimated_periods": 9,
+              "tags": [
+                "social_science",
+                "History",
+                "the_rise_of_nationalism_in_eur"
+              ]
+            },
+            {
+              "id": "social_science_1_topic_2",
+              "name": "Nationalism in India",
+              "parent_unit": "social_science_1",
+              "difficulty": "medium",
+              "estimated_periods": 9,
+              "tags": [
+                "social_science",
+                "History",
+                "nationalism_in_india"
+              ]
+            },
+            {
+              "id": "social_science_1_topic_3",
+              "name": "The Making of a Global World",
+              "parent_unit": "social_science_1",
+              "difficulty": "medium",
+              "estimated_periods": 9,
+              "tags": [
+                "social_science",
+                "History",
+                "the_making_of_a_global_world"
+              ]
+            },
+            {
+              "id": "social_science_1_topic_4",
+              "name": "The Age of Industrialization",
+              "parent_unit": "social_science_1",
+              "difficulty": "medium",
+              "estimated_periods": 9,
+              "tags": [
+                "social_science",
+                "History",
+                "the_age_of_industrialization"
+              ]
+            },
+            {
+              "id": "social_science_1_topic_5",
+              "name": "Print Culture and the Modern World",
+              "parent_unit": "social_science_1",
+              "difficulty": "medium",
+              "estimated_periods": 9,
+              "tags": [
+                "social_science",
+                "History",
+                "print_culture_and_the_modern_w"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        },
+        {
+          "id": "social_science_2",
+          "name": "Contemporary India - II",
+          "section": "Geography",
+          "marks": 20,
+          "periods": 46,
+          "topics": [
+            {
+              "id": "social_science_2_topic_1",
+              "name": "Resources and Development",
+              "parent_unit": "social_science_2",
+              "difficulty": "medium",
+              "estimated_periods": 6,
+              "tags": [
+                "social_science",
+                "Geography",
+                "resources_and_development"
+              ]
+            },
+            {
+              "id": "social_science_2_topic_2",
+              "name": "Forest and Wildlife Resources",
+              "parent_unit": "social_science_2",
+              "difficulty": "medium",
+              "estimated_periods": 6,
+              "tags": [
+                "social_science",
+                "Geography",
+                "forest_and_wildlife_resources"
+              ]
+            },
+            {
+              "id": "social_science_2_topic_3",
+              "name": "Water Resources",
+              "parent_unit": "social_science_2",
+              "difficulty": "medium",
+              "estimated_periods": 6,
+              "tags": [
+                "social_science",
+                "Geography",
+                "water_resources"
+              ]
+            },
+            {
+              "id": "social_science_2_topic_4",
+              "name": "Agriculture",
+              "parent_unit": "social_science_2",
+              "difficulty": "medium",
+              "estimated_periods": 6,
+              "tags": [
+                "social_science",
+                "Geography",
+                "agriculture"
+              ]
+            },
+            {
+              "id": "social_science_2_topic_5",
+              "name": "Minerals and Energy Resources",
+              "parent_unit": "social_science_2",
+              "difficulty": "medium",
+              "estimated_periods": 6,
+              "tags": [
+                "social_science",
+                "Geography",
+                "minerals_and_energy_resources"
+              ]
+            },
+            {
+              "id": "social_science_2_topic_6",
+              "name": "Manufacturing Industries",
+              "parent_unit": "social_science_2",
+              "difficulty": "medium",
+              "estimated_periods": 6,
+              "tags": [
+                "social_science",
+                "Geography",
+                "manufacturing_industries"
+              ]
+            },
+            {
+              "id": "social_science_2_topic_7",
+              "name": "Lifelines of National Economy",
+              "parent_unit": "social_science_2",
+              "difficulty": "medium",
+              "estimated_periods": 6,
+              "tags": [
+                "social_science",
+                "Geography",
+                "lifelines_of_national_economy"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        },
+        {
+          "id": "social_science_3",
+          "name": "Democratic Politics - II",
+          "section": "Political Science",
+          "marks": 20,
+          "periods": 46,
+          "topics": [
+            {
+              "id": "social_science_3_topic_1",
+              "name": "Power Sharing",
+              "parent_unit": "social_science_3",
+              "difficulty": "medium",
+              "estimated_periods": 9,
+              "tags": [
+                "social_science",
+                "Political Science",
+                "power_sharing"
+              ]
+            },
+            {
+              "id": "social_science_3_topic_2",
+              "name": "Federalism",
+              "parent_unit": "social_science_3",
+              "difficulty": "medium",
+              "estimated_periods": 9,
+              "tags": [
+                "social_science",
+                "Political Science",
+                "federalism"
+              ]
+            },
+            {
+              "id": "social_science_3_topic_3",
+              "name": "Gender, Religion and Caste",
+              "parent_unit": "social_science_3",
+              "difficulty": "medium",
+              "estimated_periods": 9,
+              "tags": [
+                "social_science",
+                "Political Science",
+                "gender,_religion_and_caste"
+              ]
+            },
+            {
+              "id": "social_science_3_topic_4",
+              "name": "Political Parties",
+              "parent_unit": "social_science_3",
+              "difficulty": "medium",
+              "estimated_periods": 9,
+              "tags": [
+                "social_science",
+                "Political Science",
+                "political_parties"
+              ]
+            },
+            {
+              "id": "social_science_3_topic_5",
+              "name": "Outcomes of Democracy",
+              "parent_unit": "social_science_3",
+              "difficulty": "medium",
+              "estimated_periods": 9,
+              "tags": [
+                "social_science",
+                "Political Science",
+                "outcomes_of_democracy"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        },
+        {
+          "id": "social_science_4",
+          "name": "Understanding Economic Development",
+          "section": "Economics",
+          "marks": 20,
+          "periods": 42,
+          "topics": [
+            {
+              "id": "social_science_4_topic_1",
+              "name": "Development",
+              "parent_unit": "social_science_4",
+              "difficulty": "medium",
+              "estimated_periods": 8,
+              "tags": [
+                "social_science",
+                "Economics",
+                "development"
+              ]
+            },
+            {
+              "id": "social_science_4_topic_2",
+              "name": "Sectors of the Indian Economy",
+              "parent_unit": "social_science_4",
+              "difficulty": "medium",
+              "estimated_periods": 8,
+              "tags": [
+                "social_science",
+                "Economics",
+                "sectors_of_the_indian_economy"
+              ]
+            },
+            {
+              "id": "social_science_4_topic_3",
+              "name": "Money and Credit",
+              "parent_unit": "social_science_4",
+              "difficulty": "medium",
+              "estimated_periods": 8,
+              "tags": [
+                "social_science",
+                "Economics",
+                "money_and_credit"
+              ]
+            },
+            {
+              "id": "social_science_4_topic_4",
+              "name": "Globalisation and the Indian Economy",
+              "parent_unit": "social_science_4",
+              "difficulty": "medium",
+              "estimated_periods": 8,
+              "tags": [
+                "social_science",
+                "Economics",
+                "globalisation_and_the_indian_e"
+              ]
+            },
+            {
+              "id": "social_science_4_topic_5",
+              "name": "Consumer Rights",
+              "parent_unit": "social_science_4",
+              "difficulty": "medium",
+              "estimated_periods": 8,
+              "tags": [
+                "social_science",
+                "Economics",
+                "consumer_rights"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        }
+      ]
+    },
+    "english": {
+      "metadata": {
+        "subject": "english",
+        "class": "X",
+        "board": "CBSE",
+        "academic_year": "2026-27",
+        "source": "CBSE Official Syllabus PDF",
+        "version": "1.0",
+        "format": "OKF-v1"
+      },
+      "course_structure": {
+        "subject": "English Language & Literature",
+        "class": "X",
+        "academic_year": "2026-27",
+        "code": "184",
+        "max_marks": 80,
+        "internal_assessment": 20
+      },
+      "knowledge_units": [
+        {
+          "id": "english_reading_skills",
+          "name": "",
+          "section": "Reading Skills",
+          "marks": 20,
+          "periods": 40,
+          "topics": [
+            {
+              "id": "english_reading_skills_topic_1",
+              "name": "Reading Comprehension (Factual, Literary, Discursive)",
+              "parent_unit": "english_reading_skills",
+              "difficulty": "medium",
+              "estimated_periods": 20,
+              "tags": [
+                "english",
+                "Reading Skills",
+                "reading_comprehension_(factual"
+              ]
+            },
+            {
+              "id": "english_reading_skills_topic_2",
+              "name": "Case-based Passages",
+              "parent_unit": "english_reading_skills",
+              "difficulty": "medium",
+              "estimated_periods": 20,
+              "tags": [
+                "english",
+                "Reading Skills",
+                "case-based_passages"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        },
+        {
+          "id": "english_writing_skills_with_grammar",
+          "name": "",
+          "section": "Writing Skills with Grammar",
+          "marks": 20,
+          "periods": 50,
+          "topics": [
+            {
+              "id": "english_writing_skills_with_grammar_topic_1",
+              "name": "Formal Letter",
+              "parent_unit": "english_writing_skills_with_grammar",
+              "difficulty": "medium",
+              "estimated_periods": 5,
+              "tags": [
+                "english",
+                "Writing Skills with Grammar",
+                "formal_letter"
+              ]
+            },
+            {
+              "id": "english_writing_skills_with_grammar_topic_2",
+              "name": "Analytical Paragraph",
+              "parent_unit": "english_writing_skills_with_grammar",
+              "difficulty": "medium",
+              "estimated_periods": 5,
+              "tags": [
+                "english",
+                "Writing Skills with Grammar",
+                "analytical_paragraph"
+              ]
+            },
+            {
+              "id": "english_writing_skills_with_grammar_topic_3",
+              "name": "Creative Writing",
+              "parent_unit": "english_writing_skills_with_grammar",
+              "difficulty": "medium",
+              "estimated_periods": 5,
+              "tags": [
+                "english",
+                "Writing Skills with Grammar",
+                "creative_writing"
+              ]
+            },
+            {
+              "id": "english_writing_skills_with_grammar_topic_4",
+              "name": "Tenses",
+              "parent_unit": "english_writing_skills_with_grammar",
+              "difficulty": "medium",
+              "estimated_periods": 5,
+              "tags": [
+                "english",
+                "Writing Skills with Grammar",
+                "tenses"
+              ]
+            },
+            {
+              "id": "english_writing_skills_with_grammar_topic_5",
+              "name": "Modals",
+              "parent_unit": "english_writing_skills_with_grammar",
+              "difficulty": "medium",
+              "estimated_periods": 5,
+              "tags": [
+                "english",
+                "Writing Skills with Grammar",
+                "modals"
+              ]
+            },
+            {
+              "id": "english_writing_skills_with_grammar_topic_6",
+              "name": "Subject-Verb Concord",
+              "parent_unit": "english_writing_skills_with_grammar",
+              "difficulty": "medium",
+              "estimated_periods": 5,
+              "tags": [
+                "english",
+                "Writing Skills with Grammar",
+                "subject-verb_concord"
+              ]
+            },
+            {
+              "id": "english_writing_skills_with_grammar_topic_7",
+              "name": "Reported Speech",
+              "parent_unit": "english_writing_skills_with_grammar",
+              "difficulty": "medium",
+              "estimated_periods": 5,
+              "tags": [
+                "english",
+                "Writing Skills with Grammar",
+                "reported_speech"
+              ]
+            },
+            {
+              "id": "english_writing_skills_with_grammar_topic_8",
+              "name": "Clauses",
+              "parent_unit": "english_writing_skills_with_grammar",
+              "difficulty": "medium",
+              "estimated_periods": 5,
+              "tags": [
+                "english",
+                "Writing Skills with Grammar",
+                "clauses"
+              ]
+            },
+            {
+              "id": "english_writing_skills_with_grammar_topic_9",
+              "name": "Determiners",
+              "parent_unit": "english_writing_skills_with_grammar",
+              "difficulty": "medium",
+              "estimated_periods": 5,
+              "tags": [
+                "english",
+                "Writing Skills with Grammar",
+                "determiners"
+              ]
+            },
+            {
+              "id": "english_writing_skills_with_grammar_topic_10",
+              "name": "Prepositions",
+              "parent_unit": "english_writing_skills_with_grammar",
+              "difficulty": "medium",
+              "estimated_periods": 5,
+              "tags": [
+                "english",
+                "Writing Skills with Grammar",
+                "prepositions"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        },
+        {
+          "id": "english_literature_textbook_and_supplementary_reading",
+          "name": "",
+          "section": "Literature Textbook & Supplementary Reading",
+          "marks": 40,
+          "periods": 90,
+          "topics": [
+            {
+              "id": "english_literature_textbook_and_supplementary_reading_topic_1",
+              "name": "First Flight - Prose",
+              "parent_unit": "english_literature_textbook_and_supplementary_reading",
+              "difficulty": "medium",
+              "estimated_periods": 30,
+              "tags": [
+                "english",
+                "Literature Textbook & Supplementary Reading",
+                "first_flight_-_prose"
+              ]
+            },
+            {
+              "id": "english_literature_textbook_and_supplementary_reading_topic_2",
+              "name": "First Flight - Poetry",
+              "parent_unit": "english_literature_textbook_and_supplementary_reading",
+              "difficulty": "medium",
+              "estimated_periods": 30,
+              "tags": [
+                "english",
+                "Literature Textbook & Supplementary Reading",
+                "first_flight_-_poetry"
+              ]
+            },
+            {
+              "id": "english_literature_textbook_and_supplementary_reading_topic_3",
+              "name": "Footprints without Feet - Supplementary",
+              "parent_unit": "english_literature_textbook_and_supplementary_reading",
+              "difficulty": "medium",
+              "estimated_periods": 30,
+              "tags": [
+                "english",
+                "Literature Textbook & Supplementary Reading",
+                "footprints_without_feet_-_supp"
+              ]
+            }
+          ],
+          "learning_objectives": [],
+          "prerequisites": [],
+          "assessment_criteria": []
+        }
+      ]
+    }
+  },
+  "google_trees": {
+    "mathematics": {
+      "root": {
+        "id": "mathematics_class_x_2026_27",
+        "title": "Mathematics - Class X (2026-27)",
+        "type": "course",
+        "metadata": {
+          "subject": "Mathematics",
+          "class": "X",
+          "academic_year": "2026-27",
+          "code": "041",
+          "max_marks": 80,
+          "internal_assessment": 20,
+          "total_periods": 180
+        },
+        "children": [
+          {
+            "id": "mathematics_1",
+            "title": "Number Systems",
+            "type": "unit",
+            "metadata": {
+              "marks": 6,
+              "periods": 15,
+              "section": ""
+            },
+            "children": [
+              {
+                "id": "mathematics_1_topic_1",
+                "title": "Real Numbers",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 3,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "real_numbers"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_1_topic_2",
+                "title": "Euclid's Division Lemma",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 3,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "euclid's_division_lemma"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_1_topic_3",
+                "title": "Fundamental Theorem of Arithmetic",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 3,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "fundamental_theorem_of_arithme"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_1_topic_4",
+                "title": "Revisiting Irrational Numbers",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 3,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "revisiting_irrational_numbers"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_1_topic_5",
+                "title": "Revisiting Rational Numbers and Decimal Expansions",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 3,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "revisiting_rational_numbers_an"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "mathematics_2",
+            "title": "Algebra",
+            "type": "unit",
+            "metadata": {
+              "marks": 20,
+              "periods": 45,
+              "section": ""
+            },
+            "children": [
+              {
+                "id": "mathematics_2_topic_1",
+                "title": "Polynomials",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "polynomials"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_2_topic_2",
+                "title": "Pair of Linear Equations in Two Variables",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "pair_of_linear_equations_in_tw"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_2_topic_3",
+                "title": "Quadratic Equations",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "quadratic_equations"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_2_topic_4",
+                "title": "Arithmetic Progressions",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "arithmetic_progressions"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "mathematics_3",
+            "title": "Coordinate Geometry",
+            "type": "unit",
+            "metadata": {
+              "marks": 6,
+              "periods": 14,
+              "section": ""
+            },
+            "children": [
+              {
+                "id": "mathematics_3_topic_1",
+                "title": "Lines (In two-dimensions)",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 3,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "lines_(in_two-dimensions)"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_3_topic_2",
+                "title": "Distance Formula",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 3,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "distance_formula"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_3_topic_3",
+                "title": "Section Formula",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 3,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "section_formula"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_3_topic_4",
+                "title": "Area of Triangle",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 3,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "area_of_triangle"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "mathematics_4",
+            "title": "Geometry",
+            "type": "unit",
+            "metadata": {
+              "marks": 15,
+              "periods": 35,
+              "section": ""
+            },
+            "children": [
+              {
+                "id": "mathematics_4_topic_1",
+                "title": "Triangles",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "triangles"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_4_topic_2",
+                "title": "Circles",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "circles"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_4_topic_3",
+                "title": "Constructions",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "constructions"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "mathematics_5",
+            "title": "Trigonometry",
+            "type": "unit",
+            "metadata": {
+              "marks": 12,
+              "periods": 25,
+              "section": ""
+            },
+            "children": [
+              {
+                "id": "mathematics_5_topic_1",
+                "title": "Introduction to Trigonometry",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 6,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "introduction_to_trigonometry"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_5_topic_2",
+                "title": "Trigonometric Identities",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 6,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "trigonometric_identities"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_5_topic_3",
+                "title": "Heights and Distances",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 6,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "heights_and_distances"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_5_topic_4",
+                "title": "Applications of Trigonometry",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 6,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "applications_of_trigonometry"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "mathematics_6",
+            "title": "Mensuration",
+            "type": "unit",
+            "metadata": {
+              "marks": 10,
+              "periods": 24,
+              "section": ""
+            },
+            "children": [
+              {
+                "id": "mathematics_6_topic_1",
+                "title": "Areas Related to Circles",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 12,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "areas_related_to_circles"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_6_topic_2",
+                "title": "Surface Areas and Volumes",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 12,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "surface_areas_and_volumes"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "mathematics_7",
+            "title": "Statistics and Probability",
+            "type": "unit",
+            "metadata": {
+              "marks": 11,
+              "periods": 22,
+              "section": ""
+            },
+            "children": [
+              {
+                "id": "mathematics_7_topic_1",
+                "title": "Statistics",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "statistics"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "mathematics_7_topic_2",
+                "title": "Probability",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "mathematics",
+                    "",
+                    "probability"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "science": {
+      "root": {
+        "id": "science_class_x_2026_27",
+        "title": "Science - Class X (2026-27)",
+        "type": "course",
+        "metadata": {
+          "subject": "Science",
+          "class": "X",
+          "academic_year": "2026-27",
+          "code": "086",
+          "max_marks": 80,
+          "internal_assessment": 20,
+          "sections": [
+            "Physics",
+            "Chemistry",
+            "Biology"
+          ],
+          "total_periods": 180
+        },
+        "children": [
+          {
+            "id": "science_1",
+            "title": "Chemical Substances - Nature and Behaviour",
+            "type": "unit",
+            "metadata": {
+              "marks": 25,
+              "periods": 55,
+              "section": "Chemistry"
+            },
+            "children": [
+              {
+                "id": "science_1_topic_1",
+                "title": "Chemical Reactions and Equations",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "science",
+                    "Chemistry",
+                    "chemical_reactions_and_equatio"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "science_1_topic_2",
+                "title": "Acids, Bases and Salts",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "science",
+                    "Chemistry",
+                    "acids,_bases_and_salts"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "science_1_topic_3",
+                "title": "Metals and Non-metals",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "science",
+                    "Chemistry",
+                    "metals_and_non-metals"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "science_1_topic_4",
+                "title": "Carbon and its Compounds",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "science",
+                    "Chemistry",
+                    "carbon_and_its_compounds"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "science_1_topic_5",
+                "title": "Periodic Classification of Elements",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "science",
+                    "Chemistry",
+                    "periodic_classification_of_ele"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "science_2",
+            "title": "World of Living",
+            "type": "unit",
+            "metadata": {
+              "marks": 25,
+              "periods": 50,
+              "section": "Biology"
+            },
+            "children": [
+              {
+                "id": "science_2_topic_1",
+                "title": "Life Processes",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 12,
+                  "tags": [
+                    "science",
+                    "Biology",
+                    "life_processes"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "science_2_topic_2",
+                "title": "Control and Coordination",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 12,
+                  "tags": [
+                    "science",
+                    "Biology",
+                    "control_and_coordination"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "science_2_topic_3",
+                "title": "How do Organisms Reproduce",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 12,
+                  "tags": [
+                    "science",
+                    "Biology",
+                    "how_do_organisms_reproduce"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "science_2_topic_4",
+                "title": "Heredity and Evolution",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 12,
+                  "tags": [
+                    "science",
+                    "Biology",
+                    "heredity_and_evolution"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "science_3",
+            "title": "Natural Phenomena",
+            "type": "unit",
+            "metadata": {
+              "marks": 12,
+              "periods": 23,
+              "section": "Physics"
+            },
+            "children": [
+              {
+                "id": "science_3_topic_1",
+                "title": "Light - Reflection and Refraction",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "science",
+                    "Physics",
+                    "light_-_reflection_and_refract"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "science_3_topic_2",
+                "title": "Human Eye and Colourful World",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 11,
+                  "tags": [
+                    "science",
+                    "Physics",
+                    "human_eye_and_colourful_world"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "science_4",
+            "title": "Effects of Current",
+            "type": "unit",
+            "metadata": {
+              "marks": 13,
+              "periods": 32,
+              "section": "Physics"
+            },
+            "children": [
+              {
+                "id": "science_4_topic_1",
+                "title": "Electricity",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 16,
+                  "tags": [
+                    "science",
+                    "Physics",
+                    "electricity"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "science_4_topic_2",
+                "title": "Magnetic Effects of Electric Current",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 16,
+                  "tags": [
+                    "science",
+                    "Physics",
+                    "magnetic_effects_of_electric_c"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "science_5",
+            "title": "Natural Resources",
+            "type": "unit",
+            "metadata": {
+              "marks": 5,
+              "periods": 20,
+              "section": "Interdisciplinary"
+            },
+            "children": [
+              {
+                "id": "science_5_topic_1",
+                "title": "Our Environment",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 10,
+                  "tags": [
+                    "science",
+                    "Interdisciplinary",
+                    "our_environment"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "science_5_topic_2",
+                "title": "Management of Natural Resources",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 10,
+                  "tags": [
+                    "science",
+                    "Interdisciplinary",
+                    "management_of_natural_resource"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "social_science": {
+      "root": {
+        "id": "social_science_class_x_2026_27",
+        "title": "Social_Science - Class X (2026-27)",
+        "type": "course",
+        "metadata": {
+          "subject": "Social Science",
+          "class": "X",
+          "academic_year": "2026-27",
+          "code": "087",
+          "max_marks": 80,
+          "internal_assessment": 20,
+          "sections": [
+            "History",
+            "Geography",
+            "Political Science",
+            "Economics"
+          ],
+          "total_periods": 180
+        },
+        "children": [
+          {
+            "id": "social_science_1",
+            "title": "India and the Contemporary World - II",
+            "type": "unit",
+            "metadata": {
+              "marks": 20,
+              "periods": 46,
+              "section": "History"
+            },
+            "children": [
+              {
+                "id": "social_science_1_topic_1",
+                "title": "The Rise of Nationalism in Europe",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 9,
+                  "tags": [
+                    "social_science",
+                    "History",
+                    "the_rise_of_nationalism_in_eur"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_1_topic_2",
+                "title": "Nationalism in India",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 9,
+                  "tags": [
+                    "social_science",
+                    "History",
+                    "nationalism_in_india"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_1_topic_3",
+                "title": "The Making of a Global World",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 9,
+                  "tags": [
+                    "social_science",
+                    "History",
+                    "the_making_of_a_global_world"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_1_topic_4",
+                "title": "The Age of Industrialization",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 9,
+                  "tags": [
+                    "social_science",
+                    "History",
+                    "the_age_of_industrialization"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_1_topic_5",
+                "title": "Print Culture and the Modern World",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 9,
+                  "tags": [
+                    "social_science",
+                    "History",
+                    "print_culture_and_the_modern_w"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "social_science_2",
+            "title": "Contemporary India - II",
+            "type": "unit",
+            "metadata": {
+              "marks": 20,
+              "periods": 46,
+              "section": "Geography"
+            },
+            "children": [
+              {
+                "id": "social_science_2_topic_1",
+                "title": "Resources and Development",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 6,
+                  "tags": [
+                    "social_science",
+                    "Geography",
+                    "resources_and_development"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_2_topic_2",
+                "title": "Forest and Wildlife Resources",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 6,
+                  "tags": [
+                    "social_science",
+                    "Geography",
+                    "forest_and_wildlife_resources"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_2_topic_3",
+                "title": "Water Resources",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 6,
+                  "tags": [
+                    "social_science",
+                    "Geography",
+                    "water_resources"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_2_topic_4",
+                "title": "Agriculture",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 6,
+                  "tags": [
+                    "social_science",
+                    "Geography",
+                    "agriculture"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_2_topic_5",
+                "title": "Minerals and Energy Resources",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 6,
+                  "tags": [
+                    "social_science",
+                    "Geography",
+                    "minerals_and_energy_resources"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_2_topic_6",
+                "title": "Manufacturing Industries",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 6,
+                  "tags": [
+                    "social_science",
+                    "Geography",
+                    "manufacturing_industries"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_2_topic_7",
+                "title": "Lifelines of National Economy",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 6,
+                  "tags": [
+                    "social_science",
+                    "Geography",
+                    "lifelines_of_national_economy"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "social_science_3",
+            "title": "Democratic Politics - II",
+            "type": "unit",
+            "metadata": {
+              "marks": 20,
+              "periods": 46,
+              "section": "Political Science"
+            },
+            "children": [
+              {
+                "id": "social_science_3_topic_1",
+                "title": "Power Sharing",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 9,
+                  "tags": [
+                    "social_science",
+                    "Political Science",
+                    "power_sharing"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_3_topic_2",
+                "title": "Federalism",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 9,
+                  "tags": [
+                    "social_science",
+                    "Political Science",
+                    "federalism"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_3_topic_3",
+                "title": "Gender, Religion and Caste",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 9,
+                  "tags": [
+                    "social_science",
+                    "Political Science",
+                    "gender,_religion_and_caste"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_3_topic_4",
+                "title": "Political Parties",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 9,
+                  "tags": [
+                    "social_science",
+                    "Political Science",
+                    "political_parties"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_3_topic_5",
+                "title": "Outcomes of Democracy",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 9,
+                  "tags": [
+                    "social_science",
+                    "Political Science",
+                    "outcomes_of_democracy"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "social_science_4",
+            "title": "Understanding Economic Development",
+            "type": "unit",
+            "metadata": {
+              "marks": 20,
+              "periods": 42,
+              "section": "Economics"
+            },
+            "children": [
+              {
+                "id": "social_science_4_topic_1",
+                "title": "Development",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 8,
+                  "tags": [
+                    "social_science",
+                    "Economics",
+                    "development"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_4_topic_2",
+                "title": "Sectors of the Indian Economy",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 8,
+                  "tags": [
+                    "social_science",
+                    "Economics",
+                    "sectors_of_the_indian_economy"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_4_topic_3",
+                "title": "Money and Credit",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 8,
+                  "tags": [
+                    "social_science",
+                    "Economics",
+                    "money_and_credit"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_4_topic_4",
+                "title": "Globalisation and the Indian Economy",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 8,
+                  "tags": [
+                    "social_science",
+                    "Economics",
+                    "globalisation_and_the_indian_e"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "social_science_4_topic_5",
+                "title": "Consumer Rights",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 8,
+                  "tags": [
+                    "social_science",
+                    "Economics",
+                    "consumer_rights"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "english": {
+      "root": {
+        "id": "english_class_x_2026_27",
+        "title": "English - Class X (2026-27)",
+        "type": "course",
+        "metadata": {
+          "subject": "English Language & Literature",
+          "class": "X",
+          "academic_year": "2026-27",
+          "code": "184",
+          "max_marks": 80,
+          "internal_assessment": 20
+        },
+        "children": [
+          {
+            "id": "english_reading_skills",
+            "title": "",
+            "type": "unit",
+            "metadata": {
+              "marks": 20,
+              "periods": 40,
+              "section": "Reading Skills"
+            },
+            "children": [
+              {
+                "id": "english_reading_skills_topic_1",
+                "title": "Reading Comprehension (Factual, Literary, Discursive)",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 20,
+                  "tags": [
+                    "english",
+                    "Reading Skills",
+                    "reading_comprehension_(factual"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "english_reading_skills_topic_2",
+                "title": "Case-based Passages",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 20,
+                  "tags": [
+                    "english",
+                    "Reading Skills",
+                    "case-based_passages"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "english_writing_skills_with_grammar",
+            "title": "",
+            "type": "unit",
+            "metadata": {
+              "marks": 20,
+              "periods": 50,
+              "section": "Writing Skills with Grammar"
+            },
+            "children": [
+              {
+                "id": "english_writing_skills_with_grammar_topic_1",
+                "title": "Formal Letter",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 5,
+                  "tags": [
+                    "english",
+                    "Writing Skills with Grammar",
+                    "formal_letter"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "english_writing_skills_with_grammar_topic_2",
+                "title": "Analytical Paragraph",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 5,
+                  "tags": [
+                    "english",
+                    "Writing Skills with Grammar",
+                    "analytical_paragraph"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "english_writing_skills_with_grammar_topic_3",
+                "title": "Creative Writing",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 5,
+                  "tags": [
+                    "english",
+                    "Writing Skills with Grammar",
+                    "creative_writing"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "english_writing_skills_with_grammar_topic_4",
+                "title": "Tenses",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 5,
+                  "tags": [
+                    "english",
+                    "Writing Skills with Grammar",
+                    "tenses"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "english_writing_skills_with_grammar_topic_5",
+                "title": "Modals",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 5,
+                  "tags": [
+                    "english",
+                    "Writing Skills with Grammar",
+                    "modals"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "english_writing_skills_with_grammar_topic_6",
+                "title": "Subject-Verb Concord",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 5,
+                  "tags": [
+                    "english",
+                    "Writing Skills with Grammar",
+                    "subject-verb_concord"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "english_writing_skills_with_grammar_topic_7",
+                "title": "Reported Speech",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 5,
+                  "tags": [
+                    "english",
+                    "Writing Skills with Grammar",
+                    "reported_speech"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "english_writing_skills_with_grammar_topic_8",
+                "title": "Clauses",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 5,
+                  "tags": [
+                    "english",
+                    "Writing Skills with Grammar",
+                    "clauses"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "english_writing_skills_with_grammar_topic_9",
+                "title": "Determiners",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 5,
+                  "tags": [
+                    "english",
+                    "Writing Skills with Grammar",
+                    "determiners"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "english_writing_skills_with_grammar_topic_10",
+                "title": "Prepositions",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 5,
+                  "tags": [
+                    "english",
+                    "Writing Skills with Grammar",
+                    "prepositions"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "english_literature_textbook_and_supplementary_reading",
+            "title": "",
+            "type": "unit",
+            "metadata": {
+              "marks": 40,
+              "periods": 90,
+              "section": "Literature Textbook & Supplementary Reading"
+            },
+            "children": [
+              {
+                "id": "english_literature_textbook_and_supplementary_reading_topic_1",
+                "title": "First Flight - Prose",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 30,
+                  "tags": [
+                    "english",
+                    "Literature Textbook & Supplementary Reading",
+                    "first_flight_-_prose"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "english_literature_textbook_and_supplementary_reading_topic_2",
+                "title": "First Flight - Poetry",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 30,
+                  "tags": [
+                    "english",
+                    "Literature Textbook & Supplementary Reading",
+                    "first_flight_-_poetry"
+                  ]
+                },
+                "children": []
+              },
+              {
+                "id": "english_literature_textbook_and_supplementary_reading_topic_3",
+                "title": "Footprints without Feet - Supplementary",
+                "type": "topic",
+                "metadata": {
+                  "difficulty": "medium",
+                  "estimated_periods": 30,
+                  "tags": [
+                    "english",
+                    "Literature Textbook & Supplementary Reading",
+                    "footprints_without_feet_-_supp"
+                  ]
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "graph_rag": {
+    "mathematics": {
+      "nodes": [
+        {
+          "id": "mathematics",
+          "type": "Course",
+          "label": "Mathematics Class X",
+          "properties": {
+            "subject": "Mathematics",
+            "class": "X",
+            "academic_year": "2026-27",
+            "code": "041",
+            "max_marks": 80,
+            "internal_assessment": 20,
+            "total_periods": 180
+          }
+        },
+        {
+          "id": "mathematics_1",
+          "type": "Unit",
+          "label": "Number Systems",
+          "properties": {
+            "marks": 6,
+            "periods": 15,
+            "section": ""
+          }
+        },
+        {
+          "id": "mathematics_1_topic_1",
+          "type": "Topic",
+          "label": "Real Numbers",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 3,
+            "tags": [
+              "mathematics",
+              "",
+              "real_numbers"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_1_topic_2",
+          "type": "Topic",
+          "label": "Euclid's Division Lemma",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 3,
+            "tags": [
+              "mathematics",
+              "",
+              "euclid's_division_lemma"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_1_topic_3",
+          "type": "Topic",
+          "label": "Fundamental Theorem of Arithmetic",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 3,
+            "tags": [
+              "mathematics",
+              "",
+              "fundamental_theorem_of_arithme"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_1_topic_4",
+          "type": "Topic",
+          "label": "Revisiting Irrational Numbers",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 3,
+            "tags": [
+              "mathematics",
+              "",
+              "revisiting_irrational_numbers"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_1_topic_5",
+          "type": "Topic",
+          "label": "Revisiting Rational Numbers and Decimal Expansions",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 3,
+            "tags": [
+              "mathematics",
+              "",
+              "revisiting_rational_numbers_an"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_2",
+          "type": "Unit",
+          "label": "Algebra",
+          "properties": {
+            "marks": 20,
+            "periods": 45,
+            "section": ""
+          }
+        },
+        {
+          "id": "mathematics_2_topic_1",
+          "type": "Topic",
+          "label": "Polynomials",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "mathematics",
+              "",
+              "polynomials"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_2_topic_2",
+          "type": "Topic",
+          "label": "Pair of Linear Equations in Two Variables",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "mathematics",
+              "",
+              "pair_of_linear_equations_in_tw"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_2_topic_3",
+          "type": "Topic",
+          "label": "Quadratic Equations",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "mathematics",
+              "",
+              "quadratic_equations"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_2_topic_4",
+          "type": "Topic",
+          "label": "Arithmetic Progressions",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "mathematics",
+              "",
+              "arithmetic_progressions"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_3",
+          "type": "Unit",
+          "label": "Coordinate Geometry",
+          "properties": {
+            "marks": 6,
+            "periods": 14,
+            "section": ""
+          }
+        },
+        {
+          "id": "mathematics_3_topic_1",
+          "type": "Topic",
+          "label": "Lines (In two-dimensions)",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 3,
+            "tags": [
+              "mathematics",
+              "",
+              "lines_(in_two-dimensions)"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_3_topic_2",
+          "type": "Topic",
+          "label": "Distance Formula",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 3,
+            "tags": [
+              "mathematics",
+              "",
+              "distance_formula"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_3_topic_3",
+          "type": "Topic",
+          "label": "Section Formula",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 3,
+            "tags": [
+              "mathematics",
+              "",
+              "section_formula"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_3_topic_4",
+          "type": "Topic",
+          "label": "Area of Triangle",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 3,
+            "tags": [
+              "mathematics",
+              "",
+              "area_of_triangle"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_4",
+          "type": "Unit",
+          "label": "Geometry",
+          "properties": {
+            "marks": 15,
+            "periods": 35,
+            "section": ""
+          }
+        },
+        {
+          "id": "mathematics_4_topic_1",
+          "type": "Topic",
+          "label": "Triangles",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "mathematics",
+              "",
+              "triangles"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_4_topic_2",
+          "type": "Topic",
+          "label": "Circles",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "mathematics",
+              "",
+              "circles"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_4_topic_3",
+          "type": "Topic",
+          "label": "Constructions",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "mathematics",
+              "",
+              "constructions"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_5",
+          "type": "Unit",
+          "label": "Trigonometry",
+          "properties": {
+            "marks": 12,
+            "periods": 25,
+            "section": ""
+          }
+        },
+        {
+          "id": "mathematics_5_topic_1",
+          "type": "Topic",
+          "label": "Introduction to Trigonometry",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 6,
+            "tags": [
+              "mathematics",
+              "",
+              "introduction_to_trigonometry"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_5_topic_2",
+          "type": "Topic",
+          "label": "Trigonometric Identities",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 6,
+            "tags": [
+              "mathematics",
+              "",
+              "trigonometric_identities"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_5_topic_3",
+          "type": "Topic",
+          "label": "Heights and Distances",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 6,
+            "tags": [
+              "mathematics",
+              "",
+              "heights_and_distances"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_5_topic_4",
+          "type": "Topic",
+          "label": "Applications of Trigonometry",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 6,
+            "tags": [
+              "mathematics",
+              "",
+              "applications_of_trigonometry"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_6",
+          "type": "Unit",
+          "label": "Mensuration",
+          "properties": {
+            "marks": 10,
+            "periods": 24,
+            "section": ""
+          }
+        },
+        {
+          "id": "mathematics_6_topic_1",
+          "type": "Topic",
+          "label": "Areas Related to Circles",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 12,
+            "tags": [
+              "mathematics",
+              "",
+              "areas_related_to_circles"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_6_topic_2",
+          "type": "Topic",
+          "label": "Surface Areas and Volumes",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 12,
+            "tags": [
+              "mathematics",
+              "",
+              "surface_areas_and_volumes"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_7",
+          "type": "Unit",
+          "label": "Statistics and Probability",
+          "properties": {
+            "marks": 11,
+            "periods": 22,
+            "section": ""
+          }
+        },
+        {
+          "id": "mathematics_7_topic_1",
+          "type": "Topic",
+          "label": "Statistics",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "mathematics",
+              "",
+              "statistics"
+            ]
+          }
+        },
+        {
+          "id": "mathematics_7_topic_2",
+          "type": "Topic",
+          "label": "Probability",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "mathematics",
+              "",
+              "probability"
+            ]
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "mathematics",
+          "target": "mathematics_1",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "mathematics_1",
+          "target": "mathematics_1_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_1",
+          "target": "mathematics_1_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_1",
+          "target": "mathematics_1_topic_3",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_1",
+          "target": "mathematics_1_topic_4",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_1",
+          "target": "mathematics_1_topic_5",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics",
+          "target": "mathematics_2",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "mathematics_2",
+          "target": "mathematics_2_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_2",
+          "target": "mathematics_2_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_2",
+          "target": "mathematics_2_topic_3",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_2",
+          "target": "mathematics_2_topic_4",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics",
+          "target": "mathematics_3",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "mathematics_3",
+          "target": "mathematics_3_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_3",
+          "target": "mathematics_3_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_3",
+          "target": "mathematics_3_topic_3",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_3",
+          "target": "mathematics_3_topic_4",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics",
+          "target": "mathematics_4",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "mathematics_4",
+          "target": "mathematics_4_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_4",
+          "target": "mathematics_4_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_4",
+          "target": "mathematics_4_topic_3",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics",
+          "target": "mathematics_5",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "mathematics_5",
+          "target": "mathematics_5_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_5",
+          "target": "mathematics_5_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_5",
+          "target": "mathematics_5_topic_3",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_5",
+          "target": "mathematics_5_topic_4",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics",
+          "target": "mathematics_6",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "mathematics_6",
+          "target": "mathematics_6_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_6",
+          "target": "mathematics_6_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics",
+          "target": "mathematics_7",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "mathematics_7",
+          "target": "mathematics_7_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "mathematics_7",
+          "target": "mathematics_7_topic_2",
+          "type": "HAS_TOPIC"
+        }
+      ]
+    },
+    "science": {
+      "nodes": [
+        {
+          "id": "science",
+          "type": "Course",
+          "label": "Science Class X",
+          "properties": {
+            "subject": "Science",
+            "class": "X",
+            "academic_year": "2026-27",
+            "code": "086",
+            "max_marks": 80,
+            "internal_assessment": 20,
+            "sections": [
+              "Physics",
+              "Chemistry",
+              "Biology"
+            ],
+            "total_periods": 180
+          }
+        },
+        {
+          "id": "science_1",
+          "type": "Unit",
+          "label": "Chemical Substances - Nature and Behaviour",
+          "properties": {
+            "marks": 25,
+            "periods": 55,
+            "section": "Chemistry"
+          }
+        },
+        {
+          "id": "science_1_topic_1",
+          "type": "Topic",
+          "label": "Chemical Reactions and Equations",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "science",
+              "Chemistry",
+              "chemical_reactions_and_equatio"
+            ]
+          }
+        },
+        {
+          "id": "science_1_topic_2",
+          "type": "Topic",
+          "label": "Acids, Bases and Salts",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "science",
+              "Chemistry",
+              "acids,_bases_and_salts"
+            ]
+          }
+        },
+        {
+          "id": "science_1_topic_3",
+          "type": "Topic",
+          "label": "Metals and Non-metals",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "science",
+              "Chemistry",
+              "metals_and_non-metals"
+            ]
+          }
+        },
+        {
+          "id": "science_1_topic_4",
+          "type": "Topic",
+          "label": "Carbon and its Compounds",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "science",
+              "Chemistry",
+              "carbon_and_its_compounds"
+            ]
+          }
+        },
+        {
+          "id": "science_1_topic_5",
+          "type": "Topic",
+          "label": "Periodic Classification of Elements",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "science",
+              "Chemistry",
+              "periodic_classification_of_ele"
+            ]
+          }
+        },
+        {
+          "id": "science_2",
+          "type": "Unit",
+          "label": "World of Living",
+          "properties": {
+            "marks": 25,
+            "periods": 50,
+            "section": "Biology"
+          }
+        },
+        {
+          "id": "science_2_topic_1",
+          "type": "Topic",
+          "label": "Life Processes",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 12,
+            "tags": [
+              "science",
+              "Biology",
+              "life_processes"
+            ]
+          }
+        },
+        {
+          "id": "science_2_topic_2",
+          "type": "Topic",
+          "label": "Control and Coordination",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 12,
+            "tags": [
+              "science",
+              "Biology",
+              "control_and_coordination"
+            ]
+          }
+        },
+        {
+          "id": "science_2_topic_3",
+          "type": "Topic",
+          "label": "How do Organisms Reproduce",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 12,
+            "tags": [
+              "science",
+              "Biology",
+              "how_do_organisms_reproduce"
+            ]
+          }
+        },
+        {
+          "id": "science_2_topic_4",
+          "type": "Topic",
+          "label": "Heredity and Evolution",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 12,
+            "tags": [
+              "science",
+              "Biology",
+              "heredity_and_evolution"
+            ]
+          }
+        },
+        {
+          "id": "science_3",
+          "type": "Unit",
+          "label": "Natural Phenomena",
+          "properties": {
+            "marks": 12,
+            "periods": 23,
+            "section": "Physics"
+          }
+        },
+        {
+          "id": "science_3_topic_1",
+          "type": "Topic",
+          "label": "Light - Reflection and Refraction",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "science",
+              "Physics",
+              "light_-_reflection_and_refract"
+            ]
+          }
+        },
+        {
+          "id": "science_3_topic_2",
+          "type": "Topic",
+          "label": "Human Eye and Colourful World",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 11,
+            "tags": [
+              "science",
+              "Physics",
+              "human_eye_and_colourful_world"
+            ]
+          }
+        },
+        {
+          "id": "science_4",
+          "type": "Unit",
+          "label": "Effects of Current",
+          "properties": {
+            "marks": 13,
+            "periods": 32,
+            "section": "Physics"
+          }
+        },
+        {
+          "id": "science_4_topic_1",
+          "type": "Topic",
+          "label": "Electricity",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 16,
+            "tags": [
+              "science",
+              "Physics",
+              "electricity"
+            ]
+          }
+        },
+        {
+          "id": "science_4_topic_2",
+          "type": "Topic",
+          "label": "Magnetic Effects of Electric Current",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 16,
+            "tags": [
+              "science",
+              "Physics",
+              "magnetic_effects_of_electric_c"
+            ]
+          }
+        },
+        {
+          "id": "science_5",
+          "type": "Unit",
+          "label": "Natural Resources",
+          "properties": {
+            "marks": 5,
+            "periods": 20,
+            "section": "Interdisciplinary"
+          }
+        },
+        {
+          "id": "science_5_topic_1",
+          "type": "Topic",
+          "label": "Our Environment",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 10,
+            "tags": [
+              "science",
+              "Interdisciplinary",
+              "our_environment"
+            ]
+          }
+        },
+        {
+          "id": "science_5_topic_2",
+          "type": "Topic",
+          "label": "Management of Natural Resources",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 10,
+            "tags": [
+              "science",
+              "Interdisciplinary",
+              "management_of_natural_resource"
+            ]
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "science",
+          "target": "science_1",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "science_1",
+          "target": "science_1_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "science_1",
+          "target": "science_1_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "science_1",
+          "target": "science_1_topic_3",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "science_1",
+          "target": "science_1_topic_4",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "science_1",
+          "target": "science_1_topic_5",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "science",
+          "target": "science_2",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "science_2",
+          "target": "science_2_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "science_2",
+          "target": "science_2_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "science_2",
+          "target": "science_2_topic_3",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "science_2",
+          "target": "science_2_topic_4",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "science",
+          "target": "science_3",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "science_3",
+          "target": "science_3_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "science_3",
+          "target": "science_3_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "science",
+          "target": "science_4",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "science_4",
+          "target": "science_4_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "science_4",
+          "target": "science_4_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "science",
+          "target": "science_5",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "science_5",
+          "target": "science_5_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "science_5",
+          "target": "science_5_topic_2",
+          "type": "HAS_TOPIC"
+        }
+      ]
+    },
+    "social_science": {
+      "nodes": [
+        {
+          "id": "social_science",
+          "type": "Course",
+          "label": "Social_Science Class X",
+          "properties": {
+            "subject": "Social Science",
+            "class": "X",
+            "academic_year": "2026-27",
+            "code": "087",
+            "max_marks": 80,
+            "internal_assessment": 20,
+            "sections": [
+              "History",
+              "Geography",
+              "Political Science",
+              "Economics"
+            ],
+            "total_periods": 180
+          }
+        },
+        {
+          "id": "social_science_1",
+          "type": "Unit",
+          "label": "India and the Contemporary World - II",
+          "properties": {
+            "marks": 20,
+            "periods": 46,
+            "section": "History"
+          }
+        },
+        {
+          "id": "social_science_1_topic_1",
+          "type": "Topic",
+          "label": "The Rise of Nationalism in Europe",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 9,
+            "tags": [
+              "social_science",
+              "History",
+              "the_rise_of_nationalism_in_eur"
+            ]
+          }
+        },
+        {
+          "id": "social_science_1_topic_2",
+          "type": "Topic",
+          "label": "Nationalism in India",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 9,
+            "tags": [
+              "social_science",
+              "History",
+              "nationalism_in_india"
+            ]
+          }
+        },
+        {
+          "id": "social_science_1_topic_3",
+          "type": "Topic",
+          "label": "The Making of a Global World",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 9,
+            "tags": [
+              "social_science",
+              "History",
+              "the_making_of_a_global_world"
+            ]
+          }
+        },
+        {
+          "id": "social_science_1_topic_4",
+          "type": "Topic",
+          "label": "The Age of Industrialization",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 9,
+            "tags": [
+              "social_science",
+              "History",
+              "the_age_of_industrialization"
+            ]
+          }
+        },
+        {
+          "id": "social_science_1_topic_5",
+          "type": "Topic",
+          "label": "Print Culture and the Modern World",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 9,
+            "tags": [
+              "social_science",
+              "History",
+              "print_culture_and_the_modern_w"
+            ]
+          }
+        },
+        {
+          "id": "social_science_2",
+          "type": "Unit",
+          "label": "Contemporary India - II",
+          "properties": {
+            "marks": 20,
+            "periods": 46,
+            "section": "Geography"
+          }
+        },
+        {
+          "id": "social_science_2_topic_1",
+          "type": "Topic",
+          "label": "Resources and Development",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 6,
+            "tags": [
+              "social_science",
+              "Geography",
+              "resources_and_development"
+            ]
+          }
+        },
+        {
+          "id": "social_science_2_topic_2",
+          "type": "Topic",
+          "label": "Forest and Wildlife Resources",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 6,
+            "tags": [
+              "social_science",
+              "Geography",
+              "forest_and_wildlife_resources"
+            ]
+          }
+        },
+        {
+          "id": "social_science_2_topic_3",
+          "type": "Topic",
+          "label": "Water Resources",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 6,
+            "tags": [
+              "social_science",
+              "Geography",
+              "water_resources"
+            ]
+          }
+        },
+        {
+          "id": "social_science_2_topic_4",
+          "type": "Topic",
+          "label": "Agriculture",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 6,
+            "tags": [
+              "social_science",
+              "Geography",
+              "agriculture"
+            ]
+          }
+        },
+        {
+          "id": "social_science_2_topic_5",
+          "type": "Topic",
+          "label": "Minerals and Energy Resources",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 6,
+            "tags": [
+              "social_science",
+              "Geography",
+              "minerals_and_energy_resources"
+            ]
+          }
+        },
+        {
+          "id": "social_science_2_topic_6",
+          "type": "Topic",
+          "label": "Manufacturing Industries",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 6,
+            "tags": [
+              "social_science",
+              "Geography",
+              "manufacturing_industries"
+            ]
+          }
+        },
+        {
+          "id": "social_science_2_topic_7",
+          "type": "Topic",
+          "label": "Lifelines of National Economy",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 6,
+            "tags": [
+              "social_science",
+              "Geography",
+              "lifelines_of_national_economy"
+            ]
+          }
+        },
+        {
+          "id": "social_science_3",
+          "type": "Unit",
+          "label": "Democratic Politics - II",
+          "properties": {
+            "marks": 20,
+            "periods": 46,
+            "section": "Political Science"
+          }
+        },
+        {
+          "id": "social_science_3_topic_1",
+          "type": "Topic",
+          "label": "Power Sharing",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 9,
+            "tags": [
+              "social_science",
+              "Political Science",
+              "power_sharing"
+            ]
+          }
+        },
+        {
+          "id": "social_science_3_topic_2",
+          "type": "Topic",
+          "label": "Federalism",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 9,
+            "tags": [
+              "social_science",
+              "Political Science",
+              "federalism"
+            ]
+          }
+        },
+        {
+          "id": "social_science_3_topic_3",
+          "type": "Topic",
+          "label": "Gender, Religion and Caste",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 9,
+            "tags": [
+              "social_science",
+              "Political Science",
+              "gender,_religion_and_caste"
+            ]
+          }
+        },
+        {
+          "id": "social_science_3_topic_4",
+          "type": "Topic",
+          "label": "Political Parties",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 9,
+            "tags": [
+              "social_science",
+              "Political Science",
+              "political_parties"
+            ]
+          }
+        },
+        {
+          "id": "social_science_3_topic_5",
+          "type": "Topic",
+          "label": "Outcomes of Democracy",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 9,
+            "tags": [
+              "social_science",
+              "Political Science",
+              "outcomes_of_democracy"
+            ]
+          }
+        },
+        {
+          "id": "social_science_4",
+          "type": "Unit",
+          "label": "Understanding Economic Development",
+          "properties": {
+            "marks": 20,
+            "periods": 42,
+            "section": "Economics"
+          }
+        },
+        {
+          "id": "social_science_4_topic_1",
+          "type": "Topic",
+          "label": "Development",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 8,
+            "tags": [
+              "social_science",
+              "Economics",
+              "development"
+            ]
+          }
+        },
+        {
+          "id": "social_science_4_topic_2",
+          "type": "Topic",
+          "label": "Sectors of the Indian Economy",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 8,
+            "tags": [
+              "social_science",
+              "Economics",
+              "sectors_of_the_indian_economy"
+            ]
+          }
+        },
+        {
+          "id": "social_science_4_topic_3",
+          "type": "Topic",
+          "label": "Money and Credit",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 8,
+            "tags": [
+              "social_science",
+              "Economics",
+              "money_and_credit"
+            ]
+          }
+        },
+        {
+          "id": "social_science_4_topic_4",
+          "type": "Topic",
+          "label": "Globalisation and the Indian Economy",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 8,
+            "tags": [
+              "social_science",
+              "Economics",
+              "globalisation_and_the_indian_e"
+            ]
+          }
+        },
+        {
+          "id": "social_science_4_topic_5",
+          "type": "Topic",
+          "label": "Consumer Rights",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 8,
+            "tags": [
+              "social_science",
+              "Economics",
+              "consumer_rights"
+            ]
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "social_science",
+          "target": "social_science_1",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "social_science_1",
+          "target": "social_science_1_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_1",
+          "target": "social_science_1_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_1",
+          "target": "social_science_1_topic_3",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_1",
+          "target": "social_science_1_topic_4",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_1",
+          "target": "social_science_1_topic_5",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science",
+          "target": "social_science_2",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "social_science_2",
+          "target": "social_science_2_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_2",
+          "target": "social_science_2_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_2",
+          "target": "social_science_2_topic_3",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_2",
+          "target": "social_science_2_topic_4",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_2",
+          "target": "social_science_2_topic_5",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_2",
+          "target": "social_science_2_topic_6",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_2",
+          "target": "social_science_2_topic_7",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science",
+          "target": "social_science_3",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "social_science_3",
+          "target": "social_science_3_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_3",
+          "target": "social_science_3_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_3",
+          "target": "social_science_3_topic_3",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_3",
+          "target": "social_science_3_topic_4",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_3",
+          "target": "social_science_3_topic_5",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science",
+          "target": "social_science_4",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "social_science_4",
+          "target": "social_science_4_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_4",
+          "target": "social_science_4_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_4",
+          "target": "social_science_4_topic_3",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_4",
+          "target": "social_science_4_topic_4",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "social_science_4",
+          "target": "social_science_4_topic_5",
+          "type": "HAS_TOPIC"
+        }
+      ]
+    },
+    "english": {
+      "nodes": [
+        {
+          "id": "english",
+          "type": "Course",
+          "label": "English Class X",
+          "properties": {
+            "subject": "English Language & Literature",
+            "class": "X",
+            "academic_year": "2026-27",
+            "code": "184",
+            "max_marks": 80,
+            "internal_assessment": 20
+          }
+        },
+        {
+          "id": "english_reading_skills",
+          "type": "Unit",
+          "label": "",
+          "properties": {
+            "marks": 20,
+            "periods": 40,
+            "section": "Reading Skills"
+          }
+        },
+        {
+          "id": "english_reading_skills_topic_1",
+          "type": "Topic",
+          "label": "Reading Comprehension (Factual, Literary, Discursive)",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 20,
+            "tags": [
+              "english",
+              "Reading Skills",
+              "reading_comprehension_(factual"
+            ]
+          }
+        },
+        {
+          "id": "english_reading_skills_topic_2",
+          "type": "Topic",
+          "label": "Case-based Passages",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 20,
+            "tags": [
+              "english",
+              "Reading Skills",
+              "case-based_passages"
+            ]
+          }
+        },
+        {
+          "id": "english_writing_skills_with_grammar",
+          "type": "Unit",
+          "label": "",
+          "properties": {
+            "marks": 20,
+            "periods": 50,
+            "section": "Writing Skills with Grammar"
+          }
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_1",
+          "type": "Topic",
+          "label": "Formal Letter",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 5,
+            "tags": [
+              "english",
+              "Writing Skills with Grammar",
+              "formal_letter"
+            ]
+          }
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_2",
+          "type": "Topic",
+          "label": "Analytical Paragraph",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 5,
+            "tags": [
+              "english",
+              "Writing Skills with Grammar",
+              "analytical_paragraph"
+            ]
+          }
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_3",
+          "type": "Topic",
+          "label": "Creative Writing",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 5,
+            "tags": [
+              "english",
+              "Writing Skills with Grammar",
+              "creative_writing"
+            ]
+          }
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_4",
+          "type": "Topic",
+          "label": "Tenses",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 5,
+            "tags": [
+              "english",
+              "Writing Skills with Grammar",
+              "tenses"
+            ]
+          }
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_5",
+          "type": "Topic",
+          "label": "Modals",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 5,
+            "tags": [
+              "english",
+              "Writing Skills with Grammar",
+              "modals"
+            ]
+          }
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_6",
+          "type": "Topic",
+          "label": "Subject-Verb Concord",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 5,
+            "tags": [
+              "english",
+              "Writing Skills with Grammar",
+              "subject-verb_concord"
+            ]
+          }
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_7",
+          "type": "Topic",
+          "label": "Reported Speech",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 5,
+            "tags": [
+              "english",
+              "Writing Skills with Grammar",
+              "reported_speech"
+            ]
+          }
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_8",
+          "type": "Topic",
+          "label": "Clauses",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 5,
+            "tags": [
+              "english",
+              "Writing Skills with Grammar",
+              "clauses"
+            ]
+          }
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_9",
+          "type": "Topic",
+          "label": "Determiners",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 5,
+            "tags": [
+              "english",
+              "Writing Skills with Grammar",
+              "determiners"
+            ]
+          }
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_10",
+          "type": "Topic",
+          "label": "Prepositions",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 5,
+            "tags": [
+              "english",
+              "Writing Skills with Grammar",
+              "prepositions"
+            ]
+          }
+        },
+        {
+          "id": "english_literature_textbook_and_supplementary_reading",
+          "type": "Unit",
+          "label": "",
+          "properties": {
+            "marks": 40,
+            "periods": 90,
+            "section": "Literature Textbook & Supplementary Reading"
+          }
+        },
+        {
+          "id": "english_literature_textbook_and_supplementary_reading_topic_1",
+          "type": "Topic",
+          "label": "First Flight - Prose",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 30,
+            "tags": [
+              "english",
+              "Literature Textbook & Supplementary Reading",
+              "first_flight_-_prose"
+            ]
+          }
+        },
+        {
+          "id": "english_literature_textbook_and_supplementary_reading_topic_2",
+          "type": "Topic",
+          "label": "First Flight - Poetry",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 30,
+            "tags": [
+              "english",
+              "Literature Textbook & Supplementary Reading",
+              "first_flight_-_poetry"
+            ]
+          }
+        },
+        {
+          "id": "english_literature_textbook_and_supplementary_reading_topic_3",
+          "type": "Topic",
+          "label": "Footprints without Feet - Supplementary",
+          "properties": {
+            "difficulty": "medium",
+            "estimated_periods": 30,
+            "tags": [
+              "english",
+              "Literature Textbook & Supplementary Reading",
+              "footprints_without_feet_-_supp"
+            ]
+          }
+        }
+      ],
+      "edges": [
+        {
+          "source": "english",
+          "target": "english_reading_skills",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "english_reading_skills",
+          "target": "english_reading_skills_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "english_reading_skills",
+          "target": "english_reading_skills_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "english",
+          "target": "english_writing_skills_with_grammar",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "english_writing_skills_with_grammar",
+          "target": "english_writing_skills_with_grammar_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "english_writing_skills_with_grammar",
+          "target": "english_writing_skills_with_grammar_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "english_writing_skills_with_grammar",
+          "target": "english_writing_skills_with_grammar_topic_3",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "english_writing_skills_with_grammar",
+          "target": "english_writing_skills_with_grammar_topic_4",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "english_writing_skills_with_grammar",
+          "target": "english_writing_skills_with_grammar_topic_5",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "english_writing_skills_with_grammar",
+          "target": "english_writing_skills_with_grammar_topic_6",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "english_writing_skills_with_grammar",
+          "target": "english_writing_skills_with_grammar_topic_7",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "english_writing_skills_with_grammar",
+          "target": "english_writing_skills_with_grammar_topic_8",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "english_writing_skills_with_grammar",
+          "target": "english_writing_skills_with_grammar_topic_9",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "english_writing_skills_with_grammar",
+          "target": "english_writing_skills_with_grammar_topic_10",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "english",
+          "target": "english_literature_textbook_and_supplementary_reading",
+          "type": "CONTAINS"
+        },
+        {
+          "source": "english_literature_textbook_and_supplementary_reading",
+          "target": "english_literature_textbook_and_supplementary_reading_topic_1",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "english_literature_textbook_and_supplementary_reading",
+          "target": "english_literature_textbook_and_supplementary_reading_topic_2",
+          "type": "HAS_TOPIC"
+        },
+        {
+          "source": "english_literature_textbook_and_supplementary_reading",
+          "target": "english_literature_textbook_and_supplementary_reading_topic_3",
+          "type": "HAS_TOPIC"
+        }
+      ]
+    }
+  }
+}

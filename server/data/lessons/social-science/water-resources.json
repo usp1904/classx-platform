@@ -1,0 +1,1325 @@
+{
+  "subject": "Geography",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 3,
+  "chapter": "Water Resources",
+  "lesson": 3,
+  "id": "water-resources",
+  "title": "Water Resources — Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Explain why water is a renewable but finite resource",
+    "Identify the natural and human causes of water scarcity",
+    "Describe the benefits of multipurpose river projects",
+    "Evaluate the social, economic and environmental costs of dams",
+    "Compare traditional and modern rainwater harvesting methods",
+    "Explain watershed management and water conservation",
+    "Discuss inter-state water disputes and the Narmada Bachao Andolan",
+    "Answer board-style questions on dams, scarcity and rainwater harvesting"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS9_DRAINAGE",
+    "SCIENCE_CLASS7_WATER",
+    "SCIENCE_CLASS8_WATER_POLLUTION",
+    "SOCIAL_CLASS8_WATER_RESOURCES"
+  ],
+  "concepts": [
+    {
+      "id": "concept-water-resource",
+      "title": "Water as a Resource and the Water Cycle",
+      "name": "Water as a Resource and the Water Cycle",
+      "explanation": "Water is a renewable resource because the water cycle continuously moves water between oceans, atmosphere and land. However, only a small share of the Earth's water is freshwater that is accessible for human use. Rainfall, rivers, lakes and groundwater are replenished at different rates, and groundwater can be depleted if extraction exceeds recharge. Water is therefore renewable in principle but finite in practice.",
+      "purpose": "The water cycle explains why water is not destroyed but can still become scarce in a particular place or season. It also shows why storage, recharge and pollution control matter.",
+      "real_life_application": "A city depends on reservoirs and groundwater. If it pumps more groundwater than rain recharges, wells dry up even though the water cycle continues globally.",
+      "key_points": [
+        "Water is renewable through the water cycle.",
+        "Only a small fraction of Earth's water is accessible freshwater.",
+        "Groundwater recharge is slower than many extraction rates.",
+        "Rainfall is uneven in space and time, especially under the monsoon.",
+        "Pollution can make abundant water unusable.",
+        "Storage and recharge convert seasonal rain into year-round supply."
+      ],
+      "day_to_day_usage": [
+        "Rooftop rain is stored in tanks for dry months",
+        "Borewells depend on groundwater recharge",
+        "Reservoirs supply cities and irrigation canals",
+        "Wetlands store water and recharge groundwater",
+        "Water treatment makes river or groundwater safe to drink"
+      ]
+    },
+    {
+      "id": "concept-water-scarcity",
+      "title": "Water Scarcity: Causes and Consequences",
+      "name": "Water Scarcity: Causes and Consequences",
+      "explanation": "Water scarcity is a shortage of usable water relative to demand. It can be physical, when water is naturally limited, or economic, when water exists but people lack the infrastructure, money or institutions to use it. Causes include population growth, rising demand from agriculture and industry, over-exploitation of groundwater, pollution, unequal access and poor storage. Scarcity affects drinking water, sanitation, irrigation, industry and ecosystems, and can trigger conflict.",
+      "purpose": "Scarcity is often a management problem, not only a rainfall problem. Recognising the causes helps choose between storage, recharge, efficiency and pollution control.",
+      "real_life_application": "A high-rainfall town can still face shortages if it has no storage and its wells are contaminated. A dry region can improve supply through tanks, recharge pits and careful irrigation.",
+      "key_points": [
+        "Scarcity can be physical or economic.",
+        "Population growth and rising demand increase pressure.",
+        "Agriculture is the largest water user in India.",
+        "Over-extraction of groundwater lowers the water table.",
+        "Pollution reduces the amount of usable water.",
+        "Unequal access and poor storage worsen scarcity.",
+        "Scarcity affects health, food production and social stability."
+      ],
+      "day_to_day_usage": [
+        "Summer water rationing in cities",
+        "Farmers deepening borewells as the water table falls",
+        "Boiling or filtering water when supply is unsafe",
+        "Village committees managing a shared tank",
+        "Industrial units recycling water to reduce demand"
+      ]
+    },
+    {
+      "id": "concept-multipurpose-projects",
+      "title": "Multipurpose River Projects and Dams",
+      "name": "Multipurpose River Projects and Dams",
+      "explanation": "A multipurpose river project uses a dam and reservoirs to serve several needs at once: irrigation, electricity, flood control, drinking water, navigation, fish breeding and recreation. Examples include Bhakra Nangal on the Satluj, Hirakud on the Mahanadi, the Damodar Valley Corporation on the Damodar, Nagarjuna Sagar on the Krishna, Tehri on the Bhagirathi and Sardar Sarovar on the Narmada. These projects helped expand irrigation and hydel power, but they also submerged land, displaced people and altered river ecosystems.",
+      "purpose": "Multipurpose projects show how one investment can serve many needs, but also how large infrastructure creates trade-offs between beneficiaries and affected communities.",
+      "real_life_application": "A canal from a reservoir can irrigate fields far from the river. Hydel turbines at the same dam supply electricity. The same reservoir may also supply drinking water to a town.",
+      "key_points": [
+        "Multipurpose projects combine irrigation, power, flood control and water supply.",
+        "Bhakra Nangal is on the Satluj.",
+        "Hirakud is on the Mahanadi.",
+        "Damodar Valley Corporation is on the Damodar.",
+        "Nagarjuna Sagar is on the Krishna.",
+        "Tehri is on the Bhagirathi and Sardar Sarovar on the Narmada.",
+        "Benefits must be weighed against displacement and ecological costs."
+      ],
+      "day_to_day_usage": [
+        "Canal water for crops in command areas",
+        "Hydel electricity in homes and industries",
+        "Reservoir water for city taps",
+        "Flood moderation downstream",
+        "Reservoir fisheries and tourism"
+      ]
+    },
+    {
+      "id": "concept-dam-costs",
+      "title": "Dams: Benefits, Costs and Conflicts",
+      "name": "Dams: Benefits, Costs and Conflicts",
+      "explanation": "Dams store water and regulate flow, but they also create serious costs. Large reservoirs submerge forests and farmland and displace communities, often tribal and poor households. Sedimentation reduces storage over time. Downstream flows and fisheries change. Waterlogging and salinity can affect irrigated fields. Benefits and costs are unevenly distributed, which leads to protests and inter-state disputes. The Narmada Bachao Andolan, associated with Medha Patkar, highlighted the displacement and environmental costs of the Sardar Sarovar project.",
+      "purpose": "Dams are not automatically good or bad. A board answer must weigh irrigation and power against displacement, ecological damage and equity.",
+      "real_life_application": "A downstream village may lose fish and silt while an upstream city gains electricity. Resettlement promises may be incomplete, creating long-term hardship.",
+      "key_points": [
+        "Benefits: irrigation, hydel power, flood control, water supply.",
+        "Costs: displacement, submergence, sedimentation and ecological change.",
+        "Downstream users may lose water, silt and fisheries.",
+        "Irrigation can cause waterlogging and salinity.",
+        "Inter-state disputes arise over sharing river water.",
+        "Narmada Bachao Andolan opposed the social and environmental costs of Sardar Sarovar.",
+        "Cost-benefit analysis must include rehabilitation and ecology."
+      ],
+      "day_to_day_usage": [
+        "News reports on dam displacement and rehabilitation",
+        "Inter-state river water disputes",
+        "Farmers dealing with waterlogging in canal areas",
+        "Fisherfolk affected by changed river flows",
+        "Protests over submergence of forests and villages"
+      ]
+    },
+    {
+      "id": "concept-rainwater-harvesting",
+      "title": "Rainwater Harvesting: Traditional and Modern Methods",
+      "name": "Rainwater Harvesting: Traditional and Modern Methods",
+      "explanation": "Rainwater harvesting collects and stores rain for later use or for groundwater recharge. Traditional methods are adapted to local climate and terrain. Khadins in Jaisalmer trap monsoon runoff for agriculture. Johads in Rajasthan are small earthen check dams. Tankas are underground tanks in Rajasthan. Baolis are step wells. Pynes are diversion channels in Bihar. Kuls are gravity channels in Himachal Pradesh. Zings are small tanks in Ladakh. Bamboo drip irrigation in Meghalaya uses bamboo pipes. Modern methods include rooftop harvesting, recharge pits, percolation tanks and urban rain gardens.",
+      "purpose": "Harvesting turns seasonal rainfall into local supply, reduces dependence on distant rivers and recharges groundwater. It is often cheaper and more resilient than large projects.",
+      "real_life_application": "A rooftop system can fill a tank for household use and send overflow into a recharge pit. A village johad can raise groundwater levels and revive a well.",
+      "key_points": [
+        "Khadin: Jaisalmer, runoff farming in desert areas.",
+        "Johad: small earthen check dam in Rajasthan.",
+        "Tanka: underground tank in Rajasthan.",
+        "Baoli: step well used in parts of north and west India.",
+        "Pynes: diversion channels in Bihar.",
+        "Kuls: gravity channels in Himachal Pradesh.",
+        "Bamboo drip irrigation: Meghalaya.",
+        "Modern methods: rooftop harvesting and recharge pits."
+      ],
+      "day_to_day_usage": [
+        "Rooftop rainwater tanks in homes and schools",
+        "Recharge pits in housing societies",
+        "Village tanks and johads for livestock and farming",
+        "Step wells as heritage water sources",
+        "Bamboo pipes carrying spring water in hilly areas"
+      ]
+    },
+    {
+      "id": "concept-water-management",
+      "title": "Water Conservation and Watershed Management",
+      "name": "Water Conservation and Watershed Management",
+      "explanation": "Water conservation means using water efficiently and protecting its quality. Watershed management treats a drainage basin as a unit and combines soil and water conservation: contour bunding, gully plugging, check dams, afforestation, pasture development and recharge structures. Efficient irrigation such as drip and sprinkler systems reduces waste. Recycling industrial water, repairing leaks, metering and pricing can reduce urban demand. Pollution control protects the water that already exists.",
+      "purpose": "Supply-side projects alone cannot solve scarcity. Managing demand and protecting catchments is often cheaper, faster and more sustainable.",
+      "real_life_application": "A watershed programme can raise groundwater levels, improve crop yields and reduce soil erosion in the same village. Drip irrigation saves water while maintaining yields.",
+      "key_points": [
+        "Watershed management treats a drainage basin as one planning unit.",
+        "Contour bunding, gully plugging and check dams conserve soil and water.",
+        "Afforestation improves infiltration and reduces runoff.",
+        "Drip and sprinkler irrigation improve water-use efficiency.",
+        "Recycling and leak repair reduce urban demand.",
+        "Pollution control protects usable supply.",
+        "Community participation improves maintenance and equity."
+      ],
+      "day_to_day_usage": [
+        "Drip irrigation in orchards and vegetable fields",
+        "Rainwater recharge pits in colonies",
+        "Repairing leaking municipal pipelines",
+        "Treating and reusing industrial cooling water",
+        "Village watershed committees maintaining check dams"
+      ]
+    }
+  ],
+  "theorems": [],
+  "worked_examples": [
+    {
+      "id": "we-water-1",
+      "title": "Scarcity despite heavy rainfall",
+      "topic": "Water scarcity",
+      "problem": "A town in a high-rainfall region still faces water scarcity every dry season. Explain how this is possible and suggest two remedies.",
+      "solution": [
+        "Step 1: Heavy rainfall is concentrated in a short monsoon season, so most water flows away quickly.",
+        "Step 2: The town may lack storage tanks, reservoirs or recharge structures.",
+        "Step 3: Groundwater may be over-extracted or polluted, reducing usable supply.",
+        "Step 4: Rapid population growth and poor distribution can worsen the shortage.",
+        "Step 5: Remedies include rooftop rainwater harvesting, recharge pits and local storage tanks."
+      ],
+      "board_mode": [
+        "State that rainfall is seasonal and runoff is high.",
+        "Explain lack of storage and recharge.",
+        "Add pollution and over-extraction as causes.",
+        "Give two remedies: rainwater harvesting and groundwater recharge."
+      ],
+      "answer": "Seasonal rainfall, poor storage, over-extraction and pollution can cause scarcity even in wet regions; harvesting and recharge help.",
+      "board_tip": "Scarcity is about usable water at the right place and time, not just total rainfall."
+    },
+    {
+      "id": "we-water-2",
+      "title": "Benefits of a multipurpose project",
+      "topic": "Multipurpose river projects",
+      "problem": "Explain five benefits of a multipurpose river project with examples.",
+      "solution": [
+        "Step 1: Irrigation: canals carry reservoir water to fields, extending cultivation into dry seasons.",
+        "Step 2: Hydel power: falling water turns turbines and generates electricity.",
+        "Step 3: Flood control: the reservoir stores peak flows and reduces downstream flooding.",
+        "Step 4: Water supply: towns and industries receive stored water.",
+        "Step 5: Navigation, fisheries and recreation add further benefits.",
+        "Step 6: Example: Bhakra Nangal serves irrigation and power in the north-west."
+      ],
+      "board_mode": [
+        "List five benefits with one line each.",
+        "Link each benefit to a user: farmers, homes, industries, transport.",
+        "Add one named project as an example.",
+        "Mention that benefits must be weighed against costs."
+      ],
+      "answer": "Irrigation, hydel power, flood control, water supply and navigation or fisheries, as in Bhakra Nangal.",
+      "board_tip": "Name the project and the river to turn a general answer into a scoring one."
+    },
+    {
+      "id": "we-water-3",
+      "title": "Evaluating a large dam",
+      "topic": "Dams: benefits and costs",
+      "problem": "A large dam is proposed on a forested river. Evaluate its benefits and costs.",
+      "solution": [
+        "Step 1: Benefits include irrigation, electricity, flood control and drinking water.",
+        "Step 2: Costs include submergence of forest and farmland.",
+        "Step 3: Communities may be displaced and need fair rehabilitation.",
+        "Step 4: River flow, silt and fisheries may change downstream.",
+        "Step 5: Sedimentation will reduce storage over time.",
+        "Step 6: A fair decision requires cost-benefit analysis, environmental impact assessment and consultation."
+      ],
+      "board_mode": [
+        "List benefits on one side and costs on the other.",
+        "Include social, economic and environmental costs.",
+        "Mention displacement and downstream impacts.",
+        "Conclude with assessment, consultation and rehabilitation."
+      ],
+      "answer": "The dam may bring irrigation and power but also submergence, displacement and downstream ecological change; a fair decision needs impact assessment and rehabilitation.",
+      "board_tip": "Use a two-column table. A balanced conclusion scores better than a one-sided answer."
+    },
+    {
+      "id": "we-water-4",
+      "title": "Matching harvesting structures to regions",
+      "topic": "Rainwater harvesting",
+      "problem": "Match each structure with its region and purpose: khadin, johad, tanka, bamboo drip irrigation.",
+      "solution": [
+        "Step 1: Khadin is used in Jaisalmer, Rajasthan, to trap runoff for agriculture in desert areas.",
+        "Step 2: Johad is a small earthen check dam in Rajasthan that stores water and recharges groundwater.",
+        "Step 3: Tanka is an underground tank in Rajasthan used to store rainwater for drinking.",
+        "Step 4: Bamboo drip irrigation is used in Meghalaya to carry spring water to plantations."
+      ],
+      "board_mode": [
+        "Write the structure, region and purpose in three columns.",
+        "Khadin — Jaisalmer — runoff farming.",
+        "Johad — Rajasthan — storage and recharge.",
+        "Tanka — Rajasthan — drinking water storage.",
+        "Bamboo drip — Meghalaya — irrigation."
+      ],
+      "answer": "Khadin: Jaisalmer for runoff farming; johad: Rajasthan for storage and recharge; tanka: Rajasthan for drinking water; bamboo drip: Meghalaya for irrigation.",
+      "board_tip": "Traditional structures are region-specific because they match local rainfall, slope and soil."
+    },
+    {
+      "id": "we-water-5",
+      "title": "A water management plan for a city",
+      "topic": "Water conservation",
+      "problem": "Suggest a practical water management plan for a growing city facing summer shortages.",
+      "solution": [
+        "Step 1: Reduce demand by repairing leaks and metering supply.",
+        "Step 2: Promote rooftop rainwater harvesting and recharge pits.",
+        "Step 3: Protect local lakes and wetlands from encroachment and pollution.",
+        "Step 4: Treat and reuse wastewater for gardens, parks and industry.",
+        "Step 5: Use drip and sprinkler irrigation in public parks.",
+        "Step 6: Run public awareness campaigns and involve resident welfare associations."
+      ],
+      "board_mode": [
+        "Divide the plan into supply, demand and protection.",
+        "Supply: harvesting, recharge and storage.",
+        "Demand: leak repair, metering and efficient irrigation.",
+        "Protection: stop pollution and encroachment.",
+        "Add community participation and public awareness."
+      ],
+      "answer": "A city plan should combine leak repair, rainwater harvesting, recharge, wastewater reuse, efficient irrigation and protection of local water bodies.",
+      "board_tip": "A good plan covers supply, demand and quality, not just new dams."
+    }
+  ],
+  "exercises": {
+    "simple": {
+      "title": "NCERT Practice — Water Basics",
+      "objective": "Define water scarcity, dams and rainwater harvesting",
+      "problems": [
+        {
+          "id": "water-ex-s-1",
+          "question": "Define water scarcity.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Water scarcity is a shortage of usable water relative to demand.",
+            "Step 2: It may be physical, when water is naturally limited, or economic, when people lack infrastructure or money to use available water.",
+            "Step 3: It affects drinking water, agriculture, industry and ecosystems."
+          ],
+          "final_answer": "Water scarcity is a shortage of usable water relative to demand, caused by physical limits or economic and management constraints.",
+          "marks": 2
+        },
+        {
+          "id": "water-ex-s-2",
+          "question": "Name two multipurpose river projects of India.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Bhakra Nangal is on the Satluj.",
+            "Step 2: Hirakud is on the Mahanadi.",
+            "Step 3: Other examples include Damodar Valley Corporation, Nagarjuna Sagar and Sardar Sarovar."
+          ],
+          "final_answer": "Bhakra Nangal on the Satluj and Hirakud on the Mahanadi, among others.",
+          "marks": 1
+        },
+        {
+          "id": "water-ex-s-3",
+          "question": "What is a dam?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: A dam is a barrier built across a river to store water.",
+            "Step 2: It creates a reservoir that can supply irrigation, electricity and drinking water.",
+            "Step 3: It can also help moderate floods."
+          ],
+          "final_answer": "A dam is a barrier across a river that stores water in a reservoir for irrigation, power, water supply and flood control.",
+          "marks": 2
+        },
+        {
+          "id": "water-ex-s-4",
+          "question": "What is rainwater harvesting?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Rainwater harvesting is the collection and storage of rain for later use.",
+            "Step 2: It can also direct rain into the ground to recharge groundwater.",
+            "Step 3: Methods include rooftop tanks, recharge pits and traditional tanks."
+          ],
+          "final_answer": "Rainwater harvesting collects and stores rain, or sends it underground to recharge groundwater.",
+          "marks": 2
+        },
+        {
+          "id": "water-ex-s-5",
+          "question": "Name one traditional rainwater harvesting structure.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: A tanka is an underground rainwater tank used in Rajasthan.",
+            "Step 2: Other examples are johad, khadin, baoli, pyne and kul.",
+            "Step 3: Any one correctly named structure is acceptable."
+          ],
+          "final_answer": "Tanka in Rajasthan, or johad, khadin, baoli, pyne or kul.",
+          "marks": 1
+        },
+        {
+          "id": "water-ex-s-6",
+          "question": "State two causes of water scarcity.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Over-extraction of groundwater lowers the water table.",
+            "Step 2: Pollution makes available water unsafe or unusable.",
+            "Step 3: Other causes include population growth, poor storage and unequal access."
+          ],
+          "final_answer": "Over-extraction of groundwater and pollution, along with growing demand and poor storage.",
+          "marks": 2
+        }
+      ]
+    },
+    "medium": {
+      "title": "NCERT Practice — Dams and Harvesting",
+      "objective": "Explain scarcity, project benefits and rainwater harvesting",
+      "problems": [
+        {
+          "id": "water-ex-m-1",
+          "question": "Explain any three causes of water scarcity in India.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Rapid population growth and rising demand from agriculture, industry and cities increase pressure on water.",
+            "Step 2: Groundwater is over-extracted in many areas, lowering the water table.",
+            "Step 3: Pollution from sewage, industry and farming reduces usable supply.",
+            "Step 4: Uneven rainfall, poor storage and unequal access worsen the shortage."
+          ],
+          "final_answer": "Growing demand, groundwater over-extraction and pollution are major causes, along with uneven rainfall and poor storage.",
+          "marks": 3
+        },
+        {
+          "id": "water-ex-m-2",
+          "question": "Describe three benefits of multipurpose river projects.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Irrigation: canals supply water to fields and support multiple cropping.",
+            "Step 2: Hydel power: falling water generates electricity.",
+            "Step 3: Flood control: reservoirs store peak flows and reduce downstream flooding.",
+            "Step 4: Drinking water supply, navigation and fisheries are additional benefits."
+          ],
+          "final_answer": "Irrigation, hydel power and flood control, with drinking water and fisheries as added benefits.",
+          "marks": 3
+        },
+        {
+          "id": "water-ex-m-3",
+          "question": "State three problems caused by large dams.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Large reservoirs submerge forests and farmland.",
+            "Step 2: Communities are displaced and need rehabilitation.",
+            "Step 3: Sedimentation reduces storage capacity over time.",
+            "Step 4: Downstream flows, silt and fisheries change, and irrigated land may become waterlogged or saline."
+          ],
+          "final_answer": "Submergence, displacement and sedimentation, along with downstream ecological change and waterlogging.",
+          "marks": 3
+        },
+        {
+          "id": "water-ex-m-4",
+          "question": "Describe two traditional rainwater harvesting methods with their regions.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Khadin in Jaisalmer, Rajasthan, traps monsoon runoff for agriculture.",
+            "Step 2: Johad in Rajasthan is a small earthen check dam that stores water and recharges groundwater.",
+            "Step 3: Other examples include tanka in Rajasthan, pyne in Bihar and kul in Himachal Pradesh."
+          ],
+          "final_answer": "Khadin in Jaisalmer for runoff farming and johad in Rajasthan for storage and recharge, among others.",
+          "marks": 3
+        },
+        {
+          "id": "water-ex-m-5",
+          "question": "What is watershed management? State two of its measures.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Watershed management treats a drainage basin as a single planning unit.",
+            "Step 2: It conserves soil and water across the whole catchment.",
+            "Step 3: Measures include contour bunding, gully plugging, check dams and afforestation.",
+            "Step 4: It aims to increase infiltration, reduce erosion and recharge groundwater."
+          ],
+          "final_answer": "Watershed management plans a whole drainage basin for soil and water conservation using bunding, check dams and afforestation.",
+          "marks": 3
+        },
+        {
+          "id": "water-ex-m-6",
+          "question": "Why do inter-state water disputes arise? Give one example.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Rivers cross state boundaries, and upstream and downstream states have different needs.",
+            "Step 2: States may claim larger shares for irrigation, drinking water or power.",
+            "Step 3: During low-flow years, the competition becomes sharper.",
+            "Step 4: Example: disputes over the Krishna, Cauvery or Narmada waters."
+          ],
+          "final_answer": "Disputes arise because states compete for limited river water; examples include the Krishna, Cauvery and Narmada.",
+          "marks": 3
+        }
+      ]
+    },
+    "complex": {
+      "title": "NCERT Practice — Evaluation and Case Studies",
+      "objective": "Evaluate dams, scarcity and community water management",
+      "problems": [
+        {
+          "id": "water-ex-c-1",
+          "question": "Large dams are often called a necessary evil. Discuss.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Dams provide irrigation, hydel power, flood control and drinking water, which are essential for development.",
+            "Step 2: They also submerge land, displace communities and damage river ecosystems.",
+            "Step 3: Sedimentation reduces their storage over time.",
+            "Step 4: Benefits and costs are unevenly distributed, so affected people may bear the burden without sharing the gains.",
+            "Step 5: Better options include impact assessment, fair rehabilitation, smaller projects and demand management.",
+            "Step 6: Dams are therefore useful but need careful planning and equity."
+          ],
+          "final_answer": "Dams are necessary for irrigation and power but cause displacement and ecological damage, so they need fair planning, rehabilitation and alternatives.",
+          "marks": 5
+        },
+        {
+          "id": "water-ex-c-2",
+          "question": "Explain the Narmada Bachao Andolan and the issues it raised.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: The movement opposed the social and environmental costs of the Sardar Sarovar project on the Narmada.",
+            "Step 2: It highlighted the displacement of tribal and farming communities.",
+            "Step 3: It questioned the adequacy of rehabilitation and environmental clearance.",
+            "Step 4: It raised issues of equitable sharing of benefits between upstream and downstream regions.",
+            "Step 5: The movement, associated with Medha Patkar, became a symbol of people-centred development debates."
+          ],
+          "final_answer": "The Narmada Bachao Andolan opposed Sardar Sarovar's displacement and ecological costs and demanded fair rehabilitation and equitable benefits.",
+          "marks": 5
+        },
+        {
+          "id": "water-ex-c-3",
+          "question": "Describe the khadin and tanka systems of Rajasthan and explain their importance in a desert region.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: A khadin is a runoff farming system that traps monsoon water behind an earthen embankment.",
+            "Step 2: Moisture stored in the field supports a crop in an otherwise dry area.",
+            "Step 3: A tanka is an underground tank that stores rainwater for drinking.",
+            "Step 4: Both reduce dependence on distant or deep groundwater.",
+            "Step 5: They are adapted to low rainfall, high evaporation and sandy soil.",
+            "Step 6: They show how local knowledge can manage scarce water."
+          ],
+          "final_answer": "Khadins trap runoff for farming and tankas store drinking water; both are adapted to desert rainfall and reduce groundwater dependence.",
+          "marks": 5
+        },
+        {
+          "id": "water-ex-c-4",
+          "question": "Why do cities face water shortages even when nearby rivers flow? Suggest four measures.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Cities may lack storage and treatment capacity.",
+            "Step 2: Distribution losses from leaking pipes waste water.",
+            "Step 3: Pollution makes river water unusable.",
+            "Step 4: Rapid growth increases demand faster than supply.",
+            "Step 5: Measures include leak repair, rainwater harvesting, wastewater reuse and protection of local water bodies.",
+            "Step 6: Metering and public awareness reduce demand."
+          ],
+          "final_answer": "Cities can face shortages because of poor storage, leaky pipes, pollution and rapid growth; leak repair, harvesting, reuse and protection of water bodies help.",
+          "marks": 5
+        },
+        {
+          "id": "water-ex-c-5",
+          "question": "Compare traditional and modern rainwater harvesting methods.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Traditional methods are local, low-cost and adapted to terrain, such as khadin, johad and tanka.",
+            "Step 2: They rely on community maintenance and local knowledge.",
+            "Step 3: Modern methods include rooftop systems, recharge pits and percolation tanks.",
+            "Step 4: Modern methods can be designed for dense urban buildings and industrial sites.",
+            "Step 5: Both store water and recharge groundwater; the best choice depends on climate, space and community capacity.",
+            "Step 6: Combining both approaches improves resilience."
+          ],
+          "final_answer": "Traditional methods are local and community-run; modern methods suit urban buildings; combining both improves storage and recharge.",
+          "marks": 5
+        },
+        {
+          "id": "water-ex-c-6",
+          "question": "Explain the link between water pollution and water scarcity, and suggest three control measures.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Pollution reduces the amount of water that is safe to use.",
+            "Step 2: Sewage, industrial effluents and farm chemicals contaminate rivers and groundwater.",
+            "Step 3: Cleaning polluted water costs money and energy, so scarcity increases.",
+            "Step 4: Measures include sewage treatment, industrial effluent standards and reduced fertiliser runoff.",
+            "Step 5: Protecting wetlands and riverbanks also filters pollutants.",
+            "Step 6: Public awareness and enforcement are essential."
+          ],
+          "final_answer": "Pollution makes water unusable and raises treatment costs; sewage treatment, effluent control and safer farming reduce the pressure.",
+          "marks": 5
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-water-s-1",
+        "question": "Which of the following is a multipurpose river project?",
+        "options": [
+          "Bhakra Nangal",
+          "A rooftop tank",
+          "A recharge pit",
+          "A check dam"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Bhakra Nangal is a large multipurpose project on the Satluj.",
+          "wrong_options": {
+            "1": "A rooftop tank is a rainwater harvesting structure.",
+            "2": "A recharge pit is a groundwater recharge structure.",
+            "3": "A check dam is a small water conservation structure."
+          }
+        }
+      },
+      {
+        "id": "q-water-s-2",
+        "question": "Bhakra Nangal is built on which river?",
+        "options": [
+          "Satluj",
+          "Mahanadi",
+          "Krishna",
+          "Narmada"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Bhakra Nangal is on the Satluj.",
+          "wrong_options": {
+            "1": "Hirakud is on the Mahanadi.",
+            "2": "Nagarjuna Sagar is on the Krishna.",
+            "3": "Sardar Sarovar is on the Narmada."
+          }
+        }
+      },
+      {
+        "id": "q-water-s-3",
+        "question": "Hirakud is built on which river?",
+        "options": [
+          "Mahanadi",
+          "Satluj",
+          "Damodar",
+          "Bhagirathi"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Hirakud is on the Mahanadi.",
+          "wrong_options": {
+            "1": "Bhakra Nangal is on the Satluj.",
+            "2": "Damodar Valley Corporation is on the Damodar.",
+            "3": "Tehri is on the Bhagirathi."
+          }
+        }
+      },
+      {
+        "id": "q-water-s-4",
+        "question": "Which is a traditional rainwater harvesting structure of Rajasthan?",
+        "options": [
+          "Tanka",
+          "Kul",
+          "Pyne",
+          "Zing"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A tanka is an underground rainwater tank used in Rajasthan.",
+          "wrong_options": {
+            "1": "Kuls are associated with Himachal Pradesh.",
+            "2": "Pynes are associated with Bihar.",
+            "3": "Zings are associated with Ladakh."
+          }
+        }
+      },
+      {
+        "id": "q-water-s-5",
+        "question": "Water scarcity means:",
+        "options": [
+          "A shortage of usable water relative to demand",
+          "A total absence of rainfall",
+          "Only a shortage of drinking water",
+          "A surplus of water"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Water scarcity is a shortage of usable water relative to demand.",
+          "wrong_options": {
+            "1": "Scarcity can occur even with rainfall if storage or quality is poor.",
+            "2": "It affects many uses, not only drinking water.",
+            "3": "A surplus is the opposite of scarcity."
+          }
+        }
+      },
+      {
+        "id": "q-water-s-6",
+        "question": "Which sector uses the largest share of water in India?",
+        "options": [
+          "Agriculture",
+          "Industry",
+          "Households",
+          "Transport"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Irrigation for agriculture is the largest water user in India.",
+          "wrong_options": {
+            "1": "Industry uses less than agriculture.",
+            "2": "Household use is smaller than agricultural use.",
+            "3": "Transport is not a major water user."
+          }
+        }
+      },
+      {
+        "id": "q-water-s-7",
+        "question": "Dams primarily provide:",
+        "options": [
+          "Irrigation and hydel power",
+          "Only drinking water",
+          "Only fish",
+          "Only flood damage"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Dams store water for irrigation and can generate hydel power.",
+          "wrong_options": {
+            "1": "Drinking water is one benefit, not the only one.",
+            "2": "Fisheries are a benefit, not the primary purpose.",
+            "3": "Dams aim to reduce flood damage, not cause it."
+          }
+        }
+      },
+      {
+        "id": "q-water-s-8",
+        "question": "Which is a rainwater harvesting method?",
+        "options": [
+          "Rooftop collection",
+          "Deep tube well drilling",
+          "Canal irrigation",
+          "River dredging"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Rooftop collection captures rain for storage or recharge.",
+          "wrong_options": {
+            "1": "Tube wells extract groundwater rather than harvest rain.",
+            "2": "Canal irrigation distributes river water.",
+            "3": "Dredging removes sediment from rivers."
+          }
+        }
+      },
+      {
+        "id": "q-water-s-9",
+        "question": "Khadins are associated with:",
+        "options": [
+          "Rajasthan",
+          "Kerala",
+          "Assam",
+          "Punjab"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Khadins are runoff farming structures used in Jaisalmer, Rajasthan.",
+          "wrong_options": {
+            "1": "Kerala has surangam and other local systems.",
+            "2": "Assam has dongs.",
+            "3": "Punjab relies mainly on canal irrigation."
+          }
+        }
+      },
+      {
+        "id": "q-water-s-10",
+        "question": "Which is a cause of water scarcity?",
+        "options": [
+          "Over-exploitation of groundwater",
+          "Rainwater harvesting",
+          "Drip irrigation",
+          "Watershed management"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Pumping groundwater faster than it recharges lowers the water table and causes scarcity.",
+          "wrong_options": {
+            "1": "Harvesting increases supply.",
+            "2": "Drip irrigation improves efficiency.",
+            "3": "Watershed management conserves water."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-water-m-1",
+        "question": "The Damodar Valley Corporation is associated with which river?",
+        "options": [
+          "Damodar",
+          "Mahanadi",
+          "Krishna",
+          "Narmada"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Damodar Valley Corporation is a multipurpose project on the Damodar.",
+          "wrong_options": {
+            "1": "Hirakud is on the Mahanadi.",
+            "2": "Nagarjuna Sagar is on the Krishna.",
+            "3": "Sardar Sarovar is on the Narmada."
+          }
+        }
+      },
+      {
+        "id": "q-water-m-2",
+        "question": "Nagarjuna Sagar is built on which river?",
+        "options": [
+          "Krishna",
+          "Satluj",
+          "Mahanadi",
+          "Bhagirathi"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Nagarjuna Sagar is on the Krishna.",
+          "wrong_options": {
+            "1": "Bhakra Nangal is on the Satluj.",
+            "2": "Hirakud is on the Mahanadi.",
+            "3": "Tehri is on the Bhagirathi."
+          }
+        }
+      },
+      {
+        "id": "q-water-m-3",
+        "question": "Tehri dam is built on which river?",
+        "options": [
+          "Bhagirathi",
+          "Satluj",
+          "Narmada",
+          "Damodar"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Tehri dam is on the Bhagirathi.",
+          "wrong_options": {
+            "1": "Bhakra Nangal is on the Satluj.",
+            "2": "Sardar Sarovar is on the Narmada.",
+            "3": "Damodar Valley Corporation is on the Damodar."
+          }
+        }
+      },
+      {
+        "id": "q-water-m-4",
+        "question": "Sardar Sarovar is built on which river?",
+        "options": [
+          "Narmada",
+          "Krishna",
+          "Mahanadi",
+          "Satluj"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Sardar Sarovar is on the Narmada.",
+          "wrong_options": {
+            "1": "Nagarjuna Sagar is on the Krishna.",
+            "2": "Hirakud is on the Mahanadi.",
+            "3": "Bhakra Nangal is on the Satluj."
+          }
+        }
+      },
+      {
+        "id": "q-water-m-5",
+        "question": "Which of the following is NOT a benefit of dams?",
+        "options": [
+          "Displacement of communities",
+          "Irrigation",
+          "Hydel power",
+          "Flood control"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Displacement is a social cost of dams, not a benefit.",
+          "wrong_options": {
+            "1": "Irrigation is a major benefit.",
+            "2": "Hydel power is a major benefit.",
+            "3": "Flood control is a major benefit."
+          }
+        }
+      },
+      {
+        "id": "q-water-m-6",
+        "question": "Which is a social cost of large dams?",
+        "options": [
+          "Displacement of people",
+          "Hydel electricity",
+          "Canal irrigation",
+          "Flood moderation"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Large reservoirs can displace communities, which is a social cost.",
+          "wrong_options": {
+            "1": "Hydel electricity is a benefit.",
+            "2": "Canal irrigation is a benefit.",
+            "3": "Flood moderation is a benefit."
+          }
+        }
+      },
+      {
+        "id": "q-water-m-7",
+        "question": "Bamboo drip irrigation is practised in:",
+        "options": [
+          "Meghalaya",
+          "Rajasthan",
+          "Punjab",
+          "Gujarat"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Bamboo drip irrigation is a traditional system in Meghalaya.",
+          "wrong_options": {
+            "1": "Rajasthan is known for khadin, johad and tanka.",
+            "2": "Punjab relies mainly on canal and tube-well irrigation.",
+            "3": "Gujarat has its own tank and well systems."
+          }
+        }
+      },
+      {
+        "id": "q-water-m-8",
+        "question": "Pynes are associated with:",
+        "options": [
+          "Bihar",
+          "Ladakh",
+          "Kerala",
+          "Tamil Nadu"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Pynes are diversion channels used in Bihar.",
+          "wrong_options": {
+            "1": "Ladakh is known for zings.",
+            "2": "Kerala is known for surangam.",
+            "3": "Tamil Nadu is known for eri tanks."
+          }
+        }
+      },
+      {
+        "id": "q-water-m-9",
+        "question": "Kuls are associated with:",
+        "options": [
+          "Himachal Pradesh",
+          "Bihar",
+          "Rajasthan",
+          "Assam"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Kuls are gravity channels used in Himachal Pradesh.",
+          "wrong_options": {
+            "1": "Pynes are used in Bihar.",
+            "2": "Khadins and tankas are used in Rajasthan.",
+            "3": "Dongs are used in Assam."
+          }
+        }
+      },
+      {
+        "id": "q-water-m-10",
+        "question": "Which is a watershed management measure?",
+        "options": [
+          "Check dam",
+          "Deep tube well",
+          "River dredging",
+          "Canal lining only"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Check dams slow runoff, trap silt and recharge groundwater in a watershed.",
+          "wrong_options": {
+            "1": "A deep tube well extracts water rather than conserving it.",
+            "2": "Dredging removes sediment from a river channel.",
+            "3": "Canal lining reduces seepage but is not a full watershed measure."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-water-x-1",
+        "question": "The Narmada Bachao Andolan is associated with:",
+        "options": [
+          "Sardar Sarovar and displacement issues",
+          "Bhakra Nangal and hydel power",
+          "Hirakud and flood control",
+          "Tehri and canal irrigation"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The movement opposed the social and environmental costs of the Sardar Sarovar project on the Narmada.",
+          "wrong_options": {
+            "1": "Bhakra Nangal is on the Satluj.",
+            "2": "Hirakud is on the Mahanadi.",
+            "3": "Tehri is on the Bhagirathi."
+          }
+        }
+      },
+      {
+        "id": "q-water-x-2",
+        "question": "Which statement best explains water scarcity?",
+        "options": [
+          "It can occur even with high rainfall if storage, recharge and quality are poor",
+          "It occurs only in deserts",
+          "It is caused only by low rainfall",
+          "It affects only drinking water"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Scarcity is about usable water at the right place and time, not just total rainfall.",
+          "wrong_options": {
+            "1": "Wet regions can also face seasonal scarcity.",
+            "2": "Management and pollution also cause scarcity.",
+            "3": "Agriculture, industry and ecosystems are also affected."
+          }
+        }
+      },
+      {
+        "id": "q-water-x-3",
+        "question": "Which sequence is most suitable for watershed management?",
+        "options": [
+          "Contour bunding → check dams → afforestation",
+          "Deforestation → mining → canal building",
+          "Deep tube wells → river dredging → urban expansion",
+          "Flood irrigation → soil removal → grazing"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Bunding, check dams and afforestation together conserve soil and water in a watershed.",
+          "wrong_options": {
+            "1": "Deforestation and mining increase erosion.",
+            "2": "These do not form a conservation sequence.",
+            "3": "These increase erosion and waste water."
+          }
+        }
+      },
+      {
+        "id": "q-water-x-4",
+        "question": "Inter-state water disputes mainly arise because:",
+        "options": [
+          "States compete for limited river water",
+          "Rivers never cross state boundaries",
+          "All states receive equal rainfall",
+          "Dams have no beneficiaries"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Upstream and downstream states claim shares of a limited resource.",
+          "wrong_options": {
+            "1": "Most major rivers cross state boundaries.",
+            "2": "Rainfall and water availability vary widely.",
+            "3": "Dams have many beneficiaries, which is why shares are contested."
+          }
+        }
+      },
+      {
+        "id": "q-water-x-5",
+        "question": "Which practice recharges groundwater most directly?",
+        "options": [
+          "Rooftop rainwater directed into a recharge pit",
+          "Flood irrigation of a field",
+          "Drawing water from a deep tube well",
+          "Lining a canal with concrete"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A recharge pit sends rainwater underground to replenish groundwater.",
+          "wrong_options": {
+            "1": "Flood irrigation may cause waterlogging and salinity.",
+            "2": "Tube wells extract groundwater.",
+            "3": "Canal lining reduces seepage rather than increasing recharge."
+          }
+        }
+      },
+      {
+        "id": "q-water-x-6",
+        "question": "A major limitation of large dams over time is:",
+        "options": [
+          "Sedimentation reduces storage capacity",
+          "They never produce electricity",
+          "They cannot store water",
+          "They always increase rainfall"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Silt settles in reservoirs and reduces their useful storage over decades.",
+          "wrong_options": {
+            "1": "Many dams generate hydel power.",
+            "2": "Dams are built to store water.",
+            "3": "Dams do not reliably increase rainfall."
+          }
+        }
+      },
+      {
+        "id": "q-water-x-7",
+        "question": "Which is the best example of traditional water harvesting in a desert?",
+        "options": [
+          "Khadin",
+          "Rooftop tank in Shillong",
+          "Pyne in Bihar",
+          "Kul in Himachal Pradesh"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Khadins trap monsoon runoff for farming in the Thar desert.",
+          "wrong_options": {
+            "1": "Shillong is a high-rainfall area.",
+            "2": "Pynes are used in the Bihar plains.",
+            "3": "Kuls are used in Himalayan valleys."
+          }
+        }
+      },
+      {
+        "id": "q-water-x-8",
+        "question": "Which is a modern rainwater harvesting method?",
+        "options": [
+          "Rooftop harvesting with recharge pits",
+          "Khadin farming",
+          "Bamboo drip irrigation",
+          "Baoli step wells"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Rooftop systems and recharge pits are modern urban methods.",
+          "wrong_options": {
+            "1": "Khadin is a traditional desert system.",
+            "2": "Bamboo drip irrigation is a traditional Meghalaya system.",
+            "3": "Baolis are traditional step wells."
+          }
+        }
+      },
+      {
+        "id": "q-water-x-9",
+        "question": "Which is NOT a water conservation method?",
+        "options": [
+          "Flood irrigation",
+          "Drip irrigation",
+          "Rainwater harvesting",
+          "Leak repair"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Flood irrigation wastes water compared with drip or sprinkler systems.",
+          "wrong_options": {
+            "1": "Drip irrigation saves water.",
+            "2": "Harvesting increases supply.",
+            "3": "Leak repair reduces losses."
+          }
+        }
+      },
+      {
+        "id": "q-water-x-10",
+        "question": "Which statement about multipurpose projects is FALSE?",
+        "options": [
+          "They have no environmental costs",
+          "They can provide irrigation",
+          "They can generate hydel power",
+          "They can help control floods"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Large projects can submerge forests, displace people and alter river ecosystems.",
+          "wrong_options": {
+            "1": "This is true.",
+            "2": "This is true.",
+            "3": "This is true."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Water Resources — Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Water Resources",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Water Cycle",
+        "group": "process"
+      },
+      {
+        "id": "n3",
+        "label": "Water Scarcity",
+        "group": "problem"
+      },
+      {
+        "id": "n4",
+        "label": "Multipurpose Projects",
+        "group": "supply"
+      },
+      {
+        "id": "n5",
+        "label": "Dam Benefits",
+        "group": "outcome"
+      },
+      {
+        "id": "n6",
+        "label": "Dam Costs and Conflicts",
+        "group": "outcome"
+      },
+      {
+        "id": "n7",
+        "label": "Rainwater Harvesting",
+        "group": "response"
+      },
+      {
+        "id": "n8",
+        "label": "Watershed Management",
+        "group": "response"
+      },
+      {
+        "id": "n9",
+        "label": "Water Conservation",
+        "group": "response"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n1",
+        "n4"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n4",
+        "n6"
+      ],
+      [
+        "n3",
+        "n7"
+      ],
+      [
+        "n3",
+        "n8"
+      ],
+      [
+        "n3",
+        "n9"
+      ],
+      [
+        "n7",
+        "n9"
+      ],
+      [
+        "n8",
+        "n9"
+      ],
+      [
+        "n2",
+        "n7"
+      ],
+      [
+        "n5",
+        "n3"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Water Resources — Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Water Resources",
+    "branches": [
+      {
+        "concept": "Water Availability",
+        "sub_nodes": [
+          "Water cycle renews supply",
+          "Only a small share is accessible freshwater",
+          "Monsoon rainfall is seasonal",
+          "Groundwater recharge is slow",
+          "Rivers, lakes and wetlands store water",
+          "Pollution reduces usable supply"
+        ],
+        "connections": "Renewable does not mean unlimited at every place and time"
+      },
+      {
+        "concept": "Water Scarcity",
+        "sub_nodes": [
+          "Physical and economic scarcity",
+          "Population growth and rising demand",
+          "Agriculture is the largest user",
+          "Groundwater over-extraction",
+          "Pollution and poor storage",
+          "Unequal access and conflict"
+        ],
+        "connections": "Scarcity is often a management problem, not only a rainfall problem"
+      },
+      {
+        "concept": "Dams and Multipurpose Projects",
+        "sub_nodes": [
+          "Bhakra Nangal on the Satluj",
+          "Hirakud on the Mahanadi",
+          "Damodar Valley Corporation",
+          "Nagarjuna Sagar on the Krishna",
+          "Tehri on the Bhagirathi",
+          "Sardar Sarovar on the Narmada"
+        ],
+        "connections": "One project can serve irrigation, power, flood control and water supply"
+      },
+      {
+        "concept": "Dam Costs and Conflicts",
+        "sub_nodes": [
+          "Submergence of forests and farmland",
+          "Displacement and rehabilitation",
+          "Sedimentation reduces storage",
+          "Downstream flow and fishery changes",
+          "Waterlogging and salinity",
+          "Inter-state disputes and Narmada Bachao Andolan"
+        ],
+        "connections": "Benefits and costs are unevenly distributed, so equity matters"
+      },
+      {
+        "concept": "Rainwater Harvesting",
+        "sub_nodes": [
+          "Khadin in Jaisalmer",
+          "Johad and tanka in Rajasthan",
+          "Baoli step wells",
+          "Pynes in Bihar and kuls in Himachal",
+          "Zings in Ladakh and bamboo drip in Meghalaya",
+          "Rooftop harvesting and recharge pits"
+        ],
+        "connections": "Local structures turn seasonal rain into year-round supply"
+      },
+      {
+        "concept": "Conservation and Management",
+        "sub_nodes": [
+          "Watershed management",
+          "Contour bunding and gully plugging",
+          "Check dams and afforestation",
+          "Drip and sprinkler irrigation",
+          "Wastewater reuse and leak repair",
+          "Pollution control and community participation"
+        ],
+        "connections": "Managing demand and catchments is cheaper and more resilient than supply alone"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "Water is renewable, so it can never be scarce — FALSE: freshwater is limited and can be depleted or polluted locally.",
+    "Water scarcity happens only in deserts — FALSE: high-rainfall regions can face seasonal scarcity because of poor storage, pollution and over-extraction.",
+    "Dams have only benefits — FALSE: dams also cause displacement, submergence, sedimentation and downstream ecological change.",
+    "All dams are bad for the environment — FALSE: dams can provide essential irrigation and power; the issue is how costs and benefits are shared and managed.",
+    "Rainwater harvesting means only storing water in tanks — FALSE: it also includes directing rain into the ground to recharge groundwater.",
+    "Traditional water harvesting is outdated — FALSE: structures such as khadin, johad and tanka are adapted to local conditions and remain useful.",
+    "Inter-state water disputes are only about drinking water — FALSE: they also involve irrigation, hydel power, industry and ecological flows.",
+    "Watershed management means building one large dam — FALSE: it is an integrated programme of soil and water conservation across a drainage basin."
+  ],
+  "chapterId": "water-resources",
+  "subjectId": "social-science",
+  "subjectName": "Social Science",
+  "unitId": "social-science-2",
+  "unitName": "Contemporary India - II",
+  "examWeightage": 20,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

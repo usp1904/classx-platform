@@ -1,0 +1,1347 @@
+{
+  "subject": "Science",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 15,
+  "chapter": "Management of Natural Resources",
+  "lesson": 15,
+  "title": "Management of Natural Resources - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "id": "management-of-natural-resources",
+  "outcomes": [
+    "Explain sustainable management of renewable and non-renewable natural resources",
+    "Describe forest and wildlife resources and identify the stakeholders involved",
+    "Explain the Chipko movement and Joint Forest Management as examples of people's participation",
+    "Evaluate the benefits and costs of dams and describe rainwater harvesting and watershed management",
+    "Explain why coal and petroleum must be conserved and how their use causes pollution",
+    "Apply the three Rs and sustainable practices to everyday resource decisions"
+  ],
+  "prerequisite_nodes": [
+    "SCI_CLASS9_NATURAL_RESOURCES",
+    "SCI_CLASS8_COAL_AND_PETROLEUM",
+    "SCI_CLASS7_FOREST_OUR_LIFELINE",
+    "SCI_CLASS10_OUR_ENVIRONMENT"
+  ],
+  "concepts": [
+    {
+      "id": "sustainable-management",
+      "name": "Natural Resources and Sustainable Management",
+      "title": "Natural Resources and Sustainable Management",
+      "purpose": "Natural resources are the materials and energy obtained from nature that support life and economic activity. Renewable resources, such as sunlight, wind and forests, can be replenished, while non-renewable resources, such as coal and petroleum, are formed over very long periods and are exhausted by use. Sustainable management means using resources so that present needs are met without damaging the environment or reducing what is available to future generations. The three Rs, reduce, reuse and recycle, are practical steps toward sustainability.",
+      "explanation": "Natural resources are the materials and energy obtained from nature that support life and economic activity. Renewable resources, such as sunlight, wind and forests, can be replenished, while non-renewable resources, such as coal and petroleum, are formed over very long periods and are exhausted by use. Sustainable management means using resources so that present needs are met without damaging the environment or reducing what is available to future generations. The three Rs, reduce, reuse and recycle, are practical steps toward sustainability.",
+      "key_points": [
+        "Renewable resources can be replenished, while non-renewable resources are finite.",
+        "Sustainable development meets present needs without compromising the needs of future generations.",
+        "Reduce is preferred to reuse, and reuse is preferred to recycle.",
+        "Equitable sharing and long-term planning are part of sustainable management."
+      ],
+      "real_life_application": "Carrying a cloth bag, repairing appliances and sorting waste for recycling all reduce the demand for new raw materials.",
+      "day_to_day_usage": [
+        "Turning off lights and fans to save electricity",
+        "Using public transport or cycling instead of private vehicles",
+        "Repairing a broken chair instead of discarding it",
+        "Segregating waste so that paper, glass and metal can be recycled"
+      ]
+    },
+    {
+      "id": "forests-and-wildlife",
+      "name": "Forests, Wildlife and Biodiversity",
+      "title": "Forests, Wildlife and Biodiversity",
+      "purpose": "Forests provide timber, fuel, fodder, food, medicines and clean water, and they protect soil and regulate the climate. They are also habitats for a large part of the world's biodiversity, the variety of plants, animals and microorganisms. Wildlife conservation protects species and their habitats so that ecosystems remain stable. Forests have several stakeholders, including local communities, the forest department, industrialists and conservationists, whose interests must be balanced.",
+      "explanation": "Forests provide timber, fuel, fodder, food, medicines and clean water, and they protect soil and regulate the climate. They are also habitats for a large part of the world's biodiversity, the variety of plants, animals and microorganisms. Wildlife conservation protects species and their habitats so that ecosystems remain stable. Forests have several stakeholders, including local communities, the forest department, industrialists and conservationists, whose interests must be balanced.",
+      "key_points": [
+        "Forests provide goods, ecosystem services and habitat.",
+        "Biodiversity means the variety of living organisms and habitats.",
+        "Local communities, the forest department, industry and conservationists are all stakeholders.",
+        "Conservation includes protected areas, habitat protection and controls on poaching and logging."
+      ],
+      "real_life_application": "A village near a forest may depend on it for firewood and fodder, while a timber company wants logs and a conservation group wants the habitat protected, so management must balance these claims.",
+      "day_to_day_usage": [
+        "Buying sustainably sourced wood and paper products",
+        "Avoiding products made from endangered species",
+        "Supporting local community forest groups",
+        "Reporting illegal logging or wildlife trade"
+      ]
+    },
+    {
+      "id": "chipko-and-jfm",
+      "name": "Chipko Movement and Joint Forest Management",
+      "title": "Chipko Movement and Joint Forest Management",
+      "purpose": "The Chipko movement began in the 1970s in the Garhwal Himalayas, in present-day Uttarakhand, when local people, especially women, hugged trees to prevent contractors from cutting them. It showed that communities who depend on forests have a strong interest in protecting them. Joint Forest Management, introduced in the 1980s, brought the forest department and local communities together through village forest committees. Communities help protect and regenerate degraded forests and receive a share of forest products and benefits.",
+      "explanation": "The Chipko movement began in the 1970s in the Garhwal Himalayas, in present-day Uttarakhand, when local people, especially women, hugged trees to prevent contractors from cutting them. It showed that communities who depend on forests have a strong interest in protecting them. Joint Forest Management, introduced in the 1980s, brought the forest department and local communities together through village forest committees. Communities help protect and regenerate degraded forests and receive a share of forest products and benefits.",
+      "key_points": [
+        "Chipko was a grassroots forest-protection movement led largely by local women.",
+        "It linked forest protection with the livelihoods of hill communities.",
+        "Joint Forest Management is a partnership between forest departments and local communities.",
+        "JFM gives communities a role in protection and a stake in the benefits."
+      ],
+      "real_life_application": "Village forest committees protect newly planted areas from grazing and fire, and in return they can collect agreed quantities of fodder, fuelwood and other products.",
+      "day_to_day_usage": [
+        "Community patrols to prevent illegal felling",
+        "Village nurseries for local tree species",
+        "Joint decisions on grazing and fuelwood collection",
+        "Awareness of the link between forests, soil and water"
+      ]
+    },
+    {
+      "id": "water-resources-and-dams",
+      "name": "Water Resources, Dams and Rainwater Harvesting",
+      "title": "Water Resources, Dams and Rainwater Harvesting",
+      "purpose": "Fresh water is a limited resource and must be managed carefully. Dams store river water and supply it for irrigation, drinking and industry, and they can generate hydroelectricity and help control floods. However, dams also submerge land, displace people, disturb river ecosystems, trap silt and can cause waterlogging and salinity. Rainwater harvesting collects and stores rainwater from roofs or catchments, and watershed management conserves water and soil across a whole drainage area. These methods recharge groundwater and reduce dependence on distant water sources.",
+      "explanation": "Fresh water is a limited resource and must be managed carefully. Dams store river water and supply it for irrigation, drinking and industry, and they can generate hydroelectricity and help control floods. However, dams also submerge land, displace people, disturb river ecosystems, trap silt and can cause waterlogging and salinity. Rainwater harvesting collects and stores rainwater from roofs or catchments, and watershed management conserves water and soil across a whole drainage area. These methods recharge groundwater and reduce dependence on distant water sources.",
+      "key_points": [
+        "Dams provide irrigation, drinking water, hydropower and flood control.",
+        "Dams can cause displacement, submergence, silting and ecological damage.",
+        "Rainwater harvesting collects and stores rainwater for reuse and groundwater recharge.",
+        "Watershed management conserves soil and water across a drainage basin."
+      ],
+      "real_life_application": "A rooftop rainwater harvesting system can store water for gardening and recharge a borewell, reducing pressure on municipal supply.",
+      "day_to_day_usage": [
+        "Fixing leaking taps and pipes",
+        "Using rooftop rainwater for gardening and cleaning",
+        "Building check dams and contour bunds in fields",
+        "Recharging groundwater through pits and trenches"
+      ]
+    },
+    {
+      "id": "coal-and-petroleum",
+      "name": "Coal, Petroleum and the Need for Conservation",
+      "title": "Coal, Petroleum and the Need for Conservation",
+      "purpose": "Coal and petroleum are fossil fuels formed from the remains of living organisms buried over millions of years. They are non-renewable because the rate at which we use them is far greater than the rate at which they form. Burning them releases carbon dioxide, sulphur dioxide, nitrogen oxides and particulate matter, which pollute the air and contribute to climate change and acid rain. Conserving fossil fuels means improving efficiency, reducing waste and shifting to cleaner alternatives such as solar and wind energy.",
+      "explanation": "Coal and petroleum are fossil fuels formed from the remains of living organisms buried over millions of years. They are non-renewable because the rate at which we use them is far greater than the rate at which they form. Burning them releases carbon dioxide, sulphur dioxide, nitrogen oxides and particulate matter, which pollute the air and contribute to climate change and acid rain. Conserving fossil fuels means improving efficiency, reducing waste and shifting to cleaner alternatives such as solar and wind energy.",
+      "key_points": [
+        "Coal and petroleum are fossil fuels and are non-renewable.",
+        "They are used for electricity, transport, industry and many everyday products.",
+        "Burning fossil fuels causes air pollution and adds carbon dioxide to the atmosphere.",
+        "Conservation includes efficiency, public transport, and renewable energy."
+      ],
+      "real_life_application": "Using a bus or metro instead of a private car for a daily commute reduces petrol consumption and air pollution per person.",
+      "day_to_day_usage": [
+        "Switching off engines while waiting",
+        "Using energy-efficient appliances and LED lights",
+        "Choosing public transport, cycling or walking",
+        "Recycling plastics and using renewable electricity where possible"
+      ]
+    },
+    {
+      "id": "conservation-and-participation",
+      "name": "Conservation, Equity and People's Participation",
+      "title": "Conservation, Equity and People's Participation",
+      "purpose": "Conservation is the protection and careful use of natural resources so that they last. It is not only a government task: local communities, industry, scientists, non-governmental organisations and individual citizens all have roles. Sustainable management must also be fair, because people who depend directly on forests, water and land should share in the benefits and be involved in decisions. Long-term planning, public awareness and pollution control are essential parts of conservation.",
+      "explanation": "Conservation is the protection and careful use of natural resources so that they last. It is not only a government task: local communities, industry, scientists, non-governmental organisations and individual citizens all have roles. Sustainable management must also be fair, because people who depend directly on forests, water and land should share in the benefits and be involved in decisions. Long-term planning, public awareness and pollution control are essential parts of conservation.",
+      "key_points": [
+        "Conservation means careful use, not simply non-use.",
+        "Local communities should participate in decisions and share benefits.",
+        "Industry and citizens both have responsibilities for pollution control.",
+        "Long-term planning and awareness are needed for sustainable outcomes."
+      ],
+      "real_life_application": "A city can involve residents in waste segregation, protect a local lake with community groups and require industries to treat wastewater before discharge.",
+      "day_to_day_usage": [
+        "Participating in local tree-planting and clean-up drives",
+        "Reporting illegal dumping or untreated sewage",
+        "Supporting community water and forest management groups",
+        "Reducing, reusing and recycling at home and school"
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-resources-1",
+      "topic": "Evaluating the benefits and costs of a dam",
+      "title": "Evaluating the benefits and costs of a dam",
+      "problem": "A dam is proposed across a river to supply irrigation water and electricity. List two benefits and two costs of the project, and state what information is needed before a decision is taken.",
+      "solution": [
+        "Step 1: Identify the benefits. The dam can store water for irrigation and supply drinking water.",
+        "Step 2: A second benefit is hydroelectricity generation, and the reservoir can help moderate floods.",
+        "Step 3: Identify the costs. Large areas of land may be submerged, including forests and farmland.",
+        "Step 4: People living in the submerged area may be displaced and lose their livelihoods.",
+        "Step 5: The dam can trap silt, alter the river's flow and damage aquatic habitats and fish migration.",
+        "Step 6: Information needed includes the number of people affected, the ecological value of the submerged area, the cost of rehabilitation and the expected benefits.",
+        "Step 7: A decision should compare alternatives such as smaller dams, rainwater harvesting or watershed management.",
+        "Step 8: The best choice balances development with social justice and environmental protection."
+      ],
+      "board_mode": [
+        "Step 1: Identify the benefits. The dam can store water for irrigation and supply drinking water.",
+        "Step 2: A second benefit is hydroelectricity generation, and the reservoir can help moderate floods.",
+        "Step 3: Identify the costs. Large areas of land may be submerged, including forests and farmland.",
+        "Step 4: People living in the submerged area may be displaced and lose their livelihoods.",
+        "Step 5: The dam can trap silt, alter the river's flow and damage aquatic habitats and fish migration.",
+        "Step 6: Information needed includes the number of people affected, the ecological value of the submerged area, the cost of rehabilitation and the expected benefits.",
+        "Step 7: A decision should compare alternatives such as smaller dams, rainwater harvesting or watershed management.",
+        "Step 8: The best choice balances development with social justice and environmental protection."
+      ],
+      "answer": "Benefits include irrigation, drinking water, hydropower and flood control; costs include submergence, displacement, silting and ecological damage. A decision needs data on affected people, ecology, costs and alternatives.",
+      "board_tip": "Give both sides of the argument; a one-sided answer loses marks in evaluation questions.",
+      "exam_tip": "Use the word 'displacement' for people and 'submergence' for land, and mention rehabilitation."
+    },
+    {
+      "id": "we-resources-2",
+      "topic": "Calculating rainwater harvested from a roof",
+      "title": "Calculating rainwater harvested from a roof",
+      "problem": "A school has a flat roof of area 100 square metres. During a spell of rain, 50 mm of rainfall is recorded. If the harvesting system can collect 80 percent of the rain falling on the roof, calculate the volume of water collected in litres.",
+      "solution": [
+        "Step 1: Convert rainfall to metres: 50 mm = 50/1000 m = 0.05 m.",
+        "Step 2: Volume of rain falling on the roof = roof area x rainfall depth = 100 m2 x 0.05 m = 5 m3.",
+        "Step 3: The system collects 80 percent of this volume, so collected volume = 5 x 0.80 = 4 m3.",
+        "Step 4: Convert cubic metres to litres using 1 m3 = 1000 L.",
+        "Step 5: Collected water = 4 x 1000 = 4000 L.",
+        "Step 6: Check the calculation: 100 x 0.05 = 5; 5 x 0.8 = 4; 4 x 1000 = 4000.",
+        "Step 7: The harvested water can be stored or used to recharge groundwater."
+      ],
+      "board_mode": [
+        "Step 1: Convert rainfall to metres: 50 mm = 50/1000 m = 0.05 m.",
+        "Step 2: Volume of rain falling on the roof = roof area x rainfall depth = 100 m2 x 0.05 m = 5 m3.",
+        "Step 3: The system collects 80 percent of this volume, so collected volume = 5 x 0.80 = 4 m3.",
+        "Step 4: Convert cubic metres to litres using 1 m3 = 1000 L.",
+        "Step 5: Collected water = 4 x 1000 = 4000 L.",
+        "Step 6: Check the calculation: 100 x 0.05 = 5; 5 x 0.8 = 4; 4 x 1000 = 4000.",
+        "Step 7: The harvested water can be stored or used to recharge groundwater."
+      ],
+      "answer": "The roof can collect 4000 litres of water.",
+      "board_tip": "Convert millimetres to metres first, then multiply area by depth to get cubic metres.",
+      "exam_tip": "Remember 1 m3 = 1000 L; forgetting this conversion is a common error."
+    },
+    {
+      "id": "we-resources-3",
+      "topic": "How people's participation protects forests",
+      "title": "How people's participation protects forests",
+      "problem": "Explain how the Chipko movement and Joint Forest Management show the importance of involving local communities in forest protection.",
+      "solution": [
+        "Step 1: Local communities depend on forests for fuelwood, fodder, food and water, so they have a direct interest in the forest's survival.",
+        "Step 2: In the Chipko movement, people hugged trees to stop contractors from felling them.",
+        "Step 3: The movement showed that forest protection succeeds when the people who live near the forest are involved and benefit from it.",
+        "Step 4: Joint Forest Management creates village forest committees in partnership with the forest department.",
+        "Step 5: Communities help protect and regenerate degraded forest land and receive a share of forest products.",
+        "Step 6: This partnership reduces conflict and gives people a long-term stake in conservation.",
+        "Step 7: Participation also brings local knowledge about species, water sources and traditional practices.",
+        "Step 8: Therefore sustainable forest management combines government regulation with community responsibility."
+      ],
+      "board_mode": [
+        "Step 1: Local communities depend on forests for fuelwood, fodder, food and water, so they have a direct interest in the forest's survival.",
+        "Step 2: In the Chipko movement, people hugged trees to stop contractors from felling them.",
+        "Step 3: The movement showed that forest protection succeeds when the people who live near the forest are involved and benefit from it.",
+        "Step 4: Joint Forest Management creates village forest committees in partnership with the forest department.",
+        "Step 5: Communities help protect and regenerate degraded forest land and receive a share of forest products.",
+        "Step 6: This partnership reduces conflict and gives people a long-term stake in conservation.",
+        "Step 7: Participation also brings local knowledge about species, water sources and traditional practices.",
+        "Step 8: Therefore sustainable forest management combines government regulation with community responsibility."
+      ],
+      "answer": "Chipko showed that local people will defend forests they depend on; JFM turns that stake into a partnership with the forest department, with shared protection duties and benefits.",
+      "board_tip": "Name both movements and state the common principle: local people must have a stake in the forest.",
+      "exam_tip": "Do not describe Chipko as only a tree-planting programme; it was a protest against commercial felling."
+    },
+    {
+      "id": "we-resources-4",
+      "topic": "Why fossil fuels must be conserved",
+      "title": "Why fossil fuels must be conserved",
+      "problem": "Explain why coal and petroleum are called non-renewable resources and give three ways to conserve them.",
+      "solution": [
+        "Step 1: Coal and petroleum formed from the remains of organisms buried underground over millions of years.",
+        "Step 2: They are used much faster than they are formed, so their reserves are finite.",
+        "Step 3: Once used, they cannot be replaced within a human lifetime, so they are non-renewable.",
+        "Step 4: Burning them releases carbon dioxide and pollutants such as sulphur dioxide and nitrogen oxides.",
+        "Step 5: Conservation method one: improve efficiency, for example by using LED lights and efficient engines.",
+        "Step 6: Conservation method two: use public transport, cycling and walking to reduce fuel use.",
+        "Step 7: Conservation method three: shift to renewable sources such as solar, wind and hydropower.",
+        "Step 8: Reducing waste and recycling materials also lowers the energy needed to make new products."
+      ],
+      "board_mode": [
+        "Step 1: Coal and petroleum formed from the remains of organisms buried underground over millions of years.",
+        "Step 2: They are used much faster than they are formed, so their reserves are finite.",
+        "Step 3: Once used, they cannot be replaced within a human lifetime, so they are non-renewable.",
+        "Step 4: Burning them releases carbon dioxide and pollutants such as sulphur dioxide and nitrogen oxides.",
+        "Step 5: Conservation method one: improve efficiency, for example by using LED lights and efficient engines.",
+        "Step 6: Conservation method two: use public transport, cycling and walking to reduce fuel use.",
+        "Step 7: Conservation method three: shift to renewable sources such as solar, wind and hydropower.",
+        "Step 8: Reducing waste and recycling materials also lowers the energy needed to make new products."
+      ],
+      "answer": "They formed over millions of years and are consumed much faster than they form; conserve them by improving efficiency, reducing unnecessary travel and shifting to renewable energy.",
+      "board_tip": "Link non-renewability to the timescale of formation, not just to the present supply.",
+      "exam_tip": "Mention pollution as an additional reason to conserve, not only the risk of running out."
+    },
+    {
+      "id": "we-resources-5",
+      "topic": "Choosing sustainable options using the three Rs",
+      "title": "Choosing sustainable options using the three Rs",
+      "problem": "A family wants to reduce its use of natural resources. Classify each action as reduce, reuse or recycle: (a) carrying a cloth bag to the market, (b) using old glass jars to store spices, (c) sending newspapers to a paper mill, (d) repairing a leaking tap, (e) switching off unused lights.",
+      "solution": [
+        "Step 1: Reduce means using fewer resources in the first place.",
+        "Step 2: Carrying a cloth bag avoids new plastic bags, so it is reduce.",
+        "Step 3: Using old glass jars gives them a second life, so it is reuse.",
+        "Step 4: Sending newspapers to a paper mill turns them into new paper, so it is recycle.",
+        "Step 5: Repairing a leaking tap saves water and is a reduce action.",
+        "Step 6: Switching off unused lights reduces electricity use and is also a reduce action.",
+        "Step 7: The order of preference is reduce, then reuse, then recycle, because preventing waste is better than managing it later."
+      ],
+      "board_mode": [
+        "Step 1: Reduce means using fewer resources in the first place.",
+        "Step 2: Carrying a cloth bag avoids new plastic bags, so it is reduce.",
+        "Step 3: Using old glass jars gives them a second life, so it is reuse.",
+        "Step 4: Sending newspapers to a paper mill turns them into new paper, so it is recycle.",
+        "Step 5: Repairing a leaking tap saves water and is a reduce action.",
+        "Step 6: Switching off unused lights reduces electricity use and is also a reduce action.",
+        "Step 7: The order of preference is reduce, then reuse, then recycle, because preventing waste is better than managing it later."
+      ],
+      "answer": "(a) reduce, (b) reuse, (c) recycle, (d) reduce, (e) reduce. Reduce is preferred to reuse, and reuse to recycle.",
+      "board_tip": "Ask whether the action prevents a resource from being used, extends its life, or processes it into something new.",
+      "exam_tip": "Repairing and switching off are reduce actions because they cut demand at the source."
+    }
+  ],
+  "exercises": {
+    "exercise_15_1": {
+      "title": "NCERT Exercise - Resources and Sustainability",
+      "objective": "Check definitions of natural resources, sustainable development, biodiversity and rainwater harvesting",
+      "problems": [
+        {
+          "id": "resources-ex1-1",
+          "book_source": "NCERT Exercise 15.1",
+          "question": "Define natural resources and name two types.",
+          "difficulty": "simple",
+          "marks": 1,
+          "solution": [
+            "Step 1: Natural resources are materials and energy obtained from nature that support life.",
+            "Step 2: They are broadly of two types: renewable and non-renewable."
+          ],
+          "final_answer": "Natural resources are useful materials and energy from nature; they are renewable or non-renewable."
+        },
+        {
+          "id": "resources-ex1-2",
+          "book_source": "NCERT Exercise 15.1",
+          "question": "What is sustainable development?",
+          "difficulty": "simple",
+          "marks": 1,
+          "solution": [
+            "Step 1: Sustainable development meets the needs of the present generation.",
+            "Step 2: It does so without compromising the ability of future generations to meet their own needs."
+          ],
+          "final_answer": "Sustainable development meets present needs without harming the environment or reducing resources for future generations."
+        },
+        {
+          "id": "resources-ex1-3",
+          "book_source": "NCERT Exercise 15.1",
+          "question": "Give two examples each of renewable and non-renewable resources.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Renewable resources can be replenished; examples are sunlight and wind, or forests and water when managed well.",
+            "Step 2: Non-renewable resources are finite; examples are coal and petroleum."
+          ],
+          "final_answer": "Renewable: sunlight, wind (also forests and water). Non-renewable: coal and petroleum."
+        },
+        {
+          "id": "resources-ex1-4",
+          "book_source": "NCERT Exercise 15.1",
+          "question": "What is rainwater harvesting?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Rainwater harvesting is the collection and storage of rainwater.",
+            "Step 2: It may be done from rooftops or from catchments and used for domestic purposes or groundwater recharge."
+          ],
+          "final_answer": "Rainwater harvesting is collecting and storing rainwater, often from roofs, for reuse or to recharge groundwater."
+        },
+        {
+          "id": "resources-ex1-5",
+          "book_source": "NCERT Exercise 15.1",
+          "question": "What is biodiversity?",
+          "difficulty": "simple",
+          "marks": 1,
+          "solution": [
+            "Step 1: Biodiversity is the variety of living organisms.",
+            "Step 2: It includes variation among species and the variety of habitats and ecosystems."
+          ],
+          "final_answer": "Biodiversity is the variety of species, genes and ecosystems in an area."
+        },
+        {
+          "id": "resources-ex1-6",
+          "book_source": "NCERT Exercise 15.1",
+          "question": "Name two products obtained from forests.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Forests provide timber for construction and furniture.",
+            "Step 2: They also provide fuelwood, fodder, food, medicines and other products."
+          ],
+          "final_answer": "Timber and fuelwood (also fodder, food and medicines)."
+        }
+      ]
+    },
+    "exercise_15_2": {
+      "title": "NCERT Exercise - Forests, Water and Fossil Fuels",
+      "objective": "Apply sustainable management ideas to forests, dams, people's movements and fossil fuels",
+      "problems": [
+        {
+          "id": "resources-ex2-1",
+          "book_source": "NCERT Exercise 15.2",
+          "question": "Explain the three Rs with one example of each.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Reduce means using less of a resource; example: switching off unused lights.",
+            "Step 2: Reuse means using an item again instead of discarding it; example: refilling a water bottle.",
+            "Step 3: Recycle means processing waste into new products; example: recycling old newspapers into new paper.",
+            "Step 4: The preferred order is reduce, then reuse, then recycle."
+          ],
+          "final_answer": "Reduce (use less), reuse (use again), recycle (make new products from waste); reduce is the first choice."
+        },
+        {
+          "id": "resources-ex2-2",
+          "book_source": "NCERT Exercise 15.2",
+          "question": "State two advantages and two disadvantages of large dams.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Advantage: dams store water for irrigation and drinking.",
+            "Step 2: Advantage: they can generate hydroelectricity and help control floods.",
+            "Step 3: Disadvantage: they submerge land and displace people.",
+            "Step 4: Disadvantage: they trap silt and disturb river ecosystems and fish migration."
+          ],
+          "final_answer": "Advantages: irrigation, drinking water, hydropower and flood control. Disadvantages: submergence, displacement, silting and ecological damage."
+        },
+        {
+          "id": "resources-ex2-3",
+          "book_source": "NCERT Exercise 15.2",
+          "question": "What was the Chipko movement?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Chipko was a forest-protection movement that began in the 1970s in the Garhwal Himalayas.",
+            "Step 2: Local people, especially women, hugged trees to prevent contractors from cutting them.",
+            "Step 3: The movement protested commercial felling that threatened local livelihoods and the environment.",
+            "Step 4: It showed that communities dependent on forests can be effective guardians of those forests."
+          ],
+          "final_answer": "Chipko was a 1970s grassroots movement in the Garhwal Himalayas in which local people hugged trees to stop commercial felling."
+        },
+        {
+          "id": "resources-ex2-4",
+          "book_source": "NCERT Exercise 15.2",
+          "question": "What is Joint Forest Management?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Joint Forest Management is a partnership between the forest department and local communities.",
+            "Step 2: Village forest committees help protect and regenerate degraded forest land.",
+            "Step 3: In return, communities receive a share of forest products and benefits.",
+            "Step 4: It was introduced in the 1980s to involve people in forest management."
+          ],
+          "final_answer": "JFM is a partnership in which local village committees and the forest department protect and regenerate forests and share the benefits."
+        },
+        {
+          "id": "resources-ex2-5",
+          "book_source": "NCERT Exercise 15.2",
+          "question": "Why are coal and petroleum called non-renewable resources?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Coal and petroleum formed from buried organisms over millions of years.",
+            "Step 2: They are consumed much faster than they form.",
+            "Step 3: Their reserves are finite and cannot be replaced within a human lifetime.",
+            "Step 4: Therefore they are non-renewable."
+          ],
+          "final_answer": "They formed over millions of years and are used far faster than they form, so their supply is finite."
+        },
+        {
+          "id": "resources-ex2-6",
+          "book_source": "NCERT Exercise 15.2",
+          "question": "List four stakeholders of a forest and state one interest of each.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Local communities need fuelwood, fodder, food and water.",
+            "Step 2: The forest department manages forest resources and protects them.",
+            "Step 3: Industrialists want timber and other raw materials for profit.",
+            "Step 4: Conservationists want biodiversity and habitats protected.",
+            "Step 5: Each group has a legitimate interest, so management must balance them."
+          ],
+          "final_answer": "Local communities (livelihood), forest department (management), industry (raw material) and conservationists (biodiversity)."
+        }
+      ]
+    },
+    "exercise_15_3": {
+      "title": "NCERT Exercise - Calculations and Evaluation",
+      "objective": "Solve rainwater-harvesting problems and evaluate conservation choices",
+      "problems": [
+        {
+          "id": "resources-ex3-1",
+          "book_source": "NCERT Exercise 15.3",
+          "question": "A roof has an area of 200 square metres and receives 40 mm of rain. If 75 percent of the rain is collected, calculate the volume of water harvested in litres.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Convert rainfall to metres: 40 mm = 0.04 m.",
+            "Step 2: Volume of rain on the roof = 200 m2 x 0.04 m = 8 m3.",
+            "Step 3: Collected volume = 75 percent of 8 m3 = 0.75 x 8 = 6 m3.",
+            "Step 4: Convert to litres: 6 m3 x 1000 L/m3 = 6000 L.",
+            "Step 5: Check: 200 x 0.04 = 8; 8 x 0.75 = 6; 6 x 1000 = 6000."
+          ],
+          "final_answer": "6000 litres of water can be harvested."
+        },
+        {
+          "id": "resources-ex3-2",
+          "book_source": "NCERT Exercise 15.3",
+          "question": "A dam is proposed on a river. Discuss two benefits and three costs, and give a reasoned recommendation.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Benefit: the dam can supply irrigation water and drinking water.",
+            "Step 2: Benefit: it can generate hydroelectricity and help control floods.",
+            "Step 3: Cost: large areas of forest and farmland may be submerged.",
+            "Step 4: Cost: local people may be displaced and need rehabilitation.",
+            "Step 5: Cost: the river ecosystem is altered, silt is trapped and fish migration may be blocked.",
+            "Step 6: Recommendation: compare the dam with alternatives such as smaller check dams, rainwater harvesting and watershed management.",
+            "Step 7: If the dam is built, plan fair rehabilitation and maintain environmental flows; if cheaper and less damaging alternatives can meet the need, prefer them."
+          ],
+          "final_answer": "Weigh irrigation, water supply, hydropower and flood control against submergence, displacement and ecological damage; choose the least damaging option after a full comparison."
+        },
+        {
+          "id": "resources-ex3-3",
+          "book_source": "NCERT Exercise 15.3",
+          "question": "How does Joint Forest Management change the way forests are managed? Explain two benefits.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: In JFM, forest management is shared between the forest department and local village committees.",
+            "Step 2: Communities help protect plantations from grazing, fire and illegal felling.",
+            "Step 3: They also help decide how forest products are used and share in the benefits.",
+            "Step 4: Benefit one: protection improves because local people have a direct stake and local knowledge.",
+            "Step 5: Benefit two: conflict between communities and the forest department is reduced, and livelihoods are supported.",
+            "Step 6: Regeneration of degraded land improves soil, water and biodiversity.",
+            "Step 7: JFM therefore combines conservation with local development."
+          ],
+          "final_answer": "JFM shares management between the forest department and village committees; it improves protection through local stake and knowledge, reduces conflict and supports livelihoods."
+        },
+        {
+          "id": "resources-ex3-4",
+          "book_source": "NCERT Exercise 15.3",
+          "question": "Why should coal and petroleum be conserved? Give three conservation measures.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Coal and petroleum are non-renewable and will eventually run out.",
+            "Step 2: Burning them releases carbon dioxide and air pollutants, affecting health and climate.",
+            "Step 3: They are also raw materials for plastics, medicines and chemicals, so using them only as fuel wastes a valuable resource.",
+            "Step 4: Measure one: improve energy efficiency in homes, vehicles and industry.",
+            "Step 5: Measure two: use public transport, cycling and walking, and avoid unnecessary fuel use.",
+            "Step 6: Measure three: shift to renewable energy such as solar, wind and hydropower.",
+            "Step 7: Recycling materials also reduces the energy needed to make new products."
+          ],
+          "final_answer": "Conserve fossil fuels because they are finite, polluting and valuable as chemical raw materials; improve efficiency, reduce unnecessary use and shift to renewables."
+        },
+        {
+          "id": "resources-ex3-5",
+          "book_source": "NCERT Exercise 15.3",
+          "question": "Compare the interests of a local community and an industry in a forest, and suggest a sustainable way to balance them.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The local community needs fuelwood, fodder, food, water and cultural connections to the forest.",
+            "Step 2: The industry wants timber and raw materials at low cost and on a large scale.",
+            "Step 3: Uncontrolled industrial felling can destroy the forest, while a total ban can hurt local livelihoods.",
+            "Step 4: A sustainable approach sets a regulated harvest that does not exceed regeneration.",
+            "Step 5: Local communities should be involved in decisions and share benefits through JFM.",
+            "Step 6: Industry should use efficient processing, recycled material and certified sustainable sources.",
+            "Step 7: Monitoring, independent assessment and fair compensation help maintain trust.",
+            "Step 8: The aim is to meet genuine needs without destroying the forest's capacity to regenerate."
+          ],
+          "final_answer": "Balance local livelihood needs with industrial demand through regulated harvesting, community participation, efficient use, recycling and independent monitoring."
+        },
+        {
+          "id": "resources-ex3-6",
+          "book_source": "NCERT Exercise 15.3",
+          "question": "Design a water conservation plan for a village facing falling groundwater levels. Include at least four measures.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Harvest rooftop rainwater and direct it to storage tanks or recharge pits.",
+            "Step 2: Build check dams and contour bunds to slow runoff and increase infiltration.",
+            "Step 3: Treat and reuse greywater for irrigation and cleaning where safe.",
+            "Step 4: Repair leaking pipes and tanks and meter or ration water during scarcity.",
+            "Step 5: Promote crops and irrigation methods that use less water, such as drip irrigation.",
+            "Step 6: Protect local ponds and recharge areas from encroachment and pollution.",
+            "Step 7: Form a village water committee to monitor levels and involve residents.",
+            "Step 8: Combine these measures with awareness and fair rules for water sharing."
+          ],
+          "final_answer": "A village plan should combine rooftop harvesting, check dams and bunds, greywater reuse, leak repair, efficient irrigation, pond protection and community monitoring."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-resources-s-1",
+        "question": "Which of these is a renewable resource?",
+        "options": [
+          "Coal",
+          "Sunlight",
+          "Petroleum",
+          "Natural gas"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Sunlight is continuously available and is a renewable resource.",
+          "wrong_options": {
+            "0": "Coal is a finite fossil fuel.",
+            "2": "Petroleum is a finite fossil fuel.",
+            "3": "Natural gas is a finite fossil fuel."
+          }
+        }
+      },
+      {
+        "id": "q-resources-s-2",
+        "question": "Which of these is a non-renewable resource?",
+        "options": [
+          "Wind",
+          "Coal",
+          "Sunlight",
+          "Flowing water"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Coal formed over millions of years and is being used up, so it is non-renewable.",
+          "wrong_options": {
+            "0": "Wind is renewable.",
+            "2": "Sunlight is renewable.",
+            "3": "Flowing water is renewable when managed sustainably."
+          }
+        }
+      },
+      {
+        "id": "q-resources-s-3",
+        "question": "Which of these is a fossil fuel?",
+        "options": [
+          "Petroleum",
+          "Wood",
+          "Biogas",
+          "Wind"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Petroleum is a fossil fuel formed from buried organisms.",
+          "wrong_options": {
+            "1": "Wood is biomass, not a fossil fuel.",
+            "2": "Biogas is produced from organic waste.",
+            "3": "Wind is a renewable energy source, not a fuel."
+          }
+        }
+      },
+      {
+        "id": "q-resources-s-4",
+        "question": "The three Rs stand for:",
+        "options": [
+          "Reduce, Reuse, Recycle",
+          "Read, Run, Rest",
+          "Remove, Rebuild, Repeat",
+          "Reduce, Remove, Return"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The three Rs are Reduce, Reuse and Recycle.",
+          "wrong_options": {
+            "1": "These words are not the three Rs of resource use.",
+            "2": "These words are not the three Rs.",
+            "3": "These words are not the three Rs."
+          }
+        }
+      },
+      {
+        "id": "q-resources-s-5",
+        "question": "The Chipko movement is associated with the protection of:",
+        "options": [
+          "Trees and forests",
+          "Rivers only",
+          "Minerals",
+          "Coastal fisheries"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Chipko was a forest-protection movement in which people hugged trees to stop felling.",
+          "wrong_options": {
+            "1": "It was mainly a forest movement, not a river-only movement.",
+            "2": "It was not primarily about minerals.",
+            "3": "It was not primarily about coastal fisheries."
+          }
+        }
+      },
+      {
+        "id": "q-resources-s-6",
+        "question": "JFM stands for:",
+        "options": [
+          "Joint Forest Management",
+          "Jungle Farming Method",
+          "Joint Farming Mission",
+          "Forest Management Fund"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "JFM stands for Joint Forest Management.",
+          "wrong_options": {
+            "1": "This is not the standard expansion.",
+            "2": "This is not the standard expansion.",
+            "3": "This is not the standard expansion."
+          }
+        }
+      },
+      {
+        "id": "q-resources-s-7",
+        "question": "Rainwater harvesting means:",
+        "options": [
+          "Collecting and storing rainwater",
+          "Pumping water from deep wells",
+          "Building large dams only",
+          "Desalinating sea water"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Rainwater harvesting is the collection and storage of rainwater for reuse or groundwater recharge.",
+          "wrong_options": {
+            "1": "Pumping groundwater is extraction, not harvesting rain.",
+            "2": "Dams are one water project, not the definition of rainwater harvesting.",
+            "3": "Desalination removes salt from sea water; it is not rainwater harvesting."
+          }
+        }
+      },
+      {
+        "id": "q-resources-s-8",
+        "question": "A dam is built mainly to:",
+        "options": [
+          "Store water for irrigation and other uses",
+          "Increase rainfall",
+          "Stop all river flow permanently",
+          "Grow forests on the river bed"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A dam stores river water for irrigation, drinking, industry and hydropower.",
+          "wrong_options": {
+            "1": "A dam does not increase rainfall.",
+            "2": "A dam regulates flow; it does not aim to stop flow permanently.",
+            "3": "Forests do not grow on a reservoir bed in this way."
+          }
+        }
+      },
+      {
+        "id": "q-resources-s-9",
+        "question": "Biodiversity means the variety of:",
+        "options": [
+          "Living organisms and habitats",
+          "Rocks and minerals",
+          "Vehicles on roads",
+          "Buildings in a city"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Biodiversity is the variety of species, genes and ecosystems.",
+          "wrong_options": {
+            "1": "Rocks and minerals are geological resources, not biodiversity.",
+            "2": "Vehicles are not living organisms.",
+            "3": "Buildings are not biodiversity."
+          }
+        }
+      },
+      {
+        "id": "q-resources-s-10",
+        "question": "Sustainable development means:",
+        "options": [
+          "Meeting present needs without harming future generations",
+          "Using all resources as fast as possible",
+          "Stopping all development",
+          "Developing only cities"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Sustainable development balances present needs with environmental protection and future availability.",
+          "wrong_options": {
+            "1": "Rapid resource use is the opposite of sustainability.",
+            "2": "Sustainable development allows development but manages its impact.",
+            "3": "It applies to villages and cities, not cities alone."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-resources-m-1",
+        "question": "The Chipko movement began in the:",
+        "options": [
+          "Garhwal Himalayas",
+          "Western Ghats",
+          "Sundarbans",
+          "Thar Desert"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Chipko began in the Garhwal Himalayas, in present-day Uttarakhand.",
+          "wrong_options": {
+            "1": "The Western Ghats are not where Chipko began.",
+            "2": "The Sundarbans are mangrove forests in the east.",
+            "3": "The Thar Desert is in Rajasthan."
+          }
+        }
+      },
+      {
+        "id": "q-resources-m-2",
+        "question": "Joint Forest Management involves:",
+        "options": [
+          "Only the forest department",
+          "The forest department and local communities",
+          "Only industrial contractors",
+          "Only foreign companies"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "JFM is a partnership between the forest department and local village communities.",
+          "wrong_options": {
+            "0": "JFM specifically includes local communities.",
+            "2": "Contractors may be involved in some activities, but JFM is not limited to them.",
+            "3": "Foreign companies are not the basis of JFM."
+          }
+        }
+      },
+      {
+        "id": "q-resources-m-3",
+        "question": "Which is a disadvantage of large dams?",
+        "options": [
+          "They can displace local people",
+          "They store water",
+          "They can generate electricity",
+          "They can help control floods"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Large dams can submerge land and displace communities.",
+          "wrong_options": {
+            "1": "Storing water is an advantage.",
+            "2": "Generating electricity is an advantage.",
+            "3": "Flood control is an advantage."
+          }
+        }
+      },
+      {
+        "id": "q-resources-m-4",
+        "question": "Which resource is renewable?",
+        "options": [
+          "Wind",
+          "Coal",
+          "Petroleum",
+          "Natural gas"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Wind is continuously replenished by natural processes.",
+          "wrong_options": {
+            "1": "Coal is non-renewable.",
+            "2": "Petroleum is non-renewable.",
+            "3": "Natural gas is non-renewable."
+          }
+        }
+      },
+      {
+        "id": "q-resources-m-5",
+        "question": "Coal and petroleum were formed from:",
+        "options": [
+          "Buried remains of living organisms over millions of years",
+          "Minerals in igneous rocks",
+          "Rainwater in underground tanks",
+          "Sea salt deposits"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Fossil fuels formed from the remains of organisms buried and altered over millions of years.",
+          "wrong_options": {
+            "1": "They are organic in origin, not simple igneous minerals.",
+            "2": "They are not stored rainwater.",
+            "3": "They are not sea salt deposits."
+          }
+        }
+      },
+      {
+        "id": "q-resources-m-6",
+        "question": "Which stakeholder depends most directly on a forest for daily fuelwood and fodder?",
+        "options": [
+          "Local villagers",
+          "A distant factory owner",
+          "A foreign tourist",
+          "A city shopkeeper"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Local villagers often depend directly on the forest for fuelwood, fodder and other daily needs.",
+          "wrong_options": {
+            "1": "A distant factory owner may want timber but does not depend on daily fuelwood.",
+            "2": "A tourist may visit but does not depend on the forest for fuelwood.",
+            "3": "A city shopkeeper is not a direct forest-dependent stakeholder in this sense."
+          }
+        }
+      },
+      {
+        "id": "q-resources-m-7",
+        "question": "Which structure is used for rainwater harvesting?",
+        "options": [
+          "Rooftop collection system",
+          "Coal mine",
+          "Petroleum refinery",
+          "Steel plant"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A rooftop collection system gathers rainwater and directs it to storage or recharge.",
+          "wrong_options": {
+            "1": "A coal mine extracts coal.",
+            "2": "A refinery processes petroleum.",
+            "3": "A steel plant manufactures steel."
+          }
+        }
+      },
+      {
+        "id": "q-resources-m-8",
+        "question": "Burning fossil fuels releases:",
+        "options": [
+          "Carbon dioxide and air pollutants",
+          "Only water vapour",
+          "Only oxygen",
+          "No gases"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Burning fossil fuels produces carbon dioxide along with pollutants such as sulphur dioxide and nitrogen oxides.",
+          "wrong_options": {
+            "1": "Water vapour is produced, but not only water vapour.",
+            "2": "Burning uses oxygen and does not release only oxygen.",
+            "3": "Combustion releases several gases."
+          }
+        }
+      },
+      {
+        "id": "q-resources-m-9",
+        "question": "Wildlife conservation aims mainly to:",
+        "options": [
+          "Protect species and their habitats",
+          "Increase hunting permits",
+          "Replace forests with buildings",
+          "Remove all predators"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Wildlife conservation protects species, populations and the habitats they depend on.",
+          "wrong_options": {
+            "1": "Conservation generally restricts unsustainable hunting.",
+            "2": "Replacing forests destroys habitat.",
+            "3": "Predators are part of healthy ecosystems and are not simply removed."
+          }
+        }
+      },
+      {
+        "id": "q-resources-m-10",
+        "question": "The 'reduce' in the three Rs means:",
+        "options": [
+          "Use fewer resources and create less waste",
+          "Use an item again",
+          "Process waste into new products",
+          "Burn waste"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Reduce means cutting consumption and waste at the source.",
+          "wrong_options": {
+            "1": "Using an item again is reuse.",
+            "2": "Processing waste into new products is recycle.",
+            "3": "Burning waste is not reduce and can cause pollution."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-resources-x-1",
+        "question": "A roof of area 100 square metres receives 50 mm of rain and collects 80 percent of it. How much water is collected?",
+        "options": [
+          "400 L",
+          "4000 L",
+          "40,000 L",
+          "5000 L"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "100 x 0.05 = 5 m3; 5 x 0.8 = 4 m3; 4 x 1000 = 4000 L.",
+          "wrong_options": {
+            "0": "400 L is a factor-of-ten error.",
+            "2": "40,000 L ignores the 80 percent efficiency and uses the wrong conversion.",
+            "3": "5000 L is the total rain volume before efficiency, not the collected volume."
+          }
+        }
+      },
+      {
+        "id": "q-resources-x-2",
+        "question": "Which statement about large dams is correct?",
+        "options": [
+          "They have only benefits and no costs",
+          "They can provide irrigation and power but may displace people",
+          "They never affect river ecosystems",
+          "They increase the supply of fossil fuels"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Dams provide water and power but can also submerge land and displace communities.",
+          "wrong_options": {
+            "0": "Dams have social and ecological costs as well as benefits.",
+            "2": "Dams do alter river flow, silt and fish migration.",
+            "3": "Dams do not create fossil fuels."
+          }
+        }
+      },
+      {
+        "id": "q-resources-x-3",
+        "question": "The main lesson of the Chipko movement is that:",
+        "options": [
+          "Forests should never be used by anyone",
+          "Local communities can be effective protectors of forests",
+          "Only government officials can protect forests",
+          "Trees should be cut as fast as possible"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Chipko showed that people who depend on forests will defend them and should be involved in decisions.",
+          "wrong_options": {
+            "0": "The movement opposed destructive felling, not all sustainable use.",
+            "2": "It showed the opposite: local people can play a central role.",
+            "3": "Chipko opposed rapid commercial felling."
+          }
+        }
+      },
+      {
+        "id": "q-resources-x-4",
+        "question": "If a forest is cleared, which immediate effect is most likely?",
+        "options": [
+          "Increased soil erosion and loss of habitat",
+          "An immediate increase in biodiversity",
+          "A permanent increase in rainfall",
+          "No change in the water cycle"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Without tree roots and cover, soil is eroded and habitat is lost.",
+          "wrong_options": {
+            "1": "Clearing a forest usually reduces biodiversity.",
+            "2": "Rainfall is not permanently increased by clearing forest.",
+            "3": "Forests affect infiltration and water cycling, so change is expected."
+          }
+        }
+      },
+      {
+        "id": "q-resources-x-5",
+        "question": "Which practice best supports sustainable forest use?",
+        "options": [
+          "Clear-felling without replanting",
+          "Regulated harvesting with regeneration and community participation",
+          "Banning all local access to the forest",
+          "Replacing native trees with a single crop"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Regulated harvesting that allows regeneration, with local participation, balances use and conservation.",
+          "wrong_options": {
+            "0": "Clear-felling without replanting degrades the forest.",
+            "2": "A total ban can hurt livelihoods and is not always necessary or effective.",
+            "3": "Monoculture plantations reduce biodiversity."
+          }
+        }
+      },
+      {
+        "id": "q-resources-x-6",
+        "question": "Why are fossil fuels considered finite even though some are still being discovered?",
+        "options": [
+          "They form much more slowly than they are consumed",
+          "They are made quickly by sunlight",
+          "They are unlimited in the soil",
+          "They can be grown in fields"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Fossil fuels take millions of years to form but are consumed within decades, so the resource is finite.",
+          "wrong_options": {
+            "1": "Sunlight does not quickly make fossil fuels.",
+            "2": "Their quantity is limited, not unlimited.",
+            "3": "They are not agricultural crops."
+          }
+        }
+      },
+      {
+        "id": "q-resources-x-7",
+        "question": "One major benefit of Joint Forest Management is that:",
+        "options": [
+          "Local people help protect forests and share in benefits",
+          "All forests become private property",
+          "The forest department no longer has any role",
+          "Trees are replaced by concrete structures"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "JFM gives communities a role in protection and a share of forest products, improving both conservation and livelihoods.",
+          "wrong_options": {
+            "1": "JFM is a partnership, not a transfer to private ownership.",
+            "2": "The forest department remains a partner.",
+            "3": "JFM is about forests and trees, not replacing them with buildings."
+          }
+        }
+      },
+      {
+        "id": "q-resources-x-8",
+        "question": "Which action is the best example of 'reuse'?",
+        "options": [
+          "Using an old jar to store spices",
+          "Melting old glass to make new bottles",
+          "Buying a new bottle every day",
+          "Burning old paper"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Using an old jar again extends its life without reprocessing it, which is reuse.",
+          "wrong_options": {
+            "1": "Melting glass to make new bottles is recycling.",
+            "2": "Buying new bottles increases consumption.",
+            "3": "Burning paper wastes material and causes pollution."
+          }
+        }
+      },
+      {
+        "id": "q-resources-x-9",
+        "question": "Watershed management aims mainly to:",
+        "options": [
+          "Conserve water and soil across a drainage area",
+          "Increase the use of coal",
+          "Build only large dams",
+          "Remove all vegetation from a catchment"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Watershed management conserves soil and water in a drainage basin through measures such as bunds, check dams and vegetation.",
+          "wrong_options": {
+            "1": "It is about water and soil, not coal use.",
+            "2": "It uses many small measures, not only large dams.",
+            "3": "Vegetation protects the catchment and is usually retained or restored."
+          }
+        }
+      },
+      {
+        "id": "q-resources-x-10",
+        "question": "Sustainable development tries to balance:",
+        "options": [
+          "Economic development, environmental protection and social equity",
+          "Only industrial growth",
+          "Only wildlife protection",
+          "Only urban expansion"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Sustainable development balances economic needs, environmental limits and fair access for people.",
+          "wrong_options": {
+            "1": "Industrial growth alone ignores environmental and social costs.",
+            "2": "Wildlife protection is important but is not the whole definition.",
+            "3": "Urban expansion alone is not sustainable development."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Management of Natural Resources - Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Natural Resources",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Renewable",
+        "group": "types"
+      },
+      {
+        "id": "n3",
+        "label": "Non-renewable",
+        "group": "types"
+      },
+      {
+        "id": "n4",
+        "label": "Forests and Wildlife",
+        "group": "resources"
+      },
+      {
+        "id": "n5",
+        "label": "Water",
+        "group": "resources"
+      },
+      {
+        "id": "n6",
+        "label": "Fossil Fuels",
+        "group": "resources"
+      },
+      {
+        "id": "n7",
+        "label": "Chipko and JFM",
+        "group": "management"
+      },
+      {
+        "id": "n8",
+        "label": "Sustainable Management",
+        "group": "management"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n1",
+        "n4"
+      ],
+      [
+        "n1",
+        "n5"
+      ],
+      [
+        "n1",
+        "n6"
+      ],
+      [
+        "n4",
+        "n7"
+      ],
+      [
+        "n7",
+        "n8"
+      ],
+      [
+        "n5",
+        "n8"
+      ],
+      [
+        "n6",
+        "n8"
+      ],
+      [
+        "n2",
+        "n8"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Management of Natural Resources - Mind Map",
+    "type": "hierarchical",
+    "root": "Management of Natural Resources",
+    "branches": [
+      {
+        "concept": "Resource Types",
+        "sub_nodes": [
+          "Renewable: sunlight, wind, forests, water",
+          "Non-renewable: coal, petroleum, natural gas",
+          "Sustainable development meets present and future needs",
+          "Reduce, reuse, recycle"
+        ],
+        "connections": "Classifying resources is the first step in managing them"
+      },
+      {
+        "concept": "Forests and Wildlife",
+        "sub_nodes": [
+          "Goods: timber, fuelwood, fodder, food, medicines",
+          "Services: soil protection, water and climate regulation",
+          "Biodiversity and habitat",
+          "Stakeholders: communities, forest department, industry, conservationists"
+        ],
+        "connections": "Forests support livelihoods and ecosystems at the same time"
+      },
+      {
+        "concept": "People's Movements",
+        "sub_nodes": [
+          "Chipko in the Garhwal Himalayas in the 1970s",
+          "Local women hugged trees to stop felling",
+          "Joint Forest Management from the 1980s",
+          "Village forest committees share protection and benefits"
+        ],
+        "connections": "Shows that conservation works when local people have a stake"
+      },
+      {
+        "concept": "Water Management",
+        "sub_nodes": [
+          "Dams: irrigation, water supply, hydropower, flood control",
+          "Dams: submergence, displacement, silting, ecological damage",
+          "Rainwater harvesting from roofs and catchments",
+          "Watershed management with check dams and bunds",
+          "Groundwater recharge"
+        ],
+        "connections": "Balances water supply with social and ecological costs"
+      },
+      {
+        "concept": "Fossil Fuels",
+        "sub_nodes": [
+          "Coal and petroleum formed over millions of years",
+          "Non-renewable and finite",
+          "Burning releases carbon dioxide and pollutants",
+          "Conserve through efficiency, public transport and renewables",
+          "Valuable raw materials for plastics and chemicals"
+        ],
+        "connections": "Links energy use to air pollution, climate and resource depletion"
+      },
+      {
+        "concept": "Sustainable Practices",
+        "sub_nodes": [
+          "Conservation means careful use",
+          "Equity and community participation",
+          "Pollution control by industry and citizens",
+          "Long-term planning and awareness",
+          "Individual actions: save water, energy and materials"
+        ],
+        "connections": "Turns the principles into everyday choices and public policy"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "Conservation means never using a natural resource - FALSE: conservation means careful, sustainable use, not total non-use.",
+    "Renewable resources cannot be depleted - FALSE: renewable resources can be exhausted or damaged if they are used faster than they regenerate.",
+    "All fossil fuels will last for centuries, so there is no need to conserve them - FALSE: fossil fuels are finite and are consumed far faster than they form.",
+    "Dams have only benefits - FALSE: dams also cause submergence, displacement, silting and ecological damage.",
+    "The Chipko movement was only about planting trees - FALSE: it was a protest against commercial felling, in which people hugged trees to stop them being cut.",
+    "Joint Forest Management gives forests entirely to local communities - FALSE: it is a partnership between communities and the forest department.",
+    "Rainwater harvesting means building a large dam - FALSE: it means collecting and storing rainwater from roofs or catchments and can include groundwater recharge.",
+    "Sustainable development means stopping all economic growth - FALSE: it means meeting development needs while protecting the environment and future generations."
+  ],
+  "meta": {
+    "sources": [
+      {
+        "type": "NCERT Textbook",
+        "title": "NCERT Class X Science: Management of Natural Resources",
+        "publisher": "NCERT",
+        "subject": "Science",
+        "class": "X"
+      },
+      {
+        "type": "CBSE Syllabus",
+        "title": "CBSE Class X Science Syllabus 2026-27",
+        "publisher": "CBSE",
+        "subject": "Science",
+        "class": "X"
+      }
+    ]
+  },
+  "chapterId": "management-of-natural-resources",
+  "subjectId": "science",
+  "subjectName": "Science",
+  "unitId": "science-5",
+  "unitName": "Natural Resources",
+  "examWeightage": 5,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

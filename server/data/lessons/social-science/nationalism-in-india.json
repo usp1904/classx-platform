@@ -1,0 +1,1394 @@
+{
+  "subject": "History",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 2,
+  "chapter": "Nationalism in India",
+  "lesson": 1,
+  "title": "Nationalism in India - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "id": "nationalism-in-india",
+  "outcomes": [
+    "Explain how the First World War and the Rowlatt Act produced a new phase of Indian nationalism",
+    "Describe the Jallianwala Bagh massacre and its political consequences",
+    "Analyse the programme, spread, and withdrawal of the Non-Cooperation Movement",
+    "Explain the Civil Disobedience Movement and the significance of the Salt March",
+    "Describe the Quit India Movement and its place in the freedom struggle",
+    "Trace the rise of the Muslim League and the demand for Pakistan",
+    "Explain the main steps and consequences of Partition in 1947",
+    "Evaluate Gandhi's leadership and the limits of mass nationalism in colonial India"
+  ],
+  "prerequisite_nodes": [
+    "HIST_CLASS9_COLONIALISM_AND_NATIONALISM",
+    "HIST_CLASS8_INDIAN_FREEDOM_STRUGGLE",
+    "CIV_CLASS9_DEMOCRACY_AND_DIVERSITY",
+    "HIST_CLASS9_FIRST_WORLD_WAR"
+  ],
+  "concepts": [
+    {
+      "id": "ind-c1",
+      "title": "The First World War, the Rowlatt Act, and Jallianwala Bagh",
+      "name": "The First World War, the Rowlatt Act, and Jallianwala Bagh",
+      "explanation": "The First World War raised defence spending, taxes, and prices in India. Villages were forced to supply soldiers, and prices roughly doubled between 1913 and 1918. Crops failed in 1918-19 and 1920-21, and famines and epidemics, including influenza, killed an estimated twelve to thirteen million people according to the 1921 census. Gandhi returned to India in January 1915 and led local satyagrahas at Champaran in 1916, Kheda in 1917, and Ahmedabad in 1918. In 1919 the Rowlatt Act allowed detention without trial for up to two years. A nationwide hartal on 6 April 1919 was followed by the Jallianwala Bagh massacre on 13 April 1919, when General Dyer ordered troops to fire on an unarmed crowd at Amritsar.",
+      "purpose": "This phase explains why moderate constitutional politics gave way to mass protest and why Gandhi became the central leader of the national movement.",
+      "real_life_application": "Understanding how war expenditure, inflation, and emergency laws can turn ordinary economic hardship into political resistance.",
+      "key_points": [
+        "The First World War increased taxes, prices, and forced recruitment in India.",
+        "Crops failed in 1918-19 and 1920-21, and an influenza epidemic caused mass deaths.",
+        "Gandhi returned to India in January 1915 after his work in South Africa.",
+        "He led local satyagrahas at Champaran in 1916, Kheda in 1917, and Ahmedabad in 1918.",
+        "The Rowlatt Act of 1919 allowed detention without trial for up to two years.",
+        "A hartal was observed on 6 April 1919 against the Rowlatt Act.",
+        "General Dyer ordered firing at Jallianwala Bagh, Amritsar, on 13 April 1919.",
+        "Rabindranath Tagore renounced his knighthood in protest against the massacre."
+      ],
+      "day_to_day_usage": [
+        "Understanding how inflation affects ordinary households during wars",
+        "Recognising the danger of laws that allow detention without trial",
+        "Seeing how a single violent incident can change a political movement",
+        "Learning why peaceful protest needs public sympathy and discipline",
+        "Understanding the importance of civil liberties in a democracy"
+      ]
+    },
+    {
+      "id": "ind-c2",
+      "title": "Satyagraha and the Non-Cooperation Movement",
+      "name": "Satyagraha and the Non-Cooperation Movement",
+      "explanation": "Gandhi's method of satyagraha combined truth, non-violence, and mass mobilisation. In 1919 the Khilafat Committee raised the issue of the Ottoman Khalifa, and Muhammad Ali and Shaukat Ali worked with Gandhi. In 1920 the Congress adopted the Non-Cooperation programme. It asked people to surrender government titles, boycott courts, schools, councils, and foreign goods, and adopt swadeshi. The movement spread in 1921-22 among students, lawyers, peasants, tribals, and plantation workers, each interpreting swaraj in their own way. In Awadh, Baba Ramchandra led peasants against talukdars and begar. In the Gudem Hills, Alluri Sitaram Raju led a guerrilla struggle. Assam plantation workers left their estates despite the Inland Emigration Act of 1859. After the Chauri Chaura violence of February 1922, in which twenty-two policemen were killed, Gandhi withdrew the movement.",
+      "purpose": "Non-Cooperation was the first nationwide mass movement led by the Congress, and it revealed both the power and the limits of non-violent mass politics.",
+      "real_life_application": "Boycotts and non-violent resistance are still used by citizens and consumer groups to press for change.",
+      "key_points": [
+        "Satyagraha means insistence on truth through non-violent resistance.",
+        "The Khilafat issue united many Muslims with the Congress in 1919-20.",
+        "The Congress adopted Non-Cooperation in 1920.",
+        "The programme included surrendering titles, boycotting courts and schools, and rejecting foreign goods.",
+        "Awadh peasants under Baba Ramchandra protested against talukdars and begar.",
+        "Alluri Sitaram Raju led a tribal guerrilla struggle in the Gudem Hills.",
+        "Plantation workers in Assam left their estates despite the Inland Emigration Act of 1859.",
+        "Gandhi withdrew the movement after the Chauri Chaura violence in February 1922."
+      ],
+      "day_to_day_usage": [
+        "Understanding how boycotts can put economic pressure on a government",
+        "Recognising that the same slogan can mean different things to different groups",
+        "Learning why leaders must control violence within a mass movement",
+        "Seeing how local grievances can connect to a national cause",
+        "Understanding the role of students and lawyers in political movements"
+      ]
+    },
+    {
+      "id": "ind-c3",
+      "title": "Civil Disobedience and the Salt March",
+      "name": "Civil Disobedience and the Salt March",
+      "explanation": "At the Lahore Congress session of December 1929, the Congress declared Purna Swaraj and fixed 26 January 1930 as Independence Day. In 1930 Gandhi placed eleven demands before Viceroy Lord Irwin and chose the salt tax as the central issue because salt was used by rich and poor alike. On 12 March 1930 he began the Dandi March from Sabarmati Ashram with a small group of volunteers. The march covered about 240 miles in 24 days. On 6 April 1930 Gandhi made salt at Dandi and broke the salt law. The Civil Disobedience Movement then spread across India through boycotts, picketing, refusal to pay taxes, and large participation by women. The government repressed the movement, and the Gandhi-Irwin Pact was signed on 5 March 1931. Gandhi attended the Second Round Table Conference in London but returned without agreement. The Poona Pact of 24 September 1932 between Gandhi and Ambedkar reserved seats for the Depressed Classes within the general electorate.",
+      "purpose": "Civil Disobedience turned nationalist politics into a direct challenge to colonial law and made the Congress a mass organisation with a national programme.",
+      "real_life_application": "Symbolic acts of law-breaking, such as peaceful sit-ins, show how a single issue can expose the wider unfairness of a system.",
+      "key_points": [
+        "The Lahore Congress of December 1929 declared Purna Swaraj.",
+        "26 January 1930 was observed as the first Independence Day.",
+        "Gandhi's eleven demands included the abolition of the salt tax.",
+        "Salt was chosen because it was used by both rich and poor.",
+        "The Dandi March began on 12 March 1930 and covered about 240 miles in 24 days.",
+        "Gandhi broke the salt law at Dandi on 6 April 1930.",
+        "Women participated in large numbers in the Civil Disobedience Movement.",
+        "The Gandhi-Irwin Pact was signed on 5 March 1931.",
+        "The Poona Pact of 24 September 1932 reserved seats for the Depressed Classes."
+      ],
+      "day_to_day_usage": [
+        "Understanding why a common household item can become a political symbol",
+        "Learning how peaceful law-breaking can expose unjust laws",
+        "Recognising the role of women in mass political movements",
+        "Understanding negotiation and compromise between movements and governments",
+        "Seeing how representation of disadvantaged groups is negotiated"
+      ]
+    },
+    {
+      "id": "ind-c4",
+      "title": "The Quit India Movement",
+      "name": "The Quit India Movement",
+      "explanation": "The Second World War deepened Indian anger against British rule. The Cripps Mission of 1942 failed to satisfy Indian demands. On 8 August 1942 the All India Congress Committee met in Bombay and passed the Quit India resolution. Gandhi gave the slogan Do or Die. On 9 August 1942 the government arrested Gandhi and most Congress leaders. The movement then became spontaneous, with strikes, demonstrations, attacks on government property, and an underground radio. The Muslim League did not join the movement. The British suppressed it with force by 1944, but it showed that the Congress could mobilise people even without its leaders.",
+      "purpose": "Quit India marked the end of the Congress's willingness to negotiate within the colonial system and made immediate independence the central demand.",
+      "real_life_application": "Understanding how a movement can continue through local initiative when its leaders are arrested.",
+      "key_points": [
+        "The Second World War increased pressure on the British to settle the Indian question.",
+        "The Cripps Mission of 1942 failed to reach an agreement with the Congress.",
+        "The Quit India resolution was passed in Bombay on 8 August 1942.",
+        "Gandhi's slogan was Do or Die.",
+        "The government arrested Gandhi and most Congress leaders on 9 August 1942.",
+        "The movement became spontaneous and local after the arrests.",
+        "The Muslim League did not support the movement.",
+        "The British suppressed the movement by 1944."
+      ],
+      "day_to_day_usage": [
+        "Understanding how leadership arrests can change the character of a protest",
+        "Recognising the importance of coordination in mass movements",
+        "Learning how wars create political openings and crises",
+        "Seeing how different political parties can take different positions in a national crisis",
+        "Understanding why movements may fail in the short term but still change politics"
+      ]
+    },
+    {
+      "id": "ind-c5",
+      "title": "The Muslim League and the Demand for Pakistan",
+      "name": "The Muslim League and the Demand for Pakistan",
+      "explanation": "The All India Muslim League was founded in 1906 at Dhaka. The Morley-Minto reforms of 1909 introduced separate electorates for Muslims. The Lucknow Pact of 1916 between the Congress and the Muslim League agreed on separate electorates and cooperation. In the 1937 provincial elections the League performed poorly, but it gained strength in the 1940s. On 23 March 1940 the Lahore Resolution demanded independent states for Muslim-majority areas. Under Muhammad Ali Jinnah the League argued that Muslims were a separate nation and needed a separate homeland. The 1946 elections and the Cabinet Mission failed to produce an agreed constitutional settlement. The League called a Direct Action Day on 16 August 1946, and communal violence followed in Calcutta and elsewhere.",
+      "purpose": "The rise of the Muslim League explains how religious identity became a basis for a separate state and why a negotiated united India became impossible.",
+      "real_life_application": "Understanding how political organisations use identity, representation, and fear to build support in divided societies.",
+      "key_points": [
+        "The All India Muslim League was founded in 1906 at Dhaka.",
+        "The Morley-Minto reforms of 1909 introduced separate electorates for Muslims.",
+        "The Lucknow Pact of 1916 between the Congress and the League accepted separate electorates.",
+        "The League performed poorly in the 1937 provincial elections.",
+        "The Lahore Resolution of 23 March 1940 demanded independent states for Muslim-majority areas.",
+        "Muhammad Ali Jinnah led the demand for a separate Muslim homeland.",
+        "The Cabinet Mission of 1946 failed to produce an agreed constitutional settlement.",
+        "The League called Direct Action Day on 16 August 1946."
+      ],
+      "day_to_day_usage": [
+        "Understanding how separate electorates can shape political competition",
+        "Recognising how religious identity can become politically mobilised",
+        "Learning why elections and constitutional talks can fail",
+        "Seeing how fear and insecurity can drive demands for separation",
+        "Understanding the long-term effects of colonial divide-and-rule policies"
+      ]
+    },
+    {
+      "id": "ind-c6",
+      "title": "Partition and Independence in 1947",
+      "name": "Partition and Independence in 1947",
+      "explanation": "The Mountbatten Plan of 3 June 1947 proposed the partition of British India into two dominions, India and Pakistan. The Indian Independence Act was passed in July 1947. Pakistan became independent on 14 August 1947, and India on 15 August 1947. A boundary commission under Sir Cyril Radcliffe drew the Radcliffe Line, dividing Punjab and Bengal. Partition produced one of the largest migrations in history, with millions of Hindus, Muslims, and Sikhs displaced and hundreds of thousands killed in communal violence. Gandhi opposed Partition and worked to stop the violence, including through fasts. The princely states were asked to join one of the two new states, and Kashmir became a long-lasting dispute.",
+      "purpose": "Partition shows that independence came with a territorial and human cost, and that the national movement's goal of unity was not achieved.",
+      "real_life_application": "Understanding how borders and migration continue to affect citizenship, identity, and regional politics in South Asia.",
+      "key_points": [
+        "The Mountbatten Plan of 3 June 1947 proposed partition into India and Pakistan.",
+        "The Indian Independence Act was passed in July 1947.",
+        "Pakistan became independent on 14 August 1947 and India on 15 August 1947.",
+        "The Radcliffe Line divided Punjab and Bengal.",
+        "Partition caused mass migration and severe communal violence.",
+        "Gandhi opposed Partition and worked to stop the violence.",
+        "The princely states had to choose between India and Pakistan.",
+        "Kashmir became a lasting dispute between the two countries."
+      ],
+      "day_to_day_usage": [
+        "Understanding how borders affect families, trade, and citizenship",
+        "Recognising the human cost of political decisions",
+        "Learning how refugees rebuild lives after displacement",
+        "Seeing how Partition continues to shape India-Pakistan relations",
+        "Understanding the importance of communal harmony in a diverse society"
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-ind-1",
+      "title": "Why Gandhi withdrew Non-Cooperation",
+      "topic": "Satyagraha and the Non-Cooperation Movement",
+      "problem": "Why did Mahatma Gandhi withdraw the Non-Cooperation Movement in February 1922?",
+      "solution": [
+        "Step 1: The movement had spread widely in 1921-22 and was becoming difficult to control.",
+        "Step 2: At Chauri Chaura in Gorakhpur in February 1922, a crowd attacked and burned a police station, killing twenty-two policemen.",
+        "Step 3: Gandhi believed that satyagraha must remain completely non-violent.",
+        "Step 4: He felt that the movement had lost its moral character if it produced violence.",
+        "Step 5: He withdrew the movement to prevent further violence and to train satyagrahis properly."
+      ],
+      "board_mode": [
+        "Step 1: State the incident: Chauri Chaura, February 1922, Gorakhpur.",
+        "Step 2: State what happened: a crowd burned a police station and twenty-two policemen died.",
+        "Step 3: Explain Gandhi's principle: satyagraha cannot succeed through violence.",
+        "Step 4: Explain his fear: the movement was becoming violent in many places.",
+        "Step 5: State the consequence: he withdrew the movement immediately."
+      ],
+      "answer": "Gandhi withdrew the movement because the Chauri Chaura violence showed that it was turning violent, and he refused to continue a struggle that violated non-violence.",
+      "board_tip": "Link the withdrawal to Gandhi's principle, not just to the incident. Mention the number of policemen only if you are sure; the date and place matter more."
+    },
+    {
+      "id": "we-ind-2",
+      "title": "Why salt was chosen in 1930",
+      "topic": "Civil Disobedience and the Salt March",
+      "problem": "Why did Gandhiji choose the salt tax as the central issue for the Civil Disobedience Movement?",
+      "solution": [
+        "Step 1: Salt is a basic necessity used by rich and poor alike.",
+        "Step 2: The British government held a monopoly on salt production and taxed it.",
+        "Step 3: The tax burden fell heavily on the poorest households.",
+        "Step 4: The issue could unite people across class, region, and religion.",
+        "Step 5: Breaking the salt law was a simple, visible act that challenged colonial authority."
+      ],
+      "board_mode": [
+        "Step 1: State that salt was used by every household, rich or poor.",
+        "Step 2: Explain the government monopoly and the salt tax.",
+        "Step 3: Explain the burden on the poor.",
+        "Step 4: Explain the unity the issue could create.",
+        "Step 5: Conclude that making salt at Dandi became a symbol of defiance."
+      ],
+      "answer": "Salt was chosen because it was a universal necessity, the tax burdened the poor, and breaking the salt law was a simple and powerful challenge to colonial rule.",
+      "board_tip": "Show both the economic and the symbolic reasons. A one-line answer about the tax is not enough for a five-mark question."
+    },
+    {
+      "id": "we-ind-3",
+      "title": "Different meanings of swaraj",
+      "topic": "Satyagraha and the Non-Cooperation Movement",
+      "problem": "How did the Non-Cooperation Movement mean different things to different social groups?",
+      "solution": [
+        "Step 1: For urban middle-class students and lawyers, it meant boycotting schools, courts, and foreign goods.",
+        "Step 2: For Awadh peasants, it meant ending the power of talukdars and the practice of begar.",
+        "Step 3: For tribals in the Gudem Hills, it meant the freedom to use forest resources and resist colonial restrictions.",
+        "Step 4: For plantation workers in Assam, it meant the freedom to leave the estate and move freely.",
+        "Step 5: For women, it meant public participation in processions and picketing, though social roles changed slowly.",
+        "Step 6: All groups used the language of swaraj, but they expected different concrete benefits."
+      ],
+      "board_mode": [
+        "Step 1: Write the urban middle class and the boycott programme.",
+        "Step 2: Write the Awadh peasants and the anti-talukdar struggle.",
+        "Step 3: Write the Gudem tribal struggle under Alluri Sitaram Raju.",
+        "Step 4: Write the Assam plantation workers and the Inland Emigration Act.",
+        "Step 5: Add women's participation if space permits.",
+        "Step 6: Conclude that swaraj was a shared slogan with different local meanings."
+      ],
+      "answer": "Different groups joined the movement because swaraj promised them different things: political rights, land, forest access, or freedom of movement.",
+      "board_tip": "Use at least three social groups with specific examples. This is a standard three-mark question."
+    },
+    {
+      "id": "we-ind-4",
+      "title": "The demand for Pakistan",
+      "topic": "The Muslim League and the Demand for Pakistan",
+      "problem": "Why did the Muslim League demand a separate homeland for Muslims?",
+      "solution": [
+        "Step 1: The League argued that Muslims were a separate nation with a distinct culture and religion.",
+        "Step 2: It feared that in a Hindu-majority India, Muslim interests would be permanently outvoted.",
+        "Step 3: Separate electorates and the experience of communal politics had already divided the electorate.",
+        "Step 4: The failure of the 1937 Congress-League cooperation and the 1946 Cabinet Mission deepened mistrust.",
+        "Step 5: The Lahore Resolution of 23 March 1940 demanded independent states for Muslim-majority areas.",
+        "Step 6: Under Jinnah the demand became the League's central political goal."
+      ],
+      "board_mode": [
+        "Step 1: State the two-nation theory.",
+        "Step 2: Explain the fear of Hindu-majority rule.",
+        "Step 3: Mention separate electorates and communal politics.",
+        "Step 4: Mention the failure of Congress-League negotiations.",
+        "Step 5: Write the Lahore Resolution of 23 March 1940.",
+        "Step 6: Write Jinnah's leadership of the demand."
+      ],
+      "answer": "The League demanded Pakistan because it claimed Muslims were a separate nation and feared domination in a Hindu-majority united India.",
+      "board_tip": "Explain the League's own reasoning before you evaluate it. Do not reduce the demand to British policy alone."
+    },
+    {
+      "id": "we-ind-5",
+      "title": "Quit India compared with earlier movements",
+      "topic": "The Quit India Movement",
+      "problem": "How was the Quit India Movement different from the Non-Cooperation and Civil Disobedience movements?",
+      "solution": [
+        "Step 1: Non-Cooperation was mainly a boycott of colonial institutions and foreign goods.",
+        "Step 2: Civil Disobedience involved deliberate violation of specific laws, especially the salt law.",
+        "Step 3: Quit India demanded an immediate end to British rule during the Second World War.",
+        "Step 4: Quit India began with the arrest of the entire Congress leadership on 9 August 1942.",
+        "Step 5: It became spontaneous and local, with strikes and attacks on government property.",
+        "Step 6: Unlike the earlier movements, it did not have a phased programme controlled by Gandhi.",
+        "Step 7: The Muslim League did not support it, so it was less united than the earlier movements."
+      ],
+      "board_mode": [
+        "Step 1: Describe Non-Cooperation as a boycott movement.",
+        "Step 2: Describe Civil Disobedience as law-breaking on specific issues.",
+        "Step 3: Describe Quit India as a demand for immediate independence.",
+        "Step 4: Mention the arrest of leaders on 9 August 1942.",
+        "Step 5: Mention the spontaneous and local character of Quit India.",
+        "Step 6: Mention the absence of Muslim League support.",
+        "Step 7: Conclude with the difference in leadership and timing."
+      ],
+      "answer": "Quit India was more immediate and less controlled than the earlier movements: it demanded an end to British rule, began with mass arrests, and became a spontaneous local uprising without Muslim League support.",
+      "board_tip": "Compare on at least three points: aim, method, and leadership. A chronological list is not a comparison."
+    }
+  ],
+  "exercises": {
+    "simple": {
+      "title": "Simple Practice",
+      "objective": "Recall key events, dates, slogans, and terms accurately",
+      "problems": [
+        {
+          "id": "ind-s1",
+          "question": "Define satyagraha.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Satyagraha is a method of non-violent resistance.",
+            "Step 2: It is based on truth and the appeal to the conscience of the opponent.",
+            "Step 3: Gandhi developed it in South Africa and used it in India after 1915."
+          ],
+          "final_answer": "Satyagraha is non-violent resistance based on truth and moral appeal.",
+          "marks": 1
+        },
+        {
+          "id": "ind-s2",
+          "question": "In which year was the Rowlatt Act passed?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: The Rowlatt Act was passed in 1919.",
+            "Step 2: It allowed detention without trial for up to two years."
+          ],
+          "final_answer": "1919.",
+          "marks": 1
+        },
+        {
+          "id": "ind-s3",
+          "question": "What happened at Chauri Chaura in February 1922?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: A crowd clashed with the police at Chauri Chaura in Gorakhpur.",
+            "Step 2: The crowd set fire to a police station.",
+            "Step 3: Twenty-two policemen were killed.",
+            "Step 4: Gandhi withdrew the Non-Cooperation Movement after the incident."
+          ],
+          "final_answer": "A crowd burned a police station and killed twenty-two policemen, leading Gandhi to withdraw the movement.",
+          "marks": 2
+        },
+        {
+          "id": "ind-s4",
+          "question": "What was Purna Swaraj?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Purna Swaraj means complete independence.",
+            "Step 2: The Lahore Congress session of December 1929 declared it as the goal of the Congress.",
+            "Step 3: 26 January 1930 was fixed as the first Independence Day."
+          ],
+          "final_answer": "Purna Swaraj was the demand for complete independence declared at the Lahore Congress in 1929.",
+          "marks": 1
+        },
+        {
+          "id": "ind-s5",
+          "question": "How long was the Dandi March and when did it begin?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: The march began on 12 March 1930 from Sabarmati Ashram.",
+            "Step 2: It covered about 240 miles, or roughly 385 kilometres.",
+            "Step 3: It took 24 days to reach Dandi.",
+            "Step 4: Gandhi broke the salt law on 6 April 1930."
+          ],
+          "final_answer": "It began on 12 March 1930 and covered about 240 miles in 24 days.",
+          "marks": 1
+        },
+        {
+          "id": "ind-s6",
+          "question": "What was the slogan given by Gandhi during the Quit India Movement?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: The Quit India resolution was passed on 8 August 1942.",
+            "Step 2: Gandhi gave the slogan Do or Die."
+          ],
+          "final_answer": "Do or Die.",
+          "marks": 1
+        }
+      ]
+    },
+    "medium": {
+      "title": "Medium Practice",
+      "objective": "Explain events, programmes, and consequences in structured answers",
+      "problems": [
+        {
+          "id": "ind-m1",
+          "question": "Describe the Jallianwala Bagh massacre and its consequences.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: On 13 April 1919 a crowd gathered at Jallianwala Bagh in Amritsar for the Baisakhi fair and to protest against the arrest of local leaders.",
+            "Step 2: General Dyer blocked the exits and ordered troops to fire on the unarmed crowd.",
+            "Step 3: Hundreds were killed and many more wounded.",
+            "Step 4: Martial law was imposed in Punjab and the government tried to justify the firing.",
+            "Step 5: The massacre discredited British rule and strengthened the national movement.",
+            "Step 6: Rabindranath Tagore renounced his knighthood in protest."
+          ],
+          "final_answer": "The Jallianwala Bagh massacre killed hundreds of unarmed people and turned public opinion sharply against British rule.",
+          "marks": 3
+        },
+        {
+          "id": "ind-m2",
+          "question": "Explain the main programme of the Non-Cooperation Movement.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: People were asked to surrender titles and honours given by the government.",
+            "Step 2: They were asked to boycott civil services, the army, the police, courts, and legislative councils.",
+            "Step 3: Students were asked to leave government schools and colleges.",
+            "Step 4: Foreign goods were to be boycotted and swadeshi goods adopted.",
+            "Step 5: Hand spinning and the use of khadi were promoted.",
+            "Step 6: The movement aimed at withdrawing cooperation from the colonial system."
+          ],
+          "final_answer": "The programme combined surrender of titles, boycott of colonial institutions and foreign goods, and promotion of swadeshi and khadi.",
+          "marks": 3
+        },
+        {
+          "id": "ind-m3",
+          "question": "Why did women participate in large numbers in the Civil Disobedience Movement?",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: The movement had a broad nationalist appeal that reached beyond cities.",
+            "Step 2: Women joined processions, picketed liquor shops and foreign cloth shops, and made salt.",
+            "Step 3: Participation gave them a public role in the national struggle.",
+            "Step 4: Leaders such as Sarojini Naidu and Kamaladevi Chattopadhyay mobilised women.",
+            "Step 5: However, their participation did not immediately change social inequalities within the home."
+          ],
+          "final_answer": "Women joined because the movement gave them a public role in the national cause, though traditional social roles changed slowly.",
+          "marks": 3
+        },
+        {
+          "id": "ind-m4",
+          "question": "What was the Gandhi-Irwin Pact?",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: The pact was signed on 5 March 1931 between Gandhi and Viceroy Lord Irwin.",
+            "Step 2: The government agreed to release political prisoners.",
+            "Step 3: The Congress agreed to suspend the Civil Disobedience Movement.",
+            "Step 4: The Congress agreed to attend the Second Round Table Conference in London.",
+            "Step 5: The pact did not grant independence or complete relief on the salt tax."
+          ],
+          "final_answer": "The Gandhi-Irwin Pact of 5 March 1931 ended the first phase of Civil Disobedience in exchange for the release of prisoners and Congress participation in the Round Table Conference.",
+          "marks": 3
+        },
+        {
+          "id": "ind-m5",
+          "question": "What was the Lahore Resolution of 1940?",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: The Muslim League passed the Lahore Resolution on 23 March 1940.",
+            "Step 2: It demanded independent states for Muslim-majority areas.",
+            "Step 3: The resolution was based on the claim that Muslims were a separate nation.",
+            "Step 4: It became the basis of the demand for Pakistan.",
+            "Step 5: Muhammad Ali Jinnah led the League in presenting this demand."
+          ],
+          "final_answer": "The Lahore Resolution of 23 March 1940 demanded independent states for Muslim-majority areas and became the basis of the Pakistan demand.",
+          "marks": 3
+        },
+        {
+          "id": "ind-m6",
+          "question": "Explain the main features of the Mountbatten Plan.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: The plan was announced on 3 June 1947.",
+            "Step 2: It proposed the partition of British India into two dominions.",
+            "Step 3: India and Pakistan would both become independent.",
+            "Step 4: The princely states would choose which dominion to join.",
+            "Step 5: A boundary commission would divide Punjab and Bengal."
+          ],
+          "final_answer": "The Mountbatten Plan proposed partition into two independent dominions and left the princely states to choose their future.",
+          "marks": 3
+        }
+      ]
+    },
+    "complex": {
+      "title": "Complex Practice",
+      "objective": "Analyse causes, compare movements, and evaluate political change",
+      "problems": [
+        {
+          "id": "ind-c1",
+          "question": "Explain how the Non-Cooperation Movement spread among different social groups and what each group expected from swaraj.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Urban middle-class students, lawyers, and teachers boycotted government institutions and foreign goods.",
+            "Step 2: In Awadh, peasants under Baba Ramchandra opposed talukdars and begar and expected land reform.",
+            "Step 3: In the Gudem Hills, Alluri Sitaram Raju led tribals against forest restrictions and colonial authority.",
+            "Step 4: Assam plantation workers left their estates, demanding freedom of movement under the Inland Emigration Act.",
+            "Step 5: Women joined processions and picketing, linking national freedom with a public role.",
+            "Step 6: Each group gave swaraj its own meaning, which widened the movement but also created tensions.",
+            "Step 7: The Congress could not satisfy all local demands, which limited the movement's unity."
+          ],
+          "final_answer": "Non-Cooperation spread because different groups saw swaraj as a solution to their own grievances, but this diversity also made the movement difficult to control.",
+          "marks": 5
+        },
+        {
+          "id": "ind-c2",
+          "question": "Why was the Salt March a turning point in the Indian national movement?",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: The march turned a simple household necessity into a symbol of colonial injustice.",
+            "Step 2: It began on 12 March 1930 and covered about 240 miles to Dandi.",
+            "Step 3: Gandhi broke the salt law on 6 April 1930, openly defying British authority.",
+            "Step 4: The march attracted enormous publicity and drew women and ordinary villagers into politics.",
+            "Step 5: It launched the Civil Disobedience Movement across India.",
+            "Step 6: It showed that the Congress could organise a disciplined mass movement without violence.",
+            "Step 7: It forced the government to negotiate and led to the Gandhi-Irwin Pact."
+          ],
+          "final_answer": "The Salt March turned a basic necessity into a national symbol, launched mass Civil Disobedience, and forced the British to negotiate.",
+          "marks": 5
+        },
+        {
+          "id": "ind-c3",
+          "question": "Explain the Quit India Movement and assess its significance.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: The Second World War and the failure of the Cripps Mission created a political crisis.",
+            "Step 2: The Quit India resolution was passed in Bombay on 8 August 1942.",
+            "Step 3: Gandhi gave the slogan Do or Die and demanded immediate British withdrawal.",
+            "Step 4: The government arrested the Congress leadership on 9 August 1942.",
+            "Step 5: The movement became spontaneous, with strikes, demonstrations, and attacks on government property.",
+            "Step 6: The British suppressed it by 1944, and the Muslim League did not support it.",
+            "Step 7: Its significance lies in showing that the Congress could mobilise people even after its leaders were jailed."
+          ],
+          "final_answer": "Quit India was a mass demand for immediate independence; it was suppressed in the short term but demonstrated the depth of anti-colonial feeling.",
+          "marks": 5
+        },
+        {
+          "id": "ind-c4",
+          "question": "Analyse the reasons for the Partition of India in 1947.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: The Muslim League demanded a separate homeland based on the two-nation theory.",
+            "Step 2: Separate electorates and colonial divide-and-rule policies had deepened communal divisions.",
+            "Step 3: The failure of the 1946 Cabinet Mission and the Congress-League talks made a united settlement impossible.",
+            "Step 4: The 1946 elections strengthened the League's claim to represent Muslims.",
+            "Step 5: Direct Action Day and communal violence created an atmosphere of fear and urgency.",
+            "Step 6: The British, facing post-war pressures, accepted partition through the Mountbatten Plan.",
+            "Step 7: Partition was therefore the result of nationalist demands, communal politics, and colonial withdrawal, not a single cause."
+          ],
+          "final_answer": "Partition resulted from the League's demand, communal divisions, failed negotiations, and British acceptance of a divided transfer of power.",
+          "marks": 5
+        },
+        {
+          "id": "ind-c5",
+          "question": "Compare the Non-Cooperation Movement, the Civil Disobedience Movement, and the Quit India Movement.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Non-Cooperation (1920-22) was a boycott of colonial institutions and foreign goods.",
+            "Step 2: It aimed at withdrawing cooperation and was withdrawn after Chauri Chaura.",
+            "Step 3: Civil Disobedience (1930-34) deliberately broke specific laws, especially the salt law.",
+            "Step 4: It was launched after the Purna Swaraj declaration and involved large-scale participation by women.",
+            "Step 5: Quit India (1942) demanded an immediate end to British rule during the Second World War.",
+            "Step 6: It began with mass arrests and became a spontaneous local uprising without Muslim League support.",
+            "Step 7: All three used non-violent mass mobilisation, but their aims and methods became more direct over time."
+          ],
+          "final_answer": "The three movements moved from boycott to law-breaking to an immediate demand for independence, with increasing mass participation but also growing repression.",
+          "marks": 5
+        },
+        {
+          "id": "ind-c6",
+          "question": "Evaluate the role of Mahatma Gandhi in the Indian national movement between 1915 and 1947.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Gandhi returned in 1915 and built his reputation through local satyagrahas at Champaran, Kheda, and Ahmedabad.",
+            "Step 2: He made the Congress a mass organisation by linking nationalism to everyday issues.",
+            "Step 3: He led the Non-Cooperation, Civil Disobedience, and Quit India movements.",
+            "Step 4: He insisted on non-violence and withdrew movements when violence broke out.",
+            "Step 5: He brought women, peasants, and workers into politics and promoted khadi and swadeshi.",
+            "Step 6: He opposed untouchability and worked for Hindu-Muslim unity, including on the Khilafat issue.",
+            "Step 7: However, he could not prevent Partition or communal violence, and some groups such as the League rejected his leadership.",
+            "Step 8: His overall role was decisive in turning nationalism into a mass movement, though his political programme had limits."
+          ],
+          "final_answer": "Gandhi transformed the Congress into a mass movement and made non-violence central to nationalism, but he could not prevent Partition or win over all political groups.",
+          "marks": 5
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-ind-s1",
+        "question": "In which year did Mahatma Gandhi return to India from South Africa?",
+        "options": [
+          "1915",
+          "1919",
+          "1920",
+          "1930"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Gandhi returned to India in January 1915.",
+          "wrong_options": {
+            "1": "1919 was the year of the Rowlatt Act and Jallianwala Bagh.",
+            "2": "1920 was the year of the Non-Cooperation programme.",
+            "3": "1930 was the year of the Salt March."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s2",
+        "question": "The Rowlatt Act was passed in which year?",
+        "options": [
+          "1915",
+          "1919",
+          "1922",
+          "1929"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The Rowlatt Act was passed in 1919.",
+          "wrong_options": {
+            "0": "1915 was when Gandhi returned to India.",
+            "2": "1922 was the year of Chauri Chaura.",
+            "3": "1929 was the year of the Lahore Congress."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s3",
+        "question": "At which place did the Jallianwala Bagh massacre take place?",
+        "options": [
+          "Lahore",
+          "Amritsar",
+          "Delhi",
+          "Calcutta"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The massacre took place at Jallianwala Bagh in Amritsar.",
+          "wrong_options": {
+            "0": "Lahore was the site of the 1929 Congress session.",
+            "2": "Delhi was the capital of British India.",
+            "3": "Calcutta was the site of the 1942 Quit India resolution."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s4",
+        "question": "Who ordered firing on the crowd at Jallianwala Bagh?",
+        "options": [
+          "General Dyer",
+          "Lord Irwin",
+          "Lord Mountbatten",
+          "Sir Cyril Radcliffe"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "General Dyer ordered the firing on 13 April 1919.",
+          "wrong_options": {
+            "1": "Lord Irwin was Viceroy in 1931.",
+            "2": "Lord Mountbatten was the last Viceroy in 1947.",
+            "3": "Sir Cyril Radcliffe chaired the boundary commission in 1947."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s5",
+        "question": "The Chauri Chaura incident took place in which year?",
+        "options": [
+          "1919",
+          "1920",
+          "1922",
+          "1930"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Chauri Chaura took place in February 1922.",
+          "wrong_options": {
+            "0": "1919 was the year of Jallianwala Bagh.",
+            "1": "1920 was when Non-Cooperation was adopted.",
+            "3": "1930 was the year of the Salt March."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s6",
+        "question": "At which session did the Congress declare Purna Swaraj?",
+        "options": [
+          "Nagpur session",
+          "Lahore session",
+          "Bombay session",
+          "Karachi session"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The Lahore Congress session of December 1929 declared Purna Swaraj.",
+          "wrong_options": {
+            "0": "The Nagpur session of 1920 adopted Non-Cooperation.",
+            "2": "The Bombay session of 1942 passed the Quit India resolution.",
+            "3": "Karachi was not the session that declared Purna Swaraj."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s7",
+        "question": "From where did the Dandi March begin?",
+        "options": [
+          "Dandi",
+          "Sabarmati Ashram",
+          "Wardha",
+          "Amritsar"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The march began at Sabarmati Ashram on 12 March 1930.",
+          "wrong_options": {
+            "0": "Dandi was the destination.",
+            "2": "Wardha was associated with the ashram later.",
+            "3": "Amritsar was the site of Jallianwala Bagh."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s8",
+        "question": "On which date did Gandhi break the salt law at Dandi?",
+        "options": [
+          "12 March 1930",
+          "6 April 1930",
+          "26 January 1930",
+          "5 March 1931"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Gandhi broke the salt law on 6 April 1930.",
+          "wrong_options": {
+            "0": "12 March 1930 was the start of the march.",
+            "2": "26 January 1930 was observed as Independence Day.",
+            "3": "5 March 1931 was the date of the Gandhi-Irwin Pact."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s9",
+        "question": "In which year was the Quit India resolution passed?",
+        "options": [
+          "1930",
+          "1935",
+          "1942",
+          "1947"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "The Quit India resolution was passed on 8 August 1942.",
+          "wrong_options": {
+            "0": "1930 was the year of the Salt March.",
+            "1": "1935 was the year of the Government of India Act.",
+            "3": "1947 was the year of independence and Partition."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s10",
+        "question": "In which year was the All India Muslim League founded?",
+        "options": [
+          "1906",
+          "1909",
+          "1916",
+          "1940"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Muslim League was founded in 1906 at Dhaka.",
+          "wrong_options": {
+            "1": "1909 was the year of the Morley-Minto reforms.",
+            "2": "1916 was the year of the Lucknow Pact.",
+            "3": "1940 was the year of the Lahore Resolution."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-ind-m1",
+        "question": "What was the most controversial provision of the Rowlatt Act?",
+        "options": [
+          "It raised the salt tax",
+          "It allowed detention without trial",
+          "It abolished separate electorates",
+          "It banned the Congress"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The Act allowed political prisoners to be detained without trial for up to two years.",
+          "wrong_options": {
+            "0": "The salt tax was a separate issue.",
+            "2": "Separate electorates were introduced in 1909.",
+            "3": "The Congress was not banned by this Act."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m2",
+        "question": "Why did Gandhi link the Khilafat issue with Non-Cooperation?",
+        "options": [
+          "To support the Ottoman Khalifa and unite Hindus and Muslims",
+          "To support the British war effort",
+          "To demand separate electorates",
+          "To oppose the abolition of the zamindari system"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Gandhi wanted to unite Hindus and Muslims by supporting the Khilafat demand.",
+          "wrong_options": {
+            "1": "He opposed British policy, not supported the war.",
+            "2": "Separate electorates were a League demand.",
+            "3": "Zamindari abolition was not the issue."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m3",
+        "question": "Which of these was part of the Non-Cooperation programme?",
+        "options": [
+          "Joining legislative councils",
+          "Boycotting foreign goods and government schools",
+          "Paying extra taxes",
+          "Supporting the Rowlatt Act"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The programme urged boycott of foreign goods, government schools, courts, and councils.",
+          "wrong_options": {
+            "0": "The programme asked people to boycott councils.",
+            "2": "It opposed extra taxation.",
+            "3": "It opposed the Rowlatt Act."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m4",
+        "question": "What was the immediate consequence of the Chauri Chaura incident?",
+        "options": [
+          "The Rowlatt Act was repealed",
+          "Gandhi withdrew the Non-Cooperation Movement",
+          "The Muslim League was founded",
+          "The Salt March began"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Gandhi withdrew the movement in February 1922.",
+          "wrong_options": {
+            "0": "The Rowlatt Act was not repealed then.",
+            "2": "The League was founded in 1906.",
+            "3": "The Salt March began in 1930."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m5",
+        "question": "Why was salt chosen as the symbol of Civil Disobedience?",
+        "options": [
+          "It was a luxury item",
+          "It was used by rich and poor alike and taxed by the government",
+          "It was produced only in Britain",
+          "It was banned by the Congress"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Salt was a universal necessity and the government monopoly made it a powerful symbol.",
+          "wrong_options": {
+            "0": "Salt was a daily necessity, not a luxury.",
+            "2": "Salt was produced in India.",
+            "3": "The Congress did not ban salt."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m6",
+        "question": "What did the Gandhi-Irwin Pact of 1931 agree on?",
+        "options": [
+          "Immediate independence",
+          "Congress participation in the Round Table Conference",
+          "A separate Muslim state",
+          "The end of the salt tax"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The Congress agreed to attend the Second Round Table Conference and suspend Civil Disobedience.",
+          "wrong_options": {
+            "0": "Independence was not granted in 1931.",
+            "2": "A separate Muslim state was demanded in 1940.",
+            "3": "The salt tax was not abolished."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m7",
+        "question": "What did the Poona Pact of 1932 provide?",
+        "options": [
+          "Reserved seats for the Depressed Classes within the general electorate",
+          "Separate electorates for Muslims",
+          "Abolition of the salt tax",
+          "Partition of Bengal"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Poona Pact reserved seats for the Depressed Classes within a joint electorate.",
+          "wrong_options": {
+            "1": "Separate electorates for Muslims came in 1909.",
+            "2": "The salt tax was not abolished by the pact.",
+            "3": "The partition of Bengal took place in 1905."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m8",
+        "question": "What was the significance of the Lahore Resolution of 1940?",
+        "options": [
+          "It demanded complete independence for India",
+          "It demanded independent states for Muslim-majority areas",
+          "It ended the Quit India Movement",
+          "It created the Indian National Congress"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The resolution demanded independent states for Muslim-majority areas and became the basis of Pakistan.",
+          "wrong_options": {
+            "0": "Purna Swaraj was declared in 1929.",
+            "2": "Quit India came in 1942.",
+            "3": "The Congress was founded in 1885."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m9",
+        "question": "What did the Mountbatten Plan propose?",
+        "options": [
+          "A united India with a weak centre",
+          "Partition into India and Pakistan",
+          "Continuation of British rule",
+          "A separate state for the Depressed Classes"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The plan of 3 June 1947 proposed partition into two independent dominions.",
+          "wrong_options": {
+            "0": "It accepted partition rather than a united India.",
+            "2": "It ended British rule.",
+            "3": "It did not create a separate Dalit state."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m10",
+        "question": "Who led the Muslim League's demand for Pakistan?",
+        "options": [
+          "Muhammad Ali Jinnah",
+          "Jawaharlal Nehru",
+          "Subhas Chandra Bose",
+          "Sardar Patel"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Muhammad Ali Jinnah led the League's demand for Pakistan.",
+          "wrong_options": {
+            "1": "Nehru was a Congress leader.",
+            "2": "Bose led the Forward Bloc and the INA.",
+            "3": "Patel was a Congress leader and later Deputy Prime Minister."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-ind-c1",
+        "question": "Why did peasants in Awadh join the Non-Cooperation Movement?",
+        "options": [
+          "To support the Rowlatt Act",
+          "To oppose talukdars and begar",
+          "To demand separate electorates",
+          "To join the British army"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Awadh peasants under Baba Ramchandra opposed talukdars and forced labour.",
+          "wrong_options": {
+            "0": "They opposed the Rowlatt Act.",
+            "2": "Separate electorates were a Muslim League demand.",
+            "3": "They were resisting colonial recruitment and dues."
+          }
+        }
+      },
+      {
+        "id": "q-ind-c2",
+        "question": "How did Alluri Sitaram Raju's movement differ from Gandhi's method?",
+        "options": [
+          "It used guerrilla warfare and claimed special powers",
+          "It was completely non-violent",
+          "It was led by the Muslim League",
+          "It supported the British"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Raju led a militant guerrilla struggle in the Gudem Hills, though he was inspired by Gandhi.",
+          "wrong_options": {
+            "1": "It was not completely non-violent.",
+            "2": "It was a tribal movement, not a League movement.",
+            "3": "It opposed colonial rule."
+          }
+        }
+      },
+      {
+        "id": "q-ind-c3",
+        "question": "Why did Assam plantation workers join the Non-Cooperation Movement?",
+        "options": [
+          "To demand higher wages only",
+          "To escape the restrictions of the Inland Emigration Act and move freely",
+          "To support the British government",
+          "To demand separate electorates"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Workers wanted freedom of movement, which the Inland Emigration Act of 1859 restricted.",
+          "wrong_options": {
+            "0": "Wages were one grievance, but freedom of movement was central.",
+            "2": "They were protesting against colonial conditions.",
+            "3": "Separate electorates were not their demand."
+          }
+        }
+      },
+      {
+        "id": "q-ind-c4",
+        "question": "What was the main significance of the Dandi March?",
+        "options": [
+          "It ended British rule immediately",
+          "It turned the salt tax into a national symbol and launched mass Civil Disobedience",
+          "It created the Muslim League",
+          "It abolished the Rowlatt Act"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The march made salt a symbol of colonial injustice and inaugurated Civil Disobedience.",
+          "wrong_options": {
+            "0": "Independence came in 1947.",
+            "2": "The League was founded in 1906.",
+            "3": "The Rowlatt Act was not abolished by the march."
+          }
+        }
+      },
+      {
+        "id": "q-ind-c5",
+        "question": "Which statement about women in the Civil Disobedience Movement is accurate?",
+        "options": [
+          "They were completely absent",
+          "They participated in large numbers but social roles changed slowly",
+          "They were given the vote immediately",
+          "They were banned from public life"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Women joined processions and picketing in large numbers, but traditional roles did not change at once.",
+          "wrong_options": {
+            "0": "They were active participants.",
+            "2": "Universal adult suffrage came after independence.",
+            "3": "They were not banned from the movement."
+          }
+        }
+      },
+      {
+        "id": "q-ind-c6",
+        "question": "Why did the Quit India Movement fail to achieve immediate independence?",
+        "options": [
+          "It was suppressed by the British and lacked unified support",
+          "It had no leaders at any stage",
+          "It was supported by the Muslim League",
+          "It was launched after independence"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The British repressed the movement and the Muslim League did not support it.",
+          "wrong_options": {
+            "1": "It began with leaders, who were then arrested.",
+            "2": "The League opposed it.",
+            "3": "It was launched in 1942, before independence."
+          }
+        }
+      },
+      {
+        "id": "q-ind-c7",
+        "question": "What was the two-nation theory?",
+        "options": [
+          "India should have two capitals",
+          "Muslims and Hindus were two separate nations",
+          "The Congress and League should share power",
+          "India should have two languages"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The two-nation theory held that Muslims and Hindus were separate nations.",
+          "wrong_options": {
+            "0": "It was about nationhood, not capitals.",
+            "2": "It rejected a shared constitutional arrangement.",
+            "3": "It was not a language policy."
+          }
+        }
+      },
+      {
+        "id": "q-ind-c8",
+        "question": "Which factor contributed most directly to the acceptance of Partition in 1947?",
+        "options": [
+          "The failure of Congress-League negotiations and communal violence",
+          "The abolition of the salt tax",
+          "The Rowlatt Act",
+          "The founding of the Congress"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Failed negotiations, the League's demand, and communal violence made partition acceptable to the main parties.",
+          "wrong_options": {
+            "1": "The salt tax was a 1930 issue.",
+            "2": "The Rowlatt Act was from 1919.",
+            "3": "The Congress was founded in 1885."
+          }
+        }
+      },
+      {
+        "id": "q-ind-c9",
+        "question": "What is the main difference between Non-Cooperation and Civil Disobedience?",
+        "options": [
+          "Non-Cooperation boycotted institutions; Civil Disobedience deliberately broke laws",
+          "Non-Cooperation was violent; Civil Disobedience was peaceful",
+          "Civil Disobedience began in 1920",
+          "Non-Cooperation demanded partition"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Non-Cooperation withdrew cooperation, while Civil Disobedience broke specific laws such as the salt law.",
+          "wrong_options": {
+            "1": "Both were officially non-violent.",
+            "2": "Civil Disobedience began in 1930.",
+            "3": "Neither demanded partition."
+          }
+        }
+      },
+      {
+        "id": "q-ind-c10",
+        "question": "Which principle was central to Gandhi's political method?",
+        "options": [
+          "Armed revolution",
+          "Satyagraha based on truth and non-violence",
+          "Separate electorates",
+          "Support for colonial rule"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Gandhi's method was satyagraha, combining truth and non-violence.",
+          "wrong_options": {
+            "0": "He opposed armed revolution.",
+            "2": "Separate electorates were a League demand.",
+            "3": "He opposed colonial rule."
+          }
+        }
+      }
+    ]
+  },
+  "mind_maps": {
+    "title": "Nationalism in India - Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Nationalism in India",
+    "branches": [
+      {
+        "concept": "Background, 1915-1919",
+        "sub_nodes": [
+          "First World War: taxes, prices, forced recruitment",
+          "Famine and influenza, 1918-1921",
+          "Gandhi returns in January 1915",
+          "Champaran 1916, Kheda 1917, Ahmedabad 1918",
+          "Rowlatt Act 1919",
+          "Jallianwala Bagh, 13 April 1919"
+        ],
+        "connections": "War hardship and repression created mass anger"
+      },
+      {
+        "concept": "Non-Cooperation, 1920-1922",
+        "sub_nodes": [
+          "Khilafat and Ali brothers",
+          "Congress adopts programme in 1920",
+          "Boycott of titles, courts, schools, and foreign goods",
+          "Awadh peasants and Baba Ramchandra",
+          "Gudem Hills and Alluri Sitaram Raju",
+          "Assam plantation workers",
+          "Chauri Chaura, February 1922",
+          "Movement withdrawn"
+        ],
+        "connections": "Swaraj meant different things to different groups"
+      },
+      {
+        "concept": "Civil Disobedience, 1930-1934",
+        "sub_nodes": [
+          "Purna Swaraj at Lahore, December 1929",
+          "26 January 1930 as Independence Day",
+          "Eleven demands and the salt tax",
+          "Dandi March, 12 March to 6 April 1930",
+          "Boycotts, picketing, and no-tax campaigns",
+          "Women's participation",
+          "Gandhi-Irwin Pact, 5 March 1931",
+          "Poona Pact, 24 September 1932"
+        ],
+        "connections": "A symbolic law-breaking campaign became a national movement"
+      },
+      {
+        "concept": "Quit India, 1942",
+        "sub_nodes": [
+          "Second World War and the Cripps Mission",
+          "Resolution passed in Bombay, 8 August 1942",
+          "Slogan: Do or Die",
+          "Leaders arrested on 9 August 1942",
+          "Spontaneous local protests",
+          "Muslim League did not join",
+          "Suppressed by 1944"
+        ],
+        "connections": "The demand shifted from negotiation to immediate withdrawal"
+      },
+      {
+        "concept": "Muslim League and Pakistan",
+        "sub_nodes": [
+          "League founded at Dhaka in 1906",
+          "Separate electorates, 1909",
+          "Lucknow Pact, 1916",
+          "Lahore Resolution, 23 March 1940",
+          "Two-nation theory and Jinnah",
+          "Cabinet Mission, 1946",
+          "Direct Action Day, 16 August 1946"
+        ],
+        "connections": "Religious identity became the basis for a separate state"
+      },
+      {
+        "concept": "Partition and Independence, 1947",
+        "sub_nodes": [
+          "Mountbatten Plan, 3 June 1947",
+          "Indian Independence Act, July 1947",
+          "Pakistan, 14 August 1947",
+          "India, 15 August 1947",
+          "Radcliffe Line",
+          "Mass migration and communal violence",
+          "Gandhi's peace efforts",
+          "Kashmir dispute"
+        ],
+        "connections": "Independence came with partition, displacement, and lasting conflict"
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "How the Indian National Movement Developed, 1919-1947",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "First World War",
+        "group": "background"
+      },
+      {
+        "id": "n2",
+        "label": "Rowlatt Act 1919",
+        "group": "repression"
+      },
+      {
+        "id": "n3",
+        "label": "Jallianwala Bagh 1919",
+        "group": "repression"
+      },
+      {
+        "id": "n4",
+        "label": "Non-Cooperation 1920-22",
+        "group": "movement"
+      },
+      {
+        "id": "n5",
+        "label": "Civil Disobedience 1930-34",
+        "group": "movement"
+      },
+      {
+        "id": "n6",
+        "label": "Salt March 1930",
+        "group": "movement"
+      },
+      {
+        "id": "n7",
+        "label": "Quit India 1942",
+        "group": "movement"
+      },
+      {
+        "id": "n8",
+        "label": "Muslim League",
+        "group": "communal"
+      },
+      {
+        "id": "n9",
+        "label": "Lahore Resolution 1940",
+        "group": "communal"
+      },
+      {
+        "id": "n10",
+        "label": "Partition 1947",
+        "group": "outcome"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n5",
+        "n6"
+      ],
+      [
+        "n4",
+        "n7"
+      ],
+      [
+        "n5",
+        "n7"
+      ],
+      [
+        "n8",
+        "n9"
+      ],
+      [
+        "n9",
+        "n10"
+      ],
+      [
+        "n7",
+        "n10"
+      ],
+      [
+        "n4",
+        "n8"
+      ],
+      [
+        "n2",
+        "n4"
+      ]
+    ]
+  },
+  "common_misconceptions": [
+    {
+      "misconception": "Gandhi withdrew Non-Cooperation because the movement had failed militarily.",
+      "correction": "He withdrew it because the Chauri Chaura violence violated his principle of non-violence, not because of military defeat."
+    },
+    {
+      "misconception": "Jallianwala Bagh was a meeting called by Gandhi.",
+      "correction": "The crowd had gathered for the Baisakhi fair and to protest against the arrest of local leaders. Gandhi was not present."
+    },
+    {
+      "misconception": "Non-Cooperation was only a boycott of foreign cloth.",
+      "correction": "It was a wider programme: surrender of titles, boycott of courts, schools, councils, and foreign goods, and promotion of swadeshi."
+    },
+    {
+      "misconception": "The Salt March was mainly about making money from salt.",
+      "correction": "It was a symbolic act of defiance against a tax that burdened the poor and against colonial law itself."
+    },
+    {
+      "misconception": "The Muslim League was founded in 1940.",
+      "correction": "The League was founded in 1906 at Dhaka. The Lahore Resolution demanding independent states came in 1940."
+    },
+    {
+      "misconception": "Quit India achieved independence immediately.",
+      "correction": "It was suppressed by 1944. Independence came in 1947 after further negotiations and the end of the Second World War."
+    },
+    {
+      "misconception": "Partition was caused only by British divide-and-rule.",
+      "correction": "British policy mattered, but the League's demand, communal divisions, failed Congress-League negotiations, and the 1946 violence were also decisive."
+    },
+    {
+      "misconception": "Civil Disobedience began in 1929 when Purna Swaraj was declared.",
+      "correction": "Purna Swaraj was declared in December 1929, but Civil Disobedience was launched in 1930 with the Dandi March."
+    }
+  ],
+  "chapterId": "nationalism-in-india",
+  "subjectId": "social-science",
+  "subjectName": "Social Science",
+  "unitId": "social-science-1",
+  "unitName": "India and the Contemporary World - II",
+  "examWeightage": 20,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

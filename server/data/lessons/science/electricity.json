@@ -1,0 +1,1234 @@
+{
+  "subject": "Physics",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 3,
+  "chapter": "Electricity",
+  "id": "electricity",
+  "lesson": 3,
+  "title": "Electricity - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Define electric current and potential difference with their SI units",
+    "State and apply Ohm's law",
+    "Calculate resistance from length, area, and resistivity",
+    "Analyse series and parallel combinations of resistors",
+    "Apply the heating effect of current and electric power formulae",
+    "Calculate electrical energy consumption in kWh and its cost",
+    "Solve board-style numericals on circuits, power, and energy"
+  ],
+  "concepts": [
+    {
+      "id": "current-potential-difference",
+      "title": "Electric Current and Potential Difference",
+      "explanation": "Electric current is the rate of flow of electric charge through a conductor, given by I = Q/t. Its SI unit is the ampere (A), where 1 A = 1 coulomb per second. Conventional current flows from the positive terminal to the negative terminal of a cell, while electrons drift in the opposite direction. Potential difference between two points is the work done to move a unit charge from one point to the other, V = W/Q, and its SI unit is the volt (V).",
+      "key_points": [
+        "Current I = Q/t; SI unit ampere (A).",
+        "Conventional current is opposite to the direction of electron flow.",
+        "Potential difference V = W/Q; SI unit volt (V).",
+        "An ammeter measures current and is connected in series; a voltmeter measures potential difference and is connected in parallel."
+      ],
+      "real_life_example": "A torch bulb glows because a cell maintains a potential difference that drives current through the filament."
+    },
+    {
+      "id": "ohms-law-resistance",
+      "title": "Ohm's Law and Resistance",
+      "explanation": "Ohm's law states that the current through a metallic conductor is directly proportional to the potential difference across it, provided the temperature remains constant. This gives V = IR, where R is the resistance of the conductor. Resistance is the opposition offered by a conductor to the flow of current, and its SI unit is the ohm. A resistor with a straight-line V-I graph through the origin obeys Ohm's law and is called an ohmic conductor.",
+      "key_points": [
+        "Ohm's law: V = IR at constant temperature.",
+        "SI unit of resistance is the ohm.",
+        "The V-I graph of an ohmic conductor is a straight line through the origin.",
+        "Resistance depends on the material, length, area of cross-section, and temperature of the conductor."
+      ],
+      "real_life_example": "A filament bulb and a heater coil are made of materials chosen for their resistance so that they convert electrical energy into light and heat."
+    },
+    {
+      "id": "resistivity-factors",
+      "title": "Factors Affecting Resistance and Resistivity",
+      "explanation": "The resistance of a uniform conductor is directly proportional to its length and inversely proportional to its area of cross-section. It also depends on the nature of the material and its temperature. These facts combine into R = rho L / A, where rho is the resistivity of the material. Resistivity is a property of the material itself and its SI unit is the ohm metre; metals have low resistivity while insulators have very high resistivity.",
+      "key_points": [
+        "R is directly proportional to length L.",
+        "R is inversely proportional to area of cross-section A.",
+        "R = rho L / A, where rho is resistivity.",
+        "Resistivity is a material property measured in ohm metre; it changes with temperature."
+      ],
+      "real_life_example": "House wiring uses thick copper wires of low resistivity so that they carry current without overheating, while the thin filament of a bulb has high resistance and glows."
+    },
+    {
+      "id": "series-parallel",
+      "title": "Resistors in Series and Parallel",
+      "explanation": "When resistors are joined in series, the same current flows through each of them and the total potential difference is the sum of the individual potential differences. The equivalent resistance is Req = R1 + R2 + R3 + ..., which is greater than the largest individual resistance. When resistors are joined in parallel, the potential difference across each is the same and the total current is the sum of the branch currents. The equivalent resistance is given by 1/Req = 1/R1 + 1/R2 + 1/R3 + ..., which is less than the smallest individual resistance.",
+      "key_points": [
+        "Series: same current, voltages add, Req = R1 + R2 + ...",
+        "Parallel: same voltage, currents add, 1/Req = 1/R1 + 1/R2 + ...",
+        "Series equivalent resistance is larger than the largest resistor.",
+        "Parallel equivalent resistance is smaller than the smallest resistor."
+      ],
+      "real_life_example": "Domestic appliances are connected in parallel so that each receives the full supply voltage and can be switched on or off independently."
+    },
+    {
+      "id": "heating-effect-power",
+      "title": "Heating Effect of Current and Electric Power",
+      "explanation": "When current flows through a resistor, electrical energy is converted into heat because the resistor opposes the flow of charge. The heat produced is H = I^2 R t, which is Joule's law of heating. Electric power is the rate at which electrical energy is consumed, P = VI = I^2 R = V^2 / R. The SI unit of power is the watt (W), and 1 W = 1 joule per second.",
+      "key_points": [
+        "Joule's law of heating: H = I^2 R t.",
+        "Electric power: P = VI = I^2 R = V^2 / R.",
+        "SI unit of power is the watt (W).",
+        "The heating effect is useful in heaters, irons, and fuses but is an energy loss in transmission wires."
+      ],
+      "real_life_example": "An electric iron, geyser, and toaster work on the heating effect of current, while a fuse melts and breaks the circuit when current becomes too large."
+    },
+    {
+      "id": "commercial-energy-household",
+      "title": "Commercial Unit of Electrical Energy and Household Circuits",
+      "explanation": "Electrical energy is the product of power and time, E = P x t. For large amounts of energy, the commercial unit is the kilowatt-hour (kWh), where 1 kWh = 3.6 x 10^6 J. One kilowatt-hour is the energy consumed by a 1 kW appliance used for 1 hour, and it is commonly called one unit of electricity. In household wiring, appliances are connected in parallel and each circuit is protected by a fuse or miniature circuit breaker (MCB).",
+      "key_points": [
+        "Electrical energy E = P x t.",
+        "1 kWh = 3.6 x 10^6 J = one commercial unit.",
+        "The electricity meter records energy in kWh.",
+        "Household appliances are connected in parallel and protected by fuses or MCBs."
+      ],
+      "real_life_example": "An electricity bill lists the number of units consumed; a 100 W bulb used for 10 hours consumes 1 kWh, which is one unit."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-elec-1",
+      "title": "Electric current from charge and time",
+      "problem": "A charge of 60 C flows through a conductor in 1 minute. Find the current.",
+      "solution": [
+        "Step 1: Use I = Q/t.",
+        "Step 2: Convert time to seconds: t = 1 minute = 60 s.",
+        "Step 3: I = 60 C / 60 s = 1 A.",
+        "Step 4: The current through the conductor is 1 ampere."
+      ],
+      "answer": "Current I = 1 A.",
+      "board_tip": "Always convert time to seconds before substituting into I = Q/t.",
+      "exam_tip": "1 ampere means 1 coulomb of charge passes a point in 1 second."
+    },
+    {
+      "id": "we-elec-2",
+      "title": "Ohm's law: current through a resistor",
+      "problem": "A potential difference of 6 V is applied across a resistor of resistance 3 ohm. Find the current through the resistor.",
+      "solution": [
+        "Step 1: Use Ohm's law V = IR.",
+        "Step 2: Rearrange to I = V/R.",
+        "Step 3: Substitute V = 6 V and R = 3 ohm.",
+        "Step 4: I = 6/3 = 2 A."
+      ],
+      "answer": "Current I = 2 A.",
+      "board_tip": "Keep V in volts and R in ohms so that the current comes out in amperes.",
+      "exam_tip": "If V doubles at constant resistance, the current also doubles."
+    },
+    {
+      "id": "we-elec-3",
+      "title": "Resistance from resistivity, length, and area",
+      "problem": "A copper wire of length 2 m and area of cross-section 1 x 10^-6 m^2 has resistivity 1.7 x 10^-8 ohm metre. Find its resistance.",
+      "solution": [
+        "Step 1: Use R = rho L / A.",
+        "Step 2: Substitute rho = 1.7 x 10^-8 ohm m, L = 2 m, and A = 1 x 10^-6 m^2.",
+        "Step 3: R = (1.7 x 10^-8 x 2) / (1 x 10^-6).",
+        "Step 4: R = 3.4 x 10^-8 / 1 x 10^-6 = 3.4 x 10^-2 ohm.",
+        "Step 5: R = 0.034 ohm."
+      ],
+      "answer": "Resistance R = 0.034 ohm.",
+      "board_tip": "Watch the powers of ten when dividing numbers in scientific notation.",
+      "exam_tip": "A longer or thinner wire has more resistance; a thicker wire has less."
+    },
+    {
+      "id": "we-elec-4",
+      "title": "Series and parallel equivalent resistance",
+      "problem": "Two resistors of 6 ohm and 3 ohm are connected first in series and then in parallel. Find the equivalent resistance in each case.",
+      "solution": [
+        "Step 1: In series, Req = R1 + R2 = 6 + 3 = 9 ohm.",
+        "Step 2: In parallel, 1/Req = 1/R1 + 1/R2 = 1/6 + 1/3.",
+        "Step 3: 1/Req = 1/6 + 2/6 = 3/6 = 1/2.",
+        "Step 4: Therefore Req = 2 ohm.",
+        "Step 5: The series value is larger than either resistor, while the parallel value is smaller than either."
+      ],
+      "answer": "Series: 9 ohm; parallel: 2 ohm.",
+      "board_tip": "For two resistors in parallel, Req = (R1 x R2)/(R1 + R2) is a quick check.",
+      "exam_tip": "The parallel equivalent is always less than the smallest resistance in the combination."
+    },
+    {
+      "id": "we-elec-5",
+      "title": "Power and energy of a bulb",
+      "problem": "An electric bulb is rated 220 V, 100 W. Find the current through it, its resistance, and the energy consumed in 5 hours.",
+      "solution": [
+        "Step 1: Use P = VI, so I = P/V = 100/220 = 0.4545 A.",
+        "Step 2: Use R = V^2/P = (220 x 220)/100 = 484 ohm.",
+        "Step 3: Energy E = P x t with P = 100 W = 0.1 kW and t = 5 h.",
+        "Step 4: E = 0.1 x 5 = 0.5 kWh.",
+        "Step 5: In joules, E = 0.5 x 3.6 x 10^6 = 1.8 x 10^6 J."
+      ],
+      "answer": "I = 0.45 A; R = 484 ohm; energy = 0.5 kWh = 1.8 x 10^6 J.",
+      "board_tip": "Use kW with hours to get energy directly in kWh.",
+      "exam_tip": "The rated power is consumed only when the bulb is operated at its rated voltage."
+    }
+  ],
+  "exercises": {
+    "simple": {
+      "title": "Simple Practice - Current, Voltage, and Resistance",
+      "objective": "Apply one-step formulae for current, voltage, resistance, and power",
+      "problems": [
+        {
+          "id": "elec-s-1",
+          "question": "Define electric current and state its SI unit.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Electric current is the rate of flow of electric charge through a conductor.",
+            "Step 2: It is given by I = Q/t.",
+            "Step 3: The SI unit of current is the ampere (A), equal to one coulomb per second."
+          ],
+          "final_answer": "Current is the rate of flow of charge, I = Q/t, measured in amperes."
+        },
+        {
+          "id": "elec-s-2",
+          "question": "A potential difference of 12 V is applied across a 4 ohm resistor. Find the current.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Use Ohm's law V = IR.",
+            "Step 2: I = V/R = 12/4.",
+            "Step 3: I = 3 A."
+          ],
+          "final_answer": "Current I = 3 A."
+        },
+        {
+          "id": "elec-s-3",
+          "question": "A current of 0.5 A flows through a 10 ohm resistor. Find the potential difference across it.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Use V = IR.",
+            "Step 2: V = 0.5 x 10.",
+            "Step 3: V = 5 V."
+          ],
+          "final_answer": "Potential difference V = 5 V."
+        },
+        {
+          "id": "elec-s-4",
+          "question": "Three resistors of 2 ohm, 3 ohm, and 5 ohm are connected in series. Find the equivalent resistance.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: In series, Req = R1 + R2 + R3.",
+            "Step 2: Req = 2 + 3 + 5.",
+            "Step 3: Req = 10 ohm."
+          ],
+          "final_answer": "Equivalent resistance = 10 ohm."
+        },
+        {
+          "id": "elec-s-5",
+          "question": "Two resistors of 6 ohm and 3 ohm are connected in parallel. Find the equivalent resistance.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Use 1/Req = 1/R1 + 1/R2.",
+            "Step 2: 1/Req = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2.",
+            "Step 3: Req = 2 ohm."
+          ],
+          "final_answer": "Equivalent resistance = 2 ohm."
+        },
+        {
+          "id": "elec-s-6",
+          "question": "An appliance draws a current of 0.5 A at 220 V. Find its power.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Use P = VI.",
+            "Step 2: P = 220 x 0.5.",
+            "Step 3: P = 110 W."
+          ],
+          "final_answer": "Power P = 110 W."
+        }
+      ]
+    },
+    "medium": {
+      "title": "Medium Practice - Circuits, Resistivity, and Energy",
+      "objective": "Combine Ohm's law with series, parallel, and energy calculations",
+      "problems": [
+        {
+          "id": "elec-m-1",
+          "question": "A charge of 300 C flows through a wire in 5 minutes. Find the current.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Convert time to seconds: t = 5 x 60 = 300 s.",
+            "Step 2: Use I = Q/t.",
+            "Step 3: I = 300/300 = 1 A."
+          ],
+          "final_answer": "Current I = 1 A."
+        },
+        {
+          "id": "elec-m-2",
+          "question": "A wire of length 5 m and area of cross-section 1 x 10^-6 m^2 has resistivity 2 x 10^-8 ohm metre. Find its resistance.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Use R = rho L / A.",
+            "Step 2: R = (2 x 10^-8 x 5) / (1 x 10^-6).",
+            "Step 3: R = 1 x 10^-7 / 1 x 10^-6.",
+            "Step 4: R = 0.1 ohm."
+          ],
+          "final_answer": "Resistance R = 0.1 ohm."
+        },
+        {
+          "id": "elec-m-3",
+          "question": "A wire has resistance 4 ohm. Its length is doubled and its area of cross-section is halved. Find its new resistance.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: R = rho L / A.",
+            "Step 2: New length = 2L and new area = A/2.",
+            "Step 3: R' = rho (2L)/(A/2) = 4 rho L/A = 4R.",
+            "Step 4: R' = 4 x 4 = 16 ohm."
+          ],
+          "final_answer": "New resistance = 16 ohm."
+        },
+        {
+          "id": "elec-m-4",
+          "question": "Resistors of 10 ohm and 20 ohm are connected in series across a 6 V battery. Find the current and the potential difference across each resistor.",
+          "difficulty": "medium",
+          "marks": 4,
+          "solution": [
+            "Step 1: Req = 10 + 20 = 30 ohm.",
+            "Step 2: I = V/Req = 6/30 = 0.2 A.",
+            "Step 3: V across 10 ohm = I x 10 = 0.2 x 10 = 2 V.",
+            "Step 4: V across 20 ohm = I x 20 = 0.2 x 20 = 4 V.",
+            "Step 5: Check: 2 V + 4 V = 6 V."
+          ],
+          "final_answer": "I = 0.2 A; V across 10 ohm = 2 V; V across 20 ohm = 4 V."
+        },
+        {
+          "id": "elec-m-5",
+          "question": "Resistors of 10 ohm and 15 ohm are connected in parallel across a 6 V battery. Find the equivalent resistance, total current, and branch currents.",
+          "difficulty": "medium",
+          "marks": 4,
+          "solution": [
+            "Step 1: 1/Req = 1/10 + 1/15 = 3/30 + 2/30 = 5/30 = 1/6.",
+            "Step 2: Req = 6 ohm.",
+            "Step 3: Total current I = V/Req = 6/6 = 1 A.",
+            "Step 4: Current through 10 ohm = 6/10 = 0.6 A.",
+            "Step 5: Current through 15 ohm = 6/15 = 0.4 A.",
+            "Step 6: Check: 0.6 + 0.4 = 1 A."
+          ],
+          "final_answer": "Req = 6 ohm; I = 1 A; branch currents = 0.6 A and 0.4 A."
+        },
+        {
+          "id": "elec-m-6",
+          "question": "A 1500 W heater is used for 2 hours daily for 30 days. Find the energy consumed in kWh and the cost at 5 rupees per kWh.",
+          "difficulty": "medium",
+          "marks": 4,
+          "solution": [
+            "Step 1: Convert power to kW: P = 1500 W = 1.5 kW.",
+            "Step 2: Daily energy = 1.5 x 2 = 3 kWh.",
+            "Step 3: Energy for 30 days = 3 x 30 = 90 kWh.",
+            "Step 4: Cost = 90 x 5 = 450 rupees."
+          ],
+          "final_answer": "Energy = 90 kWh; cost = 450 rupees."
+        }
+      ]
+    },
+    "complex": {
+      "title": "Complex Practice - Mixed Circuits and Board-Level Numericals",
+      "objective": "Solve multi-step circuits, power, and energy problems",
+      "problems": [
+        {
+          "id": "elec-c-1",
+          "question": "A 6 ohm resistor is connected in series with a parallel combination of 6 ohm and 3 ohm resistors. The combination is connected across a 16 V battery. Find the total current, the voltage across the parallel combination, and the current in each parallel branch.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Parallel part: 1/Rp = 1/6 + 1/3 = 1/6 + 2/6 = 3/6, so Rp = 2 ohm.",
+            "Step 2: Total resistance Req = 6 + 2 = 8 ohm.",
+            "Step 3: Total current I = V/Req = 16/8 = 2 A.",
+            "Step 4: Voltage across the parallel part = I x Rp = 2 x 2 = 4 V.",
+            "Step 5: Current through 6 ohm branch = 4/6 = 0.667 A.",
+            "Step 6: Current through 3 ohm branch = 4/3 = 1.333 A.",
+            "Step 7: Check: 0.667 + 1.333 = 2 A."
+          ],
+          "final_answer": "I = 2 A; parallel voltage = 4 V; branch currents = 0.667 A and 1.333 A."
+        },
+        {
+          "id": "elec-c-2",
+          "question": "A wire of resistance 10 ohm has length 1 m and area of cross-section 1 x 10^-6 m^2. Find the resistivity of the material.",
+          "difficulty": "complex",
+          "marks": 4,
+          "solution": [
+            "Step 1: Rearrange R = rho L/A to rho = R A / L.",
+            "Step 2: rho = (10 x 1 x 10^-6) / 1.",
+            "Step 3: rho = 1 x 10^-5 ohm metre."
+          ],
+          "final_answer": "Resistivity rho = 1 x 10^-5 ohm metre."
+        },
+        {
+          "id": "elec-c-3",
+          "question": "An electric iron rated 1 kW, 220 V is used for 30 minutes. Find the current, resistance, energy consumed in kWh, and cost at 6 rupees per kWh.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: I = P/V = 1000/220 = 4.545 A.",
+            "Step 2: R = V^2/P = (220 x 220)/1000 = 48.4 ohm.",
+            "Step 3: t = 30 min = 0.5 h; energy = 1 kW x 0.5 h = 0.5 kWh.",
+            "Step 4: Cost = 0.5 x 6 = 3 rupees."
+          ],
+          "final_answer": "I = 4.55 A; R = 48.4 ohm; energy = 0.5 kWh; cost = 3 rupees."
+        },
+        {
+          "id": "elec-c-4",
+          "question": "Resistors of 2 ohm, 3 ohm, and 6 ohm are connected in parallel across a 6 V battery. Find the equivalent resistance, total current, and the current through each resistor.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: 1/Req = 1/2 + 1/3 + 1/6.",
+            "Step 2: 1/Req = 3/6 + 2/6 + 1/6 = 6/6 = 1.",
+            "Step 3: Req = 1 ohm.",
+            "Step 4: Total current I = V/Req = 6/1 = 6 A.",
+            "Step 5: Current through 2 ohm = 6/2 = 3 A.",
+            "Step 6: Current through 3 ohm = 6/3 = 2 A.",
+            "Step 7: Current through 6 ohm = 6/6 = 1 A.",
+            "Step 8: Check: 3 + 2 + 1 = 6 A."
+          ],
+          "final_answer": "Req = 1 ohm; I = 6 A; branch currents = 3 A, 2 A, and 1 A."
+        },
+        {
+          "id": "elec-c-5",
+          "question": "A current of 5 A flows through a 20 ohm resistor for 30 s. Calculate the heat produced.",
+          "difficulty": "complex",
+          "marks": 4,
+          "solution": [
+            "Step 1: Use Joule's law H = I^2 R t.",
+            "Step 2: H = (5)^2 x 20 x 30.",
+            "Step 3: H = 25 x 20 x 30.",
+            "Step 4: H = 15000 J."
+          ],
+          "final_answer": "Heat produced = 15000 J = 1.5 x 10^4 J."
+        },
+        {
+          "id": "elec-c-6",
+          "question": "A 3.6 ohm resistor is connected in series with a parallel combination of 4 ohm and 6 ohm resistors across a 12 V battery. Find the total current, the voltage across the parallel combination, and the current in each parallel branch.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Parallel part: 1/Rp = 1/4 + 1/6 = 3/12 + 2/12 = 5/12, so Rp = 12/5 = 2.4 ohm.",
+            "Step 2: Total resistance Req = 3.6 + 2.4 = 6 ohm.",
+            "Step 3: Total current I = 12/6 = 2 A.",
+            "Step 4: Voltage across the parallel part = I x Rp = 2 x 2.4 = 4.8 V.",
+            "Step 5: Current through 4 ohm = 4.8/4 = 1.2 A.",
+            "Step 6: Current through 6 ohm = 4.8/6 = 0.8 A.",
+            "Step 7: Check: 1.2 + 0.8 = 2 A."
+          ],
+          "final_answer": "I = 2 A; parallel voltage = 4.8 V; branch currents = 1.2 A and 0.8 A."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-elec-s-1",
+        "question": "The SI unit of electric current is the:",
+        "options": [
+          "Volt",
+          "Ampere",
+          "Ohm",
+          "Watt"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Current is measured in amperes, where 1 A = 1 C/s.",
+          "wrong_options": {
+            "0": "Volt is the unit of potential difference.",
+            "2": "Ohm is the unit of resistance.",
+            "3": "Watt is the unit of power."
+          }
+        }
+      },
+      {
+        "id": "q-elec-s-2",
+        "question": "An ammeter is connected in a circuit in:",
+        "options": [
+          "Series",
+          "Parallel",
+          "Series or parallel",
+          "Across the battery only"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "An ammeter measures current and must be connected in series so that the current passes through it.",
+          "wrong_options": {
+            "1": "A parallel connection would bypass current and give a wrong reading.",
+            "2": "It must be in series, not either way.",
+            "3": "Connecting across the battery can damage the meter."
+          }
+        }
+      },
+      {
+        "id": "q-elec-s-3",
+        "question": "Ohm's law is expressed as:",
+        "options": [
+          "V = IR",
+          "P = VI",
+          "V = I/R",
+          "R = VI"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Ohm's law states V = IR at constant temperature.",
+          "wrong_options": {
+            "1": "P = VI is the power formula.",
+            "2": "The correct relation is V = IR, not V = I/R.",
+            "3": "R = V/I, not VI."
+          }
+        }
+      },
+      {
+        "id": "q-elec-s-4",
+        "question": "The SI unit of resistance is the:",
+        "options": [
+          "Ampere",
+          "Volt",
+          "Ohm",
+          "Coulomb"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Resistance is measured in ohms.",
+          "wrong_options": {
+            "0": "Ampere measures current.",
+            "1": "Volt measures potential difference.",
+            "3": "Coulomb measures charge."
+          }
+        }
+      },
+      {
+        "id": "q-elec-s-5",
+        "question": "When resistors are connected in series, the equivalent resistance:",
+        "options": [
+          "Increases",
+          "Decreases",
+          "Remains the same",
+          "Becomes zero"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "In series, Req is the sum of the resistances, so it increases.",
+          "wrong_options": {
+            "1": "The equivalent resistance decreases in a parallel combination.",
+            "2": "Adding resistors in series always increases the total.",
+            "3": "The resistance cannot become zero unless the resistors are zero."
+          }
+        }
+      },
+      {
+        "id": "q-elec-s-6",
+        "question": "When resistors are connected in parallel, the equivalent resistance:",
+        "options": [
+          "Is greater than the largest resistance",
+          "Is less than the smallest resistance",
+          "Equals the sum of the resistances",
+          "Equals the largest resistance"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The parallel equivalent is always smaller than the smallest individual resistance.",
+          "wrong_options": {
+            "0": "The parallel equivalent is smaller, not larger.",
+            "2": "The sum applies to series, not parallel.",
+            "3": "It is smaller than every individual resistance."
+          }
+        }
+      },
+      {
+        "id": "q-elec-s-7",
+        "question": "Electric power is given by:",
+        "options": [
+          "P = VI",
+          "P = V/I",
+          "P = I/V",
+          "P = R/V"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Power is the product of potential difference and current, P = VI.",
+          "wrong_options": {
+            "1": "V/I is resistance, not power.",
+            "2": "I/V is the reciprocal of resistance.",
+            "3": "R/V is not a standard power formula."
+          }
+        }
+      },
+      {
+        "id": "q-elec-s-8",
+        "question": "The commercial unit of electrical energy is the:",
+        "options": [
+          "Watt",
+          "Joule",
+          "Kilowatt-hour",
+          "Ampere"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Electrical energy is sold in kilowatt-hours, commonly called units.",
+          "wrong_options": {
+            "0": "Watt is a unit of power.",
+            "1": "Joule is the SI unit of energy but is too small for billing.",
+            "3": "Ampere is a unit of current."
+          }
+        }
+      },
+      {
+        "id": "q-elec-s-9",
+        "question": "Joule's law of heating is:",
+        "options": [
+          "H = I^2 R t",
+          "H = IRt",
+          "H = V^2 t / R^2",
+          "H = I R^2 t"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The heat produced is H = I^2 R t.",
+          "wrong_options": {
+            "1": "The current must be squared.",
+            "2": "The correct power form is V^2/R, so heat is (V^2/R)t.",
+            "3": "The resistance must be to the first power, and current is squared."
+          }
+        }
+      },
+      {
+        "id": "q-elec-s-10",
+        "question": "1 kWh is equal to:",
+        "options": [
+          "3.6 x 10^6 J",
+          "3.6 x 10^3 J",
+          "1 J",
+          "1000 J"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1 kWh = 1000 W x 3600 s = 3.6 x 10^6 J.",
+          "wrong_options": {
+            "1": "This is too small by a factor of 1000.",
+            "2": "1 kWh is much larger than 1 J.",
+            "3": "1000 J is only 1 kJ."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-elec-m-1",
+        "question": "A 12 V battery is connected across a 4 ohm resistor. The current is:",
+        "options": [
+          "3 A",
+          "0.33 A",
+          "48 A",
+          "8 A"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "I = V/R = 12/4 = 3 A.",
+          "wrong_options": {
+            "1": "This is R/V, not V/R.",
+            "2": "This is the product V x R.",
+            "3": "This is V - R, which is not the current."
+          }
+        }
+      },
+      {
+        "id": "q-elec-m-2",
+        "question": "A charge of 300 C flows in 5 minutes. The current is:",
+        "options": [
+          "1 A",
+          "60 A",
+          "0.6 A",
+          "5 A"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "t = 300 s, so I = 300/300 = 1 A.",
+          "wrong_options": {
+            "1": "This uses 5 s instead of 300 s.",
+            "2": "This is a wrong division.",
+            "3": "This uses the time in minutes rather than seconds."
+          }
+        }
+      },
+      {
+        "id": "q-elec-m-3",
+        "question": "A wire has resistivity 2 x 10^-8 ohm m, length 5 m, and area 1 x 10^-6 m^2. Its resistance is:",
+        "options": [
+          "0.1 ohm",
+          "1 ohm",
+          "10 ohm",
+          "0.01 ohm"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "R = (2 x 10^-8 x 5)/(1 x 10^-6) = 0.1 ohm.",
+          "wrong_options": {
+            "1": "This ignores the powers of ten.",
+            "2": "This is too large by a factor of 100.",
+            "3": "This is too small by a factor of 10."
+          }
+        }
+      },
+      {
+        "id": "q-elec-m-4",
+        "question": "A wire of resistance R has its length doubled and its area of cross-section halved. Its new resistance is:",
+        "options": [
+          "4R",
+          "2R",
+          "R/2",
+          "R/4"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "R' = rho(2L)/(A/2) = 4 rhoL/A = 4R.",
+          "wrong_options": {
+            "1": "Doubling the length alone would give 2R, but the area is also halved.",
+            "2": "This would require reducing the length or increasing the area.",
+            "3": "This is the effect of halving the length and doubling the area."
+          }
+        }
+      },
+      {
+        "id": "q-elec-m-5",
+        "question": "Resistors of 10 ohm and 20 ohm are in series across 6 V. The current is:",
+        "options": [
+          "0.2 A",
+          "0.6 A",
+          "2 A",
+          "0.3 A"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Req = 30 ohm, so I = 6/30 = 0.2 A.",
+          "wrong_options": {
+            "1": "This would use only the 10 ohm resistor.",
+            "2": "This ignores the total series resistance.",
+            "3": "This would use only the 20 ohm resistor."
+          }
+        }
+      },
+      {
+        "id": "q-elec-m-6",
+        "question": "Resistors of 10 ohm and 15 ohm are in parallel across 6 V. The total current is:",
+        "options": [
+          "1 A",
+          "0.4 A",
+          "0.6 A",
+          "2.5 A"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Req = 6 ohm, so I = 6/6 = 1 A.",
+          "wrong_options": {
+            "1": "0.4 A is the current through the 15 ohm branch.",
+            "2": "0.6 A is the current through the 10 ohm branch.",
+            "3": "This is the sum of the two resistances divided by 10, not the current."
+          }
+        }
+      },
+      {
+        "id": "q-elec-m-7",
+        "question": "A 1500 W heater runs for 2 hours daily for 30 days. The energy consumed is:",
+        "options": [
+          "90 kWh",
+          "3 kWh",
+          "45 kWh",
+          "180 kWh"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Energy = 1.5 kW x 2 h x 30 = 90 kWh.",
+          "wrong_options": {
+            "1": "3 kWh is the daily consumption only.",
+            "2": "45 kWh would use 1.5 h per day.",
+            "3": "180 kWh would use 4 h per day."
+          }
+        }
+      },
+      {
+        "id": "q-elec-m-8",
+        "question": "The energy in the previous question costs 5 rupees per kWh. The total cost is:",
+        "options": [
+          "450 rupees",
+          "90 rupees",
+          "15 rupees",
+          "900 rupees"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Cost = 90 kWh x 5 = 450 rupees.",
+          "wrong_options": {
+            "1": "This ignores the tariff.",
+            "2": "This is 3 kWh x 5.",
+            "3": "This doubles the correct cost."
+          }
+        }
+      },
+      {
+        "id": "q-elec-m-9",
+        "question": "An appliance draws 0.5 A at 220 V. Its power is:",
+        "options": [
+          "110 W",
+          "440 W",
+          "22 W",
+          "11 W"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "P = VI = 220 x 0.5 = 110 W.",
+          "wrong_options": {
+            "1": "This uses 2 A instead of 0.5 A.",
+            "2": "This divides instead of multiplying.",
+            "3": "This is off by a factor of 10."
+          }
+        }
+      },
+      {
+        "id": "q-elec-m-10",
+        "question": "Two bulbs rated 100 W and 60 W at 220 V are compared. Which has the higher resistance?",
+        "options": [
+          "The 60 W bulb",
+          "The 100 W bulb",
+          "Both have the same resistance",
+          "Cannot be compared"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "R = V^2/P, so the lower-power 60 W bulb has the higher resistance.",
+          "wrong_options": {
+            "1": "The 100 W bulb has lower resistance.",
+            "2": "Their resistances differ because their rated powers differ.",
+            "3": "They can be compared using R = V^2/P."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-elec-x-1",
+        "question": "A 6 ohm resistor is in series with a parallel pair of 6 ohm and 3 ohm across 16 V. The total current is:",
+        "options": [
+          "2 A",
+          "1 A",
+          "4 A",
+          "8 A"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The parallel pair is 2 ohm, so Req = 6 + 2 = 8 ohm and I = 16/8 = 2 A.",
+          "wrong_options": {
+            "1": "This ignores part of the total resistance.",
+            "2": "This would use Req = 4 ohm.",
+            "3": "This would use Req = 2 ohm."
+          }
+        }
+      },
+      {
+        "id": "q-elec-x-2",
+        "question": "Resistors of 2 ohm, 3 ohm, and 6 ohm are in parallel across 6 V. The total current is:",
+        "options": [
+          "6 A",
+          "1 A",
+          "3 A",
+          "11 A"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Req = 1 ohm, so I = 6/1 = 6 A.",
+          "wrong_options": {
+            "1": "1 A would flow through the 6 ohm branch only.",
+            "2": "3 A would flow through the 2 ohm branch only.",
+            "3": "This is the sum of the resistances, not the current."
+          }
+        }
+      },
+      {
+        "id": "q-elec-x-3",
+        "question": "A 3.6 ohm resistor is in series with a parallel pair of 4 ohm and 6 ohm across 12 V. The total current is:",
+        "options": [
+          "2 A",
+          "3 A",
+          "1.2 A",
+          "6 A"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The parallel pair is 2.4 ohm, so Req = 6 ohm and I = 12/6 = 2 A.",
+          "wrong_options": {
+            "1": "This would use Req = 4 ohm.",
+            "2": "1.2 A is the current through the 4 ohm branch.",
+            "3": "This would use Req = 2 ohm."
+          }
+        }
+      },
+      {
+        "id": "q-elec-x-4",
+        "question": "A wire of resistance 10 ohm has length 1 m and area 1 x 10^-6 m^2. Its resistivity is:",
+        "options": [
+          "1 x 10^-5 ohm m",
+          "1 x 10^-6 ohm m",
+          "1 x 10^-4 ohm m",
+          "10 ohm m"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "rho = RA/L = 10 x 1 x 10^-6 / 1 = 1 x 10^-5 ohm m.",
+          "wrong_options": {
+            "1": "This omits the resistance factor of 10.",
+            "2": "This is too large by a factor of 10.",
+            "3": "This does not account for the area."
+          }
+        }
+      },
+      {
+        "id": "q-elec-x-5",
+        "question": "A 5 A current flows through a 20 ohm resistor for 30 s. The heat produced is:",
+        "options": [
+          "15000 J",
+          "3000 J",
+          "750 J",
+          "150 J"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "H = I^2 R t = 25 x 20 x 30 = 15000 J.",
+          "wrong_options": {
+            "1": "This omits the square on the current.",
+            "2": "This uses a much smaller current or resistance.",
+            "3": "This is off by a factor of 100."
+          }
+        }
+      },
+      {
+        "id": "q-elec-x-6",
+        "question": "An electric iron rated 1 kW at 220 V draws a current of about:",
+        "options": [
+          "4.55 A",
+          "0.22 A",
+          "220 A",
+          "1 A"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "I = P/V = 1000/220 = 4.55 A.",
+          "wrong_options": {
+            "1": "This divides voltage by power incorrectly.",
+            "2": "This is far too large.",
+            "3": "1 A would give only 220 W at 220 V."
+          }
+        }
+      },
+      {
+        "id": "q-elec-x-7",
+        "question": "1 kWh in joules is:",
+        "options": [
+          "3.6 x 10^6 J",
+          "3.6 x 10^5 J",
+          "3.6 x 10^4 J",
+          "3.6 x 10^3 J"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1 kWh = 1000 x 3600 = 3.6 x 10^6 J.",
+          "wrong_options": {
+            "1": "This is too small by a factor of 10.",
+            "2": "This is too small by a factor of 100.",
+            "3": "This is 3.6 kJ, not 1 kWh."
+          }
+        }
+      },
+      {
+        "id": "q-elec-x-8",
+        "question": "A 100 W bulb is used for 5 hours. The energy consumed is:",
+        "options": [
+          "0.5 kWh",
+          "5 kWh",
+          "20 kWh",
+          "500 kWh"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "E = 0.1 kW x 5 h = 0.5 kWh.",
+          "wrong_options": {
+            "1": "This uses 1 kW instead of 0.1 kW.",
+            "2": "This divides 100 by 5 incorrectly.",
+            "3": "This is far too large."
+          }
+        }
+      },
+      {
+        "id": "q-elec-x-9",
+        "question": "A 100 W bulb and a 60 W bulb, both rated 220 V, are connected in series across 220 V. Which glows brighter?",
+        "options": [
+          "The 60 W bulb, because it has higher resistance",
+          "The 100 W bulb, because it is rated higher",
+          "Both equally",
+          "Neither glows"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "In series the current is the same, and P = I^2 R; the 60 W bulb has the higher resistance, so it dissipates more power.",
+          "wrong_options": {
+            "1": "The rating applies at 220 V individually, not in this series circuit.",
+            "2": "Their resistances differ, so they do not glow equally.",
+            "3": "Both will glow, though below their rated brightness."
+          }
+        }
+      },
+      {
+        "id": "q-elec-x-10",
+        "question": "A 100 W bulb and a 60 W bulb, both rated 220 V, are connected in parallel across 220 V. Which glows brighter?",
+        "options": [
+          "The 100 W bulb, because it has lower resistance",
+          "The 60 W bulb, because it has higher resistance",
+          "Both equally",
+          "Neither glows"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "In parallel each gets 220 V, so the 100 W bulb consumes more power and glows brighter.",
+          "wrong_options": {
+            "1": "Higher resistance at the same voltage means lower power.",
+            "2": "The rated powers differ, so the brightness differs.",
+            "3": "Both receive the full 220 V and glow."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Electricity Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Electric Current",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Potential Difference",
+        "group": "foundation"
+      },
+      {
+        "id": "n3",
+        "label": "Ohm's Law",
+        "group": "relation"
+      },
+      {
+        "id": "n4",
+        "label": "Resistance",
+        "group": "quantity"
+      },
+      {
+        "id": "n5",
+        "label": "Resistivity",
+        "group": "material"
+      },
+      {
+        "id": "n6",
+        "label": "Series Combination",
+        "group": "circuit"
+      },
+      {
+        "id": "n7",
+        "label": "Parallel Combination",
+        "group": "circuit"
+      },
+      {
+        "id": "n8",
+        "label": "Heating Effect",
+        "group": "effect"
+      },
+      {
+        "id": "n9",
+        "label": "Electric Power",
+        "group": "quantity"
+      },
+      {
+        "id": "n10",
+        "label": "Commercial Unit",
+        "group": "application"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n4",
+        "n6"
+      ],
+      [
+        "n4",
+        "n7"
+      ],
+      [
+        "n1",
+        "n8"
+      ],
+      [
+        "n4",
+        "n8"
+      ],
+      [
+        "n8",
+        "n9"
+      ],
+      [
+        "n9",
+        "n10"
+      ],
+      [
+        "n6",
+        "n7"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Electricity Mind Map",
+    "type": "hierarchical",
+    "root": "Electricity",
+    "branches": [
+      {
+        "concept": "Current and Potential Difference",
+        "sub_nodes": [
+          "Current I = Q/t, unit ampere",
+          "Conventional current direction",
+          "Potential difference V = W/Q, unit volt",
+          "Ammeter in series; voltmeter in parallel"
+        ],
+        "connections": "Potential difference drives current through a conductor"
+      },
+      {
+        "concept": "Ohm's Law and Resistance",
+        "sub_nodes": [
+          "V = IR at constant temperature",
+          "Resistance opposes current",
+          "SI unit of resistance is ohm",
+          "Ohmic conductors have straight V-I graphs"
+        ],
+        "connections": "Resistance depends on the material and dimensions"
+      },
+      {
+        "concept": "Resistivity",
+        "sub_nodes": [
+          "R = rho L / A",
+          "Longer wire: more resistance",
+          "Thicker wire: less resistance",
+          "Unit of resistivity: ohm metre"
+        ],
+        "connections": "Resistivity is a material property"
+      },
+      {
+        "concept": "Series and Parallel",
+        "sub_nodes": [
+          "Series: same current, Req = R1 + R2",
+          "Parallel: same voltage, 1/Req = 1/R1 + 1/R2",
+          "Series increases resistance",
+          "Parallel decreases resistance"
+        ],
+        "connections": "Household appliances use parallel connections"
+      },
+      {
+        "concept": "Heating Effect and Power",
+        "sub_nodes": [
+          "H = I^2 R t",
+          "P = VI = I^2 R = V^2 / R",
+          "Unit of power is watt",
+          "Fuse works on the heating effect"
+        ],
+        "connections": "Power is the rate of energy consumption"
+      },
+      {
+        "concept": "Commercial Energy",
+        "sub_nodes": [
+          "Energy E = P x t",
+          "1 kWh = 3.6 x 10^6 J",
+          "One kWh is one unit",
+          "Electricity bills use kWh"
+        ],
+        "connections": "Energy cost combines power, time, and tariff"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    {
+      "misconception": "Current is used up as it flows around a circuit.",
+      "correction": "Charge is conserved; the current is the same at every point in a series circuit, while electrical energy is converted into other forms."
+    },
+    {
+      "misconception": "Electrons flow from the positive terminal to the negative terminal.",
+      "correction": "Conventional current flows from positive to negative, but electrons drift from negative to positive."
+    },
+    {
+      "misconception": "Resistance depends only on the length of a wire.",
+      "correction": "Resistance also depends on the area of cross-section, the material, and the temperature."
+    },
+    {
+      "misconception": "A thicker wire has more resistance.",
+      "correction": "A thicker wire has a larger area of cross-section and therefore less resistance, since R is inversely proportional to A."
+    },
+    {
+      "misconception": "An ammeter is connected in parallel with a component.",
+      "correction": "An ammeter is connected in series so that the current to be measured passes through it."
+    },
+    {
+      "misconception": "A voltmeter is connected in series with a component.",
+      "correction": "A voltmeter is connected in parallel across the component whose potential difference is to be measured."
+    },
+    {
+      "misconception": "One kilowatt-hour is a unit of power.",
+      "correction": "One kilowatt-hour is a unit of energy, equal to 3.6 x 10^6 J; the watt is the unit of power."
+    },
+    {
+      "misconception": "Electric power and electrical energy mean the same thing.",
+      "correction": "Power is the rate of energy consumption, P = E/t; energy is power multiplied by time."
+    }
+  ],
+  "meta": {
+    "sources": [
+      {
+        "title": "NCERT Class X Science Textbook",
+        "publisher": "NCERT",
+        "chapter": "Electricity",
+        "class": "X",
+        "subject": "Science"
+      }
+    ]
+  },
+  "chapterId": "electricity",
+  "subjectId": "science",
+  "subjectName": "Science",
+  "unitId": "science-4",
+  "unitName": "Effects of Current",
+  "examWeightage": 13,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

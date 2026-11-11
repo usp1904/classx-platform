@@ -1,0 +1,2992 @@
+{
+  "meta": {
+    "board": "CBSE",
+    "class": "X",
+    "academicYear": "2026-27",
+    "generatedAt": "2026-10-28T18:56:29.975Z",
+    "source": "CBSE official curriculum PDFs, NCERT-aligned authored lessons",
+    "subjects": 4
+  },
+  "subjects": [
+    {
+      "id": "mathematics",
+      "name": "Mathematics",
+      "shortName": "Maths",
+      "accent": "indigo",
+      "icon": "Sigma",
+      "code": "041",
+      "maxMarks": 80,
+      "internalMarks": 20,
+      "totalPeriods": 180,
+      "description": "Mathematics · CBSE Class X (2026-27)",
+      "units": [
+        {
+          "id": "mathematics-1",
+          "name": "Number Systems",
+          "section": "",
+          "marks": 6,
+          "periods": 15,
+          "topics": [
+            {
+              "id": "real-numbers",
+              "name": "Real Numbers",
+              "difficulty": "medium",
+              "periods": 3
+            },
+            {
+              "id": "euclid-s-division-lemma",
+              "name": "Euclid's Division Lemma",
+              "difficulty": "medium",
+              "periods": 3
+            },
+            {
+              "id": "fundamental-theorem-of-arithmetic",
+              "name": "Fundamental Theorem of Arithmetic",
+              "difficulty": "medium",
+              "periods": 3
+            },
+            {
+              "id": "revisiting-irrational-numbers",
+              "name": "Revisiting Irrational Numbers",
+              "difficulty": "medium",
+              "periods": 3
+            },
+            {
+              "id": "revisiting-rational-numbers-and-decimal-expansions",
+              "name": "Revisiting Rational Numbers and Decimal Expansions",
+              "difficulty": "medium",
+              "periods": 3
+            }
+          ]
+        },
+        {
+          "id": "mathematics-2",
+          "name": "Algebra",
+          "section": "",
+          "marks": 20,
+          "periods": 45,
+          "topics": [
+            {
+              "id": "polynomials",
+              "name": "Polynomials",
+              "difficulty": "medium",
+              "periods": 11
+            },
+            {
+              "id": "pair-of-linear-equations-in-two-variables",
+              "name": "Pair of Linear Equations in Two Variables",
+              "difficulty": "medium",
+              "periods": 11
+            },
+            {
+              "id": "quadratic-equations",
+              "name": "Quadratic Equations",
+              "difficulty": "medium",
+              "periods": 11
+            },
+            {
+              "id": "arithmetic-progressions",
+              "name": "Arithmetic Progressions",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ]
+        },
+        {
+          "id": "mathematics-3",
+          "name": "Coordinate Geometry",
+          "section": "",
+          "marks": 6,
+          "periods": 14,
+          "topics": [
+            {
+              "id": "lines-in-two-dimensions",
+              "name": "Lines (In two-dimensions)",
+              "difficulty": "medium",
+              "periods": 3
+            },
+            {
+              "id": "distance-formula",
+              "name": "Distance Formula",
+              "difficulty": "medium",
+              "periods": 3
+            },
+            {
+              "id": "section-formula",
+              "name": "Section Formula",
+              "difficulty": "medium",
+              "periods": 3
+            },
+            {
+              "id": "area-of-triangle",
+              "name": "Area of Triangle",
+              "difficulty": "medium",
+              "periods": 3
+            }
+          ]
+        },
+        {
+          "id": "mathematics-4",
+          "name": "Geometry",
+          "section": "",
+          "marks": 15,
+          "periods": 35,
+          "topics": [
+            {
+              "id": "triangles",
+              "name": "Triangles",
+              "difficulty": "medium",
+              "periods": 11
+            },
+            {
+              "id": "circles",
+              "name": "Circles",
+              "difficulty": "medium",
+              "periods": 11
+            },
+            {
+              "id": "constructions",
+              "name": "Constructions",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ]
+        },
+        {
+          "id": "mathematics-5",
+          "name": "Trigonometry",
+          "section": "",
+          "marks": 12,
+          "periods": 25,
+          "topics": [
+            {
+              "id": "introduction-to-trigonometry",
+              "name": "Introduction to Trigonometry",
+              "difficulty": "medium",
+              "periods": 6
+            },
+            {
+              "id": "trigonometric-identities",
+              "name": "Trigonometric Identities",
+              "difficulty": "medium",
+              "periods": 6
+            },
+            {
+              "id": "heights-and-distances",
+              "name": "Heights and Distances",
+              "difficulty": "medium",
+              "periods": 6
+            },
+            {
+              "id": "applications-of-trigonometry",
+              "name": "Applications of Trigonometry",
+              "difficulty": "medium",
+              "periods": 6
+            }
+          ]
+        },
+        {
+          "id": "mathematics-6",
+          "name": "Mensuration",
+          "section": "",
+          "marks": 10,
+          "periods": 24,
+          "topics": [
+            {
+              "id": "areas-related-to-circles",
+              "name": "Areas Related to Circles",
+              "difficulty": "medium",
+              "periods": 12
+            },
+            {
+              "id": "surface-areas-and-volumes",
+              "name": "Surface Areas and Volumes",
+              "difficulty": "medium",
+              "periods": 12
+            }
+          ]
+        },
+        {
+          "id": "mathematics-7",
+          "name": "Statistics and Probability",
+          "section": "",
+          "marks": 11,
+          "periods": 22,
+          "topics": [
+            {
+              "id": "statistics",
+              "name": "Statistics",
+              "difficulty": "medium",
+              "periods": 11
+            },
+            {
+              "id": "probability",
+              "name": "Probability",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ]
+        }
+      ],
+      "chapters": [
+        {
+          "id": "real-numbers",
+          "name": "Real Numbers",
+          "order": 1,
+          "unitId": "mathematics-1",
+          "unitName": "Number Systems",
+          "marks": 6,
+          "periods": 15,
+          "summary": "Apply Euclid's Division Algorithm to find HCF of any two positive integers Explain the Fundamental Theorem of Arithmetic and use it to find LCM and HCF",
+          "difficulty": "Foundation",
+          "lessonId": "real-numbers",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 2,
+            "examples": 4,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 3,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "real-numbers",
+              "name": "Real Numbers",
+              "difficulty": "medium",
+              "periods": 3
+            },
+            {
+              "id": "euclid-s-division-lemma",
+              "name": "Euclid's Division Lemma",
+              "difficulty": "medium",
+              "periods": 3
+            },
+            {
+              "id": "fundamental-theorem-of-arithmetic",
+              "name": "Fundamental Theorem of Arithmetic",
+              "difficulty": "medium",
+              "periods": 3
+            },
+            {
+              "id": "revisiting-irrational-numbers",
+              "name": "Revisiting Irrational Numbers",
+              "difficulty": "medium",
+              "periods": 3
+            },
+            {
+              "id": "revisiting-rational-numbers-and-decimal-expansions",
+              "name": "Revisiting Rational Numbers and Decimal Expansions",
+              "difficulty": "medium",
+              "periods": 3
+            }
+          ],
+          "number": 1
+        },
+        {
+          "id": "polynomials",
+          "name": "Polynomials",
+          "order": 2,
+          "unitId": "mathematics-2",
+          "unitName": "Algebra",
+          "marks": 20,
+          "periods": 45,
+          "summary": "Determine the degree, zeroes, and coefficients of any polynomial Apply the Remainder Theorem to find remainders without long division",
+          "difficulty": "Foundation",
+          "lessonId": "polynomials",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 5,
+            "theorems": 2,
+            "examples": 4,
+            "exercises": 17,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "polynomials",
+              "name": "Polynomials",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ],
+          "number": 2
+        },
+        {
+          "id": "pair-of-linear-equations",
+          "name": "Pair of Linear Equations in Two Variables",
+          "order": 3,
+          "unitId": "mathematics-2",
+          "unitName": "Algebra",
+          "marks": 20,
+          "periods": 45,
+          "summary": "Solve systems of linear equations using graphical, substitution, and elimination methods Determine whether a system is consistent, inconsistent, or dependent",
+          "difficulty": "Foundation",
+          "lessonId": "pair-of-linear-equations",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 4,
+            "exercises": 20,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "pair-of-linear-equations-in-two-variables",
+              "name": "Pair of Linear Equations in Two Variables",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ],
+          "number": 3
+        },
+        {
+          "id": "quadratic-equations",
+          "name": "Quadratic Equations",
+          "order": 4,
+          "unitId": "mathematics-2",
+          "unitName": "Algebra",
+          "marks": 20,
+          "periods": 45,
+          "summary": "Identify quadratic equations in standard form ax² + bx + c = 0 Solve quadratic equations by factorization, completing the square, and quadratic formula",
+          "difficulty": "Foundation",
+          "lessonId": "quadratic-equations",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 5,
+            "theorems": 1,
+            "examples": 4,
+            "exercises": 20,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "quadratic-equations",
+              "name": "Quadratic Equations",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ],
+          "number": 4
+        },
+        {
+          "id": "arithmetic-progressions",
+          "name": "Arithmetic Progressions",
+          "order": 5,
+          "unitId": "mathematics-2",
+          "unitName": "Algebra",
+          "marks": 20,
+          "periods": 45,
+          "summary": "Identify arithmetic progressions (AP) from given sequences Find the nth term of an AP using aₙ = a + (n-1)d",
+          "difficulty": "Foundation",
+          "lessonId": "arithmetic-progressions",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 4,
+            "theorems": 0,
+            "examples": 4,
+            "exercises": 20,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "arithmetic-progressions",
+              "name": "Arithmetic Progressions",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ],
+          "number": 5
+        },
+        {
+          "id": "coordinate-geometry",
+          "name": "Coordinate Geometry",
+          "order": 6,
+          "unitId": "mathematics-3",
+          "unitName": "Coordinate Geometry",
+          "marks": 6,
+          "periods": 14,
+          "summary": "Apply the distance formula to find distance between any two points in the coordinate plane Use the section formula to find the coordinates of a point dividing a line segment in a given ratio",
+          "difficulty": "Intermediate",
+          "lessonId": "coordinate-geometry",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 4,
+            "theorems": 0,
+            "examples": 3,
+            "exercises": 25,
+            "quizzes": 30,
+            "visuals": 4,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "lines-in-two-dimensions",
+              "name": "Lines (In two-dimensions)",
+              "difficulty": "medium",
+              "periods": 3
+            },
+            {
+              "id": "distance-formula",
+              "name": "Distance Formula",
+              "difficulty": "medium",
+              "periods": 3
+            },
+            {
+              "id": "section-formula",
+              "name": "Section Formula",
+              "difficulty": "medium",
+              "periods": 3
+            },
+            {
+              "id": "area-of-triangle",
+              "name": "Area of Triangle",
+              "difficulty": "medium",
+              "periods": 3
+            }
+          ],
+          "number": 6
+        },
+        {
+          "id": "triangles",
+          "name": "Triangles",
+          "order": 7,
+          "unitId": "mathematics-3",
+          "unitName": "Coordinate Geometry",
+          "marks": 6,
+          "periods": 14,
+          "summary": "Apply the Basic Proportionality Theorem (Thales Theorem) and its converse to solve problems Prove and apply AA, SSS, SAS similarity criteria for triangles",
+          "difficulty": "Intermediate",
+          "lessonId": "triangles",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 5,
+            "theorems": 4,
+            "examples": 4,
+            "exercises": 48,
+            "quizzes": 30,
+            "visuals": 4,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "triangles",
+              "name": "Triangles",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ],
+          "number": 7
+        },
+        {
+          "id": "circles",
+          "name": "Circles",
+          "order": 8,
+          "unitId": "mathematics-3",
+          "unitName": "Coordinate Geometry",
+          "marks": 6,
+          "periods": 14,
+          "summary": "Define a tangent to a circle and prove its uniqueness at a point Prove and apply the Tangent-Radius perpendicular theorem",
+          "difficulty": "Intermediate",
+          "lessonId": "circles",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 5,
+            "theorems": 3,
+            "examples": 4,
+            "exercises": 9,
+            "quizzes": 12,
+            "visuals": 2,
+            "misconceptions": 7,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "circles",
+              "name": "Circles",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ],
+          "number": 8
+        },
+        {
+          "id": "introduction-to-trigonometry",
+          "name": "Introduction to Trigonometry",
+          "order": 9,
+          "unitId": "mathematics-5",
+          "unitName": "Trigonometry",
+          "marks": 12,
+          "periods": 25,
+          "summary": "Define and calculate the six trigonometric ratios (sin, cos, tan, cosec, sec, cot) for acute angles Use trigonometric tables and standard angle values (0°, 30°, 45°, 60°, 90°) to solve problems",
+          "difficulty": "Intermediate",
+          "lessonId": "introduction-to-trigonometry",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 4,
+            "theorems": 1,
+            "examples": 4,
+            "exercises": 25,
+            "quizzes": 30,
+            "visuals": 4,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "introduction-to-trigonometry",
+              "name": "Introduction to Trigonometry",
+              "difficulty": "medium",
+              "periods": 6
+            },
+            {
+              "id": "trigonometric-identities",
+              "name": "Trigonometric Identities",
+              "difficulty": "medium",
+              "periods": 6
+            }
+          ],
+          "number": 9
+        },
+        {
+          "id": "constructions",
+          "name": "Constructions",
+          "order": 10,
+          "unitId": "mathematics-3",
+          "unitName": "Coordinate Geometry",
+          "marks": null,
+          "periods": null,
+          "summary": "Formal construction of similar triangles and tangents using ruler and compass.",
+          "difficulty": "Intermediate",
+          "lessonId": "constructions",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 3,
+            "theorems": 2,
+            "examples": 3,
+            "exercises": 12,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "constructions",
+              "name": "Constructions",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ],
+          "number": 10
+        },
+        {
+          "id": "applications-of-trigonometry",
+          "name": "Some Applications of Trigonometry",
+          "order": 11,
+          "unitId": "mathematics-5",
+          "unitName": "Trigonometry",
+          "marks": 12,
+          "periods": 25,
+          "summary": "Define angles of elevation and depression and identify them in real-world scenarios Apply trigonometric ratios to solve height and distance problems",
+          "difficulty": "Intermediate",
+          "lessonId": "applications-of-trigonometry",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 3,
+            "theorems": 0,
+            "examples": 4,
+            "exercises": 16,
+            "quizzes": 30,
+            "visuals": 4,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "heights-and-distances",
+              "name": "Heights and Distances",
+              "difficulty": "medium",
+              "periods": 6
+            },
+            {
+              "id": "applications-of-trigonometry",
+              "name": "Applications of Trigonometry",
+              "difficulty": "medium",
+              "periods": 6
+            }
+          ],
+          "number": 11
+        },
+        {
+          "id": "areas-related-to-circles",
+          "name": "Areas Related to Circles",
+          "order": 12,
+          "unitId": "mathematics-6",
+          "unitName": "Mensuration",
+          "marks": 10,
+          "periods": 24,
+          "summary": "Calculate the area of a circle, sector, and segment of a circle with precision Apply formulas for combinations of plane figures involving circles, squares, rectangles, and triangles",
+          "difficulty": "Intermediate",
+          "lessonId": "areas-related-to-circles",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 4,
+            "theorems": 0,
+            "examples": 4,
+            "exercises": 17,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 10,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "areas-related-to-circles",
+              "name": "Areas Related to Circles",
+              "difficulty": "medium",
+              "periods": 12
+            }
+          ],
+          "number": 12
+        },
+        {
+          "id": "surface-areas-and-volumes",
+          "name": "Surface Areas and Volumes",
+          "order": 13,
+          "unitId": "mathematics-6",
+          "unitName": "Mensuration",
+          "marks": 10,
+          "periods": 24,
+          "summary": "Calculate the total surface area and volume of combinations of solids (cuboid, cylinder, cone, sphere, hemisphere) Solve problems involving conversion of solids from one shape to another (e.g., sphere melted into cylinders)",
+          "difficulty": "Intermediate",
+          "lessonId": "surface-areas-and-volumes",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 4,
+            "theorems": 0,
+            "examples": 4,
+            "exercises": 19,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "surface-areas-and-volumes",
+              "name": "Surface Areas and Volumes",
+              "difficulty": "medium",
+              "periods": 12
+            }
+          ],
+          "number": 13
+        },
+        {
+          "id": "statistics",
+          "name": "Statistics",
+          "order": 14,
+          "unitId": "mathematics-7",
+          "unitName": "Statistics and Probability",
+          "marks": 11,
+          "periods": 22,
+          "summary": "Calculate the mean of grouped data using direct, assumed mean, and step-deviation methods Determine the mode of grouped data using the modal class formula",
+          "difficulty": "Intermediate",
+          "lessonId": "statistics",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 5,
+            "theorems": 1,
+            "examples": 4,
+            "exercises": 6,
+            "quizzes": 12,
+            "visuals": 2,
+            "misconceptions": 7,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "statistics",
+              "name": "Statistics",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ],
+          "number": 14
+        },
+        {
+          "id": "probability",
+          "name": "Probability",
+          "order": 15,
+          "unitId": "mathematics-7",
+          "unitName": "Statistics and Probability",
+          "marks": 11,
+          "periods": 22,
+          "summary": "Define probability as P(E) = n(E)/n(S) and apply it to simple events Distinguish between experimental and theoretical probability",
+          "difficulty": "Intermediate",
+          "lessonId": "probability",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 5,
+            "theorems": 0,
+            "examples": 4,
+            "exercises": 7,
+            "quizzes": 12,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "probability",
+              "name": "Probability",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ],
+          "number": 15
+        }
+      ],
+      "coverage": {
+        "total": 15,
+        "authored": 15,
+        "partial": 0,
+        "syllabusOnly": 0
+      }
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "shortName": "Science",
+      "accent": "emerald",
+      "icon": "FlaskConical",
+      "code": "086",
+      "maxMarks": 80,
+      "internalMarks": 20,
+      "totalPeriods": 180,
+      "description": "Science · CBSE Class X (2026-27)",
+      "units": [
+        {
+          "id": "science-1",
+          "name": "Chemical Substances - Nature and Behaviour",
+          "section": "Chemistry",
+          "marks": 25,
+          "periods": 55,
+          "topics": [
+            {
+              "id": "chemical-reactions-and-equations",
+              "name": "Chemical Reactions and Equations",
+              "difficulty": "medium",
+              "periods": 11
+            },
+            {
+              "id": "acids-bases-and-salts",
+              "name": "Acids, Bases and Salts",
+              "difficulty": "medium",
+              "periods": 11
+            },
+            {
+              "id": "metals-and-non-metals",
+              "name": "Metals and Non-metals",
+              "difficulty": "medium",
+              "periods": 11
+            },
+            {
+              "id": "carbon-and-its-compounds",
+              "name": "Carbon and its Compounds",
+              "difficulty": "medium",
+              "periods": 11
+            },
+            {
+              "id": "periodic-classification-of-elements",
+              "name": "Periodic Classification of Elements",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ]
+        },
+        {
+          "id": "science-2",
+          "name": "World of Living",
+          "section": "Biology",
+          "marks": 25,
+          "periods": 50,
+          "topics": [
+            {
+              "id": "life-processes",
+              "name": "Life Processes",
+              "difficulty": "medium",
+              "periods": 12
+            },
+            {
+              "id": "control-and-coordination",
+              "name": "Control and Coordination",
+              "difficulty": "medium",
+              "periods": 12
+            },
+            {
+              "id": "how-do-organisms-reproduce",
+              "name": "How do Organisms Reproduce",
+              "difficulty": "medium",
+              "periods": 12
+            },
+            {
+              "id": "heredity-and-evolution",
+              "name": "Heredity and Evolution",
+              "difficulty": "medium",
+              "periods": 12
+            }
+          ]
+        },
+        {
+          "id": "science-3",
+          "name": "Natural Phenomena",
+          "section": "Physics",
+          "marks": 12,
+          "periods": 23,
+          "topics": [
+            {
+              "id": "light-reflection-and-refraction",
+              "name": "Light - Reflection and Refraction",
+              "difficulty": "medium",
+              "periods": 11
+            },
+            {
+              "id": "human-eye-and-colourful-world",
+              "name": "Human Eye and Colourful World",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ]
+        },
+        {
+          "id": "science-4",
+          "name": "Effects of Current",
+          "section": "Physics",
+          "marks": 13,
+          "periods": 32,
+          "topics": [
+            {
+              "id": "electricity",
+              "name": "Electricity",
+              "difficulty": "medium",
+              "periods": 16
+            },
+            {
+              "id": "magnetic-effects-of-electric-current",
+              "name": "Magnetic Effects of Electric Current",
+              "difficulty": "medium",
+              "periods": 16
+            }
+          ]
+        },
+        {
+          "id": "science-5",
+          "name": "Natural Resources",
+          "section": "Interdisciplinary",
+          "marks": 5,
+          "periods": 20,
+          "topics": [
+            {
+              "id": "our-environment",
+              "name": "Our Environment",
+              "difficulty": "medium",
+              "periods": 10
+            },
+            {
+              "id": "management-of-natural-resources",
+              "name": "Management of Natural Resources",
+              "difficulty": "medium",
+              "periods": 10
+            }
+          ]
+        }
+      ],
+      "chapters": [
+        {
+          "id": "chemical-reactions-and-equations",
+          "name": "Chemical Reactions and Equations",
+          "order": 1,
+          "number": 1,
+          "unitId": "science-1",
+          "unitName": "Chemical Substances - Nature and Behaviour",
+          "marks": 25,
+          "periods": 11,
+          "summary": "Chemistry · Chemical Substances - Nature and Behaviour",
+          "difficulty": "Intermediate",
+          "lessonId": "chemical-reactions-and-equations",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 2,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "chemical-reactions-and-equations",
+              "name": "Chemical Reactions and Equations",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ]
+        },
+        {
+          "id": "acids-bases-and-salts",
+          "name": "Acids, Bases and Salts",
+          "order": 2,
+          "number": 2,
+          "unitId": "science-1",
+          "unitName": "Chemical Substances - Nature and Behaviour",
+          "marks": 25,
+          "periods": 11,
+          "summary": "Chemistry · Chemical Substances - Nature and Behaviour",
+          "difficulty": "Intermediate",
+          "lessonId": "acids-bases-and-salts",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "acids-bases-and-salts",
+              "name": "Acids, Bases and Salts",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ]
+        },
+        {
+          "id": "metals-and-non-metals",
+          "name": "Metals and Non-metals",
+          "order": 3,
+          "number": 3,
+          "unitId": "science-1",
+          "unitName": "Chemical Substances - Nature and Behaviour",
+          "marks": 25,
+          "periods": 11,
+          "summary": "Chemistry · Chemical Substances - Nature and Behaviour",
+          "difficulty": "Intermediate",
+          "lessonId": "metals-and-non-metals",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "metals-and-non-metals",
+              "name": "Metals and Non-metals",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ]
+        },
+        {
+          "id": "carbon-and-its-compounds",
+          "name": "Carbon and its Compounds",
+          "order": 4,
+          "number": 4,
+          "unitId": "science-1",
+          "unitName": "Chemical Substances - Nature and Behaviour",
+          "marks": 25,
+          "periods": 11,
+          "summary": "Chemistry · Chemical Substances - Nature and Behaviour",
+          "difficulty": "Intermediate",
+          "lessonId": "carbon-and-its-compounds",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 2,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "carbon-and-its-compounds",
+              "name": "Carbon and its Compounds",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ]
+        },
+        {
+          "id": "periodic-classification-of-elements",
+          "name": "Periodic Classification of Elements",
+          "order": 5,
+          "number": 5,
+          "unitId": "science-1",
+          "unitName": "Chemical Substances - Nature and Behaviour",
+          "marks": 25,
+          "periods": 11,
+          "summary": "Chemistry · Chemical Substances - Nature and Behaviour",
+          "difficulty": "Intermediate",
+          "lessonId": "periodic-classification-of-elements",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 2,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "periodic-classification-of-elements",
+              "name": "Periodic Classification of Elements",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ]
+        },
+        {
+          "id": "life-processes",
+          "name": "Life Processes",
+          "order": 6,
+          "number": 6,
+          "unitId": "science-2",
+          "unitName": "World of Living",
+          "marks": 25,
+          "periods": 12,
+          "summary": "Biology · World of Living",
+          "difficulty": "Intermediate",
+          "lessonId": "life-processes",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 2,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "life-processes",
+              "name": "Life Processes",
+              "difficulty": "medium",
+              "periods": 12
+            }
+          ]
+        },
+        {
+          "id": "control-and-coordination",
+          "name": "Control and Coordination",
+          "order": 7,
+          "number": 7,
+          "unitId": "science-2",
+          "unitName": "World of Living",
+          "marks": 25,
+          "periods": 12,
+          "summary": "Biology · World of Living",
+          "difficulty": "Intermediate",
+          "lessonId": "control-and-coordination",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 2,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "control-and-coordination",
+              "name": "Control and Coordination",
+              "difficulty": "medium",
+              "periods": 12
+            }
+          ]
+        },
+        {
+          "id": "how-do-organisms-reproduce",
+          "name": "How do Organisms Reproduce",
+          "order": 8,
+          "number": 8,
+          "unitId": "science-2",
+          "unitName": "World of Living",
+          "marks": 25,
+          "periods": 12,
+          "summary": "Biology · World of Living",
+          "difficulty": "Intermediate",
+          "lessonId": "how-do-organisms-reproduce",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 2,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "how-do-organisms-reproduce",
+              "name": "How do Organisms Reproduce",
+              "difficulty": "medium",
+              "periods": 12
+            }
+          ]
+        },
+        {
+          "id": "heredity-and-evolution",
+          "name": "Heredity and Evolution",
+          "order": 9,
+          "number": 9,
+          "unitId": "science-2",
+          "unitName": "World of Living",
+          "marks": 25,
+          "periods": 12,
+          "summary": "Biology · World of Living",
+          "difficulty": "Intermediate",
+          "lessonId": "heredity-and-evolution",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "heredity-and-evolution",
+              "name": "Heredity and Evolution",
+              "difficulty": "medium",
+              "periods": 12
+            }
+          ]
+        },
+        {
+          "id": "light-reflection-and-refraction",
+          "name": "Light - Reflection and Refraction",
+          "order": 10,
+          "number": 10,
+          "unitId": "science-3",
+          "unitName": "Natural Phenomena",
+          "marks": 12,
+          "periods": 11,
+          "summary": "Physics · Natural Phenomena",
+          "difficulty": "Intermediate",
+          "lessonId": "light-reflection-and-refraction",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "light-reflection-and-refraction",
+              "name": "Light - Reflection and Refraction",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ]
+        },
+        {
+          "id": "human-eye-and-colourful-world",
+          "name": "Human Eye and Colourful World",
+          "order": 11,
+          "number": 11,
+          "unitId": "science-3",
+          "unitName": "Natural Phenomena",
+          "marks": 12,
+          "periods": 11,
+          "summary": "Physics · Natural Phenomena",
+          "difficulty": "Intermediate",
+          "lessonId": "human-eye-and-colourful-world",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "human-eye-and-colourful-world",
+              "name": "Human Eye and Colourful World",
+              "difficulty": "medium",
+              "periods": 11
+            }
+          ]
+        },
+        {
+          "id": "electricity",
+          "name": "Electricity",
+          "order": 12,
+          "number": 12,
+          "unitId": "science-4",
+          "unitName": "Effects of Current",
+          "marks": 13,
+          "periods": 16,
+          "summary": "Physics · Effects of Current",
+          "difficulty": "Intermediate",
+          "lessonId": "electricity",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "electricity",
+              "name": "Electricity",
+              "difficulty": "medium",
+              "periods": 16
+            }
+          ]
+        },
+        {
+          "id": "magnetic-effects-of-electric-current",
+          "name": "Magnetic Effects of Electric Current",
+          "order": 13,
+          "number": 13,
+          "unitId": "science-4",
+          "unitName": "Effects of Current",
+          "marks": 13,
+          "periods": 16,
+          "summary": "Physics · Effects of Current",
+          "difficulty": "Intermediate",
+          "lessonId": "magnetic-effects-of-electric-current",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "magnetic-effects-of-electric-current",
+              "name": "Magnetic Effects of Electric Current",
+              "difficulty": "medium",
+              "periods": 16
+            }
+          ]
+        },
+        {
+          "id": "our-environment",
+          "name": "Our Environment",
+          "order": 14,
+          "number": 14,
+          "unitId": "science-5",
+          "unitName": "Natural Resources",
+          "marks": 5,
+          "periods": 10,
+          "summary": "Interdisciplinary · Natural Resources",
+          "difficulty": "Intermediate",
+          "lessonId": "our-environment",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "our-environment",
+              "name": "Our Environment",
+              "difficulty": "medium",
+              "periods": 10
+            }
+          ]
+        },
+        {
+          "id": "management-of-natural-resources",
+          "name": "Management of Natural Resources",
+          "order": 15,
+          "number": 15,
+          "unitId": "science-5",
+          "unitName": "Natural Resources",
+          "marks": 5,
+          "periods": 10,
+          "summary": "Interdisciplinary · Natural Resources",
+          "difficulty": "Intermediate",
+          "lessonId": "management-of-natural-resources",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "management-of-natural-resources",
+              "name": "Management of Natural Resources",
+              "difficulty": "medium",
+              "periods": 10
+            }
+          ]
+        }
+      ],
+      "coverage": {
+        "total": 15,
+        "authored": 15,
+        "partial": 0,
+        "syllabusOnly": 0
+      }
+    },
+    {
+      "id": "social-science",
+      "name": "Social Science",
+      "shortName": "Social Science",
+      "accent": "amber",
+      "icon": "Globe2",
+      "code": "087",
+      "maxMarks": 80,
+      "internalMarks": 20,
+      "totalPeriods": 180,
+      "description": "Social Science · CBSE Class X (2026-27)",
+      "units": [
+        {
+          "id": "social-science-1",
+          "name": "India and the Contemporary World - II",
+          "section": "History",
+          "marks": 20,
+          "periods": 46,
+          "topics": [
+            {
+              "id": "the-rise-of-nationalism-in-europe",
+              "name": "The Rise of Nationalism in Europe",
+              "difficulty": "medium",
+              "periods": 9
+            },
+            {
+              "id": "nationalism-in-india",
+              "name": "Nationalism in India",
+              "difficulty": "medium",
+              "periods": 9
+            },
+            {
+              "id": "the-making-of-a-global-world",
+              "name": "The Making of a Global World",
+              "difficulty": "medium",
+              "periods": 9
+            },
+            {
+              "id": "the-age-of-industrialization",
+              "name": "The Age of Industrialization",
+              "difficulty": "medium",
+              "periods": 9
+            },
+            {
+              "id": "print-culture-and-the-modern-world",
+              "name": "Print Culture and the Modern World",
+              "difficulty": "medium",
+              "periods": 9
+            }
+          ]
+        },
+        {
+          "id": "social-science-2",
+          "name": "Contemporary India - II",
+          "section": "Geography",
+          "marks": 20,
+          "periods": 46,
+          "topics": [
+            {
+              "id": "resources-and-development",
+              "name": "Resources and Development",
+              "difficulty": "medium",
+              "periods": 6
+            },
+            {
+              "id": "forest-and-wildlife-resources",
+              "name": "Forest and Wildlife Resources",
+              "difficulty": "medium",
+              "periods": 6
+            },
+            {
+              "id": "water-resources",
+              "name": "Water Resources",
+              "difficulty": "medium",
+              "periods": 6
+            },
+            {
+              "id": "agriculture",
+              "name": "Agriculture",
+              "difficulty": "medium",
+              "periods": 6
+            },
+            {
+              "id": "minerals-and-energy-resources",
+              "name": "Minerals and Energy Resources",
+              "difficulty": "medium",
+              "periods": 6
+            },
+            {
+              "id": "manufacturing-industries",
+              "name": "Manufacturing Industries",
+              "difficulty": "medium",
+              "periods": 6
+            },
+            {
+              "id": "lifelines-of-national-economy",
+              "name": "Lifelines of National Economy",
+              "difficulty": "medium",
+              "periods": 6
+            }
+          ]
+        },
+        {
+          "id": "social-science-3",
+          "name": "Democratic Politics - II",
+          "section": "Political Science",
+          "marks": 20,
+          "periods": 46,
+          "topics": [
+            {
+              "id": "power-sharing",
+              "name": "Power Sharing",
+              "difficulty": "medium",
+              "periods": 9
+            },
+            {
+              "id": "federalism",
+              "name": "Federalism",
+              "difficulty": "medium",
+              "periods": 9
+            },
+            {
+              "id": "gender-religion-and-caste",
+              "name": "Gender, Religion and Caste",
+              "difficulty": "medium",
+              "periods": 9
+            },
+            {
+              "id": "political-parties",
+              "name": "Political Parties",
+              "difficulty": "medium",
+              "periods": 9
+            },
+            {
+              "id": "outcomes-of-democracy",
+              "name": "Outcomes of Democracy",
+              "difficulty": "medium",
+              "periods": 9
+            }
+          ]
+        },
+        {
+          "id": "social-science-4",
+          "name": "Understanding Economic Development",
+          "section": "Economics",
+          "marks": 20,
+          "periods": 42,
+          "topics": [
+            {
+              "id": "development",
+              "name": "Development",
+              "difficulty": "medium",
+              "periods": 8
+            },
+            {
+              "id": "sectors-of-the-indian-economy",
+              "name": "Sectors of the Indian Economy",
+              "difficulty": "medium",
+              "periods": 8
+            },
+            {
+              "id": "money-and-credit",
+              "name": "Money and Credit",
+              "difficulty": "medium",
+              "periods": 8
+            },
+            {
+              "id": "globalisation-and-the-indian-economy",
+              "name": "Globalisation and the Indian Economy",
+              "difficulty": "medium",
+              "periods": 8
+            },
+            {
+              "id": "consumer-rights",
+              "name": "Consumer Rights",
+              "difficulty": "medium",
+              "periods": 8
+            }
+          ]
+        }
+      ],
+      "chapters": [
+        {
+          "id": "the-rise-of-nationalism-in-europe",
+          "name": "The Rise of Nationalism in Europe",
+          "order": 1,
+          "number": 1,
+          "unitId": "social-science-1",
+          "unitName": "India and the Contemporary World - II",
+          "marks": 20,
+          "periods": 9,
+          "summary": "History · India and the Contemporary World - II",
+          "difficulty": "Intermediate",
+          "lessonId": "the-rise-of-nationalism-in-europe",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "the-rise-of-nationalism-in-europe",
+              "name": "The Rise of Nationalism in Europe",
+              "difficulty": "medium",
+              "periods": 9
+            }
+          ]
+        },
+        {
+          "id": "nationalism-in-india",
+          "name": "Nationalism in India",
+          "order": 2,
+          "number": 2,
+          "unitId": "social-science-1",
+          "unitName": "India and the Contemporary World - II",
+          "marks": 20,
+          "periods": 9,
+          "summary": "History · India and the Contemporary World - II",
+          "difficulty": "Intermediate",
+          "lessonId": "nationalism-in-india",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "nationalism-in-india",
+              "name": "Nationalism in India",
+              "difficulty": "medium",
+              "periods": 9
+            }
+          ]
+        },
+        {
+          "id": "the-making-of-a-global-world",
+          "name": "The Making of a Global World",
+          "order": 3,
+          "number": 3,
+          "unitId": "social-science-1",
+          "unitName": "India and the Contemporary World - II",
+          "marks": 20,
+          "periods": 9,
+          "summary": "History · India and the Contemporary World - II",
+          "difficulty": "Intermediate",
+          "lessonId": "the-making-of-a-global-world",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "the-making-of-a-global-world",
+              "name": "The Making of a Global World",
+              "difficulty": "medium",
+              "periods": 9
+            }
+          ]
+        },
+        {
+          "id": "the-age-of-industrialization",
+          "name": "The Age of Industrialization",
+          "order": 4,
+          "number": 4,
+          "unitId": "social-science-1",
+          "unitName": "India and the Contemporary World - II",
+          "marks": 20,
+          "periods": 9,
+          "summary": "History · India and the Contemporary World - II",
+          "difficulty": "Intermediate",
+          "lessonId": "the-age-of-industrialization",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "the-age-of-industrialization",
+              "name": "The Age of Industrialization",
+              "difficulty": "medium",
+              "periods": 9
+            }
+          ]
+        },
+        {
+          "id": "print-culture-and-the-modern-world",
+          "name": "Print Culture and the Modern World",
+          "order": 5,
+          "number": 5,
+          "unitId": "social-science-1",
+          "unitName": "India and the Contemporary World - II",
+          "marks": 20,
+          "periods": 9,
+          "summary": "History · India and the Contemporary World - II",
+          "difficulty": "Intermediate",
+          "lessonId": "print-culture-and-the-modern-world",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "print-culture-and-the-modern-world",
+              "name": "Print Culture and the Modern World",
+              "difficulty": "medium",
+              "periods": 9
+            }
+          ]
+        },
+        {
+          "id": "resources-and-development",
+          "name": "Resources and Development",
+          "order": 6,
+          "number": 6,
+          "unitId": "social-science-2",
+          "unitName": "Contemporary India - II",
+          "marks": 20,
+          "periods": 6,
+          "summary": "Geography · Contemporary India - II",
+          "difficulty": "Intermediate",
+          "lessonId": "resources-and-development",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "resources-and-development",
+              "name": "Resources and Development",
+              "difficulty": "medium",
+              "periods": 6
+            }
+          ]
+        },
+        {
+          "id": "forest-and-wildlife-resources",
+          "name": "Forest and Wildlife Resources",
+          "order": 7,
+          "number": 7,
+          "unitId": "social-science-2",
+          "unitName": "Contemporary India - II",
+          "marks": 20,
+          "periods": 6,
+          "summary": "Geography · Contemporary India - II",
+          "difficulty": "Intermediate",
+          "lessonId": "forest-and-wildlife-resources",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "forest-and-wildlife-resources",
+              "name": "Forest and Wildlife Resources",
+              "difficulty": "medium",
+              "periods": 6
+            }
+          ]
+        },
+        {
+          "id": "water-resources",
+          "name": "Water Resources",
+          "order": 8,
+          "number": 8,
+          "unitId": "social-science-2",
+          "unitName": "Contemporary India - II",
+          "marks": 20,
+          "periods": 6,
+          "summary": "Geography · Contemporary India - II",
+          "difficulty": "Intermediate",
+          "lessonId": "water-resources",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "water-resources",
+              "name": "Water Resources",
+              "difficulty": "medium",
+              "periods": 6
+            }
+          ]
+        },
+        {
+          "id": "agriculture",
+          "name": "Agriculture",
+          "order": 9,
+          "number": 9,
+          "unitId": "social-science-2",
+          "unitName": "Contemporary India - II",
+          "marks": 20,
+          "periods": 6,
+          "summary": "Geography · Contemporary India - II",
+          "difficulty": "Intermediate",
+          "lessonId": "agriculture",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "agriculture",
+              "name": "Agriculture",
+              "difficulty": "medium",
+              "periods": 6
+            }
+          ]
+        },
+        {
+          "id": "minerals-and-energy-resources",
+          "name": "Minerals and Energy Resources",
+          "order": 10,
+          "number": 10,
+          "unitId": "social-science-2",
+          "unitName": "Contemporary India - II",
+          "marks": 20,
+          "periods": 6,
+          "summary": "Geography · Contemporary India - II",
+          "difficulty": "Intermediate",
+          "lessonId": "minerals-and-energy-resources",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "minerals-and-energy-resources",
+              "name": "Minerals and Energy Resources",
+              "difficulty": "medium",
+              "periods": 6
+            }
+          ]
+        },
+        {
+          "id": "manufacturing-industries",
+          "name": "Manufacturing Industries",
+          "order": 11,
+          "number": 11,
+          "unitId": "social-science-2",
+          "unitName": "Contemporary India - II",
+          "marks": 20,
+          "periods": 6,
+          "summary": "Geography · Contemporary India - II",
+          "difficulty": "Intermediate",
+          "lessonId": "manufacturing-industries",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "manufacturing-industries",
+              "name": "Manufacturing Industries",
+              "difficulty": "medium",
+              "periods": 6
+            }
+          ]
+        },
+        {
+          "id": "lifelines-of-national-economy",
+          "name": "Lifelines of National Economy",
+          "order": 12,
+          "number": 12,
+          "unitId": "social-science-2",
+          "unitName": "Contemporary India - II",
+          "marks": 20,
+          "periods": 6,
+          "summary": "Geography · Contemporary India - II",
+          "difficulty": "Intermediate",
+          "lessonId": "lifelines-of-national-economy",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "lifelines-of-national-economy",
+              "name": "Lifelines of National Economy",
+              "difficulty": "medium",
+              "periods": 6
+            }
+          ]
+        },
+        {
+          "id": "power-sharing",
+          "name": "Power Sharing",
+          "order": 13,
+          "number": 13,
+          "unitId": "social-science-3",
+          "unitName": "Democratic Politics - II",
+          "marks": 20,
+          "periods": 9,
+          "summary": "Political Science · Democratic Politics - II",
+          "difficulty": "Intermediate",
+          "lessonId": "power-sharing",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "power-sharing",
+              "name": "Power Sharing",
+              "difficulty": "medium",
+              "periods": 9
+            }
+          ]
+        },
+        {
+          "id": "federalism",
+          "name": "Federalism",
+          "order": 14,
+          "number": 14,
+          "unitId": "social-science-3",
+          "unitName": "Democratic Politics - II",
+          "marks": 20,
+          "periods": 9,
+          "summary": "Political Science · Democratic Politics - II",
+          "difficulty": "Intermediate",
+          "lessonId": "federalism",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "federalism",
+              "name": "Federalism",
+              "difficulty": "medium",
+              "periods": 9
+            }
+          ]
+        },
+        {
+          "id": "gender-religion-and-caste",
+          "name": "Gender, Religion and Caste",
+          "order": 15,
+          "number": 15,
+          "unitId": "social-science-3",
+          "unitName": "Democratic Politics - II",
+          "marks": 20,
+          "periods": 9,
+          "summary": "Political Science · Democratic Politics - II",
+          "difficulty": "Intermediate",
+          "lessonId": "gender-religion-and-caste",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "gender-religion-and-caste",
+              "name": "Gender, Religion and Caste",
+              "difficulty": "medium",
+              "periods": 9
+            }
+          ]
+        },
+        {
+          "id": "political-parties",
+          "name": "Political Parties",
+          "order": 16,
+          "number": 16,
+          "unitId": "social-science-3",
+          "unitName": "Democratic Politics - II",
+          "marks": 20,
+          "periods": 9,
+          "summary": "Political Science · Democratic Politics - II",
+          "difficulty": "Intermediate",
+          "lessonId": "political-parties",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "political-parties",
+              "name": "Political Parties",
+              "difficulty": "medium",
+              "periods": 9
+            }
+          ]
+        },
+        {
+          "id": "outcomes-of-democracy",
+          "name": "Outcomes of Democracy",
+          "order": 17,
+          "number": 17,
+          "unitId": "social-science-3",
+          "unitName": "Democratic Politics - II",
+          "marks": 20,
+          "periods": 9,
+          "summary": "Political Science · Democratic Politics - II",
+          "difficulty": "Intermediate",
+          "lessonId": "outcomes-of-democracy",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "outcomes-of-democracy",
+              "name": "Outcomes of Democracy",
+              "difficulty": "medium",
+              "periods": 9
+            }
+          ]
+        },
+        {
+          "id": "development",
+          "name": "Development",
+          "order": 18,
+          "number": 18,
+          "unitId": "social-science-4",
+          "unitName": "Understanding Economic Development",
+          "marks": 20,
+          "periods": 8,
+          "summary": "Economics · Understanding Economic Development",
+          "difficulty": "Intermediate",
+          "lessonId": "development",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "development",
+              "name": "Development",
+              "difficulty": "medium",
+              "periods": 8
+            }
+          ]
+        },
+        {
+          "id": "sectors-of-the-indian-economy",
+          "name": "Sectors of the Indian Economy",
+          "order": 19,
+          "number": 19,
+          "unitId": "social-science-4",
+          "unitName": "Understanding Economic Development",
+          "marks": 20,
+          "periods": 8,
+          "summary": "Economics · Understanding Economic Development",
+          "difficulty": "Intermediate",
+          "lessonId": "sectors-of-the-indian-economy",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "sectors-of-the-indian-economy",
+              "name": "Sectors of the Indian Economy",
+              "difficulty": "medium",
+              "periods": 8
+            }
+          ]
+        },
+        {
+          "id": "money-and-credit",
+          "name": "Money and Credit",
+          "order": 20,
+          "number": 20,
+          "unitId": "social-science-4",
+          "unitName": "Understanding Economic Development",
+          "marks": 20,
+          "periods": 8,
+          "summary": "Economics · Understanding Economic Development",
+          "difficulty": "Intermediate",
+          "lessonId": "money-and-credit",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "money-and-credit",
+              "name": "Money and Credit",
+              "difficulty": "medium",
+              "periods": 8
+            }
+          ]
+        },
+        {
+          "id": "globalisation-and-the-indian-economy",
+          "name": "Globalisation and the Indian Economy",
+          "order": 21,
+          "number": 21,
+          "unitId": "social-science-4",
+          "unitName": "Understanding Economic Development",
+          "marks": 20,
+          "periods": 8,
+          "summary": "Economics · Understanding Economic Development",
+          "difficulty": "Intermediate",
+          "lessonId": "globalisation-and-the-indian-economy",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "globalisation-and-the-indian-economy",
+              "name": "Globalisation and the Indian Economy",
+              "difficulty": "medium",
+              "periods": 8
+            }
+          ]
+        },
+        {
+          "id": "consumer-rights",
+          "name": "Consumer Rights",
+          "order": 22,
+          "number": 22,
+          "unitId": "social-science-4",
+          "unitName": "Understanding Economic Development",
+          "marks": 20,
+          "periods": 8,
+          "summary": "Economics · Understanding Economic Development",
+          "difficulty": "Intermediate",
+          "lessonId": "consumer-rights",
+          "hasContent": true,
+          "isPartial": false,
+          "stats": {
+            "concepts": 6,
+            "theorems": 0,
+            "examples": 5,
+            "exercises": 18,
+            "quizzes": 30,
+            "visuals": 2,
+            "misconceptions": 8,
+            "authored": true
+          },
+          "topics": [
+            {
+              "id": "consumer-rights",
+              "name": "Consumer Rights",
+              "difficulty": "medium",
+              "periods": 8
+            }
+          ]
+        }
+      ],
+      "coverage": {
+        "total": 22,
+        "authored": 22,
+        "partial": 0,
+        "syllabusOnly": 0
+      }
+    },
+    {
+      "id": "english",
+      "name": "English Language & Literature",
+      "shortName": "English Language & Literature",
+      "accent": "rose",
+      "icon": "BookOpenText",
+      "code": "184",
+      "maxMarks": 80,
+      "internalMarks": 20,
+      "totalPeriods": 180,
+      "description": "English Language & Literature · CBSE Class X (2026-27)",
+      "units": [
+        {
+          "id": "english-reading-skills",
+          "name": "Reading Skills",
+          "section": "Reading Skills",
+          "marks": 20,
+          "periods": 40,
+          "topics": [
+            {
+              "id": "reading-comprehension-factual-literary-discursive",
+              "name": "Reading Comprehension (Factual, Literary, Discursive)",
+              "difficulty": "medium",
+              "periods": 20
+            },
+            {
+              "id": "case-based-passages",
+              "name": "Case-based Passages",
+              "difficulty": "medium",
+              "periods": 20
+            }
+          ]
+        },
+        {
+          "id": "english-writing-skills-with-grammar",
+          "name": "Writing Skills with Grammar",
+          "section": "Writing Skills with Grammar",
+          "marks": 20,
+          "periods": 50,
+          "topics": [
+            {
+              "id": "formal-letter",
+              "name": "Formal Letter",
+              "difficulty": "medium",
+              "periods": 5
+            },
+            {
+              "id": "analytical-paragraph",
+              "name": "Analytical Paragraph",
+              "difficulty": "medium",
+              "periods": 5
+            },
+            {
+              "id": "creative-writing",
+              "name": "Creative Writing",
+              "difficulty": "medium",
+              "periods": 5
+            },
+            {
+              "id": "tenses",
+              "name": "Tenses",
+              "difficulty": "medium",
+              "periods": 5
+            },
+            {
+              "id": "modals",
+              "name": "Modals",
+              "difficulty": "medium",
+              "periods": 5
+            },
+            {
+              "id": "subject-verb-concord",
+              "name": "Subject-Verb Concord",
+              "difficulty": "medium",
+              "periods": 5
+            },
+            {
+              "id": "reported-speech",
+              "name": "Reported Speech",
+              "difficulty": "medium",
+              "periods": 5
+            },
+            {
+              "id": "clauses",
+              "name": "Clauses",
+              "difficulty": "medium",
+              "periods": 5
+            },
+            {
+              "id": "determiners",
+              "name": "Determiners",
+              "difficulty": "medium",
+              "periods": 5
+            },
+            {
+              "id": "prepositions",
+              "name": "Prepositions",
+              "difficulty": "medium",
+              "periods": 5
+            }
+          ]
+        },
+        {
+          "id": "english-literature-textbook-and-supplementary-reading",
+          "name": "Literature Textbook & Supplementary Reading",
+          "section": "Literature Textbook & Supplementary Reading",
+          "marks": 40,
+          "periods": 90,
+          "topics": [
+            {
+              "id": "first-flight-prose",
+              "name": "First Flight - Prose",
+              "difficulty": "medium",
+              "periods": 30
+            },
+            {
+              "id": "first-flight-poetry",
+              "name": "First Flight - Poetry",
+              "difficulty": "medium",
+              "periods": 30
+            },
+            {
+              "id": "footprints-without-feet-supplementary",
+              "name": "Footprints without Feet - Supplementary",
+              "difficulty": "medium",
+              "periods": 30
+            }
+          ]
+        }
+      ],
+      "chapters": [
+        {
+          "id": "reading-comprehension-factual-literary-discursive",
+          "name": "Reading Comprehension (Factual, Literary, Discursive)",
+          "order": 1,
+          "number": 1,
+          "unitId": "english-reading-skills",
+          "unitName": "Reading Skills",
+          "marks": 20,
+          "periods": 20,
+          "summary": "Reading Skills · Reading Skills",
+          "difficulty": "Intermediate",
+          "lessonId": null,
+          "hasContent": false,
+          "isPartial": false,
+          "stats": {
+            "concepts": 0,
+            "theorems": 0,
+            "examples": 0,
+            "exercises": 0,
+            "quizzes": 0,
+            "visuals": 0,
+            "misconceptions": 0,
+            "authored": false
+          },
+          "topics": [
+            {
+              "id": "reading-comprehension-factual-literary-discursive",
+              "name": "Reading Comprehension (Factual, Literary, Discursive)",
+              "difficulty": "medium",
+              "periods": 20
+            }
+          ]
+        },
+        {
+          "id": "case-based-passages",
+          "name": "Case-based Passages",
+          "order": 2,
+          "number": 2,
+          "unitId": "english-reading-skills",
+          "unitName": "Reading Skills",
+          "marks": 20,
+          "periods": 20,
+          "summary": "Reading Skills · Reading Skills",
+          "difficulty": "Intermediate",
+          "lessonId": null,
+          "hasContent": false,
+          "isPartial": false,
+          "stats": {
+            "concepts": 0,
+            "theorems": 0,
+            "examples": 0,
+            "exercises": 0,
+            "quizzes": 0,
+            "visuals": 0,
+            "misconceptions": 0,
+            "authored": false
+          },
+          "topics": [
+            {
+              "id": "case-based-passages",
+              "name": "Case-based Passages",
+              "difficulty": "medium",
+              "periods": 20
+            }
+          ]
+        },
+        {
+          "id": "formal-letter",
+          "name": "Formal Letter",
+          "order": 3,
+          "number": 3,
+          "unitId": "english-writing-skills-with-grammar",
+          "unitName": "Writing Skills with Grammar",
+          "marks": 20,
+          "periods": 5,
+          "summary": "Writing Skills with Grammar · Writing Skills with Grammar",
+          "difficulty": "Intermediate",
+          "lessonId": null,
+          "hasContent": false,
+          "isPartial": false,
+          "stats": {
+            "concepts": 0,
+            "theorems": 0,
+            "examples": 0,
+            "exercises": 0,
+            "quizzes": 0,
+            "visuals": 0,
+            "misconceptions": 0,
+            "authored": false
+          },
+          "topics": [
+            {
+              "id": "formal-letter",
+              "name": "Formal Letter",
+              "difficulty": "medium",
+              "periods": 5
+            }
+          ]
+        },
+        {
+          "id": "analytical-paragraph",
+          "name": "Analytical Paragraph",
+          "order": 4,
+          "number": 4,
+          "unitId": "english-writing-skills-with-grammar",
+          "unitName": "Writing Skills with Grammar",
+          "marks": 20,
+          "periods": 5,
+          "summary": "Writing Skills with Grammar · Writing Skills with Grammar",
+          "difficulty": "Intermediate",
+          "lessonId": null,
+          "hasContent": false,
+          "isPartial": false,
+          "stats": {
+            "concepts": 0,
+            "theorems": 0,
+            "examples": 0,
+            "exercises": 0,
+            "quizzes": 0,
+            "visuals": 0,
+            "misconceptions": 0,
+            "authored": false
+          },
+          "topics": [
+            {
+              "id": "analytical-paragraph",
+              "name": "Analytical Paragraph",
+              "difficulty": "medium",
+              "periods": 5
+            }
+          ]
+        },
+        {
+          "id": "creative-writing",
+          "name": "Creative Writing",
+          "order": 5,
+          "number": 5,
+          "unitId": "english-writing-skills-with-grammar",
+          "unitName": "Writing Skills with Grammar",
+          "marks": 20,
+          "periods": 5,
+          "summary": "Writing Skills with Grammar · Writing Skills with Grammar",
+          "difficulty": "Intermediate",
+          "lessonId": null,
+          "hasContent": false,
+          "isPartial": false,
+          "stats": {
+            "concepts": 0,
+            "theorems": 0,
+            "examples": 0,
+            "exercises": 0,
+            "quizzes": 0,
+            "visuals": 0,
+            "misconceptions": 0,
+            "authored": false
+          },
+          "topics": [
+            {
+              "id": "creative-writing",
+              "name": "Creative Writing",
+              "difficulty": "medium",
+              "periods": 5
+            }
+          ]
+        },
+        {
+          "id": "tenses",
+          "name": "Tenses",
+          "order": 6,
+          "number": 6,
+          "unitId": "english-writing-skills-with-grammar",
+          "unitName": "Writing Skills with Grammar",
+          "marks": 20,
+          "periods": 5,
+          "summary": "Writing Skills with Grammar · Writing Skills with Grammar",
+          "difficulty": "Intermediate",
+          "lessonId": null,
+          "hasContent": false,
+          "isPartial": false,
+          "stats": {
+            "concepts": 0,
+            "theorems": 0,
+            "examples": 0,
+            "exercises": 0,
+            "quizzes": 0,
+            "visuals": 0,
+            "misconceptions": 0,
+            "authored": false
+          },
+          "topics": [
+            {
+              "id": "tenses",
+              "name": "Tenses",
+              "difficulty": "medium",
+              "periods": 5
+            }
+          ]
+        },
+        {
+          "id": "modals",
+          "name": "Modals",
+          "order": 7,
+          "number": 7,
+          "unitId": "english-writing-skills-with-grammar",
+          "unitName": "Writing Skills with Grammar",
+          "marks": 20,
+          "periods": 5,
+          "summary": "Writing Skills with Grammar · Writing Skills with Grammar",
+          "difficulty": "Intermediate",
+          "lessonId": null,
+          "hasContent": false,
+          "isPartial": false,
+          "stats": {
+            "concepts": 0,
+            "theorems": 0,
+            "examples": 0,
+            "exercises": 0,
+            "quizzes": 0,
+            "visuals": 0,
+            "misconceptions": 0,
+            "authored": false
+          },
+          "topics": [
+            {
+              "id": "modals",
+              "name": "Modals",
+              "difficulty": "medium",
+              "periods": 5
+            }
+          ]
+        },
+        {
+          "id": "subject-verb-concord",
+          "name": "Subject-Verb Concord",
+          "order": 8,
+          "number": 8,
+          "unitId": "english-writing-skills-with-grammar",
+          "unitName": "Writing Skills with Grammar",
+          "marks": 20,
+          "periods": 5,
+          "summary": "Writing Skills with Grammar · Writing Skills with Grammar",
+          "difficulty": "Intermediate",
+          "lessonId": null,
+          "hasContent": false,
+          "isPartial": false,
+          "stats": {
+            "concepts": 0,
+            "theorems": 0,
+            "examples": 0,
+            "exercises": 0,
+            "quizzes": 0,
+            "visuals": 0,
+            "misconceptions": 0,
+            "authored": false
+          },
+          "topics": [
+            {
+              "id": "subject-verb-concord",
+              "name": "Subject-Verb Concord",
+              "difficulty": "medium",
+              "periods": 5
+            }
+          ]
+        },
+        {
+          "id": "reported-speech",
+          "name": "Reported Speech",
+          "order": 9,
+          "number": 9,
+          "unitId": "english-writing-skills-with-grammar",
+          "unitName": "Writing Skills with Grammar",
+          "marks": 20,
+          "periods": 5,
+          "summary": "Writing Skills with Grammar · Writing Skills with Grammar",
+          "difficulty": "Intermediate",
+          "lessonId": null,
+          "hasContent": false,
+          "isPartial": false,
+          "stats": {
+            "concepts": 0,
+            "theorems": 0,
+            "examples": 0,
+            "exercises": 0,
+            "quizzes": 0,
+            "visuals": 0,
+            "misconceptions": 0,
+            "authored": false
+          },
+          "topics": [
+            {
+              "id": "reported-speech",
+              "name": "Reported Speech",
+              "difficulty": "medium",
+              "periods": 5
+            }
+          ]
+        },
+        {
+          "id": "clauses",
+          "name": "Clauses",
+          "order": 10,
+          "number": 10,
+          "unitId": "english-writing-skills-with-grammar",
+          "unitName": "Writing Skills with Grammar",
+          "marks": 20,
+          "periods": 5,
+          "summary": "Writing Skills with Grammar · Writing Skills with Grammar",
+          "difficulty": "Intermediate",
+          "lessonId": null,
+          "hasContent": false,
+          "isPartial": false,
+          "stats": {
+            "concepts": 0,
+            "theorems": 0,
+            "examples": 0,
+            "exercises": 0,
+            "quizzes": 0,
+            "visuals": 0,
+            "misconceptions": 0,
+            "authored": false
+          },
+          "topics": [
+            {
+              "id": "clauses",
+              "name": "Clauses",
+              "difficulty": "medium",
+              "periods": 5
+            }
+          ]
+        },
+        {
+          "id": "determiners",
+          "name": "Determiners",
+          "order": 11,
+          "number": 11,
+          "unitId": "english-writing-skills-with-grammar",
+          "unitName": "Writing Skills with Grammar",
+          "marks": 20,
+          "periods": 5,
+          "summary": "Writing Skills with Grammar · Writing Skills with Grammar",
+          "difficulty": "Intermediate",
+          "lessonId": null,
+          "hasContent": false,
+          "isPartial": false,
+          "stats": {
+            "concepts": 0,
+            "theorems": 0,
+            "examples": 0,
+            "exercises": 0,
+            "quizzes": 0,
+            "visuals": 0,
+            "misconceptions": 0,
+            "authored": false
+          },
+          "topics": [
+            {
+              "id": "determiners",
+              "name": "Determiners",
+              "difficulty": "medium",
+              "periods": 5
+            }
+          ]
+        },
+        {
+          "id": "prepositions",
+          "name": "Prepositions",
+          "order": 12,
+          "number": 12,
+          "unitId": "english-writing-skills-with-grammar",
+          "unitName": "Writing Skills with Grammar",
+          "marks": 20,
+          "periods": 5,
+          "summary": "Writing Skills with Grammar · Writing Skills with Grammar",
+          "difficulty": "Intermediate",
+          "lessonId": null,
+          "hasContent": false,
+          "isPartial": false,
+          "stats": {
+            "concepts": 0,
+            "theorems": 0,
+            "examples": 0,
+            "exercises": 0,
+            "quizzes": 0,
+            "visuals": 0,
+            "misconceptions": 0,
+            "authored": false
+          },
+          "topics": [
+            {
+              "id": "prepositions",
+              "name": "Prepositions",
+              "difficulty": "medium",
+              "periods": 5
+            }
+          ]
+        },
+        {
+          "id": "first-flight-prose",
+          "name": "First Flight - Prose",
+          "order": 13,
+          "number": 13,
+          "unitId": "english-literature-textbook-and-supplementary-reading",
+          "unitName": "Literature Textbook & Supplementary Reading",
+          "marks": 40,
+          "periods": 30,
+          "summary": "Literature Textbook & Supplementary Reading · Literature Textbook & Supplementary Reading",
+          "difficulty": "Intermediate",
+          "lessonId": null,
+          "hasContent": false,
+          "isPartial": false,
+          "stats": {
+            "concepts": 0,
+            "theorems": 0,
+            "examples": 0,
+            "exercises": 0,
+            "quizzes": 0,
+            "visuals": 0,
+            "misconceptions": 0,
+            "authored": false
+          },
+          "topics": [
+            {
+              "id": "first-flight-prose",
+              "name": "First Flight - Prose",
+              "difficulty": "medium",
+              "periods": 30
+            }
+          ]
+        },
+        {
+          "id": "first-flight-poetry",
+          "name": "First Flight - Poetry",
+          "order": 14,
+          "number": 14,
+          "unitId": "english-literature-textbook-and-supplementary-reading",
+          "unitName": "Literature Textbook & Supplementary Reading",
+          "marks": 40,
+          "periods": 30,
+          "summary": "Literature Textbook & Supplementary Reading · Literature Textbook & Supplementary Reading",
+          "difficulty": "Intermediate",
+          "lessonId": null,
+          "hasContent": false,
+          "isPartial": false,
+          "stats": {
+            "concepts": 0,
+            "theorems": 0,
+            "examples": 0,
+            "exercises": 0,
+            "quizzes": 0,
+            "visuals": 0,
+            "misconceptions": 0,
+            "authored": false
+          },
+          "topics": [
+            {
+              "id": "first-flight-poetry",
+              "name": "First Flight - Poetry",
+              "difficulty": "medium",
+              "periods": 30
+            }
+          ]
+        },
+        {
+          "id": "footprints-without-feet-supplementary",
+          "name": "Footprints without Feet - Supplementary",
+          "order": 15,
+          "number": 15,
+          "unitId": "english-literature-textbook-and-supplementary-reading",
+          "unitName": "Literature Textbook & Supplementary Reading",
+          "marks": 40,
+          "periods": 30,
+          "summary": "Literature Textbook & Supplementary Reading · Literature Textbook & Supplementary Reading",
+          "difficulty": "Intermediate",
+          "lessonId": null,
+          "hasContent": false,
+          "isPartial": false,
+          "stats": {
+            "concepts": 0,
+            "theorems": 0,
+            "examples": 0,
+            "exercises": 0,
+            "quizzes": 0,
+            "visuals": 0,
+            "misconceptions": 0,
+            "authored": false
+          },
+          "topics": [
+            {
+              "id": "footprints-without-feet-supplementary",
+              "name": "Footprints without Feet - Supplementary",
+              "difficulty": "medium",
+              "periods": 30
+            }
+          ]
+        }
+      ],
+      "coverage": {
+        "total": 15,
+        "authored": 0,
+        "partial": 0,
+        "syllabusOnly": 15
+      }
+    }
+  ]
+}

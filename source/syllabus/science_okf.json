@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "subject": "science",
+    "class": "X",
+    "board": "CBSE",
+    "academic_year": "2026-27",
+    "source": "CBSE Official Syllabus PDF",
+    "version": "1.0",
+    "format": "OKF-v1"
+  },
+  "course_structure": {
+    "subject": "Science",
+    "class": "X",
+    "academic_year": "2026-27",
+    "code": "086",
+    "max_marks": 80,
+    "internal_assessment": 20,
+    "sections": [
+      "Physics",
+      "Chemistry",
+      "Biology"
+    ],
+    "total_periods": 180
+  },
+  "knowledge_units": [
+    {
+      "id": "science_1",
+      "name": "Chemical Substances - Nature and Behaviour",
+      "section": "Chemistry",
+      "marks": 25,
+      "periods": 55,
+      "topics": [
+        {
+          "id": "science_1_topic_1",
+          "name": "Chemical Reactions and Equations",
+          "parent_unit": "science_1",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "science",
+            "Chemistry",
+            "chemical_reactions_and_equatio"
+          ]
+        },
+        {
+          "id": "science_1_topic_2",
+          "name": "Acids, Bases and Salts",
+          "parent_unit": "science_1",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "science",
+            "Chemistry",
+            "acids,_bases_and_salts"
+          ]
+        },
+        {
+          "id": "science_1_topic_3",
+          "name": "Metals and Non-metals",
+          "parent_unit": "science_1",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "science",
+            "Chemistry",
+            "metals_and_non-metals"
+          ]
+        },
+        {
+          "id": "science_1_topic_4",
+          "name": "Carbon and its Compounds",
+          "parent_unit": "science_1",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "science",
+            "Chemistry",
+            "carbon_and_its_compounds"
+          ]
+        },
+        {
+          "id": "science_1_topic_5",
+          "name": "Periodic Classification of Elements",
+          "parent_unit": "science_1",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "science",
+            "Chemistry",
+            "periodic_classification_of_ele"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    },
+    {
+      "id": "science_2",
+      "name": "World of Living",
+      "section": "Biology",
+      "marks": 25,
+      "periods": 50,
+      "topics": [
+        {
+          "id": "science_2_topic_1",
+          "name": "Life Processes",
+          "parent_unit": "science_2",
+          "difficulty": "medium",
+          "estimated_periods": 12,
+          "tags": [
+            "science",
+            "Biology",
+            "life_processes"
+          ]
+        },
+        {
+          "id": "science_2_topic_2",
+          "name": "Control and Coordination",
+          "parent_unit": "science_2",
+          "difficulty": "medium",
+          "estimated_periods": 12,
+          "tags": [
+            "science",
+            "Biology",
+            "control_and_coordination"
+          ]
+        },
+        {
+          "id": "science_2_topic_3",
+          "name": "How do Organisms Reproduce",
+          "parent_unit": "science_2",
+          "difficulty": "medium",
+          "estimated_periods": 12,
+          "tags": [
+            "science",
+            "Biology",
+            "how_do_organisms_reproduce"
+          ]
+        },
+        {
+          "id": "science_2_topic_4",
+          "name": "Heredity and Evolution",
+          "parent_unit": "science_2",
+          "difficulty": "medium",
+          "estimated_periods": 12,
+          "tags": [
+            "science",
+            "Biology",
+            "heredity_and_evolution"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    },
+    {
+      "id": "science_3",
+      "name": "Natural Phenomena",
+      "section": "Physics",
+      "marks": 12,
+      "periods": 23,
+      "topics": [
+        {
+          "id": "science_3_topic_1",
+          "name": "Light - Reflection and Refraction",
+          "parent_unit": "science_3",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "science",
+            "Physics",
+            "light_-_reflection_and_refract"
+          ]
+        },
+        {
+          "id": "science_3_topic_2",
+          "name": "Human Eye and Colourful World",
+          "parent_unit": "science_3",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "science",
+            "Physics",
+            "human_eye_and_colourful_world"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    },
+    {
+      "id": "science_4",
+      "name": "Effects of Current",
+      "section": "Physics",
+      "marks": 13,
+      "periods": 32,
+      "topics": [
+        {
+          "id": "science_4_topic_1",
+          "name": "Electricity",
+          "parent_unit": "science_4",
+          "difficulty": "medium",
+          "estimated_periods": 16,
+          "tags": [
+            "science",
+            "Physics",
+            "electricity"
+          ]
+        },
+        {
+          "id": "science_4_topic_2",
+          "name": "Magnetic Effects of Electric Current",
+          "parent_unit": "science_4",
+          "difficulty": "medium",
+          "estimated_periods": 16,
+          "tags": [
+            "science",
+            "Physics",
+            "magnetic_effects_of_electric_c"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    },
+    {
+      "id": "science_5",
+      "name": "Natural Resources",
+      "section": "Interdisciplinary",
+      "marks": 5,
+      "periods": 20,
+      "topics": [
+        {
+          "id": "science_5_topic_1",
+          "name": "Our Environment",
+          "parent_unit": "science_5",
+          "difficulty": "medium",
+          "estimated_periods": 10,
+          "tags": [
+            "science",
+            "Interdisciplinary",
+            "our_environment"
+          ]
+        },
+        {
+          "id": "science_5_topic_2",
+          "name": "Management of Natural Resources",
+          "parent_unit": "science_5",
+          "difficulty": "medium",
+          "estimated_periods": 10,
+          "tags": [
+            "science",
+            "Interdisciplinary",
+            "management_of_natural_resource"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    }
+  ]
+}

@@ -1,0 +1,1303 @@
+{
+  "id": "outcomes-of-democracy",
+  "subject": "Civics",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 5,
+  "chapter": "Outcomes of Democracy",
+  "lesson": 5,
+  "title": "Outcomes of Democracy - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Explain accountability, responsiveness and legitimacy as democratic outcomes",
+    "Describe how transparency and the right to information strengthen democracy",
+    "Evaluate the relationship between democracy and economic growth",
+    "Assess democracy's record on inequality and poverty reduction",
+    "Explain how democracy accommodates social diversity and manages conflict",
+    "Discuss democracy's contribution to dignity and freedom",
+    "Identify contemporary challenges to democratic outcomes",
+    "Answer board-style questions with balanced evidence and judgement"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS9_WHAT_IS_DEMOCRACY",
+    "SOCIAL_CLASS9_ELECTORAL_POLITICS",
+    "SOCIAL_CLASS10_POWER_SHARING",
+    "SOCIAL_CLASS10_FEDERALISM"
+  ],
+  "concepts": [
+    {
+      "id": "od-c1",
+      "name": "Accountable, Responsive and Legitimate Government",
+      "title": "Accountable, Responsive and Legitimate Government",
+      "explanation": "Democracy is judged by its outcomes, not only by its procedures. A democratic government is accountable because citizens can question it, vote it out and use courts and media to demand explanations. It is responsive because it must address public needs and demands, especially before elections. It is legitimate because it is based on the consent of citizens and follows constitutional rules. These outcomes do not appear automatically; they depend on active citizens, free media, strong institutions and the rule of law.",
+      "purpose": "To identify the political outcomes that make democracy different from authoritarian rule.",
+      "real_life_application": "A citizen can file an application, approach a local representative, ask a question at a public meeting or vote against a government that has failed to provide basic services.",
+      "key_points": [
+        "Democracy is assessed by outcomes as well as procedures.",
+        "Accountability means citizens can question and remove governments.",
+        "Responsiveness means government addresses public needs.",
+        "Legitimacy means rule by consent and constitutional procedures.",
+        "Elections, courts, media and civil society support these outcomes.",
+        "Outcomes depend on active citizenship and strong institutions.",
+        "Democracy is not automatically accountable in practice."
+      ],
+      "day_to_day_usage": [
+        "Voting out a non-performing government",
+        "Questioning a local official about a delayed scheme",
+        "Using a grievance portal",
+        "Attending a public hearing",
+        "Reading news reports on government decisions"
+      ]
+    },
+    {
+      "id": "od-c2",
+      "name": "Transparency and the Right to Information",
+      "title": "Transparency and the Right to Information",
+      "explanation": "Transparency means that citizens can examine how decisions are made and how public money is spent. The Right to Information Act, passed in 2005, gives citizens a legal right to seek information from public authorities. Transparency reduces corruption, improves trust and allows citizens to hold officials accountable. It works best when records are maintained, requests are answered promptly and whistle-blowers are protected. Democracy promises transparency, but in practice it can be limited by secrecy, delays and weak enforcement.",
+      "purpose": "To understand how information rights turn accountability from a slogan into a practical tool.",
+      "real_life_application": "A citizen can use an RTI application to find out why a road contract was awarded to a particular company or how a local development fund was spent.",
+      "key_points": [
+        "Transparency allows citizens to examine decisions and spending.",
+        "The Right to Information Act was passed in 2005.",
+        "RTI gives citizens a legal right to seek public information.",
+        "Transparency helps reduce corruption and build trust.",
+        "Records, prompt replies and whistle-blower protection are essential.",
+        "Secrecy and delay can weaken transparency.",
+        "Social audits and media reporting also promote transparency."
+      ],
+      "day_to_day_usage": [
+        "Filing an RTI request about a local road contract",
+        "Reading a social audit report",
+        "Checking government spending data",
+        "Journalists investigating a public scheme",
+        "Citizens' groups monitoring a municipal budget"
+      ]
+    },
+    {
+      "id": "od-c3",
+      "name": "Democracy and Economic Growth",
+      "title": "Democracy and Economic Growth",
+      "explanation": "Economic growth is not automatically higher in democracies. Some dictatorships have recorded slightly faster growth for short periods because they can force decisions without consultation. However, the difference is not large or consistent, and democracies have not lagged behind in recent decades. India has grown faster after the economic reforms of the 1990s. Growth depends on investment, education, infrastructure, technology, global conditions and government policy, not on the form of government alone. Democracies may be slower to decide, but their decisions can be more stable and acceptable.",
+      "purpose": "To correct the assumption that democracy is either a guaranteed engine of growth or a barrier to it.",
+      "real_life_application": "A democratic government may take time to approve a highway because it must consult affected people and clear environmental rules. The result may be slower but more legitimate.",
+      "key_points": [
+        "Democracy does not automatically produce faster growth.",
+        "Some dictatorships have had slightly higher short-term growth.",
+        "The difference between democracies and dictatorships is not large.",
+        "India's growth accelerated after the 1990s reforms.",
+        "Growth depends on policy, investment, education and global conditions.",
+        "Democratic decisions can be slower but more acceptable.",
+        "Economic outcomes must be judged alongside distribution and welfare."
+      ],
+      "day_to_day_usage": [
+        "Comparing growth rates of countries",
+        "Debating infrastructure delays",
+        "Following budget and investment news",
+        "Studying the effects of economic reforms",
+        "Discussing jobs and wages"
+      ]
+    },
+    {
+      "id": "od-c4",
+      "name": "Inequality, Poverty and Redistribution",
+      "title": "Inequality, Poverty and Redistribution",
+      "explanation": "Democracy is based on political equality, but it does not guarantee economic equality. Inequalities of income, wealth, land and opportunity persist even in democracies. Poor citizens may lack the resources to influence policy, while wealthy groups can lobby effectively. Democracies can reduce poverty through public services, social security, progressive taxation and legal protection, but these measures depend on political will and administrative capacity. The persistence of inequality is one of democracy's biggest disappointments.",
+      "purpose": "To evaluate democracy's economic record honestly rather than equating political equality with economic equality.",
+      "real_life_application": "A democracy may provide free school meals and rural employment guarantees while still having large gaps between rich and poor. Both facts can be true at the same time.",
+      "key_points": [
+        "Political equality does not guarantee economic equality.",
+        "Income, wealth, land and opportunity inequalities persist.",
+        "Wealthy groups can influence policy more than poor citizens.",
+        "Public services and social security can reduce poverty.",
+        "Progressive taxation can fund redistribution.",
+        "Political will and administrative capacity determine results.",
+        "Inequality is a major disappointment of democracy."
+      ],
+      "day_to_day_usage": [
+        "Debating free public services",
+        "Following poverty and unemployment data",
+        "Discussing minimum wages",
+        "Supporting social security schemes",
+        "Comparing rich and poor neighbourhoods"
+      ]
+    },
+    {
+      "id": "od-c5",
+      "name": "Social Diversity, Conflict and Accommodation",
+      "title": "Social Diversity, Conflict and Accommodation",
+      "explanation": "Democracies are better than dictatorships at accommodating social diversity. Elections, federalism, minority rights and free debate give groups a peaceful way to press their demands. Democracy can turn social divisions into political competition rather than violence. However, democracy can also be undermined by majoritarianism, communal politics and the exclusion of minorities. The outcome depends on whether the majority respects rights and whether institutions protect all citizens equally.",
+      "purpose": "To explain why democracy is both a arena for social conflict and a mechanism for managing it.",
+      "real_life_application": "A language group can demand a separate state through elections and negotiation rather than armed conflict. A minority can approach the courts if a law discriminates against it.",
+      "key_points": [
+        "Democracy gives social groups peaceful channels for demands.",
+        "Elections, federalism and rights protection accommodate diversity.",
+        "Social divisions can become political competition.",
+        "Majoritarianism can undermine democratic accommodation.",
+        "Communal politics can turn diversity into hostility.",
+        "Institutions must protect minorities equally.",
+        "Democracy manages conflict better when rights are secure."
+      ],
+      "day_to_day_usage": [
+        "Language movements using elections",
+        "Minority groups approaching courts",
+        "Federal negotiations over state demands",
+        "Interfaith peace committees",
+        "Debates on reservation and representation"
+      ]
+    },
+    {
+      "id": "od-c6",
+      "name": "Dignity, Freedom and Challenges to Democracy",
+      "title": "Dignity, Freedom and Challenges to Democracy",
+      "explanation": "Democracy promotes the dignity and freedom of the individual. It recognises equal citizenship, freedom of expression, the right to dissent and the right to form associations. Historically disadvantaged groups, including Dalits, Adivasis and women, have used democratic politics to demand dignity and equality. Yet democracy faces serious challenges: corruption, criminalisation of politics, money power, fake news, low participation, majoritarianism and weakening checks on power. Democracy is a work in progress; it must be defended and improved continuously.",
+      "purpose": "To connect democratic outcomes with human dignity and to recognise the ongoing challenges that can erode them.",
+      "real_life_application": "A student can criticise a government policy without fear, a worker can form a union, and a discriminated group can use the courts and elections to demand equal treatment.",
+      "key_points": [
+        "Democracy recognises equal citizenship and individual dignity.",
+        "It protects freedom of expression, dissent and association.",
+        "Disadvantaged groups have used democracy to demand rights.",
+        "Corruption and criminalisation weaken democratic outcomes.",
+        "Money power and fake news distort public debate.",
+        "Majoritarianism can erode minority rights.",
+        "Democracy must be continuously defended and reformed."
+      ],
+      "day_to_day_usage": [
+        "Peaceful protest against a policy",
+        "Forming a workers' union",
+        "Using courts to challenge discrimination",
+        "Fact-checking political claims",
+        "Voting in local and national elections"
+      ]
+    }
+  ],
+  "theorems": [],
+  "worked_examples": [
+    {
+      "id": "we-od-1",
+      "title": "Accountability in Practice",
+      "topic": "Explanation",
+      "problem": "How does democracy make a government accountable? Give three mechanisms.",
+      "solution": [
+        "Step 1: Elections allow citizens to remove a government that fails to perform.",
+        "Step 2: The opposition questions ministers in the legislature and exposes failures.",
+        "Step 3: Courts can review government actions for legality and rights violations.",
+        "Step 4: A free media and civil society investigate and publicise decisions.",
+        "Step 5: The Right to Information Act gives citizens access to official records.",
+        "Step 6: Conclude that accountability is produced by several institutions working together."
+      ],
+      "board_mode": [
+        "Name the mechanism, then explain how it works.",
+        "Use at least three different institutions: elections, opposition, courts, media or RTI.",
+        "Add an example such as an RTI request or a no-confidence motion."
+      ],
+      "answer": "Democracy makes government accountable through elections, opposition scrutiny, judicial review, a free media and the right to information.",
+      "board_tip": "Do not give three election-related points; show the range of institutions."
+    },
+    {
+      "id": "we-od-2",
+      "title": "Does Democracy Guarantee Economic Growth?",
+      "topic": "Evaluation",
+      "problem": "Some people say democracy slows economic growth. Evaluate this claim.",
+      "solution": [
+        "Step 1: Acknowledge that democracies can be slower because they consult and face opposition.",
+        "Step 2: Note that some dictatorships have had slightly faster growth for short periods.",
+        "Step 3: Explain that the difference is not large or consistent across countries.",
+        "Step 4: Show that India has grown faster after the 1990s reforms under a democratic system.",
+        "Step 5: State that growth depends on investment, education, infrastructure and global conditions.",
+        "Step 6: Conclude that democracy is not necessarily a barrier to growth, but it is not a guarantee either."
+      ],
+      "board_mode": [
+        "Give both sides before your judgement.",
+        "Avoid claiming that democracies always grow faster or slower.",
+        "Use the phrase 'no consistent evidence'.",
+        "Link growth to policy and institutions, not only to the form of government."
+      ],
+      "answer": "The claim is too simple: democracies can be slower, but they have not consistently grown slower, and growth depends on many factors beyond the form of government.",
+      "board_tip": "A balanced answer is better than a slogan about democracy being good or bad for growth."
+    },
+    {
+      "id": "we-od-3",
+      "title": "Why Inequality Persists in a Democracy",
+      "topic": "Explanation",
+      "problem": "Why does economic inequality persist even in democracies? Give three reasons.",
+      "solution": [
+        "Step 1: Political equality does not automatically create economic equality.",
+        "Step 2: Wealthy groups have more resources to influence policy, media and elections.",
+        "Step 3: Poor citizens may lack information, time and access to decision makers.",
+        "Step 4: Public services and redistribution require political will and administrative capacity.",
+        "Step 5: Historical disadvantages, such as caste and land ownership, continue to shape opportunities.",
+        "Step 6: Conclude that democracy provides tools to reduce inequality but does not guarantee equal outcomes."
+      ],
+      "board_mode": [
+        "Distinguish political equality from economic equality.",
+        "Explain the influence of money and historical disadvantage.",
+        "Suggest one corrective measure, such as public services or progressive taxation."
+      ],
+      "answer": "Inequality persists because political equality does not create economic equality, wealth influences policy, and historical disadvantages shape opportunity.",
+      "board_tip": "Mention both influence of the rich and the limits of state capacity."
+    },
+    {
+      "id": "we-od-4",
+      "title": "Democracy and Social Diversity",
+      "topic": "Evaluation",
+      "problem": "How does democracy accommodate social diversity? Explain with two examples.",
+      "solution": [
+        "Step 1: Democracy allows groups to express demands through elections and public debate.",
+        "Step 2: Federalism gives regional and linguistic groups a share in power.",
+        "Step 3: Minority rights and courts protect groups from discrimination.",
+        "Step 4: Example one: linguistic states allowed language communities to govern themselves.",
+        "Step 5: Example two: reserved constituencies give Scheduled Castes and Scheduled Tribes representation.",
+        "Step 6: Conclude that democracy manages diversity when rights and power sharing are strong."
+      ],
+      "board_mode": [
+        "State the general principle first.",
+        "Give two concrete examples from Indian politics.",
+        "Add a caution about majoritarianism."
+      ],
+      "answer": "Democracy accommodates diversity through elections, federalism, minority rights and representation; linguistic states and reserved constituencies are examples.",
+      "board_tip": "The caution about majoritarianism shows a higher level of analysis."
+    },
+    {
+      "id": "we-od-5",
+      "title": "Dignity and Freedom in a Democracy",
+      "topic": "Explanation",
+      "problem": "How does democracy promote dignity and freedom? Give examples and one limitation.",
+      "solution": [
+        "Step 1: Democracy recognises equal citizenship regardless of birth, caste, religion or gender.",
+        "Step 2: It protects freedom of expression and the right to dissent.",
+        "Step 3: It allows citizens to form associations, unions and movements.",
+        "Step 4: Example: Dalit and women's movements have used democratic rights to demand equality.",
+        "Step 5: Limitation: legal rights do not automatically end social discrimination or violence.",
+        "Step 6: Conclude that democracy creates the space for dignity claims but does not fully achieve them."
+      ],
+      "board_mode": [
+        "Give the principle, then examples, then a limitation.",
+        "Do not claim that democracy has ended all discrimination.",
+        "Link dignity to equal citizenship and freedom of expression."
+      ],
+      "answer": "Democracy promotes dignity through equal citizenship and freedoms, and movements have used these rights; however, social discrimination persists despite legal equality.",
+      "board_tip": "A limitation is expected in a higher-order answer; do not write only achievements."
+    }
+  ],
+  "exercises": {
+    "exercise_1_1": {
+      "title": "Foundation Questions on Outcomes of Democracy",
+      "objective": "Recall the main outcomes and basic concepts",
+      "problems": [
+        {
+          "id": "od-ex1-1",
+          "question": "What is meant by accountability in a democracy?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Accountability means citizens can question the government and demand explanations.",
+            "Step 2: They can remove a government through elections.",
+            "Step 3: Courts, media and the opposition also hold the government responsible."
+          ],
+          "final_answer": "Accountability means the government must answer to citizens and can be removed or challenged for its decisions."
+        },
+        {
+          "id": "od-ex1-2",
+          "question": "What is transparency?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Transparency means citizens can examine how decisions are made.",
+            "Step 2: They can also see how public money is spent.",
+            "Step 3: It reduces secrecy and corruption."
+          ],
+          "final_answer": "Transparency is the openness of government decision making and spending to public scrutiny."
+        },
+        {
+          "id": "od-ex1-3",
+          "question": "What is the Right to Information Act?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: It is a law passed in 2005.",
+            "Step 2: It gives citizens a legal right to seek information from public authorities.",
+            "Step 3: It is a tool for transparency and accountability."
+          ],
+          "final_answer": "The Right to Information Act, 2005 gives citizens the legal right to obtain information from public authorities."
+        },
+        {
+          "id": "od-ex1-4",
+          "question": "What is legitimacy?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Legitimacy means rule based on the consent of citizens.",
+            "Step 2: It also requires constitutional procedures.",
+            "Step 3: A legitimate government is accepted as rightful."
+          ],
+          "final_answer": "Legitimacy is the acceptance of a government as rightful because it is based on consent and constitutional rules."
+        },
+        {
+          "id": "od-ex1-5",
+          "question": "Does democracy guarantee economic equality?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Democracy guarantees political equality, not economic equality.",
+            "Step 2: Inequalities of income and wealth persist.",
+            "Step 3: Democracies can reduce inequality through policy, but they do not automatically produce equal outcomes."
+          ],
+          "final_answer": "No. Democracy provides political equality and tools for redistribution, but it does not guarantee economic equality."
+        },
+        {
+          "id": "od-ex1-6",
+          "question": "Name two challenges to democracy.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Corruption is a major challenge.",
+            "Step 2: Criminalisation of politics and money power are also challenges.",
+            "Step 3: Majoritarianism and fake news can weaken democracy too."
+          ],
+          "final_answer": "Corruption, criminalisation of politics, money power, fake news and majoritarianism are major challenges."
+        }
+      ]
+    },
+    "exercise_1_2": {
+      "title": "Evaluating Democratic Outcomes",
+      "objective": "Explain transparency, growth, inequality, diversity and dignity",
+      "problems": [
+        {
+          "id": "od-ex2-1",
+          "question": "How does transparency improve democracy?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Citizens can see how decisions are made and money is spent.",
+            "Step 2: This makes officials answerable and reduces corruption.",
+            "Step 3: It builds trust and improves the quality of public debate.",
+            "Step 4: RTI, social audits and a free media support transparency."
+          ],
+          "final_answer": "Transparency makes officials answerable, reduces corruption and builds trust by opening decisions and spending to public scrutiny."
+        },
+        {
+          "id": "od-ex2-2",
+          "question": "Explain democracy's record on economic growth.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Democracies do not automatically grow faster.",
+            "Step 2: Some dictatorships have had slightly higher short-term growth.",
+            "Step 3: The difference is not large or consistent.",
+            "Step 4: India has grown faster after the 1990s reforms.",
+            "Step 5: Growth depends on policy, investment, education and global conditions."
+          ],
+          "final_answer": "Democracies neither guarantee nor consistently prevent growth; their record is mixed and depends on policy and conditions."
+        },
+        {
+          "id": "od-ex2-3",
+          "question": "Why does economic inequality persist in democracies?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Political equality does not create economic equality.",
+            "Step 2: Wealthy groups influence policy and media.",
+            "Step 3: Poor citizens lack resources and access.",
+            "Step 4: Historical disadvantages persist.",
+            "Step 5: Redistribution needs political will and administrative capacity."
+          ],
+          "final_answer": "Inequality persists because political equality is not economic equality, wealth influences policy and historical disadvantage continues."
+        },
+        {
+          "id": "od-ex2-4",
+          "question": "How does democracy accommodate social diversity?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Elections allow groups to express demands peacefully.",
+            "Step 2: Federalism shares power among regions.",
+            "Step 3: Minority rights and courts protect groups.",
+            "Step 4: Reserved representation includes disadvantaged groups.",
+            "Step 5: Democracy turns some conflicts into political competition."
+          ],
+          "final_answer": "Democracy accommodates diversity through elections, federalism, rights protection and representation, though majoritarianism can undermine it."
+        },
+        {
+          "id": "od-ex2-5",
+          "question": "How does democracy promote dignity and freedom?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: It recognises equal citizenship.",
+            "Step 2: It protects freedom of expression and dissent.",
+            "Step 3: It allows associations, unions and movements.",
+            "Step 4: Disadvantaged groups have used these rights to demand equality.",
+            "Step 5: Legal rights do not automatically end social discrimination."
+          ],
+          "final_answer": "Democracy promotes dignity through equal citizenship and freedoms, and movements use these rights, though social discrimination persists."
+        },
+        {
+          "id": "od-ex2-6",
+          "question": "Why is democracy better than dictatorship in handling social conflicts?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Democracy provides peaceful channels for demands.",
+            "Step 2: Elections and federalism allow negotiation.",
+            "Step 3: Courts and rights protect minorities.",
+            "Step 4: Dictatorship suppresses conflict, which can later explode.",
+            "Step 5: Democracy does not eliminate conflict but manages it."
+          ],
+          "final_answer": "Democracy manages conflict through elections, negotiation, federalism and rights, while dictatorship suppresses it and risks violent eruption."
+        }
+      ]
+    },
+    "exercise_1_3": {
+      "title": "Evaluation and Case-Based Questions",
+      "objective": "Assess democracy's outcomes and challenges",
+      "problems": [
+        {
+          "id": "od-ex3-1",
+          "question": "Democracy is better than any other form of government. Evaluate this statement.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Democracy is more accountable because citizens can remove governments.",
+            "Step 2: It is more legitimate because it rests on consent.",
+            "Step 3: It protects dignity, freedom and the right to dissent.",
+            "Step 4: It manages social diversity better than dictatorship.",
+            "Step 5: It can correct its mistakes through elections and courts.",
+            "Step 6: Conclude that democracy is better overall, though it is imperfect and needs reform."
+          ],
+          "final_answer": "Democracy is better in accountability, legitimacy, dignity and conflict management, but it is not perfect and must be continuously improved."
+        },
+        {
+          "id": "od-ex3-2",
+          "question": "Democracy has not reduced economic inequality significantly. Discuss.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Democracies have reduced some absolute poverty through public services.",
+            "Step 2: Yet income and wealth gaps remain large.",
+            "Step 3: Wealthy groups influence policy and elections.",
+            "Step 4: Poor citizens lack equal access to decision makers.",
+            "Step 5: Redistribution depends on political will and state capacity.",
+            "Step 6: Conclude that democracy creates tools for redistribution but does not guarantee equal outcomes."
+          ],
+          "final_answer": "The statement is largely true: democracies have helped some poor citizens but have not significantly closed economic gaps."
+        },
+        {
+          "id": "od-ex3-3",
+          "question": "Explain how democracy can both accommodate and inflame social divisions.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Democracy accommodates divisions through elections, federalism and rights.",
+            "Step 2: It lets groups press demands peacefully.",
+            "Step 3: But parties may mobilise identity for votes.",
+            "Step 4: Majoritarianism can exclude minorities.",
+            "Step 5: Communal politics can turn diversity into hostility.",
+            "Step 6: Conclude that the outcome depends on rights protection and political responsibility."
+          ],
+          "final_answer": "Democracy can accommodate diversity through participation and power sharing, but identity politics and majoritarianism can inflame divisions."
+        },
+        {
+          "id": "od-ex3-4",
+          "question": "A government refuses to disclose the details of a large contract. How can citizens use democratic tools to demand transparency?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: File a Right to Information request for the contract documents.",
+            "Step 2: Approach the media and civil society to publicise the issue.",
+            "Step 3: Ask opposition legislators to raise it in the legislature.",
+            "Step 4: Use social audits or public hearings where applicable.",
+            "Step 5: Approach the courts if information is wrongly denied.",
+            "Step 6: Conclude that transparency requires active citizens and enforceable rights."
+          ],
+          "final_answer": "Citizens can use RTI, media, opposition scrutiny, social audits and courts to demand disclosure and accountability."
+        },
+        {
+          "id": "od-ex3-5",
+          "question": "Why do some democracies fail to prevent famines while others succeed? Use the idea of accountability.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: A democratic government that ignores hunger faces electoral and public pressure.",
+            "Step 2: A free press can report shortages and force a response.",
+            "Step 3: Courts and civil society can demand relief.",
+            "Step 4: A dictatorship may suppress information and avoid blame.",
+            "Step 5: Democracy does not guarantee food security, but it creates stronger incentives to prevent starvation.",
+            "Step 6: Conclude that accountability is a key reason democracies are less likely to experience major famines."
+          ],
+          "final_answer": "Democracies are less likely to suffer major famines because governments face elections, media scrutiny and public pressure; accountability creates incentives to act."
+        },
+        {
+          "id": "od-ex3-6",
+          "question": "A country holds regular elections but the government controls the media, harasses critics and ignores court orders. Are democratic outcomes being achieved? Explain.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Elections alone do not make a democracy meaningful.",
+            "Step 2: Media control prevents citizens from getting independent information.",
+            "Step 3: Harassment of critics destroys freedom of expression and dissent.",
+            "Step 4: Ignoring court orders weakens the rule of law and accountability.",
+            "Step 5: Such a system is electoral authoritarianism, not a healthy democracy.",
+            "Step 6: Conclude that democratic outcomes require rights, transparency and checks on power, not only voting."
+          ],
+          "final_answer": "No. Elections without free media, dissent and rule of law do not produce accountability, legitimacy or dignity; they produce electoral authoritarianism."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "od-q-s-1",
+        "question": "Accountability in a democracy means:",
+        "options": [
+          "The government must answer to citizens",
+          "The government can ignore the courts",
+          "Only the army is accountable",
+          "Citizens cannot question officials"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Accountable governments must explain decisions and face elections.",
+          "wrong_options": {
+            "1": "Ignoring courts is unconstitutional.",
+            "2": "Civilian government is accountable too.",
+            "3": "Citizens can question officials."
+          }
+        }
+      },
+      {
+        "id": "od-q-s-2",
+        "question": "Transparency means:",
+        "options": [
+          "Government keeps all records secret",
+          "Only ministers can see the budget",
+          "Elections are held in secret",
+          "Government decisions and spending can be examined by citizens"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Transparency opens decisions and spending to public scrutiny.",
+          "wrong_options": {
+            "0": "Secrecy is the opposite of transparency.",
+            "1": "Citizens have a right to information.",
+            "2": "Elections are not held in secret."
+          }
+        }
+      },
+      {
+        "id": "od-q-s-3",
+        "question": "The Right to Information Act was passed in:",
+        "options": [
+          "1992",
+          "1985",
+          "2005",
+          "2019"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "The RTI Act was passed in 2005.",
+          "wrong_options": {
+            "0": "1992 is associated with local government amendments.",
+            "1": "1985 is associated with the anti-defection law.",
+            "3": "2019 is not the RTI year."
+          }
+        }
+      },
+      {
+        "id": "od-q-s-4",
+        "question": "Which of these is a democratic outcome?",
+        "options": [
+          "A government that never faces elections",
+          "An accountable and responsive government",
+          "A government that bans all criticism",
+          "A government that ignores courts"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Accountability and responsiveness are key democratic outcomes.",
+          "wrong_options": {
+            "0": "Elections are central to democracy.",
+            "2": "Criticism is protected in a democracy.",
+            "3": "Rule of law requires respecting courts."
+          }
+        }
+      },
+      {
+        "id": "od-q-s-5",
+        "question": "Democracy guarantees:",
+        "options": [
+          "Political equality",
+          "Complete economic equality",
+          "Equal income for all",
+          "No poverty"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Democracy guarantees political equality, not equal economic outcomes.",
+          "wrong_options": {
+            "1": "Economic inequality persists.",
+            "2": "Incomes are not equal.",
+            "3": "Poverty has not been eliminated."
+          }
+        }
+      },
+      {
+        "id": "od-q-s-6",
+        "question": "Which of these helps manage social diversity peacefully?",
+        "options": [
+          "Banning all political parties",
+          "Suppressing all protests",
+          "Abolishing elections",
+          "Federalism and minority rights"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Federalism and rights give groups peaceful channels for demands.",
+          "wrong_options": {
+            "0": "Parties are essential to representation.",
+            "1": "Suppression can cause conflict.",
+            "2": "Elections are central to democracy."
+          }
+        }
+      },
+      {
+        "id": "od-q-s-7",
+        "question": "Legitimacy of a democratic government comes from:",
+        "options": [
+          "Military power alone",
+          "The wealth of its leaders",
+          "The consent of citizens and constitutional procedures",
+          "Control of the media"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Legitimacy rests on consent and constitutional rules.",
+          "wrong_options": {
+            "0": "Military rule is not democratic legitimacy.",
+            "1": "Wealth does not create legitimacy.",
+            "3": "Media control does not create legitimacy."
+          }
+        }
+      },
+      {
+        "id": "od-q-s-8",
+        "question": "Which is a challenge to democracy?",
+        "options": [
+          "Free elections",
+          "Corruption",
+          "Independent courts",
+          "Free media"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Corruption undermines accountability and trust.",
+          "wrong_options": {
+            "0": "Free elections are a democratic strength.",
+            "2": "Independent courts support democracy.",
+            "3": "Free media supports democracy."
+          }
+        }
+      },
+      {
+        "id": "od-q-s-9",
+        "question": "Democracy promotes dignity by:",
+        "options": [
+          "Recognising equal citizenship and freedom",
+          "Giving more rights to the rich",
+          "Banning dissent",
+          "Abolishing the rule of law"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Equal citizenship and freedom are central to dignity.",
+          "wrong_options": {
+            "1": "Democracy is based on equal citizenship.",
+            "2": "Dissent is protected.",
+            "3": "Rule of law is essential."
+          }
+        }
+      },
+      {
+        "id": "od-q-s-10",
+        "question": "Democracies are less likely to experience major famines because:",
+        "options": [
+          "Democracies have no poverty",
+          "Dictatorships always prevent famines",
+          "Democracies do not need food policy",
+          "Governments face elections, media and public pressure"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Accountability creates incentives to prevent starvation.",
+          "wrong_options": {
+            "0": "Poverty exists in democracies.",
+            "1": "Dictatorships can be worse.",
+            "2": "Food policy is still necessary."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "od-q-m-1",
+        "question": "Which mechanism best allows citizens to hold a government accountable between elections?",
+        "options": [
+          "Waiting silently for the next election",
+          "Ignoring government decisions",
+          "Right to Information requests and media scrutiny",
+          "Avoiding courts"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "RTI and media scrutiny allow continuous accountability.",
+          "wrong_options": {
+            "0": "Elections are important but not the only mechanism.",
+            "1": "Ignoring decisions weakens accountability.",
+            "3": "Courts are a key accountability mechanism."
+          }
+        }
+      },
+      {
+        "id": "od-q-m-2",
+        "question": "Which statement about democracy and economic growth is most accurate?",
+        "options": [
+          "Democracies always grow faster",
+          "Democracies do not consistently grow faster or slower than dictatorships",
+          "Dictatorships always grow faster",
+          "Growth is unrelated to policy"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The evidence is mixed; growth depends on many factors.",
+          "wrong_options": {
+            "0": "This is a slogan, not the evidence.",
+            "2": "Dictatorships do not always grow faster.",
+            "3": "Policy matters greatly."
+          }
+        }
+      },
+      {
+        "id": "od-q-m-3",
+        "question": "Why can democracy be slower in taking economic decisions?",
+        "options": [
+          "It requires consultation, debate and accountability",
+          "It has no government",
+          "It bans all investment",
+          "It does not hold elections"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Consultation and checks can slow decisions.",
+          "wrong_options": {
+            "1": "Democracies have governments.",
+            "2": "Democracies allow investment.",
+            "3": "Elections are held."
+          }
+        }
+      },
+      {
+        "id": "od-q-m-4",
+        "question": "Which is an example of democracy accommodating diversity?",
+        "options": [
+          "Banning minority languages",
+          "Abolishing federalism",
+          "Cancelling elections",
+          "Creating linguistic states"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Linguistic states recognised language communities within the union.",
+          "wrong_options": {
+            "0": "Banning languages increases conflict.",
+            "1": "Federalism shares power.",
+            "2": "Elections are essential."
+          }
+        }
+      },
+      {
+        "id": "od-q-m-5",
+        "question": "Which outcome is most closely linked to the rule of law?",
+        "options": [
+          "Government can ignore court orders",
+          "Only citizens are bound by law",
+          "Government actions can be challenged in court",
+          "Judges are appointed by parties"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Judicial review holds government to law.",
+          "wrong_options": {
+            "0": "Ignoring courts violates the rule of law.",
+            "1": "Government is also bound by law.",
+            "3": "Judicial appointments are not party appointments."
+          }
+        }
+      },
+      {
+        "id": "od-q-m-6",
+        "question": "Which statement about inequality in democracies is correct?",
+        "options": [
+          "Economic equality automatically follows political equality",
+          "Political equality coexists with economic inequality",
+          "Democracies have no rich or poor",
+          "Inequality is illegal in democracies"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Democracies can have political equality and economic inequality at the same time.",
+          "wrong_options": {
+            "0": "Economic equality is not automatic.",
+            "2": "Rich and poor exist in democracies.",
+            "3": "Inequality is not eliminated by law alone."
+          }
+        }
+      },
+      {
+        "id": "od-q-m-7",
+        "question": "A social audit is used to:",
+        "options": [
+          "Check whether public schemes are implemented properly",
+          "Select judges",
+          "Conduct elections",
+          "Print currency"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Social audits let citizens examine the implementation of public schemes.",
+          "wrong_options": {
+            "1": "Judges are not selected by social audit.",
+            "2": "Elections are conducted by election authorities.",
+            "3": "Currency is issued by the central bank."
+          }
+        }
+      },
+      {
+        "id": "od-q-m-8",
+        "question": "Which is a limitation of democratic outcomes in practice?",
+        "options": [
+          "Democracy has no elections",
+          "Courts never function",
+          "Citizens have no rights",
+          "Corruption and money power can weaken accountability"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Corruption and money power distort representation and policy.",
+          "wrong_options": {
+            "0": "Democracies hold elections.",
+            "1": "Courts function, though they face delays.",
+            "2": "Citizens have constitutional rights."
+          }
+        }
+      },
+      {
+        "id": "od-q-m-9",
+        "question": "Why is majoritarianism a threat to democratic outcomes?",
+        "options": [
+          "It strengthens all minorities",
+          "It abolishes elections",
+          "It can ignore minority rights and weaken equal citizenship",
+          "It always reduces corruption"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Majoritarianism can turn majority rule into domination.",
+          "wrong_options": {
+            "0": "It usually harms minorities.",
+            "1": "Elections may continue, but rights are undermined.",
+            "3": "It does not automatically reduce corruption."
+          }
+        }
+      },
+      {
+        "id": "od-q-m-10",
+        "question": "Which statement best describes democracy's record on dignity?",
+        "options": [
+          "It has ended all discrimination",
+          "It has strengthened dignity claims but has not ended discrimination",
+          "It has no effect on dignity",
+          "It has reduced freedom of expression"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Democratic rights have helped disadvantaged groups, but social discrimination persists.",
+          "wrong_options": {
+            "0": "Discrimination has not ended.",
+            "2": "Democracy has a major effect on dignity.",
+            "3": "Democracy protects expression."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "od-q-x-1",
+        "question": "Which is the strongest reason democracy is better than dictatorship at preventing famines?",
+        "options": [
+          "Democratic governments face elections, media and public pressure",
+          "Democracies have no poor people",
+          "Dictatorships cannot produce food",
+          "Democracies do not need food policy"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Accountability creates incentives to prevent starvation.",
+          "wrong_options": {
+            "1": "Poverty exists in democracies.",
+            "2": "Dictatorships can produce food but may distribute it badly.",
+            "3": "Food policy is necessary in all systems."
+          }
+        }
+      },
+      {
+        "id": "od-q-x-2",
+        "question": "A government wins an election but then suppresses protests and controls the media. Which conclusion is most accurate?",
+        "options": [
+          "The country is a perfect democracy",
+          "Suppressing protests strengthens accountability",
+          "Media control improves transparency",
+          "Elections alone do not guarantee democratic outcomes"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Democracy requires rights, transparency and checks, not only elections.",
+          "wrong_options": {
+            "0": "Suppression and media control contradict democracy.",
+            "1": "Suppression weakens accountability.",
+            "2": "Media control reduces transparency."
+          }
+        }
+      },
+      {
+        "id": "od-q-x-3",
+        "question": "Which statement best evaluates democracy's economic record?",
+        "options": [
+          "It has guaranteed both growth and equality",
+          "It has always been worse than dictatorship",
+          "It has not guaranteed growth or equality, but it creates space for corrective policy",
+          "It has eliminated poverty everywhere"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Democracy is not a magic wand but allows debate and correction.",
+          "wrong_options": {
+            "0": "Neither is guaranteed.",
+            "1": "The record is mixed, not always worse.",
+            "3": "Poverty persists."
+          }
+        }
+      },
+      {
+        "id": "od-q-x-4",
+        "question": "Why can democracy inflame social divisions even while accommodating them?",
+        "options": [
+          "Democracy bans all identity",
+          "Parties may mobilise identity for votes and majority groups may dominate",
+          "Elections reduce political competition",
+          "Federalism eliminates all diversity"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Identity politics and majoritarianism can turn diversity into conflict.",
+          "wrong_options": {
+            "0": "Democracy does not ban identity.",
+            "2": "Elections increase competition.",
+            "3": "Federalism recognises diversity."
+          }
+        }
+      },
+      {
+        "id": "od-q-x-5",
+        "question": "Which is the best example of democratic transparency?",
+        "options": [
+          "A citizen obtains contract documents through RTI",
+          "A minister hides a report from parliament",
+          "A court order is ignored",
+          "A party refuses to publish its accounts"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "RTI allows citizens to examine official records.",
+          "wrong_options": {
+            "1": "Hiding reports reduces transparency.",
+            "2": "Ignoring courts violates rule of law.",
+            "3": "Refusing accounts reduces transparency."
+          }
+        }
+      },
+      {
+        "id": "od-q-x-6",
+        "question": "Which statement about legitimacy is most accurate?",
+        "options": [
+          "Election victory always creates full legitimacy",
+          "Legitimacy requires military control",
+          "Legitimacy is the same as popularity",
+          "A government can win an election but still lose legitimacy by violating rights"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Legitimacy depends on consent and constitutional conduct, not only victory.",
+          "wrong_options": {
+            "0": "Rights violations undermine legitimacy.",
+            "1": "Military control is not democratic legitimacy.",
+            "2": "Popularity is not the same as legitimacy."
+          }
+        }
+      },
+      {
+        "id": "od-q-x-7",
+        "question": "Which combination best describes democracy's contribution to dignity?",
+        "options": [
+          "Censorship, secrecy and one-party rule",
+          "Wealth-based voting and hereditary office",
+          "Equal citizenship, freedom of expression and the right to organise",
+          "Banning unions and protests"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "These rights allow people to claim dignity and equality.",
+          "wrong_options": {
+            "0": "These are authoritarian features.",
+            "1": "These are undemocratic features.",
+            "3": "These violate freedom of association."
+          }
+        }
+      },
+      {
+        "id": "od-q-x-8",
+        "question": "Which is the strongest criticism of the view that democracy always produces good economic outcomes?",
+        "options": [
+          "Democracies never hold elections",
+          "Economic inequality and poverty persist in many democracies",
+          "Democracies have no constitutions",
+          "Democracies ban private business"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Persistent inequality shows that democratic politics does not guarantee economic justice.",
+          "wrong_options": {
+            "0": "Democracies hold elections.",
+            "2": "Democracies have constitutions.",
+            "3": "Democracies allow private business."
+          }
+        }
+      },
+      {
+        "id": "od-q-x-9",
+        "question": "Which response best explains why democracy is a work in progress?",
+        "options": [
+          "Rights and institutions must be continuously defended and reformed",
+          "Democracy was completed in 1950",
+          "Elections make further reform unnecessary",
+          "Constitutions never change"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Democratic outcomes can erode, so citizens must protect and improve them.",
+          "wrong_options": {
+            "1": "Democratic institutions continue to evolve.",
+            "2": "Elections alone do not solve all problems.",
+            "3": "Constitutions can be amended."
+          }
+        }
+      },
+      {
+        "id": "od-q-x-10",
+        "question": "Which conclusion about democracy's outcomes is most balanced?",
+        "options": [
+          "Democracy solves every social and economic problem",
+          "Democracy is worse than dictatorship in every respect",
+          "Democracy has no measurable outcomes",
+          "Democracy is better than dictatorship in accountability and dignity, but it does not guarantee economic equality"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Democracy has real strengths and real limitations.",
+          "wrong_options": {
+            "0": "No system solves every problem.",
+            "1": "Democracy has important strengths.",
+            "2": "Accountability and legitimacy are measurable outcomes."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Outcomes of Democracy - Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Outcomes of Democracy",
+        "group": "core"
+      },
+      {
+        "id": "n2",
+        "label": "Accountability",
+        "group": "political"
+      },
+      {
+        "id": "n3",
+        "label": "Transparency",
+        "group": "political"
+      },
+      {
+        "id": "n4",
+        "label": "Legitimacy",
+        "group": "political"
+      },
+      {
+        "id": "n5",
+        "label": "Economic Growth",
+        "group": "economic"
+      },
+      {
+        "id": "n6",
+        "label": "Inequality",
+        "group": "economic"
+      },
+      {
+        "id": "n7",
+        "label": "Social Diversity",
+        "group": "social"
+      },
+      {
+        "id": "n8",
+        "label": "Dignity and Freedom",
+        "group": "social"
+      },
+      {
+        "id": "n9",
+        "label": "Challenges",
+        "group": "critical"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n1",
+        "n4"
+      ],
+      [
+        "n1",
+        "n5"
+      ],
+      [
+        "n1",
+        "n6"
+      ],
+      [
+        "n1",
+        "n7"
+      ],
+      [
+        "n1",
+        "n8"
+      ],
+      [
+        "n1",
+        "n9"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n5",
+        "n6"
+      ],
+      [
+        "n7",
+        "n8"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Outcomes of Democracy - Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Outcomes of Democracy",
+    "branches": [
+      {
+        "concept": "Accountable Government",
+        "sub_nodes": [
+          "Elections can remove governments",
+          "Opposition questions ministers",
+          "Courts review government action",
+          "Media and civil society investigate",
+          "RTI gives access to records"
+        ],
+        "connections": "Accountability turns power into responsibility"
+      },
+      {
+        "concept": "Transparency",
+        "sub_nodes": [
+          "Citizens can examine decisions",
+          "Public spending can be audited",
+          "RTI Act of 2005",
+          "Social audits",
+          "Secrecy and delay weaken it"
+        ]
+      },
+      {
+        "concept": "Economic Outcomes",
+        "sub_nodes": [
+          "No automatic growth advantage",
+          "Some dictatorships grew slightly faster in short periods",
+          "India grew faster after 1990s reforms",
+          "Growth depends on policy and investment",
+          "Democracy can be slower but more acceptable"
+        ]
+      },
+      {
+        "concept": "Inequality and Poverty",
+        "sub_nodes": [
+          "Political equality is not economic equality",
+          "Wealth influences policy",
+          "Public services can reduce poverty",
+          "Redistribution needs political will",
+          "Inequality is a major disappointment"
+        ]
+      },
+      {
+        "concept": "Diversity and Conflict",
+        "sub_nodes": [
+          "Elections give peaceful channels",
+          "Federalism shares power",
+          "Minority rights protect groups",
+          "Majoritarianism can undermine",
+          "Democracy manages but does not eliminate conflict"
+        ]
+      },
+      {
+        "concept": "Dignity and Challenges",
+        "sub_nodes": [
+          "Equal citizenship",
+          "Freedom of expression and dissent",
+          "Right to organise",
+          "Corruption and money power",
+          "Criminalisation and fake news",
+          "Democracy is a work in progress"
+        ]
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "Democracy automatically produces economic equality - FALSE: democracy guarantees political equality; economic inequality can persist.",
+    "Democracies always grow faster than dictatorships - FALSE: some dictatorships have had slightly faster short-term growth; the evidence is mixed.",
+    "Elections alone make a country democratic - FALSE: democracy also requires rights, rule of law, transparency and checks on power.",
+    "Transparency means every government document is public - FALSE: transparency means citizens have enforceable access to information, subject to legitimate exceptions.",
+    "Democracy always prevents social conflict - FALSE: it manages conflict through institutions but can also inflame identity politics.",
+    "Majority rule is the same as majority domination - FALSE: democratic majority rule respects rights and procedures; majoritarianism does not.",
+    "Democracy has ended caste and gender discrimination - FALSE: legal equality has improved, but social discrimination persists.",
+    "Economic growth is the only measure of democracy's success - FALSE: accountability, dignity, equality and conflict management are also outcomes."
+  ]
+}

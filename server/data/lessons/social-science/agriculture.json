@@ -1,0 +1,1322 @@
+{
+  "subject": "Geography",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 4,
+  "chapter": "Agriculture",
+  "lesson": 4,
+  "id": "agriculture",
+  "title": "Agriculture — Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Explain the importance of agriculture and the factors that influence farming",
+    "Compare primitive subsistence, intensive subsistence, commercial and plantation farming",
+    "Distinguish kharif, rabi and zaid cropping seasons",
+    "Describe the climatic and soil requirements of major Indian crops",
+    "Explain the Green Revolution and White Revolution with their benefits and limits",
+    "Define food security and describe the role of buffer stock, MSP and PDS",
+    "Evaluate the impact of globalisation on Indian agriculture",
+    "Answer board-style questions on farming systems, crops and food security"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS9_INDIA_PHYSICAL_ENVIRONMENT",
+    "SOCIAL_CLASS9_CLIMATE",
+    "SOCIAL_CLASS8_AGRICULTURE",
+    "SCIENCE_CLASS8_CROP_PRODUCTION"
+  ],
+  "concepts": [
+    {
+      "id": "concept-agriculture-importance",
+      "title": "Agriculture: Importance and Factors",
+      "name": "Agriculture: Importance and Factors",
+      "explanation": "Agriculture is a primary activity that grows crops, raises livestock and produces food, fibre and raw materials. It provides food, employment, income, raw materials for industry and export earnings. Farming depends on physical factors such as climate, soil, relief and water, and on human factors such as labour, capital, technology, markets, transport, government policy and land ownership. A change in any factor can change the cropping pattern.",
+      "purpose": "Agriculture links the environment to the economy. Understanding its factors explains why the same crop succeeds in one region and fails in another.",
+      "real_life_application": "A farmer chooses a crop based on rainfall, soil, market price, credit and labour availability. A cold storage or a road can change which crop is profitable.",
+      "key_points": [
+        "Agriculture is a primary activity producing food, fibre and raw materials.",
+        "It provides employment, income and export earnings.",
+        "Physical factors: climate, soil, relief and water.",
+        "Human factors: labour, capital, technology, markets and policy.",
+        "Land ownership and credit affect what farmers can grow.",
+        "Cropping patterns change when any factor changes."
+      ],
+      "day_to_day_usage": [
+        "Choosing a crop based on local rainfall and soil",
+        "Buying fertiliser and seeds on credit",
+        "Transporting vegetables to a nearby market",
+        "Using a cold chain to reduce spoilage",
+        "Reading minimum support price announcements"
+      ]
+    },
+    {
+      "id": "concept-farming-types",
+      "title": "Farming Systems and Types",
+      "name": "Farming Systems and Types",
+      "explanation": "Farming systems differ in land size, labour, capital and purpose. Primitive subsistence farming uses small plots, simple tools and family labour; slash-and-burn forms are called jhum in the north-east. Intensive subsistence farming uses small holdings, heavy labour, irrigation and fertiliser to get high output per hectare. Commercial farming uses large farms, machines, HYV seeds and chemicals for the market. Plantation farming grows a single crop on a large estate with capital and hired labour. Mixed farming combines crops with livestock, dairy farming focuses on milk, and cooperative farming pools land and resources.",
+      "purpose": "The type of farming explains differences in productivity, employment and environmental impact. It also helps compare regions and policy needs.",
+      "real_life_application": "A small farmer may grow several crops for family food, while a commercial farm may grow one crop for sale. A tea estate is a plantation, and a village dairy cooperative is a form of cooperative farming.",
+      "key_points": [
+        "Primitive subsistence: small plot, simple tools, family labour, low yield.",
+        "Jhum: slash-and-burn cultivation in the north-east.",
+        "Intensive subsistence: small holding, high labour, irrigation and fertiliser.",
+        "Commercial: large farm, machines, HYV seeds, market-oriented.",
+        "Plantation: single crop on a large estate with capital and hired labour.",
+        "Mixed farming combines crops and livestock; dairy focuses on milk.",
+        "Cooperative farming pools land and resources."
+      ],
+      "day_to_day_usage": [
+        "A family kitchen garden is a small subsistence plot",
+        "A village dairy cooperative collects milk daily",
+        "A tea estate grows one crop for processing",
+        "A tractor-based farm sells wheat in the mandi",
+        "A farmer keeps cattle along with crops for manure and milk"
+      ]
+    },
+    {
+      "id": "concept-cropping-seasons",
+      "title": "Cropping Seasons: Kharif, Rabi and Zaid",
+      "name": "Cropping Seasons: Kharif, Rabi and Zaid",
+      "explanation": "Indian agriculture follows three main seasons. Kharif crops are sown with the monsoon in June and harvested around September or October; examples are rice, maize, jowar, bajra, tur, cotton, jute, groundnut and soybean. Rabi crops are sown in winter from October to December and harvested in spring from April to June; examples are wheat, barley, peas, gram and mustard. Zaid is a short summer season for watermelon, muskmelon, cucumber, vegetables and fodder. The seasons depend on rainfall, temperature and irrigation.",
+      "purpose": "Seasonal planning decides seed choice, irrigation, labour and market timing. It also explains why crop failures occur when the monsoon is delayed.",
+      "real_life_application": "A farmer with irrigation can grow a zaid crop after harvesting wheat. A rain-fed farmer depends on the monsoon for the kharif crop.",
+      "key_points": [
+        "Kharif: monsoon sowing in June, harvest around September-October.",
+        "Kharif examples: rice, maize, jowar, bajra, tur, cotton, jute, groundnut, soybean.",
+        "Rabi: winter sowing October-December, harvest April-June.",
+        "Rabi examples: wheat, barley, peas, gram, mustard.",
+        "Zaid: short summer season for watermelon, muskmelon, cucumber and fodder.",
+        "Irrigation allows multiple cropping across seasons."
+      ],
+      "day_to_day_usage": [
+        "Rice fields filled by monsoon rain",
+        "Wheat sown after the monsoon withdraws",
+        "Watermelon and cucumber sold in summer",
+        "Fodder crops grown between main seasons",
+        "Crop insurance claims after a delayed monsoon"
+      ]
+    },
+    {
+      "id": "concept-food-crops",
+      "title": "Major Food Crops: Rice, Wheat, Millets, Maize and Pulses",
+      "name": "Major Food Crops: Rice, Wheat, Millets, Maize and Pulses",
+      "explanation": "Rice is a kharif crop needing about 100 cm of rainfall and high temperature; it grows on alluvial soil in Assam, West Bengal, Uttar Pradesh, Bihar, Punjab, Odisha and Andhra Pradesh. Wheat is a rabi crop needing 50 to 75 cm of rainfall and cool growing weather; it grows on alluvial soil in Punjab, Haryana, Uttar Pradesh, Madhya Pradesh and Rajasthan. Millets such as jowar, bajra and ragi are coarse grains grown in dry, rain-fed areas. Maize is a kharif crop grown on old alluvial soil. Pulses such as tur, urad, moong, masur and gram fix nitrogen and are mostly rain-fed.",
+      "purpose": "Food crops provide calories and protein for the population. Knowing their requirements helps explain regional cropping patterns and food security.",
+      "real_life_application": "A Punjabi farmer may grow wheat in winter and rice in the monsoon. A dryland farmer in Karnataka may grow ragi. A pulse crop can restore nitrogen for the next cereal.",
+      "key_points": [
+        "Rice: kharif, about 100 cm rainfall, alluvial soil, high temperature.",
+        "Wheat: rabi, 50-75 cm rainfall, cool growing season, alluvial soil.",
+        "Millets: jowar, bajra and ragi; coarse grains for dry, rain-fed areas.",
+        "Maize: kharif, old alluvial soil, moderate temperature.",
+        "Pulses: tur, urad, moong, masur and gram; nitrogen-fixing and mostly rain-fed.",
+        "India is a major producer and consumer of pulses."
+      ],
+      "day_to_day_usage": [
+        "Rice as a staple in eastern and southern India",
+        "Wheat rotis in northern India",
+        "Ragi porridge and millet rotis",
+        "Maize used as food and feed",
+        "Dal from pulses in daily meals"
+      ]
+    },
+    {
+      "id": "concept-cash-crops",
+      "title": "Cash Crops and Plantation Agriculture",
+      "name": "Cash Crops and Plantation Agriculture",
+      "explanation": "Cash crops are grown mainly for sale and industrial use. Sugarcane needs a hot, humid climate and 75 to 100 cm of rainfall; it is grown in Uttar Pradesh, Maharashtra, Karnataka and Tamil Nadu. Oilseeds include groundnut, mustard, coconut, sesamum, soybean, sunflower and castor. Tea is a plantation crop needing 150 to 300 cm of rainfall and well-drained slopes; it is grown in Assam, West Bengal, Tamil Nadu and Kerala. Coffee, mainly Arabica, grows in Karnataka, Kerala and Tamil Nadu. Cotton is a kharif crop of black soil, and jute, the golden fibre, grows on alluvial soil in West Bengal, Bihar, Assam and Odisha. Rubber grows in the humid equatorial climate of Kerala and the Andaman and Nicobar Islands.",
+      "purpose": "Cash crops raise farm income and supply raw materials to industry, but they also expose farmers to price swings and market risk.",
+      "real_life_application": "A tea garden sells leaves to a factory. A cotton farmer sells to a gin or textile mill. A sugarcane farmer supplies a sugar mill, often under a contract.",
+      "key_points": [
+        "Sugarcane: hot and humid, 75-100 cm rainfall, Uttar Pradesh and Maharashtra.",
+        "Oilseeds: groundnut, mustard, coconut, sesamum, soybean, sunflower and castor.",
+        "Tea: plantation crop, 150-300 cm rainfall, well-drained slopes, Assam and West Bengal.",
+        "Coffee: Arabica, Karnataka, Kerala and Tamil Nadu.",
+        "Cotton: kharif, black soil, Maharashtra, Gujarat and Punjab.",
+        "Jute: golden fibre, alluvial soil, West Bengal, Bihar, Assam and Odisha.",
+        "Rubber: humid equatorial climate, Kerala and Andaman and Nicobar Islands."
+      ],
+      "day_to_day_usage": [
+        "Tea from Assam and Darjeeling in daily cups",
+        "Cotton clothes from Maharashtra and Gujarat fibre",
+        "Jute bags and mats from West Bengal",
+        "Sugar from cane mills in Uttar Pradesh",
+        "Coffee from Karnataka estates"
+      ]
+    },
+    {
+      "id": "concept-revolutions-food-security",
+      "title": "Green Revolution, White Revolution, Food Security and Globalisation",
+      "name": "Green Revolution, White Revolution, Food Security and Globalisation",
+      "explanation": "The Green Revolution used high-yielding varieties, irrigation, fertiliser and mechanisation to raise wheat and rice output, especially in Punjab, Haryana and western Uttar Pradesh. It improved food availability but also caused regional imbalance, groundwater depletion, soil salinity and chemical pollution. The White Revolution, through Operation Flood and dairy cooperatives, increased milk production and rural incomes. Food security means availability, access and affordability of food; India uses buffer stocks, minimum support prices, the Public Distribution System and the National Food Security Act 2013. Globalisation since 1991 increased trade, foreign investment and contract farming, creating opportunities but also price volatility and competition for small farmers.",
+      "purpose": "These changes explain how India moved from food shortages to self-sufficiency, and what new risks appeared in the process.",
+      "real_life_application": "A family buys subsidised grain through the PDS. A dairy cooperative pays farmers for milk twice a day. A farmer may grow a contract crop for an exporter.",
+      "key_points": [
+        "Green Revolution: HYV seeds, irrigation, fertiliser and mechanisation for wheat and rice.",
+        "Benefits: higher output and food self-sufficiency.",
+        "Costs: regional imbalance, groundwater depletion, salinity and chemical pollution.",
+        "White Revolution: Operation Flood and dairy cooperatives increased milk output.",
+        "Food security has three dimensions: availability, access and affordability.",
+        "Tools: buffer stock, MSP, PDS and the National Food Security Act 2013.",
+        "Globalisation: trade, FDI and contract farming bring opportunities and risks."
+      ],
+      "day_to_day_usage": [
+        "Subsidised grain from a ration shop",
+        "Milk collected by a village dairy cooperative",
+        "Contract farming for a food-processing company",
+        "Higher wheat and rice yields on irrigated farms",
+        "News about minimum support prices before sowing"
+      ]
+    }
+  ],
+  "theorems": [],
+  "worked_examples": [
+    {
+      "id": "we-agri-1",
+      "title": "Identifying the cropping season",
+      "topic": "Cropping seasons",
+      "problem": "A farmer sows a crop in late June and harvests it in October. Another farmer sows wheat in November and harvests it in April. Identify the seasons and give two more examples of crops grown in each season.",
+      "solution": [
+        "Step 1: A crop sown with the monsoon in June and harvested in October is a kharif crop.",
+        "Step 2: Examples of kharif crops are rice, maize, jowar, bajra, tur, cotton and jute.",
+        "Step 3: A crop sown in November and harvested in April is a rabi crop.",
+        "Step 4: Examples of rabi crops are wheat, barley, peas, gram and mustard.",
+        "Step 5: Zaid is the short summer season between rabi and kharif."
+      ],
+      "board_mode": [
+        "Link sowing and harvest months to the monsoon and winter.",
+        "June-October = kharif; give two examples.",
+        "November-April = rabi; give two examples.",
+        "Mention zaid as the short summer season."
+      ],
+      "answer": "June-October is kharif (rice, maize); November-April is rabi (wheat, gram); zaid is the short summer season.",
+      "board_tip": "Remember the monsoon as the divider: kharif follows the monsoon, rabi follows its withdrawal."
+    },
+    {
+      "id": "we-agri-2",
+      "title": "Matching crops to soil and climate",
+      "topic": "Crop requirements",
+      "problem": "Match each crop with its preferred soil or climate and one major producing state: cotton, tea, rice.",
+      "solution": [
+        "Step 1: Cotton grows best on black soil, which holds moisture; Maharashtra and Gujarat are major producers.",
+        "Step 2: Tea needs 150 to 300 cm of rainfall and well-drained slopes; Assam and West Bengal are major producers.",
+        "Step 3: Rice needs about 100 cm of rainfall and alluvial soil; West Bengal and Uttar Pradesh are major producers.",
+        "Step 4: The match links each crop to its physical requirement and a leading region."
+      ],
+      "board_mode": [
+        "Write crop, soil or climate, and state in three columns.",
+        "Cotton — black soil — Maharashtra.",
+        "Tea — heavy rainfall and slopes — Assam.",
+        "Rice — about 100 cm rainfall and alluvial soil — West Bengal."
+      ],
+      "answer": "Cotton: black soil, Maharashtra; tea: heavy rainfall and slopes, Assam; rice: about 100 cm rainfall and alluvial soil, West Bengal.",
+      "board_tip": "One crop, one requirement, one state is enough for a matching answer."
+    },
+    {
+      "id": "we-agri-3",
+      "title": "Comparing farming systems",
+      "topic": "Farming types",
+      "problem": "Compare primitive subsistence farming with commercial farming.",
+      "solution": [
+        "Step 1: Primitive subsistence farming uses small plots, simple tools and family labour.",
+        "Step 2: It is mainly for family consumption and has low yields.",
+        "Step 3: Slash-and-burn is a form of primitive subsistence farming, called jhum in the north-east.",
+        "Step 4: Commercial farming uses large farms, machines, HYV seeds and chemicals.",
+        "Step 5: It is market-oriented and has higher capital investment and yields.",
+        "Step 6: The two differ in scale, technology, purpose and environmental impact."
+      ],
+      "board_mode": [
+        "Use a two-column table: scale, tools, labour, purpose, yield.",
+        "Primitive: small, simple, family, subsistence, low.",
+        "Commercial: large, machines, hired, market, high.",
+        "Add one example of each."
+      ],
+      "answer": "Primitive subsistence is small-scale, labour-intensive and for family use; commercial farming is large-scale, mechanised and market-oriented.",
+      "board_tip": "A table with four or five criteria earns marks faster than paragraphs."
+    },
+    {
+      "id": "we-agri-4",
+      "title": "Green Revolution: benefits and costs",
+      "topic": "Green Revolution",
+      "problem": "Explain the benefits and limitations of the Green Revolution in India.",
+      "solution": [
+        "Step 1: The Green Revolution used HYV seeds, irrigation, fertiliser and mechanisation.",
+        "Step 2: It raised wheat and rice output and helped India become self-sufficient in foodgrains.",
+        "Step 3: It increased farm incomes in irrigated regions such as Punjab and Haryana.",
+        "Step 4: It also widened regional inequality because rain-fed regions benefited less.",
+        "Step 5: Intensive irrigation and chemicals caused groundwater depletion, salinity and pollution.",
+        "Step 6: Monoculture increased pest and disease risk, and small farmers faced higher input costs."
+      ],
+      "board_mode": [
+        "State the package: HYV seeds, water, fertiliser, machines.",
+        "List benefits: output, self-sufficiency, incomes.",
+        "List costs: regional imbalance, groundwater, salinity, pollution.",
+        "Conclude with the need for sustainable practices."
+      ],
+      "answer": "The Green Revolution raised wheat and rice output and food security but caused regional imbalance, groundwater depletion, salinity, pollution and higher input costs.",
+      "board_tip": "Use the phrase package technology to describe HYV seeds plus water, fertiliser and machines."
+    },
+    {
+      "id": "we-agri-5",
+      "title": "Food security and the PDS",
+      "topic": "Food security",
+      "problem": "Explain how buffer stock, minimum support price and the Public Distribution System support food security.",
+      "solution": [
+        "Step 1: Food security means food is available, accessible and affordable.",
+        "Step 2: The government announces a minimum support price so farmers are assured of a floor price.",
+        "Step 3: It procures grain and keeps a buffer stock for emergencies and price stability.",
+        "Step 4: The Public Distribution System distributes subsidised grain to poor households.",
+        "Step 5: The National Food Security Act 2013 gives legal support to these entitlements.",
+        "Step 6: Together these measures link farmers, markets and vulnerable consumers."
+      ],
+      "board_mode": [
+        "Define food security in three dimensions.",
+        "Explain MSP as a price guarantee for farmers.",
+        "Explain buffer stock as emergency and price stability.",
+        "Explain PDS as subsidised distribution.",
+        "Mention the National Food Security Act 2013."
+      ],
+      "answer": "MSP supports farmers, buffer stock stabilises supply and prices, and PDS provides subsidised grain, together supporting availability, access and affordability.",
+      "board_tip": "Link each tool to one dimension of food security: MSP to availability, PDS to access, buffer stock to stability."
+    }
+  ],
+  "exercises": {
+    "simple": {
+      "title": "NCERT Practice — Agriculture Basics",
+      "objective": "Define agriculture, seasons, revolutions and food security",
+      "problems": [
+        {
+          "id": "agri-ex-s-1",
+          "question": "Define agriculture.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Agriculture is a primary activity that grows crops and raises livestock.",
+            "Step 2: It produces food, fibre and raw materials for industry.",
+            "Step 3: It provides employment and income to a large part of the population."
+          ],
+          "final_answer": "Agriculture is a primary activity that produces food, fibre and raw materials through crop cultivation and livestock rearing.",
+          "marks": 2
+        },
+        {
+          "id": "agri-ex-s-2",
+          "question": "Name the three main cropping seasons of India.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Kharif is the monsoon season.",
+            "Step 2: Rabi is the winter season.",
+            "Step 3: Zaid is the short summer season."
+          ],
+          "final_answer": "Kharif, rabi and zaid.",
+          "marks": 1
+        },
+        {
+          "id": "agri-ex-s-3",
+          "question": "Which crop is a kharif crop: wheat, rice or mustard?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Kharif crops are sown with the monsoon in June.",
+            "Step 2: Rice is a kharif crop.",
+            "Step 3: Wheat and mustard are rabi crops."
+          ],
+          "final_answer": "Rice.",
+          "marks": 1
+        },
+        {
+          "id": "agri-ex-s-4",
+          "question": "What is jhum cultivation?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Jhum is slash-and-burn cultivation practised in the north-eastern states.",
+            "Step 2: Farmers clear a patch of forest, grow crops for a few years and then move to a new patch.",
+            "Step 3: It is a form of primitive subsistence farming."
+          ],
+          "final_answer": "Jhum is slash-and-burn subsistence farming practised in north-east India.",
+          "marks": 2
+        },
+        {
+          "id": "agri-ex-s-5",
+          "question": "What is the Green Revolution?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: The Green Revolution was a strategy to raise foodgrain output.",
+            "Step 2: It used high-yielding varieties, irrigation, fertiliser and mechanisation.",
+            "Step 3: It focused mainly on wheat and rice."
+          ],
+          "final_answer": "The Green Revolution raised wheat and rice output through HYV seeds, irrigation, fertiliser and mechanisation.",
+          "marks": 2
+        },
+        {
+          "id": "agri-ex-s-6",
+          "question": "What is food security?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Food security means all people have access to sufficient, safe and nutritious food.",
+            "Step 2: It has three dimensions: availability, access and affordability.",
+            "Step 3: It requires production, distribution and purchasing power to work together."
+          ],
+          "final_answer": "Food security means sufficient food is available, accessible and affordable for all people.",
+          "marks": 2
+        }
+      ]
+    },
+    "medium": {
+      "title": "NCERT Practice — Crops and Farming",
+      "objective": "Explain seasons, farming types and major crops",
+      "problems": [
+        {
+          "id": "agri-ex-m-1",
+          "question": "Distinguish between kharif and rabi crops.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Kharif crops are sown with the monsoon in June and harvested around September-October.",
+            "Step 2: Examples are rice, maize, jowar, bajra, tur, cotton and jute.",
+            "Step 3: Rabi crops are sown in winter from October to December and harvested in April-June.",
+            "Step 4: Examples are wheat, barley, peas, gram and mustard."
+          ],
+          "final_answer": "Kharif crops grow in the monsoon (rice, maize); rabi crops grow in winter (wheat, gram).",
+          "marks": 3
+        },
+        {
+          "id": "agri-ex-m-2",
+          "question": "Explain any three factors that affect agriculture.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Climate, especially rainfall and temperature, decides which crops can grow.",
+            "Step 2: Soil fertility and texture affect yields and crop choice.",
+            "Step 3: Labour, capital and technology determine how intensively land can be farmed.",
+            "Step 4: Markets, transport and government policy also influence cropping decisions."
+          ],
+          "final_answer": "Climate, soil and human inputs such as labour, capital, technology and markets affect agriculture.",
+          "marks": 3
+        },
+        {
+          "id": "agri-ex-m-3",
+          "question": "Compare primitive subsistence farming and commercial farming.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Primitive subsistence farming uses small plots, simple tools and family labour.",
+            "Step 2: It is mainly for family consumption and has low yields.",
+            "Step 3: Commercial farming uses large farms, machines, HYV seeds and chemicals.",
+            "Step 4: It is market-oriented and has higher capital investment and yields."
+          ],
+          "final_answer": "Primitive subsistence is small-scale and family-oriented; commercial farming is large-scale, mechanised and market-oriented.",
+          "marks": 3
+        },
+        {
+          "id": "agri-ex-m-4",
+          "question": "Describe the climatic and soil requirements of rice.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Rice is a kharif crop grown in the monsoon season.",
+            "Step 2: It needs about 100 cm of rainfall and high temperature.",
+            "Step 3: It grows well on alluvial soil with assured water.",
+            "Step 4: Major producers include Assam, West Bengal, Uttar Pradesh, Bihar, Punjab, Odisha and Andhra Pradesh."
+          ],
+          "final_answer": "Rice needs about 100 cm rainfall, high temperature and alluvial soil; it is grown in Assam, West Bengal, Uttar Pradesh and other states.",
+          "marks": 3
+        },
+        {
+          "id": "agri-ex-m-5",
+          "question": "Explain the White Revolution.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: The White Revolution increased milk production in India.",
+            "Step 2: Operation Flood created a national milk grid and strengthened dairy cooperatives.",
+            "Step 3: It linked rural producers to urban markets and raised rural incomes.",
+            "Step 4: Verghese Kurien and the NDDB played a leading role, with Amul as a model."
+          ],
+          "final_answer": "The White Revolution, through Operation Flood and dairy cooperatives, increased milk production and rural incomes.",
+          "marks": 3
+        },
+        {
+          "id": "agri-ex-m-6",
+          "question": "What is the Public Distribution System?",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: The PDS distributes subsidised foodgrains to consumers.",
+            "Step 2: It aims to make food affordable for poor households.",
+            "Step 3: Fair price shops issue grain against ration cards.",
+            "Step 4: It works with government procurement and buffer stocks."
+          ],
+          "final_answer": "The PDS supplies subsidised foodgrains through fair price shops to make food affordable for poor households.",
+          "marks": 3
+        }
+      ]
+    },
+    "complex": {
+      "title": "NCERT Practice — Evaluation and Policy",
+      "objective": "Evaluate revolutions, food security and globalisation",
+      "problems": [
+        {
+          "id": "agri-ex-c-1",
+          "question": "Explain the benefits and limitations of the Green Revolution.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: It used HYV seeds, irrigation, fertiliser and mechanisation.",
+            "Step 2: It raised wheat and rice output and helped India become self-sufficient in foodgrains.",
+            "Step 3: It increased incomes in irrigated regions such as Punjab and Haryana.",
+            "Step 4: It widened regional inequality because rain-fed areas benefited less.",
+            "Step 5: It caused groundwater depletion, salinity, chemical pollution and monoculture risks.",
+            "Step 6: Small farmers faced higher input costs and debt."
+          ],
+          "final_answer": "The Green Revolution raised output and food security but caused regional imbalance, groundwater depletion, salinity, pollution and higher input costs.",
+          "marks": 5
+        },
+        {
+          "id": "agri-ex-c-2",
+          "question": "How has globalisation affected Indian agriculture? Discuss both opportunities and risks.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Liberalisation since 1991 increased trade, foreign investment and contract farming.",
+            "Step 2: Farmers gained access to export markets and new technology.",
+            "Step 3: Consumers gained more choice and processed food.",
+            "Step 4: Small farmers face competition from subsidised producers abroad.",
+            "Step 5: Prices became more volatile and quality standards became stricter.",
+            "Step 6: Policy must protect small farmers through credit, insurance, extension and cooperatives."
+          ],
+          "final_answer": "Globalisation brings export markets, technology and choice, but also competition, price volatility and quality pressure on small farmers.",
+          "marks": 5
+        },
+        {
+          "id": "agri-ex-c-3",
+          "question": "Explain how cropping patterns and food security are linked.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Cropping patterns decide which foods are produced and in what quantity.",
+            "Step 2: A shift from cereals to cash crops can raise income but reduce local food availability.",
+            "Step 3: Monoculture increases risk if a pest or weather shock hits the single crop.",
+            "Step 4: Diversification with pulses and millets improves nutrition and resilience.",
+            "Step 5: Food security therefore needs a balance of food and cash crops, plus storage and distribution."
+          ],
+          "final_answer": "Cropping patterns shape food availability and risk; a balance of cereals, pulses, millets and cash crops supports food security.",
+          "marks": 5
+        },
+        {
+          "id": "agri-ex-c-4",
+          "question": "Describe the main features of plantation agriculture with examples.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Plantation agriculture grows a single crop on a large estate.",
+            "Step 2: It needs large capital, hired labour and good transport.",
+            "Step 3: The crop is usually processed on or near the estate.",
+            "Step 4: Examples are tea in Assam and West Bengal, coffee in Karnataka, and rubber in Kerala.",
+            "Step 5: It links agriculture to industry and export markets."
+          ],
+          "final_answer": "Plantation agriculture uses large estates, capital and hired labour for a single crop such as tea, coffee or rubber, often with on-site processing.",
+          "marks": 5
+        },
+        {
+          "id": "agri-ex-c-5",
+          "question": "Why is agriculture important for India's economy and society?",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Agriculture provides food for a large population.",
+            "Step 2: It employs a large share of the workforce.",
+            "Step 3: It supplies raw materials to industries such as textiles, sugar and food processing.",
+            "Step 4: It contributes to exports and rural incomes.",
+            "Step 5: It supports rural livelihoods and reduces migration pressure.",
+            "Step 6: Stable agriculture is therefore central to food security and inclusive growth."
+          ],
+          "final_answer": "Agriculture provides food, employment, industrial raw materials, exports and rural livelihoods, making it central to food security and inclusive growth.",
+          "marks": 5
+        },
+        {
+          "id": "agri-ex-c-6",
+          "question": "Evaluate the role of MSP, buffer stock and PDS in food security.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: MSP gives farmers a price floor and encourages production.",
+            "Step 2: Procurement builds a buffer stock for shortages and price stability.",
+            "Step 3: PDS distributes subsidised grain to vulnerable households.",
+            "Step 4: The National Food Security Act 2013 gives legal backing to entitlements.",
+            "Step 5: Problems include fiscal cost, leakage, storage losses and limited reach.",
+            "Step 6: Reforms should improve targeting, storage and farmer incomes together."
+          ],
+          "final_answer": "MSP, buffer stock and PDS support availability, stability and access, but need better targeting, storage and fiscal management.",
+          "marks": 5
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-agri-s-1",
+        "question": "Which of the following is a kharif crop?",
+        "options": [
+          "Rice",
+          "Wheat",
+          "Mustard",
+          "Gram"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Rice is sown with the monsoon and harvested in autumn, so it is a kharif crop.",
+          "wrong_options": {
+            "1": "Wheat is a rabi crop.",
+            "2": "Mustard is a rabi crop.",
+            "3": "Gram is a rabi crop."
+          }
+        }
+      },
+      {
+        "id": "q-agri-s-2",
+        "question": "Which of the following is a rabi crop?",
+        "options": [
+          "Wheat",
+          "Rice",
+          "Cotton",
+          "Jute"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Wheat is sown in winter and harvested in spring, so it is a rabi crop.",
+          "wrong_options": {
+            "1": "Rice is a kharif crop.",
+            "2": "Cotton is a kharif crop.",
+            "3": "Jute is a kharif crop."
+          }
+        }
+      },
+      {
+        "id": "q-agri-s-3",
+        "question": "Jhum cultivation is a type of:",
+        "options": [
+          "Shifting cultivation",
+          "Plantation agriculture",
+          "Dairy farming",
+          "Commercial farming"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Jhum is slash-and-burn shifting cultivation practised in north-east India.",
+          "wrong_options": {
+            "1": "Plantation agriculture grows a single crop on a large estate.",
+            "2": "Dairy farming focuses on milk production.",
+            "3": "Commercial farming is large-scale and market-oriented."
+          }
+        }
+      },
+      {
+        "id": "q-agri-s-4",
+        "question": "The Green Revolution is mainly associated with:",
+        "options": [
+          "Wheat and rice",
+          "Milk",
+          "Fish",
+          "Tea"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Green Revolution focused on high-yielding wheat and rice varieties.",
+          "wrong_options": {
+            "1": "Milk is associated with the White Revolution.",
+            "2": "Fish is associated with the Blue Revolution.",
+            "3": "Tea is a plantation crop, not the focus of the Green Revolution."
+          }
+        }
+      },
+      {
+        "id": "q-agri-s-5",
+        "question": "The White Revolution is associated with:",
+        "options": [
+          "Milk production",
+          "Wheat production",
+          "Cotton production",
+          "Fish production"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The White Revolution increased milk production through Operation Flood and dairy cooperatives.",
+          "wrong_options": {
+            "1": "Wheat is associated with the Green Revolution.",
+            "2": "Cotton is a fibre crop.",
+            "3": "Fish is associated with the Blue Revolution."
+          }
+        }
+      },
+      {
+        "id": "q-agri-s-6",
+        "question": "Which of the following is a plantation crop?",
+        "options": [
+          "Tea",
+          "Wheat",
+          "Gram",
+          "Bajra"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Tea is grown on large estates as a plantation crop.",
+          "wrong_options": {
+            "1": "Wheat is a cereal crop.",
+            "2": "Gram is a pulse crop.",
+            "3": "Bajra is a millet."
+          }
+        }
+      },
+      {
+        "id": "q-agri-s-7",
+        "question": "Which soil is best for cotton?",
+        "options": [
+          "Black soil",
+          "Laterite soil",
+          "Arid soil",
+          "Forest soil"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Cotton grows well on moisture-retentive black soil.",
+          "wrong_options": {
+            "1": "Laterite soil is better for tea and coffee.",
+            "2": "Arid soil is too dry and sandy.",
+            "3": "Forest soil is not the main cotton soil."
+          }
+        }
+      },
+      {
+        "id": "q-agri-s-8",
+        "question": "Which crop fixes nitrogen in the soil?",
+        "options": [
+          "Pulses",
+          "Rice",
+          "Wheat",
+          "Sugarcane"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Pulses have nitrogen-fixing bacteria in their root nodules.",
+          "wrong_options": {
+            "1": "Rice does not fix nitrogen.",
+            "2": "Wheat does not fix nitrogen.",
+            "3": "Sugarcane does not fix nitrogen."
+          }
+        }
+      },
+      {
+        "id": "q-agri-s-9",
+        "question": "Which of the following is a zaid crop?",
+        "options": [
+          "Watermelon",
+          "Wheat",
+          "Rice",
+          "Mustard"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Watermelon is grown in the short summer zaid season.",
+          "wrong_options": {
+            "1": "Wheat is a rabi crop.",
+            "2": "Rice is a kharif crop.",
+            "3": "Mustard is a rabi crop."
+          }
+        }
+      },
+      {
+        "id": "q-agri-s-10",
+        "question": "Food security means:",
+        "options": [
+          "Availability, access and affordability of food",
+          "Only large foodgrain production",
+          "Only food exports",
+          "Only buffer stocks"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Food security requires food to be available, accessible and affordable.",
+          "wrong_options": {
+            "1": "Production alone does not ensure access.",
+            "2": "Exports do not guarantee food security.",
+            "3": "Buffer stock is one tool, not the whole definition."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-agri-m-1",
+        "question": "Rice requires about how much rainfall?",
+        "options": [
+          "100 cm",
+          "25 cm",
+          "50 cm",
+          "200 cm"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Rice needs about 100 cm of rainfall, along with high temperature.",
+          "wrong_options": {
+            "1": "25 cm is too low for rice.",
+            "2": "50 cm is closer to wheat's requirement.",
+            "3": "200 cm is more than rice generally needs."
+          }
+        }
+      },
+      {
+        "id": "q-agri-m-2",
+        "question": "Wheat requires about how much rainfall?",
+        "options": [
+          "50-75 cm",
+          "100-150 cm",
+          "200-300 cm",
+          "Less than 25 cm"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Wheat needs about 50 to 75 cm of rainfall and a cool growing season.",
+          "wrong_options": {
+            "1": "100-150 cm is closer to rice.",
+            "2": "200-300 cm is closer to tea.",
+            "3": "Less than 25 cm is too dry for wheat."
+          }
+        }
+      },
+      {
+        "id": "q-agri-m-3",
+        "question": "Tea is grown mainly in:",
+        "options": [
+          "Assam",
+          "Rajasthan",
+          "Punjab",
+          "Gujarat"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Assam is a major tea-producing state with heavy rainfall and slopes.",
+          "wrong_options": {
+            "1": "Rajasthan is dry and not a tea region.",
+            "2": "Punjab is mainly a wheat and rice region.",
+            "3": "Gujarat is mainly a cotton and groundnut region."
+          }
+        }
+      },
+      {
+        "id": "q-agri-m-4",
+        "question": "Coffee is associated with:",
+        "options": [
+          "Karnataka",
+          "Punjab",
+          "Rajasthan",
+          "Haryana"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Karnataka is a major coffee-producing state, especially the Baba Budan hills.",
+          "wrong_options": {
+            "1": "Punjab is not a coffee region.",
+            "2": "Rajasthan is too dry for coffee.",
+            "3": "Haryana is not a coffee region."
+          }
+        }
+      },
+      {
+        "id": "q-agri-m-5",
+        "question": "Jute is called the:",
+        "options": [
+          "Golden fibre",
+          "White fibre",
+          "Blue fibre",
+          "Silver fibre"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Jute is known as the golden fibre because of its colour and economic value.",
+          "wrong_options": {
+            "1": "White fibre is not the common name for jute.",
+            "2": "Blue fibre is not the common name for jute.",
+            "3": "Silver fibre is not the common name for jute."
+          }
+        }
+      },
+      {
+        "id": "q-agri-m-6",
+        "question": "Which of the following is a commercial crop?",
+        "options": [
+          "Sugarcane",
+          "Bajra",
+          "Ragi",
+          "Gram"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Sugarcane is grown mainly for sale to sugar mills and other industries.",
+          "wrong_options": {
+            "1": "Bajra is a subsistence millet.",
+            "2": "Ragi is a subsistence millet.",
+            "3": "Gram is a pulse, often grown for food."
+          }
+        }
+      },
+      {
+        "id": "q-agri-m-7",
+        "question": "Operation Flood is associated with:",
+        "options": [
+          "Milk production",
+          "Wheat production",
+          "Flood control",
+          "Fish production"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Operation Flood was the programme behind the White Revolution in milk.",
+          "wrong_options": {
+            "1": "Wheat is associated with the Green Revolution.",
+            "2": "Flood control is a dam function.",
+            "3": "Fish is associated with the Blue Revolution."
+          }
+        }
+      },
+      {
+        "id": "q-agri-m-8",
+        "question": "PDS stands for:",
+        "options": [
+          "Public Distribution System",
+          "Private Distribution System",
+          "Public Development Scheme",
+          "Price Determination System"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "PDS is the Public Distribution System of subsidised foodgrain.",
+          "wrong_options": {
+            "1": "It is a public system, not private.",
+            "2": "It is a distribution system, not a development scheme.",
+            "3": "It is not a price determination system."
+          }
+        }
+      },
+      {
+        "id": "q-agri-m-9",
+        "question": "Which of the following is a millet?",
+        "options": [
+          "Ragi",
+          "Wheat",
+          "Rice",
+          "Gram"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Ragi is a millet grown in dry, rain-fed areas.",
+          "wrong_options": {
+            "1": "Wheat is a cereal, not a millet.",
+            "2": "Rice is a cereal, not a millet.",
+            "3": "Gram is a pulse."
+          }
+        }
+      },
+      {
+        "id": "q-agri-m-10",
+        "question": "Which crop is grown mainly on black soil?",
+        "options": [
+          "Cotton",
+          "Tea",
+          "Jute",
+          "Rice"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Cotton is the classic crop of moisture-retentive black soil.",
+          "wrong_options": {
+            "1": "Tea prefers well-drained laterite slopes.",
+            "2": "Jute grows on alluvial soil.",
+            "3": "Rice grows mainly on alluvial soil."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-agri-x-1",
+        "question": "Which combination best explains the Green Revolution?",
+        "options": [
+          "HYV seeds, irrigation, fertiliser and mechanisation",
+          "Only rainfall and organic manure",
+          "Only land redistribution",
+          "Only exports"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Green Revolution was a package of HYV seeds, water, fertiliser and machines.",
+          "wrong_options": {
+            "1": "It relied on modern inputs, not only rainfall and manure.",
+            "2": "Land reform is separate from the Green Revolution package.",
+            "3": "Exports were not the core strategy."
+          }
+        }
+      },
+      {
+        "id": "q-agri-x-2",
+        "question": "A major limitation of the Green Revolution is:",
+        "options": [
+          "Regional imbalance and groundwater depletion",
+          "Too little food production",
+          "No use of irrigation",
+          "Complete failure of wheat"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Benefits concentrated in irrigated regions and intensive water use depleted groundwater.",
+          "wrong_options": {
+            "1": "It increased food production.",
+            "2": "It depended heavily on irrigation.",
+            "3": "Wheat output rose sharply."
+          }
+        }
+      },
+      {
+        "id": "q-agri-x-3",
+        "question": "Which is a feature of plantation agriculture?",
+        "options": [
+          "A single crop on a large estate",
+          "Many crops on a tiny plot",
+          "Only family labour",
+          "No processing"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Plantations grow one crop on a large estate with capital and hired labour.",
+          "wrong_options": {
+            "1": "That describes subsistence farming.",
+            "2": "Plantations rely on hired labour.",
+            "3": "Plantation crops are often processed on or near the estate."
+          }
+        }
+      },
+      {
+        "id": "q-agri-x-4",
+        "question": "Which is NOT a food security measure?",
+        "options": [
+          "Exporting all foodgrain",
+          "Buffer stock",
+          "Public Distribution System",
+          "Minimum support price"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Exporting all grain would reduce domestic availability and undermine food security.",
+          "wrong_options": {
+            "1": "Buffer stock stabilises supply.",
+            "2": "PDS improves access.",
+            "3": "MSP supports production."
+          }
+        }
+      },
+      {
+        "id": "q-agri-x-5",
+        "question": "Globalisation affects Indian agriculture mainly through:",
+        "options": [
+          "Trade liberalisation and market competition",
+          "Banning all exports",
+          "Ending all imports",
+          "Removing all technology"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Globalisation increased trade, investment and competition in agricultural markets.",
+          "wrong_options": {
+            "1": "Globalisation generally expands trade rather than banning it.",
+            "2": "It does not end imports.",
+            "3": "It encourages technology transfer."
+          }
+        }
+      },
+      {
+        "id": "q-agri-x-6",
+        "question": "Which crop is a kharif crop grown on black soil?",
+        "options": [
+          "Cotton",
+          "Wheat",
+          "Mustard",
+          "Gram"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Cotton is a kharif crop that grows well on black soil.",
+          "wrong_options": {
+            "1": "Wheat is a rabi crop.",
+            "2": "Mustard is a rabi crop.",
+            "3": "Gram is a rabi pulse."
+          }
+        }
+      },
+      {
+        "id": "q-agri-x-7",
+        "question": "Which is the correct sequence of cropping seasons in a year?",
+        "options": [
+          "Kharif → rabi → zaid",
+          "Rabi → kharif → zaid",
+          "Zaid → kharif → rabi",
+          "Kharif → zaid → rabi"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Kharif follows the monsoon, rabi follows in winter, and zaid is the short summer season.",
+          "wrong_options": {
+            "1": "Rabi follows kharif, not the other way around.",
+            "2": "Zaid comes after rabi.",
+            "3": "Zaid comes after rabi, not before it."
+          }
+        }
+      },
+      {
+        "id": "q-agri-x-8",
+        "question": "Which practice is most sustainable for soil fertility?",
+        "options": [
+          "Crop rotation with pulses",
+          "Continuous monoculture",
+          "Heavy flood irrigation",
+          "Burning crop residue"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Rotating cereals with pulses restores nitrogen and improves soil health.",
+          "wrong_options": {
+            "1": "Monoculture depletes nutrients and increases pest risk.",
+            "2": "Flood irrigation can cause waterlogging and salinity.",
+            "3": "Burning residue removes organic matter and pollutes air."
+          }
+        }
+      },
+      {
+        "id": "q-agri-x-9",
+        "question": "A major risk of monoculture is:",
+        "options": [
+          "Greater vulnerability to pests and disease",
+          "Higher crop diversity",
+          "Lower input use",
+          "Guaranteed price stability"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A single crop can be wiped out by one pest or disease outbreak.",
+          "wrong_options": {
+            "1": "Monoculture reduces diversity.",
+            "2": "It often increases chemical input use.",
+            "3": "It does not guarantee price stability."
+          }
+        }
+      },
+      {
+        "id": "q-agri-x-10",
+        "question": "Which statement about Indian agriculture is FALSE?",
+        "options": [
+          "It employs only a small share of the workforce",
+          "It provides food and raw materials",
+          "It depends on monsoon rainfall",
+          "It includes subsistence and commercial farming"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Agriculture still employs a large share of India's workforce.",
+          "wrong_options": {
+            "1": "This is true.",
+            "2": "This is true.",
+            "3": "This is true."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Agriculture — Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Agriculture",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Farming Types",
+        "group": "system"
+      },
+      {
+        "id": "n3",
+        "label": "Cropping Seasons",
+        "group": "calendar"
+      },
+      {
+        "id": "n4",
+        "label": "Food Crops",
+        "group": "crop"
+      },
+      {
+        "id": "n5",
+        "label": "Cash Crops",
+        "group": "crop"
+      },
+      {
+        "id": "n6",
+        "label": "Green Revolution",
+        "group": "transformation"
+      },
+      {
+        "id": "n7",
+        "label": "White Revolution",
+        "group": "transformation"
+      },
+      {
+        "id": "n8",
+        "label": "Food Security",
+        "group": "policy"
+      },
+      {
+        "id": "n9",
+        "label": "Globalisation",
+        "group": "policy"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n1",
+        "n4"
+      ],
+      [
+        "n1",
+        "n5"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n3",
+        "n5"
+      ],
+      [
+        "n4",
+        "n6"
+      ],
+      [
+        "n5",
+        "n9"
+      ],
+      [
+        "n6",
+        "n8"
+      ],
+      [
+        "n7",
+        "n8"
+      ],
+      [
+        "n8",
+        "n9"
+      ],
+      [
+        "n2",
+        "n4"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Agriculture — Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Agriculture",
+    "branches": [
+      {
+        "concept": "Farming Types",
+        "sub_nodes": [
+          "Primitive subsistence and jhum",
+          "Intensive subsistence",
+          "Commercial farming",
+          "Plantation agriculture",
+          "Mixed and dairy farming",
+          "Cooperative farming"
+        ],
+        "connections": "Farming type reflects land, labour, capital and purpose"
+      },
+      {
+        "concept": "Cropping Seasons",
+        "sub_nodes": [
+          "Kharif: monsoon, June-October",
+          "Rabi: winter, October-April",
+          "Zaid: short summer season",
+          "Kharif crops: rice, maize, cotton, jute",
+          "Rabi crops: wheat, gram, mustard",
+          "Zaid crops: watermelon, cucumber, fodder"
+        ],
+        "connections": "Seasonal planning decides seed, water and market timing"
+      },
+      {
+        "concept": "Food Crops",
+        "sub_nodes": [
+          "Rice: about 100 cm rainfall, alluvial soil",
+          "Wheat: 50-75 cm rainfall, cool season",
+          "Millets: jowar, bajra and ragi",
+          "Maize: kharif, old alluvial soil",
+          "Pulses: nitrogen-fixing and rain-fed",
+          "India is a major pulse producer and consumer"
+        ],
+        "connections": "Food crops provide calories and protein for the population"
+      },
+      {
+        "concept": "Cash Crops",
+        "sub_nodes": [
+          "Sugarcane: hot and humid",
+          "Oilseeds: groundnut, mustard, soybean",
+          "Tea: 150-300 cm rainfall, slopes",
+          "Coffee: Karnataka, Kerala, Tamil Nadu",
+          "Cotton: black soil, kharif",
+          "Jute: golden fibre, alluvial soil",
+          "Rubber: humid equatorial climate"
+        ],
+        "connections": "Cash crops raise income but expose farmers to market risk"
+      },
+      {
+        "concept": "Revolutions",
+        "sub_nodes": [
+          "Green Revolution: HYV seeds and irrigation",
+          "Wheat and rice output rose",
+          "Regional imbalance and groundwater depletion",
+          "White Revolution: Operation Flood",
+          "Dairy cooperatives and rural incomes",
+          "Need for sustainable practices"
+        ],
+        "connections": "Revolutions raised output but created new ecological and equity challenges"
+      },
+      {
+        "concept": "Food Security and Globalisation",
+        "sub_nodes": [
+          "Availability, access and affordability",
+          "Buffer stock and FCI",
+          "Minimum support price",
+          "Public Distribution System",
+          "National Food Security Act 2013",
+          "Trade liberalisation and contract farming"
+        ],
+        "connections": "Food security links farmers, markets and vulnerable consumers"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "Agriculture is only about growing food crops — FALSE: it also produces fibre, fodder, raw materials, milk and other livestock products.",
+    "Kharif and rabi crops are the same — FALSE: kharif crops grow in the monsoon; rabi crops grow in winter.",
+    "The Green Revolution benefited all regions equally — FALSE: benefits concentrated in irrigated regions such as Punjab and Haryana.",
+    "The Green Revolution had no environmental costs — FALSE: intensive irrigation and chemicals caused groundwater depletion, salinity and pollution.",
+    "The White Revolution was about wheat — FALSE: it was about milk production and dairy cooperatives.",
+    "Food security means only producing enough food — FALSE: food must also be accessible and affordable.",
+    "Globalisation benefits only large farmers — FALSE: it creates opportunities for some farmers and risks for others; outcomes depend on assets, information and policy.",
+    "Plantation agriculture is the same as subsistence farming — FALSE: plantations are large, capital-intensive and market-oriented."
+  ],
+  "chapterId": "agriculture",
+  "subjectId": "social-science",
+  "subjectName": "Social Science",
+  "unitId": "social-science-2",
+  "unitName": "Contemporary India - II",
+  "examWeightage": 20,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

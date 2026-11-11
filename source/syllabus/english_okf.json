@@ -1,0 +1,237 @@
+{
+  "metadata": {
+    "subject": "english",
+    "class": "X",
+    "board": "CBSE",
+    "academic_year": "2026-27",
+    "source": "CBSE Official Syllabus PDF",
+    "version": "1.0",
+    "format": "OKF-v1"
+  },
+  "course_structure": {
+    "subject": "English Language & Literature",
+    "class": "X",
+    "academic_year": "2026-27",
+    "code": "184",
+    "max_marks": 80,
+    "internal_assessment": 20
+  },
+  "knowledge_units": [
+    {
+      "id": "english_reading_skills",
+      "name": "",
+      "section": "Reading Skills",
+      "marks": 20,
+      "periods": 40,
+      "topics": [
+        {
+          "id": "english_reading_skills_topic_1",
+          "name": "Reading Comprehension (Factual, Literary, Discursive)",
+          "parent_unit": "english_reading_skills",
+          "difficulty": "medium",
+          "estimated_periods": 20,
+          "tags": [
+            "english",
+            "Reading Skills",
+            "reading_comprehension_(factual"
+          ]
+        },
+        {
+          "id": "english_reading_skills_topic_2",
+          "name": "Case-based Passages",
+          "parent_unit": "english_reading_skills",
+          "difficulty": "medium",
+          "estimated_periods": 20,
+          "tags": [
+            "english",
+            "Reading Skills",
+            "case-based_passages"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    },
+    {
+      "id": "english_writing_skills_with_grammar",
+      "name": "",
+      "section": "Writing Skills with Grammar",
+      "marks": 20,
+      "periods": 50,
+      "topics": [
+        {
+          "id": "english_writing_skills_with_grammar_topic_1",
+          "name": "Formal Letter",
+          "parent_unit": "english_writing_skills_with_grammar",
+          "difficulty": "medium",
+          "estimated_periods": 5,
+          "tags": [
+            "english",
+            "Writing Skills with Grammar",
+            "formal_letter"
+          ]
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_2",
+          "name": "Analytical Paragraph",
+          "parent_unit": "english_writing_skills_with_grammar",
+          "difficulty": "medium",
+          "estimated_periods": 5,
+          "tags": [
+            "english",
+            "Writing Skills with Grammar",
+            "analytical_paragraph"
+          ]
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_3",
+          "name": "Creative Writing",
+          "parent_unit": "english_writing_skills_with_grammar",
+          "difficulty": "medium",
+          "estimated_periods": 5,
+          "tags": [
+            "english",
+            "Writing Skills with Grammar",
+            "creative_writing"
+          ]
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_4",
+          "name": "Tenses",
+          "parent_unit": "english_writing_skills_with_grammar",
+          "difficulty": "medium",
+          "estimated_periods": 5,
+          "tags": [
+            "english",
+            "Writing Skills with Grammar",
+            "tenses"
+          ]
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_5",
+          "name": "Modals",
+          "parent_unit": "english_writing_skills_with_grammar",
+          "difficulty": "medium",
+          "estimated_periods": 5,
+          "tags": [
+            "english",
+            "Writing Skills with Grammar",
+            "modals"
+          ]
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_6",
+          "name": "Subject-Verb Concord",
+          "parent_unit": "english_writing_skills_with_grammar",
+          "difficulty": "medium",
+          "estimated_periods": 5,
+          "tags": [
+            "english",
+            "Writing Skills with Grammar",
+            "subject-verb_concord"
+          ]
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_7",
+          "name": "Reported Speech",
+          "parent_unit": "english_writing_skills_with_grammar",
+          "difficulty": "medium",
+          "estimated_periods": 5,
+          "tags": [
+            "english",
+            "Writing Skills with Grammar",
+            "reported_speech"
+          ]
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_8",
+          "name": "Clauses",
+          "parent_unit": "english_writing_skills_with_grammar",
+          "difficulty": "medium",
+          "estimated_periods": 5,
+          "tags": [
+            "english",
+            "Writing Skills with Grammar",
+            "clauses"
+          ]
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_9",
+          "name": "Determiners",
+          "parent_unit": "english_writing_skills_with_grammar",
+          "difficulty": "medium",
+          "estimated_periods": 5,
+          "tags": [
+            "english",
+            "Writing Skills with Grammar",
+            "determiners"
+          ]
+        },
+        {
+          "id": "english_writing_skills_with_grammar_topic_10",
+          "name": "Prepositions",
+          "parent_unit": "english_writing_skills_with_grammar",
+          "difficulty": "medium",
+          "estimated_periods": 5,
+          "tags": [
+            "english",
+            "Writing Skills with Grammar",
+            "prepositions"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    },
+    {
+      "id": "english_literature_textbook_and_supplementary_reading",
+      "name": "",
+      "section": "Literature Textbook & Supplementary Reading",
+      "marks": 40,
+      "periods": 90,
+      "topics": [
+        {
+          "id": "english_literature_textbook_and_supplementary_reading_topic_1",
+          "name": "First Flight - Prose",
+          "parent_unit": "english_literature_textbook_and_supplementary_reading",
+          "difficulty": "medium",
+          "estimated_periods": 30,
+          "tags": [
+            "english",
+            "Literature Textbook & Supplementary Reading",
+            "first_flight_-_prose"
+          ]
+        },
+        {
+          "id": "english_literature_textbook_and_supplementary_reading_topic_2",
+          "name": "First Flight - Poetry",
+          "parent_unit": "english_literature_textbook_and_supplementary_reading",
+          "difficulty": "medium",
+          "estimated_periods": 30,
+          "tags": [
+            "english",
+            "Literature Textbook & Supplementary Reading",
+            "first_flight_-_poetry"
+          ]
+        },
+        {
+          "id": "english_literature_textbook_and_supplementary_reading_topic_3",
+          "name": "Footprints without Feet - Supplementary",
+          "parent_unit": "english_literature_textbook_and_supplementary_reading",
+          "difficulty": "medium",
+          "estimated_periods": 30,
+          "tags": [
+            "english",
+            "Literature Textbook & Supplementary Reading",
+            "footprints_without_feet_-_supp"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    }
+  ]
+}

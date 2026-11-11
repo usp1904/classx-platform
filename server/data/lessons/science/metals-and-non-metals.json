@@ -1,0 +1,1321 @@
+{
+  "id": "metals-and-non-metals",
+  "subject": "Chemistry",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 3,
+  "chapter": "Metals and Non-metals",
+  "lesson": 3,
+  "title": "Metals and Non-metals - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Compare the physical properties of metals and non-metals",
+    "Write balanced equations for reactions of metals with oxygen, water, and dilute acids",
+    "Use the reactivity series to predict displacement reactions",
+    "Explain the formation of ionic bonds and the properties of ionic compounds",
+    "Describe the extraction of metals by roasting, calcination, reduction, and electrolytic refining",
+    "Explain corrosion and the methods used to prevent it",
+    "Describe common alloys and why they are useful",
+    "Apply metal chemistry to everyday materials and industrial processes"
+  ],
+  "prerequisite_nodes": [
+    "SCI_CLASS10_CHEMICAL_REACTIONS",
+    "SCI_CLASS9_MATTER_AROUND_US",
+    "SCI_CLASS8_METALS_AND_NONMETALS"
+  ],
+  "concepts": [
+    {
+      "id": "physical-properties",
+      "name": "Physical Properties of Metals and Non-metals",
+      "title": "Physical Properties of Metals and Non-metals",
+      "explanation": "Metals are usually lustrous, malleable, ductile, sonorous, and good conductors of heat and electricity. They generally have high melting and boiling points and are hard, although sodium and potassium are soft and mercury is a liquid at room temperature. Non-metals are usually dull, brittle, poor conductors, and not sonorous, with low melting and boiling points. Some elements are exceptions: graphite conducts electricity, iodine is lustrous, and diamond is extremely hard.",
+      "purpose": "Metals are usually lustrous, malleable, ductile, sonorous, and good conductors of heat and electricity. They generally have high melting and boiling points and are hard, although sodium and potassium are soft and mercury is a liquid at room temperature. Non-metals are usually dull, brittle, poor conductors, and not sonorous, with low melting and boiling points. Some elements are exceptions: graphite conducts electricity, iodine is lustrous, and diamond is extremely hard.",
+      "key_points": [
+        "Metals are malleable, ductile, sonorous, and good conductors.",
+        "Non-metals are generally brittle, dull, and poor conductors.",
+        "Mercury is a liquid metal at room temperature.",
+        "Graphite is a non-metal that conducts electricity."
+      ],
+      "real_life_application": "Copper wires carry electricity, aluminium foil wraps food, and graphite in pencils writes on paper.",
+      "day_to_day_usage": [
+        "Copper and aluminium wires in electrical wiring",
+        "Steel utensils and aluminium foil in the kitchen",
+        "Graphite pencil leads",
+        "Sulphur and iodine in medicines and laboratory work"
+      ]
+    },
+    {
+      "id": "chemical-properties",
+      "name": "Chemical Properties of Metals and Non-metals",
+      "title": "Chemical Properties of Metals and Non-metals",
+      "explanation": "Most metals react with oxygen to form basic oxides, although oxides such as aluminium oxide and zinc oxide are amphoteric. Reactive metals also react with water or steam to form hydroxides or oxides and release hydrogen, and many metals react with dilute acids to form a salt and hydrogen. Non-metals generally react with oxygen to form acidic oxides, which dissolve in water to give acids. The vigour of these reactions depends on the reactivity of the element.",
+      "purpose": "Most metals react with oxygen to form basic oxides, although oxides such as aluminium oxide and zinc oxide are amphoteric. Reactive metals also react with water or steam to form hydroxides or oxides and release hydrogen, and many metals react with dilute acids to form a salt and hydrogen. Non-metals generally react with oxygen to form acidic oxides, which dissolve in water to give acids. The vigour of these reactions depends on the reactivity of the element.",
+      "key_points": [
+        "Metal + oxygen -> metal oxide; most metal oxides are basic.",
+        "Reactive metals react with water or steam to release hydrogen.",
+        "Metal + dilute acid -> salt + hydrogen.",
+        "Non-metal oxides are generally acidic."
+      ],
+      "real_life_application": "Magnesium burns with a dazzling white flame, and carbon dioxide from burning carbon dissolves in rain to form weak carbonic acid.",
+      "day_to_day_usage": [
+        "Rusting and tarnishing of metal articles",
+        "Lime water reacting with carbon dioxide",
+        "Baking soda reacting with acidic ingredients",
+        "Corrosion of car bodies and bridges"
+      ]
+    },
+    {
+      "id": "reactivity-series-displacement",
+      "name": "Reactivity Series and Displacement Reactions",
+      "title": "Reactivity Series and Displacement Reactions",
+      "explanation": "The reactivity series arranges metals in order of decreasing chemical reactivity: potassium, sodium, calcium, magnesium, aluminium, zinc, iron, lead, hydrogen, copper, mercury, silver, and gold. A more reactive metal can displace a less reactive metal from its salt solution, while the reverse does not occur. Metals above hydrogen in the series displace hydrogen from dilute acids, whereas copper, silver, and gold do not. This order explains why iron displaces copper from copper sulphate and why aluminium can reduce iron oxide in the thermite reaction.",
+      "purpose": "The reactivity series arranges metals in order of decreasing chemical reactivity: potassium, sodium, calcium, magnesium, aluminium, zinc, iron, lead, hydrogen, copper, mercury, silver, and gold. A more reactive metal can displace a less reactive metal from its salt solution, while the reverse does not occur. Metals above hydrogen in the series displace hydrogen from dilute acids, whereas copper, silver, and gold do not. This order explains why iron displaces copper from copper sulphate and why aluminium can reduce iron oxide in the thermite reaction.",
+      "key_points": [
+        "Reactivity decreases from potassium to gold in the series.",
+        "A more reactive metal displaces a less reactive metal from its salt solution.",
+        "Metals above hydrogen displace hydrogen from dilute acids.",
+        "The series predicts displacement, acid reactions, and extraction methods."
+      ],
+      "real_life_application": "Iron nails dipped in copper sulphate solution become coated with reddish-brown copper because iron is more reactive than copper.",
+      "day_to_day_usage": [
+        "Copper coating on iron in displacement demonstrations",
+        "Choosing metals that resist acid attack",
+        "Thermite welding of railway tracks",
+        "Deciding which metal can protect another from corrosion"
+      ]
+    },
+    {
+      "id": "ionic-bonding",
+      "name": "Ionic Bonding in Metal Compounds",
+      "title": "Ionic Bonding in Metal Compounds",
+      "explanation": "An ionic bond forms when a metal atom loses electrons to become a positively charged cation and a non-metal atom gains those electrons to become a negatively charged anion. The oppositely charged ions are held together by strong electrostatic attraction in a giant ionic lattice. For example, sodium loses one electron and chlorine gains one to form Na+ and Cl-, giving sodium chloride. Ionic compounds usually have high melting points, dissolve in water, conduct electricity when molten or dissolved, and are brittle.",
+      "purpose": "An ionic bond forms when a metal atom loses electrons to become a positively charged cation and a non-metal atom gains those electrons to become a negatively charged anion. The oppositely charged ions are held together by strong electrostatic attraction in a giant ionic lattice. For example, sodium loses one electron and chlorine gains one to form Na+ and Cl-, giving sodium chloride. Ionic compounds usually have high melting points, dissolve in water, conduct electricity when molten or dissolved, and are brittle.",
+      "key_points": [
+        "Metals lose electrons to form cations; non-metals gain electrons to form anions.",
+        "Ionic bonds are strong electrostatic attractions between oppositely charged ions.",
+        "Ionic compounds form giant lattices, not simple molecules.",
+        "They conduct electricity when molten or in aqueous solution."
+      ],
+      "real_life_application": "Common salt, NaCl, is an ionic compound used in food; it conducts electricity when dissolved in water or melted.",
+      "day_to_day_usage": [
+        "Table salt as an ionic compound",
+        "Salt solutions conducting electricity",
+        "Brittle nature of salt crystals",
+        "Electrolytes in batteries and body fluids"
+      ]
+    },
+    {
+      "id": "extraction-metallurgy",
+      "name": "Extraction of Metals and Electrolytic Refining",
+      "title": "Extraction of Metals and Electrolytic Refining",
+      "explanation": "Most metals occur in ores combined with other elements, and the unwanted material in an ore is called gangue. The ore is first concentrated, then converted to a metal oxide by roasting a sulphide ore in air or by calcining a carbonate ore. The oxide is reduced to the metal using carbon, carbon monoxide, a more reactive metal, or electrolysis, depending on the reactivity of the metal. The crude metal is finally purified by electrolytic refining, in which the impure metal is the anode and pure metal is deposited on the cathode.",
+      "purpose": "Most metals occur in ores combined with other elements, and the unwanted material in an ore is called gangue. The ore is first concentrated, then converted to a metal oxide by roasting a sulphide ore in air or by calcining a carbonate ore. The oxide is reduced to the metal using carbon, carbon monoxide, a more reactive metal, or electrolysis, depending on the reactivity of the metal. The crude metal is finally purified by electrolytic refining, in which the impure metal is the anode and pure metal is deposited on the cathode.",
+      "key_points": [
+        "Ores are concentrated to remove gangue before extraction.",
+        "Roasting heats a sulphide ore in air; calcination heats a carbonate ore.",
+        "Reduction converts the metal oxide to the metal.",
+        "Electrolytic refining uses an impure anode and a pure cathode."
+      ],
+      "real_life_application": "Iron is extracted from haematite in a blast furnace, and copper is purified by electrolytic refining for electrical wiring.",
+      "day_to_day_usage": [
+        "Steel and iron products from extracted iron",
+        "Copper wires made from refined copper",
+        "Aluminium from electrolytic reduction of alumina",
+        "Gold and silver refined for jewellery"
+      ]
+    },
+    {
+      "id": "corrosion-alloys",
+      "name": "Corrosion and Alloys",
+      "title": "Corrosion and Alloys",
+      "explanation": "Corrosion is the slow destruction of a metal by moisture, oxygen, and other substances in the environment. Iron rusts to hydrated iron(III) oxide, silver tarnishes to black silver sulphide, and copper develops a green coating of basic copper carbonate. Corrosion can be prevented by painting, oiling, greasing, galvanising with zinc, electroplating, or alloying. An alloy is a homogeneous mixture of a metal with one or more metals or non-metals, and alloys such as brass, bronze, solder, steel, and stainless steel often have better properties than the pure metals.",
+      "purpose": "Corrosion is the slow destruction of a metal by moisture, oxygen, and other substances in the environment. Iron rusts to hydrated iron(III) oxide, silver tarnishes to black silver sulphide, and copper develops a green coating of basic copper carbonate. Corrosion can be prevented by painting, oiling, greasing, galvanising with zinc, electroplating, or alloying. An alloy is a homogeneous mixture of a metal with one or more metals or non-metals, and alloys such as brass, bronze, solder, steel, and stainless steel often have better properties than the pure metals.",
+      "key_points": [
+        "Corrosion damages metals through environmental reactions.",
+        "Rust is hydrated iron(III) oxide.",
+        "Painting, galvanising, and alloying prevent corrosion.",
+        "Alloys are homogeneous mixtures with improved properties."
+      ],
+      "real_life_application": "Galvanised iron sheets resist rust, stainless steel utensils do not rust easily, and solder is used to join electrical wires because it melts at a low temperature.",
+      "day_to_day_usage": [
+        "Galvanised buckets and roofing sheets",
+        "Stainless steel utensils and sinks",
+        "Brass taps and bronze statues",
+        "Solder in electrical and electronic joints"
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-metal-1",
+      "title": "Identifying a metal from its properties",
+      "topic": "Physical properties",
+      "problem": "A shiny solid X is malleable, ductile, and conducts electricity. It does not react with dilute hydrochloric acid. Identify whether X is likely a metal or a non-metal and explain each observation.",
+      "solution": [
+        "Step 1: Shiny appearance, malleability, ductility, and electrical conductivity are typical metal properties.",
+        "Step 2: Therefore X is likely a metal.",
+        "Step 3: The lack of reaction with dilute hydrochloric acid suggests that X is a less reactive metal below hydrogen in the reactivity series, such as copper.",
+        "Step 4: A non-metal would generally be brittle and a poor conductor, so the evidence does not support a non-metal."
+      ],
+      "board_mode": [
+        "Step 1: Shiny appearance, malleability, ductility, and electrical conductivity are typical metal properties.",
+        "Step 2: Therefore X is likely a metal.",
+        "Step 3: The lack of reaction with dilute hydrochloric acid suggests that X is a less reactive metal below hydrogen in the reactivity series, such as copper.",
+        "Step 4: A non-metal would generally be brittle and a poor conductor, so the evidence does not support a non-metal."
+      ],
+      "answer": "X is a metal, probably a less reactive one such as copper, because it is shiny, malleable, ductile, conducting, and unreactive with dilute acid.",
+      "board_tip": "Use at least three properties before concluding. One property alone, such as lustre, has exceptions."
+    },
+    {
+      "id": "we-metal-2",
+      "title": "Balanced equations for metal reactions",
+      "topic": "Chemical properties",
+      "problem": "Write balanced equations for: (i) sodium with oxygen, (ii) sodium with cold water, (iii) zinc with dilute hydrochloric acid.",
+      "solution": [
+        "Step 1: (i) Sodium forms sodium oxide: 4Na + O2 -> 2Na2O.",
+        "Step 2: (ii) Sodium reacts with water to form sodium hydroxide and hydrogen: 2Na + 2H2O -> 2NaOH + H2.",
+        "Step 3: (iii) Zinc reacts with hydrochloric acid to form zinc chloride and hydrogen: Zn + 2HCl -> ZnCl2 + H2.",
+        "Step 4: Check atoms: (i) Na 4, O 2; (ii) Na 2, H 4, O 2; (iii) Zn 1, H 2, Cl 2."
+      ],
+      "board_mode": [
+        "Step 1: (i) Sodium forms sodium oxide: 4Na + O2 -> 2Na2O.",
+        "Step 2: (ii) Sodium reacts with water to form sodium hydroxide and hydrogen: 2Na + 2H2O -> 2NaOH + H2.",
+        "Step 3: (iii) Zinc reacts with hydrochloric acid to form zinc chloride and hydrogen: Zn + 2HCl -> ZnCl2 + H2.",
+        "Step 4: Check atoms: (i) Na 4, O 2; (ii) Na 2, H 4, O 2; (iii) Zn 1, H 2, Cl 2."
+      ],
+      "answer": "(i) 4Na + O2 -> 2Na2O; (ii) 2Na + 2H2O -> 2NaOH + H2; (iii) Zn + 2HCl -> ZnCl2 + H2.",
+      "board_tip": "Balance oxygen last when it appears as O2. Check hydrogen and chlorine together in acid reactions."
+    },
+    {
+      "id": "we-metal-3",
+      "title": "Predicting displacement reactions",
+      "topic": "Reactivity series",
+      "problem": "Predict whether these reactions occur: (i) zinc added to copper sulphate solution, (ii) copper added to zinc sulphate solution. Write the equation for the reaction that occurs.",
+      "solution": [
+        "Step 1: In the reactivity series, zinc is above copper.",
+        "Step 2: Therefore zinc can displace copper from copper sulphate: Zn + CuSO4 -> ZnSO4 + Cu.",
+        "Step 3: Copper is below zinc, so copper cannot displace zinc from zinc sulphate.",
+        "Step 4: The blue colour of copper sulphate fades, and a reddish-brown copper deposit forms on the zinc."
+      ],
+      "board_mode": [
+        "Step 1: In the reactivity series, zinc is above copper.",
+        "Step 2: Therefore zinc can displace copper from copper sulphate: Zn + CuSO4 -> ZnSO4 + Cu.",
+        "Step 3: Copper is below zinc, so copper cannot displace zinc from zinc sulphate.",
+        "Step 4: The blue colour of copper sulphate fades, and a reddish-brown copper deposit forms on the zinc."
+      ],
+      "answer": "Zinc displaces copper: Zn + CuSO4 -> ZnSO4 + Cu. Copper cannot displace zinc from ZnSO4, so no reaction occurs in (ii).",
+      "board_tip": "Compare the positions of the two metals, not their physical appearances. The more reactive metal enters solution."
+    },
+    {
+      "id": "we-metal-4",
+      "title": "Ionic bond formation in sodium chloride and magnesium oxide",
+      "topic": "Ionic bonding",
+      "problem": "Show the electron transfer that forms sodium chloride and magnesium oxide. State the ions present in each compound.",
+      "solution": [
+        "Step 1: Sodium atom has one valence electron; it loses it to form Na+.",
+        "Step 2: Chlorine atom needs one electron; it gains it to form Cl-.",
+        "Step 3: The ions Na+ and Cl- attract each other and form NaCl.",
+        "Step 4: Magnesium has two valence electrons and loses both to form Mg2+.",
+        "Step 5: Oxygen needs two electrons and gains them to form O2-.",
+        "Step 6: The ions Mg2+ and O2- attract each other and form MgO; the charges balance in a 1:1 ratio."
+      ],
+      "board_mode": [
+        "Step 1: Sodium atom has one valence electron; it loses it to form Na+.",
+        "Step 2: Chlorine atom needs one electron; it gains it to form Cl-.",
+        "Step 3: The ions Na+ and Cl- attract each other and form NaCl.",
+        "Step 4: Magnesium has two valence electrons and loses both to form Mg2+.",
+        "Step 5: Oxygen needs two electrons and gains them to form O2-.",
+        "Step 6: The ions Mg2+ and O2- attract each other and form MgO; the charges balance in a 1:1 ratio."
+      ],
+      "answer": "NaCl contains Na+ and Cl-; MgO contains Mg2+ and O2-. Each compound is held together by electrostatic attraction.",
+      "board_tip": "Balance the charges, not just the atoms. Mg2+ needs one O2-, while Na+ needs one Cl-."
+    },
+    {
+      "id": "we-metal-5",
+      "title": "Extracting zinc from zinc sulphide",
+      "topic": "Metallurgy",
+      "problem": "Zinc is extracted from zinc sulphide ore. Describe the main steps and write the balanced equations for roasting and reduction.",
+      "solution": [
+        "Step 1: Concentrate the ore to remove gangue.",
+        "Step 2: Roast zinc sulphide in air to convert it to zinc oxide: 2ZnS + 3O2 -> 2ZnO + 2SO2.",
+        "Step 3: Reduce zinc oxide with carbon: ZnO + C -> Zn + CO.",
+        "Step 4: The zinc obtained is impure and is purified by electrolytic refining.",
+        "Step 5: In electrolytic refining, impure zinc is the anode and pure zinc is deposited on the cathode."
+      ],
+      "board_mode": [
+        "Step 1: Concentrate the ore to remove gangue.",
+        "Step 2: Roast zinc sulphide in air to convert it to zinc oxide: 2ZnS + 3O2 -> 2ZnO + 2SO2.",
+        "Step 3: Reduce zinc oxide with carbon: ZnO + C -> Zn + CO.",
+        "Step 4: The zinc obtained is impure and is purified by electrolytic refining.",
+        "Step 5: In electrolytic refining, impure zinc is the anode and pure zinc is deposited on the cathode."
+      ],
+      "answer": "Roast: 2ZnS + 3O2 -> 2ZnO + 2SO2; reduce: ZnO + C -> Zn + CO; then refine electrolytically.",
+      "board_tip": "Roasting is for sulphide ores and uses air; calcination is for carbonate ores and uses limited air."
+    }
+  ],
+  "exercises": {
+    "simple": {
+      "title": "Foundation Practice - Properties and Reactivity",
+      "objective": "Recall properties, equations, and the reactivity series",
+      "problems": [
+        {
+          "id": "metal-s-1",
+          "question": "State three physical properties that are typical of metals.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Metals are usually lustrous, so they have a shiny surface.",
+            "Step 2: Metals are malleable and ductile, so they can be beaten into sheets and drawn into wires.",
+            "Step 3: Metals are good conductors of heat and electricity.",
+            "Step 4: Most metals are also sonorous and have high melting points."
+          ],
+          "final_answer": "Metals are lustrous, malleable and ductile, and good conductors of heat and electricity."
+        },
+        {
+          "id": "metal-s-2",
+          "question": "Name one non-metal that conducts electricity and one non-metal that is lustrous.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Graphite is a form of carbon and conducts electricity.",
+            "Step 2: Iodine is a non-metal with a shiny, lustrous appearance.",
+            "Step 3: These are exceptions to the general properties of non-metals."
+          ],
+          "final_answer": "Graphite conducts electricity, and iodine is lustrous."
+        },
+        {
+          "id": "metal-s-3",
+          "question": "Write the balanced equation for magnesium reacting with oxygen.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Magnesium reacts with oxygen to form magnesium oxide.",
+            "Step 2: Skeletal equation: Mg + O2 -> MgO.",
+            "Step 3: Balance oxygen with 2MgO: Mg + O2 -> 2MgO.",
+            "Step 4: Balance magnesium with 2Mg: 2Mg + O2 -> 2MgO."
+          ],
+          "final_answer": "2Mg + O2 -> 2MgO."
+        },
+        {
+          "id": "metal-s-4",
+          "question": "Write the balanced equation for zinc reacting with dilute hydrochloric acid.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Zinc is above hydrogen in the reactivity series, so it displaces hydrogen.",
+            "Step 2: Skeletal equation: Zn + HCl -> ZnCl2 + H2.",
+            "Step 3: Balance chlorine and hydrogen with 2HCl.",
+            "Step 4: Zn + 2HCl -> ZnCl2 + H2."
+          ],
+          "final_answer": "Zn + 2HCl -> ZnCl2 + H2."
+        },
+        {
+          "id": "metal-s-5",
+          "question": "Arrange these metals in decreasing order of reactivity: iron, potassium, copper, zinc.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Use the reactivity series: potassium is at the top of the given metals.",
+            "Step 2: Zinc is less reactive than potassium but more reactive than iron.",
+            "Step 3: Iron is more reactive than copper.",
+            "Step 4: Decreasing order: potassium, zinc, iron, copper."
+          ],
+          "final_answer": "Potassium > zinc > iron > copper."
+        },
+        {
+          "id": "metal-s-6",
+          "question": "Define an alloy and give two examples with their compositions.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: An alloy is a homogeneous mixture of a metal with one or more metals or non-metals.",
+            "Step 2: Brass is an alloy of copper and zinc.",
+            "Step 3: Bronze is an alloy of copper and tin.",
+            "Step 4: Alloys are prepared to improve properties such as strength or resistance to corrosion."
+          ],
+          "final_answer": "An alloy is a homogeneous metallic mixture; brass is Cu + Zn, and bronze is Cu + Sn."
+        }
+      ]
+    },
+    "medium": {
+      "title": "Board Practice - Reactions, Bonding, and Extraction",
+      "objective": "Explain observations and apply metallurgical ideas",
+      "problems": [
+        {
+          "id": "metal-m-1",
+          "question": "Why is sodium stored in kerosene?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Sodium is a very reactive metal.",
+            "Step 2: It reacts vigorously with oxygen and moisture in air.",
+            "Step 3: The reaction can produce heat and even catch fire.",
+            "Step 4: Kerosene keeps air and moisture away from sodium, so it is stored under kerosene."
+          ],
+          "final_answer": "Sodium is stored in kerosene to prevent its reaction with oxygen and moisture in air."
+        },
+        {
+          "id": "metal-m-2",
+          "question": "Why does copper not react with dilute hydrochloric acid?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: A metal reacts with dilute acid only if it is above hydrogen in the reactivity series.",
+            "Step 2: Copper is below hydrogen in the reactivity series.",
+            "Step 3: Therefore copper cannot displace hydrogen from dilute hydrochloric acid.",
+            "Step 4: No reaction is observed with dilute hydrochloric acid."
+          ],
+          "final_answer": "Copper lies below hydrogen in the reactivity series, so it cannot displace hydrogen from dilute HCl."
+        },
+        {
+          "id": "metal-m-3",
+          "question": "An iron nail is dipped in copper sulphate solution. State the observation, write the balanced equation, and explain it using the reactivity series.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Iron is more reactive than copper, so it displaces copper from copper sulphate.",
+            "Step 2: Fe + CuSO4 -> FeSO4 + Cu.",
+            "Step 3: The blue colour of copper sulphate fades, and a reddish-brown coating of copper appears on the nail.",
+            "Step 4: The solution becomes pale green because iron sulphate forms."
+          ],
+          "final_answer": "Fe + CuSO4 -> FeSO4 + Cu; blue colour fades and reddish-brown copper deposits on the nail."
+        },
+        {
+          "id": "metal-m-4",
+          "question": "Explain how sodium chloride is formed by electron transfer and why it conducts electricity when molten.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Sodium loses one electron to form Na+, and chlorine gains one electron to form Cl-.",
+            "Step 2: The oppositely charged ions are held in an ionic lattice of NaCl.",
+            "Step 3: In the solid state, ions are fixed and cannot move.",
+            "Step 4: When molten, the ions become free to move and carry charge, so molten NaCl conducts electricity."
+          ],
+          "final_answer": "Na loses an electron and Cl gains it to form Na+Cl-; molten NaCl conducts because its ions are free to move."
+        },
+        {
+          "id": "metal-m-5",
+          "question": "Distinguish between roasting and calcination with one example of each.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Roasting heats a sulphide ore strongly in the presence of air.",
+            "Step 2: Example: 2ZnS + 3O2 -> 2ZnO + 2SO2.",
+            "Step 3: Calcination heats a carbonate ore in limited air to drive off carbon dioxide.",
+            "Step 4: Example: CaCO3 -> CaO + CO2."
+          ],
+          "final_answer": "Roasting: sulphide ore + air, e.g. 2ZnS + 3O2 -> 2ZnO + 2SO2. Calcination: carbonate ore, e.g. CaCO3 -> CaO + CO2."
+        },
+        {
+          "id": "metal-m-6",
+          "question": "State three methods of preventing the rusting of iron.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Paint or coat the iron surface to keep out air and moisture.",
+            "Step 2: Galvanise the iron by coating it with a layer of zinc.",
+            "Step 3: Alloy the iron to make stainless steel, which resists rusting.",
+            "Step 4: Oiling or greasing is also useful for tools and machine parts."
+          ],
+          "final_answer": "Painting, galvanising with zinc, alloying to stainless steel, and oiling or greasing prevent rusting."
+        }
+      ]
+    },
+    "complex": {
+      "title": "Application Practice - Metallurgy, Alloys, and Corrosion",
+      "objective": "Connect reactivity, extraction, and material properties",
+      "problems": [
+        {
+          "id": "metal-c-1",
+          "question": "Write the balanced equation for the thermite reaction between iron(III) oxide and aluminium. State one industrial use and explain why the reaction is highly exothermic.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Write the skeletal equation: Fe2O3 + Al -> Al2O3 + Fe.",
+            "Step 2: Balance oxygen with Al2O3 and Fe2O3: Fe2O3 + 2Al -> Al2O3 + 2Fe.",
+            "Step 3: Check atoms: Fe 2, O 3, Al 2 on both sides.",
+            "Step 4: The reaction is used to weld railway tracks and broken metal parts.",
+            "Step 5: Aluminium is more reactive than iron, so it reduces iron oxide and releases a large amount of heat, producing molten iron."
+          ],
+          "final_answer": "Fe2O3 + 2Al -> Al2O3 + 2Fe; used in thermite welding; the highly exothermic reaction produces molten iron."
+        },
+        {
+          "id": "metal-c-2",
+          "question": "Describe the extraction of iron from haematite. Write the equations for the reduction steps and explain the role of limestone.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Haematite is Fe2O3 and is reduced in a blast furnace.",
+            "Step 2: Carbon burns to form carbon dioxide, which reacts with more carbon to form carbon monoxide: C + O2 -> CO2 and CO2 + C -> 2CO.",
+            "Step 3: Carbon monoxide reduces iron(III) oxide: Fe2O3 + 3CO -> 2Fe + 3CO2.",
+            "Step 4: Limestone decomposes to calcium oxide, which removes silica as slag: CaCO3 -> CaO + CO2 and CaO + SiO2 -> CaSiO3.",
+            "Step 5: The molten iron is collected at the bottom of the furnace."
+          ],
+          "final_answer": "Fe2O3 + 3CO -> 2Fe + 3CO2; limestone forms CaO, which removes silica as calcium silicate slag."
+        },
+        {
+          "id": "metal-c-3",
+          "question": "Explain the process of electrolytic refining of copper. Identify the anode, cathode, and electrolyte, and state what happens at each electrode.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The impure copper is made the anode and a thin strip of pure copper is the cathode.",
+            "Step 2: The electrolyte is a solution of copper sulphate containing dilute sulphuric acid.",
+            "Step 3: At the anode, copper atoms lose electrons and dissolve as Cu2+ ions.",
+            "Step 4: At the cathode, Cu2+ ions gain electrons and deposit as pure copper.",
+            "Step 5: Impurities collect as anode mud, while pure copper builds up on the cathode."
+          ],
+          "final_answer": "Anode: impure Cu; cathode: pure Cu; electrolyte: CuSO4 solution. Cu dissolves at the anode and pure Cu deposits at the cathode."
+        },
+        {
+          "id": "metal-c-4",
+          "question": "Stainless steel is an alloy of iron with chromium, nickel, and carbon. State two properties improved by alloying and explain why pure iron is not used for most utensils.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Pure iron is relatively soft and rusts easily in moist air.",
+            "Step 2: Alloying with chromium and nickel improves resistance to corrosion.",
+            "Step 3: Carbon increases the hardness and strength of the alloy.",
+            "Step 4: Stainless steel is therefore stronger and more rust-resistant than pure iron.",
+            "Step 5: These properties make it suitable for utensils, sinks, and medical instruments."
+          ],
+          "final_answer": "Alloying improves corrosion resistance and strength; pure iron is soft and rusts easily, so stainless steel is preferred."
+        },
+        {
+          "id": "metal-c-5",
+          "question": "Aluminium oxide is amphoteric. Write balanced equations for its reaction with hydrochloric acid and with sodium hydroxide.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: With hydrochloric acid, aluminium oxide behaves as a base: Al2O3 + 6HCl -> 2AlCl3 + 3H2O.",
+            "Step 2: Check atoms: Al 2, O 3, H 6, Cl 6 on both sides.",
+            "Step 3: With sodium hydroxide, it behaves as an acidic oxide: Al2O3 + 2NaOH -> 2NaAlO2 + H2O.",
+            "Step 4: Check atoms: Al 2, Na 2, O 4, H 2 on both sides.",
+            "Step 5: Because it reacts with both acids and bases, Al2O3 is amphoteric."
+          ],
+          "final_answer": "Al2O3 + 6HCl -> 2AlCl3 + 3H2O; Al2O3 + 2NaOH -> 2NaAlO2 + H2O; it reacts with both acids and bases."
+        },
+        {
+          "id": "metal-c-6",
+          "question": "An iron gate near the sea rusts faster than an iron gate in a dry desert. Explain why, and suggest two suitable methods to protect the sea-side gate.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Rusting requires both oxygen and moisture.",
+            "Step 2: Sea air contains a lot of moisture and salt, which speeds up corrosion.",
+            "Step 3: A dry desert has very little moisture, so rusting is slower.",
+            "Step 4: The sea-side gate can be painted or coated with grease to block air and moisture.",
+            "Step 5: Galvanising with zinc or using stainless steel also protects the iron from corrosion."
+          ],
+          "final_answer": "Moisture and salt near the sea accelerate rusting; protect the gate by painting, greasing, galvanising, or using stainless steel."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-metal-s-1",
+        "question": "Which metal is liquid at room temperature?",
+        "options": [
+          "Mercury",
+          "Iron",
+          "Copper",
+          "Aluminium"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Mercury is the only common metal that is liquid at room temperature.",
+          "wrong_options": {
+            "1": "Iron is a solid at room temperature.",
+            "2": "Copper is a solid at room temperature.",
+            "3": "Aluminium is a solid at room temperature."
+          }
+        }
+      },
+      {
+        "id": "q-metal-s-2",
+        "question": "Which non-metal conducts electricity?",
+        "options": [
+          "Sulphur",
+          "Graphite",
+          "Iodine",
+          "Phosphorus"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Graphite is a form of carbon and conducts electricity.",
+          "wrong_options": {
+            "0": "Sulphur is a poor conductor.",
+            "2": "Iodine is lustrous but does not conduct like graphite.",
+            "3": "Phosphorus is a poor conductor."
+          }
+        }
+      },
+      {
+        "id": "q-metal-s-3",
+        "question": "The property of metals by which they can be beaten into thin sheets is called:",
+        "options": [
+          "Ductility",
+          "Malleability",
+          "Sonority",
+          "Conductivity"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Malleability is the ability to be beaten into sheets.",
+          "wrong_options": {
+            "0": "Ductility is the ability to be drawn into wires.",
+            "2": "Sonority is the ability to produce sound.",
+            "3": "Conductivity is the ability to carry heat or electricity."
+          }
+        }
+      },
+      {
+        "id": "q-metal-s-4",
+        "question": "Most metal oxides are:",
+        "options": [
+          "Acidic",
+          "Basic",
+          "Neutral",
+          "Acidic and basic at the same time"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Most metal oxides are basic, although some such as Al2O3 and ZnO are amphoteric.",
+          "wrong_options": {
+            "0": "Non-metal oxides are generally acidic.",
+            "2": "Metal oxides are not generally neutral.",
+            "3": "Only some metal oxides are amphoteric, not most."
+          }
+        }
+      },
+      {
+        "id": "q-metal-s-5",
+        "question": "Most non-metal oxides are:",
+        "options": [
+          "Basic",
+          "Acidic",
+          "Metallic",
+          "Neutral"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Non-metal oxides such as CO2 and SO2 are acidic.",
+          "wrong_options": {
+            "0": "Metal oxides are generally basic.",
+            "2": "Non-metal oxides do not have metallic character.",
+            "3": "They are generally acidic, not neutral."
+          }
+        }
+      },
+      {
+        "id": "q-metal-s-6",
+        "question": "Which metal reacts vigorously with cold water?",
+        "options": [
+          "Sodium",
+          "Copper",
+          "Gold",
+          "Silver"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Sodium is very reactive and reacts vigorously with cold water to give sodium hydroxide and hydrogen.",
+          "wrong_options": {
+            "1": "Copper does not react with cold water.",
+            "2": "Gold is very unreactive.",
+            "3": "Silver is very unreactive with water."
+          }
+        }
+      },
+      {
+        "id": "q-metal-s-7",
+        "question": "The gas produced when an active metal reacts with a dilute acid is:",
+        "options": [
+          "Oxygen",
+          "Hydrogen",
+          "Carbon dioxide",
+          "Nitrogen"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Active metals above hydrogen displace hydrogen from dilute acids.",
+          "wrong_options": {
+            "0": "Oxygen is not produced in this reaction.",
+            "2": "Carbon dioxide requires a carbonate.",
+            "3": "Nitrogen is not produced."
+          }
+        }
+      },
+      {
+        "id": "q-metal-s-8",
+        "question": "Which is the most reactive metal among these?",
+        "options": [
+          "Potassium",
+          "Sodium",
+          "Calcium",
+          "Magnesium"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Potassium is above sodium, calcium, and magnesium in the reactivity series.",
+          "wrong_options": {
+            "1": "Sodium is very reactive but less reactive than potassium.",
+            "2": "Calcium is less reactive than potassium.",
+            "3": "Magnesium is less reactive than potassium."
+          }
+        }
+      },
+      {
+        "id": "q-metal-s-9",
+        "question": "Brass is an alloy of:",
+        "options": [
+          "Copper and zinc",
+          "Copper and tin",
+          "Iron and carbon",
+          "Lead and tin"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Brass is an alloy of copper and zinc.",
+          "wrong_options": {
+            "1": "Copper and tin form bronze.",
+            "2": "Iron and carbon form steel.",
+            "3": "Lead and tin form solder."
+          }
+        }
+      },
+      {
+        "id": "q-metal-s-10",
+        "question": "Rust is chemically:",
+        "options": [
+          "Iron metal",
+          "Hydrated iron(III) oxide",
+          "Iron sulphate",
+          "Iron carbonate"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Rust is hydrated iron(III) oxide formed by iron, oxygen, and moisture.",
+          "wrong_options": {
+            "0": "Rust is a compound, not iron metal.",
+            "2": "Iron sulphate is a salt and is not rust.",
+            "3": "Iron carbonate is not the usual rust."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-metal-m-1",
+        "question": "Which metal is above hydrogen in the reactivity series?",
+        "options": [
+          "Copper",
+          "Silver",
+          "Zinc",
+          "Gold"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Zinc is above hydrogen, so it displaces hydrogen from dilute acids.",
+          "wrong_options": {
+            "0": "Copper is below hydrogen.",
+            "1": "Silver is below hydrogen.",
+            "3": "Gold is below hydrogen."
+          }
+        }
+      },
+      {
+        "id": "q-metal-m-2",
+        "question": "Which reaction will occur?",
+        "options": [
+          "Cu + ZnSO4 -> CuSO4 + Zn",
+          "Zn + CuSO4 -> ZnSO4 + Cu",
+          "Ag + CuSO4 -> AgSO4 + Cu",
+          "Au + FeSO4 -> AuSO4 + Fe"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Zinc is more reactive than copper, so it displaces copper from copper sulphate.",
+          "wrong_options": {
+            "0": "Copper is less reactive than zinc, so this cannot occur.",
+            "2": "Silver is less reactive than copper.",
+            "3": "Gold is less reactive than iron."
+          }
+        }
+      },
+      {
+        "id": "q-metal-m-3",
+        "question": "An ionic bond is formed by:",
+        "options": [
+          "Sharing of electrons only",
+          "Transfer of electrons from a metal to a non-metal",
+          "Sharing of protons",
+          "Loss of neutrons"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Ionic bonding involves electron transfer, producing oppositely charged ions.",
+          "wrong_options": {
+            "0": "Sharing electrons is characteristic of covalent bonding.",
+            "2": "Protons are not transferred in bonding.",
+            "3": "Neutrons are not involved in ionic bonding."
+          }
+        }
+      },
+      {
+        "id": "q-metal-m-4",
+        "question": "Sodium chloride conducts electricity when:",
+        "options": [
+          "It is a dry solid",
+          "It is molten or dissolved in water",
+          "It is mixed with sugar",
+          "It is kept in kerosene"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Molten or aqueous NaCl has free ions that carry charge.",
+          "wrong_options": {
+            "0": "Dry solid NaCl has fixed ions and does not conduct.",
+            "2": "Sugar does not provide free ions.",
+            "3": "Kerosene does not dissolve ionic NaCl to free ions."
+          }
+        }
+      },
+      {
+        "id": "q-metal-m-5",
+        "question": "Roasting is the process of:",
+        "options": [
+          "Heating a sulphide ore in air",
+          "Heating a carbonate ore in limited air",
+          "Cooling a metal in water",
+          "Dissolving a metal in acid"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Roasting heats a sulphide ore strongly in air to form an oxide.",
+          "wrong_options": {
+            "1": "That describes calcination.",
+            "2": "Cooling is not roasting.",
+            "3": "Dissolving is not roasting."
+          }
+        }
+      },
+      {
+        "id": "q-metal-m-6",
+        "question": "Calcination is used for:",
+        "options": [
+          "Sulphide ores",
+          "Carbonate ores",
+          "Alloys",
+          "Pure metals"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Calcination heats carbonate ores to drive off carbon dioxide and form oxides.",
+          "wrong_options": {
+            "0": "Sulphide ores are usually roasted.",
+            "2": "Alloys are not calcined.",
+            "3": "Pure metals do not need calcination."
+          }
+        }
+      },
+      {
+        "id": "q-metal-m-7",
+        "question": "In the reduction of zinc oxide by carbon, the reducing agent is:",
+        "options": [
+          "Zinc oxide",
+          "Carbon",
+          "Zinc",
+          "Carbon monoxide"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Carbon removes oxygen from zinc oxide, so carbon is the reducing agent.",
+          "wrong_options": {
+            "0": "Zinc oxide is reduced.",
+            "2": "Zinc is the product.",
+            "3": "Carbon monoxide can be a reducing agent, but in ZnO + C it is carbon."
+          }
+        }
+      },
+      {
+        "id": "q-metal-m-8",
+        "question": "Galvanisation is the coating of iron with:",
+        "options": [
+          "Copper",
+          "Zinc",
+          "Silver",
+          "Gold"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Galvanisation coats iron with zinc to prevent rusting.",
+          "wrong_options": {
+            "0": "Copper coating is not galvanisation.",
+            "2": "Silver coating is silver plating.",
+            "3": "Gold coating is gold plating."
+          }
+        }
+      },
+      {
+        "id": "q-metal-m-9",
+        "question": "Copper does not react with dilute hydrochloric acid because:",
+        "options": [
+          "Copper is above hydrogen",
+          "Copper is below hydrogen in the reactivity series",
+          "Copper is a non-metal",
+          "Copper has no electrons"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Only metals above hydrogen displace hydrogen from dilute acids.",
+          "wrong_options": {
+            "0": "Copper is below hydrogen.",
+            "2": "Copper is a metal.",
+            "3": "Copper has electrons, but it cannot displace hydrogen."
+          }
+        }
+      },
+      {
+        "id": "q-metal-m-10",
+        "question": "Which oxide is amphoteric?",
+        "options": [
+          "Sodium oxide",
+          "Aluminium oxide",
+          "Carbon dioxide",
+          "Sulphur dioxide"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Aluminium oxide reacts with both acids and bases, so it is amphoteric.",
+          "wrong_options": {
+            "0": "Sodium oxide is basic.",
+            "2": "Carbon dioxide is acidic.",
+            "3": "Sulphur dioxide is acidic."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-metal-x-1",
+        "question": "The balanced equation for the thermite reaction is:",
+        "options": [
+          "Fe2O3 + 2Al -> Al2O3 + 2Fe",
+          "Fe2O3 + Al -> Al2O3 + Fe",
+          "Fe2O3 + 3Al -> Al2O3 + 3Fe",
+          "2Fe2O3 + 2Al -> 2Al2O3 + 2Fe"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Fe2O3 + 2Al -> Al2O3 + 2Fe balances Fe 2, O 3, and Al 2.",
+          "wrong_options": {
+            "1": "Aluminium and iron are not balanced.",
+            "2": "Aluminium is not balanced; the correct coefficient is 2.",
+            "3": "This doubles iron oxide without balancing aluminium correctly."
+          }
+        }
+      },
+      {
+        "id": "q-metal-x-2",
+        "question": "In the extraction of zinc from zinc sulphide, the correct sequence is:",
+        "options": [
+          "Concentration -> roasting -> reduction -> refining",
+          "Roasting -> concentration -> refining -> reduction",
+          "Reduction -> roasting -> concentration -> refining",
+          "Refining -> reduction -> roasting -> concentration"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The ore is concentrated first, roasted to the oxide, reduced to the metal, and then refined.",
+          "wrong_options": {
+            "1": "Concentration must come before roasting.",
+            "2": "Reduction cannot come before the ore is converted to an oxide.",
+            "3": "Refining is the final step, not the first."
+          }
+        }
+      },
+      {
+        "id": "q-metal-x-3",
+        "question": "In electrolytic refining of copper, the pure copper is deposited at the:",
+        "options": [
+          "Anode",
+          "Cathode",
+          "Salt bridge",
+          "Bottom of the electrolyte"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Cu2+ ions gain electrons at the cathode and deposit as pure copper.",
+          "wrong_options": {
+            "0": "The anode is the impure copper that dissolves.",
+            "2": "A salt bridge is not the deposition electrode.",
+            "3": "Impurities collect as anode mud, not pure copper."
+          }
+        }
+      },
+      {
+        "id": "q-metal-x-4",
+        "question": "Stainless steel contains iron along with:",
+        "options": [
+          "Chromium, nickel, and carbon",
+          "Zinc and tin",
+          "Copper and zinc",
+          "Lead and tin"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Stainless steel is an alloy of iron with chromium, nickel, and carbon.",
+          "wrong_options": {
+            "1": "Zinc and tin are not the main alloying elements of stainless steel.",
+            "2": "Copper and zinc form brass.",
+            "3": "Lead and tin form solder."
+          }
+        }
+      },
+      {
+        "id": "q-metal-x-5",
+        "question": "In the formation of magnesium oxide, magnesium:",
+        "options": [
+          "Gains two electrons and becomes Mg2-",
+          "Loses two electrons and becomes Mg2+",
+          "Gains one electron and becomes Mg+",
+          "Loses one electron and becomes Mg+"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Magnesium loses its two valence electrons to form Mg2+.",
+          "wrong_options": {
+            "0": "Metals lose electrons and form positive ions.",
+            "2": "Magnesium loses two electrons, not one.",
+            "3": "Magnesium loses two electrons, not one."
+          }
+        }
+      },
+      {
+        "id": "q-metal-x-6",
+        "question": "Which method is most suitable for protecting a large iron bridge from rust?",
+        "options": [
+          "Painting the iron surface",
+          "Washing it with water daily",
+          "Keeping it in kerosene",
+          "Heating it strongly"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Paint forms a barrier that keeps oxygen and moisture away from the iron.",
+          "wrong_options": {
+            "1": "Washing with water increases moisture contact.",
+            "2": "Kerosene is not practical for a bridge.",
+            "3": "Heating does not protect the bridge from rust."
+          }
+        }
+      },
+      {
+        "id": "q-metal-x-7",
+        "question": "Gold is considered a noble metal because it:",
+        "options": [
+          "Reacts vigorously with oxygen",
+          "Is very unreactive and occurs in the native state",
+          "Displaces hydrogen from all acids",
+          "Forms an ionic bond with oxygen easily"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Gold is very unreactive, so it is found in the native state and resists corrosion.",
+          "wrong_options": {
+            "0": "Gold does not react vigorously with oxygen.",
+            "2": "Gold is below hydrogen and does not displace hydrogen from dilute acids.",
+            "3": "Gold does not readily form an ionic oxide."
+          }
+        }
+      },
+      {
+        "id": "q-metal-x-8",
+        "question": "Solder is used to join electrical wires because it:",
+        "options": [
+          "Has a high melting point",
+          "Has a low melting point",
+          "Is a poor conductor",
+          "Contains only iron"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Solder is an alloy of lead and tin with a low melting point, so it melts easily for joints.",
+          "wrong_options": {
+            "0": "A high melting point would make soldering difficult.",
+            "2": "Solder conducts electricity adequately for joints.",
+            "3": "Solder does not contain only iron."
+          }
+        }
+      },
+      {
+        "id": "q-metal-x-9",
+        "question": "The balanced equation for sodium reacting with oxygen is:",
+        "options": [
+          "Na + O2 -> NaO2",
+          "4Na + O2 -> 2Na2O",
+          "2Na + O2 -> Na2O2",
+          "2Na + O2 -> 2NaO"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "4Na + O2 -> 2Na2O balances Na 4 and O 2.",
+          "wrong_options": {
+            "0": "NaO2 is not the product and atoms do not balance.",
+            "2": "Sodium oxide is Na2O in this reaction, not Na2O2.",
+            "3": "NaO is not the correct formula."
+          }
+        }
+      },
+      {
+        "id": "q-metal-x-10",
+        "question": "Which pair will NOT undergo a displacement reaction?",
+        "options": [
+          "Zinc and copper sulphate",
+          "Iron and copper sulphate",
+          "Copper and zinc sulphate",
+          "Aluminium and iron oxide"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Copper is less reactive than zinc, so copper cannot displace zinc from zinc sulphate.",
+          "wrong_options": {
+            "0": "Zinc displaces copper.",
+            "1": "Iron displaces copper.",
+            "3": "Aluminium reduces iron oxide in the thermite reaction."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Metals and Non-metals - Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Elements",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Metals",
+        "group": "classification"
+      },
+      {
+        "id": "n3",
+        "label": "Non-metals",
+        "group": "classification"
+      },
+      {
+        "id": "n4",
+        "label": "Physical Properties",
+        "group": "properties"
+      },
+      {
+        "id": "n5",
+        "label": "Chemical Properties",
+        "group": "properties"
+      },
+      {
+        "id": "n6",
+        "label": "Reactivity Series",
+        "group": "pattern"
+      },
+      {
+        "id": "n7",
+        "label": "Ionic Bonding",
+        "group": "structure"
+      },
+      {
+        "id": "n8",
+        "label": "Extraction and Refining",
+        "group": "industry"
+      },
+      {
+        "id": "n9",
+        "label": "Corrosion",
+        "group": "application"
+      },
+      {
+        "id": "n10",
+        "label": "Alloys",
+        "group": "application"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n2",
+        "n5"
+      ],
+      [
+        "n3",
+        "n5"
+      ],
+      [
+        "n2",
+        "n6"
+      ],
+      [
+        "n5",
+        "n6"
+      ],
+      [
+        "n2",
+        "n7"
+      ],
+      [
+        "n3",
+        "n7"
+      ],
+      [
+        "n6",
+        "n8"
+      ],
+      [
+        "n2",
+        "n9"
+      ],
+      [
+        "n9",
+        "n10"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Metals and Non-metals - Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Metals and Non-metals",
+    "branches": [
+      {
+        "concept": "Physical Properties",
+        "sub_nodes": [
+          "Metals: lustrous, malleable, ductile",
+          "Metals: sonorous and good conductors",
+          "Non-metals: brittle, dull, poor conductors",
+          "Exceptions: mercury, graphite, iodine"
+        ],
+        "connections": "Properties decide where each element is used"
+      },
+      {
+        "concept": "Chemical Properties",
+        "sub_nodes": [
+          "Metal + oxygen -> basic oxide",
+          "Metal + water or steam -> hydrogen",
+          "Metal + dilute acid -> salt + hydrogen",
+          "Non-metal oxide + water -> acid"
+        ],
+        "connections": "Reactivity controls how vigorously each element reacts"
+      },
+      {
+        "concept": "Reactivity Series",
+        "sub_nodes": [
+          "K, Na, Ca, Mg, Al, Zn, Fe, Pb, H, Cu, Hg, Ag, Au",
+          "More reactive metal displaces less reactive metal",
+          "Metals above H displace hydrogen from acids",
+          "Predicts extraction method"
+        ],
+        "connections": "Explains displacement reactions and metal extraction"
+      },
+      {
+        "concept": "Ionic Bonding",
+        "sub_nodes": [
+          "Metal loses electrons to form cations",
+          "Non-metal gains electrons to form anions",
+          "Strong electrostatic attraction",
+          "High melting point and conducts when molten"
+        ],
+        "connections": "Explains the structure and properties of salts"
+      },
+      {
+        "concept": "Extraction and Refining",
+        "sub_nodes": [
+          "Concentration removes gangue",
+          "Roasting (sulphide) and calcination (carbonate)",
+          "Reduction with C, CO, Al, or electrolysis",
+          "Electrolytic refining gives pure metal"
+        ],
+        "connections": "Turns ores into usable metals"
+      },
+      {
+        "concept": "Corrosion and Alloys",
+        "sub_nodes": [
+          "Rust is hydrated iron(III) oxide",
+          "Paint, oil, galvanise, or alloy to protect",
+          "Brass: Cu + Zn; bronze: Cu + Sn; steel: Fe + C",
+          "Alloys improve strength and corrosion resistance"
+        ],
+        "connections": "Connects metal chemistry to durable everyday materials"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    {
+      "misconception": "All metals are hard and all non-metals are soft.",
+      "correction": "Sodium and potassium are soft metals, while diamond is an extremely hard non-metal."
+    },
+    {
+      "misconception": "All metals react with water.",
+      "correction": "Reactivity varies widely; sodium reacts vigorously with cold water, iron reacts with steam, and copper does not react with water."
+    },
+    {
+      "misconception": "All metal oxides are basic.",
+      "correction": "Most are basic, but aluminium oxide and zinc oxide are amphoteric and react with both acids and bases."
+    },
+    {
+      "misconception": "A less reactive metal can displace a more reactive metal from its salt solution.",
+      "correction": "Only a more reactive metal can displace a less reactive metal from its salt solution."
+    },
+    {
+      "misconception": "Ionic compounds consist of molecules.",
+      "correction": "Ionic compounds form a giant lattice of oppositely charged ions, not discrete molecules."
+    },
+    {
+      "misconception": "Rust is pure iron(III) oxide.",
+      "correction": "Rust is hydrated iron(III) oxide, containing water in its structure."
+    },
+    {
+      "misconception": "Alloys are compounds of metals.",
+      "correction": "Alloys are homogeneous mixtures of a metal with other metals or non-metals."
+    },
+    {
+      "misconception": "Galvanisation is the same as painting.",
+      "correction": "Galvanisation coats iron with zinc, while painting forms an organic barrier; both prevent rust but by different means."
+    }
+  ],
+  "meta": {
+    "sources": [
+      "NCERT Class X Science, Chapter 3: Metals and Non-metals",
+      "NCERT Class X Science textbook activities on reactivity, ionic compounds, and corrosion",
+      "CBSE Class X Science syllabus 2026-27, Chemical Substances - Nature and Behaviour"
+    ]
+  },
+  "chapterId": "metals-and-non-metals",
+  "subjectId": "science",
+  "subjectName": "Science",
+  "unitId": "science-1",
+  "unitName": "Chemical Substances - Nature and Behaviour",
+  "examWeightage": 25,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

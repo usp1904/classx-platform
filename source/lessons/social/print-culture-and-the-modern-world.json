@@ -1,0 +1,1295 @@
+{
+  "subject": "History",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 5,
+  "chapter": "Print Culture and the Modern World",
+  "lesson": 5,
+  "id": "print-culture-and-the-modern-world",
+  "title": "Print Culture and the Modern World - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Explain how manuscript culture differed from print culture",
+    "Describe the development of woodblock printing in China, Japan and Korea",
+    "Explain Gutenberg's printing press and its technical innovations",
+    "Analyse how print contributed to the Reformation, the Enlightenment and new reading publics",
+    "Explain why states and churches tried to censor print",
+    "Trace the arrival and growth of printing in India",
+    "Evaluate the role of print in Indian social reform, women's writing and nationalism",
+    "Answer source-based and board-style questions on print culture using accurate evidence"
+  ],
+  "prerequisite_nodes": [
+    "SOC_CLASS8_EIGHTEENTH_CENTURY_POLITICAL_FORMATIONS",
+    "SOC_CLASS9_THE_FRENCH_REVOLUTION",
+    "SOC_CLASS9_SOCIALISM_IN_EUROPE_AND_RUSSIA",
+    "SOC_CLASS8_CIVILISING_THE_NATIVE_EDUCATING_THE_NATION"
+  ],
+  "concepts": [
+    {
+      "id": "manuscript-culture-and-east-asian-print",
+      "title": "Manuscript Culture and the First Printed Books in East Asia",
+      "name": "Manuscript Culture and the First Printed Books in East Asia",
+      "explanation": "Before print, books were copied by hand on palm leaves or handmade paper. Manuscripts were expensive, fragile and slow to produce, so few people owned them. The earliest print technology developed in China, Japan and Korea, where woodblocks were inked and pressed on paper.",
+      "purpose": "It shows that print did not appear from nowhere; it grew out of older manuscript practices and East Asian technologies.",
+      "real_life_application": "A handwritten family recipe book shared among relatives is closer to manuscript culture, while a printed cookbook sold in shops belongs to print culture.",
+      "key_points": [
+        "Manuscripts were handwritten, costly, fragile and limited in number.",
+        "China, Japan and Korea developed hand printing with woodblocks.",
+        "From AD 594 books in China were printed by rubbing paper on inked woodblocks.",
+        "Chinese books were folded in an accordion shape and bound between boards.",
+        "Buddhist monasteries in Japan used printing to spread religious texts.",
+        "Ukiyo-e prints made pictures cheap and popular in Japan."
+      ],
+      "day_to_day_usage": [
+        "Handwritten notes passed between classmates",
+        "A family diary or recipe book kept by hand",
+        "Printed school textbooks produced in thousands of copies",
+        "Posters and pamphlets distributed during a local campaign",
+        "Cheap picture cards and calendars sold in markets"
+      ]
+    },
+    {
+      "id": "gutenberg-and-the-printing-press",
+      "title": "Gutenberg and the Printing Press",
+      "name": "Gutenberg and the Printing Press",
+      "explanation": "Johannes Gutenberg, a German goldsmith, developed a printing press with movable metal type in the fifteenth century. He used lead moulds to cast letters, arranged them in a frame, inked the surface and pressed paper against it. His first major book was the Bible, printed in the 1450s.",
+      "purpose": "It explains the technical breakthrough that made cheap, rapid and multiple copies of a text possible in Europe.",
+      "real_life_application": "A modern printing press still uses the same basic idea: a reusable master image, ink and pressure on paper, though the technology is now digital.",
+      "key_points": [
+        "Gutenberg was a goldsmith from Mainz in Germany.",
+        "Movable metal type allowed letters to be rearranged and reused.",
+        "Lead moulds helped cast identical pieces of type.",
+        "The olive press was adapted into a printing press.",
+        "The Gutenberg Bible was produced in the 1450s in about 180 copies."
+      ],
+      "day_to_day_usage": [
+        "School worksheets reproduced from one master copy",
+        "Newspapers printed in large numbers every morning",
+        "Wedding invitation cards printed from a set design",
+        "Posters for a school function",
+        "Packaging labels printed with a brand name"
+      ]
+    },
+    {
+      "id": "print-revolution-and-reading-public",
+      "title": "The Print Revolution and the Reading Public",
+      "name": "The Print Revolution and the Reading Public",
+      "explanation": "Printing spread across Europe after Gutenberg and reduced the cost of books. It created new readers and new kinds of writing: chapbooks, ballads, almanacs, newspapers and journals. Reading was no longer confined to scholars, though many people still heard texts read aloud rather than reading them silently.",
+      "purpose": "It explains how print changed the relationship between people, knowledge and public debate.",
+      "real_life_application": "The shift from a few expensive textbooks to cheap books, newspapers and online articles follows a similar pattern of widening access.",
+      "key_points": [
+        "Print made books cheaper and more widely available.",
+        "New reading publics included merchants, artisans and literate women.",
+        "Chapbooks, ballads and almanacs mixed entertainment with information.",
+        "Newspapers and journals created regular readers and public opinion.",
+        "Oral reading continued because many people could not read."
+      ],
+      "day_to_day_usage": [
+        "Reading a daily newspaper or news app",
+        "Borrowing books from a library or book club",
+        "Sharing a viral article in a family group",
+        "Listening to an audiobook instead of reading",
+        "Buying a cheap paperback at a railway stall"
+      ]
+    },
+    {
+      "id": "religion-enlightenment-and-censorship",
+      "title": "Religion, Enlightenment and Censorship",
+      "name": "Religion, Enlightenment and Censorship",
+      "explanation": "Print enabled reformers and scientists to circulate new ideas quickly. Martin Luther's Ninety Five Theses spread through print and helped trigger the Protestant Reformation. Enlightenment thinkers used print to spread ideas of reason and science, while churches and monarchs used censorship, licensing and banned-book lists to control what was published.",
+      "purpose": "It shows print as a contested power: the same technology could spread reform, science, dissent and state control.",
+      "real_life_application": "Debates over internet censorship, banned books and fake news show that control over information is still a political struggle.",
+      "key_points": [
+        "Luther's Ninety Five Theses of 1517 spread rapidly through print.",
+        "Print helped the Protestant Reformation challenge papal authority.",
+        "The Catholic Church introduced the Index of Prohibited Books in 1558.",
+        "Enlightenment writers used print to spread reason and scientific ideas.",
+        "Censorship included licensing, confiscation and punishment of publishers."
+      ],
+      "day_to_day_usage": [
+        "Debates about banned books in schools",
+        "News about internet shutdowns or content takedowns",
+        "Fact-checking a forwarded message before sharing it",
+        "Reading about freedom of the press in civics",
+        "Watching a documentary that challenges an official account"
+      ]
+    },
+    {
+      "id": "print-comes-to-india",
+      "title": "Print Comes to India",
+      "name": "Print Comes to India",
+      "explanation": "Portuguese missionaries brought the printing press to Goa in the sixteenth century. The first Tamil book was printed at Cochin in 1579. Later, the English East India Company and private printers set up presses in Calcutta, Bombay and Madras. Newspapers and vernacular journals expanded public debate in the nineteenth century.",
+      "purpose": "It explains how a technology introduced by missionaries and colonial officials became a tool for Indian writers, reformers and nationalists.",
+      "real_life_application": "Regional-language newspapers and publishing houses continue the tradition of print in Indian public life.",
+      "key_points": [
+        "The first printing press in India was set up in Goa in 1556.",
+        "Portuguese missionaries printed religious books in Indian languages.",
+        "The first Tamil book was printed at Cochin in 1579.",
+        "The Bengal Gazette, India's first newspaper, appeared in 1780.",
+        "Vernacular newspapers and journals grew in the nineteenth century."
+      ],
+      "day_to_day_usage": [
+        "Reading a regional-language newspaper",
+        "Buying a children's magazine in a local language",
+        "Printing a community newsletter",
+        "Following a local news page on social media",
+        "Visiting a book fair with vernacular titles"
+      ]
+    },
+    {
+      "id": "print-reform-women-and-nationalism",
+      "title": "Print, Reform, Women and Nationalism",
+      "name": "Print, Reform, Women and Nationalism",
+      "explanation": "In colonial India, print became a platform for social and religious debate. Reformers such as Raja Rammohun Roy and Ishwar Chandra Vidyasagar used pamphlets and newspapers to challenge practices like sati and to support widow remarriage. Women wrote and published their experiences, while nationalist newspapers spread ideas of freedom and swadeshi.",
+      "purpose": "It shows how print helped create a public sphere in India in which reform, women's voices and nationalism could be debated.",
+      "real_life_application": "Blogs, social-media campaigns and independent news sites today perform a similar role of allowing new voices to enter public debate.",
+      "key_points": [
+        "Rammohun Roy's Sambad Kaumudi supported reform and widow remarriage.",
+        "Vidyasagar used print to campaign against child marriage and for widow remarriage.",
+        "Women such as Kailashbashini Debi and Tarabai Shinde published their views.",
+        "The Vernacular Press Act of 1878 tried to control Indian-language newspapers.",
+        "Nationalist newspapers such as Kesari spread anti-colonial ideas."
+      ],
+      "day_to_day_usage": [
+        "Reading an opinion column about a social issue",
+        "Sharing a campaign poster on women's rights",
+        "Following a regional newspaper's coverage of a protest",
+        "Writing a blog post about a local problem",
+        "Studying a historical newspaper as a primary source"
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-print-1",
+      "title": "Development of print in China and Japan",
+      "topic": "East Asian origins of print",
+      "problem": "Describe how printing developed in China and Japan before it reached Europe.",
+      "solution": [
+        "Step 1: China, Japan and Korea developed hand printing using woodblocks.",
+        "Step 2: From AD 594 books in China were printed by rubbing paper against inked woodblocks.",
+        "Step 3: Chinese books were folded in an accordion shape, which suited woodblock printing.",
+        "Step 4: Buddhist missionaries carried printing to Japan, where monasteries printed religious texts.",
+        "Step 5: Japanese printers also produced ukiyo-e pictures of city life, actors and landscapes for a popular market."
+      ],
+      "board_mode": [
+        "Step 1: China, Japan and Korea developed hand printing using woodblocks.",
+        "Step 2: From AD 594 books in China were printed by rubbing paper against inked woodblocks.",
+        "Step 3: Chinese books were folded in an accordion shape, which suited woodblock printing.",
+        "Step 4: Buddhist missionaries carried printing to Japan, where monasteries printed religious texts.",
+        "Step 5: Japanese printers also produced ukiyo-e pictures of city life, actors and landscapes for a popular market."
+      ],
+      "answer": "Woodblock printing began in East Asia, spread through Buddhist monasteries in Japan, and produced both religious texts and popular ukiyo-e prints.",
+      "board_tip": "Name China, Japan and Korea together, then give one example each of religious and popular printing."
+    },
+    {
+      "id": "we-print-2",
+      "title": "Gutenberg's technical contribution",
+      "topic": "The printing press",
+      "problem": "Explain the main features of Gutenberg's printing press and why it was revolutionary.",
+      "solution": [
+        "Step 1: Gutenberg used movable metal type instead of carving a whole page on wood.",
+        "Step 2: Lead moulds allowed identical letters to be cast and reused in different combinations.",
+        "Step 3: He adapted the olive press to apply even pressure to inked type and paper.",
+        "Step 4: The system could produce many copies of a book quickly and at lower cost.",
+        "Step 5: His Bible, printed in the 1450s, proved that the new technology could produce fine books."
+      ],
+      "board_mode": [
+        "Step 1: Gutenberg used movable metal type instead of carving a whole page on wood.",
+        "Step 2: Lead moulds allowed identical letters to be cast and reused in different combinations.",
+        "Step 3: He adapted the olive press to apply even pressure to inked type and paper.",
+        "Step 4: The system could produce many copies of a book quickly and at lower cost.",
+        "Step 5: His Bible, printed in the 1450s, proved that the new technology could produce fine books."
+      ],
+      "answer": "Movable metal type, reusable lead moulds and a screw press made rapid, cheap and accurate multiple copying possible.",
+      "board_tip": "Focus on the system, not only the machine: type, mould, ink and press together made print revolutionary."
+    },
+    {
+      "id": "we-print-3",
+      "title": "Print, Reformation and Enlightenment",
+      "topic": "Print and ideas",
+      "problem": "How did print contribute to the Protestant Reformation and the Enlightenment?",
+      "solution": [
+        "Step 1: Print allowed reformers to circulate arguments quickly to many readers.",
+        "Step 2: Luther's Ninety Five Theses of 1517 were printed and spread across Europe.",
+        "Step 3: Printed pamphlets and Bibles weakened the Church's monopoly over religious knowledge.",
+        "Step 4: Enlightenment writers used print to spread ideas of reason, science and individual rights.",
+        "Step 5: Authorities responded with censorship, but print made it difficult to suppress new ideas completely."
+      ],
+      "board_mode": [
+        "Step 1: Print allowed reformers to circulate arguments quickly to many readers.",
+        "Step 2: Luther's Ninety Five Theses of 1517 were printed and spread across Europe.",
+        "Step 3: Printed pamphlets and Bibles weakened the Church's monopoly over religious knowledge.",
+        "Step 4: Enlightenment writers used print to spread ideas of reason, science and individual rights.",
+        "Step 5: Authorities responded with censorship, but print made it difficult to suppress new ideas completely."
+      ],
+      "answer": "Print speeded the spread of Reformation and Enlightenment ideas, challenged established authority and provoked censorship.",
+      "board_tip": "Use one religious example and one secular example to show the double impact of print."
+    },
+    {
+      "id": "we-print-4",
+      "title": "Why the colonial state censored the Indian press",
+      "topic": "Print and censorship in India",
+      "problem": "Why did the colonial government pass the Vernacular Press Act of 1878?",
+      "solution": [
+        "Step 1: Indian-language newspapers criticised colonial policies and discussed social and political issues.",
+        "Step 2: After the revolt of 1857, the government feared that print could spread discontent.",
+        "Step 3: The Vernacular Press Act gave officials power to warn, seize or restrict newspapers.",
+        "Step 4: The government claimed it was preventing sedition, but the effect was to limit criticism.",
+        "Step 5: Indian journalists and nationalists protested against the Act as an attack on free expression."
+      ],
+      "board_mode": [
+        "Step 1: Indian-language newspapers criticised colonial policies and discussed social and political issues.",
+        "Step 2: After the revolt of 1857, the government feared that print could spread discontent.",
+        "Step 3: The Vernacular Press Act gave officials power to warn, seize or restrict newspapers.",
+        "Step 4: The government claimed it was preventing sedition, but the effect was to limit criticism.",
+        "Step 5: Indian journalists and nationalists protested against the Act as an attack on free expression."
+      ],
+      "answer": "The colonial state feared that vernacular newspapers could spread criticism and unrest, so it used censorship to control them.",
+      "board_tip": "Mention both the government's stated reason and the real effect on free expression."
+    },
+    {
+      "id": "we-print-5",
+      "title": "Print, reform and nationalism in India",
+      "topic": "Indian print culture",
+      "problem": "How did print help social reform and nationalism in colonial India?",
+      "solution": [
+        "Step 1: Reformers used pamphlets, journals and newspapers to debate sati, child marriage and widow remarriage.",
+        "Step 2: Rammohun Roy's Sambad Kaumudi and Vidyasagar's writings reached a growing reading public.",
+        "Step 3: Women writers used print to describe their lives and challenge restrictions.",
+        "Step 4: Nationalist newspapers spread ideas of self-rule, swadeshi and resistance.",
+        "Step 5: Print therefore helped create a public sphere in which social and political change could be debated."
+      ],
+      "board_mode": [
+        "Step 1: Reformers used pamphlets, journals and newspapers to debate sati, child marriage and widow remarriage.",
+        "Step 2: Rammohun Roy's Sambad Kaumudi and Vidyasagar's writings reached a growing reading public.",
+        "Step 3: Women writers used print to describe their lives and challenge restrictions.",
+        "Step 4: Nationalist newspapers spread ideas of self-rule, swadeshi and resistance.",
+        "Step 5: Print therefore helped create a public sphere in which social and political change could be debated."
+      ],
+      "answer": "Print gave reformers, women writers and nationalists a cheap and rapid way to reach readers and shape public opinion.",
+      "board_tip": "Link each example to a type of print: pamphlet, journal, newspaper or book."
+    }
+  ],
+  "exercises": {
+    "exercise_5_1": {
+      "title": "Exercise 5.1 - Manuscripts, East Asia and Gutenberg",
+      "objective": "Compare manuscript and print cultures and explain the first printing technologies",
+      "problems": [
+        {
+          "id": "print-ex1-1",
+          "book_source": "NCERT History Chapter 5",
+          "question": "Why were manuscripts limited in number and circulation?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Manuscripts were copied by hand, which was slow and labour-intensive.",
+            "Step 2: They were written on expensive materials such as palm leaves or handmade paper.",
+            "Step 3: Handwritten copies were fragile and few, so only wealthy or scholarly people could own many."
+          ],
+          "final_answer": "Manuscripts were slow to copy, costly and fragile, so they circulated among a small number of readers."
+        },
+        {
+          "id": "print-ex1-2",
+          "book_source": "NCERT History Chapter 5",
+          "question": "How did woodblock printing work in China?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: A page was carved in reverse on a wooden block.",
+            "Step 2: Ink was applied to the raised surface of the block.",
+            "Step 3: Paper was placed on the block and rubbed so that the image transferred to it."
+          ],
+          "final_answer": "A carved, inked woodblock was pressed against paper to reproduce a page or image."
+        },
+        {
+          "id": "print-ex1-3",
+          "book_source": "NCERT History Chapter 5",
+          "question": "What were ukiyo-e prints and why were they popular in Japan?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Ukiyo-e means pictures of the floating world.",
+            "Step 2: They showed city life, actors, courtesans, landscapes and everyday scenes.",
+            "Step 3: Woodblock printing made them cheap enough for ordinary townspeople to buy.",
+            "Step 4: Artists such as Hokusai and Utamaro became well known through this market."
+          ],
+          "final_answer": "Ukiyo-e were cheap woodblock prints of urban life and landscape that made visual art available to a wide public."
+        },
+        {
+          "id": "print-ex1-4",
+          "book_source": "NCERT History Chapter 5",
+          "question": "Explain three technical features of Gutenberg's printing press.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Movable metal type allowed letters to be arranged and reused.",
+            "Step 2: Lead moulds made it possible to cast many identical pieces of type.",
+            "Step 3: A modified screw press applied pressure evenly to paper and inked type.",
+            "Step 4: Together these features made printing faster and more uniform than hand copying."
+          ],
+          "final_answer": "Movable type, cast lead letters and a screw press made rapid and standardised printing possible."
+        },
+        {
+          "id": "print-ex1-5",
+          "book_source": "NCERT History Chapter 5",
+          "question": "Why is the Gutenberg Bible considered a landmark in print history?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: It was the first major book printed with movable metal type in Europe.",
+            "Step 2: It demonstrated that printed books could match the quality of fine manuscripts.",
+            "Step 3: About 180 copies were produced, showing the capacity for multiple copies.",
+            "Step 4: It proved that printing could be commercially and technically viable.",
+            "Step 5: It became a model for later printers across Europe."
+          ],
+          "final_answer": "The Gutenberg Bible showed that movable type could produce many high-quality copies and helped establish printing as a new industry."
+        },
+        {
+          "id": "print-ex1-6",
+          "book_source": "NCERT History Chapter 5",
+          "question": "Compare manuscript culture with print culture in three points.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Manuscripts were copied by hand, while print used reusable type or blocks.",
+            "Step 2: Manuscripts were expensive and few; printed books became cheaper and more numerous.",
+            "Step 3: Manuscripts encouraged close copying of a few texts, while print encouraged standardised editions.",
+            "Step 4: Print made it easier to spread new ideas quickly to a larger public.",
+            "Step 5: Manuscripts did not disappear at once; both cultures coexisted for a long time."
+          ],
+          "final_answer": "Print was faster, cheaper and more standardised than manuscript copying, but the two forms coexisted and manuscripts retained prestige."
+        }
+      ]
+    },
+    "exercise_5_2": {
+      "title": "Exercise 5.2 - The Print Revolution, Religion and Censorship",
+      "objective": "Analyse the social and political impact of print and the response of authorities",
+      "problems": [
+        {
+          "id": "print-ex2-1",
+          "book_source": "NCERT History Chapter 5",
+          "question": "What is meant by the print revolution?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The print revolution refers to the spread of printing and its effects on society.",
+            "Step 2: It made books cheaper and increased the number of readers.",
+            "Step 3: It changed how ideas, news and religious texts circulated."
+          ],
+          "final_answer": "The print revolution was the transformation of knowledge and communication caused by the spread of printing."
+        },
+        {
+          "id": "print-ex2-2",
+          "book_source": "NCERT History Chapter 5",
+          "question": "What was the reading mania in eighteenth-century Europe?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Literacy was spreading among the middle classes.",
+            "Step 2: Cheap books, chapbooks, newspapers and journals created a hunger for reading.",
+            "Step 3: Libraries, book clubs and coffee houses became places for reading and discussion."
+          ],
+          "final_answer": "The reading mania was the rapid growth of popular reading and discussion made possible by cheaper print."
+        },
+        {
+          "id": "print-ex2-3",
+          "book_source": "NCERT History Chapter 5",
+          "question": "How did print help the Protestant Reformation?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Luther's Ninety Five Theses were printed and circulated widely.",
+            "Step 2: Printed pamphlets spread criticism of Church practices.",
+            "Step 3: Vernacular Bibles allowed more people to read religious texts directly.",
+            "Step 4: This weakened the Church's control over interpretation."
+          ],
+          "final_answer": "Print spread Reformation arguments quickly, encouraged vernacular reading and challenged Church authority."
+        },
+        {
+          "id": "print-ex2-4",
+          "book_source": "NCERT History Chapter 5",
+          "question": "What was the Index of Prohibited Books?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: It was a list of books banned by the Catholic Church.",
+            "Step 2: It was introduced in 1558 as part of the Church's response to the Reformation.",
+            "Step 3: It aimed to prevent the spread of ideas considered dangerous to faith.",
+            "Step 4: It shows that print was seen as a threat as well as a tool."
+          ],
+          "final_answer": "The Index of Prohibited Books was a Catholic list of banned books used to control the spread of dissenting ideas."
+        },
+        {
+          "id": "print-ex2-5",
+          "book_source": "NCERT History Chapter 5",
+          "question": "How did print contribute to the Enlightenment?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Enlightenment thinkers believed in reason, science and individual rights.",
+            "Step 2: Print allowed their books and pamphlets to reach readers across Europe.",
+            "Step 3: Journals and scientific publications spread new discoveries.",
+            "Step 4: Public debate expanded in salons, coffee houses and reading societies.",
+            "Step 5: Censorship tried to limit these ideas, but print made them difficult to contain."
+          ],
+          "final_answer": "Print gave Enlightenment ideas a wide audience, encouraged public debate and made censorship less effective."
+        },
+        {
+          "id": "print-ex2-6",
+          "book_source": "NCERT History Chapter 5",
+          "question": "Why did rulers and churches try to censor print?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Print could spread criticism of rulers, churches and social customs.",
+            "Step 2: Cheap pamphlets and newspapers could reach many people quickly.",
+            "Step 3: Authorities feared unrest and loss of control over opinion.",
+            "Step 4: They used licensing, confiscation, bans and punishment of printers.",
+            "Step 5: Censorship showed that print had become a powerful political force."
+          ],
+          "final_answer": "Authorities censored print because it could spread dissent quickly; bans, licensing and punishments were used to protect established power."
+        }
+      ]
+    },
+    "exercise_5_3": {
+      "title": "Exercise 5.3 - Print in India, Reform and Nationalism",
+      "objective": "Explain the Indian print experience and its link with reform and freedom",
+      "problems": [
+        {
+          "id": "print-ex3-1",
+          "book_source": "NCERT History Chapter 5",
+          "question": "Who brought the printing press to India and where was it set up?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Portuguese missionaries brought the printing press to India.",
+            "Step 2: The first press was set up in Goa in 1556.",
+            "Step 3: It was used mainly to print religious books."
+          ],
+          "final_answer": "Portuguese missionaries set up the first printing press in Goa in 1556."
+        },
+        {
+          "id": "print-ex3-2",
+          "book_source": "NCERT History Chapter 5",
+          "question": "What was the Bengal Gazette?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The Bengal Gazette was India's first newspaper.",
+            "Step 2: It was started by James Augustus Hickey in 1780.",
+            "Step 3: It was published from Calcutta and carried news and advertisements."
+          ],
+          "final_answer": "The Bengal Gazette, started by James Augustus Hickey in 1780, was India's first newspaper."
+        },
+        {
+          "id": "print-ex3-3",
+          "book_source": "NCERT History Chapter 5",
+          "question": "Why was the Vernacular Press Act of 1878 controversial?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: It gave the government power to control Indian-language newspapers.",
+            "Step 2: Officials could issue warnings, demand security or seize presses.",
+            "Step 3: The government claimed it was preventing sedition.",
+            "Step 4: Critics saw it as a attack on freedom of expression and on Indian opinion."
+          ],
+          "final_answer": "The Act allowed official control of vernacular newspapers and was criticised as censorship of Indian opinion."
+        },
+        {
+          "id": "print-ex3-4",
+          "book_source": "NCERT History Chapter 5",
+          "question": "How did print create new opportunities for women in colonial India?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Women's magazines and journals gave women a public voice.",
+            "Step 2: Writers such as Kailashbashini Debi and Tarabai Shinde published their experiences and criticisms.",
+            "Step 3: Print also spread education and reform ideas among women readers.",
+            "Step 4: Conservative groups often criticised women's writing, showing that print was contested."
+          ],
+          "final_answer": "Print gave women new ways to write, read and debate, even though conservative opposition limited their freedom."
+        },
+        {
+          "id": "print-ex3-5",
+          "book_source": "NCERT History Chapter 5",
+          "question": "Explain the role of print in Indian religious and social reform.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Reformers used pamphlets and newspapers to debate sati, child marriage and widow remarriage.",
+            "Step 2: Rammohun Roy's Sambad Kaumudi and Vidyasagar's writings reached a wide public.",
+            "Step 3: Religious groups also used print to defend their own positions.",
+            "Step 4: The Deoband seminary and other bodies printed religious texts and tracts.",
+            "Step 5: Print thus made reform a public argument rather than a private matter."
+          ],
+          "final_answer": "Print allowed reformers and their opponents to circulate arguments widely, making social and religious reform a public debate."
+        },
+        {
+          "id": "print-ex3-6",
+          "book_source": "NCERT History Chapter 5",
+          "question": "How did print contribute to Indian nationalism?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Newspapers reported colonial policies and encouraged criticism.",
+            "Step 2: Nationalist leaders used journals and pamphlets to spread ideas of self-rule.",
+            "Step 3: Tilak's Kesari and other papers reached readers in Indian languages.",
+            "Step 4: Print helped organise campaigns, share news of protests and create a sense of shared grievance.",
+            "Step 5: Censorship under the Vernacular Press Act showed how seriously the state viewed this power."
+          ],
+          "final_answer": "Print helped nationalists spread ideas, coordinate criticism and build a shared public opinion against colonial rule."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-print-s-1",
+        "question": "The earliest kind of print technology developed in:",
+        "options": [
+          "China, Japan and Korea",
+          "Britain, France and Germany",
+          "India, Persia and Arabia",
+          "Egypt, Greece and Rome"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Hand printing with woodblocks first developed in East Asia.",
+          "wrong_options": {
+            "1": "European printing came later.",
+            "2": "Indian, Persian and Arab manuscript cultures were important but not the earliest print technology.",
+            "3": "These regions had manuscript traditions, not the earliest woodblock printing."
+          }
+        }
+      },
+      {
+        "id": "q-print-s-2",
+        "question": "Woodblock printing involves:",
+        "options": [
+          "Carving a page on wood, inking it and rubbing paper on it",
+          "Typing letters on a computer",
+          "Writing each copy by hand",
+          "Using photography to make copies"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A carved and inked wooden block transfers its image to paper under pressure.",
+          "wrong_options": {
+            "1": "Computer typing is a much later technology.",
+            "2": "Hand copying is manuscript culture.",
+            "3": "Photography developed much later."
+          }
+        }
+      },
+      {
+        "id": "q-print-s-3",
+        "question": "Gutenberg's first major printed book was the:",
+        "options": [
+          "Bible",
+          "Ramayana",
+          "Encyclopaedia",
+          "Bengal Gazette"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Gutenberg printed the Bible in the 1450s using movable metal type.",
+          "wrong_options": {
+            "1": "The Ramayana was not printed by Gutenberg.",
+            "2": "The Encyclopaedia came later.",
+            "3": "The Bengal Gazette was an Indian newspaper from 1780."
+          }
+        }
+      },
+      {
+        "id": "q-print-s-4",
+        "question": "Movable type means:",
+        "options": [
+          "Individual letters that can be arranged and reused",
+          "A whole page carved on one block",
+          "A handwritten manuscript",
+          "A picture printed without ink"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Movable type consists of separate pieces of type that can be rearranged for different pages.",
+          "wrong_options": {
+            "1": "That describes woodblock printing.",
+            "2": "Manuscripts are handwritten, not printed with type.",
+            "3": "Printing requires ink."
+          }
+        }
+      },
+      {
+        "id": "q-print-s-5",
+        "question": "The first printing press in India was set up at:",
+        "options": [
+          "Goa in 1556",
+          "Calcutta in 1780",
+          "Bombay in 1854",
+          "Madras in 1874"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Portuguese missionaries set up the first press in Goa in 1556.",
+          "wrong_options": {
+            "1": "Calcutta's press came later, and 1780 is the date of the Bengal Gazette.",
+            "2": "1854 is the date of the first cotton mill in Bombay.",
+            "3": "Madras printing developed later."
+          }
+        }
+      },
+      {
+        "id": "q-print-s-6",
+        "question": "India's first newspaper was the:",
+        "options": [
+          "Bengal Gazette",
+          "Kesari",
+          "Sambad Kaumudi",
+          "Amrita Bazar Patrika"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Bengal Gazette was started by James Augustus Hickey in 1780.",
+          "wrong_options": {
+            "1": "Kesari was a later nationalist newspaper associated with Tilak.",
+            "2": "Sambad Kaumudi was a reform newspaper started later.",
+            "3": "Amrita Bazar Patrika came in the nineteenth century."
+          }
+        }
+      },
+      {
+        "id": "q-print-s-7",
+        "question": "The Vernacular Press Act was passed in:",
+        "options": [
+          "1878",
+          "1556",
+          "1780",
+          "1857"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The colonial government passed the Vernacular Press Act in 1878 to control Indian-language newspapers.",
+          "wrong_options": {
+            "1": "1556 is the date of the first press in Goa.",
+            "2": "1780 is the date of the Bengal Gazette.",
+            "3": "1857 was the year of the revolt."
+          }
+        }
+      },
+      {
+        "id": "q-print-s-8",
+        "question": "The Index of Prohibited Books was issued by the:",
+        "options": [
+          "Catholic Church",
+          "East India Company",
+          "British Parliament",
+          "Mughal court"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Catholic Church introduced the Index in 1558 to ban books it considered dangerous.",
+          "wrong_options": {
+            "1": "The East India Company was a trading company, not the issuer of the Index.",
+            "2": "The British Parliament did not issue the Index.",
+            "3": "The Mughal court had no role in it."
+          }
+        }
+      },
+      {
+        "id": "q-print-s-9",
+        "question": "Chapbooks were:",
+        "options": [
+          "Cheap popular booklets sold by pedlars",
+          "Large scholarly manuscripts",
+          "Official government reports",
+          "Religious statues"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Chapbooks were cheap printed booklets with stories, ballads and practical information.",
+          "wrong_options": {
+            "1": "They were cheap print, not expensive manuscripts.",
+            "2": "They were not official reports.",
+            "3": "They were printed books, not statues."
+          }
+        }
+      },
+      {
+        "id": "q-print-s-10",
+        "question": "Ukiyo-e were:",
+        "options": [
+          "Japanese woodblock prints of urban life and landscapes",
+          "Chinese handwritten scrolls",
+          "Indian religious manuscripts",
+          "European scientific journals"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Ukiyo-e means pictures of the floating world and were popular Japanese prints.",
+          "wrong_options": {
+            "1": "They were printed, not handwritten scrolls.",
+            "2": "They were Japanese, not Indian.",
+            "3": "They were visual prints, not scientific journals."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-print-m-1",
+        "question": "Marco Polo is associated with bringing knowledge of woodblock printing to:",
+        "options": [
+          "Italy",
+          "India",
+          "Japan",
+          "America"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Marco Polo's travels helped carry knowledge of woodblock printing to Italy.",
+          "wrong_options": {
+            "1": "India had its own later print history.",
+            "2": "Japan already had woodblock printing.",
+            "3": "The Americas were not part of this early route."
+          }
+        }
+      },
+      {
+        "id": "q-print-m-2",
+        "question": "The print revolution refers to:",
+        "options": [
+          "The wide social effects of the spread of printing",
+          "The invention of the internet",
+          "The banning of all books",
+          "The end of manuscript writing"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "It describes how printing changed reading, knowledge and public debate.",
+          "wrong_options": {
+            "1": "The internet is a much later development.",
+            "2": "Printing spread books rather than banning them.",
+            "3": "Manuscripts continued alongside print."
+          }
+        }
+      },
+      {
+        "id": "q-print-m-3",
+        "question": "Martin Luther's Ninety Five Theses were important because they:",
+        "options": [
+          "Spread criticism of Church practices through print",
+          "Ended the use of the Latin language",
+          "Were the first handwritten manuscripts",
+          "Supported the Index of Prohibited Books"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Printed copies of the Theses spread Reformation arguments across Europe.",
+          "wrong_options": {
+            "1": "Latin continued in many contexts.",
+            "2": "They were printed, not the first manuscripts.",
+            "3": "They were condemned by the Church, not supported by the Index."
+          }
+        }
+      },
+      {
+        "id": "q-print-m-4",
+        "question": "The reading mania of the eighteenth century was helped by:",
+        "options": [
+          "Cheap books, newspapers and lending libraries",
+          "A decline in literacy",
+          "The banning of all journals",
+          "The disappearance of chapbooks"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Cheaper print and new institutions encouraged more people to read.",
+          "wrong_options": {
+            "1": "Literacy was expanding, not declining.",
+            "2": "Journals grew rather than disappeared.",
+            "3": "Chapbooks were part of popular reading."
+          }
+        }
+      },
+      {
+        "id": "q-print-m-5",
+        "question": "Cheap lithographic prints in India were important because they:",
+        "options": [
+          "Made images of gods and popular pictures available to ordinary people",
+          "Replaced all handwritten manuscripts immediately",
+          "Were used only by the British government",
+          "Ended the printing of newspapers"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Lithography allowed cheap visual printing, including religious pictures and calendars.",
+          "wrong_options": {
+            "1": "Manuscripts continued for a long time.",
+            "2": "They were used by a wide public, not only the government.",
+            "3": "Newspapers continued to grow."
+          }
+        }
+      },
+      {
+        "id": "q-print-m-6",
+        "question": "Sambad Kaumudi was a newspaper associated with:",
+        "options": [
+          "Raja Rammohun Roy",
+          "James Augustus Hickey",
+          "Bal Gangadhar Tilak",
+          "Lord Lytton"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Rammohun Roy started Sambad Kaumudi to support social and religious reform.",
+          "wrong_options": {
+            "1": "Hickey started the Bengal Gazette.",
+            "2": "Tilak is associated with Kesari.",
+            "3": "Lytton was the Viceroy during the Vernacular Press Act."
+          }
+        }
+      },
+      {
+        "id": "q-print-m-7",
+        "question": "Kesari was a newspaper associated with:",
+        "options": [
+          "Bal Gangadhar Tilak",
+          "Rammohun Roy",
+          "Ishwar Chandra Vidyasagar",
+          "James Augustus Hickey"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Tilak used Kesari to spread nationalist ideas.",
+          "wrong_options": {
+            "1": "Rammohun Roy is linked with Sambad Kaumudi.",
+            "2": "Vidyasagar used pamphlets and reform writing.",
+            "3": "Hickey founded the Bengal Gazette."
+          }
+        }
+      },
+      {
+        "id": "q-print-m-8",
+        "question": "Print expanded women's public role in colonial India by:",
+        "options": [
+          "Giving them magazines, journals and a way to publish their views",
+          "Giving all women the right to vote immediately",
+          "Ending all restrictions on women",
+          "Banning women from education"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Women's magazines and books allowed women to write and debate, though restrictions continued.",
+          "wrong_options": {
+            "1": "Voting rights came much later.",
+            "2": "Many restrictions remained.",
+            "3": "Print often supported women's education."
+          }
+        }
+      },
+      {
+        "id": "q-print-m-9",
+        "question": "Compared with manuscripts, printed books were:",
+        "options": [
+          "Cheaper, more numerous and more standardised",
+          "Always handwritten",
+          "More expensive and rarer",
+          "Impossible to illustrate"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Print reduced costs, increased copies and produced standard editions.",
+          "wrong_options": {
+            "1": "Printed books were not handwritten.",
+            "2": "They were generally cheaper and more common.",
+            "3": "Print could include illustrations."
+          }
+        }
+      },
+      {
+        "id": "q-print-m-10",
+        "question": "Censorship of print was used by authorities to:",
+        "options": [
+          "Control the spread of ideas they considered dangerous",
+          "Increase the number of newspapers",
+          "Encourage all criticism of the state",
+          "Abolish printing completely"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Censorship aimed to limit dissent and protect established authority.",
+          "wrong_options": {
+            "1": "It often restricted newspapers.",
+            "2": "It suppressed rather than encouraged criticism.",
+            "3": "It rarely abolished printing altogether."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-print-x-1",
+        "question": "Which chain best explains print's role in the Reformation?",
+        "options": [
+          "Printed theses and pamphlets spread criticism, weakening Church control over interpretation",
+          "Printing presses were banned, so Reformation ideas disappeared",
+          "The Church printed Luther's ideas to support him",
+          "Print replaced all religious belief"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Print circulated reformist arguments quickly and encouraged direct reading of religious texts.",
+          "wrong_options": {
+            "1": "Printing was not banned in a way that stopped the Reformation.",
+            "2": "The Church opposed Luther's ideas.",
+            "3": "Print did not replace religious belief."
+          }
+        }
+      },
+      {
+        "id": "q-print-x-2",
+        "question": "How did print contribute to Enlightenment public debate?",
+        "options": [
+          "It circulated reason-based arguments and created new reading publics",
+          "It ended all censorship immediately",
+          "It restricted knowledge to priests",
+          "It discouraged scientific publication"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Books, journals and pamphlets spread Enlightenment ideas and widened debate.",
+          "wrong_options": {
+            "1": "Censorship continued.",
+            "2": "Print widened rather than restricted access.",
+            "3": "Scientific publishing expanded."
+          }
+        }
+      },
+      {
+        "id": "q-print-x-3",
+        "question": "The colonial government feared vernacular newspapers mainly because they:",
+        "options": [
+          "Could spread criticism and political awareness among Indian readers",
+          "Were all owned by the British",
+          "Printed only religious texts",
+          "Refused to use the printing press"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Vernacular papers could reach wide audiences and criticise colonial policies.",
+          "wrong_options": {
+            "1": "Many were Indian-owned or Indian-edited.",
+            "2": "They covered politics and social issues, not only religion.",
+            "3": "They depended on printing."
+          }
+        }
+      },
+      {
+        "id": "q-print-x-4",
+        "question": "Print helped Indian nationalism by:",
+        "options": [
+          "Spreading shared grievances and organising public opinion across regions",
+          "Ending all regional languages",
+          "Replacing political parties",
+          "Supporting only British rule"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Newspapers and journals connected readers and spread nationalist ideas.",
+          "wrong_options": {
+            "1": "Print often strengthened regional languages.",
+            "2": "It supplemented rather than replaced political organisation.",
+            "3": "Nationalist papers opposed colonial rule."
+          }
+        }
+      },
+      {
+        "id": "q-print-x-5",
+        "question": "Women's print in colonial India is significant because it:",
+        "options": [
+          "Created spaces for women to describe their lives and challenge social norms",
+          "Immediately gave women equal political rights",
+          "Was completely controlled by the colonial state",
+          "Discouraged women from reading"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Women's writing and magazines opened new public conversations, even amid opposition.",
+          "wrong_options": {
+            "1": "Political equality came much later.",
+            "2": "Women's print was not completely state-controlled.",
+            "3": "It encouraged reading and writing."
+          }
+        }
+      },
+      {
+        "id": "q-print-x-6",
+        "question": "Cheap calendar prints and images of gods in India show that print:",
+        "options": [
+          "Created a visual culture that reached people who could not read",
+          "Was limited to English-speaking elites",
+          "Ended the use of religious imagery",
+          "Was opposed by all artists"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Visual prints carried religious and popular imagery to a wide audience.",
+          "wrong_options": {
+            "1": "They reached beyond English-reading elites.",
+            "2": "Religious imagery became more widely available.",
+            "3": "Many artists worked with print."
+          }
+        }
+      },
+      {
+        "id": "q-print-x-7",
+        "question": "Gutenberg's press is best described as a system because it combined:",
+        "options": [
+          "Movable type, cast metal letters, ink and a screw press",
+          "Steam power, railways and telegraph",
+          "Handwriting, parchment and seals",
+          "Photography, film and radio"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The breakthrough depended on several interlocking technical elements.",
+          "wrong_options": {
+            "1": "Those belong to later industrial technology.",
+            "2": "Those describe manuscript and administrative practices.",
+            "3": "Those are modern media."
+          }
+        }
+      },
+      {
+        "id": "q-print-x-8",
+        "question": "Religious orthodoxy in India responded to print by:",
+        "options": [
+          "Using print to defend its own positions and criticise reformers",
+          "Refusing to use print entirely",
+          "Banning all printing presses",
+          "Supporting every reform proposal"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Orthodox groups also printed tracts and newspapers to counter reform arguments.",
+          "wrong_options": {
+            "1": "Many orthodox groups adopted print.",
+            "2": "They did not ban all presses.",
+            "3": "They often opposed reform."
+          }
+        }
+      },
+      {
+        "id": "q-print-x-9",
+        "question": "'Print alone caused the Reformation.' This statement is:",
+        "options": [
+          "Too simple, because print spread ideas but political, religious and social conditions also mattered",
+          "Completely correct in every respect",
+          "Completely false because print had no role",
+          "True only for India"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Print was a powerful amplifier, but it worked alongside existing grievances and conflicts.",
+          "wrong_options": {
+            "1": "It ignores other causes.",
+            "2": "Print clearly mattered.",
+            "3": "The Reformation was a European movement."
+          }
+        }
+      },
+      {
+        "id": "q-print-x-10",
+        "question": "Which comparison of European and Indian print history is most accurate?",
+        "options": [
+          "Europe's press grew from commercial and religious demand; India's began with missionaries and later became a tool of reform and nationalism",
+          "Both began only in the twentieth century",
+          "Indian print had no connection with religion",
+          "European print was never censored"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The two histories had different entry points but both linked print to religion, politics and public debate.",
+          "wrong_options": {
+            "1": "Both began much earlier.",
+            "2": "Religious printing was central in India.",
+            "3": "European print faced censorship too."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Print Culture and the Modern World - Concept Map",
+    "nodes": [
+      {
+        "id": "manuscript",
+        "label": "Manuscript culture",
+        "group": "Origins"
+      },
+      {
+        "id": "woodblock",
+        "label": "Woodblock printing",
+        "group": "Origins"
+      },
+      {
+        "id": "gutenberg",
+        "label": "Gutenberg's press",
+        "group": "Technology"
+      },
+      {
+        "id": "revolution",
+        "label": "Print revolution",
+        "group": "Impact"
+      },
+      {
+        "id": "reading",
+        "label": "New reading public",
+        "group": "Impact"
+      },
+      {
+        "id": "reformation",
+        "label": "Reformation",
+        "group": "Religion"
+      },
+      {
+        "id": "enlightenment",
+        "label": "Enlightenment",
+        "group": "Ideas"
+      },
+      {
+        "id": "censorship",
+        "label": "Censorship",
+        "group": "Power"
+      },
+      {
+        "id": "india",
+        "label": "Print in India",
+        "group": "Colonial India"
+      },
+      {
+        "id": "nationalism",
+        "label": "Reform and nationalism",
+        "group": "Colonial India"
+      }
+    ],
+    "edges": [
+      ["manuscript", "woodblock"],
+      ["woodblock", "revolution"],
+      ["gutenberg", "revolution"],
+      ["revolution", "reading"],
+      ["revolution", "reformation"],
+      ["revolution", "enlightenment"],
+      ["reformation", "censorship"],
+      ["enlightenment", "censorship"],
+      ["revolution", "india"],
+      ["censorship", "india"],
+      ["india", "nationalism"],
+      ["reading", "nationalism"]
+    ]
+  },
+  "mind_maps": {
+    "title": "Print Culture and the Modern World - Mind Map",
+    "root": "Print Culture and the Modern World",
+    "branches": [
+      {
+        "concept": "Before print",
+        "sub_nodes": [
+          "Handwritten manuscripts",
+          "Palm leaves and handmade paper",
+          "Expensive and fragile copies",
+          "Oral transmission"
+        ],
+        "connections": "Manuscript culture limited the number of copies and kept reading close to elites and institutions."
+      },
+      {
+        "concept": "East Asian origins",
+        "sub_nodes": [
+          "China, Japan and Korea",
+          "Woodblock printing from AD 594",
+          "Accordion books",
+          "Buddhist monasteries",
+          "Ukiyo-e prints"
+        ],
+        "connections": "Woodblock technology spread through Buddhist networks and later produced popular visual print."
+      },
+      {
+        "concept": "Gutenberg's press",
+        "sub_nodes": [
+          "Movable metal type",
+          "Lead moulds",
+          "Adapted olive press",
+          "Gutenberg Bible in the 1450s"
+        ],
+        "connections": "Reusable type and a screw press made cheap, standardised multiple copies possible."
+      },
+      {
+        "concept": "Print revolution",
+        "sub_nodes": [
+          "Cheaper books",
+          "Chapbooks and ballads",
+          "Newspapers and journals",
+          "Reading mania",
+          "Libraries and coffee houses"
+        ],
+        "connections": "Print widened the reading public and created new forms of public discussion."
+      },
+      {
+        "concept": "Religion and ideas",
+        "sub_nodes": [
+          "Luther's Ninety Five Theses",
+          "Protestant Reformation",
+          "Enlightenment reason",
+          "Scientific publication"
+        ],
+        "connections": "Print accelerated religious reform and secular debate, challenging established authority."
+      },
+      {
+        "concept": "Censorship and India",
+        "sub_nodes": [
+          "Index of Prohibited Books",
+          "Licensing and bans",
+          "Goa press in 1556",
+          "Bengal Gazette in 1780",
+          "Vernacular Press Act in 1878"
+        ],
+        "connections": "Authorities censored print, while Indian reformers and nationalists used it to build public opinion."
+      }
+    ]
+  },
+  "common_misconceptions": [
+    {
+      "misconception": "Printing was invented by Gutenberg.",
+      "correction": "Woodblock printing existed in China, Japan and Korea centuries before Gutenberg's movable metal type."
+    },
+    {
+      "misconception": "Print immediately replaced manuscripts.",
+      "correction": "Printed books and handwritten manuscripts coexisted for a long time, and manuscripts retained prestige."
+    },
+    {
+      "misconception": "Print automatically made everyone literate.",
+      "correction": "Literacy spread slowly; many people heard printed texts read aloud rather than reading them."
+    },
+    {
+      "misconception": "The Reformation was caused only by print.",
+      "correction": "Print spread reformist ideas quickly, but religious, political and social conflicts also caused the Reformation."
+    },
+    {
+      "misconception": "Print was always free from control.",
+      "correction": "Churches and states used licensing, bans, book lists and punishment to censor print."
+    },
+    {
+      "misconception": "Printing began in India with the British.",
+      "correction": "Portuguese missionaries set up the first press in Goa in 1556, before British colonial printing."
+    },
+    {
+      "misconception": "Indian-language newspapers were only religious.",
+      "correction": "They covered politics, social reform, education, commerce and culture as well as religion."
+    },
+    {
+      "misconception": "Print was only about books.",
+      "correction": "Print also produced newspapers, pamphlets, advertisements, calendars, pictures and cheap popular literature."
+    }
+  ]
+}

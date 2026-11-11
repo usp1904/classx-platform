@@ -1,0 +1,11 @@
+node_modules
+.env
+*.log
+artifacts
+server/public
+dist
+build
+.web
+.git
+.DS_Store
+npm-debug.log

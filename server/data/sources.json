@@ -1,0 +1,26 @@
+[
+  {
+    "subjectId": "mathematics",
+    "pdf": "maths.pdf",
+    "pages": null,
+    "note": "Official CBSE 2026-27 curriculum PDF, imported without modification."
+  },
+  {
+    "subjectId": "science",
+    "pdf": "science.pdf",
+    "pages": null,
+    "note": "Official CBSE 2026-27 curriculum PDF, imported without modification."
+  },
+  {
+    "subjectId": "social-science",
+    "pdf": "social_science.pdf",
+    "pages": null,
+    "note": "Official CBSE 2026-27 curriculum PDF, imported without modification."
+  },
+  {
+    "subjectId": "english",
+    "pdf": "english.pdf",
+    "pages": null,
+    "note": "Official CBSE 2026-27 curriculum PDF, imported without modification."
+  }
+]

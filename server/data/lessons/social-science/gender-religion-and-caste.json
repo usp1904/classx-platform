@@ -1,0 +1,1311 @@
+{
+  "id": "gender-religion-and-caste",
+  "subject": "Civics",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 3,
+  "chapter": "Gender, Religion and Caste",
+  "lesson": 3,
+  "title": "Gender, Religion and Caste - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Distinguish biological sex differences from socially constructed gender roles",
+    "Explain the sexual division of labour and the double burden on women",
+    "Assess women's political representation and the need for reservation",
+    "Define communalism and identify its forms in Indian politics",
+    "Explain the features of Indian secularism",
+    "Describe caste inequality and the two-way relationship between caste and politics",
+    "Evaluate how democracy can address gender, religious and caste inequalities",
+    "Answer board-style questions using accurate examples and balanced judgements"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS9_WHAT_IS_DEMOCRACY",
+    "SOCIAL_CLASS9_DEMOCRATIC_RIGHTS",
+    "SOCIAL_CLASS8_UNDERSTANDING_SECULARISM",
+    "SOCIAL_CLASS7_SOCIAL_EQUALITY"
+  ],
+  "concepts": [
+    {
+      "id": "grc-c1",
+      "name": "Gender Inequality and the Sexual Division of Labour",
+      "title": "Gender Inequality and the Sexual Division of Labour",
+      "explanation": "Gender is a social construction, while sex refers to biological differences. The sexual division of labour assigns most housework, cooking, cleaning and care of children and the elderly to women, often without payment. When women also work outside the home, they carry a double burden. This division is not natural; it is learned through family, school, media and custom. It reduces women's time, mobility and opportunities, and it makes their economic contribution invisible in national income accounts.",
+      "purpose": "To understand that gender inequality is created by social rules and can therefore be changed by education, law and public policy.",
+      "real_life_application": "A woman who works in an office may still do most household work after returning home, while her brother is not expected to share it. Her unpaid work is not counted in GDP.",
+      "key_points": [
+        "Sex is biological; gender is socially constructed.",
+        "The sexual division of labour assigns care work mainly to women.",
+        "Housework and care work are often unpaid and invisible.",
+        "Working women often face a double burden.",
+        "Gender roles are learned through family, school and media.",
+        "Gender inequality limits opportunities and freedom.",
+        "Public policy can reduce inequality through education, creches and equal wages."
+      ],
+      "day_to_day_usage": [
+        "Sharing household chores among siblings",
+        "Creche facilities for working parents",
+        "Equal pay for equal work",
+        "Boys and girls choosing any subject at school",
+        "Campaigns against domestic violence"
+      ]
+    },
+    {
+      "id": "grc-c2",
+      "name": "Women's Representation and Patriarchy",
+      "title": "Women's Representation and Patriarchy",
+      "explanation": "Patriarchy is a system of male dominance in family, society and politics. It appears in unequal inheritance, control over women's mobility, violence and the low number of women in decision-making bodies. Women's literacy has improved but remains below male literacy. The sex ratio has improved in some states but remains skewed in others. Women are less than 15 per cent of the Lok Sabha and a smaller share of state assemblies. Panchayats have one-third reservation, and the 106th Constitutional Amendment Act of 2023 provides one-third reservation for women in the Lok Sabha and state legislative assemblies, to take effect after delimitation.",
+      "purpose": "To connect everyday patriarchy with the formal under-representation of women in elected bodies.",
+      "real_life_application": "A village with a woman sarpanch may still expect her husband to take decisions. Representation on paper does not automatically produce real power.",
+      "key_points": [
+        "Patriarchy is male dominance in family, society and politics.",
+        "Women's literacy and workforce participation remain lower than men's.",
+        "Women are under-represented in the Lok Sabha and state assemblies.",
+        "Panchayats reserve one-third of seats for women.",
+        "The 106th Amendment of 2023 provides one-third reservation in the Lok Sabha and state assemblies.",
+        "Reservation can be symbolic if women do not control funds and decisions.",
+        "Women's movements have pushed for political representation and legal reform."
+      ],
+      "day_to_day_usage": [
+        "Women sarpanches leading village meetings",
+        "Debates on women's reservation in parliament",
+        "Equal inheritance rights in family property",
+        "Campaigns against domestic violence",
+        "Women's self-help groups"
+      ]
+    },
+    {
+      "id": "grc-c3",
+      "name": "Religion, Politics and Communalism",
+      "title": "Religion, Politics and Communalism",
+      "explanation": "Religion is not merely a private matter in India; it shapes identities, festivals, law and political mobilisation. Communalism is the belief that people of one religion share common political, social and economic interests and that other religions are opposed to them. It can appear as everyday stereotypes, as political mobilisation around religious identity, or as communal violence. Communal politics uses religion to divide people and gain power. It is not the same as personal faith or religious practice.",
+      "purpose": "To separate faith from communal politics and to recognise how religion can be used to unify or divide citizens.",
+      "real_life_application": "A political speech that asks people to vote for a candidate because of religion, and warns them against another community, is communal mobilisation rather than a religious practice.",
+      "key_points": [
+        "Religion influences identity and politics in India.",
+        "Communalism treats religion as the main basis of community and loyalty.",
+        "It can appear in everyday beliefs, mobilisation and violence.",
+        "Communal politics divides citizens and undermines equality.",
+        "Communalism is different from personal faith.",
+        "Partition and later riots show the cost of communal politics.",
+        "Secular politics and civic education can counter communalism."
+      ],
+      "day_to_day_usage": [
+        "Voting advice based on religious identity",
+        "Interfaith dialogue and peace committees",
+        "Media reporting that avoids communal stereotypes",
+        "School lessons on equal citizenship",
+        "Police protection during religious festivals"
+      ]
+    },
+    {
+      "id": "grc-c4",
+      "name": "Indian Secularism",
+      "title": "Indian Secularism",
+      "explanation": "India is a secular state. The Constitution does not establish any religion as the state religion. It guarantees freedom of religion, prohibits discrimination on the ground of religion and allows the state to intervene to secure equality and reform. Indian secularism does not mean hostility to religion. It means equal respect for all religions and equal citizenship for believers and non-believers. The state can ban untouchability, open temples to all or reform personal law, because such action protects equality rather than favouring one religion.",
+      "purpose": "To explain the distinctive Indian model of secularism and correct the idea that secularism means atheism.",
+      "real_life_application": "The state can fund schools of different religions on equal terms, protect all places of worship and still reform practices that violate dignity.",
+      "key_points": [
+        "India has no official state religion.",
+        "The Constitution guarantees freedom of religion.",
+        "The state cannot discriminate on religious grounds.",
+        "The state may intervene for equality and social reform.",
+        "Indian secularism is not anti-religion.",
+        "It supports equal respect for all faiths.",
+        "Secularism protects both believers and non-believers."
+      ],
+      "day_to_day_usage": [
+        "Public holidays for different religions",
+        "Equal protection of all places of worship",
+        "Laws against untouchability",
+        "State-run schools admitting students of all faiths",
+        "Debates on reform of personal laws"
+      ]
+    },
+    {
+      "id": "grc-c5",
+      "name": "Caste Inequalities and Caste in Politics",
+      "title": "Caste Inequalities and Caste in Politics",
+      "explanation": "The caste system is a hereditary social hierarchy associated with occupation, marriage within the caste and, historically, untouchability. Caste inequality persists in education, income, land ownership and social status. Caste also enters politics when parties choose candidates from particular castes, appeal to caste loyalties and form vote banks. This is caste in politics. It can distort representation and encourage divisive appeals, but it can also bring marginalised groups into the political process.",
+      "purpose": "To understand caste as both a social inequality and a political resource.",
+      "real_life_application": "A party may field a candidate from a dominant caste in a constituency where that caste is numerous. A caste association may demand better schools and jobs for its community.",
+      "key_points": [
+        "Caste is a hereditary social hierarchy.",
+        "Caste inequalities persist in education, income and status.",
+        "Caste in politics includes candidate selection and vote banks.",
+        "Caste appeals can divide voters.",
+        "Caste also gives marginalised groups a way to organise.",
+        "The Constitution abolishes untouchability and provides reservations.",
+        "Caste and class overlap but are not identical."
+      ],
+      "day_to_day_usage": [
+        "Caste-based community associations",
+        "Parties balancing caste groups in ticket distribution",
+        "Reservation in education and government jobs",
+        "Inter-caste marriage debates",
+        "Caste surveys and social policy"
+      ]
+    },
+    {
+      "id": "grc-c6",
+      "name": "Politics in Caste and Social Change",
+      "title": "Politics in Caste and Social Change",
+      "explanation": "Politics in caste refers to the way caste groups organise, assert their rights and influence politics. Marginalised castes have used democratic politics to demand dignity, reservations and a share in power. At the same time, urbanisation, education, occupational mobility and land reform have weakened some caste restrictions. Caste has not disappeared: inter-caste marriage remains limited, and discrimination persists. Democracy both reflects caste and creates space to challenge it. The goal is not to ignore caste but to prevent it from becoming a basis of inequality and exclusion.",
+      "purpose": "To evaluate how democratic politics can simultaneously strengthen caste identities and weaken caste hierarchy.",
+      "real_life_application": "A Dalit student organisation may campaign for scholarships and against discrimination. A city workplace may be less caste-segregated than a village, but caste can still influence marriage and networks.",
+      "key_points": [
+        "Politics in caste means caste groups organising politically.",
+        "Marginalised castes have used politics to demand rights.",
+        "Urbanisation and education have weakened some caste rules.",
+        "Caste discrimination and endogamy persist.",
+        "Democracy can both politicise and challenge caste.",
+        "Reservations are a policy response to caste inequality.",
+        "The aim is equality, not the elimination of all cultural identity."
+      ],
+      "day_to_day_usage": [
+        "Dalit and Adivasi rights movements",
+        "Caste-based student organisations",
+        "Inter-caste marriages",
+        "Reservation policy debates",
+        "Workplace anti-discrimination rules"
+      ]
+    }
+  ],
+  "theorems": [],
+  "worked_examples": [
+    {
+      "id": "we-grc-1",
+      "title": "Gender Difference or Gender Inequality?",
+      "topic": "Concept clarification",
+      "problem": "A student says: 'Women are naturally better at cooking and men are naturally better at driving.' How would you respond?",
+      "solution": [
+        "Step 1: Distinguish sex from gender. Sex refers to biological differences; gender refers to socially learned roles.",
+        "Step 2: Cooking and driving are skills, not biological traits. They can be learned by anyone.",
+        "Step 3: The belief that women belong in the kitchen is part of the sexual division of labour.",
+        "Step 4: Such beliefs reduce women's opportunities and make their unpaid work seem natural.",
+        "Step 5: Gender roles vary across societies and change over time, which shows they are social, not natural.",
+        "Step 6: Conclude that the statement describes gender stereotypes, not scientific facts."
+      ],
+      "board_mode": [
+        "Define sex and gender first.",
+        "Give one example of a learned role.",
+        "Explain how the stereotype affects opportunity.",
+        "Avoid saying that biology has no role at all; keep the focus on social roles."
+      ],
+      "answer": "The statement confuses sex with gender. Cooking and driving are learned skills, and the belief that they are naturally male or female is a gender stereotype.",
+      "board_tip": "Use the phrase 'socially constructed' to show conceptual clarity."
+    },
+    {
+      "id": "we-grc-2",
+      "title": "Women's Political Representation",
+      "topic": "Data and evaluation",
+      "problem": "Explain why women's reservation in legislatures is debated. Give one argument for and one against.",
+      "solution": [
+        "Step 1: State the problem: women are under-represented in the Lok Sabha and state assemblies.",
+        "Step 2: Argument for: reservation can correct historical exclusion and bring women's concerns into policy.",
+        "Step 3: Argument against: critics say reservation may benefit only elite women or reduce merit-based selection.",
+        "Step 4: Note that panchayat reservations have brought many women into local politics, though sometimes as proxies.",
+        "Step 5: Mention the 106th Amendment of 2023, which provides one-third reservation in the Lok Sabha and state assemblies after delimitation.",
+        "Step 6: Conclude that reservation is a corrective measure whose success depends on real powers and support."
+      ],
+      "board_mode": [
+        "Give both sides before your conclusion.",
+        "Use the panchayat experience as evidence.",
+        "Mention the 106th Amendment accurately, including the delimitation condition.",
+        "Do not claim that reservation guarantees equality by itself."
+      ],
+      "answer": "Reservation can correct exclusion and improve representation, but it may be symbolic or benefit elites; the 2023 amendment provides one-third reservation after delimitation.",
+      "board_tip": "Board answers reward a balanced debate, not a one-sided slogan."
+    },
+    {
+      "id": "we-grc-3",
+      "title": "Communalism and Its Forms",
+      "topic": "Explanation",
+      "problem": "Define communalism and describe its three forms with examples.",
+      "solution": [
+        "Step 1: Define communalism as the belief that religion is the main basis of community and that other religions are hostile.",
+        "Step 2: Everyday form: stereotypes and prejudice in daily conversation and media.",
+        "Step 3: Mobilisation form: political parties appeal to religious identity and organise voters around it.",
+        "Step 4: Violence form: riots and attacks against religious minorities.",
+        "Step 5: Explain that communalism is a political ideology, not the same as personal faith.",
+        "Step 6: Suggest remedies: secular politics, impartial administration, education and interfaith dialogue."
+      ],
+      "board_mode": [
+        "Give the definition in one sentence.",
+        "Use the three levels: everyday, mobilisation, violence.",
+        "Add one example for each level if asked.",
+        "End with a remedy to show analytical depth."
+      ],
+      "answer": "Communalism treats religion as the basis of political community and hostility to others; it appears in everyday prejudice, political mobilisation and communal violence.",
+      "board_tip": "Do not describe communalism as 'religion'; it is the political use of religion."
+    },
+    {
+      "id": "we-grc-4",
+      "title": "Indian Secularism versus Western Secularism",
+      "topic": "Comparison",
+      "problem": "How is Indian secularism different from the Western model of separation of church and state?",
+      "solution": [
+        "Step 1: Western secularism often emphasises a strict separation between religion and the state.",
+        "Step 2: Indian secularism also separates the state from any official religion.",
+        "Step 3: But the Indian state may intervene in religion to secure equality and reform, such as banning untouchability.",
+        "Step 4: India gives equal respect to all religions rather than treating religion as purely private.",
+        "Step 5: The state can support religious institutions of different faiths on equal terms.",
+        "Step 6: Conclude that Indian secularism is not anti-religion; it is a model of equal citizenship and reform."
+      ],
+      "board_mode": [
+        "State one similarity and one difference.",
+        "Use the reform example to explain the Indian model.",
+        "Avoid saying India is a Hindu state or an atheist state."
+      ],
+      "answer": "Both models reject an official state religion, but Indian secularism permits state intervention for equality and reform and gives equal respect to all faiths.",
+      "board_tip": "The phrase 'equal respect for all religions' is central to the Indian model."
+    },
+    {
+      "id": "we-grc-5",
+      "title": "Caste in Politics and Politics in Caste",
+      "topic": "Concept application",
+      "problem": "Distinguish between 'caste in politics' and 'politics in caste' with examples.",
+      "solution": [
+        "Step 1: Caste in politics refers to the influence of caste on political processes.",
+        "Step 2: Examples: parties choose candidates by caste, appeal to caste votes and form caste-based alliances.",
+        "Step 3: Politics in caste refers to caste groups using politics to assert rights and influence decisions.",
+        "Step 4: Examples: Dalit movements, caste associations demanding reservations and caste-based parties.",
+        "Step 5: The two processes reinforce each other: political competition makes caste identities more visible.",
+        "Step 6: Conclude that democracy both reflects caste and provides tools to challenge caste inequality."
+      ],
+      "board_mode": [
+        "Use a two-column table: caste in politics and politics in caste.",
+        "Give one example under each heading.",
+        "Add a concluding line on the two-way relationship."
+      ],
+      "answer": "Caste in politics is caste influencing elections and parties; politics in caste is caste groups organising politically for rights and power.",
+      "board_tip": "Do not reverse the two terms. Caste in politics comes first in the textbook."
+    }
+  ],
+  "exercises": {
+    "exercise_1_1": {
+      "title": "Foundation Questions on Gender, Religion and Caste",
+      "objective": "Recall key definitions and basic facts",
+      "problems": [
+        {
+          "id": "grc-ex1-1",
+          "question": "What is the sexual division of labour?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: It is the assignment of different tasks to men and women on the basis of gender.",
+            "Step 2: Women are usually given housework and care work.",
+            "Step 3: Men are usually given paid work outside the home.",
+            "Step 4: The division is social, not biologically fixed."
+          ],
+          "final_answer": "The sexual division of labour is the social assignment of housework and care work mainly to women and paid work outside the home mainly to men."
+        },
+        {
+          "id": "grc-ex1-2",
+          "question": "Define patriarchy.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Patriarchy is male dominance in family, society and politics.",
+            "Step 2: It gives men greater authority and control over resources and decisions.",
+            "Step 3: It can appear in inheritance, mobility, violence and representation."
+          ],
+          "final_answer": "Patriarchy is a system of male dominance that gives men greater power in family, society and political life."
+        },
+        {
+          "id": "grc-ex1-3",
+          "question": "What is communalism?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Communalism is the belief that religion is the main basis of community.",
+            "Step 2: It treats other religions as opposed to one's own.",
+            "Step 3: It uses religious identity for political mobilisation."
+          ],
+          "final_answer": "Communalism is a political ideology that treats religion as the main basis of community and promotes hostility towards other religious groups."
+        },
+        {
+          "id": "grc-ex1-4",
+          "question": "What is a secular state?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: A secular state has no official state religion.",
+            "Step 2: It guarantees freedom of religion.",
+            "Step 3: It does not discriminate on the ground of religion."
+          ],
+          "final_answer": "A secular state treats all religions equally, has no official state religion and guarantees freedom of religion without discrimination."
+        },
+        {
+          "id": "grc-ex1-5",
+          "question": "What is caste?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Caste is a hereditary social group.",
+            "Step 2: It is associated with occupation, marriage within the group and social hierarchy.",
+            "Step 3: Historically, it also involved untouchability."
+          ],
+          "final_answer": "Caste is a hereditary social hierarchy associated with occupation, endogamy and, historically, untouchability."
+        },
+        {
+          "id": "grc-ex1-6",
+          "question": "Who is a feminist?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: A feminist is a person who believes in equal rights and opportunities for women and men.",
+            "Step 2: Feminism is awareness of gender inequality and advocacy of change.",
+            "Step 3: It does not mean hatred of men."
+          ],
+          "final_answer": "A feminist is a person who supports equality between women and men and works against gender-based discrimination."
+        }
+      ]
+    },
+    "exercise_1_2": {
+      "title": "Understanding Gender, Religion and Caste in Politics",
+      "objective": "Explain representation, secularism and the caste-politics relationship",
+      "problems": [
+        {
+          "id": "grc-ex2-1",
+          "question": "Why are women under-represented in legislatures? Give three reasons.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Patriarchal norms discourage women from contesting elections.",
+            "Step 2: Parties often give fewer tickets to women because they are seen as less likely to win.",
+            "Step 3: Household responsibilities and unequal access to money and networks reduce women's chances.",
+            "Step 4: Violence and harassment in politics also deter women."
+          ],
+          "final_answer": "Women are under-represented because of patriarchal norms, fewer party tickets, unequal resources and household burdens, and the risk of harassment."
+        },
+        {
+          "id": "grc-ex2-2",
+          "question": "Describe three forms of communalism.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Everyday communalism: stereotypes and prejudice in daily life.",
+            "Step 2: Political communalism: mobilising voters around religious identity.",
+            "Step 3: Violent communalism: riots and attacks on religious groups.",
+            "Step 4: All three undermine equal citizenship."
+          ],
+          "final_answer": "Communalism appears as everyday prejudice, political mobilisation around religion and communal violence."
+        },
+        {
+          "id": "grc-ex2-3",
+          "question": "Explain three features of Indian secularism.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: India has no official state religion.",
+            "Step 2: The Constitution guarantees freedom of religion and prohibits religious discrimination.",
+            "Step 3: The state can intervene to secure equality and reform.",
+            "Step 4: Indian secularism respects all religions rather than opposing religion."
+          ],
+          "final_answer": "Indian secularism has no state religion, guarantees religious freedom and equality, and allows state intervention for reform and equal respect."
+        },
+        {
+          "id": "grc-ex2-4",
+          "question": "How does caste influence politics?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Parties select candidates with an eye on caste composition.",
+            "Step 2: Parties appeal to caste loyalties during elections.",
+            "Step 3: Caste groups form vote banks and alliances.",
+            "Step 4: Caste can influence access to tickets and government benefits."
+          ],
+          "final_answer": "Caste influences candidate selection, voter appeals, alliances and the distribution of benefits, though it is not the only factor in voting."
+        },
+        {
+          "id": "grc-ex2-5",
+          "question": "How does politics influence caste?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Caste groups organise to demand rights and recognition.",
+            "Step 2: Marginalised castes use elections to press for reservations and dignity.",
+            "Step 3: Caste associations become political actors.",
+            "Step 4: Politics can strengthen caste identity even while challenging caste hierarchy."
+          ],
+          "final_answer": "Politics gives caste groups a platform to organise, demand rights and compete for power, which can strengthen caste consciousness."
+        },
+        {
+          "id": "grc-ex2-6",
+          "question": "Why is women's reservation in panchayats important?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: It guarantees women at least one-third of panchayat seats.",
+            "Step 2: It brings women into local decision making.",
+            "Step 3: It can change attitudes about women's leadership.",
+            "Step 4: It is not always sufficient because women may face proxy control."
+          ],
+          "final_answer": "Reservation brings women into local government and challenges male monopoly, but real empowerment requires funds, powers and support."
+        }
+      ]
+    },
+    "exercise_1_3": {
+      "title": "Evaluation and Case-Based Questions",
+      "objective": "Assess inequalities, secularism and democratic responses",
+      "problems": [
+        {
+          "id": "grc-ex3-1",
+          "question": "Democracy has not ended gender inequality in India. Evaluate this statement.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Democracy has given women equal legal rights and the vote.",
+            "Step 2: Women's literacy and representation have improved.",
+            "Step 3: Yet women remain under-represented in legislatures and face a double burden.",
+            "Step 4: Violence, unequal wages and unequal property rights persist.",
+            "Step 5: Social norms change slowly, even when laws change quickly.",
+            "Step 6: Conclude that democracy creates tools for change but does not automatically produce equality."
+          ],
+          "final_answer": "The statement is largely true: democracy has improved legal equality and participation, but patriarchal norms and unequal resources keep gender inequality alive."
+        },
+        {
+          "id": "grc-ex3-2",
+          "question": "Communalism is a threat to democracy. Discuss with examples.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Democracy requires equal citizenship regardless of religion.",
+            "Step 2: Communalism divides citizens into religious camps and treats one community as the enemy.",
+            "Step 3: It can lead to discrimination, riots and the erosion of minority rights.",
+            "Step 4: Partition and later communal violence show the human cost.",
+            "Step 5: Communal politics also distorts elections by making religion the main issue.",
+            "Step 6: Conclude that secular politics and impartial institutions are necessary to protect democracy."
+          ],
+          "final_answer": "Communalism threatens equal citizenship, minority rights and peaceful politics; it must be countered by secular politics and impartial administration."
+        },
+        {
+          "id": "grc-ex3-3",
+          "question": "Caste is weakening but has not disappeared. Explain this paradox.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Urbanisation, education and new occupations have loosened caste-based work.",
+            "Step 2: Laws ban untouchability and provide reservations.",
+            "Step 3: Yet inter-caste marriage remains limited and discrimination persists.",
+            "Step 4: Caste identities remain important in politics and marriage markets.",
+            "Step 5: Economic mobility has helped some members of disadvantaged castes without ending caste inequality.",
+            "Step 6: Conclude that caste has changed form rather than vanished."
+          ],
+          "final_answer": "Caste has weakened in occupation and public law but persists in marriage, social networks, discrimination and politics."
+        },
+        {
+          "id": "grc-ex3-4",
+          "question": "A village panchayat has a woman sarpanch, but her husband attends meetings and takes decisions. What does this show about reservation and patriarchy?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Reservation guarantees a seat, not necessarily real power.",
+            "Step 2: Patriarchal norms can turn women representatives into proxies.",
+            "Step 3: The case shows the difference between formal and substantive representation.",
+            "Step 4: Training, education and financial independence can strengthen women's leadership.",
+            "Step 5: Women's collectives and public scrutiny can reduce proxy control.",
+            "Step 6: Conclude that reservation is necessary but must be combined with social change."
+          ],
+          "final_answer": "It shows that formal reservation can coexist with patriarchal control; real empowerment needs training, resources and social support."
+        },
+        {
+          "id": "grc-ex3-5",
+          "question": "Should the state interfere in religion to reform discriminatory practices? Discuss with reference to Indian secularism.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Indian secularism allows state intervention for equality and reform.",
+            "Step 2: Examples include banning untouchability and opening temples to all.",
+            "Step 3: Intervention is justified when a practice violates dignity and equal rights.",
+            "Step 4: Critics fear that intervention can become interference in religious freedom.",
+            "Step 5: Safeguards include constitutional limits, judicial review and public debate.",
+            "Step 6: Conclude that reform is legitimate when it protects equality, not when it favours one religion."
+          ],
+          "final_answer": "Yes, when a practice violates equality and dignity; Indian secularism permits reform, but intervention must be non-discriminatory and subject to constitutional limits."
+        },
+        {
+          "id": "grc-ex3-6",
+          "question": "A political party says: 'We will give every community a share in tickets and ministries according to its population.' Evaluate this proposal using the ideas of power sharing and equality.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Proportional sharing can reduce exclusion and give groups a stake.",
+            "Step 2: It can also freeze caste and religious identities into permanent political categories.",
+            "Step 3: It may ignore individual merit and diversity within communities.",
+            "Step 4: A better approach combines inclusion with rights protection and development for all.",
+            "Step 5: The proposal should be judged by whether it reduces inequality, not merely by whether it balances groups.",
+            "Step 6: Conclude that power sharing is valuable but should not become a mechanical caste or religion quota."
+          ],
+          "final_answer": "Proportional sharing can reduce exclusion, but it risks hardening identities and ignoring individual merit; it must be combined with equality and rights safeguards."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "grc-q-s-1",
+        "question": "Gender is best described as:",
+        "options": [
+          "A biological difference between men and women",
+          "A law passed by Parliament",
+          "A socially constructed set of roles and expectations",
+          "A purely economic category"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Gender refers to socially learned roles, not biological sex.",
+          "wrong_options": {
+            "0": "Biological differences are referred to as sex.",
+            "1": "Gender roles are not created by a single law.",
+            "3": "Gender is broader than an economic category."
+          }
+        }
+      },
+      {
+        "id": "grc-q-s-2",
+        "question": "The sexual division of labour usually gives women:",
+        "options": [
+          "All political offices",
+          "Most housework and care work",
+          "Only factory work",
+          "Equal pay in every job"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Women are usually assigned housework and care work, often unpaid.",
+          "wrong_options": {
+            "0": "Women are under-represented in political offices.",
+            "2": "Women work in many sectors, not only factories.",
+            "3": "Equal pay is not universal."
+          }
+        }
+      },
+      {
+        "id": "grc-q-s-3",
+        "question": "Patriarchy means:",
+        "options": [
+          "Male dominance in family and society",
+          "Rule by women",
+          "Equal rights for all",
+          "A system of caste equality"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Patriarchy is a system of male dominance.",
+          "wrong_options": {
+            "1": "Rule by women would be matriarchy.",
+            "2": "Patriarchy is the opposite of equal rights.",
+            "3": "It is not a caste equality system."
+          }
+        }
+      },
+      {
+        "id": "grc-q-s-4",
+        "question": "Communalism is based on the belief that:",
+        "options": [
+          "Religion should be abolished",
+          "All religions are equally true in every respect",
+          "Politics should ignore religion completely",
+          "Religion is the main basis of community and other religions are opposed"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Communalism treats religion as the main community identity and promotes hostility to others.",
+          "wrong_options": {
+            "0": "Communalism does not seek to abolish religion.",
+            "1": "It does not promote equal respect; it promotes division.",
+            "2": "It does the opposite by making religion central to politics."
+          }
+        }
+      },
+      {
+        "id": "grc-q-s-5",
+        "question": "India is a secular state because:",
+        "options": [
+          "It has an official state religion",
+          "It bans all religions",
+          "It has no official state religion and treats all faiths equally",
+          "It makes one religion compulsory"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "India has no official state religion and guarantees equal treatment.",
+          "wrong_options": {
+            "0": "India does not have an official state religion.",
+            "1": "Secularism is not anti-religion.",
+            "3": "No religion is compulsory."
+          }
+        }
+      },
+      {
+        "id": "grc-q-s-6",
+        "question": "The caste system is associated with:",
+        "options": [
+          "Equality of all occupations",
+          "Hereditary social hierarchy",
+          "The abolition of marriage",
+          "A single political party"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Caste is a hereditary hierarchy linked to occupation and status.",
+          "wrong_options": {
+            "0": "Caste historically justified unequal occupations.",
+            "2": "Caste is linked to marriage rules, not its abolition.",
+            "3": "Caste is not a party system."
+          }
+        }
+      },
+      {
+        "id": "grc-q-s-7",
+        "question": "The 106th Constitutional Amendment Act of 2023 provides for:",
+        "options": [
+          "One-third reservation for women in the Lok Sabha and state assemblies",
+          "Abolition of panchayats",
+          "Reservation only for men",
+          "A new national language"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "It provides one-third reservation for women, to take effect after delimitation.",
+          "wrong_options": {
+            "1": "It does not abolish panchayats.",
+            "2": "It reserves seats for women, not men.",
+            "3": "It is not about language."
+          }
+        }
+      },
+      {
+        "id": "grc-q-s-8",
+        "question": "Which of these is an example of caste in politics?",
+        "options": [
+          "A court interpreting a law",
+          "A bank fixing interest rates",
+          "A school teaching mathematics",
+          "A party choosing candidates with an eye on caste"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Caste in politics includes caste-based ticket distribution and appeals.",
+          "wrong_options": {
+            "0": "Judicial interpretation is not caste in politics.",
+            "1": "Banking policy is not caste politics.",
+            "2": "Teaching mathematics is not caste politics."
+          }
+        }
+      },
+      {
+        "id": "grc-q-s-9",
+        "question": "Which of these is an example of politics in caste?",
+        "options": [
+          "A panchayat repairing a road",
+          "A company exporting goods",
+          "A caste association demanding reservations",
+          "A court hearing a property case"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Politics in caste refers to caste groups organising politically.",
+          "wrong_options": {
+            "0": "Road repair is local administration.",
+            "1": "Exporting goods is economic activity.",
+            "3": "A property case is a legal matter."
+          }
+        }
+      },
+      {
+        "id": "grc-q-s-10",
+        "question": "Women's representation in the Lok Sabha is:",
+        "options": [
+          "About half of all seats",
+          "Much lower than their share of the population",
+          "Exactly equal to men's representation",
+          "Higher than men's representation"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Women are significantly under-represented in the Lok Sabha.",
+          "wrong_options": {
+            "0": "Women do not hold half the seats.",
+            "2": "Representation is not equal.",
+            "3": "Women do not have higher representation than men."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "grc-q-m-1",
+        "question": "The double burden on women refers to:",
+        "options": [
+          "Working outside the home and doing most unpaid housework",
+          "Paying two taxes",
+          "Holding two political offices",
+          "Studying two languages"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Women often combine paid work with a second shift of unpaid care work.",
+          "wrong_options": {
+            "1": "It is not about taxation.",
+            "2": "It is not about holding offices.",
+            "3": "It is not about language study."
+          }
+        }
+      },
+      {
+        "id": "grc-q-m-2",
+        "question": "Which statement about women's reservation in panchayats is correct?",
+        "options": [
+          "It guarantees half of all seats in every panchayat",
+          "It applies only to urban bodies",
+          "It was introduced by the 106th Amendment",
+          "It guarantees one-third of seats for women"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Panchayats reserve one-third of seats for women.",
+          "wrong_options": {
+            "0": "The constitutional minimum is one-third, though some states have more.",
+            "1": "It applies to panchayats, which are rural bodies.",
+            "2": "The 106th Amendment concerns the Lok Sabha and state assemblies."
+          }
+        }
+      },
+      {
+        "id": "grc-q-m-3",
+        "question": "Which is the best example of everyday communalism?",
+        "options": [
+          "A court order protecting religious freedom",
+          "A school teaching science",
+          "A stereotype that people of a particular religion are untrustworthy",
+          "A census count of population"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Everyday communalism appears in prejudice and stereotypes.",
+          "wrong_options": {
+            "0": "That is a legal protection, not communalism.",
+            "1": "Teaching science is not communal.",
+            "3": "A census is an administrative exercise."
+          }
+        }
+      },
+      {
+        "id": "grc-q-m-4",
+        "question": "Indian secularism allows the state to:",
+        "options": [
+          "Establish one official religion",
+          "Intervene in religion to secure equality and reform",
+          "Ban all religious practice",
+          "Discriminate against minorities"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The Indian model permits reform-oriented intervention, such as banning untouchability.",
+          "wrong_options": {
+            "0": "India has no official religion.",
+            "2": "Secularism does not ban religion.",
+            "3": "Discrimination violates secular equality."
+          }
+        }
+      },
+      {
+        "id": "grc-q-m-5",
+        "question": "Caste inequality persists in India because:",
+        "options": [
+          "Caste influences education, income, marriage and social networks",
+          "Caste has been legally abolished in every respect",
+          "All castes have equal wealth",
+          "Urbanisation has ended caste entirely"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Caste continues to shape opportunities and social relations.",
+          "wrong_options": {
+            "1": "Untouchability is abolished, but caste inequality persists.",
+            "2": "Wealth is not equally distributed among castes.",
+            "3": "Urbanisation has weakened but not ended caste."
+          }
+        }
+      },
+      {
+        "id": "grc-q-m-6",
+        "question": "Which of these is a consequence of caste-based politics?",
+        "options": [
+          "Caste disappears from elections",
+          "All parties become identical",
+          "Religion ceases to matter",
+          "Caste groups may gain representation and voice"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Caste politics can bring marginalised groups into the political process.",
+          "wrong_options": {
+            "0": "Caste remains visible in elections.",
+            "1": "Parties differ in their caste strategies.",
+            "2": "Religion can also remain politically important."
+          }
+        }
+      },
+      {
+        "id": "grc-q-m-7",
+        "question": "The statement 'women's work at home is not counted in GDP' shows that:",
+        "options": [
+          "Housework has no value",
+          "Women do not work",
+          "Unpaid care work is economically invisible",
+          "GDP measures all work equally"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "National accounts often omit unpaid domestic and care work.",
+          "wrong_options": {
+            "0": "Housework has value even if unpaid.",
+            "1": "Women perform substantial work.",
+            "3": "GDP does not measure all work equally."
+          }
+        }
+      },
+      {
+        "id": "grc-q-m-8",
+        "question": "Which is the best example of politics in caste?",
+        "options": [
+          "A party distributing tickets by caste",
+          "A Dalit organisation campaigning for dignity and rights",
+          "A newspaper reporting a cricket match",
+          "A bank opening a branch"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Politics in caste is caste groups using politics to assert rights.",
+          "wrong_options": {
+            "0": "That is caste in politics.",
+            "2": "Cricket reporting is unrelated.",
+            "3": "Banking is unrelated."
+          }
+        }
+      },
+      {
+        "id": "grc-q-m-9",
+        "question": "Which statement about religion and politics in India is most accurate?",
+        "options": [
+          "Religion can influence politics, and politics can influence religion",
+          "Religion has no influence on politics",
+          "Politics has no influence on religion",
+          "Religion is banned from public debate"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The relationship is two-way in India.",
+          "wrong_options": {
+            "1": "Religion clearly influences political identities.",
+            "2": "Politics also shapes religious institutions and debates.",
+            "3": "Religion is not banned from public debate."
+          }
+        }
+      },
+      {
+        "id": "grc-q-m-10",
+        "question": "Reservation for Scheduled Castes and Scheduled Tribes is intended to:",
+        "options": [
+          "Give all power to one caste",
+          "Abolish elections",
+          "Prevent education for other groups",
+          "Correct historical inequality and improve representation"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Reservation is a corrective measure for historical exclusion.",
+          "wrong_options": {
+            "0": "It does not give all power to one caste.",
+            "1": "Elections continue.",
+            "2": "It does not prevent education for others."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "grc-q-x-1",
+        "question": "Which argument best explains why legal equality has not ended gender inequality?",
+        "options": [
+          "Laws are always ineffective",
+          "Women do not want equality",
+          "Social norms and unequal resources change more slowly than laws",
+          "Gender inequality is biologically inevitable"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Patriarchal norms, unpaid work and unequal resources persist after legal reform.",
+          "wrong_options": {
+            "0": "Laws can be effective but are not sufficient alone.",
+            "1": "The statement is false and unsupported.",
+            "3": "Gender inequality is social, not biologically inevitable."
+          }
+        }
+      },
+      {
+        "id": "grc-q-x-2",
+        "question": "A woman sarpanch is elected but her husband controls the panchayat. This is best described as:",
+        "options": [
+          "A complete end to patriarchy",
+          "Formal representation without substantive power",
+          "A violation of the Constitution's reservation rule",
+          "An example of communalism"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The seat is reserved, but real decision-making is still controlled by a man.",
+          "wrong_options": {
+            "0": "Patriarchy persists in proxy control.",
+            "2": "The election itself may be legal; the problem is social control.",
+            "3": "This is not about religion."
+          }
+        }
+      },
+      {
+        "id": "grc-q-x-3",
+        "question": "Which statement best distinguishes communalism from religion?",
+        "options": [
+          "Communalism is the political use of religion to divide people; religion is a system of faith and practice",
+          "Communalism and religion are identical",
+          "Religion is always violent; communalism is peaceful",
+          "Communalism is a scientific theory"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Communalism is a political ideology, not the same as personal faith.",
+          "wrong_options": {
+            "1": "The textbook distinguishes them.",
+            "2": "This reverses the relationship and is inaccurate.",
+            "3": "Communalism is not a scientific theory."
+          }
+        }
+      },
+      {
+        "id": "grc-q-x-4",
+        "question": "Indian secularism permits state intervention in religion mainly to:",
+        "options": [
+          "Favour the majority religion",
+          "Abolish all religions",
+          "Prevent any religious practice",
+          "Protect equality and dignity"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Intervention is justified when a practice violates equality and dignity.",
+          "wrong_options": {
+            "0": "Favouring one religion violates secularism.",
+            "1": "Secularism is not anti-religion.",
+            "2": "It does not prevent all practice."
+          }
+        }
+      },
+      {
+        "id": "grc-q-x-5",
+        "question": "Caste in politics can weaken democracy when it:",
+        "options": [
+          "Brings marginalised groups into politics",
+          "Encourages debate about inequality",
+          "Makes caste loyalty the main basis for tickets and votes",
+          "Forces parties to address discrimination"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Caste-based selection and appeals can override policy and merit.",
+          "wrong_options": {
+            "0": "That can strengthen inclusion.",
+            "1": "Debate about inequality is valuable.",
+            "3": "Addressing discrimination is positive."
+          }
+        }
+      },
+      {
+        "id": "grc-q-x-6",
+        "question": "Which is the strongest reason to support women's reservation in legislatures?",
+        "options": [
+          "It guarantees that every woman candidate is honest",
+          "It can correct persistent exclusion and bring women's interests into policy",
+          "It removes the need for elections",
+          "It makes patriarchy illegal"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Reservation addresses structural exclusion and representation.",
+          "wrong_options": {
+            "0": "Reservation does not guarantee individual quality.",
+            "2": "Elections continue.",
+            "3": "Patriarchy is social and cannot be abolished by one law."
+          }
+        }
+      },
+      {
+        "id": "grc-q-x-7",
+        "question": "A party appeals to voters by saying that only one religion can save the country. This is:",
+        "options": [
+          "Communal mobilisation",
+          "A secular appeal",
+          "A caste-based appeal only",
+          "A scientific argument"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "It uses religious identity and fear of other religions for political gain.",
+          "wrong_options": {
+            "1": "Secular politics does not privilege one religion.",
+            "2": "The appeal is religious, not only caste-based.",
+            "3": "It is not a scientific argument."
+          }
+        }
+      },
+      {
+        "id": "grc-q-x-8",
+        "question": "Which conclusion about caste and class is most accurate?",
+        "options": [
+          "They are exactly the same",
+          "Caste has no relation to economic status",
+          "Class has replaced caste completely",
+          "They overlap but are not identical; caste status does not always match income"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Caste and class are related but distinct dimensions of inequality.",
+          "wrong_options": {
+            "0": "They are not identical.",
+            "1": "Caste does affect economic opportunity.",
+            "2": "Class has not replaced caste."
+          }
+        }
+      },
+      {
+        "id": "grc-q-x-9",
+        "question": "Which is the best democratic response to communalism?",
+        "options": [
+          "Banning all religious discussion",
+          "Supporting only one religion",
+          "Secular politics, impartial administration and equal citizenship",
+          "Ignoring communal violence"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Democracy counters communalism through equality, rule of law and secular politics.",
+          "wrong_options": {
+            "0": "Banning discussion is not the answer and may violate freedom.",
+            "1": "Supporting one religion is communal.",
+            "3": "Ignoring violence allows impunity."
+          }
+        }
+      },
+      {
+        "id": "grc-q-x-10",
+        "question": "Which statement best captures the relationship between democracy and social inequality?",
+        "options": [
+          "Democracy always removes inequality immediately",
+          "Democracy provides tools to challenge inequality but does not automatically remove it",
+          "Democracy makes inequality worse by definition",
+          "Democracy is unrelated to social inequality"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Rights, elections and movements help, but deep inequalities persist.",
+          "wrong_options": {
+            "0": "Change is slow and uneven.",
+            "2": "Democracy can also empower movements for equality.",
+            "3": "Democracy shapes and is shaped by social inequality."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Gender, Religion and Caste - Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Social Inequality",
+        "group": "core"
+      },
+      {
+        "id": "n2",
+        "label": "Gender",
+        "group": "dimension"
+      },
+      {
+        "id": "n3",
+        "label": "Sexual Division of Labour",
+        "group": "gender"
+      },
+      {
+        "id": "n4",
+        "label": "Patriarchy",
+        "group": "gender"
+      },
+      {
+        "id": "n5",
+        "label": "Women's Representation",
+        "group": "gender"
+      },
+      {
+        "id": "n6",
+        "label": "Religion and Politics",
+        "group": "dimension"
+      },
+      {
+        "id": "n7",
+        "label": "Communalism",
+        "group": "religion"
+      },
+      {
+        "id": "n8",
+        "label": "Secularism",
+        "group": "religion"
+      },
+      {
+        "id": "n9",
+        "label": "Caste",
+        "group": "dimension"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n6"
+      ],
+      [
+        "n1",
+        "n9"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n2",
+        "n5"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n6",
+        "n7"
+      ],
+      [
+        "n6",
+        "n8"
+      ],
+      [
+        "n7",
+        "n8"
+      ],
+      [
+        "n9",
+        "n6"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Gender, Religion and Caste - Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Gender, Religion and Caste",
+    "branches": [
+      {
+        "concept": "Gender Inequality",
+        "sub_nodes": [
+          "Sex is biological; gender is social",
+          "Sexual division of labour",
+          "Unpaid care work",
+          "Double burden",
+          "Lower literacy and workforce participation"
+        ],
+        "connections": "Gender inequality is learned and can be changed"
+      },
+      {
+        "concept": "Women's Representation",
+        "sub_nodes": [
+          "Low share in Lok Sabha and state assemblies",
+          "Panchayat reservation of one-third seats",
+          "106th Amendment of 2023",
+          "Proxy control by male relatives",
+          "Women's movements and legal reform"
+        ]
+      },
+      {
+        "concept": "Religion and Politics",
+        "sub_nodes": [
+          "Religion shapes identity and public life",
+          "Religious appeals in elections",
+          "Personal faith is not communalism",
+          "Political parties mobilise religious groups"
+        ]
+      },
+      {
+        "concept": "Communalism",
+        "sub_nodes": [
+          "Religion as the main basis of community",
+          "Everyday prejudice",
+          "Political mobilisation",
+          "Communal violence",
+          "Threat to equal citizenship"
+        ]
+      },
+      {
+        "concept": "Indian Secularism",
+        "sub_nodes": [
+          "No official state religion",
+          "Freedom of religion",
+          "No religious discrimination",
+          "State reform for equality",
+          "Equal respect for all faiths"
+        ]
+      },
+      {
+        "concept": "Caste",
+        "sub_nodes": [
+          "Hereditary hierarchy",
+          "Caste in politics: tickets and vote banks",
+          "Politics in caste: assertion and reservations",
+          "Caste persists in marriage and networks",
+          "Urbanisation and education weaken some rules"
+        ]
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "Gender inequality is natural because men and women are biologically different - FALSE: biology does not determine who cooks, cares for children or leads; these roles are social.",
+    "Feminism means hatred of men - FALSE: feminism supports equality between women and men.",
+    "Communalism is the same as religion - FALSE: communalism is the political use of religion to divide people; personal faith is different.",
+    "Indian secularism means the state is anti-religious - FALSE: Indian secularism gives equal respect to all religions and allows reform, not hostility to religion.",
+    "Caste has disappeared because untouchability is illegal - FALSE: caste inequality persists in marriage, networks, income and social status.",
+    "Reserving seats for women automatically empowers them - FALSE: reservation can be symbolic if women lack funds, training and real decision-making power.",
+    "Caste only matters in rural areas - FALSE: caste also affects urban politics, marriage and employment networks.",
+    "Religion and politics are completely separate in India - FALSE: religion influences politics and politics influences religion, which is why secularism matters."
+  ],
+  "chapterId": "gender-religion-and-caste",
+  "subjectId": "social-science",
+  "subjectName": "Social Science",
+  "unitId": "social-science-3",
+  "unitName": "Democratic Politics - II",
+  "examWeightage": 20,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

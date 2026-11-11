@@ -1,0 +1,1230 @@
+{
+  "subject": "Physics",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 2,
+  "chapter": "Human Eye and Colourful World",
+  "id": "human-eye-and-colourful-world",
+  "lesson": 2,
+  "title": "The Human Eye and the Colourful World - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Describe the structure and function of the human eye",
+    "Explain accommodation, near point, and far point",
+    "Identify myopia, hypermetropia, and presbyopia and calculate correcting lens power",
+    "Explain refraction of light through a prism and the angle of deviation",
+    "Describe dispersion of white light and the formation of a spectrum",
+    "Explain atmospheric refraction and scattering of light with everyday examples",
+    "Solve board-style numericals on vision defects and prism deviation"
+  ],
+  "concepts": [
+    {
+      "id": "structure-of-eye",
+      "title": "Structure and Working of the Human Eye",
+      "explanation": "The human eye is a natural optical instrument shaped almost like a sphere about 2.5 cm in diameter. Light enters through the transparent cornea, passes through the pupil whose size is controlled by the iris, and is focused by the crystalline lens onto the retina. The retina contains light-sensitive cells: rods respond to dim light and cones respond to colour. These cells convert light into electrical signals that travel through the optic nerve to the brain, which interprets the image.",
+      "key_points": [
+        "Cornea refracts most of the incoming light; the crystalline lens makes fine adjustments.",
+        "The iris controls the size of the pupil and hence the amount of light entering the eye.",
+        "The retina is the light-sensitive screen where a real, inverted image is formed.",
+        "The optic nerve carries signals from the retina to the brain."
+      ],
+      "real_life_example": "A camera works like the eye: the lens focuses light, the aperture controls light, and the sensor or film records the image."
+    },
+    {
+      "id": "accommodation-near-far",
+      "title": "Accommodation, Near Point, and Far Point",
+      "explanation": "The eye can focus on objects at different distances by changing the curvature and hence the focal length of its crystalline lens; this ability is called the power of accommodation. The ciliary muscles contract to make the lens thicker and more converging for nearby objects, and relax for distant objects. The near point of a normal adult eye is about 25 cm and the far point is infinity. The range between these limits is called the range of vision.",
+      "key_points": [
+        "Power of accommodation is the ability of the eye lens to change its focal length.",
+        "Ciliary muscles control the curvature of the crystalline lens.",
+        "Near point of a normal adult eye is about 25 cm.",
+        "Far point of a normal eye is infinity; the range of vision lies between these two limits."
+      ],
+      "real_life_example": "Reading a book at 25 cm and then looking at a distant board requires the eye to change its focal length within a fraction of a second."
+    },
+    {
+      "id": "defects-of-vision",
+      "title": "Defects of Vision and Their Correction",
+      "explanation": "Myopia or short-sightedness is the inability to see distant objects clearly; the image of a far object forms in front of the retina. It is corrected by a concave lens of suitable negative power. Hypermetropia or long-sightedness is the inability to see nearby objects clearly; the image forms behind the retina and is corrected by a convex lens of positive power. Presbyopia is the age-related loss of accommodation, caused by weakening of the ciliary muscles and hardening of the lens, and is corrected by bifocal lenses.",
+      "key_points": [
+        "Myopia: far point is finite, corrected by a concave lens.",
+        "Hypermetropia: near point is too far, corrected by a convex lens.",
+        "Presbyopia: loss of accommodation with age, corrected by bifocal lenses.",
+        "The correcting lens forms the image of the object at the defective eye's far point or near point."
+      ],
+      "real_life_example": "A student who cannot read the board from the back row may have myopia, while a grandparent who cannot read a newspaper at arm's length may have presbyopia."
+    },
+    {
+      "id": "prism-refraction",
+      "title": "Refraction of Light Through a Prism",
+      "explanation": "A glass prism is a transparent medium bounded by two triangular bases and three rectangular surfaces. When light passes through a prism, it refracts at both surfaces, and the emergent ray is deviated from the incident direction. The angle between the incident ray and the emergent ray is the angle of deviation. The deviation depends on the angle of the prism, the angle of incidence, and the refractive index of the material.",
+      "key_points": [
+        "A prism has two refracting surfaces inclined at the angle of the prism.",
+        "Light bends towards the base of the prism on passing through it.",
+        "Angle of deviation D = i1 + i2 - A.",
+        "Deviation depends on the prism angle, angle of incidence, and refractive index."
+      ],
+      "real_life_example": "A triangular glass prism held in sunlight throws a band of colours on a wall because different colours are deviated by different amounts."
+    },
+    {
+      "id": "dispersion-spectrum",
+      "title": "Dispersion of White Light and the Spectrum",
+      "explanation": "White light is a mixture of seven colours: red, orange, yellow, green, blue, indigo, and violet. When white light passes through a prism, each colour is refracted by a different amount because the refractive index of glass is different for different colours. Violet bends the most and red the least, so the colours separate into a spectrum. This splitting of white light into its component colours is called dispersion.",
+      "key_points": [
+        "Dispersion is the splitting of white light into its component colours.",
+        "The sequence of colours is violet, indigo, blue, green, yellow, orange, red (VIBGYOR).",
+        "Violet has the highest refractive index in glass and deviates most; red deviates least.",
+        "A rainbow is a natural spectrum formed by dispersion and refraction in water droplets."
+      ],
+      "real_life_example": "A rainbow appears when sunlight is refracted, dispersed, and internally reflected by tiny water droplets in the atmosphere."
+    },
+    {
+      "id": "atmospheric-refraction-scattering",
+      "title": "Atmospheric Refraction and Scattering of Light",
+      "explanation": "The atmosphere is not uniform; its density and refractive index change with height, so light from stars and the Sun bends gradually as it passes through it. This atmospheric refraction causes stars to twinkle and makes the Sun visible a little before actual sunrise and after actual sunset. Scattering of light by molecules and particles makes the sky look blue and the setting Sun look red. The Tyndall effect is the scattering of light by colloidal particles, which makes a beam visible in a dusty room.",
+      "key_points": [
+        "Atmospheric refraction causes twinkling of stars and the apparent flattening of the Sun near the horizon.",
+        "The Sun is visible about 2 minutes before sunrise and after sunset because of atmospheric refraction.",
+        "Blue light is scattered more than red because it has a shorter wavelength.",
+        "The Tyndall effect is scattering of light by colloidal particles; it explains why the sky is blue and sunsets are red."
+      ],
+      "real_life_example": "The sky looks blue at noon because air molecules scatter blue light more strongly, while the setting Sun looks red because red light is scattered least and reaches the observer."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-eye-1",
+      "title": "Myopia: power of the correcting lens",
+      "problem": "A myopic person can see clearly only up to 80 cm. Find the power of the lens required to correct this defect so that the person can see distant objects clearly.",
+      "solution": [
+        "Step 1: A myopic eye focuses distant objects in front of the retina, so a diverging lens is needed.",
+        "Step 2: The lens must form the image of an object at infinity at the far point of the eye, 80 cm in front of the lens.",
+        "Step 3: Use u = negative infinity and v = -80 cm = -0.80 m in the lens formula 1/f = 1/v - 1/u.",
+        "Step 4: 1/f = 1/(-0.80) - 0 = -1.25 m^-1.",
+        "Step 5: Therefore f = -0.80 m and P = 1/f = -1.25 D."
+      ],
+      "answer": "Power of the correcting concave lens = -1.25 D.",
+      "board_tip": "For myopia, the image of a distant object must be formed at the far point; use v = -far point in metres.",
+      "exam_tip": "The power of a concave lens is negative; write the sign explicitly."
+    },
+    {
+      "id": "we-eye-2",
+      "title": "Hypermetropia: power of the correcting lens",
+      "problem": "A hypermetropic person has a near point of 1 m. Find the power of the lens required to read a book kept at the normal near point of 25 cm.",
+      "solution": [
+        "Step 1: The object is at the normal near point, so u = -25 cm = -0.25 m.",
+        "Step 2: The lens must form the image at the person's near point, so v = -1 m.",
+        "Step 3: Use 1/f = 1/v - 1/u = 1/(-1) - 1/(-0.25).",
+        "Step 4: 1/f = -1 + 4 = +3 m^-1.",
+        "Step 5: Therefore f = +1/3 m = +33.3 cm and P = +3 D."
+      ],
+      "answer": "Power of the correcting convex lens = +3 D.",
+      "board_tip": "For hypermetropia, use u = -0.25 m and v = -near point in metres.",
+      "exam_tip": "Both u and v are negative here because the object and the virtual image are on the same side of the lens."
+    },
+    {
+      "id": "we-eye-3",
+      "title": "Presbyopia: bifocal lens powers",
+      "problem": "A presbyopic person cannot see clearly beyond 2 m or nearer than 1 m. Find the powers of the two lenses needed in bifocal spectacles.",
+      "solution": [
+        "Step 1: For distant vision, the far point is 2 m, so the distance lens must form the image of an object at infinity at 2 m: f1 = -2 m.",
+        "Step 2: P1 = 1/f1 = 1/(-2) = -0.5 D.",
+        "Step 3: For near vision, the object is at 25 cm and the image must be at the near point of 1 m: 1/f2 = 1/(-1) - 1/(-0.25).",
+        "Step 4: 1/f2 = -1 + 4 = +3 m^-1, so P2 = +3 D.",
+        "Step 5: The upper part of the bifocal lens is the concave distance lens and the lower part is the convex reading lens."
+      ],
+      "answer": "Distance part: -0.5 D (concave); reading part: +3 D (convex).",
+      "board_tip": "Presbyopia needs two separate corrections; do not average the powers.",
+      "exam_tip": "A bifocal lens combines a concave upper portion and a convex lower portion."
+    },
+    {
+      "id": "we-eye-4",
+      "title": "Prism: angle of deviation",
+      "problem": "A ray of light passes through a prism of angle 60 degrees. If the angle of incidence is 45 degrees and the angle of emergence is 45 degrees, find the angle of deviation.",
+      "solution": [
+        "Step 1: Use the deviation relation D = i1 + i2 - A.",
+        "Step 2: Substitute i1 = 45 degrees, i2 = 45 degrees, and A = 60 degrees.",
+        "Step 3: D = 45 + 45 - 60 = 30 degrees.",
+        "Step 4: The emergent ray is deviated by 30 degrees from the incident direction."
+      ],
+      "answer": "Angle of deviation D = 30 degrees.",
+      "board_tip": "Check that all angles are in degrees and that A is the angle between the two refracting surfaces.",
+      "exam_tip": "For symmetrical passage, i1 = i2, and the deviation is minimum for that prism angle."
+    },
+    {
+      "id": "we-eye-5",
+      "title": "Why the sky is blue and the sunset is red",
+      "problem": "Explain why the sky appears blue during the day and why the Sun appears red at sunset.",
+      "solution": [
+        "Step 1: Sunlight contains all colours, with different wavelengths.",
+        "Step 2: Molecules in the atmosphere scatter shorter wavelengths, such as blue and violet, much more strongly than longer wavelengths such as red.",
+        "Step 3: Scattered blue light reaches our eyes from all directions of the sky, so the sky looks blue.",
+        "Step 4: At sunset, sunlight travels a longer path through the atmosphere, so most of the blue light is scattered away.",
+        "Step 5: The light that reaches the observer is dominated by red and orange, so the Sun and the surrounding sky look red."
+      ],
+      "answer": "The sky is blue because short-wavelength blue light is scattered most; the sunset is red because blue light is scattered out over a long atmospheric path, leaving red light.",
+      "board_tip": "Link the answer to wavelength: shorter wavelength scatters more.",
+      "exam_tip": "The same scattering principle explains why red is used for danger signals."
+    }
+  ],
+  "exercises": {
+    "simple": {
+      "title": "Simple Practice - Eye Structure and Vision Basics",
+      "objective": "Recall eye parts, accommodation, and defect corrections",
+      "problems": [
+        {
+          "id": "eye-s-1",
+          "question": "Name the parts of the human eye responsible for (i) refracting most of the incoming light, (ii) controlling the amount of light entering, and (iii) forming the image.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The cornea is the transparent front surface that refracts most of the incoming light.",
+            "Step 2: The iris controls the size of the pupil, and the pupil controls the amount of light entering.",
+            "Step 3: The crystalline lens focuses the light, and the retina is the screen on which the image is formed."
+          ],
+          "final_answer": "(i) Cornea; (ii) iris and pupil; (iii) crystalline lens focuses light and the retina forms the image."
+        },
+        {
+          "id": "eye-s-2",
+          "question": "Define the power of accommodation of the eye.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The eye must focus on objects at different distances.",
+            "Step 2: The ciliary muscles change the curvature of the crystalline lens, changing its focal length.",
+            "Step 3: This ability of the eye lens to adjust its focal length is called the power of accommodation."
+          ],
+          "final_answer": "The power of accommodation is the ability of the eye lens to change its focal length to focus on objects at different distances."
+        },
+        {
+          "id": "eye-s-3",
+          "question": "State the near point and far point of a normal adult human eye.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The nearest point at which the eye can see clearly is the near point.",
+            "Step 2: For a normal adult eye, the near point is about 25 cm.",
+            "Step 3: The farthest point at which the eye can see clearly is the far point, which is infinity for a normal eye."
+          ],
+          "final_answer": "Near point: about 25 cm; far point: infinity."
+        },
+        {
+          "id": "eye-s-4",
+          "question": "What is myopia? How is it corrected?",
+          "difficulty": "simple",
+          "marks": 3,
+          "solution": [
+            "Step 1: Myopia is short-sightedness, in which distant objects appear blurred.",
+            "Step 2: The image of a distant object forms in front of the retina because the eye lens is too converging or the eyeball is too long.",
+            "Step 3: A concave lens of suitable negative power diverges the rays before they enter the eye and shifts the image back onto the retina."
+          ],
+          "final_answer": "Myopia is defective distant vision; it is corrected by a concave lens of suitable negative power."
+        },
+        {
+          "id": "eye-s-5",
+          "question": "What is hypermetropia? How is it corrected?",
+          "difficulty": "simple",
+          "marks": 3,
+          "solution": [
+            "Step 1: Hypermetropia is long-sightedness, in which nearby objects appear blurred.",
+            "Step 2: The image of a nearby object forms behind the retina because the eye lens is not converging enough or the eyeball is too short.",
+            "Step 3: A convex lens of suitable positive power converges the rays before they enter the eye and shifts the image forward onto the retina."
+          ],
+          "final_answer": "Hypermetropia is defective near vision; it is corrected by a convex lens of suitable positive power."
+        },
+        {
+          "id": "eye-s-6",
+          "question": "What is dispersion of light? Name the colours of the spectrum in order.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: White light is a mixture of different colours.",
+            "Step 2: A prism refracts each colour by a different amount, separating them.",
+            "Step 3: This splitting of white light into its component colours is called dispersion.",
+            "Step 4: The order is violet, indigo, blue, green, yellow, orange, red (VIBGYOR)."
+          ],
+          "final_answer": "Dispersion is the splitting of white light into colours; the order is VIBGYOR."
+        }
+      ]
+    },
+    "medium": {
+      "title": "Medium Practice - Vision Defect and Prism Numericals",
+      "objective": "Calculate correcting lens power and prism deviation",
+      "problems": [
+        {
+          "id": "eye-m-1",
+          "question": "A myopic person can see clearly only up to 80 cm. Find the power of the correcting lens.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The far point is 80 cm = 0.80 m, so the image of a distant object must form there.",
+            "Step 2: u is infinity and v = -0.80 m.",
+            "Step 3: 1/f = 1/v - 1/u = 1/(-0.80) - 0 = -1.25 m^-1.",
+            "Step 4: P = 1/f = -1.25 D."
+          ],
+          "final_answer": "Power of the concave correcting lens = -1.25 D."
+        },
+        {
+          "id": "eye-m-2",
+          "question": "A hypermetropic person has a near point of 1 m. Find the power of the lens needed to read at 25 cm.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: u = -0.25 m and v = -1 m.",
+            "Step 2: 1/f = 1/v - 1/u = -1 - (-4) = +3 m^-1.",
+            "Step 3: f = +1/3 m and P = +3 D."
+          ],
+          "final_answer": "Power of the convex correcting lens = +3 D."
+        },
+        {
+          "id": "eye-m-3",
+          "question": "A myopic person has a far point of 5 m. Find the power of the lens required to see distant objects clearly.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The image of an object at infinity must form at the far point, so v = -5 m.",
+            "Step 2: 1/f = 1/v - 1/u = -1/5 - 0 = -0.2 m^-1.",
+            "Step 3: P = 1/f = -0.2 D."
+          ],
+          "final_answer": "Power of the concave correcting lens = -0.2 D."
+        },
+        {
+          "id": "eye-m-4",
+          "question": "A person with hypermetropia has a near point of 50 cm. Find the power of the lens required to read at 25 cm.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: u = -0.25 m and v = -0.50 m.",
+            "Step 2: 1/f = 1/v - 1/u = 1/(-0.50) - 1/(-0.25).",
+            "Step 3: 1/f = -2 + 4 = +2 m^-1.",
+            "Step 4: P = +2 D."
+          ],
+          "final_answer": "Power of the convex correcting lens = +2 D."
+        },
+        {
+          "id": "eye-m-5",
+          "question": "A ray passes through a prism of angle 60 degrees with angle of incidence 50 degrees and angle of emergence 40 degrees. Find the angle of deviation.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Use D = i1 + i2 - A.",
+            "Step 2: D = 50 + 40 - 60.",
+            "Step 3: D = 30 degrees."
+          ],
+          "final_answer": "Angle of deviation D = 30 degrees."
+        },
+        {
+          "id": "eye-m-6",
+          "question": "Why do planets not twinkle like stars?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Stars are very far away and act almost like point sources of light.",
+            "Step 2: Atmospheric refraction varies continuously, so the apparent position and brightness of a star fluctuate, making it twinkle.",
+            "Step 3: Planets are much closer and act as extended sources made of many point sources.",
+            "Step 4: The variations from different points average out, so planets do not twinkle noticeably."
+          ],
+          "final_answer": "Planets are extended sources and the atmospheric variations average out, so they do not twinkle like point-like stars."
+        }
+      ]
+    },
+    "complex": {
+      "title": "Complex Practice - Multi-Step Vision and Light Phenomena",
+      "objective": "Combine lens power, prism, and scattering reasoning",
+      "problems": [
+        {
+          "id": "eye-c-1",
+          "question": "A myopic person can see clearly only up to 1.25 m. Find the power of the correcting lens and its focal length.",
+          "difficulty": "complex",
+          "marks": 4,
+          "solution": [
+            "Step 1: The far point is 1.25 m, so v = -1.25 m for an object at infinity.",
+            "Step 2: 1/f = 1/v - 1/u = -1/1.25 - 0 = -0.8 m^-1.",
+            "Step 3: f = -1.25 m and P = -0.8 D.",
+            "Step 4: The negative sign confirms a concave correcting lens."
+          ],
+          "final_answer": "f = -1.25 m; P = -0.8 D."
+        },
+        {
+          "id": "eye-c-2",
+          "question": "A hypermetropic person has a near point of 75 cm. Find the power of the lens needed to read at 25 cm.",
+          "difficulty": "complex",
+          "marks": 4,
+          "solution": [
+            "Step 1: u = -0.25 m and v = -0.75 m.",
+            "Step 2: 1/f = 1/v - 1/u = -1/0.75 + 1/0.25.",
+            "Step 3: 1/f = -1.333 + 4 = +2.667 m^-1.",
+            "Step 4: P = +2.67 D and f = +0.375 m = +37.5 cm."
+          ],
+          "final_answer": "P = +2.67 D; f = +37.5 cm."
+        },
+        {
+          "id": "eye-c-3",
+          "question": "A presbyopic person cannot see beyond 2 m or nearer than 1 m. Find the powers of the two lenses in bifocal spectacles.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: For distant vision, the far point is 2 m, so the distance lens has f1 = -2 m.",
+            "Step 2: P1 = 1/f1 = -0.5 D.",
+            "Step 3: For near vision, u = -0.25 m and v = -1 m.",
+            "Step 4: 1/f2 = -1 - (-4) = +3 m^-1, so P2 = +3 D.",
+            "Step 5: The bifocal lens uses -0.5 D in the upper part and +3 D in the lower part."
+          ],
+          "final_answer": "Distance part = -0.5 D; reading part = +3 D."
+        },
+        {
+          "id": "eye-c-4",
+          "question": "White light passes through a glass prism. Which colour deviates the most and which the least? Explain why.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The refractive index of glass is different for different colours.",
+            "Step 2: Violet has the highest refractive index in glass among the visible colours.",
+            "Step 3: Higher refractive index means greater bending, so violet deviates the most.",
+            "Step 4: Red has the lowest refractive index among the visible colours and deviates the least.",
+            "Step 5: This difference in deviation separates white light into the spectrum."
+          ],
+          "final_answer": "Violet deviates most and red least because the refractive index is highest for violet and lowest for red."
+        },
+        {
+          "id": "eye-c-5",
+          "question": "Explain why the Sun is visible about two minutes before actual sunrise and after actual sunset. Also explain why stars twinkle.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The atmosphere has layers of changing density and refractive index.",
+            "Step 2: Light from the Sun bends gradually as it passes through these layers, a phenomenon called atmospheric refraction.",
+            "Step 3: Because of this bending, the Sun appears above the horizon slightly before it actually rises and slightly after it sets.",
+            "Step 4: Starlight also passes through the atmosphere and bends continuously.",
+            "Step 5: The changing refraction makes the apparent position and brightness of a star fluctuate, so it appears to twinkle."
+          ],
+          "final_answer": "Atmospheric refraction makes the Sun visible before sunrise and after sunset, and causes the twinkling of stars."
+        },
+        {
+          "id": "eye-c-6",
+          "question": "Why is the sky blue, why is the sunset red, and why are danger signals red? Use scattering of light in your answer.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Air molecules scatter shorter wavelengths more strongly than longer wavelengths.",
+            "Step 2: Blue light has a shorter wavelength than red, so it is scattered much more and reaches the eye from all parts of the sky, making the sky blue.",
+            "Step 3: At sunset, sunlight travels a longer path through the atmosphere, so most blue light is scattered away and red light dominates.",
+            "Step 4: Red light is scattered the least, so it can travel farther through fog and dust without being scattered away.",
+            "Step 5: Therefore red is used for danger signals because it remains visible over longer distances."
+          ],
+          "final_answer": "Blue is scattered most, making the sky blue; at sunset blue is scattered out, leaving red; red signals are visible far because red is scattered least."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-eye-s-1",
+        "question": "The light-sensitive screen of the human eye is the:",
+        "options": [
+          "Cornea",
+          "Retina",
+          "Iris",
+          "Pupil"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The retina contains rods and cones and forms the image.",
+          "wrong_options": {
+            "0": "The cornea is the transparent front surface that refracts light.",
+            "2": "The iris controls the pupil size.",
+            "3": "The pupil is the opening that lets light in."
+          }
+        }
+      },
+      {
+        "id": "q-eye-s-2",
+        "question": "The part of the eye that controls the amount of light entering is the:",
+        "options": [
+          "Retina",
+          "Iris",
+          "Optic nerve",
+          "Crystalline lens"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The iris adjusts the size of the pupil and so controls the light entering the eye.",
+          "wrong_options": {
+            "0": "The retina detects light but does not control its entry.",
+            "2": "The optic nerve carries signals to the brain.",
+            "3": "The lens focuses light but does not control the aperture."
+          }
+        }
+      },
+      {
+        "id": "q-eye-s-3",
+        "question": "The power of accommodation of the eye is the ability of the:",
+        "options": [
+          "Iris to change colour",
+          "Eye lens to change its focal length",
+          "Retina to change size",
+          "Pupil to close permanently"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The ciliary muscles change the curvature of the lens, changing its focal length.",
+          "wrong_options": {
+            "0": "The iris does not change colour for accommodation.",
+            "2": "The retina does not change size.",
+            "3": "The pupil controls light intensity, not focus."
+          }
+        }
+      },
+      {
+        "id": "q-eye-s-4",
+        "question": "The near point of a normal adult human eye is about:",
+        "options": [
+          "25 cm",
+          "2.5 cm",
+          "25 m",
+          "Infinity"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A normal adult eye can focus clearly down to about 25 cm.",
+          "wrong_options": {
+            "1": "2.5 cm is far too close for a normal eye.",
+            "2": "25 m is far beyond the near point.",
+            "3": "Infinity is the far point, not the near point."
+          }
+        }
+      },
+      {
+        "id": "q-eye-s-5",
+        "question": "The far point of a normal human eye is:",
+        "options": [
+          "25 cm",
+          "1 m",
+          "Infinity",
+          "2.5 cm"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "A normal eye can see distant objects clearly, so its far point is infinity.",
+          "wrong_options": {
+            "0": "25 cm is the near point.",
+            "1": "1 m is a finite far point, which indicates myopia.",
+            "3": "2.5 cm is much too close."
+          }
+        }
+      },
+      {
+        "id": "q-eye-s-6",
+        "question": "Myopia is corrected by using a:",
+        "options": [
+          "Convex lens",
+          "Concave lens",
+          "Plane mirror",
+          "Prism"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A concave lens diverges rays and shifts the image back onto the retina.",
+          "wrong_options": {
+            "0": "A convex lens is used for hypermetropia.",
+            "2": "A plane mirror does not correct refractive error.",
+            "3": "A prism is not used to correct myopia."
+          }
+        }
+      },
+      {
+        "id": "q-eye-s-7",
+        "question": "Hypermetropia is corrected by using a:",
+        "options": [
+          "Concave lens",
+          "Convex lens",
+          "Cylindrical lens only",
+          "Plane mirror"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A convex lens converges rays and shifts the image forward onto the retina.",
+          "wrong_options": {
+            "0": "A concave lens is used for myopia.",
+            "2": "A cylindrical lens is used for astigmatism, not ordinary hypermetropia.",
+            "3": "A mirror does not correct the eye's focus."
+          }
+        }
+      },
+      {
+        "id": "q-eye-s-8",
+        "question": "The splitting of white light into its component colours is called:",
+        "options": [
+          "Reflection",
+          "Dispersion",
+          "Scattering",
+          "Diffraction"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Dispersion is the separation of white light into colours by a prism.",
+          "wrong_options": {
+            "0": "Reflection is bouncing of light from a surface.",
+            "2": "Scattering is the redirection of light by particles.",
+            "3": "Diffraction is bending around obstacles."
+          }
+        }
+      },
+      {
+        "id": "q-eye-s-9",
+        "question": "The correct order of colours in a spectrum from top to bottom is:",
+        "options": [
+          "Red, orange, yellow, green, blue, indigo, violet",
+          "Violet, indigo, blue, green, yellow, orange, red",
+          "Green, blue, violet, red, orange, yellow, indigo",
+          "Blue, green, red, violet, orange, indigo, yellow"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The spectrum order is VIBGYOR: violet, indigo, blue, green, yellow, orange, red.",
+          "wrong_options": {
+            "0": "This is the reverse order.",
+            "2": "This sequence is not the dispersion order.",
+            "3": "This sequence is not the dispersion order."
+          }
+        }
+      },
+      {
+        "id": "q-eye-s-10",
+        "question": "Twinkling of stars is mainly caused by:",
+        "options": [
+          "Atmospheric refraction",
+          "Dispersion",
+          "Scattering",
+          "Reflection"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Changing atmospheric refraction makes the apparent position and brightness of a star fluctuate.",
+          "wrong_options": {
+            "1": "Dispersion separates colours and does not cause twinkling.",
+            "2": "Scattering changes colour of the sky but is not the main cause of twinkling.",
+            "3": "Reflection is not the cause here."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-eye-m-1",
+        "question": "A myopic person has a far point of 80 cm. The power of the correcting lens is:",
+        "options": [
+          "-1.25 D",
+          "+1.25 D",
+          "-0.8 D",
+          "+0.8 D"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1/f = -1/0.80 = -1.25 m^-1, so P = -1.25 D.",
+          "wrong_options": {
+            "1": "Myopia requires a concave lens with negative power.",
+            "2": "-0.8 D would correspond to a focal length of 1.25 m.",
+            "3": "The sign and magnitude are both wrong."
+          }
+        }
+      },
+      {
+        "id": "q-eye-m-2",
+        "question": "A hypermetropic person has a near point of 1 m. The power of the lens needed to read at 25 cm is:",
+        "options": [
+          "+3 D",
+          "-3 D",
+          "+0.75 D",
+          "+1 D"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1/f = -1 - (-4) = +3 m^-1, so P = +3 D.",
+          "wrong_options": {
+            "1": "Hypermetropia requires a convex lens with positive power.",
+            "2": "This does not satisfy the lens formula for u = -0.25 m and v = -1 m.",
+            "3": "This is not the result of the calculation."
+          }
+        }
+      },
+      {
+        "id": "q-eye-m-3",
+        "question": "A myopic person has a far point of 5 m. The power of the correcting lens is:",
+        "options": [
+          "-0.2 D",
+          "+0.2 D",
+          "-5 D",
+          "+5 D"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1/f = -1/5 = -0.2 m^-1, so P = -0.2 D.",
+          "wrong_options": {
+            "1": "The lens must be concave, with negative power.",
+            "2": "5 D would mean f = 0.2 m, not 5 m.",
+            "3": "The power is not positive."
+          }
+        }
+      },
+      {
+        "id": "q-eye-m-4",
+        "question": "A hypermetropic person has a near point of 50 cm. The power of the reading lens is:",
+        "options": [
+          "+2 D",
+          "-2 D",
+          "+4 D",
+          "+0.5 D"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1/f = 1/(-0.5) - 1/(-0.25) = -2 + 4 = +2 m^-1.",
+          "wrong_options": {
+            "1": "A convex lens is needed, so the power is positive.",
+            "2": "+4 D would not satisfy the lens formula for these values.",
+            "3": "0.5 D is the reciprocal of 2 m, not the calculated power."
+          }
+        }
+      },
+      {
+        "id": "q-eye-m-5",
+        "question": "A prism has angle 60 degrees. A ray enters at 45 degrees and emerges at 45 degrees. The angle of deviation is:",
+        "options": [
+          "30 degrees",
+          "60 degrees",
+          "45 degrees",
+          "90 degrees"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "D = 45 + 45 - 60 = 30 degrees.",
+          "wrong_options": {
+            "1": "60 degrees is the prism angle, not the deviation.",
+            "2": "45 degrees is the angle of incidence and emergence, not the deviation.",
+            "3": "90 degrees is the sum of the incidence and emergence angles."
+          }
+        }
+      },
+      {
+        "id": "q-eye-m-6",
+        "question": "Which colour deviates the least when white light passes through a glass prism?",
+        "options": [
+          "Red",
+          "Violet",
+          "Blue",
+          "Green"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Red has the smallest refractive index in glass among the visible colours and bends the least.",
+          "wrong_options": {
+            "1": "Violet has the largest refractive index and deviates the most.",
+            "2": "Blue deviates more than red but less than violet.",
+            "3": "Green deviates more than red."
+          }
+        }
+      },
+      {
+        "id": "q-eye-m-7",
+        "question": "The sky appears blue because:",
+        "options": [
+          "Blue light is scattered more than red light",
+          "Blue light is absorbed by the atmosphere",
+          "The atmosphere emits blue light",
+          "Blue light travels faster than red light"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Air molecules scatter shorter wavelengths such as blue much more strongly than longer wavelengths.",
+          "wrong_options": {
+            "1": "Scattering, not absorption, is the main cause.",
+            "2": "The atmosphere does not emit visible light.",
+            "3": "All colours travel at the same speed in vacuum; speed differences in air are tiny."
+          }
+        }
+      },
+      {
+        "id": "q-eye-m-8",
+        "question": "The setting Sun appears red because:",
+        "options": [
+          "Blue light is scattered away over a long atmospheric path",
+          "The Sun emits only red light at sunset",
+          "Red light is scattered more than blue",
+          "The atmosphere absorbs all colours except red"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Sunlight travels a longer path at sunset, so most blue light is scattered out and red dominates.",
+          "wrong_options": {
+            "1": "The Sun emits all colours; the atmosphere changes the mixture.",
+            "2": "Red is scattered less than blue, not more.",
+            "3": "The atmosphere does not absorb all other colours."
+          }
+        }
+      },
+      {
+        "id": "q-eye-m-9",
+        "question": "Presbyopia is corrected by:",
+        "options": [
+          "Bifocal lenses",
+          "A single concave lens",
+          "A single convex lens",
+          "A plane mirror"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Presbyopia affects both near and distant vision, so bifocal lenses provide both corrections.",
+          "wrong_options": {
+            "1": "A single concave lens corrects only myopia.",
+            "2": "A single convex lens corrects only hypermetropia.",
+            "3": "A mirror is not a corrective lens."
+          }
+        }
+      },
+      {
+        "id": "q-eye-m-10",
+        "question": "The focal length of the eye lens is changed by the:",
+        "options": [
+          "Ciliary muscles",
+          "Optic nerve",
+          "Retina",
+          "Cornea only"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The ciliary muscles alter the curvature of the crystalline lens and hence its focal length.",
+          "wrong_options": {
+            "1": "The optic nerve carries signals to the brain.",
+            "2": "The retina detects the image.",
+            "3": "The cornea provides most refraction but does not change focal length for accommodation."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-eye-x-1",
+        "question": "A myopic person can see clearly only up to 1.25 m. The power of the correcting lens is:",
+        "options": [
+          "-0.8 D",
+          "-1.25 D",
+          "+0.8 D",
+          "+1.25 D"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1/f = -1/1.25 = -0.8 m^-1, so P = -0.8 D.",
+          "wrong_options": {
+            "1": "1.25 D would correspond to a focal length of 0.8 m.",
+            "2": "Myopia needs a negative power.",
+            "3": "The power must be negative."
+          }
+        }
+      },
+      {
+        "id": "q-eye-x-2",
+        "question": "A hypermetropic person has a near point of 75 cm. The power of the lens needed to read at 25 cm is about:",
+        "options": [
+          "+2.67 D",
+          "+1.33 D",
+          "-2.67 D",
+          "+0.75 D"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1/f = -1/0.75 + 1/0.25 = -1.333 + 4 = +2.667, so P = +2.67 D.",
+          "wrong_options": {
+            "1": "1.33 D would ignore the object distance term.",
+            "2": "Hypermetropia needs a positive power.",
+            "3": "This does not satisfy the lens formula."
+          }
+        }
+      },
+      {
+        "id": "q-eye-x-3",
+        "question": "A person cannot see beyond 2 m or nearer than 1 m. The powers of the bifocal lenses are:",
+        "options": [
+          "-0.5 D for distance and +3 D for reading",
+          "+0.5 D for distance and -3 D for reading",
+          "-0.5 D for both distance and reading",
+          "+0.5 D for both distance and reading"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Distance: f = -2 m gives -0.5 D; reading: u = -0.25 m, v = -1 m gives +3 D.",
+          "wrong_options": {
+            "1": "The signs are reversed.",
+            "2": "Reading needs a positive power, not -0.5 D.",
+            "3": "Distance needs a negative power, not +0.5 D."
+          }
+        }
+      },
+      {
+        "id": "q-eye-x-4",
+        "question": "Which colour has the highest refractive index in glass and deviates the most?",
+        "options": [
+          "Violet",
+          "Red",
+          "Green",
+          "Yellow"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Violet has the shortest wavelength and highest refractive index among visible colours in glass, so it deviates most.",
+          "wrong_options": {
+            "1": "Red has the lowest refractive index and deviates least.",
+            "2": "Green is in the middle of the spectrum.",
+            "3": "Yellow deviates less than violet."
+          }
+        }
+      },
+      {
+        "id": "q-eye-x-5",
+        "question": "Planets do not twinkle because:",
+        "options": [
+          "They are extended sources and atmospheric variations average out",
+          "They do not emit light",
+          "They are farther than stars",
+          "They have no atmosphere"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Planets are closer and appear as extended sources, so the fluctuations from different points average out.",
+          "wrong_options": {
+            "1": "Planets reflect sunlight and are visible.",
+            "2": "Planets are much closer than stars.",
+            "3": "A planet's own atmosphere is not the reason they do not twinkle."
+          }
+        }
+      },
+      {
+        "id": "q-eye-x-6",
+        "question": "Red is used for danger signals because:",
+        "options": [
+          "Red light is scattered the least and can travel farther",
+          "Red light is scattered the most",
+          "Red light has the shortest wavelength",
+          "Red light is absorbed by fog"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Longer wavelength red light is scattered least, so it remains visible over longer distances.",
+          "wrong_options": {
+            "1": "Blue is scattered most, not red.",
+            "2": "Red has the longest wavelength among visible colours.",
+            "3": "Red is not strongly absorbed by fog."
+          }
+        }
+      },
+      {
+        "id": "q-eye-x-7",
+        "question": "The Tyndall effect is:",
+        "options": [
+          "Scattering of light by colloidal particles",
+          "Splitting of light into colours",
+          "Bending of light at a boundary",
+          "Reflection of light from a mirror"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Tyndall effect is the scattering of light by particles in a colloid or fine suspension.",
+          "wrong_options": {
+            "1": "Splitting into colours is dispersion.",
+            "2": "Bending at a boundary is refraction.",
+            "3": "Reflection from a mirror is regular reflection."
+          }
+        }
+      },
+      {
+        "id": "q-eye-x-8",
+        "question": "A myopic person has a far point of 2 m. The power of the correcting lens is:",
+        "options": [
+          "-0.5 D",
+          "+0.5 D",
+          "-2 D",
+          "+2 D"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1/f = -1/2 = -0.5 m^-1, so P = -0.5 D.",
+          "wrong_options": {
+            "1": "The lens must be concave, so the power is negative.",
+            "2": "-2 D would correspond to f = -0.5 m.",
+            "3": "The power cannot be positive for myopia."
+          }
+        }
+      },
+      {
+        "id": "q-eye-x-9",
+        "question": "The apparent flattening of the Sun near the horizon is due to:",
+        "options": [
+          "Atmospheric refraction",
+          "Dispersion",
+          "The Tyndall effect",
+          "Reflection from the ground"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Light from the lower and upper edges of the Sun bends differently through the atmosphere, making the disc look flattened.",
+          "wrong_options": {
+            "1": "Dispersion separates colours but does not flatten the Sun's disc.",
+            "2": "The Tyndall effect is scattering by particles.",
+            "3": "Ground reflection does not cause this shape change."
+          }
+        }
+      },
+      {
+        "id": "q-eye-x-10",
+        "question": "Which statement about a normal human eye is correct?",
+        "options": [
+          "It forms a real, inverted image on the retina",
+          "It forms a virtual, erect image on the retina",
+          "It forms a real, erect image on the cornea",
+          "It forms no image; the brain creates it directly"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The eye lens and cornea form a real, inverted image on the retina, which the brain interprets as upright.",
+          "wrong_options": {
+            "1": "The retinal image is real and inverted.",
+            "2": "The image forms on the retina, not the cornea.",
+            "3": "An image is formed on the retina before the brain processes it."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "The Human Eye and the Colourful World Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Human Eye",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Cornea",
+        "group": "structure"
+      },
+      {
+        "id": "n3",
+        "label": "Iris and Pupil",
+        "group": "structure"
+      },
+      {
+        "id": "n4",
+        "label": "Crystalline Lens",
+        "group": "structure"
+      },
+      {
+        "id": "n5",
+        "label": "Retina",
+        "group": "structure"
+      },
+      {
+        "id": "n6",
+        "label": "Accommodation",
+        "group": "function"
+      },
+      {
+        "id": "n7",
+        "label": "Defects of Vision",
+        "group": "application"
+      },
+      {
+        "id": "n8",
+        "label": "Prism and Dispersion",
+        "group": "phenomenon"
+      },
+      {
+        "id": "n9",
+        "label": "Atmospheric Refraction",
+        "group": "phenomenon"
+      },
+      {
+        "id": "n10",
+        "label": "Scattering of Light",
+        "group": "phenomenon"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n1",
+        "n4"
+      ],
+      [
+        "n1",
+        "n5"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n4",
+        "n6"
+      ],
+      [
+        "n6",
+        "n7"
+      ],
+      [
+        "n1",
+        "n8"
+      ],
+      [
+        "n8",
+        "n10"
+      ],
+      [
+        "n1",
+        "n9"
+      ],
+      [
+        "n9",
+        "n10"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "The Human Eye and the Colourful World Mind Map",
+    "type": "hierarchical",
+    "root": "Human Eye and Colourful World",
+    "branches": [
+      {
+        "concept": "Structure of the Eye",
+        "sub_nodes": [
+          "Cornea refracts incoming light",
+          "Iris controls pupil size",
+          "Crystalline lens focuses light",
+          "Retina forms a real inverted image"
+        ],
+        "connections": "Structure supports accommodation and image formation"
+      },
+      {
+        "concept": "Accommodation",
+        "sub_nodes": [
+          "Ciliary muscles change lens curvature",
+          "Near point about 25 cm",
+          "Far point at infinity",
+          "Range of vision between near and far points"
+        ],
+        "connections": "Loss of accommodation leads to presbyopia"
+      },
+      {
+        "concept": "Defects of Vision",
+        "sub_nodes": [
+          "Myopia: corrected by concave lens",
+          "Hypermetropia: corrected by convex lens",
+          "Presbyopia: corrected by bifocal lens",
+          "Power P = 1/f in dioptres"
+        ],
+        "connections": "Correcting lenses use the lens formula and power"
+      },
+      {
+        "concept": "Prism and Deviation",
+        "sub_nodes": [
+          "Refraction at two surfaces",
+          "Angle of deviation D = i1 + i2 - A",
+          "Deviation depends on refractive index",
+          "Light bends towards the base"
+        ],
+        "connections": "Different deviations for different colours cause dispersion"
+      },
+      {
+        "concept": "Dispersion and Spectrum",
+        "sub_nodes": [
+          "White light splits into VIBGYOR",
+          "Violet deviates most",
+          "Red deviates least",
+          "Rainbow is a natural spectrum"
+        ],
+        "connections": "Dispersion explains colours in prisms and rainbows"
+      },
+      {
+        "concept": "Atmospheric Effects",
+        "sub_nodes": [
+          "Atmospheric refraction causes twinkling",
+          "Sun visible before sunrise and after sunset",
+          "Scattering makes the sky blue",
+          "Red sunset and red danger signals"
+        ],
+        "connections": "Refraction and scattering together explain the colourful world"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    {
+      "misconception": "The eye forms an upright image on the retina.",
+      "correction": "The eye forms a real, inverted image on the retina; the brain interprets it as upright."
+    },
+    {
+      "misconception": "Myopia is corrected by a convex lens.",
+      "correction": "Myopia is corrected by a concave lens of negative power; a convex lens is used for hypermetropia."
+    },
+    {
+      "misconception": "Hypermetropia is corrected by a concave lens.",
+      "correction": "Hypermetropia is corrected by a convex lens of positive power."
+    },
+    {
+      "misconception": "The near point of a normal eye is infinity.",
+      "correction": "The near point is about 25 cm; the far point is infinity."
+    },
+    {
+      "misconception": "A prism adds colour to white light.",
+      "correction": "A prism only separates colours already present in white light; it does not create them."
+    },
+    {
+      "misconception": "Red light is scattered more than blue light.",
+      "correction": "Blue light has a shorter wavelength and is scattered more strongly; red is scattered least."
+    },
+    {
+      "misconception": "Stars twinkle because they change brightness randomly in space.",
+      "correction": "Stars twinkle because of continuously changing atmospheric refraction, not because of changes in the star itself."
+    },
+    {
+      "misconception": "Presbyopia can be corrected with a single ordinary lens.",
+      "correction": "Presbyopia affects both near and distant vision, so it is corrected with bifocal lenses."
+    }
+  ],
+  "meta": {
+    "sources": [
+      {
+        "title": "NCERT Class X Science Textbook",
+        "publisher": "NCERT",
+        "chapter": "The Human Eye and the Colourful World",
+        "class": "X",
+        "subject": "Science"
+      }
+    ]
+  },
+  "chapterId": "human-eye-and-colourful-world",
+  "subjectId": "science",
+  "subjectName": "Science",
+  "unitId": "science-3",
+  "unitName": "Natural Phenomena",
+  "examWeightage": 12,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

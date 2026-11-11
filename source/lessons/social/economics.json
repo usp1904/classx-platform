@@ -1,0 +1,1045 @@
+{
+  "subject": "Economics",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 2,
+  "chapter": "Sectors of the Indian Economy",
+  "id": "sectors-of-the-indian-economy",
+  "lesson": 1,
+  "title": "Sectors of the Indian Economy - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Classify economic activities into primary, secondary, and tertiary sectors",
+    "Explain the interdependence of the three sectors with examples",
+    "Interpret the changing contribution of sectors to GDP and employment",
+    "Distinguish organised from unorganised sector employment",
+    "Explain disguised, seasonal, and open unemployment",
+    "Describe the objectives and features of MGNREGA",
+    "Compare public sector and private sector roles in development",
+    "Solve board-style case and data questions on sectoral shares and employment"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS9_POVERTY_AS_A_CHALLENGE",
+    "SOCIAL_CLASS8_AGRICULTURE",
+    "SOCIAL_CLASS7_LIFE_IN_THE_DESERT",
+    "MATH_CLASS7_PERCENTAGE"
+  ],
+  "concepts": [
+    {
+      "id": "concept-1",
+      "name": "Sectors of Economic Activity",
+      "title": "Sectors of Economic Activity",
+      "explanation": "Economic activities are grouped into three sectors according to the nature of the work and the stage of production. The primary sector extracts natural resources directly from nature through farming, fishing, forestry, and mining. The secondary sector changes natural products into manufactured goods through factories, construction, and electricity generation. The tertiary sector does not produce a physical good; it provides services such as transport, trade, banking, education, health, and information technology that support the other two sectors. Gross Domestic Product (GDP) is the money value of all final goods and services produced within a country during one year. The sectoral composition of GDP and employment shows how an economy is changing.",
+      "purpose": "Grouping activities into sectors makes it possible to measure production, compare employment, and plan policy. It explains why a farmer, a factory worker, and a teacher all contribute to the economy in different ways.",
+      "real_life_application": "A cotton farmer grows cotton (primary), a textile mill turns it into cloth (secondary), and a shopkeeper, lorry driver, and bank clerk help sell and finance it (tertiary).",
+      "key_points": [
+        "Primary sector draws directly on natural resources.",
+        "Secondary sector adds value by manufacturing and construction.",
+        "Tertiary sector provides services that support production and consumption.",
+        "GDP measures final goods and services produced in a year.",
+        "Sectors are interdependent; a product usually passes through all three.",
+        "Sectoral shares of GDP and employment change as an economy develops."
+      ],
+      "day_to_day_usage": [
+        "Buying vegetables from a farmer connects you to the primary sector.",
+        "A packaged biscuit reaches you through manufacturing, transport, and retail.",
+        "A bank loan for a shop links credit services to trade.",
+        "A mobile repair shop is a tertiary activity even though it handles a manufactured good.",
+        "A construction worker builds houses, which is part of the secondary sector.",
+        "A doctor's consultation is a tertiary service."
+      ]
+    },
+    {
+      "id": "concept-2",
+      "name": "Primary Sector",
+      "title": "Primary Sector",
+      "explanation": "The primary sector includes agriculture, animal husbandry, fishing, forestry, and mining. These activities depend directly on land, water, forests, and minerals. Agriculture is the largest part of this sector in India and has historically employed the largest share of the workforce. However, its share in GDP has fallen because manufacturing and services have grown faster. Small holdings, dependence on rainfall, low mechanisation, and fragmented land reduce productivity. When more family members work on a farm than are actually needed, disguised unemployment arises: people appear employed but their removal would not reduce output.",
+      "purpose": "The primary sector supplies food, industrial raw materials, and exports. Understanding its problems helps explain rural poverty, migration, and the need for irrigation, credit, and technology.",
+      "real_life_application": "The wheat in your roti, the cotton in your shirt, and the coal used in a power plant all begin in the primary sector.",
+      "key_points": [
+        "Primary activities directly use natural resources.",
+        "Agriculture, mining, fishing, and forestry are examples.",
+        "It still employs a very large share of India's workforce.",
+        "Its share in GDP has declined relative to other sectors.",
+        "Low productivity and monsoon dependence are major problems.",
+        "Disguised unemployment is common in family farming."
+      ],
+      "day_to_day_usage": [
+        "Milk supplied by a dairy farmer is a primary product.",
+        "Coal mined for electricity is a primary activity.",
+        "Fish caught by a coastal family is sold fresh or processed.",
+        "Timber from forests is used in furniture and paper.",
+        "Vegetables grown on a rooftop garden are a small primary activity.",
+        "Cotton grown for cloth links farms to mills."
+      ]
+    },
+    {
+      "id": "concept-3",
+      "name": "Secondary Sector",
+      "title": "Secondary Sector",
+      "explanation": "The secondary sector covers manufacturing, construction, and electricity generation. It takes natural products from the primary sector and changes them into more valuable goods. For example, sugarcane becomes sugar, iron ore becomes steel, and cotton becomes cloth. This value addition raises incomes and creates jobs in factories, workshops, and construction sites. Industrial growth also supports transport, banking, and trade. However, factories can pollute air and water, and many small units operate outside protective labour laws.",
+      "purpose": "The secondary sector is the bridge between raw materials and final consumption. It explains industrialisation, urbanisation, and the difference between a raw product and a finished good.",
+      "real_life_application": "A bag of sugar, a steel utensil, a smartphone, and the bricks in your house all come from secondary activities.",
+      "key_points": [
+        "Secondary activities transform raw materials into finished goods.",
+        "Manufacturing, construction, and electricity are included.",
+        "Value addition increases the price and usefulness of a product.",
+        "It creates factory and construction employment.",
+        "Industrial growth needs transport, finance, and skilled labour.",
+        "Pollution and unsafe small units are key concerns."
+      ],
+      "day_to_day_usage": [
+        "Flour milled from wheat is a secondary product.",
+        "A tailor stitching a shirt adds value to cloth.",
+        "Cement and bricks used in your home are secondary products.",
+        "A car assembled in a factory is a manufactured good.",
+        "Electricity generated in a plant is part of the secondary sector.",
+        "Packaged snacks are processed in factories."
+      ]
+    },
+    {
+      "id": "concept-4",
+      "name": "Tertiary Sector",
+      "title": "Tertiary Sector",
+      "explanation": "The tertiary sector provides services rather than goods. It includes transport, storage, communication, trade, banking, insurance, education, health, tourism, and information technology. These services support the primary and secondary sectors by moving goods, providing credit, training workers, and connecting buyers with sellers. The tertiary sector has grown fastest in India and now contributes the largest share of GDP. Growth in services is linked to rising incomes, urbanisation, outsourcing, and the spread of digital technology. However, many service jobs are low-paid and informal.",
+      "purpose": "The service sector explains how goods reach consumers and how modern economies create jobs. It also shows why infrastructure, education, and health are called supporting services.",
+      "real_life_application": "When you order food online, a restaurant cooks it, a delivery worker transports it, and a payment app completes the transaction; all three are tertiary services.",
+      "key_points": [
+        "Tertiary activities provide services, not physical goods.",
+        "Transport, trade, banking, education, and health are examples.",
+        "The sector supports primary and secondary production.",
+        "It contributes the largest share of India's GDP.",
+        "Rising incomes and technology have accelerated service growth.",
+        "Many service jobs remain informal and low-paid."
+      ],
+      "day_to_day_usage": [
+        "A bus ride is a transport service.",
+        "A bank deposit is a financial service.",
+        "A teacher's class is an education service.",
+        "A courier delivering a parcel is a logistics service.",
+        "A hospital check-up is a health service.",
+        "A mobile payment is a digital financial service."
+      ]
+    },
+    {
+      "id": "concept-5",
+      "name": "Employment, Organised and Unorganised Sectors",
+      "title": "Employment, Organised and Unorganised Sectors",
+      "explanation": "Employment can be organised or unorganised. Organised sector enterprises are registered and follow laws such as the Factories Act and labour codes. Workers get regular wages, fixed hours, paid leave, overtime, provident fund, and job security. Unorganised sector units are small, scattered, and largely outside government regulation. Workers face irregular hours, low and uncertain wages, no social security, and easy dismissal. Disguised unemployment means more people are engaged than required. Seasonal unemployment occurs when work is available only in part of the year, as in agriculture. The Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA), 2005, guarantees at least 100 days of wage employment in a financial year to rural households whose adult members volunteer unskilled manual work.",
+      "purpose": "This concept explains job quality, not just the number of jobs. It links employment patterns to poverty, migration, and government policy.",
+      "real_life_application": "A permanent factory worker with provident fund and a street vendor without fixed hours both work, but their security and benefits differ sharply.",
+      "key_points": [
+        "Organised sector jobs are registered, regular, and protected by law.",
+        "Unorganised sector jobs are insecure and lack social security.",
+        "Disguised unemployment means surplus workers on a job.",
+        "Seasonal unemployment is common in agriculture.",
+        "MGNREGA guarantees 100 days of rural wage employment per household per year.",
+        "MGNREGA work is demand-driven and must be provided within a time limit."
+      ],
+      "day_to_day_usage": [
+        "A permanent factory worker receives provident fund and paid leave.",
+        "A daily-wage construction worker may have no written contract.",
+        "A farm family with five workers on a small plot may have disguised unemployment.",
+        "A sugarcane cutter may be jobless outside the harvest season.",
+        "A rural household can seek work under MGNREGA during a lean season.",
+        "A gig delivery worker often lacks social security."
+      ]
+    },
+    {
+      "id": "concept-6",
+      "name": "Public and Private Sectors",
+      "title": "Public and Private Sectors",
+      "explanation": "The public sector is owned and controlled by the government. It provides public facilities such as roads, railways, defence, police, public health, and school education, and it invests in projects where private firms may not enter because profits are low or take too long. The private sector is owned by individuals or companies and is driven mainly by profit. It provides goods and services such as manufacturing, trade, hotels, and private health care. Both sectors can work together through public-private partnerships (PPP), where the government and a private firm share the cost, risk, and responsibility of a project. A mixed economy such as India uses both.",
+      "purpose": "The distinction explains who provides a service, why some services are subsidised, and why regulation is needed when private providers supply essential services.",
+      "real_life_application": "A government hospital and a private hospital both treat patients, but their ownership, pricing, and purpose differ.",
+      "key_points": [
+        "Public sector is government-owned; private sector is privately owned.",
+        "Public sector focuses on welfare and public facilities.",
+        "Private sector focuses on profit and efficiency.",
+        "Some services are provided by both sectors.",
+        "Public-private partnerships share cost and risk.",
+        "India has a mixed economy with both sectors."
+      ],
+      "day_to_day_usage": [
+        "A government school is a public sector service.",
+        "A private coaching centre is a private sector service.",
+        "Indian Railways is a public sector enterprise.",
+        "A private airline is a private sector company.",
+        "A toll road built under a PPP involves both sectors.",
+        "Municipal water supply is usually public."
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-sec-1",
+      "title": "Classifying Activities into Sectors",
+      "topic": "Primary, secondary, and tertiary classification",
+      "problem": "Classify these activities: (a) a farmer growing wheat, (b) a sugar mill crushing sugarcane, (c) a truck driver carrying sugar, (d) a teacher in a school, (e) a coal miner, (f) a cement factory, (g) a bank clerk, (h) a fisher catching fish.",
+      "solution": [
+        "Step 1: Identify activities that directly use natural resources. Farming, coal mining, and fishing belong to the primary sector.",
+        "Step 2: Identify activities that transform raw materials. The sugar mill and cement factory manufacture goods, so they belong to the secondary sector.",
+        "Step 3: Identify activities that provide services. The truck driver, teacher, and bank clerk supply transport, education, and finance.",
+        "Step 4: Check each answer against the definition of the sector, not against the product being handled.",
+        "Step 5: A truck carrying sugar is still a transport service, so it is tertiary even though the load is a manufactured good."
+      ],
+      "board_mode": "Draw a three-column table with headings Primary, Secondary, and Tertiary. Place (a), (e), and (h) in Primary; (b) and (f) in Secondary; (c), (d), and (g) in Tertiary.",
+      "answer": "Primary: farmer, coal miner, fisher. Secondary: sugar mill, cement factory. Tertiary: truck driver, teacher, bank clerk.",
+      "board_tip": "Classify by the nature of the activity, not by the object being handled. A transporter of factory goods is still in the tertiary sector."
+    },
+    {
+      "id": "we-sec-2",
+      "title": "Calculating Sectoral Shares of GDP",
+      "topic": "Sectoral contribution to GDP",
+      "problem": "An economy has a GDP of Rs 2,000 crore. The primary sector produces Rs 400 crore, the secondary sector Rs 600 crore, and the tertiary sector Rs 1,000 crore. Calculate each sector's percentage share and identify the largest sector.",
+      "solution": [
+        "Step 1: Check that the parts add up to the whole: 400 + 600 + 1,000 = 2,000 crore.",
+        "Step 2: Primary share = (400 / 2,000) x 100 = 20%.",
+        "Step 3: Secondary share = (600 / 2,000) x 100 = 30%.",
+        "Step 4: Tertiary share = (1,000 / 2,000) x 100 = 50%.",
+        "Step 5: Check the total: 20% + 30% + 50% = 100%.",
+        "Step 6: The tertiary sector has the largest share at 50%."
+      ],
+      "board_mode": "Write the formula Share = (Sector value / GDP) x 100. Show each substitution in one line, then verify that the three shares add to 100%.",
+      "answer": "Primary 20%, secondary 30%, tertiary 50%; the tertiary sector is the largest.",
+      "board_tip": "Always verify that the shares add to 100%. A missing check invites avoidable arithmetic errors."
+    },
+    {
+      "id": "we-sec-3",
+      "title": "Disguised Unemployment on a Family Farm",
+      "topic": "Disguised unemployment",
+      "problem": "Five members of a family work on a three-hectare farm. The farm's total output is worth Rs 90,000, and only three workers are actually needed. Identify the type of unemployment and calculate output per worker before and after the surplus workers leave.",
+      "solution": [
+        "Step 1: All five workers appear employed, but two are surplus because output would not fall if they left.",
+        "Step 2: This situation is disguised unemployment, also called underemployment.",
+        "Step 3: Output per worker with five workers = 90,000 / 5 = Rs 18,000.",
+        "Step 4: Output per worker with three workers = 90,000 / 3 = Rs 30,000.",
+        "Step 5: The two surplus workers could be shifted to non-farm or public works without reducing farm output.",
+        "Step 6: The rise in output per worker shows the productivity gain from reducing disguised unemployment."
+      ],
+      "board_mode": "State the definition, then show the two divisions side by side. Conclude with one policy measure, such as rural non-farm employment or MGNREGA work.",
+      "answer": "Disguised unemployment; output per worker rises from Rs 18,000 to Rs 30,000 when the two surplus workers leave.",
+      "board_tip": "Do not call disguised unemployment 'no employment'. The workers are busy, but their marginal product is near zero."
+    },
+    {
+      "id": "we-sec-4",
+      "title": "Organised Versus Unorganised Employment",
+      "topic": "Job quality and social security",
+      "problem": "Compare the working conditions of a permanent worker in a registered textile factory with those of a street vendor selling clothes.",
+      "solution": [
+        "Step 1: The factory is registered and covered by labour laws, so it belongs to the organised sector.",
+        "Step 2: The permanent worker gets fixed hours, regular wages, paid leave, overtime, provident fund, and some job security.",
+        "Step 3: The street vendor works in the unorganised sector with irregular hours and uncertain daily earnings.",
+        "Step 4: The vendor has no provident fund, paid leave, or written contract and can be removed from the site.",
+        "Step 5: Both are engaged in economic activity, but only the factory worker has legal protection and social security.",
+        "Step 6: Policy responses include registration, social security schemes, and access to affordable credit for informal workers."
+      ],
+      "board_mode": "Use a two-column table: Organised sector and Unorganised sector. Compare wages, hours, leave, social security, and job security in separate rows.",
+      "answer": "The factory worker has regular wages and social security; the street vendor faces irregular hours, uncertain income, and no social security.",
+      "board_tip": "Compare on the same criteria for both workers. A point-by-point table scores better than two unrelated paragraphs."
+    },
+    {
+      "id": "we-sec-5",
+      "title": "MGNREGA Earnings and Shortfall",
+      "topic": "MGNREGA employment guarantee",
+      "problem": "A rural household is entitled to 100 days of MGNREGA work in a financial year at an assumed wage of Rs 220 per day. The household actually gets 70 days of work. Calculate its earnings and the shortfall in days and wages.",
+      "solution": [
+        "Step 1: Entitlement = 100 days per household per financial year.",
+        "Step 2: Actual work = 70 days.",
+        "Step 3: Shortfall in days = 100 - 70 = 30 days.",
+        "Step 4: Earnings = 70 x 220 = Rs 15,400.",
+        "Step 5: Value of the shortfall = 30 x 220 = Rs 6,600.",
+        "Step 6: If work is not provided within the prescribed time, the household may be entitled to an unemployment allowance under the scheme."
+      ],
+      "board_mode": "Write the entitlement, actual days, and shortfall first. Then calculate earnings and the value of the shortfall in separate lines.",
+      "answer": "Earnings are Rs 15,400; the shortfall is 30 days, worth Rs 6,600 at the assumed wage.",
+      "board_tip": "Use the wage given in the question. Do not insert a real-world wage rate from memory."
+    }
+  ],
+  "exercises": {
+    "exercise_1_1": {
+      "title": "NCERT Exercise 1.1 - Sectors and Activities",
+      "objective": "Identify and compare primary, secondary, and tertiary activities",
+      "problems": [
+        {
+          "id": "sec-ex1-1",
+          "question": "Define the primary sector and give two examples.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The primary sector includes activities that directly use natural resources.",
+            "Step 2: Examples include agriculture, fishing, forestry, and mining.",
+            "Step 3: These activities produce raw materials for other sectors."
+          ],
+          "final_answer": "The primary sector extracts natural resources directly; examples are agriculture and mining."
+        },
+        {
+          "id": "sec-ex1-2",
+          "question": "Why is the tertiary sector called the service sector?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Tertiary activities do not produce a physical good.",
+            "Step 2: They provide services such as transport, trade, banking, education, and health.",
+            "Step 3: These services support production and consumption, so the sector is called the service sector."
+          ],
+          "final_answer": "It provides services rather than goods, so it is called the service sector."
+        },
+        {
+          "id": "sec-ex1-3",
+          "question": "A sugar mill crushes sugarcane to make sugar. Which sector does it belong to and why?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The mill changes a natural product into a manufactured good.",
+            "Step 2: Manufacturing belongs to the secondary sector.",
+            "Step 3: The mill therefore belongs to the secondary sector."
+          ],
+          "final_answer": "Secondary sector, because it manufactures sugar from sugarcane."
+        },
+        {
+          "id": "sec-ex1-4",
+          "question": "Distinguish between the primary and secondary sectors with three points.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The primary sector uses natural resources directly; the secondary sector transforms raw materials into goods.",
+            "Step 2: Primary examples are farming and mining; secondary examples are factories and construction.",
+            "Step 3: Primary output is often a raw material, while secondary output is a finished or semi-finished product."
+          ],
+          "final_answer": "Primary extracts natural resources; secondary transforms them into manufactured goods."
+        },
+        {
+          "id": "sec-ex1-5",
+          "question": "Explain the interdependence of the three sectors using the example of cotton cloth.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: A farmer grows cotton, which is a primary activity.",
+            "Step 2: A textile mill spins and weaves cotton into cloth, which is a secondary activity.",
+            "Step 3: Transport, trade, and banking services move and finance the cloth, which are tertiary activities.",
+            "Step 4: If any link fails, production and sale are disrupted, showing interdependence."
+          ],
+          "final_answer": "Cotton farming, textile manufacturing, and transport-trade-finance services depend on one another."
+        },
+        {
+          "id": "sec-ex1-6",
+          "question": "Why is the primary sector still important even though its share in GDP has declined?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: It provides food for the population.",
+            "Step 2: It supplies raw materials such as cotton, jute, and sugarcane to industries.",
+            "Step 3: It still employs a very large share of the workforce, especially in rural areas.",
+            "Step 4: It supports exports and rural incomes, so a fall in GDP share does not make it unimportant."
+          ],
+          "final_answer": "It ensures food security, supplies industrial raw materials, and employs a large rural workforce."
+        }
+      ]
+    },
+    "exercise_1_2": {
+      "title": "NCERT Exercise 1.2 - Employment and MGNREGA",
+      "objective": "Analyse organised and unorganised work, unemployment types, and rural employment policy",
+      "problems": [
+        {
+          "id": "sec-ex2-1",
+          "question": "What is the organised sector?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Organised sector enterprises are registered and follow government laws.",
+            "Step 2: Workers get regular wages, fixed hours, leave, and social security.",
+            "Step 3: Examples include registered factories, banks, and government offices."
+          ],
+          "final_answer": "The organised sector consists of registered enterprises with regular, legally protected employment."
+        },
+        {
+          "id": "sec-ex2-2",
+          "question": "Define disguised unemployment.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Disguised unemployment occurs when more workers are engaged than are needed.",
+            "Step 2: The extra workers appear employed but add little or no output.",
+            "Step 3: It is common in small family farms."
+          ],
+          "final_answer": "It is a situation where surplus workers remain on a job without adding to output."
+        },
+        {
+          "id": "sec-ex2-3",
+          "question": "State four differences between organised and unorganised sector employment.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Organised units are registered; unorganised units are largely unregistered.",
+            "Step 2: Organised workers get regular wages; unorganised wages are irregular and uncertain.",
+            "Step 3: Organised workers get paid leave and social security; unorganised workers usually do not.",
+            "Step 4: Organised jobs have written terms and some security; unorganised jobs can end without notice."
+          ],
+          "final_answer": "They differ in registration, wage regularity, social security, and job security."
+        },
+        {
+          "id": "sec-ex2-4",
+          "question": "Explain three features of MGNREGA.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: It guarantees at least 100 days of wage employment in a financial year to rural households.",
+            "Step 2: Work is provided to adult members who volunteer for unskilled manual work.",
+            "Step 3: It is demand-driven, and the state must provide work within a prescribed time or pay an unemployment allowance.",
+            "Step 4: It aims to reduce rural distress and create durable assets such as ponds and roads."
+          ],
+          "final_answer": "MGNREGA guarantees 100 days of rural wage work, is demand-driven, and provides an unemployment allowance if work is delayed."
+        },
+        {
+          "id": "sec-ex2-5",
+          "question": "Four workers cultivate two hectares, but only two are needed. Identify the type of unemployment and suggest two remedies.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: All four appear employed, but two are surplus because output would not fall if they left.",
+            "Step 2: This is disguised unemployment, a form of underemployment.",
+            "Step 3: Remedy 1: create rural non-farm employment through small industries, dairy, and food processing.",
+            "Step 4: Remedy 2: provide public work under MGNREGA and improve skills for migration to other sectors.",
+            "Step 5: Land consolidation and mechanisation can also raise productivity per worker."
+          ],
+          "final_answer": "Disguised unemployment; remedies include rural non-farm jobs, MGNREGA work, and skill development."
+        },
+        {
+          "id": "sec-ex2-6",
+          "question": "In an economy, the primary sector employs 60% of workers but contributes 20% of GDP, while the tertiary sector employs 25% of workers and contributes 50% of GDP. Interpret the pattern and give two reasons.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The primary sector has low productivity because a large workforce produces a small share of output.",
+            "Step 2: The tertiary sector has high productivity because a smaller workforce produces half of GDP.",
+            "Step 3: Reason 1: Agriculture suffers from small holdings, monsoon dependence, and limited mechanisation.",
+            "Step 4: Reason 2: Services benefit from higher skills, technology, and demand from rising incomes.",
+            "Step 5: The pattern shows structural change, but it also signals underemployment in agriculture."
+          ],
+          "final_answer": "Agriculture is overstaffed and low-productivity, while services are high-productivity; causes include small farms, technology, and skills."
+        }
+      ]
+    },
+    "exercise_1_3": {
+      "title": "NCERT Exercise 1.3 - Public Sector, Data, and Policy",
+      "objective": "Apply sectoral concepts to ownership, data interpretation, and employment policy",
+      "problems": [
+        {
+          "id": "sec-ex3-1",
+          "question": "Who owns public sector enterprises?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Public sector enterprises are owned and controlled by the government.",
+            "Step 2: They provide public facilities and welfare services.",
+            "Step 3: Examples include Indian Railways and government hospitals."
+          ],
+          "final_answer": "The government owns and controls public sector enterprises."
+        },
+        {
+          "id": "sec-ex3-2",
+          "question": "Why is the public sector needed in education and health?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Education and health are essential for human development.",
+            "Step 2: Private provision can be costly and may exclude poor households.",
+            "Step 3: Public provision subsidises access and reduces inequality.",
+            "Step 4: These services create benefits for society beyond the individual, so the market alone may underprovide them."
+          ],
+          "final_answer": "Public provision ensures affordable access and reduces inequality in essential services."
+        },
+        {
+          "id": "sec-ex3-3",
+          "question": "\"Growth of the tertiary sector alone can solve unemployment.\" Evaluate this statement.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The tertiary sector creates many jobs in trade, transport, IT, and health.",
+            "Step 2: However, many service jobs are informal, low-paid, and require skills that rural workers may lack.",
+            "Step 3: Agriculture still employs a large workforce that cannot move instantly to services.",
+            "Step 4: Manufacturing creates jobs for workers with moderate skills and absorbs surplus farm labour.",
+            "Step 5: A balanced strategy needs agriculture, manufacturing, and services, plus education and social security."
+          ],
+          "final_answer": "No; services alone cannot absorb all workers. Balanced growth across sectors with skills and social security is needed."
+        },
+        {
+          "id": "sec-ex3-4",
+          "question": "A factory pays low wages, ignores safety rules, and discharges untreated waste. Identify the sector and discuss two problems it creates.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The factory is a secondary sector unit because it manufactures goods.",
+            "Step 2: If it is unregistered or violates labour laws, it behaves like an unorganised unit even if it is large.",
+            "Step 3: Problem 1: Workers face low wages, unsafe conditions, and no social security.",
+            "Step 4: Problem 2: Untreated waste causes air and water pollution, imposing costs on the community.",
+            "Step 5: Remedies include labour inspection, pollution standards, and penalties for violations."
+          ],
+          "final_answer": "Secondary sector; it creates worker exploitation and environmental pollution, requiring regulation and enforcement."
+        },
+        {
+          "id": "sec-ex3-5",
+          "question": "GDP is Rs 5,000 crore. Primary output is Rs 1,000 crore, secondary Rs 1,500 crore, and tertiary Rs 2,500 crore. Calculate the percentage share of each sector and identify the largest.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Check the total: 1,000 + 1,500 + 2,500 = 5,000 crore.",
+            "Step 2: Primary share = (1,000 / 5,000) x 100 = 20%.",
+            "Step 3: Secondary share = (1,500 / 5,000) x 100 = 30%.",
+            "Step 4: Tertiary share = (2,500 / 5,000) x 100 = 50%.",
+            "Step 5: The shares add to 100%, and the tertiary sector is the largest."
+          ],
+          "final_answer": "Primary 20%, secondary 30%, tertiary 50%; tertiary is the largest."
+        },
+        {
+          "id": "sec-ex3-6",
+          "question": "A household is entitled to 100 days of MGNREGA work at an assumed wage of Rs 200 per day but gets only 85 days. Calculate its earnings and the shortfall in days and wages.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Entitlement = 100 days; actual work = 85 days.",
+            "Step 2: Shortfall in days = 100 - 85 = 15 days.",
+            "Step 3: Earnings = 85 x 200 = Rs 17,000.",
+            "Step 4: Value of shortfall = 15 x 200 = Rs 3,000.",
+            "Step 5: The household may claim an unemployment allowance if work was not provided within the prescribed time."
+          ],
+          "final_answer": "Earnings are Rs 17,000; the shortfall is 15 days, worth Rs 3,000."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-sec-s-1",
+        "question": "Which sector directly extracts natural resources?",
+        "options": ["Primary sector", "Secondary sector", "Tertiary sector", "Public sector"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The primary sector includes farming, mining, fishing, and forestry, which use natural resources directly.",
+          "wrong_options": {
+            "1": "The secondary sector transforms raw materials into goods.",
+            "2": "The tertiary sector provides services.",
+            "3": "The public sector refers to ownership, not the nature of the activity."
+          }
+        }
+      },
+      {
+        "id": "q-sec-s-2",
+        "question": "A farmer growing wheat belongs to which sector?",
+        "options": ["Primary", "Secondary", "Tertiary", "Quaternary"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Growing wheat directly uses land and natural resources, so it is a primary activity.",
+          "wrong_options": {
+            "1": "The secondary sector manufactures or constructs.",
+            "2": "The tertiary sector provides services.",
+            "3": "Quaternary is not one of the three sectors in this chapter."
+          }
+        }
+      },
+      {
+        "id": "q-sec-s-3",
+        "question": "Which activity belongs to the secondary sector?",
+        "options": ["Making cement in a factory", "Catching fish", "Teaching in a school", "Driving a taxi"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Manufacturing cement transforms limestone and other materials into a new product.",
+          "wrong_options": {
+            "1": "Fishing is a primary activity.",
+            "2": "Teaching is a tertiary service.",
+            "3": "Driving a taxi is a transport service."
+          }
+        }
+      },
+      {
+        "id": "q-sec-s-4",
+        "question": "Which of these is a tertiary activity?",
+        "options": ["Banking", "Coal mining", "Sugar manufacturing", "Cotton farming"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Banking provides a financial service, so it belongs to the tertiary sector.",
+          "wrong_options": {
+            "1": "Coal mining is a primary activity.",
+            "2": "Sugar manufacturing is a secondary activity.",
+            "3": "Cotton farming is a primary activity."
+          }
+        }
+      },
+      {
+        "id": "q-sec-s-5",
+        "question": "The tertiary sector is also called the:",
+        "options": ["Service sector", "Manufacturing sector", "Extractive sector", "Primary sector"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Tertiary activities provide services such as transport, trade, and banking.",
+          "wrong_options": {
+            "1": "Manufacturing is the secondary sector.",
+            "2": "Extraction is the primary sector.",
+            "3": "Primary is a separate sector."
+          }
+        }
+      },
+      {
+        "id": "q-sec-s-6",
+        "question": "Organised sector workers usually get:",
+        "options": ["Regular wages and social security", "Only daily cash payments", "No fixed working hours", "No leave at all"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Registered organised sector units follow labour laws and provide regular wages and benefits.",
+          "wrong_options": {
+            "1": "Daily cash payment without security is typical of informal work.",
+            "2": "Organised work usually has fixed hours.",
+            "3": "Paid leave is a feature of organised employment."
+          }
+        }
+      },
+      {
+        "id": "q-sec-s-7",
+        "question": "Disguised unemployment means:",
+        "options": ["More workers than needed on a job", "No one is employed", "Workers are temporarily absent", "Only seasonal work exists"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Surplus workers appear employed, but output would not fall if they left.",
+          "wrong_options": {
+            "1": "That is open unemployment.",
+            "2": "Absence is not the definition.",
+            "3": "Seasonal unemployment is a different category."
+          }
+        }
+      },
+      {
+        "id": "q-sec-s-8",
+        "question": "MGNREGA guarantees rural households at least how many days of wage employment in a financial year?",
+        "options": ["100 days", "50 days", "150 days", "200 days"],
+        "correct": 0,
+        "explanation": {
+          "correct": "MGNREGA guarantees at least 100 days of wage employment per rural household per financial year.",
+          "wrong_options": {
+            "1": "50 days understates the guarantee.",
+            "2": "150 days overstates the guarantee.",
+            "3": "200 days overstates the guarantee."
+          }
+        }
+      },
+      {
+        "id": "q-sec-s-9",
+        "question": "A public sector enterprise is owned by:",
+        "options": ["The government", "A private company", "A foreign investor only", "A village council only"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Public sector ownership and control rest with the government.",
+          "wrong_options": {
+            "1": "A private company is part of the private sector.",
+            "2": "Foreign ownership alone does not make an enterprise public.",
+            "3": "A village council is not the general definition."
+          }
+        }
+      },
+      {
+        "id": "q-sec-s-10",
+        "question": "GDP is the money value of:",
+        "options": ["All final goods and services produced in a year", "Only agricultural output", "Only exports", "All bank deposits"],
+        "correct": 0,
+        "explanation": {
+          "correct": "GDP measures the value of all final goods and services produced within a country in a year.",
+          "wrong_options": {
+            "1": "Agriculture is only one part of GDP.",
+            "2": "Exports are only one component of expenditure.",
+            "3": "Bank deposits are financial assets, not production."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-sec-m-1",
+        "question": "Which example best shows interdependence of sectors?",
+        "options": ["Cotton farmer, textile mill, and cloth retailer", "Two farmers selling to each other", "A teacher and a doctor", "Two banks competing"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The farmer supplies raw cotton, the mill manufactures cloth, and the retailer sells it, linking all three sectors.",
+          "wrong_options": {
+            "1": "This stays within the primary sector.",
+            "2": "Both provide services, so it does not show all three sectors.",
+            "3": "Both are tertiary firms, not a full chain."
+          }
+        }
+      },
+      {
+        "id": "q-sec-m-2",
+        "question": "A sugar mill belongs to the:",
+        "options": ["Secondary sector", "Primary sector", "Tertiary sector", "Public sector"],
+        "correct": 0,
+        "explanation": {
+          "correct": "It manufactures sugar from sugarcane, which is a secondary activity.",
+          "wrong_options": {
+            "1": "Sugarcane farming, not milling, is primary.",
+            "2": "Milling produces a good, not a service.",
+            "3": "Ownership is a separate classification."
+          }
+        }
+      },
+      {
+        "id": "q-sec-m-3",
+        "question": "Which worker is most likely in the unorganised sector?",
+        "options": ["A street vendor", "A permanent bank officer", "A government school teacher", "A registered factory supervisor"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Street vending is small, unregistered, and lacks regular social security.",
+          "wrong_options": {
+            "1": "Bank officers are usually organised sector employees.",
+            "2": "Government teachers have regular protected jobs.",
+            "3": "A registered factory supervisor is in the organised sector."
+          }
+        }
+      },
+      {
+        "id": "q-sec-m-4",
+        "question": "Which is a benefit available to organised sector workers?",
+        "options": ["Provident fund", "No fixed working hours", "No written contract", "Daily uncertain wages"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Provident fund is a social security benefit of organised employment.",
+          "wrong_options": {
+            "1": "Irregular hours are typical of informal work.",
+            "2": "Organised work usually has written terms.",
+            "3": "Uncertain daily wages are an unorganised feature."
+          }
+        }
+      },
+      {
+        "id": "q-sec-m-5",
+        "question": "The main objective of MGNREGA is to:",
+        "options": ["Provide rural wage employment and create durable assets", "Give loans to factories", "Replace all farm work", "Provide urban housing"],
+        "correct": 0,
+        "explanation": {
+          "correct": "MGNREGA guarantees rural wage work and supports assets such as ponds and roads.",
+          "wrong_options": {
+            "1": "It is an employment guarantee, not an industrial loan scheme.",
+            "2": "It supplements, rather than replaces, farm work.",
+            "3": "It focuses on rural unskilled manual work."
+          }
+        }
+      },
+      {
+        "id": "q-sec-m-6",
+        "question": "How does the tertiary sector support the primary sector?",
+        "options": ["By transporting and selling farm produce", "By growing more crops", "By mining coal", "By manufacturing tractors only"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Transport, storage, trade, and credit services help farmers sell produce and buy inputs.",
+          "wrong_options": {
+            "1": "Growing crops is itself primary.",
+            "2": "Mining is primary.",
+            "3": "Manufacturing tractors is secondary, not tertiary."
+          }
+        }
+      },
+      {
+        "id": "q-sec-m-7",
+        "question": "Why does the primary sector's share in GDP usually fall as an economy develops?",
+        "options": ["Manufacturing and services grow faster", "Agriculture stops completely", "People stop eating food", "Farm output always falls"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Industrial and service output expands faster, so agriculture's percentage share declines even if output grows.",
+          "wrong_options": {
+            "1": "Agriculture does not disappear.",
+            "2": "Food demand continues.",
+            "3": "Farm output can rise while its share falls."
+          }
+        }
+      },
+      {
+        "id": "q-sec-m-8",
+        "question": "Which is an example of the public sector?",
+        "options": ["A government hospital", "A private hotel", "A family-owned shop", "A private software firm"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Government ownership makes the hospital a public sector service.",
+          "wrong_options": {
+            "1": "A private hotel is privately owned.",
+            "2": "A family shop is private.",
+            "3": "A private software firm is private."
+          }
+        }
+      },
+      {
+        "id": "q-sec-m-9",
+        "question": "A worker who finds employment only during the harvest season faces:",
+        "options": ["Seasonal unemployment", "Disguised unemployment", "Open unemployment all year", "No unemployment"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Work available only in a particular season causes seasonal unemployment.",
+          "wrong_options": {
+            "1": "Disguised unemployment means surplus workers, not seasonal work.",
+            "2": "The worker is employed for part of the year.",
+            "3": "The worker is jobless outside the season."
+          }
+        }
+      },
+      {
+        "id": "q-sec-m-10",
+        "question": "Underemployment is another name for:",
+        "options": ["Disguised unemployment", "Full employment", "Seasonal employment", "Public employment"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Workers are engaged below their capacity or more workers are used than needed.",
+          "wrong_options": {
+            "1": "Full employment means everyone who wants work has it.",
+            "2": "Seasonal employment is a specific pattern, not the general term.",
+            "3": "Public employment describes the employer, not the work intensity."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-sec-x-1",
+        "question": "If primary output is 25%, secondary 35%, and tertiary 40% of GDP, which conclusion is correct?",
+        "options": ["Tertiary is the largest sector", "Primary is the largest sector", "Secondary is the largest sector", "All sectors are equal"],
+        "correct": 0,
+        "explanation": {
+          "correct": "40% is the highest share, so the tertiary sector is largest.",
+          "wrong_options": {
+            "1": "Primary is 25%, the smallest share.",
+            "2": "Secondary is 35%, below tertiary.",
+            "3": "The shares are not equal."
+          }
+        }
+      },
+      {
+        "id": "q-sec-x-2",
+        "question": "GDP is Rs 1,200 crore and primary output is Rs 300 crore. The primary share is:",
+        "options": ["25%", "20%", "30%", "40%"],
+        "correct": 0,
+        "explanation": {
+          "correct": "(300 / 1,200) x 100 = 25%.",
+          "wrong_options": {
+            "1": "20% would require Rs 240 crore.",
+            "2": "30% would require Rs 360 crore.",
+            "3": "40% would require Rs 480 crore."
+          }
+        }
+      },
+      {
+        "id": "q-sec-x-3",
+        "question": "Six workers do a task that needs only four. How many workers are surplus?",
+        "options": ["2", "4", "6", "10"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Surplus = 6 - 4 = 2 workers.",
+          "wrong_options": {
+            "1": "Four workers are needed, not surplus.",
+            "2": "All six are present, but only two are extra.",
+            "3": "This adds instead of subtracting."
+          }
+        }
+      },
+      {
+        "id": "q-sec-x-4",
+        "question": "Which situation best illustrates disguised unemployment?",
+        "options": ["Five family members work on a farm that needs three", "A worker is dismissed from a factory", "A teacher works part-time by choice", "A student looks for a first job"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The two extra family workers appear employed but do not add output.",
+          "wrong_options": {
+            "1": "Dismissal creates open unemployment.",
+            "2": "Voluntary part-time work is not disguised unemployment.",
+            "3": "A first-time job seeker is openly unemployed."
+          }
+        }
+      },
+      {
+        "id": "q-sec-x-5",
+        "question": "MGNREGA gives 100 days of work at Rs 180 per day. Maximum earnings are:",
+        "options": ["Rs 18,000", "Rs 1,800", "Rs 10,800", "Rs 180"],
+        "correct": 0,
+        "explanation": {
+          "correct": "100 x 180 = Rs 18,000.",
+          "wrong_options": {
+            "1": "This is 10 x 180.",
+            "2": "This is 60 x 180.",
+            "3": "This is one day's wage."
+          }
+        }
+      },
+      {
+        "id": "q-sec-x-6",
+        "question": "Which pair correctly matches sector and example?",
+        "options": ["Tertiary - banking", "Primary - cement factory", "Secondary - fishing", "Tertiary - coal mining"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Banking is a service, so it is tertiary.",
+          "wrong_options": {
+            "1": "A cement factory is secondary.",
+            "2": "Fishing is primary.",
+            "3": "Coal mining is primary."
+          }
+        }
+      },
+      {
+        "id": "q-sec-x-7",
+        "question": "A government-run hospital and a private hospital differ mainly in:",
+        "options": ["Ownership and motive", "The presence of doctors", "The need for patients", "The use of medicines"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The public hospital is government-owned and welfare-oriented; the private hospital is privately owned and profit-oriented.",
+          "wrong_options": {
+            "1": "Both employ doctors.",
+            "2": "Both serve patients.",
+            "3": "Both use medicines."
+          }
+        }
+      },
+      {
+        "id": "q-sec-x-8",
+        "question": "The service sector's share of GDP rises mainly because:",
+        "options": ["Incomes, urbanisation, and technology raise demand for services", "Farming disappears", "Manufacturing stops", "All services are free"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Rising incomes and technology increase demand for transport, finance, education, health, and IT.",
+          "wrong_options": {
+            "1": "Farming continues, though its share falls.",
+            "2": "Manufacturing continues alongside services.",
+            "3": "Most services are paid for."
+          }
+        }
+      },
+      {
+        "id": "q-sec-x-9",
+        "question": "Which chain correctly links the three sectors?",
+        "options": ["Iron ore mining -> steel plant -> lorry transport", "Lorry transport -> iron ore mining -> steel plant", "Steel plant -> iron ore mining -> lorry transport", "Iron ore mining -> lorry transport -> steel plant"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Mining is primary, steel making is secondary, and transport is tertiary.",
+          "wrong_options": {
+            "1": "Transport comes after production, not before extraction.",
+            "2": "Mining must precede steel making.",
+            "3": "The steel plant transforms the ore before transport to buyers."
+          }
+        }
+      },
+      {
+        "id": "q-sec-x-10",
+        "question": "Which policy best reduces disguised unemployment in agriculture?",
+        "options": ["Creating rural non-farm jobs and skills", "Adding more workers to the same farm", "Banning machinery", "Reducing irrigation"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Moving surplus workers to non-farm work raises productivity and incomes.",
+          "wrong_options": {
+            "1": "Adding workers worsens the surplus.",
+            "2": "Banning machinery lowers productivity.",
+            "3": "Reducing irrigation hurts farm output."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Sectors of the Indian Economy - Concept Map",
+    "nodes": [
+      { "id": "n1", "label": "Sectors of the Economy", "group": "core" },
+      { "id": "n2", "label": "Primary Sector", "group": "sector" },
+      { "id": "n3", "label": "Secondary Sector", "group": "sector" },
+      { "id": "n4", "label": "Tertiary Sector", "group": "sector" },
+      { "id": "n5", "label": "Natural Resource Extraction", "group": "activity" },
+      { "id": "n6", "label": "Manufacturing and Construction", "group": "activity" },
+      { "id": "n7", "label": "Services and Support", "group": "activity" },
+      { "id": "n8", "label": "Employment Patterns", "group": "labour" },
+      { "id": "n9", "label": "Organised Sector", "group": "labour" },
+      { "id": "n10", "label": "Unorganised Sector", "group": "labour" }
+    ],
+    "edges": [
+      ["n1", "n2"],
+      ["n1", "n3"],
+      ["n1", "n4"],
+      ["n2", "n5"],
+      ["n3", "n6"],
+      ["n4", "n7"],
+      ["n2", "n4"],
+      ["n3", "n4"],
+      ["n1", "n8"],
+      ["n8", "n9"],
+      ["n8", "n10"],
+      ["n9", "n10"]
+    ]
+  },
+  "mind_maps": {
+    "title": "Sectors of the Indian Economy - Mind Map",
+    "type": "hierarchical",
+    "root": "Sectors of the Indian Economy",
+    "branches": [
+      {
+        "concept": "Primary Sector",
+        "sub_nodes": [
+          "Agriculture, fishing, forestry, mining",
+          "Direct use of natural resources",
+          "Large employer, low productivity",
+          "Disguised unemployment"
+        ],
+        "connections": "Supplies food and raw materials to other sectors"
+      },
+      {
+        "concept": "Secondary Sector",
+        "sub_nodes": [
+          "Manufacturing and construction",
+          "Value addition to raw materials",
+          "Factory and construction jobs",
+          "Pollution and safety concerns"
+        ],
+        "connections": "Transforms primary output into finished goods"
+      },
+      {
+        "concept": "Tertiary Sector",
+        "sub_nodes": [
+          "Transport, trade, banking, education, health",
+          "Services support production",
+          "Largest share of GDP",
+          "Many informal service jobs"
+        ],
+        "connections": "Connects producers with consumers and finance"
+      },
+      {
+        "concept": "Employment",
+        "sub_nodes": [
+          "Organised versus unorganised",
+          "Disguised and seasonal unemployment",
+          "MGNREGA 100-day guarantee",
+          "Skill and social security needs"
+        ],
+        "connections": "Job quality determines income security"
+      },
+      {
+        "concept": "Organised Sector",
+        "sub_nodes": [
+          "Registered enterprises",
+          "Regular wages and fixed hours",
+          "Paid leave and provident fund",
+          "Legal protection"
+        ],
+        "connections": "Higher security but smaller share of workforce"
+      },
+      {
+        "concept": "Public and Private Sectors",
+        "sub_nodes": [
+          "Government ownership versus private ownership",
+          "Public welfare and public facilities",
+          "Private profit and efficiency",
+          "Public-private partnerships"
+        ],
+        "connections": "Mixed economy combines both roles"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "The primary sector is unimportant because its share of GDP is low - FALSE: it provides food, raw materials, and mass employment.",
+    "The tertiary sector produces goods - FALSE: it provides services that support production and consumption.",
+    "All factory workers are in the organised sector - FALSE: small and unregistered units may offer informal work.",
+    "Disguised unemployment means people have no work - FALSE: they appear employed but are surplus to requirement.",
+    "MGNREGA is an urban employment scheme - FALSE: it guarantees rural wage employment to rural households.",
+    "The public sector is always inefficient - FALSE: it provides essential public facilities where private profit may be inadequate.",
+    "GDP measures welfare completely - FALSE: it does not show income distribution, unpaid work, or environmental damage.",
+    "The secondary sector includes only large factories - FALSE: small workshops and construction units are also secondary."
+  ]
+}

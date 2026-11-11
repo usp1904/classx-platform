@@ -1,0 +1,1078 @@
+{
+  "subject": "Geography",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 2,
+  "chapter": "Forest and Wildlife Resources",
+  "lesson": 2,
+  "id": "forest-and-wildlife-resources",
+  "title": "Forest and Wildlife Resources — Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Explain biodiversity and why it is essential for human survival",
+    "Classify species using the conservation categories used in NCERT",
+    "Identify the main causes of depletion of flora and fauna in India",
+    "Distinguish reserved, protected and unclassed forests",
+    "Describe legal and project-based conservation measures",
+    "Explain the role of communities in forest and wildlife conservation",
+    "Evaluate conservation conflicts using Indian case studies",
+    "Answer board-style questions on biodiversity, IUCN categories and community forestry"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS9_NATURAL_VEGETATION_AND_WILDLIFE",
+    "SCIENCE_CLASS7_FOREST",
+    "SCIENCE_CLASS10_OUR_ENVIRONMENT",
+    "SOCIAL_CLASS8_RESOURCES"
+  ],
+  "concepts": [
+    {
+      "id": "concept-biodiversity",
+      "title": "Biodiversity and Its Importance",
+      "name": "Biodiversity and Its Importance",
+      "explanation": "Biodiversity is the variety of plants, animals and micro-organisms living in a region and the ecological complexes they form. It includes genetic diversity within species, species diversity and ecosystem diversity. India is one of the world's megadiverse countries and holds a significant share of global species. Biodiversity supports food, medicine, clean water, pollination, soil fertility and climate stability. Losing biodiversity weakens ecosystems and makes human life more vulnerable.",
+      "purpose": "Biodiversity is not only about rare animals. It is the living infrastructure that produces food, regulates water and climate, and keeps ecosystems resilient.",
+      "real_life_application": "Bees and other pollinators increase crop yields. Mangroves reduce cyclone damage on coasts. Forests recharge groundwater used by villages and cities.",
+      "key_points": [
+        "Biodiversity includes genetic, species and ecosystem diversity.",
+        "India is one of the world's megadiverse countries.",
+        "Biodiversity provides food, medicine, fibre, pollination and water regulation.",
+        "Healthy ecosystems resist disease, climate stress and other disturbances.",
+        "Biodiversity loss threatens food security and human health.",
+        "Conservation must protect habitats, not only individual species."
+      ],
+      "day_to_day_usage": [
+        "Pollinators support fruits and vegetables in farms and gardens",
+        "Mangroves protect coastal villages from storms",
+        "Forests recharge wells and streams",
+        "Medicines such as quinine and aspirin are derived from plants",
+        "Soil organisms decompose waste and maintain fertility"
+      ]
+    },
+    {
+      "id": "concept-species-categories",
+      "title": "Conservation Categories of Species",
+      "name": "Conservation Categories of Species",
+      "explanation": "NCERT groups species into six conservation categories. Normal species have healthy populations, such as cattle, sal and pine. Endangered species are in danger of extinction if negative factors continue, such as the black buck, crocodile, Indian wild ass, Indian rhino and lion-tailed macaque. Vulnerable species are likely to become endangered if conditions worsen, such as the blue sheep, Asiatic elephant and Gangetic dolphin. Rare species have small populations in limited areas, such as the Himalayan brown bear and desert fox. Endemic species are found only in a particular region, such as the Andaman teal and Nicobar pigeon. Extinct species have disappeared from the region, such as the Asiatic cheetah in India. The modern IUCN Red List uses a more detailed scale, but the NCERT categories remain the base for board answers.",
+      "purpose": "Categories help conservationists prioritise action. A species with a small, shrinking range needs urgent protection, while a healthy species needs monitoring.",
+      "real_life_application": "Project Tiger focuses on a flagship species but protects the whole forest. Protecting the tiger also protects deer, birds, insects and water sources in the same habitat.",
+      "key_points": [
+        "Normal: healthy populations, e.g. cattle, sal, pine.",
+        "Endangered: survival unlikely if negative factors continue, e.g. black buck, Indian rhino.",
+        "Vulnerable: likely to become endangered, e.g. Asiatic elephant, Gangetic dolphin.",
+        "Rare: small populations in limited areas, e.g. Himalayan brown bear, desert fox.",
+        "Endemic: found only in one region, e.g. Andaman teal, Nicobar pigeon.",
+        "Extinct: no longer found in the region, e.g. Asiatic cheetah in India."
+      ],
+      "day_to_day_usage": [
+        "Wildlife documentaries use these labels to explain threat levels",
+        "Zoo and sanctuary boards display endangered and endemic species",
+        "Newspaper reports on tiger or dolphin numbers use these categories",
+        "Students compare species while preparing biodiversity projects",
+        "Conservation fundraising often highlights endangered flagship species"
+      ]
+    },
+    {
+      "id": "concept-depletion-causes",
+      "title": "Causes of Depletion of Flora and Fauna",
+      "name": "Causes of Depletion of Flora and Fauna",
+      "explanation": "India's forests and wildlife have declined because of colonial forestry, agricultural expansion, large development projects, mining, industrial pollution and unequal access to resources. Colonial forest policy converted forests into timber and revenue sources. After independence, dams, roads, mines and industries cleared large areas. Poaching, wildlife trade, invasive species and climate change add pressure. Poorer communities often lose access to forests while richer groups consume more resources, so conservation must also address inequality.",
+      "purpose": "Understanding causes prevents the mistake of blaming only poachers. Habitat loss and unequal access are usually bigger drivers than hunting alone.",
+      "real_life_application": "A new highway can split an elephant corridor. A mine can destroy a hill that feeds streams. A dam can submerge forest used by tribal communities.",
+      "key_points": [
+        "Colonial forestry treated forests mainly as timber and revenue.",
+        "Agricultural expansion cleared forest land.",
+        "Dams, roads, mines and industries destroy and fragment habitats.",
+        "Poaching and wildlife trade target valuable species.",
+        "Pollution, invasive species and climate change weaken ecosystems.",
+        "Unequal access means poor communities bear costs while others benefit."
+      ],
+      "day_to_day_usage": [
+        "Road expansion can fragment wildlife corridors",
+        "Mining projects can displace forest communities",
+        "Illegal wildlife trade threatens rare species",
+        "Pesticides and industrial waste affect birds and aquatic life",
+        "Tourism pressure can disturb sensitive habitats"
+      ]
+    },
+    {
+      "id": "concept-forest-categories",
+      "title": "Forest Cover and Forest Categories",
+      "name": "Forest Cover and Forest Categories",
+      "explanation": "Forests are classified by ownership and protection. Reserved forests are the most valuable, permanently kept for conservation, and entry or grazing requires permission. Protected forests are protected from further depletion, but limited grazing and collection may be allowed. Unclassed forests include other forests and wastelands owned by the government or private individuals. India's forest cover is roughly one-fifth to one-fourth of its geographical area, below the desired one-third. Forest cover alone is not enough: the quality of forest and the connectivity between patches matter for wildlife.",
+      "purpose": "The category of a forest decides who can use it and how. This affects both conservation and the livelihoods of forest-dependent communities.",
+      "real_life_application": "A village may collect fallen wood from a protected forest but cannot enter a reserved forest without permission. A private plantation is an unclassed forest.",
+      "key_points": [
+        "Reserved forests: most valuable, permanent, restricted entry and grazing.",
+        "Protected forests: protected from further depletion, limited use allowed.",
+        "Unclassed forests: other government and private forests and wastelands.",
+        "Forest cover is below the desired one-third of India's geographical area.",
+        "Forest quality and connectivity matter as much as area.",
+        "Joint Forest Management gives communities a role in protection."
+      ],
+      "day_to_day_usage": [
+        "Villagers collect minor forest produce from protected forests",
+        "Reserved forests are used for strict conservation and watershed protection",
+        "Private plantations supply timber and fuelwood",
+        "Urban green belts act as unclassed tree cover",
+        "Wildlife corridors link forest patches across human landscapes"
+      ]
+    },
+    {
+      "id": "concept-conservation",
+      "title": "Conservation of Forests and Wildlife",
+      "name": "Conservation of Forests and Wildlife",
+      "explanation": "Conservation combines legal protection, protected areas and species projects. The Wildlife Protection Act 1972 provides the main legal framework. National parks, wildlife sanctuaries, biosphere reserves and tiger reserves protect habitats. Project Tiger, Project Elephant and breeding programmes for crocodiles and gharials support threatened species. Afforestation, social forestry and agroforestry increase tree cover. In-situ conservation protects species in their natural habitat, while ex-situ conservation keeps them in zoos, botanical gardens and seed banks.",
+      "purpose": "Species cannot survive without habitat. Conservation therefore protects ecosystems and corridors, not just individual animals.",
+      "real_life_application": "A tiger reserve protects tigers but also safeguards the catchment that supplies water to nearby towns. A botanical garden preserves plant varieties outside their natural habitat.",
+      "key_points": [
+        "Wildlife Protection Act 1972 is the main wildlife law.",
+        "National parks, sanctuaries, biosphere reserves and tiger reserves protect habitats.",
+        "Project Tiger 1973 and Project Elephant 1992 support flagship species.",
+        "Afforestation and social forestry increase tree cover.",
+        "In-situ conservation protects species in their natural habitat.",
+        "Ex-situ conservation uses zoos, botanical gardens and seed banks."
+      ],
+      "day_to_day_usage": [
+        "A visit to a national park supports conservation through entry fees",
+        "Planting native trees in a school campus is social forestry",
+        "Seed banks preserve crop and wild plant varieties",
+        "Wildlife veterinarians treat injured animals in rescue centres",
+        "Community patrols report poaching and forest fires"
+      ]
+    },
+    {
+      "id": "concept-community-conservation",
+      "title": "Community Participation and Conservation",
+      "name": "Community Participation and Conservation",
+      "explanation": "Conservation works best when local communities have a stake in it. Joint Forest Management, started in 1988, brings forest departments and village communities together to protect and regenerate forests in return for rights to minor forest produce. The Chipko movement in the Garhwal Himalayas resisted tree felling by hugging trees. The Beej Bachao Andolan preserved local seed varieties. Sacred groves are protected by religious custom. In Alwar district of Rajasthan, five villages protected the Bhairodev Dakav Sonchuri and banned hunting. The Tawa Matsya Sangh in Madhya Pradesh fought for the fishing rights of displaced communities.",
+      "purpose": "Top-down conservation can exclude the people who depend on forests. Community participation builds local ownership and better enforcement.",
+      "real_life_application": "A village forest committee can guard a regenerating patch, harvest minor produce sustainably and share the benefits. This reduces conflict and improves forest health.",
+      "key_points": [
+        "Joint Forest Management began in 1988.",
+        "Chipko movement protected trees in the Garhwal Himalayas.",
+        "Beej Bachao Andolan conserved local seed diversity.",
+        "Sacred groves protect biodiversity through community rules.",
+        "Alwar villages protected the Bhairodev Dakav Sonchuri.",
+        "Tawa Matsya Sangh secured fishing rights for local communities."
+      ],
+      "day_to_day_usage": [
+        "Village forest committees guard local woodlots",
+        "Sacred groves are protected by local custom",
+        "Farmers save and exchange traditional seeds",
+        "Fisherfolk cooperatives manage local water bodies",
+        "School eco-clubs plant and protect native trees"
+      ]
+    }
+  ],
+  "theorems": [],
+  "worked_examples": [
+    {
+      "id": "we-forest-1",
+      "title": "Classifying species from clues",
+      "topic": "Conservation categories",
+      "problem": "Classify each species and justify: (i) Asiatic cheetah in India, (ii) Gangetic dolphin, (iii) Andaman teal, (iv) black buck.",
+      "solution": [
+        "Step 1: The Asiatic cheetah is no longer found in India, so it is extinct in the region.",
+        "Step 2: The Gangetic dolphin has a declining population and is likely to become endangered if threats continue, so it is vulnerable.",
+        "Step 3: The Andaman teal is found only in the Andaman Islands, so it is endemic.",
+        "Step 4: The black buck faces a serious threat of extinction if negative factors continue, so it is endangered."
+      ],
+      "board_mode": [
+        "Recall the six categories: normal, endangered, vulnerable, rare, endemic, extinct.",
+        "(i) Extinct in India — Asiatic cheetah.",
+        "(ii) Vulnerable — Gangetic dolphin.",
+        "(iii) Endemic — Andaman teal.",
+        "(iv) Endangered — black buck.",
+        "Give one reason for each classification."
+      ],
+      "answer": "(i) Extinct in India, (ii) Vulnerable, (iii) Endemic, (iv) Endangered.",
+      "board_tip": "Extinct means gone from the region, not necessarily from the whole world. The cheetah survives elsewhere, but not in India."
+    },
+    {
+      "id": "we-forest-2",
+      "title": "Why the Asiatic cheetah disappeared",
+      "topic": "Causes of depletion",
+      "problem": "Explain why the Asiatic cheetah became extinct in India and what the case teaches about conservation.",
+      "solution": [
+        "Step 1: Cheetahs lived in open grasslands and scrub, which were converted to agriculture and settlements.",
+        "Step 2: Prey species such as black buck declined because of hunting and habitat loss.",
+        "Step 3: Cheetahs were hunted for sport and skins.",
+        "Step 4: Habitat fragmentation left small populations that could not survive.",
+        "Step 5: The case shows that conservation must protect habitats and prey, not only the predator."
+      ],
+      "board_mode": [
+        "State the habitat: open grassland and scrub.",
+        "Give causes: habitat conversion, prey decline, hunting, fragmentation.",
+        "Explain the final result: local extinction.",
+        "Draw the lesson: protect ecosystems and prey, not just one species."
+      ],
+      "answer": "Habitat loss, prey decline, hunting and fragmentation wiped out the Indian cheetah; conservation must protect whole ecosystems.",
+      "board_tip": "A species can disappear even without direct hunting if its habitat and prey vanish."
+    },
+    {
+      "id": "we-forest-3",
+      "title": "Comparing forest categories",
+      "topic": "Forest categories",
+      "problem": "Distinguish between reserved, protected and unclassed forests.",
+      "solution": [
+        "Step 1: Reserved forests are the most valuable forests, permanently dedicated to conservation; entry and grazing need permission.",
+        "Step 2: Protected forests are protected from further depletion, but limited grazing and collection of minor produce may be allowed.",
+        "Step 3: Unclassed forests are other forests and wastelands owned by the government or private individuals.",
+        "Step 4: The categories differ in ownership, protection level and permitted use."
+      ],
+      "board_mode": [
+        "Reserved: highest protection, restricted entry.",
+        "Protected: partial protection, limited community use.",
+        "Unclassed: government or private, least restrictive.",
+        "Conclude with the effect on conservation and livelihoods."
+      ],
+      "answer": "Reserved forests are strictly protected, protected forests allow limited use, and unclassed forests are other government or private forests.",
+      "board_tip": "Use a three-column table for ownership, protection and permitted use."
+    },
+    {
+      "id": "we-forest-4",
+      "title": "Community conservation in Alwar",
+      "topic": "Community participation",
+      "problem": "Explain how the villages of Alwar district in Rajasthan protected forests and wildlife.",
+      "solution": [
+        "Step 1: Five villages in Alwar district came together to protect the Bhairodev Dakav Sonchuri.",
+        "Step 2: They framed their own rules and banned hunting.",
+        "Step 3: They protected the forest from grazing and felling by outside users.",
+        "Step 4: The community enforced the rules locally, which improved forest regeneration and wildlife.",
+        "Step 5: The case shows that local ownership can be more effective than purely official protection."
+      ],
+      "board_mode": [
+        "Name the place and the protected area.",
+        "State the community rules: hunting ban, controlled grazing, protection from felling.",
+        "Explain the result: forest regeneration and wildlife recovery.",
+        "Conclude with the value of community participation."
+      ],
+      "answer": "Alwar villages protected the Bhairodev Dakav Sonchuri through local rules, a hunting ban and controlled use, which helped forests and wildlife recover.",
+      "board_tip": "Community conservation answers need a place, a rule and a result."
+    },
+    {
+      "id": "we-forest-5",
+      "title": "Why conservation needs local communities",
+      "topic": "Conservation and livelihoods",
+      "problem": "Conservation of forests cannot succeed without the participation of local communities. Discuss.",
+      "solution": [
+        "Step 1: Local communities live in and around forests and depend on them for fuel, fodder and minor produce.",
+        "Step 2: If conservation ignores their needs, they lose their livelihood and may resist protection.",
+        "Step 3: Communities have traditional knowledge about local species and water sources.",
+        "Step 4: Joint Forest Management gives them rights and responsibilities, which improves enforcement.",
+        "Step 5: Examples such as Alwar, Chipko and Tawa show that participation produces better outcomes.",
+        "Step 6: Conservation must therefore combine legal protection with livelihood security."
+      ],
+      "board_mode": [
+        "State the dependence of communities on forests.",
+        "Explain the problem of exclusion: resistance and weak enforcement.",
+        "Give the benefits of participation: knowledge, ownership, monitoring.",
+        "Use JFM and one case study.",
+        "Conclude with a balanced conservation and livelihood approach."
+      ],
+      "answer": "Local communities depend on forests and hold traditional knowledge; participation through JFM and local rules improves protection, so conservation must secure livelihoods alongside habitats.",
+      "board_tip": "A discussion answer needs both sides: why exclusion fails and why participation works."
+    }
+  ],
+  "exercises": {
+    "simple": {
+      "title": "NCERT Practice — Biodiversity Basics",
+      "objective": "Define biodiversity, species categories and basic conservation terms",
+      "problems": [
+        {
+          "id": "forest-ex-s-1",
+          "question": "Define biodiversity.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Biodiversity is the variety of plants, animals and micro-organisms in a region.",
+            "Step 2: It includes genetic diversity within species, species diversity and ecosystem diversity.",
+            "Step 3: It also includes the ecological complexes formed by these living things."
+          ],
+          "final_answer": "Biodiversity is the variety of life at genetic, species and ecosystem levels, together with the ecological complexes they form.",
+          "marks": 2
+        },
+        {
+          "id": "forest-ex-s-2",
+          "question": "What are endemic species? Give one example.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Endemic species are found only in a particular region and nowhere else naturally.",
+            "Step 2: Because their range is small, they are highly vulnerable to habitat loss.",
+            "Step 3: Example: the Andaman teal or the Nicobar pigeon."
+          ],
+          "final_answer": "Endemic species occur only in one region; example: Andaman teal.",
+          "marks": 2
+        },
+        {
+          "id": "forest-ex-s-3",
+          "question": "Name two endangered species of India.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Endangered species face a serious risk of extinction if negative factors continue.",
+            "Step 2: Examples include the black buck, Indian wild ass, Indian rhino and lion-tailed macaque.",
+            "Step 3: Any two examples are acceptable."
+          ],
+          "final_answer": "Black buck and Indian rhino, among others.",
+          "marks": 1
+        },
+        {
+          "id": "forest-ex-s-4",
+          "question": "What is a national park?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: A national park is a protected area set aside for wildlife and its habitat.",
+            "Step 2: Human activities such as grazing, cultivation and hunting are restricted.",
+            "Step 3: National parks protect ecosystems and allow regulated tourism and research."
+          ],
+          "final_answer": "A national park is a strictly protected area for wildlife and habitat, with restricted human use.",
+          "marks": 2
+        },
+        {
+          "id": "forest-ex-s-5",
+          "question": "When was the Wildlife Protection Act passed?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: The Wildlife Protection Act was passed in 1972.",
+            "Step 2: It provides the main legal framework for protecting wildlife in India.",
+            "Step 3: It allows the government to declare protected areas and regulate hunting."
+          ],
+          "final_answer": "1972.",
+          "marks": 1
+        },
+        {
+          "id": "forest-ex-s-6",
+          "question": "What is Joint Forest Management?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Joint Forest Management is a partnership between forest departments and local communities.",
+            "Step 2: It began in 1988.",
+            "Step 3: Communities help protect and regenerate forests and receive rights to minor forest produce."
+          ],
+          "final_answer": "JFM is a 1988 partnership in which communities and forest departments jointly protect forests and share benefits.",
+          "marks": 2
+        }
+      ]
+    },
+    "medium": {
+      "title": "NCERT Practice — Threats and Protection",
+      "objective": "Explain species categories, forest types and conservation measures",
+      "problems": [
+        {
+          "id": "forest-ex-m-1",
+          "question": "Distinguish between endangered and vulnerable species.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Endangered species face a serious risk of extinction if negative factors continue.",
+            "Step 2: Examples include the black buck and Indian rhino.",
+            "Step 3: Vulnerable species are likely to become endangered if conditions worsen.",
+            "Step 4: Examples include the Asiatic elephant and Gangetic dolphin."
+          ],
+          "final_answer": "Endangered species face immediate extinction risk; vulnerable species are likely to become endangered if threats increase.",
+          "marks": 3
+        },
+        {
+          "id": "forest-ex-m-2",
+          "question": "Explain any three causes of the depletion of flora and fauna in India.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Agricultural expansion cleared forests for cultivation.",
+            "Step 2: Large development projects such as dams, roads and mines destroyed and fragmented habitats.",
+            "Step 3: Colonial forestry and commercial logging reduced forest cover.",
+            "Step 4: Poaching, pollution and unequal access to resources added further pressure."
+          ],
+          "final_answer": "Agricultural expansion, development projects and commercial forestry are major causes, along with poaching and pollution.",
+          "marks": 3
+        },
+        {
+          "id": "forest-ex-m-3",
+          "question": "Distinguish between reserved and protected forests.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Reserved forests are the most valuable forests and are permanently dedicated to conservation.",
+            "Step 2: Entry and grazing in reserved forests require permission.",
+            "Step 3: Protected forests are protected from further depletion but allow limited grazing and collection.",
+            "Step 4: Both are government-owned, but reserved forests have stricter protection."
+          ],
+          "final_answer": "Reserved forests have strict protection and restricted entry; protected forests allow limited community use.",
+          "marks": 3
+        },
+        {
+          "id": "forest-ex-m-4",
+          "question": "What are the main objectives of Project Tiger?",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Project Tiger was launched in 1973 to conserve tiger populations in India.",
+            "Step 2: It protects tiger habitats and prey species.",
+            "Step 3: It supports anti-poaching measures, monitoring and relocation where needed.",
+            "Step 4: It also aims to balance conservation with local community needs."
+          ],
+          "final_answer": "Project Tiger aims to conserve tigers and their habitats through protected reserves, anti-poaching measures and monitoring.",
+          "marks": 3
+        },
+        {
+          "id": "forest-ex-m-5",
+          "question": "Explain the role of sacred groves in conservation.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Sacred groves are patches of forest protected by local religious custom.",
+            "Step 2: Cutting trees and hunting are usually prohibited.",
+            "Step 3: They preserve local species, water sources and soil.",
+            "Step 4: They show how community rules can protect biodiversity without formal state enforcement."
+          ],
+          "final_answer": "Sacred groves conserve local biodiversity and water sources through community religious rules.",
+          "marks": 3
+        },
+        {
+          "id": "forest-ex-m-6",
+          "question": "What was the Chipko movement?",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: The Chipko movement began in the Garhwal Himalayas in the 1970s.",
+            "Step 2: Villagers, especially women, hugged trees to prevent felling by contractors.",
+            "Step 3: It demanded community rights over forests and opposed destructive commercial logging.",
+            "Step 4: It became a symbol of community-led forest conservation."
+          ],
+          "final_answer": "Chipko was a Garhwal Himalayas movement in which villagers hugged trees to stop commercial felling and assert community forest rights.",
+          "marks": 3
+        }
+      ]
+    },
+    "complex": {
+      "title": "NCERT Practice — Case Studies and Evaluation",
+      "objective": "Evaluate conservation policy, community participation and biodiversity loss",
+      "problems": [
+        {
+          "id": "forest-ex-c-1",
+          "question": "Conservation of forests cannot be achieved without local communities. Discuss with examples.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Local communities depend on forests for fuel, fodder, food and income.",
+            "Step 2: Exclusion from forests can cause resistance and make protection difficult.",
+            "Step 3: Communities hold traditional knowledge about species, water and seasons.",
+            "Step 4: JFM gives communities rights and responsibilities, improving monitoring.",
+            "Step 5: Alwar villages, Chipko and Tawa Matsya Sangh show successful community action.",
+            "Step 6: Conservation should therefore combine legal protection with livelihood security."
+          ],
+          "final_answer": "Community participation improves enforcement and local knowledge; JFM, Alwar, Chipko and Tawa show that conservation works when livelihoods are secured.",
+          "marks": 5
+        },
+        {
+          "id": "forest-ex-c-2",
+          "question": "Describe the Alwar district case of community forest protection and state its significance.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Five villages in Alwar district, Rajasthan, protected the Bhairodev Dakav Sonchuri.",
+            "Step 2: They framed local rules and banned hunting.",
+            "Step 3: They controlled grazing and prevented outside felling.",
+            "Step 4: The forest regenerated and wildlife increased.",
+            "Step 5: The case shows that local ownership and enforcement can protect biodiversity effectively."
+          ],
+          "final_answer": "Alwar villages protected the Bhairodev Dakav Sonchuri through local rules, a hunting ban and controlled use, leading to forest and wildlife recovery.",
+          "marks": 5
+        },
+        {
+          "id": "forest-ex-c-3",
+          "question": "Explain the NCERT conservation categories with one example each.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Normal species have healthy populations, e.g. cattle and sal.",
+            "Step 2: Endangered species face extinction if threats continue, e.g. black buck.",
+            "Step 3: Vulnerable species may become endangered, e.g. Asiatic elephant.",
+            "Step 4: Rare species have small populations in limited areas, e.g. Himalayan brown bear.",
+            "Step 5: Endemic species occur only in one region, e.g. Andaman teal.",
+            "Step 6: Extinct species have disappeared from the region, e.g. Asiatic cheetah in India."
+          ],
+          "final_answer": "Normal, endangered, vulnerable, rare, endemic and extinct, each illustrated with a suitable Indian example.",
+          "marks": 5
+        },
+        {
+          "id": "forest-ex-c-4",
+          "question": "How do large development projects affect forests and wildlife? Suggest two ways to reduce the damage.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Dams, roads, mines and industries clear forest land.",
+            "Step 2: They fragment habitats and break wildlife corridors.",
+            "Step 3: Displaced communities may lose livelihoods and put more pressure on remaining forests.",
+            "Step 4: Environmental impact assessment and careful siting can reduce damage.",
+            "Step 5: Wildlife corridors, compensatory afforestation and community participation can improve outcomes."
+          ],
+          "final_answer": "Large projects clear and fragment habitat; impact assessment, careful siting, corridors and afforestation reduce the damage.",
+          "marks": 5
+        },
+        {
+          "id": "forest-ex-c-5",
+          "question": "Why is biodiversity important for human survival? Give four reasons.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Biodiversity provides food, medicine and raw materials.",
+            "Step 2: Pollinators and soil organisms support agriculture.",
+            "Step 3: Forests and wetlands regulate water, climate and floods.",
+            "Step 4: Diverse ecosystems resist pests, diseases and climate stress.",
+            "Step 5: Loss of biodiversity therefore threatens food, health and safety."
+          ],
+          "final_answer": "Biodiversity supports food, medicine, pollination, water regulation and ecosystem resilience, all essential for human survival.",
+          "marks": 5
+        },
+        {
+          "id": "forest-ex-c-6",
+          "question": "Evaluate India's legal and project-based measures for wildlife conservation.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: The Wildlife Protection Act 1972 provides legal protection and allows protected areas.",
+            "Step 2: National parks, sanctuaries, biosphere reserves and tiger reserves protect habitats.",
+            "Step 3: Project Tiger and Project Elephant support flagship species and their landscapes.",
+            "Step 4: Afforestation and breeding programmes add further support.",
+            "Step 5: Weak enforcement, funding gaps, human-wildlife conflict and displacement remain challenges.",
+            "Step 6: Community participation and corridor protection are needed for long-term success."
+          ],
+          "final_answer": "Legal protection and species projects have helped, but enforcement, conflict, funding and habitat connectivity remain challenges.",
+          "marks": 5
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-forest-s-1",
+        "question": "Which of the following is an endemic species of India?",
+        "options": ["Andaman teal", "Asiatic elephant", "Black buck", "Gangetic dolphin"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Andaman teal is found only in the Andaman Islands.",
+          "wrong_options": {
+            "1": "The Asiatic elephant is vulnerable but not endemic to one small region.",
+            "2": "The black buck is endangered and widely distributed.",
+            "3": "The Gangetic dolphin is vulnerable and found in the Ganga-Brahmaputra system."
+          }
+        }
+      },
+      {
+        "id": "q-forest-s-2",
+        "question": "Which species is extinct in India?",
+        "options": ["Asiatic cheetah", "Indian rhino", "Black buck", "Lion-tailed macaque"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Asiatic cheetah disappeared from India, so it is extinct in the region.",
+          "wrong_options": {
+            "1": "The Indian rhino is endangered but still present.",
+            "2": "The black buck is endangered but still present.",
+            "3": "The lion-tailed macaque is endangered but still present."
+          }
+        }
+      },
+      {
+        "id": "q-forest-s-3",
+        "question": "The Wildlife Protection Act was passed in:",
+        "options": ["1972", "1980", "1988", "1992"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Wildlife Protection Act was passed in 1972.",
+          "wrong_options": {
+            "1": "1980 was the Forest Conservation Act.",
+            "2": "1988 was the start of Joint Forest Management.",
+            "3": "1992 was Project Elephant."
+          }
+        }
+      },
+      {
+        "id": "q-forest-s-4",
+        "question": "Project Tiger was launched in:",
+        "options": ["1973", "1972", "1988", "1992"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Project Tiger began in 1973 to conserve tiger populations and habitats.",
+          "wrong_options": {
+            "1": "1972 was the Wildlife Protection Act.",
+            "2": "1988 was Joint Forest Management.",
+            "3": "1992 was Project Elephant."
+          }
+        }
+      },
+      {
+        "id": "q-forest-s-5",
+        "question": "Which of the following is a national park?",
+        "options": ["Corbett National Park", "Bhairodev Dakav Sonchuri", "Tawa forest", "A private plantation"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Corbett is a national park in Uttarakhand.",
+          "wrong_options": {
+            "1": "Bhairodev Dakav Sonchuri is a community-protected forest in Alwar.",
+            "2": "Tawa is associated with a fishing cooperative, not a national park.",
+            "3": "A private plantation is an unclassed forest, not a national park."
+          }
+        }
+      },
+      {
+        "id": "q-forest-s-6",
+        "question": "Which category means a species is no longer found in a region?",
+        "options": ["Extinct", "Endangered", "Vulnerable", "Rare"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Extinct means the species has disappeared from the region.",
+          "wrong_options": {
+            "1": "Endangered species still exist but face extinction risk.",
+            "2": "Vulnerable species are likely to become endangered.",
+            "3": "Rare species have small populations but still exist."
+          }
+        }
+      },
+      {
+        "id": "q-forest-s-7",
+        "question": "Joint Forest Management began in:",
+        "options": ["1988", "1972", "1973", "1992"],
+        "correct": 0,
+        "explanation": {
+          "correct": "JFM began in 1988 as a partnership between forest departments and communities.",
+          "wrong_options": {
+            "1": "1972 was the Wildlife Protection Act.",
+            "2": "1973 was Project Tiger.",
+            "3": "1992 was Project Elephant."
+          }
+        }
+      },
+      {
+        "id": "q-forest-s-8",
+        "question": "Which of the following is a biosphere reserve?",
+        "options": ["Nilgiri", "Bhairodev Dakav Sonchuri", "Tawa Matsya Sangh", "Chipko"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Nilgiri Biosphere Reserve is a well-known biosphere reserve in southern India.",
+          "wrong_options": {
+            "1": "Bhairodev Dakav Sonchuri is a community-protected forest.",
+            "2": "Tawa Matsya Sangh is a fishing cooperative.",
+            "3": "Chipko is a social movement."
+          }
+        }
+      },
+      {
+        "id": "q-forest-s-9",
+        "question": "Which of the following is a rare species?",
+        "options": ["Himalayan brown bear", "Cattle", "Sal", "Pine"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Himalayan brown bear has a small population in limited areas, so it is rare.",
+          "wrong_options": {
+            "1": "Cattle are a normal species.",
+            "2": "Sal is a common tree.",
+            "3": "Pine is a common tree."
+          }
+        }
+      },
+      {
+        "id": "q-forest-s-10",
+        "question": "Sacred groves are examples of:",
+        "options": ["Community conservation", "Commercial forestry", "Ex-situ conservation", "Mining leases"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Sacred groves are protected by local religious custom, which is community conservation.",
+          "wrong_options": {
+            "1": "They are not managed for commercial timber.",
+            "2": "Ex-situ conservation keeps species outside their habitat.",
+            "3": "They are not mining leases."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-forest-m-1",
+        "question": "The black buck is classified as:",
+        "options": ["Endangered", "Vulnerable", "Rare", "Extinct"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The black buck faces a serious risk of extinction if negative factors continue, so it is endangered.",
+          "wrong_options": {
+            "1": "Vulnerable species are likely to become endangered, not yet in the same danger.",
+            "2": "Rare species have small populations but are not necessarily facing immediate extinction.",
+            "3": "The black buck still exists."
+          }
+        }
+      },
+      {
+        "id": "q-forest-m-2",
+        "question": "The Gangetic dolphin is classified as:",
+        "options": ["Vulnerable", "Extinct", "Endemic", "Normal"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Gangetic dolphin is vulnerable because its population is likely to become endangered if threats continue.",
+          "wrong_options": {
+            "1": "It is not extinct.",
+            "2": "It is not endemic to a single small region.",
+            "3": "Its population is declining, so it is not normal."
+          }
+        }
+      },
+      {
+        "id": "q-forest-m-3",
+        "question": "The lion-tailed macaque is classified as:",
+        "options": ["Endangered", "Vulnerable", "Rare", "Extinct"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The lion-tailed macaque is endangered because of habitat loss and a declining population.",
+          "wrong_options": {
+            "1": "Vulnerable is a lower threat level.",
+            "2": "Rare refers to small populations in limited areas, not the specific endangerment category.",
+            "3": "It is not extinct."
+          }
+        }
+      },
+      {
+        "id": "q-forest-m-4",
+        "question": "Which of the following is NOT a cause of depletion of flora and fauna?",
+        "options": ["Afforestation", "Agricultural expansion", "Mining", "Poaching"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Afforestation increases tree cover and helps conservation.",
+          "wrong_options": {
+            "1": "Agricultural expansion clears habitats.",
+            "2": "Mining destroys habitats.",
+            "3": "Poaching reduces wildlife populations."
+          }
+        }
+      },
+      {
+        "id": "q-forest-m-5",
+        "question": "Reserved forests are:",
+        "options": ["The most valuable forests with restricted entry", "Open to all for grazing", "Always privately owned", "Wastelands outside government control"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Reserved forests are the most valuable and are permanently protected; entry and grazing need permission.",
+          "wrong_options": {
+            "1": "Open grazing is not allowed in reserved forests.",
+            "2": "Reserved forests are government-owned.",
+            "3": "Wastelands are unclassed forests."
+          }
+        }
+      },
+      {
+        "id": "q-forest-m-6",
+        "question": "The main aim of Project Tiger is to:",
+        "options": ["Conserve tiger populations and their habitats", "Increase timber production", "Promote mining in forests", "Replace forests with farmland"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Project Tiger protects tigers, prey and habitat in tiger reserves.",
+          "wrong_options": {
+            "1": "It is a conservation project, not a timber project.",
+            "2": "It does not promote mining.",
+            "3": "It protects forests rather than clearing them."
+          }
+        }
+      },
+      {
+        "id": "q-forest-m-7",
+        "question": "The Chipko movement is associated with:",
+        "options": ["The Garhwal Himalayas", "The Nilgiri Hills", "The Sundarbans", "The Aravalli range"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Chipko began in the Garhwal Himalayas, where villagers hugged trees to stop felling.",
+          "wrong_options": {
+            "1": "The Nilgiri Hills are known for biosphere reserves.",
+            "2": "The Sundarbans are mangrove forests.",
+            "3": "The Aravallis are associated with Alwar, not Chipko."
+          }
+        }
+      },
+      {
+        "id": "q-forest-m-8",
+        "question": "The Tawa Matsya Sangh is associated with:",
+        "options": ["Fishing rights of local communities", "Tiger conservation", "Tea plantation", "Mining rights"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Tawa Matsya Sangh in Madhya Pradesh fought for the fishing rights of displaced communities.",
+          "wrong_options": {
+            "1": "It is a fishing cooperative, not a tiger project.",
+            "2": "It is not associated with tea plantations.",
+            "3": "It is not a mining organisation."
+          }
+        }
+      },
+      {
+        "id": "q-forest-m-9",
+        "question": "Which is an in-situ conservation method?",
+        "options": ["National park", "Zoo", "Botanical garden", "Seed bank"],
+        "correct": 0,
+        "explanation": {
+          "correct": "A national park protects species in their natural habitat, which is in-situ conservation.",
+          "wrong_options": {
+            "1": "A zoo keeps animals outside their natural habitat.",
+            "2": "A botanical garden keeps plants outside their natural habitat.",
+            "3": "A seed bank stores seeds outside the habitat."
+          }
+        }
+      },
+      {
+        "id": "q-forest-m-10",
+        "question": "Which is an ex-situ conservation method?",
+        "options": ["Zoo", "Wildlife sanctuary", "Biosphere reserve", "Sacred grove"],
+        "correct": 0,
+        "explanation": {
+          "correct": "A zoo keeps animals outside their natural habitat, so it is ex-situ conservation.",
+          "wrong_options": {
+            "1": "A wildlife sanctuary protects animals in their habitat.",
+            "2": "A biosphere reserve protects ecosystems in place.",
+            "3": "A sacred grove protects forest in place."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-forest-x-1",
+        "question": "Which category includes species whose survival is unlikely if negative factors continue?",
+        "options": ["Endangered", "Normal", "Rare", "Vulnerable"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Endangered species face a serious risk of extinction if negative factors continue.",
+          "wrong_options": {
+            "1": "Normal species have healthy populations.",
+            "2": "Rare species have small populations but are not defined by this extinction test.",
+            "3": "Vulnerable species are likely to become endangered, not yet at the same level."
+          }
+        }
+      },
+      {
+        "id": "q-forest-x-2",
+        "question": "Why are endemic species especially vulnerable to extinction?",
+        "options": ["They occur in a small, restricted range", "They are always large animals", "They migrate every year", "They are not protected by any law"],
+        "correct": 0,
+        "explanation": {
+          "correct": "A small range means one local disaster or habitat loss can wipe out the entire species.",
+          "wrong_options": {
+            "1": "Endemic species can be small plants or animals.",
+            "2": "Endemism is about restricted range, not migration.",
+            "3": "Legal protection varies and is not the reason for their vulnerability."
+          }
+        }
+      },
+      {
+        "id": "q-forest-x-3",
+        "question": "Which combination best explains biodiversity loss in India?",
+        "options": ["Habitat destruction, overexploitation and pollution", "Afforestation, protection and breeding", "Rainfall, sunlight and soil", "Migration, evolution and speciation"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Habitat loss, overexploitation and pollution are major drivers of biodiversity decline.",
+          "wrong_options": {
+            "1": "These are conservation measures, not causes of loss.",
+            "2": "These are natural environmental factors.",
+            "3": "These are natural evolutionary processes."
+          }
+        }
+      },
+      {
+        "id": "q-forest-x-4",
+        "question": "The Alwar villages case shows the importance of:",
+        "options": ["Community participation in conservation", "Commercial logging", "Mining leases", "Ex-situ breeding"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The villages protected the Bhairodev Dakav Sonchuri through local rules and a hunting ban.",
+          "wrong_options": {
+            "1": "They opposed destructive commercial use.",
+            "2": "They protected the forest from mining and felling.",
+            "3": "They conserved the forest in place."
+          }
+        }
+      },
+      {
+        "id": "q-forest-x-5",
+        "question": "Which statement about reserved forests is FALSE?",
+        "options": ["They are open to all for grazing", "They are the most valuable forests", "Entry requires permission", "They are permanently protected"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Reserved forests are not open to all for grazing; permission is required.",
+          "wrong_options": {
+            "1": "This is true.",
+            "2": "This is true.",
+            "3": "This is true."
+          }
+        }
+      },
+      {
+        "id": "q-forest-x-6",
+        "question": "Which law is the primary legal framework for wildlife protection in India?",
+        "options": ["Wildlife Protection Act 1972", "Forest Conservation Act 1980", "Environmental Protection Act 1986", "Biological Diversity Act 2002"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Wildlife Protection Act 1972 is the main wildlife law.",
+          "wrong_options": {
+            "1": "The Forest Conservation Act regulates forest diversion.",
+            "2": "The Environmental Protection Act covers broader environmental protection.",
+            "3": "The Biological Diversity Act deals with biodiversity access and benefit sharing."
+          }
+        }
+      },
+      {
+        "id": "q-forest-x-7",
+        "question": "A major biodiversity criticism of large dams is that they:",
+        "options": ["Fragment habitats and submerge forests", "Increase forest cover", "Always protect endangered species", "Prevent all human displacement"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Dams can submerge forests, fragment habitats and disrupt river ecosystems.",
+          "wrong_options": {
+            "1": "They often reduce forest cover in the reservoir area.",
+            "2": "They can harm rather than protect species.",
+            "3": "They often cause displacement."
+          }
+        }
+      },
+      {
+        "id": "q-forest-x-8",
+        "question": "Which measure best protects a wildlife corridor?",
+        "options": ["Keeping habitat patches connected", "Building more roads through the forest", "Clearing vegetation along streams", "Increasing hunting permits"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Corridors need connected habitat so animals can move safely between patches.",
+          "wrong_options": {
+            "1": "Roads fragment habitat and increase animal deaths.",
+            "2": "Clearing vegetation removes cover and food.",
+            "3": "Hunting permits reduce populations."
+          }
+        }
+      },
+      {
+        "id": "q-forest-x-9",
+        "question": "Which statement about sacred groves is correct?",
+        "options": ["They conserve local biodiversity through community rules", "They are commercial timber estates", "They are always managed by the army", "They are ex-situ conservation sites"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Sacred groves are protected by local custom and conserve local species and water sources.",
+          "wrong_options": {
+            "1": "They are not commercial timber estates.",
+            "2": "They are managed by local communities, not the army.",
+            "3": "They conserve species in their natural habitat."
+          }
+        }
+      },
+      {
+        "id": "q-forest-x-10",
+        "question": "Which is the best example of in-situ conservation?",
+        "options": ["A tiger reserve protecting tigers in their forest", "A zoo breeding tigers", "A seed bank storing plant seeds", "A botanical garden displaying plants"],
+        "correct": 0,
+        "explanation": {
+          "correct": "A tiger reserve protects tigers in their natural habitat, which is in-situ conservation.",
+          "wrong_options": {
+            "1": "A zoo keeps animals outside their habitat.",
+            "2": "A seed bank stores seeds outside the habitat.",
+            "3": "A botanical garden keeps plants outside the habitat."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Forest and Wildlife Resources — Concept Map",
+    "nodes": [
+      { "id": "n1", "label": "Biodiversity", "group": "foundation" },
+      { "id": "n2", "label": "Flora", "group": "component" },
+      { "id": "n3", "label": "Fauna", "group": "component" },
+      { "id": "n4", "label": "Threats", "group": "pressure" },
+      { "id": "n5", "label": "Species Categories", "group": "assessment" },
+      { "id": "n6", "label": "Forest Categories", "group": "resource" },
+      { "id": "n7", "label": "Conservation", "group": "response" },
+      { "id": "n8", "label": "Legal Framework", "group": "policy" },
+      { "id": "n9", "label": "Community Participation", "group": "response" }
+    ],
+    "edges": [
+      ["n1", "n2"],
+      ["n1", "n3"],
+      ["n1", "n4"],
+      ["n4", "n5"],
+      ["n1", "n6"],
+      ["n6", "n7"],
+      ["n5", "n7"],
+      ["n7", "n8"],
+      ["n7", "n9"],
+      ["n4", "n6"],
+      ["n2", "n6"],
+      ["n3", "n7"]
+    ]
+  },
+  "mind_maps": {
+    "title": "Forest and Wildlife Resources — Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Forest and Wildlife Resources",
+    "branches": [
+      {
+        "concept": "Biodiversity",
+        "sub_nodes": [
+          "Genetic, species and ecosystem diversity",
+          "India is a megadiverse country",
+          "Food, medicine and raw materials",
+          "Pollination and soil fertility",
+          "Water and climate regulation",
+          "Ecosystem resilience"
+        ],
+        "connections": "Biodiversity is the living base of food, health and safety"
+      },
+      {
+        "concept": "Species Categories",
+        "sub_nodes": [
+          "Normal species",
+          "Endangered species",
+          "Vulnerable species",
+          "Rare species",
+          "Endemic species",
+          "Extinct species"
+        ],
+        "connections": "Categories help prioritise conservation action"
+      },
+      {
+        "concept": "Threats",
+        "sub_nodes": [
+          "Colonial forestry and commercial logging",
+          "Agricultural expansion",
+          "Dams, roads and mines",
+          "Poaching and wildlife trade",
+          "Pollution and invasive species",
+          "Unequal access to resources"
+        ],
+        "connections": "Habitat loss is usually a bigger threat than hunting alone"
+      },
+      {
+        "concept": "Forest Categories",
+        "sub_nodes": [
+          "Reserved forests",
+          "Protected forests",
+          "Unclassed forests",
+          "Forest cover below one-third",
+          "Forest quality and connectivity",
+          "Joint Forest Management"
+        ],
+        "connections": "Protection level decides who may use the forest and how"
+      },
+      {
+        "concept": "Conservation Strategies",
+        "sub_nodes": [
+          "Wildlife Protection Act 1972",
+          "National parks and sanctuaries",
+          "Biosphere and tiger reserves",
+          "Project Tiger and Project Elephant",
+          "Afforestation and social forestry",
+          "In-situ and ex-situ conservation"
+        ],
+        "connections": "Species survive only if habitats and corridors survive"
+      },
+      {
+        "concept": "Community Conservation",
+        "sub_nodes": [
+          "Joint Forest Management 1988",
+          "Chipko movement",
+          "Beej Bachao Andolan",
+          "Sacred groves",
+          "Alwar and Bhairodev Dakav Sonchuri",
+          "Tawa Matsya Sangh"
+        ],
+        "connections": "Local rights and knowledge make protection effective"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "Extinct means extinct everywhere in the world — FALSE: in NCERT usage a species can be extinct in India while surviving elsewhere, as with the Asiatic cheetah.",
+    "Endangered and vulnerable are the same — FALSE: endangered species face a serious extinction risk now; vulnerable species are likely to become endangered if conditions worsen.",
+    "Poaching is the only cause of wildlife decline — FALSE: habitat loss, fragmentation, pollution and development projects are often larger causes.",
+    "Reserved forests are open to everyone for grazing — FALSE: entry and grazing in reserved forests require permission.",
+    "All forests are owned by the government — FALSE: unclassed forests can be owned by government or private individuals.",
+    "Planting trees anywhere replaces a lost forest — FALSE: a plantation may lack the species mix, structure and habitat value of a natural forest.",
+    "Community conservation means no government role — FALSE: JFM and protected areas combine community participation with state support and law.",
+    "Sacred groves are unimportant because they are small — FALSE: even small groves conserve local species, water sources and genetic diversity."
+  ]
+}

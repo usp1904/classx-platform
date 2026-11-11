@@ -1,0 +1,1446 @@
+{
+  "subject": "Biology",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 3,
+  "chapter": "Life Processes",
+  "lesson": 3,
+  "title": "Life Processes — Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Distinguish autotrophic and heterotrophic nutrition with textbook examples",
+    "Trace the human digestive system and match each enzyme to its substrate and product",
+    "Compare aerobic and anaerobic respiration in terms of oxygen, products, and energy release",
+    "Explain gas exchange in alveoli using the surface-area-to-volume principle",
+    "Describe double circulation and the functions of the heart, blood, and blood vessels",
+    "Explain water and food transport in plants through xylem, phloem, and transpiration",
+    "Describe urine formation in the nephron and the principle of dialysis",
+    "Identify excretory products of plants and explain how they are stored or removed",
+    "Solve board-style and competitive questions linking structure to function in life processes"
+  ],
+  "prerequisite_nodes": [
+    "SCI_CLASS9_CELL_STRUCTURE_AND_FUNCTIONS",
+    "SCI_CLASS7_NUTRITION_IN_PLANTS_AND_ANIMALS",
+    "SCI_CLASS8_CELL_TO_ORGANISM",
+    "MATH_CLASS8_RATIO_AND_PROPORTION"
+  ],
+  "concepts": [
+    {
+      "name": "Autotrophic and Heterotrophic Nutrition",
+      "real_life_application": "A mango tree makes its own food from sunlight, while a human depends on plants and animals for ready-made food.",
+      "purpose": "Autotrophic nutrition uses light energy, carbon dioxide, and water to make glucose inside chloroplasts. Heterotrophic nutrition obtains ready-made organic food by ingestion, absorption, or parasitism.",
+      "day_to_day_usage": [
+        "Green leaves photosynthesise in sunlight and release oxygen",
+        "Cuscuta (amarbel) draws food from a host plant",
+        "Mushrooms absorb nutrients from decaying organic matter",
+        "Human beings ingest cooked food and digest it in the alimentary canal",
+        "Lichens show a partnership between an alga and a fungus"
+      ]
+    },
+    {
+      "name": "Human Digestive System and Enzymes",
+      "real_life_application": "Chewing rice for a while makes it taste sweet because salivary amylase starts breaking starch into sugar.",
+      "purpose": "The alimentary canal breaks large food molecules into absorbable nutrients using mechanical action, hydrochloric acid, bile, and specific enzymes that work at particular pH values.",
+      "day_to_day_usage": [
+        "Salivary amylase digests starch in the mouth",
+        "Pepsin digests proteins in the acidic stomach",
+        "Bile from the liver emulsifies fats in the small intestine",
+        "Trypsin and lipase act in the alkaline small intestine",
+        "Villi and microvilli increase the surface area for absorption"
+      ]
+    },
+    {
+      "name": "Respiration: Aerobic, Anaerobic, and ATP",
+      "real_life_application": "Sprinting makes muscles ache because glucose is broken down faster than oxygen can be supplied, producing lactic acid.",
+      "purpose": "Respiration releases energy from glucose as ATP. Aerobic respiration uses oxygen and yields much more energy, while anaerobic respiration yields less energy and produces lactic acid in muscles or ethanol and carbon dioxide in yeast.",
+      "day_to_day_usage": [
+        "Breathing supplies oxygen to alveoli for gas exchange",
+        "Strenuous exercise causes lactic acid build-up and cramps",
+        "Yeast ferments sugar in dough and in brewing",
+        "Mitochondria are the main site of aerobic respiration",
+        "Roots respire using air spaces present in the soil"
+      ]
+    },
+    {
+      "name": "Transportation in Humans: Heart, Blood, and Blood Vessels",
+      "real_life_application": "A cut first bleeds and then clots, and a pulse at the wrist is the throb of blood pushed by the heart.",
+      "purpose": "Double circulation sends oxygenated blood through the left side of the heart to the body and deoxygenated blood through the right side to the lungs. Arteries, veins, and capillaries differ in wall thickness, valves, and function.",
+      "day_to_day_usage": [
+        "Checking the pulse at the wrist reflects the heartbeat rate",
+        "A sphygmomanometer measures blood pressure",
+        "Platelets form clots to stop bleeding",
+        "Haemoglobin carries oxygen in red blood cells",
+        "Lymph returns tissue fluid and absorbs digested fats"
+      ]
+    },
+    {
+      "name": "Transportation in Plants: Xylem, Phloem, and Transpiration",
+      "real_life_application": "Water rises from roots to the highest leaves, and removing a ring of bark stops food from reaching the roots.",
+      "purpose": "Xylem transports water and minerals upward by root pressure and transpiration pull. Phloem transports soluble food in both directions using energy. Transpiration cools leaves and drives the water column.",
+      "day_to_day_usage": [
+        "Watering plants keeps the transpiration stream active",
+        "Cut flowers wilt when transpiration exceeds water uptake",
+        "Girdling a tree starves roots because phloem is removed",
+        "Desert plants reduce transpiration with sunken stomata",
+        "Sugarcane juice moves through phloem"
+      ]
+    },
+    {
+      "name": "Excretion: Nephron, Urine Formation, Dialysis, and Plant Excretion",
+      "real_life_application": "Kidneys filter blood and make urine, and dialysis performs part of that filtering job when the kidneys fail.",
+      "purpose": "Nephrons filter blood at the glomerulus, reabsorb useful substances, and secrete wastes to form urine. Dialysis uses a selectively permeable membrane and a concentration gradient. Plants excrete oxygen, carbon dioxide, water vapour, resins, and gums.",
+      "day_to_day_usage": [
+        "Drinking water helps the kidneys dilute urine",
+        "Dialysis patients have wastes removed by a machine",
+        "Urine colour and volume give clues about hydration",
+        "Resins and gums are stored in old xylem",
+        "Stomata release water vapour and oxygen"
+      ]
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Surface Area-to-Volume Exchange Principle",
+      "statement": "Exchange of gases, water, and nutrients occurs across a living surface. The rate of exchange depends on surface area, while metabolic demand depends on volume. As an organism grows, volume increases as the cube of its linear size while surface area increases only as the square, so the surface-to-volume ratio falls and diffusion alone becomes insufficient.",
+      "proposed_by": {
+        "name": "D'Arcy Wentworth Thompson",
+        "era": "1860–1948",
+        "location": "Scotland",
+        "book": "On Growth and Form (1917)",
+        "known_as": "Pioneer of mathematical biology"
+      },
+      "historical_context": "Naturalists noticed that tiny organisms can rely on diffusion across the body surface, while large animals need specialised exchange surfaces and transport systems. Thompson collected scaling relationships and showed that shape and size are linked by mathematics.",
+      "why_proposed": "He wanted to explain why organisms of different sizes have different shapes and organs instead of treating body form as arbitrary.",
+      "real_world_utility": "It explains why lungs have alveoli, the intestine has villi, roots have root hairs, and kidneys have millions of nephrons. It also guides the design of oxygenators and dialysis membranes.",
+      "why_students_learn": "It unites nutrition, respiration, transport, and excretion under one idea: exchange surfaces must be thin, moist, and folded to provide a large area.",
+      "examples": [
+        "A single-celled Amoeba exchanges gases directly across its body surface because its surface-to-volume ratio is large",
+        "Human lungs contain millions of alveoli, giving an exchange surface far larger than the skin",
+        "Villi and microvilli in the small intestine multiply the absorptive area"
+      ]
+    },
+    {
+      "name": "Lock-and-Key Enzyme Specificity",
+      "statement": "An enzyme has a specific active site whose shape is complementary to its substrate, so each enzyme catalyses only one reaction or a small group of closely related reactions.",
+      "proposed_by": {
+        "name": "Emil Fischer",
+        "era": "1852–1919",
+        "location": "Germany",
+        "book": "Einfluss der Configuration auf die Wirkung der Enzyme (1894)",
+        "known_as": "Author of the lock-and-key model of enzyme action"
+      },
+      "historical_context": "Fischer studied sugars and enzymes and observed that enzymes act only on substrates whose molecular configuration matches the enzyme. He proposed a rigid lock-and-key fit to explain this selectivity.",
+      "why_proposed": "He needed to explain why an enzyme such as maltase acts on maltose but not on unrelated sugars.",
+      "real_world_utility": "It explains digestive enzyme action, drug design, and why a missing enzyme causes a metabolic disease. It also supports detergent and food-processing industries.",
+      "why_students_learn": "It explains why starch, protein, and fat each need a different enzyme and why temperature and pH changes can denature an enzyme.",
+      "examples": [
+        "Salivary amylase acts on starch but not on protein",
+        "Pepsin works in the acidic stomach while trypsin works in the alkaline small intestine",
+        "Lactase breaks lactose into glucose and galactose but does not digest sucrose"
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-bio-1",
+      "topic": "Photosynthesis as an autotrophic process",
+      "problem": "Write the overall equation for photosynthesis, name the site and pigment involved, and state why the process is essential for heterotrophs.",
+      "board_mode": [
+        "Step 1: Write the overall equation: 6CO2 + 6H2O → C6H12O6 + 6O2 in the presence of chlorophyll and sunlight.",
+        "Step 2: Name the site: photosynthesis occurs in chloroplasts, mainly in the palisade cells of leaves.",
+        "Step 3: State the role of chlorophyll: it absorbs light energy and transfers it to the photosynthetic reactions.",
+        "Step 4: Explain the light-dependent stage: light energy splits water, releasing oxygen and providing energy carriers for the next stage.",
+        "Step 5: Explain the light-independent stage: carbon dioxide is fixed into carbohydrate using the energy carried from the light stage.",
+        "Step 6: Link stomata to the process: stomata allow carbon dioxide to enter and oxygen to leave the leaf.",
+        "Step 7: Conclude for heterotrophs: photosynthesis stores solar energy as chemical energy in glucose, and this food and the released oxygen support all heterotrophic life.",
+        "Step 8: Check the equation: C 6 = 6, H 12 = 12, and O 18 = 18 on both sides."
+      ],
+      "speed_mode": "Remember 6–6–1–6: six carbon dioxide plus six water give one glucose plus six oxygen. Then link chloroplast, chlorophyll, stomata, and stored food.",
+      "competitive_shortcut": "The oxygen released in photosynthesis comes from water, not from carbon dioxide — a standard one-mark trap."
+    },
+    {
+      "id": "we-bio-2",
+      "topic": "Digestion of starch, protein, and fat along the alimentary canal",
+      "problem": "Trace the digestion of starch, protein, and fat from the mouth to the small intestine, naming the enzyme, its source, and the product formed.",
+      "board_mode": [
+        "Step 1: In the mouth, salivary amylase (ptyalin) begins starch digestion, converting starch into maltose.",
+        "Step 2: Food passes down the oesophagus by peristalsis; no chemical digestion occurs there.",
+        "Step 3: In the stomach, gastric glands release hydrochloric acid and pepsinogen, which becomes active pepsin in the acidic medium.",
+        "Step 4: Pepsin digests proteins into peptones; starch digestion pauses because amylase is inactivated by acid.",
+        "Step 5: In the small intestine, pancreatic juice supplies pancreatic amylase, trypsin, and lipase.",
+        "Step 6: Trypsin digests proteins and peptones into peptides and amino acids, while lipase digests fats into fatty acids and glycerol.",
+        "Step 7: Bile from the liver, stored in the gall bladder, emulsifies fats into small droplets and neutralises stomach acid.",
+        "Step 8: Intestinal juice enzymes complete digestion, and the products are absorbed through villi into blood or lymph."
+      ],
+      "speed_mode": "Follow the food: mouth for starch, stomach for protein, small intestine for all three. Match each enzyme to its substrate.",
+      "competitive_shortcut": "Bile is not an enzyme; it emulsifies fat and neutralises acid. Pepsin needs acid, while trypsin needs an alkaline medium."
+    },
+    {
+      "id": "we-bio-3",
+      "topic": "Aerobic versus anaerobic respiration",
+      "problem": "Compare aerobic and anaerobic respiration in human muscle and in yeast, including the overall equations, products, and energy release.",
+      "board_mode": [
+        "Step 1: Define respiration: the breakdown of glucose in cells to release energy as ATP.",
+        "Step 2: Write aerobic respiration: C6H12O6 + 6O2 → 6CO2 + 6H2O + energy. It occurs mainly in mitochondria.",
+        "Step 3: Write anaerobic respiration in muscle: C6H12O6 → 2C3H6O3 (lactic acid) + energy. It occurs in the cytoplasm.",
+        "Step 4: Write anaerobic respiration in yeast: C6H12O6 → 2C2H5OH + 2CO2 + energy.",
+        "Step 5: Compare energy release: aerobic respiration releases much more energy per glucose molecule than anaerobic respiration.",
+        "Step 6: Explain muscle fatigue: lactic acid accumulates during vigorous exercise and is later removed when oxygen supply is restored.",
+        "Step 7: Give one use of fermentation: yeast is used in bread-making, idli batter, and brewing.",
+        "Step 8: Correct the common error: anaerobic respiration does release some energy, though less than aerobic respiration."
+      ],
+      "speed_mode": "Aerobic = oxygen + mitochondria + carbon dioxide + water. Anaerobic = no oxygen + cytoplasm + lactic acid in muscle or ethanol and carbon dioxide in yeast.",
+      "competitive_shortcut": "Do not quote an exact ATP number such as 38 as an NCERT fact; the syllabus states only that aerobic respiration releases more energy."
+    },
+    {
+      "id": "we-bio-4",
+      "topic": "Path of blood through the human heart and double circulation",
+      "problem": "Describe the path of blood through the human heart and explain why the process is called double circulation.",
+      "board_mode": [
+        "Step 1: Deoxygenated blood from the body enters the right atrium through the vena cava.",
+        "Step 2: The right atrium contracts and blood passes through the tricuspid valve into the right ventricle.",
+        "Step 3: The right ventricle contracts and sends blood through the pulmonary artery to the lungs.",
+        "Step 4: In the alveoli, carbon dioxide leaves the blood and oxygen enters, so the blood becomes oxygenated.",
+        "Step 5: Oxygenated blood returns through the pulmonary veins to the left atrium.",
+        "Step 6: The left atrium contracts and blood passes through the bicuspid valve into the left ventricle.",
+        "Step 7: The thick-walled left ventricle contracts and pumps blood through the aorta to the body.",
+        "Step 8: Body tissues use oxygen and produce carbon dioxide, and deoxygenated blood returns to the right atrium.",
+        "Step 9: The two circuits are pulmonary (heart–lungs–heart) and systemic (heart–body–heart).",
+        "Step 10: Because blood passes through the heart twice in one complete circuit, the process is called double circulation."
+      ],
+      "speed_mode": "Right side sends deoxygenated blood to the lungs; left side sends oxygenated blood to the body. Valves prevent backflow.",
+      "competitive_shortcut": "The pulmonary artery carries deoxygenated blood and the pulmonary vein carries oxygenated blood — the reverse of other vessels."
+    },
+    {
+      "id": "we-bio-5",
+      "topic": "Urine formation in a nephron and the principle of dialysis",
+      "problem": "Explain how a nephron forms urine and how dialysis removes wastes when the kidneys fail.",
+      "board_mode": [
+        "Step 1: Blood enters the glomerulus under pressure, and filtration occurs through the glomerular capillaries into Bowman's capsule.",
+        "Step 2: The filtrate contains water, glucose, amino acids, salts, and urea; blood cells and large proteins remain in the blood.",
+        "Step 3: As the filtrate passes along the tubule, selective reabsorption returns glucose, amino acids, most water, and needed salts to the blood.",
+        "Step 4: Some wastes are secreted from the blood into the tubule.",
+        "Step 5: The remaining fluid is urine, containing water, urea, excess salts, and other wastes.",
+        "Step 6: Urine passes through the collecting duct to the ureter, urinary bladder, and urethra.",
+        "Step 7: In dialysis, blood flows through tubing separated from dialysate by a selectively permeable membrane.",
+        "Step 8: Small waste molecules such as urea diffuse out of the blood along a concentration gradient, while useful cells and proteins remain.",
+        "Step 9: Dialysate composition is controlled so that needed substances are not lost, and the session is repeated because wastes build up again."
+      ],
+      "speed_mode": "Filtration → reabsorption → secretion → urine. Dialysis mimics filtration by using a concentration gradient across a membrane.",
+      "competitive_shortcut": "Glucose in urine is a warning sign of diabetes because glucose is normally filtered and then completely reabsorbed."
+    }
+  ],
+  "exercises": {
+    "exercise_2_1": {
+      "title": "NCERT Exercise — Nutrition and Respiration",
+      "objective": "Apply the principles of autotrophic and heterotrophic nutrition, human digestion, and respiration",
+      "problems": [
+        {
+          "id": "bio-ex1-1",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Define photosynthesis and state the raw materials used by a green plant.",
+          "difficulty": "simple",
+          "marks": 1,
+          "solution": [
+            "Step 1: Photosynthesis is the process by which green plants prepare food using light energy.",
+            "Step 2: The raw materials are carbon dioxide and water, with chlorophyll and sunlight.",
+            "Step 3: The products are glucose and oxygen."
+          ],
+          "final_answer": "Photosynthesis is the light-driven synthesis of glucose from carbon dioxide and water in chlorophyll-containing cells, releasing oxygen."
+        },
+        {
+          "id": "bio-ex1-2",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Name the enzyme present in saliva and state its function.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The enzyme present in saliva is salivary amylase, also called ptyalin.",
+            "Step 2: It acts on starch and breaks it into maltose.",
+            "Step 3: This begins the chemical digestion of starch in the mouth."
+          ],
+          "final_answer": "Salivary amylase (ptyalin) digests starch into maltose in the mouth."
+        },
+        {
+          "id": "bio-ex1-3",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Why is the inner lining of the stomach not digested by its own acid and pepsin?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The stomach lining secretes a layer of mucus.",
+            "Step 2: Mucus protects the lining from hydrochloric acid and from pepsin.",
+            "Step 3: Pepsin is also secreted as inactive pepsinogen and becomes active only in the acidic lumen.",
+            "Step 4: These features prevent self-digestion of the stomach wall."
+          ],
+          "final_answer": "Mucus protects the stomach lining, and pepsin is secreted in an inactive form that is activated only in the stomach cavity."
+        },
+        {
+          "id": "bio-ex1-4",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Explain the role of bile in digestion.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Bile is produced by the liver and stored in the gall bladder.",
+            "Step 2: It emulsifies large fat droplets into many small droplets, increasing the surface area for lipase.",
+            "Step 3: Bile is alkaline and neutralises acidic food coming from the stomach.",
+            "Step 4: It provides the alkaline medium needed by pancreatic and intestinal enzymes."
+          ],
+          "final_answer": "Bile emulsifies fats, neutralises stomach acid, and provides an alkaline medium for intestinal enzymes."
+        },
+        {
+          "id": "bio-ex1-5",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Differentiate between autotrophic and heterotrophic nutrition with one example of each.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Autotrophic nutrition is the mode in which the organism makes its own food from simple inorganic substances.",
+            "Step 2: It requires chlorophyll, sunlight, carbon dioxide, and water; an example is a green plant.",
+            "Step 3: Heterotrophic nutrition is the mode in which the organism depends on ready-made food.",
+            "Step 4: It may involve ingestion, absorption, or parasitism; examples are humans, fungi, and Cuscuta."
+          ],
+          "final_answer": "Autotrophs make food by photosynthesis (e.g. green plants); heterotrophs use ready-made food (e.g. humans, fungi, Cuscuta)."
+        },
+        {
+          "id": "bio-ex1-6",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Write the equation for anaerobic respiration in yeast and state one industrial use of the process.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Yeast breaks down glucose without oxygen.",
+            "Step 2: The products are ethanol, carbon dioxide, and energy.",
+            "Step 3: C6H12O6 → 2C2H5OH + 2CO2 + energy.",
+            "Step 4: The carbon dioxide released makes bread dough rise; the process is also used in brewing."
+          ],
+          "final_answer": "C6H12O6 → 2C2H5OH + 2CO2 + energy; used in bread-making and brewing."
+        },
+        {
+          "id": "bio-ex1-7",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Describe the path of food through the human alimentary canal and name the main enzyme acting in each region.",
+          "difficulty": "medium",
+          "marks": 5,
+          "solution": [
+            "Step 1: Food enters the mouth, where teeth grind it and salivary amylase digests starch into maltose.",
+            "Step 2: It passes through the oesophagus by peristalsis into the stomach.",
+            "Step 3: In the stomach, hydrochloric acid provides an acidic medium and pepsin digests proteins into peptones.",
+            "Step 4: In the small intestine, pancreatic amylase digests starch, trypsin digests proteins, and lipase digests fats.",
+            "Step 5: Bile emulsifies fats and neutralises acid, while intestinal juice enzymes complete the breakdown.",
+            "Step 6: Digested food is absorbed through villi; unabsorbed material passes to the large intestine for water absorption.",
+            "Step 7: Waste is stored in the rectum and removed through the anus."
+          ],
+          "final_answer": "Mouth (amylase) → oesophagus → stomach (pepsin) → small intestine (amylase, trypsin, lipase) → large intestine → rectum and anus."
+        },
+        {
+          "id": "bio-ex1-8",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "A patient has damaged villi in the small intestine. Predict two effects on the body and justify each.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Villi provide a large surface area for absorption of digested food.",
+            "Step 2: If villi are damaged, the surface area decreases and absorption of glucose and amino acids falls.",
+            "Step 3: Reduced absorption of nutrients can cause weakness, weight loss, and poor growth.",
+            "Step 4: Fat absorption may also fall because villi contain lymph vessels that absorb fatty acids and glycerol.",
+            "Step 5: The person may therefore show malnutrition even if the diet is adequate."
+          ],
+          "final_answer": "Nutrient absorption falls, causing weakness and weight loss; fat absorption through lymph vessels is also reduced, leading to malnutrition."
+        },
+        {
+          "id": "bio-ex1-9",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Why does a sprinter develop muscle cramps? Explain using aerobic and anaerobic respiration.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: During a sprint, muscles need energy faster than the blood can supply oxygen.",
+            "Step 2: Aerobic respiration cannot meet the demand, so muscles also respire anaerobically.",
+            "Step 3: Anaerobic respiration in muscle converts glucose into lactic acid and releases some energy.",
+            "Step 4: Lactic acid accumulates in the muscle and causes fatigue and cramps.",
+            "Step 5: After the sprint, continued breathing supplies oxygen that helps remove the lactic acid."
+          ],
+          "final_answer": "Oxygen supply lags behind demand, so muscles respire anaerobically and lactic acid builds up, causing fatigue and cramps."
+        }
+      ]
+    },
+    "exercise_2_2": {
+      "title": "NCERT Exercise — Transport and Excretion",
+      "objective": "Apply the principles of transport in humans and plants and of excretion and dialysis",
+      "problems": [
+        {
+          "id": "bio-ex2-1",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Name the tissue that transports water in plants and the tissue that transports food.",
+          "difficulty": "simple",
+          "marks": 1,
+          "solution": [
+            "Step 1: Water and minerals are transported by xylem.",
+            "Step 2: Soluble food is transported by phloem."
+          ],
+          "final_answer": "Xylem transports water and minerals; phloem transports food."
+        },
+        {
+          "id": "bio-ex2-2",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "What is transpiration? State one advantage of transpiration to a plant.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Transpiration is the loss of water vapour from the aerial parts of a plant, mainly through stomata.",
+            "Step 2: It creates a transpiration pull that helps water move upward in the xylem.",
+            "Step 3: It also cools the leaf surface."
+          ],
+          "final_answer": "Transpiration is water loss as vapour through stomata; it drives upward water movement and cools the leaf."
+        },
+        {
+          "id": "bio-ex2-3",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Why are valves present in veins but not in arteries?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Blood in arteries flows at high pressure from the heart, so backflow is unlikely.",
+            "Step 2: Blood in veins flows at low pressure towards the heart.",
+            "Step 3: Valves in veins prevent the backflow of blood.",
+            "Step 4: Arteries have thick elastic walls that withstand pressure and help maintain flow."
+          ],
+          "final_answer": "Veins carry blood at low pressure and need valves to prevent backflow; arteries carry high-pressure blood in thick elastic walls."
+        },
+        {
+          "id": "bio-ex2-4",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Explain double circulation and state its advantage.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: In double circulation, blood passes through the heart twice in one complete circuit.",
+            "Step 2: The pulmonary circuit carries blood from the right side of the heart to the lungs and back to the left side.",
+            "Step 3: The systemic circuit carries blood from the left side of the heart to the body and back to the right side.",
+            "Step 4: This separation maintains pressure and keeps oxygenated and deoxygenated blood apart, improving oxygen supply to tissues."
+          ],
+          "final_answer": "Double circulation means two circuits through the heart; it keeps oxygenated and deoxygenated blood separate and maintains blood pressure."
+        },
+        {
+          "id": "bio-ex2-5",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "How does water reach the leaves of a tall tree?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Root hairs absorb water from the soil by osmosis.",
+            "Step 2: Root pressure pushes water into the xylem.",
+            "Step 3: Transpiration from leaves creates a suction called transpiration pull.",
+            "Step 4: The continuous water column in xylem is pulled upward, helped by cohesion between water molecules."
+          ],
+          "final_answer": "Root pressure and transpiration pull move water upward through the xylem to the leaves."
+        },
+        {
+          "id": "bio-ex2-6",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Describe the role of the kidney in excretion.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Kidneys filter blood through millions of nephrons.",
+            "Step 2: Useful substances such as glucose, amino acids, and most water are reabsorbed.",
+            "Step 3: Wastes such as urea and excess salts remain in the filtrate and form urine.",
+            "Step 4: Urine passes through the ureters to the bladder and is removed through the urethra."
+          ],
+          "final_answer": "The kidney filters blood, reabsorbs useful substances, and excretes urea and excess salts as urine."
+        },
+        {
+          "id": "bio-ex2-7",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Compare xylem and phloem transport in three points.",
+          "difficulty": "medium",
+          "marks": 5,
+          "solution": [
+            "Step 1: Xylem transports water and minerals; phloem transports soluble organic food.",
+            "Step 2: Xylem movement is mainly upward from roots to leaves; phloem movement can be upward or downward.",
+            "Step 3: Xylem transport is driven mainly by transpiration pull and root pressure; phloem transport uses energy.",
+            "Step 4: Xylem consists of dead conducting vessels and tracheids; phloem contains living sieve tubes and companion cells.",
+            "Step 5: Xylem water is not redistributed for storage, while phloem delivers food to growing parts and storage organs."
+          ],
+          "final_answer": "Xylem: water and minerals, mostly upward, passive, dead cells. Phloem: food, both directions, energy-driven, living cells."
+        },
+        {
+          "id": "bio-ex2-8",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Explain how a nephron forms urine.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Blood enters the glomerulus under pressure and is filtered into Bowman's capsule.",
+            "Step 2: The filtrate contains water, glucose, amino acids, salts, and urea; cells and large proteins stay in the blood.",
+            "Step 3: As the filtrate passes along the tubule, glucose, amino acids, most water, and needed salts are reabsorbed.",
+            "Step 4: Some wastes are secreted into the tubule from the surrounding blood vessels.",
+            "Step 5: The remaining fluid is urine, which passes to the collecting duct and then to the ureter."
+          ],
+          "final_answer": "Urine forms by glomerular filtration, selective tubular reabsorption, and tubular secretion; the remaining fluid is urine."
+        },
+        {
+          "id": "bio-ex2-9",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Why is dialysis repeated and why is it not a cure for kidney failure?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Dialysis removes wastes such as urea from the blood by diffusion across a selectively permeable membrane.",
+            "Step 2: It also helps remove excess water and salts, but it does not restore the damaged kidney.",
+            "Step 3: Wastes continue to build up in the body, so dialysis must be repeated regularly.",
+            "Step 4: A healthy kidney also performs regulatory and hormonal functions that a dialysis machine does not fully replace.",
+            "Step 5: Therefore dialysis is a life-support treatment, not a permanent cure."
+          ],
+          "final_answer": "Dialysis must be repeated because wastes keep accumulating, and it does not restore kidney function or fully replace its regulatory roles."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-bio-s-1",
+        "question": "Which process converts light energy into chemical energy in green plants?",
+        "options": [
+          "Respiration",
+          "Photosynthesis",
+          "Transpiration",
+          "Excretion"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Photosynthesis uses light energy to make glucose from carbon dioxide and water.",
+          "wrong_options": {
+            "0": "Respiration releases energy from glucose rather than storing light energy.",
+            "2": "Transpiration is the loss of water vapour from leaves.",
+            "3": "Excretion removes metabolic wastes."
+          }
+        }
+      },
+      {
+        "id": "q-bio-s-2",
+        "question": "In which organelle does photosynthesis take place?",
+        "options": [
+          "Mitochondrion",
+          "Nucleus",
+          "Chloroplast",
+          "Ribosome"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Chloroplasts contain chlorophyll and are the site of photosynthesis.",
+          "wrong_options": {
+            "0": "Mitochondria are the main site of aerobic respiration.",
+            "1": "The nucleus stores genetic material.",
+            "3": "Ribosomes synthesise proteins."
+          }
+        }
+      },
+      {
+        "id": "q-bio-s-3",
+        "question": "Which enzyme begins starch digestion in the mouth?",
+        "options": [
+          "Pepsin",
+          "Trypsin",
+          "Lipase",
+          "Salivary amylase"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Salivary amylase, or ptyalin, breaks starch into maltose in the mouth.",
+          "wrong_options": {
+            "0": "Pepsin digests protein in the stomach.",
+            "1": "Trypsin digests protein in the small intestine.",
+            "2": "Lipase digests fats."
+          }
+        }
+      },
+      {
+        "id": "q-bio-s-4",
+        "question": "Which gas is released by plants during photosynthesis?",
+        "options": [
+          "Carbon dioxide",
+          "Oxygen",
+          "Nitrogen",
+          "Water vapour"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Oxygen is released when water is split during the light-dependent stage.",
+          "wrong_options": {
+            "0": "Carbon dioxide is used, not released, in photosynthesis.",
+            "2": "Nitrogen is not produced by photosynthesis.",
+            "3": "Water vapour is lost in transpiration, not made in photosynthesis."
+          }
+        }
+      },
+      {
+        "id": "q-bio-s-5",
+        "question": "Aerobic respiration takes place in the presence of:",
+        "options": [
+          "Carbon dioxide",
+          "Nitrogen",
+          "Oxygen",
+          "Hydrogen"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Aerobic respiration uses oxygen to break down glucose completely.",
+          "wrong_options": {
+            "0": "Carbon dioxide is a product of respiration, not the gas required.",
+            "1": "Nitrogen is not used in aerobic respiration.",
+            "3": "Hydrogen is not the gas used in aerobic respiration."
+          }
+        }
+      },
+      {
+        "id": "q-bio-s-6",
+        "question": "The end product of anaerobic respiration in yeast is:",
+        "options": [
+          "Lactic acid",
+          "Ethanol and carbon dioxide",
+          "Glucose and oxygen",
+          "Urea"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Yeast converts glucose into ethanol and carbon dioxide during fermentation.",
+          "wrong_options": {
+            "0": "Lactic acid forms in human muscle, not in yeast.",
+            "2": "Glucose and oxygen are not the products of fermentation.",
+            "3": "Urea is an excretory waste, not a fermentation product."
+          }
+        }
+      },
+      {
+        "id": "q-bio-s-7",
+        "question": "Which blood vessels carry blood away from the heart?",
+        "options": [
+          "Veins",
+          "Capillaries",
+          "Arteries",
+          "Lymph vessels"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Arteries carry blood away from the heart to the body or lungs.",
+          "wrong_options": {
+            "0": "Veins carry blood towards the heart.",
+            "1": "Capillaries exchange materials with tissues.",
+            "3": "Lymph vessels carry lymph, not blood away from the heart."
+          }
+        }
+      },
+      {
+        "id": "q-bio-s-8",
+        "question": "Water and minerals are transported in plants through:",
+        "options": [
+          "Phloem",
+          "Xylem",
+          "Cambium",
+          "Epidermis"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Xylem conducts water and dissolved minerals upward from the roots.",
+          "wrong_options": {
+            "0": "Phloem transports soluble food.",
+            "2": "Cambium is a growth layer that produces new vascular tissue.",
+            "3": "Epidermis is a protective outer layer."
+          }
+        }
+      },
+      {
+        "id": "q-bio-s-9",
+        "question": "The structural and functional unit of the kidney is the:",
+        "options": [
+          "Neuron",
+          "Alveolus",
+          "Nephron",
+          "Villus"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Each kidney contains many nephrons, which filter blood and form urine.",
+          "wrong_options": {
+            "0": "A neuron is the unit of the nervous system.",
+            "1": "An alveolus is a unit of gas exchange in the lungs.",
+            "3": "A villus is an absorption structure in the small intestine."
+          }
+        }
+      },
+      {
+        "id": "q-bio-s-10",
+        "question": "Which organ removes urea from the blood?",
+        "options": [
+          "Liver",
+          "Lung",
+          "Heart",
+          "Kidney"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "The kidneys filter urea from the blood and excrete it in urine.",
+          "wrong_options": {
+            "0": "The liver processes nitrogenous wastes but does not form urine.",
+            "1": "The lungs remove carbon dioxide and water vapour.",
+            "2": "The heart pumps blood but does not filter it."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-bio-m-1",
+        "question": "Blood is filtered under pressure from the glomerulus into the:",
+        "options": [
+          "Loop of Henle",
+          "Bowman's capsule",
+          "Collecting duct",
+          "Ureter"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Filtration from the glomerulus collects in Bowman's capsule, forming the filtrate.",
+          "wrong_options": {
+            "0": "The loop of Henle reabsorbs water and salts.",
+            "2": "The collecting duct carries urine onward.",
+            "3": "The ureter carries urine to the bladder."
+          }
+        }
+      },
+      {
+        "id": "q-bio-m-2",
+        "question": "Bile helps in digestion by:",
+        "options": [
+          "Digesting proteins",
+          "Emulsifying fats",
+          "Digesting starch",
+          "Absorbing water"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Bile breaks large fat droplets into smaller ones, increasing the surface area for lipase.",
+          "wrong_options": {
+            "0": "Proteins are digested by pepsin and trypsin.",
+            "2": "Starch is digested by amylase.",
+            "3": "Most water is absorbed in the large intestine."
+          }
+        }
+      },
+      {
+        "id": "q-bio-m-3",
+        "question": "Pepsin works best in:",
+        "options": [
+          "An alkaline medium",
+          "A neutral medium",
+          "An acidic medium",
+          "A dry medium"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Gastric hydrochloric acid provides the acidic medium needed for pepsin activity.",
+          "wrong_options": {
+            "0": "Alkaline conditions suit trypsin, not pepsin.",
+            "1": "Pepsin needs acid, not a neutral medium.",
+            "3": "Enzymes need water; a dry medium prevents action."
+          }
+        }
+      },
+      {
+        "id": "q-bio-m-4",
+        "question": "Which chamber of the heart pumps oxygenated blood to the body?",
+        "options": [
+          "Right atrium",
+          "Right ventricle",
+          "Left atrium",
+          "Left ventricle"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "The thick-walled left ventricle pumps oxygenated blood into the aorta and then to the body.",
+          "wrong_options": {
+            "0": "The right atrium receives deoxygenated blood.",
+            "1": "The right ventricle pumps blood to the lungs.",
+            "2": "The left atrium receives oxygenated blood from the lungs."
+          }
+        }
+      },
+      {
+        "id": "q-bio-m-5",
+        "question": "Double circulation means that blood:",
+        "options": [
+          "Passes through the heart twice in one complete circuit",
+          "Passes through the heart once in one complete circuit",
+          "Never enters the lungs",
+          "Flows only in arteries"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Blood passes through the heart twice: once in the pulmonary circuit and once in the systemic circuit.",
+          "wrong_options": {
+            "1": "It passes twice, not once.",
+            "2": "Blood does pass through the lungs in the pulmonary circuit.",
+            "3": "Blood flows in arteries, veins, and capillaries."
+          }
+        }
+      },
+      {
+        "id": "q-bio-m-6",
+        "question": "Transpiration pull helps mainly in:",
+        "options": [
+          "Transport of food",
+          "Absorption of water by roots",
+          "Upward movement of water in xylem",
+          "Formation of urine"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Water lost from leaves creates a suction that pulls the xylem water column upward.",
+          "wrong_options": {
+            "0": "Food is transported by phloem.",
+            "1": "Roots absorb water by osmosis and root pressure.",
+            "3": "Urine formation occurs in the kidneys."
+          }
+        }
+      },
+      {
+        "id": "q-bio-m-7",
+        "question": "Which of these is an excretory waste in plants?",
+        "options": [
+          "Glucose",
+          "Resins and gums",
+          "Starch",
+          "Chlorophyll"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Plants store waste products such as resins and gums in old xylem or other tissues.",
+          "wrong_options": {
+            "0": "Glucose is a useful product, not a waste.",
+            "2": "Starch is stored food.",
+            "3": "Chlorophyll is a pigment used in photosynthesis."
+          }
+        }
+      },
+      {
+        "id": "q-bio-m-8",
+        "question": "Villi in the small intestine increase:",
+        "options": [
+          "Surface area for absorption",
+          "Acid production",
+          "Bile storage",
+          "Peristalsis"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Villi and microvilli greatly increase the surface area for absorbing digested food.",
+          "wrong_options": {
+            "1": "Acid is produced in the stomach.",
+            "2": "Bile is stored in the gall bladder.",
+            "3": "Peristalsis is muscular movement, not a surface-area feature."
+          }
+        }
+      },
+      {
+        "id": "q-bio-m-9",
+        "question": "During strenuous exercise, lactic acid builds up in muscles because:",
+        "options": [
+          "Oxygen supply is less than demand",
+          "Carbon dioxide is absent",
+          "Glucose is absent",
+          "Water is present in excess"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "When oxygen supply cannot meet demand, muscles respire anaerobically and produce lactic acid.",
+          "wrong_options": {
+            "1": "Carbon dioxide is produced, not absent.",
+            "2": "Glucose is available but cannot be fully oxidised.",
+            "3": "Excess water is not the cause of lactic acid build-up."
+          }
+        }
+      },
+      {
+        "id": "q-bio-m-10",
+        "question": "Which statement about arteries is correct?",
+        "options": [
+          "They have valves and thin walls",
+          "They carry blood away from the heart and have thick elastic walls",
+          "They carry only deoxygenated blood",
+          "They connect arteries to veins"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Arteries carry blood away from the heart and have thick elastic walls that withstand high pressure.",
+          "wrong_options": {
+            "0": "Valves and thin walls are features of veins.",
+            "2": "The pulmonary artery carries deoxygenated blood, but arteries do not always do so.",
+            "3": "Capillaries connect arterioles to venules."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-bio-x-1",
+        "question": "A person's diet lacks iron. Which function is most directly affected?",
+        "options": [
+          "Digestion of fats",
+          "Transport of oxygen by haemoglobin",
+          "Absorption of water",
+          "Formation of bile"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Iron is needed to make haemoglobin, which carries oxygen in red blood cells.",
+          "wrong_options": {
+            "0": "Fat digestion does not depend mainly on iron.",
+            "2": "Water absorption is not the main iron-dependent function.",
+            "3": "Bile formation does not require iron."
+          }
+        }
+      },
+      {
+        "id": "q-bio-x-2",
+        "question": "If the xylem of a plant is blocked, the most immediate effect is:",
+        "options": [
+          "Food cannot reach the roots",
+          "Water cannot reach the leaves",
+          "Flowers cannot form",
+          "Seeds cannot germinate"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Xylem transports water, so a block prevents water from reaching the leaves.",
+          "wrong_options": {
+            "0": "Food transport is a phloem function.",
+            "2": "Flower formation is not the immediate effect of a blocked xylem.",
+            "3": "Germination is not directly controlled by xylem in an adult plant."
+          }
+        }
+      },
+      {
+        "id": "q-bio-x-3",
+        "question": "In a nephron, glucose is normally absent from urine because:",
+        "options": [
+          "It is filtered but completely reabsorbed",
+          "It is never filtered",
+          "It is destroyed in the bladder",
+          "It is excreted as urea"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Glucose is filtered at the glomerulus and then reabsorbed in the tubule, so it does not appear in normal urine.",
+          "wrong_options": {
+            "1": "Glucose is small enough to be filtered.",
+            "2": "The bladder stores urine; it does not destroy glucose.",
+            "3": "Glucose is not converted to urea in the nephron."
+          }
+        }
+      },
+      {
+        "id": "q-bio-x-4",
+        "question": "Which sequence correctly describes blood flow?",
+        "options": [
+          "Right atrium → right ventricle → lungs → left atrium → left ventricle → body",
+          "Left atrium → left ventricle → lungs → right atrium → right ventricle → body",
+          "Right ventricle → right atrium → lungs → left ventricle → left atrium → body",
+          "Left ventricle → left atrium → lungs → right ventricle → right atrium → body"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Deoxygenated blood enters the right atrium, goes to the right ventricle and lungs, returns to the left atrium, and is pumped by the left ventricle to the body.",
+          "wrong_options": {
+            "1": "The left side receives oxygenated blood from the lungs and pumps it to the body.",
+            "2": "Blood enters the right atrium first, not the right ventricle.",
+            "3": "The left ventricle pumps to the body, not to the lungs."
+          }
+        }
+      },
+      {
+        "id": "q-bio-x-5",
+        "question": "A patient on dialysis has blood separated from dialysate by a membrane. Urea moves out because:",
+        "options": [
+          "Urea concentration is higher in blood than in dialysate",
+          "Urea is actively pumped by the membrane",
+          "Blood cells dissolve in dialysate",
+          "Dialysate contains no water"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Urea diffuses from the higher concentration in blood to the lower concentration in dialysate.",
+          "wrong_options": {
+            "1": "The membrane is not an active pump.",
+            "2": "Blood cells are too large to cross the membrane and do not dissolve.",
+            "3": "Dialysate contains water and dissolved salts."
+          }
+        }
+      },
+      {
+        "id": "q-bio-x-6",
+        "question": "Which set correctly matches enzyme to substrate?",
+        "options": [
+          "Amylase–protein, pepsin–starch",
+          "Amylase–starch, pepsin–protein, lipase–fat",
+          "Lipase–starch, trypsin–fat",
+          "Pepsin–fat, amylase–protein"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Amylase digests starch, pepsin digests protein, and lipase digests fat.",
+          "wrong_options": {
+            "0": "Amylase acts on starch and pepsin on protein.",
+            "2": "Lipase acts on fats and trypsin on proteins.",
+            "3": "Pepsin acts on proteins and amylase on starch."
+          }
+        }
+      },
+      {
+        "id": "q-bio-x-7",
+        "question": "Why is the left ventricle wall thicker than the right ventricle wall?",
+        "options": [
+          "It pumps blood to the lungs at low pressure",
+          "It pumps blood to the whole body at high pressure",
+          "It stores more blood",
+          "It contains valves"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The left ventricle must generate enough pressure to send blood to the entire body.",
+          "wrong_options": {
+            "0": "The right ventricle pumps to the lungs at lower pressure.",
+            "2": "Wall thickness is related to pressure, not storage volume.",
+            "3": "Valves are located between chambers, not in the wall."
+          }
+        }
+      },
+      {
+        "id": "q-bio-x-8",
+        "question": "A plant kept in the dark for 48 hours most directly stops:",
+        "options": [
+          "Respiration",
+          "Photosynthesis",
+          "Transpiration",
+          "Translocation"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Photosynthesis requires light, so it stops in darkness.",
+          "wrong_options": {
+            "0": "Respiration continues in darkness.",
+            "2": "Transpiration can continue in darkness, though stomata may close.",
+            "3": "Translocation can continue as long as phloem is supplied with food."
+          }
+        }
+      },
+      {
+        "id": "q-bio-x-9",
+        "question": "Which statement about anaerobic respiration is correct?",
+        "options": [
+          "It releases more energy than aerobic respiration",
+          "It produces ethanol in human muscles",
+          "It releases less energy than aerobic respiration",
+          "It requires mitochondria"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Anaerobic respiration releases less energy per glucose molecule than aerobic respiration.",
+          "wrong_options": {
+            "0": "Aerobic respiration releases more energy.",
+            "1": "Human muscles produce lactic acid, not ethanol.",
+            "3": "Anaerobic respiration occurs in the cytoplasm, not mitochondria."
+          }
+        }
+      },
+      {
+        "id": "q-bio-x-10",
+        "question": "The main advantage of double circulation is:",
+        "options": [
+          "It slows blood flow",
+          "It keeps oxygenated and deoxygenated blood separate and maintains pressure",
+          "It removes the need for lungs",
+          "It stops blood clotting"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Double circulation separates oxygenated and deoxygenated blood and maintains the pressure needed for efficient delivery.",
+          "wrong_options": {
+            "0": "Double circulation does not aim to slow blood flow.",
+            "2": "Lungs are still needed for gas exchange.",
+            "3": "Clotting is a separate function of platelets."
+          }
+        }
+      }
+    ]
+  },
+  "model_papers": {
+    "simple": [
+      {
+        "id": "mp-bio-s-1",
+        "question": "Name the two main modes of nutrition and give one example of each.",
+        "answer": "Autotrophic nutrition (e.g. green plants) and heterotrophic nutrition (e.g. humans, fungi, or Cuscuta).",
+        "steps": [
+          "Nutrition is the process of taking in and using food.",
+          "Autotrophic nutrition: the organism makes its own food by photosynthesis; example, a green plant.",
+          "Heterotrophic nutrition: the organism depends on ready-made food; example, a human or Cuscuta.",
+          "Some heterotrophs ingest food, some absorb it, and some are parasitic."
+        ],
+        "hints": [
+          "Think of organisms that make food and organisms that obtain ready-made food."
+        ]
+      },
+      {
+        "id": "mp-bio-s-2",
+        "question": "What is the function of stomata in a leaf?",
+        "answer": "Stomata allow carbon dioxide to enter and oxygen and water vapour to leave the leaf.",
+        "steps": [
+          "Stomata are tiny pores on the leaf surface.",
+          "They allow carbon dioxide to enter for photosynthesis.",
+          "They allow oxygen produced in photosynthesis to leave.",
+          "They also allow water vapour to escape during transpiration.",
+          "Guard cells open and close the stomatal pore."
+        ],
+        "hints": [
+          "Link the pore to gas exchange and water loss."
+        ]
+      }
+    ],
+    "medium": [
+      {
+        "id": "mp-bio-m-1",
+        "question": "Explain the roles of the liver and pancreas in the digestion of fats and proteins.",
+        "answer": "The liver makes bile, which emulsifies fats and neutralises acid; the pancreas supplies trypsin for proteins and lipase for fats.",
+        "steps": [
+          "The liver produces bile, which is stored in the gall bladder.",
+          "Bile emulsifies large fat droplets and provides an alkaline medium.",
+          "The pancreas secretes pancreatic juice into the small intestine.",
+          "Trypsin from pancreatic juice digests proteins into peptides and amino acids.",
+          "Lipase from pancreatic juice digests fats into fatty acids and glycerol."
+        ],
+        "hints": [
+          "Separate the liver's bile from the pancreas's enzymes."
+        ]
+      },
+      {
+        "id": "mp-bio-m-2",
+        "question": "Distinguish between xylem and phloem transport in three points.",
+        "answer": "Xylem carries water and minerals upward passively in dead cells; phloem carries food in both directions using energy in living cells.",
+        "steps": [
+          "Xylem transports water and dissolved minerals; phloem transports soluble organic food.",
+          "Xylem movement is mainly upward from roots to leaves; phloem movement can be upward or downward.",
+          "Xylem transport is driven by transpiration pull and root pressure; phloem transport requires energy.",
+          "Xylem conducting cells are dead; phloem sieve tubes are living and are assisted by companion cells."
+        ],
+        "hints": [
+          "Compare substance, direction, and living status of the conducting tissue."
+        ]
+      }
+    ],
+    "complex": [
+      {
+        "id": "mp-bio-c-1",
+        "question": "A urine report shows glucose. Explain how glucose is normally handled by the nephron and what the finding may indicate.",
+        "answer": "Glucose is filtered at the glomerulus and reabsorbed in the tubule; glucose in urine suggests blood glucose has exceeded the reabsorption capacity, often a sign of diabetes mellitus.",
+        "steps": [
+          "Blood is filtered at the glomerulus, and glucose enters Bowman's capsule because it is small.",
+          "As the filtrate passes along the tubule, glucose is reabsorbed into the blood.",
+          "Normally, all filtered glucose is reabsorbed, so urine contains no glucose.",
+          "If blood glucose is very high, the tubules cannot reabsorb all of it.",
+          "Glucose then appears in urine, which is commonly checked as a sign of diabetes mellitus.",
+          "A doctor confirms the cause with blood tests; a urine report alone is not a diagnosis."
+        ],
+        "hints": [
+          "Remember that glucose is filtered first and reabsorbed second.",
+          "Link the finding to the kidney's reabsorption limit."
+        ]
+      },
+      {
+        "id": "mp-bio-c-2",
+        "question": "Explain how alveoli, villi, and nephrons are all examples of the surface-area-to-volume principle.",
+        "answer": "Each structure is thin, folded, and richly supplied with blood, giving a large exchange area for a small volume.",
+        "steps": [
+          "As an organism grows, its volume increases faster than its surface area.",
+          "Diffusion alone therefore cannot supply the whole body, so specialised exchange surfaces are needed.",
+          "Alveoli are millions of tiny air sacs with thin walls and a rich capillary network for gas exchange.",
+          "Villi and microvilli fold the intestinal lining to increase absorption area.",
+          "Nephrons provide millions of filtering units with long tubules for reabsorption.",
+          "In each case, a large thin surface serves a small volume, increasing the rate of exchange."
+        ],
+        "hints": [
+          "Name the surface, the substance exchanged, and the folding or multiplicity that increases area."
+        ]
+      }
+    ]
+  },
+  "mind_maps": {
+    "title": "Life Processes — Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Life Processes",
+    "branches": [
+      {
+        "concept": "Nutrition",
+        "sub_nodes": [
+          "Autotrophic: photosynthesis in chloroplasts",
+          "Heterotrophic: ingestion, absorption, parasitism",
+          "Human digestive system and alimentary canal",
+          "Enzymes: amylase, pepsin, trypsin, lipase",
+          "Bile emulsifies fats and neutralises acid"
+        ],
+        "connections": "Provides the glucose and nutrients used in respiration and growth"
+      },
+      {
+        "concept": "Respiration",
+        "sub_nodes": [
+          "Aerobic: oxygen, mitochondria, CO2 and water",
+          "Anaerobic: cytoplasm, lactic acid or ethanol",
+          "ATP is the energy currency of the cell",
+          "Alveoli provide a large gas-exchange surface",
+          "Lactic acid causes fatigue during vigorous exercise"
+        ],
+        "connections": "Releases energy from the food produced by nutrition"
+      },
+      {
+        "concept": "Transport in Humans",
+        "sub_nodes": [
+          "Heart: four chambers and valves",
+          "Double circulation: pulmonary and systemic circuits",
+          "Arteries, veins, and capillaries",
+          "Blood: plasma, red cells, white cells, platelets",
+          "Haemoglobin carries oxygen"
+        ],
+        "connections": "Delivers oxygen and nutrients and removes carbon dioxide and wastes"
+      },
+      {
+        "concept": "Transport in Plants",
+        "sub_nodes": [
+          "Xylem transports water and minerals upward",
+          "Phloem transports food in both directions",
+          "Transpiration pull and root pressure",
+          "Stomata and guard cells regulate water loss",
+          "Girdling removes phloem and starves roots"
+        ],
+        "connections": "Connects roots, leaves, and storage organs"
+      },
+      {
+        "concept": "Excretion",
+        "sub_nodes": [
+          "Nephron: filtration, reabsorption, secretion",
+          "Urine: water, urea, excess salts",
+          "Dialysis uses a selectively permeable membrane",
+          "Plants excrete oxygen, CO2, and water vapour",
+          "Resins and gums are stored in old xylem"
+        ],
+        "connections": "Removes metabolic wastes and maintains internal balance"
+      },
+      {
+        "concept": "Exchange Surfaces",
+        "sub_nodes": [
+          "Surface area increases as the square; volume as the cube",
+          "Alveoli: thin, moist, and richly supplied with blood",
+          "Villi: folded lining of the small intestine",
+          "Root hairs: increase water absorption",
+          "Nephrons: millions of filtering units"
+        ],
+        "connections": "Explains why large organisms need specialised organs and transport systems"
+      },
+      {
+        "concept": "Energy Flow",
+        "sub_nodes": [
+          "Sunlight to chemical energy in photosynthesis",
+          "Glucose to ATP in respiration",
+          "ATP powers transport, growth, and repair",
+          "Anaerobic pathways provide emergency energy",
+          "Energy is lost as heat at each step"
+        ],
+        "connections": "Links all life processes to a continuous supply of usable energy"
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "How Life Processes Connect — Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Life Processes",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Nutrition",
+        "group": "process"
+      },
+      {
+        "id": "n3",
+        "label": "Photosynthesis",
+        "group": "nutrition"
+      },
+      {
+        "id": "n4",
+        "label": "Human Digestion",
+        "group": "nutrition"
+      },
+      {
+        "id": "n5",
+        "label": "Respiration",
+        "group": "process"
+      },
+      {
+        "id": "n6",
+        "label": "ATP",
+        "group": "energy"
+      },
+      {
+        "id": "n7",
+        "label": "Human Transport",
+        "group": "transport"
+      },
+      {
+        "id": "n8",
+        "label": "Plant Transport",
+        "group": "transport"
+      },
+      {
+        "id": "n9",
+        "label": "Excretion",
+        "group": "process"
+      },
+      {
+        "id": "n10",
+        "label": "Nephron",
+        "group": "excretion"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n5"
+      ],
+      [
+        "n1",
+        "n7"
+      ],
+      [
+        "n1",
+        "n8"
+      ],
+      [
+        "n1",
+        "n9"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n5",
+        "n6"
+      ],
+      [
+        "n7",
+        "n5"
+      ],
+      [
+        "n8",
+        "n2"
+      ],
+      [
+        "n9",
+        "n10"
+      ],
+      [
+        "n7",
+        "n9"
+      ],
+      [
+        "n6",
+        "n1"
+      ]
+    ]
+  },
+  "flowcharts": [
+    {
+      "title": "Classifying a Life Process: Decision Flowchart",
+      "steps": [
+        {
+          "order": 1,
+          "action": "Start with the process happening in the organism",
+          "next": 2
+        },
+        {
+          "order": 2,
+          "action": "Does it build food using light energy?",
+          "decision": true,
+          "if_yes": 3,
+          "if_no": 4
+        },
+        {
+          "order": 3,
+          "action": "Nutrition — photosynthesis in autotrophs",
+          "next": "END"
+        },
+        {
+          "order": 4,
+          "action": "Does it release energy from glucose?",
+          "decision": true,
+          "if_yes": 5,
+          "if_no": 6
+        },
+        {
+          "order": 5,
+          "action": "Respiration — aerobic or anaerobic",
+          "next": "END"
+        },
+        {
+          "order": 6,
+          "action": "Does it move substances around the body?",
+          "decision": true,
+          "if_yes": 7,
+          "if_no": 8
+        },
+        {
+          "order": 7,
+          "action": "Transportation — heart and blood or xylem and phloem",
+          "next": "END"
+        },
+        {
+          "order": 8,
+          "action": "Does it remove metabolic wastes?",
+          "decision": true,
+          "if_yes": 9,
+          "if_no": 10
+        },
+        {
+          "order": 9,
+          "action": "Excretion — nephron and urine or plant resins and gums",
+          "next": "END"
+        },
+        {
+          "order": 10,
+          "action": "Recheck the definition; the process may combine more than one life process",
+          "next": "END"
+        }
+      ]
+    }
+  ],
+  "common_misconceptions": [
+    "Plants do not respire — FALSE: plants respire all the time; photosynthesis occurs only in the light.",
+    "Photosynthesis and respiration cannot occur together — FALSE: in daylight both occur in a plant, in different organelles.",
+    "Bile is an enzyme that digests fat — FALSE: bile emulsifies fat and neutralises acid, while lipase digests fat.",
+    "Anaerobic respiration releases no energy — FALSE: it releases less energy than aerobic respiration, not zero energy.",
+    "Arteries always carry oxygenated blood — FALSE: the pulmonary artery carries deoxygenated blood to the lungs.",
+    "Plants excrete only oxygen — FALSE: plants also lose water vapour and carbon dioxide and store resins and gums as wastes.",
+    "The kidney removes glucose from blood only by reabsorption before filtration — FALSE: glucose is filtered at the glomerulus and then reabsorbed in the tubule.",
+    "Dialysis cures kidney failure — FALSE: dialysis removes wastes but does not restore kidney function, so it must be repeated."
+  ]
+}

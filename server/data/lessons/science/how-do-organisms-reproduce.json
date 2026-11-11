@@ -1,0 +1,1475 @@
+{
+  "subject": "Biology",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 8,
+  "chapter": "How do Organisms Reproduce",
+  "lesson": 8,
+  "title": "How do Organisms Reproduce — Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Explain why reproduction is essential for the continuity of a species",
+    "Distinguish asexual from sexual reproduction and give examples of each",
+    "Describe binary fission, budding, fragmentation, regeneration, spore formation, and vegetative propagation",
+    "Identify the parts of a flower and explain pollination, fertilisation, and seed and fruit formation",
+    "Describe the structure and functions of the human male and female reproductive systems",
+    "Explain menstruation, fertilisation, implantation, placenta, and gestation",
+    "Evaluate contraceptive methods and explain how sexually transmitted diseases spread and can be prevented",
+    "Recognise female foeticide as illegal, unethical, and scientifically unjustified",
+    "Apply reproduction concepts to board-style and competitive questions"
+  ],
+  "prerequisite_nodes": [
+    "SCI_CLASS9_CELL_STRUCTURE_AND_FUNCTIONS",
+    "SCI_CLASS9_DIVERSITY_IN_LIVING_ORGANISMS",
+    "SCI_CLASS8_REPRODUCTION_IN_ANIMALS",
+    "SCI_CLASS7_REPRODUCTION_IN_PLANTS"
+  ],
+  "concepts": [
+    {
+      "name": "Asexual Reproduction and Its Types",
+      "real_life_application": "A single potato tuber can grow into many identical potato plants, and a piece of Spirogyra can grow into a new filament without any seeds.",
+      "purpose": "Asexual reproduction is the production of new individuals from a single parent without the fusion of gametes. Because no meiosis or fertilisation is involved, the offspring are generally genetically similar to the parent.",
+      "day_to_day_usage": [
+        "Growing sugarcane, potato, rose, and Bryophyllum from vegetative parts",
+        "Yeast multiplying rapidly in bread dough and fermenting batter",
+        "Hydra forming buds in a freshwater aquarium",
+        "Fungus growing on stale bread and releasing spores into the air",
+        "Amoeba dividing into two daughter cells in pond water"
+      ]
+    },
+    {
+      "name": "DNA Copying, Variation, and Continuity of Life",
+      "real_life_application": "Children resemble their parents because DNA is copied and passed on, but siblings are not identical because some variation occurs.",
+      "purpose": "Reproduction requires copying of DNA so that the new individual receives the genetic instructions for life. DNA copying is not perfectly error-free; small differences called variations arise. Variation is the raw material for adaptation and evolution.",
+      "day_to_day_usage": [
+        "Explaining why siblings share some features but are not identical",
+        "Understanding why some bacteria survive a course of antibiotics",
+        "Selecting desirable traits in crops and livestock",
+        "Studying inherited diseases in a family",
+        "Understanding why sexual reproduction generates more variation than asexual reproduction"
+      ]
+    },
+    {
+      "name": "Sexual Reproduction in Flowering Plants",
+      "real_life_application": "Mango trees produce flowers that are pollinated by insects, leading to mangoes and seeds that can grow into new trees.",
+      "purpose": "Sexual reproduction involves the fusion of male and female gametes. In flowering plants, the flower contains male parts (stamens) and female parts (carpels). Pollination transfers pollen, fertilisation forms a zygote, and the ovule and ovary develop into the seed and fruit.",
+      "day_to_day_usage": [
+        "Growing vegetables and fruits from seeds",
+        "Beekeeping and bee pollination improving crop yield",
+        "Understanding why some flowers attract insects with colour and scent",
+        "Saving seeds from healthy plants for the next season",
+        "Recognising that fruit forms only after successful fertilisation in most plants"
+      ]
+    },
+    {
+      "name": "Human Male Reproductive System",
+      "real_life_application": "The male reproductive system produces sperm and the hormone testosterone, which supports male secondary sexual characteristics.",
+      "purpose": "The testes lie in the scrotum, where a slightly lower temperature supports sperm production. Sperm travel through the vas deferens, receive secretions from accessory glands, and leave the body through the urethra.",
+      "day_to_day_usage": [
+        "Understanding puberty-related changes such as voice deepening and facial hair",
+        "Recognising the importance of hygiene during adolescence",
+        "Learning how sperm are adapted for swimming and fertilisation",
+        "Understanding why the testes are located outside the body cavity",
+        "Discussing reproductive health with a qualified doctor or teacher"
+      ]
+    },
+    {
+      "name": "Human Female Reproductive System, Menstruation, and Development",
+      "real_life_application": "The female reproductive system produces eggs, supports fertilisation, and nourishes the developing foetus during pregnancy.",
+      "purpose": "The ovaries release eggs, the fallopian tubes carry the egg, and the uterus supports implantation and development. Menstruation occurs when the thickened uterine lining breaks down because fertilisation has not occurred. The placenta exchanges materials between mother and foetus.",
+      "day_to_day_usage": [
+        "Understanding the menstrual cycle and maintaining menstrual hygiene",
+        "Recognising that fertilisation normally occurs in the fallopian tube",
+        "Learning why the placenta is essential during pregnancy",
+        "Understanding the need for regular antenatal check-ups",
+        "Avoiding myths and stigma about menstruation"
+      ]
+    },
+    {
+      "name": "Reproductive Health, Contraception, and STDs",
+      "real_life_application": "Awareness of contraception helps families plan pregnancies, while condom use reduces the spread of sexually transmitted diseases.",
+      "purpose": "Reproductive health means physical, mental, and social well-being in matters of reproduction. Contraception prevents unwanted pregnancy through barrier, hormonal, intrauterine, or surgical methods. STDs spread mainly through unprotected sexual contact and some also through infected blood or from mother to child.",
+      "day_to_day_usage": [
+        "Using condoms correctly for protection against pregnancy and many STDs",
+        "Seeking medical advice before choosing a contraceptive method",
+        "Understanding that female foeticide is illegal and unethical",
+        "Getting early diagnosis and treatment for STDs",
+        "Rejecting misinformation about reproduction and contraception"
+      ]
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Principle of Variation and Natural Selection",
+      "statement": "Individuals in a population differ from one another; some of these differences are heritable. Individuals with variations better suited to their environment survive and reproduce more successfully, so those traits become more common over generations.",
+      "proposed_by": {
+        "name": "Charles Darwin",
+        "era": "1809–1882",
+        "location": "England",
+        "book": "On the Origin of Species (1859)",
+        "known_as": "Father of Evolutionary Theory"
+      },
+      "historical_context": "Darwin observed variation in plants and animals during his voyage on HMS Beagle, especially among finches and tortoises in the Galapagos Islands. Alfred Russel Wallace independently reached similar conclusions, and both presented the idea of natural selection in 1858.",
+      "why_proposed": "Darwin and Wallace needed a mechanism to explain both the diversity of living organisms and the way species become adapted to their environments over long periods of time.",
+      "real_world_utility": "The principle explains antibiotic resistance, the success of crop and animal breeding, and the need to preserve genetic diversity in ecosystems.",
+      "why_students_learn": "It explains why variation matters, why sexual reproduction is advantageous in changing environments, and why populations can change over generations.",
+      "examples": [
+        "Finches on different islands have different beak shapes suited to the food available",
+        "Bacteria with a variation that resists an antibiotic survive and multiply when the antibiotic is used"
+      ]
+    },
+    {
+      "name": "DNA Double Helix and Complementary Base Pairing",
+      "statement": "DNA is a double helix in which adenine pairs with thymine and guanine pairs with cytosine. Each strand can act as a template for a new strand, allowing genetic information to be copied faithfully; rare copying errors generate variation.",
+      "proposed_by": {
+        "name": "James Watson and Francis Crick",
+        "era": "1953",
+        "location": "Cambridge, England",
+        "book": "A Structure for Deoxyribose Nucleic Acid (Nature, 1953)",
+        "known_as": "Watson–Crick model of DNA"
+      },
+      "historical_context": "The model used Rosalind Franklin's and Maurice Wilkins's X-ray diffraction data and Erwin Chargaff's observation that adenine and thymine occur in equal amounts, as do guanine and cytosine. Watson and Crick published the double-helix structure in 1953.",
+      "why_proposed": "The model explained how genetic information could be stored in a stable molecule and copied accurately before a cell divides.",
+      "real_world_utility": "It underpins DNA fingerprinting, medical genetic testing, PCR testing, and modern biotechnology.",
+      "why_students_learn": "It explains why offspring resemble their parents, how reproduction copies genetic information, and how mutations can produce new variations.",
+      "examples": [
+        "During DNA replication, A on the old strand pairs with T on the new strand and G pairs with C",
+        "A copying error in DNA can change a trait and introduce variation into a population"
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-rep-1",
+      "topic": "Identifying modes of asexual reproduction",
+      "problem": "Name the mode of asexual reproduction in (i) Hydra, (ii) Spirogyra, (iii) Rhizopus, and (iv) potato, and state one key feature of each mode.",
+      "board_mode": [
+        "Step 1: Hydra reproduces by budding. A small outgrowth called a bud develops on the parent body.",
+        "Step 2: The bud grows, develops tentacles, and detaches as a new individual.",
+        "Step 3: Spirogyra reproduces by fragmentation. Its filament breaks into pieces, and each piece grows into a new filament.",
+        "Step 4: Rhizopus reproduces by spore formation. Spores are produced inside sporangia at the tips of hyphae.",
+        "Step 5: When the sporangium bursts, spores are dispersed and germinate in suitable conditions.",
+        "Step 6: Potato reproduces vegetatively through eyes (buds) on its tuber; each eye can grow into a new plant.",
+        "Step 7: All four modes involve a single parent and no fusion of gametes, so they are asexual."
+      ],
+      "speed_mode": "Match the organism to its signature structure: Hydra → bud, Spirogyra → fragment, Rhizopus → sporangium, potato → eye.",
+      "competitive_shortcut": "Asexual reproduction is usually recognised by one parent, no gamete fusion, and offspring that are genetically very similar to the parent."
+    },
+    {
+      "id": "we-rep-2",
+      "topic": "Binary fission in Amoeba",
+      "problem": "Describe binary fission in Amoeba with the help of a sequence of stages.",
+      "board_mode": [
+        "Step 1: The parent Amoeba is a single cell with a nucleus and organelles.",
+        "Step 2: The nucleus divides first by mitosis, producing two nuclei.",
+        "Step 3: The cytoplasm then divides, and the cell membrane pinches inward.",
+        "Step 4: Two daughter cells are formed, each with one nucleus.",
+        "Step 5: The daughter cells are genetically similar to the parent.",
+        "Step 6: Under favourable conditions, Amoeba can divide repeatedly, producing a large population."
+      ],
+      "speed_mode": "Remember the order: nucleus divides first, then cytoplasm, then the cell splits.",
+      "competitive_shortcut": "Binary fission gives two daughter cells; multiple fission gives many daughter cells, as in Plasmodium."
+    },
+    {
+      "id": "we-rep-3",
+      "topic": "From pollination to seed formation",
+      "problem": "Trace the events in a flowering plant from pollination to the formation of a seed and fruit.",
+      "board_mode": [
+        "Step 1: Pollen grains land on the stigma of a compatible flower; this is pollination.",
+        "Step 2: A pollen grain germinates and forms a pollen tube that grows through the style towards the ovary.",
+        "Step 3: The pollen tube carries two male gametes into the ovule.",
+        "Step 4: One male gamete fuses with the egg to form a zygote; this is fertilisation.",
+        "Step 5: The second male gamete fuses with the polar nuclei to form the primary endosperm nucleus; this is double fertilisation.",
+        "Step 6: The zygote develops into an embryo, and the ovule develops into a seed.",
+        "Step 7: The ovary develops into the fruit, and the ovary wall becomes the pericarp.",
+        "Step 8: The seed contains the embryo and stored food and can germinate into a new plant under suitable conditions."
+      ],
+      "speed_mode": "Use the chain: pollen → stigma → pollen tube → ovule → zygote → embryo → seed; ovary → fruit.",
+      "competitive_shortcut": "Double fertilisation is a feature of flowering plants: one male gamete forms the zygote, the other forms the endosperm."
+    },
+    {
+      "id": "we-rep-4",
+      "topic": "Estimating ovulation in a menstrual cycle",
+      "problem": "A girl has a 28-day menstrual cycle. Her menstruation starts on 1 March. Estimate when ovulation is most likely and explain the reasoning.",
+      "board_mode": [
+        "Step 1: Day 1 is the first day of menstruation, so 1 March is day 1.",
+        "Step 2: In a typical 28-day cycle, ovulation occurs near the middle of the cycle.",
+        "Step 3: The middle of a 28-day cycle is around day 14.",
+        "Step 4: Counting 14 days from 1 March gives 14 March as the approximate ovulation date.",
+        "Step 5: The fertile window is generally a few days around ovulation, not just one day.",
+        "Step 6: Cycle length varies between individuals and from month to month, so this is an estimate, not a guarantee."
+      ],
+      "speed_mode": "For a 28-day cycle, subtract 14 from the cycle length to estimate the ovulation day: 28 − 14 = 14.",
+      "competitive_shortcut": "Ovulation is roughly mid-cycle, but cycle length varies; do not treat calendar estimates as a reliable contraceptive method."
+    },
+    {
+      "id": "we-rep-5",
+      "topic": "Choosing contraception and preventing STDs",
+      "problem": "A couple wants to avoid pregnancy for one year and also reduce the risk of sexually transmitted diseases. Compare a barrier method with a surgical method and recommend the more suitable choice for STD protection.",
+      "board_mode": [
+        "Step 1: A barrier method such as a condom prevents sperm from reaching the egg.",
+        "Step 2: A condom also reduces contact between body fluids, so it lowers the risk of many STDs.",
+        "Step 3: Surgical methods such as vasectomy or tubectomy block the gamete pathway and are highly effective for preventing pregnancy.",
+        "Step 4: Surgical methods are intended to be permanent and do not protect against STDs.",
+        "Step 5: For a one-year plan with STD protection, a barrier method is the more suitable choice, used correctly and consistently.",
+        "Step 6: The couple should consult a qualified doctor for personalised advice and should not rely on myths."
+      ],
+      "speed_mode": "Separate the two goals: pregnancy prevention and STD prevention. Only barrier methods do both.",
+      "competitive_shortcut": "Vasectomy blocks the vas deferens; tubectomy blocks the fallopian tubes. Both are surgical and permanent, and neither prevents STDs."
+    }
+  ],
+  "exercises": {
+    "exercise_2_1": {
+      "title": "NCERT Exercise 2.1 — Asexual and Plant Reproduction",
+      "objective": "Apply the modes of asexual reproduction and trace sexual reproduction in flowering plants",
+      "problems": [
+        {
+          "id": "bio-rep-ex1-1",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "What is reproduction? Why is it essential for living organisms?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Reproduction is the biological process by which organisms produce new individuals of their own kind.",
+            "Step 2: It ensures continuity of the species from one generation to the next.",
+            "Step 3: It also maintains the population and allows variations to be passed on, helping the species adapt over time."
+          ],
+          "final_answer": "Reproduction is the production of new individuals; it ensures continuity of the species and passes on genetic information."
+        },
+        {
+          "id": "bio-rep-ex1-2",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Differentiate between binary fission and multiple fission. Give one example of each.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: In binary fission, the parent cell divides into two daughter cells.",
+            "Step 2: The nucleus divides first, followed by division of the cytoplasm.",
+            "Step 3: Example: Amoeba reproduces by binary fission.",
+            "Step 4: In multiple fission, the parent cell divides into many daughter cells at the same time.",
+            "Step 5: Example: Plasmodium reproduces by multiple fission inside the mosquito or human host."
+          ],
+          "final_answer": "Binary fission produces two daughter cells (Amoeba); multiple fission produces many daughter cells (Plasmodium)."
+        },
+        {
+          "id": "bio-rep-ex1-3",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "How does Hydra reproduce by budding? Describe the steps.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: A small outgrowth called a bud develops on the side of the parent Hydra.",
+            "Step 2: The bud grows and develops tentacles and a mouth.",
+            "Step 3: When the bud is mature, it detaches from the parent.",
+            "Step 4: The detached bud grows into a new Hydra."
+          ],
+          "final_answer": "Hydra forms a bud that grows, develops tentacles, detaches, and becomes a new individual."
+        },
+        {
+          "id": "bio-rep-ex1-4",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Why is regeneration in Planaria not considered a normal method of reproduction?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Regeneration is the ability to grow lost body parts.",
+            "Step 2: In Planaria, if the body is cut into pieces, each piece can grow into a complete organism.",
+            "Step 3: However, this usually happens after injury or artificial cutting, not as the normal way of producing offspring.",
+            "Step 4: Normal reproduction in Planaria involves sexual reproduction, so regeneration is mainly repair and survival."
+          ],
+          "final_answer": "Regeneration replaces lost parts and can produce new individuals only from cut pieces; it is not the usual reproductive method."
+        },
+        {
+          "id": "bio-rep-ex1-5",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Explain spore formation in Rhizopus. Why are spores advantageous?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Rhizopus is a fungus that grows as thread-like hyphae.",
+            "Step 2: Special structures called sporangia develop at the tips of some hyphae.",
+            "Step 3: Many spores are produced inside each sporangium.",
+            "Step 4: When the sporangium bursts, the light spores are carried by air and germinate on a suitable food source.",
+            "Step 5: Spores are advantageous because they are produced in large numbers and can survive dispersal through air."
+          ],
+          "final_answer": "Rhizopus produces spores in sporangia; air dispersal lets the fungus colonise new food sources quickly."
+        },
+        {
+          "id": "bio-rep-ex1-6",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Name three plants that reproduce vegetatively and state the part used in each. Give two advantages of vegetative propagation.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Potato reproduces through eyes (buds) on the tuber.",
+            "Step 2: Sugarcane reproduces through nodes on its stem.",
+            "Step 3: Bryophyllum reproduces through buds on the margins of its leaves.",
+            "Step 4: Advantage 1: The new plants are genetically similar to the parent, so desirable traits are preserved.",
+            "Step 5: Advantage 2: Plants can be produced faster and without waiting for seed formation or germination."
+          ],
+          "final_answer": "Potato (tuber eyes), sugarcane (stem nodes), Bryophyllum (leaf buds); it preserves desirable traits and is faster than seed propagation."
+        },
+        {
+          "id": "bio-rep-ex1-7",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Draw a labelled longitudinal section of a flower and state the function of sepals, petals, anther, ovary, and stigma.",
+          "difficulty": "medium",
+          "marks": 5,
+          "solution": [
+            "Step 1: A flower has four whorls: calyx (sepals), corolla (petals), androecium (stamens), and gynoecium (carpels).",
+            "Step 2: Sepals protect the flower bud before it opens.",
+            "Step 3: Petals attract pollinators with colour and scent.",
+            "Step 4: The anther produces pollen grains, which contain the male gametes.",
+            "Step 5: The stigma receives pollen grains and is the landing surface for pollination.",
+            "Step 6: The ovary contains ovules, and each ovule contains the female gamete (egg)."
+          ],
+          "final_answer": "Sepals protect the bud; petals attract pollinators; anther produces pollen; stigma receives pollen; ovary contains ovules."
+        },
+        {
+          "id": "bio-rep-ex1-8",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Distinguish pollination from fertilisation. Name three agents of pollination.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Pollination is the transfer of pollen grains from the anther to the stigma.",
+            "Step 2: Fertilisation is the fusion of a male gamete with the female gamete to form a zygote.",
+            "Step 3: Pollination happens before fertilisation and does not always lead to fertilisation.",
+            "Step 4: Three agents of pollination are wind, water, and animals such as insects and birds."
+          ],
+          "final_answer": "Pollination transfers pollen to the stigma; fertilisation fuses gametes. Agents include wind, water, and animals."
+        },
+        {
+          "id": "bio-rep-ex1-9",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Trace the changes after pollination until a fruit and seed are formed. Include double fertilisation.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: A pollen grain lands on the stigma and germinates, producing a pollen tube.",
+            "Step 2: The pollen tube grows through the style and enters the ovule in the ovary.",
+            "Step 3: Two male gametes are carried by the pollen tube.",
+            "Step 4: One male gamete fuses with the egg to form a zygote; this is fertilisation.",
+            "Step 5: The second male gamete fuses with the polar nuclei to form the primary endosperm nucleus; this is double fertilisation.",
+            "Step 6: The zygote develops into an embryo, and the ovule becomes the seed.",
+            "Step 7: The ovary develops into the fruit, and its wall becomes the pericarp."
+          ],
+          "final_answer": "Pollen tube delivers two male gametes; one forms the zygote, the other forms endosperm; ovule becomes seed and ovary becomes fruit."
+        }
+      ]
+    },
+    "exercise_2_2": {
+      "title": "NCERT Exercise 2.2 — Human Reproduction and Reproductive Health",
+      "objective": "Apply knowledge of human reproductive systems, menstruation, development, contraception, and STDs",
+      "problems": [
+        {
+          "id": "bio-rep-ex2-1",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Name the main parts of the human male reproductive system and state one function of each.",
+          "difficulty": "medium",
+          "marks": 5,
+          "solution": [
+            "Step 1: Testes produce sperm and the hormone testosterone.",
+            "Step 2: The scrotum holds the testes outside the body cavity and keeps them slightly cooler.",
+            "Step 3: The vas deferens carries sperm from the testis towards the urethra.",
+            "Step 4: Accessory glands add fluid to the sperm, forming semen.",
+            "Step 5: The urethra carries semen out of the body.",
+            "Step 6: The penis delivers semen into the female reproductive tract during sexual intercourse."
+          ],
+          "final_answer": "Testes (sperm and testosterone), scrotum (temperature regulation), vas deferens (sperm transport), glands (seminal fluid), urethra and penis (delivery)."
+        },
+        {
+          "id": "bio-rep-ex2-2",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Name the main parts of the human female reproductive system and state one function of each.",
+          "difficulty": "medium",
+          "marks": 5,
+          "solution": [
+            "Step 1: Ovaries produce eggs and the hormones oestrogen and progesterone.",
+            "Step 2: The fallopian tubes carry the egg from the ovary towards the uterus; fertilisation usually occurs here.",
+            "Step 3: The uterus is the muscular organ where the embryo implants and develops.",
+            "Step 4: The cervix is the narrow opening of the uterus into the vagina.",
+            "Step 5: The vagina is the passage that receives sperm and serves as the birth canal.",
+            "Step 6: The placenta develops during pregnancy and exchanges materials between mother and foetus."
+          ],
+          "final_answer": "Ovaries (eggs and hormones), fallopian tubes (egg transport and fertilisation), uterus (development), cervix and vagina (passage), placenta (exchange during pregnancy)."
+        },
+        {
+          "id": "bio-rep-ex2-3",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "State three differences between a sperm and an egg.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: A sperm is the male gamete and is produced by the testes; an egg is the female gamete and is produced by the ovaries.",
+            "Step 2: A sperm is small and motile, with a head, middle piece, and tail; an egg is larger and non-motile.",
+            "Step 3: A sperm carries either an X or a Y chromosome; an egg carries an X chromosome."
+          ],
+          "final_answer": "Sperm: small, motile, made in testes, X or Y. Egg: large, non-motile, made in ovaries, X only."
+        },
+        {
+          "id": "bio-rep-ex2-4",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Explain the menstrual cycle. What happens if the released egg is not fertilised?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The menstrual cycle is the monthly cycle of changes in the female reproductive system.",
+            "Step 2: It begins at puberty and usually repeats about every 28 days, though the length varies.",
+            "Step 3: An ovary releases an egg around the middle of the cycle, and the uterus lining thickens to receive a fertilised egg.",
+            "Step 4: If the egg is not fertilised, the thickened lining breaks down and is shed through the vagina as menstrual flow.",
+            "Step 5: The cycle then begins again with the rebuilding of the lining."
+          ],
+          "final_answer": "If the egg is not fertilised, the uterine lining breaks down and is shed as menstruation; the cycle then repeats."
+        },
+        {
+          "id": "bio-rep-ex2-5",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Describe fertilisation and implantation in humans. What is the role of the placenta?",
+          "difficulty": "medium",
+          "marks": 5,
+          "solution": [
+            "Step 1: During sexual intercourse, sperm are deposited in the vagina and swim through the cervix and uterus.",
+            "Step 2: Fertilisation usually occurs in the fallopian tube when one sperm fuses with the egg.",
+            "Step 3: The fused nucleus forms a zygote, which divides repeatedly to form a ball of cells.",
+            "Step 4: The developing embryo moves to the uterus and becomes implanted in the thickened uterine lining.",
+            "Step 5: The placenta develops from the embryo and maternal tissue and is connected to the foetus by the umbilical cord.",
+            "Step 6: The placenta allows nutrients and oxygen to pass from mother to foetus and wastes to pass from foetus to mother."
+          ],
+          "final_answer": "Fertilisation occurs in the fallopian tube; the embryo implants in the uterus; the placenta exchanges nutrients, oxygen, and wastes."
+        },
+        {
+          "id": "bio-rep-ex2-6",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "What is gestation? State the approximate gestation period in humans and two functions of the placenta.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Gestation is the period during which the embryo and foetus develop inside the uterus.",
+            "Step 2: In humans, gestation is approximately nine months, or about 280 days.",
+            "Step 3: Function 1: The placenta supplies nutrients and oxygen from the mother to the foetus.",
+            "Step 4: Function 2: It removes carbon dioxide and other waste products from the foetus."
+          ],
+          "final_answer": "Gestation is the development period in the uterus, about nine months in humans; the placenta supplies nutrients and oxygen and removes wastes."
+        },
+        {
+          "id": "bio-rep-ex2-7",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Classify contraceptive methods with one example each. Which method also reduces the risk of STDs?",
+          "difficulty": "medium",
+          "marks": 5,
+          "solution": [
+            "Step 1: Barrier methods physically prevent sperm from meeting the egg; example: condom.",
+            "Step 2: Hormonal methods change the body's hormone balance to prevent ovulation; example: oral contraceptive pills.",
+            "Step 3: Intrauterine devices are placed in the uterus to prevent pregnancy; example: copper-T.",
+            "Step 4: Surgical methods block the gamete pathway; vasectomy blocks the vas deferens and tubectomy blocks the fallopian tubes.",
+            "Step 5: Barrier methods, especially condoms, also reduce the risk of many STDs by limiting contact with body fluids.",
+            "Step 6: A qualified doctor should be consulted before choosing any method."
+          ],
+          "final_answer": "Barrier (condom), hormonal (pills), intrauterine (copper-T), surgical (vasectomy/tubectomy); condoms also reduce STD risk."
+        },
+        {
+          "id": "bio-rep-ex2-8",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Name any three sexually transmitted diseases and state three ways to prevent their spread.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Examples of STDs include gonorrhoea, syphilis, and HIV/AIDS.",
+            "Step 2: Prevention 1: Use a condom correctly and consistently during sexual contact.",
+            "Step 3: Prevention 2: Avoid sharing needles and ensure safe blood transfusion.",
+            "Step 4: Prevention 3: Seek early testing and treatment, and avoid unprotected sex with an infected partner."
+          ],
+          "final_answer": "Gonorrhoea, syphilis, HIV/AIDS; prevent by condom use, safe needles and blood, and early testing and treatment."
+        },
+        {
+          "id": "bio-rep-ex2-9",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Why is female foeticide a serious social and legal problem? How can education help?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Female foeticide is the illegal termination of a female foetus based on sex.",
+            "Step 2: It violates the right to life and dignity and leads to an unbalanced sex ratio.",
+            "Step 3: A skewed sex ratio causes social problems and denies girls equal opportunities.",
+            "Step 4: Sex determination of a foetus and sex-selective abortion are illegal in India.",
+            "Step 5: Education can challenge the false belief that boys are more valuable, promote equal treatment, and encourage people to report illegal practices.",
+            "Step 6: Legal awareness and support for girls' education help build a fairer society."
+          ],
+          "final_answer": "It is illegal, violates rights, and distorts the sex ratio; education promotes equality and legal awareness."
+        }
+      ]
+    }
+  },
+  "model_papers": {
+    "simple": [
+      {
+        "id": "mp-rep-s-1",
+        "question": "Define asexual reproduction. Name three methods of asexual reproduction with one example each.",
+        "answer": "Asexual reproduction is the production of new individuals from a single parent without gamete fusion. Examples: binary fission in Amoeba, budding in Hydra, and spore formation in Rhizopus.",
+        "steps": [
+          "State that one parent is involved.",
+          "State that no gametes fuse.",
+          "Name binary fission and give Amoeba.",
+          "Name budding and give Hydra.",
+          "Name spore formation and give Rhizopus."
+        ],
+        "hints": [
+          "Think of organisms that do not need a partner.",
+          "Remember one organism for each method."
+        ]
+      },
+      {
+        "id": "mp-rep-s-2",
+        "question": "State the functions of the testis and the ovary.",
+        "answer": "The testis produces sperm and testosterone. The ovary produces eggs and the hormones oestrogen and progesterone.",
+        "steps": [
+          "Identify the testis as the male gonad.",
+          "State that it produces sperm.",
+          "State that it produces testosterone.",
+          "Identify the ovary as the female gonad.",
+          "State that it produces eggs and female hormones."
+        ],
+        "hints": [
+          "A gonad produces gametes and hormones."
+        ]
+      }
+    ],
+    "medium": [
+      {
+        "id": "mp-rep-m-1",
+        "question": "Explain pollination and fertilisation in a flowering plant. How does the pollen tube help in fertilisation?",
+        "answer": "Pollination is the transfer of pollen from anther to stigma. The pollen grain germinates and forms a pollen tube that carries two male gametes to the ovule. One fuses with the egg to form a zygote, and the other fuses with polar nuclei in double fertilisation.",
+        "steps": [
+          "Define pollination as pollen transfer to the stigma.",
+          "Explain that a pollen grain germinates on the stigma.",
+          "Describe the pollen tube growing through the style to the ovule.",
+          "State that the tube carries two male gametes.",
+          "Explain fusion of one male gamete with the egg.",
+          "Explain the second fusion with polar nuclei as double fertilisation."
+        ],
+        "hints": [
+          "Keep pollination and fertilisation separate.",
+          "The pollen tube is the delivery route for male gametes."
+        ]
+      },
+      {
+        "id": "mp-rep-m-2",
+        "question": "Describe the menstrual cycle and explain what happens if fertilisation does not occur.",
+        "answer": "The menstrual cycle is a monthly cycle of about 28 days in which an egg is released and the uterine lining thickens. If fertilisation does not occur, the lining breaks down and is shed as menstruation, and the cycle begins again.",
+        "steps": [
+          "State that the cycle begins at puberty and repeats monthly.",
+          "Explain that an egg is released from an ovary around mid-cycle.",
+          "Explain that the uterine lining thickens in preparation for implantation.",
+          "State that no fertilisation means no implantation.",
+          "Explain that the lining breaks down and is shed as menstrual flow.",
+          "State that the cycle then restarts."
+        ],
+        "hints": [
+          "Link the uterine lining to the possibility of pregnancy.",
+          "Menstruation is the shedding of the lining, not the release of the egg."
+        ]
+      }
+    ],
+    "complex": [
+      {
+        "id": "mp-rep-c-1",
+        "question": "A gardener wants (i) many identical potato plants and (ii) new potato varieties. Explain which method should be used for each goal and why.",
+        "answer": "For identical plants, use vegetative propagation through tuber eyes because the offspring are genetically similar to the parent. For new varieties, use sexual reproduction from seeds because meiosis and random fertilisation produce variation.",
+        "steps": [
+          "Identify the goal of identical plants as a need for genetic uniformity.",
+          "Choose vegetative propagation using potato tuber eyes.",
+          "Explain that no meiosis or fertilisation occurs, so offspring resemble the parent.",
+          "Identify the goal of new varieties as a need for genetic variation.",
+          "Choose sexual reproduction through seeds.",
+          "Explain that meiosis and random fertilisation create new gene combinations.",
+          "Conclude that the method must match the goal."
+        ],
+        "hints": [
+          "Asexual reproduction preserves traits; sexual reproduction reshuffles them.",
+          "Potato tubers are stem modifications with buds called eyes."
+        ]
+      },
+      {
+        "id": "mp-rep-c-2",
+        "question": "Compare barrier and surgical methods of contraception. Which one also reduces the risk of STDs, and why?",
+        "answer": "Barrier methods such as condoms prevent sperm from meeting the egg and also reduce contact with body fluids, lowering STD risk. Surgical methods such as vasectomy and tubectomy block the gamete pathway and are highly effective for pregnancy prevention but do not prevent STDs.",
+        "steps": [
+          "Describe a barrier method and give the condom as an example.",
+          "Explain that it blocks sperm and reduces fluid contact.",
+          "State that this reduces the risk of many STDs.",
+          "Describe vasectomy as blocking the vas deferens.",
+          "Describe tubectomy as blocking the fallopian tubes.",
+          "State that surgical methods are intended to be permanent.",
+          "Conclude that surgical methods do not protect against STDs."
+        ],
+        "hints": [
+          "Separate pregnancy prevention from infection prevention.",
+          "Think about what physically crosses the barrier."
+        ]
+      }
+    ]
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-rep-s-1",
+        "question": "Which of the following is an example of asexual reproduction?",
+        "options": [
+          "Binary fission in Amoeba",
+          "Fertilisation in humans",
+          "Pollination in a flower",
+          "Seed formation after fertilisation"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Amoeba divides into two daughter cells without gamete fusion, so it is asexual.",
+          "wrong_options": {
+            "1": "Human fertilisation involves fusion of sperm and egg, so it is sexual.",
+            "2": "Pollination is part of sexual reproduction in plants.",
+            "3": "Seed formation follows fertilisation, so it is sexual."
+          }
+        }
+      },
+      {
+        "id": "q-rep-s-2",
+        "question": "Hydra reproduces mainly by:",
+        "options": [
+          "Fragmentation",
+          "Budding",
+          "Spore formation",
+          "Binary fission"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A bud grows on the parent Hydra, develops tentacles, and detaches as a new individual.",
+          "wrong_options": {
+            "0": "Fragmentation is typical of Spirogyra.",
+            "2": "Spore formation is typical of Rhizopus.",
+            "3": "Binary fission is typical of Amoeba."
+          }
+        }
+      },
+      {
+        "id": "q-rep-s-3",
+        "question": "Which organism reproduces by fragmentation?",
+        "options": [
+          "Yeast",
+          "Amoeba",
+          "Spirogyra",
+          "Rhizopus"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "A Spirogyra filament breaks into pieces, and each piece grows into a new filament.",
+          "wrong_options": {
+            "0": "Yeast reproduces by budding.",
+            "1": "Amoeba reproduces by binary fission.",
+            "3": "Rhizopus reproduces by spore formation."
+          }
+        }
+      },
+      {
+        "id": "q-rep-s-4",
+        "question": "In Rhizopus, spores are produced inside:",
+        "options": [
+          "Antheridia",
+          "Ovaries",
+          "Buds",
+          "Sporangia"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Sporangia are swollen structures at the tips of hyphae where spores form.",
+          "wrong_options": {
+            "0": "Antheridia are male reproductive structures in some plants and fungi, not the spore cases of Rhizopus.",
+            "1": "Ovaries are plant structures that contain ovules.",
+            "2": "Buds are outgrowths used in budding, not spore containers."
+          }
+        }
+      },
+      {
+        "id": "q-rep-s-5",
+        "question": "Vegetative propagation in potato takes place through:",
+        "options": [
+          "Seeds",
+          "Eyes on the tuber",
+          "Spores",
+          "Leaves"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The eyes are buds on the potato tuber, and each can grow into a new plant.",
+          "wrong_options": {
+            "0": "Potato seeds are not the usual method of vegetative propagation.",
+            "2": "Spores are produced by fungi such as Rhizopus.",
+            "3": "Leaf buds are used by Bryophyllum, not potato."
+          }
+        }
+      },
+      {
+        "id": "q-rep-s-6",
+        "question": "In a flowering plant, the male gamete is carried to the ovule by the:",
+        "options": [
+          "Xylem",
+          "Pollen tube",
+          "Phloem",
+          "Root hair"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The pollen tube grows from the pollen grain through the style and carries male gametes to the ovule.",
+          "wrong_options": {
+            "0": "Xylem transports water and minerals.",
+            "2": "Phloem transports food.",
+            "3": "Root hairs absorb water and minerals."
+          }
+        }
+      },
+      {
+        "id": "q-rep-s-7",
+        "question": "Fertilisation in humans normally occurs in the:",
+        "options": [
+          "Uterus",
+          "Ovary",
+          "Fallopian tube",
+          "Vagina"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Sperm usually meet the egg in the fallopian tube, where fertilisation takes place.",
+          "wrong_options": {
+            "0": "The uterus is where the embryo implants and develops.",
+            "1": "The ovary releases the egg but is not the usual site of fertilisation.",
+            "3": "The vagina receives sperm but is not the site of fertilisation."
+          }
+        }
+      },
+      {
+        "id": "q-rep-s-8",
+        "question": "The foetus is connected to the placenta by the:",
+        "options": [
+          "Vas deferens",
+          "Cervix",
+          "Umbilical cord",
+          "Fallopian tube"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "The umbilical cord carries blood vessels between the foetus and the placenta.",
+          "wrong_options": {
+            "0": "The vas deferens is part of the male reproductive system.",
+            "1": "The cervix is the opening of the uterus.",
+            "3": "The fallopian tube carries the egg and is a site of fertilisation."
+          }
+        }
+      },
+      {
+        "id": "q-rep-s-9",
+        "question": "Which of the following is a male reproductive organ?",
+        "options": [
+          "Ovary",
+          "Uterus",
+          "Testis",
+          "Fallopian tube"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "The testis produces sperm and testosterone.",
+          "wrong_options": {
+            "0": "The ovary is a female gonad.",
+            "1": "The uterus is part of the female reproductive system.",
+            "3": "The fallopian tube is part of the female reproductive system."
+          }
+        }
+      },
+      {
+        "id": "q-rep-s-10",
+        "question": "Menstruation occurs when:",
+        "options": [
+          "The egg is fertilised",
+          "The egg is not fertilised",
+          "The ovary is removed",
+          "Sperm enters the uterus"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "If the egg is not fertilised, the thickened uterine lining breaks down and is shed.",
+          "wrong_options": {
+            "0": "If the egg is fertilised, implantation may occur and the lining is maintained.",
+            "2": "Removal of the ovary is not the normal cause of menstruation.",
+            "3": "Sperm entering the uterus does not by itself cause menstruation."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-rep-m-1",
+        "question": "Which of the following is NOT a method of asexual reproduction?",
+        "options": [
+          "Budding",
+          "Fragmentation",
+          "Fertilisation",
+          "Spore formation"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Fertilisation involves fusion of gametes and is part of sexual reproduction.",
+          "wrong_options": {
+            "0": "Budding is asexual, as in Hydra and yeast.",
+            "1": "Fragmentation is asexual, as in Spirogyra.",
+            "3": "Spore formation is asexual, as in Rhizopus."
+          }
+        }
+      },
+      {
+        "id": "q-rep-m-2",
+        "question": "Multiple fission is seen in:",
+        "options": [
+          "Amoeba",
+          "Plasmodium",
+          "Hydra",
+          "Yeast"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Plasmodium divides into many daughter cells by multiple fission.",
+          "wrong_options": {
+            "0": "Amoeba usually reproduces by binary fission.",
+            "2": "Hydra reproduces by budding.",
+            "3": "Yeast reproduces by budding."
+          }
+        }
+      },
+      {
+        "id": "q-rep-m-3",
+        "question": "In a flowering plant, the ovule develops into the:",
+        "options": [
+          "Fruit",
+          "Seed",
+          "Ovary",
+          "Pollen grain"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "After fertilisation, the ovule becomes the seed.",
+          "wrong_options": {
+            "0": "The fruit develops from the ovary.",
+            "2": "The ovary is the structure that contains ovules; it becomes the fruit.",
+            "3": "The pollen grain is the male gametophyte and does not become a seed."
+          }
+        }
+      },
+      {
+        "id": "q-rep-m-4",
+        "question": "The fruit of a plant develops from the:",
+        "options": [
+          "Ovary",
+          "Ovule",
+          "Stigma",
+          "Anther"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "After fertilisation, the ovary develops into the fruit.",
+          "wrong_options": {
+            "1": "The ovule develops into the seed.",
+            "2": "The stigma receives pollen.",
+            "3": "The anther produces pollen."
+          }
+        }
+      },
+      {
+        "id": "q-rep-m-5",
+        "question": "Double fertilisation in flowering plants means that:",
+        "options": [
+          "One male gamete fuses with the egg and the other fuses with polar nuclei",
+          "Two male gametes fuse with two eggs",
+          "Two pollen grains fuse with one egg",
+          "The egg divides into two zygotes"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "One male gamete forms the zygote, and the other forms the primary endosperm nucleus.",
+          "wrong_options": {
+            "1": "There is only one egg per ovule in the usual case, and the second fusion is with polar nuclei.",
+            "2": "Fertilisation involves gamete fusion, not fusion of two pollen grains with one egg.",
+            "3": "The egg does not divide into two zygotes in double fertilisation."
+          }
+        }
+      },
+      {
+        "id": "q-rep-m-6",
+        "question": "The middle piece of a sperm is rich in mitochondria because it provides:",
+        "options": [
+          "Energy for swimming",
+          "Digestive enzymes",
+          "Hormones",
+          "Protection from infection"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Mitochondria release energy that powers the tail for movement.",
+          "wrong_options": {
+            "1": "The acrosome, not the middle piece, contains enzymes that help the sperm enter the egg.",
+            "2": "Hormones are produced mainly by the testes, not by the sperm middle piece.",
+            "3": "Infection protection is not the function of the middle piece."
+          }
+        }
+      },
+      {
+        "id": "q-rep-m-7",
+        "question": "The average length of the human menstrual cycle is about:",
+        "options": [
+          "28 days",
+          "7 days",
+          "14 days",
+          "40 days"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The textbook average is about 28 days, although normal cycles can vary.",
+          "wrong_options": {
+            "1": "Seven days is closer to the duration of menstrual flow, not the whole cycle.",
+            "2": "Fourteen days is approximately the time of ovulation in a 28-day cycle.",
+            "3": "Forty days is outside the usual textbook range."
+          }
+        }
+      },
+      {
+        "id": "q-rep-m-8",
+        "question": "The main function of the placenta is to:",
+        "options": [
+          "Exchange nutrients, oxygen, and wastes between mother and foetus",
+          "Produce sperm",
+          "Store urine",
+          "Digest food for the mother"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The placenta is the exchange surface between maternal and foetal blood without direct mixing.",
+          "wrong_options": {
+            "1": "Sperm are produced by the testes.",
+            "2": "Urine is stored in the urinary bladder.",
+            "3": "Digestion occurs in the digestive system, not the placenta."
+          }
+        }
+      },
+      {
+        "id": "q-rep-m-9",
+        "question": "Which contraceptive method also reduces the risk of sexually transmitted diseases?",
+        "options": [
+          "Oral contraceptive pill",
+          "Condom",
+          "Copper-T",
+          "Tubectomy"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A condom is a barrier that reduces contact with body fluids and therefore lowers STD risk.",
+          "wrong_options": {
+            "0": "The pill prevents pregnancy but does not protect against STDs.",
+            "2": "Copper-T prevents pregnancy but does not protect against STDs.",
+            "3": "Tubectomy is a surgical method and does not protect against STDs."
+          }
+        }
+      },
+      {
+        "id": "q-rep-m-10",
+        "question": "Which of the following is a sexually transmitted disease?",
+        "options": [
+          "Gonorrhoea",
+          "Diabetes",
+          "Anaemia",
+          "Hypertension"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Gonorrhoea is a bacterial STD spread mainly through unprotected sexual contact.",
+          "wrong_options": {
+            "1": "Diabetes is a metabolic disorder, not an STD.",
+            "2": "Anaemia is a condition of low haemoglobin, not an STD.",
+            "3": "Hypertension is high blood pressure, not an STD."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-rep-x-1",
+        "question": "Asexual reproduction produces offspring that are genetically very similar to the parent mainly because:",
+        "options": [
+          "There is no meiosis or fusion of gametes",
+          "Meiosis produces new gene combinations",
+          "Two parents contribute equal genes",
+          "Crossing over occurs during fertilisation"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Asexual reproduction usually involves mitosis and a single parent, so the offspring are clones except for mutations.",
+          "wrong_options": {
+            "1": "Meiosis occurs in sexual reproduction and increases variation.",
+            "2": "Two parents are involved in sexual reproduction, not asexual reproduction.",
+            "3": "Crossing over occurs during meiosis, not during fertilisation."
+          }
+        }
+      },
+      {
+        "id": "q-rep-x-2",
+        "question": "Genetic variation in sexual reproduction arises mainly from:",
+        "options": [
+          "Meiosis and random fertilisation",
+          "Mitosis alone",
+          "Binary fission",
+          "Spore formation"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Meiosis reshuffles genes, and random fusion of gametes produces new combinations.",
+          "wrong_options": {
+            "1": "Mitosis produces genetically similar cells.",
+            "2": "Binary fission is asexual and produces similar offspring.",
+            "3": "Spore formation is asexual in Rhizopus."
+          }
+        }
+      },
+      {
+        "id": "q-rep-x-3",
+        "question": "After fertilisation in a flower, the zygote develops into the:",
+        "options": [
+          "Embryo",
+          "Endosperm",
+          "Seed coat",
+          "Fruit"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The zygote divides and develops into the embryo inside the seed.",
+          "wrong_options": {
+            "1": "The endosperm develops from the primary endosperm nucleus after double fertilisation.",
+            "2": "The seed coat develops from the integuments of the ovule.",
+            "3": "The fruit develops from the ovary."
+          }
+        }
+      },
+      {
+        "id": "q-rep-x-4",
+        "question": "Which sequence correctly describes reproduction in a flowering plant?",
+        "options": [
+          "Pollination → fertilisation → seed → fruit",
+          "Fertilisation → pollination → fruit → seed",
+          "Seed → pollination → fertilisation → fruit",
+          "Fruit → seed → pollination → fertilisation"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Pollen transfer is followed by gamete fusion, then the ovule becomes a seed and the ovary becomes a fruit.",
+          "wrong_options": {
+            "1": "Pollination must happen before fertilisation.",
+            "2": "A seed is a product of fertilisation, not a starting point.",
+            "3": "A fruit develops after fertilisation, not before it."
+          }
+        }
+      },
+      {
+        "id": "q-rep-x-5",
+        "question": "A woman has a 28-day menstrual cycle, and menstruation begins on day 1. Ovulation is most likely around:",
+        "options": [
+          "Day 14",
+          "Day 1",
+          "Day 7",
+          "Day 28"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "In a typical 28-day cycle, ovulation occurs near the midpoint, around day 14.",
+          "wrong_options": {
+            "1": "Day 1 is the first day of menstruation.",
+            "2": "Day 7 is earlier than the usual mid-cycle ovulation.",
+            "3": "Day 28 is the end of the cycle, just before the next menstruation."
+          }
+        }
+      },
+      {
+        "id": "q-rep-x-6",
+        "question": "Which statement about the placenta is correct?",
+        "options": [
+          "It allows exchange of materials without normally mixing maternal and foetal blood",
+          "It mixes maternal and foetal blood freely",
+          "It is present in the male reproductive system",
+          "It produces eggs"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The placenta brings maternal and foetal blood close together for exchange, but the two blood supplies do not normally mix.",
+          "wrong_options": {
+            "1": "Direct free mixing of the two blood supplies is not normal.",
+            "2": "The placenta develops during pregnancy in the female reproductive system.",
+            "3": "Eggs are produced by the ovaries."
+          }
+        }
+      },
+      {
+        "id": "q-rep-x-7",
+        "question": "Vasectomy prevents pregnancy by blocking the:",
+        "options": [
+          "Vas deferens",
+          "Fallopian tube",
+          "Urethra",
+          "Ovary"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Vasectomy blocks the vas deferens so sperm cannot travel out of the testes.",
+          "wrong_options": {
+            "1": "The fallopian tube is blocked in tubectomy, a female surgical method.",
+            "2": "The urethra carries urine and semen but is not the target of vasectomy.",
+            "3": "The ovary is a female organ and is not blocked in vasectomy."
+          }
+        }
+      },
+      {
+        "id": "q-rep-x-8",
+        "question": "Tubectomy prevents pregnancy by blocking the:",
+        "options": [
+          "Fallopian tubes",
+          "Vas deferens",
+          "Uterus",
+          "Cervix"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Tubectomy blocks the fallopian tubes so sperm and egg cannot meet.",
+          "wrong_options": {
+            "1": "The vas deferens is blocked in vasectomy.",
+            "2": "The uterus is not blocked in tubectomy.",
+            "3": "The cervix is not the site blocked in tubectomy."
+          }
+        }
+      },
+      {
+        "id": "q-rep-x-9",
+        "question": "Why is regeneration in Planaria not considered its normal method of reproduction?",
+        "options": [
+          "It usually occurs after injury and is mainly repair",
+          "It requires two parents",
+          "It involves fusion of gametes",
+          "It produces seeds"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Planaria can regenerate from cut pieces, but this is not how the organism normally produces offspring.",
+          "wrong_options": {
+            "1": "Regeneration does not require two parents.",
+            "2": "Regeneration does not involve gamete fusion.",
+            "3": "Planaria do not produce seeds."
+          }
+        }
+      },
+      {
+        "id": "q-rep-x-10",
+        "question": "Female foeticide is considered unethical and illegal because it:",
+        "options": [
+          "Discriminates against girls and violates the right to life",
+          "Improves the sex ratio",
+          "Is required by law",
+          "Prevents sexually transmitted diseases"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Sex-selective abortion violates the girl child's right to life and dignity and is prohibited by law.",
+          "wrong_options": {
+            "1": "It worsens the sex ratio rather than improving it.",
+            "2": "It is illegal, not required by law.",
+            "3": "It has no role in preventing STDs."
+          }
+        }
+      }
+    ]
+  },
+  "mind_maps": {
+    "title": "How do Organisms Reproduce — Complete Mind Map",
+    "type": "hierarchical",
+    "root": "How do Organisms Reproduce",
+    "branches": [
+      {
+        "concept": "Asexual Reproduction",
+        "sub_nodes": [
+          "Binary fission: Amoeba, Leishmania, Plasmodium",
+          "Budding: Hydra, yeast",
+          "Fragmentation: Spirogyra",
+          "Regeneration: Planaria",
+          "Spore formation: Rhizopus",
+          "Vegetative propagation: potato, sugarcane, Bryophyllum"
+        ],
+        "connections": "One parent, no gamete fusion, offspring generally similar to the parent"
+      },
+      {
+        "concept": "DNA Copying and Variation",
+        "sub_nodes": [
+          "DNA carries genetic instructions",
+          "Copying before cell division",
+          "Small copying errors create variation",
+          "Variation helps populations adapt"
+        ],
+        "connections": "Links reproduction to continuity of life and to evolution"
+      },
+      {
+        "concept": "Sexual Reproduction in Plants",
+        "sub_nodes": [
+          "Flower parts: sepals, petals, stamens, carpel",
+          "Pollination: self and cross",
+          "Agents: wind, water, animals",
+          "Double fertilisation",
+          "Ovule → seed; ovary → fruit"
+        ],
+        "connections": "Pollination is followed by fertilisation and seed formation"
+      },
+      {
+        "concept": "Human Male Reproductive System",
+        "sub_nodes": [
+          "Testes produce sperm and testosterone",
+          "Scrotum keeps testes cooler",
+          "Vas deferens transports sperm",
+          "Accessory glands form semen"
+        ],
+        "connections": "Produces and delivers male gametes"
+      },
+      {
+        "concept": "Human Female Reproductive System",
+        "sub_nodes": [
+          "Ovaries produce eggs and hormones",
+          "Fallopian tube is the usual site of fertilisation",
+          "Uterus supports implantation and development",
+          "Menstruation sheds the uterine lining"
+        ],
+        "connections": "Supports fertilisation, pregnancy, and childbirth"
+      },
+      {
+        "concept": "Fertilisation and Development",
+        "sub_nodes": [
+          "Sperm + egg → zygote",
+          "Implantation in the uterus",
+          "Placenta exchanges nutrients, oxygen, and wastes",
+          "Gestation is about nine months in humans"
+        ],
+        "connections": "Zygote develops into an embryo and then a foetus"
+      },
+      {
+        "concept": "Reproductive Health",
+        "sub_nodes": [
+          "Contraception: barrier, hormonal, intrauterine, surgical",
+          "Condoms reduce STD risk",
+          "STDs: gonorrhoea, syphilis, HIV/AIDS",
+          "Female foeticide is illegal and unethical"
+        ],
+        "connections": "Health awareness protects individuals and society"
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "How Reproduction Connects — Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Reproduction",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Asexual Reproduction",
+        "group": "mode"
+      },
+      {
+        "id": "n3",
+        "label": "Sexual Reproduction",
+        "group": "mode"
+      },
+      {
+        "id": "n4",
+        "label": "Fission and Budding",
+        "group": "asexual-method"
+      },
+      {
+        "id": "n5",
+        "label": "Fragmentation, Regeneration, Spores",
+        "group": "asexual-method"
+      },
+      {
+        "id": "n6",
+        "label": "Vegetative Propagation",
+        "group": "asexual-method"
+      },
+      {
+        "id": "n7",
+        "label": "Flowering Plant Reproduction",
+        "group": "sexual-system"
+      },
+      {
+        "id": "n8",
+        "label": "Human Reproductive Systems",
+        "group": "sexual-system"
+      },
+      {
+        "id": "n9",
+        "label": "Fertilisation and Development",
+        "group": "process"
+      },
+      {
+        "id": "n10",
+        "label": "Reproductive Health",
+        "group": "application"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n2",
+        "n5"
+      ],
+      [
+        "n2",
+        "n6"
+      ],
+      [
+        "n3",
+        "n7"
+      ],
+      [
+        "n3",
+        "n8"
+      ],
+      [
+        "n7",
+        "n9"
+      ],
+      [
+        "n8",
+        "n9"
+      ],
+      [
+        "n9",
+        "n10"
+      ],
+      [
+        "n1",
+        "n10"
+      ]
+    ]
+  },
+  "flowcharts": [
+    {
+      "title": "Choosing a Mode of Reproduction — Decision Flowchart",
+      "steps": [
+        {
+          "order": 1,
+          "action": "Does reproduction involve only one parent?",
+          "decision": true,
+          "if_yes": 2,
+          "if_no": 11
+        },
+        {
+          "order": 2,
+          "action": "Does the parent divide into two daughter cells?",
+          "decision": true,
+          "if_yes": 3,
+          "if_no": 4
+        },
+        {
+          "order": 3,
+          "action": "Binary fission (Amoeba, Leishmania)",
+          "next": "END"
+        },
+        {
+          "order": 4,
+          "action": "Does the parent produce buds?",
+          "decision": true,
+          "if_yes": 5,
+          "if_no": 6
+        },
+        {
+          "order": 5,
+          "action": "Budding (Hydra, yeast)",
+          "next": "END"
+        },
+        {
+          "order": 6,
+          "action": "Does the body break into fragments or regenerate from pieces?",
+          "decision": true,
+          "if_yes": 7,
+          "if_no": 8
+        },
+        {
+          "order": 7,
+          "action": "Fragmentation or regeneration (Spirogyra, Planaria)",
+          "next": "END"
+        },
+        {
+          "order": 8,
+          "action": "Are spores produced in sporangia?",
+          "decision": true,
+          "if_yes": 9,
+          "if_no": 10
+        },
+        {
+          "order": 9,
+          "action": "Spore formation (Rhizopus)",
+          "next": "END"
+        },
+        {
+          "order": 10,
+          "action": "Vegetative propagation (potato, sugarcane, Bryophyllum)",
+          "next": "END"
+        },
+        {
+          "order": 11,
+          "action": "Sexual reproduction involves two parents and gamete fusion",
+          "next": 12
+        },
+        {
+          "order": 12,
+          "action": "Plants: pollination → fertilisation; humans: sperm + egg → zygote",
+          "next": "END"
+        }
+      ]
+    }
+  ],
+  "common_misconceptions": [
+    "All organisms reproduce only sexually — FALSE: bacteria, Hydra, yeast, Spirogyra, and many plants reproduce asexually.",
+    "Asexual reproduction creates lots of genetic variation — FALSE: offspring are generally genetically similar to the parent; variation arises mainly from mutations.",
+    "Regeneration is the same as reproduction — FALSE: regeneration repairs lost body parts and is not the normal way most organisms produce offspring.",
+    "Pollination is the same as fertilisation — FALSE: pollination transfers pollen to the stigma, while fertilisation is the fusion of male and female gametes.",
+    "A seed and a fruit are the same thing — FALSE: the seed develops from the ovule, while the fruit develops from the ovary.",
+    "Menstruation means a woman is pregnant — FALSE: menstruation occurs when the egg is not fertilised and the uterine lining is shed.",
+    "Contraceptives protect against all STDs — FALSE: barrier methods such as condoms reduce the risk of many STDs, but no method gives complete protection.",
+    "The mother alone determines the sex of the child — FALSE: the father's sperm carries either an X or a Y chromosome, and female foeticide is illegal and unethical."
+  ],
+  "id": "how-do-organisms-reproduce",
+  "chapterId": "how-do-organisms-reproduce",
+  "subjectId": "science",
+  "subjectName": "Science",
+  "unitId": "science-2",
+  "unitName": "World of Living",
+  "examWeightage": 25,
+  "stats": {
+    "concepts": 6,
+    "theorems": 2,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

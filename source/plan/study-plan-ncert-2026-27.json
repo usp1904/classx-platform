@@ -1,0 +1,844 @@
+{
+  "meta": {
+    "title": "NCERT Class X (2026-27) → RD Sharma & RS Aggarwal Study Plan",
+    "generatedAt": "2026-07-15",
+    "curriculum": "NCERT 2026-27 Academic Year",
+    "referenceBooks": [
+      "RD Sharma Class X (2026-27 Edition)",
+      "RS Aggarwal Class X (2026-27 Edition)"
+    ],
+    "pedagogy": "Class 6 Anchor → NCERT Core → RD Sharma / RS Aggarwal Extension",
+    "scope": "Mathematics only — every NCERT topic mapped, no out-of-syllabus content"
+  },
+  "subjects": [
+    {
+      "id": "mathematics",
+      "name": "Mathematics",
+      "chapters": [
+        {
+          "id": "real-numbers",
+          "name": "Real Numbers",
+          "ncertChapter": 1,
+          "summary": "Euclid's Division Lemma, Fundamental Theorem of Arithmetic, irrational numbers, decimal expansions.",
+          "ncertTopics": [
+            "Euclid's Division Lemma and Algorithm",
+            "Fundamental Theorem of Arithmetic (Prime Factorization)",
+            "Irrational Numbers (proof by contradiction)",
+            "Decimal Expansions — terminating vs non-terminating recurring"
+          ],
+          "ncertExercises": [
+            "Exercise 1.1 — Euclid's Division Algorithm (5 problems)",
+            "Exercise 1.2 — Prime Factorization, LCM & HCF (7 problems)",
+            "Exercise 1.3 — Irrationality Proofs (3 problems)",
+            "Exercise 1.4 — Decimal Expansions (3 problems)"
+          ],
+          "rdSharma": {
+            "chapter": 1,
+            "title": "Real Numbers",
+            "mustDoExercises": [
+              "Exercise 1.1 (Euclid's Division Lemma — all problems)",
+              "Exercise 1.2 (Fundamental Theorem of Arithmetic — all problems)",
+              "Exercise 1.3 (Irrational Numbers — selected problems 1-8)",
+              "Exercise 1.4 (Rationalization — selected problems 1-12)",
+              "Exercise 1.5 (Decimal Expansions — all problems)",
+              "Exercise 1.6 (Multiple Choice Questions — all)"
+            ],
+            "extensionTopics": [
+              "Rationalization of denominators with surds",
+              "Finding irrational numbers between two rationals",
+              "Operations on surds (addition, subtraction, multiplication, division)"
+            ],
+            "timeEstimate": "6-8 hours"
+          },
+          "rsAggarwal": {
+            "chapter": 1,
+            "title": "Real Numbers",
+            "mustDoExercises": [
+              "Exercise 1A (Euclid's Lemma — all problems)",
+              "Exercise 1B (Fundamental Theorem — all problems)",
+              "Exercise 1C (Irrational Numbers — all problems)",
+              "Exercise 1D (Decimal Expansions — all problems)",
+              "Exercise 1E (Multiple Choice Questions — all)"
+            ],
+            "extensionTopics": [
+              "Properties of real numbers (commutative, associative, distributive)",
+              "Operations on surds and irrationals — simplification"
+            ],
+            "timeEstimate": "5-7 hours"
+          }
+        },
+        {
+          "id": "polynomials",
+          "name": "Polynomials",
+          "ncertChapter": 2,
+          "summary": "Degree of polynomials, zeroes, Remainder Theorem, Factor Theorem, relationship between zeroes and coefficients.",
+          "ncertTopics": [
+            "Degree of a Polynomial (linear, quadratic, cubic)",
+            "Zeroes of a Polynomial",
+            "Remainder Theorem",
+            "Factor Theorem",
+            "Relationship between Zeroes and Coefficients",
+            "Division Algorithm for Polynomials"
+          ],
+          "ncertExercises": [
+            "Exercise 2.1 — Graphical representation of zeroes (1 problem)",
+            "Exercise 2.2 — Zeroes and coefficients relationship (2 problems)",
+            "Exercise 2.3 — Division Algorithm (3 problems)",
+            "Exercise 2.4 — Optional (advanced — 3 problems)"
+          ],
+          "rdSharma": {
+            "chapter": 2,
+            "title": "Polynomials",
+            "mustDoExercises": [
+              "Exercise 2.1 (Zeroes of Polynomials — all problems)",
+              "Exercise 2.2 (Remainder Theorem — all problems)",
+              "Exercise 2.3 (Factor Theorem — all problems)",
+              "Exercise 2.4 (Division Algorithm — selected problems 1-12)",
+              "Exercise 2.5 (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Graphical interpretation of zeroes for cubic polynomials",
+              "Application of Remainder and Factor Theorems in factorization",
+              "Finding polynomial when sum/product of zeroes given"
+            ],
+            "timeEstimate": "5-7 hours"
+          },
+          "rsAggarwal": {
+            "chapter": 2,
+            "title": "Polynomials",
+            "mustDoExercises": [
+              "Exercise 2A (Zeroes of Polynomials — all problems)",
+              "Exercise 2B (Remainder and Factor Theorems — all problems)",
+              "Exercise 2C (Division Algorithm — all problems)",
+              "Exercise 2D (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Formation of quadratic polynomials from roots",
+              "Graphs of polynomials — shape analysis"
+            ],
+            "timeEstimate": "4-6 hours"
+          }
+        },
+        {
+          "id": "pair-of-linear-equations",
+          "name": "Pair of Linear Equations in Two Variables",
+          "ncertChapter": 3,
+          "summary": "Graphical, substitution, elimination, and cross-multiplication methods for solving linear systems.",
+          "ncertTopics": [
+            "Graphical Method — intersecting, parallel, coincident lines",
+            "Substitution Method",
+            "Elimination Method",
+            "Cross-Multiplication Method",
+            "Word Problems — age, numbers, fractions, money, speed-distance"
+          ],
+          "ncertExercises": [
+            "Exercise 3.1 — Graphical method (3 problems)",
+            "Exercise 3.2 — Substitution method (7 problems)",
+            "Exercise 3.3 — Elimination method (7 problems)",
+            "Exercise 3.4 — Cross-multiplication (2 problems)",
+            "Exercise 3.5 — Word problems (4 problems)",
+            "Exercise 3.6 — Mixed word problems (7 problems)",
+            "Exercise 3.7 — Optional (7 problems)"
+          ],
+          "rdSharma": {
+            "chapter": 3,
+            "title": "Pair of Linear Equations in Two Variables",
+            "mustDoExercises": [
+              "Exercise 3.1 (Graphical Method — all problems)",
+              "Exercise 3.2 (Substitution Method — all problems)",
+              "Exercise 3.3 (Elimination Method — all problems)",
+              "Exercise 3.4 (Cross-Multiplication — selected problems 1-15)",
+              "Exercise 3.5 (Word Problems — selected problems 1-20)",
+              "Exercise 3.6 (Mixed Problems — selected problems 1-15)",
+              "Exercise 3.7 (MCQs — all)",
+              "Exercise 3.8 (Very Short Answers — all)"
+            ],
+            "extensionTopics": [
+              "Consistency analysis — unique, infinite, no solution conditions",
+              "Parametric equations and conditions for solvability",
+              "Equations reducible to linear form"
+            ],
+            "timeEstimate": "10-14 hours"
+          },
+          "rsAggarwal": {
+            "chapter": 3,
+            "title": "Linear Equations in Two Variables",
+            "mustDoExercises": [
+              "Exercise 3A (Graphical Method — all problems)",
+              "Exercise 3B (Algebraic Methods — all problems)",
+              "Exercise 3C (Cross-Multiplication — selected problems 1-10)",
+              "Exercise 3D (Word Problems — selected problems 1-25)",
+              "Exercise 3E (Mixed — selected problems 1-15)",
+              "Exercise 3F (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Equations reducible to pair of linear equations",
+              "Conditions for solvability in word problems"
+            ],
+            "timeEstimate": "8-12 hours"
+          }
+        },
+        {
+          "id": "quadratic-equations",
+          "name": "Quadratic Equations",
+          "ncertChapter": 4,
+          "summary": "Standard form, factorization, quadratic formula, discriminant, nature of roots, word problems.",
+          "ncertTopics": [
+            "Standard Form: ax² + bx + c = 0",
+            "Solution by Factorization",
+            "Solution by Completing the Square",
+            "Quadratic Formula: x = [-b ± √(b² - 4ac)] / 2a",
+            "Discriminant and Nature of Roots",
+            "Word Problems — time, speed, geometry, numbers"
+          ],
+          "ncertExercises": [
+            "Exercise 4.1 — Standard form identification (2 problems)",
+            "Exercise 4.2 — Factorization method (6 problems)",
+            "Exercise 4.3 — Quadratic formula (11 problems)",
+            "Exercise 4.4 — Word problems (5 problems)"
+          ],
+          "rdSharma": {
+            "chapter": 4,
+            "title": "Quadratic Equations",
+            "mustDoExercises": [
+              "Exercise 4.1 (Standard Form — all problems)",
+              "Exercise 4.2 (Factorization — all problems)",
+              "Exercise 4.3 (Completing Square — selected problems 1-10)",
+              "Exercise 4.4 (Quadratic Formula — selected problems 1-15)",
+              "Exercise 4.5 (Nature of Roots — all problems)",
+              "Exercise 4.6 (Word Problems — selected problems 1-16)",
+              "Exercise 4.7 (Mixed — selected problems 1-12)",
+              "Exercise 4.8 (MCQs — all)",
+              "Exercise 4.9 (Very Short Answers — all)"
+            ],
+            "extensionTopics": [
+              "Equations reducible to quadratic form",
+              "Relation between roots and coefficients",
+              "Forming quadratic equations from given roots",
+              "Conditions for common roots"
+            ],
+            "timeEstimate": "10-14 hours"
+          },
+          "rsAggarwal": {
+            "chapter": 4,
+            "title": "Quadratic Equations",
+            "mustDoExercises": [
+              "Exercise 4A (Factorization — all problems)",
+              "Exercise 4B (Quadratic Formula — selected problems 1-15)",
+              "Exercise 4C (Nature of Roots — all problems)",
+              "Exercise 4D (Word Problems — selected problems 1-20)",
+              "Exercise 4E (Mixed — selected problems 1-12)",
+              "Exercise 4F (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Equations reducible to quadratics",
+              "Sign of quadratic expressions",
+              "Range of rational expressions"
+            ],
+            "timeEstimate": "8-12 hours"
+          }
+        },
+        {
+          "id": "arithmetic-progressions",
+          "name": "Arithmetic Progressions",
+          "ncertChapter": 5,
+          "summary": "AP definition, nth term, sum of n terms, arithmetic mean, real-life applications.",
+          "ncertTopics": [
+            "AP Definition and Common Difference",
+            "nth Term of an AP: an = a + (n-1)d",
+            "Sum of First n Terms: Sn = n/2 [2a + (n-1)d]",
+            "Arithmetic Mean",
+            "Applications in patterns and real-life"
+          ],
+          "ncertExercises": [
+            "Exercise 5.1 — AP identification (4 problems)",
+            "Exercise 5.2 — nth term (20 problems)",
+            "Exercise 5.3 — Sum of n terms (20 problems)",
+            "Exercise 5.4 — Optional (4 problems)"
+          ],
+          "rdSharma": {
+            "chapter": 5,
+            "title": "Arithmetic Progressions",
+            "mustDoExercises": [
+              "Exercise 5.1 (AP Basics — all problems)",
+              "Exercise 5.2 (nth Term — selected problems 1-18)",
+              "Exercise 5.3 (Sum of n Terms — selected problems 1-20)",
+              "Exercise 5.4 (Word Problems — selected problems 1-16)",
+              "Exercise 5.5 (Mixed — selected problems 1-12)",
+              "Exercise 5.6 (MCQs — all)",
+              "Exercise 5.7 (Very Short Answers — all)"
+            ],
+            "extensionTopics": [
+              "AP with three/four consecutive terms",
+              "Condition for three terms to be in AP",
+              "Selecting terms in AP for given sums/products",
+              "Cumulative sums patterns"
+            ],
+            "timeEstimate": "8-12 hours"
+          },
+          "rsAggarwal": {
+            "chapter": 5,
+            "title": "Arithmetic Progression",
+            "mustDoExercises": [
+              "Exercise 5A (AP Basics — all problems)",
+              "Exercise 5B (nth Term — selected problems 1-16)",
+              "Exercise 5C (Sum of n Terms — selected problems 1-20)",
+              "Exercise 5D (Word Problems — selected problems 1-14)",
+              "Exercise 5E (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Applications in installment schemes",
+              "Pattern-based AP problems"
+            ],
+            "timeEstimate": "6-10 hours"
+          }
+        },
+        {
+          "id": "triangles",
+          "name": "Triangles",
+          "ncertChapter": 6,
+          "summary": "Similarity of triangles, Basic Proportionality Theorem, Pythagoras Theorem, areas of similar triangles.",
+          "ncertTopics": [
+            "Similar Figures",
+            "Basic Proportionality Theorem (Thales Theorem)",
+            "Criteria for Similarity — AA, SSS, SAS",
+            "Areas of Similar Triangles",
+            "Pythagoras Theorem and its Converse",
+            "Application of Pythagoras in 3D"
+          ],
+          "ncertExercises": [
+            "Exercise 6.1 — Similar figures concept (3 problems)",
+            "Exercise 6.2 — BPT and its converse (10 problems)",
+            "Exercise 6.3 — Similarity criteria (16 problems)",
+            "Exercise 6.4 — Areas of similar triangles (9 problems)",
+            "Exercise 6.5 — Pythagoras Theorem (17 problems)",
+            "Exercise 6.6 — Optional (10 problems)"
+          ],
+          "rdSharma": {
+            "chapter": 7,
+            "title": "Triangles",
+            "mustDoExercises": [
+              "Exercise 7.1 (BPT — all problems)",
+              "Exercise 7.2 (Similarity Criteria — selected problems 1-20)",
+              "Exercise 7.3 (Areas of Similar Triangles — all problems)",
+              "Exercise 7.4 (Pythagoras Theorem — selected problems 1-18)",
+              "Exercise 7.5 (Mixed Applications — selected problems 1-12)",
+              "Exercise 7.6 (MCQs — all)",
+              "Exercise 7.7 (Very Short Answers — all)"
+            ],
+            "extensionTopics": [
+              "Application of BPT in complex figures",
+              "Geometry of right triangles — altitude theorems",
+              "Constructing proofs using similarity",
+              "Pythagoras in coordinate geometry"
+            ],
+            "timeEstimate": "12-16 hours"
+          },
+          "rsAggarwal": {
+            "chapter": 6,
+            "title": "Triangles",
+            "mustDoExercises": [
+              "Exercise 6A (BPT — all problems)",
+              "Exercise 6B (Similarity — selected problems 1-20)",
+              "Exercise 6C (Areas of Similar Triangles — all problems)",
+              "Exercise 6D (Pythagoras Theorem — selected problems 1-16)",
+              "Exercise 6E (Mixed — selected problems 1-12)",
+              "Exercise 6F (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Application of similarity in circles and tangents",
+              "Geometric mean theorem"
+            ],
+            "timeEstimate": "10-14 hours"
+          }
+        },
+        {
+          "id": "coordinate-geometry",
+          "name": "Coordinate Geometry",
+          "ncertChapter": 7,
+          "summary": "Distance formula, section formula, area of triangle, collinearity conditions.",
+          "ncertTopics": [
+            "Distance Formula: √[(x₂-x₁)² + (y₂-y₁)²]",
+            "Section Formula and Midpoint Formula",
+            "Area of a Triangle",
+            "Collinearity of Points"
+          ],
+          "ncertExercises": [
+            "Exercise 7.1 — Distance formula (10 problems)",
+            "Exercise 7.2 — Section formula (10 problems)",
+            "Exercise 7.3 — Area of triangle (5 problems)",
+            "Exercise 7.4 — Optional (10 problems)"
+          ],
+          "rdSharma": {
+            "chapter": 8,
+            "title": "Coordinate Geometry",
+            "mustDoExercises": [
+              "Exercise 8.1 (Distance Formula — selected problems 1-16)",
+              "Exercise 8.2 (Section Formula — selected problems 1-14)",
+              "Exercise 8.3 (Midpoint and Centroid — all problems)",
+              "Exercise 8.4 (Area of Triangle — selected problems 1-16)",
+              "Exercise 8.5 (Mixed Applications — selected problems 1-12)",
+              "Exercise 8.6 (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Conditions for special quadrilaterals (square, rhombus, rectangle)",
+              "Collinearity using area method",
+              "Slope concept — foundation for Calculus",
+              "Finding coordinates from given conditions"
+            ],
+            "timeEstimate": "8-12 hours"
+          },
+          "rsAggarwal": {
+            "chapter": 7,
+            "title": "Coordinate Geometry",
+            "mustDoExercises": [
+              "Exercise 7A (Distance Formula — all problems)",
+              "Exercise 7B (Section Formula — selected problems 1-12)",
+              "Exercise 7C (Midpoint and Centroid — all problems)",
+              "Exercise 7D (Area of Triangle — selected problems 1-10)",
+              "Exercise 7E (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Coordinate proof of geometric theorems",
+              "Area of quadrilateral using coordinates"
+            ],
+            "timeEstimate": "6-10 hours"
+          }
+        },
+        {
+          "id": "introduction-to-trigonometry",
+          "name": "Introduction to Trigonometry",
+          "ncertChapter": 8,
+          "summary": "Trigonometric ratios, reciprocal ratios, trigonometric identities, complementary angles.",
+          "ncertTopics": [
+            "Trigonometric Ratios: sin, cos, tan, cosec, sec, cot",
+            "Trigonometric Ratios of Specific Angles (0°, 30°, 45°, 60°, 90°)",
+            "Trigonometric Identities: sin²θ + cos²θ = 1, etc.",
+            "Trigonometric Ratios of Complementary Angles"
+          ],
+          "ncertExercises": [
+            "Exercise 8.1 — Basic ratios (11 problems)",
+            "Exercise 8.2 — Specific angles (4 problems)",
+            "Exercise 8.3 — Complementary angles (7 problems)",
+            "Exercise 8.4 — Identities (5 problems)"
+          ],
+          "rdSharma": {
+            "chapter": 10,
+            "title": "Trigonometric Ratios",
+            "mustDoExercises": [
+              "Exercise 10.1 (Basic Ratios — all problems)",
+              "Exercise 10.2 (Specific Angles — selected problems 1-14)",
+              "Exercise 10.3 (Complementary Angles — all problems)",
+              "Exercise 10.4 (Trigonometric Identities — selected problems 1-20)"
+            ],
+            "extensionTopics": [
+              "Visualization using unit circle",
+              "Conversion between ratio systems",
+              "Elimination of trigonometric ratios",
+              "Maximum/minimum values using identities"
+            ],
+            "timeEstimate": "8-12 hours"
+          },
+          "rsAggarwal": {
+            "chapter": 8,
+            "title": "Trigonometry",
+            "mustDoExercises": [
+              "Exercise 8A (Basic Ratios — all problems)",
+              "Exercise 8B (Complementary Angles — all problems)",
+              "Exercise 8C (Identities — selected problems 1-20)",
+              "Exercise 8D (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Value-based trigonometric problems",
+              "Simplification using standard identities"
+            ],
+            "timeEstimate": "6-10 hours"
+          }
+        },
+        {
+          "id": "applications-of-trigonometry",
+          "name": "Some Applications of Trigonometry",
+          "ncertChapter": 9,
+          "summary": "Heights and distances using angle of elevation and depression.",
+          "ncertTopics": [
+            "Angle of Elevation",
+            "Angle of Depression",
+            "Height and Distance Problems using tan, sin, cos",
+            "Problems involving two observers"
+          ],
+          "ncertExercises": [
+            "Exercise 9.1 — Heights and Distances (16 problems)"
+          ],
+          "rdSharma": {
+            "chapter": 12,
+            "title": "Some Applications of Trigonometry (Heights and Distances)",
+            "mustDoExercises": [
+              "Exercise 12.1 (Heights and Distances — selected problems 1-20)"
+            ],
+            "extensionTopics": [
+              "Two-observer problems (opposite sides of tower)",
+              "Problems with multiple angles and variables",
+              "Angle of elevation/depression combined with directions"
+            ],
+            "timeEstimate": "5-7 hours"
+          },
+          "rsAggarwal": {
+            "chapter": 9,
+            "title": "Heights and Distances",
+            "mustDoExercises": [
+              "Exercise 9A (Height and Distance — selected problems 1-16)"
+            ],
+            "extensionTopics": [
+              "Shadow problems and time-of-day calculations",
+              "Problems with inclined planes"
+            ],
+            "timeEstimate": "4-6 hours"
+          }
+        },
+        {
+          "id": "circles",
+          "name": "Circles",
+          "ncertChapter": 10,
+          "summary": "Tangents, number of tangents from an external point, length of tangent, Tangent-Secant Theorem.",
+          "ncertTopics": [
+            "Tangent to a Circle",
+            "Number of Tangents from a Point",
+            "Length of Tangent",
+            "Tangent-Secant Theorem",
+            "Alternate Segment Theorem"
+          ],
+          "ncertExercises": [
+            "Exercise 10.1 — Tangent basics (4 problems)",
+            "Exercise 10.2 — Tangent theorems (13 problems)"
+          ],
+          "rdSharma": {
+            "chapter": 8,
+            "title": "Circles",
+            "mustDoExercises": [
+              "Exercise 8.1 (Tangent Basics — all problems)",
+              "Exercise 8.2 (Tangent Theorems — selected problems 1-14)",
+              "Exercise 8.3 (Length of Tangent — all problems)",
+              "Exercise 8.4 (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Tangent-Secant Theorem applications",
+              "Common tangents — direct and transverse",
+              "Alternate Segment Theorem proof and application",
+              "Cycle quadrilateral properties with tangents"
+            ],
+            "timeEstimate": "6-8 hours"
+          },
+          "rsAggarwal": {
+            "chapter": 10,
+            "title": "Circles",
+            "mustDoExercises": [
+              "Exercise 10A (Tangent Basics — all problems)",
+              "Exercise 10B (Tangent Theorems — selected problems 1-12)",
+              "Exercise 10C (Length of Tangent — all problems)",
+              "Exercise 10D (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Applications of Alternate Segment Theorem",
+              "Tangents combined with Pythagoras"
+            ],
+            "timeEstimate": "5-7 hours"
+          }
+        },
+        {
+          "id": "constructions",
+          "name": "Constructions",
+          "ncertChapter": 11,
+          "summary": "Division of line segment, construction of triangles, construction of tangents to a circle.",
+          "ncertTopics": [
+            "Division of a Line Segment in Given Ratio",
+            "Construction of Similar Triangles",
+            "Construction of Tangents to a Circle"
+          ],
+          "ncertExercises": [
+            "Exercise 11.1 — Division and similar triangles (7 problems)",
+            "Exercise 11.2 — Tangents to a circle (6 problems)"
+          ],
+          "rdSharma": {
+            "chapter": 11,
+            "title": "Constructions",
+            "mustDoExercises": [
+              "Exercise 11.1 (Line Segment Division — all problems)",
+              "Exercise 11.2 (Similar Triangles — all problems)",
+              "Exercise 11.3 (Tangents to Circle — all problems)"
+            ],
+            "extensionTopics": [
+              "Construction of tangents with given inclination",
+              "Construction of incircle and circumcircle"
+            ],
+            "timeEstimate": "3-4 hours"
+          },
+          "rsAggarwal": {
+            "chapter": 11,
+            "title": "Constructions",
+            "mustDoExercises": [
+              "Exercise 11A (Segment Division — all problems)",
+              "Exercise 11B (Triangle Construction — all problems)",
+              "Exercise 11C (Tangents — all problems)"
+            ],
+            "extensionTopics": [
+              "Construction of circles touching lines",
+              "Construction of circumcircle and incircle"
+            ],
+            "timeEstimate": "2-3 hours"
+          }
+        },
+        {
+          "id": "areas-related-to-circles",
+          "name": "Areas Related to Circles",
+          "ncertChapter": 12,
+          "summary": "Area of circle, sector, segment, combinations of plane figures, shaded regions.",
+          "ncertTopics": [
+            "Perimeter and Area of a Circle",
+            "Area of a Sector",
+            "Area of a Segment",
+            "Areas of Combinations of Plane Figures"
+          ],
+          "ncertExercises": [
+            "Exercise 12.1 — Sector and segment (5 problems)",
+            "Exercise 12.2 — Combinations and shaded areas (14 problems)",
+            "Exercise 12.3 — Optional (16 problems)"
+          ],
+          "rdSharma": {
+            "chapter": 13,
+            "title": "Areas Related to Circles",
+            "mustDoExercises": [
+              "Exercise 13.1 (Circle Area Basics — all problems)",
+              "Exercise 13.2 (Sector and Segment — selected problems 1-16)",
+              "Exercise 13.3 (Combinations — selected problems 1-16)",
+              "Exercise 13.4 (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Shaded region problems with squares, circles, and polygons",
+              "Area of rings and washers",
+              "Comparison of areas — incircle vs circumcircle"
+            ],
+            "timeEstimate": "7-10 hours"
+          },
+          "rsAggarwal": {
+            "chapter": 12,
+            "title": "Area Related to Circles",
+            "mustDoExercises": [
+              "Exercise 12A (Sector and Segment — selected problems 1-14)",
+              "Exercise 12B (Combinations — selected problems 1-16)",
+              "Exercise 12C (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Calculations involving inscribed and circumscribed figures",
+              "Area of shaded portions in complex figures"
+            ],
+            "timeEstimate": "5-8 hours"
+          }
+        },
+        {
+          "id": "surface-areas-and-volumes",
+          "name": "Surface Areas and Volumes",
+          "ncertChapter": 13,
+          "summary": "Surface area and volume of cuboid, cube, cylinder, cone, sphere, hemisphere, frustum, combined solids.",
+          "ncertTopics": [
+            "Surface Area of Cuboid and Cube",
+            "Surface Area of Cylinder, Cone, Sphere, Hemisphere",
+            "Volume of Cuboid, Cube, Cylinder, Cone, Sphere, Hemisphere",
+            "Volume of a Frustum of a Cone",
+            "Conversion of Solids (one shape to another)",
+            "Volume and Surface Area of Combined Solids"
+          ],
+          "ncertExercises": [
+            "Exercise 13.1 — Surface area (9 problems)",
+            "Exercise 13.2 — Volume (9 problems)",
+            "Exercise 13.3 — Conversion (10 problems)",
+            "Exercise 13.4 — Frustum (6 problems)",
+            "Exercise 13.5 — Optional (8 problems)"
+          ],
+          "rdSharma": {
+            "chapter": 14,
+            "title": "Surface Areas and Volumes",
+            "mustDoExercises": [
+              "Exercise 14.1 (Cuboid and Cube — all problems)",
+              "Exercise 14.2 (Cylinder — selected problems 1-16)",
+              "Exercise 14.3 (Cone — selected problems 1-14)",
+              "Exercise 14.4 (Sphere and Hemisphere — selected problems 1-16)",
+              "Exercise 14.5 (Combined Solids — selected problems 1-16)",
+              "Exercise 14.6 (Conversion of Solids — selected problems 1-14)",
+              "Exercise 14.7 (Frustum — selected problems 1-12)",
+              "Exercise 14.8 (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Frustum derivations and applications",
+              "Maximum volume from given surface area",
+              "Rates of filling and emptying",
+              "Combined solid problems with multiple shapes"
+            ],
+            "timeEstimate": "12-16 hours"
+          },
+          "rsAggarwal": {
+            "chapter": 13,
+            "title": "Surface Areas and Volumes",
+            "mustDoExercises": [
+              "Exercise 13A (Cylinder, Cone — selected problems 1-20)",
+              "Exercise 13B (Sphere, Hemisphere — selected problems 1-12)",
+              "Exercise 13C (Combined Solids — selected problems 1-16)",
+              "Exercise 13D (Frustum — selected problems 1-10)",
+              "Exercise 13E (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Water displacement and overflow problems",
+              "Cost-based volume calculations"
+            ],
+            "timeEstimate": "10-14 hours"
+          }
+        },
+        {
+          "id": "statistics",
+          "name": "Statistics",
+          "ncertChapter": 14,
+          "summary": "Mean, median, mode of grouped data, cumulative frequency graph (ogive).",
+          "ncertTopics": [
+            "Mean of Grouped Data (Direct, Assumed Mean, Step-Deviation)",
+            "Mode of Grouped Data",
+            "Median of Grouped Data",
+            "Cumulative Frequency — Ogive Curves",
+            "Empirical Relationship: 3 Median = Mode + 2 Mean"
+          ],
+          "ncertExercises": [
+            "Exercise 14.1 — Mean (11 problems)",
+            "Exercise 14.2 — Mode (6 problems)",
+            "Exercise 14.3 — Median (7 problems)",
+            "Exercise 14.4 — Ogive graphs (3 problems)"
+          ],
+          "rdSharma": {
+            "chapter": 15,
+            "title": "Statistics",
+            "mustDoExercises": [
+              "Exercise 15.1 (Mean — Direct Method — selected problems 1-10)",
+              "Exercise 15.2 (Mean — Assumed Mean — selected problems 1-10)",
+              "Exercise 15.3 (Mean — Step-Deviation — selected problems 1-10)",
+              "Exercise 15.4 (Mode — all problems)",
+              "Exercise 15.5 (Median — selected problems 1-14)",
+              "Exercise 15.6 (Ogive and Cumulative Frequency — all problems)",
+              "Exercise 15.7 (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Empirical relation verification",
+              "Missing frequency determination",
+              "Comparison of mean, median, mode distributions",
+              "Ogive-based median estimation"
+            ],
+            "timeEstimate": "8-12 hours"
+          },
+          "rsAggarwal": {
+            "chapter": 14,
+            "title": "Statistics",
+            "mustDoExercises": [
+              "Exercise 14A (Mean — all methods — selected problems 1-16)",
+              "Exercise 14B (Mode — all problems)",
+              "Exercise 14C (Median — selected problems 1-12)",
+              "Exercise 14D (Ogive — all problems)",
+              "Exercise 14E (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Missing frequencies and combined means",
+              "Empirical relationships"
+            ],
+            "timeEstimate": "6-10 hours"
+          }
+        },
+        {
+          "id": "probability",
+          "name": "Probability",
+          "ncertChapter": 15,
+          "summary": "Probability of events, complementary events, experimental vs theoretical probability, dice and cards problems.",
+          "ncertTopics": [
+            "Probability Scale (0 to 1)",
+            "Experimental Probability vs Theoretical Probability",
+            "Probability of an Event: P(E) = n(E)/n(S)",
+            "Complementary Events: P(E) + P(not E) = 1",
+            "Problems with Dice, Coins, Cards, Balls"
+          ],
+          "ncertExercises": [
+            "Exercise 15.1 — Basic probability (25 problems)",
+            "Exercise 15.2 — Complementary events (5 problems)"
+          ],
+          "rdSharma": {
+            "chapter": 16,
+            "title": "Probability",
+            "mustDoExercises": [
+              "Exercise 16.1 (Basic Probability — selected problems 1-28)",
+              "Exercise 16.2 (Complementary Events — all problems)",
+              "Exercise 16.3 (MCQs — all)",
+              "Exercise 16.4 (Very Short Answers — all)"
+            ],
+            "extensionTopics": [
+              "Problems with multiple dice and coin tosses",
+              "Cards — full deck distribution analysis",
+              "At least / at most probability problems",
+              "Probability in real-world scenarios"
+            ],
+            "timeEstimate": "6-8 hours"
+          },
+          "rsAggarwal": {
+            "chapter": 15,
+            "title": "Probability",
+            "mustDoExercises": [
+              "Exercise 15A (Basic Probability — selected problems 1-20)",
+              "Exercise 15B (Events and Complements — selected problems 1-14)",
+              "Exercise 15C (MCQs — all)"
+            ],
+            "extensionTopics": [
+              "Drawing without replacement",
+              "Conditional probability basics (bridge to Class XII)"
+            ],
+            "timeEstimate": "4-6 hours"
+          }
+        }
+      ]
+    }
+  ],
+  "studySchedule": {
+    "phase1": {
+      "name": "NCERT Foundation (Core Syllabus)",
+      "order": ["real-numbers", "polynomials", "pair-of-linear-equations", "quadratic-equations", "arithmetic-progressions"],
+      "strategy": "Complete NCERT first — all exercises, all theorems. Build the Class 6 anchor for every concept before touching reference books.",
+      "totalTime": "6-8 weeks (2 chapters/week)",
+      "boardExamWeightage": "~25 marks"
+    },
+    "phase2": {
+      "name": "Geometry & Mensuration",
+      "order": ["triangles", "coordinate-geometry", "circles", "constructions", "areas-related-to-circles", "surface-areas-and-volumes"],
+      "strategy": "Focus on theorem proofs and visualization. Draw diagrams for every problem. RD Sharma is critical for Triangles and Mensuration.",
+      "totalTime": "8-10 weeks (1-2 chapters/week)",
+      "boardExamWeightage": "~35 marks"
+    },
+    "phase3": {
+      "name": "Trigonometry & Data Handling",
+      "order": ["introduction-to-trigonometry", "applications-of-trigonometry", "statistics", "probability"],
+      "strategy": "Trig requires memorizing standard angles. Statistics requires practice with grouped data formulas. Both are high-scoring in boards.",
+      "totalTime": "4-5 weeks (1 chapter/week)",
+      "boardExamWeightage": "~20 marks"
+    },
+    "phase4": {
+      "name": "Revision & RD Sharma / RS Aggarwal Deep-Dive",
+      "strategy": "Revisit every NCERT chapter, then solve RD Sharma + RS Aggarwal exercises flagged as 'must-do'. Focus on word problems and competitive variations.",
+      "totalTime": "4-6 weeks",
+      "boardExamWeightage": "Revision + JEE/NEET foundation"
+    }
+  },
+  "pedagogy": {
+    "class6Anchor": "Every topic begins with a real-life analogy a Class 6 student can understand (e.g., swing for quadratic, playground slide for trigonometry, treasure map for coordinate geometry).",
+    "ncertCore": "NCERT textbook is the absolute floor — all board exam questions are directly from NCERT exercises and examples.",
+    "rdSharmaEngine": "RD Sharma builds depth — advanced problem sets, multiple variations, competitive exam readiness.",
+    "rsAggarwalBridge": "RS Aggarwal bridges NCERT to competitive — pattern recognition, time-bound solving, mixed problem sets."
+  },
+  "validation": {
+    "ncertCoverage": "All 15 NCERT chapters mapped — every topic and exercise referenced in at least one reference book",
+    "noOutOfSyllabus": "No RD Sharma or RS Aggarwal chapter outside the 15 NCERT Class X chapters is included",
+    "referenceBookChaptersMapped": {
+      "rdSharma": ["Ch 1 (Real Numbers)", "Ch 2 (Polynomials)", "Ch 3 (Linear Equations)", "Ch 4 (Quadratic Equations)", "Ch 5 (Arithmetic Progressions)", "Ch 7 (Triangles)", "Ch 8 (Coordinate Geometry)", "Ch 10 (Trigonometric Ratios)", "Ch 12 (Applications of Trigonometry)", "Ch 8 (Circles)", "Ch 11 (Constructions)", "Ch 13 (Areas Related to Circles)", "Ch 14 (Surface Areas and Volumes)", "Ch 15 (Statistics)", "Ch 16 (Probability)"],
+      "rsAggarwal": ["Ch 1 (Real Numbers)", "Ch 2 (Polynomials)", "Ch 3 (Linear Equations)", "Ch 4 (Quadratic Equations)", "Ch 5 (Arithmetic Progression)", "Ch 6 (Triangles)", "Ch 7 (Coordinate Geometry)", "Ch 8 (Trigonometry)", "Ch 9 (Heights and Distances)", "Ch 10 (Circles)", "Ch 11 (Constructions)", "Ch 12 (Area Related to Circles)", "Ch 13 (Surface Areas and Volumes)", "Ch 14 (Statistics)", "Ch 15 (Probability)"]
+    }
+  }
+}

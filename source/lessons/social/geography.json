@@ -1,0 +1,1077 @@
+{
+  "subject": "Geography",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 1,
+  "chapter": "Resources and Development",
+  "lesson": 1,
+  "id": "resources-and-development",
+  "title": "Resources and Development — Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Define a resource and explain the interdependence of nature, technology and institutions",
+    "Classify resources by origin, exhaustibility, ownership, development status and distribution",
+    "Explain why resource planning is essential in India and list its main steps",
+    "Interpret India's land-use pattern and identify causes of land degradation",
+    "Compare the major soil types of India and link each to suitable crops",
+    "Distinguish sheet, gully and wind erosion and apply soil conservation methods",
+    "Explain sustainable development with reference to the Rio Earth Summit and Agenda 21",
+    "Answer board-style case and data questions on resources, land and soil"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS9_INDIA_PHYSICAL_ENVIRONMENT",
+    "SOCIAL_CLASS8_RESOURCES",
+    "SCIENCE_CLASS7_SOIL",
+    "SCIENCE_CLASS8_LAND_AND_WATER"
+  ],
+  "concepts": [
+    {
+      "id": "concept-resource-meaning",
+      "title": "Resource: Meaning and Classification",
+      "name": "Resource: Meaning and Classification",
+      "explanation": "A resource is anything available in our environment that can satisfy a human need. It must be technologically accessible, economically feasible and culturally acceptable. Resources are not fixed quantities: a substance becomes a resource only when people have the technology, capital and institutions to use it. Nature, technology and institutions therefore interact continuously to convert an environmental element into a usable resource.",
+      "purpose": "The idea of a resource explains why the same substance can be useless in one period and valuable in another. It also shows that resource use is a human decision, not a purely natural event.",
+      "real_life_application": "Petroleum was once a nuisance that ruined wells; today it is a major energy resource. Similarly, sunlight has always existed, but solar panels have turned it into electricity only in recent decades.",
+      "key_points": [
+        "A resource satisfies a human need and must be accessible, feasible and acceptable.",
+        "Nature, technology and institutions together determine whether something is a resource.",
+        "Resources can be classified by origin, exhaustibility, ownership, development status and distribution.",
+        "Human beings are themselves a resource because their skills and knowledge create value.",
+        "Resource use changes with time, technology and social priorities."
+      ],
+      "day_to_day_usage": [
+        "A smartphone uses minerals, metals, plastics and human skills together",
+        "A village pond is a resource for drinking water, fishing and washing",
+        "Solar panels on a rooftop turn sunlight into household electricity",
+        "A forest becomes a resource for timber, honey, medicine and tourism",
+        "Waste paper recycled into notebooks shows that usefulness can be recovered"
+      ]
+    },
+    {
+      "id": "concept-natural-resources",
+      "title": "Natural Resources: Renewable, Non-renewable, Stock and Reserves",
+      "name": "Natural Resources: Renewable, Non-renewable, Stock and Reserves",
+      "explanation": "Natural resources are drawn from the physical environment. Renewable resources such as solar energy, wind, water and forests can be replenished or renewed within a human lifetime if used carefully. Non-renewable resources such as coal, petroleum and minerals take millions of years to form and are exhausted once used. Development status adds another layer: potential resources are known but not yet used, developed resources are surveyed and in use, stock is material that existing technology cannot yet use, and reserves are the part of stock that can be used with present technology but has not been started.",
+      "purpose": "This classification helps planners decide what can be used repeatedly, what must be conserved, and what needs new technology before it can be tapped.",
+      "real_life_application": "A state may know it has wind potential but lack transmission lines; the wind is a potential resource until turbines and grids are installed. Groundwater is renewable but can still be exhausted if extraction exceeds recharge.",
+      "key_points": [
+        "Renewable resources can be replenished; non-renewable resources cannot be replaced quickly.",
+        "Potential resources are not yet used; developed resources are surveyed and in use.",
+        "Stock is material that technology cannot yet use; reserves are usable with current technology but untapped.",
+        "Ownership categories are individual, community, national and international.",
+        "Biotic resources come from living things; abiotic resources are non-living.",
+        "Ubiquitous resources occur everywhere; localised resources occur in specific places."
+      ],
+      "day_to_day_usage": [
+        "Rooftop solar uses a renewable resource that is available every sunny day",
+        "LPG cylinders use a non-renewable fossil fuel",
+        "A village grazing ground is a community resource",
+        "Ocean resources beyond national jurisdiction are international resources",
+        "Air and sunlight are ubiquitous; copper and iron ore are localised"
+      ]
+    },
+    {
+      "id": "concept-resource-planning",
+      "title": "Resource Planning in India",
+      "name": "Resource Planning in India",
+      "explanation": "Resource planning is the organised survey, assessment and planned use of resources. India needs it because resources are unevenly distributed: some regions have rich minerals or water while others lack them. Planning involves identification and inventory through surveys and mapping, creating a planning structure with appropriate technology and skills, matching resource plans with national development plans, and building institutions that can implement and monitor the plan. Human resource development is part of the process because technology and institutions need trained people.",
+      "purpose": "Without planning, rich regions may be over-exploited while poor regions remain underdeveloped. Planning aims to reduce regional imbalance and to use resources within sustainable limits.",
+      "real_life_application": "A state that has bauxite but no power supply cannot run an aluminium plant. Planning links the mineral, the power project, the transport network and the trained workforce.",
+      "key_points": [
+        "Resources are unevenly distributed across India.",
+        "Step 1: identification and inventory through survey, mapping and estimation.",
+        "Step 2: a planning structure with suitable technology, skill and infrastructure.",
+        "Step 3: matching resource development with national development plans.",
+        "Step 4: institutional arrangements for implementation and monitoring.",
+        "Human resource development supports every step of the plan."
+      ],
+      "day_to_day_usage": [
+        "A district plan for drinking water links tube wells, tanks and pipelines",
+        "Industrial corridors connect mines, power plants, roads and ports",
+        "Crop planning matches soil, rainfall and irrigation availability",
+        "Urban master plans reserve land for housing, parks and transport",
+        "Skill-training programmes prepare workers for local industries"
+      ]
+    },
+    {
+      "id": "concept-land-use",
+      "title": "Land Use Pattern and Land Degradation",
+      "name": "Land Use Pattern and Land Degradation",
+      "explanation": "Land is used for forests, agriculture, pastures, settlements, industry, transport and recreation. India's reporting area is divided into forest land, land not available for cultivation, other uncultivated land, fallow land and net sown area. Net sown area is the land actually sown with crops and is counted only once even if more than one crop is grown in a year. Roughly 46 per cent of India's reporting area is net sown area, while forest cover is much smaller than the desired one-third of the geographical area. Land degradation is the decline in land quality caused by deforestation, overgrazing, mining, over-irrigation, industrial effluents and unscientific farming.",
+      "purpose": "Land-use data show how a country balances food production, forests, housing and industry. Recognising degradation helps planners protect soil and productivity before the damage becomes irreversible.",
+      "real_life_application": "A housing colony built on farmland reduces net sown area. Over-irrigation in a canal command area can raise the water table and leave salt on the surface, making the field less productive.",
+      "key_points": [
+        "Land use categories include forest, land not available for cultivation, other uncultivated land, fallow land and net sown area.",
+        "Net sown area is about 46 per cent of the reporting area in India.",
+        "Forest cover is below the desired one-third of the geographical area.",
+        "Deforestation, overgrazing, mining, over-irrigation and industrial effluents cause degradation.",
+        "Afforestation, shelter belts, check dams, contour ploughing and crop rotation conserve land.",
+        "Land is a fixed resource, so competing uses must be planned."
+      ],
+      "day_to_day_usage": [
+        "A city expanding into farmland changes the local land-use pattern",
+        "Canal irrigation can waterlog fields and bring salts to the surface",
+        "Mining leaves pits and spoil heaps that are hard to farm again",
+        "Planting trees along field edges reduces wind damage",
+        "Rotating crops helps maintain soil fertility"
+      ]
+    },
+    {
+      "id": "concept-soil-types",
+      "title": "Major Soil Types of India",
+      "name": "Major Soil Types of India",
+      "explanation": "Soil forms from the weathering of rocks and is shaped by climate, vegetation, relief, parent material and time. India has alluvial, black, red and yellow, laterite, arid, forest and mountain soils. Alluvial soil is deposited by rivers and is rich in potash, phosphoric acid and lime but poor in humus. Black soil, also called regur, forms from lava and is clayey, moisture-retentive and rich in calcium carbonate, magnesium, potash and lime. Red soil develops on crystalline igneous and metamorphic rocks and is often low in humus. Laterite soil forms in hot, wet areas where heavy leaching removes nutrients. Arid soil is sandy and saline, while forest and mountain soils vary with slope and vegetation.",
+      "purpose": "Soil type decides which crops can be grown, how much irrigation is needed and what fertiliser must be added. Soil conservation and land-use planning both depend on knowing the local soil.",
+      "real_life_application": "Cotton is grown on black soil in the Deccan because the soil holds moisture. Tea and coffee do well on well-drained laterite slopes. Paddy and wheat dominate the alluvial northern plains.",
+      "key_points": [
+        "Alluvial soil: river-deposited, fertile, rich in potash, lime and phosphoric acid, poor in humus.",
+        "Black or regur soil: lava-derived, clayey, moisture-retentive, ideal for cotton.",
+        "Red and yellow soil: crystalline rock origin, low humus, often iron-rich.",
+        "Laterite soil: heavy leaching, acidic, low fertility, suitable for tea, coffee and cashew.",
+        "Arid soil: sandy, saline, low humus, found in dry Rajasthan.",
+        "Forest and mountain soils: thin, slope-dependent, rich in humus in valleys."
+      ],
+      "day_to_day_usage": [
+        "A gardener adds compost to red soil because it is low in humus",
+        "Cotton farmers in Maharashtra value the moisture-holding black soil",
+        "Tea estates in Kerala and Tamil Nadu use well-drained laterite slopes",
+        "Farmers in the Ganga plain grow rice and wheat on alluvial soil",
+        "Desert farmers use organic matter and irrigation to improve sandy arid soil"
+      ]
+    },
+    {
+      "id": "concept-soil-erosion",
+      "title": "Soil Erosion and Soil Conservation",
+      "name": "Soil Erosion and Soil Conservation",
+      "explanation": "Soil erosion is the removal of the top fertile layer by water or wind. Sheet erosion removes a thin layer over a wide area; gully erosion cuts deep channels and can create badlands or ravines; wind erosion blows away loose dry soil. Deforestation, overgrazing, mining, construction and faulty farming accelerate erosion. Conservation methods include contour ploughing along slopes, terrace farming on hills, strip cropping, shelter belts, check dams, rock dams, mulching, crop rotation, afforestation and controlled grazing.",
+      "purpose": "The topsoil contains most organic matter and nutrients. Once it is lost, productivity falls sharply and recovery takes many years, so prevention is far cheaper than repair.",
+      "real_life_application": "Farmers on sloping land plough along the contour rather than up and down the slope. In the Chambal basin, check dams and afforestation are used to slow runoff and heal ravines.",
+      "key_points": [
+        "Sheet erosion removes a thin layer; gully erosion cuts channels; wind erosion moves loose soil.",
+        "Deforestation, overgrazing and faulty farming accelerate erosion.",
+        "Contour ploughing and terrace farming slow runoff on slopes.",
+        "Strip cropping and shelter belts reduce wind erosion.",
+        "Check dams and rock dams trap soil and water in gullies.",
+        "Crop rotation, mulching and afforestation maintain soil cover."
+      ],
+      "day_to_day_usage": [
+        "Contour ploughing on a hillside field reduces soil wash",
+        "A check dam in a gully traps silt and recharges groundwater",
+        "A shelter belt of trees protects crops from wind",
+        "Mulch on a vegetable bed keeps soil moist and reduces erosion",
+        "Rotating cereals with pulses improves soil nitrogen"
+      ]
+    }
+  ],
+  "theorems": [],
+  "worked_examples": [
+    {
+      "id": "we-geo-1",
+      "title": "Classifying resources by development status",
+      "topic": "Resource classification",
+      "problem": "Classify each of the following as potential, developed, stock or reserve: (i) solar energy in Rajasthan, (ii) iron ore being mined in Odisha, (iii) hydrogen present in water, (iv) river water identified for a hydel project but not yet tapped.",
+      "solution": [
+        "Step 1: Recall the definitions. Potential resources are known but not used; developed resources are surveyed and in use; stock cannot be used with present technology; reserves can be used with present technology but are not yet started.",
+        "Step 2: Solar energy in Rajasthan is abundant and known, but it is not fully harnessed, so it is a potential resource.",
+        "Step 3: Iron ore being mined in Odisha is surveyed and in use, so it is a developed resource.",
+        "Step 4: Hydrogen in water cannot be extracted economically with present technology on a large scale, so it is stock.",
+        "Step 5: River water identified for a hydel project is usable with present technology but the project has not started, so it is a reserve."
+      ],
+      "board_mode": [
+        "State the four definitions in one line each.",
+        "Apply the test of technology and actual use to every item.",
+        "(i) Potential — known, not fully used.",
+        "(ii) Developed — surveyed and in use.",
+        "(iii) Stock — technology not available.",
+        "(iv) Reserve — technology available, use not started."
+      ],
+      "answer": "(i) Potential, (ii) Developed, (iii) Stock, (iv) Reserve.",
+      "board_tip": "Do not confuse stock with reserve. Stock is a technology problem; reserve is a decision or investment problem."
+    },
+    {
+      "id": "we-geo-2",
+      "title": "Reading a land-use table",
+      "topic": "Land-use interpretation",
+      "problem": "A district has a reporting area of 1000 sq km. Forest is 220 sq km, land not available for cultivation is 180 sq km, other uncultivated land is 120 sq km, fallow land is 80 sq km and net sown area is 400 sq km. Calculate the percentage of net sown area and comment on the land-use pattern.",
+      "solution": [
+        "Step 1: Check that the categories add up: 220 + 180 + 120 + 80 + 400 = 1000 sq km.",
+        "Step 2: Percentage of net sown area = (400 / 1000) x 100 = 40 per cent.",
+        "Step 3: Percentage of forest = (220 / 1000) x 100 = 22 per cent.",
+        "Step 4: The district has a large share of land not available for cultivation and other uncultivated land, which limits farming.",
+        "Step 5: Forest cover is below the desired one-third of the geographical area, so afforestation is needed."
+      ],
+      "board_mode": [
+        "Write the formula: percentage = (part / whole) x 100.",
+        "Net sown area = 400 / 1000 x 100 = 40 per cent.",
+        "Forest = 220 / 1000 x 100 = 22 per cent.",
+        "Comment on the shares of cultivated, uncultivated and forest land.",
+        "Recommend afforestation and land reclamation where suitable."
+      ],
+      "answer": "Net sown area is 40 per cent and forest is 22 per cent; forest cover is below the desired one-third, so afforestation is needed.",
+      "board_tip": "Always check that the parts add up to the reporting area before calculating percentages."
+    },
+    {
+      "id": "we-geo-3",
+      "title": "Identifying black soil from clues",
+      "topic": "Soil types and crops",
+      "problem": "A farmer in the Deccan plateau grows cotton without irrigation. Identify the soil, state three of its properties and explain why it suits cotton.",
+      "solution": [
+        "Step 1: The Deccan plateau is covered by lava-derived black soil, also called regur or black cotton soil.",
+        "Step 2: It is clayey and has high moisture-retaining capacity, so it stays damp after rain.",
+        "Step 3: It is rich in calcium carbonate, magnesium, potash and lime.",
+        "Step 4: Cotton needs a long frost-free season and enough moisture; the moisture-holding black soil supports the crop in the dry Deccan.",
+        "Step 5: The soil becomes sticky when wet and develops cracks when dry, which helps aeration."
+      ],
+      "board_mode": [
+        "Identify the region and link it to lava-derived soil.",
+        "Name the soil: black or regur soil.",
+        "Give three properties: clayey, moisture-retentive, rich in calcium carbonate and magnesium.",
+        "Link the properties to cotton's water and nutrient needs."
+      ],
+      "answer": "Black or regur soil; it is clayey, moisture-retentive and rich in calcium carbonate, magnesium, potash and lime, which suits cotton.",
+      "board_tip": "Black soil is not black because of humus. Its colour comes from iron compounds and lava parent material."
+    },
+    {
+      "id": "we-geo-4",
+      "title": "Gully erosion in the Chambal basin",
+      "topic": "Soil erosion and conservation",
+      "problem": "Explain how gully erosion develops in the Chambal region and suggest four conservation measures.",
+      "solution": [
+        "Step 1: The Chambal region has soft, easily erodible soil and sloping land.",
+        "Step 2: Removal of vegetation and overgrazing leave the surface bare.",
+        "Step 3: Heavy monsoon runoff concentrates in small channels and deepens them into gullies.",
+        "Step 4: Repeated widening and deepening produce badlands and ravines.",
+        "Step 5: Conservation measures include check dams, afforestation, contour ploughing, controlled grazing and rock dams."
+      ],
+      "board_mode": [
+        "State the physical conditions: soft soil, slope, heavy runoff.",
+        "State the human causes: deforestation and overgrazing.",
+        "Explain the process: channel deepening into gullies and ravines.",
+        "Give four measures: check dams, afforestation, contour ploughing, controlled grazing."
+      ],
+      "answer": "Bare sloping land with heavy runoff deepens channels into gullies and ravines; check dams, afforestation, contour ploughing and controlled grazing reduce the damage.",
+      "board_tip": "Link each conservation measure to the process it interrupts: check dams slow water, trees hold soil, contour ploughing reduces slope velocity."
+    },
+    {
+      "id": "we-geo-5",
+      "title": "Why resource planning matters",
+      "topic": "Resource planning and sustainability",
+      "problem": "Why is resource planning essential in a country like India? Explain with examples.",
+      "solution": [
+        "Step 1: Resources are unevenly distributed. Some regions have minerals, water or fertile soil while others do not.",
+        "Step 2: Without planning, rich regions may be over-exploited and poor regions may remain underdeveloped.",
+        "Step 3: Planning surveys resources, chooses suitable technology and links resource projects with national development plans.",
+        "Step 4: For example, bauxite in one region needs power, transport and trained workers before an aluminium industry can grow.",
+        "Step 5: Planning also protects resources for future use, which is the core of sustainable development."
+      ],
+      "board_mode": [
+        "Give the reason: uneven distribution of resources.",
+        "Explain the risk: over-use in some regions and under-use in others.",
+        "List the planning steps: inventory, technology, national plan, institutions.",
+        "Add one example linking a resource to infrastructure and skills.",
+        "Conclude with sustainable use for future generations."
+      ],
+      "answer": "Resource planning is essential because resources are unevenly distributed; it reduces regional imbalance, links resources with technology and infrastructure, and protects them for future use.",
+      "board_tip": "A strong answer links distribution, technology, institutions and sustainability in that order."
+    }
+  ],
+  "exercises": {
+    "simple": {
+      "title": "NCERT Practice — Resource Basics",
+      "objective": "Define and classify resources and recall basic land and soil facts",
+      "problems": [
+        {
+          "id": "geo-ex-s-1",
+          "question": "Define a resource and give one example.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: A resource is anything available in the environment that can satisfy a human need.",
+            "Step 2: It must be technologically accessible, economically feasible and culturally acceptable.",
+            "Step 3: Example: solar energy used through solar panels, or water used for drinking and irrigation."
+          ],
+          "final_answer": "A resource is anything in the environment that satisfies a human need and is technologically accessible, economically feasible and culturally acceptable; example: solar energy.",
+          "marks": 2
+        },
+        {
+          "id": "geo-ex-s-2",
+          "question": "Differentiate between renewable and non-renewable resources with one example each.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Renewable resources can be replenished or renewed within a human lifetime, such as solar energy, wind and water.",
+            "Step 2: Non-renewable resources take millions of years to form and are exhausted once used, such as coal and petroleum.",
+            "Step 3: Renewable resources can be used repeatedly if managed well; non-renewable resources need conservation and substitution."
+          ],
+          "final_answer": "Renewable resources can be replenished (solar, wind, water); non-renewable resources are exhaustible (coal, petroleum).",
+          "marks": 3
+        },
+        {
+          "id": "geo-ex-s-3",
+          "question": "What is a stock? Give one example.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Stock is material in the environment that can satisfy a human need but cannot be used because the required technology is not available.",
+            "Step 2: Example: hydrogen present in water cannot be extracted economically on a large scale with present technology."
+          ],
+          "final_answer": "Stock is a resource that cannot yet be used because the technology is unavailable; example: hydrogen in water.",
+          "marks": 2
+        },
+        {
+          "id": "geo-ex-s-4",
+          "question": "Name two states where black soil is found.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Black soil is found in the Deccan trap region.",
+            "Step 2: It covers parts of Maharashtra, Madhya Pradesh, Gujarat and Chhattisgarh.",
+            "Step 3: Any two of these states are acceptable."
+          ],
+          "final_answer": "Maharashtra and Madhya Pradesh, among other Deccan states.",
+          "marks": 1
+        },
+        {
+          "id": "geo-ex-s-5",
+          "question": "What is net sown area?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Net sown area is the land actually sown with crops.",
+            "Step 2: It is counted only once in a year even if more than one crop is grown on the same land.",
+            "Step 3: It is a key indicator of the extent of cultivation in a region."
+          ],
+          "final_answer": "Net sown area is the land actually sown with crops, counted once even if multiple crops are grown in a year.",
+          "marks": 2
+        },
+        {
+          "id": "geo-ex-s-6",
+          "question": "State two causes of land degradation.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Deforestation removes vegetation cover and exposes soil to erosion.",
+            "Step 2: Overgrazing removes grass cover and compacts the soil.",
+            "Step 3: Other causes include mining, over-irrigation and industrial effluents."
+          ],
+          "final_answer": "Deforestation and overgrazing, along with mining, over-irrigation and industrial pollution.",
+          "marks": 2
+        }
+      ]
+    },
+    "medium": {
+      "title": "NCERT Practice — Land, Soil and Planning",
+      "objective": "Apply resource classification and explain land and soil processes",
+      "problems": [
+        {
+          "id": "geo-ex-m-1",
+          "question": "Distinguish between potential and developed resources.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Potential resources are known to exist but are not being used at present.",
+            "Step 2: Their use may need better technology, investment or infrastructure.",
+            "Step 3: Developed resources have been surveyed, their quantity is known, and they are being used with available technology.",
+            "Step 4: Example: wind energy in a remote area is potential until turbines and transmission lines are installed; a working wind farm is a developed resource."
+          ],
+          "final_answer": "Potential resources are known but unused; developed resources are surveyed and in use with available technology.",
+          "marks": 3
+        },
+        {
+          "id": "geo-ex-m-2",
+          "question": "Describe any three measures of soil conservation.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Contour ploughing: ploughing along the contours of a slope slows runoff and reduces soil wash.",
+            "Step 2: Terrace farming: cutting step-like fields on hills reduces the speed of water and traps soil.",
+            "Step 3: Shelter belts: rows of trees reduce wind speed and protect fields from wind erosion.",
+            "Step 4: Other measures include check dams, strip cropping, mulching and crop rotation."
+          ],
+          "final_answer": "Contour ploughing, terrace farming and shelter belts, along with check dams and crop rotation, conserve soil.",
+          "marks": 3
+        },
+        {
+          "id": "geo-ex-m-3",
+          "question": "Why is black soil called regur soil? Give three of its characteristics.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Black soil is called regur soil because it is formed from lava in the Deccan trap region and is ideal for cotton.",
+            "Step 2: It is clayey and has high moisture-retaining capacity.",
+            "Step 3: It is rich in calcium carbonate, magnesium, potash and lime.",
+            "Step 4: It becomes sticky when wet and develops cracks when dry, which helps aeration."
+          ],
+          "final_answer": "It is lava-derived and cotton-friendly; it is clayey, moisture-retentive and rich in calcium carbonate, magnesium, potash and lime.",
+          "marks": 3
+        },
+        {
+          "id": "geo-ex-m-4",
+          "question": "Explain India's land-use pattern and state why forest area should increase.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: India's reporting area is divided into forest land, land not available for cultivation, other uncultivated land, fallow land and net sown area.",
+            "Step 2: Net sown area is about 46 per cent of the reporting area.",
+            "Step 3: Forest cover is below the desired one-third of the geographical area.",
+            "Step 4: Forests protect soil and water, support biodiversity and moderate climate.",
+            "Step 5: Increasing forest cover therefore improves ecological stability and long-term productivity."
+          ],
+          "final_answer": "Net sown area is about 46 per cent and forest cover is below the desired one-third; forests check erosion, support biodiversity and regulate water.",
+          "marks": 5
+        },
+        {
+          "id": "geo-ex-m-5",
+          "question": "Explain the statement: Resources are a function of human activities.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: A substance in nature becomes a resource only when people can use it.",
+            "Step 2: Technology converts potential into developed resources, for example solar panels turning sunlight into electricity.",
+            "Step 3: Institutions provide finance, transport, markets and rules that make resource use possible.",
+            "Step 4: Human skills and knowledge are therefore central to resource creation and management."
+          ],
+          "final_answer": "Resources become usable through human technology, capital and institutions, so they are a function of human activities.",
+          "marks": 3
+        },
+        {
+          "id": "geo-ex-m-6",
+          "question": "Distinguish between sheet erosion and gully erosion.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Sheet erosion removes a thin layer of topsoil over a wide area by flowing water.",
+            "Step 2: Gully erosion cuts deep channels where runoff concentrates.",
+            "Step 3: Sheet erosion is less visible but widespread; gully erosion is highly visible and can create badlands.",
+            "Step 4: Both are accelerated by loss of vegetation cover."
+          ],
+          "final_answer": "Sheet erosion removes a thin topsoil layer over a wide area; gully erosion cuts deep channels and can form ravines.",
+          "marks": 3
+        }
+      ]
+    },
+    "complex": {
+      "title": "NCERT Practice — Case Studies and Evaluation",
+      "objective": "Evaluate resource planning, land degradation and sustainable development",
+      "problems": [
+        {
+          "id": "geo-ex-c-1",
+          "question": "India has vast resources, yet many regions face scarcity. Explain with reference to distribution and resource planning.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: India has a large resource base, including minerals, water, forests and fertile land.",
+            "Step 2: These resources are unevenly distributed: some regions are rich in minerals, others in water or fertile soil.",
+            "Step 3: Regions without the needed resource face scarcity even when the country as a whole is resource-rich.",
+            "Step 4: Lack of technology, investment and infrastructure can keep potential resources unused.",
+            "Step 5: Resource planning can survey resources, build infrastructure, train people and link resource use with national development.",
+            "Step 6: Sustainable use prevents over-exploitation and protects resources for future generations."
+          ],
+          "final_answer": "Scarcity in a resource-rich country arises from uneven distribution and weak planning; surveys, infrastructure, technology, institutions and sustainable use reduce it.",
+          "marks": 5
+        },
+        {
+          "id": "geo-ex-c-2",
+          "question": "Explain the formation of ravines in the Chambal basin and describe four measures to reclaim the land.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: The basin has soft, erodible soil and sloping land.",
+            "Step 2: Deforestation and overgrazing leave the surface bare.",
+            "Step 3: Heavy monsoon runoff concentrates in channels and deepens them into gullies.",
+            "Step 4: Repeated erosion widens the gullies into ravines and badlands.",
+            "Step 5: Check dams and rock dams slow water and trap silt.",
+            "Step 6: Afforestation, contour ploughing and controlled grazing stabilise the slopes and prevent further loss."
+          ],
+          "final_answer": "Bare sloping land with heavy runoff forms gullies and ravines; check dams, afforestation, contour ploughing and controlled grazing reclaim and protect the land.",
+          "marks": 5
+        },
+        {
+          "id": "geo-ex-c-3",
+          "question": "Compare alluvial soil and laterite soil with respect to formation, properties and crops.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Alluvial soil is deposited by rivers in plains and deltas; laterite soil forms in hot, wet areas through intense leaching.",
+            "Step 2: Alluvial soil is fertile, rich in potash, lime and phosphoric acid but poor in humus; laterite soil is acidic, low in nutrients and low in humus.",
+            "Step 3: Alluvial soil supports rice, wheat and sugarcane; laterite soil suits tea, coffee and cashew with fertiliser and irrigation.",
+            "Step 4: Alluvial soil is deep and productive; laterite soil needs careful management."
+          ],
+          "final_answer": "Alluvial soil is river-deposited, fertile and good for rice and wheat; laterite soil is leached, acidic and used for tea, coffee and cashew with fertiliser.",
+          "marks": 5
+        },
+        {
+          "id": "geo-ex-c-4",
+          "question": "How does over-irrigation lead to land degradation? Suggest three remedies.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Excess irrigation raises the water table.",
+            "Step 2: Capillary action brings salts to the surface, causing salinity and alkalinity.",
+            "Step 3: Waterlogging reduces air in the soil and harms roots.",
+            "Step 4: Remedies include efficient drip or sprinkler irrigation, proper drainage and growing salt-tolerant crops.",
+            "Step 5: Crop rotation and organic matter improve soil structure and reduce dependence on heavy irrigation."
+          ],
+          "final_answer": "Over-irrigation causes waterlogging and salinity; drip irrigation, drainage and salt-tolerant crops reduce the damage.",
+          "marks": 5
+        },
+        {
+          "id": "geo-ex-c-5",
+          "question": "Describe the main steps of resource planning in India.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Identification and inventory of resources through surveys, mapping and qualitative and quantitative estimation.",
+            "Step 2: Preparing a planning structure with appropriate technology, skills and infrastructure.",
+            "Step 3: Matching resource development plans with national development plans.",
+            "Step 4: Building institutional arrangements for implementation and monitoring.",
+            "Step 5: Developing human resources through education and training.",
+            "Step 6: Reviewing outcomes and adjusting plans for sustainability."
+          ],
+          "final_answer": "Inventory, planning structure, alignment with national plans, institutions and human resource development, followed by review.",
+          "marks": 5
+        },
+        {
+          "id": "geo-ex-c-6",
+          "question": "Explain sustainable development and state the significance of the Rio Earth Summit and Agenda 21.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Sustainable development means meeting present needs without compromising the ability of future generations to meet their own needs.",
+            "Step 2: It balances economic growth, social equity and environmental protection.",
+            "Step 3: The Rio Earth Summit of 1992 brought countries together to discuss environment and development.",
+            "Step 4: Agenda 21 is a global action plan for sustainable development adopted at the summit.",
+            "Step 5: It encourages local participation, resource conservation and integrated planning."
+          ],
+          "final_answer": "Sustainable development uses resources without harming future generations; the 1992 Rio Summit and Agenda 21 promoted global and local action for it.",
+          "marks": 5
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-geo-s-1",
+        "question": "Which of the following is a renewable resource?",
+        "options": ["Coal", "Solar energy", "Petroleum", "Natural gas"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Solar energy is continuously replenished by the Sun, so it is renewable.",
+          "wrong_options": {
+            "0": "Coal is a fossil fuel and is non-renewable.",
+            "2": "Petroleum is a fossil fuel and is non-renewable.",
+            "3": "Natural gas is a fossil fuel and is non-renewable."
+          }
+        }
+      },
+      {
+        "id": "q-geo-s-2",
+        "question": "Black soil is most suitable for which crop?",
+        "options": ["Cotton", "Tea", "Rice", "Jute"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Black or regur soil is clayey and moisture-retentive, which suits cotton.",
+          "wrong_options": {
+            "1": "Tea prefers well-drained laterite slopes.",
+            "2": "Rice needs abundant water and is grown mainly on alluvial soil.",
+            "3": "Jute grows on alluvial soil in humid regions."
+          }
+        }
+      },
+      {
+        "id": "q-geo-s-3",
+        "question": "Which soil is formed by intense leaching in areas of heavy rainfall?",
+        "options": ["Laterite soil", "Alluvial soil", "Black soil", "Arid soil"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Heavy rain leaches nutrients from laterite soil, leaving it acidic and low in fertility.",
+          "wrong_options": {
+            "1": "Alluvial soil is deposited by rivers, not formed by leaching.",
+            "2": "Black soil forms from lava.",
+            "3": "Arid soil forms in dry regions with little leaching."
+          }
+        }
+      },
+      {
+        "id": "q-geo-s-4",
+        "question": "Net sown area refers to land:",
+        "options": ["Used for growing crops", "Covered by forests", "Used for grazing", "Occupied by buildings"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Net sown area is the land actually sown with crops, counted once even if multiple crops are grown.",
+          "wrong_options": {
+            "1": "Forest land is a separate land-use category.",
+            "2": "Grazing land is part of other uncultivated land.",
+            "3": "Built-up land is not available for cultivation."
+          }
+        }
+      },
+      {
+        "id": "q-geo-s-5",
+        "question": "Which of the following is a non-renewable resource?",
+        "options": ["Wind", "Coal", "Solar energy", "Water"],
+        "correct": 1,
+        "explanation": {
+          "correct": "Coal takes millions of years to form and is exhausted once used.",
+          "wrong_options": {
+            "0": "Wind is continuously replenished.",
+            "2": "Solar energy is continuously available.",
+            "3": "Water is renewable when managed sustainably."
+          }
+        }
+      },
+      {
+        "id": "q-geo-s-6",
+        "question": "Contour ploughing is used mainly to:",
+        "options": ["Reduce soil erosion on slopes", "Increase soil salinity", "Remove humus", "Speed up leaching"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Ploughing along contours slows runoff and reduces soil wash on slopes.",
+          "wrong_options": {
+            "1": "It does not increase salinity.",
+            "2": "It helps retain organic matter rather than remove it.",
+            "3": "Leaching is a soil-forming process, not the aim of contour ploughing."
+          }
+        }
+      },
+      {
+        "id": "q-geo-s-7",
+        "question": "Which state is known for laterite soil?",
+        "options": ["Kerala", "Punjab", "Haryana", "Uttar Pradesh"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Kerala's heavy rainfall and high temperature produce laterite soil.",
+          "wrong_options": {
+            "1": "Punjab is dominated by alluvial soil.",
+            "2": "Haryana is dominated by alluvial soil.",
+            "3": "Uttar Pradesh is dominated by alluvial soil."
+          }
+        }
+      },
+      {
+        "id": "q-geo-s-8",
+        "question": "A village pond is an example of:",
+        "options": ["Community resource", "Individual resource", "National resource", "International resource"],
+        "correct": 0,
+        "explanation": {
+          "correct": "A village pond is used by the whole community, so it is a community resource.",
+          "wrong_options": {
+            "1": "An individual resource is privately owned, such as a house.",
+            "2": "National resources include roads and railways.",
+            "3": "International resources lie beyond national jurisdiction."
+          }
+        }
+      },
+      {
+        "id": "q-geo-s-9",
+        "question": "Which of the following is an abiotic resource?",
+        "options": ["Minerals", "Forests", "Fish", "Cattle"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Minerals are non-living, so they are abiotic resources.",
+          "wrong_options": {
+            "1": "Forests are biotic.",
+            "2": "Fish are biotic.",
+            "3": "Cattle are biotic."
+          }
+        }
+      },
+      {
+        "id": "q-geo-s-10",
+        "question": "Which soil covers the northern plains of India?",
+        "options": ["Alluvial soil", "Laterite soil", "Red soil", "Arid soil"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Rivers deposit alluvial soil across the northern plains.",
+          "wrong_options": {
+            "1": "Laterite soil is typical of hot, wet regions.",
+            "2": "Red soil is common on crystalline rocks in peninsular India.",
+            "3": "Arid soil is found in dry western regions."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-geo-m-1",
+        "question": "Which pair is correctly matched?",
+        "options": ["Potential resource — solar energy in Rajasthan", "Stock — iron ore being mined", "Reserve — hydrogen in water", "Developed — untapped wind energy"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Solar energy in Rajasthan is abundant and known but not fully used, so it is potential.",
+          "wrong_options": {
+            "1": "Iron ore being mined is a developed resource.",
+            "2": "Hydrogen in water is stock because technology is not available.",
+            "3": "Untapped wind energy is potential, not developed."
+          }
+        }
+      },
+      {
+        "id": "q-geo-m-2",
+        "question": "The difference between stock and reserve is that a reserve:",
+        "options": ["Can be used with existing technology but is not yet started", "Is always renewable", "Is found only in oceans", "Cannot be used at all"],
+        "correct": 0,
+        "explanation": {
+          "correct": "A reserve is part of stock that can be used with present technology but has not been tapped.",
+          "wrong_options": {
+            "1": "Reserves can be renewable or non-renewable.",
+            "2": "Reserves are not limited to oceans.",
+            "3": "Stock cannot be used at all; reserves can be used."
+          }
+        }
+      },
+      {
+        "id": "q-geo-m-3",
+        "question": "Ravines in the Chambal basin are the result of:",
+        "options": ["Gully erosion", "Sheet erosion", "Wind erosion", "Leaching"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Concentrated runoff cuts deep gullies that widen into ravines.",
+          "wrong_options": {
+            "1": "Sheet erosion removes a thin layer rather than deep channels.",
+            "2": "Wind erosion is dominant in dry sandy regions.",
+            "3": "Leaching removes dissolved nutrients, not land in channels."
+          }
+        }
+      },
+      {
+        "id": "q-geo-m-4",
+        "question": "Shelter belts are planted mainly to:",
+        "options": ["Check wind erosion", "Increase rainfall", "Increase soil salinity", "Encourage leaching"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Rows of trees reduce wind speed and protect soil and crops.",
+          "wrong_options": {
+            "1": "They do not reliably increase rainfall.",
+            "2": "They help reduce salinity by lowering wind evaporation.",
+            "3": "They do not encourage leaching."
+          }
+        }
+      },
+      {
+        "id": "q-geo-m-5",
+        "question": "Land not available for cultivation includes:",
+        "options": ["Barren and waste land", "Net sown area", "Fallow land", "Pasture land"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Barren and waste land, and land occupied by buildings, roads and industry, are not available for cultivation.",
+          "wrong_options": {
+            "1": "Net sown area is cultivated land.",
+            "2": "Fallow land is temporarily uncultivated but can be cultivated.",
+            "3": "Pasture land is part of other uncultivated land."
+          }
+        }
+      },
+      {
+        "id": "q-geo-m-6",
+        "question": "Which of the following is NOT a cause of land degradation?",
+        "options": ["Crop rotation", "Overgrazing", "Mining", "Over-irrigation"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Crop rotation improves soil fertility and is not a cause of degradation.",
+          "wrong_options": {
+            "1": "Overgrazing removes vegetation cover.",
+            "2": "Mining destroys land and leaves spoil heaps.",
+            "3": "Over-irrigation causes waterlogging and salinity."
+          }
+        }
+      },
+      {
+        "id": "q-geo-m-7",
+        "question": "Alluvial soil is relatively poor in:",
+        "options": ["Humus", "Potash", "Lime", "Phosphoric acid"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Alluvial soil is rich in potash, lime and phosphoric acid but poor in humus.",
+          "wrong_options": {
+            "1": "Alluvial soil is rich in potash.",
+            "2": "Alluvial soil is rich in lime.",
+            "3": "Alluvial soil is rich in phosphoric acid."
+          }
+        }
+      },
+      {
+        "id": "q-geo-m-8",
+        "question": "Black soil is formed from:",
+        "options": ["Lava", "River deposits", "Leached rock", "Wind-blown sand"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Black soil forms from the weathering of lava in the Deccan trap region.",
+          "wrong_options": {
+            "1": "River deposits form alluvial soil.",
+            "2": "Leaching is associated with laterite soil.",
+            "3": "Wind-blown sand is associated with arid soil."
+          }
+        }
+      },
+      {
+        "id": "q-geo-m-9",
+        "question": "Roads and railways are examples of:",
+        "options": ["National resources", "Individual resources", "Community resources", "International resources"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Roads and railways are owned and used by the nation as a whole.",
+          "wrong_options": {
+            "1": "Individual resources are privately owned.",
+            "2": "Community resources belong to a local community.",
+            "3": "International resources lie beyond national jurisdiction."
+          }
+        }
+      },
+      {
+        "id": "q-geo-m-10",
+        "question": "Which practice is NOT a soil conservation method?",
+        "options": ["Shifting cultivation", "Contour ploughing", "Terrace farming", "Strip cropping"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Shifting cultivation removes vegetation and can accelerate erosion.",
+          "wrong_options": {
+            "1": "Contour ploughing reduces runoff.",
+            "2": "Terrace farming reduces slope erosion.",
+            "3": "Strip cropping reduces erosion between crop strips."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-geo-x-1",
+        "question": "Which is the correct order of resource planning steps?",
+        "options": ["Identification and inventory → planning structure → matching with national plans → institutional setup", "Institutional setup → identification → planning → national plans", "Matching with national plans → identification → institutions → planning", "Planning structure → institutions → identification → national plans"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Planning begins with knowing what exists, then builds a structure, aligns with national plans and creates institutions.",
+          "wrong_options": {
+            "1": "Institutions come after inventory and planning.",
+            "2": "Inventory must come before matching with national plans.",
+            "3": "Identification must come before planning structure."
+          }
+        }
+      },
+      {
+        "id": "q-geo-x-2",
+        "question": "If net sown area is 400 sq km out of a 1000 sq km reporting area, the percentage is:",
+        "options": ["40 per cent", "46 per cent", "60 per cent", "22 per cent"],
+        "correct": 0,
+        "explanation": {
+          "correct": "400 divided by 1000 multiplied by 100 equals 40 per cent.",
+          "wrong_options": {
+            "1": "46 per cent is a national average, not this district's value.",
+            "2": "60 per cent would be 600 sq km.",
+            "3": "22 per cent would be 220 sq km."
+          }
+        }
+      },
+      {
+        "id": "q-geo-x-3",
+        "question": "Which soil is best for tea?",
+        "options": ["Laterite soil", "Alluvial soil", "Black soil", "Arid soil"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Tea needs well-drained, slightly acidic soil, which laterite slopes provide.",
+          "wrong_options": {
+            "1": "Alluvial soil is better for rice and wheat.",
+            "2": "Black soil is better for cotton.",
+            "3": "Arid soil is too dry and sandy for tea."
+          }
+        }
+      },
+      {
+        "id": "q-geo-x-4",
+        "question": "Laterite soil needs fertilisers because:",
+        "options": ["Nutrients are leached away", "It is rich in humus", "It is formed from lava", "It holds too much moisture"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Heavy rainfall leaches nutrients, leaving laterite soil acidic and infertile.",
+          "wrong_options": {
+            "1": "Laterite soil is low in humus.",
+            "2": "Lava origin describes black soil.",
+            "3": "Laterite soil is generally well-drained, not waterlogged."
+          }
+        }
+      },
+      {
+        "id": "q-geo-x-5",
+        "question": "Ravine formation is best explained by:",
+        "options": ["Deforestation and overgrazing on sloping land with heavy runoff", "Excessive irrigation", "Wind deposition", "Volcanic activity"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Loss of vegetation on slopes lets heavy runoff cut and widen gullies into ravines.",
+          "wrong_options": {
+            "1": "Excessive irrigation causes waterlogging and salinity.",
+            "2": "Wind deposition forms dunes, not ravines.",
+            "3": "Volcanic activity forms lava plateaus, not ravines."
+          }
+        }
+      },
+      {
+        "id": "q-geo-x-6",
+        "question": "Which is the best example of sustainable development?",
+        "options": ["Using resources within their regeneration capacity", "Using all resources as fast as possible", "Stopping all resource use", "Exporting all resources"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Sustainable development uses resources without reducing the ability of future generations to use them.",
+          "wrong_options": {
+            "1": "Rapid use can exhaust resources.",
+            "2": "Stopping all use is not development.",
+            "3": "Exporting all resources ignores local needs and future use."
+          }
+        }
+      },
+      {
+        "id": "q-geo-x-7",
+        "question": "The Rio Earth Summit was held in:",
+        "options": ["1992", "1972", "1987", "2002"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The United Nations Conference on Environment and Development was held in Rio de Janeiro in 1992.",
+          "wrong_options": {
+            "1": "1972 was the Stockholm conference.",
+            "2": "1987 was the Brundtland Report year.",
+            "3": "2002 was the Johannesburg summit."
+          }
+        }
+      },
+      {
+        "id": "q-geo-x-8",
+        "question": "Agenda 21 is associated with:",
+        "options": ["Sustainable development", "Green Revolution", "White Revolution", "Land reforms"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Agenda 21 is a global action plan for sustainable development adopted at the 1992 Rio Summit.",
+          "wrong_options": {
+            "1": "The Green Revolution concerned foodgrain technology.",
+            "2": "The White Revolution concerned milk production.",
+            "3": "Land reforms concerned land ownership and tenancy."
+          }
+        }
+      },
+      {
+        "id": "q-geo-x-9",
+        "question": "On steep hills, the most suitable soil conservation method is:",
+        "options": ["Terrace farming", "Flood irrigation", "Deep ploughing down the slope", "Removing all vegetation"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Terraces cut the slope into steps and slow runoff, reducing erosion.",
+          "wrong_options": {
+            "1": "Flood irrigation can increase runoff and erosion.",
+            "2": "Ploughing down the slope speeds up erosion.",
+            "3": "Removing vegetation exposes soil to erosion."
+          }
+        }
+      },
+      {
+        "id": "q-geo-x-10",
+        "question": "Which statement is FALSE?",
+        "options": ["All resources are evenly distributed across India", "Resources can be natural or human", "Technology changes the value of resources", "Resources must be used sustainably"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Resources are unevenly distributed, which is why resource planning is needed.",
+          "wrong_options": {
+            "1": "This is true: resources can be natural or human.",
+            "2": "This is true: technology can turn potential into developed resources.",
+            "3": "This is true: sustainable use protects future availability."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Resources and Development — Concept Map",
+    "nodes": [
+      { "id": "n1", "label": "Resources", "group": "foundation" },
+      { "id": "n2", "label": "Natural Resources", "group": "type" },
+      { "id": "n3", "label": "Human Resources", "group": "type" },
+      { "id": "n4", "label": "Renewable", "group": "exhaustibility" },
+      { "id": "n5", "label": "Non-renewable", "group": "exhaustibility" },
+      { "id": "n6", "label": "Land Use", "group": "resource-base" },
+      { "id": "n7", "label": "Soil Types", "group": "resource-base" },
+      { "id": "n8", "label": "Soil Erosion", "group": "process" },
+      { "id": "n9", "label": "Conservation", "group": "response" }
+    ],
+    "edges": [
+      ["n1", "n2"],
+      ["n1", "n3"],
+      ["n2", "n4"],
+      ["n2", "n5"],
+      ["n1", "n6"],
+      ["n6", "n7"],
+      ["n7", "n8"],
+      ["n8", "n9"],
+      ["n6", "n9"],
+      ["n2", "n6"],
+      ["n6", "n8"]
+    ]
+  },
+  "mind_maps": {
+    "title": "Resources and Development — Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Resources and Development",
+    "branches": [
+      {
+        "concept": "Resource Classification",
+        "sub_nodes": [
+          "Natural and human resources",
+          "Renewable and non-renewable",
+          "Potential, developed, stock and reserves",
+          "Individual, community, national and international",
+          "Biotic and abiotic",
+          "Ubiquitous and localised"
+        ],
+        "connections": "Every resource question starts by naming the classification basis"
+      },
+      {
+        "concept": "Resource Planning",
+        "sub_nodes": [
+          "Identification and inventory",
+          "Planning structure with technology and skills",
+          "Matching with national development plans",
+          "Institutional setup",
+          "Human resource development",
+          "Sustainable use"
+        ],
+        "connections": "Planning links uneven distribution to national development"
+      },
+      {
+        "concept": "Land Use",
+        "sub_nodes": [
+          "Forest land",
+          "Land not available for cultivation",
+          "Other uncultivated land",
+          "Fallow land",
+          "Net sown area",
+          "Land degradation and reclamation"
+        ],
+        "connections": "Land is fixed, so competing uses must be balanced"
+      },
+      {
+        "concept": "Soil Types",
+        "sub_nodes": [
+          "Alluvial: plains, rice and wheat",
+          "Black or regur: lava, cotton",
+          "Red and yellow: crystalline rocks",
+          "Laterite: leaching, tea and coffee",
+          "Arid: sandy and saline",
+          "Forest and mountain: slope-dependent"
+        ],
+        "connections": "Soil type decides crops, irrigation and fertiliser needs"
+      },
+      {
+        "concept": "Soil Erosion",
+        "sub_nodes": [
+          "Sheet erosion",
+          "Gully erosion and ravines",
+          "Wind erosion",
+          "Deforestation and overgrazing",
+          "Mining and construction",
+          "Faulty farming"
+        ],
+        "connections": "Erosion removes the fertile topsoil and cuts productivity"
+      },
+      {
+        "concept": "Conservation and Sustainability",
+        "sub_nodes": [
+          "Contour ploughing and terracing",
+          "Strip cropping and shelter belts",
+          "Check dams and rock dams",
+          "Crop rotation and mulching",
+          "Afforestation and controlled grazing",
+          "Rio Summit and Agenda 21"
+        ],
+        "connections": "Conservation protects soil and land for future generations"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "All natural resources are renewable — FALSE: coal, petroleum and minerals are non-renewable and are exhausted once used.",
+    "Black soil is black because it is rich in humus — FALSE: its colour comes mainly from iron compounds and its lava parent material.",
+    "Laterite soil is fertile everywhere — FALSE: heavy leaching makes it acidic and nutrient-poor, so it needs fertiliser and careful management.",
+    "Soil erosion is caused only by water — FALSE: wind also erodes loose, dry topsoil, especially in arid and semi-arid regions.",
+    "Contour ploughing increases soil erosion — FALSE: ploughing along contours slows runoff and reduces erosion on slopes.",
+    "Resources are evenly distributed across India — FALSE: resources are unevenly distributed, which is why resource planning is needed.",
+    "Stock and reserve mean the same thing — FALSE: stock cannot be used with present technology; reserves can be used but have not yet been tapped.",
+    "Sustainable development means stopping all resource use — FALSE: it means using resources within regeneration limits so future generations are not harmed."
+  ]
+}

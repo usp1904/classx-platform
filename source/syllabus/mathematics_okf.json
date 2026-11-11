@@ -1,0 +1,394 @@
+{
+  "metadata": {
+    "subject": "mathematics",
+    "class": "X",
+    "board": "CBSE",
+    "academic_year": "2026-27",
+    "source": "CBSE Official Syllabus PDF",
+    "version": "1.0",
+    "format": "OKF-v1"
+  },
+  "course_structure": {
+    "subject": "Mathematics",
+    "class": "X",
+    "academic_year": "2026-27",
+    "code": "041",
+    "max_marks": 80,
+    "internal_assessment": 20,
+    "total_periods": 180
+  },
+  "knowledge_units": [
+    {
+      "id": "mathematics_1",
+      "name": "Number Systems",
+      "section": "",
+      "marks": 6,
+      "periods": 15,
+      "topics": [
+        {
+          "id": "mathematics_1_topic_1",
+          "name": "Real Numbers",
+          "parent_unit": "mathematics_1",
+          "difficulty": "medium",
+          "estimated_periods": 3,
+          "tags": [
+            "mathematics",
+            "",
+            "real_numbers"
+          ]
+        },
+        {
+          "id": "mathematics_1_topic_2",
+          "name": "Euclid's Division Lemma",
+          "parent_unit": "mathematics_1",
+          "difficulty": "medium",
+          "estimated_periods": 3,
+          "tags": [
+            "mathematics",
+            "",
+            "euclid's_division_lemma"
+          ]
+        },
+        {
+          "id": "mathematics_1_topic_3",
+          "name": "Fundamental Theorem of Arithmetic",
+          "parent_unit": "mathematics_1",
+          "difficulty": "medium",
+          "estimated_periods": 3,
+          "tags": [
+            "mathematics",
+            "",
+            "fundamental_theorem_of_arithme"
+          ]
+        },
+        {
+          "id": "mathematics_1_topic_4",
+          "name": "Revisiting Irrational Numbers",
+          "parent_unit": "mathematics_1",
+          "difficulty": "medium",
+          "estimated_periods": 3,
+          "tags": [
+            "mathematics",
+            "",
+            "revisiting_irrational_numbers"
+          ]
+        },
+        {
+          "id": "mathematics_1_topic_5",
+          "name": "Revisiting Rational Numbers and Decimal Expansions",
+          "parent_unit": "mathematics_1",
+          "difficulty": "medium",
+          "estimated_periods": 3,
+          "tags": [
+            "mathematics",
+            "",
+            "revisiting_rational_numbers_an"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    },
+    {
+      "id": "mathematics_2",
+      "name": "Algebra",
+      "section": "",
+      "marks": 20,
+      "periods": 45,
+      "topics": [
+        {
+          "id": "mathematics_2_topic_1",
+          "name": "Polynomials",
+          "parent_unit": "mathematics_2",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "mathematics",
+            "",
+            "polynomials"
+          ]
+        },
+        {
+          "id": "mathematics_2_topic_2",
+          "name": "Pair of Linear Equations in Two Variables",
+          "parent_unit": "mathematics_2",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "mathematics",
+            "",
+            "pair_of_linear_equations_in_tw"
+          ]
+        },
+        {
+          "id": "mathematics_2_topic_3",
+          "name": "Quadratic Equations",
+          "parent_unit": "mathematics_2",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "mathematics",
+            "",
+            "quadratic_equations"
+          ]
+        },
+        {
+          "id": "mathematics_2_topic_4",
+          "name": "Arithmetic Progressions",
+          "parent_unit": "mathematics_2",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "mathematics",
+            "",
+            "arithmetic_progressions"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    },
+    {
+      "id": "mathematics_3",
+      "name": "Coordinate Geometry",
+      "section": "",
+      "marks": 6,
+      "periods": 14,
+      "topics": [
+        {
+          "id": "mathematics_3_topic_1",
+          "name": "Lines (In two-dimensions)",
+          "parent_unit": "mathematics_3",
+          "difficulty": "medium",
+          "estimated_periods": 3,
+          "tags": [
+            "mathematics",
+            "",
+            "lines_(in_two-dimensions)"
+          ]
+        },
+        {
+          "id": "mathematics_3_topic_2",
+          "name": "Distance Formula",
+          "parent_unit": "mathematics_3",
+          "difficulty": "medium",
+          "estimated_periods": 3,
+          "tags": [
+            "mathematics",
+            "",
+            "distance_formula"
+          ]
+        },
+        {
+          "id": "mathematics_3_topic_3",
+          "name": "Section Formula",
+          "parent_unit": "mathematics_3",
+          "difficulty": "medium",
+          "estimated_periods": 3,
+          "tags": [
+            "mathematics",
+            "",
+            "section_formula"
+          ]
+        },
+        {
+          "id": "mathematics_3_topic_4",
+          "name": "Area of Triangle",
+          "parent_unit": "mathematics_3",
+          "difficulty": "medium",
+          "estimated_periods": 3,
+          "tags": [
+            "mathematics",
+            "",
+            "area_of_triangle"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    },
+    {
+      "id": "mathematics_4",
+      "name": "Geometry",
+      "section": "",
+      "marks": 15,
+      "periods": 35,
+      "topics": [
+        {
+          "id": "mathematics_4_topic_1",
+          "name": "Triangles",
+          "parent_unit": "mathematics_4",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "mathematics",
+            "",
+            "triangles"
+          ]
+        },
+        {
+          "id": "mathematics_4_topic_2",
+          "name": "Circles",
+          "parent_unit": "mathematics_4",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "mathematics",
+            "",
+            "circles"
+          ]
+        },
+        {
+          "id": "mathematics_4_topic_3",
+          "name": "Constructions",
+          "parent_unit": "mathematics_4",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "mathematics",
+            "",
+            "constructions"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    },
+    {
+      "id": "mathematics_5",
+      "name": "Trigonometry",
+      "section": "",
+      "marks": 12,
+      "periods": 25,
+      "topics": [
+        {
+          "id": "mathematics_5_topic_1",
+          "name": "Introduction to Trigonometry",
+          "parent_unit": "mathematics_5",
+          "difficulty": "medium",
+          "estimated_periods": 6,
+          "tags": [
+            "mathematics",
+            "",
+            "introduction_to_trigonometry"
+          ]
+        },
+        {
+          "id": "mathematics_5_topic_2",
+          "name": "Trigonometric Identities",
+          "parent_unit": "mathematics_5",
+          "difficulty": "medium",
+          "estimated_periods": 6,
+          "tags": [
+            "mathematics",
+            "",
+            "trigonometric_identities"
+          ]
+        },
+        {
+          "id": "mathematics_5_topic_3",
+          "name": "Heights and Distances",
+          "parent_unit": "mathematics_5",
+          "difficulty": "medium",
+          "estimated_periods": 6,
+          "tags": [
+            "mathematics",
+            "",
+            "heights_and_distances"
+          ]
+        },
+        {
+          "id": "mathematics_5_topic_4",
+          "name": "Applications of Trigonometry",
+          "parent_unit": "mathematics_5",
+          "difficulty": "medium",
+          "estimated_periods": 6,
+          "tags": [
+            "mathematics",
+            "",
+            "applications_of_trigonometry"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    },
+    {
+      "id": "mathematics_6",
+      "name": "Mensuration",
+      "section": "",
+      "marks": 10,
+      "periods": 24,
+      "topics": [
+        {
+          "id": "mathematics_6_topic_1",
+          "name": "Areas Related to Circles",
+          "parent_unit": "mathematics_6",
+          "difficulty": "medium",
+          "estimated_periods": 12,
+          "tags": [
+            "mathematics",
+            "",
+            "areas_related_to_circles"
+          ]
+        },
+        {
+          "id": "mathematics_6_topic_2",
+          "name": "Surface Areas and Volumes",
+          "parent_unit": "mathematics_6",
+          "difficulty": "medium",
+          "estimated_periods": 12,
+          "tags": [
+            "mathematics",
+            "",
+            "surface_areas_and_volumes"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    },
+    {
+      "id": "mathematics_7",
+      "name": "Statistics and Probability",
+      "section": "",
+      "marks": 11,
+      "periods": 22,
+      "topics": [
+        {
+          "id": "mathematics_7_topic_1",
+          "name": "Statistics",
+          "parent_unit": "mathematics_7",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "mathematics",
+            "",
+            "statistics"
+          ]
+        },
+        {
+          "id": "mathematics_7_topic_2",
+          "name": "Probability",
+          "parent_unit": "mathematics_7",
+          "difficulty": "medium",
+          "estimated_periods": 11,
+          "tags": [
+            "mathematics",
+            "",
+            "probability"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    }
+  ]
+}

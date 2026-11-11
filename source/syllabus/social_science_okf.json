@@ -1,0 +1,340 @@
+{
+  "metadata": {
+    "subject": "social_science",
+    "class": "X",
+    "board": "CBSE",
+    "academic_year": "2026-27",
+    "source": "CBSE Official Syllabus PDF",
+    "version": "1.0",
+    "format": "OKF-v1"
+  },
+  "course_structure": {
+    "subject": "Social Science",
+    "class": "X",
+    "academic_year": "2026-27",
+    "code": "087",
+    "max_marks": 80,
+    "internal_assessment": 20,
+    "sections": [
+      "History",
+      "Geography",
+      "Political Science",
+      "Economics"
+    ],
+    "total_periods": 180
+  },
+  "knowledge_units": [
+    {
+      "id": "social_science_1",
+      "name": "India and the Contemporary World - II",
+      "section": "History",
+      "marks": 20,
+      "periods": 46,
+      "topics": [
+        {
+          "id": "social_science_1_topic_1",
+          "name": "The Rise of Nationalism in Europe",
+          "parent_unit": "social_science_1",
+          "difficulty": "medium",
+          "estimated_periods": 9,
+          "tags": [
+            "social_science",
+            "History",
+            "the_rise_of_nationalism_in_eur"
+          ]
+        },
+        {
+          "id": "social_science_1_topic_2",
+          "name": "Nationalism in India",
+          "parent_unit": "social_science_1",
+          "difficulty": "medium",
+          "estimated_periods": 9,
+          "tags": [
+            "social_science",
+            "History",
+            "nationalism_in_india"
+          ]
+        },
+        {
+          "id": "social_science_1_topic_3",
+          "name": "The Making of a Global World",
+          "parent_unit": "social_science_1",
+          "difficulty": "medium",
+          "estimated_periods": 9,
+          "tags": [
+            "social_science",
+            "History",
+            "the_making_of_a_global_world"
+          ]
+        },
+        {
+          "id": "social_science_1_topic_4",
+          "name": "The Age of Industrialization",
+          "parent_unit": "social_science_1",
+          "difficulty": "medium",
+          "estimated_periods": 9,
+          "tags": [
+            "social_science",
+            "History",
+            "the_age_of_industrialization"
+          ]
+        },
+        {
+          "id": "social_science_1_topic_5",
+          "name": "Print Culture and the Modern World",
+          "parent_unit": "social_science_1",
+          "difficulty": "medium",
+          "estimated_periods": 9,
+          "tags": [
+            "social_science",
+            "History",
+            "print_culture_and_the_modern_w"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    },
+    {
+      "id": "social_science_2",
+      "name": "Contemporary India - II",
+      "section": "Geography",
+      "marks": 20,
+      "periods": 46,
+      "topics": [
+        {
+          "id": "social_science_2_topic_1",
+          "name": "Resources and Development",
+          "parent_unit": "social_science_2",
+          "difficulty": "medium",
+          "estimated_periods": 6,
+          "tags": [
+            "social_science",
+            "Geography",
+            "resources_and_development"
+          ]
+        },
+        {
+          "id": "social_science_2_topic_2",
+          "name": "Forest and Wildlife Resources",
+          "parent_unit": "social_science_2",
+          "difficulty": "medium",
+          "estimated_periods": 6,
+          "tags": [
+            "social_science",
+            "Geography",
+            "forest_and_wildlife_resources"
+          ]
+        },
+        {
+          "id": "social_science_2_topic_3",
+          "name": "Water Resources",
+          "parent_unit": "social_science_2",
+          "difficulty": "medium",
+          "estimated_periods": 6,
+          "tags": [
+            "social_science",
+            "Geography",
+            "water_resources"
+          ]
+        },
+        {
+          "id": "social_science_2_topic_4",
+          "name": "Agriculture",
+          "parent_unit": "social_science_2",
+          "difficulty": "medium",
+          "estimated_periods": 6,
+          "tags": [
+            "social_science",
+            "Geography",
+            "agriculture"
+          ]
+        },
+        {
+          "id": "social_science_2_topic_5",
+          "name": "Minerals and Energy Resources",
+          "parent_unit": "social_science_2",
+          "difficulty": "medium",
+          "estimated_periods": 6,
+          "tags": [
+            "social_science",
+            "Geography",
+            "minerals_and_energy_resources"
+          ]
+        },
+        {
+          "id": "social_science_2_topic_6",
+          "name": "Manufacturing Industries",
+          "parent_unit": "social_science_2",
+          "difficulty": "medium",
+          "estimated_periods": 6,
+          "tags": [
+            "social_science",
+            "Geography",
+            "manufacturing_industries"
+          ]
+        },
+        {
+          "id": "social_science_2_topic_7",
+          "name": "Lifelines of National Economy",
+          "parent_unit": "social_science_2",
+          "difficulty": "medium",
+          "estimated_periods": 6,
+          "tags": [
+            "social_science",
+            "Geography",
+            "lifelines_of_national_economy"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    },
+    {
+      "id": "social_science_3",
+      "name": "Democratic Politics - II",
+      "section": "Political Science",
+      "marks": 20,
+      "periods": 46,
+      "topics": [
+        {
+          "id": "social_science_3_topic_1",
+          "name": "Power Sharing",
+          "parent_unit": "social_science_3",
+          "difficulty": "medium",
+          "estimated_periods": 9,
+          "tags": [
+            "social_science",
+            "Political Science",
+            "power_sharing"
+          ]
+        },
+        {
+          "id": "social_science_3_topic_2",
+          "name": "Federalism",
+          "parent_unit": "social_science_3",
+          "difficulty": "medium",
+          "estimated_periods": 9,
+          "tags": [
+            "social_science",
+            "Political Science",
+            "federalism"
+          ]
+        },
+        {
+          "id": "social_science_3_topic_3",
+          "name": "Gender, Religion and Caste",
+          "parent_unit": "social_science_3",
+          "difficulty": "medium",
+          "estimated_periods": 9,
+          "tags": [
+            "social_science",
+            "Political Science",
+            "gender,_religion_and_caste"
+          ]
+        },
+        {
+          "id": "social_science_3_topic_4",
+          "name": "Political Parties",
+          "parent_unit": "social_science_3",
+          "difficulty": "medium",
+          "estimated_periods": 9,
+          "tags": [
+            "social_science",
+            "Political Science",
+            "political_parties"
+          ]
+        },
+        {
+          "id": "social_science_3_topic_5",
+          "name": "Outcomes of Democracy",
+          "parent_unit": "social_science_3",
+          "difficulty": "medium",
+          "estimated_periods": 9,
+          "tags": [
+            "social_science",
+            "Political Science",
+            "outcomes_of_democracy"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    },
+    {
+      "id": "social_science_4",
+      "name": "Understanding Economic Development",
+      "section": "Economics",
+      "marks": 20,
+      "periods": 42,
+      "topics": [
+        {
+          "id": "social_science_4_topic_1",
+          "name": "Development",
+          "parent_unit": "social_science_4",
+          "difficulty": "medium",
+          "estimated_periods": 8,
+          "tags": [
+            "social_science",
+            "Economics",
+            "development"
+          ]
+        },
+        {
+          "id": "social_science_4_topic_2",
+          "name": "Sectors of the Indian Economy",
+          "parent_unit": "social_science_4",
+          "difficulty": "medium",
+          "estimated_periods": 8,
+          "tags": [
+            "social_science",
+            "Economics",
+            "sectors_of_the_indian_economy"
+          ]
+        },
+        {
+          "id": "social_science_4_topic_3",
+          "name": "Money and Credit",
+          "parent_unit": "social_science_4",
+          "difficulty": "medium",
+          "estimated_periods": 8,
+          "tags": [
+            "social_science",
+            "Economics",
+            "money_and_credit"
+          ]
+        },
+        {
+          "id": "social_science_4_topic_4",
+          "name": "Globalisation and the Indian Economy",
+          "parent_unit": "social_science_4",
+          "difficulty": "medium",
+          "estimated_periods": 8,
+          "tags": [
+            "social_science",
+            "Economics",
+            "globalisation_and_the_indian_e"
+          ]
+        },
+        {
+          "id": "social_science_4_topic_5",
+          "name": "Consumer Rights",
+          "parent_unit": "social_science_4",
+          "difficulty": "medium",
+          "estimated_periods": 8,
+          "tags": [
+            "social_science",
+            "Economics",
+            "consumer_rights"
+          ]
+        }
+      ],
+      "learning_objectives": [],
+      "prerequisites": [],
+      "assessment_criteria": []
+    }
+  ]
+}

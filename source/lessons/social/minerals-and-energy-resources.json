@@ -1,0 +1,1050 @@
+{
+  "subject": "Geography",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 5,
+  "chapter": "Minerals and Energy Resources",
+  "id": "minerals-and-energy-resources",
+  "lesson": 1,
+  "title": "Minerals and Energy Resources - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Define a mineral and classify minerals as metallic, non-metallic, and energy minerals",
+    "Explain the different modes of occurrence of minerals in the earth's crust",
+    "Locate the major iron ore, coal, petroleum, and non-metallic mineral belts of India",
+    "Distinguish open-cast mining, shaft mining, and quarrying, and describe their impacts",
+    "Compare conventional and non-conventional sources of energy with examples",
+    "Explain why minerals and energy resources need conservation and suggest practical measures",
+    "Interpret maps and case studies on mineral distribution and energy use",
+    "Write board-style answers using correct geographical terms and examples"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS9_RESOURCES",
+    "SOCIAL_CLASS8_MINERALS",
+    "SCI_CLASS8_COAL_AND_PETROLEUM",
+    "SCI_CLASS7_ENVIRONMENT"
+  ],
+  "concepts": [
+    {
+      "id": "concept-1",
+      "name": "Minerals and Their Classification",
+      "title": "Minerals and Their Classification",
+      "explanation": "A mineral is a naturally occurring, inorganic substance with a definite chemical composition and an ordered internal crystal structure. Minerals are the building blocks of rocks and are essential for industry, agriculture, construction, and daily life. Geographers classify them by composition into metallic minerals (ferrous and non-ferrous), non-metallic minerals, and energy minerals. Metallic minerals contain metal in raw form and are further divided into ferrous minerals such as iron ore, manganese, and chromite, and non-ferrous minerals such as copper, bauxite, lead, and zinc. Precious metals such as gold, silver, and platinum are also metallic. Non-metallic minerals such as mica, limestone, gypsum, and salt do not contain metal. Energy minerals such as coal, petroleum, natural gas, and uranium are used mainly to produce power.",
+      "purpose": "Classification helps us understand why different minerals are mined, where they are used, and why some are more valuable or more exhaustible than others. It also helps in planning industries and in conserving scarce resources.",
+      "real_life_application": "Salt on your table, mica in an electric iron, aluminium in a pressure cooker, and the silica in a mobile phone screen all come from minerals. Recognising the mineral group helps you understand the product and its recycling value.",
+      "key_points": [
+        "A mineral is naturally occurring, inorganic, and has a definite chemical composition.",
+        "Metallic minerals are either ferrous (iron, manganese, chromite) or non-ferrous (copper, bauxite, lead, zinc).",
+        "Precious metals such as gold, silver, and platinum are metallic minerals of high value.",
+        "Non-metallic minerals such as mica, limestone, gypsum, and salt contain no metal.",
+        "Energy minerals such as coal, petroleum, natural gas, and uranium are used for power.",
+        "Minerals are exhaustible and unevenly distributed, so classification is linked to conservation."
+      ],
+      "day_to_day_usage": [
+        "Common salt (halite) is a non-metallic mineral used in cooking and food preservation.",
+        "Aluminium utensils and foil are made from bauxite, a non-ferrous metallic ore.",
+        "Mica is used as an insulator in electric irons and toasters because it resists heat and electricity.",
+        "Limestone is the main raw material for cement and is also used in toothpaste and chalk.",
+        "Copper wiring in homes comes from copper ore, a non-ferrous metallic mineral.",
+        "Gold and silver jewellery use precious metallic minerals."
+      ]
+    },
+    {
+      "id": "concept-2",
+      "name": "Mode of Occurrence of Minerals",
+      "title": "Mode of Occurrence of Minerals",
+      "explanation": "Minerals are found in the earth's crust in several distinct forms. In igneous and metamorphic rocks, minerals may occur in veins and lodes, which are large cracks or fissures filled with mineral matter. In sedimentary rocks, minerals occur in beds or layers formed by deposition and concentration over long periods, as with coal, gypsum, and some iron ore. Some minerals occur as residual masses formed by the weathering and removal of surrounding rock, as with bauxite. Placer deposits are found in alluvial sands and gravels where heavier, resistant minerals such as gold and silver are concentrated by flowing water. Minerals also occur dissolved in ocean water, as with common salt and magnesium, and in rock strata as horizontal seams that are mined by shaft or open-cast methods.",
+      "purpose": "The mode of occurrence decides the mining method, the cost of extraction, and the environmental impact. A mineral in a deep vein needs shaft mining, while a shallow bed can be quarried, and a placer deposit may be panned.",
+      "real_life_application": "Panning for gold in river sand is a placer technique. Stone quarries supplying building material are working shallow beds. Understanding occurrence explains why mining towns grow near specific rock formations.",
+      "key_points": [
+        "Veins and lodes occur in cracks of igneous and metamorphic rocks.",
+        "Beds and layers occur in sedimentary rocks such as coal and gypsum.",
+        "Residual masses form when weathering removes surrounding rock, as in bauxite.",
+        "Placer deposits are concentrated in alluvial sands by flowing water, as with gold.",
+        "Ocean water contains dissolved minerals such as common salt and magnesium.",
+        "Rock strata are horizontal layers mined by open-cast or shaft methods."
+      ],
+      "day_to_day_usage": [
+        "Gold panning in river beds uses the placer principle.",
+        "Building stone is taken from quarries cut into shallow rock beds.",
+        "Salt is obtained from sea water by evaporation in coastal salt pans.",
+        "Coal seams under farmland are mined from underground shafts.",
+        "Bauxite is collected from weathered hill slopes where residual concentration has occurred."
+      ]
+    },
+    {
+      "id": "concept-3",
+      "name": "Distribution of Minerals in India",
+      "title": "Distribution of Minerals in India",
+      "explanation": "India's mineral wealth is concentrated mainly in the peninsular plateau because its ancient, hard rocks are rich in metallic minerals. The major iron ore belts are the Odisha-Jharkhand belt, the Durg-Bastar-Chandrapur belt, the Ballari-Chitradurga-Tumakuru belt, and the Maharashtra-Goa belt. Coal occurs mainly in the Damodar valley, the Mahanadi valley, the Son valley, and the Godavari valley, with important fields such as Jharia, Raniganj, Bokaro, Talcher, Korba, Singrauli, and Singareni. Petroleum is found in Mumbai High, Gujarat, Assam, the Krishna-Godavari basin, and the Cauvery basin. Mica comes mainly from the Koderma-Gaya-Hazaribagh belt of Jharkhand, Nellore in Andhra Pradesh, and parts of Rajasthan. Manganese, bauxite, limestone, and dolomite are also concentrated in the plateau and adjoining regions. Coastal and Himalayan regions are comparatively poor in metallic minerals but rich in salt, limestone, and some energy resources.",
+      "purpose": "Knowing the distribution helps explain the location of steel plants, refineries, cement plants, and power stations. Industries usually grow near the mineral they process because transporting bulky ore is costly.",
+      "real_life_application": "The steel plants of Bhilai, Rourkela, and Bokaro are near iron ore and coal fields. Cement plants cluster near limestone deposits. Petrol and diesel reach your city from coastal and Gujarat refineries.",
+      "key_points": [
+        "The peninsular plateau holds most of India's metallic minerals.",
+        "Iron ore belts: Odisha-Jharkhand, Durg-Bastar-Chandrapur, Ballari-Chitradurga-Tumakuru, and Maharashtra-Goa.",
+        "Coal fields include Jharia, Raniganj, Bokaro, Talcher, Korba, Singrauli, and Singareni.",
+        "Petroleum occurs in Mumbai High, Gujarat, Assam, Krishna-Godavari, and Cauvery basins.",
+        "Mica comes from Jharkhand, Andhra Pradesh, and Rajasthan.",
+        "Limestone, manganese, and bauxite are also concentrated in the plateau region."
+      ],
+      "day_to_day_usage": [
+        "Steel used in bicycles and cars is made near iron ore and coal belts.",
+        "Cement for your house comes from plants located near limestone deposits.",
+        "Petrol, diesel, and LPG are refined from petroleum from offshore and onshore fields.",
+        "Mica used in electrical appliances comes mainly from Jharkhand and Andhra Pradesh.",
+        "Aluminium products trace back to bauxite mined in Odisha and neighbouring states."
+      ]
+    },
+    {
+      "id": "concept-4",
+      "name": "Mining and Its Types",
+      "title": "Mining and Its Types",
+      "explanation": "Mining is the process of extracting valuable minerals from the earth. Open-cast mining removes minerals from near the surface by digging a large pit and is used when the deposit lies close to the surface. Shaft mining uses deep vertical tunnels and is needed when the mineral lies far below the ground. Quarrying is the open extraction of building stone, sand, and limestone from exposed rock. Rat-hole mining is a dangerous, unscientific practice of digging narrow horizontal tunnels by hand, common in some coal areas of the north-east. Mining supports industry but can degrade land, pollute water, destroy vegetation, and endanger workers. Mine spoil heaps, subsidence, acid mine drainage, and dust are major problems, so scientific planning, safety rules, and reclamation are essential.",
+      "purpose": "The type of mining affects cost, safety, and environmental damage. Choosing the right method and restoring mined land are central to sustainable resource use.",
+      "real_life_application": "The cement and construction industry depends on quarries. Coal for power stations comes from open-cast and underground mines. Knowing mining impacts helps citizens demand safer and cleaner extraction.",
+      "key_points": [
+        "Open-cast mining is used for shallow deposits and removes overburden.",
+        "Shaft mining uses deep vertical tunnels for minerals far below the surface.",
+        "Quarrying extracts building stone, sand, and limestone from exposed rock.",
+        "Rat-hole mining is unsafe and causes serious environmental and health damage.",
+        "Mining can cause land degradation, water pollution, dust, and subsidence.",
+        "Scientific mining includes safety measures, waste management, and land reclamation."
+      ],
+      "day_to_day_usage": [
+        "Bricks and cement used in construction depend on clay and limestone quarrying.",
+        "Coal for thermal power reaches stations from open-cast and shaft mines.",
+        "Road-building material such as crushed stone comes from quarries.",
+        "Local water sources can become acidic or muddy near poorly managed mines.",
+        "Reclaimed mined land is sometimes converted into parks, lakes, or farmland."
+      ]
+    },
+    {
+      "id": "concept-5",
+      "name": "Conventional and Non-Conventional Energy Resources",
+      "title": "Conventional and Non-Conventional Energy Resources",
+      "explanation": "Energy resources are classified as conventional and non-conventional. Conventional sources include firewood, cattle dung, coal, petroleum, natural gas, and electricity from thermal and hydro power. They have been used for a long time, but most are exhaustible and cause pollution. Non-conventional sources include solar energy, wind energy, tidal energy, geothermal energy, biogas, and nuclear energy. They are mostly renewable and cleaner, though they need technology, land, and initial investment. Solar energy is abundant in Rajasthan and Gujarat; wind energy is harnessed in Tamil Nadu, Gujarat, and Rajasthan; tidal energy is possible in the Gulf of Khambhat, Gulf of Kachchh, and Sundarbans; geothermal energy is used at Manikaran in Himachal Pradesh and Puga in Ladakh. Biogas from cattle dung provides clean cooking fuel in villages. Nuclear power uses uranium and thorium and supplies base-load electricity, but waste disposal and safety are concerns.",
+      "purpose": "Comparing sources helps a country plan a secure, affordable, and clean energy mix. It also explains why India promotes solar, wind, and biogas alongside coal-based power.",
+      "real_life_application": "Rooftop solar panels, solar water heaters, wind farms, and biogas plants in villages are everyday examples. LPG and electricity are conventional energy reaching homes through networks.",
+      "key_points": [
+        "Conventional sources include coal, petroleum, natural gas, firewood, and thermal and hydro electricity.",
+        "Non-conventional sources include solar, wind, tidal, geothermal, biogas, and nuclear energy.",
+        "Solar energy is strongest in Rajasthan and Gujarat.",
+        "Wind energy is harnessed in Tamil Nadu, Gujarat, and Rajasthan.",
+        "Tidal energy is possible in the Gulf of Khambhat, Gulf of Kachchh, and Sundarbans.",
+        "Biogas is a clean rural fuel made from cattle dung and plant waste.",
+        "Nuclear power uses uranium and thorium but raises safety and waste concerns."
+      ],
+      "day_to_day_usage": [
+        "Solar water heaters and rooftop panels reduce electricity bills.",
+        "Wind farms feed electricity into the grid in Tamil Nadu and Gujarat.",
+        "Biogas plants in villages turn cattle dung into cooking gas and manure.",
+        "Geothermal hot springs at Manikaran are used for heating and bathing.",
+        "Coal-based thermal power still supplies a large share of household electricity."
+      ]
+    },
+    {
+      "id": "concept-6",
+      "name": "Conservation of Minerals and Energy",
+      "title": "Conservation of Minerals and Energy",
+      "explanation": "Minerals and fossil fuels are exhaustible resources formed over millions of years, so their use must be planned for future generations. Conservation means reducing waste, improving extraction efficiency, recycling metals, substituting scarce materials, and shifting to renewable energy. The three Rs - reduce, reuse, and recycle - are practical tools: reduce unnecessary consumption, reuse products and containers, and recycle metals such as iron, aluminium, and copper. Energy conservation includes switching off unused lights, using efficient appliances, improving public transport, and adopting cleaner technologies. Sustainable development balances present needs with the needs of future generations. Individuals, industries, and governments all share responsibility for using resources wisely.",
+      "purpose": "Conservation extends the life of reserves, reduces pollution, lowers costs, and supports energy security. It is especially important for a fast-growing economy with limited high-grade minerals.",
+      "real_life_application": "Selling old newspapers and metal scrap for recycling, using LED bulbs, switching off fans when leaving a room, and taking public transport are everyday conservation actions.",
+      "key_points": [
+        "Minerals and fossil fuels are exhaustible and non-renewable.",
+        "Reduce, reuse, and recycle are the three Rs of conservation.",
+        "Recycling metals such as iron, aluminium, and copper saves ore and energy.",
+        "Energy conservation includes efficient appliances and avoiding waste.",
+        "Renewable sources reduce dependence on coal and petroleum.",
+        "Sustainable development meets present needs without harming future generations."
+      ],
+      "day_to_day_usage": [
+        "Switching off lights and fans when leaving a room saves electricity.",
+        "Using LED bulbs and energy-efficient fans lowers power consumption.",
+        "Selling scrap metal and old paper supports recycling.",
+        "Taking a bus or metro instead of a private car saves fuel.",
+        "Rainwater harvesting and solar water heating reduce resource pressure."
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-min-1",
+      "title": "Classifying Minerals into Groups",
+      "topic": "Classification of minerals",
+      "problem": "Classify the following minerals into metallic (ferrous and non-ferrous), non-metallic, and energy minerals: haematite, bauxite, mica, coal, limestone, gold, manganese, and petroleum.",
+      "solution": [
+        "Step 1: Recall the three main groups: metallic, non-metallic, and energy minerals.",
+        "Step 2: Metallic minerals contain metal. Ferrous ones contain iron; non-ferrous ones contain other metals.",
+        "Step 3: Haematite and manganese are ferrous because they are iron-bearing ores or used in steel making.",
+        "Step 4: Bauxite (aluminium ore) and gold are non-ferrous metallic minerals.",
+        "Step 5: Mica and limestone contain no metal, so they are non-metallic.",
+        "Step 6: Coal and petroleum are burned for power, so they are energy minerals."
+      ],
+      "board_mode": "Draw a three-column table. Put haematite and manganese under Ferrous, bauxite and gold under Non-ferrous, mica and limestone under Non-metallic, and coal and petroleum under Energy.",
+      "answer": "Ferrous: haematite, manganese. Non-ferrous: bauxite, gold. Non-metallic: mica, limestone. Energy: coal, petroleum.",
+      "board_tip": "Write the group headings first, then place each mineral. A table earns marks faster than a paragraph."
+    },
+    {
+      "id": "we-min-2",
+      "title": "Locating the Iron Ore Belts of India",
+      "topic": "Distribution of iron ore",
+      "problem": "Name the four major iron ore belts of India and give one important mining area from each.",
+      "solution": [
+        "Step 1: The first belt is the Odisha-Jharkhand belt, with mines in Mayurbhanj, Kendujhar, and Singhbhum.",
+        "Step 2: The second is the Durg-Bastar-Chandrapur belt, with Bailadila and Dalli-Rajhara in Chhattisgarh and Chandrapur in Maharashtra.",
+        "Step 3: The third is the Ballari-Chitradurga-Tumakuru belt in Karnataka.",
+        "Step 4: The fourth is the Maharashtra-Goa belt, including Ratnagiri and Goa.",
+        "Step 5: These belts lie mainly in the peninsular plateau, close to coal fields and ports."
+      ],
+      "board_mode": "Draw a rough outline of India and mark the four belts with labels. Add one mining area beside each belt.",
+      "answer": "Odisha-Jharkhand (Mayurbhanj/Kendujhar/Singhbhum); Durg-Bastar-Chandrapur (Bailadila/Dalli-Rajhara); Ballari-Chitradurga-Tumakuru (Karnataka); Maharashtra-Goa (Ratnagiri/Goa).",
+      "board_tip": "When asked to name belts, give the belt name first and the mining area second. Do not mix the two."
+    },
+    {
+      "id": "we-min-3",
+      "title": "Identifying the Mode of Occurrence",
+      "topic": "Mode of occurrence of minerals",
+      "problem": "Identify the mode of occurrence in each case: (a) gold found in river sand, (b) coal in horizontal layers, (c) bauxite on a weathered hill top, (d) mica in a crack of granite.",
+      "solution": [
+        "Step 1: (a) Gold in river sand has been concentrated by flowing water, so it is a placer deposit.",
+        "Step 2: (b) Coal in horizontal layers lies in sedimentary beds or layers.",
+        "Step 3: (c) Bauxite left behind after surrounding rock weathered away is a residual mass.",
+        "Step 4: (d) Mica filling a crack in granite occurs in a vein or lode.",
+        "Step 5: Match each description to the correct term and give the reason in one line."
+      ],
+      "board_mode": "Write the four parts as a matching list: a-placer, b-bed/layer, c-residual mass, d-vein/lode. Add the key word that gave the clue.",
+      "answer": "(a) placer deposit, (b) bed or layer, (c) residual mass, (d) vein or lode.",
+      "board_tip": "Always quote the clue word from the question, such as river sand, layer, weathered, or crack."
+    },
+    {
+      "id": "we-min-4",
+      "title": "Choosing Between Conventional and Non-Conventional Energy",
+      "topic": "Energy resources",
+      "problem": "A village needs a clean cooking fuel and a hill town needs electricity with minimal pollution. Suggest suitable energy sources and justify each choice.",
+      "solution": [
+        "Step 1: For village cooking, biogas is suitable because cattle dung and plant waste are available locally.",
+        "Step 2: Biogas burns cleanly, reduces firewood use, and leaves nutrient-rich slurry as manure.",
+        "Step 3: For the hill town, solar or wind energy can supplement grid power where sunlight or wind is reliable.",
+        "Step 4: Both are renewable and produce no smoke during operation.",
+        "Step 5: Initial cost and maintenance must be considered, so a mix with the existing grid is practical.",
+        "Step 6: Conventional coal power is not the best first choice because it is polluting and exhaustible."
+      ],
+      "board_mode": "Write two short paragraphs, one for each place. Name the source, state two benefits, and mention one limitation.",
+      "answer": "Village: biogas from cattle dung and plant waste. Hill town: solar or wind energy, backed by the grid.",
+      "board_tip": "For suggestion questions, always give source + two reasons + one limitation to secure full marks."
+    },
+    {
+      "id": "we-min-5",
+      "title": "Why Minerals Must Be Conserved",
+      "topic": "Conservation of minerals",
+      "problem": "Explain why the conservation of minerals is essential for India. Suggest any three measures.",
+      "solution": [
+        "Step 1: Minerals are exhaustible and form over millions of years, so once exhausted they cannot be replaced quickly.",
+        "Step 2: India's high-grade reserves are limited while industrial demand is rising.",
+        "Step 3: Mining and processing cause land degradation and pollution, so wasteful use multiplies environmental damage.",
+        "Step 4: Measure one: reduce waste and improve mining efficiency so more is recovered from each deposit.",
+        "Step 5: Measure two: recycle metals such as iron, aluminium, and copper.",
+        "Step 6: Measure three: substitute scarce minerals with abundant or renewable materials and enforce sustainable mining rules."
+      ],
+      "board_mode": "Write a heading 'Why conserve' with two points, then a heading 'Measures' with three numbered points.",
+      "answer": "Minerals are exhaustible and unevenly distributed, and mining damages the environment. Conserve by reducing waste, recycling metals, and substituting materials, with strict sustainable mining rules.",
+      "board_tip": "A five-mark answer needs both the reason and the measures. Do not write only measures."
+    }
+  ],
+  "exercises": {
+    "exercise_5_1": {
+      "title": "NCERT Exercise 5.1 - Minerals: Types and Occurrence",
+      "objective": "Classify minerals and identify their modes of occurrence",
+      "problems": [
+        {
+          "id": "min-ex1-1",
+          "question": "Why are minerals unevenly distributed in India?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Minerals form under specific geological conditions of heat, pressure, and rock type.",
+            "Step 2: India's ancient peninsular plateau has hard, mineral-rich rocks, so most metallic minerals occur there.",
+            "Step 3: The Himalayan region is geologically young and has fewer metallic deposits.",
+            "Step 4: Coastal plains and river valleys are richer in salt, limestone, and placer deposits."
+          ],
+          "final_answer": "Minerals are unevenly distributed because their formation depends on rock type and geological history; the peninsular plateau is richest in metallic minerals."
+        },
+        {
+          "id": "min-ex1-2",
+          "question": "Differentiate between metallic and non-metallic minerals with two examples of each.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Metallic minerals contain metal in raw form and are usually good conductors of heat and electricity.",
+            "Step 2: Examples include iron ore and bauxite, and they are further divided into ferrous and non-ferrous.",
+            "Step 3: Non-metallic minerals do not contain metal and are often used in construction or as insulators.",
+            "Step 4: Examples include mica and limestone."
+          ],
+          "final_answer": "Metallic minerals contain metal (iron ore, bauxite); non-metallic minerals do not (mica, limestone)."
+        },
+        {
+          "id": "min-ex1-3",
+          "question": "What is a placer deposit? Give one example.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: A placer deposit is a concentration of heavy, resistant minerals in alluvial sand or gravel.",
+            "Step 2: Flowing water washes away lighter material and leaves the heavier minerals behind.",
+            "Step 3: Gold found in river sands is a common example.",
+            "Step 4: Such deposits are often mined by panning or small-scale dredging."
+          ],
+          "final_answer": "A placer deposit is a heavy-mineral concentration in alluvial sand or gravel, for example gold in river sand."
+        },
+        {
+          "id": "min-ex1-4",
+          "question": "Classify the following: coal, copper ore, mica, natural gas, limestone, and manganese.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Coal and natural gas are energy minerals because they are used as fuels.",
+            "Step 2: Copper ore and manganese are metallic minerals; manganese is ferrous and copper is non-ferrous.",
+            "Step 3: Mica and limestone contain no metal, so they are non-metallic minerals.",
+            "Step 4: State the group and one use for each to make the answer complete."
+          ],
+          "final_answer": "Energy: coal, natural gas. Metallic: copper ore (non-ferrous), manganese (ferrous). Non-metallic: mica, limestone."
+        },
+        {
+          "id": "min-ex1-5",
+          "question": "Why are coal and petroleum called conventional sources of energy?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Conventional sources are those that have been used for a long time and are well established.",
+            "Step 2: Coal and petroleum have powered industry, transport, and homes for over a century.",
+            "Step 3: They are exhaustible fossil fuels and cause pollution when burned.",
+            "Step 4: Their extraction, transport, and use are supported by mature technology and infrastructure."
+          ],
+          "final_answer": "Coal and petroleum are conventional because they are long-established, widely used fossil fuels; they are exhaustible and polluting."
+        },
+        {
+          "id": "min-ex1-6",
+          "question": "What is rat-hole mining? Why is it considered harmful?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Rat-hole mining is the manual digging of narrow horizontal tunnels to reach coal seams.",
+            "Step 2: It is unsafe because tunnels can collapse and trap or kill workers.",
+            "Step 3: It causes land degradation, water pollution, and loss of vegetation.",
+            "Step 4: It is unscientific and wastes coal, so it has been restricted in many areas."
+          ],
+          "final_answer": "Rat-hole mining is unsafe manual tunneling for coal; it risks collapse, damages land and water, wastes coal, and is therefore restricted."
+        }
+      ]
+    },
+    "exercise_5_2": {
+      "title": "NCERT Exercise 5.2 - Distribution and Mining",
+      "objective": "Locate mineral belts and compare mining methods",
+      "problems": [
+        {
+          "id": "min-ex2-1",
+          "question": "Name the four major iron ore belts of India.",
+          "difficulty": "simple",
+          "marks": 3,
+          "solution": [
+            "Step 1: Odisha-Jharkhand belt.",
+            "Step 2: Durg-Bastar-Chandrapur belt.",
+            "Step 3: Ballari-Chitradurga-Tumakuru belt.",
+            "Step 4: Maharashtra-Goa belt.",
+            "Step 5: Add one mining area to each belt if the question asks for examples."
+          ],
+          "final_answer": "Odisha-Jharkhand, Durg-Bastar-Chandrapur, Ballari-Chitradurga-Tumakuru, and Maharashtra-Goa belts."
+        },
+        {
+          "id": "min-ex2-2",
+          "question": "Where is mica found in India and why is it important?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Mica occurs mainly in the Koderma-Gaya-Hazaribagh belt of Jharkhand.",
+            "Step 2: Other areas include Nellore in Andhra Pradesh and parts of Rajasthan.",
+            "Step 3: Mica splits into thin, flexible sheets that resist heat and electricity.",
+            "Step 4: It is therefore used as an insulator in electrical and electronic equipment."
+          ],
+          "final_answer": "Mica is mined in Jharkhand, Andhra Pradesh, and Rajasthan; it is used as a heat- and electricity-resistant insulator."
+        },
+        {
+          "id": "min-ex2-3",
+          "question": "Compare open-cast mining and shaft mining.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Open-cast mining removes minerals near the surface by excavating a large pit.",
+            "Step 2: Shaft mining uses deep vertical tunnels to reach minerals far below the ground.",
+            "Step 3: Open-cast mining is cheaper and safer but disturbs a large surface area.",
+            "Step 4: Shaft mining disturbs less surface but is costly, difficult, and more dangerous."
+          ],
+          "final_answer": "Open-cast mining is shallow, cheap, and surface-disturbing; shaft mining is deep, costly, and more dangerous but uses less surface land."
+        },
+        {
+          "id": "min-ex2-4",
+          "question": "Why are petroleum refineries often located near ports or oil fields?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Crude oil is bulky and expensive to transport long distances.",
+            "Step 2: Refineries near ports can receive imported crude and export refined products easily.",
+            "Step 3: Refineries near oil fields reduce the cost of moving crude to the plant.",
+            "Step 4: Pipelines and tankers connect these locations to markets."
+          ],
+          "final_answer": "Refineries are located near ports or fields to reduce crude oil transport costs and to ease export of refined products."
+        },
+        {
+          "id": "min-ex2-5",
+          "question": "On an outline map of India, mark Bailadila, Jharia, and Mumbai High with the minerals found there.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Bailadila is in Chhattisgarh and is known for high-grade iron ore.",
+            "Step 2: Jharia is in Jharkhand and is a major coal field.",
+            "Step 3: Mumbai High is an offshore oil field in the Arabian Sea.",
+            "Step 4: Label each site clearly and write the mineral beside it."
+          ],
+          "final_answer": "Bailadila-iron ore (Chhattisgarh); Jharia-coal (Jharkhand); Mumbai High-petroleum (Arabian Sea)."
+        },
+        {
+          "id": "min-ex2-6",
+          "question": "Describe three environmental problems caused by mining and one way to reduce each.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Land degradation: mining leaves pits and spoil heaps. Reduce it by backfilling and reclaiming mined land.",
+            "Step 2: Water pollution: acid mine drainage and silt enter streams. Reduce it by treating mine water before release.",
+            "Step 3: Air pollution: dust and gases affect nearby residents. Reduce it by sprinkling water, covering loads, and using dust filters.",
+            "Step 4: Vegetation loss and noise also occur; green belts and noise barriers help.",
+            "Step 5: Strict enforcement of environmental clearance and mine closure plans is essential."
+          ],
+          "final_answer": "Mining causes land degradation, water pollution, and air pollution; reduce these by reclamation, effluent treatment, dust control, green belts, and strict mine closure rules."
+        }
+      ]
+    },
+    "exercise_5_3": {
+      "title": "NCERT Exercise 5.3 - Energy Resources and Conservation",
+      "objective": "Compare energy sources and apply conservation measures",
+      "problems": [
+        {
+          "id": "min-ex3-1",
+          "question": "Differentiate between conventional and non-conventional sources of energy.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Conventional sources have been used for long and include coal, petroleum, natural gas, and firewood.",
+            "Step 2: Non-conventional sources are newer and include solar, wind, tidal, geothermal, biogas, and nuclear energy.",
+            "Step 3: Most conventional sources are exhaustible and polluting.",
+            "Step 4: Most non-conventional sources are renewable and cleaner, though they need new technology and investment."
+          ],
+          "final_answer": "Conventional sources are long-used, mostly exhaustible and polluting; non-conventional sources are newer, mostly renewable and cleaner."
+        },
+        {
+          "id": "min-ex3-2",
+          "question": "Why is biogas considered a good rural energy source? Give two reasons.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Biogas is produced from cattle dung and plant waste, which are available in villages.",
+            "Step 2: It burns cleanly and reduces dependence on firewood, protecting trees and health.",
+            "Step 3: The leftover slurry is a nutrient-rich manure.",
+            "Step 4: It also manages animal waste hygienically."
+          ],
+          "final_answer": "Biogas uses local cattle dung and plant waste, burns cleanly, reduces firewood use, and leaves useful manure."
+        },
+        {
+          "id": "min-ex3-3",
+          "question": "Name two areas in India suitable for solar energy and two for wind energy.",
+          "difficulty": "simple",
+          "marks": 3,
+          "solution": [
+            "Step 1: Solar energy is strong in Rajasthan and Gujarat because of clear skies and high sunshine.",
+            "Step 2: Wind energy is harnessed in Tamil Nadu, especially around Muppandal, and in Gujarat and Rajasthan.",
+            "Step 3: Coastal and hill gaps with steady winds are also suitable.",
+            "Step 4: Write each state with the reason in one line."
+          ],
+          "final_answer": "Solar: Rajasthan and Gujarat. Wind: Tamil Nadu and Gujarat/Rajasthan."
+        },
+        {
+          "id": "min-ex3-4",
+          "question": "Why is the conservation of energy necessary? Suggest three ways to save energy at home.",
+          "difficulty": "medium",
+          "marks": 5,
+          "solution": [
+            "Step 1: Most energy comes from exhaustible fossil fuels that also pollute.",
+            "Step 2: Saving energy reduces costs, extends reserves, and lowers emissions.",
+            "Step 3: Way one: switch off lights, fans, and appliances when not in use.",
+            "Step 4: Way two: use LED bulbs and energy-efficient appliances.",
+            "Step 5: Way three: use solar water heaters and natural light and ventilation.",
+            "Step 6: Regular maintenance of appliances also improves efficiency."
+          ],
+          "final_answer": "Conservation is needed because fossil fuels are limited and polluting. Save energy by switching off appliances, using efficient devices, and adopting solar heating and natural light."
+        },
+        {
+          "id": "min-ex3-5",
+          "question": "What are the three Rs of conservation? Explain each with one example.",
+          "difficulty": "simple",
+          "marks": 3,
+          "solution": [
+            "Step 1: Reduce means using less of a resource, for example buying only what is needed.",
+            "Step 2: Reuse means using an item again, for example refilling a glass bottle.",
+            "Step 3: Recycle means processing waste into new products, for example recycling aluminium cans.",
+            "Step 4: Together they reduce mining, energy use, and waste."
+          ],
+          "final_answer": "Reduce (buy less), reuse (refill bottles), recycle (melt aluminium cans into new products)."
+        },
+        {
+          "id": "min-ex3-6",
+          "question": "A village has cattle dung, strong sunlight, and a small stream. Prepare a simple energy plan for it using two non-conventional sources, and state one limitation of each.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Use cattle dung in a biogas plant for cooking gas and manure; this reduces firewood use.",
+            "Step 2: Limitation: the plant needs regular dung supply, water, and maintenance.",
+            "Step 3: Use solar panels or a solar water heater for electricity and hot water.",
+            "Step 4: Limitation: output falls on cloudy days and the initial cost is high.",
+            "Step 5: The stream could later support a small micro-hydro unit if the flow is reliable.",
+            "Step 6: Combine the sources with the existing grid so supply is steady."
+          ],
+          "final_answer": "Use biogas from cattle dung for cooking and solar energy for electricity or hot water; biogas needs regular inputs and solar has high initial cost and cloudy-day limits."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-min-s-1",
+        "question": "Which of these is a non-metallic mineral?",
+        "options": ["Mica", "Haematite", "Bauxite", "Copper ore"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Mica contains no metal and is used as an electrical insulator.",
+          "wrong_options": {
+            "1": "Haematite is an iron ore, so it is metallic.",
+            "2": "Bauxite is an aluminium ore, so it is metallic.",
+            "3": "Copper ore is a non-ferrous metallic mineral."
+          }
+        }
+      },
+      {
+        "id": "q-min-s-2",
+        "question": "Coal and petroleum are examples of:",
+        "options": ["Energy minerals", "Non-metallic minerals", "Ferrous minerals", "Precious metals"],
+        "correct": 0,
+        "explanation": {
+          "correct": "They are burned to produce energy, so they are energy minerals.",
+          "wrong_options": {
+            "1": "Non-metallic minerals such as mica are not fuels.",
+            "2": "Ferrous minerals contain iron.",
+            "3": "Precious metals include gold and silver."
+          }
+        }
+      },
+      {
+        "id": "q-min-s-3",
+        "question": "Gold found in river sand is an example of:",
+        "options": ["A placer deposit", "A vein", "A residual mass", "An ocean deposit"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Flowing water concentrates heavy gold particles in alluvial sand, forming a placer deposit.",
+          "wrong_options": {
+            "1": "A vein is a mineral-filled crack in rock.",
+            "2": "A residual mass forms by weathering in place.",
+            "3": "Ocean deposits are dissolved or seabed minerals, not river sand."
+          }
+        }
+      },
+      {
+        "id": "q-min-s-4",
+        "question": "The Koderma-Gaya-Hazaribagh belt is famous for:",
+        "options": ["Mica", "Coal", "Petroleum", "Iron ore"],
+        "correct": 0,
+        "explanation": {
+          "correct": "This belt in Jharkhand is a major mica-producing region.",
+          "wrong_options": {
+            "1": "Jharia, also in Jharkhand, is famous for coal.",
+            "2": "Petroleum comes mainly from offshore and Gujarat/Assam fields.",
+            "3": "Iron ore belts lie in Odisha-Jharkhand, Chhattisgarh, Karnataka, and Goa."
+          }
+        }
+      },
+      {
+        "id": "q-min-s-5",
+        "question": "Which mining method is used when a mineral lies close to the surface?",
+        "options": ["Open-cast mining", "Shaft mining", "Deep drilling", "Rat-hole mining"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Open-cast mining removes shallow deposits by digging from the surface.",
+          "wrong_options": {
+            "1": "Shaft mining is used for deep deposits.",
+            "2": "Deep drilling is used mainly for oil and gas.",
+            "3": "Rat-hole mining is an unsafe manual method, not the standard choice."
+          }
+        }
+      },
+      {
+        "id": "q-min-s-6",
+        "question": "Which of these is a conventional source of energy?",
+        "options": ["Coal", "Solar energy", "Wind energy", "Tidal energy"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Coal has been used for a long time and is a conventional fossil fuel.",
+          "wrong_options": {
+            "1": "Solar energy is a non-conventional renewable source.",
+            "2": "Wind energy is a non-conventional renewable source.",
+            "3": "Tidal energy is a non-conventional renewable source."
+          }
+        }
+      },
+      {
+        "id": "q-min-s-7",
+        "question": "Biogas is mainly produced from:",
+        "options": ["Cattle dung and plant waste", "Coal and limestone", "Iron ore and coke", "Sea water and salt"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Bacteria decompose cattle dung and plant waste to release methane-rich biogas.",
+          "wrong_options": {
+            "1": "Coal and limestone are not used to make biogas.",
+            "2": "Iron ore and coke are raw materials for steel.",
+            "3": "Sea water and salt do not produce biogas."
+          }
+        }
+      },
+      {
+        "id": "q-min-s-8",
+        "question": "Which state is a leading producer of wind energy in India?",
+        "options": ["Tamil Nadu", "Bihar", "Punjab", "Assam"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Tamil Nadu, especially the Muppandal area, has strong and steady winds.",
+          "wrong_options": {
+            "1": "Bihar is not a leading wind-energy state.",
+            "2": "Punjab is mainly agricultural and has weaker wind potential.",
+            "3": "Assam is not known for large wind farms."
+          }
+        }
+      },
+      {
+        "id": "q-min-s-9",
+        "question": "The three Rs of conservation are:",
+        "options": ["Reduce, reuse, recycle", "Read, revise, recall", "Remove, repair, rebuild", "Run, rest, repeat"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Reduce, reuse, and recycle are the standard three Rs of resource conservation.",
+          "wrong_options": {
+            "1": "These are study skills, not conservation terms.",
+            "2": "These are not the standard three Rs.",
+            "3": "These are unrelated to conservation."
+          }
+        }
+      },
+      {
+        "id": "q-min-s-10",
+        "question": "Which mineral is used as an electrical insulator?",
+        "options": ["Mica", "Haematite", "Bauxite", "Manganese"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Mica resists heat and electricity and is used in electrical equipment.",
+          "wrong_options": {
+            "1": "Haematite is an iron ore.",
+            "2": "Bauxite is an aluminium ore.",
+            "3": "Manganese is used in steel making."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-min-m-1",
+        "question": "Which of the following is a ferrous mineral?",
+        "options": ["Manganese", "Bauxite", "Copper", "Mica"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Manganese is used in steel making and is classified as a ferrous mineral.",
+          "wrong_options": {
+            "1": "Bauxite is a non-ferrous aluminium ore.",
+            "2": "Copper is a non-ferrous metal.",
+            "3": "Mica is a non-metallic mineral."
+          }
+        }
+      },
+      {
+        "id": "q-min-m-2",
+        "question": "The Durg-Bastar-Chandrapur belt is important for:",
+        "options": ["Iron ore", "Mica", "Petroleum", "Lignite"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Bailadila and Dalli-Rajhara in this belt are famous for high-grade iron ore.",
+          "wrong_options": {
+            "1": "Mica comes mainly from Jharkhand and Andhra Pradesh.",
+            "2": "Petroleum comes from offshore and Gujarat/Assam basins.",
+            "3": "Lignite is mined mainly in Tamil Nadu and Gujarat."
+          }
+        }
+      },
+      {
+        "id": "q-min-m-3",
+        "question": "Which statement about shaft mining is correct?",
+        "options": ["It is used for deep deposits and is more dangerous", "It removes only surface soil", "It is used only for building stone", "It needs no safety measures"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Shaft mining uses deep vertical tunnels and carries higher safety risks.",
+          "wrong_options": {
+            "1": "That describes open-cast mining or quarrying.",
+            "2": "Quarrying is used for building stone.",
+            "3": "Shaft mining needs strict safety measures."
+          }
+        }
+      },
+      {
+        "id": "q-min-m-4",
+        "question": "Mumbai High is important for:",
+        "options": ["Petroleum", "Iron ore", "Mica", "Coal"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Mumbai High is a major offshore petroleum field in the Arabian Sea.",
+          "wrong_options": {
+            "1": "Iron ore comes mainly from peninsular belts.",
+            "2": "Mica comes from Jharkhand and Andhra Pradesh.",
+            "3": "Coal comes mainly from the Damodar and Mahanadi valleys."
+          }
+        }
+      },
+      {
+        "id": "q-min-m-5",
+        "question": "Which pair of states is most suitable for solar energy?",
+        "options": ["Rajasthan and Gujarat", "Kerala and Assam", "Bihar and West Bengal", "Sikkim and Manipur"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Rajasthan and Gujarat have high sunshine and clear skies.",
+          "wrong_options": {
+            "1": "Kerala and Assam have heavy cloud and rainfall.",
+            "2": "Bihar and West Bengal have lower solar potential than Rajasthan.",
+            "3": "Sikkim and Manipur are hilly and often cloudy."
+          }
+        }
+      },
+      {
+        "id": "q-min-m-6",
+        "question": "Which is a major problem caused by rat-hole mining?",
+        "options": ["Tunnel collapse and worker deaths", "Excess fish production", "Improved groundwater recharge", "Reduced soil erosion"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Narrow, unsupported tunnels can collapse and kill workers.",
+          "wrong_options": {
+            "1": "It has no link to fish production.",
+            "2": "It damages land and water rather than improving recharge.",
+            "3": "It increases land degradation and erosion."
+          }
+        }
+      },
+      {
+        "id": "q-min-m-7",
+        "question": "Why is biogas considered a clean fuel?",
+        "options": ["It burns with little smoke and uses waste", "It is made from coal", "It releases no carbon at all", "It is mined from deep wells"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Biogas burns with little smoke and is produced from cattle dung and plant waste.",
+          "wrong_options": {
+            "1": "Biogas is not made from coal.",
+            "2": "Biogas still contains carbon; it is cleaner, not carbon-free.",
+            "3": "It is produced in a digester, not mined."
+          }
+        }
+      },
+      {
+        "id": "q-min-m-8",
+        "question": "Which is a non-conventional source of energy?",
+        "options": ["Geothermal energy", "Coal", "Petroleum", "Natural gas"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Geothermal energy from hot springs is a non-conventional renewable source.",
+          "wrong_options": {
+            "1": "Coal is a conventional fossil fuel.",
+            "2": "Petroleum is a conventional fossil fuel.",
+            "3": "Natural gas is a conventional fossil fuel."
+          }
+        }
+      },
+      {
+        "id": "q-min-m-9",
+        "question": "Minerals are called exhaustible resources because:",
+        "options": ["They form over millions of years and can be used up", "They are grown on farms", "They are found everywhere in equal amounts", "They can be made in factories quickly"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Mineral formation is extremely slow, so reserves can be exhausted by mining.",
+          "wrong_options": {
+            "1": "Minerals are not agricultural products.",
+            "2": "They are unevenly distributed.",
+            "3": "They cannot be manufactured quickly like consumer goods."
+          }
+        }
+      },
+      {
+        "id": "q-min-m-10",
+        "question": "Which practice best conserves minerals?",
+        "options": ["Recycling scrap metal", "Burning more coal", "Discarding old appliances", "Mining without planning"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Recycling recovers metal and reduces the need to mine fresh ore.",
+          "wrong_options": {
+            "1": "Burning coal consumes a fossil fuel and adds pollution.",
+            "2": "Discarding appliances wastes recoverable metals.",
+            "3": "Unplanned mining wastes resources and damages land."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-min-x-1",
+        "question": "Which sequence correctly matches mineral to belt to state?",
+        "options": ["Iron ore - Bailadila - Chhattisgarh", "Mica - Jharia - Jharkhand", "Coal - Koderma - Jharkhand", "Petroleum - Bailadila - Maharashtra"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Bailadila in Chhattisgarh is a famous high-grade iron ore area.",
+          "wrong_options": {
+            "1": "Jharia is a coal field, not a mica field.",
+            "2": "Koderma is famous for mica, not coal.",
+            "3": "Bailadila is in Chhattisgarh and is known for iron ore."
+          }
+        }
+      },
+      {
+        "id": "q-min-x-2",
+        "question": "A mineral occurs in a crack filled with mineral matter inside granite. This mode of occurrence is called:",
+        "options": ["A vein or lode", "A placer deposit", "A residual mass", "An ocean deposit"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Minerals filling cracks or fissures in igneous or metamorphic rock form veins or lodes.",
+          "wrong_options": {
+            "1": "Placer deposits occur in alluvial sand.",
+            "2": "Residual masses form by weathering in place.",
+            "3": "Ocean deposits occur in sea water or on the seabed."
+          }
+        }
+      },
+      {
+        "id": "q-min-x-3",
+        "question": "Which statement best explains why steel plants are located near iron ore and coal fields?",
+        "options": ["Bulk raw materials are costly to transport", "Steel plants need sea water", "Iron ore is grown locally", "Coal is a finished product"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Iron ore and coal are bulky and heavy, so locating plants nearby reduces transport cost.",
+          "wrong_options": {
+            "1": "Most steel plants do not need sea water, though ports help exports.",
+            "2": "Iron ore is mined, not grown.",
+            "3": "Coal is a raw material and fuel, not a finished steel product."
+          }
+        }
+      },
+      {
+        "id": "q-min-x-4",
+        "question": "Which combination correctly lists one conventional and one non-conventional source?",
+        "options": ["Natural gas and tidal energy", "Solar and wind energy", "Coal and petroleum", "Biogas and geothermal energy"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Natural gas is conventional; tidal energy is non-conventional.",
+          "wrong_options": {
+            "1": "Both solar and wind are non-conventional.",
+            "2": "Both coal and petroleum are conventional.",
+            "3": "Both biogas and geothermal are non-conventional."
+          }
+        }
+      },
+      {
+        "id": "q-min-x-5",
+        "question": "The main environmental advantage of non-conventional energy sources is that they:",
+        "options": ["Produce little or no air pollution during operation", "Are always cheaper to install", "Require no land", "Never need maintenance"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Solar, wind, and similar sources produce little or no air pollution while operating.",
+          "wrong_options": {
+            "1": "Initial installation can be expensive.",
+            "2": "Wind and solar farms do need land.",
+            "3": "They need regular maintenance."
+          }
+        }
+      },
+      {
+        "id": "q-min-x-6",
+        "question": "Which is the best example of sustainable mineral use?",
+        "options": ["Recycling aluminium and reclaiming mined land", "Mining all ore quickly regardless of waste", "Dumping mine waste into rivers", "Using high-grade ore only and abandoning the rest"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Recycling reduces fresh mining, and reclamation restores land for future use.",
+          "wrong_options": {
+            "1": "Rapid, wasteful mining shortens reserve life.",
+            "2": "River dumping causes serious water pollution.",
+            "3": "Abandoning lower-grade ore wastes the deposit."
+          }
+        }
+      },
+      {
+        "id": "q-min-x-7",
+        "question": "Why is nuclear energy classified as a non-conventional source even though uranium is exhaustible?",
+        "options": ["It is a newer technology with a different fuel cycle", "It uses no fuel at all", "It is produced from cattle dung", "It is a fossil fuel"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Nuclear power is treated as non-conventional because of its newer technology and distinct fuel cycle.",
+          "wrong_options": {
+            "1": "Nuclear plants use uranium or thorium fuel.",
+            "2": "Cattle dung is used for biogas, not nuclear power.",
+            "3": "Nuclear fuel is not a fossil fuel."
+          }
+        }
+      },
+      {
+        "id": "q-min-x-8",
+        "question": "A student says all non-metallic minerals are unimportant. Which reply is correct?",
+        "options": ["Limestone and mica are essential for cement and electrical goods", "Non-metallic minerals are all fuels", "Non-metallic minerals contain iron", "Non-metallic minerals are always precious metals"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Limestone is vital for cement and mica for electrical insulation, so non-metallic minerals matter greatly.",
+          "wrong_options": {
+            "1": "Fuels are energy minerals, not non-metallic minerals.",
+            "2": "Ferrous minerals contain iron.",
+            "3": "Precious metals are metallic, not non-metallic."
+          }
+        }
+      },
+      {
+        "id": "q-min-x-9",
+        "question": "Which measure would most directly reduce the environmental damage of mining?",
+        "options": ["Backfilling and revegetating mined land", "Increasing the number of open pits", "Removing all safety rules", "Transporting wet ore in open trucks"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Backfilling pits and planting vegetation restores land and reduces erosion and dust.",
+          "wrong_options": {
+            "1": "More open pits increase surface damage.",
+            "2": "Removing safety rules endangers workers.",
+            "3": "Open wet ore trucks increase spillage and dust."
+          }
+        }
+      },
+      {
+        "id": "q-min-x-10",
+        "question": "Which statement about India's mineral distribution is most accurate?",
+        "options": ["The peninsular plateau is rich in metallic minerals", "The Himalayas are richest in iron ore", "Coastal plains hold most coal", "All states have equal mineral reserves"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Ancient hard rocks of the peninsular plateau host most metallic mineral deposits.",
+          "wrong_options": {
+            "1": "The Himalayas are geologically young and poor in metallic minerals.",
+            "2": "Coal is mainly in interior river valleys, not coastal plains.",
+            "3": "Mineral reserves are very unevenly distributed."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Minerals and Energy Resources - Concept Map",
+    "nodes": [
+      { "id": "n1", "label": "Minerals", "group": "foundation" },
+      { "id": "n2", "label": "Metallic Minerals", "group": "type" },
+      { "id": "n3", "label": "Non-metallic Minerals", "group": "type" },
+      { "id": "n4", "label": "Energy Minerals", "group": "type" },
+      { "id": "n5", "label": "Ferrous", "group": "metal-type" },
+      { "id": "n6", "label": "Non-ferrous", "group": "metal-type" },
+      { "id": "n7", "label": "Mining", "group": "process" },
+      { "id": "n8", "label": "Conventional Energy", "group": "energy" },
+      { "id": "n9", "label": "Non-conventional Energy", "group": "energy" },
+      { "id": "n10", "label": "Conservation", "group": "application" }
+    ],
+    "edges": [
+      ["n1", "n2"],
+      ["n1", "n3"],
+      ["n1", "n4"],
+      ["n2", "n5"],
+      ["n2", "n6"],
+      ["n1", "n7"],
+      ["n5", "n7"],
+      ["n4", "n8"],
+      ["n4", "n9"],
+      ["n7", "n10"],
+      ["n8", "n10"],
+      ["n9", "n10"]
+    ]
+  },
+  "mind_maps": {
+    "title": "Minerals and Energy Resources - Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Minerals and Energy Resources",
+    "branches": [
+      {
+        "concept": "Classification",
+        "sub_nodes": [
+          "Metallic: ferrous and non-ferrous",
+          "Non-metallic: mica, limestone, gypsum",
+          "Energy: coal, petroleum, natural gas, uranium",
+          "Precious metals: gold, silver, platinum"
+        ],
+        "connections": "Composition decides use and value"
+      },
+      {
+        "concept": "Mode of Occurrence",
+        "sub_nodes": [
+          "Veins and lodes in igneous and metamorphic rock",
+          "Beds and layers in sedimentary rock",
+          "Residual masses such as bauxite",
+          "Placer deposits in alluvial sands",
+          "Dissolved minerals in ocean water"
+        ],
+        "connections": "Occurrence decides the mining method"
+      },
+      {
+        "concept": "Distribution in India",
+        "sub_nodes": [
+          "Iron ore belts: Odisha-Jharkhand, Durg-Bastar-Chandrapur, Ballari-Chitradurga-Tumakuru, Maharashtra-Goa",
+          "Coal: Damodar, Mahanadi, Son, and Godavari valleys",
+          "Petroleum: Mumbai High, Gujarat, Assam, Krishna-Godavari",
+          "Mica: Jharkhand, Andhra Pradesh, Rajasthan"
+        ],
+        "connections": "Most metallic minerals lie in the peninsular plateau"
+      },
+      {
+        "concept": "Mining",
+        "sub_nodes": [
+          "Open-cast for shallow deposits",
+          "Shaft for deep deposits",
+          "Quarrying for building stone",
+          "Rat-hole mining is unsafe and restricted",
+          "Land, water, air, and noise impacts"
+        ],
+        "connections": "Method choice affects cost, safety, and environment"
+      },
+      {
+        "concept": "Energy Resources",
+        "sub_nodes": [
+          "Conventional: coal, petroleum, gas, thermal, hydro",
+          "Non-conventional: solar, wind, tidal, geothermal, biogas, nuclear",
+          "Solar and wind potential in Rajasthan, Gujarat, Tamil Nadu",
+          "Tidal potential in Khambhat, Kachchh, Sundarbans"
+        ],
+        "connections": "Renewables improve energy security and reduce pollution"
+      },
+      {
+        "concept": "Conservation",
+        "sub_nodes": [
+          "Reduce, reuse, recycle",
+          "Recycle iron, aluminium, and copper",
+          "Improve mining efficiency",
+          "Shift to renewable energy",
+          "Reclaim mined land"
+        ],
+        "connections": "Sustainable use protects future generations"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "All minerals are metals - FALSE: mica, limestone, gypsum, and salt are non-metallic minerals.",
+    "Coal is a metallic mineral because it is mined - FALSE: coal is an energy mineral, not a metal.",
+    "Minerals are renewable because new ones keep being discovered - FALSE: mineral formation takes millions of years, so they are exhaustible.",
+    "Open-cast mining is always safer and better than shaft mining - PARTLY TRUE: it is generally safer, but it disturbs a much larger surface area.",
+    "Gold in river sand was deposited there as a vein - FALSE: it is a placer deposit concentrated by flowing water.",
+    "Solar energy works equally well everywhere in India - FALSE: output depends on sunshine, cloud cover, and latitude, and is highest in Rajasthan and Gujarat.",
+    "Biogas is the same as natural gas - FALSE: biogas is produced from organic waste and is mainly methane with carbon dioxide; natural gas is a fossil fuel.",
+    "Conservation means stopping all mining - FALSE: conservation means wise, efficient, and sustainable use, not a complete ban."
+  ]
+}

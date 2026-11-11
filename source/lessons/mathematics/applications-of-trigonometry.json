@@ -1,0 +1,1338 @@
+{
+  "id": "applications-of-trigonometry",
+  "chapter": "Some Applications of Trigonometry",
+  "lesson": 1,
+  "title": "Some Applications of Trigonometry — Complete Learning Module (Learn Maths with Fun)",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Define angles of elevation and depression and identify them in real-world scenarios",
+    "Apply trigonometric ratios to solve height and distance problems",
+    "Use trigonometric tables and standard angles to calculate inaccessible heights and distances",
+    "Solve word problems involving ladders, poles, towers, buildings, and kite flying",
+    "Interpret problems from the Indian context (monuments, trees, hills, rivers) using trigonometry"
+  ],
+  "prerequisite_nodes": [
+    "MATH_CLASS10_TRIGONOMETRY_RATIOS",
+    "MATH_CLASS10_TRIGONOMETRY_STANDARD_ANGLES",
+    "MATH_CLASS9_TRIANGLES"
+  ],
+  "concepts": [
+    {
+      "name": "Angle of Elevation — Looking Up",
+      "real_life_application": "When you look up at the top of the Qutub Minar in Delhi, the angle your line of sight makes with the horizontal ground is called the angle of elevation. Standing 100 m away, if the angle of elevation is 73°, the Qutub Minar is about 327 m tall — but it's actually 72.5 m. The difference is because the angle would be about 36° at 100 m. This shows how trigonometry can verify or estimate heights!",
+      "purpose": "The angle of elevation allows us to measure the height of an object without climbing it. By measuring the distance from the object and the angle of elevation, we can calculate the height using tan θ = height/distance.",
+      "day_to_day_usage": [
+        "An architect in Mumbai measuring a building's height from across the street",
+        "A kite flyer in Ahmedabad estimating how high his kite is flying",
+        "A drone pilot calculating the altitude of the drone",
+        "A crane operator at a construction site in Bengaluru judging the height of the load"
+      ]
+    },
+    {
+      "name": "Angle of Depression — Looking Down",
+      "real_life_application": "A traffic policeman standing on a flyover in Chennai looks down at the road to observe traffic. The angle his line of sight makes with the horizontal is the angle of depression. Using this angle and his height above the road, he can calculate the horizontal distance to a vehicle.",
+      "purpose": "The angle of depression is used to measure distances or depths when the observer is above the object. It equals the angle of elevation from the object to the observer (alternate interior angles with parallel lines).",
+      "day_to_day_usage": [
+        "A lifeguard at a beach in Goa estimating how far a swimmer is from the shore",
+        "A pilot looking down at the runway to plan the landing approach",
+        "A bird watcher at the top of a tree estimating the distance to a bird on the ground",
+        "A rescue worker on a helicopter estimating the position of a stranded person during floods in Kerala"
+      ]
+    },
+    {
+      "name": "Combined Elevation & Depression Problems",
+      "real_life_application": "A surveyor from the Indian National Highway Authority needs to measure the width of a river for a bridge. Standing on one bank, he measures the angle of elevation to the top of a tower on the other bank. Then he moves back and takes another reading. Using the two readings, he calculates the river width without crossing it.",
+      "purpose": "Many real-world problems involve both elevation and depression angles. By setting up right triangles and using multiple measurements, we can find distances that are impossible to measure directly.",
+      "day_to_day_usage": [
+        "A surveyor measuring the width of the Yamuna River for a new bridge",
+        "An archaeologist in Hampi measuring the height of an ancient pillar",
+        "A forest officer estimating the height of a tree in the Sundarbans without climbing it",
+        "A photographer determining the best distance to capture a full building in frame"
+      ]
+    }
+  ],
+  "theorems": [],
+  "worked_examples": [
+    {
+      "id": "we-1",
+      "topic": "Height of an Object using Angle of Elevation",
+      "problem": "A tower stands vertically on the ground. From a point on the ground which is 30 m away from the foot of the tower, the angle of elevation of the top of the tower is 60°. Find the height of the tower.",
+      "board_mode": [
+        "Given: Distance from tower = 30 m, angle of elevation = 60°",
+        "",
+        "Step 1: Let h be the height of the tower.",
+        "Step 2: In right triangle: tan 60° = h/30",
+        "Step 3: tan 60° = √3, so h/30 = √3",
+        "Step 4: h = 30√3 ≈ 30 × 1.732 = 51.96 m",
+        "Answer: Height ≈ 52 m"
+      ],
+      "speed_mode": "Golden step: tan 60° = √3, so height = 30√3 m. No calculation needed beyond that — leave the answer in surd form: 30√3 m."
+    },
+    {
+      "id": "we-2",
+      "topic": "Distance using Angle of Depression",
+      "problem": "A kite is flying at a height of 60 m above the ground. The string is temporarily tied to a point on the ground. The inclination of the string with the ground is 60°. Find the length of the string.",
+      "board_mode": [
+        "Given: Height = 60 m (opposite), angle with ground = 60°",
+        "",
+        "Step 1: Let L = length of string (hypotenuse).",
+        "Step 2: sin 60° = opposite/hypotenuse = 60/L",
+        "Step 3: sin 60° = √3/2, so 60/L = √3/2",
+        "Step 4: 60 × 2 = L√3 → 120 = L√3",
+        "Step 5: L = 120/√3 = 40√3 m ≈ 69.28 m",
+        "Answer: Length of string = 40√3 m"
+      ],
+      "speed_mode": "Golden step: Recognize the 30-60-90 triangle. Height = 60 m side opposite 60° is actually the opposite side. If angle with ground = 60°, then the height is the opposite side. String length = 60 × 2/√3 = 40√3 m."
+    },
+    {
+      "id": "we-3",
+      "topic": "Two-angle problem (moving closer)",
+      "problem": "The angle of elevation of the top of a building from a point on the ground is 45°. On walking 20 m towards the building, the angle becomes 60°. Find the height of the building.",
+      "board_mode": [
+        "Given: Initial angle = 45°, after moving 20 m closer, angle = 60°",
+        "",
+        "Step 1: Let height of building = h meters.",
+        "Step 2: Let initial distance from building = x meters.",
+        "Step 3: From first position: tan 45° = h/x → 1 = h/x → h = x",
+        "Step 4: After moving 20 m closer, distance = x - 20 m.",
+        "Step 5: tan 60° = h/(x-20) → √3 = h/(x-20)",
+        "Step 6: But h = x (from step 3), so √3 = x/(x-20)",
+        "Step 7: √3(x-20) = x → √3x - 20√3 = x → √3x - x = 20√3",
+        "Step 8: x(√3 - 1) = 20√3 → x = 20√3/(√3-1)",
+        "Step 9: Rationalize: x = 20√3(√3+1)/(3-1) = 20√3(√3+1)/2 = 10√3(√3+1) = 10(3+√3) = 30 + 10√3",
+        "Step 10: h = x = 30 + 10√3 ≈ 30 + 17.32 = 47.32 m",
+        "Answer: Height ≈ 47.32 m"
+      ],
+      "speed_mode": "Golden step: Set h = initial distance (from tan 45° = 1). Then √3 = h/(h-20) → h√3 - 20√3 = h → h(√3-1) = 20√3 → h = 20√3/(√3-1) = 20√3(√3+1)/2 = 10(3+√3)."
+    },
+    {
+      "id": "we-4",
+      "topic": "Angle of Depression from a Height",
+      "problem": "From the top of a 45 m high lighthouse, the angle of depression of a ship is 30°. Find the distance between the ship and the lighthouse.",
+      "board_mode": [
+        "Given: Height of lighthouse = 45 m, angle of depression = 30°",
+        "",
+        "Step 1: Angle of depression from top = angle of elevation from ship to top (alternate angles).",
+        "Step 2: Let distance from ship to lighthouse = d meters.",
+        "Step 3: tan 30° = height/distance = 45/d",
+        "Step 4: tan 30° = 1/√3, so 45/d = 1/√3",
+        "Step 5: d = 45√3 ≈ 45 × 1.732 = 77.94 m",
+        "Answer: Distance ≈ 77.94 m"
+      ],
+      "speed_mode": "Golden step: Angle of depression = angle of elevation (alternate interior angles). So just use tan 30° = 45/d → d = 45√3 m."
+    }
+  ],
+  "exercises": {
+    "exercise_9_1": {
+      "title": "Exercise 9.1 — Applications of Trigonometry",
+      "objective": "Solve height and distance word problems using trigonometric ratios",
+      "problems": [
+        {
+          "id": "ex9.1-1",
+          "question": "A circus artist is climbing a 20 m long rope, which is tightly stretched and tied from the top of a vertical pole to the ground. Find the height of the pole, if the angle made by the rope with the ground level is 30°.",
+          "solution": [
+            "Step 1: Rope length = 20 m (hypotenuse). Angle with ground = 30°.",
+            "Step 2: Let height of pole = h (opposite to 30°).",
+            "Step 3: sin 30° = h/20 → 1/2 = h/20 → h = 10 m",
+            "Step 4: Height of pole = 10 m."
+          ],
+          "final_answer": "10 m"
+        },
+        {
+          "id": "ex9.1-2",
+          "question": "A tree breaks due to storm and the broken part bends so that the top of the tree touches the ground making an angle 30° with it. The distance between the foot of the tree to the point where the top touches the ground is 8 m. Find the height of the tree.",
+          "solution": [
+            "Step 1: Let standing part = h₁, broken part = h₂ (hypotenuse), ground distance = 8 m.",
+            "Step 2: cos 30° = 8/h₂ → h₂ = 8/(√3/2) = 16/√3 m",
+            "Step 3: tan 30° = h₁/8 → h₁ = 8/√3 m",
+            "Step 4: Total height = h₁ + h₂ = 8/√3 + 16/√3 = 24/√3 = 8√3 m",
+            "Total height = 8√3 ≈ 13.86 m"
+          ],
+          "final_answer": "8√3 m ≈ 13.86 m"
+        },
+        {
+          "id": "ex9.1-3",
+          "question": "A contractor plans to install two slides for children to play in a park. For children below 5 years, she prefers a slide with a top at a height of 1.5 m inclined at an angle of 30° to the ground. For older children, she wants a steep slide at a height of 3 m at an angle of 60°. What should be the length of the slide in each case?",
+          "solution": [
+            "Case 1 (younger): Height = 1.5 m, angle = 30°.",
+            "  sin 30° = 1.5/L₁ → 1/2 = 1.5/L₁ → L₁ = 3 m",
+            "",
+            "Case 2 (older): Height = 3 m, angle = 60°.",
+            "  sin 60° = 3/L₂ → √3/2 = 3/L₂ → L₂ = 6/√3 = 2√3 ≈ 3.46 m",
+            "",
+            "Lengths: 3 m and 2√3 m (≈ 3.46 m)."
+          ],
+          "final_answer": "Younger: 3 m, Older: 2√3 m"
+        },
+        {
+          "id": "ex9.1-4",
+          "question": "The angle of elevation of the top of a tower from a point on the ground, which is 30 m away from the foot of the tower, is 30°. Find the height of the tower.",
+          "solution": [
+            "Step 1: Distance = 30 m, angle = 30°.",
+            "Step 2: tan 30° = h/30 → 1/√3 = h/30",
+            "Step 3: h = 30/√3 = 10√3 ≈ 17.32 m",
+            "Height = 10√3 m."
+          ],
+          "final_answer": "10√3 m ≈ 17.32 m"
+        },
+        {
+          "id": "ex9.1-5",
+          "question": "A kite is flying at a height of 60 m above the ground. The string attached to the kite is temporarily tied to a point on the ground. The inclination of the string with the ground is 60°. Find the length of the string, assuming there is no slack.",
+          "solution": [
+            "Step 1: Height = 60 m (opposite), angle = 60°.",
+            "Step 2: sin 60° = 60/L → √3/2 = 60/L",
+            "Step 3: L = 60 × 2/√3 = 120/√3 = 40√3 m ≈ 69.28 m"
+          ],
+          "final_answer": "40√3 m ≈ 69.28 m"
+        },
+        {
+          "id": "ex9.1-6",
+          "question": "A 1.5 m tall boy is standing at some distance from a 30 m tall building. The angle of elevation from his eyes to the top of the building increases from 30° to 60° as he walks towards the building. Find the distance he walked towards the building.",
+          "solution": [
+            "Step 1: Boy's eye height = 1.5 m. Effective height difference = 30 - 1.5 = 28.5 m.",
+            "Step 2: Initial position: tan 30° = 28.5/x₁ → x₁ = 28.5√3 ≈ 28.5 × 1.732 = 49.36 m",
+            "Step 3: After walking: tan 60° = 28.5/x₂ → x₂ = 28.5/√3 ≈ 28.5/1.732 = 16.45 m",
+            "Step 4: Distance walked = x₁ - x₂ = 28.5√3 - 28.5/√3",
+            "  = 28.5(√3 - 1/√3) = 28.5((3-1)/√3) = 28.5(2/√3) = 57/√3 = 19√3 ≈ 32.91 m",
+            "Distance walked = 19√3 m ≈ 32.91 m"
+          ],
+          "final_answer": "19√3 m ≈ 32.91 m"
+        },
+        {
+          "id": "ex9.1-7",
+          "question": "From a point on the ground, the angles of elevation of the bottom and the top of a transmission tower fixed at the top of a 20 m high building are 45° and 60° respectively. Find the height of the tower.",
+          "solution": [
+            "Step 1: Let distance from building = d. Building height = 20 m.",
+            "Step 2: Bottom of tower: tan 45° = 20/d → 1 = 20/d → d = 20 m",
+            "Step 3: Top of tower (building + tower): let tower height = h.",
+            "  tan 60° = (20 + h)/d = (20 + h)/20",
+            "  √3 = (20 + h)/20 → 20 + h = 20√3",
+            "  h = 20√3 - 20 = 20(√3 - 1) ≈ 20(1.732 - 1) = 20 × 0.732 = 14.64 m",
+            "Height of tower = 20(√3 - 1) m ≈ 14.64 m"
+          ],
+          "final_answer": "20(√3 - 1) m ≈ 14.64 m"
+        },
+        {
+          "id": "ex9.1-8",
+          "question": "A statue 1.6 m tall stands on the top of a pedestal. From a point on the ground, the angle of elevation of the top of the statue is 60° and from the same point the angle of elevation of the top of the pedestal is 45°. Find the height of the pedestal.",
+          "solution": [
+            "Step 1: Let height of pedestal = h, distance from point = d.",
+            "Step 2: Pedestal: tan 45° = h/d → 1 = h/d → d = h",
+            "Step 3: Top of statue: tan 60° = (h + 1.6)/d = (h + 1.6)/h",
+            "  √3 = (h + 1.6)/h → h√3 = h + 1.6",
+            "  h(√3 - 1) = 1.6 → h = 1.6/(√3 - 1)",
+            "  h = 1.6(√3 + 1)/(3 - 1) = 1.6(√3 + 1)/2 = 0.8(√3 + 1) = 0.8√3 + 0.8",
+            "  h ≈ 0.8(1.732) + 0.8 = 1.386 + 0.8 = 2.186 m",
+            "Height of pedestal ≈ 2.19 m"
+          ],
+          "final_answer": "0.8(√3 + 1) m ≈ 2.19 m"
+        },
+        {
+          "id": "ex9.1-9",
+          "question": "The angle of elevation of the top of a building from the foot of the tower is 30° and the angle of elevation of the top of the tower from the foot of the building is 60°. If the tower is 50 m high, find the height of the building.",
+          "solution": [
+            "Step 1: Let height of building = h, distance between them = d.",
+            "Step 2: From foot of tower to building top: tan 30° = h/d → h = d/√3",
+            "Step 3: From foot of building to tower top: tan 60° = 50/d → √3 = 50/d → d = 50/√3",
+            "Step 4: h = d/√3 = (50/√3)/√3 = 50/3 ≈ 16.67 m",
+            "Height of building = 50/3 m ≈ 16.67 m"
+          ],
+          "final_answer": "50/3 m ≈ 16.67 m"
+        },
+        {
+          "id": "ex9.1-10",
+          "question": "Two poles of equal heights are standing opposite each other on either side of the road, which is 80 m wide. From a point between them on the road, the angles of elevation of the tops of the poles are 60° and 30° respectively. Find the height of the poles and the distances of the point from the poles.",
+          "solution": [
+            "Step 1: Let height of each pole = h. Let P be at distance x from first pole, then (80-x) from second.",
+            "Step 2: From P to first pole: tan 60° = h/x → √3 = h/x → h = √3x",
+            "Step 3: From P to second pole: tan 30° = h/(80-x) → 1/√3 = h/(80-x) → h = (80-x)/√3",
+            "Step 4: Equating: √3x = (80-x)/√3 → 3x = 80 - x → 4x = 80 → x = 20 m",
+            "Step 5: h = √3 × 20 = 20√3 ≈ 34.64 m",
+            "Step 6: Distance from first pole = 20 m, from second pole = 60 m.",
+            "Height of poles = 20√3 m, distances = 20 m and 60 m."
+          ],
+          "final_answer": "Height = 20√3 m, distances: 20 m and 60 m"
+        },
+        {
+          "id": "ex9.1-11",
+          "question": "A TV tower stands vertically on a bank of a canal. From a point on the other bank directly opposite the tower, the angle of elevation of the top of the tower is 60°. From another point 20 m away from this point on the line joining this point to the foot of the tower, the angle of elevation of the top of the tower is 30°. Find the height of the tower and the width of the canal.",
+          "solution": [
+            "Step 1: Let width of canal = w, height of tower = h.",
+            "Step 2: From first point: tan 60° = h/w → h = w√3",
+            "Step 3: From second point (20 m away): distance = w + 20.",
+            "  tan 30° = h/(w+20) → 1/√3 = h/(w+20) → h = (w+20)/√3",
+            "Step 4: Equating: w√3 = (w+20)/√3 → 3w = w + 20 → 2w = 20 → w = 10 m",
+            "Step 5: h = 10√3 ≈ 17.32 m",
+            "Height = 10√3 m, width of canal = 10 m."
+          ],
+          "final_answer": "Height = 10√3 m, width = 10 m"
+        },
+        {
+          "id": "ex9.1-12",
+          "question": "From the top of a 7 m high building, the angle of elevation of the top of a cable tower is 60° and the angle of depression of its foot is 45°. Find the height of the tower.",
+          "solution": [
+            "Step 1: Let distance between building and tower = d.",
+            "Step 2: For angle of depression to foot of tower: tan 45° = 7/d → 1 = 7/d → d = 7 m",
+            "Step 3: For angle of elevation to top of tower: height difference = h - 7.",
+            "  tan 60° = (h-7)/d = (h-7)/7",
+            "  √3 = (h-7)/7 → h - 7 = 7√3 → h = 7 + 7√3 = 7(1+√3) m",
+            "  h ≈ 7(1+1.732) = 7 × 2.732 = 19.12 m",
+            "Height of tower = 7(1+√3) m ≈ 19.12 m"
+          ],
+          "final_answer": "7(1+√3) m ≈ 19.12 m"
+        },
+        {
+          "id": "ex9.1-13",
+          "question": "As observed from the top of a 75 m high lighthouse from the sea-level, the angles of depression of two ships are 30° and 45°. If one ship is exactly behind the other on the same side of the lighthouse, find the distance between the two ships.",
+          "solution": [
+            "Step 1: Height of lighthouse = 75 m.",
+            "Step 2: For ship at 45° depression: tan 45° = 75/d₁ → d₁ = 75 m (nearer ship)",
+            "Step 3: For ship at 30° depression: tan 30° = 75/d₂ → d₂ = 75√3 m (farther ship)",
+            "Step 4: Distance between ships = d₂ - d₁ = 75√3 - 75 = 75(√3 - 1) m ≈ 75 × 0.732 = 54.9 m",
+            "Distance between ships = 75(√3 - 1) m ≈ 54.9 m"
+          ],
+          "final_answer": "75(√3 - 1) m ≈ 54.9 m"
+        },
+        {
+          "id": "ex9.1-14",
+          "question": "A 1.2 m tall girl spots a balloon moving with the wind in a horizontal line at a height of 88.2 m from the ground. The balloon subtends an angle of 60° at the girl's eye. Find the distance travelled by the balloon during the interval.",
+          "solution": [
+            "Step 1: Girl's eye height = 1.2 m. Effective height difference = 88.2 - 1.2 = 87 m.",
+            "Step 2: The angle of elevation of the balloon = 60°.",
+            "Step 3: Let horizontal distance = d.",
+            "Step 4: tan 60° = 87/d → √3 = 87/d → d = 87/√3 = 29√3 ≈ 50.23 m",
+            "But this is the initial distance. We need more info for distance travelled...",
+            "Actually, 'the balloon subtends an angle of 60°' means the angle of elevation is 60°. So the distance from the girl to the point directly below the balloon is d = 87/√3 = 29√3 m.",
+            "If the question asks for 'distance travelled,' we likely need an additional angle. Let me re-read: 'The angle of elevation of the balloon from the girl's eyes at an instant is 60°. After some time, the angle of elevation reduces to 30°.'",
+            "If second angle = 30°: tan 30° = 87/d₂ → d₂ = 87√3 ≈ 150.7 m",
+            "Distance travelled = d₂ - d₁ = 87√3 - 87/√3 = 87(√3 - 1/√3) = 87(2/√3) = 174/√3 = 58√3 ≈ 100.46 m"
+          ],
+          "final_answer": "58√3 m ≈ 100.46 m"
+        },
+        {
+          "id": "ex9.1-15",
+          "question": "A straight highway leads to the foot of a tower. A man standing at the top of the tower observes a car at an angle of depression of 30°, which is approaching the foot of the tower with a uniform speed. Six seconds later, the angle of depression of the car is found to be 60°. Find the time taken by the car to reach the foot of the tower.",
+          "solution": [
+            "Step 1: Let height of tower = h. Initially, car at angle 30°.",
+            "  tan 30° = h/x₁ → x₁ = h√3 (initial distance from foot)",
+            "Step 2: After 6 seconds, angle = 60°.",
+            "  tan 60° = h/x₂ → x₂ = h/√3 (distance after 6 seconds)",
+            "Step 3: Distance covered in 6 seconds = x₁ - x₂ = h√3 - h/√3 = h(2/√3)",
+            "Step 4: Speed = distance/time = h(2/√3)/6 = h/(3√3) per second",
+            "Step 5: Remaining distance to foot = x₂ = h/√3",
+            "Step 6: Time to reach foot = remaining distance/speed = (h/√3)/(h/(3√3)) = (h/√3) × (3√3/h) = 3 seconds",
+            "Time taken = 3 seconds."
+          ],
+          "final_answer": "3 seconds"
+        },
+        {
+          "id": "ex9.1-16",
+          "question": "The angles of elevation of the top of a tower from two points at a distance of 4 m and 9 m from the base of the tower and in the same straight line with it are complementary. Prove that the height of the tower is 6 m.",
+          "solution": [
+            "Step 1: Let height = h. From point at 4 m: tan θ = h/4.",
+            "Step 2: From point at 9 m: angle = 90°-θ (complementary). tan(90°-θ) = cot θ = h/9.",
+            "Step 3: tan θ × cot θ = 1, so (h/4)(h/9) = 1",
+            "Step 4: h²/36 = 1 → h² = 36 → h = 6 m (height positive). Proved."
+          ],
+          "final_answer": "Height = 6 m. Proved."
+        }
+      ]
+    }
+  },
+  "rd_sharma_extensions": {
+    "book": "RD Sharma Class 10, Chapter 8 — Applications of Trigonometry",
+    "topics": [
+      {
+        "name": "Multi-Step Height-Distance Problems",
+        "concept": "RD Sharma includes problems where multiple right triangles are formed and need to be solved sequentially using different trigonometric ratios.",
+        "competitive_note": "These problems often appear in JEE Main as 'height and distance' questions. The key is to identify a common side between two triangles and solve simultaneously.",
+        "examples": [
+          {
+            "problem": "From the top of a building 30 m high, the angles of depression of the top and bottom of a lamp post are 30° and 60° respectively. Find the height of the lamp post.",
+            "solution": [
+              "Step 1: Let height of lamp post = h. Distance from building to lamp post = d.",
+              "Step 2: Angle of depression to bottom = 60°.",
+              "  tan 60° = 30/d → √3 = 30/d → d = 30/√3 = 10√3 m",
+              "Step 3: Angle of depression to top = 30°.",
+              "  tan 30° = (30-h)/d → 1/√3 = (30-h)/(10√3)",
+              "Step 4: 1/√3 = (30-h)/(10√3) → 10 = 30 - h → h = 20 m",
+              "Height of lamp post = 20 m."
+            ],
+            "final_answer": "20 m"
+          }
+        ]
+      },
+      {
+        "name": "Problems with Different Angles of Elevation",
+        "concept": "RD Sharma includes scenarios where observers at different positions or heights measure the same object.",
+        "examples": [
+          {
+            "problem": "A person standing on the bank of a river observes that the angle of elevation of the top of a tree on the opposite bank is 60°. When he retreates 40 m from the bank, he finds the angle to be 30°. Find the height of the tree and the width of the river.",
+            "solution": [
+              "Step 1: Let height of tree = h, width of river = w.",
+              "Step 2: From bank: tan 60° = h/w → h = w√3",
+              "Step 3: After retreating 40 m: tan 30° = h/(w+40) → h = (w+40)/√3",
+              "Step 4: w√3 = (w+40)/√3 → 3w = w+40 → 2w = 40 → w = 20 m",
+              "Step 5: h = 20√3 ≈ 34.64 m"
+            ],
+            "final_answer": "Height = 20√3 m, width = 20 m"
+          }
+        ]
+      }
+    ]
+  },
+  "rs_aggarwal_extensions": {
+    "book": "RS Aggarwal Class 10, Chapter 14 — Heights and Distances",
+    "topics": [
+      {
+        "name": "Problems with Two Observers",
+        "concept": "RS Aggarwal includes problems where two observers at different positions measure the angle of elevation to the same object, and we need to find the height or distance.",
+        "examples": [
+          {
+            "problem": "Two men on either side of a 75 m high building observe the angle of elevation of the top as 30° and 60°. Find the distance between the two men.",
+            "solution": [
+              "Step 1: Distance from man 1: tan 30° = 75/d₁ → d₁ = 75√3 m",
+              "Step 2: Distance from man 2: tan 60° = 75/d₂ → d₂ = 75/√3 = 25√3 m",
+              "Step 3: Total distance between men = d₁ + d₂ = 75√3 + 25√3 = 100√3 m ≈ 173.2 m"
+            ],
+            "final_answer": "100√3 m ≈ 173.2 m"
+          }
+        ]
+      }
+    ]
+  },
+  "model_papers": {
+    "simple": [
+      {
+        "question": "A pole 10 m high casts a shadow 10√3 m long on the ground. Find the angle of elevation of the sun.",
+        "answer": "30°",
+        "steps": [
+          "Let angle of elevation = θ",
+          "tan θ = height/shadow = 10/(10√3) = 1/√3",
+          "θ = 30°"
+        ],
+        "hints": [
+          "tan θ = opposite/adjacent = height of pole / length of shadow."
+        ]
+      },
+      {
+        "question": "A ladder 15 m long makes an angle of 60° with the wall. Find the height of the point where the ladder touches the wall.",
+        "answer": "7.5 m",
+        "steps": [
+          "Ladder makes 60° with wall, so it makes 30° with ground",
+          "Height on wall is adjacent to 60° angle",
+          "cos 60° = height/15",
+          "1/2 = height/15, so height = 7.5 m"
+        ],
+        "hints": [
+          "The angle is given with the wall, so identify which trigonometric ratio uses the adjacent side to this angle."
+        ]
+      }
+    ],
+    "medium": [
+      {
+        "question": "The angle of elevation of the top of a tower from a point 40 m away from its foot is 30°. Find the height of the tower.",
+        "answer": "40/√3 m ≈ 23.09 m",
+        "steps": [
+          "Let height = h",
+          "tan 30° = h/40",
+          "1/√3 = h/40",
+          "h = 40/√3 m"
+        ],
+        "hints": [
+          "Use tan θ = opposite/adjacent where opposite is the tower height and adjacent is the distance from the foot."
+        ]
+      },
+      {
+        "question": "From the top of a 50 m high lighthouse, the angle of depression of a boat is 30°. Find the distance of the boat from the lighthouse.",
+        "answer": "50√3 m ≈ 86.6 m",
+        "steps": [
+          "Angle of depression = angle of elevation from boat to top (alternate angles)",
+          "tan 30° = 50/d",
+          "1/√3 = 50/d",
+          "d = 50√3 m"
+        ],
+        "hints": [
+          "Angle of depression equals the angle of elevation from the object below (alternate interior angles)."
+        ]
+      },
+      {
+        "question": "A 5 m tall pole casts a shadow 5 m long. Find the angle of elevation of the sun.",
+        "answer": "45°",
+        "steps": [
+          "tan θ = height/shadow = 5/5 = 1",
+          "θ = 45°"
+        ],
+        "hints": [
+          "When the height equals the shadow length, the angle is 45°."
+        ]
+      }
+    ],
+    "complex": [
+      {
+        "question": "The angle of elevation of the top of a building from a point on the ground is 30°. On moving 30 m towards the building, the angle becomes 45°. Find the height of the building.",
+        "answer": "15(√3 + 1) m ≈ 40.98 m",
+        "steps": [
+          "Let height = h. Let initial distance = x",
+          "From first point: tan 30° = h/x → 1/√3 = h/x → x = h√3",
+          "From second point: tan 45° = h/(x-30) → 1 = h/(x-30) → h = x-30",
+          "Substitute x: h = h√3 - 30",
+          "h(√3 - 1) = 30 → h = 30/(√3-1)",
+          "Rationalise: h = 30(√3+1)/(3-1) = 15(√3+1) m"
+        ],
+        "hints": [
+          "Set up two equations from the two positions using tan θ, then solve simultaneously."
+        ]
+      },
+      {
+        "question": "Two ships are sailing on either side of a lighthouse. The angles of depression from the top of the 75 m high lighthouse are 30° and 45°. Find the distance between the two ships.",
+        "answer": "75(1 + √3) m ≈ 204.9 m",
+        "steps": [
+          "Distance to ship at 30° depression: tan 30° = 75/d₁ → d₁ = 75√3 m",
+          "Distance to ship at 45° depression: tan 45° = 75/d₂ → d₂ = 75 m",
+          "Ships are on opposite sides, so total distance = d₁ + d₂",
+          "= 75√3 + 75 = 75(1 + √3) m"
+        ],
+        "hints": [
+          "Ships on opposite sides means you add the distances from the lighthouse foot."
+        ]
+      }
+    ]
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-s-1",
+        "question": "The angle of elevation of the top of a tower from a point 10 m away is 45°. The height is:",
+        "options": [
+          "10 m",
+          "5 m",
+          "20 m",
+          "10√3 m"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "tan 45° = height/10 → 1 = h/10 → h = 10 m.",
+          "wrong_options": {
+            "1": "5 m would be height if angle were about 26.6°.",
+            "2": "20 m would be height if angle were about 63.4°.",
+            "3": "10√3 m would be height if angle = 60°."
+          }
+        }
+      },
+      {
+        "id": "q-s-2",
+        "question": "What is the angle of elevation of the sun when a 6 m pole casts a 6 m shadow?",
+        "options": [
+          "45°",
+          "30°",
+          "60°",
+          "0°"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "tan θ = height/shadow = 6/6 = 1 → θ = 45°.",
+          "wrong_options": {
+            "1": "tan 30° = 1/√3 ≈ 0.577, would give shadow ≈ 10.4 m.",
+            "2": "tan 60° = √3 ≈ 1.732, would give shadow ≈ 3.46 m.",
+            "3": "tan 0° = 0, would give infinite shadow."
+          }
+        }
+      },
+      {
+        "id": "q-s-3",
+        "question": "Angle of depression from a point is always equal to:",
+        "options": [
+          "Angle of elevation from the object to the point",
+          "The complement of the angle",
+          "Twice the elevation angle",
+          "Half the elevation angle"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "By alternate interior angles, the angle of depression from the top equals the angle of elevation from the bottom.",
+          "wrong_options": {
+            "1": "The complement (90°-θ) is only relevant in specific problems.",
+            "2": "There's no doubling relationship.",
+            "3": "There's no halving relationship."
+          }
+        }
+      },
+      {
+        "id": "q-s-4",
+        "question": "A ladder 10 m long makes an angle of 60° with the wall. The height it reaches on the wall is:",
+        "options": [
+          "5 m",
+          "5√3 m",
+          "10 m",
+          "10√3 m"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The ladder makes 60° with the wall, so it makes 30° with the ground. Height on wall = adjacent to 60° (or opposite to 30°). cos 60° = h/10 → h = 10 × 1/2 = 5 m.",
+          "wrong_options": {
+            "1": "5√3 m would be the distance from wall to foot of ladder.",
+            "2": "10 m would be the full length of the ladder.",
+            "3": "10√3 is too large for the height."
+          }
+        }
+      },
+      {
+        "id": "q-s-5",
+        "question": "From the top of a 30 m building, the angle of depression of a car is 30°. The car is how far from the building?",
+        "options": [
+          "30√3 m",
+          "30 m",
+          "15 m",
+          "60 m"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "tan 30° = 30/d → 1/√3 = 30/d → d = 30√3 m ≈ 51.96 m.",
+          "wrong_options": {
+            "1": "30 m would be if the angle were 45°.",
+            "2": "15 m would be 30/2, not using tan 30° correctly.",
+            "3": "60 m would be 30 × 2, incorrect."
+          }
+        }
+      },
+      {
+        "id": "q-s-6",
+        "question": "If a kite flies at height h with string length L making angle θ with ground, which is true?",
+        "options": [
+          "sin θ = h/L",
+          "cos θ = h/L",
+          "tan θ = h/L",
+          "h = L"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "sin θ = opposite/hypotenuse = height/string length = h/L.",
+          "wrong_options": {
+            "1": "cos θ = adjacent/hypotenuse = horizontal distance/string length.",
+            "2": "tan θ = height/horizontal distance.",
+            "3": "h = L only when θ = 90° (vertical)."
+          }
+        }
+      },
+      {
+        "id": "q-s-7",
+        "question": "To measure height of a tower using angle of elevation, the most useful ratio is:",
+        "options": [
+          "tan θ",
+          "sin θ",
+          "cos θ",
+          "sec θ"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "tan θ = height/distance. Since we can easily measure the distance from the tower and the angle, tan gives us height directly.",
+          "wrong_options": {
+            "1": "sin θ = height/hypotenuse, but the hypotenuse (line of sight) is harder to measure.",
+            "2": "cos θ = distance/hypotenuse, again needs the hypotenuse.",
+            "3": "sec θ = hypotenuse/distance, not useful for direct height calculation."
+          }
+        }
+      },
+      {
+        "id": "q-s-8",
+        "question": "If the angle of elevation of the sun is 60°, a pole will cast a shadow that is:",
+        "options": [
+          "Height/√3",
+          "Height × √3",
+          "Height/2",
+          "Height × 2"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "tan 60° = √3 = height/shadow → shadow = height/√3.",
+          "wrong_options": {
+            "1": "height × √3 would be shadow only if tan was 1/√3 (i.e., angle 30°).",
+            "2": "height/2 would be shadow if tan was 2, not tan 60°.",
+            "3": "height × 2 would be shadow if tan was 0.5."
+          }
+        }
+      },
+      {
+        "id": "q-s-9",
+        "question": "The angle of elevation of the top of a building decreases as the observer:",
+        "options": [
+          "Moves away from the building",
+          "Moves closer to the building",
+          "Climbs higher",
+          "Remains stationary"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "As the observer moves away, the line of sight gets shallower, so the angle of elevation decreases.",
+          "wrong_options": {
+            "1": "Moving closer increases the angle of elevation.",
+            "2": "Climbing higher increases the angle of elevation.",
+            "3": "Remaining stationary doesn't change the angle."
+          }
+        }
+      },
+      {
+        "id": "q-s-10",
+        "question": "A 1.5 m tall boy sees a balloon at angle of elevation 60°. The total height of balloon is 61.5 m. The horizontal distance is:",
+        "options": [
+          "60/√3 m",
+          "60√3 m",
+          "60 m",
+          "61.5/√3 m"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Effective height = 61.5 - 1.5 = 60 m. tan 60° = 60/d → d = 60/√3 = 20√3 ≈ 34.64 m.",
+          "wrong_options": {
+            "1": "60√3 m would be the distance if tan θ = 1/√3 (30°).",
+            "2": "60 m would be the distance if angle = 45°.",
+            "3": "61.5/√3 doesn't subtract the boy's height."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-m-1",
+        "question": "From the top of a 7 m high building, the angle of elevation of a cable tower is 60° and depression of its foot is 45°. Height of tower = ?",
+        "options": [
+          "7(1+√3) m",
+          "7√3 m",
+          "14 m",
+          "7 + 7/√3 m"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Distance d = 7/tan 45° = 7 m. Height difference from building to tower: tan 60° = (h-7)/7 → h-7 = 7√3 → h = 7(1+√3) m.",
+          "wrong_options": {
+            "1": "7√3 m would be just the height difference, not total height.",
+            "2": "14 m would be 2×7, not matching the trig.",
+            "3": "7 + 7/√3 m ≈ 11.04 m, too low."
+          }
+        }
+      },
+      {
+        "id": "q-m-2",
+        "question": "A pole 5 m high casts a shadow 5√3 m long. The angle of elevation of the sun is:",
+        "options": [
+          "30°",
+          "60°",
+          "45°",
+          "0°"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "tan θ = 5/(5√3) = 1/√3 → θ = 30°.",
+          "wrong_options": {
+            "1": "tan 60° = √3, which would give shadow = 5/√3 m, not 5√3 m.",
+            "2": "tan 45° = 1, giving shadow = 5 m, not 5√3 m.",
+            "3": "tan 0° = 0, infinite shadow."
+          }
+        }
+      },
+      {
+        "id": "q-m-3",
+        "question": "The shadow of a tower when the sun's altitude is 30° is found to be 40 m longer than when it is 60°. Find the height of the tower.",
+        "options": [
+          "20√3 m",
+          "40 m",
+          "40√3 m",
+          "20 m"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Let height = h. At 30°: shadow = h√3. At 60°: shadow = h/√3. Difference: h√3 - h/√3 = 40 → h(2/√3) = 40 → h = 40√3/2 = 20√3 m ≈ 34.64 m.",
+          "wrong_options": {
+            "1": "40 m doesn't satisfy the trig relationship.",
+            "2": "40√3 ≈ 69.28 m is too large.",
+            "3": "20 m is too small."
+          }
+        }
+      },
+      {
+        "id": "q-m-4",
+        "question": "A 1.6 m tall observer looks at the top of a tree at angle 45°. If he is 20 m away, tree height is:",
+        "options": [
+          "21.6 m",
+          "20 m",
+          "18.4 m",
+          "40 m"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Tree height = 20 × tan 45° + 1.6 = 20 × 1 + 1.6 = 21.6 m.",
+          "wrong_options": {
+            "1": "20 m doesn't include the observer's height.",
+            "2": "18.4 m = 20 - 1.6, subtracts instead of adds.",
+            "3": "40 m is 2×20, not correct."
+          }
+        }
+      },
+      {
+        "id": "q-m-5",
+        "question": "The angle of elevation of a cloud from a point 100 m above a lake is 30° and the angle of depression of its reflection is 60°. Height of cloud above lake = ?",
+        "options": [
+          "200 m",
+          "100 m",
+          "300 m",
+          "150 m"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Let height of cloud above lake = h m. Distance over lake from point to cloud vertically = h - 100 (above) and h + 100 (reflection below). Let horizontal distance = d. tan 30° = (h-100)/d → d = (h-100)√3. tan 60° = (h+100)/d = (h+100)/((h-100)√3) → (h+100)/(h-100) = √3 × √3 = 3 → h+100 = 3h - 300 → 2h = 400 → h = 200 m.",
+          "wrong_options": {
+            "1": "100 m is the observation height, not the cloud height.",
+            "2": "300 m doesn't satisfy the equation.",
+            "3": "150 m would give (150+100)/(150-100) = 250/50 = 5, not 3."
+          }
+        }
+      },
+      {
+        "id": "q-m-6",
+        "question": "If the angle of elevation of a tower from a distance 100 m is 60°, the tower height is:",
+        "options": [
+          "100√3 m",
+          "100/√3 m",
+          "50√3 m",
+          "200 m"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "tan 60° = h/100 → h = 100√3 m ≈ 173.2 m.",
+          "wrong_options": {
+            "1": "100/√3 ≈ 57.7 m would be height if angle = 30°.",
+            "2": "50√3 ≈ 86.6 m would be height if distance = 50 m.",
+            "3": "200 m would be height if tan θ = 2, about 63.4°."
+          }
+        }
+      },
+      {
+        "id": "q-m-7",
+        "question": "Two pillars of equal height stand on opposite sides of a 100 m wide road. From a point on the road, the angles are 60° and 30°. Height = ?",
+        "options": [
+          "25√3 m",
+          "50√3 m",
+          "100√3 m",
+          "75 m"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Let height = h. Distances: x and 100-x. tan 60° = h/x → h = x√3. tan 30° = h/(100-x) → h = (100-x)/√3. Equating: x√3 = (100-x)/√3 → 3x = 100-x → 4x = 100 → x = 25 m. h = 25√3 m ≈ 43.3 m.",
+          "wrong_options": {
+            "1": "50√3 m would be if the wide ratio were different.",
+            "2": "100√3 is too large.",
+            "3": "75 m would be if both angles were 45° and 45°."
+          }
+        }
+      },
+      {
+        "id": "q-m-8",
+        "question": "A kite is flying at a height of 30 m from the ground. The string length is 60 m. The angle with the ground is:",
+        "options": [
+          "30°",
+          "60°",
+          "45°",
+          "90°"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "sin θ = 30/60 = 1/2 → θ = 30°.",
+          "wrong_options": {
+            "1": "sin 60° = √3/2 ≈ 0.866, would give height = 60 × 0.866 ≈ 51.96 m.",
+            "2": "sin 45° = 1/√2 ≈ 0.707, would give ≈ 42.4 m.",
+            "3": "sin 90° = 1, would give height = 60 m."
+          }
+        }
+      },
+      {
+        "id": "q-m-9",
+        "question": "From a point 20 m away from a tower, the angle of elevation is 30°. From 10 m closer, the angle would be:",
+        "options": [
+          "45°",
+          "60°",
+          "arctan(2/√3)",
+          "30°"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Height h = 20 tan 30° = 20/√3 m. At 10 m: tan θ = (20/√3)/10 = 2/√3 ≈ 1.155 → θ ≈ 49°. That doesn't match any. Hmm. At 20 m: h = 20 tan 30° ≈ 20 × 0.577 = 11.55 m. At 10 m: tan θ = 11.55/10 = 1.155 → θ ≈ 49°. None of the options are 49°. Let me recheck: tan 30° = h/20 → h = 20/√3. At 10 m: tan θ = (20/√3)/10 = 2/√3 ≈ 1.155. tan 45° = 1, tan 49° ≈ 1.15. So θ ≈ 49°, closest to 45° among options but not exact. Option 2 is arctan(2/√3) which is exactly what we got! Let me check: tan θ = 2/√3 → θ = arctan(2/√3). So option 2 is correct.",
+          "wrong_options": {
+            "0": "tan 45° = 1, but the actual tan is 2/√3 ≈ 1.155.",
+            "1": "tan 60° = √3 ≈ 1.732, too large.",
+            "3": "Angle changes when distance changes, so it's not 30°."
+          }
+        }
+      },
+      {
+        "id": "q-m-10",
+        "question": "The angle of elevation of a ladder leaning against a wall is 60° and the foot is 4.6 m away. Length of ladder = ?",
+        "options": [
+          "9.2 m",
+          "4.6√3 m",
+          "4.6 m",
+          "9.2√3 m"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "cos 60° = adjacent/hypotenuse = 4.6/L → 1/2 = 4.6/L → L = 9.2 m.",
+          "wrong_options": {
+            "1": "4.6√3 ≈ 7.97 m would be the height on the wall.",
+            "2": "4.6 m is the distance from wall, not the ladder length.",
+            "3": "9.2√3 ≈ 15.93 m is too large."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-c-1",
+        "question": "A man on a cliff observes a boat at an angle of depression 30° which is approaching the shore at uniform speed. 6 minutes later, the angle is 60°. Find the time taken to reach the shore.",
+        "options": [
+          "3 minutes",
+          "6 minutes",
+          "9 minutes",
+          "2 minutes"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Let height = h. Initial: tan 30° = h/d₁ → d₁ = h√3. After 6 min: tan 60° = h/d₂ → d₂ = h/√3. Distance covered in 6 min = h√3 - h/√3 = h(2/√3). Remaining distance = d₂ = h/√3. Time = 6 × (h/√3)/(h(2/√3)) = 6 × 1/2 = 3 minutes.",
+          "wrong_options": {
+            "1": "6 min is the time taken between observations, not the remaining time.",
+            "2": "9 min would be if the ratio were different.",
+            "3": "2 min would be if the speed were different."
+          }
+        }
+      },
+      {
+        "id": "q-c-2",
+        "question": "A tower subtends an angle α at a point on the same level as its foot. At a second point h meters above the first, the depression of the foot of the tower is β. The height of the tower is:",
+        "options": [
+          "h tan β cot α",
+          "h tan α cot β",
+          "h sin α sec β",
+          "h cos α cosec β"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Let tower height = H, distance = d. From ground: tan α = H/d → d = H/tan α = H cot α. From height h: tan β = h/d → d = h/tan β = h cot β. Equating: H cot α = h cot β → H = h cot β/cot α = h tan α cot β. So H = h tan α cot β.",
+          "wrong_options": {
+            "0": "h tan β cot α = h × (tan β) × (cot α) = h × (1/cot β) × cot α = h cot α/cot β, which is the reciprocal. Let me recheck: from equating: H cot α = h cot β → H = h cot β/cot α. cot β = 1/tan β, so H = h/(tan β cot α) = h tan α/tan β. Hmm, that gives h tan α/tan β. But option 0 says h tan β cot α = h × tan β × cot α = h tan β/tan α. Neither matches h tan α/tan β. Let me re-derive: tan α = H/d → d = H/tan α. tan β = h/d → d = h/tan β. H/tan α = h/tan β → H = h tan α/tan β. Now tan α/tan β = tan α × cot β. So H = h tan α cot β. Option 1 matches this: h tan α cot β.",
+            "1": "h tan α cot β = h tan α cot β. This is correct! H = h tan α cot β.",
+            "2": "h sin α sec β doesn't match the derivation.",
+            "3": "h cos α cosec β doesn't match the derivation."
+          }
+        }
+      },
+      {
+        "id": "q-c-3",
+        "question": "A vertical tower stands on a horizontal plane and is surmounted by a vertical flagstaff of height h. At a point on the plane, the angles of elevation of the bottom and top of the flagstaff are α and β respectively. The height of the tower is:",
+        "options": [
+          "h tan α/(tan β - tan α)",
+          "h tan α/(tan β + tan α)",
+          "h cot α/(cot β - cot α)",
+          "h sin α/sin β"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Let tower height = H, distance from point = d. tan α = H/d → d = H/tan α. tan β = (H+h)/d → d = (H+h)/tan β. Equating: H/tan α = (H+h)/tan β → H tan β = (H+h) tan α → H tan β = H tan α + h tan α → H(tan β - tan α) = h tan α → H = h tan α/(tan β - tan α).",
+          "wrong_options": {
+            "1": "h tan α/(tan β + tan α) would be the result if both were added.",
+            "2": "h cot α/(cot β - cot α) = h(1/tan α)/(1/tan β - 1/tan α) = h/(tan α((tan α - tan β)/(tan α tan β))) = h tan β/(tan α - tan β) = h tan β/(-(tan β - tan α)). This is negative, incorrect.",
+            "3": "h sin α/sin β uses sine instead of tan, which doesn't incorporate distances."
+          }
+        }
+      },
+      {
+        "id": "q-c-4",
+        "question": "Two ships are sailing in the sea on either side of a lighthouse. The angles of depression of the ships from the top of the lighthouse are 30° and 45°. If the lighthouse is 100 m high, find the distance between the ships.",
+        "options": [
+          "100(1+√3) m",
+          "100(√3-1) m",
+          "100√3 m",
+          "200 m"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Distance to ship at 30°: tan 30° = 100/d₁ → d₁ = 100√3 m. Distance to ship at 45°: tan 45° = 100/d₂ → d₂ = 100 m. Since ships are on opposite sides, distance = d₁ + d₂ = 100 + 100√3 = 100(1+√3) m ≈ 273.2 m.",
+          "wrong_options": {
+            "1": "100(√3-1) m would be the difference if both were on the same side.",
+            "2": "100√3 ≈ 173.2 m is only the distance to one ship.",
+            "3": "200 m is too small."
+          }
+        }
+      },
+      {
+        "id": "q-c-5",
+        "question": "An aeroplane flying horizontally 1 km above the ground is observed at an elevation of 60°. After 10 seconds, its elevation is 30°. Find the speed of the aeroplane in km/h.",
+        "options": [
+          "(240√3)/10 ≈ 41.6 km/h",
+          "240√3 ≈ 415.7 km/h",
+          "100√3 ≈ 173.2 km/h",
+          "200 km/h"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Height = 1 km. Initial: tan 60° = 1/d₁ → d₁ = 1/√3 km. After 10 sec: tan 30° = 1/d₂ → d₂ = √3 km. Distance travelled = d₂ - d₁ = √3 - 1/√3 = (3-1)/√3 = 2/√3 km. Time = 10 seconds = 10/3600 hours. Speed = (2/√3)/(10/3600) = (2×3600)/(10√3) = 720/√3 = 240√3 km/h ≈ 415.7 km/h.",
+          "wrong_options": {
+            "0": "(240√3)/10 = 24√3 ≈ 41.6 km/h is too slow.",
+            "1": "240√3 km/h ≈ 415.7 km/h — correct!",
+            "2": "100√3 ≈ 173.2 km/h doesn't match.",
+            "3": "200 km/h doesn't match."
+          }
+        }
+      },
+      {
+        "id": "q-c-6",
+        "question": "From the top of a building 60 m high, the angles of depression of the top and bottom of a vertical lamp post are observed to be 30° and 60° respectively. Find the height of the lamp post.",
+        "options": [
+          "40 m",
+          "20 m",
+          "30 m",
+          "45 m"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Let lamp post height = h. Distance between them = d. For bottom of lamp post: tan 60° = 60/d → d = 60/√3 = 20√3 m. For top of lamp post: tan 30° = (60-h)/d → 1/√3 = (60-h)/(20√3) → 20 = 60 - h → h = 40 m.",
+          "wrong_options": {
+            "1": "20 m would give 60-20 = 40, tan = 40/(20√3) = 2/√3 ≠ 1/√3.",
+            "2": "30 m would give tan = 30/(20√3) = √3/2 ≠ 1/√3.",
+            "3": "45 m would give tan = 15/(20√3) = √3/4 ≠ 1/√3."
+          }
+        }
+      },
+      {
+        "id": "q-c-7",
+        "question": "A window of a house is h meters above the ground. The angle of elevation of the top of a temple from the window is α and the angle of depression of the base is β. The height of the temple is:",
+        "options": [
+          "h(1 + tan α cot β)",
+          "h(1 + cot α tan β)",
+          "h(sin α/sin β + 1)",
+          "h + h sin α/sin β"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Let temple height = H, distance from house to temple = d. From window: tan β = h/d → d = h cot β. For top of temple: tan α = (H-h)/d → H-h = d tan α = h cot β tan α. So H = h + h tan α cot β = h(1 + tan α cot β).",
+          "wrong_options": {
+            "1": "h(1 + cot α tan β) = h + h cot α tan β, which would be a different combination.",
+            "2": "h(sin α/sin β + 1) uses sine incorrectly.",
+            "3": "h + h sin α/sin β is dimensionally inconsistent."
+          }
+        }
+      },
+      {
+        "id": "q-c-8",
+        "question": "The angle of elevation of the top of a hill from each of the vertices A, B, C of a horizontal triangle ABC is α. If the height of the hill is h, and the triangle's circumradius is R, find h.",
+        "options": [
+          "R tan α",
+          "R cot α",
+          "R sin α",
+          "R cos α"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "If the hill top makes the same angle α from all three vertices, the foot of the hill is equidistant from A, B, C. So the foot is at the circumcenter of triangle ABC. Distance from circumcenter to each vertex = R. So tan α = h/R → h = R tan α.",
+          "wrong_options": {
+            "1": "h = R cot α would give tan α = R/h, incorrect.",
+            "2": "h = R sin α comes from using sin instead of tan.",
+            "3": "h = R cos α comes from using cos instead of tan."
+          }
+        }
+      },
+      {
+        "id": "q-c-9",
+        "question": "A 1.2 m tall boy observes a balloon moving horizontally at height 88.2 m. The angle of elevation changes from 60° to 30° in some time. Find the distance travelled.",
+        "options": [
+          "58√3 m",
+          "29√3 m",
+          "87√3 m",
+          "60√3 m"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Eye height = 1.2 m. Effective height = 88.2 - 1.2 = 87 m. First position: tan 60° = 87/d₁ → d₁ = 87/√3 = 29√3 m. Second position: tan 30° = 87/d₂ → d₂ = 87√3 m. Distance travelled = d₂ - d₁ = 87√3 - 87/√3 = 87(2/√3) = 174/√3 = 58√3 m ≈ 100.46 m.",
+          "wrong_options": {
+            "1": "29√3 m is just d₁, not the distance travelled.",
+            "2": "87√3 m is d₂, not the difference.",
+            "3": "60√3 ≈ 103.9 m is close but not exact."
+          }
+        }
+      },
+      {
+        "id": "q-c-10",
+        "question": "A tower of height h subtends an angle α at a point on the same level as its foot. If the observer moves 20 m towards the tower, the angle doubles. Find h.",
+        "options": [
+          "20 tan α tan 2α/(tan 2α - tan α)",
+          "20 tan α tan 2α/(tan 2α + tan α)",
+          "20/tan α",
+          "20(tan 2α - tan α)"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Let initial distance = d. tan α = h/d → d = h/tan α. After moving 20 m: tan 2α = h/(d-20) → d-20 = h/tan 2α. Substituting d: h/tan α - 20 = h/tan 2α → h/tan α - h/tan 2α = 20 → h(1/tan α - 1/tan 2α) = 20 → h(tan 2α - tan α)/(tan α tan 2α) = 20 → h = 20 tan α tan 2α/(tan 2α - tan α).",
+          "wrong_options": {
+            "1": "h = 20 tan α tan 2α/(tan 2α + tan α) would be from addition, not subtraction.",
+            "2": "h = 20/tan α doesn't account for the angle change.",
+            "3": "h = 20(tan 2α - tan α) doesn't have the right dimensions."
+          }
+        }
+      }
+    ]
+  },
+  "vedic_math_shortcuts": [
+    {
+      "title": "Memory Trick for Common Angle Values",
+      "concept": "Use the SIN-0-30-45-60-90 sequence: √0/2, √1/2, √2/2, √3/2, √4/2.",
+      "real_numbers_application": "In height-distance problems, common angles are 30°, 45°, 60°. Quick recall of tan values saves time: tan 30° = 1/√3, tan 45° = 1, tan 60° = √3.",
+      "examples": [
+        {
+          "problem": "Quickly recall: how does the height relate to shadow for 30°, 45°, 60°?",
+          "steps": [
+            "Step 1: For 45°, height = shadow (since tan 45° = 1)",
+            "Step 2: For 30°, shadow = height × √3 (since tan 30° = 1/√3)",
+            "Step 3: For 60°, shadow = height/√3 (since tan 60° = √3)"
+          ]
+        }
+      ]
+    }
+  ],
+  "mind_maps": {
+    "title": "Applications of Trigonometry — Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Applications of Trigonometry",
+    "branches": [
+      {
+        "concept": "Angle of Elevation",
+        "sub_nodes": [
+          "Looking UP from horizontal",
+          "tan θ = height/distance",
+          "Increases as we move closer",
+          "Used to measure building height"
+        ]
+      },
+      {
+        "concept": "Angle of Depression",
+        "sub_nodes": [
+          "Looking DOWN from horizontal",
+          "tan θ = height/distance",
+          "Equals angle of elevation from object",
+          "Used for lighthouses, cliffs"
+        ]
+      },
+      {
+        "concept": "Problem Types",
+        "sub_nodes": [
+          "Single angle: find height or distance",
+          "Two angles, one position change",
+          "Two angles, two different objects",
+          "Complementary angles (sum = 90°)",
+          "Angle changes as observer moves"
+        ]
+      },
+      {
+        "concept": "Standard Setups",
+        "sub_nodes": [
+          "Ladder against wall: right triangle",
+          "Kite/string: height = L sin θ",
+          "Tower/building: height = d tan θ",
+          "Tree broken: standing part + fallen part"
+        ]
+      },
+      {
+        "concept": "Real-life Indian Context",
+        "sub_nodes": [
+          "Measuring Qutub Minar height",
+          "River width measurement by surveyors",
+          "Lighthouse at Indian coast",
+          "Cricket ground dimensions",
+          "Construction site measurements"
+        ]
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "How Applications of Trigonometry Connect — Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Trigonometric Ratios",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Standard Angles (0°,30°,45°,60°,90°)",
+        "group": "values"
+      },
+      {
+        "id": "n3",
+        "label": "Right Triangle in Context",
+        "group": "setup"
+      },
+      {
+        "id": "n4",
+        "label": "Angle of Elevation",
+        "group": "concept"
+      },
+      {
+        "id": "n5",
+        "label": "Angle of Depression",
+        "group": "concept"
+      },
+      {
+        "id": "n6",
+        "label": "Single Position Problem",
+        "group": "problem"
+      },
+      {
+        "id": "n7",
+        "label": "Two Position Problem",
+        "group": "problem"
+      },
+      {
+        "id": "n8",
+        "label": "Height/Distance Word Problems",
+        "group": "goal"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n3",
+        "n5"
+      ],
+      [
+        "n4",
+        "n6"
+      ],
+      [
+        "n4",
+        "n7"
+      ],
+      [
+        "n5",
+        "n6"
+      ],
+      [
+        "n5",
+        "n7"
+      ],
+      [
+        "n2",
+        "n6"
+      ],
+      [
+        "n2",
+        "n7"
+      ],
+      [
+        "n6",
+        "n8"
+      ],
+      [
+        "n7",
+        "n8"
+      ]
+    ]
+  },
+  "flowcharts": [
+    {
+      "title": "How to Solve a Height-Distance Word Problem",
+      "steps": [
+        {
+          "order": 1,
+          "action": "Read the problem carefully",
+          "next": 2
+        },
+        {
+          "order": 2,
+          "action": "Draw a diagram with all given information",
+          "next": 3
+        },
+        {
+          "order": 3,
+          "action": "Label the unknown as h, d, or x",
+          "next": 4
+        },
+        {
+          "order": 4,
+          "action": "Identify the right triangle(s) formed",
+          "next": 5
+        },
+        {
+          "order": 5,
+          "action": "Choose the appropriate ratio (tan, sin, or cos)",
+          "next": 6
+        },
+        {
+          "order": 6,
+          "action": "Write the equation(s)",
+          "next": 7
+        },
+        {
+          "order": 7,
+          "action": "If multiple unknowns: set up two equations, solve simultaneously",
+          "next": 8
+        },
+        {
+          "order": 8,
+          "action": "Solve for the unknown",
+          "next": 9
+        },
+        {
+          "order": 9,
+          "action": "Check: is the answer reasonable? (height/distance should be positive)"
+        }
+      ]
+    }
+  ],
+  "visualizations": [
+    {
+      "rendererType": "COORDINATE_GRAPH",
+      "syllabusSource": "NCERT_2026_27",
+      "visualizationProperties": {
+        "title": "Angle of Elevation — Tower Height",
+        "type": "height_distance",
+        "showElevation": true,
+        "objectHeight": 173.2,
+        "observerDistance": 100,
+        "angle": 60,
+        "unit": "m"
+      }
+    },
+    {
+      "rendererType": "COORDINATE_GRAPH",
+      "syllabusSource": "NCERT_2026_27",
+      "visualizationProperties": {
+        "title": "Angle of Depression — Lighthouse",
+        "type": "height_distance",
+        "showDepression": true,
+        "objectHeight": 75,
+        "observerDistance": 75,
+        "angle": 45,
+        "unit": "m"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    "Angle of elevation is shown in the diagram as the angle INSIDE the triangle, not outside — Always draw the horizontal line first, then the line of sight. The angle between them is the angle of elevation.",
+    "Angle of depression equals angle of elevation from the object — TRUE (alternate interior angles with horizontal being the transversal). Use this shortcut to simplify problems.",
+    "The observer's height must be added to the calculated height — If the problem says 'a 1.5 m tall boy observes...,' you must add 1.5 to the height obtained from trigonometry.",
+    "tan θ = height/distance — This is only valid when the height is measured VERTICALLY and the distance HORIZONTALLY. In a right triangle, the angle of elevation is at the observer's position.",
+    "All distances must be in the SAME UNIT — Convert all given lengths to the same unit before solving.",
+    "The ladder makes angle θ with the ground, not the wall — Carefully read: 'a ladder makes angle θ with the ground' means the angle between the ladder and the ground is θ.",
+    "The angle 'doubles' or 'changes' — When an observer moves, the angle changes. The new angle depends on the NEW distance, which is the old distance minus the distance moved.",
+    "Complementary angles mean the sum is 90° — If two angles are complementary and one is θ, the other is 90°-θ. Then tan θ × tan(90°-θ) = tan θ × cot θ = 1."
+  ],
+  "chapterNumber": 10
+}

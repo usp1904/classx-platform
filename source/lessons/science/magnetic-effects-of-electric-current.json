@@ -1,0 +1,1262 @@
+{
+  "id": "magnetic-effects-of-electric-current",
+  "subject": "Physics",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 13,
+  "chapter": "Magnetic Effects of Electric Current",
+  "lesson": 13,
+  "title": "Magnetic Effects of Electric Current - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Describe a magnetic field and represent it using field lines",
+    "Apply the right-hand thumb rule to find the direction of the magnetic field due to a current",
+    "Explain the magnetic field of a solenoid and the working of an electromagnet",
+    "Use Fleming's left-hand rule to predict the force on a current-carrying conductor",
+    "Explain the construction and working of a simple electric motor",
+    "Apply electromagnetic induction and Fleming's right-hand rule to generators",
+    "Distinguish AC and DC generators and identify their parts",
+    "Explain domestic wiring, fuse, earthing, overload, and short circuit safety"
+  ],
+  "prerequisite_nodes": [
+    "SCI_CLASS10_ELECTRICITY",
+    "SCI_CLASS9_MAGNETISM",
+    "SCI_CLASS8_CHEMICAL_EFFECTS_OF_CURRENT"
+  ],
+  "concepts": [
+    {
+      "id": "magnetic-field-and-field-lines",
+      "name": "Magnetic Field and Magnetic Field Lines",
+      "title": "Magnetic Field and Magnetic Field Lines",
+      "explanation": "A magnetic field is the region around a magnet or a current-carrying conductor in which its magnetic force can be detected. Field lines are drawn from the north pole to the south pole outside a magnet and from south to north inside it, so they form closed loops. The tangent at any point gives the field direction, and closely spaced lines mean a stronger field. Field lines never intersect because a compass needle at a point can point in only one direction.",
+      "purpose": "A magnetic field is the region around a magnet or a current-carrying conductor in which its magnetic force can be detected. Field lines are drawn from the north pole to the south pole outside a magnet and from south to north inside it, so they form closed loops. The tangent at any point gives the field direction, and closely spaced lines mean a stronger field. Field lines never intersect because a compass needle at a point can point in only one direction.",
+      "key_points": [
+        "Outside a magnet, field lines run from the north pole to the south pole.",
+        "The tangent to a field line at a point gives the direction of the magnetic field there.",
+        "Crowded field lines indicate a stronger magnetic field.",
+        "Field lines never cross each other."
+      ],
+      "real_life_application": "A magnetic compass needle aligns itself along the earth's magnetic field, and a fridge magnet can hold a note because its field acts through a small distance.",
+      "day_to_day_usage": [
+        "A compass used for direction finding",
+        "Magnets used to close refrigerator doors",
+        "Magnetic strips on ATM and identity cards",
+        "Magnetic separators in scrap yards"
+      ]
+    },
+    {
+      "id": "magnetic-field-due-to-current",
+      "name": "Magnetic Field due to a Current-Carrying Conductor",
+      "title": "Magnetic Field due to a Current-Carrying Conductor",
+      "explanation": "Oersted showed that a current-carrying wire deflects a nearby compass needle, so an electric current produces a magnetic field. Around a long straight wire, the field lines are concentric circles in a plane perpendicular to the wire. The right-hand thumb rule gives the direction: point the right thumb along the current, and the curled fingers give the direction of the field lines. The field becomes stronger when the current increases and weaker as the distance from the wire increases.",
+      "purpose": "Oersted showed that a current-carrying wire deflects a nearby compass needle, so an electric current produces a magnetic field. Around a long straight wire, the field lines are concentric circles in a plane perpendicular to the wire. The right-hand thumb rule gives the direction: point the right thumb along the current, and the curled fingers give the direction of the field lines. The field becomes stronger when the current increases and weaker as the distance from the wire increases.",
+      "key_points": [
+        "A current-carrying conductor produces a magnetic field around it.",
+        "The field lines around a straight wire are concentric circles.",
+        "Right-hand thumb rule: thumb along current, curled fingers show the field.",
+        "Field strength increases with current and decreases with distance."
+      ],
+      "real_life_application": "The magnetic field of a current is used in electric bells, relays, loudspeakers, and electromagnetic cranes.",
+      "day_to_day_usage": [
+        "An electric bell ringing when the switch is pressed",
+        "A loudspeaker producing sound from a varying current",
+        "A relay switching a high-current circuit",
+        "A compass needle deflecting near a wire carrying current"
+      ]
+    },
+    {
+      "id": "solenoid-and-electromagnet",
+      "name": "Solenoid and Electromagnet",
+      "title": "Solenoid and Electromagnet",
+      "explanation": "A solenoid is a coil of many circular turns of insulated copper wire wound closely in the shape of a cylinder. When current flows through it, the field inside is uniform and parallel, and the coil behaves like a bar magnet with a north pole at one end and a south pole at the other. Placing a soft iron core inside the solenoid makes an electromagnet, which is magnetic only while current flows. Its strength can be increased by increasing the current, increasing the number of turns, or using a suitable soft iron core.",
+      "purpose": "A solenoid is a coil of many circular turns of insulated copper wire wound closely in the shape of a cylinder. When current flows through it, the field inside is uniform and parallel, and the coil behaves like a bar magnet with a north pole at one end and a south pole at the other. Placing a soft iron core inside the solenoid makes an electromagnet, which is magnetic only while current flows. Its strength can be increased by increasing the current, increasing the number of turns, or using a suitable soft iron core.",
+      "key_points": [
+        "The magnetic field inside a current-carrying solenoid is uniform.",
+        "A solenoid behaves like a bar magnet, with north and south poles at its ends.",
+        "An electromagnet uses a soft iron core and works only while current flows.",
+        "Strength depends on current, number of turns, and the core material."
+      ],
+      "real_life_application": "Electromagnets lift scrap iron in cranes, ring electric bells, and operate relays and magnetic locks.",
+      "day_to_day_usage": [
+        "Electromagnetic cranes in scrap yards",
+        "Electric bells in homes and schools",
+        "Magnetic door locks",
+        "Relays in cars and appliances"
+      ]
+    },
+    {
+      "id": "force-on-conductor-and-motor",
+      "name": "Force on a Current-Carrying Conductor and the Electric Motor",
+      "title": "Force on a Current-Carrying Conductor and the Electric Motor",
+      "explanation": "A current-carrying conductor placed in a magnetic field experiences a force because the field of the current interacts with the external field. The force is largest when the conductor is perpendicular to the field and zero when it is parallel to the field. Fleming's left-hand rule gives the direction: the forefinger points along the field, the middle finger along the current, and the thumb gives the force. In a simple DC motor, forces on opposite sides of the coil produce rotation, and a split ring commutator reverses the current every half turn so that rotation continues in the same direction.",
+      "purpose": "A current-carrying conductor placed in a magnetic field experiences a force because the field of the current interacts with the external field. The force is largest when the conductor is perpendicular to the field and zero when it is parallel to the field. Fleming's left-hand rule gives the direction: the forefinger points along the field, the middle finger along the current, and the thumb gives the force. In a simple DC motor, forces on opposite sides of the coil produce rotation, and a split ring commutator reverses the current every half turn so that rotation continues in the same direction.",
+      "key_points": [
+        "A current-carrying conductor in a magnetic field experiences a force.",
+        "The force is maximum when current and field are perpendicular.",
+        "Fleming's left-hand rule gives the direction of the force.",
+        "A split ring commutator keeps a DC motor rotating in one direction."
+      ],
+      "real_life_application": "Electric motors drive fans, washing machines, water pumps, mixers, and electric vehicles.",
+      "day_to_day_usage": [
+        "Ceiling and table fans",
+        "Washing machine and mixer motors",
+        "Water pumps in homes and farms",
+        "Electric vehicles and toy cars"
+      ]
+    },
+    {
+      "id": "electromagnetic-induction-and-generator",
+      "name": "Electromagnetic Induction, Fleming's Right-Hand Rule and the Generator",
+      "title": "Electromagnetic Induction, Fleming's Right-Hand Rule and the Generator",
+      "explanation": "Faraday discovered that a changing magnetic field through a coil induces an electromotive force and, in a closed circuit, an induced current. This is called electromagnetic induction and can be produced by moving a magnet near a coil, moving a coil near a magnet, or changing the current in a nearby coil. Fleming's right-hand rule gives the direction of the induced current: thumb along motion, forefinger along the field, and middle finger along the induced current. In a generator, a coil rotates in a magnetic field, and the induced current reverses every half rotation, so an AC generator uses slip rings while a DC generator uses a split ring commutator.",
+      "purpose": "Faraday discovered that a changing magnetic field through a coil induces an electromotive force and, in a closed circuit, an induced current. This is called electromagnetic induction and can be produced by moving a magnet near a coil, moving a coil near a magnet, or changing the current in a nearby coil. Fleming's right-hand rule gives the direction of the induced current: thumb along motion, forefinger along the field, and middle finger along the induced current. In a generator, a coil rotates in a magnetic field, and the induced current reverses every half rotation, so an AC generator uses slip rings while a DC generator uses a split ring commutator.",
+      "key_points": [
+        "A changing magnetic field induces an emf in a coil.",
+        "Induced current direction is given by Fleming's right-hand rule.",
+        "An AC generator produces current that reverses every half rotation.",
+        "Slip rings give AC output; a split ring commutator gives DC output."
+      ],
+      "real_life_application": "Power stations use generators driven by steam, water, or wind to supply electricity to homes and industries.",
+      "day_to_day_usage": [
+        "Hydroelectric and thermal power stations",
+        "Wind turbines",
+        "Bicycle dynamos and hand-cranked torches",
+        "Induction cooktops and wireless chargers"
+      ]
+    },
+    {
+      "id": "domestic-circuits-fuse-earthing",
+      "name": "Domestic Electric Circuits, Fuse and Earthing",
+      "title": "Domestic Electric Circuits, Fuse and Earthing",
+      "explanation": "A domestic circuit receives electric power through a live wire and a neutral wire, with a third earth wire for safety. Appliances are connected in parallel so that each gets the full supply voltage and can be switched independently. The fuse is connected in the live wire and contains a thin wire that melts if the current exceeds a safe value, breaking the circuit during overload or short circuit. Earthing connects the metal body of an appliance to the earth, so a leakage current flows safely to the ground instead of through a person.",
+      "purpose": "A domestic circuit receives electric power through a live wire and a neutral wire, with a third earth wire for safety. Appliances are connected in parallel so that each gets the full supply voltage and can be switched independently. The fuse is connected in the live wire and contains a thin wire that melts if the current exceeds a safe value, breaking the circuit during overload or short circuit. Earthing connects the metal body of an appliance to the earth, so a leakage current flows safely to the ground instead of through a person.",
+      "key_points": [
+        "Domestic appliances are connected in parallel across live and neutral.",
+        "The fuse is placed in the live wire and protects against excess current.",
+        "Overload and short circuit are common causes of excessive current.",
+        "Earthing protects users from electric shock due to leakage."
+      ],
+      "real_life_application": "A fuse or MCB protects a home circuit when too many appliances draw current, and earthing protects users of metal-bodied appliances such as refrigerators.",
+      "day_to_day_usage": [
+        "Fuse or MCB in the main switchboard",
+        "Earth wire in three-pin plugs",
+        "Separate switches for lights and fans",
+        "Safety shut-off during a short circuit"
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-mag-1",
+      "title": "Field direction around a straight wire",
+      "topic": "Right-hand thumb rule",
+      "problem": "A straight wire carries current vertically upward in the plane of the page. Find the direction of the magnetic field at a point to the right of the wire.",
+      "solution": [
+        "Step 1: Point the right thumb upward along the direction of the current.",
+        "Step 2: Curl the fingers of the right hand around the wire.",
+        "Step 3: On the right side of the wire, the curled fingers point into the page.",
+        "Step 4: Therefore the magnetic field at that point is directed into the page."
+      ],
+      "board_mode": [
+        "Step 1: Point the right thumb upward along the direction of the current.",
+        "Step 2: Curl the fingers of the right hand around the wire.",
+        "Step 3: On the right side of the wire, the curled fingers point into the page.",
+        "Step 4: Therefore the magnetic field at that point is directed into the page."
+      ],
+      "answer": "The magnetic field is directed into the page at the point to the right of the wire.",
+      "board_tip": "Draw the wire as a straight line and mark the current arrow. Then draw one circular field line and put an arrowhead into the page on the right side."
+    },
+    {
+      "id": "we-mag-2",
+      "title": "Poles of a current-carrying solenoid",
+      "topic": "Solenoid and electromagnet",
+      "problem": "A solenoid is held horizontally. When viewed from its left end, the current appears to flow anticlockwise. Identify the magnetic polarity of the left end and state two ways to increase the strength of the electromagnet.",
+      "solution": [
+        "Step 1: Use the right-hand rule for a solenoid: curl the fingers in the direction of the current and the thumb points toward the north pole.",
+        "Step 2: An anticlockwise current viewed from the left end makes the thumb point toward that end.",
+        "Step 3: Therefore the left end acts as the north pole and the right end as the south pole.",
+        "Step 4: Increase the current, increase the number of turns, or use a soft iron core to strengthen the electromagnet."
+      ],
+      "board_mode": [
+        "Step 1: Use the right-hand rule for a solenoid: curl the fingers in the direction of the current and the thumb points toward the north pole.",
+        "Step 2: An anticlockwise current viewed from the left end makes the thumb point toward that end.",
+        "Step 3: Therefore the left end acts as the north pole and the right end as the south pole.",
+        "Step 4: Increase the current, increase the number of turns, or use a soft iron core to strengthen the electromagnet."
+      ],
+      "answer": "The left end is the north pole. Strength increases with more current, more turns, or a soft iron core.",
+      "board_tip": "Remember the viewing rule: anticlockwise current seen from an end makes that end north; clockwise makes it south."
+    },
+    {
+      "id": "we-mag-3",
+      "title": "Force on a conductor using Fleming's left-hand rule",
+      "topic": "Fleming's left-hand rule",
+      "problem": "A straight conductor carries conventional current toward the right of the page. The magnetic field is directed into the page. Find the direction of the force on the conductor.",
+      "solution": [
+        "Step 1: Stretch the forefinger, middle finger, and thumb of the left hand mutually perpendicular.",
+        "Step 2: Point the forefinger into the page to represent the magnetic field.",
+        "Step 3: Point the middle finger toward the right to represent the conventional current.",
+        "Step 4: The thumb then points vertically upward, so the force is upward."
+      ],
+      "board_mode": [
+        "Step 1: Stretch the forefinger, middle finger, and thumb of the left hand mutually perpendicular.",
+        "Step 2: Point the forefinger into the page to represent the magnetic field.",
+        "Step 3: Point the middle finger toward the right to represent the conventional current.",
+        "Step 4: The thumb then points vertically upward, so the force is upward."
+      ],
+      "answer": "The force on the conductor acts vertically upward.",
+      "board_tip": "Always label field, current, and force on the diagram. Use conventional current, not electron flow, in Fleming's rule."
+    },
+    {
+      "id": "we-mag-4",
+      "title": "Why a DC motor needs a split ring",
+      "topic": "Electric motor",
+      "problem": "Explain why a simple DC motor uses a split ring commutator and what would happen if the split ring were replaced by two full slip rings.",
+      "solution": [
+        "Step 1: In a motor, the current-carrying coil experiences forces that produce rotation.",
+        "Step 2: After half a rotation, the sides of the coil change their positions relative to the magnetic field, so the direction of the force on each side would reverse.",
+        "Step 3: The split ring reverses the current in the coil at that instant, so the force direction reverses and the coil keeps turning the same way.",
+        "Step 4: With full slip rings, the current would not reverse every half turn, so the coil would stop after half a rotation or oscillate instead of rotating continuously."
+      ],
+      "board_mode": [
+        "Step 1: In a motor, the current-carrying coil experiences forces that produce rotation.",
+        "Step 2: After half a rotation, the sides of the coil change their positions relative to the magnetic field, so the direction of the force on each side would reverse.",
+        "Step 3: The split ring reverses the current in the coil at that instant, so the force direction reverses and the coil keeps turning the same way.",
+        "Step 4: With full slip rings, the current would not reverse every half turn, so the coil would stop after half a rotation or oscillate instead of rotating continuously."
+      ],
+      "answer": "The split ring reverses the coil current every half turn, maintaining torque in one direction; slip rings would not reverse it, so continuous rotation would fail.",
+      "board_tip": "Link the split ring to the reversal of current, not to the reversal of the magnetic field."
+    },
+    {
+      "id": "we-mag-5",
+      "title": "AC and DC generators",
+      "topic": "Electromagnetic induction and generator",
+      "problem": "A coil rotates in a uniform magnetic field. Explain how an emf is induced and why the output of an AC generator reverses direction, while a DC generator gives unidirectional current.",
+      "solution": [
+        "Step 1: As the coil rotates, the magnetic flux linked with it changes continuously.",
+        "Step 2: According to electromagnetic induction, this changing flux induces an emf in the coil.",
+        "Step 3: After every half rotation, the sides of the coil move in the opposite direction relative to the field, so the induced current reverses; this gives alternating current.",
+        "Step 4: In a DC generator, a split ring commutator reverses the connections every half turn, so the external circuit receives current in one direction."
+      ],
+      "board_mode": [
+        "Step 1: As the coil rotates, the magnetic flux linked with it changes continuously.",
+        "Step 2: According to electromagnetic induction, this changing flux induces an emf in the coil.",
+        "Step 3: After every half rotation, the sides of the coil move in the opposite direction relative to the field, so the induced current reverses; this gives alternating current.",
+        "Step 4: In a DC generator, a split ring commutator reverses the connections every half turn, so the external circuit receives current in one direction."
+      ],
+      "answer": "Changing flux induces emf; the coil reverses direction every half turn, giving AC. A split ring commutator in a DC generator makes the external current unidirectional.",
+      "board_tip": "Do not confuse the commutator of a motor with that of a generator. Both reverse connections, but the motor uses it to keep torque one-way and the generator uses it to keep output one-way."
+    }
+  ],
+  "exercises": {
+    "simple": {
+      "title": "Foundation Practice - Magnetic Field and Current",
+      "objective": "Recall definitions, rules, and basic device functions",
+      "problems": [
+        {
+          "id": "mag-s-1",
+          "question": "Define magnetic field. State two properties of magnetic field lines.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: A magnetic field is the region around a magnet or current-carrying conductor where its magnetic force can be detected.",
+            "Step 2: Outside a magnet, field lines run from the north pole to the south pole.",
+            "Step 3: Field lines never intersect, and their tangent gives the field direction."
+          ],
+          "final_answer": "Magnetic field is the region of magnetic force; field lines run N to S outside a magnet and never cross."
+        },
+        {
+          "id": "mag-s-2",
+          "question": "A straight wire carries current from south to north. Using the right-hand thumb rule, state the direction of the magnetic field at a point east of the wire.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Point the right thumb from south to north along the current.",
+            "Step 2: Curl the fingers around the wire.",
+            "Step 3: On the east side, the fingers point vertically downward.",
+            "Step 4: Hence the field is directed vertically downward."
+          ],
+          "final_answer": "The magnetic field points vertically downward at the point east of the wire."
+        },
+        {
+          "id": "mag-s-3",
+          "question": "Why does a current-carrying solenoid behave like a bar magnet?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Each turn of the solenoid produces a magnetic field like a circular loop.",
+            "Step 2: The fields of all turns add up along the axis of the solenoid.",
+            "Step 3: One end becomes a north pole and the other a south pole.",
+            "Step 4: The external field pattern is therefore similar to that of a bar magnet."
+          ],
+          "final_answer": "The combined fields of its turns give the solenoid two poles and an external field like a bar magnet."
+        },
+        {
+          "id": "mag-s-4",
+          "question": "State Fleming's left-hand rule.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Stretch the forefinger, middle finger, and thumb of the left hand mutually perpendicular.",
+            "Step 2: Point the forefinger along the magnetic field.",
+            "Step 3: Point the middle finger along the conventional current.",
+            "Step 4: The thumb then gives the direction of the force on the conductor."
+          ],
+          "final_answer": "Field along forefinger, current along middle finger, force along thumb of the left hand."
+        },
+        {
+          "id": "mag-s-5",
+          "question": "What is electromagnetic induction?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Electromagnetic induction is the production of an emf or current due to a changing magnetic field.",
+            "Step 2: It occurs when a magnet and coil move relative to each other.",
+            "Step 3: It also occurs when the current in a nearby coil changes.",
+            "Step 4: The induced current lasts only while the magnetic flux is changing."
+          ],
+          "final_answer": "Electromagnetic induction is the production of emf or current by a changing magnetic flux."
+        },
+        {
+          "id": "mag-s-6",
+          "question": "What is the purpose of a fuse in a domestic circuit?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: A fuse is connected in series in the live wire.",
+            "Step 2: It contains a thin wire of low melting point.",
+            "Step 3: If the current exceeds the safe value, the wire melts and breaks the circuit.",
+            "Step 4: This prevents damage to appliances and reduces the risk of fire."
+          ],
+          "final_answer": "A fuse melts and breaks the circuit when current is too high, protecting appliances and wiring."
+        }
+      ]
+    },
+    "medium": {
+      "title": "Board Practice - Rules, Motors, and Generators",
+      "objective": "Apply rules to direction problems and explain device parts",
+      "problems": [
+        {
+          "id": "mag-m-1",
+          "question": "Draw the magnetic field lines around a bar magnet and state three conclusions that can be drawn from the pattern.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Draw field lines from the north pole to the south pole outside the magnet and continue them inside from south to north.",
+            "Step 2: The lines are crowded near the poles, showing that the field is strongest there.",
+            "Step 3: The lines are farther apart near the middle, showing a weaker field.",
+            "Step 4: No two field lines cross, and each line is a closed loop."
+          ],
+          "final_answer": "Field is strongest at poles, weaker away from them, and field lines are closed loops that never intersect."
+        },
+        {
+          "id": "mag-m-2",
+          "question": "List three ways to increase the strength of an electromagnet.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Increase the current through the coil.",
+            "Step 2: Increase the number of turns of the coil.",
+            "Step 3: Use a soft iron core instead of air inside the solenoid.",
+            "Step 4: These changes increase the magnetic field produced by the electromagnet."
+          ],
+          "final_answer": "Increase current, increase turns, and use a soft iron core."
+        },
+        {
+          "id": "mag-m-3",
+          "question": "When is the force on a current-carrying conductor in a magnetic field maximum and when is it zero?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The force depends on the angle between the current and the magnetic field.",
+            "Step 2: It is maximum when the conductor is perpendicular to the field.",
+            "Step 3: It is zero when the conductor is parallel to the field.",
+            "Step 4: In general, the force is proportional to the component of current perpendicular to the field."
+          ],
+          "final_answer": "Maximum when current is perpendicular to the field; zero when it is parallel."
+        },
+        {
+          "id": "mag-m-4",
+          "question": "Explain the function of the split ring in a simple electric motor.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The split ring is a commutator connected to the ends of the coil.",
+            "Step 2: It reverses the direction of current in the coil every half rotation.",
+            "Step 3: This reversal keeps the torque in the same direction.",
+            "Step 4: As a result, the coil continues to rotate continuously."
+          ],
+          "final_answer": "The split ring reverses coil current every half turn so that the motor keeps rotating in one direction."
+        },
+        {
+          "id": "mag-m-5",
+          "question": "Distinguish between an AC generator and a DC generator.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: An AC generator uses two slip rings, while a DC generator uses a split ring commutator.",
+            "Step 2: The current in the coil of an AC generator reverses every half rotation.",
+            "Step 3: Slip rings carry this alternating current to the external circuit.",
+            "Step 4: The split ring in a DC generator reverses connections so the external current stays unidirectional."
+          ],
+          "final_answer": "AC generator uses slip rings and gives alternating current; DC generator uses a split ring commutator and gives unidirectional current."
+        },
+        {
+          "id": "mag-m-6",
+          "question": "Why are domestic appliances connected in parallel, and why is the switch placed in the live wire?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: In parallel, each appliance receives the full supply voltage.",
+            "Step 2: Each appliance can be switched on or off independently, and a fault in one does not stop the others.",
+            "Step 3: The switch is placed in the live wire so that when it is off, the appliance is disconnected from the high potential.",
+            "Step 4: This reduces the risk of shock during maintenance."
+          ],
+          "final_answer": "Parallel connection gives full voltage and independent operation; the live-wire switch isolates the appliance from high potential."
+        }
+      ]
+    },
+    "complex": {
+      "title": "Application Practice - Devices, Safety, and Calculations",
+      "objective": "Connect principles to devices, faults, and fuse ratings",
+      "problems": [
+        {
+          "id": "mag-c-1",
+          "question": "Describe Oersted's experiment and explain what it proved about the relationship between electricity and magnetism.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Oersted placed a magnetic compass near a straight wire carrying current.",
+            "Step 2: When current was switched on, the compass needle deflected from its original position.",
+            "Step 3: Reversing the current reversed the direction of deflection.",
+            "Step 4: The deflection showed that the current produced a magnetic field around the wire.",
+            "Step 5: This established that electric current has a magnetic effect."
+          ],
+          "final_answer": "A current-carrying wire deflects a compass needle, proving that current produces a magnetic field."
+        },
+        {
+          "id": "mag-c-2",
+          "question": "Compare an electromagnet with a permanent magnet, giving two advantages of an electromagnet for use in a scrap-yard crane.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: A permanent magnet is always magnetic; an electromagnet is magnetic only while current flows.",
+            "Step 2: The strength of an electromagnet can be changed by changing the current or number of turns.",
+            "Step 3: Its polarity can be reversed by reversing the current.",
+            "Step 4: In a crane, the electromagnet can be switched on to lift iron and switched off to release it.",
+            "Step 5: This makes handling quick and avoids the need to pull the load away from a permanent magnet."
+          ],
+          "final_answer": "An electromagnet can be switched on and off and its strength controlled, which makes loading and unloading scrap iron easy."
+        },
+        {
+          "id": "mag-c-3",
+          "question": "Compare an electric motor and an electric generator in terms of energy conversion, driving rule, and the rule used to find the direction of the main quantity.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: A motor converts electrical energy into mechanical energy.",
+            "Step 2: In a motor, current is supplied to a coil in a magnetic field, producing a force.",
+            "Step 3: A generator converts mechanical energy into electrical energy.",
+            "Step 4: In a generator, motion of a coil in a magnetic field changes the flux and induces an emf.",
+            "Step 5: The motor uses Fleming's left-hand rule for the force, while the generator uses Fleming's right-hand rule for the induced current."
+          ],
+          "final_answer": "Motor: electrical to mechanical, left-hand rule. Generator: mechanical to electrical, right-hand rule."
+        },
+        {
+          "id": "mag-c-4",
+          "question": "An electric iron rated 2000 W is used on a 220 V supply. Calculate the current drawn and choose a suitable fuse rating from 5 A, 10 A, and 15 A. Justify the choice.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Use P = V x I.",
+            "Step 2: I = P / V = 2000 / 220 A.",
+            "Step 3: I = 9.09 A approximately.",
+            "Step 4: A 5 A fuse would melt during normal operation because 9.09 A is larger.",
+            "Step 5: A 10 A fuse or a 15 A fuse can carry the current; the 10 A fuse is the closest suitable rating, while the 15 A fuse gives more margin and is often used for high-power appliances."
+          ],
+          "final_answer": "Current is about 9.1 A. Use a 10 A fuse (or 15 A from the given choices) because a 5 A fuse is too small."
+        },
+        {
+          "id": "mag-c-5",
+          "question": "A coil is moved quickly into a magnetic field and then held stationary inside it. State when a current is induced and how the induced current can be increased.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: A current is induced while the magnetic flux through the coil is changing.",
+            "Step 2: While the coil is moving into the field, the flux changes and a current flows.",
+            "Step 3: When the coil is held stationary inside the field, the flux does not change, so no current is induced.",
+            "Step 4: The induced current can be increased by moving the coil faster, using more turns, or using a stronger magnetic field.",
+            "Step 5: A faster change of flux gives a larger induced emf."
+          ],
+          "final_answer": "Current flows only during motion; increase it with faster motion, more turns, or a stronger field."
+        },
+        {
+          "id": "mag-c-6",
+          "question": "Explain why a short circuit causes excessive current and how a fuse and earthing protect a domestic circuit.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: A short circuit occurs when the live and neutral wires touch directly, giving a path of very low resistance.",
+            "Step 2: According to I = V / R, a very small resistance causes a very large current.",
+            "Step 3: The large current heats the wires and can cause a fire.",
+            "Step 4: A fuse in the live wire melts and breaks the circuit when the current exceeds its rating.",
+            "Step 5: Earthing connects metal appliance bodies to the earth, so leakage current flows safely to the ground instead of through a user."
+          ],
+          "final_answer": "A short circuit lowers resistance and raises current; the fuse breaks the circuit, and earthing diverts leakage current to the ground."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-mag-s-1",
+        "question": "The SI unit of magnetic field strength is the:",
+        "options": [
+          "Newton",
+          "Tesla",
+          "Ampere",
+          "Volt"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Magnetic field strength is measured in tesla (T).",
+          "wrong_options": {
+            "0": "The newton is the unit of force.",
+            "2": "The ampere is the unit of electric current.",
+            "3": "The volt is the unit of potential difference."
+          }
+        }
+      },
+      {
+        "id": "q-mag-s-2",
+        "question": "Outside a bar magnet, magnetic field lines are directed from:",
+        "options": [
+          "South pole to north pole",
+          "North pole to south pole",
+          "East to west",
+          "West to east"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Outside the magnet, field lines run from the north pole to the south pole.",
+          "wrong_options": {
+            "0": "This is the direction inside the magnet.",
+            "2": "Field direction depends on the magnet, not on east-west geography.",
+            "3": "Field direction depends on the magnet, not on west-east geography."
+          }
+        }
+      },
+      {
+        "id": "q-mag-s-3",
+        "question": "Magnetic field lines never intersect because:",
+        "options": [
+          "They are always straight",
+          "A compass needle can point in only one direction at a point",
+          "They carry electric current",
+          "They are parallel everywhere"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "At a point, the field has a single direction, so two field lines cannot cross there.",
+          "wrong_options": {
+            "0": "Field lines can be curved.",
+            "2": "Field lines are not current-carrying wires.",
+            "3": "Field lines are not parallel in a non-uniform field."
+          }
+        }
+      },
+      {
+        "id": "q-mag-s-4",
+        "question": "The right-hand thumb rule is used to find the:",
+        "options": [
+          "Direction of force on a conductor",
+          "Direction of magnetic field due to a current",
+          "Magnitude of induced emf",
+          "Resistance of a wire"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The right-hand thumb rule gives the direction of the magnetic field around a current-carrying conductor.",
+          "wrong_options": {
+            "0": "Fleming's left-hand rule gives the force direction.",
+            "2": "Induced emf magnitude depends on the rate of change of flux.",
+            "3": "Resistance is found from V = IR."
+          }
+        }
+      },
+      {
+        "id": "q-mag-s-5",
+        "question": "Inside a long current-carrying solenoid, the magnetic field is:",
+        "options": [
+          "Zero everywhere",
+          "Uniform and parallel to the axis",
+          "Circular around the axis",
+          "Strongest at the centre and zero at the ends"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Inside a long solenoid, the field is nearly uniform and directed along its axis.",
+          "wrong_options": {
+            "0": "The field is strong inside, not zero.",
+            "2": "Circular field lines occur around a straight wire, not inside a solenoid.",
+            "3": "The field is nearly uniform throughout the interior."
+          }
+        }
+      },
+      {
+        "id": "q-mag-s-6",
+        "question": "The core of an electromagnet is usually made of:",
+        "options": [
+          "Soft iron",
+          "Steel",
+          "Copper",
+          "Wood"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Soft iron becomes strongly magnetised while current flows and loses magnetism when current stops.",
+          "wrong_options": {
+            "1": "Steel retains magnetism and is used for permanent magnets.",
+            "2": "Copper is a conductor but is not used as the magnetic core.",
+            "3": "Wood is not magnetic."
+          }
+        }
+      },
+      {
+        "id": "q-mag-s-7",
+        "question": "The force on a current-carrying conductor in a magnetic field is maximum when the conductor is:",
+        "options": [
+          "Parallel to the field",
+          "Perpendicular to the field",
+          "At 45 degrees to the field",
+          "Stationary"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The force is maximum when the current is perpendicular to the magnetic field.",
+          "wrong_options": {
+            "0": "The force is zero when the conductor is parallel to the field.",
+            "2": "The force is smaller than the maximum at 45 degrees.",
+            "3": "A stationary conductor can still experience a force if current flows."
+          }
+        }
+      },
+      {
+        "id": "q-mag-s-8",
+        "question": "Fleming's left-hand rule gives the direction of:",
+        "options": [
+          "Induced current",
+          "Force on a current-carrying conductor",
+          "Magnetic field due to a straight wire",
+          "Resistance of a conductor"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Fleming's left-hand rule gives the direction of the magnetic force on a current-carrying conductor.",
+          "wrong_options": {
+            "0": "Fleming's right-hand rule gives the induced current direction.",
+            "2": "The right-hand thumb rule gives the field direction around a wire.",
+            "3": "Resistance is not found from this rule."
+          }
+        }
+      },
+      {
+        "id": "q-mag-s-9",
+        "question": "A device that converts mechanical energy into electrical energy is a:",
+        "options": [
+          "Motor",
+          "Generator",
+          "Transformer",
+          "Fuse"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A generator converts mechanical energy into electrical energy using electromagnetic induction.",
+          "wrong_options": {
+            "0": "A motor converts electrical energy into mechanical energy.",
+            "2": "A transformer changes alternating voltage, not mechanical energy.",
+            "3": "A fuse is a safety device."
+          }
+        }
+      },
+      {
+        "id": "q-mag-s-10",
+        "question": "In a domestic circuit, the fuse is connected in the:",
+        "options": [
+          "Neutral wire",
+          "Live wire",
+          "Earth wire",
+          "Parallel branch only"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The fuse is placed in the live wire so that it disconnects the appliance from the high potential when it melts.",
+          "wrong_options": {
+            "0": "A fuse in the neutral wire may leave the appliance connected to the live potential.",
+            "2": "The earth wire is for safety against leakage, not for carrying normal current.",
+            "3": "A fuse is connected in series with the circuit it protects."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-mag-m-1",
+        "question": "The magnetic field at the centre of a circular current-carrying loop is directed:",
+        "options": [
+          "Along the plane of the loop",
+          "Perpendicular to the plane of the loop",
+          "Radially outward from the centre",
+          "Radially inward toward the centre"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "At the centre of a circular loop, the field is perpendicular to the plane of the loop.",
+          "wrong_options": {
+            "0": "The field is not along the plane; it is along the axis.",
+            "2": "Radial directions are in the plane of the loop, not the field direction.",
+            "3": "The field does not point radially inward at the centre."
+          }
+        }
+      },
+      {
+        "id": "q-mag-m-2",
+        "question": "The strength of an electromagnet can be increased by:",
+        "options": [
+          "Decreasing the current",
+          "Decreasing the number of turns",
+          "Increasing the number of turns",
+          "Removing the soft iron core"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "More turns produce a stronger magnetic field for the same current.",
+          "wrong_options": {
+            "0": "Decreasing the current weakens the electromagnet.",
+            "1": "Fewer turns weaken the field.",
+            "3": "Removing the soft iron core weakens the field."
+          }
+        }
+      },
+      {
+        "id": "q-mag-m-3",
+        "question": "The split ring in an electric motor is used to:",
+        "options": [
+          "Increase the supply voltage",
+          "Reverse the current in the coil every half rotation",
+          "Reduce the resistance of the coil",
+          "Convert AC to DC permanently"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The split ring commutator reverses the coil current every half rotation so the motor keeps turning.",
+          "wrong_options": {
+            "0": "It does not change the supply voltage.",
+            "2": "It is not a resistance device.",
+            "3": "It reverses connections periodically, but a motor is not a rectifier."
+          }
+        }
+      },
+      {
+        "id": "q-mag-m-4",
+        "question": "The output of an AC generator reverses direction because:",
+        "options": [
+          "The magnetic field disappears every half rotation",
+          "The coil changes its direction of motion relative to the field every half rotation",
+          "The slip rings melt",
+          "The number of turns changes"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "After every half rotation, the sides of the coil move in the opposite direction relative to the field, so the induced current reverses.",
+          "wrong_options": {
+            "0": "The magnetic field remains present.",
+            "2": "Slip rings do not melt during normal operation.",
+            "3": "The number of turns is fixed."
+          }
+        }
+      },
+      {
+        "id": "q-mag-m-5",
+        "question": "Fleming's right-hand rule is used to find the direction of:",
+        "options": [
+          "Force on a current-carrying conductor",
+          "Induced current",
+          "Magnetic field due to a straight wire",
+          "Electric power"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Fleming's right-hand rule gives the direction of induced current in a generator.",
+          "wrong_options": {
+            "0": "Fleming's left-hand rule gives the force direction.",
+            "2": "The right-hand thumb rule gives the field direction around a wire.",
+            "3": "Power is calculated from P = VI."
+          }
+        }
+      },
+      {
+        "id": "q-mag-m-6",
+        "question": "An induced current can be produced in a coil by:",
+        "options": [
+          "Keeping a magnet stationary near the coil",
+          "Moving a magnet toward or away from the coil",
+          "Connecting the coil to a dead battery",
+          "Heating the coil only"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Moving a magnet changes the magnetic flux through the coil, inducing a current.",
+          "wrong_options": {
+            "0": "A stationary magnet gives no change in flux.",
+            "2": "A dead battery supplies no changing current.",
+            "3": "Heating alone does not change magnetic flux."
+          }
+        }
+      },
+      {
+        "id": "q-mag-m-7",
+        "question": "In a three-pin domestic plug, the earth wire is connected to:",
+        "options": [
+          "The live wire",
+          "The neutral wire",
+          "The metal body of the appliance",
+          "The fuse only"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "The earth wire is connected to the metal body of the appliance to provide a safe path for leakage current.",
+          "wrong_options": {
+            "0": "The live wire carries the supply current.",
+            "1": "The neutral wire completes the circuit.",
+            "3": "The fuse is a separate protective element in the live wire."
+          }
+        }
+      },
+      {
+        "id": "q-mag-m-8",
+        "question": "A short circuit in a domestic circuit occurs when:",
+        "options": [
+          "The live and neutral wires touch directly",
+          "An appliance is switched off",
+          "The earth wire is disconnected",
+          "The fuse is removed"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Direct contact between live and neutral creates a low-resistance path and a very large current.",
+          "wrong_options": {
+            "1": "Switching off an appliance reduces current.",
+            "2": "A disconnected earth wire is a safety hazard but is not itself a short circuit.",
+            "3": "Removing the fuse does not create a short circuit."
+          }
+        }
+      },
+      {
+        "id": "q-mag-m-9",
+        "question": "The magnetic field inside a long solenoid is:",
+        "options": [
+          "Uniform and parallel to its axis",
+          "Circular around its axis",
+          "Zero at every point",
+          "Strongest at the centre and zero at the ends"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Inside a long solenoid, the field is nearly uniform and parallel to the axis.",
+          "wrong_options": {
+            "1": "Circular field lines occur around a straight wire.",
+            "2": "The field is strong inside the solenoid.",
+            "3": "The field is approximately uniform along the interior."
+          }
+        }
+      },
+      {
+        "id": "q-mag-m-10",
+        "question": "A fuse works on the principle that:",
+        "options": [
+          "A magnetic field is produced by current",
+          "A thin wire melts when current exceeds a safe value",
+          "Resistance decreases when current increases",
+          "Voltage increases when current increases"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The heating effect of excessive current melts the thin fuse wire and breaks the circuit.",
+          "wrong_options": {
+            "0": "Magnetic effects are not the operating principle of a fuse.",
+            "2": "The fuse works by melting, not by lowering resistance.",
+            "3": "The fuse does not increase voltage."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-mag-x-1",
+        "question": "Which statement correctly compares a motor and a generator?",
+        "options": [
+          "A motor uses electromagnetic induction; a generator uses the magnetic force on a current",
+          "A motor converts electrical energy to mechanical energy; a generator does the reverse",
+          "Both convert mechanical energy to electrical energy",
+          "Both use slip rings to produce direct current"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A motor uses electrical energy to produce motion, while a generator uses motion to produce electrical energy.",
+          "wrong_options": {
+            "0": "The roles of induction and magnetic force are interchanged.",
+            "2": "Only the generator converts mechanical energy to electrical energy.",
+            "3": "Slip rings are used in AC generators, not to produce direct current."
+          }
+        }
+      },
+      {
+        "id": "q-mag-x-2",
+        "question": "A conductor carries current toward the top of the page in a magnetic field directed into the page. The force on the conductor is:",
+        "options": [
+          "Toward the left",
+          "Toward the right",
+          "Into the page",
+          "Out of the page"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Using Fleming's left-hand rule, current up and field into the page give a force toward the left.",
+          "wrong_options": {
+            "1": "The right direction would require the current to be reversed.",
+            "2": "The force is in the plane of the page, not into it.",
+            "3": "The force is in the plane of the page, not out of it."
+          }
+        }
+      },
+      {
+        "id": "q-mag-x-3",
+        "question": "If both the current in a conductor and the magnetic field are reversed, the force on the conductor:",
+        "options": [
+          "Reverses direction",
+          "Remains in the same direction",
+          "Becomes zero",
+          "Becomes perpendicular to both"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Reversing both current and field reverses the force twice, so the net direction stays the same.",
+          "wrong_options": {
+            "0": "A single reversal would reverse the force, but two reversals cancel.",
+            "2": "The force is not zero because current and field are still perpendicular.",
+            "3": "The force remains perpendicular to both as before."
+          }
+        }
+      },
+      {
+        "id": "q-mag-x-4",
+        "question": "If the speed of a magnet moving into a coil is doubled, the induced emf:",
+        "options": [
+          "Becomes zero",
+          "Increases",
+          "Decreases",
+          "Stays exactly the same"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Faster motion changes the magnetic flux more rapidly, increasing the induced emf.",
+          "wrong_options": {
+            "0": "Motion still changes the flux, so the emf is not zero.",
+            "2": "A slower speed would decrease the emf.",
+            "3": "The emf depends on the rate of change of flux, so it changes."
+          }
+        }
+      },
+      {
+        "id": "q-mag-x-5",
+        "question": "An AC generator uses slip rings because they:",
+        "options": [
+          "Reverse the connections every half rotation",
+          "Allow the rotating coil to stay connected to the external circuit while the current alternates",
+          "Convert alternating current into direct current",
+          "Increase the magnetic field strength"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Slip rings provide continuous connection to the rotating coil without reversing the external connections, so the alternating current is delivered as AC.",
+          "wrong_options": {
+            "0": "A split ring commutator reverses connections; slip rings do not.",
+            "2": "Slip rings do not rectify the current.",
+            "3": "They do not strengthen the magnetic field."
+          }
+        }
+      },
+      {
+        "id": "q-mag-x-6",
+        "question": "An appliance rated 1100 W operates on a 220 V supply. The current drawn is:",
+        "options": [
+          "0.2 A",
+          "2 A",
+          "5 A",
+          "11 A"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "I = P / V = 1100 / 220 = 5 A.",
+          "wrong_options": {
+            "0": "0.2 A would give only 44 W at 220 V.",
+            "1": "2 A would give 440 W at 220 V.",
+            "3": "11 A would give 2420 W at 220 V."
+          }
+        }
+      },
+      {
+        "id": "q-mag-x-7",
+        "question": "The magnetic field at a point due to a long straight current-carrying wire:",
+        "options": [
+          "Increases as the distance from the wire increases",
+          "Decreases as the distance from the wire increases",
+          "Is independent of the distance",
+          "Is always zero"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The field strength falls as the distance from the wire increases.",
+          "wrong_options": {
+            "0": "The field is stronger closer to the wire.",
+            "2": "Distance affects the field strength.",
+            "3": "The field is not zero around a current-carrying wire."
+          }
+        }
+      },
+      {
+        "id": "q-mag-x-8",
+        "question": "Which device works mainly on the principle of electromagnetic induction?",
+        "options": [
+          "Electric heater",
+          "Electric generator",
+          "Fuse",
+          "Electric bulb"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A generator uses a changing magnetic flux to induce an emf.",
+          "wrong_options": {
+            "0": "A heater uses the heating effect of current.",
+            "2": "A fuse uses the heating effect of current.",
+            "3": "A bulb uses the heating effect of current to produce light."
+          }
+        }
+      },
+      {
+        "id": "q-mag-x-9",
+        "question": "Domestic appliances are connected in parallel mainly because:",
+        "options": [
+          "Each appliance then gets the full supply voltage and can be switched independently",
+          "The total resistance of the circuit becomes zero",
+          "The current through each appliance becomes equal",
+          "The fuse can be avoided"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Parallel connection gives each appliance the full supply voltage and independent operation.",
+          "wrong_options": {
+            "1": "Parallel branches add to give a finite equivalent resistance, not zero.",
+            "2": "Different appliances draw different currents.",
+            "3": "A fuse is still needed for protection."
+          }
+        }
+      },
+      {
+        "id": "q-mag-x-10",
+        "question": "Earthing protects a user of a metal-bodied appliance because:",
+        "options": [
+          "It increases the current through the user",
+          "It provides a low-resistance path for leakage current to the ground",
+          "It converts AC into DC",
+          "It switches off the appliance automatically"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The earth wire gives leakage current a safe path to the ground instead of through the user's body.",
+          "wrong_options": {
+            "0": "Earthing reduces the current through the user.",
+            "2": "Earthing does not rectify current.",
+            "3": "Earthing is a safety path, not an automatic switch, although it may help trip a fuse or MCB."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Magnetic Effects of Electric Current - Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Electric Current",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Magnetic Field",
+        "group": "foundation"
+      },
+      {
+        "id": "n3",
+        "label": "Field Lines",
+        "group": "foundation"
+      },
+      {
+        "id": "n4",
+        "label": "Right-Hand Thumb Rule",
+        "group": "rule"
+      },
+      {
+        "id": "n5",
+        "label": "Solenoid and Electromagnet",
+        "group": "device"
+      },
+      {
+        "id": "n6",
+        "label": "Force on Conductor",
+        "group": "effect"
+      },
+      {
+        "id": "n7",
+        "label": "Electric Motor",
+        "group": "device"
+      },
+      {
+        "id": "n8",
+        "label": "Electromagnetic Induction",
+        "group": "effect"
+      },
+      {
+        "id": "n9",
+        "label": "Generator",
+        "group": "device"
+      },
+      {
+        "id": "n10",
+        "label": "Domestic Safety",
+        "group": "application"
+      }
+    ],
+    "edges": [
+      ["n1", "n2"],
+      ["n2", "n3"],
+      ["n1", "n4"],
+      ["n1", "n5"],
+      ["n2", "n6"],
+      ["n4", "n6"],
+      ["n6", "n7"],
+      ["n2", "n8"],
+      ["n8", "n9"],
+      ["n4", "n9"],
+      ["n1", "n10"]
+    ]
+  },
+  "mind_maps": {
+    "title": "Magnetic Effects of Electric Current - Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Magnetic Effects of Electric Current",
+    "branches": [
+      {
+        "concept": "Magnetic Field and Field Lines",
+        "sub_nodes": [
+          "Field is the region of magnetic force",
+          "Outside magnet: north to south",
+          "Tangent gives direction; lines never cross",
+          "Crowded lines mean stronger field"
+        ],
+        "connections": "Provides the language for describing every magnetic effect of current"
+      },
+      {
+        "concept": "Field due to Current",
+        "sub_nodes": [
+          "Oersted's compass experiment",
+          "Straight wire: concentric circles, weaker with distance",
+          "Right-hand thumb rule",
+          "Circular loop: field along the axis"
+        ],
+        "connections": "Current produces magnetism, which leads to solenoids and electromagnets"
+      },
+      {
+        "concept": "Solenoid and Electromagnet",
+        "sub_nodes": [
+          "Coil with many turns",
+          "Uniform field inside",
+          "Acts like a bar magnet",
+          "Soft iron core and strength control"
+        ],
+        "connections": "Controlled magnetism is used in cranes, bells, and relays"
+      },
+      {
+        "concept": "Force and Motor",
+        "sub_nodes": [
+          "Current in a field experiences force",
+          "Maximum when perpendicular",
+          "Fleming's left-hand rule",
+          "Coil rotates; split ring keeps it one-way"
+        ],
+        "connections": "Converts electrical energy into mechanical energy"
+      },
+      {
+        "concept": "Induction and Generator",
+        "sub_nodes": [
+          "Changing flux induces emf; faster motion gives more",
+          "Fleming's right-hand rule",
+          "AC generator uses slip rings",
+          "DC generator uses split ring"
+        ],
+        "connections": "Converts mechanical energy into electrical energy"
+      },
+      {
+        "concept": "Domestic Circuits and Safety",
+        "sub_nodes": [
+          "Live, neutral, and earth wires",
+          "Appliances connected in parallel",
+          "Fuse in the live wire",
+          "Earthing and overload safety"
+        ],
+        "connections": "Applies magnetic and heating effects safely in homes"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    {
+      "misconception": "Magnetic field lines can cross each other.",
+      "correction": "Field lines never cross because the magnetic field has only one direction at any point."
+    },
+    {
+      "misconception": "A magnetic field exists only around permanent magnets.",
+      "correction": "A current-carrying conductor also produces a magnetic field, as Oersted showed."
+    },
+    {
+      "misconception": "The right-hand thumb rule gives the direction of force on a conductor.",
+      "correction": "It gives the direction of the magnetic field around a current; Fleming's left-hand rule gives the force."
+    },
+    {
+      "misconception": "An electromagnet remains magnetic after the current is switched off.",
+      "correction": "A soft iron electromagnet loses its magnetism when the current stops; steel cores retain magnetism."
+    },
+    {
+      "misconception": "The split ring in a motor increases the supply voltage.",
+      "correction": "The split ring reverses the current in the coil every half rotation to keep the torque in one direction."
+    },
+    {
+      "misconception": "An AC generator and a DC generator differ only in coil size.",
+      "correction": "Their output differs because an AC generator uses slip rings, while a DC generator uses a split ring commutator."
+    },
+    {
+      "misconception": "A fuse is connected in the neutral wire.",
+      "correction": "A fuse is connected in the live wire so that the appliance is isolated from the high potential when the fuse melts."
+    },
+    {
+      "misconception": "Earthing increases the risk of shock.",
+      "correction": "Earthing provides a low-resistance path for leakage current to the ground, reducing the risk of shock."
+    }
+  ],
+  "meta": {
+    "sources": [
+      "NCERT Class X Science, Chapter 13: Magnetic Effects of Electric Current",
+      "NCERT Class X Science textbook activities on Oersted's experiment, electromagnets, and the electric motor",
+      "CBSE Class X Science syllabus 2026-27, Effects of Current"
+    ]
+  }
+}

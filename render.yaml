@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: classx-platform
+    env: docker
+    region: singapore
+    branch: main
+    rootDir: .
+    dockerfilePath: Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 8787
+      - key: CORS_ORIGIN
+        value: true

@@ -1,0 +1,1293 @@
+{
+  "subject": "Economics",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 4,
+  "chapter": "Globalisation and the Indian Economy",
+  "id": "globalisation-and-the-indian-economy",
+  "lesson": 1,
+  "title": "Globalisation and the Indian Economy - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Define globalisation and explain its drivers",
+    "Describe the role of multinational corporations in production",
+    "Distinguish foreign trade from foreign direct investment",
+    "Explain liberalisation and the removal of trade barriers",
+    "Describe the role and criticisms of the WTO",
+    "Evaluate the benefits and costs of globalisation for India",
+    "Explain fair globalisation and the role of government",
+    "Solve board-style case and data questions on trade and investment"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS10_SECTORS_OF_THE_INDIAN_ECONOMY",
+    "SOCIAL_CLASS9_INTERNATIONAL_TRADE",
+    "SOCIAL_CLASS8_INDUSTRIES",
+    "MATH_CLASS7_PERCENTAGE"
+  ],
+  "concepts": [
+    {
+      "id": "concept-1",
+      "name": "Globalisation and Multinational Corporations",
+      "title": "Globalisation and Multinational Corporations",
+      "explanation": "Globalisation is the process by which economies become more integrated through trade, investment, technology, and the movement of people. Goods, services, capital, and ideas cross borders more easily. Multinational corporations (MNCs) are companies that own or control production in more than one country. An MNC may design a product in one country, buy components from several others, assemble it in a low-cost location, and sell it worldwide. MNCs spread because they seek cheaper labour, new markets, natural resources, and favourable government policies. Their decisions can create jobs and transfer technology, but they can also shift production quickly when costs change.",
+      "purpose": "The concept explains who drives global production and why a single product can involve many countries. It links globalisation to investment and employment.",
+      "real_life_application": "A smartphone may be designed in one country, use chips from a second, be assembled in a third, and be sold in India by a company headquartered in a fourth.",
+      "key_points": [
+        "Globalisation integrates economies through trade, investment, and technology.",
+        "MNCs own or control production in more than one country.",
+        "MNCs locate activities where costs, markets, and policies are favourable.",
+        "They can transfer technology and create jobs.",
+        "They can also relocate quickly and weaken job security.",
+        "A product's value chain may span several countries."
+      ],
+      "day_to_day_usage": [
+        "Buying a phone assembled in one country with parts from several others.",
+        "Wearing clothes made by a brand that sources from many suppliers.",
+        "Using a food delivery app owned by a global company.",
+        "Watching a film produced for a worldwide audience.",
+        "Buying a car whose components come from different countries.",
+        "Working for a company that serves overseas clients."
+      ]
+    },
+    {
+      "id": "concept-2",
+      "name": "Foreign Trade and Foreign Investment",
+      "title": "Foreign Trade and Foreign Investment",
+      "explanation": "Foreign trade means buying and selling goods and services across national borders. Exports are goods and services sold abroad; imports are bought from abroad. Trade allows a country to specialise in what it produces efficiently and to obtain goods it cannot produce cheaply. Foreign direct investment (FDI) occurs when a company invests in productive assets in another country, such as a factory, office, or warehouse. FDI brings capital, technology, and management skills, but it may also crowd out local firms or repatriate profits. A country's trade balance is the difference between exports and imports; a deficit means imports exceed exports.",
+      "purpose": "The concept distinguishes trade from investment and shows how both connect the Indian economy to the world.",
+      "real_life_application": "India exports software services and imports crude oil; a foreign car company may build a factory in India through FDI.",
+      "key_points": [
+        "Exports are sold abroad; imports are bought from abroad.",
+        "Trade allows specialisation and access to goods.",
+        "FDI is investment in productive assets in another country.",
+        "FDI brings capital, technology, and management skills.",
+        "A trade deficit means imports exceed exports.",
+        "Trade and investment can create both opportunities and risks."
+      ],
+      "day_to_day_usage": [
+        "Buying imported fruit or electronics.",
+        "Working in an export-oriented software company.",
+        "Seeing a foreign brand open a factory in India.",
+        "Paying more for a good when a tariff is imposed.",
+        "Reading about India's trade deficit.",
+        "Using a service delivered by a foreign-owned firm."
+      ]
+    },
+    {
+      "id": "concept-3",
+      "name": "Liberalisation and Trade Barriers",
+      "title": "Liberalisation and Trade Barriers",
+      "explanation": "Liberalisation means reducing government controls and restrictions on economic activity. In India, the major liberalisation reforms began in 1991 after a balance-of-payments crisis. Reforms included reducing industrial licensing, lowering tariffs, opening more sectors to private and foreign investment, and reducing restrictions on imports. Trade barriers are government measures that restrict imports, such as tariffs (taxes on imports) and quotas (quantity limits). Removing barriers increases competition and consumer choice, but domestic producers may struggle against cheaper imports. Special Economic Zones (SEZs) are designated areas with simpler rules and tax incentives to attract investment and exports.",
+      "purpose": "The concept explains the policy shift that opened India to global markets and the tools governments use to regulate trade.",
+      "real_life_application": "A lower tariff on imported components can reduce the price of a television, while a quota can limit how many units enter the country.",
+      "key_points": [
+        "Liberalisation reduces government controls on economic activity.",
+        "India's major reforms began in 1991.",
+        "Tariffs are taxes on imports; quotas are quantity limits.",
+        "Removing barriers raises competition and choice.",
+        "Domestic producers may face pressure from imports.",
+        "SEZs offer incentives to attract investment and exports."
+      ],
+      "day_to_day_usage": [
+        "Paying a lower price for an imported electronic item.",
+        "Seeing more foreign brands in local shops.",
+        "A domestic firm improving quality to compete.",
+        "A factory located in a special economic zone.",
+        "Reading about a tariff change in the budget.",
+        "Buying a product made under a global supply chain."
+      ]
+    },
+    {
+      "id": "concept-4",
+      "name": "World Trade Organisation",
+      "title": "World Trade Organisation",
+      "explanation": "The World Trade Organisation (WTO) was established in 1995 to regulate and liberalise international trade. It replaced the General Agreement on Tariffs and Trade (GATT). The WTO provides rules for trade in goods and services, sets limits on tariffs, and settles disputes between member countries. It aims to make trade more predictable and non-discriminatory. However, developing countries argue that the rules have not always been fair: agriculture subsidies in rich countries can undercut poor farmers, and patent rules can make medicines expensive. Fair trade requires attention to the capacities of developing countries, not just the removal of barriers.",
+      "purpose": "The concept explains the global rule-making body and why trade negotiations are controversial.",
+      "real_life_application": "A WTO dispute can decide whether a country may restrict imports of a product, affecting farmers, factories, and consumers.",
+      "key_points": [
+        "The WTO was established in 1995.",
+        "It replaced GATT.",
+        "It sets trade rules and settles disputes.",
+        "It aims to reduce tariffs and trade discrimination.",
+        "Developing countries criticise unfair subsidies and patent rules.",
+        "Fair trade must consider differences in development levels."
+      ],
+      "day_to_day_usage": [
+        "Reading about a trade dispute between countries.",
+        "Seeing how patent rules affect medicine prices.",
+        "Following news on agricultural subsidies.",
+        "Understanding why tariffs are negotiated internationally.",
+        "Buying goods whose prices reflect global trade rules.",
+        "Discussing fair trade labels on products."
+      ]
+    },
+    {
+      "id": "concept-5",
+      "name": "Impact of Globalisation on India",
+      "title": "Impact of Globalisation on India",
+      "explanation": "Globalisation has increased consumer choice, improved access to technology, expanded exports, and created jobs in services and manufacturing. It has also exposed Indian firms to competition, which can raise quality and efficiency. However, the benefits are uneven. Small producers may be unable to compete with large global firms, workers may face insecure jobs, and regions with better skills and infrastructure attract more investment. Globalisation can also affect local culture and the environment. The impact therefore depends on a person's skills, assets, sector, and location. Policy must address the losers as well as the winners.",
+      "purpose": "The concept develops a balanced evaluation of globalisation rather than a one-sided list of benefits or harms.",
+      "real_life_application": "A software professional may gain from global clients, while a small toy maker may lose sales to cheaper imported toys.",
+      "key_points": [
+        "Globalisation increases choice, technology, and export opportunities.",
+        "Competition can improve quality and efficiency.",
+        "Small producers may struggle against large global firms.",
+        "Workers may face insecure or low-paid jobs.",
+        "Benefits are uneven across regions and skills.",
+        "Culture and environment can also be affected."
+      ],
+      "day_to_day_usage": [
+        "Choosing among many imported and local brands.",
+        "A small artisan losing customers to factory-made goods.",
+        "A young worker finding a job in an export unit.",
+        "A city attracting foreign investment because of better infrastructure.",
+        "Local festivals and food habits changing under global influence.",
+        "Buying organic or fair-trade products to support producers."
+      ]
+    },
+    {
+      "id": "concept-6",
+      "name": "Fair Globalisation and the Role of Government",
+      "title": "Fair Globalisation and the Role of Government",
+      "explanation": "Fair globalisation means that the benefits of global integration are shared more widely and the costs are not borne by the weakest groups. Governments can promote fair globalisation by supporting small producers with credit, technology, and marketing; enforcing labour laws and social security; investing in education, health, and infrastructure; protecting the environment; and negotiating trade rules that recognise developing countries' needs. Civil society and consumers can also influence corporate behaviour. Fair globalisation does not mean closing the economy; it means managing openness so that it supports inclusive and sustainable development.",
+      "purpose": "The concept moves from description to policy. It explains how governments can reduce the harm and spread the gains from globalisation.",
+      "real_life_application": "A government that helps artisans adopt better tools and find online markets can help them survive competition from imported goods.",
+      "key_points": [
+        "Fair globalisation shares benefits and protects vulnerable groups.",
+        "Governments support small producers with credit and technology.",
+        "Labour laws and social security protect workers.",
+        "Education, health, and infrastructure raise competitiveness.",
+        "Trade negotiations should reflect developing countries' needs.",
+        "Consumers and civil society can demand responsible behaviour."
+      ],
+      "day_to_day_usage": [
+        "Buying from local artisans or fair-trade sellers.",
+        "Supporting skill-training programmes.",
+        "Demanding safe working conditions in factories.",
+        "Paying attention to environmental labels.",
+        "Voting for policies that support small enterprises.",
+        "Using social media to highlight unfair labour practices."
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-glob-1",
+      "title": "Mapping a Global Value Chain",
+      "topic": "MNC production and globalisation",
+      "problem": "A company designs a laptop in Country A, buys chips from Country B, assembles the laptop in Country C, and sells it in India. Explain why the company may organise production this way and identify two benefits and two risks for Country C.",
+      "solution": [
+        "Step 1: The company separates design, components, assembly, and sale to use each location's advantages.",
+        "Step 2: Country B may have specialised chip technology; Country C may have lower assembly costs.",
+        "Step 3: Benefit 1 for Country C: employment in assembly and related services.",
+        "Step 4: Benefit 2: technology transfer and links with local suppliers.",
+        "Step 5: Risk 1: the company may shift assembly to another country if wages rise.",
+        "Step 6: Risk 2: assembly may offer low wages and limited skill upgrading.",
+        "Step 7: The value chain therefore creates gains but also dependence on a foreign firm's decisions."
+      ],
+      "board_mode": "Draw the chain as arrows: design -> components -> assembly -> sale. Under Country C, list two benefits and two risks.",
+      "answer": "The MNC locates each activity where it is cheapest or most efficient; Country C gains jobs and technology but faces relocation risk and low-skill work.",
+      "board_tip": "Use the words 'benefit' and 'risk' explicitly. A value-chain diagram earns marks quickly."
+    },
+    {
+      "id": "we-glob-2",
+      "title": "Effect of a Tariff on Import Price",
+      "topic": "Trade barriers",
+      "problem": "An imported machine costs $10,000 before duty. A tariff of 25% is imposed. Calculate the price after the tariff. If the tariff is later removed, how much does the importer save on each machine?",
+      "solution": [
+        "Step 1: Tariff amount = 25% of $10,000 = 0.25 x 10,000 = $2,500.",
+        "Step 2: Price after tariff = 10,000 + 2,500 = $12,500.",
+        "Step 3: If the tariff is removed, the price returns to $10,000.",
+        "Step 4: Saving per machine = 12,500 - 10,000 = $2,500.",
+        "Step 5: The tariff protects domestic producers but raises costs for importers and consumers.",
+        "Step 6: The net effect depends on whether domestic production is efficient."
+      ],
+      "board_mode": "Show the tariff amount, the new price, and the saving in three lines. Add one sentence on who gains and who loses.",
+      "answer": "Price after tariff $12,500; removal saves $2,500 per machine, but the tariff had protected domestic producers.",
+      "board_tip": "Distinguish the tariff amount from the final price. Both may be asked."
+    },
+    {
+      "id": "we-glob-3",
+      "title": "Trade Deficit Calculation",
+      "topic": "Balance of trade",
+      "problem": "A country exports goods and services worth Rs 400 crore and imports worth Rs 550 crore in a year. Calculate the trade balance. Is it a surplus or a deficit, and what does it mean?",
+      "solution": [
+        "Step 1: Trade balance = exports - imports.",
+        "Step 2: Trade balance = 400 - 550 = -150 crore.",
+        "Step 3: A negative value means imports exceed exports, so it is a trade deficit.",
+        "Step 4: The deficit is Rs 150 crore.",
+        "Step 5: A deficit must be financed by inflows such as foreign investment, loans, or remittances.",
+        "Step 6: A deficit is not automatically bad, but a persistent large deficit can create external debt problems."
+      ],
+      "board_mode": "Write the formula, substitute, and state the sign. Then explain financing in one sentence.",
+      "answer": "Trade deficit of Rs 150 crore because imports exceed exports; it must be financed by capital inflows.",
+      "board_tip": "Always state the sign and then interpret it in words. A number alone is not a complete answer."
+    },
+    {
+      "id": "we-glob-4",
+      "title": "FDI, Local Sourcing, and Jobs",
+      "topic": "Foreign direct investment",
+      "problem": "An MNC invests Rs 800 crore in a new plant and employs 4,000 workers. It sources 60% of its inputs locally. Calculate the value of local sourcing and the average investment per job.",
+      "solution": [
+        "Step 1: Local sourcing = 60% of Rs 800 crore = 0.60 x 800 = Rs 480 crore.",
+        "Step 2: Average investment per job = 800 crore / 4,000.",
+        "Step 3: 800 crore = Rs 8,000,000,000; dividing by 4,000 gives Rs 20,00,000 per job.",
+        "Step 4: Local sourcing can support domestic suppliers and create indirect jobs.",
+        "Step 5: The average investment per job is high, showing that capital-intensive plants may create relatively few direct jobs.",
+        "Step 6: Indirect jobs and technology spillovers must also be counted when judging the project."
+      ],
+      "board_mode": "Calculate local sourcing first, then divide investment by jobs. State the per-job figure in words to avoid unit errors.",
+      "answer": "Local sourcing Rs 480 crore; average investment Rs 20 lakh per direct job; indirect jobs and spillovers also matter.",
+      "board_tip": "Convert crore carefully. One crore is 1,00,00,000, so 800 crore divided by 4,000 is Rs 20 lakh."
+    },
+    {
+      "id": "we-glob-5",
+      "title": "Wages, Jobs, and Fair Globalisation",
+      "topic": "Distribution of gains from globalisation",
+      "problem": "A foreign-owned factory employs 2,000 workers. It pays Rs 12,000 per month, while comparable local firms pay Rs 8,000. Calculate the annual wage bill at each rate and the difference. Does the higher wage alone prove that globalisation is fair?",
+      "solution": [
+        "Step 1: Annual wage bill at Rs 12,000 = 12,000 x 12 x 2,000 = Rs 28,80,00,000, or Rs 28.8 crore.",
+        "Step 2: Annual wage bill at Rs 8,000 = 8,000 x 12 x 2,000 = Rs 19,20,00,000, or Rs 19.2 crore.",
+        "Step 3: Difference = 28.8 - 19.2 = Rs 9.6 crore per year.",
+        "Step 4: The higher wage benefits these 2,000 workers.",
+        "Step 5: Fairness also depends on working conditions, job security, the number of jobs, and effects on local firms.",
+        "Step 6: Higher wages in one factory do not prove that all workers or regions gain, so fair globalisation needs broader safeguards."
+      ],
+      "board_mode": "Calculate both annual wage bills, then the difference. End with a balanced judgment, not a one-word yes or no.",
+      "answer": "Wage bills are Rs 28.8 crore and Rs 19.2 crore, a difference of Rs 9.6 crore; higher wages alone do not prove fairness.",
+      "board_tip": "When asked 'does this prove', answer with conditions. One factory is not the whole economy."
+    }
+  ],
+  "exercises": {
+    "exercise_1_1": {
+      "title": "NCERT Exercise 1.1 - Globalisation, MNCs, and Trade",
+      "objective": "Explain globalisation, MNCs, FDI, and trade barriers",
+      "problems": [
+        {
+          "id": "glob-ex1-1",
+          "question": "Define globalisation.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Globalisation is the integration of economies across national borders.",
+            "Step 2: It occurs through trade, investment, technology, and movement of people.",
+            "Step 3: It increases the flow of goods, services, capital, and ideas."
+          ],
+          "final_answer": "Globalisation is the integration of economies through trade, investment, technology, and people."
+        },
+        {
+          "id": "glob-ex1-2",
+          "question": "What is a multinational corporation?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: An MNC is a company that owns or controls production in more than one country.",
+            "Step 2: It may design, produce, and sell in different countries.",
+            "Step 3: It chooses locations based on costs, markets, and policies."
+          ],
+          "final_answer": "An MNC owns or controls production in more than one country."
+        },
+        {
+          "id": "glob-ex1-3",
+          "question": "What is foreign direct investment?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: FDI is investment by a foreign company in productive assets in another country.",
+            "Step 2: Examples include building a factory, office, or warehouse.",
+            "Step 3: It brings capital, technology, and management skills."
+          ],
+          "final_answer": "FDI is foreign investment in productive assets such as factories and offices in another country."
+        },
+        {
+          "id": "glob-ex1-4",
+          "question": "Why do MNCs set up production in different countries?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: They seek lower labour and production costs.",
+            "Step 2: They want access to large markets and natural resources.",
+            "Step 3: They look for favourable government policies and infrastructure.",
+            "Step 4: They also want to be close to suppliers and customers."
+          ],
+          "final_answer": "MNCs seek lower costs, markets, resources, favourable policies, and proximity to suppliers and customers."
+        },
+        {
+          "id": "glob-ex1-5",
+          "question": "State three benefits of foreign trade.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Trade allows a country to specialise in goods it produces efficiently.",
+            "Step 2: It gives consumers access to goods that are not produced domestically.",
+            "Step 3: It expands markets for domestic producers and can lower prices through competition.",
+            "Step 4: It also spreads technology and ideas."
+          ],
+          "final_answer": "Foreign trade supports specialisation, widens consumer choice, expands markets, and spreads technology."
+        },
+        {
+          "id": "glob-ex1-6",
+          "question": "What are trade barriers? Give two examples.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Trade barriers are government measures that restrict imports.",
+            "Step 2: A tariff is a tax on imported goods.",
+            "Step 3: A quota is a limit on the quantity of a good that can be imported.",
+            "Step 4: Licensing and standards can also act as barriers."
+          ],
+          "final_answer": "Trade barriers restrict imports; examples are tariffs and quotas."
+        }
+      ]
+    },
+    "exercise_1_2": {
+      "title": "NCERT Exercise 1.2 - Liberalisation, WTO, and Data",
+      "objective": "Analyse liberalisation, WTO rules, and trade calculations",
+      "problems": [
+        {
+          "id": "glob-ex2-1",
+          "question": "What is liberalisation?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Liberalisation means reducing government controls and restrictions on economic activity.",
+            "Step 2: It includes lowering tariffs, reducing licensing, and opening sectors to private and foreign investment.",
+            "Step 3: India's major reforms began in 1991."
+          ],
+          "final_answer": "Liberalisation is the reduction of government controls on economic activity, especially trade and investment."
+        },
+        {
+          "id": "glob-ex2-2",
+          "question": "When was the WTO established and what did it replace?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The WTO was established in 1995.",
+            "Step 2: It replaced the General Agreement on Tariffs and Trade (GATT).",
+            "Step 3: It provides rules for international trade."
+          ],
+          "final_answer": "The WTO was established in 1995 and replaced GATT."
+        },
+        {
+          "id": "glob-ex2-3",
+          "question": "Explain two functions of the WTO.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The WTO sets rules for trade in goods and services.",
+            "Step 2: It aims to reduce tariffs and trade discrimination.",
+            "Step 3: It settles trade disputes between member countries.",
+            "Step 4: It provides a forum for trade negotiations."
+          ],
+          "final_answer": "The WTO sets trade rules, promotes liberalisation, and settles disputes between members."
+        },
+        {
+          "id": "glob-ex2-4",
+          "question": "How has globalisation affected small producers in India?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Small producers face competition from cheaper imported goods.",
+            "Step 2: Many lack the capital, technology, and marketing reach of large firms.",
+            "Step 3: Some have closed or shifted to low-margin work.",
+            "Step 4: Others have upgraded quality or found new markets with support."
+          ],
+          "final_answer": "Small producers face strong import competition and often lack capital and marketing, though some upgrade or find new markets."
+        },
+        {
+          "id": "glob-ex2-5",
+          "question": "An imported machine costs $10,000. A tariff of 25% is imposed. Calculate the tariff amount and the price after tariff. What is saved if the tariff is removed?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Tariff = 25% of 10,000 = $2,500.",
+            "Step 2: Price after tariff = 10,000 + 2,500 = $12,500.",
+            "Step 3: Removing the tariff returns the price to $10,000.",
+            "Step 4: Saving = 12,500 - 10,000 = $2,500.",
+            "Step 5: The tariff protects domestic producers but raises costs for buyers."
+          ],
+          "final_answer": "Tariff $2,500; price $12,500; removal saves $2,500 per machine."
+        },
+        {
+          "id": "glob-ex2-6",
+          "question": "A country exports goods and services worth Rs 400 crore and imports worth Rs 550 crore. Calculate the trade balance and explain how the deficit may be financed.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Trade balance = exports - imports = 400 - 550 = -150 crore.",
+            "Step 2: The negative value indicates a trade deficit of Rs 150 crore.",
+            "Step 3: The deficit can be financed by foreign investment, loans, or remittances.",
+            "Step 4: A persistent deficit can increase external debt.",
+            "Step 5: A deficit is not always harmful if imports are capital goods that raise future production."
+          ],
+          "final_answer": "Trade deficit Rs 150 crore; it can be financed by capital inflows, though persistent deficits raise debt concerns."
+        }
+      ]
+    },
+    "exercise_1_3": {
+      "title": "NCERT Exercise 1.3 - Impact and Fair Globalisation",
+      "objective": "Evaluate globalisation and propose fairer policies",
+      "problems": [
+        {
+          "id": "glob-ex3-1",
+          "question": "What is fair globalisation?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Fair globalisation means sharing the benefits of global integration more widely.",
+            "Step 2: It protects vulnerable workers and small producers.",
+            "Step 3: It requires supportive government policies and fair trade rules."
+          ],
+          "final_answer": "Fair globalisation shares the gains of global integration and protects those who may lose."
+        },
+        {
+          "id": "glob-ex3-2",
+          "question": "State three ways in which government can promote fair globalisation.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Support small producers with credit, technology, and marketing.",
+            "Step 2: Enforce labour laws and provide social security.",
+            "Step 3: Invest in education, health, and infrastructure.",
+            "Step 4: Negotiate trade rules that recognise developing countries' needs."
+          ],
+          "final_answer": "Government can support small producers, protect workers, invest in public services, and negotiate fair trade rules."
+        },
+        {
+          "id": "glob-ex3-3",
+          "question": "\"Globalisation benefits everyone equally.\" Evaluate this statement.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Globalisation creates opportunities for skilled workers, exporters, and consumers.",
+            "Step 2: It can also hurt small producers and workers in import-competing sectors.",
+            "Step 3: Benefits are uneven across regions, skills, and assets.",
+            "Step 4: Some groups face job insecurity, low wages, or cultural and environmental costs.",
+            "Step 5: The statement is false; globalisation creates both winners and losers, so policy must address fairness."
+          ],
+          "final_answer": "False; gains are uneven, and some workers, firms, and regions may lose."
+        },
+        {
+          "id": "glob-ex3-4",
+          "question": "An MNC invests Rs 800 crore and employs 4,000 workers. It sources 60% of inputs locally. Calculate local sourcing and average investment per job, and comment on the project's employment impact.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Local sourcing = 0.60 x 800 = Rs 480 crore.",
+            "Step 2: Average investment per job = 800 crore / 4,000 = Rs 20 lakh.",
+            "Step 3: The plant is capital-intensive, so direct employment is limited relative to investment.",
+            "Step 4: Local sourcing can create indirect jobs in supplier firms.",
+            "Step 5: Technology transfer and skills can raise long-term productivity.",
+            "Step 6: The net employment impact depends on whether local firms expand or are displaced."
+          ],
+          "final_answer": "Local sourcing Rs 480 crore; Rs 20 lakh investment per direct job; indirect jobs and spillovers also matter."
+        },
+        {
+          "id": "glob-ex3-5",
+          "question": "Rich countries subsidise their farmers heavily, while developing countries are asked to reduce tariffs. Explain why this is seen as unfair.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Subsidies lower the cost of production in rich countries and can make their exports cheaper.",
+            "Step 2: Developing-country farmers may not receive comparable support.",
+            "Step 3: When tariffs are cut, cheap subsidised imports can undercut local farmers.",
+            "Step 4: This can reduce farm incomes and food security in poorer countries.",
+            "Step 5: Fair trade rules should account for differences in development and support capacity.",
+            "Step 6: Special and differential treatment for developing countries is one response."
+          ],
+          "final_answer": "Subsidies in rich countries can undercut poor farmers when tariffs fall; trade rules need special treatment for developing countries."
+        },
+        {
+          "id": "glob-ex3-6",
+          "question": "Suggest three measures to protect small producers while still welcoming foreign investment.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Provide affordable credit and technology upgrading to small firms.",
+            "Step 2: Help them with design, quality certification, and online marketing.",
+            "Step 3: Enforce labour and environmental standards for all firms, including foreign ones.",
+            "Step 4: Use phased liberalisation and safeguards where infant industries need time.",
+            "Step 5: Invest in skills and infrastructure so local firms can compete.",
+            "Step 6: Encourage linkages between MNCs and local suppliers."
+          ],
+          "final_answer": "Support credit and technology, enforce common standards, phase liberalisation, invest in skills, and build MNC-local supplier links."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-glob-s-1",
+        "question": "Globalisation means:",
+        "options": [
+          "Integration of economies through trade and investment",
+          "Closing all borders",
+          "Banning foreign companies",
+          "Only domestic production"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Globalisation increases cross-border flows of goods, services, capital, and ideas.",
+          "wrong_options": {
+            "1": "Closing borders is the opposite of globalisation.",
+            "2": "Globalisation generally welcomes foreign investment.",
+            "3": "It links domestic and foreign production."
+          }
+        }
+      },
+      {
+        "id": "q-glob-s-2",
+        "question": "An MNC is a company that:",
+        "options": [
+          "Operates in more than one country",
+          "Works only in one village",
+          "Only exports raw materials",
+          "Is owned only by government"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "MNCs own or control production in multiple countries.",
+          "wrong_options": {
+            "1": "That is a local firm.",
+            "2": "MNCs may produce manufactured goods and services too.",
+            "3": "MNCs are usually private companies."
+          }
+        }
+      },
+      {
+        "id": "q-glob-s-3",
+        "question": "FDI stands for:",
+        "options": [
+          "Foreign Direct Investment",
+          "Fixed Deposit Interest",
+          "Food Distribution Index",
+          "Foreign Duty Import"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "FDI is investment in productive assets in another country.",
+          "wrong_options": {
+            "1": "This is a bank deposit term.",
+            "2": "This is not an economic term used here.",
+            "3": "This is not the expansion."
+          }
+        }
+      },
+      {
+        "id": "q-glob-s-4",
+        "question": "A tariff is:",
+        "options": [
+          "A tax on imports",
+          "A limit on exports",
+          "A type of subsidy",
+          "A bank loan"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Tariffs raise the price of imported goods.",
+          "wrong_options": {
+            "1": "A quota limits quantity, not a tax.",
+            "2": "A subsidy is financial support.",
+            "3": "A loan is credit."
+          }
+        }
+      },
+      {
+        "id": "q-glob-s-5",
+        "question": "Liberalisation means:",
+        "options": [
+          "Reducing government controls",
+          "Increasing all tariffs",
+          "Banning private firms",
+          "Closing SEZs"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "It reduces restrictions on trade, investment, and business.",
+          "wrong_options": {
+            "1": "Higher tariffs increase controls.",
+            "2": "Liberalisation usually expands private participation.",
+            "3": "SEZs are part of opening the economy."
+          }
+        }
+      },
+      {
+        "id": "q-glob-s-6",
+        "question": "The WTO was established in:",
+        "options": [
+          "1995",
+          "1947",
+          "2001",
+          "2015"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The WTO began in 1995, replacing GATT.",
+          "wrong_options": {
+            "1": "1947 is associated with GATT.",
+            "2": "2001 is not the WTO's founding year.",
+            "3": "2015 is not the founding year."
+          }
+        }
+      },
+      {
+        "id": "q-glob-s-7",
+        "question": "Exports are goods and services that are:",
+        "options": [
+          "Sold abroad",
+          "Bought from abroad",
+          "Only produced for home use",
+          "Never traded"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Exports leave the country for sale in foreign markets.",
+          "wrong_options": {
+            "1": "Goods bought from abroad are imports.",
+            "2": "Home use is not export.",
+            "3": "Exports are traded."
+          }
+        }
+      },
+      {
+        "id": "q-glob-s-8",
+        "question": "A trade deficit occurs when:",
+        "options": [
+          "Imports exceed exports",
+          "Exports exceed imports",
+          "Exports equal imports",
+          "There is no trade"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A deficit means the value of imports is greater than exports.",
+          "wrong_options": {
+            "1": "That is a trade surplus.",
+            "2": "That is balanced trade.",
+            "3": "No trade is not a deficit."
+          }
+        }
+      },
+      {
+        "id": "q-glob-s-9",
+        "question": "Fair globalisation means:",
+        "options": [
+          "Sharing gains and protecting vulnerable groups",
+          "Only helping large firms",
+          "Closing the economy",
+          "Ignoring labour laws"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "It seeks inclusive benefits and safeguards for workers and small producers.",
+          "wrong_options": {
+            "1": "It specifically considers those who may lose.",
+            "2": "It manages openness, not closes it.",
+            "3": "Labour protection is part of fairness."
+          }
+        }
+      },
+      {
+        "id": "q-glob-s-10",
+        "question": "Which is a benefit of globalisation?",
+        "options": [
+          "More consumer choice",
+          "No foreign competition",
+          "Higher tariffs everywhere",
+          "Less technology"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Imports and foreign firms can widen the range of goods available.",
+          "wrong_options": {
+            "1": "Globalisation usually increases competition.",
+            "2": "It generally lowers trade barriers.",
+            "3": "It often brings new technology."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-glob-m-1",
+        "question": "Why might an MNC locate assembly in a developing country?",
+        "options": [
+          "Lower labour costs and favourable policies",
+          "Higher transport costs only",
+          "To avoid all markets",
+          "To reduce competition"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Cheaper labour and incentives can lower production costs.",
+          "wrong_options": {
+            "1": "Transport is a cost to manage, not the main reason.",
+            "2": "MNCs seek markets, not avoid them.",
+            "3": "Location choices are about costs and access."
+          }
+        }
+      },
+      {
+        "id": "q-glob-m-2",
+        "question": "A quota is:",
+        "options": [
+          "A quantity limit on imports",
+          "A tax on imports",
+          "A subsidy to exporters",
+          "A type of bank account"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Quotas restrict how much of a good can be imported.",
+          "wrong_options": {
+            "1": "A tax on imports is a tariff.",
+            "2": "A subsidy supports producers.",
+            "3": "A bank account is a financial product."
+          }
+        }
+      },
+      {
+        "id": "q-glob-m-3",
+        "question": "Which is a criticism of the WTO by developing countries?",
+        "options": [
+          "Rich-country subsidies can undercut poor farmers",
+          "It has no members",
+          "It bans all trade",
+          "It sets domestic tax rates"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Agricultural subsidies in rich countries are seen as unfair competition.",
+          "wrong_options": {
+            "1": "The WTO has many members.",
+            "2": "It promotes trade, not a ban.",
+            "3": "It does not set national tax rates."
+          }
+        }
+      },
+      {
+        "id": "q-glob-m-4",
+        "question": "Which group may lose from cheaper imports?",
+        "options": [
+          "Domestic producers of competing goods",
+          "Consumers buying imports",
+          "Exporters of other goods",
+          "Importers"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Local firms may lose sales if imports are cheaper.",
+          "wrong_options": {
+            "1": "Consumers often gain from lower prices.",
+            "2": "Other exporters may be unaffected or gain.",
+            "3": "Importers may benefit from lower prices."
+          }
+        }
+      },
+      {
+        "id": "q-glob-m-5",
+        "question": "FDI differs from foreign trade because FDI involves:",
+        "options": [
+          "Investment in productive assets abroad",
+          "Only buying imported goods",
+          "Only selling exports",
+          "A government tax"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "FDI is investment in factories, offices, or other assets in another country.",
+          "wrong_options": {
+            "1": "Buying imports is trade.",
+            "2": "Selling exports is trade.",
+            "3": "A tax is a fiscal instrument."
+          }
+        }
+      },
+      {
+        "id": "q-glob-m-6",
+        "question": "The 1991 reforms in India included:",
+        "options": [
+          "Reducing licensing and lowering tariffs",
+          "Increasing all trade barriers",
+          "Banning foreign investment",
+          "Closing all SEZs"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The reforms liberalised trade and investment and reduced controls.",
+          "wrong_options": {
+            "1": "They reduced, rather than increased, barriers.",
+            "2": "They opened more sectors to foreign investment.",
+            "3": "SEZs were part of the opening strategy."
+          }
+        }
+      },
+      {
+        "id": "q-glob-m-7",
+        "question": "Which is an indirect effect of an MNC plant?",
+        "options": [
+          "Local suppliers gain orders",
+          "Only the MNC's profits change",
+          "No local jobs are created",
+          "All imports stop"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Local firms supplying inputs can gain business and jobs.",
+          "wrong_options": {
+            "1": "Local suppliers and workers are affected too.",
+            "2": "Local jobs can be created directly and indirectly.",
+            "3": "Imports may continue or rise."
+          }
+        }
+      },
+      {
+        "id": "q-glob-m-8",
+        "question": "Globalisation can harm local culture by:",
+        "options": [
+          "Spreading uniform global products and values",
+          "Preserving all local crafts",
+          "Banning all foreign goods",
+          "Stopping all migration"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Global products and media can overshadow local traditions.",
+          "wrong_options": {
+            "1": "It can pressure local crafts, not always preserve them.",
+            "2": "It usually increases foreign goods.",
+            "3": "Migration can increase with global links."
+          }
+        }
+      },
+      {
+        "id": "q-glob-m-9",
+        "question": "Special Economic Zones are designed to:",
+        "options": [
+          "Attract investment and exports with simplified rules",
+          "Ban all exports",
+          "Raise tariffs only",
+          "Close foreign firms"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "SEZs offer infrastructure and incentives to exporters and investors.",
+          "wrong_options": {
+            "1": "They promote exports.",
+            "2": "They usually reduce trade friction.",
+            "3": "They attract, rather than close, firms."
+          }
+        }
+      },
+      {
+        "id": "q-glob-m-10",
+        "question": "Which policy supports fair globalisation?",
+        "options": [
+          "Helping small producers with credit and technology",
+          "Ignoring labour standards",
+          "Removing all support for education",
+          "Banning consumer groups"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Support helps small firms compete and share the gains.",
+          "wrong_options": {
+            "1": "Labour standards protect workers.",
+            "2": "Education raises competitiveness.",
+            "3": "Consumer groups can demand accountability."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-glob-x-1",
+        "question": "An import costs $20,000 and a 15% tariff is applied. The price after tariff is:",
+        "options": [
+          "$23,000",
+          "$20,000",
+          "$3,000",
+          "$21,500"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Tariff = 0.15 x 20,000 = $3,000; price = $23,000.",
+          "wrong_options": {
+            "1": "This ignores the tariff.",
+            "2": "This is the tariff amount, not the price.",
+            "3": "This uses 7.5% instead of 15%."
+          }
+        }
+      },
+      {
+        "id": "q-glob-x-2",
+        "question": "Exports are Rs 700 crore and imports are Rs 900 crore. The trade balance is:",
+        "options": [
+          "-Rs 200 crore",
+          "+Rs 200 crore",
+          "Rs 1,600 crore",
+          "Rs 100 crore"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "700 - 900 = -200 crore, a deficit.",
+          "wrong_options": {
+            "1": "The sign is wrong; imports exceed exports.",
+            "2": "This adds the values.",
+            "3": "This is not the difference."
+          }
+        }
+      },
+      {
+        "id": "q-glob-x-3",
+        "question": "An MNC invests Rs 500 crore and employs 2,000 workers. Average investment per job is:",
+        "options": [
+          "Rs 25 lakh",
+          "Rs 2.5 lakh",
+          "Rs 25 crore",
+          "Rs 2,500"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "500 crore / 2,000 = Rs 25,00,000, or Rs 25 lakh.",
+          "wrong_options": {
+            "1": "This is ten times too small.",
+            "2": "This is far too large.",
+            "3": "This is far too small."
+          }
+        }
+      },
+      {
+        "id": "q-glob-x-4",
+        "question": "Which situation best shows a benefit of FDI?",
+        "options": [
+          "A foreign firm builds a plant and trains local workers",
+          "A foreign firm only sells imported goods",
+          "A tariff rises on all imports",
+          "A quota cuts imports"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "FDI brings capital, technology, and skills through productive investment.",
+          "wrong_options": {
+            "1": "Selling imports is trade, not FDI.",
+            "2": "A tariff is a barrier.",
+            "3": "A quota restricts trade."
+          }
+        }
+      },
+      {
+        "id": "q-glob-x-5",
+        "question": "A country removes a 20% tariff on a $5,000 machine. The saving per machine is:",
+        "options": [
+          "$1,000",
+          "$5,000",
+          "$500",
+          "$4,000"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "20% of 5,000 = $1,000.",
+          "wrong_options": {
+            "1": "This is the original price.",
+            "2": "This is 10% of the price.",
+            "3": "This is the price after removing a 20% tariff, not the saving."
+          }
+        }
+      },
+      {
+        "id": "q-glob-x-6",
+        "question": "Which statement about globalisation and inequality is most accurate?",
+        "options": [
+          "Gains can be uneven across skills and regions",
+          "All workers gain equally",
+          "All small firms grow",
+          "No region is affected"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Globalisation creates winners and losers depending on skills, assets, and location.",
+          "wrong_options": {
+            "1": "Benefits are not equal for all workers.",
+            "2": "Some small firms struggle or close.",
+            "3": "Regions are affected differently."
+          }
+        }
+      },
+      {
+        "id": "q-glob-x-7",
+        "question": "The WTO's dispute settlement function is important because it:",
+        "options": [
+          "Provides a process to resolve trade conflicts",
+          "Sets domestic wages",
+          "Prints currency",
+          "Runs elections"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "It gives members a rules-based way to settle trade disputes.",
+          "wrong_options": {
+            "1": "Wages are set domestically.",
+            "2": "Currency is issued by central banks.",
+            "3": "Elections are political processes."
+          }
+        }
+      },
+      {
+        "id": "q-glob-x-8",
+        "question": "A factory pays above-local wages but offers no job security. This shows:",
+        "options": [
+          "Higher wages alone do not guarantee fair globalisation",
+          "Globalisation is always fair",
+          "Wages are irrelevant",
+          "Job security is unnecessary"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Fairness includes security, conditions, and broader distribution, not only pay.",
+          "wrong_options": {
+            "1": "Fairness requires more than wages.",
+            "2": "Wages matter, but other conditions matter too.",
+            "3": "Security affects well-being."
+          }
+        }
+      },
+      {
+        "id": "q-glob-x-9",
+        "question": "Which policy best helps small producers compete after trade liberalisation?",
+        "options": [
+          "Credit, technology, and marketing support",
+          "Higher tariffs on all inputs",
+          "Banning foreign investment",
+          "Removing all infrastructure spending"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Support raises productivity and market access, helping firms adjust.",
+          "wrong_options": {
+            "1": "Costlier inputs hurt producers.",
+            "2": "FDI can bring technology and linkages.",
+            "3": "Infrastructure lowers costs and supports competitiveness."
+          }
+        }
+      },
+      {
+        "id": "q-glob-x-10",
+        "question": "Local sourcing is 40% of a Rs 1,000 crore investment. The value is:",
+        "options": [
+          "Rs 400 crore",
+          "Rs 40 crore",
+          "Rs 600 crore",
+          "Rs 4,000 crore"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "0.40 x 1,000 = Rs 400 crore.",
+          "wrong_options": {
+            "1": "This is 4%, not 40%.",
+            "2": "This is the non-local share.",
+            "3": "This is ten times too large."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Globalisation and the Indian Economy - Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Globalisation",
+        "group": "core"
+      },
+      {
+        "id": "n2",
+        "label": "Multinational Corporations",
+        "group": "actor"
+      },
+      {
+        "id": "n3",
+        "label": "Foreign Trade",
+        "group": "flow"
+      },
+      {
+        "id": "n4",
+        "label": "Foreign Direct Investment",
+        "group": "flow"
+      },
+      {
+        "id": "n5",
+        "label": "Liberalisation",
+        "group": "policy"
+      },
+      {
+        "id": "n6",
+        "label": "Trade Barriers",
+        "group": "policy"
+      },
+      {
+        "id": "n7",
+        "label": "World Trade Organisation",
+        "group": "institution"
+      },
+      {
+        "id": "n8",
+        "label": "Benefits",
+        "group": "outcome"
+      },
+      {
+        "id": "n9",
+        "label": "Costs",
+        "group": "outcome"
+      },
+      {
+        "id": "n10",
+        "label": "Fair Globalisation",
+        "group": "response"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n1",
+        "n4"
+      ],
+      [
+        "n1",
+        "n5"
+      ],
+      [
+        "n5",
+        "n6"
+      ],
+      [
+        "n6",
+        "n7"
+      ],
+      [
+        "n1",
+        "n7"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n3",
+        "n8"
+      ],
+      [
+        "n2",
+        "n9"
+      ],
+      [
+        "n8",
+        "n10"
+      ],
+      [
+        "n9",
+        "n10"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Globalisation and the Indian Economy - Mind Map",
+    "type": "hierarchical",
+    "root": "Globalisation and the Indian Economy",
+    "branches": [
+      {
+        "concept": "Meaning and Drivers",
+        "sub_nodes": [
+          "Integration of economies",
+          "Trade, investment, technology",
+          "Lower transport and communication costs",
+          "Government policy choices"
+        ],
+        "connections": "Creates a global market for goods and capital"
+      },
+      {
+        "concept": "MNCs and FDI",
+        "sub_nodes": [
+          "Production in multiple countries",
+          "Cheaper labour and new markets",
+          "Foreign direct investment",
+          "Technology and management transfer"
+        ],
+        "connections": "MNCs organise global value chains"
+      },
+      {
+        "concept": "Foreign Trade",
+        "sub_nodes": [
+          "Exports and imports",
+          "Specialisation",
+          "Trade balance",
+          "Consumer choice"
+        ],
+        "connections": "Links national markets"
+      },
+      {
+        "concept": "Liberalisation",
+        "sub_nodes": [
+          "Reduction of controls",
+          "1991 reforms",
+          "Lower tariffs",
+          "Special Economic Zones"
+        ],
+        "connections": "Opened India to global competition"
+      },
+      {
+        "concept": "WTO",
+        "sub_nodes": [
+          "Established 1995",
+          "Replaced GATT",
+          "Trade rules and disputes",
+          "Developing-country concerns"
+        ],
+        "connections": "Sets the rules of global trade"
+      },
+      {
+        "concept": "Impact and Fairness",
+        "sub_nodes": [
+          "Choice, technology, exports",
+          "Small-producer stress",
+          "Job insecurity and inequality",
+          "Fair globalisation policies"
+        ],
+        "connections": "Gains must be shared and losses addressed"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "Globalisation means only foreign trade - FALSE: it also includes investment, technology, and movement of people.",
+    "MNCs produce everything in one country - FALSE: they spread design, components, assembly, and sales across countries.",
+    "FDI and foreign trade are the same - FALSE: FDI is investment in productive assets; trade is buying and selling goods and services.",
+    "Liberalisation means no government role - FALSE: governments still regulate, provide public services, and negotiate trade rules.",
+    "The WTO can force countries to adopt any domestic policy - FALSE: it sets trade rules and settles trade disputes, not all domestic policy.",
+    "Globalisation benefits everyone equally - FALSE: gains are uneven across skills, regions, and sectors.",
+    "Tariffs help everyone in the importing country - FALSE: they protect some producers but raise costs for consumers and importers.",
+    "Fair globalisation means closing the economy - FALSE: it means managing openness so gains are shared and vulnerable groups are protected."
+  ],
+  "chapterId": "globalisation-and-the-indian-economy",
+  "subjectId": "social-science",
+  "subjectName": "Social Science",
+  "unitId": "social-science-4",
+  "unitName": "Understanding Economic Development",
+  "examWeightage": 20,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

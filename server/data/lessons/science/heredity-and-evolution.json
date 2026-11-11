@@ -1,0 +1,1353 @@
+{
+  "subject": "Science",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 9,
+  "chapter": "Heredity and Evolution",
+  "lesson": 9,
+  "title": "Heredity and Evolution - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "id": "heredity-and-evolution",
+  "outcomes": [
+    "Distinguish inherited traits from acquired traits and explain the role of variation",
+    "State and apply Mendel's laws of dominance, segregation, and independent assortment",
+    "Solve monohybrid and dihybrid crosses using correct Punnett squares and ratios",
+    "Explain sex determination in humans and identify the role of the father",
+    "Evaluate fossils, homologous organs, and analogous organs as evidence for evolution",
+    "Explain speciation through reproductive isolation and describe broad trends in human evolution"
+  ],
+  "prerequisite_nodes": [
+    "SCI_CLASS9_CELL_STRUCTURE_AND_FUNCTIONS",
+    "SCI_CLASS8_REPRODUCTION_IN_ANIMALS",
+    "SCI_CLASS7_REPRODUCTION_IN_PLANTS"
+  ],
+  "concepts": [
+    {
+      "id": "variation-and-inheritance",
+      "name": "Variation and Acquired versus Inherited Traits",
+      "title": "Variation and Acquired versus Inherited Traits",
+      "purpose": "Variation is the difference in characteristics among individuals of the same species. It arises mainly from the recombination of genes during sexual reproduction, from small errors made while DNA is copied, and from the mixing of parental genes. Inherited traits are controlled by genes in the germ cells and are passed from parents to offspring. Acquired traits, such as a scar, a learned skill, or muscles built by exercise, arise during an individual's lifetime and generally do not alter the DNA of germ cells, so they are not passed on.",
+      "explanation": "Variation is the difference in characteristics among individuals of the same species. It arises mainly from the recombination of genes during sexual reproduction, from small errors made while DNA is copied, and from the mixing of parental genes. Inherited traits are controlled by genes in the germ cells and are passed from parents to offspring. Acquired traits, such as a scar, a learned skill, or muscles built by exercise, arise during an individual's lifetime and generally do not alter the DNA of germ cells, so they are not passed on.",
+      "key_points": [
+        "Sexual reproduction produces variation because each offspring receives a new combination of parental alleles.",
+        "Inherited traits are encoded in germ-cell DNA and are transmitted to the next generation.",
+        "Acquired traits arise from environment, use or injury and usually do not change germ-cell DNA.",
+        "Variation is essential for natural selection and for the survival of a species in a changing environment."
+      ],
+      "real_life_application": "Siblings differ in height, eye colour and face shape because each receives a different combination of parental genes, while a childhood scar is not passed on to their children.",
+      "day_to_day_usage": [
+        "Two siblings look alike but are not identical because of gene recombination",
+        "A farmer selects seeds from the healthiest plants to improve the next crop",
+        "A person who learns cycling does not pass that skill on genetically",
+        "Skin colour and earlobe shape show inherited variation within a family"
+      ]
+    },
+    {
+      "id": "mendel-monohybrid",
+      "name": "Mendel's Monohybrid Cross: Dominance and Segregation",
+      "title": "Mendel's Monohybrid Cross: Dominance and Segregation",
+      "purpose": "Mendel crossed true-breeding tall and dwarf pea plants and obtained only tall plants in the F1 generation. When the F1 plants were self-pollinated, the dwarf trait reappeared in the F2 generation in a 3 tall : 1 dwarf ratio. This showed that the tall allele is dominant, that the dwarf allele remains hidden in F1, and that the two alleles of a gene separate during gamete formation.",
+      "explanation": "Mendel crossed true-breeding tall and dwarf pea plants and obtained only tall plants in the F1 generation. When the F1 plants were self-pollinated, the dwarf trait reappeared in the F2 generation in a 3 tall : 1 dwarf ratio. This showed that the tall allele is dominant, that the dwarf allele remains hidden in F1, and that the two alleles of a gene separate during gamete formation.",
+      "key_points": [
+        "A dominant allele is expressed even when only one copy is present; a recessive allele is expressed only when both copies are recessive.",
+        "The law of segregation states that the two alleles of a gene separate during gamete formation and reunite at fertilisation.",
+        "A monohybrid F2 cross gives a genotypic ratio of 1 TT : 2 Tt : 1 tt and a phenotypic ratio of 3 tall : 1 dwarf.",
+        "Mendel used true-breeding lines and large numbers of offspring to make the ratios reliable."
+      ],
+      "real_life_application": "A pure tall pea plant crossed with a pure dwarf plant gives tall plants in the first generation, but dwarf plants can reappear in the next generation, which is why breeders keep pedigree records.",
+      "day_to_day_usage": [
+        "Seed breeders use dominance to predict the appearance of the next crop",
+        "The reappearance of a grandparent's trait can be explained by hidden recessive alleles",
+        "A test cross helps a farmer identify whether a tall plant is pure or hybrid",
+        "Pea, maize and tomato breeding use the same Mendelian principles"
+      ]
+    },
+    {
+      "id": "dihybrid-independent-assortment",
+      "name": "Dihybrid Cross and Independent Assortment",
+      "title": "Dihybrid Cross and Independent Assortment",
+      "purpose": "A dihybrid cross follows two pairs of contrasting traits at the same time, such as seed shape and seed colour. Mendel crossed round yellow seeds with wrinkled green seeds and obtained round yellow plants in F1. Self-pollination of F1 gave four phenotypic classes in the ratio 9 : 3 : 3 : 1. This result supports the law of independent assortment: the alleles of one gene separate independently of the alleles of another gene during gamete formation.",
+      "explanation": "A dihybrid cross follows two pairs of contrasting traits at the same time, such as seed shape and seed colour. Mendel crossed round yellow seeds with wrinkled green seeds and obtained round yellow plants in F1. Self-pollination of F1 gave four phenotypic classes in the ratio 9 : 3 : 3 : 1. This result supports the law of independent assortment: the alleles of one gene separate independently of the alleles of another gene during gamete formation.",
+      "key_points": [
+        "Round seed shape (R) and yellow cotyledon colour (Y) are dominant over wrinkled (r) and green (y).",
+        "The F1 dihybrid RrYy produces four types of gametes: RY, Ry, rY and ry.",
+        "The F2 phenotypic ratio is 9 round yellow : 3 round green : 3 wrinkled yellow : 1 wrinkled green.",
+        "Independent assortment applies when the genes are on different chromosomes or are far apart on the same chromosome."
+      ],
+      "real_life_application": "Plant breeders combine two useful traits, such as high yield and disease resistance, by crossing parents and selecting the desired combinations in later generations.",
+      "day_to_day_usage": [
+        "Breeders combine seed size and seed colour in one improved variety",
+        "The 9:3:3:1 ratio is used to check whether two traits are inherited independently",
+        "Gardeners predict the variety of flower colour and shape in hybrid seed",
+        "Poultry and cattle breeders track more than one trait at a time"
+      ]
+    },
+    {
+      "id": "sex-determination",
+      "name": "Sex Determination in Humans",
+      "title": "Sex Determination in Humans",
+      "purpose": "In humans, sex is determined by a pair of sex chromosomes. A female has two X chromosomes (XX) and a male has one X and one Y chromosome (XY). The mother always contributes an X chromosome, while the father contributes either an X or a Y chromosome. Therefore the sex of the child is determined by the father's sperm, and the chance of a boy or a girl is about one in two for each pregnancy.",
+      "explanation": "In humans, sex is determined by a pair of sex chromosomes. A female has two X chromosomes (XX) and a male has one X and one Y chromosome (XY). The mother always contributes an X chromosome, while the father contributes either an X or a Y chromosome. Therefore the sex of the child is determined by the father's sperm, and the chance of a boy or a girl is about one in two for each pregnancy.",
+      "key_points": [
+        "Human females have XX and human males have XY sex chromosomes.",
+        "The mother contributes only X chromosomes to the child.",
+        "The father contributes either X or Y, so the father determines the sex of the child.",
+        "The probability of a boy or a girl is about 1/2 at each fertilisation and is not affected by earlier children."
+      ],
+      "real_life_application": "Parents who already have daughters sometimes believe the next child must be a boy, but each pregnancy is an independent event with the same roughly equal chance.",
+      "day_to_day_usage": [
+        "Doctors use chromosome tests to confirm sex in medical genetics",
+        "Counsellors explain that the mother is not responsible for the child's sex",
+        "Poultry breeders use sex-linked traits to identify chicks",
+        "Awareness programmes use this concept to oppose female foeticide"
+      ]
+    },
+    {
+      "id": "evidence-for-evolution",
+      "name": "Evidence for Evolution: Fossils, Homologous and Analogous Organs",
+      "title": "Evidence for Evolution: Fossils, Homologous and Analogous Organs",
+      "purpose": "Evolution is the gradual change in the inherited characteristics of populations over many generations. Fossils are remains or impressions of past organisms preserved in rocks, and they show that life forms have changed over time. Homologous organs have the same basic structure and origin but may perform different functions, which suggests common ancestry. Analogous organs have different structures and origins but perform similar functions, which suggests convergent evolution rather than close relationship.",
+      "explanation": "Evolution is the gradual change in the inherited characteristics of populations over many generations. Fossils are remains or impressions of past organisms preserved in rocks, and they show that life forms have changed over time. Homologous organs have the same basic structure and origin but may perform different functions, which suggests common ancestry. Analogous organs have different structures and origins but perform similar functions, which suggests convergent evolution rather than close relationship.",
+      "key_points": [
+        "Fossils provide direct evidence of organisms that lived in the past and of gradual change in body form.",
+        "Homologous organs indicate divergent evolution from a common ancestor.",
+        "Analogous organs indicate convergent evolution in response to similar environments or habits.",
+        "Vestigial organs are reduced structures that were functional in ancestors, such as the human vermiform appendix."
+      ],
+      "real_life_application": "The forelimbs of a frog, lizard, bird and human have the same basic bone plan but are used for jumping, running, flying and writing, which points to a shared ancestor.",
+      "day_to_day_usage": [
+        "Museum fossil displays show extinct organisms and their living relatives",
+        "Comparing animal skeletons helps biologists classify species",
+        "The wings of birds and insects are compared in studies of flight",
+        "Medical science studies vestigial organs to understand human ancestry"
+      ]
+    },
+    {
+      "id": "speciation-and-human-evolution",
+      "name": "Speciation and Human Evolution",
+      "title": "Speciation and Human Evolution",
+      "purpose": "A new species forms when populations of the same species become reproductively isolated and accumulate enough genetic differences that they can no longer interbreed. Geographical isolation, such as a river, mountain range or sea, is a common starting point, and genetic drift and natural selection then act on the separated populations. Human evolution follows the same broad principles: fossil and molecular evidence show that modern humans share a common ancestor with other primates and that features such as bipedalism, larger brains and tool use appeared gradually.",
+      "explanation": "A new species forms when populations of the same species become reproductively isolated and accumulate enough genetic differences that they can no longer interbreed. Geographical isolation, such as a river, mountain range or sea, is a common starting point, and genetic drift and natural selection then act on the separated populations. Human evolution follows the same broad principles: fossil and molecular evidence show that modern humans share a common ancestor with other primates and that features such as bipedalism, larger brains and tool use appeared gradually.",
+      "key_points": [
+        "Speciation requires reproductive isolation followed by accumulated genetic change.",
+        "Geographical barriers can split a population and start divergence.",
+        "Natural selection and genetic drift change the gene frequencies of isolated populations.",
+        "Human evolution is a branching history, not a straight ladder from monkey to human."
+      ],
+      "real_life_application": "Island populations of birds and lizards often differ from mainland relatives because they have been isolated for long periods and have evolved separately.",
+      "day_to_day_usage": [
+        "Wildlife managers keep habitats connected to prevent harmful isolation",
+        "Conservationists protect small populations from inbreeding",
+        "Museum exhibits compare skulls and limb bones of human ancestors",
+        "DNA studies trace human migration and ancestry"
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-heredity-1",
+      "topic": "Monohybrid cross between pure tall and pure dwarf pea plants",
+      "title": "Monohybrid cross between pure tall and pure dwarf pea plants",
+      "problem": "A pure tall pea plant (TT) is crossed with a pure dwarf pea plant (tt). Work out the F1 and F2 generations using Punnett squares, and state the genotypic and phenotypic ratios of F2.",
+      "solution": [
+        "Step 1: Assign alleles. Let T be the dominant allele for tallness and t the recessive allele for dwarfness.",
+        "Step 2: The parents are TT (tall) and tt (dwarf). Their gametes are T and t respectively.",
+        "Step 3: Cross TT with tt. Every F1 offspring receives T from one parent and t from the other, so all F1 plants are Tt.",
+        "Step 4: All F1 plants are Tt, and because T is dominant, all F1 plants are tall.",
+        "Step 5: Self-pollinate the F1 plants: Tt x Tt. Each parent can form gametes T and t.",
+        "Step 6: Draw the 2 x 2 Punnett square with T and t on both sides: TT, Tt, Tt, tt.",
+        "Step 7: Count genotypes: 1 TT, 2 Tt and 1 tt. The genotypic ratio is 1 : 2 : 1.",
+        "Step 8: Count phenotypes: TT and Tt are tall (3 boxes), while tt is dwarf (1 box). The phenotypic ratio is 3 tall : 1 dwarf.",
+        "Step 9: Check that the ratios add up correctly: genotypes 1 + 2 + 1 = 4 boxes, phenotypes 3 + 1 = 4 boxes."
+      ],
+      "board_mode": [
+        "Step 1: Assign alleles. Let T be the dominant allele for tallness and t the recessive allele for dwarfness.",
+        "Step 2: The parents are TT (tall) and tt (dwarf). Their gametes are T and t respectively.",
+        "Step 3: Cross TT with tt. Every F1 offspring receives T from one parent and t from the other, so all F1 plants are Tt.",
+        "Step 4: All F1 plants are Tt, and because T is dominant, all F1 plants are tall.",
+        "Step 5: Self-pollinate the F1 plants: Tt x Tt. Each parent can form gametes T and t.",
+        "Step 6: Draw the 2 x 2 Punnett square with T and t on both sides: TT, Tt, Tt, tt.",
+        "Step 7: Count genotypes: 1 TT, 2 Tt and 1 tt. The genotypic ratio is 1 : 2 : 1.",
+        "Step 8: Count phenotypes: TT and Tt are tall (3 boxes), while tt is dwarf (1 box). The phenotypic ratio is 3 tall : 1 dwarf.",
+        "Step 9: Check that the ratios add up correctly: genotypes 1 + 2 + 1 = 4 boxes, phenotypes 3 + 1 = 4 boxes."
+      ],
+      "answer": "F1: all Tt and all tall. F2: genotypes 1 TT : 2 Tt : 1 tt; phenotypes 3 tall : 1 dwarf.",
+      "board_tip": "Write the gametes along the edges of the Punnett square and count all four boxes. Never label 3:1 as a genotypic ratio.",
+      "exam_tip": "For a 3-mark question, show the F1 cross, the F2 square and both ratios. Label T and t clearly."
+    },
+    {
+      "id": "we-heredity-2",
+      "topic": "Using a test cross to find an unknown genotype",
+      "title": "Using a test cross to find an unknown genotype",
+      "problem": "A tall pea plant may be TT or Tt. Explain how a test cross with a dwarf plant can identify its genotype, and predict the offspring in each case.",
+      "solution": [
+        "Step 1: A test cross is a cross of an individual showing the dominant trait with a homozygous recessive individual.",
+        "Step 2: Use a dwarf plant of genotype tt as the tester because it can contribute only the recessive allele t.",
+        "Step 3: If the tall plant is TT, the cross is TT x tt. All offspring receive T from the tall parent and t from the tester, so all are Tt and all are tall.",
+        "Step 4: If the tall plant is Tt, the cross is Tt x tt. The tall parent makes gametes T and t, while the tester makes only t.",
+        "Step 5: The Punnett square gives Tt, Tt, tt and tt, so about half the offspring are tall and half are dwarf.",
+        "Step 6: The appearance of any dwarf offspring proves that the tall parent carried the recessive allele, so its genotype is Tt.",
+        "Step 7: If no dwarf offspring appear in a large sample, the tall parent is probably TT, although a small sample cannot prove it with certainty."
+      ],
+      "board_mode": [
+        "Step 1: A test cross is a cross of an individual showing the dominant trait with a homozygous recessive individual.",
+        "Step 2: Use a dwarf plant of genotype tt as the tester because it can contribute only the recessive allele t.",
+        "Step 3: If the tall plant is TT, the cross is TT x tt. All offspring receive T from the tall parent and t from the tester, so all are Tt and all are tall.",
+        "Step 4: If the tall plant is Tt, the cross is Tt x tt. The tall parent makes gametes T and t, while the tester makes only t.",
+        "Step 5: The Punnett square gives Tt, Tt, tt and tt, so about half the offspring are tall and half are dwarf.",
+        "Step 6: The appearance of any dwarf offspring proves that the tall parent carried the recessive allele, so its genotype is Tt.",
+        "Step 7: If no dwarf offspring appear in a large sample, the tall parent is probably TT, although a small sample cannot prove it with certainty."
+      ],
+      "answer": "TT x tt gives all tall Tt offspring; Tt x tt gives 1 tall : 1 dwarf. Dwarf offspring prove the tall parent is heterozygous Tt.",
+      "board_tip": "The tester must be homozygous recessive, not just dwarf-looking, so that it cannot hide a dominant allele.",
+      "exam_tip": "State clearly that the test cross distinguishes TT from Tt; a self-cross of the tall plant would also work but is not a test cross."
+    },
+    {
+      "id": "we-heredity-3",
+      "topic": "Dihybrid cross for seed shape and seed colour",
+      "title": "Dihybrid cross for seed shape and seed colour",
+      "problem": "In pea plants, round seed shape (R) is dominant over wrinkled (r), and yellow cotyledon colour (Y) is dominant over green (y). Cross a pure round yellow plant (RRYY) with a pure wrinkled green plant (rryy). Give the F1 genotype and the F2 phenotypic ratio.",
+      "solution": [
+        "Step 1: Assign alleles: R = round, r = wrinkled, Y = yellow, y = green.",
+        "Step 2: The parents are RRYY and rryy. Their gametes are RY and ry respectively.",
+        "Step 3: All F1 offspring receive R and Y from one parent and r and y from the other, so all are RrYy.",
+        "Step 4: Because R and Y are dominant, all F1 seeds are round and yellow.",
+        "Step 5: Self-pollinate F1: RrYy x RrYy. Each parent produces four gametes: RY, Ry, rY and ry.",
+        "Step 6: Draw a 4 x 4 Punnett square with these four gametes on both edges, giving 16 boxes.",
+        "Step 7: Count the phenotypes in the 16 boxes: 9 round yellow, 3 round green, 3 wrinkled yellow and 1 wrinkled green.",
+        "Step 8: The F2 phenotypic ratio is therefore 9 : 3 : 3 : 1.",
+        "Step 9: The result supports independent assortment because the two gene pairs behave independently when gametes form."
+      ],
+      "board_mode": [
+        "Step 1: Assign alleles: R = round, r = wrinkled, Y = yellow, y = green.",
+        "Step 2: The parents are RRYY and rryy. Their gametes are RY and ry respectively.",
+        "Step 3: All F1 offspring receive R and Y from one parent and r and y from the other, so all are RrYy.",
+        "Step 4: Because R and Y are dominant, all F1 seeds are round and yellow.",
+        "Step 5: Self-pollinate F1: RrYy x RrYy. Each parent produces four gametes: RY, Ry, rY and ry.",
+        "Step 6: Draw a 4 x 4 Punnett square with these four gametes on both edges, giving 16 boxes.",
+        "Step 7: Count the phenotypes in the 16 boxes: 9 round yellow, 3 round green, 3 wrinkled yellow and 1 wrinkled green.",
+        "Step 8: The F2 phenotypic ratio is therefore 9 : 3 : 3 : 1.",
+        "Step 9: The result supports independent assortment because the two gene pairs behave independently when gametes form."
+      ],
+      "answer": "F1: all RrYy (round yellow). F2 phenotypic ratio = 9 round yellow : 3 round green : 3 wrinkled yellow : 1 wrinkled green.",
+      "board_tip": "Use a 4 x 4 square and label the gametes RY, Ry, rY and ry on both axes; count phenotypes, not genotypes.",
+      "exam_tip": "9:3:3:1 is an F2 phenotypic ratio for independently assorting gene pairs. Do not apply it to linked genes."
+    },
+    {
+      "id": "we-heredity-4",
+      "topic": "Probability of a boy or a girl",
+      "title": "Probability of a boy or a girl",
+      "problem": "A couple already has two daughters. They believe their next child is more likely to be a boy. Use a Punnett square to find the probability that the next child is a boy, and explain whether the earlier children affect the result.",
+      "solution": [
+        "Step 1: Write the sex chromosomes: mother XX, father XY.",
+        "Step 2: The mother can contribute only an X chromosome in each egg.",
+        "Step 3: The father can contribute either an X or a Y chromosome in his sperm, in roughly equal numbers.",
+        "Step 4: Draw the Punnett square: X from the mother combined with X or Y from the father gives XX and XY.",
+        "Step 5: XX is female and XY is male, so the two outcomes are equally likely.",
+        "Step 6: The probability of a boy is 1/2, or 50 percent, and the probability of a girl is also 1/2.",
+        "Step 7: Each pregnancy is an independent event. The sex of earlier children does not change the sperm's chromosome content, so the probability remains 1/2.",
+        "Step 8: The father, not the mother, determines the sex of the child because only the father can supply a Y chromosome."
+      ],
+      "board_mode": [
+        "Step 1: Write the sex chromosomes: mother XX, father XY.",
+        "Step 2: The mother can contribute only an X chromosome in each egg.",
+        "Step 3: The father can contribute either an X or a Y chromosome in his sperm, in roughly equal numbers.",
+        "Step 4: Draw the Punnett square: X from the mother combined with X or Y from the father gives XX and XY.",
+        "Step 5: XX is female and XY is male, so the two outcomes are equally likely.",
+        "Step 6: The probability of a boy is 1/2, or 50 percent, and the probability of a girl is also 1/2.",
+        "Step 7: Each pregnancy is an independent event. The sex of earlier children does not change the sperm's chromosome content, so the probability remains 1/2.",
+        "Step 8: The father, not the mother, determines the sex of the child because only the father can supply a Y chromosome."
+      ],
+      "answer": "The probability is 1/2 (50 percent) for a boy. Earlier daughters do not change the probability because each fertilisation is independent and the father determines the sex.",
+      "board_tip": "Show the cross as X from the mother against X and Y from the father; do not draw the father as XX.",
+      "exam_tip": "A common trap is saying the mother determines sex. The mother gives only X; the father gives X or Y."
+    },
+    {
+      "id": "we-heredity-5",
+      "topic": "Homologous and analogous organs as evidence",
+      "title": "Homologous and analogous organs as evidence",
+      "problem": "The forelimbs of a frog, lizard, bird and human have a similar basic bone plan but are used for jumping, running, flying and writing. The wings of a bird and the wings of a butterfly are both used for flight but differ completely in structure. Classify each example as homologous or analogous and state what it indicates about evolution.",
+      "solution": [
+        "Step 1: Compare the basic structure and origin of the organs, not only their function.",
+        "Step 2: The forelimbs of the frog, lizard, bird and human share a similar arrangement of bones and develop from similar embryonic parts.",
+        "Step 3: These forelimbs perform different functions, so they are homologous organs.",
+        "Step 4: Homologous organs indicate divergent evolution from a common ancestor that possessed the basic forelimb plan.",
+        "Step 5: The bird wing and butterfly wing perform the same function, flight, but have entirely different structures and origins.",
+        "Step 6: These wings are analogous organs.",
+        "Step 7: Analogous organs indicate convergent evolution, in which unrelated organisms adapt to similar ways of life.",
+        "Step 8: Therefore anatomy alone is not enough; we must compare structure, development and ancestry."
+      ],
+      "board_mode": [
+        "Step 1: Compare the basic structure and origin of the organs, not only their function.",
+        "Step 2: The forelimbs of the frog, lizard, bird and human share a similar arrangement of bones and develop from similar embryonic parts.",
+        "Step 3: These forelimbs perform different functions, so they are homologous organs.",
+        "Step 4: Homologous organs indicate divergent evolution from a common ancestor that possessed the basic forelimb plan.",
+        "Step 5: The bird wing and butterfly wing perform the same function, flight, but have entirely different structures and origins.",
+        "Step 6: These wings are analogous organs.",
+        "Step 7: Analogous organs indicate convergent evolution, in which unrelated organisms adapt to similar ways of life.",
+        "Step 8: Therefore anatomy alone is not enough; we must compare structure, development and ancestry."
+      ],
+      "answer": "Forelimbs of frog, lizard, bird and human are homologous and indicate common ancestry. Bird and butterfly wings are analogous and indicate convergent evolution.",
+      "board_tip": "Remember the one-line difference: homologous means same origin, different function; analogous means different origin, same function.",
+      "exam_tip": "Do not call analogous organs proof of close relationship. They show similar adaptation, not shared ancestry."
+    }
+  ],
+  "exercises": {
+    "exercise_9_1": {
+      "title": "NCERT Exercise - Heredity Basics",
+      "objective": "Check definitions, Mendel's laws and the distinction between inherited and acquired traits",
+      "problems": [
+        {
+          "id": "heredity-ex1-1",
+          "book_source": "NCERT Exercise 9.1",
+          "question": "Define heredity and variation.",
+          "difficulty": "simple",
+          "marks": 1,
+          "solution": [
+            "Step 1: Heredity is the transmission of characters from parents to offspring.",
+            "Step 2: Variation is the difference in characters among individuals of the same species."
+          ],
+          "final_answer": "Heredity is the passing of traits from parents to offspring; variation is the difference in traits among individuals of a species."
+        },
+        {
+          "id": "heredity-ex1-2",
+          "book_source": "NCERT Exercise 9.1",
+          "question": "What is a gene? Where is it located?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: A gene is a segment of DNA that controls a particular trait.",
+            "Step 2: Genes are located on chromosomes in the nucleus of a cell.",
+            "Step 3: Each gene normally exists as a pair of alleles in a diploid cell."
+          ],
+          "final_answer": "A gene is a DNA segment that controls a trait and is located on chromosomes in the nucleus."
+        },
+        {
+          "id": "heredity-ex1-3",
+          "book_source": "NCERT Exercise 9.1",
+          "question": "State Mendel's law of dominance.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: In a pair of contrasting alleles, one allele may mask the expression of the other.",
+            "Step 2: The allele that is expressed is called dominant.",
+            "Step 3: The allele that is not expressed in the heterozygous condition is called recessive."
+          ],
+          "final_answer": "When two contrasting alleles are present, the dominant allele is expressed and the recessive allele remains hidden."
+        },
+        {
+          "id": "heredity-ex1-4",
+          "book_source": "NCERT Exercise 9.1",
+          "question": "Differentiate between an acquired trait and an inherited trait with one example of each.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: An inherited trait is controlled by genes in germ cells and is passed to offspring.",
+            "Step 2: Example: eye colour or earlobe shape.",
+            "Step 3: An acquired trait develops during the lifetime due to environment, use or injury.",
+            "Step 4: Example: a scar or the ability to swim.",
+            "Step 5: Acquired traits generally do not change germ-cell DNA, so they are not inherited."
+          ],
+          "final_answer": "Inherited traits are gene-controlled and transmitted (eye colour); acquired traits develop during life and are usually not transmitted (a scar)."
+        },
+        {
+          "id": "heredity-ex1-5",
+          "book_source": "NCERT Exercise 9.1",
+          "question": "Define genotype and phenotype.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Genotype is the genetic constitution of an organism for a trait.",
+            "Step 2: For example, TT, Tt and tt are different genotypes.",
+            "Step 3: Phenotype is the observable characteristic produced by the genotype.",
+            "Step 4: For example, tall and dwarf are phenotypes."
+          ],
+          "final_answer": "Genotype is the allele combination of an organism; phenotype is its observable characteristic."
+        },
+        {
+          "id": "heredity-ex1-6",
+          "book_source": "NCERT Exercise 9.1",
+          "question": "Write the phenotypic ratio of the F2 generation of a monohybrid cross.",
+          "difficulty": "simple",
+          "marks": 1,
+          "solution": [
+            "Step 1: In a monohybrid cross, F1 heterozygous plants are self-pollinated.",
+            "Step 2: The F2 phenotypes are 3 dominant and 1 recessive."
+          ],
+          "final_answer": "3 dominant : 1 recessive."
+        }
+      ]
+    },
+    "exercise_9_2": {
+      "title": "NCERT Exercise - Crosses and Sex Determination",
+      "objective": "Apply Punnett squares to monohybrid and dihybrid crosses and explain sex determination",
+      "problems": [
+        {
+          "id": "heredity-ex2-1",
+          "book_source": "NCERT Exercise 9.2",
+          "question": "A pure tall pea plant is crossed with a pure dwarf pea plant. Give the genotype and phenotype of the F1 generation.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Let T be the dominant tall allele and t the recessive dwarf allele.",
+            "Step 2: The parents are TT and tt, producing gametes T and t.",
+            "Step 3: All offspring receive T from one parent and t from the other, so all are Tt.",
+            "Step 4: Since T is dominant, all F1 plants are tall."
+          ],
+          "final_answer": "All F1 plants are Tt and tall."
+        },
+        {
+          "id": "heredity-ex2-2",
+          "book_source": "NCERT Exercise 9.2",
+          "question": "Two heterozygous tall pea plants (Tt) are crossed. Give the genotypic and phenotypic ratios of the offspring.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Each Tt parent produces gametes T and t.",
+            "Step 2: The Punnett square gives TT, Tt, Tt and tt.",
+            "Step 3: The genotypes are 1 TT : 2 Tt : 1 tt.",
+            "Step 4: TT and Tt are tall, while tt is dwarf, so the phenotypes are 3 tall : 1 dwarf."
+          ],
+          "final_answer": "Genotypic ratio 1 TT : 2 Tt : 1 tt; phenotypic ratio 3 tall : 1 dwarf."
+        },
+        {
+          "id": "heredity-ex2-3",
+          "book_source": "NCERT Exercise 9.2",
+          "question": "Explain how a test cross can determine whether a tall pea plant is TT or Tt.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Cross the unknown tall plant with a dwarf plant of genotype tt.",
+            "Step 2: If the tall plant is TT, all offspring are Tt and tall.",
+            "Step 3: If the tall plant is Tt, the offspring are about half Tt (tall) and half tt (dwarf).",
+            "Step 4: The appearance of dwarf offspring proves that the tall parent was heterozygous."
+          ],
+          "final_answer": "TT x tt gives all tall offspring; Tt x tt gives 1 tall : 1 dwarf. Dwarf offspring prove the parent was Tt."
+        },
+        {
+          "id": "heredity-ex2-4",
+          "book_source": "NCERT Exercise 9.2",
+          "question": "State the law of independent assortment and give the F2 phenotypic ratio of a dihybrid cross.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The law of independent assortment states that alleles of different genes separate independently during gamete formation.",
+            "Step 2: This happens when the genes are on different chromosomes or are far apart on the same chromosome.",
+            "Step 3: A dihybrid F1 cross produces four gamete types, giving 16 F2 combinations.",
+            "Step 4: The F2 phenotypic ratio is 9 : 3 : 3 : 1."
+          ],
+          "final_answer": "Alleles of different genes assort independently; the dihybrid F2 phenotypic ratio is 9 : 3 : 3 : 1."
+        },
+        {
+          "id": "heredity-ex2-5",
+          "book_source": "NCERT Exercise 9.2",
+          "question": "Explain how the sex of a human child is determined.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Human females have XX and males have XY sex chromosomes.",
+            "Step 2: The mother contributes only an X chromosome through the egg.",
+            "Step 3: The father contributes either X or Y through the sperm.",
+            "Step 4: An X-bearing sperm gives XX (girl), and a Y-bearing sperm gives XY (boy).",
+            "Step 5: Therefore the father determines the sex of the child."
+          ],
+          "final_answer": "The father determines sex: an X-bearing sperm gives a girl (XX) and a Y-bearing sperm gives a boy (XY)."
+        },
+        {
+          "id": "heredity-ex2-6",
+          "book_source": "NCERT Exercise 9.2",
+          "question": "Differentiate between homologous and analogous organs with one example of each.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Homologous organs have the same basic structure and origin but may perform different functions.",
+            "Step 2: Example: the forelimbs of a frog, lizard, bird and human.",
+            "Step 3: Analogous organs have different structures and origins but perform the same function.",
+            "Step 4: Example: the wings of a bird and the wings of an insect.",
+            "Step 5: Homologous organs indicate common ancestry, while analogous organs indicate convergent evolution."
+          ],
+          "final_answer": "Homologous: same origin, different function (forelimbs of vertebrates); analogous: different origin, same function (bird and insect wings)."
+        }
+      ]
+    },
+    "exercise_9_3": {
+      "title": "NCERT Exercise - Genetics, Evolution and Reasoning",
+      "objective": "Solve multi-step heredity problems and explain evolutionary evidence",
+      "problems": [
+        {
+          "id": "heredity-ex3-1",
+          "book_source": "NCERT Exercise 9.3",
+          "question": "A pure tall pea plant is crossed with a dwarf plant, and the F1 is self-pollinated. In the F2 generation, what fraction of plants is homozygous tall and what fraction is heterozygous tall?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The cross is TT x tt, so all F1 plants are Tt.",
+            "Step 2: Selfing gives Tt x Tt, with F2 genotypes TT, Tt, Tt and tt.",
+            "Step 3: The genotypic ratio is 1 TT : 2 Tt : 1 tt out of 4.",
+            "Step 4: Homozygous tall (TT) is 1 out of 4, so the fraction is 1/4.",
+            "Step 5: Heterozygous tall (Tt) is 2 out of 4, so the fraction is 1/2.",
+            "Step 6: Note that both TT and Tt look tall, so 3/4 of F2 is tall phenotypically, but only 1/4 is homozygous tall."
+          ],
+          "final_answer": "Homozygous tall = 1/4; heterozygous tall = 1/2; dwarf = 1/4."
+        },
+        {
+          "id": "heredity-ex3-2",
+          "book_source": "NCERT Exercise 9.3",
+          "question": "In a dihybrid cross RrYy x RrYy, find the probability of (a) round green seeds and (b) wrinkled yellow seeds.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Treat the two genes separately because they assort independently.",
+            "Step 2: For seed shape, Rr x Rr gives 3/4 round (R_) and 1/4 wrinkled (rr).",
+            "Step 3: For seed colour, Yy x Yy gives 3/4 yellow (Y_) and 1/4 green (yy).",
+            "Step 4: Round green = round x green = 3/4 x 1/4 = 3/16.",
+            "Step 5: Wrinkled yellow = wrinkled x yellow = 1/4 x 3/4 = 3/16.",
+            "Step 6: These probabilities match the 9:3:3:1 ratio: round yellow 9/16, round green 3/16, wrinkled yellow 3/16, wrinkled green 1/16."
+          ],
+          "final_answer": "Round green = 3/16; wrinkled yellow = 3/16."
+        },
+        {
+          "id": "heredity-ex3-3",
+          "book_source": "NCERT Exercise 9.3",
+          "question": "Explain how a new species can arise when a population becomes divided by a geographical barrier.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: A river, mountain range or sea can split one population into two isolated groups.",
+            "Step 2: The two groups can no longer interbreed, so gene flow between them stops.",
+            "Step 3: Each group accumulates different variations through mutation and recombination.",
+            "Step 4: Natural selection and genetic drift act differently in the two environments.",
+            "Step 5: Over many generations the genetic differences become large enough that the groups cannot produce fertile offspring even if they meet again.",
+            "Step 6: At that point reproductive isolation is complete, and the two groups are separate species."
+          ],
+          "final_answer": "Geographical isolation stops gene flow; mutation, recombination, natural selection and genetic drift make the populations diverge until reproductive isolation produces new species."
+        },
+        {
+          "id": "heredity-ex3-4",
+          "book_source": "NCERT Exercise 9.3",
+          "question": "Acquired traits are generally not inherited. Justify this statement using the role of germ cells.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Inherited traits must be present in the germ cells, which form the gametes.",
+            "Step 2: Acquired traits arise in body (somatic) cells due to environment, use, disuse or injury.",
+            "Step 3: Changes in somatic cells do not alter the DNA of germ cells.",
+            "Step 4: Since the gametes do not carry the acquired change, the next generation does not inherit it.",
+            "Step 5: Example: a wrestler's developed muscles and a scar are not passed to children.",
+            "Step 6: Inherited traits such as eye colour are carried by genes in germ cells and therefore reappear in offspring."
+          ],
+          "final_answer": "Acquired changes occur in somatic cells and do not change germ-cell DNA, so they are not transmitted; inherited traits are encoded in germ cells."
+        },
+        {
+          "id": "heredity-ex3-5",
+          "book_source": "NCERT Exercise 9.3",
+          "question": "Explain how fossils, homologous organs and analogous organs each provide evidence for evolution.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Fossils are preserved remains or impressions of past organisms found in sedimentary rocks.",
+            "Step 2: Fossils show that organisms and body forms have changed over time and can reveal transitional forms.",
+            "Step 3: Homologous organs have the same basic structure and origin but different functions, indicating descent from a common ancestor.",
+            "Step 4: Analogous organs have different structures and origins but similar functions, indicating independent adaptation to similar environments.",
+            "Step 5: Together, fossils give a historical record, homology shows common ancestry, and analogy explains convergent evolution.",
+            "Step 6: Molecular similarities in DNA and proteins provide additional evidence that living organisms share ancestors."
+          ],
+          "final_answer": "Fossils record past life and change; homologous organs show common ancestry; analogous organs show convergent adaptation; molecular data support the same history."
+        },
+        {
+          "id": "heredity-ex3-6",
+          "book_source": "NCERT Exercise 9.3",
+          "question": "Describe two broad trends in human evolution and explain why the human evolutionary tree is not a straight ladder.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Human evolution is studied from fossils, comparative anatomy and molecular data.",
+            "Step 2: One trend is the shift to bipedal walking, shown by changes in the pelvis, spine and leg bones.",
+            "Step 3: Another trend is an increase in brain size and complexity, linked with tool use and social behaviour.",
+            "Step 4: Several human-like species lived at the same time in different places, and some lineages became extinct.",
+            "Step 5: Modern humans, Homo sapiens, share a common ancestor with other primates rather than descending from modern monkeys or apes.",
+            "Step 6: Therefore the history is branching, not a single straight line of progress."
+          ],
+          "final_answer": "Trends include bipedalism and increasing brain size; the tree is branching because several related species coexisted and some lineages went extinct."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-heredity-s-1",
+        "question": "What is the unit of heredity?",
+        "options": [
+          "Gene",
+          "Chromosome",
+          "Nucleus",
+          "Protein"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A gene is a segment of DNA that controls a trait and is the unit of heredity.",
+          "wrong_options": {
+            "1": "A chromosome carries many genes but is not the unit of heredity.",
+            "2": "The nucleus contains chromosomes but is not itself the unit of heredity.",
+            "3": "Proteins are products of gene action, not the hereditary unit."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-s-2",
+        "question": "Mendel carried out his experiments on which plant?",
+        "options": [
+          "Maize",
+          "Pea",
+          "Wheat",
+          "Rice"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Mendel used the garden pea, Pisum sativum, because it has clear contrasting traits and can be cross-pollinated.",
+          "wrong_options": {
+            "0": "Maize was not Mendel's experimental plant.",
+            "2": "Wheat was not Mendel's experimental plant.",
+            "3": "Rice was not Mendel's experimental plant."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-s-3",
+        "question": "A dominant allele is expressed when it is present in:",
+        "options": [
+          "Two copies only",
+          "One or two copies",
+          "The cytoplasm only",
+          "The mother only"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A dominant allele is expressed even in the heterozygous condition, so one copy is enough.",
+          "wrong_options": {
+            "0": "Two copies are needed for a recessive allele to be expressed.",
+            "2": "Alleles are in the nucleus, not expressed from the cytoplasm alone.",
+            "3": "Inheritance involves both parents, not only the mother."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-s-4",
+        "question": "The genotype of a pure tall pea plant is:",
+        "options": [
+          "TT",
+          "Tt",
+          "tt",
+          "XX"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A pure tall plant has two dominant tall alleles, TT.",
+          "wrong_options": {
+            "1": "Tt is heterozygous tall, not pure.",
+            "2": "tt is dwarf.",
+            "3": "XX is a sex chromosome combination, not a pea-plant genotype."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-s-5",
+        "question": "The F2 phenotypic ratio in a monohybrid cross is:",
+        "options": [
+          "1 : 1",
+          "3 : 1",
+          "9 : 3 : 3 : 1",
+          "1 : 2 : 1"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The F2 phenotypes are three dominant to one recessive, a 3:1 ratio.",
+          "wrong_options": {
+            "0": "1:1 is the result of a test cross.",
+            "2": "9:3:3:1 is the dihybrid F2 ratio.",
+            "3": "1:2:1 is the monohybrid genotypic ratio, not the phenotypic ratio."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-s-6",
+        "question": "How many chromosomes are present in a normal human body cell?",
+        "options": [
+          "23",
+          "46",
+          "44",
+          "48"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A normal human body cell has 46 chromosomes, arranged as 23 pairs.",
+          "wrong_options": {
+            "0": "23 is the number of chromosomes in a gamete, not a body cell.",
+            "2": "44 is the number of autosomes; the total includes two sex chromosomes.",
+            "3": "48 is not the normal human chromosome number."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-s-7",
+        "question": "The sex chromosomes of a human female are:",
+        "options": [
+          "XY",
+          "XX",
+          "YY",
+          "XO"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A human female has two X chromosomes, XX.",
+          "wrong_options": {
+            "0": "XY is the male combination.",
+            "2": "YY is not a normal human combination.",
+            "3": "XO is not the normal human female combination."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-s-8",
+        "question": "Alternative forms of a gene are called:",
+        "options": [
+          "Alleles",
+          "Chromosomes",
+          "Ribosomes",
+          "Gametes"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Alleles are the alternative forms of a gene, such as T and t.",
+          "wrong_options": {
+            "1": "Chromosomes carry genes but are not alternative gene forms.",
+            "2": "Ribosomes are protein-making structures.",
+            "3": "Gametes are reproductive cells."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-s-9",
+        "question": "Traits received from parents are called:",
+        "options": [
+          "Acquired traits",
+          "Inherited traits",
+          "Learned traits",
+          "Environmental traits"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Inherited traits are passed from parents to offspring through genes.",
+          "wrong_options": {
+            "0": "Acquired traits develop during the lifetime.",
+            "2": "Learned traits are acquired through experience.",
+            "3": "Environmental traits are influenced by surroundings, not necessarily inherited."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-s-10",
+        "question": "Who proposed the theory of natural selection?",
+        "options": [
+          "Mendel",
+          "Darwin",
+          "Lamarck",
+          "Pasteur"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Charles Darwin proposed natural selection as a mechanism of evolution.",
+          "wrong_options": {
+            "0": "Mendel worked on the laws of inheritance.",
+            "2": "Lamarck proposed the inheritance of acquired characters.",
+            "3": "Pasteur worked on microbiology and vaccination."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-heredity-m-1",
+        "question": "When Tt is crossed with tt, the offspring are:",
+        "options": [
+          "All tall",
+          "All dwarf",
+          "1 tall : 1 dwarf",
+          "3 tall : 1 dwarf"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Tt x tt gives Tt and tt in equal numbers, so the ratio is 1 tall : 1 dwarf.",
+          "wrong_options": {
+            "0": "All tall would require the tester to contribute T, but tt contributes only t.",
+            "1": "Half the offspring receive T and are tall.",
+            "3": "3:1 comes from Tt x Tt, not Tt x tt."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-m-2",
+        "question": "Two heterozygous tall plants are crossed. What fraction of the offspring is expected to be dwarf?",
+        "options": [
+          "1/4",
+          "1/2",
+          "3/4",
+          "0"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Tt x Tt gives 1 TT : 2 Tt : 1 tt, so 1/4 of the offspring are dwarf.",
+          "wrong_options": {
+            "1": "1/2 would be the fraction of heterozygotes, not dwarfs.",
+            "2": "3/4 is the fraction of tall offspring.",
+            "3": "Dwarf offspring can appear because both parents carry t."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-m-3",
+        "question": "The law that states that the two alleles of a gene separate during gamete formation is the law of:",
+        "options": [
+          "Dominance",
+          "Segregation",
+          "Independent assortment",
+          "Natural selection"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The law of segregation states that the two alleles separate during gamete formation.",
+          "wrong_options": {
+            "0": "Dominance explains why one allele masks the other.",
+            "2": "Independent assortment concerns alleles of different genes.",
+            "3": "Natural selection is an evolutionary mechanism, not a Mendelian law."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-m-4",
+        "question": "The F2 phenotypic ratio of a dihybrid cross is:",
+        "options": [
+          "3 : 1",
+          "1 : 2 : 1",
+          "9 : 3 : 3 : 1",
+          "1 : 1 : 1 : 1"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "A dihybrid F2 cross gives 9 round yellow : 3 round green : 3 wrinkled yellow : 1 wrinkled green.",
+          "wrong_options": {
+            "0": "3:1 is the monohybrid F2 phenotypic ratio.",
+            "1": "1:2:1 is the monohybrid genotypic ratio.",
+            "3": "1:1:1:1 is a test-cross ratio, not a dihybrid F2 ratio."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-m-5",
+        "question": "In humans, the sex of a child is determined by:",
+        "options": [
+          "The mother's egg",
+          "The father's sperm",
+          "The number of autosomes",
+          "The environment after birth"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The father's sperm carries either X or Y, so it determines whether the child is XX or XY.",
+          "wrong_options": {
+            "0": "The mother contributes only an X chromosome.",
+            "2": "Autosome number does not determine sex.",
+            "3": "Sex is determined at fertilisation, not by the postnatal environment."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-m-6",
+        "question": "Which pair is an example of homologous organs?",
+        "options": [
+          "Wings of a bird and wings of a butterfly",
+          "Forelimbs of a human and forelimbs of a bird",
+          "Eyes of an octopus and eyes of a fish",
+          "Wings of a bird and wings of a bat"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Human and bird forelimbs share a similar basic bone plan, so they are homologous.",
+          "wrong_options": {
+            "0": "Bird and butterfly wings differ in structure and origin, so they are analogous.",
+            "2": "Octopus and fish eyes are structurally different and are analogous.",
+            "3": "Bird and bat wings evolved independently for flight and differ in structure, so they are analogous."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-m-7",
+        "question": "The wings of a bird and the wings of a butterfly are examples of:",
+        "options": [
+          "Homologous organs",
+          "Analogous organs",
+          "Vestigial organs",
+          "Fossils"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "They perform the same function, flight, but have different structures and origins, so they are analogous.",
+          "wrong_options": {
+            "0": "Homologous organs share a basic structure and origin.",
+            "2": "Vestigial organs are reduced and no longer functional.",
+            "3": "Fossils are preserved remains, not living organs."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-m-8",
+        "question": "Fossils provide evidence mainly about:",
+        "options": [
+          "The future of a species",
+          "Past life and evolutionary change",
+          "The chemistry of the atmosphere only",
+          "The behaviour of living animals only"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Fossils are remains or impressions of past organisms and show how life forms changed over time.",
+          "wrong_options": {
+            "0": "Fossils record the past, not the future.",
+            "2": "Some fossils indicate past climates, but their main use is evidence of past life.",
+            "3": "Fossils can suggest behaviour, but they are not limited to living animals."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-m-9",
+        "question": "The genotypic ratio of the F2 generation in a monohybrid cross is:",
+        "options": [
+          "3 : 1",
+          "1 : 2 : 1",
+          "9 : 3 : 3 : 1",
+          "1 : 1"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The F2 genotypes are 1 TT : 2 Tt : 1 tt.",
+          "wrong_options": {
+            "0": "3:1 is the phenotypic ratio.",
+            "2": "9:3:3:1 is the dihybrid phenotypic ratio.",
+            "3": "1:1 is the test-cross ratio."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-m-10",
+        "question": "A test cross uses an individual of which genotype?",
+        "options": [
+          "Homozygous dominant",
+          "Heterozygous",
+          "Homozygous recessive",
+          "Any genotype"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "A test cross uses a homozygous recessive individual so that the offspring reveal the unknown genotype.",
+          "wrong_options": {
+            "0": "A homozygous dominant tester would mask the recessive allele.",
+            "1": "A heterozygous tester would not give a clear one-to-one test.",
+            "3": "The tester must be specifically homozygous recessive."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-heredity-x-1",
+        "question": "In the cross Tt x Tt, what is the probability that an offspring has the genotype Tt?",
+        "options": [
+          "1/4",
+          "1/2",
+          "3/4",
+          "1"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The square gives TT, Tt, Tt and tt, so two of the four boxes are Tt, a probability of 1/2.",
+          "wrong_options": {
+            "0": "1/4 is the probability of TT or of tt.",
+            "2": "3/4 is the probability of a tall phenotype.",
+            "3": "Only one genotype cannot have probability 1 in this cross."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-x-2",
+        "question": "In the cross RrYy x RrYy, what fraction of the offspring is expected to be round and yellow?",
+        "options": [
+          "1/16",
+          "3/16",
+          "9/16",
+          "3/4"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Round yellow is R_ Y_. The probability is 3/4 x 3/4 = 9/16.",
+          "wrong_options": {
+            "0": "1/16 is wrinkled green (rr yy).",
+            "1": "3/16 is round green or wrinkled yellow.",
+            "3": "3/4 is the probability for one dominant trait alone."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-x-3",
+        "question": "A tall pea plant crossed with a dwarf plant gives about 50 percent dwarf offspring. The genotype of the tall parent is:",
+        "options": [
+          "TT",
+          "Tt",
+          "tt",
+          "Cannot be determined"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "About half the offspring are dwarf, so the tall parent must have contributed t to them; therefore it is Tt.",
+          "wrong_options": {
+            "0": "TT x tt would give all tall offspring.",
+            "2": "tt would be dwarf, not tall.",
+            "3": "The 1:1 result is sufficient to identify Tt."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-x-4",
+        "question": "How many types of gametes can a plant with genotype RrYy produce if the genes assort independently?",
+        "options": [
+          "1",
+          "2",
+          "4",
+          "8"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "The gametes are RY, Ry, rY and ry, so there are four types.",
+          "wrong_options": {
+            "0": "One type would require a fully homozygous genotype.",
+            "1": "Two types would come from a heterozygous pair at one gene only.",
+            "3": "Eight types would require three heterozygous gene pairs."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-x-5",
+        "question": "Which observation is stronger evidence of common ancestry than of convergent evolution?",
+        "options": [
+          "Two organs perform the same function",
+          "Two organs have a similar basic structure and embryonic origin",
+          "Two species live in the same habitat",
+          "Two species have the same body colour"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Similar basic structure and embryonic origin indicate homology and common ancestry.",
+          "wrong_options": {
+            "0": "Same function can arise independently and is typical of analogous organs.",
+            "2": "Sharing a habitat does not prove common ancestry.",
+            "3": "Body colour can be convergent adaptation and is not strong ancestry evidence."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-x-6",
+        "question": "Why are acquired traits generally not inherited?",
+        "options": [
+          "They are not useful",
+          "They do not change the DNA of germ cells",
+          "They occur only in plants",
+          "They are always recessive"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Acquired traits arise in somatic cells and do not alter germ-cell DNA, so gametes do not carry them.",
+          "wrong_options": {
+            "0": "Usefulness is not the criterion for inheritance.",
+            "2": "Acquired traits occur in animals too.",
+            "3": "Recessiveness is unrelated to whether a trait is acquired."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-x-7",
+        "question": "Speciation is completed when two populations become:",
+        "options": [
+          "Geographically close",
+          "Reproductively isolated",
+          "Identical in appearance",
+          "Equally adapted to one habitat"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A new species is recognized when the populations can no longer interbreed to produce fertile offspring, that is, when reproductive isolation is complete.",
+          "wrong_options": {
+            "0": "Geographical closeness would allow gene flow and oppose speciation.",
+            "2": "Identical appearance is not the criterion for a species.",
+            "3": "Equal adaptation to one habitat does not define separate species."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-x-8",
+        "question": "Which structure is considered vestigial in humans?",
+        "options": [
+          "Vermiform appendix",
+          "Liver",
+          "Kidney",
+          "Diaphragm"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The vermiform appendix is a reduced structure that is considered vestigial in humans.",
+          "wrong_options": {
+            "1": "The liver has major metabolic functions.",
+            "2": "The kidney filters blood and forms urine.",
+            "3": "The diaphragm is essential for breathing."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-x-9",
+        "question": "A couple has one daughter. What is the probability that their next child is a boy?",
+        "options": [
+          "1/4",
+          "1/3",
+          "1/2",
+          "1"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Each fertilisation is independent, and the sperm is equally likely to carry X or Y, so the probability is 1/2.",
+          "wrong_options": {
+            "0": "1/4 would require two independent events to be multiplied.",
+            "1": "1/3 has no genetic basis here.",
+            "3": "A boy is not certain; both outcomes remain possible."
+          }
+        }
+      },
+      {
+        "id": "q-heredity-x-10",
+        "question": "In the F2 generation of a dihybrid cross RrYy x RrYy, what fraction is homozygous recessive for both traits (rryy)?",
+        "options": [
+          "1/16",
+          "3/16",
+          "9/16",
+          "1/4"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The probability of rr is 1/4 and of yy is 1/4, so rryy is 1/4 x 1/4 = 1/16.",
+          "wrong_options": {
+            "1": "3/16 is the probability of one dominant and one recessive trait.",
+            "2": "9/16 is the probability of both dominant traits.",
+            "3": "1/4 is the probability of one recessive trait alone."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Heredity and Evolution - Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Heredity",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Variation",
+        "group": "foundation"
+      },
+      {
+        "id": "n3",
+        "label": "Mendel's Laws",
+        "group": "genetics"
+      },
+      {
+        "id": "n4",
+        "label": "Monohybrid Cross",
+        "group": "genetics"
+      },
+      {
+        "id": "n5",
+        "label": "Dihybrid Cross",
+        "group": "genetics"
+      },
+      {
+        "id": "n6",
+        "label": "Sex Determination",
+        "group": "genetics"
+      },
+      {
+        "id": "n7",
+        "label": "Evolution",
+        "group": "evolution"
+      },
+      {
+        "id": "n8",
+        "label": "Speciation",
+        "group": "evolution"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n3",
+        "n5"
+      ],
+      [
+        "n1",
+        "n6"
+      ],
+      [
+        "n2",
+        "n7"
+      ],
+      [
+        "n7",
+        "n8"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n6",
+        "n1"
+      ],
+      [
+        "n8",
+        "n2"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Heredity and Evolution - Mind Map",
+    "type": "hierarchical",
+    "root": "Heredity and Evolution",
+    "branches": [
+      {
+        "concept": "Variation",
+        "sub_nodes": [
+          "Differences among individuals of a species",
+          "Sources: recombination, mutation and gene mixing",
+          "Inherited traits are carried by germ-cell genes",
+          "Acquired traits usually do not change germ-cell DNA"
+        ],
+        "connections": "Provides the raw material for natural selection"
+      },
+      {
+        "concept": "Mendel's Experiments",
+        "sub_nodes": [
+          "Garden pea, Pisum sativum",
+          "True-breeding lines and cross-pollination",
+          "Law of dominance",
+          "Law of segregation",
+          "Law of independent assortment"
+        ],
+        "connections": "Established the basic rules of inheritance"
+      },
+      {
+        "concept": "Crosses and Ratios",
+        "sub_nodes": [
+          "Monohybrid F2: 3 dominant : 1 recessive",
+          "Monohybrid genotypes: 1 : 2 : 1",
+          "Test cross: 1 : 1",
+          "Dihybrid F2: 9 : 3 : 3 : 1"
+        ],
+        "connections": "Predicts offspring from parental genotypes"
+      },
+      {
+        "concept": "Sex Determination",
+        "sub_nodes": [
+          "Female XX, male XY",
+          "Mother contributes only X",
+          "Father contributes X or Y",
+          "Probability of boy or girl is 1/2"
+        ],
+        "connections": "Explains why the father determines the child's sex"
+      },
+      {
+        "concept": "Evidence for Evolution",
+        "sub_nodes": [
+          "Fossils show past life and change",
+          "Homologous organs show common ancestry",
+          "Analogous organs show convergent evolution",
+          "Vestigial organs are reduced ancestral structures"
+        ],
+        "connections": "Builds the case that living forms share ancestors"
+      },
+      {
+        "concept": "Speciation and Human Evolution",
+        "sub_nodes": [
+          "Geographical isolation starts divergence",
+          "Natural selection and genetic drift act on populations",
+          "Reproductive isolation completes speciation",
+          "Human evolution is branching, not a ladder",
+          "Bipedalism and larger brains are major trends"
+        ],
+        "connections": "Shows how variation and selection produce new species over time"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "Acquired traits are inherited - FALSE: acquired changes occur in somatic cells and generally do not alter germ-cell DNA.",
+    "The dominant allele is the one that is more common in the population - FALSE: dominance describes expression in a heterozygote, not frequency.",
+    "A 3:1 ratio means that every family of four children must have three tall and one dwarf - FALSE: the ratio is a probability seen over many offspring, not a guarantee for a small family.",
+    "Every tall pea plant is TT - FALSE: a tall plant can be TT or Tt.",
+    "The mother determines the sex of the child - FALSE: the mother gives only X, while the father gives X or Y.",
+    "Homologous organs must perform the same function - FALSE: homologous organs share structure and origin but often perform different functions.",
+    "Analogous organs prove close common ancestry - FALSE: they show similar adaptation and convergent evolution, not shared ancestry.",
+    "Evolution always means progress, and humans evolved from modern monkeys - FALSE: evolution is not a ladder, and humans share a common ancestor with apes rather than descending from them."
+  ],
+  "meta": {
+    "sources": [
+      {
+        "type": "NCERT Textbook",
+        "title": "NCERT Class X Science: Heredity and Evolution",
+        "publisher": "NCERT",
+        "subject": "Science",
+        "class": "X"
+      },
+      {
+        "type": "CBSE Syllabus",
+        "title": "CBSE Class X Science Syllabus 2026-27",
+        "publisher": "CBSE",
+        "subject": "Science",
+        "class": "X"
+      }
+    ]
+  },
+  "chapterId": "heredity-and-evolution",
+  "subjectId": "science",
+  "subjectName": "Science",
+  "unitId": "science-2",
+  "unitName": "World of Living",
+  "examWeightage": 25,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

@@ -1,0 +1,1468 @@
+{
+  "subject": "Biology",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 7,
+  "chapter": "Control and Coordination",
+  "lesson": 7,
+  "title": "Control and Coordination — Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Describe the structure of a neuron and explain how a nerve impulse travels along it",
+    "Explain how neurotransmitters carry a signal across a synapse",
+    "Trace the pathway of a reflex arc and explain why reflexes are rapid and involuntary",
+    "Identify the major parts of the human brain and the functions of the cerebrum, cerebellum, and medulla",
+    "Distinguish between nervous and hormonal coordination in speed, pathway, and duration",
+    "Explain tropisms in plants and the role of auxin in phototropism and geotropism",
+    "Name the major plant growth regulators and state one function of each",
+    "Relate thyroid, adrenal, pancreatic, and pituitary hormones to their target effects",
+    "Explain negative feedback using blood glucose and thyroxine as examples"
+  ],
+  "prerequisite_nodes": [
+    "SCI_CLASS9_TISSUES",
+    "SCI_CLASS9_STRUCTURE_AND_FUNCTIONS_OF_CELL",
+    "SCI_CLASS8_CELL_STRUCTURE_AND_FUNCTIONS",
+    "SCI_CLASS7_HUMAN_BODY_AND_ORGAN_SYSTEMS"
+  ],
+  "concepts": [
+    {
+      "name": "Neuron, Synapse, and Nerve Impulse",
+      "real_life_application": "When you touch a hot utensil, the signal from your fingertips reaches your spinal cord in a fraction of a second because neurons conduct electrical impulses across synapses.",
+      "purpose": "A neuron is the structural and functional unit of the nervous system. Its dendrites receive signals, the cell body integrates them, and the axon carries the impulse away. Because neurons do not touch, the axon terminal releases neurotransmitters into the synaptic cleft; these chemicals bind receptors on the next neuron and start a new electrical impulse there.",
+      "day_to_day_usage": [
+        "Feeling the temperature of water before stepping into a bath",
+        "Blinking when dust particles approach the eye",
+        "Sensing pressure when you hold a pen or a cricket bat",
+        "Feeling pain after accidentally biting your tongue",
+        "Recognising the smell of food and salivating before eating"
+      ]
+    },
+    {
+      "name": "Reflex Action and Reflex Arc",
+      "real_life_application": "Pulling your hand away from a hot pan, blinking at a sudden flash, and coughing when food enters the windpipe are reflex actions that protect the body.",
+      "purpose": "A reflex action is a rapid, automatic response to a stimulus that does not require conscious thought. The pathway is receptor → sensory neuron → spinal cord (relay neuron) → motor neuron → effector. The spinal cord can complete the circuit before the brain registers the sensation.",
+      "day_to_day_usage": [
+        "Withdrawing the hand from a hot vessel",
+        "Blinking when an object suddenly comes near the eye",
+        "Sneezing to clear irritants from the nasal passage",
+        "Knee-jerk response during a medical examination",
+        "Coughing to clear the airway"
+      ]
+    },
+    {
+      "name": "Human Nervous System: CNS and PNS",
+      "real_life_application": "The brain and spinal cord form the control centre, while nerves carry instructions to muscles in the arms, legs, heart, and gut.",
+      "purpose": "The central nervous system (CNS) consists of the brain and spinal cord. The peripheral nervous system (PNS) consists of cranial and spinal nerves that connect the CNS to receptors and effectors. The skull, vertebral column, meninges, and cerebrospinal fluid protect the CNS.",
+      "day_to_day_usage": [
+        "Moving a hand to write or catch a ball",
+        "Maintaining posture while standing in a moving bus",
+        "Breathing and heartbeat continuing during sleep",
+        "Feeling touch, pressure, heat, and cold on the skin",
+        "Digesting food without consciously controlling the gut"
+      ]
+    },
+    {
+      "name": "Coordination in Plants: Tropisms",
+      "real_life_application": "A potted plant kept near a window grows toward the light, and roots grow downward into the soil and toward moist patches.",
+      "purpose": "Plants respond to stimuli by directional growth called tropism. Phototropism is growth toward or away from light, geotropism is growth in response to gravity, hydrotropism is growth toward water, chemotropism is growth toward a chemical, and thigmotropism is growth in response to touch.",
+      "day_to_day_usage": [
+        "Houseplants bending toward a sunny window",
+        "Roots spreading toward a leaking pipe or moist soil",
+        "Tendrils of a pea plant curling around a support",
+        "Pollen tube growing toward the ovule after pollination",
+        "Moss growing on the shaded side of a wall"
+      ]
+    },
+    {
+      "name": "Plant Growth Regulators",
+      "real_life_application": "Farmers use gibberellins to increase stem length in sugarcane and ethylene to ripen bananas and mangoes uniformly.",
+      "purpose": "Plant hormones are chemical messengers that control growth and development. Auxin promotes cell elongation and apical dominance, gibberellin promotes stem elongation and seed germination, cytokinin promotes cell division, abscisic acid inhibits growth and closes stomata, and ethylene promotes fruit ripening and leaf fall.",
+      "day_to_day_usage": [
+        "Ripening bananas with ethylene gas",
+        "Rooting of cuttings using auxin-based powders",
+        "Keeping cut flowers fresh by limiting ethylene",
+        "Weed control using synthetic auxins",
+        "Seed dormancy broken before sowing"
+      ]
+    },
+    {
+      "name": "Animal Hormones and Negative Feedback",
+      "real_life_application": "Adrenaline speeds up the heart during fear, insulin controls blood sugar after a meal, and thyroxine regulates the body's energy use.",
+      "purpose": "Hormones are chemical messengers secreted by endocrine glands directly into the blood and act on specific target organs. The pituitary is the master gland, the thyroid secretes thyroxine, the adrenal medulla secretes adrenaline, and the pancreatic islets secrete insulin and glucagon. Negative feedback keeps these levels stable: the output of a process opposes the original change, restoring the normal set point.",
+      "day_to_day_usage": [
+        "Feeling alert and energetic during a frightening situation",
+        "Blood sugar staying normal after eating rice or sweets",
+        "Iodised salt preventing thyroid enlargement",
+        "Growth spurts during adolescence",
+        "Thyroxine levels falling when they rise too high"
+      ]
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Reflex Arc Principle",
+      "statement": "A reflex action is mediated by a complete neural circuit — receptor, sensory neuron, integrating centre in the spinal cord, motor neuron, and effector — that produces a rapid protective response without requiring prior conscious control by the brain.",
+      "proposed_by": {
+        "name": "Marshall Hall",
+        "era": "1790–1857",
+        "location": "England",
+        "book": "On the Reflex Function of the Medulla Oblongata and Medulla Spinalis (1833)",
+        "known_as": "Founder of reflex theory"
+      },
+      "historical_context": "Before Marshall Hall, many physicians believed that every movement required the brain or the will. Hall studied patients and animals with spinal cord injury and showed that coordinated movements could still occur when the brain was disconnected, proving that the spinal cord itself can organise a response.",
+      "why_proposed": "Hall needed to explain how the body produces immediate protective movements even when the brain is not consciously involved, and why some movements persist after spinal injury.",
+      "real_world_utility": "The reflex arc explains clinical tests such as the knee-jerk reflex, helps doctors locate nerve damage, and guides the design of safety responses in machines and robots.",
+      "why_students_learn": "It explains why you pull your hand away from a flame before feeling pain and why reflexes are faster than voluntary actions.",
+      "examples": [
+        "Touching a hot object: heat receptors in the skin → sensory neuron → spinal cord → motor neuron → arm muscle contracts",
+        "Knee-jerk reflex: tap on the patellar tendon → sensory neuron → spinal cord → motor neuron → quadriceps contracts"
+      ]
+    },
+    {
+      "name": "Negative Feedback (Homeostatic Regulation)",
+      "statement": "When a controlled variable deviates from its normal set point, the body activates a response that opposes the deviation, bringing the variable back toward the set point and maintaining stability.",
+      "proposed_by": {
+        "name": "Walter Cannon",
+        "era": "1871–1945",
+        "location": "United States",
+        "book": "The Wisdom of the Body (1932)",
+        "known_as": "Coined the term homeostasis"
+      },
+      "historical_context": "Claude Bernard had earlier argued that the internal environment of the body must remain remarkably constant. Cannon extended this idea by describing the physiological mechanisms that maintain that constancy, naming the process homeostasis and emphasising negative feedback.",
+      "why_proposed": "Physiologists needed a general principle to explain how the body keeps blood sugar, temperature, water balance, and hormone levels stable despite constant external changes.",
+      "real_world_utility": "Negative feedback underlies the management of diabetes, thyroid disorders, blood pressure, and body temperature, and it is used in control systems such as thermostats and autopilots.",
+      "why_students_learn": "It explains why hormone levels do not rise endlessly and why the body can correct disturbances automatically.",
+      "examples": [
+        "High blood glucose → insulin secretion increases → cells take up glucose → blood glucose falls",
+        "Low blood glucose → glucagon secretion increases → liver releases glucose → blood glucose rises",
+        "High thyroxine → TSH secretion from the pituitary decreases → thyroid secretion falls"
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-cc-1",
+      "topic": "Tracing a reflex arc",
+      "problem": "A student accidentally touches a hot iron. Describe the pathway of the reflex action that pulls the hand away, and explain why the pain is felt slightly later.",
+      "board_mode": [
+        "Step 1: Identify the stimulus and receptor. Heat is the stimulus; heat-sensitive receptors in the skin of the hand detect it.",
+        "Step 2: The receptor generates a nerve impulse that travels along the sensory (afferent) neuron toward the spinal cord.",
+        "Step 3: In the spinal cord, the impulse passes through a relay neuron, which connects the sensory pathway to the motor pathway.",
+        "Step 4: The relay neuron activates a motor (efferent) neuron that carries the impulse away from the spinal cord.",
+        "Step 5: The motor neuron ends at the effector, the muscles of the arm, which contract and withdraw the hand.",
+        "Step 6: A copy of the sensory signal also travels up the spinal cord to the brain, where the sensation of pain is registered.",
+        "Step 7: Because the spinal reflex circuit is shorter and does not wait for conscious decision-making, the hand moves before the pain is perceived.",
+        "Conclusion: The pathway is receptor → sensory neuron → spinal cord → motor neuron → effector, and it is involuntary and rapid."
+      ],
+      "speed_mode": "Memorise the chain as R-S-S-M-E: Receptor, Sensory neuron, Spinal cord, Motor neuron, Effector.",
+      "competitive_shortcut": "In MCQ options, eliminate any pathway that places the brain before the spinal cord or the effector before the motor neuron; reflexes bypass conscious brain processing."
+    },
+    {
+      "id": "we-cc-2",
+      "topic": "Auxin and phototropism",
+      "problem": "A potted plant is kept near a window. Explain, using auxin, why the shoot bends toward the light.",
+      "board_mode": [
+        "Step 1: Light falls unequally on the shoot because the window is on one side.",
+        "Step 2: Auxin is produced at the shoot tip and moves downward along the stem.",
+        "Step 3: Auxin moves away from the illuminated side and accumulates on the shaded side.",
+        "Step 4: Auxin stimulates cell elongation, so cells on the shaded side elongate more than cells on the illuminated side.",
+        "Step 5: The unequal elongation makes the shoot bend toward the light source.",
+        "Step 6: This directional growth response is called positive phototropism.",
+        "Step 7: If the shoot tip is cut off, auxin production stops and the shoot no longer bends toward light."
+      ],
+      "speed_mode": "Say it in one line: auxin accumulates on the shaded side → cells elongate more there → shoot bends toward light.",
+      "competitive_shortcut": "Remember the experiment logic: tip present = bending; tip removed = no bending; tip covered = no bending. This identifies the tip as the auxin source and the sensor of light."
+    },
+    {
+      "id": "we-cc-3",
+      "topic": "Nervous versus hormonal coordination",
+      "problem": "Compare nervous and hormonal coordination in a table, using at least four points of difference.",
+      "board_mode": [
+        "Step 1: Define nervous coordination. It uses neurons and electrical impulses, with neurotransmitters at synapses.",
+        "Step 2: Define hormonal coordination. It uses endocrine glands and hormones carried by blood.",
+        "Step 3: Compare the pathway. Nervous signals travel along neurons; hormonal signals travel through the bloodstream.",
+        "Step 4: Compare speed. Nervous responses are very fast; hormonal responses are slower.",
+        "Step 5: Compare duration. Nervous effects are usually short-lived; hormonal effects are long-lasting.",
+        "Step 6: Compare reach. Nervous signals act on specific muscles or glands; hormones can reach many organs but act only on target cells with receptors.",
+        "Step 7: Compare control. Nervous coordination is often voluntary or reflex; hormonal coordination is involuntary and chemical.",
+        "Conclusion: Nervous coordination is fast, electrical, and short-lived; hormonal coordination is slower, chemical, and long-lasting."
+      ],
+      "speed_mode": "Four axes: signal type, route, speed, duration. Electrical-neuron-fast-short versus chemical-blood-slow-long.",
+      "competitive_shortcut": "For comparison questions, write one row per axis instead of two long paragraphs; examiners award marks per valid point of contrast."
+    },
+    {
+      "id": "we-cc-4",
+      "topic": "Blood glucose negative feedback",
+      "problem": "Explain how blood glucose is brought back to normal after a carbohydrate-rich meal and after a long fast.",
+      "board_mode": [
+        "Step 1: After a meal, digested carbohydrates raise blood glucose above the normal set point.",
+        "Step 2: The beta cells of the islets of Langerhans in the pancreas detect the rise and secrete insulin.",
+        "Step 3: Insulin stimulates body cells to take up glucose and the liver to store glucose as glycogen.",
+        "Step 4: Blood glucose falls toward the normal range, so the stimulus for insulin secretion decreases; this is negative feedback.",
+        "Step 5: During a fast, blood glucose falls below the set point.",
+        "Step 6: The alpha cells of the pancreatic islets secrete glucagon.",
+        "Step 7: Glucagon stimulates the liver to convert glycogen back into glucose and release it into the blood.",
+        "Step 8: Blood glucose rises toward normal, and glucagon secretion is reduced.",
+        "Conclusion: Insulin lowers blood glucose; glucagon raises it; each opposes the deviation and keeps glucose within a narrow range."
+      ],
+      "speed_mode": "High glucose → insulin → cells and liver store glucose; low glucose → glucagon → liver releases glucose.",
+      "competitive_shortcut": "Pair the hormone with its action first: insulin = store, glucagon = release. Then assign the gland: insulin from beta cells, glucagon from alpha cells."
+    },
+    {
+      "id": "we-cc-5",
+      "topic": "Brain regions and case interpretation",
+      "problem": "A patient can think and speak normally but staggers while walking and cannot maintain balance. Another patient has normal balance but breathing stops temporarily during sleep. Identify the affected brain regions.",
+      "board_mode": [
+        "Step 1: Recall the major brain parts: cerebrum, cerebellum, and medulla oblongata.",
+        "Step 2: The cerebrum controls thinking, memory, intelligence, and voluntary movement.",
+        "Step 3: The cerebellum controls posture, balance, and coordination of voluntary movements.",
+        "Step 4: The medulla oblongata controls involuntary activities such as breathing, heartbeat, and blood pressure.",
+        "Step 5: The first patient has normal thinking and speech, so the cerebrum is largely unaffected; staggering and loss of balance point to the cerebellum.",
+        "Step 6: The second patient has a breathing disturbance during sleep with normal balance, which points to the medulla oblongata.",
+        "Step 7: Conclusion: patient one has cerebellar dysfunction; patient two has medullary dysfunction."
+      ],
+      "speed_mode": "Map function to part: think = cerebrum, balance = cerebellum, automatic life support = medulla.",
+      "competitive_shortcut": "In injury-based questions, first list the preserved functions; the affected part is the one whose function is lost, not the one whose function remains."
+    }
+  ],
+  "exercises": {
+    "exercise_2_1": {
+      "title": "NCERT Exercise 2.1 — Nervous System and Reflexes",
+      "objective": "Build core understanding of neurons, synapses, reflex arcs, the brain, and spinal cord",
+      "problems": [
+        {
+          "id": "cc-ex1-1",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "What is the difference between a reflex action and walking?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: A reflex action is an automatic, involuntary response to a stimulus.",
+            "Step 2: It is controlled by the spinal cord and does not require conscious thought.",
+            "Step 3: Walking is a voluntary action initiated and controlled by the cerebrum.",
+            "Step 4: Walking can be stopped or modified at will, while a reflex action occurs immediately and cannot be prevented by conscious decision in the moment."
+          ],
+          "final_answer": "Reflex action is involuntary and spinal-cord-mediated; walking is voluntary and controlled by the cerebrum."
+        },
+        {
+          "id": "cc-ex1-2",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Describe the structure of a neuron and state the function of its dendrites and axon.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: A neuron has a cell body (cyton) containing the nucleus and cytoplasm.",
+            "Step 2: Short branching extensions called dendrites arise from the cell body and receive impulses.",
+            "Step 3: A long projection called the axon carries the impulse away from the cell body.",
+            "Step 4: The axon is covered by a myelin sheath, which insulates it and speeds up conduction.",
+            "Step 5: The axon ends in axon terminals that release neurotransmitters at a synapse.",
+            "Step 6: Dendrites receive signals; the axon transmits signals to the next neuron, muscle, or gland."
+          ],
+          "final_answer": "Dendrites receive impulses; the axon conducts impulses away from the cell body toward the axon terminal."
+        },
+        {
+          "id": "cc-ex1-3",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "What happens at the synapse between two neurons?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The axon terminal of the first neuron and the dendrite of the second neuron are separated by a small gap called the synaptic cleft.",
+            "Step 2: When the electrical impulse reaches the axon terminal, it causes vesicles to release neurotransmitters into the cleft.",
+            "Step 3: The neurotransmitter molecules diffuse across the cleft and bind to receptors on the next neuron.",
+            "Step 4: This binding generates a new electrical impulse in the second neuron.",
+            "Step 5: The neurotransmitter is then removed or broken down, allowing the synapse to reset."
+          ],
+          "final_answer": "The electrical impulse triggers release of neurotransmitters, which cross the synaptic cleft and start a new impulse in the next neuron."
+        },
+        {
+          "id": "cc-ex1-4",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Why is the spinal cord important? How is it protected?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The spinal cord is part of the central nervous system and connects the brain to the peripheral nerves.",
+            "Step 2: It carries sensory impulses from the body to the brain and motor impulses from the brain to effectors.",
+            "Step 3: It also contains relay neurons that mediate reflex actions, allowing rapid responses without waiting for the brain.",
+            "Step 4: The spinal cord lies inside the vertebral column, which provides bony protection.",
+            "Step 5: It is also covered by meninges and cushioned by cerebrospinal fluid."
+          ],
+          "final_answer": "The spinal cord conducts impulses and coordinates reflexes; it is protected by the vertebral column, meninges, and cerebrospinal fluid."
+        },
+        {
+          "id": "cc-ex1-5",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Name the three major parts of the human brain and give one function of each.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The cerebrum is the largest part and controls thinking, memory, intelligence, and voluntary movement.",
+            "Step 2: The cerebellum lies below the cerebrum and controls posture, balance, and coordination of movement.",
+            "Step 3: The medulla oblongata is the lowest part and controls involuntary actions such as breathing, heartbeat, and blood pressure.",
+            "Step 4: The brain is protected by the skull, meninges, and cerebrospinal fluid."
+          ],
+          "final_answer": "Cerebrum: thinking and voluntary action; cerebellum: balance and coordination; medulla: involuntary life processes."
+        },
+        {
+          "id": "cc-ex1-6",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "How does a plant detect light and respond to it? Explain with reference to auxin.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Light is detected mainly by the shoot tip, which is sensitive to the direction and intensity of light.",
+            "Step 2: Auxin is synthesised at the shoot tip and moves downward along the stem.",
+            "Step 3: In unilateral light, auxin moves laterally away from the illuminated side and accumulates on the shaded side.",
+            "Step 4: Auxin promotes cell elongation, so cells on the shaded side elongate more than those on the lit side.",
+            "Step 5: The unequal growth causes the shoot to bend toward the light, a response called positive phototropism.",
+            "Step 6: Roots show negative phototropism, growing away from light, which helps them stay in soil.",
+            "Step 7: If the tip is removed, auxin is not produced and the shoot does not bend toward light."
+          ],
+          "final_answer": "The shoot tip senses light; auxin accumulates on the shaded side and causes greater elongation there, bending the shoot toward light."
+        },
+        {
+          "id": "cc-ex1-7",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "What are plant hormones? Name five plant growth regulators and state one function of each.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Plant hormones are chemical substances produced in one part of a plant and transported to another part, where they regulate growth and development.",
+            "Step 2: Auxin promotes cell elongation and apical dominance and is involved in phototropism and geotropism.",
+            "Step 3: Gibberellin promotes stem elongation, seed germination, and fruit growth.",
+            "Step 4: Cytokinin promotes cell division and delays ageing of leaves.",
+            "Step 5: Abscisic acid inhibits growth, closes stomata during water stress, and promotes seed dormancy.",
+            "Step 6: Ethylene promotes fruit ripening, leaf fall, and senescence.",
+            "Step 7: These hormones often act together or in opposition to control plant responses."
+          ],
+          "final_answer": "Auxin: elongation; gibberellin: stem elongation and germination; cytokinin: cell division; abscisic acid: dormancy and stomatal closure; ethylene: ripening."
+        },
+        {
+          "id": "cc-ex1-8",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "Why is iodised salt advisable in the diet?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The thyroid gland needs iodine to synthesise thyroxine.",
+            "Step 2: Iodine is not made by the human body and must be obtained from food and water.",
+            "Step 3: A deficiency of iodine reduces thyroxine production and causes enlargement of the thyroid gland called goitre.",
+            "Step 4: Iodised salt supplies the small amount of iodine needed, preventing goitre and supporting normal metabolism and growth."
+          ],
+          "final_answer": "Iodine is needed for thyroxine synthesis; iodised salt prevents iodine deficiency and goitre."
+        },
+        {
+          "id": "cc-ex1-9",
+          "book_source": "NCERT Exercise 2.1",
+          "question": "How does negative feedback control hormone secretion? Explain using insulin and glucagon.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Negative feedback means that a change in a controlled variable triggers a response that reverses the change.",
+            "Step 2: After a meal, blood glucose rises above the normal set point.",
+            "Step 3: The beta cells of the pancreatic islets secrete insulin in response.",
+            "Step 4: Insulin increases glucose uptake by cells and glycogen formation in the liver, so blood glucose falls.",
+            "Step 5: When blood glucose falls below the set point, insulin secretion decreases and alpha cells secrete glucagon.",
+            "Step 6: Glucagon stimulates the breakdown of glycogen and release of glucose into the blood, raising blood glucose.",
+            "Step 7: As glucose returns to normal, glucagon secretion decreases.",
+            "Step 8: This opposing control keeps blood glucose within a narrow range."
+          ],
+          "final_answer": "Insulin lowers high blood glucose and glucagon raises low blood glucose; each opposes the deviation, so the level stays near normal."
+        }
+      ]
+    },
+    "exercise_2_2": {
+      "title": "NCERT Exercise 2.2 — Coordination in Plants and Animals",
+      "objective": "Apply coordination concepts to tropisms, hormones, feedback, and case-based situations",
+      "problems": [
+        {
+          "id": "cc-ex2-1",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Trace the sequence of events that occur when you touch a hot object and pull your hand away.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Heat-sensitive receptors in the skin detect the high temperature.",
+            "Step 2: The receptor generates an impulse in a sensory neuron.",
+            "Step 3: The impulse reaches the spinal cord, where a relay neuron passes it to a motor neuron.",
+            "Step 4: The motor neuron carries the impulse to the arm muscles.",
+            "Step 5: The muscles contract and the hand is withdrawn.",
+            "Step 6: A signal also travels to the brain, so the pain is felt after the reflex."
+          ],
+          "final_answer": "Receptor → sensory neuron → spinal cord relay neuron → motor neuron → arm muscle contracts; the hand is withdrawn."
+        },
+        {
+          "id": "cc-ex2-2",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "A patient can feel a touch on the leg but cannot move the leg. Which type of neuron is most likely damaged? Explain.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Sensation is carried from the skin to the central nervous system by sensory neurons.",
+            "Step 2: Movement is produced when motor neurons carry impulses from the central nervous system to muscles.",
+            "Step 3: The patient can feel touch, so the sensory pathway and the relevant part of the brain are working.",
+            "Step 4: The patient cannot move the leg, so the impulse is not reaching the muscles.",
+            "Step 5: The most likely damage is to motor neurons supplying the leg muscles, or to the motor pathway in the spinal cord."
+          ],
+          "final_answer": "Motor neurons are most likely damaged, because sensation is intact but the muscle command is not reaching the leg."
+        },
+        {
+          "id": "cc-ex2-3",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Compare nervous and hormonal coordination with at least four points of difference.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Nature of signal — nervous coordination uses electrical impulses along neurons, with neurotransmitters at synapses; hormonal coordination uses chemicals called hormones.",
+            "Step 2: Route — nervous signals travel along neurons; hormones travel through the bloodstream.",
+            "Step 3: Speed — nervous responses are very rapid; hormonal responses are slower.",
+            "Step 4: Duration — nervous effects are usually short-lived; hormonal effects are long-lasting.",
+            "Step 5: Target — nervous signals act on specific muscles or glands; hormones reach all body cells but act only on target cells with receptors.",
+            "Step 6: Control — nervous coordination may be voluntary or reflex; hormonal coordination is involuntary and regulates growth, metabolism, and reproduction.",
+            "Step 7: Example — pulling the hand from a flame is nervous; insulin controlling blood glucose is hormonal."
+          ],
+          "final_answer": "Nervous: electrical, neuronal, fast, short-lived, specific. Hormonal: chemical, blood-borne, slow, long-lasting, target-receptor based."
+        },
+        {
+          "id": "cc-ex2-4",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Explain geotropism and hydrotropism with one example of each.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Geotropism is the directional growth response of a plant part to gravity.",
+            "Step 2: Roots grow downward toward gravity, so they show positive geotropism.",
+            "Step 3: Shoots grow upward away from gravity, so they show negative geotropism.",
+            "Step 4: Hydrotropism is the directional growth response of roots toward water.",
+            "Step 5: Roots of a plant growing near a leaking pipe bend toward the moist region, which is positive hydrotropism.",
+            "Step 6: Hydrotropism can sometimes override geotropism when water is scarce."
+          ],
+          "final_answer": "Roots grow down toward gravity (positive geotropism) and toward water (positive hydrotropism); shoots grow up away from gravity (negative geotropism)."
+        },
+        {
+          "id": "cc-ex2-5",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Describe an experiment to show that the shoot tip is responsible for phototropism and that auxin is involved.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Take two healthy potted seedlings of the same age and keep them in identical conditions.",
+            "Step 2: Leave the shoot tip intact on plant A and remove the shoot tip from plant B.",
+            "Step 3: Expose both plants to light coming from one side only.",
+            "Step 4: After a few days, plant A bends toward the light source, showing positive phototropism.",
+            "Step 5: Plant B shows little or no bending toward light because the tip, which produces auxin and senses light, has been removed.",
+            "Step 6: A third plant with the tip covered by an opaque cap also fails to bend, confirming that the tip detects light.",
+            "Step 7: These results show that the shoot tip is the site of light perception and auxin production."
+          ],
+          "final_answer": "Intact-tip seedlings bend toward unilateral light, while tip-removed or tip-covered seedlings do not; this proves the tip produces auxin and perceives light."
+        },
+        {
+          "id": "cc-ex2-6",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "What is the role of adrenaline in the body? Name three target organs and their responses.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Adrenaline is secreted by the adrenal glands, especially during fear, excitement, or stress.",
+            "Step 2: It prepares the body for a rapid response, often called the fight-or-flight response.",
+            "Step 3: It increases heart rate and blood pressure, supplying more blood to muscles.",
+            "Step 4: It dilates the pupils and increases breathing rate, improving awareness and oxygen supply.",
+            "Step 5: It stimulates the liver to break down glycogen and release glucose, providing extra energy.",
+            "Step 6: It redirects blood flow away from the digestive system toward skeletal muscles."
+          ],
+          "final_answer": "Adrenaline raises heart rate, breathing rate, and blood glucose, dilates pupils, and diverts blood to muscles for fight or flight."
+        },
+        {
+          "id": "cc-ex2-7",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "Why does blood glucose not keep rising after a carbohydrate-rich meal? Explain the feedback loop.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Digestion of carbohydrates releases glucose into the blood, raising blood glucose.",
+            "Step 2: The rise is detected by the beta cells of the pancreatic islets of Langerhans.",
+            "Step 3: Beta cells secrete insulin into the blood.",
+            "Step 4: Insulin stimulates cells to take up glucose and the liver to store it as glycogen.",
+            "Step 5: Blood glucose falls toward the normal set point.",
+            "Step 6: As glucose falls, insulin secretion decreases, preventing an excessive drop.",
+            "Step 7: This negative feedback keeps blood glucose within a narrow range."
+          ],
+          "final_answer": "Rising glucose triggers insulin, which promotes glucose uptake and glycogen storage, lowering glucose; falling glucose then reduces insulin secretion."
+        },
+        {
+          "id": "cc-ex2-8",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "A potted plant is kept near a window. It bends toward the window. Explain the response. What would happen if the pot were rotated by 180° every day?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The plant receives stronger light on the window side than on the room side.",
+            "Step 2: The shoot tip senses the unequal light and produces auxin.",
+            "Step 3: Auxin accumulates on the shaded side of the shoot.",
+            "Step 4: Cells on the shaded side elongate more, causing the shoot to bend toward the window.",
+            "Step 5: This is positive phototropism.",
+            "Step 6: If the pot is rotated by 180° every day, the direction of stronger light changes relative to the plant.",
+            "Step 7: Auxin redistributes toward the shaded side after each rotation, so the shoot keeps bending toward the light.",
+            "Step 8: The stem may become twisted or grow more upright as successive bends cancel or alternate, rather than making one large bend."
+          ],
+          "final_answer": "Auxin accumulates on the shaded side and bends the shoot toward light; daily 180° rotation changes the lit side and produces alternating or twisting growth instead of one fixed bend."
+        },
+        {
+          "id": "cc-ex2-9",
+          "book_source": "NCERT Exercise 2.2",
+          "question": "A student sets up three seedlings in unilateral light: A has an intact tip, B has the tip removed, and C has the tip covered with an opaque cap. Predict and explain the growth of each after five days.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: In unilateral light, the tip senses the direction of light and produces auxin.",
+            "Step 2: Seedling A has an intact tip, so auxin accumulates on its shaded side.",
+            "Step 3: The shaded-side cells elongate more, so seedling A bends toward the light.",
+            "Step 4: Seedling B has no tip, so it cannot produce auxin at the shoot apex and shows little or no bending toward light.",
+            "Step 5: Seedling C has a tip that cannot receive light because of the opaque cap, so light direction is not perceived and bending is absent or greatly reduced.",
+            "Step 6: All three may still grow vertically due to other growth factors, but only A shows clear positive phototropism.",
+            "Step 7: Conclusion: the tip is both the light sensor and the source of auxin for phototropic bending."
+          ],
+          "final_answer": "A bends toward light; B and C do not show clear bending because the tip is absent or unable to perceive light."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-cc-s-1",
+        "question": "Which part of a neuron receives a nerve impulse from another neuron?",
+        "options": [
+          "Axon terminal",
+          "Dendrite",
+          "Myelin sheath",
+          "Neuromuscular junction"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Dendrites are short branched extensions that receive impulses and carry them toward the cell body.",
+          "wrong_options": {
+            "0": "The axon terminal releases neurotransmitters; it does not receive the incoming impulse.",
+            "2": "The myelin sheath insulates the axon and speeds conduction; it is not the receiving surface.",
+            "3": "The neuromuscular junction is where a motor neuron meets a muscle, not where a neuron receives a signal from another neuron."
+          }
+        }
+      },
+      {
+        "id": "q-cc-s-2",
+        "question": "The small gap between the axon terminal of one neuron and the dendrite of the next neuron is called the:",
+        "options": [
+          "Node of Ranvier",
+          "Synapse",
+          "Nucleus",
+          "Cyton"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The synapse is the junction, including the synaptic cleft, where neurotransmitters carry the signal from one neuron to the next.",
+          "wrong_options": {
+            "0": "Nodes of Ranvier are gaps in the myelin sheath along an axon, not the gap between two neurons.",
+            "2": "The nucleus is inside the cell body and contains genetic material.",
+            "3": "The cyton is the cell body of the neuron."
+          }
+        }
+      },
+      {
+        "id": "q-cc-s-3",
+        "question": "A reflex action is mainly coordinated by the:",
+        "options": [
+          "Cerebrum",
+          "Spinal cord",
+          "Cerebellum",
+          "Pituitary gland"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Reflex arcs pass through the spinal cord, which can produce a rapid response before the brain registers the stimulus.",
+          "wrong_options": {
+            "0": "The cerebrum is involved in conscious thought and voluntary movement, not the rapid reflex circuit.",
+            "2": "The cerebellum coordinates balance and posture, not the basic reflex arc.",
+            "3": "The pituitary is an endocrine gland and does not coordinate reflex actions."
+          }
+        }
+      },
+      {
+        "id": "q-cc-s-4",
+        "question": "Which gland is called the master gland of the human body?",
+        "options": [
+          "Thyroid gland",
+          "Adrenal gland",
+          "Pituitary gland",
+          "Pancreas"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "The pituitary gland secretes hormones that control the activity of several other endocrine glands, so it is called the master gland.",
+          "wrong_options": {
+            "0": "The thyroid secretes thyroxine and is regulated by pituitary TSH.",
+            "1": "The adrenal glands secrete adrenaline and other hormones but do not control the other glands.",
+            "3": "The pancreas secretes insulin and glucagon and is not the master gland."
+          }
+        }
+      },
+      {
+        "id": "q-cc-s-5",
+        "question": "Which hormone lowers blood glucose concentration?",
+        "options": [
+          "Adrenaline",
+          "Insulin",
+          "Thyroxine",
+          "Testosterone"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Insulin, secreted by the beta cells of the pancreatic islets, promotes glucose uptake and glycogen storage, lowering blood glucose.",
+          "wrong_options": {
+            "0": "Adrenaline raises blood glucose by promoting glycogen breakdown.",
+            "2": "Thyroxine regulates metabolic rate and growth, not the immediate lowering of blood glucose.",
+            "3": "Testosterone is a sex hormone and does not control blood glucose."
+          }
+        }
+      },
+      {
+        "id": "q-cc-s-6",
+        "question": "The bending of a shoot toward light is called:",
+        "options": [
+          "Geotropism",
+          "Phototropism",
+          "Hydrotropism",
+          "Thigmotropism"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Phototropism is directional growth in response to light; shoots show positive phototropism.",
+          "wrong_options": {
+            "0": "Geotropism is a response to gravity.",
+            "2": "Hydrotropism is a response to water.",
+            "3": "Thigmotropism is a response to touch."
+          }
+        }
+      },
+      {
+        "id": "q-cc-s-7",
+        "question": "Cytokinin mainly promotes:",
+        "options": [
+          "Root inhibition",
+          "Cell division",
+          "Seed dormancy",
+          "Stomatal closure"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Cytokinin stimulates cell division and delays leaf ageing.",
+          "wrong_options": {
+            "0": "Cytokinin generally promotes growth rather than inhibiting roots.",
+            "2": "Seed dormancy is promoted by abscisic acid.",
+            "3": "Stomatal closure under water stress is promoted by abscisic acid."
+          }
+        }
+      },
+      {
+        "id": "q-cc-s-8",
+        "question": "Adrenaline prepares the body for:",
+        "options": [
+          "Deep sleep",
+          "Emergency or fight-or-flight situations",
+          "Slow digestion after a heavy meal",
+          "Reduced breathing"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Adrenaline raises heart rate, breathing rate, and blood glucose and diverts blood to muscles during emergencies.",
+          "wrong_options": {
+            "0": "Adrenaline increases alertness and does not promote sleep.",
+            "2": "It reduces digestive activity rather than promoting it.",
+            "3": "It increases breathing rate rather than reducing it."
+          }
+        }
+      },
+      {
+        "id": "q-cc-s-9",
+        "question": "Which brain region maintains balance and posture?",
+        "options": [
+          "Cerebrum",
+          "Cerebellum",
+          "Medulla oblongata",
+          "Hypothalamus"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The cerebellum coordinates voluntary movements and maintains posture and balance.",
+          "wrong_options": {
+            "0": "The cerebrum controls thinking, memory, and voluntary action.",
+            "2": "The medulla controls involuntary actions such as breathing and heartbeat.",
+            "3": "The hypothalamus helps regulate body temperature, hunger, and hormone release, not balance."
+          }
+        }
+      },
+      {
+        "id": "q-cc-s-10",
+        "question": "Which involuntary actions are controlled by the medulla oblongata?",
+        "options": [
+          "Intelligence and memory",
+          "Heartbeat, breathing, and blood pressure",
+          "Balance while walking",
+          "Voluntary movement of the fingers"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The medulla oblongata controls involuntary life-supporting activities such as heartbeat, breathing, and blood pressure.",
+          "wrong_options": {
+            "0": "Intelligence and memory are functions of the cerebrum.",
+            "2": "Balance is controlled by the cerebellum.",
+            "3": "Voluntary finger movement is controlled by the motor areas of the cerebrum."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-cc-m-1",
+        "question": "Which sequence correctly represents a reflex arc?",
+        "options": [
+          "Receptor → motor neuron → spinal cord → sensory neuron → effector",
+          "Receptor → spinal cord → sensory neuron → motor neuron → effector",
+          "Receptor → sensory neuron → spinal cord → motor neuron → effector",
+          "Sensory neuron → receptor → motor neuron → spinal cord → effector"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "The impulse travels from the receptor along the sensory neuron to the spinal cord, then through a motor neuron to the effector.",
+          "wrong_options": {
+            "0": "The motor neuron must come after the spinal cord, not before the sensory neuron.",
+            "1": "The sensory neuron carries the impulse to the spinal cord before the motor neuron is activated.",
+            "3": "The receptor comes first and the spinal cord is the integrating centre, so this order is reversed."
+          }
+        }
+      },
+      {
+        "id": "q-cc-m-2",
+        "question": "In a shoot showing phototropism, auxin accumulates on the shaded side and:",
+        "options": [
+          "Inhibits elongation of shaded-side cells",
+          "Stimulates elongation of shaded-side cells",
+          "Stops all growth at the shoot tip",
+          "Moves to the roots and stops root growth"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Auxin promotes cell elongation, so the shaded side grows longer and the shoot bends toward light.",
+          "wrong_options": {
+            "0": "Auxin stimulates rather than inhibits elongation at moderate concentrations.",
+            "2": "Auxin promotes growth and does not stop growth at the tip.",
+            "3": "Auxin accumulates in the shaded side of the shoot and causes bending there; it does not stop root growth in this process."
+          }
+        }
+      },
+      {
+        "id": "q-cc-m-3",
+        "question": "Goitre is caused by a deficiency of:",
+        "options": [
+          "Iron",
+          "Iodine",
+          "Calcium",
+          "Vitamin A"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Iodine is needed to synthesise thyroxine; its deficiency causes thyroid enlargement called goitre.",
+          "wrong_options": {
+            "0": "Iron deficiency causes anaemia, not goitre.",
+            "2": "Calcium deficiency affects bones and muscles, not thyroid size.",
+            "3": "Vitamin A deficiency causes night blindness and other problems, not goitre."
+          }
+        }
+      },
+      {
+        "id": "q-cc-m-4",
+        "question": "Negative feedback in hormone regulation means that:",
+        "options": [
+          "The output increases the original change",
+          "The output opposes the original change and restores balance",
+          "The output has no effect on the original change",
+          "The gland stops working permanently"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "In negative feedback, the response counteracts the deviation and brings the variable back toward its set point.",
+          "wrong_options": {
+            "0": "That describes positive feedback, which amplifies the change.",
+            "2": "A feedback loop must affect the controlled variable to regulate it.",
+            "3": "The gland is suppressed temporarily, not permanently stopped."
+          }
+        }
+      },
+      {
+        "id": "q-cc-m-5",
+        "question": "A motor neuron carries impulses:",
+        "options": [
+          "From the receptor to the central nervous system",
+          "From the central nervous system to an effector",
+          "Between two effectors",
+          "From an effector to a receptor"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Motor (efferent) neurons carry commands from the CNS to muscles or glands.",
+          "wrong_options": {
+            "0": "That is the function of a sensory neuron.",
+            "2": "Effectors do not normally signal each other through motor neurons.",
+            "3": "Signals travel from receptors to the CNS, not from effectors to receptors in this pathway."
+          }
+        }
+      },
+      {
+        "id": "q-cc-m-6",
+        "question": "Which statement about geotropism is correct?",
+        "options": [
+          "Roots show positive geotropism and shoots show negative geotropism",
+          "Roots show negative geotropism and shoots show positive geotropism",
+          "Both roots and shoots show positive geotropism",
+          "Both roots and shoots show negative geotropism"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Roots grow downward toward gravity (positive geotropism), while shoots grow upward away from gravity (negative geotropism).",
+          "wrong_options": {
+            "1": "This reverses the responses of roots and shoots.",
+            "2": "Shoots grow away from gravity, so they are not positively geotropic.",
+            "3": "Roots grow toward gravity, so they are not negatively geotropic."
+          }
+        }
+      },
+      {
+        "id": "q-cc-m-7",
+        "question": "Abscisic acid is mainly responsible for:",
+        "options": [
+          "Promoting cell division",
+          "Promoting stem elongation",
+          "Closing stomata and promoting dormancy under stress",
+          "Causing phototropism"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Abscisic acid is a stress hormone that closes stomata, inhibits growth, and promotes seed dormancy.",
+          "wrong_options": {
+            "0": "Cell division is mainly promoted by cytokinin.",
+            "1": "Stem elongation is mainly promoted by gibberellin.",
+            "3": "Phototropism is mainly mediated by auxin."
+          }
+        }
+      },
+      {
+        "id": "q-cc-m-8",
+        "question": "Gibberellin is best known for promoting:",
+        "options": [
+          "Root hair formation",
+          "Stem elongation and seed germination",
+          "Stomatal closure",
+          "Leaf fall"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Gibberellins promote stem elongation, seed germination, and fruit growth.",
+          "wrong_options": {
+            "0": "Root hair formation is not the main role of gibberellin.",
+            "2": "Stomatal closure is mainly controlled by abscisic acid.",
+            "3": "Leaf fall is mainly promoted by ethylene and abscisic acid."
+          }
+        }
+      },
+      {
+        "id": "q-cc-m-9",
+        "question": "Which comparison between nervous and hormonal coordination is correct?",
+        "options": [
+          "Nervous coordination uses chemicals in blood and is slow and long-lasting",
+          "Nervous coordination uses electrical impulses and is fast and short-lived",
+          "Hormonal signals travel along neurons",
+          "Both nervous and hormonal signals act only on the same target"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Nervous coordination uses electrical impulses along neurons and produces rapid, short-lived responses.",
+          "wrong_options": {
+            "0": "That description fits hormonal coordination, not nervous coordination.",
+            "2": "Hormones travel through the blood, not along neurons.",
+            "3": "Hormones can reach many organs but act only on cells with specific receptors."
+          }
+        }
+      },
+      {
+        "id": "q-cc-m-10",
+        "question": "At a synapse, neurotransmitters:",
+        "options": [
+          "Travel along the axon with the electrical impulse",
+          "Diffuse across the synaptic cleft and bind receptors on the next neuron",
+          "Are released by dendrites into the blood",
+          "Prevent impulses from crossing the gap"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Neurotransmitters are released from the axon terminal, diffuse across the cleft, and bind receptors on the next neuron.",
+          "wrong_options": {
+            "0": "The electrical impulse travels along the axon; neurotransmitters carry the signal across the gap.",
+            "2": "Neurotransmitters are released from axon terminals into the synaptic cleft, not into the blood.",
+            "3": "They transmit the signal across the gap rather than preventing it."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-cc-x-1",
+        "question": "A person can feel a touch on the arm but cannot move it. Which explanation is most likely?",
+        "options": [
+          "Sensory neurons are damaged, so sensation is lost but movement is normal",
+          "Motor neurons are damaged, so movement is lost while sensation can remain",
+          "Both sensation and movement are lost because the brain is removed",
+          "Reflexes become faster because motor neurons are damaged"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Intact sensation shows the sensory pathway works; loss of movement points to damaged motor neurons or motor pathways.",
+          "wrong_options": {
+            "0": "The patient can feel touch, so sensory neurons are functioning.",
+            "2": "The patient can think and feel, so the brain is not removed or globally destroyed.",
+            "3": "Damage to motor neurons would weaken or abolish movement, not speed up reflexes."
+          }
+        }
+      },
+      {
+        "id": "q-cc-x-2",
+        "question": "Immediately after a carbohydrate-rich meal, which hormonal change is expected?",
+        "options": [
+          "Insulin falls and glucagon rises",
+          "Insulin rises and glucagon falls",
+          "Both insulin and glucagon rise equally",
+          "Both insulin and glucagon fall"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "High blood glucose stimulates insulin secretion and suppresses glucagon, promoting glucose uptake and storage.",
+          "wrong_options": {
+            "0": "This is the pattern during fasting, when glucose is low.",
+            "2": "The hormones have opposing actions, so they do not both rise equally after a meal.",
+            "3": "A rise in glucose stimulates insulin, so insulin does not fall."
+          }
+        }
+      },
+      {
+        "id": "q-cc-x-3",
+        "question": "Why is pain felt slightly after the hand has already been withdrawn from a hot object?",
+        "options": [
+          "Pain receptors do not send signals to the brain",
+          "The spinal cord completes the reflex before the brain registers the pain",
+          "The brain ignores all pain signals during a reflex",
+          "The reflex is a voluntary action"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The reflex arc through the spinal cord is shorter and faster than the pathway to the cerebral cortex, so withdrawal occurs before conscious pain perception.",
+          "wrong_options": {
+            "0": "Pain receptors do send signals; the signal reaches the brain slightly later.",
+            "2": "The brain does register pain, but only after the reflex has begun.",
+            "3": "A reflex is involuntary, not a voluntary action."
+          }
+        }
+      },
+      {
+        "id": "q-cc-x-4",
+        "question": "A coleoptile has its tip removed and is exposed to light from one side. What is the expected result?",
+        "options": [
+          "It bends toward light faster than an intact coleoptile",
+          "It does not bend toward light",
+          "It bends away from light",
+          "It grows roots upward"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The tip produces auxin and perceives light; without the tip, phototropic bending does not occur.",
+          "wrong_options": {
+            "0": "Removing the tip removes the auxin source and the light-sensing region, so bending is lost.",
+            "2": "The coleoptile does not show a clear negative phototropic bend.",
+            "3": "Root growth direction is controlled by gravity and water, not by removing the shoot tip in this experiment."
+          }
+        }
+      },
+      {
+        "id": "q-cc-x-5",
+        "question": "Excess growth hormone during childhood causes:",
+        "options": [
+          "Dwarfism",
+          "Gigantism",
+          "Goitre",
+          "Diabetes mellitus"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Excess growth hormone before the growth plates close causes gigantism, marked by unusually tall stature.",
+          "wrong_options": {
+            "0": "Dwarfism results from a deficiency of growth hormone during childhood.",
+            "2": "Goitre is caused by iodine deficiency and thyroid enlargement.",
+            "3": "Diabetes mellitus is related to insulin deficiency or resistance, not excess growth hormone."
+          }
+        }
+      },
+      {
+        "id": "q-cc-x-6",
+        "question": "Which set of effects is produced by adrenaline?",
+        "options": [
+          "Slower heart rate, constricted pupils, and increased digestion",
+          "Faster heart rate, dilated pupils, and increased blood glucose",
+          "Lower blood glucose, constricted airways, and sleepiness",
+          "No effect on the heart or breathing"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Adrenaline increases heart rate, dilates pupils, raises blood glucose, and increases breathing to prepare for action.",
+          "wrong_options": {
+            "0": "Adrenaline speeds the heart, dilates pupils, and reduces digestive activity.",
+            "2": "It raises blood glucose and increases airflow rather than lowering glucose or causing sleepiness.",
+            "3": "Adrenaline strongly affects the heart and breathing."
+          }
+        }
+      },
+      {
+        "id": "q-cc-x-7",
+        "question": "Which statement best describes the interaction of abscisic acid and gibberellin in seed germination?",
+        "options": [
+          "Both hormones promote germination equally",
+          "Abscisic acid promotes dormancy while gibberellin promotes germination",
+          "Abscisic acid promotes germination while gibberellin promotes dormancy",
+          "Neither hormone has any effect on seeds"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Abscisic acid maintains seed dormancy, while gibberellin can break dormancy and promote germination.",
+          "wrong_options": {
+            "0": "The two hormones have opposing effects and do not both promote germination.",
+            "2": "This reverses the roles of the two hormones.",
+            "3": "Both hormones affect seed dormancy and germination."
+          }
+        }
+      },
+      {
+        "id": "q-cc-x-8",
+        "question": "Why is a reflex response usually faster than a voluntary response to the same stimulus?",
+        "options": [
+          "A reflex involves more synapses and more conscious decisions",
+          "A reflex uses a shorter pathway and does not wait for conscious decision-making",
+          "A reflex travels through the blood instead of neurons",
+          "A reflex is always stronger than a voluntary movement"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The reflex arc routes the signal through the spinal cord, bypassing the longer conscious processing in the brain.",
+          "wrong_options": {
+            "0": "More synapses and decisions would slow the response, not speed it up.",
+            "2": "Reflexes use neurons; blood-borne hormones are slower.",
+            "3": "Strength and speed are different properties; a reflex is not defined by being stronger."
+          }
+        }
+      },
+      {
+        "id": "q-cc-x-9",
+        "question": "The islets of Langerhans in the pancreas secrete:",
+        "options": [
+          "Digestive enzymes",
+          "Insulin and glucagon",
+          "Thyroxine",
+          "Adrenaline"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The islets of Langerhans contain alpha and beta cells that secrete glucagon and insulin respectively.",
+          "wrong_options": {
+            "0": "Digestive enzymes are secreted by the exocrine pancreas, not the islets.",
+            "2": "Thyroxine is secreted by the thyroid gland.",
+            "3": "Adrenaline is secreted by the adrenal medulla."
+          }
+        }
+      },
+      {
+        "id": "q-cc-x-10",
+        "question": "Which statement correctly describes the hypothalamus in coordination?",
+        "options": [
+          "It controls only spinal reflexes",
+          "It links the nervous and endocrine systems, partly through its control of the pituitary",
+          "It produces insulin directly",
+          "It is part of the peripheral nervous system"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The hypothalamus integrates nervous information and regulates pituitary hormone release, linking neural and endocrine control.",
+          "wrong_options": {
+            "0": "Spinal reflexes are coordinated by the spinal cord, not only by the hypothalamus.",
+            "2": "Insulin is produced by the pancreatic islets, not the hypothalamus.",
+            "3": "The hypothalamus is part of the central nervous system."
+          }
+        }
+      }
+    ]
+  },
+  "model_papers": {
+    "simple": [
+      {
+        "id": "mp-cc-s-1",
+        "question": "Name the hormone that lowers blood glucose and the gland that secretes it.",
+        "answer": "Insulin, secreted by the beta cells of the islets of Langerhans in the pancreas.",
+        "steps": [
+          "Recall the two pancreatic hormones that control blood glucose: insulin and glucagon.",
+          "Insulin lowers blood glucose by promoting glucose uptake and glycogen storage.",
+          "It is secreted by the beta cells of the pancreatic islets of Langerhans."
+        ],
+        "hints": [
+          "Think of the hormone that acts after a sugary meal.",
+          "The gland is both an exocrine and an endocrine gland."
+        ]
+      },
+      {
+        "id": "mp-cc-s-2",
+        "question": "What is a reflex action? Give one example.",
+        "answer": "A reflex action is a rapid, involuntary response to a stimulus that is mediated by a reflex arc. Example: withdrawing the hand from a hot object.",
+        "steps": [
+          "State that the response is rapid and involuntary.",
+          "Mention that it is coordinated through the spinal cord.",
+          "Give a protective example such as blinking or pulling the hand away from heat."
+        ],
+        "hints": [
+          "The key words are rapid, involuntary, and protective.",
+          "Use an example that happens before conscious thought."
+        ]
+      }
+    ],
+    "medium": [
+      {
+        "id": "mp-cc-m-1",
+        "question": "Explain how auxin causes a shoot to bend toward light.",
+        "answer": "Auxin produced at the shoot tip accumulates on the shaded side, stimulates greater cell elongation there, and the unequal growth bends the shoot toward light.",
+        "steps": [
+          "Auxin is produced at the shoot tip.",
+          "In unilateral light, auxin moves to the shaded side.",
+          "Auxin stimulates cell elongation.",
+          "Shaded-side cells elongate more than illuminated-side cells.",
+          "The shoot bends toward the light, showing positive phototropism."
+        ],
+        "hints": [
+          "Follow the auxin from the tip to the shaded side.",
+          "Link auxin to cell elongation, not cell division."
+        ]
+      },
+      {
+        "id": "mp-cc-m-2",
+        "question": "Distinguish between sensory and motor neurons.",
+        "answer": "Sensory neurons carry impulses from receptors to the CNS; motor neurons carry impulses from the CNS to effectors such as muscles and glands.",
+        "steps": [
+          "Define sensory neurons and state the direction of their impulse.",
+          "Define motor neurons and state the direction of their impulse.",
+          "Give one example of each pathway: skin receptor to spinal cord, and spinal cord to arm muscle.",
+          "Mention that both are part of the peripheral nervous system."
+        ],
+        "hints": [
+          "Use the direction of the impulse as the main difference.",
+          "Afferent means toward the CNS; efferent means away from the CNS."
+        ]
+      }
+    ],
+    "complex": [
+      {
+        "id": "mp-cc-x-1",
+        "question": "Trace the reflex arc for touching a hot object. Explain why the hand is withdrawn before pain is felt, and state what would happen if the motor neuron were damaged.",
+        "answer": "Receptor → sensory neuron → spinal cord relay neuron → motor neuron → arm muscle. The spinal cord completes the reflex before the brain registers pain. Damage to the motor neuron would prevent the muscle response, although sensation could remain.",
+        "steps": [
+          "Identify the heat receptors in the skin as the receptor.",
+          "Trace the impulse along the sensory neuron to the spinal cord.",
+          "Describe the relay neuron connecting to the motor neuron.",
+          "State that the motor neuron carries the impulse to the arm muscles, which contract.",
+          "Explain that the spinal pathway is shorter than the pathway to the cerebral cortex, so withdrawal precedes pain perception.",
+          "Explain that a damaged motor neuron blocks the command to the muscle, causing weakness or paralysis while sensation may remain intact."
+        ],
+        "hints": [
+          "Write the pathway as a chain before explaining the timing.",
+          "Separate the sensory pathway from the motor pathway when predicting the effect of damage."
+        ]
+      },
+      {
+        "id": "mp-cc-x-2",
+        "question": "Blood glucose rises after a meal and falls during fasting. Explain how negative feedback involving insulin and glucagon keeps it stable.",
+        "answer": "High glucose stimulates insulin, which increases cellular glucose uptake and glycogen storage, lowering glucose. Low glucose stimulates glucagon, which promotes glycogen breakdown and glucose release, raising glucose. Each hormone opposes the deviation, so glucose stays near the set point.",
+        "steps": [
+          "Define negative feedback as a response that opposes a change.",
+          "After a meal, blood glucose rises and stimulates pancreatic beta cells.",
+          "Insulin promotes glucose uptake by cells and glycogen storage in the liver.",
+          "Blood glucose falls, reducing the stimulus for insulin secretion.",
+          "During fasting, low blood glucose stimulates pancreatic alpha cells.",
+          "Glucagon promotes glycogen breakdown and glucose release from the liver.",
+          "Blood glucose rises, reducing glucagon secretion.",
+          "The opposing actions of insulin and glucagon maintain blood glucose within a narrow range."
+        ],
+        "hints": [
+          "Use the stimulus → sensor → hormone → response → correction sequence.",
+          "Remember insulin stores glucose; glucagon releases glucose."
+        ]
+      }
+    ]
+  },
+  "mind_maps": {
+    "title": "Control and Coordination — Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Control and Coordination",
+    "branches": [
+      {
+        "concept": "Neuron",
+        "sub_nodes": [
+          "Structural and functional unit of the nervous system",
+          "Dendrites receive impulses",
+          "Cell body integrates signals",
+          "Axon conducts impulses away",
+          "Myelin sheath speeds conduction",
+          "Synapse uses neurotransmitters"
+        ],
+        "connections": "Neurons form the pathways for all nervous coordination"
+      },
+      {
+        "concept": "Reflex Action",
+        "sub_nodes": [
+          "Rapid, involuntary, protective response",
+          "Receptor → sensory neuron → spinal cord → motor neuron → effector",
+          "Relay neuron integrates in the spinal cord",
+          "Brain registers pain after the reflex",
+          "Examples: withdrawing hand, blinking, knee jerk"
+        ],
+        "connections": "Reflex arcs use neurons but bypass conscious brain control"
+      },
+      {
+        "concept": "Human Nervous System",
+        "sub_nodes": [
+          "Central nervous system: brain and spinal cord",
+          "Peripheral nervous system: cranial and spinal nerves",
+          "Sensory neurons carry impulses inward",
+          "Motor neurons carry impulses outward",
+          "Protected by skull, vertebral column, meninges, CSF"
+        ],
+        "connections": "CNS integrates information; PNS connects it to receptors and effectors"
+      },
+      {
+        "concept": "Brain",
+        "sub_nodes": [
+          "Cerebrum: thinking, memory, voluntary movement",
+          "Cerebellum: balance, posture, coordination",
+          "Medulla oblongata: breathing, heartbeat, blood pressure",
+          "Hypothalamus: links nervous and endocrine control",
+          "Skull, meninges, and cerebrospinal fluid protect the brain"
+        ],
+        "connections": "Different regions specialise for conscious, balancing, and involuntary functions"
+      },
+      {
+        "concept": "Plant Tropisms",
+        "sub_nodes": [
+          "Phototropism: response to light",
+          "Geotropism: response to gravity",
+          "Hydrotropism: response to water",
+          "Chemotropism: response to chemicals",
+          "Thigmotropism: response to touch",
+          "Roots positive geotropism; shoots negative geotropism"
+        ],
+        "connections": "Directional growth lets plants exploit light, water, and support"
+      },
+      {
+        "concept": "Plant Hormones",
+        "sub_nodes": [
+          "Auxin: cell elongation and phototropism",
+          "Gibberellin: stem elongation and germination",
+          "Cytokinin: cell division",
+          "Abscisic acid: dormancy and stomatal closure",
+          "Ethylene: fruit ripening and leaf fall"
+        ],
+        "connections": "Growth regulators act together or in opposition"
+      },
+      {
+        "concept": "Animal Hormones",
+        "sub_nodes": [
+          "Pituitary: master gland and growth hormone",
+          "Thyroid: thyroxine and iodine requirement",
+          "Adrenal: adrenaline for fight or flight",
+          "Pancreas: insulin lowers glucose, glucagon raises it",
+          "Hormones travel in blood and act on target cells"
+        ],
+        "connections": "Endocrine glands provide slower, longer-lasting chemical coordination"
+      },
+      {
+        "concept": "Feedback Regulation",
+        "sub_nodes": [
+          "Negative feedback opposes the original change",
+          "High glucose → insulin → glucose falls",
+          "Low glucose → glucagon → glucose rises",
+          "High thyroxine → less TSH → thyroid secretion falls",
+          "Maintains homeostasis around a set point"
+        ],
+        "connections": "Feedback prevents runaway hormone responses and keeps internal conditions stable"
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "How Control and Coordination Connect — Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Control and Coordination",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Nervous System",
+        "group": "system"
+      },
+      {
+        "id": "n3",
+        "label": "Neuron",
+        "group": "unit"
+      },
+      {
+        "id": "n4",
+        "label": "Reflex Arc",
+        "group": "pathway"
+      },
+      {
+        "id": "n5",
+        "label": "Brain and Spinal Cord",
+        "group": "central"
+      },
+      {
+        "id": "n6",
+        "label": "Plant Coordination",
+        "group": "system"
+      },
+      {
+        "id": "n7",
+        "label": "Tropisms",
+        "group": "plant-response"
+      },
+      {
+        "id": "n8",
+        "label": "Plant Hormones",
+        "group": "chemical"
+      },
+      {
+        "id": "n9",
+        "label": "Animal Hormones",
+        "group": "chemical"
+      },
+      {
+        "id": "n10",
+        "label": "Negative Feedback",
+        "group": "control"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n6"
+      ],
+      [
+        "n1",
+        "n9"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n2",
+        "n5"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n6",
+        "n7"
+      ],
+      [
+        "n6",
+        "n8"
+      ],
+      [
+        "n7",
+        "n8"
+      ],
+      [
+        "n9",
+        "n10"
+      ]
+    ]
+  },
+  "flowcharts": [
+    {
+      "title": "How the Body Responds to a Sudden Stimulus: Decision Flowchart",
+      "steps": [
+        {
+          "order": 1,
+          "action": "A receptor detects a stimulus such as heat, touch, or light",
+          "next": 2
+        },
+        {
+          "order": 2,
+          "action": "Is the stimulus potentially harmful and the response protective?",
+          "decision": true,
+          "if_yes": 3,
+          "if_no": 6
+        },
+        {
+          "order": 3,
+          "action": "A sensory neuron carries the impulse to the spinal cord",
+          "next": 4
+        },
+        {
+          "order": 4,
+          "action": "A relay neuron in the spinal cord passes the impulse to a motor neuron",
+          "next": 5
+        },
+        {
+          "order": 5,
+          "action": "The motor neuron stimulates the effector; the muscle or gland responds immediately",
+          "next": "END"
+        },
+        {
+          "order": 6,
+          "action": "The impulse travels to the brain for conscious processing",
+          "next": 7
+        },
+        {
+          "order": 7,
+          "action": "The brain integrates the information and decides on a voluntary response",
+          "next": 8
+        },
+        {
+          "order": 8,
+          "action": "A motor neuron carries the command to the effector; the voluntary action occurs",
+          "next": "END"
+        }
+      ]
+    }
+  ],
+  "common_misconceptions": [
+    "Reflex actions are controlled by the brain — FALSE: the reflex arc is completed through the spinal cord, and the brain registers the sensation afterward.",
+    "Nervous and hormonal coordination are the same — FALSE: nervous coordination is electrical, fast, and short-lived, while hormonal coordination is chemical, slower, and longer-lasting.",
+    "Plants have no coordination because they lack a nervous system — FALSE: plants coordinate responses through hormones and directional growth such as tropisms.",
+    "Insulin raises blood glucose — FALSE: insulin lowers blood glucose; glucagon raises it.",
+    "All hormones are secreted by the pituitary gland — FALSE: the pituitary is one gland among many; the thyroid, adrenal, pancreas, and gonads also secrete hormones.",
+    "Auxin accumulates on the illuminated side of a shoot — FALSE: auxin moves to the shaded side, where it stimulates greater cell elongation.",
+    "Reflexes and voluntary actions use completely different types of nerve cells — FALSE: both are mediated by neurons; the difference lies in the pathway and whether conscious control is involved.",
+    "Iodine is needed for adrenaline production — FALSE: iodine is needed for thyroxine production by the thyroid gland."
+  ]
+}

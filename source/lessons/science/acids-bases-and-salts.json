@@ -1,0 +1,1268 @@
+{
+  "id": "acids-bases-and-salts",
+  "subject": "Chemistry",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 2,
+  "chapter": "Acids, Bases and Salts",
+  "lesson": 2,
+  "title": "Acids, Bases and Salts - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Distinguish acids, bases, and neutral substances using indicators",
+    "Interpret the pH scale and relate pH to everyday situations",
+    "Write balanced equations for reactions of acids with metals, carbonates, and bicarbonates",
+    "Explain neutralisation and identify the salt formed",
+    "Describe water of crystallisation and its role in hydrated salts",
+    "Explain the preparation, properties, and uses of bleaching powder, baking soda, washing soda, and plaster of Paris",
+    "Describe the chlor-alkali process and the uses of its products",
+    "Apply acid-base ideas to soil treatment, tooth decay, and antacids"
+  ],
+  "prerequisite_nodes": [
+    "SCI_CLASS10_CHEMICAL_REACTIONS",
+    "SCI_CLASS9_ACIDS_BASES_SALTS",
+    "SCI_CLASS8_METALS_AND_NONMETALS"
+  ],
+  "concepts": [
+    {
+      "id": "acids-bases-indicators",
+      "name": "Acids, Bases and Indicators",
+      "title": "Acids, Bases and Indicators",
+      "explanation": "Acids are substances that taste sour, turn blue litmus red, and produce hydrogen ions (H+) in water. Bases are substances that taste bitter, feel soapy, and turn red litmus blue; soluble bases, called alkalis, produce hydroxide ions (OH-) in water. Indicators are dyes that change colour in acidic or basic solutions; litmus, turmeric, phenolphthalein, and methyl orange are common examples. A neutral substance shows no change with these indicators and has neither acidic nor basic character.",
+      "purpose": "Acids are substances that taste sour, turn blue litmus red, and produce hydrogen ions (H+) in water. Bases are substances that taste bitter, feel soapy, and turn red litmus blue; soluble bases, called alkalis, produce hydroxide ions (OH-) in water. Indicators are dyes that change colour in acidic or basic solutions; litmus, turmeric, phenolphthalein, and methyl orange are common examples. A neutral substance shows no change with these indicators and has neither acidic nor basic character.",
+      "key_points": [
+        "Acids turn blue litmus red; bases turn red litmus blue.",
+        "Acids release H+ ions; soluble bases release OH- ions in water.",
+        "Turmeric turns red in a base, while phenolphthalein turns pink in a base.",
+        "Indicators are used to test whether a solution is acidic, basic, or neutral."
+      ],
+      "real_life_application": "Lemon juice and curd are acidic, soap solution is basic, and turmeric stains turn red when washed with soap.",
+      "day_to_day_usage": [
+        "Testing soil or water with litmus paper",
+        "Turmeric stain turning red on contact with soap",
+        "Phenolphthalein used in school laboratory titrations",
+        "Checking the acidity of curd and lemon juice"
+      ]
+    },
+    {
+      "id": "ph-scale",
+      "name": "The pH Scale and Its Everyday Importance",
+      "title": "The pH Scale and Its Everyday Importance",
+      "explanation": "The pH scale runs from 0 to 14 and measures how acidic or basic a solution is. A pH below 7 means acidic, pH equal to 7 means neutral, and pH above 7 means basic; a lower pH means a stronger acid and a higher pH means a stronger base. Universal indicator paper and pH paper give an approximate pH by matching colours with a chart. pH is important in digestion, tooth care, soil and crop growth, water quality, and the treatment of acid rain.",
+      "purpose": "The pH scale runs from 0 to 14 and measures how acidic or basic a solution is. A pH below 7 means acidic, pH equal to 7 means neutral, and pH above 7 means basic; a lower pH means a stronger acid and a higher pH means a stronger base. Universal indicator paper and pH paper give an approximate pH by matching colours with a chart. pH is important in digestion, tooth care, soil and crop growth, water quality, and the treatment of acid rain.",
+      "key_points": [
+        "pH below 7 is acidic, pH 7 is neutral, and pH above 7 is basic.",
+        "Lower pH means higher acidity; higher pH means higher basicity.",
+        "Universal indicator gives an approximate pH from its colour.",
+        "Tooth decay, soil fertility, and antacids all depend on pH."
+      ],
+      "real_life_application": "Tooth enamel begins to decay when the mouth pH falls below about 5.5, so brushing after meals helps neutralise acids.",
+      "day_to_day_usage": [
+        "Testing drinking water and swimming pool water",
+        "Checking soil pH before adding lime or fertiliser",
+        "Choosing an antacid for excess stomach acid",
+        "Monitoring acid rain in environmental studies"
+      ]
+    },
+    {
+      "id": "acid-reactions-metals-carbonates",
+      "name": "Reactions of Acids with Metals, Carbonates and Bicarbonates",
+      "title": "Reactions of Acids with Metals, Carbonates and Bicarbonates",
+      "explanation": "A dilute acid reacts with an active metal to form a salt and hydrogen gas; for example, zinc with dilute hydrochloric acid gives zinc chloride and hydrogen. Acids also react with metal carbonates and metal bicarbonates to form a salt, water, and carbon dioxide gas. The carbon dioxide turns lime water milky because it forms insoluble calcium carbonate. These reactions are used in laboratory tests for hydrogen and carbon dioxide and in everyday processes such as baking and effervescent tablets.",
+      "purpose": "A dilute acid reacts with an active metal to form a salt and hydrogen gas; for example, zinc with dilute hydrochloric acid gives zinc chloride and hydrogen. Acids also react with metal carbonates and metal bicarbonates to form a salt, water, and carbon dioxide gas. The carbon dioxide turns lime water milky because it forms insoluble calcium carbonate. These reactions are used in laboratory tests for hydrogen and carbon dioxide and in everyday processes such as baking and effervescent tablets.",
+      "key_points": [
+        "Acid + active metal -> salt + hydrogen gas.",
+        "Acid + metal carbonate -> salt + water + carbon dioxide.",
+        "Acid + metal bicarbonate -> salt + water + carbon dioxide.",
+        "Carbon dioxide turns lime water milky."
+      ],
+      "real_life_application": "Baking soda reacts with acid in cake batter to release carbon dioxide, which makes the cake rise.",
+      "day_to_day_usage": [
+        "Baking powder and baking soda making cakes spongy",
+        "Effervescent tablets fizzing in water",
+        "Antacid tablets releasing carbon dioxide in the mouth",
+        "Cleaning tarnished copper with lemon and salt"
+      ]
+    },
+    {
+      "id": "neutralisation-water-of-crystallisation",
+      "name": "Neutralisation and Water of Crystallisation",
+      "title": "Neutralisation and Water of Crystallisation",
+      "explanation": "Neutralisation is the reaction between an acid and a base to form a salt and water, and it releases heat. In ionic form, H+ ions from the acid combine with OH- ions from the base to form water. The salt formed depends on the acid and base used; hydrochloric acid with sodium hydroxide gives sodium chloride, while sulphuric acid with sodium hydroxide gives sodium sulphate. Many salts contain a fixed number of water molecules in their crystal structure, called water of crystallisation; copper sulphate pentahydrate is blue, but anhydrous copper sulphate is white.",
+      "purpose": "Neutralisation is the reaction between an acid and a base to form a salt and water, and it releases heat. In ionic form, H+ ions from the acid combine with OH- ions from the base to form water. The salt formed depends on the acid and base used; hydrochloric acid with sodium hydroxide gives sodium chloride, while sulphuric acid with sodium hydroxide gives sodium sulphate. Many salts contain a fixed number of water molecules in their crystal structure, called water of crystallisation; copper sulphate pentahydrate is blue, but anhydrous copper sulphate is white.",
+      "key_points": [
+        "Acid + base -> salt + water.",
+        "Neutralisation is exothermic and can be written as H+ + OH- -> H2O.",
+        "The salt name comes from the acid and the base used.",
+        "Water of crystallisation is fixed water in a crystal, as in CuSO4.5H2O."
+      ],
+      "real_life_application": "Antacids neutralise excess stomach acid, and lime is added to acidic soil to raise its pH for better crop growth.",
+      "day_to_day_usage": [
+        "Antacid tablets relieving acidity",
+        "Lime treatment of acidic soil",
+        "Baking soda neutralising a bee sting",
+        "Blue copper sulphate crystals turning white on heating"
+      ]
+    },
+    {
+      "id": "important-salts",
+      "name": "Bleaching Powder, Baking Soda, Washing Soda and Plaster of Paris",
+      "title": "Bleaching Powder, Baking Soda, Washing Soda and Plaster of Paris",
+      "explanation": "Bleaching powder is made by passing chlorine over dry slaked lime and is used to bleach cloth and disinfect water. Baking soda is sodium hydrogen carbonate, prepared from brine, ammonia, and carbon dioxide; it is used in baking, as an antacid, and in fire extinguishers. Washing soda is hydrated sodium carbonate, obtained by heating baking soda and recrystallising the product, and is used for cleaning and softening hard water. Plaster of Paris is calcium sulphate hemihydrate, made by heating gypsum to about 373 K; it sets hard when mixed with water and is used for casts and moulds.",
+      "purpose": "Bleaching powder is made by passing chlorine over dry slaked lime and is used to bleach cloth and disinfect water. Baking soda is sodium hydrogen carbonate, prepared from brine, ammonia, and carbon dioxide; it is used in baking, as an antacid, and in fire extinguishers. Washing soda is hydrated sodium carbonate, obtained by heating baking soda and recrystallising the product, and is used for cleaning and softening hard water. Plaster of Paris is calcium sulphate hemihydrate, made by heating gypsum to about 373 K; it sets hard when mixed with water and is used for casts and moulds.",
+      "key_points": [
+        "Bleaching powder: CaOCl2, used for bleaching and disinfection.",
+        "Baking soda: NaHCO3, used in baking and as an antacid.",
+        "Washing soda: Na2CO3.10H2O, used for cleaning and water softening.",
+        "Plaster of Paris: CaSO4.1/2H2O, sets with water and is used for casts."
+      ],
+      "real_life_application": "Baking soda makes idli and cake batter rise, washing soda softens hard water, and plaster of Paris is used for broken-bone casts and decorative moulds.",
+      "day_to_day_usage": [
+        "Baking soda in cakes and idli batter",
+        "Washing soda in laundry and water softening",
+        "Bleaching powder in water treatment plants",
+        "Plaster of Paris in hospital casts and craft work"
+      ]
+    },
+    {
+      "id": "chlor-alkali-process",
+      "name": "The Chlor-Alkali Process",
+      "title": "The Chlor-Alkali Process",
+      "explanation": "The chlor-alkali process electrolyses concentrated sodium chloride solution, called brine, to produce sodium hydroxide, chlorine, and hydrogen. Chlorine is released at the anode, hydrogen at the cathode, and sodium hydroxide forms in the solution near the cathode. The overall balanced equation is 2NaCl + 2H2O -> 2NaOH + Cl2 + H2. The three products are important industrial chemicals: sodium hydroxide for soap and paper, chlorine for water treatment and plastics, and hydrogen for ammonia and fuel.",
+      "purpose": "The chlor-alkali process electrolyses concentrated sodium chloride solution, called brine, to produce sodium hydroxide, chlorine, and hydrogen. Chlorine is released at the anode, hydrogen at the cathode, and sodium hydroxide forms in the solution near the cathode. The overall balanced equation is 2NaCl + 2H2O -> 2NaOH + Cl2 + H2. The three products are important industrial chemicals: sodium hydroxide for soap and paper, chlorine for water treatment and plastics, and hydrogen for ammonia and fuel.",
+      "key_points": [
+        "Brine is electrolysed in the chlor-alkali process.",
+        "Products are sodium hydroxide, chlorine, and hydrogen.",
+        "Chlorine forms at the anode and hydrogen at the cathode.",
+        "Overall equation: 2NaCl + 2H2O -> 2NaOH + Cl2 + H2."
+      ],
+      "real_life_application": "Chlorine from this process disinfects drinking water, sodium hydroxide is used to make soap, and hydrogen is used to make ammonia for fertilisers.",
+      "day_to_day_usage": [
+        "Soap and detergent manufacture",
+        "Disinfection of drinking water and swimming pools",
+        "PVC pipes and other plastics",
+        "Ammonia for fertilisers"
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-acid-1",
+      "title": "Classifying solutions with indicators",
+      "topic": "Indicators and pH",
+      "problem": "Three solutions have pH values 2, 7, and 12. Identify each as acidic, neutral, or basic. State the colour of blue litmus and phenolphthalein in each solution.",
+      "solution": [
+        "Step 1: pH 2 is below 7, so the solution is acidic.",
+        "Step 2: pH 7 is neutral.",
+        "Step 3: pH 12 is above 7, so the solution is basic.",
+        "Step 4: Blue litmus turns red in the acidic solution and stays blue in the neutral and basic solutions.",
+        "Step 5: Phenolphthalein is colourless in the acidic and neutral solutions and pink in the basic solution."
+      ],
+      "board_mode": [
+        "Step 1: pH 2 is below 7, so the solution is acidic.",
+        "Step 2: pH 7 is neutral.",
+        "Step 3: pH 12 is above 7, so the solution is basic.",
+        "Step 4: Blue litmus turns red in the acidic solution and stays blue in the neutral and basic solutions.",
+        "Step 5: Phenolphthalein is colourless in the acidic and neutral solutions and pink in the basic solution."
+      ],
+      "answer": "pH 2: acidic; pH 7: neutral; pH 12: basic. Blue litmus turns red only at pH 2; phenolphthalein turns pink only at pH 12.",
+      "board_tip": "Write the pH rule first, then the indicator colours. Do not say phenolphthalein is pink in acid."
+    },
+    {
+      "id": "we-acid-2",
+      "title": "pH, acidity, and dilution",
+      "topic": "pH scale",
+      "problem": "Arrange the solutions with pH 2, 6, 8, and 13 in order of increasing acidity. State what happens to the pH of the pH 2 solution when it is diluted with water.",
+      "solution": [
+        "Step 1: Lower pH means greater acidity, so pH 2 is the most acidic.",
+        "Step 2: pH 6 is weakly acidic, pH 8 is weakly basic, and pH 13 is strongly basic.",
+        "Step 3: Increasing acidity order: pH 13, pH 8, pH 6, pH 2.",
+        "Step 4: Dilution reduces the concentration of H+ ions in the acidic solution.",
+        "Step 5: Therefore the pH of the pH 2 solution increases toward 7 but does not become basic."
+      ],
+      "board_mode": [
+        "Step 1: Lower pH means greater acidity, so pH 2 is the most acidic.",
+        "Step 2: pH 6 is weakly acidic, pH 8 is weakly basic, and pH 13 is strongly basic.",
+        "Step 3: Increasing acidity order: pH 13, pH 8, pH 6, pH 2.",
+        "Step 4: Dilution reduces the concentration of H+ ions in the acidic solution.",
+        "Step 5: Therefore the pH of the pH 2 solution increases toward 7 but does not become basic."
+      ],
+      "answer": "Increasing acidity: pH 13 < pH 8 < pH 6 < pH 2. Diluting the pH 2 solution raises its pH toward 7.",
+      "board_tip": "Remember that dilution moves an acid's pH up toward 7 and a base's pH down toward 7."
+    },
+    {
+      "id": "we-acid-3",
+      "title": "Balanced equations for three acid reactions",
+      "topic": "Acid reactions",
+      "problem": "Write balanced equations for: (i) zinc with dilute hydrochloric acid, (ii) sodium carbonate with dilute hydrochloric acid, (iii) sodium bicarbonate with dilute hydrochloric acid. Name the gas produced in each case.",
+      "solution": [
+        "Step 1: (i) Zn + 2HCl -> ZnCl2 + H2. The gas is hydrogen.",
+        "Step 2: (ii) Na2CO3 + 2HCl -> 2NaCl + H2O + CO2. The gas is carbon dioxide.",
+        "Step 3: (iii) NaHCO3 + HCl -> NaCl + H2O + CO2. The gas is carbon dioxide.",
+        "Step 4: Check atoms: (i) Zn 1, H 2, Cl 2; (ii) Na 2, C 1, O 3, H 2, Cl 2; (iii) Na 1, C 1, O 3, H 2, Cl 1.",
+        "Step 5: Carbon dioxide turns lime water milky; hydrogen burns with a pop sound."
+      ],
+      "board_mode": [
+        "Step 1: (i) Zn + 2HCl -> ZnCl2 + H2. The gas is hydrogen.",
+        "Step 2: (ii) Na2CO3 + 2HCl -> 2NaCl + H2O + CO2. The gas is carbon dioxide.",
+        "Step 3: (iii) NaHCO3 + HCl -> NaCl + H2O + CO2. The gas is carbon dioxide.",
+        "Step 4: Check atoms: (i) Zn 1, H 2, Cl 2; (ii) Na 2, C 1, O 3, H 2, Cl 2; (iii) Na 1, C 1, O 3, H 2, Cl 1.",
+        "Step 5: Carbon dioxide turns lime water milky; hydrogen burns with a pop sound."
+      ],
+      "answer": "(i) Zn + 2HCl -> ZnCl2 + H2 (hydrogen); (ii) Na2CO3 + 2HCl -> 2NaCl + H2O + CO2 (carbon dioxide); (iii) NaHCO3 + HCl -> NaCl + H2O + CO2 (carbon dioxide).",
+      "board_tip": "Balance the metal and chlorine first, then check hydrogen and oxygen. Always name the gas."
+    },
+    {
+      "id": "we-acid-4",
+      "title": "Neutralisation and naming the salt",
+      "topic": "Neutralisation",
+      "problem": "Calcium hydroxide reacts with hydrochloric acid. Write the balanced equation, name the salt formed, and explain why the reaction is called neutralisation.",
+      "solution": [
+        "Step 1: Write the reactants and products: Ca(OH)2 + HCl -> CaCl2 + H2O.",
+        "Step 2: Balance chlorine with 2HCl and hydrogen with 2H2O: Ca(OH)2 + 2HCl -> CaCl2 + 2H2O.",
+        "Step 3: Check atoms: Ca 1, O 2, H 4, Cl 2 on both sides.",
+        "Step 4: The salt formed is calcium chloride.",
+        "Step 5: The acid and base cancel each other's character by forming water, so the reaction is neutralisation."
+      ],
+      "board_mode": [
+        "Step 1: Write the reactants and products: Ca(OH)2 + HCl -> CaCl2 + H2O.",
+        "Step 2: Balance chlorine with 2HCl and hydrogen with 2H2O: Ca(OH)2 + 2HCl -> CaCl2 + 2H2O.",
+        "Step 3: Check atoms: Ca 1, O 2, H 4, Cl 2 on both sides.",
+        "Step 4: The salt formed is calcium chloride.",
+        "Step 5: The acid and base cancel each other's character by forming water, so the reaction is neutralisation."
+      ],
+      "answer": "Ca(OH)2 + 2HCl -> CaCl2 + 2H2O; the salt is calcium chloride; acid and base neutralise to form salt and water.",
+      "board_tip": "The salt name has two parts: the metal from the base and the acid radical from the acid."
+    },
+    {
+      "id": "we-acid-5",
+      "title": "Water of crystallisation in copper sulphate",
+      "topic": "Water of crystallisation",
+      "problem": "Copper sulphate pentahydrate has the formula CuSO4.5H2O. Calculate the percentage by mass of water of crystallisation in it. (Cu = 63.5, S = 32, O = 16, H = 1)",
+      "solution": [
+        "Step 1: Molar mass of CuSO4 = 63.5 + 32 + 4 x 16 = 159.5 g/mol.",
+        "Step 2: Mass of 5H2O = 5 x (2 x 1 + 16) = 5 x 18 = 90 g/mol.",
+        "Step 3: Molar mass of CuSO4.5H2O = 159.5 + 90 = 249.5 g/mol.",
+        "Step 4: Percentage of water = (90 / 249.5) x 100.",
+        "Step 5: Percentage of water is approximately 36.1%.",
+        "Step 6: On heating, the blue crystals lose this water and become white anhydrous CuSO4."
+      ],
+      "board_mode": [
+        "Step 1: Molar mass of CuSO4 = 63.5 + 32 + 4 x 16 = 159.5 g/mol.",
+        "Step 2: Mass of 5H2O = 5 x (2 x 1 + 16) = 5 x 18 = 90 g/mol.",
+        "Step 3: Molar mass of CuSO4.5H2O = 159.5 + 90 = 249.5 g/mol.",
+        "Step 4: Percentage of water = (90 / 249.5) x 100.",
+        "Step 5: Percentage of water is approximately 36.1%.",
+        "Step 6: On heating, the blue crystals lose this water and become white anhydrous CuSO4."
+      ],
+      "answer": "CuSO4.5H2O contains about 36.1% water of crystallisation by mass.",
+      "board_tip": "Do not count the water as 'wetness'. It is chemically fixed in the crystal and is lost only on strong heating."
+    }
+  ],
+  "exercises": {
+    "simple": {
+      "title": "Foundation Practice - Acids, Bases, and Indicators",
+      "objective": "Recall definitions, indicator colours, and basic equations",
+      "problems": [
+        {
+          "id": "acid-s-1",
+          "question": "Define an acid and a base, giving one everyday example of each.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: An acid is a substance that produces H+ ions in water, tastes sour, and turns blue litmus red.",
+            "Step 2: A base is a substance that produces OH- ions in water, tastes bitter, and turns red litmus blue.",
+            "Step 3: Lemon juice contains citric acid, and soap solution is basic."
+          ],
+          "final_answer": "Acids release H+ ions (example: lemon juice); bases release OH- ions (example: soap solution)."
+        },
+        {
+          "id": "acid-s-2",
+          "question": "State the colour change of blue litmus and red litmus in an acidic solution.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Blue litmus paper is used to test for acids.",
+            "Step 2: In an acidic solution, blue litmus turns red.",
+            "Step 3: Red litmus remains red in an acidic solution.",
+            "Step 4: Therefore only blue litmus shows a clear colour change."
+          ],
+          "final_answer": "Blue litmus turns red; red litmus stays red."
+        },
+        {
+          "id": "acid-s-3",
+          "question": "Classify the following pH values as acidic, neutral, or basic: 3, 7, 11.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: pH below 7 is acidic, so pH 3 is acidic.",
+            "Step 2: pH equal to 7 is neutral.",
+            "Step 3: pH above 7 is basic, so pH 11 is basic."
+          ],
+          "final_answer": "pH 3 acidic, pH 7 neutral, pH 11 basic."
+        },
+        {
+          "id": "acid-s-4",
+          "question": "Write the balanced equation for the reaction of zinc with dilute hydrochloric acid and name the gas produced.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Zinc displaces hydrogen from hydrochloric acid.",
+            "Step 2: Skeletal equation: Zn + HCl -> ZnCl2 + H2.",
+            "Step 3: Balance chlorine and hydrogen with 2HCl: Zn + 2HCl -> ZnCl2 + H2.",
+            "Step 4: The gas produced is hydrogen."
+          ],
+          "final_answer": "Zn + 2HCl -> ZnCl2 + H2; the gas is hydrogen."
+        },
+        {
+          "id": "acid-s-5",
+          "question": "Write the balanced equation for the reaction of sodium carbonate with dilute hydrochloric acid.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Acid + carbonate -> salt + water + carbon dioxide.",
+            "Step 2: Skeletal equation: Na2CO3 + HCl -> NaCl + H2O + CO2.",
+            "Step 3: Balance sodium and chlorine with 2HCl and 2NaCl.",
+            "Step 4: Na2CO3 + 2HCl -> 2NaCl + H2O + CO2."
+          ],
+          "final_answer": "Na2CO3 + 2HCl -> 2NaCl + H2O + CO2."
+        },
+        {
+          "id": "acid-s-6",
+          "question": "Write the balanced equation for the neutralisation of hydrochloric acid by sodium hydroxide.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Acid + base -> salt + water.",
+            "Step 2: Skeletal equation: HCl + NaOH -> NaCl + H2O.",
+            "Step 3: Count atoms: H 2, Cl 1, Na 1, O 1 on both sides.",
+            "Step 4: The equation is already balanced."
+          ],
+          "final_answer": "HCl + NaOH -> NaCl + H2O."
+        }
+      ]
+    },
+    "medium": {
+      "title": "Board Practice - pH, Salts, and Everyday Applications",
+      "objective": "Explain indicator tests, pH applications, and salt reactions",
+      "problems": [
+        {
+          "id": "acid-m-1",
+          "question": "A turmeric stain on a white shirt turns red when soap is rubbed on it. Explain why.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Turmeric is a natural indicator that is yellow in acidic or neutral conditions.",
+            "Step 2: Soap solution is basic because it contains hydroxide ions.",
+            "Step 3: In a basic medium, turmeric changes from yellow to red.",
+            "Step 4: The red colour shows that soap is basic."
+          ],
+          "final_answer": "Soap is basic, and turmeric turns red in a basic medium."
+        },
+        {
+          "id": "acid-m-2",
+          "question": "Explain why tooth decay begins when the pH of the mouth falls below about 5.5.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Tooth enamel is made of calcium phosphate, which can be attacked by acid.",
+            "Step 2: Bacteria in the mouth convert sugar into acids, lowering the pH.",
+            "Step 3: Below pH 5.5, the acid starts dissolving the enamel.",
+            "Step 4: Brushing with an alkaline toothpaste neutralises the acid and helps protect the enamel."
+          ],
+          "final_answer": "Acid produced by bacteria lowers mouth pH below 5.5 and dissolves enamel; brushing neutralises the acid."
+        },
+        {
+          "id": "acid-m-3",
+          "question": "Write the balanced equation for sodium bicarbonate reacting with dilute hydrochloric acid. How would you test the gas produced?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Acid + bicarbonate -> salt + water + carbon dioxide.",
+            "Step 2: NaHCO3 + HCl -> NaCl + H2O + CO2.",
+            "Step 3: Check atoms: Na 1, H 2, C 1, O 3, Cl 1 on both sides.",
+            "Step 4: Pass the gas through lime water; it turns milky, confirming carbon dioxide."
+          ],
+          "final_answer": "NaHCO3 + HCl -> NaCl + H2O + CO2; the gas turns lime water milky."
+        },
+        {
+          "id": "acid-m-4",
+          "question": "What is water of crystallisation? Explain what happens when blue copper sulphate crystals are heated.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Water of crystallisation is the fixed number of water molecules present in one formula unit of a crystal.",
+            "Step 2: Blue copper sulphate is CuSO4.5H2O, with five water molecules per formula unit.",
+            "Step 3: On heating, it loses the water of crystallisation and becomes white anhydrous CuSO4.",
+            "Step 4: Adding water to the white solid restores the blue colour."
+          ],
+          "final_answer": "Water of crystallisation is fixed water in a crystal; heating blue CuSO4.5H2O gives white anhydrous CuSO4."
+        },
+        {
+          "id": "acid-m-5",
+          "question": "How is bleaching powder prepared? State two uses.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Bleaching powder is prepared by passing chlorine gas over dry slaked lime.",
+            "Step 2: Ca(OH)2 + Cl2 -> CaOCl2 + H2O.",
+            "Step 3: It is used to bleach cotton and linen in the textile industry.",
+            "Step 4: It is also used to disinfect drinking water and make it safe."
+          ],
+          "final_answer": "Ca(OH)2 + Cl2 -> CaOCl2 + H2O; used for bleaching cloth and disinfecting water."
+        },
+        {
+          "id": "acid-m-6",
+          "question": "What is baking soda? Write the equation for its heating and state two uses.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Baking soda is sodium hydrogen carbonate, NaHCO3.",
+            "Step 2: On heating it decomposes: 2NaHCO3 -> Na2CO3 + H2O + CO2.",
+            "Step 3: It is used in baking because the released carbon dioxide makes the batter rise.",
+            "Step 4: It is also used as a mild antacid to neutralise excess stomach acid."
+          ],
+          "final_answer": "NaHCO3 is baking soda; 2NaHCO3 -> Na2CO3 + H2O + CO2; used in baking and as an antacid."
+        }
+      ]
+    },
+    "complex": {
+      "title": "Application Practice - Industrial Salts and Calculations",
+      "objective": "Connect salt preparation, industrial processes, and pH reasoning",
+      "problems": [
+        {
+          "id": "acid-c-1",
+          "question": "Describe how washing soda is obtained from baking soda. Write both equations and state two uses of washing soda.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Heat baking soda to obtain sodium carbonate: 2NaHCO3 -> Na2CO3 + H2O + CO2.",
+            "Step 2: Dissolve the sodium carbonate in water and recrystallise it.",
+            "Step 3: On crystallisation, washing soda forms: Na2CO3 + 10H2O -> Na2CO3.10H2O.",
+            "Step 4: Washing soda is used for cleaning clothes and softening hard water.",
+            "Step 5: It is also used in the manufacture of glass, soap, and paper."
+          ],
+          "final_answer": "2NaHCO3 -> Na2CO3 + H2O + CO2; Na2CO3 + 10H2O -> Na2CO3.10H2O. Uses: cleaning, water softening, glass and paper manufacture."
+        },
+        {
+          "id": "acid-c-2",
+          "question": "How is plaster of Paris prepared from gypsum? Write the equation, explain its setting action, and state why it is stored in a moisture-proof container.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Gypsum is calcium sulphate dihydrate, CaSO4.2H2O.",
+            "Step 2: Heating gypsum to about 373 K gives plaster of Paris: 2(CaSO4.2H2O) -> 2(CaSO4.1/2H2O) + 3H2O.",
+            "Step 3: When mixed with water, plaster of Paris rehydrates and sets hard: CaSO4.1/2H2O + 1.5H2O -> CaSO4.2H2O.",
+            "Step 4: Moisture would start this setting reaction in the container itself.",
+            "Step 5: Therefore it is stored in a moisture-proof container to keep it as a usable powder."
+          ],
+          "final_answer": "Gypsum heated to 373 K gives CaSO4.1/2H2O; it sets with water back to CaSO4.2H2O, so it must be kept dry."
+        },
+        {
+          "id": "acid-c-3",
+          "question": "Explain the chlor-alkali process. Write the overall balanced equation and state one use of each product.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Concentrated sodium chloride solution (brine) is electrolysed.",
+            "Step 2: Chlorine is produced at the anode, hydrogen at the cathode, and sodium hydroxide in the solution.",
+            "Step 3: Overall equation: 2NaCl + 2H2O -> 2NaOH + Cl2 + H2.",
+            "Step 4: Sodium hydroxide is used to make soap and paper.",
+            "Step 5: Chlorine is used to disinfect water, and hydrogen is used to make ammonia for fertilisers."
+          ],
+          "final_answer": "2NaCl + 2H2O -> 2NaOH + Cl2 + H2; uses: NaOH in soap, Cl2 in water treatment, H2 in ammonia."
+        },
+        {
+          "id": "acid-c-4",
+          "question": "Calcium hydroxide reacts with hydrochloric acid: Ca(OH)2 + 2HCl -> CaCl2 + 2H2O. How many moles of HCl are needed to neutralise 0.50 mol of Ca(OH)2?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The balanced equation shows that 1 mol of Ca(OH)2 reacts with 2 mol of HCl.",
+            "Step 2: The mole ratio HCl : Ca(OH)2 is 2 : 1.",
+            "Step 3: Moles of HCl = 2 x moles of Ca(OH)2.",
+            "Step 4: Moles of HCl = 2 x 0.50 = 1.0 mol.",
+            "Step 5: Therefore 1.0 mol of HCl is required."
+          ],
+          "final_answer": "1.0 mol of HCl is needed to neutralise 0.50 mol of Ca(OH)2."
+        },
+        {
+          "id": "acid-c-5",
+          "question": "A white salt X is used in baking. It reacts with dilute acid to release a gas that turns lime water milky. Identify X, write the reaction with hydrochloric acid, and state one other use of X.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The gas that turns lime water milky is carbon dioxide.",
+            "Step 2: A baking salt that releases carbon dioxide with acid is sodium hydrogen carbonate, NaHCO3.",
+            "Step 3: Therefore X is baking soda, NaHCO3.",
+            "Step 4: NaHCO3 + HCl -> NaCl + H2O + CO2.",
+            "Step 5: Baking soda is also used as a mild antacid and in fire extinguishers."
+          ],
+          "final_answer": "X is NaHCO3; NaHCO3 + HCl -> NaCl + H2O + CO2; it is also used as an antacid."
+        },
+        {
+          "id": "acid-c-6",
+          "question": "A farmer finds that the soil pH is 4. Explain why the soil is unsuitable for many crops and how adding slaked lime helps. Write the neutralisation equation with sulphuric acid in the soil.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: pH 4 means the soil is strongly acidic.",
+            "Step 2: Most crops grow best in soil close to neutral, so strong acidity reduces nutrient availability and crop growth.",
+            "Step 3: Slaked lime, Ca(OH)2, is a base that neutralises the excess acid.",
+            "Step 4: Ca(OH)2 + H2SO4 -> CaSO4 + 2H2O.",
+            "Step 5: The soil pH rises toward neutral, improving conditions for crops."
+          ],
+          "final_answer": "The soil is too acidic; Ca(OH)2 neutralises it: Ca(OH)2 + H2SO4 -> CaSO4 + 2H2O, raising the pH."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-acid-s-1",
+        "question": "An acidic solution turns:",
+        "options": [
+          "Red litmus blue",
+          "Blue litmus red",
+          "Phenolphthalein pink",
+          "Turmeric red"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Acids turn blue litmus red.",
+          "wrong_options": {
+            "0": "That is the action of a base.",
+            "2": "Phenolphthalein turns pink in a base.",
+            "3": "Turmeric turns red in a base."
+          }
+        }
+      },
+      {
+        "id": "q-acid-s-2",
+        "question": "A basic solution turns:",
+        "options": [
+          "Red litmus blue",
+          "Blue litmus red",
+          "Phenolphthalein colourless",
+          "Methyl orange red"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Bases turn red litmus blue.",
+          "wrong_options": {
+            "1": "Blue litmus turning red is the acid test.",
+            "2": "Phenolphthalein turns pink in a base.",
+            "3": "Methyl orange is red in an acid."
+          }
+        }
+      },
+      {
+        "id": "q-acid-s-3",
+        "question": "A solution with pH 7 is:",
+        "options": [
+          "Strongly acidic",
+          "Weakly acidic",
+          "Neutral",
+          "Strongly basic"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "pH 7 represents a neutral solution at ordinary conditions.",
+          "wrong_options": {
+            "0": "Strong acids have very low pH values.",
+            "1": "Weak acids have pH values just below 7.",
+            "3": "Strong bases have pH values close to 14."
+          }
+        }
+      },
+      {
+        "id": "q-acid-s-4",
+        "question": "Which pH value represents an acidic solution?",
+        "options": [
+          "2",
+          "7",
+          "9",
+          "13"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A pH below 7 is acidic, so pH 2 is acidic.",
+          "wrong_options": {
+            "1": "pH 7 is neutral.",
+            "2": "pH 9 is basic.",
+            "3": "pH 13 is strongly basic."
+          }
+        }
+      },
+      {
+        "id": "q-acid-s-5",
+        "question": "Phenolphthalein in a basic solution is:",
+        "options": [
+          "Colourless",
+          "Pink",
+          "Yellow",
+          "Blue"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Phenolphthalein is colourless in acid and neutral solutions but pink in a basic solution.",
+          "wrong_options": {
+            "0": "Colourless is the acid or neutral colour.",
+            "2": "Yellow is not the phenolphthalein colour in a base.",
+            "3": "Blue is not the phenolphthalein colour in a base."
+          }
+        }
+      },
+      {
+        "id": "q-acid-s-6",
+        "question": "The gas produced when zinc reacts with dilute hydrochloric acid is:",
+        "options": [
+          "Oxygen",
+          "Hydrogen",
+          "Carbon dioxide",
+          "Chlorine"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Zn + 2HCl -> ZnCl2 + H2, so hydrogen is produced.",
+          "wrong_options": {
+            "0": "Oxygen is not produced in this metal-acid reaction.",
+            "2": "Carbon dioxide requires a carbonate or bicarbonate.",
+            "3": "Chlorine is not produced with dilute hydrochloric acid."
+          }
+        }
+      },
+      {
+        "id": "q-acid-s-7",
+        "question": "The gas produced when an acid reacts with a metal carbonate is:",
+        "options": [
+          "Hydrogen",
+          "Oxygen",
+          "Carbon dioxide",
+          "Nitrogen"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Acid + carbonate -> salt + water + carbon dioxide.",
+          "wrong_options": {
+            "0": "Hydrogen is produced with active metals, not carbonates.",
+            "1": "Oxygen is not the gas in this reaction.",
+            "3": "Nitrogen is not produced in this reaction."
+          }
+        }
+      },
+      {
+        "id": "q-acid-s-8",
+        "question": "Neutralisation of an acid by a base produces:",
+        "options": [
+          "Salt and water",
+          "Salt and hydrogen",
+          "Salt and carbon dioxide",
+          "Only water"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Acid + base -> salt + water.",
+          "wrong_options": {
+            "1": "Hydrogen is produced with active metals.",
+            "2": "Carbon dioxide is produced with carbonates or bicarbonates.",
+            "3": "A salt is also formed."
+          }
+        }
+      },
+      {
+        "id": "q-acid-s-9",
+        "question": "The chemical formula of baking soda is:",
+        "options": [
+          "Na2CO3",
+          "NaHCO3",
+          "NaCl",
+          "CaOCl2"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Baking soda is sodium hydrogen carbonate, NaHCO3.",
+          "wrong_options": {
+            "0": "Na2CO3 is sodium carbonate.",
+            "2": "NaCl is common salt.",
+            "3": "CaOCl2 is bleaching powder."
+          }
+        }
+      },
+      {
+        "id": "q-acid-s-10",
+        "question": "The chemical formula of washing soda is:",
+        "options": [
+          "NaHCO3",
+          "Na2CO3.10H2O",
+          "CaSO4.2H2O",
+          "CaOCl2"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Washing soda is hydrated sodium carbonate, Na2CO3.10H2O.",
+          "wrong_options": {
+            "0": "NaHCO3 is baking soda.",
+            "2": "CaSO4.2H2O is gypsum.",
+            "3": "CaOCl2 is bleaching powder."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-acid-m-1",
+        "question": "Turmeric stain on cloth turns red when soap is applied because:",
+        "options": [
+          "Soap is acidic",
+          "Soap is basic",
+          "Soap is neutral",
+          "Turmeric is a base"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Soap solution is basic, and turmeric turns red in a basic medium.",
+          "wrong_options": {
+            "0": "An acidic medium would not turn turmeric red.",
+            "2": "A neutral medium leaves turmeric yellow.",
+            "3": "Turmeric is an indicator, not a base."
+          }
+        }
+      },
+      {
+        "id": "q-acid-m-2",
+        "question": "Which solution is the most acidic?",
+        "options": [
+          "pH 1",
+          "pH 3",
+          "pH 5",
+          "pH 7"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The lowest pH corresponds to the most acidic solution, so pH 1 is most acidic.",
+          "wrong_options": {
+            "1": "pH 3 is acidic but less acidic than pH 1.",
+            "2": "pH 5 is weakly acidic.",
+            "3": "pH 7 is neutral."
+          }
+        }
+      },
+      {
+        "id": "q-acid-m-3",
+        "question": "Lime water turns milky when carbon dioxide is passed through it because:",
+        "options": [
+          "Calcium carbonate is formed",
+          "Sodium chloride is formed",
+          "Hydrogen is formed",
+          "Calcium oxide is formed"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Ca(OH)2 + CO2 -> CaCO3 + H2O; insoluble calcium carbonate makes the water milky.",
+          "wrong_options": {
+            "1": "Sodium chloride is soluble and not formed here.",
+            "2": "Hydrogen does not turn lime water milky.",
+            "3": "Calcium oxide is not the precipitate formed."
+          }
+        }
+      },
+      {
+        "id": "q-acid-m-4",
+        "question": "The number of water molecules of crystallisation in CuSO4.5H2O is:",
+        "options": [
+          "2",
+          "3",
+          "5",
+          "10"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "The formula CuSO4.5H2O shows five water molecules per formula unit.",
+          "wrong_options": {
+            "0": "Two water molecules correspond to gypsum, CaSO4.2H2O.",
+            "1": "Three is not the number in this formula.",
+            "3": "Ten water molecules occur in washing soda."
+          }
+        }
+      },
+      {
+        "id": "q-acid-m-5",
+        "question": "The formula of plaster of Paris is:",
+        "options": [
+          "CaSO4.2H2O",
+          "CaSO4.1/2H2O",
+          "CaOCl2",
+          "Na2CO3.10H2O"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Plaster of Paris is calcium sulphate hemihydrate, CaSO4.1/2H2O.",
+          "wrong_options": {
+            "0": "CaSO4.2H2O is gypsum.",
+            "2": "CaOCl2 is bleaching powder.",
+            "3": "Na2CO3.10H2O is washing soda."
+          }
+        }
+      },
+      {
+        "id": "q-acid-m-6",
+        "question": "The formula of bleaching powder is:",
+        "options": [
+          "CaOCl2",
+          "Ca(OH)2",
+          "NaHCO3",
+          "CaSO4"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Bleaching powder is calcium oxychloride, CaOCl2.",
+          "wrong_options": {
+            "1": "Ca(OH)2 is slaked lime.",
+            "2": "NaHCO3 is baking soda.",
+            "3": "CaSO4 is calcium sulphate."
+          }
+        }
+      },
+      {
+        "id": "q-acid-m-7",
+        "question": "The three products of the chlor-alkali process are:",
+        "options": [
+          "NaOH, Cl2, and H2",
+          "NaCl, CO2, and H2",
+          "NaOH, CO2, and O2",
+          "Na2CO3, Cl2, and H2"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Electrolysis of brine gives sodium hydroxide, chlorine, and hydrogen.",
+          "wrong_options": {
+            "1": "NaCl is a reactant, and CO2 is not produced.",
+            "2": "CO2 and O2 are not the products here.",
+            "3": "Na2CO3 is not produced in the chlor-alkali process."
+          }
+        }
+      },
+      {
+        "id": "q-acid-m-8",
+        "question": "Acid rain is usually considered to have a pH:",
+        "options": [
+          "Above 7",
+          "Equal to 7",
+          "Below 5.6",
+          "Exactly 5.6"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Acid rain has a pH below about 5.6 because of dissolved acidic gases such as sulphur dioxide and nitrogen oxides.",
+          "wrong_options": {
+            "0": "A pH above 7 would be basic, not acidic.",
+            "1": "pH 7 is neutral, not acid rain.",
+            "3": "Normal rain is close to 5.6; acid rain is below this value."
+          }
+        }
+      },
+      {
+        "id": "q-acid-m-9",
+        "question": "An antacid tablet is taken to relieve acidity because it is:",
+        "options": [
+          "A strong acid",
+          "A base that neutralises excess stomach acid",
+          "A salt that increases acidity",
+          "A neutral substance"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Antacids are mild bases that neutralise excess hydrochloric acid in the stomach.",
+          "wrong_options": {
+            "0": "A strong acid would worsen acidity.",
+            "2": "A salt alone does not neutralise acid.",
+            "3": "A neutral substance would not reduce acidity."
+          }
+        }
+      },
+      {
+        "id": "q-acid-m-10",
+        "question": "Hydrochloric acid reacts with sodium hydroxide. The salt formed is:",
+        "options": [
+          "Sodium sulphate",
+          "Sodium chloride",
+          "Sodium nitrate",
+          "Sodium carbonate"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "HCl + NaOH -> NaCl + H2O, so the salt is sodium chloride.",
+          "wrong_options": {
+            "0": "Sodium sulphate would require sulphuric acid.",
+            "2": "Sodium nitrate would require nitric acid.",
+            "3": "Sodium carbonate would require carbonic acid or a carbonate reaction."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-acid-x-1",
+        "question": "Which arrangement shows increasing acidity?",
+        "options": [
+          "pH 12, pH 8, pH 4, pH 1",
+          "pH 1, pH 4, pH 8, pH 12",
+          "pH 7, pH 4, pH 1, pH 12",
+          "pH 12, pH 1, pH 8, pH 4"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Acidity increases as pH decreases, so the order from least to most acidic is pH 12, pH 8, pH 4, pH 1.",
+          "wrong_options": {
+            "1": "This order goes from most acidic to most basic.",
+            "2": "This order is not monotonic in acidity.",
+            "3": "This order does not follow decreasing pH."
+          }
+        }
+      },
+      {
+        "id": "q-acid-x-2",
+        "question": "When an acidic solution is diluted with water, its pH:",
+        "options": [
+          "Decreases toward 0",
+          "Increases toward 7",
+          "Becomes exactly 7 immediately",
+          "Remains exactly the same"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Dilution lowers the H+ concentration, so the pH of an acid rises toward 7.",
+          "wrong_options": {
+            "0": "Adding water does not increase acidity.",
+            "2": "Very dilute acid approaches neutral but does not become exactly neutral at once.",
+            "3": "The concentration changes, so the pH changes."
+          }
+        }
+      },
+      {
+        "id": "q-acid-x-3",
+        "question": "The balanced equation for the reaction of aluminium hydroxide with hydrochloric acid is:",
+        "options": [
+          "Al(OH)3 + 3HCl -> AlCl3 + 3H2O",
+          "Al(OH)3 + HCl -> AlCl3 + H2O",
+          "Al(OH)3 + 2HCl -> AlCl2 + 3H2O",
+          "2Al(OH)3 + 3HCl -> Al2Cl3 + 6H2O"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Al(OH)3 + 3HCl -> AlCl3 + 3H2O balances Al, O, H, and Cl.",
+          "wrong_options": {
+            "1": "Chlorine and hydrogen are not balanced.",
+            "2": "AlCl2 is not the correct formula, and atoms do not balance.",
+            "3": "Al2Cl3 is not the correct formula."
+          }
+        }
+      },
+      {
+        "id": "q-acid-x-4",
+        "question": "The percentage by mass of water in CuSO4.5H2O is closest to: (Cu = 63.5, S = 32, O = 16, H = 1)",
+        "options": [
+          "18%",
+          "36%",
+          "50%",
+          "64%"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "90 / 249.5 x 100 is about 36.1%, so 36% is closest.",
+          "wrong_options": {
+            "0": "18% would correspond to only one water molecule.",
+            "2": "50% is too high for five water molecules in this salt.",
+            "3": "64% is far too high."
+          }
+        }
+      },
+      {
+        "id": "q-acid-x-5",
+        "question": "In the chlor-alkali process, chlorine and hydrogen are produced at the:",
+        "options": [
+          "Anode and cathode respectively",
+          "Cathode and anode respectively",
+          "Both at the anode",
+          "Both at the cathode"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Chlorine is liberated at the anode and hydrogen at the cathode.",
+          "wrong_options": {
+            "1": "This reverses the two products.",
+            "2": "Hydrogen is not produced at the anode.",
+            "3": "Chlorine is not produced at the cathode."
+          }
+        }
+      },
+      {
+        "id": "q-acid-x-6",
+        "question": "The equation for the setting of plaster of Paris is:",
+        "options": [
+          "CaSO4.1/2H2O + 1.5H2O -> CaSO4.2H2O",
+          "CaSO4.2H2O -> CaSO4.1/2H2O + 1.5H2O",
+          "CaCO3 -> CaO + CO2",
+          "CaO + H2O -> Ca(OH)2"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Plaster of Paris rehydrates to gypsum, CaSO4.2H2O, and sets hard.",
+          "wrong_options": {
+            "1": "This is the reverse reaction used to make plaster of Paris.",
+            "2": "This is the decomposition of limestone.",
+            "3": "This is the slaking of quicklime."
+          }
+        }
+      },
+      {
+        "id": "q-acid-x-7",
+        "question": "Washing soda is obtained from baking soda by:",
+        "options": [
+          "Heating baking soda and then recrystallising the product with water",
+          "Adding hydrochloric acid to baking soda",
+          "Heating baking soda with chlorine",
+          "Dissolving baking soda in alcohol"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Heating gives Na2CO3, which crystallises with ten water molecules to form washing soda.",
+          "wrong_options": {
+            "1": "Hydrochloric acid would produce sodium chloride and carbon dioxide.",
+            "2": "Chlorine would not produce washing soda.",
+            "3": "Alcohol does not yield the decahydrate crystal."
+          }
+        }
+      },
+      {
+        "id": "q-acid-x-8",
+        "question": "For Ca(OH)2 + 2HCl -> CaCl2 + 2H2O, how many moles of HCl react with 0.25 mol of Ca(OH)2?",
+        "options": [
+          "0.25 mol",
+          "0.50 mol",
+          "1.0 mol",
+          "2.0 mol"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The ratio is 2 mol HCl per 1 mol Ca(OH)2, so 0.25 x 2 = 0.50 mol.",
+          "wrong_options": {
+            "0": "This ignores the 2:1 ratio.",
+            "2": "This would need 0.50 mol of Ca(OH)2.",
+            "3": "This would need 1.0 mol of Ca(OH)2."
+          }
+        }
+      },
+      {
+        "id": "q-acid-x-9",
+        "question": "A salt reacts with dilute acid to give a gas that turns lime water milky. The salt is most likely:",
+        "options": [
+          "Sodium chloride",
+          "Sodium carbonate",
+          "Sodium sulphate",
+          "Sodium nitrate"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Carbonates release carbon dioxide with acid, and carbon dioxide turns lime water milky.",
+          "wrong_options": {
+            "0": "Sodium chloride does not release carbon dioxide with dilute acid.",
+            "2": "Sodium sulphate does not release carbon dioxide.",
+            "3": "Sodium nitrate does not release carbon dioxide."
+          }
+        }
+      },
+      {
+        "id": "q-acid-x-10",
+        "question": "Dilute hydrochloric acid should not be stored in an iron container because:",
+        "options": [
+          "Iron reacts with the acid to release hydrogen",
+          "Iron makes the acid basic",
+          "Iron changes the acid into a salt without reacting",
+          "Iron absorbs all the water"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Iron is above hydrogen in the reactivity series, so it reacts with dilute acid to give iron salt and hydrogen.",
+          "wrong_options": {
+            "1": "Iron does not make the acid basic.",
+            "2": "A chemical reaction occurs; the acid is consumed.",
+            "3": "Iron does not simply absorb the water."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Acids, Bases and Salts - Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Acids",
+        "group": "substance"
+      },
+      {
+        "id": "n2",
+        "label": "Bases",
+        "group": "substance"
+      },
+      {
+        "id": "n3",
+        "label": "Indicators",
+        "group": "test"
+      },
+      {
+        "id": "n4",
+        "label": "pH Scale",
+        "group": "measurement"
+      },
+      {
+        "id": "n5",
+        "label": "Neutralisation",
+        "group": "reaction"
+      },
+      {
+        "id": "n6",
+        "label": "Salts",
+        "group": "product"
+      },
+      {
+        "id": "n7",
+        "label": "Water of Crystallisation",
+        "group": "structure"
+      },
+      {
+        "id": "n8",
+        "label": "Important Salts",
+        "group": "application"
+      },
+      {
+        "id": "n9",
+        "label": "Chlor-Alkali Process",
+        "group": "industry"
+      }
+    ],
+    "edges": [
+      ["n1", "n3"],
+      ["n2", "n3"],
+      ["n1", "n4"],
+      ["n2", "n4"],
+      ["n1", "n5"],
+      ["n2", "n5"],
+      ["n5", "n6"],
+      ["n6", "n7"],
+      ["n6", "n8"],
+      ["n6", "n9"],
+      ["n8", "n9"]
+    ]
+  },
+  "mind_maps": {
+    "title": "Acids, Bases and Salts - Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Acids, Bases and Salts",
+    "branches": [
+      {
+        "concept": "Acids and Bases",
+        "sub_nodes": [
+          "Acids release H+; soluble bases release OH-",
+          "Acids turn blue litmus red; bases turn red litmus blue",
+          "Taste and feel are not safe tests",
+          "Strength differs from concentration"
+        ],
+        "connections": "Their opposite nature leads to neutralisation"
+      },
+      {
+        "concept": "Indicators",
+        "sub_nodes": [
+          "Litmus: red in acid, blue in base",
+          "Turmeric: yellow to red in base",
+          "Phenolphthalein: colourless to pink in base",
+          "Methyl orange: red in acid, yellow in base"
+        ],
+        "connections": "Indicators identify acidic, basic, and neutral solutions"
+      },
+      {
+        "concept": "pH Scale",
+        "sub_nodes": [
+          "Scale from 0 to 14; below 7 acidic",
+          "pH 7 neutral; above 7 basic",
+          "Lower pH means more acidic",
+          "Tooth decay and soil quality depend on pH"
+        ],
+        "connections": "Quantifies acidity and basicity for daily decisions"
+      },
+      {
+        "concept": "Acid Reactions",
+        "sub_nodes": [
+          "Acid + active metal -> salt + H2",
+          "Acid + carbonate -> salt + water + CO2",
+          "Acid + bicarbonate -> salt + water + CO2",
+          "CO2 turns lime water milky"
+        ],
+        "connections": "Explains baking, effervescence, and gas tests"
+      },
+      {
+        "concept": "Neutralisation and Salts",
+        "sub_nodes": [
+          "Acid + base -> salt + water",
+          "H+ + OH- -> H2O",
+          "Salt name comes from acid and base",
+          "Water of crystallisation: CuSO4.5H2O is blue"
+        ],
+        "connections": "Links acid-base chemistry to hydrated salts"
+      },
+      {
+        "concept": "Important Salts and Industry",
+        "sub_nodes": [
+          "Bleaching powder: CaOCl2",
+          "Baking soda: NaHCO3; washing soda: Na2CO3.10H2O",
+          "Plaster of Paris: CaSO4.1/2H2O",
+          "Chlor-alkali: NaOH, Cl2, H2"
+        ],
+        "connections": "Connects laboratory chemistry to homes and industry"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    {
+      "misconception": "All acids are strong and dangerous.",
+      "correction": "Many acids are weak and occur in food, such as citric acid in lemon and acetic acid in vinegar."
+    },
+    {
+      "misconception": "Acids always release carbon dioxide with metals.",
+      "correction": "Acids release hydrogen with active metals; carbon dioxide is released with carbonates and bicarbonates."
+    },
+    {
+      "misconception": "A stronger acid is always more concentrated.",
+      "correction": "Strength refers to the extent of ionisation, while concentration refers to the amount of acid dissolved per unit volume."
+    },
+    {
+      "misconception": "All bases are alkalis.",
+      "correction": "Alkalis are bases that dissolve in water; some bases, such as copper(II) oxide, are insoluble and are not alkalis."
+    },
+    {
+      "misconception": "Baking soda and washing soda are the same substance.",
+      "correction": "Baking soda is NaHCO3, while washing soda is Na2CO3.10H2O; they have different formulae and uses."
+    },
+    {
+      "misconception": "Plaster of Paris is the same as gypsum.",
+      "correction": "Gypsum is CaSO4.2H2O, while plaster of Paris is CaSO4.1/2H2O, formed by heating gypsum."
+    },
+    {
+      "misconception": "Water of crystallisation is just moisture on the crystal.",
+      "correction": "It is a fixed number of water molecules chemically present in the crystal structure, as in CuSO4.5H2O."
+    },
+    {
+      "misconception": "Neutralisation always gives a neutral solution.",
+      "correction": "Neutralisation gives a salt and water, but the final solution may be acidic, basic, or neutral depending on the amounts and strengths of the acid and base."
+    }
+  ],
+  "meta": {
+    "sources": [
+      "NCERT Class X Science, Chapter 2: Acids, Bases and Salts",
+      "NCERT Class X Science textbook activities on indicators, pH, neutralisation, and important salts",
+      "CBSE Class X Science syllabus 2026-27, Chemical Substances - Nature and Behaviour"
+    ]
+  }
+}

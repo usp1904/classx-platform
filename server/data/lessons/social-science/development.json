@@ -1,0 +1,1289 @@
+{
+  "subject": "Economics",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 1,
+  "chapter": "Development",
+  "id": "development",
+  "lesson": 1,
+  "title": "Development - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Explain development as a combination of income and non-income goals",
+    "Distinguish national income from per capita income",
+    "Calculate per capita income and interpret its limitations",
+    "Describe the three dimensions of the Human Development Index",
+    "Explain why public facilities are essential for human development",
+    "Define sustainable development and identify threats to sustainability",
+    "Compare development outcomes using income, health, and education",
+    "Solve board-style case and data questions on development indicators"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS9_POVERTY_AS_A_CHALLENGE",
+    "SOCIAL_CLASS8_RESOURCES",
+    "SOCIAL_CLASS7_ENVIRONMENT",
+    "MATH_CLASS7_RATIO_AND_PROPORTION"
+  ],
+  "concepts": [
+    {
+      "id": "concept-1",
+      "name": "Meaning of Development",
+      "title": "Meaning of Development",
+      "explanation": "Development means a positive change that improves people's lives. It is not only about higher income. People also want regular work, better wages, education, health care, clean water, dignity, equality, freedom, and security. Because these goals differ from person to person, development cannot be reduced to a single number. A factory owner may want more profit, a worker may want higher wages and safety, and a village may want a school and a health centre. Development goals can therefore conflict, and decisions must balance competing interests.",
+      "purpose": "The concept widens development from economic growth to human welfare. It explains why governments, communities, and individuals often disagree about what counts as progress.",
+      "real_life_application": "A new highway may reduce travel time for commuters but displace families living along the route, so the same project creates benefits for some and losses for others.",
+      "key_points": [
+        "Development is a positive change in people's well-being.",
+        "Income is one goal, but health, education, dignity, and freedom also matter.",
+        "Different people can have different development goals.",
+        "Development goals may conflict with one another.",
+        "Development must be judged from the perspective of affected people.",
+        "Growth in output is not the same as improvement in welfare."
+      ],
+      "day_to_day_usage": [
+        "A family may prefer a nearby school to a higher-paying but distant job.",
+        "A worker may accept lower pay for safer working conditions.",
+        "A village may demand clean drinking water before a new road.",
+        "A city may restrict construction to protect a lake.",
+        "A student may value skill training as much as a certificate.",
+        "A community may oppose a project that displaces homes."
+      ]
+    },
+    {
+      "id": "concept-2",
+      "name": "Income and Other Goals",
+      "title": "Income and Other Goals",
+      "explanation": "Income is a major development goal because it allows people to buy food, shelter, education, and health care. However, people also seek non-income goals such as equal treatment, freedom, security, and respect. A person may earn well but work in unsafe conditions or face discrimination. A community may have high average income but poor public schools and polluted water. Development therefore requires both higher incomes and better living conditions. The quality of work, access to public services, and social equality are as important as the size of the pay packet.",
+      "purpose": "This concept explains why income alone is an incomplete measure and why policy must address working conditions, public services, and social justice.",
+      "real_life_application": "A high salary cannot compensate for toxic air, unsafe transport, or a lack of schools for children; people often trade income for a better quality of life.",
+      "key_points": [
+        "Income helps people meet basic needs.",
+        "Non-income goals include dignity, safety, equality, and freedom.",
+        "High income can coexist with poor working conditions.",
+        "Public services and social equality are part of development.",
+        "People may sacrifice income for a better quality of life.",
+        "Development policy must consider both income and non-income goals."
+      ],
+      "day_to_day_usage": [
+        "Choosing a job with shorter hours over a slightly better-paid one.",
+        "Demanding safe drinking water in a high-income neighbourhood.",
+        "Preferring a school with a safe environment to a distant elite school.",
+        "Supporting equal pay for equal work.",
+        "Asking for public transport instead of more parking.",
+        "Valuing leisure and family time alongside earnings."
+      ]
+    },
+    {
+      "id": "concept-3",
+      "name": "Per Capita Income and Its Limits",
+      "title": "Per Capita Income and Its Limits",
+      "explanation": "National income is the total income earned by a country's residents in a year. Per capita income is national income divided by population. It is used to compare the average income of people across countries and over time. The World Bank classifies countries by per capita income. However, an average can hide inequality: a few very rich people can raise the average while most people remain poor. Per capita income also ignores health, education, unpaid work, environmental damage, and income distribution. It is therefore a useful but incomplete indicator of development.",
+      "purpose": "The concept teaches how averages are calculated and why they can mislead. It prepares students to interpret development data critically.",
+      "real_life_application": "Two colonies can have the same average income, but in one the income is shared evenly while in the other a single rich household dominates the average.",
+      "key_points": [
+        "National income is the total income of residents in a year.",
+        "Per capita income = national income divided by population.",
+        "It is an average, not a measure of every person's income.",
+        "Averages hide inequality and poverty.",
+        "It ignores health, education, and environmental quality.",
+        "World Bank income classifications use per capita income."
+      ],
+      "day_to_day_usage": [
+        "Reading news about average income per person.",
+        "Comparing salaries across countries.",
+        "Understanding why a high average can coexist with slums.",
+        "Judging a scheme by its effect on the poorest, not just the average.",
+        "Questioning claims based only on GDP per person.",
+        "Checking whether growth reaches all districts."
+      ]
+    },
+    {
+      "id": "concept-4",
+      "name": "Human Development Index",
+      "title": "Human Development Index",
+      "explanation": "The Human Development Index (HDI) is a composite measure published by the United Nations Development Programme. It combines three dimensions: a long and healthy life, measured by life expectancy at birth; knowledge, measured by schooling; and a decent standard of living, measured by per capita income. The HDI ranges from 0 to 1, and countries are grouped into very high, high, medium, and low human development. Unlike per capita income alone, HDI gives weight to health and education. It still does not capture inequality, gender gaps, or environmental sustainability fully, so additional indicators are used.",
+      "purpose": "HDI provides a broader comparison of development than income alone. It shows that a country can have modest income but good health and education, or high income but poor human outcomes.",
+      "real_life_application": "A country with lower average income but widespread schooling and health care can rank higher on human development than a richer country with unequal access.",
+      "key_points": [
+        "HDI is published by UNDP.",
+        "It has three dimensions: health, education, and standard of living.",
+        "Life expectancy measures the health dimension.",
+        "Schooling measures the education dimension.",
+        "Per capita income measures the standard of living.",
+        "HDI does not fully capture inequality or sustainability."
+      ],
+      "day_to_day_usage": [
+        "Comparing states on health and education, not just income.",
+        "Reading the Human Development Report.",
+        "Evaluating a district's schools and hospitals.",
+        "Understanding why health spending matters.",
+        "Discussing gender gaps in education.",
+        "Assessing progress beyond GDP."
+      ]
+    },
+    {
+      "id": "concept-5",
+      "name": "Public Facilities and Human Development",
+      "title": "Public Facilities and Human Development",
+      "explanation": "Public facilities are goods and services provided or supported by the government because markets alone may not supply them adequately. They include schools, hospitals, drinking water, sanitation, public transport, electricity, and law and order. These facilities improve health and education, reduce inequality, and raise productivity. Private provision can be expensive and may exclude poor households. Public facilities also create benefits for society as a whole, such as immunisation that protects everyone. Their quality and reach are therefore central to human development.",
+      "purpose": "The concept explains why governments provide essential services and why public spending on health and education is a development investment, not just welfare.",
+      "real_life_application": "A public health centre, a government school, and a municipal water supply can improve life chances even when private incomes are low.",
+      "key_points": [
+        "Public facilities are provided or supported by the government.",
+        "They include health, education, water, sanitation, and transport.",
+        "Markets may underprovide facilities with broad social benefits.",
+        "Public provision reduces inequality of access.",
+        "Poor public facilities can hold back human development.",
+        "Public facilities raise productivity and well-being."
+      ],
+      "day_to_day_usage": [
+        "Using a government school or primary health centre.",
+        "Drinking water supplied by a municipal authority.",
+        "Travelling on a public bus.",
+        "Using public toilets and sanitation services.",
+        "Benefiting from street lighting and policing.",
+        "Receiving a free vaccination at a public camp."
+      ]
+    },
+    {
+      "id": "concept-6",
+      "name": "Sustainable Development",
+      "title": "Sustainable Development",
+      "explanation": "Sustainable development means meeting the needs of the present without compromising the ability of future generations to meet their own needs. It requires careful use of renewable resources such as groundwater, forests, and soil, and reduced dependence on non-renewable resources such as coal and petroleum. Overuse can cause groundwater depletion, deforestation, soil erosion, and pollution. Sustainability also involves equity within the present generation, because the poor often suffer most from environmental damage. Practical steps include efficient use, recycling, renewable energy, and environmental regulation.",
+      "purpose": "The concept links development to resource limits and intergenerational justice. It explains why short-term growth can destroy the resource base on which future development depends.",
+      "real_life_application": "If a city extracts more groundwater than rain recharges, the water table falls and future residents face shortages, even if current residents enjoy abundant supply.",
+      "key_points": [
+        "Sustainable development meets present needs without harming future generations.",
+        "Renewable resources must be used within their rate of renewal.",
+        "Non-renewable resources are exhaustible and must be conserved.",
+        "Pollution and habitat loss impose costs on society.",
+        "Environmental damage often hurts the poor most.",
+        "Efficiency, recycling, and renewable energy support sustainability."
+      ],
+      "day_to_day_usage": [
+        "Saving water during household use.",
+        "Segregating waste for recycling.",
+        "Using public transport or cycling.",
+        "Switching off unused lights and fans.",
+        "Avoiding single-use plastic where possible.",
+        "Planting and protecting trees."
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-dev-1",
+      "title": "Calculating Per Capita Income",
+      "topic": "National income and population",
+      "problem": "A country has a national income of Rs 80,000 crore and a population of 4 crore. Calculate its per capita income. If another country has a national income of Rs 60,000 crore and a population of 2 crore, which has the higher per capita income?",
+      "solution": [
+        "Step 1: Per capita income = national income divided by population.",
+        "Step 2: Country A: 80,000 crore / 4 crore = Rs 20,000 per person.",
+        "Step 3: Country B: 60,000 crore / 2 crore = Rs 30,000 per person.",
+        "Step 4: Country B has the higher per capita income even though its total national income is lower.",
+        "Step 5: The comparison shows why population size must be considered when comparing incomes."
+      ],
+      "board_mode": "Write the formula, then show each division with units. State the final comparison in a complete sentence.",
+      "answer": "Country A has Rs 20,000 per person; Country B has Rs 30,000 per person, so Country B has the higher per capita income.",
+      "board_tip": "Keep the units consistent. Convert both incomes and populations to the same unit before dividing."
+    },
+    {
+      "id": "we-dev-2",
+      "title": "How an Average Hides Inequality",
+      "topic": "Limitations of per capita income",
+      "problem": "Country A has four citizens with annual incomes of Rs 10,000 each. Country B has four citizens with incomes of Rs 2,000, Rs 2,000, Rs 2,000, and Rs 34,000. Both have the same average income. Explain what the average hides.",
+      "solution": [
+        "Step 1: Country A total income = 10,000 + 10,000 + 10,000 + 10,000 = Rs 40,000.",
+        "Step 2: Country A average = 40,000 / 4 = Rs 10,000.",
+        "Step 3: Country B total income = 2,000 + 2,000 + 2,000 + 34,000 = Rs 40,000.",
+        "Step 4: Country B average = 40,000 / 4 = Rs 10,000.",
+        "Step 5: The averages are equal, but in Country B three people earn only Rs 2,000 while one earns Rs 34,000.",
+        "Step 6: Per capita income therefore hides inequality and cannot show how income is distributed."
+      ],
+      "board_mode": "Show both totals and both averages. Then write one sentence explaining the distribution difference.",
+      "answer": "Both averages are Rs 10,000, but Country B is highly unequal: three people earn Rs 2,000 and one earns Rs 34,000.",
+      "board_tip": "Use the word 'average' carefully. Averages describe a typical value only when the distribution is not highly unequal."
+    },
+    {
+      "id": "we-dev-3",
+      "title": "Comparing Human Development",
+      "topic": "HDI dimensions",
+      "problem": "Country X has life expectancy of 70 years, average schooling of 8 years, and per capita income of $5,000. Country Y has life expectancy of 60 years, average schooling of 5 years, and per capita income of $8,000. Which country is likely to have higher human development, and why?",
+      "solution": [
+        "Step 1: HDI combines health, education, and standard of living.",
+        "Step 2: Country X is ahead on health (70 years versus 60 years) and education (8 years versus 5 years).",
+        "Step 3: Country Y is ahead on income ($8,000 versus $5,000).",
+        "Step 4: HDI gives weight to all three dimensions, so better health and education can outweigh a moderate income gap.",
+        "Step 5: Country X is therefore likely to have higher human development, though the exact HDI depends on the index formula.",
+        "Step 6: The comparison shows why income alone is not enough."
+      ],
+      "board_mode": "Draw a three-row table for health, education, and income. Mark which country leads in each row, then give a reasoned conclusion.",
+      "answer": "Country X is likely to have higher human development because its health and education outcomes are much better, despite lower income.",
+      "board_tip": "Do not declare a winner from income alone. HDI requires a balanced comparison across all three dimensions."
+    },
+    {
+      "id": "we-dev-4",
+      "title": "Groundwater Deficit and Sustainability",
+      "topic": "Sustainable use of renewable resources",
+      "problem": "A district extracts 120 units of groundwater each year while natural recharge is only 100 units. Calculate the annual deficit and the cumulative deficit over 10 years. Suggest two measures to make use sustainable.",
+      "solution": [
+        "Step 1: Annual deficit = extraction - recharge = 120 - 100 = 20 units.",
+        "Step 2: Cumulative deficit over 10 years = 20 x 10 = 200 units.",
+        "Step 3: A renewable resource is being used faster than it is renewed, so the water table will fall.",
+        "Step 4: Measure 1: recharge groundwater through rainwater harvesting and check dams.",
+        "Step 5: Measure 2: reduce demand through efficient irrigation, crop choice, and water-saving fixtures.",
+        "Step 6: Regulation of extraction and pricing can also help, but equity for small farmers must be considered."
+      ],
+      "board_mode": "Show the annual deficit, then multiply by 10. Write the two measures as separate numbered points.",
+      "answer": "The annual deficit is 20 units and the 10-year deficit is 200 units; use rainwater harvesting and efficient irrigation to restore balance.",
+      "board_tip": "State the renewal condition clearly: sustainable use requires extraction to stay within recharge."
+    },
+    {
+      "id": "we-dev-5",
+      "title": "Public Spending and Human Development",
+      "topic": "Public facilities",
+      "problem": "Two villages have the same total income of Rs 50 lakh. Village A spends 10% of its budget on health and education, while Village B spends 20%. Calculate the spending in each village and explain the likely difference in human development.",
+      "solution": [
+        "Step 1: Village A spending = 10% of Rs 50 lakh = 0.10 x 50,00,000 = Rs 5,00,000.",
+        "Step 2: Village B spending = 20% of Rs 50 lakh = 0.20 x 50,00,000 = Rs 10,00,000.",
+        "Step 3: Village B spends Rs 5,00,000 more on health and education.",
+        "Step 4: Higher public spending can improve schools, clinics, and sanitation, raising health and education outcomes.",
+        "Step 5: Village B is therefore likely to have better human development even though both villages have the same income.",
+        "Step 6: Public facilities convert income into capabilities, so their provision matters alongside income."
+      ],
+      "board_mode": "Calculate both amounts in one line each. Then link the higher spending to specific facilities such as schools and clinics.",
+      "answer": "Village A spends Rs 5,00,000 and Village B spends Rs 10,00,000; Village B is likely to have better human development.",
+      "board_tip": "Do not assume that equal income means equal development. Public spending changes access to health and education."
+    }
+  ],
+  "exercises": {
+    "exercise_1_1": {
+      "title": "NCERT Exercise 1.1 - Meaning and Measurement of Development",
+      "objective": "Explain development goals and calculate per capita income",
+      "problems": [
+        {
+          "id": "dev-ex1-1",
+          "question": "Define development.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Development is a positive change that improves people's well-being.",
+            "Step 2: It includes higher income as well as better health, education, dignity, and security.",
+            "Step 3: It is judged by the lives people are able to lead."
+          ],
+          "final_answer": "Development is a positive change in people's well-being, covering income and non-income goals."
+        },
+        {
+          "id": "dev-ex1-2",
+          "question": "What is per capita income?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: National income is the total income of a country's residents in a year.",
+            "Step 2: Per capita income divides national income by population.",
+            "Step 3: It gives average income per person."
+          ],
+          "final_answer": "Per capita income is national income divided by population."
+        },
+        {
+          "id": "dev-ex1-3",
+          "question": "Name three non-income goals of development.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: People want equal treatment and dignity.",
+            "Step 2: They want security and freedom.",
+            "Step 3: They also want health, education, and a clean environment."
+          ],
+          "final_answer": "Examples include equality, freedom, security, dignity, health, and education."
+        },
+        {
+          "id": "dev-ex1-4",
+          "question": "Why do different people have different development goals?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: People occupy different social and economic positions.",
+            "Step 2: A worker may want higher wages and safety, while an owner may want more profit.",
+            "Step 3: A farmer may want irrigation, while a city resident may want public transport.",
+            "Step 4: Because interests differ, development goals can conflict."
+          ],
+          "final_answer": "Goals differ because people's needs, occupations, and interests differ, and they may conflict."
+        },
+        {
+          "id": "dev-ex1-5",
+          "question": "A country has a national income of Rs 60,000 crore and a population of 3 crore. Calculate its per capita income.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Per capita income = national income / population.",
+            "Step 2: 60,000 crore / 3 crore = 20,000.",
+            "Step 3: The per capita income is Rs 20,000 per person per year."
+          ],
+          "final_answer": "Rs 20,000 per person per year."
+        },
+        {
+          "id": "dev-ex1-6",
+          "question": "State three limitations of per capita income as a measure of development.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: It is an average and hides inequality in income distribution.",
+            "Step 2: It ignores health, education, and environmental quality.",
+            "Step 3: It does not value unpaid work or capture social security and dignity.",
+            "Step 4: It can rise even when the poor do not benefit."
+          ],
+          "final_answer": "It hides inequality, ignores health and education, and misses unpaid work and environmental costs."
+        }
+      ]
+    },
+    "exercise_1_2": {
+      "title": "NCERT Exercise 1.2 - HDI, Public Facilities, and Sustainability",
+      "objective": "Apply HDI, public facilities, and sustainable development concepts",
+      "problems": [
+        {
+          "id": "dev-ex2-1",
+          "question": "What does the Human Development Index measure?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: HDI measures human development across three dimensions.",
+            "Step 2: The dimensions are health, education, and standard of living.",
+            "Step 3: It is published by the United Nations Development Programme."
+          ],
+          "final_answer": "HDI measures health, education, and standard of living."
+        },
+        {
+          "id": "dev-ex2-2",
+          "question": "Define sustainable development.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Sustainable development meets present needs.",
+            "Step 2: It does not compromise the ability of future generations to meet their needs.",
+            "Step 3: It requires careful use of resources and protection of the environment."
+          ],
+          "final_answer": "Development that meets present needs without harming future generations' ability to meet theirs."
+        },
+        {
+          "id": "dev-ex2-3",
+          "question": "Explain the three components of HDI.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Health is measured by life expectancy at birth.",
+            "Step 2: Education is measured by years of schooling.",
+            "Step 3: Standard of living is measured by per capita income.",
+            "Step 4: The three are combined into an index between 0 and 1."
+          ],
+          "final_answer": "HDI combines life expectancy, schooling, and per capita income."
+        },
+        {
+          "id": "dev-ex2-4",
+          "question": "Why are public facilities important for development?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Public facilities such as schools and hospitals improve health and education.",
+            "Step 2: They reduce inequality because poor households can access essential services.",
+            "Step 3: They create benefits for society as a whole, such as immunisation and sanitation.",
+            "Step 4: Markets may not provide these facilities adequately because private providers may exclude the poor."
+          ],
+          "final_answer": "They improve health and education, reduce inequality, and provide society-wide benefits that markets may underprovide."
+        },
+        {
+          "id": "dev-ex2-5",
+          "question": "Country A has national income of Rs 40,000 crore and population 2 crore. Country B has national income of Rs 60,000 crore and population 5 crore. Calculate both per capita incomes and comment on whether income alone can compare their development.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Country A per capita income = 40,000 / 2 = Rs 20,000.",
+            "Step 2: Country B per capita income = 60,000 / 5 = Rs 12,000.",
+            "Step 3: Country A has the higher per capita income.",
+            "Step 4: Income alone cannot compare development because it ignores health, education, and inequality.",
+            "Step 5: A country with lower income but better public services may have higher human development."
+          ],
+          "final_answer": "Country A: Rs 20,000; Country B: Rs 12,000. Income alone is insufficient because health, education, and distribution also matter."
+        },
+        {
+          "id": "dev-ex2-6",
+          "question": "A district extracts 150 units of groundwater each year while recharge is 120 units. Calculate the annual and five-year deficits and suggest two corrective measures.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Annual deficit = 150 - 120 = 30 units.",
+            "Step 2: Five-year deficit = 30 x 5 = 150 units.",
+            "Step 3: Extraction exceeds recharge, so the water table will fall.",
+            "Step 4: Measure 1: rainwater harvesting and recharge pits.",
+            "Step 5: Measure 2: efficient irrigation and regulation of extraction.",
+            "Step 6: Crop choices and public awareness can reduce demand further."
+          ],
+          "final_answer": "Annual deficit 30 units; five-year deficit 150 units; use rainwater harvesting and efficient irrigation."
+        }
+      ]
+    },
+    "exercise_1_3": {
+      "title": "NCERT Exercise 1.3 - Evaluating Development Outcomes",
+      "objective": "Evaluate claims about income, human development, and sustainability",
+      "problems": [
+        {
+          "id": "dev-ex3-1",
+          "question": "What is life expectancy?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Life expectancy is the average number of years a person is expected to live.",
+            "Step 2: It is calculated from mortality conditions at birth.",
+            "Step 3: It is used as an indicator of health in HDI."
+          ],
+          "final_answer": "Life expectancy is the average number of years a person is expected to live."
+        },
+        {
+          "id": "dev-ex3-2",
+          "question": "Explain a conflict between two development goals with an example.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: A dam can provide irrigation and electricity, which are development goals.",
+            "Step 2: It can also displace families and damage forests, which harms other development goals.",
+            "Step 3: The same project creates benefits for some and losses for others.",
+            "Step 4: Resettlement, compensation, and environmental safeguards are needed to balance the goals."
+          ],
+          "final_answer": "A dam may raise irrigation and power but displace people and damage forests, so goals conflict."
+        },
+        {
+          "id": "dev-ex3-3",
+          "question": "\"Higher per capita income always means higher development.\" Evaluate this statement.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Higher income can improve access to food, housing, and services.",
+            "Step 2: But per capita income is an average and can hide inequality.",
+            "Step 3: It ignores health, education, safety, and environmental quality.",
+            "Step 4: A high-income country may have poor public services or severe pollution.",
+            "Step 5: Development should be judged by human outcomes as well as income, so the statement is not always true."
+          ],
+          "final_answer": "Not always; income is important but averages can hide inequality and ignore health, education, and environment."
+        },
+        {
+          "id": "dev-ex3-4",
+          "question": "A state has high average income but poor government schools and hospitals. Explain why it may still have low human development.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: High average income does not guarantee that public services are good.",
+            "Step 2: Poor schools reduce literacy and skills, lowering the education dimension of HDI.",
+            "Step 3: Poor hospitals raise mortality and reduce life expectancy, lowering the health dimension.",
+            "Step 4: If income is unequally distributed, many households cannot buy private substitutes.",
+            "Step 5: Human development therefore depends on public provision and distribution, not income alone."
+          ],
+          "final_answer": "Because human development depends on health and education, which poor public services fail to deliver."
+        },
+        {
+          "id": "dev-ex3-5",
+          "question": "Country X has per capita income $4,000, life expectancy 72 years, and schooling 9 years. Country Y has per capita income $7,000, life expectancy 61 years, and schooling 5 years. Which is likely to have higher human development and why?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Country Y has higher income by $3,000 per person.",
+            "Step 2: Country X has a health advantage of 11 years of life expectancy.",
+            "Step 3: Country X has an education advantage of 4 years of schooling.",
+            "Step 4: HDI weights health and education alongside income.",
+            "Step 5: Country X is likely to have higher human development because its health and education advantages are large."
+          ],
+          "final_answer": "Country X is likely higher because its health and education outcomes outweigh Country Y's income advantage."
+        },
+        {
+          "id": "dev-ex3-6",
+          "question": "A city uses 200 units of water per day while recharge is 150 units. Calculate the daily and annual deficits and suggest two policies for sustainable water use.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Daily deficit = 200 - 150 = 50 units.",
+            "Step 2: Annual deficit = 50 x 365 = 18,250 units.",
+            "Step 3: The city is using water faster than it is renewed.",
+            "Step 4: Policy 1: rainwater harvesting and recharge of aquifers.",
+            "Step 5: Policy 2: reduce demand through leak repair, efficient fixtures, and water pricing.",
+            "Step 6: Recycling treated water for non-drinking uses can also reduce pressure."
+          ],
+          "final_answer": "Daily deficit 50 units; annual deficit 18,250 units; use rainwater harvesting and demand management."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-dev-s-1",
+        "question": "Development means:",
+        "options": [
+          "Improvement in people's well-being",
+          "Only an increase in exports",
+          "Only growth of factories",
+          "Only a rise in population"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Development includes income and non-income improvements in people's lives.",
+          "wrong_options": {
+            "1": "Exports are only one part of the economy.",
+            "2": "Factories are a means, not the whole meaning.",
+            "3": "Population growth is not development by itself."
+          }
+        }
+      },
+      {
+        "id": "q-dev-s-2",
+        "question": "Per capita income is:",
+        "options": [
+          "National income divided by population",
+          "Population divided by national income",
+          "Total exports minus imports",
+          "Total savings of households"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "It divides total national income by the number of people.",
+          "wrong_options": {
+            "1": "This reverses the formula.",
+            "2": "That is the trade balance.",
+            "3": "Savings are only one part of income."
+          }
+        }
+      },
+      {
+        "id": "q-dev-s-3",
+        "question": "Which is a non-income goal of development?",
+        "options": [
+          "Dignity and equality",
+          "Higher exports",
+          "More factory output",
+          "Larger bank balances"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Dignity and equality are social goals beyond income.",
+          "wrong_options": {
+            "1": "Exports are an economic measure.",
+            "2": "Factory output is production.",
+            "3": "Bank balances are income or wealth."
+          }
+        }
+      },
+      {
+        "id": "q-dev-s-4",
+        "question": "HDI measures development using:",
+        "options": [
+          "Health, education, and income",
+          "Only income",
+          "Only education",
+          "Only life expectancy"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "HDI combines life expectancy, schooling, and per capita income.",
+          "wrong_options": {
+            "1": "Income alone is not HDI.",
+            "2": "Education is only one dimension.",
+            "3": "Health is only one dimension."
+          }
+        }
+      },
+      {
+        "id": "q-dev-s-5",
+        "question": "Sustainable development cares about:",
+        "options": [
+          "Future generations",
+          "Only present profits",
+          "Only urban areas",
+          "Only exports"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "It meets present needs without compromising future generations.",
+          "wrong_options": {
+            "1": "Short-term profit can undermine sustainability.",
+            "2": "It applies to all areas and people.",
+            "3": "Exports are not the defining concern."
+          }
+        }
+      },
+      {
+        "id": "q-dev-s-6",
+        "question": "A public facility is:",
+        "options": [
+          "A government-supported school or hospital",
+          "A private luxury car",
+          "A personal savings account",
+          "A family business"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Public facilities are essential services provided or supported by the government.",
+          "wrong_options": {
+            "1": "A private car is a consumer good.",
+            "2": "A savings account is a private financial asset.",
+            "3": "A family business is private."
+          }
+        }
+      },
+      {
+        "id": "q-dev-s-7",
+        "question": "An average income can hide:",
+        "options": [
+          "Inequality in income distribution",
+          "The country's population",
+          "The year of measurement",
+          "The currency used"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A few very high incomes can raise the average while most people remain poor.",
+          "wrong_options": {
+            "1": "Population is used in the calculation.",
+            "2": "The year is usually stated.",
+            "3": "The currency can be converted."
+          }
+        }
+      },
+      {
+        "id": "q-dev-s-8",
+        "question": "Which resource is renewable?",
+        "options": [
+          "Groundwater",
+          "Coal",
+          "Petroleum",
+          "Natural gas"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Groundwater is renewed by rainfall and recharge, though it can be depleted by overuse.",
+          "wrong_options": {
+            "1": "Coal is non-renewable.",
+            "2": "Petroleum is non-renewable.",
+            "3": "Natural gas is non-renewable."
+          }
+        }
+      },
+      {
+        "id": "q-dev-s-9",
+        "question": "Life expectancy is an indicator of:",
+        "options": [
+          "Health",
+          "Trade",
+          "Industrial output",
+          "Bank credit"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "It measures how long people are expected to live, reflecting health conditions.",
+          "wrong_options": {
+            "1": "Trade is measured by exports and imports.",
+            "2": "Industrial output is a production measure.",
+            "3": "Credit is a financial measure."
+          }
+        }
+      },
+      {
+        "id": "q-dev-s-10",
+        "question": "Which organization publishes the Human Development Report?",
+        "options": [
+          "UNDP",
+          "WTO",
+          "IMF only",
+          "World Bank only"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The United Nations Development Programme publishes the Human Development Report.",
+          "wrong_options": {
+            "1": "WTO deals with trade rules.",
+            "2": "The IMF focuses on macroeconomic and financial stability.",
+            "3": "The World Bank publishes other development data, but HDR is UNDP."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-dev-m-1",
+        "question": "Why can two countries with the same per capita income have different development levels?",
+        "options": [
+          "They may differ in health, education, and inequality",
+          "They must have the same population",
+          "They must have the same exports",
+          "Income is the only measure"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Development also depends on public services, distribution, and human outcomes.",
+          "wrong_options": {
+            "1": "Population can differ; the average already divides by it.",
+            "2": "Exports are not the only difference.",
+            "3": "Income is not the only measure."
+          }
+        }
+      },
+      {
+        "id": "q-dev-m-2",
+        "question": "National income is Rs 90,000 crore and population is 3 crore. Per capita income is:",
+        "options": [
+          "Rs 30,000",
+          "Rs 27,000",
+          "Rs 3,000",
+          "Rs 90,000"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "90,000 / 3 = 30,000.",
+          "wrong_options": {
+            "1": "This is not the result of the division.",
+            "2": "This divides by 30 instead of 3.",
+            "3": "This is total income, not per person."
+          }
+        }
+      },
+      {
+        "id": "q-dev-m-3",
+        "question": "Which pair correctly matches an HDI dimension with its indicator?",
+        "options": [
+          "Health - life expectancy",
+          "Health - exports",
+          "Education - inflation",
+          "Income - literacy"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Life expectancy is the health indicator in HDI.",
+          "wrong_options": {
+            "1": "Exports are a trade measure.",
+            "2": "Inflation is a price measure.",
+            "3": "Literacy is an education indicator, not income."
+          }
+        }
+      },
+      {
+        "id": "q-dev-m-4",
+        "question": "Public facilities reduce inequality mainly by:",
+        "options": [
+          "Giving everyone access to essential services",
+          "Raising only private profits",
+          "Increasing exports",
+          "Reducing population"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Schools, hospitals, and water supply improve access for poor households.",
+          "wrong_options": {
+            "1": "Private profit is not the aim of public facilities.",
+            "2": "Exports are unrelated to the main mechanism.",
+            "3": "Population reduction is not the purpose."
+          }
+        }
+      },
+      {
+        "id": "q-dev-m-5",
+        "question": "A development project that benefits one group and harms another shows that:",
+        "options": [
+          "Development goals can conflict",
+          "All goals are identical",
+          "Income is irrelevant",
+          "Sustainability is impossible"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Different people can gain or lose from the same project.",
+          "wrong_options": {
+            "1": "Goals are not always identical.",
+            "2": "Income still matters, but it is not the only issue.",
+            "3": "Conflict does not make sustainability impossible."
+          }
+        }
+      },
+      {
+        "id": "q-dev-m-6",
+        "question": "Extracting groundwater faster than it recharges is:",
+        "options": [
+          "Unsustainable",
+          "Sustainable",
+          "Income equality",
+          "Human development"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Use exceeds renewal, so the resource will be depleted.",
+          "wrong_options": {
+            "1": "Sustainable use stays within recharge.",
+            "2": "This is a resource issue, not equality.",
+            "3": "It undermines long-term development."
+          }
+        }
+      },
+      {
+        "id": "q-dev-m-7",
+        "question": "Which statement about HDI is correct?",
+        "options": [
+          "It gives weight to health and education as well as income",
+          "It uses only income",
+          "It measures only pollution",
+          "It is published by the WTO"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "HDI is a composite index of health, education, and income.",
+          "wrong_options": {
+            "1": "Income is only one dimension.",
+            "2": "Pollution is not an HDI dimension.",
+            "3": "HDI is published by UNDP."
+          }
+        }
+      },
+      {
+        "id": "q-dev-m-8",
+        "question": "Why is per capita income not a complete measure of development?",
+        "options": [
+          "It ignores distribution, health, and education",
+          "It is impossible to calculate",
+          "It always falls over time",
+          "It measures only exports"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "It is an average and does not capture human or environmental outcomes.",
+          "wrong_options": {
+            "1": "It can be calculated from income and population.",
+            "2": "It can rise or fall.",
+            "3": "It covers total income, not only exports."
+          }
+        }
+      },
+      {
+        "id": "q-dev-m-9",
+        "question": "A country with high income but short life expectancy likely has:",
+        "options": [
+          "Weak health outcomes despite high income",
+          "No income problem",
+          "Perfect human development",
+          "No inequality"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "High income does not guarantee good health services or healthy living conditions.",
+          "wrong_options": {
+            "1": "Income may be high, but health is poor.",
+            "2": "HDI would reflect the health weakness.",
+            "3": "High income can coexist with inequality."
+          }
+        }
+      },
+      {
+        "id": "q-dev-m-10",
+        "question": "The Brundtland definition of sustainable development refers to:",
+        "options": [
+          "Present needs without compromising future generations",
+          "Maximum present production",
+          "Only renewable energy",
+          "Only recycling"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "It balances present needs with the ability of future generations to meet theirs.",
+          "wrong_options": {
+            "1": "Maximum present production can be unsustainable.",
+            "2": "Renewable energy is one means, not the whole definition.",
+            "3": "Recycling is one practice, not the definition."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-dev-x-1",
+        "question": "Country A has incomes 5, 5, 5, 5 and Country B has incomes 1, 1, 1, 17. Both average 5. Which is more unequal?",
+        "options": [
+          "Country B",
+          "Country A",
+          "Both are equal",
+          "Cannot be compared"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Country B has three people at 1 and one at 17, so its distribution is far more unequal.",
+          "wrong_options": {
+            "1": "Country A has equal incomes.",
+            "2": "The averages are equal, but distributions differ.",
+            "3": "The distributions can be compared."
+          }
+        }
+      },
+      {
+        "id": "q-dev-x-2",
+        "question": "A country's national income is Rs 1,20,000 crore and population is 4 crore. Per capita income is:",
+        "options": [
+          "Rs 30,000",
+          "Rs 40,000",
+          "Rs 3,000",
+          "Rs 48,000"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1,20,000 / 4 = 30,000.",
+          "wrong_options": {
+            "1": "This would require income of 1,60,000 crore.",
+            "2": "This divides by 40.",
+            "3": "This is not the correct division."
+          }
+        }
+      },
+      {
+        "id": "q-dev-x-3",
+        "question": "Which set of indicators best represents HDI?",
+        "options": [
+          "Life expectancy, schooling, per capita income",
+          "Exports, imports, tariff",
+          "Population, area, rainfall",
+          "Coal, steel, cement"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "These are the health, education, and income dimensions of HDI.",
+          "wrong_options": {
+            "1": "These are trade indicators.",
+            "2": "These are geographic and demographic indicators.",
+            "3": "These are industrial output indicators."
+          }
+        }
+      },
+      {
+        "id": "q-dev-x-4",
+        "question": "A district extracts 180 units and recharge is 140 units. The annual deficit is:",
+        "options": [
+          "40 units",
+          "140 units",
+          "180 units",
+          "320 units"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "180 - 140 = 40 units.",
+          "wrong_options": {
+            "1": "This is the recharge, not the deficit.",
+            "2": "This is extraction.",
+            "3": "This adds the two values."
+          }
+        }
+      },
+      {
+        "id": "q-dev-x-5",
+        "question": "Which policy best promotes sustainable groundwater use?",
+        "options": [
+          "Rainwater harvesting and efficient irrigation",
+          "Free electricity for unlimited pumping",
+          "Deeper wells for every farmer",
+          "Removing all regulation"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Recharge and efficiency bring extraction closer to renewal.",
+          "wrong_options": {
+            "1": "Free power can encourage over-extraction.",
+            "2": "Deeper wells can accelerate depletion.",
+            "3": "Removing regulation worsens the tragedy of the commons."
+          }
+        }
+      },
+      {
+        "id": "q-dev-x-6",
+        "question": "Country X has income $5,000, life expectancy 75, schooling 10. Country Y has income $9,000, life expectancy 62, schooling 6. Which is likely higher on HDI?",
+        "options": [
+          "Country X",
+          "Country Y",
+          "They must be equal",
+          "Cannot be assessed at all"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Country X's large health and education advantages likely outweigh Country Y's income lead.",
+          "wrong_options": {
+            "1": "Country Y's income lead is offset by weaker health and education.",
+            "2": "Their indicators differ, so they need not be equal.",
+            "3": "A reasoned comparison can be made."
+          }
+        }
+      },
+      {
+        "id": "q-dev-x-7",
+        "question": "A dam project increases irrigation but displaces villages. The best development response is to:",
+        "options": [
+          "Plan resettlement, compensation, and environmental safeguards",
+          "Ignore the displaced people",
+          "Stop all irrigation",
+          "Build without any assessment"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Balancing benefits and losses requires safeguards and fair resettlement.",
+          "wrong_options": {
+            "1": "Ignoring losses violates development goals.",
+            "2": "Irrigation benefits need not be abandoned.",
+            "3": "No assessment can worsen harm."
+          }
+        }
+      },
+      {
+        "id": "q-dev-x-8",
+        "question": "Which statement about GDP and development is most accurate?",
+        "options": [
+          "GDP growth can occur without improving well-being",
+          "GDP growth always reduces inequality",
+          "GDP measures health directly",
+          "GDP includes unpaid household work"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Growth may bypass the poor or damage the environment, so it is not the same as development.",
+          "wrong_options": {
+            "1": "Growth can widen inequality.",
+            "2": "GDP does not measure health outcomes.",
+            "3": "Unpaid household work is generally excluded."
+          }
+        }
+      },
+      {
+        "id": "q-dev-x-9",
+        "question": "A village has high average income but no public school or clinic. This shows:",
+        "options": [
+          "Income alone does not ensure human development",
+          "Development is impossible",
+          "Public facilities are unnecessary",
+          "Inequality does not matter"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Human development depends on public services and capabilities, not income alone.",
+          "wrong_options": {
+            "1": "Development is possible with better public provision.",
+            "2": "Public facilities are central to human development.",
+            "3": "Inequality affects access to services."
+          }
+        }
+      },
+      {
+        "id": "q-dev-x-10",
+        "question": "The annual water deficit is 50 units. Over 4 years the cumulative deficit is:",
+        "options": [
+          "200 units",
+          "54 units",
+          "100 units",
+          "50 units"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "50 x 4 = 200 units.",
+          "wrong_options": {
+            "1": "This adds 4 to 50.",
+            "2": "This is 2 years, not 4.",
+            "3": "This is one year."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Development - Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Development",
+        "group": "core"
+      },
+      {
+        "id": "n2",
+        "label": "Income Goals",
+        "group": "goal"
+      },
+      {
+        "id": "n3",
+        "label": "Non-income Goals",
+        "group": "goal"
+      },
+      {
+        "id": "n4",
+        "label": "Per Capita Income",
+        "group": "measure"
+      },
+      {
+        "id": "n5",
+        "label": "Human Development Index",
+        "group": "measure"
+      },
+      {
+        "id": "n6",
+        "label": "Health",
+        "group": "dimension"
+      },
+      {
+        "id": "n7",
+        "label": "Education",
+        "group": "dimension"
+      },
+      {
+        "id": "n8",
+        "label": "Public Facilities",
+        "group": "policy"
+      },
+      {
+        "id": "n9",
+        "label": "Sustainability",
+        "group": "principle"
+      },
+      {
+        "id": "n10",
+        "label": "Future Generations",
+        "group": "principle"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n5",
+        "n6"
+      ],
+      [
+        "n5",
+        "n7"
+      ],
+      [
+        "n1",
+        "n8"
+      ],
+      [
+        "n8",
+        "n6"
+      ],
+      [
+        "n8",
+        "n7"
+      ],
+      [
+        "n1",
+        "n9"
+      ],
+      [
+        "n9",
+        "n10"
+      ],
+      [
+        "n3",
+        "n8"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Development - Mind Map",
+    "type": "hierarchical",
+    "root": "Development",
+    "branches": [
+      {
+        "concept": "Meaning of Development",
+        "sub_nodes": [
+          "Positive change in well-being",
+          "Income and non-income goals",
+          "Different goals for different people",
+          "Goals can conflict"
+        ],
+        "connections": "Development is judged by people's lives, not output alone"
+      },
+      {
+        "concept": "Income Measures",
+        "sub_nodes": [
+          "National income",
+          "Per capita income = income / population",
+          "World Bank income classification",
+          "Averages hide inequality"
+        ],
+        "connections": "Useful but incomplete"
+      },
+      {
+        "concept": "Human Development Index",
+        "sub_nodes": [
+          "Published by UNDP",
+          "Health: life expectancy",
+          "Education: years of schooling",
+          "Income: per capita income"
+        ],
+        "connections": "Broader than income alone"
+      },
+      {
+        "concept": "Public Facilities",
+        "sub_nodes": [
+          "Schools and hospitals",
+          "Water, sanitation, transport",
+          "Reduce inequality",
+          "Society-wide benefits"
+        ],
+        "connections": "Convert income into capabilities"
+      },
+      {
+        "concept": "Sustainability",
+        "sub_nodes": [
+          "Renewable resources within recharge",
+          "Conserve non-renewable resources",
+          "Control pollution",
+          "Protect future generations"
+        ],
+        "connections": "Present needs must not destroy future options"
+      },
+      {
+        "concept": "Measuring Development",
+        "sub_nodes": [
+          "Income plus health and education",
+          "Distribution matters",
+          "Unpaid work is excluded",
+          "Environmental costs matter"
+        ],
+        "connections": "Use multiple indicators, not one number"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "Development means only higher income - FALSE: health, education, dignity, equality, and freedom are also goals.",
+    "A higher average income means everyone is better off - FALSE: the average can hide severe inequality.",
+    "HDI uses only income - FALSE: HDI combines health, education, and income.",
+    "Economic growth and development are the same - FALSE: growth can occur without improvements in well-being.",
+    "All development goals agree with one another - FALSE: projects can benefit some people and harm others.",
+    "Sustainable development means stopping growth - FALSE: it means meeting needs without destroying the resource base for the future.",
+    "Public facilities benefit only the poor - FALSE: immunisation, sanitation, and education create society-wide benefits.",
+    "Per capita income shows how income is distributed - FALSE: it is an average and says nothing about distribution."
+  ],
+  "chapterId": "development",
+  "subjectId": "social-science",
+  "subjectName": "Social Science",
+  "unitId": "social-science-4",
+  "unitName": "Understanding Economic Development",
+  "examWeightage": 20,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

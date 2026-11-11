@@ -1,0 +1,1054 @@
+{
+  "subject": "Economics",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 5,
+  "chapter": "Consumer Rights",
+  "id": "consumer-rights",
+  "lesson": 1,
+  "title": "Consumer Rights - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Explain who a consumer is and how consumers can be exploited",
+    "Describe the six consumer rights with examples",
+    "Explain the responsibilities that accompany consumer rights",
+    "Outline the main features of COPRA and the Consumer Protection Act, 2019",
+    "Describe the three-tier consumer court system and the redressal process",
+    "Identify standardisation marks and explain their role in quality assurance",
+    "Analyse case studies on defective goods, overcharging, and misleading advertisements",
+    "Solve board-style questions on consumer protection and redressal"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS10_GLOBALISATION_AND_THE_INDIAN_ECONOMY",
+    "SOCIAL_CLASS8_UNDERSTANDING_MARKETS",
+    "SOCIAL_CLASS7_MARKETS_AROUND_US",
+    "MATH_CLASS7_PERCENTAGE"
+  ],
+  "concepts": [
+    {
+      "id": "concept-1",
+      "name": "Consumers and Consumer Exploitation",
+      "title": "Consumers and Consumer Exploitation",
+      "explanation": "A consumer is a person who buys goods or services for personal use and not for resale or production. Consumers can be exploited in many ways: adulteration of food, underweight or short measure, false or misleading advertisements, sale of defective or expired goods, overcharging above the maximum retail price, and hiding important information. Exploitation is more likely when consumers are unaware of their rights or when markets lack effective regulation. Consumer protection is therefore needed to correct the imbalance of information and bargaining power between sellers and buyers.",
+      "purpose": "The concept explains why consumers need legal protection and how everyday market transactions can cause harm.",
+      "real_life_application": "Buying a packet of food that is past its expiry date, or paying more than the printed MRP, are common forms of consumer exploitation.",
+      "key_points": [
+        "A consumer buys goods or services for personal use.",
+        "Adulteration, short measure, and overcharging are forms of exploitation.",
+        "Misleading advertisements and hidden information harm consumers.",
+        "Consumers often lack full information about quality.",
+        "Regulation and awareness reduce exploitation.",
+        "Consumer protection corrects the imbalance between buyers and sellers."
+      ],
+      "day_to_day_usage": [
+        "Checking the expiry date before buying food.",
+        "Checking the weight of a packaged item.",
+        "Refusing to pay more than the MRP.",
+        "Reading the ingredients list on a packet.",
+        "Asking for a bill for a purchase.",
+        "Ignoring exaggerated claims in advertisements."
+      ]
+    },
+    {
+      "id": "concept-2",
+      "name": "Consumer Rights",
+      "title": "Consumer Rights",
+      "explanation": "Consumer rights protect buyers against unfair trade practices. The right to safety means protection against goods and services that are hazardous to life and health. The right to information means the consumer can ask about price, quality, quantity, purity, standard, and date of manufacture or expiry. The right to choose means access to a variety of products at competitive prices. The right to be heard means consumers can voice complaints and expect a response. The right to seek redressal means compensation or replacement for harm. The right to consumer education means awareness of rights and remedies. Consumer associations also represent consumers' interests.",
+      "purpose": "The concept gives a framework for identifying which right is violated in a given case and what remedy is available.",
+      "real_life_application": "A defective pressure cooker, a hidden charge on a bill, or a refused refund can each violate a different consumer right.",
+      "key_points": [
+        "Right to safety protects against hazardous goods.",
+        "Right to information covers price, quality, and expiry details.",
+        "Right to choose ensures access to alternatives.",
+        "Right to be heard allows consumers to complain.",
+        "Right to seek redressal provides compensation or replacement.",
+        "Right to consumer education builds awareness."
+      ],
+      "day_to_day_usage": [
+        "Checking an electrical appliance for safety certification.",
+        "Reading the label for ingredients and expiry date.",
+        "Comparing products before choosing.",
+        "Complaining to a shop about a defective item.",
+        "Filing a complaint with a consumer commission.",
+        "Attending consumer awareness programmes."
+      ]
+    },
+    {
+      "id": "concept-3",
+      "name": "Consumer Responsibilities",
+      "title": "Consumer Responsibilities",
+      "explanation": "Rights are effective only when consumers also act responsibly. A consumer should check quality, quantity, and the expiry date; ask for a bill; read labels and instructions; compare prices and brands; avoid impulse buying; and keep proof of purchase. Consumers should complain when a product is defective and should not misuse goods or make false claims. Responsible consumption also includes avoiding waste and choosing products that are safe for health and the environment. Awareness and responsibility strengthen the consumer movement.",
+      "purpose": "The concept balances rights with duties and explains how consumer action makes legal protection effective.",
+      "real_life_application": "A consumer who keeps the bill and complains within time can get a replacement, while one who discards the bill may be unable to prove the purchase.",
+      "key_points": [
+        "Consumers should check quality, quantity, and expiry.",
+        "A bill is important proof of purchase.",
+        "Labels and instructions should be read carefully.",
+        "Comparing products helps avoid exploitation.",
+        "Complaints should be made promptly with evidence.",
+        "Responsible consumption includes avoiding waste."
+      ],
+      "day_to_day_usage": [
+        "Keeping the bill for an expensive purchase.",
+        "Checking the seal of a medicine strip.",
+        "Reading instructions before using a chemical.",
+        "Comparing unit prices of two brands.",
+        "Complaining about a short measure.",
+        "Avoiding food waste and excess packaging."
+      ]
+    },
+    {
+      "id": "concept-4",
+      "name": "COPRA and the Consumer Protection Act",
+      "title": "COPRA and the Consumer Protection Act",
+      "explanation": "The Consumer Protection Act, 1986, popularly called COPRA, was a major step in protecting consumers in India. It created a three-tier redressal system and defined consumer rights. The Consumer Protection Act, 2019 replaced and strengthened this framework. It covers goods and services, recognises e-commerce transactions, provides for product liability, unfair contracts, and misleading advertisements, and established the Central Consumer Protection Authority (CCPA) to regulate and enforce consumer protection. The Act applies to both offline and online transactions and gives consumers the right to file complaints without excessive cost or delay.",
+      "purpose": "The concept explains the legal foundation of consumer protection and how the law has adapted to new markets such as online shopping.",
+      "real_life_application": "A consumer who buys a defective product online can use the same consumer protection framework as a buyer in a physical shop.",
+      "key_points": [
+        "COPRA was enacted in 1986.",
+        "It created a three-tier consumer redressal system.",
+        "The Consumer Protection Act, 2019 replaced and strengthened COPRA.",
+        "The 2019 Act covers e-commerce and product liability.",
+        "It provides for the CCPA.",
+        "The law applies to goods and services, online and offline."
+      ],
+      "day_to_day_usage": [
+        "Filing a complaint about an online purchase.",
+        "Reading the return policy before buying.",
+        "Reporting a misleading advertisement.",
+        "Seeking compensation for a defective product.",
+        "Using a consumer helpline for guidance.",
+        "Checking whether a seller is registered on a marketplace."
+      ]
+    },
+    {
+      "id": "concept-5",
+      "name": "Consumer Courts and Redressal",
+      "title": "Consumer Courts and Redressal",
+      "explanation": "Consumer disputes are heard by consumer commissions at the district, state, and national levels. The commission that hears a case depends on the value of the claim, with pecuniary limits notified from time to time. A complaint should be filed within two years from the date the cause of action arose. The complainant should provide evidence such as a bill, warranty card, photographs, or correspondence. The commission may order repair, replacement, refund, compensation, or other relief. Mediation and online filing make redressal more accessible. Appeals against an order can be made to the next higher commission.",
+      "purpose": "The concept explains the practical route to redressal and the importance of time limits and evidence.",
+      "real_life_application": "A consumer with a defective washing machine can file a complaint with the appropriate commission, attach the bill and warranty, and seek repair or replacement.",
+      "key_points": [
+        "Consumer commissions operate at district, state, and national levels.",
+        "The appropriate commission depends on the claim value.",
+        "A complaint should be filed within two years of the cause of action.",
+        "Bills, warranties, and photographs are useful evidence.",
+        "Remedies include repair, replacement, refund, and compensation.",
+        "Appeals go to the next higher commission."
+      ],
+      "day_to_day_usage": [
+        "Keeping a warranty card for a new appliance.",
+        "Photographing a damaged product on delivery.",
+        "Filing a complaint within the limitation period.",
+        "Attending a mediation session for a dispute.",
+        "Seeking a refund for a service not delivered.",
+        "Appealing a decision if the order is unsatisfactory."
+      ]
+    },
+    {
+      "id": "concept-6",
+      "name": "Standardisation Marks and Quality Assurance",
+      "title": "Standardisation Marks and Quality Assurance",
+      "explanation": "Standardisation marks certify that a product meets specified quality, safety, or purity standards. The ISI mark is used for many industrial products and is administered by the Bureau of Indian Standards. The AGMARK is used for agricultural products such as spices, honey, and edible oils. Hallmarking is used for gold jewellery to certify purity. The FSSAI mark is used for food products. These marks help consumers identify products that meet minimum standards, but they do not guarantee that every aspect of a product is perfect. Consumers should also check the expiry date, ingredients, and instructions.",
+      "purpose": "The concept explains how quality certification reduces information problems and helps consumers make safer choices.",
+      "real_life_application": "An electric iron with the ISI mark, a jar of honey with AGMARK, hallmarked gold jewellery, and packaged food with the FSSAI mark carry different quality assurances.",
+      "key_points": [
+        "Standardisation marks certify quality, safety, or purity.",
+        "ISI is used for many industrial products under BIS.",
+        "AGMARK is used for agricultural products.",
+        "Hallmarking certifies gold purity.",
+        "FSSAI is the food safety mark.",
+        "Marks are useful but do not replace reading labels."
+      ],
+      "day_to_day_usage": [
+        "Looking for the ISI mark on an electrical appliance.",
+        "Checking AGMARK on a packet of spices.",
+        "Buying hallmarked gold jewellery.",
+        "Looking for the FSSAI mark on packaged food.",
+        "Checking the expiry date along with the mark.",
+        "Reading instructions before using a certified product."
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-cr-1",
+      "title": "Identifying Violated Consumer Rights",
+      "topic": "Consumer rights case analysis",
+      "problem": "A consumer buys a new smartphone. The battery overheats within a week, the seller refuses to replace it, and the advertisement had claimed a battery life that the phone does not deliver. Identify the consumer rights that are affected and the remedy available.",
+      "solution": [
+        "Step 1: The overheating battery is a safety hazard, so the right to safety is affected.",
+        "Step 2: The false claim about battery life violates the right to information.",
+        "Step 3: The seller's refusal to replace the phone affects the right to be heard and the right to seek redressal.",
+        "Step 4: The consumer should keep the bill, warranty card, advertisement, and photographs of the defect.",
+        "Step 5: The consumer can ask for repair, replacement, or refund and may claim compensation.",
+        "Step 6: If the seller refuses, the consumer can file a complaint with the appropriate consumer commission."
+      ],
+      "board_mode": "Write the right violated in one column and the evidence or remedy in the next. Link each fact in the case to a specific right.",
+      "answer": "Rights to safety, information, being heard, and redressal are affected; remedies include repair, replacement, refund, and compensation.",
+      "board_tip": "Do not list all six rights mechanically. Match only the rights that the facts actually violate."
+    },
+    {
+      "id": "we-cr-2",
+      "title": "Overcharging Above MRP",
+      "topic": "Maximum retail price",
+      "problem": "A shop sells a product with a printed MRP of Rs 1,200 for Rs 1,350. Calculate the excess charged and the percentage overcharge.",
+      "solution": [
+        "Step 1: Excess = selling price - MRP = 1,350 - 1,200 = Rs 150.",
+        "Step 2: Percentage overcharge = (excess / MRP) x 100.",
+        "Step 3: Percentage overcharge = (150 / 1,200) x 100 = 12.5%.",
+        "Step 4: Charging above the MRP is an unfair trade practice.",
+        "Step 5: The consumer can demand the excess amount back and complain to the seller or consumer commission.",
+        "Step 6: The bill is important evidence of the price charged."
+      ],
+      "board_mode": "Show the subtraction first, then the percentage formula. State clearly that MRP is the maximum retail price.",
+      "answer": "Excess Rs 150, which is 12.5% above the MRP; the consumer can claim a refund of the excess.",
+      "board_tip": "Calculate the percentage on the MRP, not on the selling price."
+    },
+    {
+      "id": "we-cr-3",
+      "title": "Expired Food and the Limitation Period",
+      "topic": "Redressal and evidence",
+      "problem": "A consumer buys packaged food on 10 January 2025. The packet shows an expiry date of 31 December 2024. The consumer falls ill after eating it. Explain the rights violated, the evidence needed, and the deadline for filing a complaint.",
+      "solution": [
+        "Step 1: Selling expired food violates the right to safety and the right to information.",
+        "Step 2: The consumer should keep the packet, the bill, and any medical records.",
+        "Step 3: Photographs of the expiry date and the packet can support the complaint.",
+        "Step 4: A complaint should be filed within two years from the date the cause of action arose.",
+        "Step 5: The cause of action arose on 10 January 2025, so the complaint should be filed by 10 January 2027.",
+        "Step 6: The consumer can seek compensation for medical costs and harm, along with a refund."
+      ],
+      "board_mode": "Write the purchase date, expiry date, and limitation period in separate lines. Then list the evidence and the remedy.",
+      "answer": "Rights to safety and information are violated; keep the packet, bill, and medical records; file by 10 January 2027 and claim refund plus compensation.",
+      "board_tip": "Count the two-year period from the cause of action, not from the date of manufacture."
+    },
+    {
+      "id": "we-cr-4",
+      "title": "Matching Products to Standardisation Marks",
+      "topic": "Quality certification",
+      "problem": "Match each product with the most appropriate standardisation mark: (a) an electric iron, (b) a jar of honey, (c) a gold necklace, (d) a packet of biscuits.",
+      "solution": [
+        "Step 1: The electric iron is an industrial electrical product, so the ISI mark applies.",
+        "Step 2: Honey is an agricultural product, so the AGMARK applies.",
+        "Step 3: Gold jewellery is certified for purity by hallmarking.",
+        "Step 4: Packaged biscuits are food, so the FSSAI mark applies.",
+        "Step 5: These marks indicate that the product meets specified standards.",
+        "Step 6: The consumer should still check the expiry date and read the label."
+      ],
+      "board_mode": "Draw a two-column table with Product and Mark. Write the mark next to each product and add one line on what the mark certifies.",
+      "answer": "Electric iron - ISI; honey - AGMARK; gold necklace - Hallmark; biscuits - FSSAI.",
+      "board_tip": "Do not use one mark for every product. Each mark covers a different category."
+    },
+    {
+      "id": "we-cr-5",
+      "title": "Filing a Consumer Complaint",
+      "topic": "Consumer court procedure",
+      "problem": "A consumer buys a washing machine for Rs 35,000. It stops working within the warranty period, and the seller refuses to repair or replace it. Outline the steps the consumer should take.",
+      "solution": [
+        "Step 1: Read the warranty terms and keep the bill, warranty card, and service records.",
+        "Step 2: Make a written complaint to the seller and retain a copy.",
+        "Step 3: Contact the manufacturer's customer service and record the complaint number.",
+        "Step 4: If the issue is not resolved, file a complaint with the appropriate consumer commission based on the claim value.",
+        "Step 5: Attach the bill, warranty, correspondence, and photographs or service reports.",
+        "Step 6: The commission may order repair, replacement, refund, or compensation; mediation may be attempted first.",
+        "Step 7: If dissatisfied with the order, the consumer can appeal to the next higher commission."
+      ],
+      "board_mode": "Write the steps in order: documents -> written complaint -> manufacturer -> commission -> evidence -> remedy -> appeal.",
+      "answer": "Keep documents, complain in writing to seller and manufacturer, then file before the appropriate commission with evidence; seek repair, replacement, refund, or compensation.",
+      "board_tip": "A complaint without a bill or warranty is weak. Mention evidence at every stage."
+    }
+  ],
+  "exercises": {
+    "exercise_1_1": {
+      "title": "NCERT Exercise 1.1 - Consumers and Their Rights",
+      "objective": "Identify consumers, exploitation, and the six consumer rights",
+      "problems": [
+        {
+          "id": "cr-ex1-1",
+          "question": "Who is a consumer?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: A consumer is a person who buys goods or services.",
+            "Step 2: The purchase must be for personal use.",
+            "Step 3: Goods bought for resale or production are not consumer purchases in this sense."
+          ],
+          "final_answer": "A consumer is a person who buys goods or services for personal use, not for resale or production."
+        },
+        {
+          "id": "cr-ex1-2",
+          "question": "Name any two consumer rights.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The right to safety protects against hazardous goods.",
+            "Step 2: The right to information covers price, quality, and expiry details.",
+            "Step 3: Other rights include choice, being heard, redressal, and education."
+          ],
+          "final_answer": "The right to safety and the right to information are two consumer rights."
+        },
+        {
+          "id": "cr-ex1-3",
+          "question": "What is adulteration?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Adulteration means adding inferior or harmful substances to a product.",
+            "Step 2: It reduces quality and can harm health.",
+            "Step 3: It is a form of consumer exploitation."
+          ],
+          "final_answer": "Adulteration is the addition of inferior or harmful substances to a product."
+        },
+        {
+          "id": "cr-ex1-4",
+          "question": "Explain the right to information with examples.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The right to information allows consumers to know the price, quality, quantity, and purity of goods.",
+            "Step 2: It includes the date of manufacture and expiry.",
+            "Step 3: Labels should show ingredients and instructions.",
+            "Step 4: A consumer can use this information to compare products and avoid harm."
+          ],
+          "final_answer": "The right to information lets consumers know price, quality, quantity, purity, ingredients, and expiry details."
+        },
+        {
+          "id": "cr-ex1-5",
+          "question": "Explain the right to choose.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The right to choose means consumers can select from a variety of products.",
+            "Step 2: It requires competitive markets with different brands and prices.",
+            "Step 3: Sellers should not force a particular product on a buyer.",
+            "Step 4: Choice allows consumers to compare quality and price."
+          ],
+          "final_answer": "The right to choose gives consumers access to alternatives at competitive prices without coercion."
+        },
+        {
+          "id": "cr-ex1-6",
+          "question": "Why is a consumer movement needed?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Consumers often lack information and bargaining power.",
+            "Step 2: Sellers may use unfair practices such as adulteration or false claims.",
+            "Step 3: A consumer movement spreads awareness and demands legal protection.",
+            "Step 4: It helps consumers organise, complain, and influence policy."
+          ],
+          "final_answer": "It spreads awareness, strengthens bargaining power, and pressures government and businesses to protect consumers."
+        }
+      ]
+    },
+    "exercise_1_2": {
+      "title": "NCERT Exercise 1.2 - COPRA, Courts, and Standards",
+      "objective": "Explain consumer law, redressal, and standardisation marks",
+      "problems": [
+        {
+          "id": "cr-ex2-1",
+          "question": "What is COPRA?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: COPRA is the Consumer Protection Act, 1986.",
+            "Step 2: It defined consumer rights and created a redressal system.",
+            "Step 3: It was replaced and strengthened by the Consumer Protection Act, 2019."
+          ],
+          "final_answer": "COPRA is the Consumer Protection Act, 1986, which established consumer rights and redressal machinery."
+        },
+        {
+          "id": "cr-ex2-2",
+          "question": "Name three standardisation marks used in India.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: ISI is used for many industrial products.",
+            "Step 2: AGMARK is used for agricultural products.",
+            "Step 3: Hallmark is used for gold jewellery.",
+            "Step 4: FSSAI is used for food products."
+          ],
+          "final_answer": "ISI, AGMARK, Hallmark, and FSSAI are standardisation marks."
+        },
+        {
+          "id": "cr-ex2-3",
+          "question": "Describe the three-tier consumer court system.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: District consumer commissions hear cases of lower value.",
+            "Step 2: State commissions hear larger claims and appeals from district commissions.",
+            "Step 3: The National Commission hears the largest claims and appeals from state commissions.",
+            "Step 4: Pecuniary limits are notified from time to time."
+          ],
+          "final_answer": "Consumer commissions operate at district, state, and national levels, with jurisdiction based on claim value."
+        },
+        {
+          "id": "cr-ex2-4",
+          "question": "State four responsibilities of a consumer.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Check quality, quantity, and expiry date.",
+            "Step 2: Ask for and keep a bill.",
+            "Step 3: Read labels and instructions.",
+            "Step 4: Complain promptly with evidence when a product is defective.",
+            "Step 5: Avoid waste and irresponsible consumption."
+          ],
+          "final_answer": "Consumers should check products, keep bills, read labels, complain with evidence, and consume responsibly."
+        },
+        {
+          "id": "cr-ex2-5",
+          "question": "A product has an MRP of Rs 2,500 but is sold for Rs 2,800. Calculate the excess and the percentage overcharge.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Excess = 2,800 - 2,500 = Rs 300.",
+            "Step 2: Percentage overcharge = (300 / 2,500) x 100.",
+            "Step 3: Percentage overcharge = 12%.",
+            "Step 4: Selling above MRP is an unfair trade practice.",
+            "Step 5: The consumer can demand a refund of Rs 300 and complain if refused."
+          ],
+          "final_answer": "Excess Rs 300, which is 12% above MRP; the consumer can claim a refund."
+        },
+        {
+          "id": "cr-ex2-6",
+          "question": "A consumer buys a defective fan within warranty and the seller refuses to replace it. Explain the steps the consumer should take and the rights involved.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The right to safety and the right to redressal are involved.",
+            "Step 2: Keep the bill, warranty card, and evidence of the defect.",
+            "Step 3: Make a written complaint to the seller and manufacturer.",
+            "Step 4: If unresolved, file a complaint with the appropriate consumer commission.",
+            "Step 5: Seek repair, replacement, refund, or compensation.",
+            "Step 6: The consumer can appeal to a higher commission if dissatisfied with the order."
+          ],
+          "final_answer": "Keep evidence, complain in writing, then approach the appropriate commission; seek repair, replacement, refund, or compensation."
+        }
+      ]
+    },
+    "exercise_1_3": {
+      "title": "NCERT Exercise 1.3 - Case Studies and Evaluation",
+      "objective": "Apply consumer law to real cases and evaluate responsibilities",
+      "problems": [
+        {
+          "id": "cr-ex3-1",
+          "question": "What is the right to seek redressal?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The right to seek redressal allows a consumer to complain about unfair practices.",
+            "Step 2: The consumer can ask for repair, replacement, refund, or compensation.",
+            "Step 3: Consumer commissions provide a formal forum for redressal."
+          ],
+          "final_answer": "It is the right to complain and obtain repair, replacement, refund, or compensation for harm."
+        },
+        {
+          "id": "cr-ex3-2",
+          "question": "State three features of the Consumer Protection Act, 2019.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: It covers both goods and services, including e-commerce.",
+            "Step 2: It provides for product liability and action against misleading advertisements.",
+            "Step 3: It established the Central Consumer Protection Authority.",
+            "Step 4: It strengthens the three-tier redressal system."
+          ],
+          "final_answer": "The 2019 Act covers e-commerce, provides product liability, and established the CCPA."
+        },
+        {
+          "id": "cr-ex3-3",
+          "question": "\"Consumer rights are enough; consumer responsibilities do not matter.\" Evaluate this statement.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Rights give legal protection against unfair practices.",
+            "Step 2: But rights are effective only if consumers check products and keep evidence.",
+            "Step 3: A consumer without a bill may struggle to prove a purchase.",
+            "Step 4: Responsible consumption also reduces waste and harm.",
+            "Step 5: Rights and responsibilities are complementary, so the statement is false."
+          ],
+          "final_answer": "False; rights need responsible consumer behaviour and evidence to be effective."
+        },
+        {
+          "id": "cr-ex3-4",
+          "question": "A consumer buys expired food on 5 March 2025 and falls ill. Explain the rights violated, the evidence needed, and the deadline for a complaint.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Selling expired food violates the right to safety and the right to information.",
+            "Step 2: Keep the packet, bill, and medical records.",
+            "Step 3: Photograph the expiry date and the packet.",
+            "Step 4: The complaint should be filed within two years of the cause of action.",
+            "Step 5: The deadline is 5 March 2027.",
+            "Step 6: The consumer can seek a refund and compensation for medical costs."
+          ],
+          "final_answer": "Rights to safety and information are violated; keep packet, bill, and medical records; file by 5 March 2027."
+        },
+        {
+          "id": "cr-ex3-5",
+          "question": "Match the product with the mark and explain why the mark helps: (a) electric heater, (b) packaged flour, (c) gold chain, (d) honey.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Electric heater - ISI mark, certifying safety and quality standards.",
+            "Step 2: Packaged flour - FSSAI mark, certifying food safety compliance.",
+            "Step 3: Gold chain - Hallmark, certifying gold purity.",
+            "Step 4: Honey - AGMARK, certifying agricultural grade and quality.",
+            "Step 5: The marks reduce information problems and help consumers choose safer products.",
+            "Step 6: Consumers should still check expiry dates and labels."
+          ],
+          "final_answer": "Heater - ISI; flour - FSSAI; gold chain - Hallmark; honey - AGMARK; marks certify safety, purity, or grade."
+        },
+        {
+          "id": "cr-ex3-6",
+          "question": "A consumer buys a defective mobile phone from an online marketplace. The seller ignores complaints. Explain the rights involved and the steps for redressal.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The right to safety, information, being heard, and redressal are involved.",
+            "Step 2: Keep the order details, payment proof, product photographs, and chat records.",
+            "Step 3: Complain to the marketplace and the seller in writing.",
+            "Step 4: Use the platform's grievance officer and the national consumer helpline if needed.",
+            "Step 5: File a complaint with the appropriate consumer commission under the 2019 Act.",
+            "Step 6: Seek repair, replacement, refund, or compensation."
+          ],
+          "final_answer": "Keep order and payment evidence, complain to seller and platform, then file before the appropriate commission; seek repair, replacement, refund, or compensation."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-cr-s-1",
+        "question": "A consumer is a person who:",
+        "options": ["Buys goods for personal use", "Sells goods for profit", "Produces goods for export", "Owns a factory"],
+        "correct": 0,
+        "explanation": {
+          "correct": "A consumer buys goods or services for personal use, not resale.",
+          "wrong_options": {
+            "1": "A seller is not the consumer in the transaction.",
+            "2": "Production for export is a business activity.",
+            "3": "Factory ownership is not the definition."
+          }
+        }
+      },
+      {
+        "id": "q-cr-s-2",
+        "question": "Which right protects consumers from hazardous goods?",
+        "options": ["Right to safety", "Right to choose", "Right to be heard", "Right to education"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The right to safety protects life and health from dangerous products.",
+          "wrong_options": {
+            "1": "The right to choose is about alternatives.",
+            "2": "The right to be heard is about complaints.",
+            "3": "The right to education is about awareness."
+          }
+        }
+      },
+      {
+        "id": "q-cr-s-3",
+        "question": "MRP stands for:",
+        "options": ["Maximum Retail Price", "Minimum Retail Price", "Market Rate Price", "Manufacturer's Return Price"],
+        "correct": 0,
+        "explanation": {
+          "correct": "MRP is the maximum price at which a product may be sold to the consumer.",
+          "wrong_options": {
+            "1": "It is a maximum, not a minimum.",
+            "2": "It is not a market rate.",
+            "3": "It is not a return price."
+          }
+        }
+      },
+      {
+        "id": "q-cr-s-4",
+        "question": "The ISI mark is used mainly for:",
+        "options": ["Industrial products", "Gold jewellery", "Agricultural produce", "Only medicines"],
+        "correct": 0,
+        "explanation": {
+          "correct": "ISI certifies many industrial and electrical products under BIS.",
+          "wrong_options": {
+            "1": "Gold is covered by hallmarking.",
+            "2": "Agricultural produce uses AGMARK.",
+            "3": "Medicines have separate regulatory requirements."
+          }
+        }
+      },
+      {
+        "id": "q-cr-s-5",
+        "question": "AGMARK is used for:",
+        "options": ["Agricultural products", "Electrical appliances", "Gold jewellery", "Cars"],
+        "correct": 0,
+        "explanation": {
+          "correct": "AGMARK certifies the grade and quality of agricultural products.",
+          "wrong_options": {
+            "1": "Electrical appliances use ISI.",
+            "2": "Gold uses hallmarking.",
+            "3": "Cars are industrial products."
+          }
+        }
+      },
+      {
+        "id": "q-cr-s-6",
+        "question": "COPRA was enacted in:",
+        "options": ["1986", "1991", "2005", "2019"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Consumer Protection Act, 1986, is known as COPRA.",
+          "wrong_options": {
+            "1": "1991 is associated with economic reforms.",
+            "2": "2005 is not the year of COPRA.",
+            "3": "2019 is the year of the new Consumer Protection Act."
+          }
+        }
+      },
+      {
+        "id": "q-cr-s-7",
+        "question": "A bill is important because it:",
+        "options": ["Provides proof of purchase", "Increases the price", "Replaces the product", "Cancels the warranty"],
+        "correct": 0,
+        "explanation": {
+          "correct": "A bill is evidence of the transaction and helps in complaints.",
+          "wrong_options": {
+            "1": "A bill records the price; it does not raise it.",
+            "2": "A bill is not a replacement.",
+            "3": "A bill supports warranty claims."
+          }
+        }
+      },
+      {
+        "id": "q-cr-s-8",
+        "question": "Which is a consumer responsibility?",
+        "options": ["Checking the expiry date", "Ignoring the bill", "Buying without comparing", "Making false complaints"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Checking expiry is a basic responsible habit.",
+          "wrong_options": {
+            "1": "Keeping the bill is important.",
+            "2": "Comparison helps avoid exploitation.",
+            "3": "False complaints misuse the system."
+          }
+        }
+      },
+      {
+        "id": "q-cr-s-9",
+        "question": "Hallmark is used for:",
+        "options": ["Gold jewellery", "Packaged food", "Honey", "Electric irons"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Hallmarking certifies the purity of gold jewellery.",
+          "wrong_options": {
+            "1": "Packaged food uses FSSAI.",
+            "2": "Honey uses AGMARK.",
+            "3": "Electric irons use ISI."
+          }
+        }
+      },
+      {
+        "id": "q-cr-s-10",
+        "question": "A consumer complaint should generally be filed within:",
+        "options": ["Two years of the cause of action", "Ten years", "One month", "No time limit"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Consumer Protection Act provides a two-year limitation period.",
+          "wrong_options": {
+            "1": "Ten years is far longer than the limit.",
+            "2": "One month is not the general limit.",
+            "3": "A limitation period applies."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-cr-m-1",
+        "question": "Which right is violated when a shop refuses to listen to a genuine complaint?",
+        "options": ["Right to be heard", "Right to safety", "Right to choose", "Right to education"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The right to be heard means consumers can voice complaints and expect a response.",
+          "wrong_options": {
+            "1": "Safety concerns hazardous goods.",
+            "2": "Choice concerns alternatives.",
+            "3": "Education concerns awareness."
+          }
+        }
+      },
+      {
+        "id": "q-cr-m-2",
+        "question": "Selling a product above its MRP is:",
+        "options": ["An unfair trade practice", "Always legal", "A standard discount", "A quality mark"],
+        "correct": 0,
+        "explanation": {
+          "correct": "MRP is the maximum retail price, so charging more is unfair.",
+          "wrong_options": {
+            "1": "It is not legal to exceed MRP.",
+            "2": "A discount lowers the price.",
+            "3": "A quality mark is different."
+          }
+        }
+      },
+      {
+        "id": "q-cr-m-3",
+        "question": "Which standardisation mark is used for packaged food?",
+        "options": ["FSSAI", "ISI", "AGMARK", "Hallmark"],
+        "correct": 0,
+        "explanation": {
+          "correct": "FSSAI is the food safety and standards mark.",
+          "wrong_options": {
+            "1": "ISI is mainly for industrial products.",
+            "2": "AGMARK is for agricultural produce.",
+            "3": "Hallmark is for gold."
+          }
+        }
+      },
+      {
+        "id": "q-cr-m-4",
+        "question": "Which is a valid remedy in a consumer case?",
+        "options": ["Replacement of a defective product", "Ignoring the complaint", "Raising the MRP", "Removing the warranty"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Replacement, repair, refund, and compensation are possible remedies.",
+          "wrong_options": {
+            "1": "Ignoring a complaint denies redressal.",
+            "2": "The MRP is printed by the manufacturer.",
+            "3": "Removing warranty harms the consumer."
+          }
+        }
+      },
+      {
+        "id": "q-cr-m-5",
+        "question": "The Consumer Protection Act, 2019 is significant because it:",
+        "options": ["Covers e-commerce and product liability", "Bans all online shopping", "Abolishes consumer courts", "Applies only to food"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The 2019 Act updated consumer law for online markets and product liability.",
+          "wrong_options": {
+            "1": "It regulates e-commerce; it does not ban it.",
+            "2": "It strengthens the redressal system.",
+            "3": "It covers goods and services broadly."
+          }
+        }
+      },
+      {
+        "id": "q-cr-m-6",
+        "question": "Adulteration harms consumers mainly by:",
+        "options": ["Reducing quality and risking health", "Lowering the MRP", "Increasing choice", "Improving safety"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Adulterated products may be unsafe and of lower quality.",
+          "wrong_options": {
+            "1": "Adulteration is not a price reduction.",
+            "2": "It reduces genuine choice.",
+            "3": "It usually makes products less safe."
+          }
+        }
+      },
+      {
+        "id": "q-cr-m-7",
+        "question": "A consumer commission may order:",
+        "options": ["Refund, replacement, or compensation", "Only a warning", "Only a price increase", "Only a new advertisement"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Commissions can order remedies such as refund, replacement, and compensation.",
+          "wrong_options": {
+            "1": "A warning alone is not the full range.",
+            "2": "A price increase is not a remedy.",
+            "3": "A new advertisement is not a standard remedy."
+          }
+        }
+      },
+      {
+        "id": "q-cr-m-8",
+        "question": "Which is the best evidence of an online purchase?",
+        "options": ["Order confirmation and payment record", "A verbal memory of the purchase", "A friend's opinion", "An advertisement"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Order and payment records prove the transaction and its terms.",
+          "wrong_options": {
+            "1": "Memory is weak evidence.",
+            "2": "Opinion is not proof.",
+            "3": "An advertisement is not proof of purchase."
+          }
+        }
+      },
+      {
+        "id": "q-cr-m-9",
+        "question": "The right to choose is weakened when:",
+        "options": ["A seller forces a particular brand", "Many brands are available", "Prices are competitive", "Consumers compare products"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Coercion removes genuine choice.",
+          "wrong_options": {
+            "1": "Many brands strengthen choice.",
+            "2": "Competitive prices support choice.",
+            "3": "Comparison is a responsible consumer action."
+          }
+        }
+      },
+      {
+        "id": "q-cr-m-10",
+        "question": "Why should consumers read labels?",
+        "options": ["To know ingredients, expiry, and instructions", "To increase the price", "To avoid bills", "To remove warranty"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Labels provide information needed for safe and informed use.",
+          "wrong_options": {
+            "1": "Labels do not set the price.",
+            "2": "Bills are separate documents.",
+            "3": "Labels do not remove warranty."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-cr-x-1",
+        "question": "A product with MRP Rs 1,500 is sold for Rs 1,650. The percentage overcharge is:",
+        "options": ["10%", "15%", "9.09%", "150%"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Excess = 150; (150 / 1,500) x 100 = 10%.",
+          "wrong_options": {
+            "1": "15% would be Rs 225.",
+            "2": "This divides by the selling price instead of MRP.",
+            "3": "This is the excess amount, not the percentage."
+          }
+        }
+      },
+      {
+        "id": "q-cr-x-2",
+        "question": "A consumer buys a defective heater. Which pair of rights is most directly involved?",
+        "options": ["Safety and redressal", "Choice and education", "Information and trade", "Exports and imports"],
+        "correct": 0,
+        "explanation": {
+          "correct": "A defective heater can be unsafe and requires a remedy.",
+          "wrong_options": {
+            "1": "Choice and education are less direct here.",
+            "2": "Trade is not a consumer right.",
+            "3": "Exports and imports are trade concepts."
+          }
+        }
+      },
+      {
+        "id": "q-cr-x-3",
+        "question": "A consumer buys food on 1 June 2025 and the cause of action arises the same day. The complaint deadline is:",
+        "options": ["1 June 2027", "1 June 2026", "1 July 2025", "No deadline"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The limitation period is two years from the cause of action.",
+          "wrong_options": {
+            "1": "One year is too short.",
+            "2": "One month is not the limitation period.",
+            "3": "A two-year limit applies."
+          }
+        }
+      },
+      {
+        "id": "q-cr-x-4",
+        "question": "Which case best illustrates the right to information?",
+        "options": ["A packet hides its expiry date", "A shop has many brands", "A consumer complains to a commission", "A product is repaired"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Hiding expiry information denies the consumer facts needed for a safe choice.",
+          "wrong_options": {
+            "1": "Many brands illustrate choice.",
+            "2": "Complaining illustrates being heard or redressal.",
+            "3": "Repair is a remedy."
+          }
+        }
+      },
+      {
+        "id": "q-cr-x-5",
+        "question": "A consumer pays Rs 2,400 for a product with MRP Rs 2,000. The excess is:",
+        "options": ["Rs 400", "Rs 200", "Rs 4,000", "Rs 240"],
+        "correct": 0,
+        "explanation": {
+          "correct": "2,400 - 2,000 = Rs 400.",
+          "wrong_options": {
+            "1": "This is not the difference.",
+            "2": "This multiplies instead of subtracting.",
+            "3": "This is 10% of the selling price."
+          }
+        }
+      },
+      {
+        "id": "q-cr-x-6",
+        "question": "Which statement about standardisation marks is most accurate?",
+        "options": ["They certify minimum standards but do not guarantee perfection", "They guarantee every product is identical", "They replace the need for a bill", "They are issued by shopkeepers"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Marks indicate compliance with specified standards, not perfect quality in every respect.",
+          "wrong_options": {
+            "1": "Products can still vary.",
+            "2": "A bill is still needed for redressal.",
+            "3": "Marks are issued by authorised bodies, not shops."
+          }
+        }
+      },
+      {
+        "id": "q-cr-x-7",
+        "question": "A seller refuses to give a bill. Why is this a problem for the consumer?",
+        "options": ["It weakens proof of purchase and warranty claims", "It lowers the MRP", "It improves quality", "It increases choice"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Without a bill, the consumer may struggle to prove the transaction.",
+          "wrong_options": {
+            "1": "A bill does not change MRP.",
+            "2": "A bill does not affect quality.",
+            "3": "A bill does not create choice."
+          }
+        }
+      },
+      {
+        "id": "q-cr-x-8",
+        "question": "Which is the correct order for consumer redressal?",
+        "options": ["Complain to seller, then commission, then appeal if needed", "Appeal first, then complain to seller", "Ignore the seller and go straight to appeal", "Never complain"],
+        "correct": 0,
+        "explanation": {
+          "correct": "A consumer usually complains to the seller first, then approaches the commission, and may appeal.",
+          "wrong_options": {
+            "1": "Appeal comes after a commission order.",
+            "2": "Skipping steps can weaken the case.",
+            "3": "Not complaining gives up the remedy."
+          }
+        }
+      },
+      {
+        "id": "q-cr-x-9",
+        "question": "A misleading advertisement that exaggerates a product's benefits violates:",
+        "options": ["The right to information", "The right to choose only", "The right to safety only", "No right"],
+        "correct": 0,
+        "explanation": {
+          "correct": "False claims deny consumers accurate information for informed choice.",
+          "wrong_options": {
+            "1": "Choice may also be affected, but information is directly violated.",
+            "2": "Safety may be affected in some cases, but information is central.",
+            "3": "Consumer law prohibits misleading advertisements."
+          }
+        }
+      },
+      {
+        "id": "q-cr-x-10",
+        "question": "The CCPA was established under:",
+        "options": ["The Consumer Protection Act, 2019", "COPRA 1986", "The WTO Agreement", "The Factories Act"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Central Consumer Protection Authority was created by the 2019 Act.",
+          "wrong_options": {
+            "1": "COPRA 1986 did not create the CCPA.",
+            "2": "The WTO is a trade body.",
+            "3": "The Factories Act deals with labour."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Consumer Rights - Concept Map",
+    "nodes": [
+      { "id": "n1", "label": "Consumer", "group": "core" },
+      { "id": "n2", "label": "Consumer Exploitation", "group": "problem" },
+      { "id": "n3", "label": "Consumer Rights", "group": "core" },
+      { "id": "n4", "label": "Consumer Responsibilities", "group": "duty" },
+      { "id": "n5", "label": "COPRA and CPA 2019", "group": "law" },
+      { "id": "n6", "label": "Consumer Courts", "group": "institution" },
+      { "id": "n7", "label": "Redressal", "group": "remedy" },
+      { "id": "n8", "label": "Standardisation Marks", "group": "quality" },
+      { "id": "n9", "label": "Quality and Safety", "group": "outcome" },
+      { "id": "n10", "label": "Consumer Awareness", "group": "action" }
+    ],
+    "edges": [
+      ["n1", "n2"],
+      ["n2", "n3"],
+      ["n3", "n4"],
+      ["n3", "n5"],
+      ["n5", "n6"],
+      ["n6", "n7"],
+      ["n3", "n7"],
+      ["n3", "n8"],
+      ["n8", "n9"],
+      ["n9", "n1"],
+      ["n3", "n10"],
+      ["n10", "n1"]
+    ]
+  },
+  "mind_maps": {
+    "title": "Consumer Rights - Mind Map",
+    "type": "hierarchical",
+    "root": "Consumer Rights",
+    "branches": [
+      {
+        "concept": "Consumer and Exploitation",
+        "sub_nodes": [
+          "Consumer buys for personal use",
+          "Adulteration and short measure",
+          "Misleading advertisements",
+          "Overcharging above MRP"
+        ],
+        "connections": "Exploitation arises from information gaps"
+      },
+      {
+        "concept": "Six Consumer Rights",
+        "sub_nodes": [
+          "Safety",
+          "Information",
+          "Choice",
+          "Being heard, redressal, education"
+        ],
+        "connections": "Rights protect against unfair practices"
+      },
+      {
+        "concept": "Consumer Responsibilities",
+        "sub_nodes": [
+          "Check quality and expiry",
+          "Ask for and keep a bill",
+          "Read labels and instructions",
+          "Complain with evidence"
+        ],
+        "connections": "Rights work only with responsible action"
+      },
+      {
+        "concept": "Consumer Law",
+        "sub_nodes": [
+          "COPRA 1986",
+          "Consumer Protection Act 2019",
+          "E-commerce and product liability",
+          "Central Consumer Protection Authority"
+        ],
+        "connections": "Law updates with changing markets"
+      },
+      {
+        "concept": "Consumer Courts",
+        "sub_nodes": [
+          "District, state, national commissions",
+          "Two-year limitation",
+          "Evidence and mediation",
+          "Appeals"
+        ],
+        "connections": "Provides accessible redressal"
+      },
+      {
+        "concept": "Standardisation Marks",
+        "sub_nodes": [
+          "ISI for industrial goods",
+          "AGMARK for agricultural produce",
+          "Hallmark for gold",
+          "FSSAI for food"
+        ],
+        "connections": "Certify minimum quality and safety"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "A consumer is anyone who buys goods for resale - FALSE: a consumer buys for personal use, not resale or production.",
+    "Consumer rights apply only to expensive goods - FALSE: they apply to goods and services across price ranges.",
+    "MRP is a minimum price - FALSE: MRP is the maximum retail price, and charging above it is unfair.",
+    "The ISI mark guarantees perfect quality - FALSE: it certifies compliance with specified standards, not perfection.",
+    "Consumer courts are only for rich people - FALSE: the law provides accessible redressal, including mediation and online filing.",
+    "A complaint can be filed at any time - FALSE: generally it must be filed within two years of the cause of action.",
+    "Consumers have rights but no duties - FALSE: responsible behaviour, bills, and evidence make rights effective.",
+    "The 2019 Act applies only to offline shops - FALSE: it also covers e-commerce and online transactions."
+  ]
+}

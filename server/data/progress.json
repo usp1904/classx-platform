@@ -1,0 +1,205 @@
+{
+  "users": {
+    "guest": {
+      "userId": "guest",
+      "xp": 370,
+      "streak": 1,
+      "lastActive": "2026-11-10T19:57:07.494Z",
+      "completedChapters": {},
+      "chapterMinutes": {},
+      "practice": {
+        "attempts": 34,
+        "correct": 21,
+        "answered": 34
+      },
+      "exams": [
+        {
+          "at": "2026-11-10T18:20:07.976Z",
+          "subjectId": "mathematics",
+          "score": 0,
+          "total": 29
+        },
+        {
+          "at": "2026-10-28T15:12:20.269Z",
+          "subjectId": "mathematics",
+          "score": 0,
+          "total": 29
+        },
+        {
+          "at": "2026-10-28T13:52:45.822Z",
+          "subjectId": "mathematics",
+          "score": 0,
+          "total": 29
+        },
+        {
+          "at": "2026-10-28T13:29:06.129Z",
+          "subjectId": "mathematics",
+          "score": 0,
+          "total": 29
+        },
+        {
+          "at": "2026-10-26T17:42:24.079Z",
+          "subjectId": "mathematics",
+          "score": 0,
+          "total": 29
+        },
+        {
+          "at": "2026-10-26T17:35:55.679Z",
+          "subjectId": "mathematics",
+          "score": 0,
+          "total": 29
+        },
+        {
+          "at": "2026-10-26T17:25:44.226Z",
+          "subjectId": "mathematics",
+          "score": 0,
+          "total": 29
+        },
+        {
+          "at": "2026-10-26T17:13:27.176Z",
+          "subjectId": "mathematics",
+          "score": 0,
+          "total": 29
+        },
+        {
+          "at": "2026-10-26T16:25:02.116Z",
+          "subjectId": "mathematics",
+          "score": 0,
+          "total": 29
+        },
+        {
+          "at": "2026-10-26T16:20:50.064Z",
+          "subjectId": "mathematics",
+          "score": 0,
+          "total": 29
+        }
+      ],
+      "recent": [
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 0%",
+          "at": "2026-11-10T18:20:49.532Z"
+        },
+        {
+          "type": "exam",
+          "subjectId": "mathematics",
+          "title": "Mock test · 0%",
+          "at": "2026-11-10T18:20:07.976Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 0%",
+          "at": "2026-11-10T18:20:04.239Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 0%",
+          "at": "2026-11-10T18:18:31.276Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 10%",
+          "at": "2026-11-10T18:17:49.123Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 10%",
+          "at": "2026-11-10T18:17:24.321Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 10%",
+          "at": "2026-11-10T18:14:07.741Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 10%",
+          "at": "2026-11-10T18:13:02.841Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 0%",
+          "at": "2026-11-10T18:12:17.272Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 0%",
+          "at": "2026-11-10T18:09:19.700Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 0%",
+          "at": "2026-11-10T18:08:07.235Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 10%",
+          "at": "2026-11-10T18:07:14.192Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 10%",
+          "at": "2026-10-28T15:15:09.111Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 10%",
+          "at": "2026-10-28T15:13:42.910Z"
+        },
+        {
+          "type": "exam",
+          "subjectId": "mathematics",
+          "title": "Mock test · 0%",
+          "at": "2026-10-28T15:12:20.269Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 0%",
+          "at": "2026-10-28T15:12:10.002Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 10%",
+          "at": "2026-10-28T13:55:34.113Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 10%",
+          "at": "2026-10-28T13:54:11.143Z"
+        },
+        {
+          "type": "exam",
+          "subjectId": "mathematics",
+          "title": "Mock test · 0%",
+          "at": "2026-10-28T13:52:45.823Z"
+        },
+        {
+          "type": "practice",
+          "subjectId": "mathematics",
+          "title": "Practice set · 0%",
+          "at": "2026-10-28T13:52:36.025Z"
+        }
+      ],
+      "planChecks": {},
+      "bookmarks": [],
+      "badges": [],
+      "updatedAt": "2026-11-10T19:57:07.494Z"
+    }
+  }
+}

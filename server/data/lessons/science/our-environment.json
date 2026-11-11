@@ -1,0 +1,1345 @@
+{
+  "subject": "Science",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 14,
+  "chapter": "Our Environment",
+  "lesson": 14,
+  "title": "Our Environment - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "id": "our-environment",
+  "outcomes": [
+    "Describe the biotic and abiotic components of an ecosystem",
+    "Construct food chains and food webs and identify trophic levels",
+    "Apply the 10 percent law to calculate energy transfer between trophic levels",
+    "Explain biomagnification and its effect on top consumers",
+    "Explain how CFCs deplete the ozone layer and why this matters",
+    "Classify wastes as biodegradable or non-biodegradable and choose suitable disposal methods"
+  ],
+  "prerequisite_nodes": [
+    "SCI_CLASS9_NATURAL_RESOURCES",
+    "SCI_CLASS7_FOREST_OUR_LIFELINE",
+    "SCI_CLASS6_FOOD_WHERE_DOES_IT_COME_FROM"
+  ],
+  "concepts": [
+    {
+      "id": "ecosystem-components",
+      "name": "Ecosystem and Its Components",
+      "title": "Ecosystem and Its Components",
+      "purpose": "An ecosystem is a self-regulating unit in which living organisms interact with each other and with their physical environment. The living part is the biotic component and includes producers, consumers and decomposers. The non-living part is the abiotic component and includes sunlight, air, water, soil and temperature. Green plants trap solar energy and make food, consumers eat other organisms, and decomposers break down dead matter and return nutrients to the soil.",
+      "explanation": "An ecosystem is a self-regulating unit in which living organisms interact with each other and with their physical environment. The living part is the biotic component and includes producers, consumers and decomposers. The non-living part is the abiotic component and includes sunlight, air, water, soil and temperature. Green plants trap solar energy and make food, consumers eat other organisms, and decomposers break down dead matter and return nutrients to the soil.",
+      "key_points": [
+        "Biotic components are living: producers, consumers and decomposers.",
+        "Abiotic components are non-living: sunlight, water, air, soil and temperature.",
+        "Producers make food, consumers depend on other organisms, and decomposers recycle nutrients.",
+        "Ecosystems may be natural, such as ponds and forests, or artificial, such as crop fields and aquaria."
+      ],
+      "real_life_application": "A pond is a complete ecosystem: algae make food, small fish eat them, larger fish eat the small fish, and bacteria in the mud decompose dead plants and animals.",
+      "day_to_day_usage": [
+        "A kitchen garden is a small artificial ecosystem",
+        "Compost pits use decomposers to recycle kitchen waste",
+        "A fish aquarium needs light, plants, water and decomposers in balance",
+        "Forest litter is broken down and returns nutrients to the soil"
+      ]
+    },
+    {
+      "id": "food-chains-and-webs",
+      "name": "Food Chains, Food Webs and Trophic Levels",
+      "title": "Food Chains, Food Webs and Trophic Levels",
+      "purpose": "A food chain shows the step-by-step transfer of food from one organism to another, beginning with a producer. Each step in the chain is a trophic level: producers form the first level, herbivores the second, and carnivores the third and higher levels. In nature, food chains do not exist alone; they interconnect to form a food web, which makes the ecosystem more stable. Decomposers act on dead organisms at every level and return nutrients to the environment.",
+      "explanation": "A food chain shows the step-by-step transfer of food from one organism to another, beginning with a producer. Each step in the chain is a trophic level: producers form the first level, herbivores the second, and carnivores the third and higher levels. In nature, food chains do not exist alone; they interconnect to form a food web, which makes the ecosystem more stable. Decomposers act on dead organisms at every level and return nutrients to the environment.",
+      "key_points": [
+        "A food chain begins with a producer and ends with a top consumer.",
+        "Each step of a food chain is called a trophic level.",
+        "A food web is formed by several interconnected food chains.",
+        "Decomposers break down dead organic matter and recycle nutrients."
+      ],
+      "real_life_application": "In a field, grass is eaten by grasshoppers, grasshoppers by frogs, frogs by snakes and snakes by hawks; the same grass may also be eaten by rabbits, which are eaten by hawks, forming a food web.",
+      "day_to_day_usage": [
+        "Farmers observe that removing one pest may affect several other species",
+        "Garden birds feed on both insects and seeds, linking several chains",
+        "Fish ponds are managed by balancing plankton, small fish and large fish",
+        "Forest animals depend on overlapping food chains for survival"
+      ]
+    },
+    {
+      "id": "energy-flow-ten-percent",
+      "name": "Energy Flow and the 10 Percent Law",
+      "title": "Energy Flow and the 10 Percent Law",
+      "purpose": "Energy enters an ecosystem as sunlight and is trapped by producers during photosynthesis. It then passes to consumers, but at each trophic level most of the energy is used in respiration, lost as heat or left in undigested material. The 10 percent law states that only about 10 percent of the energy at one trophic level is transferred to the next level. Because so much energy is lost, food chains are usually short, with only four or five trophic levels.",
+      "explanation": "Energy enters an ecosystem as sunlight and is trapped by producers during photosynthesis. It then passes to consumers, but at each trophic level most of the energy is used in respiration, lost as heat or left in undigested material. The 10 percent law states that only about 10 percent of the energy at one trophic level is transferred to the next level. Because so much energy is lost, food chains are usually short, with only four or five trophic levels.",
+      "key_points": [
+        "Sunlight is the ultimate source of energy for most ecosystems.",
+        "Energy flow is unidirectional and cannot move back to the previous trophic level.",
+        "Only about 10 percent of energy is transferred from one trophic level to the next.",
+        "Energy loss limits the length of food chains and makes top consumers fewer in number."
+      ],
+      "real_life_application": "A large area of grass can support only a few hawks because most of the energy is lost at each step from grass to insects to frogs to snakes to hawks.",
+      "day_to_day_usage": [
+        "Farmers get more food energy per hectare from crops than from meat",
+        "Energy pyramids explain why top predators are rare",
+        "Biogas and composting recover some energy and nutrients from waste",
+        "Food choices and food waste affect the energy available to people"
+      ]
+    },
+    {
+      "id": "biomagnification",
+      "name": "Biomagnification of Harmful Substances",
+      "title": "Biomagnification of Harmful Substances",
+      "purpose": "Biomagnification is the increase in concentration of a harmful, non-biodegradable substance as it passes from one trophic level to the next. Pesticides, heavy metals and some industrial chemicals are not broken down by organisms and are not easily excreted. They accumulate in the bodies of organisms, so each higher trophic level receives and retains a larger dose. Humans and other top consumers are therefore at the greatest risk.",
+      "explanation": "Biomagnification is the increase in concentration of a harmful, non-biodegradable substance as it passes from one trophic level to the next. Pesticides, heavy metals and some industrial chemicals are not broken down by organisms and are not easily excreted. They accumulate in the bodies of organisms, so each higher trophic level receives and retains a larger dose. Humans and other top consumers are therefore at the greatest risk.",
+      "key_points": [
+        "Biomagnification occurs with non-biodegradable and fat-soluble substances.",
+        "The concentration rises at each trophic level because the substance is not broken down or excreted.",
+        "Top consumers, including humans, receive the highest concentration.",
+        "Avoiding unnecessary pesticide use and using safe disposal reduce the risk."
+      ],
+      "real_life_application": "A pesticide sprayed on a field may be present in very low concentration in water, but it becomes concentrated in fish and then in the birds or people that eat the fish.",
+      "day_to_day_usage": [
+        "Washing fruits and vegetables reduces surface pesticide residue",
+        "Organic farming avoids many synthetic pesticide inputs",
+        "Fish advisories warn about mercury in large predatory fish",
+        "Safe disposal of old medicines and batteries keeps chemicals out of water"
+      ]
+    },
+    {
+      "id": "ozone-depletion",
+      "name": "Ozone Layer and Its Depletion",
+      "title": "Ozone Layer and Its Depletion",
+      "purpose": "The ozone layer is a region of the stratosphere rich in ozone (O3) that absorbs most of the harmful ultraviolet radiation from the Sun. Chlorofluorocarbons (CFCs), used in refrigerators and aerosol sprays, rise into the stratosphere where ultraviolet light breaks them down and releases chlorine atoms. Each chlorine atom can destroy many ozone molecules in a chain reaction, thinning the ozone layer. Greater ultraviolet radiation reaching the Earth increases the risk of skin cancer and eye damage and harms plants and aquatic life.",
+      "explanation": "The ozone layer is a region of the stratosphere rich in ozone (O3) that absorbs most of the harmful ultraviolet radiation from the Sun. Chlorofluorocarbons (CFCs), used in refrigerators and aerosol sprays, rise into the stratosphere where ultraviolet light breaks them down and releases chlorine atoms. Each chlorine atom can destroy many ozone molecules in a chain reaction, thinning the ozone layer. Greater ultraviolet radiation reaching the Earth increases the risk of skin cancer and eye damage and harms plants and aquatic life.",
+      "key_points": [
+        "Ozone in the stratosphere absorbs harmful ultraviolet radiation.",
+        "CFCs release chlorine atoms that break ozone molecules in a chain reaction.",
+        "Ozone depletion allows more ultraviolet radiation to reach the Earth's surface.",
+        "International action, including the Montreal Protocol, has reduced CFC production."
+      ],
+      "real_life_application": "Older refrigerators and air conditioners used CFCs; replacing them with ozone-friendly refrigerants helps protect the ozone layer.",
+      "day_to_day_usage": [
+        "Choosing CFC-free refrigerators and aerosols",
+        "Properly recovering refrigerant gas during appliance repair",
+        "Avoiding release of foam-blowing gases into the air",
+        "Using shade, sunglasses and sunscreen when ultraviolet levels are high"
+      ]
+    },
+    {
+      "id": "waste-management",
+      "name": "Biodegradable and Non-biodegradable Waste",
+      "title": "Biodegradable and Non-biodegradable Waste",
+      "purpose": "Biodegradable wastes, such as food scraps, paper and cotton, are broken down by microorganisms and can be composted. Non-biodegradable wastes, such as plastic, glass, metals and many chemicals, are not broken down by microorganisms and persist in the environment for a long time. Good waste management means reducing waste at source, segregating it, reusing and recycling materials, composting biodegradable waste and sending hazardous waste for safe disposal. Poor disposal pollutes soil, water and air and harms wildlife.",
+      "explanation": "Biodegradable wastes, such as food scraps, paper and cotton, are broken down by microorganisms and can be composted. Non-biodegradable wastes, such as plastic, glass, metals and many chemicals, are not broken down by microorganisms and persist in the environment for a long time. Good waste management means reducing waste at source, segregating it, reusing and recycling materials, composting biodegradable waste and sending hazardous waste for safe disposal. Poor disposal pollutes soil, water and air and harms wildlife.",
+      "key_points": [
+        "Biodegradable waste is decomposed by microorganisms; non-biodegradable waste is not.",
+        "Segregation at source makes recycling and composting possible.",
+        "The three Rs are reduce, reuse and recycle, in that order of preference.",
+        "Hazardous waste such as batteries, medicines and e-waste needs special collection."
+      ],
+      "real_life_application": "A household can compost vegetable peels, recycle paper and metal, reuse cloth bags and keep batteries and medicines out of ordinary bins.",
+      "day_to_day_usage": [
+        "Two-bin segregation at home for wet and dry waste",
+        "Carrying a cloth bag to the market instead of taking plastic bags",
+        "Composting kitchen waste in a balcony or school garden",
+        "Dropping old batteries and e-waste at collection points"
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-environment-1",
+      "topic": "Identifying trophic levels in a food chain",
+      "title": "Identifying trophic levels in a food chain",
+      "problem": "Consider the food chain: grass, grasshopper, frog, snake, hawk. Identify the producer, the consumers and the trophic level of each organism. What would happen if all the frogs were removed?",
+      "solution": [
+        "Step 1: Identify the producer. Grass makes its own food by photosynthesis, so it is the producer.",
+        "Step 2: Identify the consumers. Grasshopper, frog, snake and hawk cannot make their own food, so they are consumers.",
+        "Step 3: Assign trophic levels. Grass is the first trophic level; grasshopper is the second; frog is the third; snake is the fourth; hawk is the fifth.",
+        "Step 4: Classify consumers by diet. Grasshopper is a primary consumer (herbivore), frog and snake are carnivores, and hawk is the top carnivore.",
+        "Step 5: Predict the effect of removing frogs. Grasshoppers would initially increase because their predator is gone.",
+        "Step 6: More grasshoppers would eat more grass, so the grass population would decline.",
+        "Step 7: Snakes would lose a food source and their numbers would fall or they would shift to other prey.",
+        "Step 8: The whole chain would be disturbed, showing that organisms in a food chain are interdependent."
+      ],
+      "board_mode": [
+        "Step 1: Identify the producer. Grass makes its own food by photosynthesis, so it is the producer.",
+        "Step 2: Identify the consumers. Grasshopper, frog, snake and hawk cannot make their own food, so they are consumers.",
+        "Step 3: Assign trophic levels. Grass is the first trophic level; grasshopper is the second; frog is the third; snake is the fourth; hawk is the fifth.",
+        "Step 4: Classify consumers by diet. Grasshopper is a primary consumer (herbivore), frog and snake are carnivores, and hawk is the top carnivore.",
+        "Step 5: Predict the effect of removing frogs. Grasshoppers would initially increase because their predator is gone.",
+        "Step 6: More grasshoppers would eat more grass, so the grass population would decline.",
+        "Step 7: Snakes would lose a food source and their numbers would fall or they would shift to other prey.",
+        "Step 8: The whole chain would be disturbed, showing that organisms in a food chain are interdependent."
+      ],
+      "answer": "Grass = producer (first trophic level); grasshopper = primary consumer (second); frog = secondary consumer (third); snake = tertiary consumer (fourth); hawk = top consumer (fifth). Removing frogs would initially increase grasshoppers, reduce grass and disturb the chain.",
+      "board_tip": "Always start the trophic-level count at the producer, not at the first animal.",
+      "exam_tip": "A common error is to call the grasshopper a secondary consumer. It eats the producer, so it is primary."
+    },
+    {
+      "id": "we-environment-2",
+      "topic": "Applying the 10 percent law",
+      "title": "Applying the 10 percent law",
+      "problem": "In a food chain, the producers capture 10,000 J of energy from sunlight. Using the 10 percent law, calculate the energy available to the primary consumer, the secondary consumer and the tertiary consumer.",
+      "solution": [
+        "Step 1: Write the 10 percent law: only about 10 percent of the energy at one trophic level passes to the next.",
+        "Step 2: Energy at the producer level = 10,000 J.",
+        "Step 3: Energy available to the primary consumer = 10 percent of 10,000 J = 1,000 J.",
+        "Step 4: Energy available to the secondary consumer = 10 percent of 1,000 J = 100 J.",
+        "Step 5: Energy available to the tertiary consumer = 10 percent of 100 J = 10 J.",
+        "Step 6: Check the pattern: the energy falls by a factor of 10 at each step.",
+        "Step 7: Explain the consequence: most energy is lost as heat and in life processes, so top consumers receive very little energy."
+      ],
+      "board_mode": [
+        "Step 1: Write the 10 percent law: only about 10 percent of the energy at one trophic level passes to the next.",
+        "Step 2: Energy at the producer level = 10,000 J.",
+        "Step 3: Energy available to the primary consumer = 10 percent of 10,000 J = 1,000 J.",
+        "Step 4: Energy available to the secondary consumer = 10 percent of 1,000 J = 100 J.",
+        "Step 5: Energy available to the tertiary consumer = 10 percent of 100 J = 10 J.",
+        "Step 6: Check the pattern: the energy falls by a factor of 10 at each step.",
+        "Step 7: Explain the consequence: most energy is lost as heat and in life processes, so top consumers receive very little energy."
+      ],
+      "answer": "Primary consumer: 1,000 J; secondary consumer: 100 J; tertiary consumer: 10 J.",
+      "board_tip": "Multiply by 0.10 once per trophic step; do not subtract 10 percent from the original value each time.",
+      "exam_tip": "Show each step separately. A single wrong step usually means the whole numerical answer is wrong."
+    },
+    {
+      "id": "we-environment-3",
+      "topic": "Why biomagnification harms top consumers",
+      "title": "Why biomagnification harms top consumers",
+      "problem": "A pesticide is present in very low concentration in a pond. Explain why a fish-eating bird may contain a much higher concentration of the pesticide than the water, and why this is a health concern.",
+      "solution": [
+        "Step 1: The pesticide is non-biodegradable, so microorganisms cannot break it down.",
+        "Step 2: It is taken up by tiny aquatic plants and animals, where it accumulates in their bodies.",
+        "Step 3: Small fish eat many of these organisms and retain the pesticide from each meal.",
+        "Step 4: Larger fish eat many small fish, so the pesticide concentration increases again.",
+        "Step 5: The fish-eating bird eats many large fish and therefore receives a large cumulative dose.",
+        "Step 6: At each trophic level the substance is not excreted efficiently, so its concentration rises; this is biomagnification.",
+        "Step 7: High concentrations can damage the nervous system, reproduction and development of top consumers, including humans.",
+        "Step 8: Reducing pesticide use and preventing runoff into water bodies lowers the risk."
+      ],
+      "board_mode": [
+        "Step 1: The pesticide is non-biodegradable, so microorganisms cannot break it down.",
+        "Step 2: It is taken up by tiny aquatic plants and animals, where it accumulates in their bodies.",
+        "Step 3: Small fish eat many of these organisms and retain the pesticide from each meal.",
+        "Step 4: Larger fish eat many small fish, so the pesticide concentration increases again.",
+        "Step 5: The fish-eating bird eats many large fish and therefore receives a large cumulative dose.",
+        "Step 6: At each trophic level the substance is not excreted efficiently, so its concentration rises; this is biomagnification.",
+        "Step 7: High concentrations can damage the nervous system, reproduction and development of top consumers, including humans.",
+        "Step 8: Reducing pesticide use and preventing runoff into water bodies lowers the risk."
+      ],
+      "answer": "The non-biodegradable pesticide accumulates at each trophic level, so the fish-eating bird at the top of the chain receives the highest concentration and faces the greatest health risk.",
+      "board_tip": "Link the answer to two ideas: non-biodegradable nature and increasing trophic level.",
+      "exam_tip": "Do not say the pesticide is 'made' in the bird; it is accumulated from many prey organisms."
+    },
+    {
+      "id": "we-environment-4",
+      "topic": "How CFCs destroy ozone",
+      "title": "How CFCs destroy ozone",
+      "problem": "Explain how chlorofluorocarbons (CFCs) from refrigerators and aerosol sprays damage the ozone layer, and state two consequences of ozone depletion.",
+      "solution": [
+        "Step 1: CFCs are stable compounds that are released into the air from old refrigerators, air conditioners and aerosol sprays.",
+        "Step 2: They slowly rise into the stratosphere, where the ozone layer is present.",
+        "Step 3: Ultraviolet radiation breaks CFC molecules and releases chlorine atoms.",
+        "Step 4: A chlorine atom reacts with ozone (O3), converting it into oxygen (O2) and chlorine monoxide.",
+        "Step 5: The chlorine is regenerated in further reactions, so one chlorine atom can destroy many ozone molecules.",
+        "Step 6: This chain reaction thins the ozone layer, allowing more ultraviolet radiation to reach the Earth's surface.",
+        "Step 7: Consequence one: increased ultraviolet radiation raises the risk of skin cancer and eye damage such as cataracts.",
+        "Step 8: Consequence two: ultraviolet radiation can damage crops and harm phytoplankton and other aquatic organisms.",
+        "Step 9: The Montreal Protocol was made to phase out ozone-depleting substances."
+      ],
+      "board_mode": [
+        "Step 1: CFCs are stable compounds that are released into the air from old refrigerators, air conditioners and aerosol sprays.",
+        "Step 2: They slowly rise into the stratosphere, where the ozone layer is present.",
+        "Step 3: Ultraviolet radiation breaks CFC molecules and releases chlorine atoms.",
+        "Step 4: A chlorine atom reacts with ozone (O3), converting it into oxygen (O2) and chlorine monoxide.",
+        "Step 5: The chlorine is regenerated in further reactions, so one chlorine atom can destroy many ozone molecules.",
+        "Step 6: This chain reaction thins the ozone layer, allowing more ultraviolet radiation to reach the Earth's surface.",
+        "Step 7: Consequence one: increased ultraviolet radiation raises the risk of skin cancer and eye damage such as cataracts.",
+        "Step 8: Consequence two: ultraviolet radiation can damage crops and harm phytoplankton and other aquatic organisms.",
+        "Step 9: The Montreal Protocol was made to phase out ozone-depleting substances."
+      ],
+      "answer": "CFCs release chlorine in the stratosphere, and chlorine catalyses the conversion of ozone to oxygen; this thins the ozone layer, increasing ultraviolet radiation, skin cancer, eye damage and harm to crops and aquatic life.",
+      "board_tip": "Mention the chain reaction: a small amount of chlorine can destroy many ozone molecules.",
+      "exam_tip": "Do not confuse the ozone hole with the greenhouse effect; they are different environmental problems."
+    },
+    {
+      "id": "we-environment-5",
+      "topic": "Classifying and managing household waste",
+      "title": "Classifying and managing household waste",
+      "problem": "A household produces vegetable peels, newspaper, plastic carry bags, glass bottles, used batteries and expired medicines. Classify each item and suggest a suitable disposal method.",
+      "solution": [
+        "Step 1: Vegetable peels are biodegradable and can be composted.",
+        "Step 2: Newspaper is biodegradable and can be recycled or reused.",
+        "Step 3: Plastic carry bags are non-biodegradable; they should be reused or recycled and avoided where possible.",
+        "Step 4: Glass bottles are non-biodegradable but recyclable; return or recycle them.",
+        "Step 5: Used batteries contain heavy metals and are hazardous; send them to a special collection point.",
+        "Step 6: Expired medicines are hazardous chemical waste; return them to a pharmacy or hazardous-waste collection point.",
+        "Step 7: Segregate wet and dry waste at home so that composting and recycling work efficiently.",
+        "Step 8: Never burn plastic or dump hazardous waste with ordinary garbage."
+      ],
+      "board_mode": [
+        "Step 1: Vegetable peels are biodegradable and can be composted.",
+        "Step 2: Newspaper is biodegradable and can be recycled or reused.",
+        "Step 3: Plastic carry bags are non-biodegradable; they should be reused or recycled and avoided where possible.",
+        "Step 4: Glass bottles are non-biodegradable but recyclable; return or recycle them.",
+        "Step 5: Used batteries contain heavy metals and are hazardous; send them to a special collection point.",
+        "Step 6: Expired medicines are hazardous chemical waste; return them to a pharmacy or hazardous-waste collection point.",
+        "Step 7: Segregate wet and dry waste at home so that composting and recycling work efficiently.",
+        "Step 8: Never burn plastic or dump hazardous waste with ordinary garbage."
+      ],
+      "answer": "Compost vegetable peels; recycle or reuse newspaper, plastic and glass; send batteries and expired medicines to hazardous-waste collection points; segregate waste at source.",
+      "board_tip": "Use the terms biodegradable, non-biodegradable, recyclable and hazardous correctly.",
+      "exam_tip": "Batteries and medicines are not ordinary garbage; mention special disposal, not just 'throw away'."
+    }
+  ],
+  "exercises": {
+    "exercise_14_1": {
+      "title": "NCERT Exercise - Ecosystem Basics",
+      "objective": "Check definitions of ecosystem components, food chains and biodegradable waste",
+      "problems": [
+        {
+          "id": "environment-ex1-1",
+          "book_source": "NCERT Exercise 14.1",
+          "question": "Define an ecosystem and give two examples.",
+          "difficulty": "simple",
+          "marks": 1,
+          "solution": [
+            "Step 1: An ecosystem is a self-regulating unit of living organisms interacting with their physical environment.",
+            "Step 2: Examples include a pond and a forest, or a crop field and an aquarium."
+          ],
+          "final_answer": "An ecosystem is a unit of living organisms interacting with their environment; examples are a pond and a forest."
+        },
+        {
+          "id": "environment-ex1-2",
+          "book_source": "NCERT Exercise 14.1",
+          "question": "Name the biotic and abiotic components of an ecosystem.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Biotic components are the living parts: producers, consumers and decomposers.",
+            "Step 2: Abiotic components are the non-living parts: sunlight, air, water, soil and temperature."
+          ],
+          "final_answer": "Biotic: producers, consumers and decomposers. Abiotic: sunlight, air, water, soil and temperature."
+        },
+        {
+          "id": "environment-ex1-3",
+          "book_source": "NCERT Exercise 14.1",
+          "question": "What is a food chain?",
+          "difficulty": "simple",
+          "marks": 1,
+          "solution": [
+            "Step 1: A food chain is a series of organisms through which food energy passes.",
+            "Step 2: It begins with a producer and ends with a top consumer."
+          ],
+          "final_answer": "A food chain is the step-by-step transfer of food energy from a producer through consumers."
+        },
+        {
+          "id": "environment-ex1-4",
+          "book_source": "NCERT Exercise 14.1",
+          "question": "Define biodegradable waste and give two examples.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Biodegradable waste is waste that can be broken down by microorganisms.",
+            "Step 2: Examples are vegetable peels, paper, cotton and food scraps."
+          ],
+          "final_answer": "Biodegradable waste is decomposed by microorganisms; examples are vegetable peels and paper."
+        },
+        {
+          "id": "environment-ex1-5",
+          "book_source": "NCERT Exercise 14.1",
+          "question": "What are trophic levels?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Each step in a food chain is called a trophic level.",
+            "Step 2: Producers form the first trophic level, herbivores the second, and carnivores the higher levels."
+          ],
+          "final_answer": "Trophic levels are the successive steps in a food chain through which energy passes."
+        },
+        {
+          "id": "environment-ex1-6",
+          "book_source": "NCERT Exercise 14.1",
+          "question": "Which gas makes up the ozone layer?",
+          "difficulty": "simple",
+          "marks": 1,
+          "solution": [
+            "Step 1: The ozone layer is rich in ozone.",
+            "Step 2: Ozone has the formula O3."
+          ],
+          "final_answer": "Ozone (O3)."
+        }
+      ]
+    },
+    "exercise_14_2": {
+      "title": "NCERT Exercise - Energy Flow and Pollution",
+      "objective": "Apply food webs, the 10 percent law, biomagnification and ozone chemistry",
+      "problems": [
+        {
+          "id": "environment-ex2-1",
+          "book_source": "NCERT Exercise 14.2",
+          "question": "Construct a food chain with four trophic levels and label each level.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Start with a producer, for example grass.",
+            "Step 2: Add a primary consumer, for example grasshopper.",
+            "Step 3: Add a secondary consumer, for example frog.",
+            "Step 4: Add a tertiary consumer, for example snake.",
+            "Step 5: The chain is grass, grasshopper, frog, snake."
+          ],
+          "final_answer": "Grass (first trophic level) - grasshopper (second) - frog (third) - snake (fourth)."
+        },
+        {
+          "id": "environment-ex2-2",
+          "book_source": "NCERT Exercise 14.2",
+          "question": "Why do food chains usually have only four or five trophic levels?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Only about 10 percent of energy passes from one trophic level to the next.",
+            "Step 2: Most energy is used in respiration, lost as heat or left in undigested matter.",
+            "Step 3: After four or five transfers, too little energy remains to support another level.",
+            "Step 4: Therefore food chains are short."
+          ],
+          "final_answer": "Energy loss at each step leaves too little energy after four or five levels to support more consumers."
+        },
+        {
+          "id": "environment-ex2-3",
+          "book_source": "NCERT Exercise 14.2",
+          "question": "Differentiate between biodegradable and non-biodegradable waste in three points.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Biodegradable waste is broken down by microorganisms; non-biodegradable waste is not.",
+            "Step 2: Biodegradable examples are food waste and paper; non-biodegradable examples are plastic and glass.",
+            "Step 3: Biodegradable waste can be composted; non-biodegradable waste must be reused, recycled or safely disposed of.",
+            "Step 4: Non-biodegradable waste persists longer and can cause biomagnification when it is a chemical pollutant."
+          ],
+          "final_answer": "Biodegradable waste decomposes and can be composted; non-biodegradable waste does not decompose and needs reuse, recycling or special disposal."
+        },
+        {
+          "id": "environment-ex2-4",
+          "book_source": "NCERT Exercise 14.2",
+          "question": "What is biomagnification? Why are humans at the top of a food chain at greater risk?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Biomagnification is the increase in concentration of a non-biodegradable pollutant at higher trophic levels.",
+            "Step 2: The pollutant is not broken down or excreted efficiently, so it accumulates in bodies.",
+            "Step 3: Each higher level eats many organisms from the level below and receives a larger dose.",
+            "Step 4: Humans often occupy the top of food chains, so they can receive the highest concentration."
+          ],
+          "final_answer": "Biomagnification is the rise in pollutant concentration along a food chain; top consumers such as humans receive the largest dose."
+        },
+        {
+          "id": "environment-ex2-5",
+          "book_source": "NCERT Exercise 14.2",
+          "question": "How do CFCs deplete the ozone layer?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: CFCs rise into the stratosphere.",
+            "Step 2: Ultraviolet radiation breaks CFCs and releases chlorine atoms.",
+            "Step 3: Chlorine reacts with ozone and converts it to oxygen.",
+            "Step 4: Chlorine is regenerated, so a chain reaction destroys many ozone molecules."
+          ],
+          "final_answer": "CFCs release chlorine in the stratosphere, and chlorine catalyses the breakdown of ozone in a chain reaction."
+        },
+        {
+          "id": "environment-ex2-6",
+          "book_source": "NCERT Exercise 14.2",
+          "question": "Why is energy flow in an ecosystem described as unidirectional?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Energy enters as sunlight and is trapped by producers.",
+            "Step 2: It passes from producers to consumers and then to decomposers.",
+            "Step 3: At each step much energy is lost as heat and used in life processes.",
+            "Step 4: The lost heat cannot be recaptured by the previous trophic level, so flow is one-way."
+          ],
+          "final_answer": "Energy moves from the Sun to producers and then to consumers, and the heat lost at each step cannot return, so the flow is one-way."
+        }
+      ]
+    },
+    "exercise_14_3": {
+      "title": "NCERT Exercise - Calculations and Case Studies",
+      "objective": "Solve energy-transfer problems and analyse ecosystem and pollution cases",
+      "problems": [
+        {
+          "id": "environment-ex3-1",
+          "book_source": "NCERT Exercise 14.3",
+          "question": "In a pond ecosystem, phytoplankton capture 50,000 J of energy. Using the 10 percent law, calculate the energy available to small fish (third trophic level) and large fish (fourth trophic level).",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Phytoplankton are producers at the first trophic level with 50,000 J.",
+            "Step 2: Zooplankton, the primary consumers, receive 10 percent of 50,000 J = 5,000 J.",
+            "Step 3: Small fish, the secondary consumers, receive 10 percent of 5,000 J = 500 J.",
+            "Step 4: Large fish, the tertiary consumers, receive 10 percent of 500 J = 50 J.",
+            "Step 5: Check: 50,000 -> 5,000 -> 500 -> 50, with one division by 10 at each step."
+          ],
+          "final_answer": "Small fish: 500 J; large fish: 50 J."
+        },
+        {
+          "id": "environment-ex3-2",
+          "book_source": "NCERT Exercise 14.3",
+          "question": "A food web contains grass, insects, frogs, snakes, rabbits and hawks. Grass is eaten by insects and rabbits; insects by frogs; frogs and rabbits by hawks; frogs also by snakes. Predict two effects of removing all snakes.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Snakes eat frogs, so removing snakes removes a predator of frogs.",
+            "Step 2: The frog population may initially increase because fewer frogs are eaten.",
+            "Step 3: More frogs would eat more insects, so the insect population may decline.",
+            "Step 4: Fewer insects would reduce competition with rabbits for grass, so rabbits may increase or grass may recover differently.",
+            "Step 5: Hawks still have frogs and rabbits as prey, so their food supply is not directly cut, but the change in frogs and rabbits affects them indirectly.",
+            "Step 6: The food web is buffered by alternative pathways, but the balance still changes; no single prediction is certain without field data."
+          ],
+          "final_answer": "Frogs initially increase and insects decline; hawks are affected indirectly through changes in frogs and rabbits. The food web buffers the change, but the ecosystem balance is disturbed."
+        },
+        {
+          "id": "environment-ex3-3",
+          "book_source": "NCERT Exercise 14.3",
+          "question": "Why are non-biodegradable substances a greater long-term problem than biodegradable substances? Suggest two management strategies.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Biodegradable substances are broken down by microorganisms and return to the nutrient cycle.",
+            "Step 2: Non-biodegradable substances are not broken down and remain in the environment for long periods.",
+            "Step 3: They can accumulate in soil and water, harm wildlife and enter food chains through biomagnification.",
+            "Step 4: Strategy one: reduce and reuse materials, and recycle glass, metal and suitable plastics.",
+            "Step 5: Strategy two: segregate waste at source and send hazardous non-biodegradable waste to approved disposal or recycling facilities.",
+            "Step 6: Long-term planning and public awareness are needed because the problem persists for generations."
+          ],
+          "final_answer": "Non-biodegradable waste persists and can biomagnify; strategies include the 3Rs, segregation and safe recycling or disposal."
+        },
+        {
+          "id": "environment-ex3-4",
+          "book_source": "NCERT Exercise 14.3",
+          "question": "Compare ozone depletion and biomagnification in terms of their cause, mechanism and main effect.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Cause of ozone depletion: CFCs and other ozone-depleting substances released into the air.",
+            "Step 2: Mechanism of ozone depletion: chlorine catalyses the breakdown of ozone in the stratosphere.",
+            "Step 3: Main effect of ozone depletion: more ultraviolet radiation reaches the surface, harming health and ecosystems.",
+            "Step 4: Cause of biomagnification: non-biodegradable pollutants such as pesticides enter food chains.",
+            "Step 5: Mechanism of biomagnification: the pollutant accumulates at each trophic level because it is not broken down or excreted.",
+            "Step 6: Main effect of biomagnification: top consumers, including humans, receive the highest concentration and face health risks.",
+            "Step 7: Both are pollution problems, but one acts in the atmosphere and the other through food chains."
+          ],
+          "final_answer": "Ozone depletion is atmospheric chlorine chemistry increasing ultraviolet radiation; biomagnification is pollutant accumulation through food chains harming top consumers."
+        },
+        {
+          "id": "environment-ex3-5",
+          "book_source": "NCERT Exercise 14.3",
+          "question": "Design a waste management plan for a school. Include segregation, composting, recycling and awareness.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Place separate bins for wet biodegradable waste, dry recyclable waste and hazardous waste.",
+            "Step 2: Collect food waste from the canteen and compost it in a school compost pit or vermicompost unit.",
+            "Step 3: Collect paper, cardboard, glass and metal for recycling; reuse paper for rough work.",
+            "Step 4: Keep batteries, e-waste and laboratory chemicals in labelled containers for special collection.",
+            "Step 5: Reduce single-use plastic in the canteen and encourage cloth bags and refillable bottles.",
+            "Step 6: Run awareness activities such as assemblies, posters and student waste monitors.",
+            "Step 7: Review the amount of waste produced each month and set targets for reduction."
+          ],
+          "final_answer": "A school plan should segregate waste, compost food waste, recycle paper and containers, isolate hazardous waste, reduce single-use plastic and run regular awareness programmes."
+        },
+        {
+          "id": "environment-ex3-6",
+          "book_source": "NCERT Exercise 14.3",
+          "question": "Why is a pyramid of energy always upright, while a pyramid of numbers can be inverted? Give an example.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: A pyramid of energy shows the energy present at each trophic level.",
+            "Step 2: Energy decreases at every step because of the 10 percent law and heat loss.",
+            "Step 3: Therefore the energy pyramid is always broad at the base and narrow at the top.",
+            "Step 4: A pyramid of numbers shows the number of individuals at each level, not energy.",
+            "Step 5: One large tree can support many insects, so the number of producers is smaller than the number of primary consumers.",
+            "Step 6: Such a pyramid of numbers is inverted even though energy still decreases from the tree to the insects."
+          ],
+          "final_answer": "The energy pyramid is always upright because energy falls at each level; a numbers pyramid can be inverted when one large producer, such as a tree, supports many small consumers."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-environment-s-1",
+        "question": "Which of these is a biotic component of an ecosystem?",
+        "options": [
+          "Sunlight",
+          "Grass",
+          "Soil",
+          "Water"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Grass is a living organism, so it is a biotic component.",
+          "wrong_options": {
+            "0": "Sunlight is non-living and abiotic.",
+            "2": "Soil is non-living and abiotic.",
+            "3": "Water is non-living and abiotic."
+          }
+        }
+      },
+      {
+        "id": "q-environment-s-2",
+        "question": "Which organism is a producer?",
+        "options": [
+          "Grasshopper",
+          "Green plant",
+          "Frog",
+          "Hawk"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A green plant makes its own food by photosynthesis, so it is a producer.",
+          "wrong_options": {
+            "0": "A grasshopper is a primary consumer.",
+            "2": "A frog is a carnivorous consumer.",
+            "3": "A hawk is a top consumer."
+          }
+        }
+      },
+      {
+        "id": "q-environment-s-3",
+        "question": "A herbivore is a:",
+        "options": [
+          "Producer",
+          "Primary consumer",
+          "Decomposer",
+          "Top carnivore"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A herbivore eats producers and is therefore a primary consumer.",
+          "wrong_options": {
+            "0": "Producers make their own food.",
+            "2": "Decomposers break down dead matter.",
+            "3": "Top carnivores eat other animals, not plants."
+          }
+        }
+      },
+      {
+        "id": "q-environment-s-4",
+        "question": "Bacteria and fungi that break down dead matter are called:",
+        "options": [
+          "Producers",
+          "Decomposers",
+          "Primary consumers",
+          "Abiotic factors"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Bacteria and fungi are decomposers that break down dead organic matter.",
+          "wrong_options": {
+            "0": "Producers make food by photosynthesis.",
+            "2": "Primary consumers are herbivores.",
+            "3": "Abiotic factors are non-living components."
+          }
+        }
+      },
+      {
+        "id": "q-environment-s-5",
+        "question": "Which of these is an abiotic component?",
+        "options": [
+          "Algae",
+          "Fish",
+          "Sunlight",
+          "Bacteria"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Sunlight is a non-living physical factor, so it is abiotic.",
+          "wrong_options": {
+            "0": "Algae are living producers.",
+            "1": "Fish are living consumers.",
+            "3": "Bacteria are living decomposers."
+          }
+        }
+      },
+      {
+        "id": "q-environment-s-6",
+        "question": "Which item is biodegradable?",
+        "options": [
+          "Vegetable peel",
+          "Plastic bag",
+          "Glass bottle",
+          "Aluminium can"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Vegetable peel is broken down by microorganisms, so it is biodegradable.",
+          "wrong_options": {
+            "1": "Plastic is non-biodegradable.",
+            "2": "Glass is non-biodegradable.",
+            "3": "Aluminium is non-biodegradable, though it can be recycled."
+          }
+        }
+      },
+      {
+        "id": "q-environment-s-7",
+        "question": "Which item is non-biodegradable?",
+        "options": [
+          "Paper",
+          "Cotton cloth",
+          "Plastic",
+          "Food scraps"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Plastic is not broken down by microorganisms, so it is non-biodegradable.",
+          "wrong_options": {
+            "0": "Paper is biodegradable.",
+            "1": "Cotton is biodegradable.",
+            "3": "Food scraps are biodegradable."
+          }
+        }
+      },
+      {
+        "id": "q-environment-s-8",
+        "question": "The ozone layer is found mainly in the:",
+        "options": [
+          "Troposphere",
+          "Stratosphere",
+          "Mesosphere",
+          "Lithosphere"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The ozone layer is located in the stratosphere.",
+          "wrong_options": {
+            "0": "The troposphere is the lowest atmospheric layer.",
+            "2": "The mesosphere is above the stratosphere.",
+            "3": "The lithosphere is the solid part of the Earth."
+          }
+        }
+      },
+      {
+        "id": "q-environment-s-9",
+        "question": "CFCs are commonly used in:",
+        "options": [
+          "Refrigerators and aerosol sprays",
+          "Chemical fertilisers",
+          "Cooking oil",
+          "Detergent powder"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "CFCs were used as refrigerants and propellants in aerosol sprays.",
+          "wrong_options": {
+            "1": "Fertilisers do not contain CFCs.",
+            "2": "Cooking oil is not a source of CFCs.",
+            "3": "Detergent powder is not a source of CFCs."
+          }
+        }
+      },
+      {
+        "id": "q-environment-s-10",
+        "question": "The ultimate source of energy for most ecosystems is:",
+        "options": [
+          "The Sun",
+          "The soil",
+          "Water",
+          "Decomposers"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Sunlight is trapped by producers and becomes the energy source for the ecosystem.",
+          "wrong_options": {
+            "1": "Soil supplies nutrients and water but not the main energy input.",
+            "2": "Water is essential but is not the energy source.",
+            "3": "Decomposers recycle nutrients; they do not supply the ecosystem's energy."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-environment-m-1",
+        "question": "In the chain grass - grasshopper - frog - snake - hawk, the hawk is at which trophic level?",
+        "options": [
+          "Second",
+          "Third",
+          "Fourth",
+          "Fifth"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Grass is first, grasshopper second, frog third, snake fourth and hawk fifth.",
+          "wrong_options": {
+            "0": "The second level is the grasshopper.",
+            "1": "The third level is the frog.",
+            "2": "The fourth level is the snake."
+          }
+        }
+      },
+      {
+        "id": "q-environment-m-2",
+        "question": "If producers contain 1,000 J of energy, about how much is available to primary consumers under the 10 percent law?",
+        "options": [
+          "10 J",
+          "100 J",
+          "500 J",
+          "1,000 J"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Ten percent of 1,000 J is 100 J.",
+          "wrong_options": {
+            "0": "10 J would be 1 percent, not the 10 percent law.",
+            "2": "500 J would be 50 percent transfer.",
+            "3": "1,000 J would mean no energy loss."
+          }
+        }
+      },
+      {
+        "id": "q-environment-m-3",
+        "question": "A food web is:",
+        "options": [
+          "A single food chain",
+          "Several interconnected food chains",
+          "A pyramid of numbers",
+          "A group of decomposers"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A food web is formed when several food chains interconnect.",
+          "wrong_options": {
+            "0": "A single chain is only one pathway in the web.",
+            "2": "A pyramid of numbers is a different ecological diagram.",
+            "3": "Decomposers act at all levels but do not define a food web."
+          }
+        }
+      },
+      {
+        "id": "q-environment-m-4",
+        "question": "Biomagnification is the:",
+        "options": [
+          "Increase of pollutant concentration at higher trophic levels",
+          "Increase in the number of species in an area",
+          "Loss of ozone in the stratosphere",
+          "Transfer of energy from prey to predator"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Biomagnification is the rise in concentration of a non-biodegradable pollutant along a food chain.",
+          "wrong_options": {
+            "1": "Increasing species number is biodiversity, not biomagnification.",
+            "2": "Ozone loss is a separate atmospheric problem.",
+            "3": "Energy transfer is not the definition of biomagnification."
+          }
+        }
+      },
+      {
+        "id": "q-environment-m-5",
+        "question": "The ozone layer protects life by absorbing:",
+        "options": [
+          "Infrared radiation",
+          "Ultraviolet radiation",
+          "Visible light",
+          "Microwaves"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Ozone absorbs most of the harmful ultraviolet radiation from the Sun.",
+          "wrong_options": {
+            "0": "Infrared radiation is associated with heat.",
+            "2": "Visible light is needed for photosynthesis and is not the main danger.",
+            "3": "Microwaves are not the radiation absorbed by the ozone layer."
+          }
+        }
+      },
+      {
+        "id": "q-environment-m-6",
+        "question": "The main role of decomposers in an ecosystem is to:",
+        "options": [
+          "Make food by photosynthesis",
+          "Break down dead matter and recycle nutrients",
+          "Eat primary consumers",
+          "Absorb ultraviolet radiation"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Decomposers break down dead organisms and wastes, returning nutrients to the soil.",
+          "wrong_options": {
+            "0": "Photosynthesis is done by producers.",
+            "2": "Eating primary consumers is done by carnivores.",
+            "3": "Absorbing ultraviolet radiation is a function of the ozone layer."
+          }
+        }
+      },
+      {
+        "id": "q-environment-m-7",
+        "question": "Energy flow in an ecosystem is:",
+        "options": [
+          "Cyclic",
+          "Unidirectional",
+          "Random",
+          "Reversible"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Energy moves from the Sun through producers and consumers and is lost as heat, so it is unidirectional.",
+          "wrong_options": {
+            "0": "Nutrients cycle, but energy does not cycle back.",
+            "2": "Energy flow follows feeding relationships, not random paths.",
+            "3": "Lost heat cannot be recovered by the previous level."
+          }
+        }
+      },
+      {
+        "id": "q-environment-m-8",
+        "question": "The best method to dispose of kitchen vegetable waste is:",
+        "options": [
+          "Burning it",
+          "Composting it",
+          "Dumping it in a river",
+          "Mixing it with plastic"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Vegetable waste is biodegradable and can be composted to make manure.",
+          "wrong_options": {
+            "0": "Burning causes air pollution.",
+            "2": "Dumping in water causes water pollution.",
+            "3": "Mixing with plastic makes recycling and composting harder."
+          }
+        }
+      },
+      {
+        "id": "q-environment-m-9",
+        "question": "Which pollutant is most likely to biomagnify?",
+        "options": [
+          "Vegetable peel",
+          "DDT pesticide",
+          "Paper",
+          "Cotton cloth"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "DDT is a non-biodegradable pesticide that accumulates in body tissues and biomagnifies.",
+          "wrong_options": {
+            "0": "Vegetable peel is biodegradable.",
+            "2": "Paper is biodegradable.",
+            "3": "Cotton cloth is biodegradable."
+          }
+        }
+      },
+      {
+        "id": "q-environment-m-10",
+        "question": "Which of these is not a consumer?",
+        "options": [
+          "Grass",
+          "Cow",
+          "Lion",
+          "Human"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Grass is a producer, not a consumer.",
+          "wrong_options": {
+            "1": "A cow is a primary consumer.",
+            "2": "A lion is a carnivorous consumer.",
+            "3": "A human is a consumer."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-environment-x-1",
+        "question": "Producers in an ecosystem capture 100,000 J. Using the 10 percent law, how much energy reaches the tertiary consumer?",
+        "options": [
+          "10,000 J",
+          "1,000 J",
+          "100 J",
+          "10 J"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "100,000 -> 10,000 -> 1,000 -> 100 J at the tertiary consumer.",
+          "wrong_options": {
+            "0": "10,000 J is the energy at the primary consumer.",
+            "1": "1,000 J is the energy at the secondary consumer.",
+            "3": "10 J would be four transfers, not three."
+          }
+        }
+      },
+      {
+        "id": "q-environment-x-2",
+        "question": "In the chain grass - insect - frog - snake, if frogs are removed, what is the most likely immediate effect?",
+        "options": [
+          "Grass increases and insects decrease",
+          "Insects increase and grass decreases",
+          "Snakes increase and insects decrease",
+          "Grass and insects both disappear"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Without frog predation, insects initially increase and consume more grass.",
+          "wrong_options": {
+            "0": "Grass would be eaten more, not increase.",
+            "2": "Snakes lose food and would not increase.",
+            "3": "Both populations would not instantly disappear."
+          }
+        }
+      },
+      {
+        "id": "q-environment-x-3",
+        "question": "In an aquatic food chain, a non-biodegradable pesticide would be most concentrated in:",
+        "options": [
+          "Water",
+          "Phytoplankton",
+          "Small fish",
+          "Fish-eating birds"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Concentration increases at each trophic level, so the top consumer, the fish-eating bird, has the highest concentration.",
+          "wrong_options": {
+            "0": "Water has the lowest concentration.",
+            "1": "Phytoplankton are at the base of the food chain.",
+            "2": "Small fish have less than the birds that eat many fish."
+          }
+        }
+      },
+      {
+        "id": "q-environment-x-4",
+        "question": "Which is a direct consequence of ozone depletion?",
+        "options": [
+          "More ultraviolet radiation reaching the Earth's surface",
+          "More oxygen in the atmosphere",
+          "Lower global temperatures",
+          "Increased soil fertility"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A thinner ozone layer absorbs less ultraviolet radiation, so more reaches the surface.",
+          "wrong_options": {
+            "1": "Ozone depletion does not increase atmospheric oxygen.",
+            "2": "It is not the same as global cooling.",
+            "3": "It does not improve soil fertility."
+          }
+        }
+      },
+      {
+        "id": "q-environment-x-5",
+        "question": "How does a chlorine atom destroy many ozone molecules?",
+        "options": [
+          "It is consumed in one reaction",
+          "It is regenerated and acts repeatedly",
+          "It converts ozone into water",
+          "It blocks sunlight completely"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Chlorine is regenerated after reacting with ozone, so it can repeat the cycle many times.",
+          "wrong_options": {
+            "0": "Chlorine acts as a catalyst and is not used up in a single step.",
+            "2": "Ozone is converted mainly to oxygen, not water.",
+            "3": "Ozone depletion does not block sunlight completely."
+          }
+        }
+      },
+      {
+        "id": "q-environment-x-6",
+        "question": "Which situation gives an inverted pyramid of numbers?",
+        "options": [
+          "Many grass plants supporting fewer cows",
+          "One large tree supporting many insects",
+          "Many phytoplankton supporting fewer fish",
+          "Many crops supporting fewer humans"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A single tree can support a large number of insects, so the producer level has fewer individuals than the consumer level.",
+          "wrong_options": {
+            "0": "Many producers supporting fewer consumers gives an upright pyramid.",
+            "2": "Many phytoplankton supporting fewer fish is upright.",
+            "3": "Many crops supporting fewer humans is upright."
+          }
+        }
+      },
+      {
+        "id": "q-environment-x-7",
+        "question": "Food chains rarely have more than four or five trophic levels because:",
+        "options": [
+          "Animals cannot eat more than four types of food",
+          "Most energy is lost at each trophic level",
+          "There are only five species in an ecosystem",
+          "Decomposers remove all energy"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The 10 percent law leaves too little energy after several transfers to support another level.",
+          "wrong_options": {
+            "0": "Diet breadth is not the reason for short chains.",
+            "2": "Ecosystems contain many species, not only five.",
+            "3": "Decomposers recycle nutrients but do not remove all energy."
+          }
+        }
+      },
+      {
+        "id": "q-environment-x-8",
+        "question": "Which waste should not be put in an ordinary compost bin?",
+        "options": [
+          "Vegetable peels",
+          "Tea leaves",
+          "Used batteries",
+          "Garden leaves"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Used batteries contain heavy metals and are hazardous, so they need special collection.",
+          "wrong_options": {
+            "0": "Vegetable peels are suitable for composting.",
+            "1": "Tea leaves are biodegradable and suitable for composting.",
+            "3": "Garden leaves are biodegradable and suitable for composting."
+          }
+        }
+      },
+      {
+        "id": "q-environment-x-9",
+        "question": "If all decomposers disappeared from a forest, which effect would appear first?",
+        "options": [
+          "Dead leaves and animal remains would accumulate",
+          "Producers would make more food",
+          "Consumers would stop respiring",
+          "Ozone would increase"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Without decomposers, dead organic matter would not be broken down and would accumulate.",
+          "wrong_options": {
+            "1": "Nutrient release would fall, so producers would eventually suffer.",
+            "2": "Consumers would continue to respire.",
+            "3": "Ozone is unrelated to forest decomposers."
+          }
+        }
+      },
+      {
+        "id": "q-environment-x-10",
+        "question": "A lake receives farm runoff containing a non-biodegradable pesticide. Which statement is correct?",
+        "options": [
+          "The pesticide disappears quickly because water dilutes it",
+          "The pesticide concentration rises from plankton to fish to birds",
+          "The pesticide becomes harmless after one trophic transfer",
+          "The pesticide is broken down by fish digestion"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Because the pesticide is non-biodegradable, it accumulates and biomagnifies along the food chain.",
+          "wrong_options": {
+            "0": "Dilution does not remove a persistent pollutant; it accumulates in organisms.",
+            "2": "It does not become harmless after one transfer.",
+            "3": "Fish cannot break down this persistent pesticide efficiently."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Our Environment - Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Ecosystem",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Biotic Components",
+        "group": "components"
+      },
+      {
+        "id": "n3",
+        "label": "Abiotic Components",
+        "group": "components"
+      },
+      {
+        "id": "n4",
+        "label": "Producers",
+        "group": "biotic"
+      },
+      {
+        "id": "n5",
+        "label": "Consumers",
+        "group": "biotic"
+      },
+      {
+        "id": "n6",
+        "label": "Decomposers",
+        "group": "biotic"
+      },
+      {
+        "id": "n7",
+        "label": "Food Web",
+        "group": "interactions"
+      },
+      {
+        "id": "n8",
+        "label": "Energy Flow",
+        "group": "interactions"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n2",
+        "n5"
+      ],
+      [
+        "n2",
+        "n6"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n5",
+        "n6"
+      ],
+      [
+        "n4",
+        "n7"
+      ],
+      [
+        "n5",
+        "n7"
+      ],
+      [
+        "n8",
+        "n1"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Our Environment - Mind Map",
+    "type": "hierarchical",
+    "root": "Our Environment",
+    "branches": [
+      {
+        "concept": "Ecosystem",
+        "sub_nodes": [
+          "Biotic: producers, consumers, decomposers",
+          "Abiotic: sunlight, air, water, soil, temperature",
+          "Natural examples: pond, forest",
+          "Artificial examples: crop field, aquarium"
+        ],
+        "connections": "Living and non-living parts interact and keep the system running"
+      },
+      {
+        "concept": "Food Chains and Webs",
+        "sub_nodes": [
+          "Producer to primary consumer to higher consumers",
+          "Each step is a trophic level",
+          "Several chains form a food web",
+          "Decomposers act at every level"
+        ],
+        "connections": "Feeding relationships decide how matter and energy move"
+      },
+      {
+        "concept": "Energy Flow",
+        "sub_nodes": [
+          "Sunlight is the ultimate source",
+          "Flow is unidirectional",
+          "10 percent law at each transfer",
+          "Most energy lost as heat",
+          "Chains are short because energy runs out"
+        ],
+        "connections": "Explains why top consumers are fewer and food chains are short"
+      },
+      {
+        "concept": "Biomagnification",
+        "sub_nodes": [
+          "Non-biodegradable pollutants enter food chains",
+          "Concentration rises at each trophic level",
+          "Top consumers receive the highest dose",
+          "Pesticides and heavy metals are examples"
+        ],
+        "connections": "Links pollution in water and soil to health risks in top consumers"
+      },
+      {
+        "concept": "Ozone Depletion",
+        "sub_nodes": [
+          "Ozone layer is in the stratosphere",
+          "CFCs release chlorine",
+          "Chlorine destroys ozone in a chain reaction",
+          "More ultraviolet radiation reaches the surface",
+          "Montreal Protocol phases out CFCs"
+        ],
+        "connections": "Shows how human-made chemicals can damage a global protective layer"
+      },
+      {
+        "concept": "Waste Management",
+        "sub_nodes": [
+          "Biodegradable waste can be composted",
+          "Non-biodegradable waste needs reuse or recycling",
+          "Segregate waste at source",
+          "Hazardous waste needs special collection",
+          "Reduce, reuse, recycle"
+        ],
+        "connections": "Reduces pollution and conserves resources for the future"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "Decomposers are a type of consumer that eats dead animals - FALSE: decomposers break down dead matter and recycle nutrients; they are not consumers in the food-chain sense.",
+    "Energy is recycled in an ecosystem just like nutrients - FALSE: nutrients cycle, but energy flows one way and is lost as heat.",
+    "A food chain and a food web are the same thing - FALSE: a food web is made of several interconnected food chains.",
+    "Biomagnification means the total amount of pollutant in the ecosystem increases - FALSE: it means the concentration in organisms increases at higher trophic levels.",
+    "The ozone hole is the same as global warming - FALSE: ozone depletion concerns ultraviolet radiation; global warming concerns heat-trapping gases.",
+    "Ozone is harmful everywhere and should be removed from the atmosphere - FALSE: stratospheric ozone protects life; ground-level ozone is a pollutant.",
+    "All plastics are non-biodegradable and therefore cannot be managed - FALSE: many plastics can be recycled or reused, and some are designed to degrade, but reduction is still best.",
+    "Burning waste is a safe way to get rid of it - FALSE: burning plastics and mixed waste releases toxic gases and leaves hazardous ash."
+  ],
+  "meta": {
+    "sources": [
+      {
+        "type": "NCERT Textbook",
+        "title": "NCERT Class X Science: Our Environment",
+        "publisher": "NCERT",
+        "subject": "Science",
+        "class": "X"
+      },
+      {
+        "type": "CBSE Syllabus",
+        "title": "CBSE Class X Science Syllabus 2026-27",
+        "publisher": "CBSE",
+        "subject": "Science",
+        "class": "X"
+      }
+    ]
+  },
+  "chapterId": "our-environment",
+  "subjectId": "science",
+  "subjectName": "Science",
+  "unitId": "science-5",
+  "unitName": "Natural Resources",
+  "examWeightage": 5,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

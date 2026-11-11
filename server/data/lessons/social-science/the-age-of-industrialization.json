@@ -1,0 +1,1343 @@
+{
+  "subject": "History",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 4,
+  "chapter": "The Age of Industrialization",
+  "lesson": 4,
+  "id": "the-age-of-industrialization",
+  "title": "The Age of Industrialization - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Explain proto-industrialisation and why merchant capital moved production to the countryside",
+    "Describe the shift from household production to the factory system and the rise of cotton",
+    "Explain how steam power, coal, iron and railways transformed industry and transport",
+    "Analyse Manchester as a symbol of industrial growth and of its human costs",
+    "Trace how the East India Company and British industry affected Indian textiles and weavers",
+    "Explain deindustrialisation and the uneven character of industrialisation in India",
+    "Evaluate how labels, advertisements and swadeshi campaigns shaped consumer culture",
+    "Answer source-based and board-style questions using accurate historical evidence"
+  ],
+  "prerequisite_nodes": [
+    "SOC_CLASS8_COLONIALISM_AND_THE_CITY",
+    "SOC_CLASS8_RULING_THE_COUNTRYSIDE",
+    "SOC_CLASS9_THE_FRENCH_REVOLUTION",
+    "SOC_CLASS9_PASTORALISTS_IN_THE_MODERN_WORLD"
+  ],
+  "concepts": [
+    {
+      "id": "proto-industrialisation-and-merchant-capital",
+      "title": "Proto-industrialisation and Merchant Capital",
+      "name": "Proto-industrialisation and Merchant Capital",
+      "explanation": "Before factories, European merchants organised large-scale production in the countryside. They supplied raw material and sometimes advances to peasants and artisans, who worked at home and sold the finished cloth to the merchant for distant markets. This domestic arrangement is called proto-industrialisation.",
+      "purpose": "It explains why industrial production first grew outside guild-controlled towns and how merchant capital prepared the ground for the factory system.",
+      "real_life_application": "A modern garment brand that gives cloth to home-based tailors, controls the design, and sells the finished clothes under its own label works in a similar way.",
+      "key_points": [
+        "Proto-industrialisation means large-scale production for distant markets before the factory system.",
+        "Merchants supplied raw material and sometimes advances to rural households.",
+        "Rural families combined farming with spinning, weaving and other craft work.",
+        "Guilds in towns restricted entry, fixed prices and limited competition.",
+        "Merchant capital, rather than machines, organised this early phase of production."
+      ],
+      "day_to_day_usage": [
+        "A garment brand that gives fabric to home-based tailors and sells under one label",
+        "A dairy cooperative that collects milk from small farmers and markets it under one brand",
+        "A startup that designs products but uses small workshops for assembly",
+        "Online sellers who source craft items from household units",
+        "Family farms that accept advance payment from traders before harvest"
+      ]
+    },
+    {
+      "id": "factory-system-and-cotton",
+      "title": "The Factory System and Cotton",
+      "name": "The Factory System and Cotton",
+      "explanation": "Factories brought machines, workers and supervision together in one place. Cotton became the leading sector because demand was strong and a series of inventions increased the speed of spinning and weaving. Factory owners controlled hours, wages and discipline in ways that household production could not.",
+      "purpose": "It shows how production moved from scattered homes to centralised workplaces and why cotton became the engine of early industrial capitalism.",
+      "real_life_application": "A modern garment export unit that combines cutting, stitching and quality checks under one roof still follows the logic of the factory system.",
+      "key_points": [
+        "The factory system means centralised production with machines, wage labour and supervision.",
+        "Cotton grew fastest because of strong demand and continuous technical change.",
+        "The spinning jenny, water frame and mule raised yarn output before powerlooms spread.",
+        "Factories imposed clocks, rules, fines and continuous supervision.",
+        "Early factories were located near water power and later near coal fields."
+      ],
+      "day_to_day_usage": [
+        "A garment export unit with cutting, stitching and checking in one building",
+        "A food-processing plant that standardises taste and packaging",
+        "A mobile-phone assembly line with fixed shift timings",
+        "A printing press that replaces many small hand-copying shops",
+        "A bakery that centralises ovens and staff instead of baking at home"
+      ]
+    },
+    {
+      "id": "steam-coal-iron-and-railways",
+      "title": "Steam, Coal, Iron and Railways",
+      "name": "Steam, Coal, Iron and Railways",
+      "explanation": "James Watt's improved steam engine turned coal into reliable power for factories, mines and transport. Iron production expanded with coke and better furnaces. From the 1830s railways moved raw material and finished goods quickly, widened markets and accelerated urban growth.",
+      "purpose": "It explains the energy and transport revolution that made large-scale industry possible and linked factories to distant markets.",
+      "real_life_application": "Electricity grids, freight corridors and container ports play the same linking role today that steam power and railways played in the nineteenth century.",
+      "key_points": [
+        "Steam power freed factories from dependence on water wheels.",
+        "Coal and iron were the core inputs of the new industrial economy.",
+        "Railways lowered transport costs and widened markets.",
+        "The Liverpool and Manchester railway of 1830 became a model for later lines.",
+        "Railway building in colonies served extraction and imperial trade."
+      ],
+      "day_to_day_usage": [
+        "Electricity grids that power factories far from rivers",
+        "Truck and rail freight that bring raw material to plants",
+        "Metro systems that reshape where people live and work",
+        "Coal-based thermal power still used in parts of India",
+        "Cold chains that move perishable goods across long distances"
+      ]
+    },
+    {
+      "id": "manchester-and-the-human-cost",
+      "title": "Manchester and the Human Cost of Industrialisation",
+      "name": "Manchester and the Human Cost of Industrialisation",
+      "explanation": "Manchester became the symbol of the cotton boom, with mills, warehouses and a growing working class. Workers faced long hours, low wages, unsafe machines, polluted air and crowded housing. Women and children were widely employed because they could be paid less and were often seen as more docile.",
+      "purpose": "It balances the story of growth with the social costs of industrial capitalism and introduces the debate on labour rights.",
+      "real_life_application": "Debates about factory safety, working hours and child labour in global supply chains echo the Manchester experience.",
+      "key_points": [
+        "Manchester was called the Cottonopolis of the industrial world.",
+        "Mill work was disciplined by clocks, supervisors and fines.",
+        "Women and children formed a large part of the early factory workforce.",
+        "Pollution, overcrowding and disease shaped working-class life.",
+        "Factory Acts and trade unions emerged from struggles over hours and safety."
+      ],
+      "day_to_day_usage": [
+        "Labour laws that fix working hours and safety standards",
+        "Debates on child labour in supply chains",
+        "Urban planning for clean air and safe housing",
+        "Workers' unions negotiating wages and conditions",
+        "Consumer campaigns about ethical sourcing"
+      ]
+    },
+    {
+      "id": "indian-textiles-eic-and-deindustrialisation",
+      "title": "Indian Textiles, the East India Company and Deindustrialisation",
+      "name": "Indian Textiles, the East India Company and Deindustrialisation",
+      "explanation": "Indian cotton and silk textiles were prized in Europe for fine quality, colour and design. After Plassey in 1757 the East India Company used political power to control weavers through gomasthas, bonds and low payments. British tariffs and machine-made imports later ruined many Indian weavers, a process called deindustrialisation.",
+      "purpose": "It explains how colonial power reshaped Indian production and why the Indian textile industry declined while British industry grew.",
+      "real_life_application": "It helps interpret how trade rules, tariffs and unequal power affect artisans and small producers today.",
+      "key_points": [
+        "Indian muslin, calico and chintz were famous for quality and design.",
+        "The Company appointed gomasthas to supervise weavers and collect cloth.",
+        "Weavers were bound by advances and bonds and lost bargaining power.",
+        "British protectionism and machine-made imports hurt Indian weavers.",
+        "Deindustrialisation pushed many artisans toward agriculture or factory work."
+      ],
+      "day_to_day_usage": [
+        "Understanding why local handloom clusters struggle against cheap imports",
+        "Reading news about tariffs and their effect on farmers and artisans",
+        "Debating protection for handicrafts and GI-tagged products",
+        "Seeing how middlemen control credit and prices in craft supply chains",
+        "Linking colonial history to present-day trade inequalities"
+      ]
+    },
+    {
+      "id": "indian-industrialists-advertisements-and-nationalism",
+      "title": "Indian Industrialists, Advertisements and Nationalism",
+      "name": "Indian Industrialists, Advertisements and Nationalism",
+      "explanation": "From the mid-nineteenth century Indian merchants and industrialists set up cotton, jute and other mills. They depended on imported machinery and faced colonial discrimination. Advertisements, labels and calendars created markets and later carried swadeshi and nationalist messages.",
+      "purpose": "It shows that industrialisation in India was not only colonial exploitation; Indian capital and advertising actively shaped markets and political consciousness.",
+      "real_life_application": "Branding, packaging and Made in India campaigns are descendants of nineteenth-century labels and swadeshi advertising.",
+      "key_points": [
+        "Bombay's first cotton mill opened in 1854 and jute mills followed in Bengal.",
+        "Indian industrialists included Dwarkanath Tagore, Jamsetjee Jeejeebhoy and later Tata and Birla.",
+        "Colonial policies, machinery imports and freight rates limited Indian industry.",
+        "Labels and advertisements built trust and brand recognition.",
+        "Swadeshi campaigns used print and advertising to promote Indian goods."
+      ],
+      "day_to_day_usage": [
+        "Made in India and vocal-for-local campaigns",
+        "Brand labels that signal quality and origin",
+        "Festive calendars and posters used as advertising",
+        "Online ratings and packaging that build trust",
+        "Boycotts and buy-local movements"
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-ind-1",
+      "title": "Why merchants moved cloth production to the countryside",
+      "topic": "Proto-industrialisation and the limits of guilds",
+      "problem": "Explain why merchants in eighteenth-century Europe moved cloth production to the countryside instead of expanding it in towns.",
+      "solution": [
+        "Step 1: Town guilds controlled entry into a trade, fixed prices and limited competition.",
+        "Step 2: A merchant who wanted to expand output could not easily hire more workers or open new workshops in a guild town.",
+        "Step 3: Rural households were willing to work for low payments because many peasants had small plots and needed extra income.",
+        "Step 4: The merchant supplied raw material and sometimes advances, collected the finished cloth and sold it in distant markets.",
+        "Step 5: This domestic system, or proto-industrialisation, gave the merchant control over production without owning a factory."
+      ],
+      "board_mode": [
+        "Step 1: Town guilds controlled entry into a trade, fixed prices and limited competition.",
+        "Step 2: A merchant who wanted to expand output could not easily hire more workers or open new workshops in a guild town.",
+        "Step 3: Rural households were willing to work for low payments because many peasants had small plots and needed extra income.",
+        "Step 4: The merchant supplied raw material and sometimes advances, collected the finished cloth and sold it in distant markets.",
+        "Step 5: This domestic system, or proto-industrialisation, gave the merchant control over production without owning a factory."
+      ],
+      "answer": "Guild restrictions in towns and cheap rural labour led merchants to organise production in peasant households, a system called proto-industrialisation.",
+      "board_tip": "Use the terms guild, merchant capital and proto-industrialisation in the first two lines to earn keywords early."
+    },
+    {
+      "id": "we-ind-2",
+      "title": "How the factory system reorganised production",
+      "topic": "Factory system and cotton",
+      "problem": "How did the factory system change the organisation of production in Britain?",
+      "solution": [
+        "Step 1: Production moved from scattered households into large buildings owned by capitalists.",
+        "Step 2: Machines such as the spinning jenny, water frame and mule increased output per worker.",
+        "Step 3: Workers were hired for wages and had to follow fixed hours, rules and supervision.",
+        "Step 4: Owners controlled raw material, tools, credit and the sale of finished goods.",
+        "Step 5: Costs fell and output rose, but workers lost the independence they had in household production."
+      ],
+      "board_mode": [
+        "Step 1: Production moved from scattered households into large buildings owned by capitalists.",
+        "Step 2: Machines such as the spinning jenny, water frame and mule increased output per worker.",
+        "Step 3: Workers were hired for wages and had to follow fixed hours, rules and supervision.",
+        "Step 4: Owners controlled raw material, tools, credit and the sale of finished goods.",
+        "Step 5: Costs fell and output rose, but workers lost the independence they had in household production."
+      ],
+      "answer": "Factories concentrated machines, wage workers and supervision, raised output and shifted control from households to capitalists.",
+      "board_tip": "Contrast the household and factory systems in a two-column table if the question carries five marks."
+    },
+    {
+      "id": "we-ind-3",
+      "title": "Steam, coal, iron and railways",
+      "topic": "Technology and transport",
+      "problem": "Explain the role of steam power, coal, iron and railways in the industrial revolution.",
+      "solution": [
+        "Step 1: James Watt's improved steam engine converted coal into steady power for mines, mills and transport.",
+        "Step 2: Coal was abundant and became the main fuel, while coke helped produce cheaper and stronger iron.",
+        "Step 3: Iron was used for machines, rails, bridges and ships, linking mining, metalwork and transport.",
+        "Step 4: Railways from the 1830s carried coal, cotton and finished goods faster and at lower cost.",
+        "Step 5: Faster transport widened markets and encouraged factories to produce on a larger scale."
+      ],
+      "board_mode": [
+        "Step 1: James Watt's improved steam engine converted coal into steady power for mines, mills and transport.",
+        "Step 2: Coal was abundant and became the main fuel, while coke helped produce cheaper and stronger iron.",
+        "Step 3: Iron was used for machines, rails, bridges and ships, linking mining, metalwork and transport.",
+        "Step 4: Railways from the 1830s carried coal, cotton and finished goods faster and at lower cost.",
+        "Step 5: Faster transport widened markets and encouraged factories to produce on a larger scale."
+      ],
+      "answer": "Steam power, coal, iron and railways formed an interlinked system that supplied energy, machines and fast transport for industry.",
+      "board_tip": "Show the chain: coal to steam to iron and rail to wider markets. Do not list the four items separately."
+    },
+    {
+      "id": "we-ind-4",
+      "title": "Why Indian weavers faced ruin",
+      "topic": "Colonialism and deindustrialisation",
+      "problem": "Why did many Indian weavers face ruin in the nineteenth century?",
+      "solution": [
+        "Step 1: After Plassey the East India Company gained political power and used gomasthas to control weavers.",
+        "Step 2: Advances and bonds forced weavers to sell to the Company at low prices and prevented them from choosing better buyers.",
+        "Step 3: British tariffs restricted Indian cloth in Britain, while machine-made British cloth entered India with little protection.",
+        "Step 4: Indian weavers lost export markets and also faced competition in local markets from cheap mill cloth.",
+        "Step 5: Most weavers lacked the capital to install machines, so many left weaving for agriculture or factory work."
+      ],
+      "board_mode": [
+        "Step 1: After Plassey the East India Company gained political power and used gomasthas to control weavers.",
+        "Step 2: Advances and bonds forced weavers to sell to the Company at low prices and prevented them from choosing better buyers.",
+        "Step 3: British tariffs restricted Indian cloth in Britain, while machine-made British cloth entered India with little protection.",
+        "Step 4: Indian weavers lost export markets and also faced competition in local markets from cheap mill cloth.",
+        "Step 5: Most weavers lacked the capital to install machines, so many left weaving for agriculture or factory work."
+      ],
+      "answer": "Company coercion, unequal tariffs, machine-made imports and lack of capital ruined Indian handloom weavers, a process called deindustrialisation.",
+      "board_tip": "Link each cause to a stage: production, export, local market and adjustment. This earns structure marks."
+    },
+    {
+      "id": "we-ind-5",
+      "title": "Advertisements, labels and consumer culture",
+      "topic": "Advertising and nationalism",
+      "problem": "How did advertisements and labels shape consumer culture during the age of industrialisation?",
+      "solution": [
+        "Step 1: Labels helped buyers identify a product and trust a manufacturer in a market full of similar goods.",
+        "Step 2: Advertisements used images, slogans and calendars to make goods attractive and memorable.",
+        "Step 3: Manchester manufacturers used Indian gods and rulers on labels to make foreign cloth look familiar to Indian buyers.",
+        "Step 4: Indian industrialists used swadeshi images and messages to persuade people to buy Indian-made goods.",
+        "Step 5: Advertising thus created new desires, brand loyalty and a sense of national choice among consumers."
+      ],
+      "board_mode": [
+        "Step 1: Labels helped buyers identify a product and trust a manufacturer in a market full of similar goods.",
+        "Step 2: Advertisements used images, slogans and calendars to make goods attractive and memorable.",
+        "Step 3: Manchester manufacturers used Indian gods and rulers on labels to make foreign cloth look familiar to Indian buyers.",
+        "Step 4: Indian industrialists used swadeshi images and messages to persuade people to buy Indian-made goods.",
+        "Step 5: Advertising thus created new desires, brand loyalty and a sense of national choice among consumers."
+      ],
+      "answer": "Labels and advertisements built recognition and trust, shaped tastes and, in India, turned shopping into a swadeshi political choice.",
+      "board_tip": "Mention both colonial advertising and Indian swadeshi advertising to show balance."
+    }
+  ],
+  "exercises": {
+    "exercise_4_1": {
+      "title": "Exercise 4.1 - Proto-industrialisation and the Transition to Factories",
+      "objective": "Understand merchant capital, guilds and the shift to centralised production",
+      "problems": [
+        {
+          "id": "ind-ex1-1",
+          "book_source": "NCERT History Chapter 4",
+          "question": "Define proto-industrialisation.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Proto-industrialisation was a phase of large-scale production for distant markets before the factory system.",
+            "Step 2: Merchants supplied raw material to peasants and artisans, who worked in their homes.",
+            "Step 3: The merchant collected the finished goods and sold them in international markets."
+          ],
+          "final_answer": "Proto-industrialisation is large-scale household production for distant markets, organised by merchants before factories."
+        },
+        {
+          "id": "ind-ex1-2",
+          "book_source": "NCERT History Chapter 4",
+          "question": "Why did merchants not expand production within towns?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Town guilds controlled entry into a trade and restricted who could become a producer.",
+            "Step 2: Guilds also fixed prices and limited competition, so merchants could not freely expand output.",
+            "Step 3: Merchants therefore turned to the countryside, where rural households were available for work."
+          ],
+          "final_answer": "Guild restrictions on entry, prices and competition pushed merchants to organise production in the countryside."
+        },
+        {
+          "id": "ind-ex1-3",
+          "book_source": "NCERT History Chapter 4",
+          "question": "Explain the role of guilds in pre-industrial towns.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Guilds were associations of craftsmen and merchants who controlled a particular trade.",
+            "Step 2: They regulated training, entry, quality, prices and competition.",
+            "Step 3: They protected their members but also blocked outsiders and limited expansion.",
+            "Step 4: This monopoly pushed merchants to find rural workers outside guild control."
+          ],
+          "final_answer": "Guilds regulated trades and protected members, but their restrictions encouraged merchants to shift production to rural households."
+        },
+        {
+          "id": "ind-ex1-4",
+          "book_source": "NCERT History Chapter 4",
+          "question": "How did rural households participate in proto-industrial production?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Peasants and artisans worked in their own homes using simple tools.",
+            "Step 2: Merchants supplied raw material and sometimes advances, which tied workers to them.",
+            "Step 3: Families combined farming with spinning, weaving or other craft work to add to their income.",
+            "Step 4: The merchant collected the finished product and sold it in distant markets."
+          ],
+          "final_answer": "Rural families worked at home on merchant-supplied material, combining farming with craft production for extra income."
+        },
+        {
+          "id": "ind-ex1-5",
+          "book_source": "NCERT History Chapter 4",
+          "question": "Proto-industrialisation prepared the ground for the factory system. Evaluate this statement.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Proto-industrialisation created a class of merchants with capital and knowledge of distant markets.",
+            "Step 2: It trained rural workers in commercial production and made them dependent on merchant credit.",
+            "Step 3: It expanded output and created demand for standardised goods.",
+            "Step 4: However, it did not use centralised power or machines, so it was not yet factory production.",
+            "Step 5: It was therefore a transitional phase that made factories possible rather than identical with them."
+          ],
+          "final_answer": "Proto-industrialisation supplied capital, labour and market networks for factories, but it remained a household system without machines."
+        },
+        {
+          "id": "ind-ex1-6",
+          "book_source": "NCERT History Chapter 4",
+          "question": "A merchant says: 'I do not own a workshop, yet hundreds of families work for me.' Explain this statement with reference to proto-industrialisation.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The merchant is describing the putting-out or domestic system.",
+            "Step 2: He supplies raw material and advances to rural families who work in their own homes.",
+            "Step 3: He controls the design, quality and final sale without owning the workplace.",
+            "Step 4: Workers depend on him for material and credit, so they accept low payments.",
+            "Step 5: This shows merchant capital organising production before the factory system."
+          ],
+          "final_answer": "The statement describes merchant-organised household production, where capital and markets are controlled without a central workshop."
+        }
+      ]
+    },
+    "exercise_4_2": {
+      "title": "Exercise 4.2 - Factories, Steam, Railways and Manchester",
+      "objective": "Analyse the factory system, technological change and the social costs of industrialisation",
+      "problems": [
+        {
+          "id": "ind-ex2-1",
+          "book_source": "NCERT History Chapter 4",
+          "question": "What is meant by the factory system?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The factory system is centralised production in a building owned by a capitalist.",
+            "Step 2: Machines and wage workers are brought together under supervision.",
+            "Step 3: Fixed hours, rules and discipline replace the flexible rhythm of household work."
+          ],
+          "final_answer": "The factory system is centralised, machine-based production by wage workers under one owner and one discipline."
+        },
+        {
+          "id": "ind-ex2-2",
+          "book_source": "NCERT History Chapter 4",
+          "question": "Name two inventions that increased cotton spinning output in eighteenth-century Britain.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: James Hargreaves invented the spinning jenny, which increased the number of threads a worker could spin.",
+            "Step 2: Richard Arkwright developed the water frame, which used rollers and water power.",
+            "Step 3: Samuel Crompton's mule later combined features of both machines."
+          ],
+          "final_answer": "The spinning jenny and the water frame, followed by the mule."
+        },
+        {
+          "id": "ind-ex2-3",
+          "book_source": "NCERT History Chapter 4",
+          "question": "How did the steam engine change the location of industries?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Early mills depended on rivers for water power and had to be located near streams.",
+            "Step 2: The improved steam engine used coal and could be installed wherever fuel was available.",
+            "Step 3: Factories therefore moved to coalfields and cities with transport links.",
+            "Step 4: This encouraged larger urban industrial centres."
+          ],
+          "final_answer": "Steam power freed factories from river sites and allowed them to grow near coal fields and transport networks."
+        },
+        {
+          "id": "ind-ex2-4",
+          "book_source": "NCERT History Chapter 4",
+          "question": "Why did cotton become the leading sector of early industrialisation?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Cotton cloth had a large market in Europe and the colonies.",
+            "Step 2: A series of inventions raised spinning and weaving output.",
+            "Step 3: Cotton could be processed in large mills with relatively simple machinery.",
+            "Step 4: Profit from cotton was reinvested in more mills, mines and railways."
+          ],
+          "final_answer": "Cotton combined mass demand, rapid technical change and high profits, so it led early industrial growth."
+        },
+        {
+          "id": "ind-ex2-5",
+          "book_source": "NCERT History Chapter 4",
+          "question": "Assess the human cost of industrialisation in Manchester.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Workers faced long hours and low wages in noisy, dangerous mills.",
+            "Step 2: Women and children were widely employed because they were cheaper and considered easier to control.",
+            "Step 3: Housing was crowded and polluted, and disease spread easily.",
+            "Step 4: Workers had little bargaining power, although unions and Factory Acts gradually improved conditions.",
+            "Step 5: Manchester thus shows both extraordinary productivity and severe social suffering."
+          ],
+          "final_answer": "Manchester's mills produced wealth through long hours, low pay, child labour, unsafe work and unhealthy housing, making industrial growth socially costly."
+        },
+        {
+          "id": "ind-ex2-6",
+          "book_source": "NCERT History Chapter 4",
+          "question": "Why did hand labour survive in Victorian Britain even after machines were available?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Some goods needed intricate designs, finishing or small-scale production that machines handled poorly.",
+            "Step 2: Seasonal and fashion industries needed flexibility, which hand workers provided.",
+            "Step 3: Employers preferred women and children for certain delicate tasks and paid them less.",
+            "Step 4: Machines were expensive, so small producers could not always adopt them.",
+            "Step 5: Hand labour therefore survived alongside factories rather than disappearing at once."
+          ],
+          "final_answer": "Hand labour survived because of design, flexibility, cheap labour and the high cost of machinery; industrialisation was uneven, not instantaneous."
+        }
+      ]
+    },
+    "exercise_4_3": {
+      "title": "Exercise 4.3 - Indian Textiles, Deindustrialisation and Advertising",
+      "objective": "Connect colonial rule, Indian industry and consumer culture",
+      "problems": [
+        {
+          "id": "ind-ex3-1",
+          "book_source": "NCERT History Chapter 4",
+          "question": "Who were gomasthas?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Gomasthas were paid servants appointed by the East India Company.",
+            "Step 2: They supervised weavers, collected supplies and examined the quality of cloth.",
+            "Step 3: They helped the Company enforce its monopoly over Indian textile purchases."
+          ],
+          "final_answer": "Gomasthas were Company agents who supervised weavers and collected cloth for the East India Company."
+        },
+        {
+          "id": "ind-ex3-2",
+          "book_source": "NCERT History Chapter 4",
+          "question": "Name two famous varieties of Indian cotton cloth exported to Europe.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Indian muslin was famous for its fineness and lightness.",
+            "Step 2: Calico and chintz were printed or painted cotton cloths valued for colour and design.",
+            "Step 3: These goods gave Indian textiles a strong reputation in European markets."
+          ],
+          "final_answer": "Muslin, calico and chintz were among the best-known Indian export cloths."
+        },
+        {
+          "id": "ind-ex3-3",
+          "book_source": "NCERT History Chapter 4",
+          "question": "Explain the term deindustrialisation with reference to India.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Deindustrialisation is the decline of traditional manufacturing, especially handicrafts.",
+            "Step 2: In India, machine-made British cloth and unequal tariffs damaged handloom weaving.",
+            "Step 3: Many artisans lost their markets and moved to agriculture or low-paid work.",
+            "Step 4: The decline was uneven, but it changed the livelihood of large craft groups."
+          ],
+          "final_answer": "Deindustrialisation in India was the decline of handloom and craft production under colonial trade rules and machine competition."
+        },
+        {
+          "id": "ind-ex3-4",
+          "book_source": "NCERT History Chapter 4",
+          "question": "How did the East India Company control Indian weavers?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The Company used political power after Plassey to establish a monopoly over textile trade.",
+            "Step 2: Gomasthas supervised weavers and fixed the quantity and quality of cloth.",
+            "Step 3: Advances and bonds tied weavers to the Company and prevented them from selling elsewhere.",
+            "Step 4: Low payments and delays left weavers in debt and weakened their bargaining position."
+          ],
+          "final_answer": "The Company controlled weavers through political power, gomasthas, advances, bonds and low fixed payments."
+        },
+        {
+          "id": "ind-ex3-5",
+          "book_source": "NCERT History Chapter 4",
+          "question": "Why did Indian industrialists lag behind despite starting mills in the nineteenth century?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Most machinery had to be imported from Britain, which raised costs.",
+            "Step 2: Colonial policies favoured British goods and restricted Indian competition.",
+            "Step 3: Indian capital was limited and railways freight rates often favoured colonial trade.",
+            "Step 4: Indian mills faced competition from cheap imported cloth and had limited access to protected markets.",
+            "Step 5: Despite these obstacles, Indian industrialists gradually built cotton, jute and steel enterprises."
+          ],
+          "final_answer": "Indian industry grew slowly because of costly imported machinery, colonial discrimination, limited capital and unfair freight and tariff conditions."
+        },
+        {
+          "id": "ind-ex3-6",
+          "book_source": "NCERT History Chapter 4",
+          "question": "How did advertisements and swadeshi campaigns shape Indian consumer culture?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Labels and advertisements helped Indian manufacturers distinguish their goods from imported cloth.",
+            "Step 2: Images of Indian gods, rulers and festivals made products familiar and attractive.",
+            "Step 3: Swadeshi campaigns urged buyers to prefer Indian goods as an act of national loyalty.",
+            "Step 4: Advertising thus connected everyday shopping with political identity.",
+            "Step 5: It also created new desires and brand loyalties that outlasted the immediate movement."
+          ],
+          "final_answer": "Advertising built brand recognition, while swadeshi campaigns turned consumption into a political choice in favour of Indian goods."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-ind-s-1",
+        "question": "Proto-industrialisation refers to:",
+        "options": [
+          "Large-scale household production for distant markets before factories",
+          "Production only inside steam-powered mills",
+          "Farming exclusively for local consumption",
+          "Trade carried out only by guilds in towns"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Merchants organised rural households to produce goods for distant markets before the factory system.",
+          "wrong_options": {
+            "1": "Steam-powered mills belong to the factory phase, not proto-industrialisation.",
+            "2": "Proto-industrial production was for distant markets, not only local use.",
+            "3": "Guilds were mainly urban and restricted production rather than organising rural output."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s-2",
+        "question": "Guilds in pre-industrial towns mainly:",
+        "options": [
+          "Regulated entry, prices and quality in a trade",
+          "Built railways for merchants",
+          "Employed children in large factories",
+          "Sold Indian cloth in Europe"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Guilds were craft and trade associations that controlled training, entry, prices and competition.",
+          "wrong_options": {
+            "1": "Railways came much later and were not built by guilds.",
+            "2": "Factory child labour belongs to the industrial era.",
+            "3": "European trade in Indian cloth was handled by chartered companies and merchants."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s-3",
+        "question": "The factory system concentrated:",
+        "options": [
+          "Machines, workers and supervision in one place",
+          "Only farming activities in villages",
+          "Only handloom weaving in homes",
+          "Trade only in guild halls"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Factories brought machines, wage workers and owners' supervision together under one roof.",
+          "wrong_options": {
+            "1": "Farming remained largely outside the factory system.",
+            "2": "Home-based handloom weaving is the opposite of factory concentration.",
+            "3": "Guild halls were not factories."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s-4",
+        "question": "Which invention increased the number of threads a single worker could spin?",
+        "options": [
+          "Spinning jenny",
+          "Steam locomotive",
+          "Seed drill",
+          "Telegraph"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "James Hargreaves's spinning jenny allowed one worker to spin several threads at once.",
+          "wrong_options": {
+            "1": "The locomotive improved transport, not spinning.",
+            "2": "The seed drill is an agricultural tool.",
+            "3": "The telegraph improved communication."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s-5",
+        "question": "The steam engine was significantly improved by:",
+        "options": [
+          "James Watt",
+          "James Hargreaves",
+          "Richard Arkwright",
+          "Samuel Crompton"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "James Watt's improvements made the steam engine efficient enough for mines, mills and transport.",
+          "wrong_options": {
+            "1": "Hargreaves is associated with the spinning jenny.",
+            "2": "Arkwright developed the water frame and an early cotton mill.",
+            "3": "Crompton developed the spinning mule."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s-6",
+        "question": "Manchester was known as the centre of:",
+        "options": [
+          "Cotton textile production",
+          "Jute cultivation",
+          "Coal mining only",
+          "Shipbuilding only"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Manchester became the symbol of the British cotton industry and was called Cottonopolis.",
+          "wrong_options": {
+            "1": "Jute was especially important in Bengal.",
+            "2": "Manchester's mills depended on coal, but it was not a mining town only.",
+            "3": "Shipbuilding was concentrated in port cities, not Manchester."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s-7",
+        "question": "Indian muslin was famous in Europe for its:",
+        "options": [
+          "Fine quality and lightness",
+          "Machine-made uniformity",
+          "Use only as railway material",
+          "Coarse texture"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Muslin was prized for its delicate, fine weave and lightness.",
+          "wrong_options": {
+            "1": "Indian cloth was hand-produced, not machine-made.",
+            "2": "Textiles were consumer goods, not railway material.",
+            "3": "Coarse cloth existed, but muslin was famous for fineness."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s-8",
+        "question": "Gomasthas were:",
+        "options": [
+          "Company agents who supervised weavers",
+          "Indian mill owners in Bombay",
+          "British railway engineers",
+          "Village headmen who collected taxes"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The East India Company appointed gomasthas to supervise weavers and collect cloth.",
+          "wrong_options": {
+            "1": "Indian mill owners were separate industrialists.",
+            "2": "Railway engineers were not gomasthas.",
+            "3": "Village headmen had different revenue roles."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s-9",
+        "question": "Deindustrialisation in colonial India meant:",
+        "options": [
+          "Decline of traditional handicraft production",
+          "Rapid growth of all village industries",
+          "Closing of all British factories",
+          "End of agricultural production"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Deindustrialisation refers to the decline of Indian handicrafts and handloom weaving under colonial conditions.",
+          "wrong_options": {
+            "1": "Many craft producers declined rather than all growing.",
+            "2": "British factories were not closed by Indian deindustrialisation.",
+            "3": "Agriculture continued and even absorbed displaced artisans."
+          }
+        }
+      },
+      {
+        "id": "q-ind-s-10",
+        "question": "India's first cotton mill was established in:",
+        "options": [
+          "Bombay in 1854",
+          "Manchester in 1854",
+          "Calcutta in 1757",
+          "Kanpur in 1830"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The first Indian cotton mill was set up in Bombay in 1854.",
+          "wrong_options": {
+            "1": "Manchester is in Britain, not India.",
+            "2": "Calcutta was associated with jute and the Company, not the first cotton mill.",
+            "3": "Kanpur mills came later."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-ind-m-1",
+        "question": "Why did merchants move production to the countryside?",
+        "options": [
+          "Guild restrictions in towns and availability of cheap rural labour",
+          "Rural areas had better steam engines",
+          "Town workers refused to work for wages",
+          "The countryside had more railways"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Merchants wanted to escape guild controls and use low-paid rural household labour.",
+          "wrong_options": {
+            "1": "Steam engines came later and were not a rural advantage at this stage.",
+            "2": "Town workers did work for wages, but guild rules limited expansion.",
+            "3": "Railways did not yet exist in the early proto-industrial phase."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m-2",
+        "question": "Women and children were widely employed in early mills because:",
+        "options": [
+          "They could be paid less and were considered easier to control",
+          "They were legally required to work in mills",
+          "They owned most of the machines",
+          "They refused all other work"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Employers preferred women and children for lower wages and perceived docility.",
+          "wrong_options": {
+            "1": "There was no general legal requirement for them to work in mills.",
+            "2": "Workers did not usually own the machines.",
+            "3": "They worked in mills because of economic need, not refusal of other work."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m-3",
+        "question": "Railways contributed to industrialisation mainly by:",
+        "options": [
+          "Lowering transport costs and widening markets",
+          "Replacing all factory machines",
+          "Ending the need for coal",
+          "Keeping production in villages"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Railways moved raw material and goods quickly, reducing costs and linking distant markets.",
+          "wrong_options": {
+            "1": "Railways did not replace factory machines.",
+            "2": "Railways increased demand for coal.",
+            "3": "Railways encouraged centralised factory production, not village isolation."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m-4",
+        "question": "After the Battle of Plassey, the East India Company:",
+        "options": [
+          "Gained political power and established a monopoly over textile trade",
+          "Withdrew completely from Indian trade",
+          "Encouraged weavers to sell to any buyer",
+          "Abolished all taxes on Indian cloth"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Plassey in 1757 strengthened Company power, which it used to control weavers and textile trade.",
+          "wrong_options": {
+            "1": "The Company expanded its role after Plassey.",
+            "2": "It restricted weavers' choice of buyers.",
+            "3": "It did not abolish taxes on Indian cloth."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m-5",
+        "question": "British tariffs on Indian textiles:",
+        "options": [
+          "Made Indian cloth more expensive in Britain",
+          "Helped Indian weavers capture British markets",
+          "Applied only to Indian mills in Bombay",
+          "Were removed after 1757"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "High duties restricted Indian cloth in Britain while British goods entered India more easily.",
+          "wrong_options": {
+            "1": "Tariffs harmed Indian exports rather than helping them.",
+            "2": "They applied to imported Indian textiles, not only to Bombay mills.",
+            "3": "They were not removed after 1757."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m-6",
+        "question": "Manchester manufacturers used Indian imagery on labels mainly to:",
+        "options": [
+          "Make foreign cloth look familiar and acceptable to Indian buyers",
+          "Show that their cloth was made in India",
+          "Advertise Indian handloom products",
+          "Avoid paying taxes in India"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Labels with Indian gods and rulers made imported cloth seem familiar and trustworthy.",
+          "wrong_options": {
+            "1": "The cloth was made in Manchester, not India.",
+            "2": "The aim was to sell British cloth, not promote Indian handlooms.",
+            "3": "Labels were about marketing, not tax avoidance."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m-7",
+        "question": "Indian weavers lost bargaining power because:",
+        "options": [
+          "Advances and bonds tied them to the Company",
+          "They formed strong trade unions",
+          "They owned all the new machines",
+          "British buyers paid them high prices"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Company advances and bonds forced weavers to sell at low prices and blocked other buyers.",
+          "wrong_options": {
+            "1": "Weavers did not have strong unions at this time.",
+            "2": "Most weavers did not own the new machinery.",
+            "3": "Company payments were low and often delayed."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m-8",
+        "question": "Hand labour survived in Victorian Britain because:",
+        "options": [
+          "Some work needed intricate design or seasonal flexibility",
+          "Machines were banned by law",
+          "All factories closed down",
+          "Workers refused to use any machines"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Certain goods required skill, finish or flexibility that machines could not easily provide.",
+          "wrong_options": {
+            "1": "Machines were not banned.",
+            "2": "Factories expanded rather than all closing.",
+            "3": "Many workers did use machines, but hand work persisted in specific trades."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m-9",
+        "question": "The swadeshi campaign encouraged Indians to:",
+        "options": [
+          "Buy Indian-made goods and boycott foreign cloth",
+          "Import more British machinery",
+          "Work only in British-owned mills",
+          "Abandon all textile production"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Swadeshi urged people to support Indian industry and boycott foreign goods.",
+          "wrong_options": {
+            "1": "It opposed dependence on British goods.",
+            "2": "It favoured Indian enterprise, not only British mills.",
+            "3": "It supported Indian textile production."
+          }
+        }
+      },
+      {
+        "id": "q-ind-m-10",
+        "question": "The first jute mill in Bengal was set up at:",
+        "options": [
+          "Rishra in 1855",
+          "Bombay in 1854",
+          "Kanpur in 1860",
+          "Madras in 1874"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The first jute mill in Bengal was established at Rishra in 1855.",
+          "wrong_options": {
+            "1": "Bombay's first mill was a cotton mill in 1854.",
+            "2": "Kanpur's Elgin Mill came in the 1860s.",
+            "3": "Madras mills came later."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-ind-x-1",
+        "question": "A merchant supplies raw cotton to village weavers, collects the cloth and sells it in Europe. This arrangement is best described as:",
+        "options": [
+          "Proto-industrial production organised by merchant capital",
+          "A modern joint-stock factory",
+          "State-owned socialist production",
+          "Subsistence farming"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The merchant controls material, output and sale while production stays in rural homes.",
+          "wrong_options": {
+            "1": "There is no factory or joint-stock company described.",
+            "2": "The merchant is a private capitalist, not the state.",
+            "3": "The activity is textile production, not subsistence farming."
+          }
+        }
+      },
+      {
+        "id": "q-ind-x-2",
+        "question": "Which statement best compares proto-industrial and factory production?",
+        "options": [
+          "Both served distant markets, but factories centralised machines and supervision",
+          "Both used steam engines and railways",
+          "Proto-industrial production used more machines than factories",
+          "Factories produced only for local villages"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The market orientation was similar, but factories concentrated machines, workers and discipline.",
+          "wrong_options": {
+            "1": "Proto-industrial production predated steam and railways.",
+            "2": "It used far fewer machines.",
+            "3": "Factories produced for wide national and imperial markets."
+          }
+        }
+      },
+      {
+        "id": "q-ind-x-3",
+        "question": "The social cost of Manchester's growth is best illustrated by:",
+        "options": [
+          "Long hours, low wages, child labour and unhealthy housing",
+          "The absence of any factories",
+          "Equal profit sharing among all workers",
+          "The decline of cotton production"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Manchester's industrial wealth rested on harsh working and living conditions.",
+          "wrong_options": {
+            "1": "Manchester was full of factories.",
+            "2": "Profits went mainly to owners, not equally to workers.",
+            "3": "Cotton production expanded rather than declined."
+          }
+        }
+      },
+      {
+        "id": "q-ind-x-4",
+        "question": "Which chain correctly explains deindustrialisation in India?",
+        "options": [
+          "Company control, unequal tariffs, machine imports, loss of weavers' markets",
+          "Machine imports, strong tariffs against Britain, weavers' rising profits",
+          "Guild growth, factory decline, return to handicrafts",
+          "Railway closure, coal shortage, textile boom"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Colonial control and unequal trade rules exposed Indian weavers to machine competition and ruined their markets.",
+          "wrong_options": {
+            "1": "Tariffs worked against Indian cloth, not in its favour.",
+            "2": "Guilds did not grow in this period and factories did not simply decline.",
+            "3": "Railways expanded and did not cause the textile decline in this way."
+          }
+        }
+      },
+      {
+        "id": "q-ind-x-5",
+        "question": "Indian industrialisation in the nineteenth century was uneven mainly because:",
+        "options": [
+          "Colonial policies, imported machinery and limited capital favoured some regions and sectors",
+          "Indians refused to work in mills",
+          "There was no demand for cotton cloth",
+          "Britain had no interest in Indian markets"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Colonial conditions shaped where and how Indian industry could grow, producing uneven development.",
+          "wrong_options": {
+            "1": "Indian workers did work in mills.",
+            "2": "Demand for cloth was strong.",
+            "3": "Britain was deeply interested in Indian markets."
+          }
+        }
+      },
+      {
+        "id": "q-ind-x-6",
+        "question": "Manchester labels showing Indian gods and rulers are evidence of:",
+        "options": [
+          "Advertising adapting to local culture to sell imported goods",
+          "Indian ownership of Manchester mills",
+          "Religious conversion by mill owners",
+          "The decline of advertising in the nineteenth century"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Such labels show manufacturers using familiar cultural symbols to market foreign products.",
+          "wrong_options": {
+            "1": "The mills were British-owned.",
+            "2": "The images were marketing devices, not evidence of conversion.",
+            "3": "Advertising was expanding, not declining."
+          }
+        }
+      },
+      {
+        "id": "q-ind-x-7",
+        "question": "Railway construction in colonial India primarily served:",
+        "options": [
+          "Movement of raw material and troops for imperial trade and control",
+          "Equal development of all Indian villages",
+          "The growth of Indian handloom weaving",
+          "The abolition of money-based trade"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Colonial railways connected ports, mines and plantations mainly for extraction and administration.",
+          "wrong_options": {
+            "1": "Railways were unevenly spread and did not develop all villages equally.",
+            "2": "They exposed handloom weavers to wider machine competition.",
+            "3": "Money-based trade expanded rather than disappeared."
+          }
+        }
+      },
+      {
+        "id": "q-ind-x-8",
+        "question": "Factory Acts in Britain were significant because they:",
+        "options": [
+          "Regulated working hours and conditions, especially for children",
+          "Abolished all factories",
+          "Gave workers ownership of mills",
+          "Ended the use of steam power"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Factory Acts gradually limited hours and improved safety, especially for child workers.",
+          "wrong_options": {
+            "1": "Factories continued to operate.",
+            "2": "Workers did not gain ownership of mills.",
+            "3": "Steam power continued to be used."
+          }
+        }
+      },
+      {
+        "id": "q-ind-x-9",
+        "question": "'Indian industrialisation was dependent capitalism.' This means:",
+        "options": [
+          "Indian industry depended on imported machinery, capital and colonial trade conditions",
+          "Indian industry was completely independent of Britain",
+          "Only the state owned Indian factories",
+          "Indian mills exported nothing"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Indian industrialists relied on British machinery and operated within colonial economic rules.",
+          "wrong_options": {
+            "1": "The point is dependence, not complete independence.",
+            "2": "Most early mills were privately owned.",
+            "3": "Indian mills did export, though under difficult conditions."
+          }
+        }
+      },
+      {
+        "id": "q-ind-x-10",
+        "question": "Which judgement about the age of industrialisation is most balanced?",
+        "options": [
+          "It raised output and created new markets but also produced harsh labour and colonial inequality",
+          "It benefited every worker equally",
+          "It had no connection with colonialism",
+          "It ended all handicraft production immediately"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Industrialisation brought productivity and consumer change alongside exploitation and colonial unevenness.",
+          "wrong_options": {
+            "1": "Workers did not benefit equally.",
+            "2": "Colonialism shaped industrialisation in India.",
+            "3": "Handicrafts survived in many places and declined unevenly."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "The Age of Industrialization - Concept Map",
+    "nodes": [
+      {
+        "id": "proto",
+        "label": "Proto-industrialisation",
+        "group": "Origins"
+      },
+      {
+        "id": "guilds",
+        "label": "Guild restrictions",
+        "group": "Origins"
+      },
+      {
+        "id": "merchant",
+        "label": "Merchant capital",
+        "group": "Origins"
+      },
+      {
+        "id": "factory",
+        "label": "Factory system",
+        "group": "Production"
+      },
+      {
+        "id": "cotton",
+        "label": "Cotton industry",
+        "group": "Production"
+      },
+      {
+        "id": "steam",
+        "label": "Steam, coal, iron and railways",
+        "group": "Technology"
+      },
+      {
+        "id": "manchester",
+        "label": "Manchester and labour",
+        "group": "Society"
+      },
+      {
+        "id": "eic",
+        "label": "East India Company",
+        "group": "Colonial India"
+      },
+      {
+        "id": "deind",
+        "label": "Deindustrialisation",
+        "group": "Colonial India"
+      },
+      {
+        "id": "ads",
+        "label": "Advertisements and nationalism",
+        "group": "Culture"
+      }
+    ],
+    "edges": [
+      [
+        "guilds",
+        "proto"
+      ],
+      [
+        "merchant",
+        "proto"
+      ],
+      [
+        "proto",
+        "factory"
+      ],
+      [
+        "factory",
+        "cotton"
+      ],
+      [
+        "cotton",
+        "steam"
+      ],
+      [
+        "steam",
+        "manchester"
+      ],
+      [
+        "factory",
+        "manchester"
+      ],
+      [
+        "eic",
+        "deind"
+      ],
+      [
+        "cotton",
+        "deind"
+      ],
+      [
+        "deind",
+        "ads"
+      ],
+      [
+        "merchant",
+        "ads"
+      ],
+      [
+        "steam",
+        "eic"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "The Age of Industrialization - Mind Map",
+    "root": "The Age of Industrialization",
+    "branches": [
+      {
+        "concept": "Origins",
+        "sub_nodes": [
+          "Proto-industrialisation",
+          "Guild restrictions",
+          "Merchant capital",
+          "Rural household labour"
+        ],
+        "connections": "Merchant capital bypassed guild towns and organised rural production for distant markets."
+      },
+      {
+        "concept": "Factory system",
+        "sub_nodes": [
+          "Centralised machines",
+          "Wage labour",
+          "Supervision and clocks",
+          "Cotton inventions"
+        ],
+        "connections": "Factories concentrated production and shifted control from households to capitalists."
+      },
+      {
+        "concept": "Technology and transport",
+        "sub_nodes": [
+          "Watt's steam engine",
+          "Coal and coke",
+          "Iron machinery",
+          "Liverpool and Manchester railway"
+        ],
+        "connections": "Steam, coal, iron and rail formed an interlinked system of power and movement."
+      },
+      {
+        "concept": "Social costs",
+        "sub_nodes": [
+          "Manchester mills",
+          "Long hours and low wages",
+          "Women and child labour",
+          "Factory Acts and unions"
+        ],
+        "connections": "Industrial wealth rested on harsh conditions, which eventually produced labour reform."
+      },
+      {
+        "concept": "Colonial India",
+        "sub_nodes": [
+          "Indian textiles",
+          "Gomasthas and bonds",
+          "British tariffs",
+          "Deindustrialisation"
+        ],
+        "connections": "Company power and unequal trade rules damaged handloom weavers and reshaped Indian livelihoods."
+      },
+      {
+        "concept": "Industry and nationalism",
+        "sub_nodes": [
+          "Bombay cotton mill 1854",
+          "Indian industrialists",
+          "Labels and calendars",
+          "Swadeshi advertising"
+        ],
+        "connections": "Indian capital and advertising linked consumer choice with national identity."
+      }
+    ]
+  },
+  "common_misconceptions": [
+    {
+      "misconception": "Industrialisation began suddenly with factories.",
+      "correction": "It was preceded by proto-industrialisation, in which merchants organised household production for distant markets."
+    },
+    {
+      "misconception": "Cotton was the only industry of the industrial revolution.",
+      "correction": "Cotton grew fastest, but wool, silk, linen, iron, coal and engineering were also important."
+    },
+    {
+      "misconception": "Machines immediately replaced all hand labour.",
+      "correction": "Hand labour survived for intricate, seasonal and fashion goods, and industrial change was uneven."
+    },
+    {
+      "misconception": "All workers in Manchester shared equally in industrial wealth.",
+      "correction": "Many workers faced long hours, low wages, unsafe machines and unhealthy housing."
+    },
+    {
+      "misconception": "Indian textiles declined only because they were of poor quality.",
+      "correction": "Indian cloth was highly prized; decline came from Company coercion, tariffs and machine-made competition."
+    },
+    {
+      "misconception": "The East India Company was only a neutral trading body.",
+      "correction": "After Plassey it used political power, gomasthas and bonds to control weavers and trade."
+    },
+    {
+      "misconception": "Indians lacked the enterprise to start industry.",
+      "correction": "Indian industrialists did start mills, but imported machinery, colonial policies and limited capital restricted them."
+    },
+    {
+      "misconception": "Advertisements are a purely modern invention.",
+      "correction": "Labels, calendars, posters and illustrated advertisements were already used in the nineteenth century."
+    }
+  ],
+  "chapterId": "the-age-of-industrialization",
+  "subjectId": "social-science",
+  "subjectName": "Social Science",
+  "unitId": "social-science-1",
+  "unitName": "India and the Contemporary World - II",
+  "examWeightage": 20,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

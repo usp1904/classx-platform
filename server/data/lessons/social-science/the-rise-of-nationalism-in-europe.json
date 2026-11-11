@@ -1,0 +1,1381 @@
+{
+  "subject": "History",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 1,
+  "chapter": "The Rise of Nationalism in Europe",
+  "lesson": 1,
+  "title": "The Rise of Nationalism in Europe - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "id": "the-rise-of-nationalism-in-europe",
+  "outcomes": [
+    "Explain how the French Revolution created the first clear idea of the nation",
+    "Distinguish liberalism from nationalism and conservatism with examples",
+    "Analyse the aims and decisions of the Congress of Vienna",
+    "Compare the revolutions of 1830 and 1848 and explain their limits",
+    "Trace the unification of Germany under Bismarck and Italy under Cavour and Garibaldi",
+    "Explain how Britain formed a nation-state without a revolution",
+    "Describe the Balkan question and how nationalism became aggressive after 1871",
+    "Interpret nationalist symbols, allegories, and terms such as plebiscite and suffrage"
+  ],
+  "prerequisite_nodes": [
+    "HIST_CLASS9_FRENCH_REVOLUTION",
+    "HIST_CLASS8_REVOLUTIONS",
+    "GEO_CLASS9_EUROPE_POLITICAL_MAP",
+    "CIV_CLASS9_DEMOCRACY_AND_DIVERSITY"
+  ],
+  "concepts": [
+    {
+      "id": "eur-c1",
+      "title": "The French Revolution and the Idea of the Nation",
+      "name": "The French Revolution and the Idea of the Nation",
+      "explanation": "Before 1789 France was a monarchy in which rights depended on birth. The French Revolution transferred sovereignty from the king to the body of citizens. The revolutionaries introduced the terms la patrie (the fatherland) and le citoyen (the citizen) to create a community of equal people. A new tricolour replaced the royal standard, internal customs duties were abolished, uniform laws and weights and measures were adopted, and French became the common language of the nation. Revolutionary wars and Napoleon's armies carried these ideas across Europe.",
+      "purpose": "The French Revolution gave nationalism its modern political meaning: the nation is not the king but the people, and the people share laws, symbols, language, and a common future.",
+      "real_life_application": "Modern states still use flags, anthems, common laws, and a shared language to build a sense of belonging among citizens.",
+      "key_points": [
+        "The French Revolution began in 1789 and ended absolute monarchy in France.",
+        "Sovereignty was transferred from the monarchy to the body of French citizens.",
+        "The terms la patrie and le citoyen emphasised a shared fatherland and equal citizenship.",
+        "The tricolour replaced the royal standard as the symbol of the nation.",
+        "Uniform laws, abolished internal customs, and common weights and measures integrated the country.",
+        "French became the common language of the nation.",
+        "Napoleon's Civil Code of 1804 spread equality before the law and the right to property."
+      ],
+      "day_to_day_usage": [
+        "Understanding why a national flag and anthem matter in schools and public ceremonies",
+        "Seeing how a single set of laws and measures simplifies trade within a country",
+        "Recognising how language policy can unite or divide a population",
+        "Comparing modern citizenship with the revolutionary idea of equal citizens",
+        "Understanding why revolutions often create new symbols and calendars"
+      ]
+    },
+    {
+      "id": "eur-c2",
+      "title": "Liberalism, Nationalism, and Economic Change",
+      "name": "Liberalism, Nationalism, and Economic Change",
+      "explanation": "Liberalism comes from the Latin word liber, meaning free. Liberals demanded individual freedom, equality before the law, and government by consent. In the nineteenth century, however, most liberals did not support universal suffrage; women and poor men were usually excluded from voting. Economic liberals wanted free markets, the removal of guild restrictions, and an end to tariff barriers. The Zollverein, a customs union formed in 1834, abolished internal tariffs among German states and reduced the number of currencies from over thirty to two. Railways and steamships further linked markets and people.",
+      "purpose": "Liberalism supplied the economic and legal programme that often travelled with nationalism, and the Zollverein showed how economic unity can prepare the ground for political unity.",
+      "real_life_application": "Customs unions and common markets, such as the European Union, follow the same logic as the Zollverein: remove internal barriers to increase trade.",
+      "key_points": [
+        "Liberalism demanded individual freedom, equality before the law, and government by consent.",
+        "Nineteenth-century liberals generally restricted the vote to property-owning men.",
+        "Economic liberals opposed guild restrictions, internal tariffs, and state monopolies.",
+        "The Zollverein was a customs union of German states formed in 1834.",
+        "It abolished internal tariff barriers and cut the number of currencies from over thirty to two.",
+        "Railways and steamships strengthened economic links and encouraged national feeling."
+      ],
+      "day_to_day_usage": [
+        "Understanding why countries form trade blocs and customs unions",
+        "Seeing how a common currency reduces the cost of trade",
+        "Recognising the difference between political liberty and the right to vote",
+        "Linking railway and transport projects with market integration",
+        "Understanding arguments for and against free trade"
+      ]
+    },
+    {
+      "id": "eur-c3",
+      "title": "Conservatism and the Congress of Vienna",
+      "name": "Conservatism and the Congress of Vienna",
+      "explanation": "After Napoleon's defeat, the Congress of Vienna met in 1815 to restore order. It was hosted by the Austrian Chancellor Duke Metternich and attended by the major powers, including Britain, Russia, Prussia, Austria, and France. The settlement restored the Bourbon dynasty in France, reduced French territory to its pre-revolutionary borders, and created buffer states around France. The Netherlands was enlarged to include Belgium, Genoa was given to Piedmont, Prussia gained parts of Saxony, Austria gained Lombardy and Venetia, and Russia gained Poland. A German Confederation of thirty-nine states replaced Napoleon's organization of Germany.",
+      "purpose": "The Congress tried to undo the French Revolution and prevent another one by restoring monarchies and balancing power among the great states.",
+      "real_life_application": "Peace conferences still redraw borders and create buffer zones or alliances to prevent future conflict.",
+      "key_points": [
+        "The Congress of Vienna met in 1815 after the final defeat of Napoleon.",
+        "It was hosted by the Austrian Chancellor Duke Metternich.",
+        "Britain, Russia, Prussia, and Austria were the leading powers, and France was also represented.",
+        "The Bourbon dynasty was restored in France and France lost the territories it had annexed.",
+        "Buffer states were created: the Netherlands included Belgium, and Genoa was given to Piedmont.",
+        "Prussia gained parts of Saxony, Austria gained Lombardy and Venetia, and Russia gained Poland.",
+        "A German Confederation of thirty-nine states was established."
+      ],
+      "day_to_day_usage": [
+        "Understanding why international summits redraw borders after wars",
+        "Recognising the idea of a balance of power in modern alliances",
+        "Seeing how buffer states are used for security",
+        "Understanding why victors often restore old rulers",
+        "Linking nineteenth-century diplomacy with modern peace settlements"
+      ]
+    },
+    {
+      "id": "eur-c4",
+      "title": "The Revolutions of 1830 and 1848",
+      "name": "The Revolutions of 1830 and 1848",
+      "explanation": "The July Revolution of 1830 in France overthrew the Bourbon king and installed Louis Philippe as a constitutional monarch. In the same year Belgium broke away from the United Kingdom of the Netherlands. Greece, which had begun its war of independence in 1821, was recognised as independent by the Treaty of Constantinople in 1832. In 1848 food shortages, unemployment, and popular anger produced a wave of revolutions. France became a republic in February 1848 and introduced universal male suffrage. In Germany the Frankfurt Parliament met on 18 May 1848 in St Paul's Church, but Friedrich Wilhelm IV of Prussia refused the crown offered by the assembly. Women were excluded from the Frankfurt Assembly, and the revolution was eventually suppressed.",
+      "purpose": "The revolutions show the strength of liberal and nationalist demands, and also their limits when rulers retained control of the army and when liberals feared popular democracy.",
+      "real_life_application": "Food prices, unemployment, and exclusion from political power remain common triggers of protest and political change.",
+      "key_points": [
+        "The July Revolution of 1830 replaced the Bourbon monarchy in France with Louis Philippe.",
+        "Belgium separated from the United Kingdom of the Netherlands in 1830.",
+        "Greece became independent and was recognised by the Treaty of Constantinople in 1832.",
+        "The 1848 revolutions began amid food shortages, unemployment, and political discontent.",
+        "France became a republic in February 1848 and adopted universal male suffrage.",
+        "The Frankfurt Parliament met on 18 May 1848 but Friedrich Wilhelm IV refused the crown.",
+        "Women were excluded from the Frankfurt Assembly, showing the limits of liberal politics."
+      ],
+      "day_to_day_usage": [
+        "Understanding how economic hardship can produce political movements",
+        "Comparing different routes to independence and constitutional government",
+        "Recognising the difference between universal male suffrage and universal suffrage",
+        "Seeing how assemblies can be weakened when they lack military power",
+        "Understanding why excluded groups keep demanding political rights"
+      ]
+    },
+    {
+      "id": "eur-c5",
+      "title": "The Unification of Germany and Italy",
+      "name": "The Unification of Germany and Italy",
+      "explanation": "Germany was unified through Prussian state power. Otto von Bismarck became Prime Minister of Prussia in 1862 and followed a policy of blood and iron. Prussia defeated Denmark in 1864, Austria in 1866, and France in 1870-71. In January 1871 the German Empire was proclaimed at Versailles, with William I of Prussia as Kaiser. Italy was unified through a mixture of popular nationalism and diplomacy. Mazzini founded Young Italy in 1831 and kept the idea alive. Cavour, Prime Minister of Sardinia-Piedmont from 1852, secured French help against Austria in 1859. In 1860 Garibaldi and his Red Shirts captured Sicily and Naples. Italy was unified in 1861 under Victor Emmanuel II, gained Venetia in 1866, and added Rome in 1870.",
+      "purpose": "The two unifications show that nationalism could be achieved by war and statecraft as well as by popular movements, and that the two paths produced different political systems.",
+      "real_life_application": "Modern state-building still combines diplomacy, military power, and popular identity, and the German model shaped later ideas of national unity.",
+      "key_points": [
+        "Bismarck became Prime Minister of Prussia in 1862 and pursued a policy of blood and iron.",
+        "Prussia defeated Denmark in 1864, Austria in 1866, and France in 1870-71.",
+        "The German Empire was proclaimed at Versailles in January 1871 with William I as Kaiser.",
+        "Mazzini founded Young Italy in 1831 and promoted Italian unity.",
+        "Cavour used diplomacy and an alliance with France against Austria in 1859.",
+        "Garibaldi and his Red Shirts captured Sicily and Naples in 1860.",
+        "Italy was unified in 1861 under Victor Emmanuel II; Venetia joined in 1866 and Rome in 1870."
+      ],
+      "day_to_day_usage": [
+        "Understanding how diplomacy and war can reshape political boundaries",
+        "Seeing the role of popular heroes and movements in national causes",
+        "Comparing state-led and movement-led political change",
+        "Recognising how federal and unitary structures differ after unification",
+        "Linking nineteenth-century nationalism with later European conflicts"
+      ]
+    },
+    {
+      "id": "eur-c6",
+      "title": "Britain, the Balkans, and Aggressive Nationalism",
+      "name": "Britain, the Balkans, and Aggressive Nationalism",
+      "explanation": "Britain formed a nation-state without a revolution. In 1688 Parliament seized power from the monarchy, and the Act of Union of 1707 joined England and Scotland as the United Kingdom of Great Britain. Ireland was incorporated in 1801. A British identity was built through the Union Jack, the anthem, and the English language, although Scotland kept its own institutions and culture. Ireland, however, was largely excluded and suffered from English domination; Wolfe Tone's United Irishmen rebellion of 1798 was suppressed. In the Balkans, the Ottoman Empire was called the sick man of Europe. Greece, Romania, Bulgaria, and Albania broke away at different times, while Russia, Austria-Hungary, Germany, and Britain competed for influence. This rivalry made the Balkans a powder keg. After 1871 nationalism became more conservative, militaristic, and imperial, and was often justified by claims of racial superiority and a civilising mission.",
+      "purpose": "The British case shows that nation-states can be built gradually through parliament and union, while the Balkans shows how nationalism can become entangled with great-power rivalry and war.",
+      "real_life_application": "Debates about Scottish independence, Irish unity, and language identity show that union and nationhood remain live political questions.",
+      "key_points": [
+        "Britain became a nation-state through parliamentary change, not revolution.",
+        "The Act of Union of 1707 joined England and Scotland; Ireland was incorporated in 1801.",
+        "The Union Jack, the anthem, and the English language helped build a British identity.",
+        "Ireland was largely excluded from this identity and its 1798 rebellion was suppressed.",
+        "The Ottoman Empire was known as the sick man of Europe.",
+        "Greece, Romania, Bulgaria, and Albania emerged from Ottoman rule at different times.",
+        "Great-power rivalry in the Balkans made the region a powder keg before the First World War.",
+        "After 1871 nationalism became more aggressive, militaristic, and imperial."
+      ],
+      "day_to_day_usage": [
+        "Understanding why unions and devolution are debated in modern Britain",
+        "Recognising how language and symbols can include some groups and exclude others",
+        "Seeing how great-power rivalry can turn regional disputes into wars",
+        "Linking nationalist claims with imperial competition",
+        "Understanding why the Balkans remain important in European politics"
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-eur-1",
+      "title": "The French Revolution and national identity",
+      "topic": "The French Revolution and the Idea of the Nation",
+      "problem": "Explain how the French Revolution created a sense of national identity in France.",
+      "solution": [
+        "Step 1: Before 1789, France was an absolute monarchy in which privileges depended on birth.",
+        "Step 2: The Revolution transferred sovereignty from the king to the body of citizens.",
+        "Step 3: The terms la patrie and le citoyen created the idea of a shared fatherland and equal citizenship.",
+        "Step 4: The tricolour replaced the royal standard and became a visible symbol of the nation.",
+        "Step 5: Uniform laws, the abolition of internal customs, and common weights and measures integrated the country.",
+        "Step 6: French became the common language, and revolutionary wars gave citizens a shared cause."
+      ],
+      "board_mode": [
+        "Step 1: State the starting point: France was an absolute monarchy with birth-based privilege.",
+        "Step 2: Explain the transfer of sovereignty from monarch to citizens.",
+        "Step 3: Mention la patrie and le citoyen as new words of belonging.",
+        "Step 4: Give the tricolour as a national symbol.",
+        "Step 5: Give three concrete reforms: uniform laws, no internal customs, common weights and measures.",
+        "Step 6: Add common language and revolutionary wars, then conclude that these created a community of equal citizens."
+      ],
+      "answer": "The Revolution created a community of equal citizens with shared symbols, laws, language, and a common cause, which is the basis of modern nationalism.",
+      "board_tip": "Name at least three concrete measures, not just ideas. CBSE awards marks for specific examples such as the tricolour, uniform laws, and la patrie."
+    },
+    {
+      "id": "we-eur-2",
+      "title": "Aims and decisions of the Congress of Vienna",
+      "topic": "Conservatism and the Congress of Vienna",
+      "problem": "Explain the main aims and decisions of the Congress of Vienna.",
+      "solution": [
+        "Step 1: The Congress met in 1815 after Napoleon's defeat to restore order in Europe.",
+        "Step 2: Its aims were to restore monarchies, prevent revolution, and maintain a balance of power.",
+        "Step 3: The Bourbon dynasty was restored in France and France lost the territories it had annexed.",
+        "Step 4: Buffer states were created: the Netherlands included Belgium, and Genoa was given to Piedmont.",
+        "Step 5: Prussia gained parts of Saxony, Austria gained Lombardy and Venetia, and Russia gained Poland.",
+        "Step 6: A German Confederation of thirty-nine states was established under Austrian influence."
+      ],
+      "board_mode": [
+        "Step 1: Write the date and context: 1815, after Napoleon's defeat.",
+        "Step 2: Write two aims: restore monarchy and balance power.",
+        "Step 3: Write the French settlement: Bourbon restoration and loss of annexed territory.",
+        "Step 4: Write two buffer arrangements: Belgium with the Netherlands and Genoa with Piedmont.",
+        "Step 5: Write the territorial gains of Prussia, Austria, and Russia.",
+        "Step 6: Write the German Confederation of thirty-nine states."
+      ],
+      "answer": "The Congress restored monarchies, contained France with buffer states, redistributed territory among the powers, and created a German Confederation of thirty-nine states.",
+      "board_tip": "Do not call the Congress a democratic settlement. It was conservative and designed to prevent revolution."
+    },
+    {
+      "id": "we-eur-3",
+      "title": "Why the 1848 revolutions failed",
+      "topic": "The Revolutions of 1830 and 1848",
+      "problem": "Why did the revolutions of 1848 fail to create lasting liberal nations in Germany and Italy?",
+      "solution": [
+        "Step 1: The revolutions began with food shortages, unemployment, and popular anger, but they lacked a single organisation.",
+        "Step 2: In Germany the Frankfurt Parliament met on 18 May 1848 but had no army and no revenue.",
+        "Step 3: Friedrich Wilhelm IV of Prussia refused the crown offered by the assembly.",
+        "Step 4: Middle-class liberals feared the workers and hesitated to use radical methods.",
+        "Step 5: Women were excluded from the Frankfurt Assembly, which weakened its claim to represent the people.",
+        "Step 6: Rulers used their armies to suppress the revolutions, and the old order returned."
+      ],
+      "board_mode": [
+        "Step 1: State the economic background: food shortages and unemployment.",
+        "Step 2: Explain the weakness of the Frankfurt Parliament: no army and no revenue.",
+        "Step 3: Mention the refusal of Friedrich Wilhelm IV.",
+        "Step 4: Explain the liberal fear of popular radicalism.",
+        "Step 5: Mention the exclusion of women.",
+        "Step 6: Conclude with military suppression and the restoration of rulers."
+      ],
+      "answer": "The 1848 revolutions failed because the assemblies lacked military and financial power, rulers refused to accept them, and liberals feared radical popular action.",
+      "board_tip": "Write both internal weaknesses and external repression. A one-sided answer loses marks."
+    },
+    {
+      "id": "we-eur-4",
+      "title": "Unification of Germany",
+      "topic": "The Unification of Germany and Italy",
+      "problem": "Describe how Germany was unified between 1862 and 1871.",
+      "solution": [
+        "Step 1: In 1862 Otto von Bismarck became Prime Minister of Prussia and followed a policy of blood and iron.",
+        "Step 2: Prussia defeated Denmark in 1864 and gained Schleswig-Holstein.",
+        "Step 3: Prussia defeated Austria in 1866 and became the leading German state.",
+        "Step 4: Prussia defeated France in the Franco-Prussian War of 1870-71.",
+        "Step 5: The victory created a wave of national feeling and removed the main external obstacle to unity.",
+        "Step 6: In January 1871 the German Empire was proclaimed at Versailles with William I as Kaiser."
+      ],
+      "board_mode": [
+        "Step 1: Write Bismarck's appointment in 1862 and his policy of blood and iron.",
+        "Step 2: Write the war with Denmark in 1864.",
+        "Step 3: Write the war with Austria in 1866.",
+        "Step 4: Write the war with France in 1870-71.",
+        "Step 5: Write the proclamation of the German Empire at Versailles in January 1871.",
+        "Step 6: Write William I as Kaiser and Bismarck as the leading statesman."
+      ],
+      "answer": "Bismarck used three wars - against Denmark in 1864, Austria in 1866, and France in 1870-71 - to make Prussia the centre of a German Empire proclaimed at Versailles in January 1871.",
+      "board_tip": "Keep the three wars in order and mention both the dates and the opponents. The order carries marks in sequence questions."
+    },
+    {
+      "id": "we-eur-5",
+      "title": "Unification of Italy",
+      "topic": "The Unification of Germany and Italy",
+      "problem": "Explain how Italy was unified between 1859 and 1870.",
+      "solution": [
+        "Step 1: Italy was divided into seven states, and only Sardinia-Piedmont was ruled by an Italian princely house.",
+        "Step 2: Mazzini founded Young Italy in 1831 and kept the idea of Italian unity alive.",
+        "Step 3: Cavour, Prime Minister from 1852, modernised Sardinia-Piedmont and allied with France against Austria in 1859.",
+        "Step 4: In 1860 Garibaldi and his Red Shirts captured Sicily and Naples and handed them to Victor Emmanuel II.",
+        "Step 5: Italy was unified in 1861 under Victor Emmanuel II.",
+        "Step 6: Venetia joined in 1866 and Rome in 1870, completing the unification."
+      ],
+      "board_mode": [
+        "Step 1: Write the starting position: seven states, with Sardinia-Piedmont as the only Italian-ruled state.",
+        "Step 2: Write Mazzini and Young Italy in 1831.",
+        "Step 3: Write Cavour's diplomacy and the French alliance of 1859.",
+        "Step 4: Write Garibaldi and the Red Shirts in 1860.",
+        "Step 5: Write the unification of 1861 under Victor Emmanuel II.",
+        "Step 6: Write Venetia in 1866 and Rome in 1870."
+      ],
+      "answer": "Italy was unified through Mazzini's ideas, Cavour's diplomacy, and Garibaldi's popular campaigns, with Victor Emmanuel II becoming king in 1861 and Rome joining in 1870.",
+      "board_tip": "Name all three leaders and their different roles. Examiners look for Mazzini, Cavour, and Garibaldi together."
+    }
+  ],
+  "exercises": {
+    "simple": {
+      "title": "Simple Practice",
+      "objective": "Recall key dates, terms, and personalities accurately",
+      "problems": [
+        {
+          "id": "eur-s1",
+          "question": "Define nationalism.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Nationalism is a feeling of loyalty and identity towards a nation.",
+            "Step 2: It holds that people who share a common history, language, culture, or territory should form their own state.",
+            "Step 3: In nineteenth-century Europe it became a powerful political force."
+          ],
+          "final_answer": "Nationalism is the belief that a people sharing a common identity should have their own nation and state.",
+          "marks": 1
+        },
+        {
+          "id": "eur-s2",
+          "question": "What was the Zollverein and why was it important?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: The Zollverein was a customs union of German states formed in 1834.",
+            "Step 2: It abolished internal tariff barriers among its members.",
+            "Step 3: It reduced the number of currencies from over thirty to two.",
+            "Step 4: It strengthened economic links and prepared the ground for political unification."
+          ],
+          "final_answer": "The Zollverein was the 1834 German customs union that removed internal tariffs and promoted economic unity.",
+          "marks": 2
+        },
+        {
+          "id": "eur-s3",
+          "question": "Name the Austrian Chancellor who hosted the Congress of Vienna.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: The Congress of Vienna met in 1815.",
+            "Step 2: It was hosted by the Austrian Chancellor Duke Metternich."
+          ],
+          "final_answer": "Duke Metternich.",
+          "marks": 1
+        },
+        {
+          "id": "eur-s4",
+          "question": "What does plebiscite mean?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: A plebiscite is a direct vote by the people of a region.",
+            "Step 2: It is used to decide a question of national importance, such as joining a state.",
+            "Step 3: It differs from a normal election because the voters decide an issue, not a candidate."
+          ],
+          "final_answer": "A plebiscite is a direct vote of the people on a specific political question.",
+          "marks": 1
+        },
+        {
+          "id": "eur-s5",
+          "question": "Name two symbols used in the female allegory of Germania and state what they represent.",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: Germania was the female allegory of the German nation.",
+            "Step 2: The crown of oak leaves symbolised heroism.",
+            "Step 3: The sword symbolised readiness to fight.",
+            "Step 4: The broken chains symbolised freedom from oppression.",
+            "Step 5: The olive branch symbolised willingness to make peace."
+          ],
+          "final_answer": "Examples: oak leaves for heroism, the sword for readiness to fight, and broken chains for freedom.",
+          "marks": 2
+        },
+        {
+          "id": "eur-s6",
+          "question": "In which year was Greece recognised as an independent nation?",
+          "difficulty": "simple",
+          "solution": [
+            "Step 1: The Greek war of independence began in 1821.",
+            "Step 2: The Treaty of Constantinople recognised Greek independence in 1832."
+          ],
+          "final_answer": "1832.",
+          "marks": 1
+        }
+      ]
+    },
+    "medium": {
+      "title": "Medium Practice",
+      "objective": "Explain causes, decisions, and consequences in structured paragraphs",
+      "problems": [
+        {
+          "id": "eur-m1",
+          "question": "Explain any three measures taken during the French Revolution that helped create a sense of national identity.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: The Revolution transferred sovereignty from the monarchy to the citizens.",
+            "Step 2: New terms such as la patrie and le citoyen created a shared political identity.",
+            "Step 3: The tricolour replaced the royal standard as the symbol of the nation.",
+            "Step 4: Uniform laws, the abolition of internal customs, and common weights and measures integrated France.",
+            "Step 5: French became the common language of the nation."
+          ],
+          "final_answer": "Sovereignty of citizens, new civic terms and symbols, and uniform laws and language together created a French national identity.",
+          "marks": 3
+        },
+        {
+          "id": "eur-m2",
+          "question": "Describe any three decisions of the Congress of Vienna.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: The Bourbon dynasty was restored in France.",
+            "Step 2: France lost the territories it had annexed under Napoleon.",
+            "Step 3: Buffer states were created, with the Netherlands including Belgium and Genoa given to Piedmont.",
+            "Step 4: Prussia gained parts of Saxony, Austria gained Lombardy and Venetia, and Russia gained Poland.",
+            "Step 5: A German Confederation of thirty-nine states was set up."
+          ],
+          "final_answer": "The Congress restored the Bourbons, contained France with buffer states, redistributed territory, and created a German Confederation.",
+          "marks": 3
+        },
+        {
+          "id": "eur-m3",
+          "question": "Why did most nineteenth-century liberals not support universal suffrage?",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: Liberalism stressed individual freedom and equality before the law.",
+            "Step 2: However, most liberals were property-owning men who feared that the poor would use the vote against property.",
+            "Step 3: They believed that only educated and propertied men could exercise political judgement responsibly.",
+            "Step 4: Women were generally regarded as dependent and were excluded from political rights.",
+            "Step 5: As a result, liberal politics in practice remained restricted even while it preached liberty."
+          ],
+          "final_answer": "Liberals feared propertyless and uneducated voters and believed women should not vote, so they restricted the franchise.",
+          "marks": 3
+        },
+        {
+          "id": "eur-m4",
+          "question": "Describe the July Revolution of 1830 in France and its immediate results.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: The Bourbon monarchy under Charles X tried to suppress liberal opposition.",
+            "Step 2: In July 1830 Paris rose in revolt and the Bourbon king was overthrown.",
+            "Step 3: Louis Philippe was installed as a constitutional monarch.",
+            "Step 4: The tricolour replaced the royal flag, and the new regime claimed to represent the people.",
+            "Step 5: The revolution encouraged Belgium to break away from the Netherlands in the same year."
+          ],
+          "final_answer": "The July Revolution overthrew the Bourbons, installed Louis Philippe as constitutional monarch, and encouraged the Belgian revolt of 1830.",
+          "marks": 3
+        },
+        {
+          "id": "eur-m5",
+          "question": "Why did the Frankfurt Parliament fail to unify Germany in 1848?",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: The Parliament met on 18 May 1848 but had no army and no revenue.",
+            "Step 2: Friedrich Wilhelm IV of Prussia refused the crown offered by the assembly.",
+            "Step 3: The assembly depended on the goodwill of princes who opposed it.",
+            "Step 4: Liberals feared popular radicalism and hesitated to mobilise the masses.",
+            "Step 5: Women were excluded, weakening its claim to represent the whole nation.",
+            "Step 6: The princes used force to restore order, and the opportunity was lost."
+          ],
+          "final_answer": "The Frankfurt Parliament lacked power, was refused by the Prussian king, and was divided and eventually suppressed.",
+          "marks": 3
+        },
+        {
+          "id": "eur-m6",
+          "question": "Explain the Balkan question in the nineteenth century.",
+          "difficulty": "medium",
+          "solution": [
+            "Step 1: The Balkans were a region of great ethnic and religious diversity under Ottoman rule.",
+            "Step 2: The Ottoman Empire was called the sick man of Europe as its control weakened.",
+            "Step 3: Greece, Romania, Bulgaria, and Albania broke away at different times.",
+            "Step 4: Russia, Austria-Hungary, Germany, and Britain competed for influence in the region.",
+            "Step 5: This rivalry turned the Balkans into a powder keg and contributed to the First World War."
+          ],
+          "final_answer": "The Balkan question was the struggle of Balkan peoples for independence amid rivalry among the great powers, which made the region a powder keg.",
+          "marks": 3
+        }
+      ]
+    },
+    "complex": {
+      "title": "Complex Practice",
+      "objective": "Compare ideologies, analyse change over time, and write board-style long answers",
+      "problems": [
+        {
+          "id": "eur-c1",
+          "question": "Compare liberalism, nationalism, and conservatism in nineteenth-century Europe.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Liberalism stressed individual freedom, equality before the law, and government by consent.",
+            "Step 2: It also demanded free markets and the removal of guild and tariff restrictions.",
+            "Step 3: Nationalism stressed the unity of a people sharing language, history, and culture in a nation-state.",
+            "Step 4: Nationalism could be liberal, as in 1830 and 1848, or conservative and state-led, as in Germany after 1862.",
+            "Step 5: Conservatism defended monarchy, religion, and social hierarchy and opposed rapid change.",
+            "Step 6: After 1815 conservatives controlled the states, but liberals and nationalists kept challenging them.",
+            "Step 7: The three ideologies overlapped: many liberals were nationalists and some nationalists became conservative imperialists."
+          ],
+          "final_answer": "Liberalism emphasised individual and economic freedom, nationalism emphasised national unity, and conservatism defended monarchy and hierarchy; in practice the three often overlapped and changed.",
+          "marks": 5
+        },
+        {
+          "id": "eur-c2",
+          "question": "Nationalism became aggressive and imperial after 1871. Analyse this statement.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Before 1871 nationalism was often linked to liberal demands for constitutional government.",
+            "Step 2: After unification, Germany and Italy became powerful states with imperial ambitions.",
+            "Step 3: Nationalism was increasingly used to justify military spending and colonial expansion.",
+            "Step 4: Ideas of racial superiority and a civilising mission were used to justify rule over Africans and Asians.",
+            "Step 5: Rivalry in the Balkans and in colonial territories increased tension among the great powers.",
+            "Step 6: This competition contributed to the alliance systems and the outbreak of the First World War.",
+            "Step 7: However, nationalism also continued to inspire subject peoples, so it was not only aggressive."
+          ],
+          "final_answer": "After 1871 nationalism became tied to militarism, imperialism, and racial ideas, though it also remained a force for independence movements.",
+          "marks": 5
+        },
+        {
+          "id": "eur-c3",
+          "question": "Explain the process of German unification from 1862 to 1871.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Prussia was the strongest German state and had a powerful army and bureaucracy.",
+            "Step 2: Bismarck became Prime Minister in 1862 and pursued a policy of blood and iron.",
+            "Step 3: Prussia defeated Denmark in 1864 and gained Schleswig-Holstein.",
+            "Step 4: Prussia defeated Austria in 1866, ending Austrian influence over the German states.",
+            "Step 5: Prussia defeated France in 1870-71 and gained Alsace and Lorraine.",
+            "Step 6: The war with France created a surge of German nationalist feeling.",
+            "Step 7: In January 1871 the German Empire was proclaimed at Versailles with William I as Kaiser."
+          ],
+          "final_answer": "Bismarck used three wars and Prussian military power to unify Germany, culminating in the proclamation of the Empire at Versailles in January 1871.",
+          "marks": 5
+        },
+        {
+          "id": "eur-c4",
+          "question": "Explain how Italy was unified and why the process took from 1859 to 1870.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Italy was divided into seven states, with Sardinia-Piedmont the only Italian-ruled state.",
+            "Step 2: Mazzini's Young Italy kept the idea of unity alive but early revolts failed.",
+            "Step 3: Cavour modernised Sardinia-Piedmont and allied with France against Austria in 1859.",
+            "Step 4: Garibaldi's Red Shirts captured Sicily and Naples in 1860 and handed them to Victor Emmanuel II.",
+            "Step 5: Italy was unified in 1861 under Victor Emmanuel II.",
+            "Step 6: Venetia was added in 1866 after the Austro-Prussian War.",
+            "Step 7: Rome was added in 1870 when French troops withdrew, completing the process."
+          ],
+          "final_answer": "Italy was unified through Mazzini's ideas, Cavour's diplomacy, and Garibaldi's campaigns, with the final territories added in 1866 and 1870.",
+          "marks": 5
+        },
+        {
+          "id": "eur-c5",
+          "question": "How did Britain become a nation-state without a revolution? Discuss the role of symbols and of Ireland.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: In 1688 Parliament seized power from the monarchy, establishing a constitutional system.",
+            "Step 2: The Act of Union of 1707 joined England and Scotland as the United Kingdom of Great Britain.",
+            "Step 3: Ireland was incorporated in 1801, creating the United Kingdom of Great Britain and Ireland.",
+            "Step 4: The Union Jack, the national anthem, and the English language helped build a British identity.",
+            "Step 5: Scotland retained its own legal and educational institutions and cultural symbols.",
+            "Step 6: Ireland was largely excluded from British identity and suffered from English domination.",
+            "Step 7: Wolfe Tone's rebellion of 1798 was suppressed, showing that union was not based on equal partnership."
+          ],
+          "final_answer": "Britain combined parliamentary government, union, and shared symbols, but Ireland's exclusion and the suppression of 1798 show that the process was not fully inclusive.",
+          "marks": 5
+        },
+        {
+          "id": "eur-c6",
+          "question": "Compare the revolutions of 1830 and 1848 in Europe.",
+          "difficulty": "complex",
+          "solution": [
+            "Step 1: Both revolutions were driven by liberal and nationalist demands.",
+            "Step 2: 1830 began in France and produced a constitutional monarchy under Louis Philippe.",
+            "Step 3: 1830 also led to Belgian independence and encouraged Greek independence.",
+            "Step 4: 1848 was wider and more social, driven by food shortages and unemployment.",
+            "Step 5: France became a republic with universal male suffrage in February 1848.",
+            "Step 6: The Frankfurt Parliament failed because it lacked power and the Prussian king refused the crown.",
+            "Step 7: Both waves were ultimately contained by the old rulers, but they spread liberal and nationalist ideas."
+          ],
+          "final_answer": "1830 produced limited constitutional gains, while 1848 was broader and more social but was suppressed; both weakened the conservative order in the long run.",
+          "marks": 5
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-eur-s1",
+        "question": "In which year did the French Revolution begin?",
+        "options": [
+          "1776",
+          "1789",
+          "1815",
+          "1848"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The French Revolution began in 1789.",
+          "wrong_options": {
+            "0": "1776 is the year of the American Declaration of Independence.",
+            "2": "1815 is the year of the Congress of Vienna.",
+            "3": "1848 is the year of the European revolutions."
+          }
+        }
+      },
+      {
+        "id": "q-eur-s2",
+        "question": "Who hosted the Congress of Vienna in 1815?",
+        "options": [
+          "Bismarck",
+          "Metternich",
+          "Cavour",
+          "Garibaldi"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Duke Metternich, the Austrian Chancellor, hosted the Congress.",
+          "wrong_options": {
+            "0": "Bismarck was a Prussian statesman active later in the century.",
+            "2": "Cavour was the Prime Minister of Sardinia-Piedmont.",
+            "3": "Garibaldi was an Italian nationalist leader."
+          }
+        }
+      },
+      {
+        "id": "q-eur-s3",
+        "question": "What was the Zollverein?",
+        "options": [
+          "A German customs union",
+          "A French constitution",
+          "An Italian secret society",
+          "A Balkan alliance"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Zollverein was a customs union of German states formed in 1834.",
+          "wrong_options": {
+            "1": "It was an economic union, not a constitution.",
+            "2": "Young Italy was the Italian secret society.",
+            "3": "It was not a Balkan alliance."
+          }
+        }
+      },
+      {
+        "id": "q-eur-s4",
+        "question": "In which year was Napoleon's Civil Code introduced?",
+        "options": [
+          "1789",
+          "1804",
+          "1815",
+          "1830"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The Civil Code was introduced in 1804.",
+          "wrong_options": {
+            "0": "1789 was the start of the Revolution.",
+            "2": "1815 was the Congress of Vienna.",
+            "3": "1830 was the July Revolution."
+          }
+        }
+      },
+      {
+        "id": "q-eur-s5",
+        "question": "Who is said to have remarked that when France sneezes, the rest of Europe catches cold?",
+        "options": [
+          "Metternich",
+          "Bismarck",
+          "Mazzini",
+          "Louis Philippe"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The remark is attributed to Metternich.",
+          "wrong_options": {
+            "1": "Bismarck was a German statesman.",
+            "2": "Mazzini was an Italian nationalist.",
+            "3": "Louis Philippe was the French king after 1830."
+          }
+        }
+      },
+      {
+        "id": "q-eur-s6",
+        "question": "Which country broke away from the United Kingdom of the Netherlands in 1830?",
+        "options": [
+          "Belgium",
+          "Greece",
+          "Poland",
+          "Denmark"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Belgium separated from the Netherlands in 1830.",
+          "wrong_options": {
+            "1": "Greece became independent from the Ottoman Empire.",
+            "2": "Poland was under Russian rule.",
+            "3": "Denmark was not part of the Netherlands."
+          }
+        }
+      },
+      {
+        "id": "q-eur-s7",
+        "question": "In which city did the German National Assembly meet in 1848?",
+        "options": [
+          "Berlin",
+          "Vienna",
+          "Frankfurt",
+          "Munich"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "The Frankfurt Parliament met in St Paul's Church, Frankfurt, on 18 May 1848.",
+          "wrong_options": {
+            "0": "Berlin was the Prussian capital.",
+            "1": "Vienna was the Austrian capital.",
+            "3": "Munich was the Bavarian capital."
+          }
+        }
+      },
+      {
+        "id": "q-eur-s8",
+        "question": "Who was proclaimed German Emperor in January 1871?",
+        "options": [
+          "William I",
+          "Frederick William IV",
+          "Bismarck",
+          "Charles Albert"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "William I of Prussia was proclaimed Kaiser at Versailles.",
+          "wrong_options": {
+            "1": "Frederick William IV had refused the crown in 1848.",
+            "2": "Bismarck was the Chancellor, not the Emperor.",
+            "3": "Charles Albert was a king of Sardinia-Piedmont."
+          }
+        }
+      },
+      {
+        "id": "q-eur-s9",
+        "question": "What were Garibaldi's volunteers called?",
+        "options": [
+          "Red Shirts",
+          "Young Italy",
+          "Carbonari",
+          "Blackshirts"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Garibaldi's volunteers were known as the Red Shirts.",
+          "wrong_options": {
+            "1": "Young Italy was Mazzini's organisation.",
+            "2": "The Carbonari were an earlier secret society.",
+            "3": "The Blackshirts belonged to a twentieth-century movement."
+          }
+        }
+      },
+      {
+        "id": "q-eur-s10",
+        "question": "Which female allegory represented the French nation?",
+        "options": [
+          "Germania",
+          "Marianne",
+          "Britannia",
+          "Athena"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Marianne was the female allegory of the French nation.",
+          "wrong_options": {
+            "0": "Germania represented Germany.",
+            "2": "Britannia represented Britain.",
+            "3": "Athena was a Greek goddess."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-eur-m1",
+        "question": "What was the main aim of the Congress of Vienna?",
+        "options": [
+          "To spread revolutionary ideas",
+          "To restore monarchies and balance power",
+          "To unify Germany",
+          "To abolish the slave trade"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The Congress aimed to restore the old order and maintain a balance of power.",
+          "wrong_options": {
+            "0": "The Congress opposed revolutionary ideas.",
+            "2": "German unification came later, through Prussia.",
+            "3": "Slave trade abolition was not its main aim."
+          }
+        }
+      },
+      {
+        "id": "q-eur-m2",
+        "question": "What was the immediate result of the July Revolution of 1830 in France?",
+        "options": [
+          "A republic was declared",
+          "Louis Philippe became constitutional monarch",
+          "Napoleon returned",
+          "France lost Alsace-Lorraine"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Louis Philippe became constitutional monarch after the Bourbon king was overthrown.",
+          "wrong_options": {
+            "0": "A republic was declared in 1848, not 1830.",
+            "2": "Napoleon returned in 1815, not 1830.",
+            "3": "France lost Alsace-Lorraine in 1871."
+          }
+        }
+      },
+      {
+        "id": "q-eur-m3",
+        "question": "The Treaty of Constantinople of 1832 recognised the independence of which country?",
+        "options": [
+          "Belgium",
+          "Greece",
+          "Italy",
+          "Poland"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The treaty recognised Greek independence in 1832.",
+          "wrong_options": {
+            "0": "Belgium became independent from the Netherlands.",
+            "2": "Italy was unified in 1861.",
+            "3": "Poland remained under Russian control."
+          }
+        }
+      },
+      {
+        "id": "q-eur-m4",
+        "question": "Why did Friedrich Wilhelm IV refuse the crown offered by the Frankfurt Parliament?",
+        "options": [
+          "He wanted a republic",
+          "He rejected a crown offered by commoners",
+          "He was not a German prince",
+          "He supported Austria"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "He refused because he would not accept a crown offered by an elected assembly of commoners.",
+          "wrong_options": {
+            "0": "He was a monarchist, not a republican.",
+            "2": "He was the King of Prussia, a German prince.",
+            "3": "His objection was to the source of the crown, not simply support for Austria."
+          }
+        }
+      },
+      {
+        "id": "q-eur-m5",
+        "question": "Why was the Zollverein important for German unification?",
+        "options": [
+          "It created a German army",
+          "It removed internal tariffs and linked German states economically",
+          "It abolished the monarchy",
+          "It gave women the vote"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Economic integration through the customs union prepared the ground for political unity.",
+          "wrong_options": {
+            "0": "It was an economic union, not an army.",
+            "2": "It did not abolish monarchy.",
+            "3": "It had nothing to do with women's suffrage."
+          }
+        }
+      },
+      {
+        "id": "q-eur-m6",
+        "question": "What was Bismarck's policy of blood and iron?",
+        "options": [
+          "Rule by Parliament",
+          "Use of military power and war to achieve unification",
+          "Free trade only",
+          "Peaceful negotiation only"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Blood and iron meant using military strength and war rather than speeches and votes.",
+          "wrong_options": {
+            "0": "Bismarck distrusted parliamentary rule.",
+            "2": "Free trade was not the meaning of the phrase.",
+            "3": "The policy relied on force, not only negotiation."
+          }
+        }
+      },
+      {
+        "id": "q-eur-m7",
+        "question": "What was Cavour's main contribution to Italian unification?",
+        "options": [
+          "Leading the Red Shirts",
+          "Diplomacy and alliance with France",
+          "Founding Young Italy",
+          "Writing the Italian constitution"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Cavour used diplomacy and secured French support against Austria.",
+          "wrong_options": {
+            "0": "Garibaldi led the Red Shirts.",
+            "2": "Mazzini founded Young Italy.",
+            "3": "Cavour was a statesman, not the constitution writer."
+          }
+        }
+      },
+      {
+        "id": "q-eur-m8",
+        "question": "The Act of Union of 1707 united which two countries?",
+        "options": [
+          "England and Ireland",
+          "England and Scotland",
+          "Scotland and Ireland",
+          "Britain and France"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The Act of Union of 1707 joined England and Scotland.",
+          "wrong_options": {
+            "0": "Ireland was incorporated in 1801.",
+            "2": "Scotland and Ireland were not united by this act.",
+            "3": "Britain and France were never united."
+          }
+        }
+      },
+      {
+        "id": "q-eur-m9",
+        "question": "Why were the Balkans called the powder keg of Europe?",
+        "options": [
+          "They had large oil reserves",
+          "Rival nationalisms and great-power competition made conflict likely",
+          "They were united under one government",
+          "They had no ethnic diversity"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Competing nationalisms and great-power rivalry made the region explosive.",
+          "wrong_options": {
+            "0": "Oil was not the reason.",
+            "2": "The region was divided, not united.",
+            "3": "It was highly diverse."
+          }
+        }
+      },
+      {
+        "id": "q-eur-m10",
+        "question": "What did the broken chains in the allegory of Germania represent?",
+        "options": [
+          "Heroism",
+          "Readiness to fight",
+          "Freedom from oppression",
+          "Willingness to make peace"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Broken chains symbolised freedom from oppression.",
+          "wrong_options": {
+            "0": "The oak leaves symbolised heroism.",
+            "1": "The sword symbolised readiness to fight.",
+            "3": "The olive branch symbolised peace."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-eur-c1",
+        "question": "Which statement best explains why nationalism became more aggressive after 1871?",
+        "options": [
+          "It was linked to imperial rivalry and ideas of racial superiority",
+          "It rejected all forms of state power",
+          "It opposed colonial expansion",
+          "It was limited to cultural festivals"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Nationalism fused with imperialism, militarism, and racial ideas after 1871.",
+          "wrong_options": {
+            "1": "Aggressive nationalism celebrated state power.",
+            "2": "It supported colonial expansion.",
+            "3": "It was a mass political force, not only cultural."
+          }
+        }
+      },
+      {
+        "id": "q-eur-c2",
+        "question": "Which factor most weakened the Frankfurt Parliament?",
+        "options": [
+          "It had no army or revenue",
+          "It had too many soldiers",
+          "It was supported by all German princes",
+          "It included women delegates"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The assembly lacked military and financial power.",
+          "wrong_options": {
+            "1": "It did not command an army.",
+            "2": "Most princes opposed it.",
+            "3": "Women were excluded."
+          }
+        }
+      },
+      {
+        "id": "q-eur-c3",
+        "question": "Which comparison of German and Italian unification is correct?",
+        "options": [
+          "Germany was unified mainly by Prussian state power; Italy relied more on popular movements and diplomacy",
+          "Both were unified mainly by the Pope",
+          "Italy was unified before 1848",
+          "Germany was unified by Mazzini"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Prussia and Bismarck dominated Germany, while Mazzini, Cavour, and Garibaldi shaped Italy.",
+          "wrong_options": {
+            "1": "The Pope opposed Italian unification.",
+            "2": "Italy was unified in 1861.",
+            "3": "Mazzini was Italian."
+          }
+        }
+      },
+      {
+        "id": "q-eur-c4",
+        "question": "Why did conservatives in Prussia support German unification?",
+        "options": [
+          "To strengthen the monarchy and state against democracy",
+          "To establish a workers republic",
+          "To end all tariffs",
+          "To give power to the Catholic Church"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Bismarck used unification to strengthen the Prussian monarchy and state.",
+          "wrong_options": {
+            "1": "Conservatives opposed a workers republic.",
+            "2": "Tariff policy was only one part of the programme.",
+            "3": "The conflict with the Catholic Church came later."
+          }
+        }
+      },
+      {
+        "id": "q-eur-c5",
+        "question": "How did Balkan nationalism contribute to the First World War?",
+        "options": [
+          "It created a stable balance of power",
+          "Great-power rivalry over the region increased tension",
+          "It ended all alliances",
+          "It united the Balkans under one state"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Rivalry among Russia, Austria-Hungary, and others over the Balkans raised tension.",
+          "wrong_options": {
+            "0": "It destabilised the region.",
+            "2": "It strengthened rival alliances.",
+            "3": "The Balkans remained divided."
+          }
+        }
+      },
+      {
+        "id": "q-eur-c6",
+        "question": "What happened to Ireland in 1801?",
+        "options": [
+          "It became independent",
+          "It was incorporated into the United Kingdom",
+          "It joined France",
+          "It was partitioned"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Ireland was incorporated into the United Kingdom in 1801.",
+          "wrong_options": {
+            "0": "Independence came much later.",
+            "2": "Ireland did not join France.",
+            "3": "Partition occurred in 1921."
+          }
+        }
+      },
+      {
+        "id": "q-eur-c7",
+        "question": "What is a plebiscite?",
+        "options": [
+          "A vote by the people on a specific issue",
+          "A law passed by a monarch",
+          "A treaty between states",
+          "A military alliance"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A plebiscite is a direct vote by the people on a specific question.",
+          "wrong_options": {
+            "1": "It is a popular vote, not a royal decree.",
+            "2": "It is not a treaty.",
+            "3": "It is not an alliance."
+          }
+        }
+      },
+      {
+        "id": "q-eur-c8",
+        "question": "Why did liberal nationalism appeal to the rising middle class?",
+        "options": [
+          "It promised legal equality and free trade",
+          "It promised to abolish all property",
+          "It supported feudal privileges",
+          "It opposed education"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Legal equality and free trade suited the commercial and professional middle class.",
+          "wrong_options": {
+            "1": "Liberals defended property.",
+            "2": "They opposed feudal privilege.",
+            "3": "They supported education."
+          }
+        }
+      },
+      {
+        "id": "q-eur-c9",
+        "question": "Which arrangement was part of the Congress of Vienna settlement?",
+        "options": [
+          "Belgium was joined to the Netherlands",
+          "Germany was unified",
+          "Italy was unified",
+          "Poland became independent"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Netherlands was enlarged to include Belgium as a buffer state.",
+          "wrong_options": {
+            "1": "Germany was unified in 1871.",
+            "2": "Italy was unified in 1861.",
+            "3": "Poland was divided among powers."
+          }
+        }
+      },
+      {
+        "id": "q-eur-c10",
+        "question": "How was the idea of a civilising mission used in the late nineteenth century?",
+        "options": [
+          "To justify colonial rule over other peoples",
+          "To support equal rights for colonies",
+          "To end imperialism",
+          "To promote only free trade"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The civilising mission was used to justify imperial conquest and rule.",
+          "wrong_options": {
+            "1": "It denied equality to colonised peoples.",
+            "2": "It supported imperialism.",
+            "3": "It was broader than trade policy."
+          }
+        }
+      }
+    ]
+  },
+  "mind_maps": {
+    "title": "The Rise of Nationalism in Europe - Complete Mind Map",
+    "type": "hierarchical",
+    "root": "The Rise of Nationalism in Europe",
+    "branches": [
+      {
+        "concept": "Origins: French Revolution",
+        "sub_nodes": [
+          "1789: sovereignty passes from monarch to citizens",
+          "la patrie and le citoyen",
+          "Tricolour and revolutionary symbols",
+          "Uniform laws, no internal customs, common measures",
+          "French as the language of the nation",
+          "Napoleon's Civil Code of 1804"
+        ],
+        "connections": "Revolutionary ideas spread through war and conquest"
+      },
+      {
+        "concept": "Ideologies",
+        "sub_nodes": [
+          "Liberalism: individual freedom, equality before law, consent",
+          "Economic liberalism: free markets, no guild or tariff restrictions",
+          "Nationalism: a people with a shared identity should have a state",
+          "Conservatism: monarchy, religion, hierarchy, stability",
+          "Limited franchise in nineteenth-century liberalism"
+        ],
+        "connections": "Liberalism and nationalism often travelled together, but not always"
+      },
+      {
+        "concept": "Conservative Order",
+        "sub_nodes": [
+          "Congress of Vienna, 1815",
+          "Metternich and the great powers",
+          "Bourbon restoration in France",
+          "Buffer states around France",
+          "German Confederation of thirty-nine states",
+          "Balance of power"
+        ],
+        "connections": "The settlement tried to freeze the map of Europe"
+      },
+      {
+        "concept": "Revolutions",
+        "sub_nodes": [
+          "1830 July Revolution in France",
+          "Belgian independence, 1830",
+          "Greek independence recognised, 1832",
+          "1848 food shortages and unemployment",
+          "French republic and universal male suffrage",
+          "Frankfurt Parliament, 18 May 1848"
+        ],
+        "connections": "Each wave spread ideas but was contained by the old rulers"
+      },
+      {
+        "concept": "Unification",
+        "sub_nodes": [
+          "Bismarck appointed in 1862",
+          "Wars with Denmark, Austria, and France",
+          "German Empire proclaimed at Versailles, 1871",
+          "Mazzini and Young Italy, 1831",
+          "Cavour's diplomacy and French alliance, 1859",
+          "Garibaldi's Red Shirts, 1860",
+          "Italy unified in 1861; Rome added in 1870"
+        ],
+        "connections": "State power and popular movements produced different nation-states"
+      },
+      {
+        "concept": "Nationalism after 1871",
+        "sub_nodes": [
+          "British union: 1707 and 1801",
+          "Union Jack, anthem, and English language",
+          "Irish exclusion and the 1798 rebellion",
+          "Ottoman Empire as the sick man of Europe",
+          "Balkan independence movements",
+          "Great-power rivalry and the powder keg",
+          "Militarism, imperialism, and racial ideas"
+        ],
+        "connections": "Nationalism became both a force for liberation and a cause of war"
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "How Nationalism, Liberalism, and Conservatism Connect",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "French Revolution 1789",
+        "group": "origin"
+      },
+      {
+        "id": "n2",
+        "label": "Liberalism",
+        "group": "ideology"
+      },
+      {
+        "id": "n3",
+        "label": "Nationalism",
+        "group": "ideology"
+      },
+      {
+        "id": "n4",
+        "label": "Congress of Vienna 1815",
+        "group": "conservative"
+      },
+      {
+        "id": "n5",
+        "label": "Conservatism",
+        "group": "conservative"
+      },
+      {
+        "id": "n6",
+        "label": "Revolutions 1830-1848",
+        "group": "revolution"
+      },
+      {
+        "id": "n7",
+        "label": "German Unification 1871",
+        "group": "unification"
+      },
+      {
+        "id": "n8",
+        "label": "Italian Unification 1861-1870",
+        "group": "unification"
+      },
+      {
+        "id": "n9",
+        "label": "Balkan Crisis",
+        "group": "conflict"
+      },
+      {
+        "id": "n10",
+        "label": "Aggressive Nationalism",
+        "group": "conflict"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n2",
+        "n6"
+      ],
+      [
+        "n3",
+        "n6"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n5",
+        "n6"
+      ],
+      [
+        "n6",
+        "n7"
+      ],
+      [
+        "n6",
+        "n8"
+      ],
+      [
+        "n7",
+        "n10"
+      ],
+      [
+        "n8",
+        "n10"
+      ],
+      [
+        "n9",
+        "n10"
+      ],
+      [
+        "n3",
+        "n9"
+      ]
+    ]
+  },
+  "common_misconceptions": [
+    {
+      "misconception": "Nationalism has always been democratic and peaceful.",
+      "correction": "Nationalism can be liberating or aggressive. After 1871 it was often tied to militarism, imperialism, and racial superiority."
+    },
+    {
+      "misconception": "Nineteenth-century liberals supported universal suffrage.",
+      "correction": "Most liberals restricted the vote to property-owning men and excluded women. Universal male suffrage came later, and universal suffrage later still."
+    },
+    {
+      "misconception": "The Congress of Vienna undid every change of the French Revolution.",
+      "correction": "It restored monarchies and redrew borders, but many revolutionary changes such as legal equality and the abolition of feudal privileges survived in parts of Europe."
+    },
+    {
+      "misconception": "The revolutions of 1848 succeeded in creating lasting liberal nations.",
+      "correction": "Most 1848 revolutions were suppressed. The Frankfurt Parliament failed, and the old rulers returned, although the ideas survived."
+    },
+    {
+      "misconception": "Germany was unified mainly by popular vote and peaceful meetings.",
+      "correction": "Germany was unified mainly through Prussian military power and Bismarck's wars against Denmark, Austria, and France."
+    },
+    {
+      "misconception": "Mazzini alone unified Italy.",
+      "correction": "Mazzini kept the idea alive, but Cavour's diplomacy and Garibaldi's campaigns were also essential, and Victor Emmanuel II became king in 1861."
+    },
+    {
+      "misconception": "Britain became a nation-state through a revolution like France.",
+      "correction": "Britain changed through parliamentary action, the 1707 Act of Union, and the incorporation of Ireland in 1801, not through a revolution like 1789."
+    },
+    {
+      "misconception": "The Balkans were unimportant to the great powers.",
+      "correction": "The Balkans were central to great-power rivalry. Nationalist movements and competition among Russia, Austria-Hungary, Germany, and Britain made the region a powder keg."
+    }
+  ],
+  "chapterId": "the-rise-of-nationalism-in-europe",
+  "subjectId": "social-science",
+  "subjectName": "Social Science",
+  "unitId": "social-science-1",
+  "unitName": "India and the Contemporary World - II",
+  "examWeightage": 20,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

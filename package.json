@@ -1,0 +1,44 @@
+{
+  "name": "classx-platform",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Class X mastery platform: CBSE 2026-27 curriculum, hybrid RAG tutor, practice and mock exams.",
+  "scripts": {
+    "sync": "node scripts/sync-content.mjs",
+    "dev": "concurrently -k -n api,web -c blue,magenta \"node --watch server/index.js\" \"vite --config web/vite.config.ts\"",
+    "build": "vite build --config web/vite.config.ts",
+    "start": "node server/index.js",
+    "test": "node --test tests/*.test.js",
+    "check": "node scripts/check.mjs",
+    "typecheck": "tsc --noEmit -p web/tsconfig.json",
+    "coverage": "node scripts/coverage.mjs",
+    "coverage:strict": "node scripts/coverage.mjs --strict",
+    "e2e": "npm run build && node scripts/e2e.mjs",
+    "e2e:install": "playwright-core install firefox",
+    "verify": "npm run typecheck && npm run check && npm run coverage && npm test && npm run e2e"
+  },
+  "dependencies": {
+    "compression": "^1.8.1",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^4.22.2",
+    "katex": "^0.16.22",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.0",
+    "playwright-core": "^1.64.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

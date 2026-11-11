@@ -1,0 +1,1291 @@
+{
+  "subject": "Economics",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 3,
+  "chapter": "Money and Credit",
+  "id": "money-and-credit",
+  "lesson": 1,
+  "title": "Money and Credit - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Explain the functions of money and the problems of barter",
+    "Distinguish currency from demand deposits",
+    "Describe how banks accept deposits and create credit",
+    "Identify the terms of credit and calculate simple interest",
+    "Compare formal and informal sources of credit",
+    "Explain the role of self-help groups in financial inclusion",
+    "Analyse debt traps and suggest ways to avoid them",
+    "Solve board-style case and numerical questions on credit"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS9_POVERTY_AS_A_CHALLENGE",
+    "SOCIAL_CLASS8_UNDERSTANDING_MARKETS",
+    "MATH_CLASS7_SIMPLE_INTEREST",
+    "MATH_CLASS8_PERCENTAGE"
+  ],
+  "concepts": [
+    {
+      "id": "concept-1",
+      "name": "Money and Its Functions",
+      "title": "Money and Its Functions",
+      "explanation": "Money is anything generally accepted as a medium of exchange, a store of value, a unit of account, and a standard of deferred payment. Before money, people used barter, exchanging goods directly. Barter requires a double coincidence of wants: each person must want exactly what the other offers. It also makes it hard to store value and to compare prices. Money solves these problems by separating buying from selling. It is accepted by everyone in a given economy and allows goods, services, and debts to be measured in a common unit.",
+      "purpose": "The concept explains why money exists and how it supports specialization, trade, saving, and credit. It also shows the practical difficulties that money removes.",
+      "real_life_application": "A vegetable seller accepts money rather than waiting to find a customer who has exactly the shoes the seller wants.",
+      "key_points": [
+        "Money is generally accepted as a medium of exchange.",
+        "It acts as a store of value and a unit of account.",
+        "It is a standard of deferred payment for loans and debts.",
+        "Barter requires a double coincidence of wants.",
+        "Money separates the act of buying from the act of selling.",
+        "Money makes price comparison and saving easier."
+      ],
+      "day_to_day_usage": [
+        "Paying cash for vegetables instead of bartering.",
+        "Saving money for a future purchase.",
+        "Comparing prices of two mobile phones in rupees.",
+        "Paying a loan instalment in money.",
+        "Receiving a salary in money rather than goods.",
+        "Using a price list to compare shopkeepers."
+      ]
+    },
+    {
+      "id": "concept-2",
+      "name": "Modern Forms of Money",
+      "title": "Modern Forms of Money",
+      "explanation": "Modern money includes currency and demand deposits. Currency consists of paper notes and coins. In India, the Reserve Bank of India issues currency notes on behalf of the central government, while coins are issued by the government. Currency is legal tender, so it must be accepted for payment. Demand deposits are money kept in bank accounts that can be withdrawn on demand through cheques, cards, or electronic transfers. They are called demand deposits because the depositor can demand payment at any time. Both currency and demand deposits are accepted as means of payment.",
+      "purpose": "The concept explains the forms in which money circulates and why bank deposits are counted as money even though they are not cash.",
+      "real_life_application": "You can pay a shopkeeper in cash or by a mobile banking transfer from your savings account; both are forms of money.",
+      "key_points": [
+        "Currency includes paper notes and coins.",
+        "The RBI issues currency notes in India.",
+        "Currency is legal tender and must be accepted.",
+        "Demand deposits can be withdrawn on demand.",
+        "Cheques and electronic transfers are used to pay from demand deposits.",
+        "Modern money has little or no intrinsic value."
+      ],
+      "day_to_day_usage": [
+        "Paying with rupee notes and coins.",
+        "Writing a cheque for school fees.",
+        "Using a debit card at a shop.",
+        "Transferring money through a banking app.",
+        "Receiving a salary directly into a bank account.",
+        "Withdrawing cash from an ATM."
+      ]
+    },
+    {
+      "id": "concept-3",
+      "name": "Banks and Credit Creation",
+      "title": "Banks and Credit Creation",
+      "explanation": "Banks accept deposits from people who have surplus money and lend to those who need funds. They pay interest on deposits and charge a higher interest on loans. The difference between the lending rate and the deposit rate helps cover costs and earn profit. Banks keep only a fraction of deposits as reserves and lend the rest. When borrowers spend the loan, the money returns to the banking system as new deposits, and a part of it can be lent again. This process is called credit creation. Banks therefore connect savers and borrowers and expand credit in the economy.",
+      "purpose": "The concept explains the bank's role as a financial intermediary and how lending supports investment and consumption.",
+      "real_life_application": "A bank uses your savings deposit to give a loan to a small shop, while keeping enough cash to meet withdrawals.",
+      "key_points": [
+        "Banks accept deposits and pay interest.",
+        "They lend funds and charge a higher interest rate.",
+        "The interest spread covers costs and profit.",
+        "Banks keep a fraction of deposits as reserves.",
+        "Lending creates new deposits and expands credit.",
+        "Banks link savers with borrowers."
+      ],
+      "day_to_day_usage": [
+        "Opening a savings account.",
+        "Taking a home or vehicle loan.",
+        "Earning interest on a fixed deposit.",
+        "Using an ATM to withdraw part of a deposit.",
+        "A shop taking a working capital loan.",
+        "A student taking an education loan."
+      ]
+    },
+    {
+      "id": "concept-4",
+      "name": "Credit and Terms of Credit",
+      "title": "Credit and Terms of Credit",
+      "explanation": "Credit is a loan that is repaid later, usually with interest. It allows a person to buy inputs, equipment, or a house before saving the full amount. Every loan has terms of credit: the interest rate, collateral, documentation, and mode of repayment. Collateral is an asset that the borrower pledges as security; if the loan is not repaid, the lender can sell it. Credit can be productive, such as a loan for seeds or machinery, or it can be for consumption. High-interest credit can push a borrower into a debt trap, especially when income is uncertain.",
+      "purpose": "The concept shows that credit is not automatically good or bad. Its effect depends on the purpose, interest rate, repayment schedule, and risk.",
+      "real_life_application": "A farmer who borrows at a very high rate to buy seeds may lose land if the crop fails, while a shop that borrows at a fair rate to buy stock may grow.",
+      "key_points": [
+        "Credit is a loan repaid later, usually with interest.",
+        "Terms include interest rate, collateral, documents, and repayment mode.",
+        "Collateral is an asset pledged as security.",
+        "Productive credit can raise income.",
+        "High-cost credit can cause a debt trap.",
+        "Credit risk is higher when income is uncertain."
+      ],
+      "day_to_day_usage": [
+        "Taking a loan to buy a two-wheeler.",
+        "Using a credit card and repaying later.",
+        "A farmer borrowing for seeds and fertiliser.",
+        "A shopkeeper borrowing for stock.",
+        "A housing loan repaid in monthly instalments.",
+        "A micro-loan from a self-help group."
+      ]
+    },
+    {
+      "id": "concept-5",
+      "name": "Formal and Informal Sources of Credit",
+      "title": "Formal and Informal Sources of Credit",
+      "explanation": "Formal sources of credit include banks, cooperative societies, and other institutions regulated by the Reserve Bank of India. They usually charge lower interest, require documents, and follow rules. Informal sources include moneylenders, traders, employers, landlords, and relatives. They often charge very high interest, use flexible but risky terms, and are not supervised by the RBI. Poor households may rely on informal credit because they lack collateral or documents. Expanding formal credit, simplifying procedures, and promoting self-help groups can reduce dependence on moneylenders.",
+      "purpose": "The concept explains why the source of credit matters. Cheap and reliable formal credit supports development, while exploitative informal credit can deepen poverty.",
+      "real_life_application": "A small vendor may borrow from a moneylender at a very high rate because a bank loan requires collateral and paperwork.",
+      "key_points": [
+        "Formal credit comes from RBI-regulated institutions.",
+        "Banks and cooperatives are formal sources.",
+        "Informal credit comes from moneylenders, traders, and landlords.",
+        "Informal loans often carry very high interest.",
+        "Lack of collateral pushes poor households to informal lenders.",
+        "Expanding formal credit improves financial security."
+      ],
+      "day_to_day_usage": [
+        "Borrowing from a bank for a small business.",
+        "Taking a loan from a cooperative society.",
+        "Borrowing from a moneylender in an emergency.",
+        "Buying goods on credit from a trader.",
+        "Using a self-help group loan instead of a moneylender.",
+        "Comparing interest rates before borrowing."
+      ]
+    },
+    {
+      "id": "concept-6",
+      "name": "Self-Help Groups and Financial Inclusion",
+      "title": "Self-Help Groups and Financial Inclusion",
+      "explanation": "A self-help group (SHG) is a small group of people, usually 15 to 20 women, who save regularly and lend to one another. Members pool small savings, decide loans collectively, and repay on agreed terms. SHGs usually do not require collateral, so they help people who cannot access bank loans. Many SHGs open bank accounts and later receive bank credit as a group. Beyond credit, SHGs build confidence, skills, and social networks. They are an important tool for financial inclusion, which means ensuring that all people have access to affordable financial services.",
+      "purpose": "The concept shows a practical way to provide credit to poor households and to strengthen women's participation in the economy.",
+      "real_life_application": "A group of women in a village saves a small amount each month and lends it to a member to buy a sewing machine or start a dairy business.",
+      "key_points": [
+        "SHGs are small groups that save and lend among members.",
+        "Most SHGs have 15 to 20 members, often women.",
+        "Group savings provide small, collateral-free loans.",
+        "SHGs can access bank credit as a group.",
+        "They build skills, confidence, and social support.",
+        "SHGs promote financial inclusion."
+      ],
+      "day_to_day_usage": [
+        "A women's group saving monthly for emergencies.",
+        "A member borrowing to buy a sewing machine.",
+        "A group opening a bank account.",
+        "Members repaying in small instalments.",
+        "A group starting a small food-processing unit.",
+        "Women discussing school and health issues at meetings."
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-mc-1",
+      "title": "The Double Coincidence of Wants",
+      "topic": "Barter and the need for money",
+      "problem": "A shoemaker wants rice, and a farmer wants shoes. Explain why barter may fail even though each has what the other wants. Then explain how money solves the problem.",
+      "solution": [
+        "Step 1: Barter requires a double coincidence of wants: the shoemaker must want the farmer's rice and the farmer must want the shoemaker's shoes.",
+        "Step 2: In this example the wants do match, so a direct exchange is possible.",
+        "Step 3: But if the farmer already has shoes, or wants shoes of a different size, the exchange fails.",
+        "Step 4: The shoemaker may also want rice from a different farmer who does not want shoes.",
+        "Step 5: With money, the shoemaker sells shoes for money and uses the money to buy rice from anyone who accepts it.",
+        "Step 6: Money therefore removes the need for a direct match of wants."
+      ],
+      "board_mode": "Write the definition of double coincidence, then show one failed barter example and one money example in two columns.",
+      "answer": "Barter needs both parties to want each other's goods; money lets a seller sell to one person and buy from another.",
+      "board_tip": "Use a concrete pair of goods. Abstract explanations lose marks when the question asks for an example."
+    },
+    {
+      "id": "we-mc-2",
+      "title": "Comparing Formal and Informal Interest",
+      "topic": "Simple interest and terms of credit",
+      "problem": "A shopkeeper borrows Rs 20,000 for 2 years. A bank charges 12% simple interest per year, while a moneylender charges 24% per year. Calculate the interest and total repayment under each source, and the saving from the bank loan.",
+      "solution": [
+        "Step 1: Simple interest = (Principal x Rate x Time) / 100.",
+        "Step 2: Bank interest = (20,000 x 12 x 2) / 100 = Rs 4,800.",
+        "Step 3: Bank repayment = 20,000 + 4,800 = Rs 24,800.",
+        "Step 4: Moneylender interest = (20,000 x 24 x 2) / 100 = Rs 9,600.",
+        "Step 5: Moneylender repayment = 20,000 + 9,600 = Rs 29,600.",
+        "Step 6: Saving from the bank loan = 9,600 - 4,800 = Rs 4,800."
+      ],
+      "board_mode": "Write the formula once, then show the two substitutions side by side. End with the difference in interest.",
+      "answer": "Bank interest Rs 4,800 (total Rs 24,800); moneylender interest Rs 9,600 (total Rs 29,600); saving Rs 4,800.",
+      "board_tip": "Keep the principal and time the same when comparing rates. State the formula before substituting values."
+    },
+    {
+      "id": "we-mc-3",
+      "title": "Bank Spread and Gross Margin",
+      "topic": "Banks as intermediaries",
+      "problem": "A bank pays 4% interest on a deposit of Rs 50,000 for one year and lends the same amount at 10% for one year. Calculate the interest paid, interest earned, and gross margin before costs.",
+      "solution": [
+        "Step 1: Interest paid to depositor = (50,000 x 4 x 1) / 100 = Rs 2,000.",
+        "Step 2: Interest earned from borrower = (50,000 x 10 x 1) / 100 = Rs 5,000.",
+        "Step 3: Gross margin = 5,000 - 2,000 = Rs 3,000.",
+        "Step 4: The margin must cover salaries, rent, technology, and loan losses.",
+        "Step 5: The bank's profit is the margin minus these operating costs."
+      ],
+      "board_mode": "Show the two interest calculations, then subtract. Label the result as gross margin, not final profit.",
+      "answer": "Interest paid Rs 2,000; interest earned Rs 5,000; gross margin Rs 3,000 before costs.",
+      "board_tip": "Do not call the spread 'profit'. Operating costs and bad loans still have to be deducted."
+    },
+    {
+      "id": "we-mc-4",
+      "title": "Credit Creation with a Reserve Ratio",
+      "topic": "Fractional reserve banking",
+      "problem": "A bank receives a new deposit of Rs 1,000 and keeps 20% as reserves. Calculate the reserves, the amount lent, and the maximum total deposits that can be created if the process continues, using a money multiplier of 1 divided by the reserve ratio.",
+      "solution": [
+        "Step 1: Reserve ratio = 20% = 0.20.",
+        "Step 2: Reserves = 20% of Rs 1,000 = Rs 200.",
+        "Step 3: Amount lent = 1,000 - 200 = Rs 800.",
+        "Step 4: Money multiplier = 1 / 0.20 = 5.",
+        "Step 5: Maximum total deposits = 1,000 x 5 = Rs 5,000.",
+        "Step 6: The process assumes every loan returns to the banking system and banks hold exactly the required reserves."
+      ],
+      "board_mode": "Write the reserve ratio, reserves, loan amount, and multiplier in separate lines. State the assumption at the end.",
+      "answer": "Reserves Rs 200; loan Rs 800; maximum total deposits Rs 5,000 with a multiplier of 5.",
+      "board_tip": "Mention that the multiplier is a maximum. Leakages such as cash holdings reduce the actual expansion."
+    },
+    {
+      "id": "we-mc-5",
+      "title": "SHG Savings and a Group Loan",
+      "topic": "Self-help groups",
+      "problem": "An SHG has 20 women who save Rs 200 each per month. After 6 months, the group lends Rs 10,000 to a member at 12% simple interest for one year. Calculate the group's total savings after 6 months, the interest earned on the loan, and the amount repaid.",
+      "solution": [
+        "Step 1: Monthly savings = 20 x 200 = Rs 4,000.",
+        "Step 2: Savings after 6 months = 4,000 x 6 = Rs 24,000.",
+        "Step 3: Interest on the loan = (10,000 x 12 x 1) / 100 = Rs 1,200.",
+        "Step 4: Amount repaid = 10,000 + 1,200 = Rs 11,200.",
+        "Step 5: The interest adds to the group's funds and can support future loans.",
+        "Step 6: The group decides loan terms collectively, which builds trust and repayment discipline."
+      ],
+      "board_mode": "Show monthly savings, then multiply by 6. Calculate interest separately and add it to the principal.",
+      "answer": "Savings after 6 months Rs 24,000; interest Rs 1,200; total repayment Rs 11,200.",
+      "board_tip": "Read whether the question asks for the group's savings or the member's repayment. They are different amounts."
+    }
+  ],
+  "exercises": {
+    "exercise_1_1": {
+      "title": "NCERT Exercise 1.1 - Money and Barter",
+      "objective": "Explain the functions of money and the limitations of barter",
+      "problems": [
+        {
+          "id": "mc-ex1-1",
+          "question": "Define money.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Money is anything generally accepted as a medium of exchange.",
+            "Step 2: It also acts as a store of value, a unit of account, and a standard of deferred payment.",
+            "Step 3: Modern money includes currency and demand deposits."
+          ],
+          "final_answer": "Money is a generally accepted medium of exchange that also stores value and measures prices and debts."
+        },
+        {
+          "id": "mc-ex1-2",
+          "question": "What is the double coincidence of wants?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: In barter, each person must want exactly what the other person offers.",
+            "Step 2: This mutual match of wants is called the double coincidence of wants.",
+            "Step 3: If the match fails, the exchange cannot take place."
+          ],
+          "final_answer": "It is the situation in barter where both parties want each other's goods."
+        },
+        {
+          "id": "mc-ex1-3",
+          "question": "Name two modern forms of money.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Currency consists of notes and coins.",
+            "Step 2: Demand deposits are money held in bank accounts.",
+            "Step 3: Both are accepted as means of payment."
+          ],
+          "final_answer": "Currency and demand deposits."
+        },
+        {
+          "id": "mc-ex1-4",
+          "question": "Explain three functions of money.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: As a medium of exchange, money is accepted for goods and services.",
+            "Step 2: As a store of value, money can be saved for future use.",
+            "Step 3: As a unit of account, money measures prices and compares values.",
+            "Step 4: It also acts as a standard of deferred payment for loans."
+          ],
+          "final_answer": "Money serves as a medium of exchange, a store of value, a unit of account, and a standard of deferred payment."
+        },
+        {
+          "id": "mc-ex1-5",
+          "question": "State three difficulties of the barter system.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Barter requires a double coincidence of wants.",
+            "Step 2: It is difficult to store value in perishable goods.",
+            "Step 3: There is no common unit for comparing prices.",
+            "Step 4: It is hard to make deferred payments or loans."
+          ],
+          "final_answer": "Barter suffers from the double coincidence problem, difficult storage, no common measure of value, and problems in deferred payment."
+        },
+        {
+          "id": "mc-ex1-6",
+          "question": "Why is currency accepted as money?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Currency is issued by the Reserve Bank of India on behalf of the government.",
+            "Step 2: It is legal tender, so it must be accepted for payment.",
+            "Step 3: People have confidence that others will accept it.",
+            "Step 4: Its value is backed by the authority of the state rather than by the metal content."
+          ],
+          "final_answer": "Currency is legal tender issued by the RBI and backed by government authority, so people accept it."
+        }
+      ]
+    },
+    "exercise_1_2": {
+      "title": "NCERT Exercise 1.2 - Credit and Interest",
+      "objective": "Analyse terms of credit, compare sources, and calculate simple interest",
+      "problems": [
+        {
+          "id": "mc-ex2-1",
+          "question": "What is credit?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Credit is a loan that is repaid later.",
+            "Step 2: The borrower usually pays interest along with the principal.",
+            "Step 3: Credit can be used for production or consumption."
+          ],
+          "final_answer": "Credit is a loan repaid later, usually with interest."
+        },
+        {
+          "id": "mc-ex2-2",
+          "question": "Name two formal sources of credit.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Banks are formal sources regulated by the RBI.",
+            "Step 2: Cooperative societies are also formal sources.",
+            "Step 3: Formal sources usually charge lower interest than moneylenders."
+          ],
+          "final_answer": "Banks and cooperative societies."
+        },
+        {
+          "id": "mc-ex2-3",
+          "question": "What are the terms of credit?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The interest rate is the cost of borrowing.",
+            "Step 2: Collateral is the asset pledged as security.",
+            "Step 3: Documentation and the mode of repayment are also terms.",
+            "Step 4: The loan duration and instalment schedule matter too."
+          ],
+          "final_answer": "Terms of credit include interest rate, collateral, documentation, and the mode and duration of repayment."
+        },
+        {
+          "id": "mc-ex2-4",
+          "question": "State three differences between formal and informal sources of credit.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Formal sources are regulated by the RBI; informal sources are not.",
+            "Step 2: Formal loans usually carry lower interest; informal loans often carry very high interest.",
+            "Step 3: Formal loans require documents and collateral; informal loans may be flexible but risky.",
+            "Step 4: Formal sources include banks and cooperatives; informal sources include moneylenders and traders."
+          ],
+          "final_answer": "They differ in regulation, interest rates, and documentation requirements."
+        },
+        {
+          "id": "mc-ex2-5",
+          "question": "A farmer borrows Rs 30,000 for 2 years. A bank charges 12% simple interest and a moneylender charges 24%. Calculate the interest under each and the difference.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Simple interest = (P x R x T) / 100.",
+            "Step 2: Bank interest = (30,000 x 12 x 2) / 100 = Rs 7,200.",
+            "Step 3: Moneylender interest = (30,000 x 24 x 2) / 100 = Rs 14,400.",
+            "Step 4: Difference = 14,400 - 7,200 = Rs 7,200.",
+            "Step 5: The informal loan costs twice as much in interest."
+          ],
+          "final_answer": "Bank interest Rs 7,200; moneylender interest Rs 14,400; difference Rs 7,200."
+        },
+        {
+          "id": "mc-ex2-6",
+          "question": "A farmer borrows at 36% annual interest to buy inputs. The crop fails and the loan is not repaid. Explain how a debt trap can arise and suggest two remedies.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: High interest makes the repayment amount grow faster than the farmer's income.",
+            "Step 2: If the crop fails, the farmer may borrow again to repay the first loan.",
+            "Step 3: Repeated borrowing at high interest can force the sale of land or assets, creating a debt trap.",
+            "Step 4: Remedy 1: expand formal credit at reasonable interest, including crop loans.",
+            "Step 5: Remedy 2: provide crop insurance and timely compensation for crop failure.",
+            "Step 6: Financial literacy and debt counselling can also help."
+          ],
+          "final_answer": "High interest plus crop failure forces repeated borrowing and asset loss; remedies include formal credit, insurance, and counselling."
+        }
+      ]
+    },
+    "exercise_1_3": {
+      "title": "NCERT Exercise 1.3 - Banks, SHGs, and Financial Inclusion",
+      "objective": "Apply credit creation, SHG savings, and credit evaluation",
+      "problems": [
+        {
+          "id": "mc-ex3-1",
+          "question": "What is a self-help group?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: An SHG is a small group that saves regularly.",
+            "Step 2: Members lend to one another on agreed terms.",
+            "Step 3: Most SHGs have 15 to 20 members, often women."
+          ],
+          "final_answer": "An SHG is a small group that pools savings and lends to its members."
+        },
+        {
+          "id": "mc-ex3-2",
+          "question": "How do banks create credit?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Banks keep a fraction of deposits as reserves.",
+            "Step 2: They lend the remaining amount to borrowers.",
+            "Step 3: When borrowers spend the loan, the money returns as new deposits.",
+            "Step 4: A part of these new deposits is lent again, so total credit expands."
+          ],
+          "final_answer": "Banks keep fractional reserves and lend the rest; returned loans become new deposits and support further lending."
+        },
+        {
+          "id": "mc-ex3-3",
+          "question": "A bank receives a deposit of Rs 2,000 and keeps 10% as reserves. Calculate reserves, loans, the money multiplier, and maximum total deposits.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Reserve ratio = 10% = 0.10.",
+            "Step 2: Reserves = 0.10 x 2,000 = Rs 200.",
+            "Step 3: Loans = 2,000 - 200 = Rs 1,800.",
+            "Step 4: Money multiplier = 1 / 0.10 = 10.",
+            "Step 5: Maximum total deposits = 2,000 x 10 = Rs 20,000.",
+            "Step 6: Actual deposits may be lower because of cash withdrawals and excess reserves."
+          ],
+          "final_answer": "Reserves Rs 200; loans Rs 1,800; multiplier 10; maximum deposits Rs 20,000."
+        },
+        {
+          "id": "mc-ex3-4",
+          "question": "\"All credit is bad.\" Evaluate this statement.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Credit can be productive when it funds seeds, machinery, or stock and raises income.",
+            "Step 2: It can be harmful when the interest is very high or the purpose is unproductive.",
+            "Step 3: A borrower can fall into a debt trap if income is uncertain and repayment is rigid.",
+            "Step 4: Whether credit is good or bad depends on its terms, purpose, and risk.",
+            "Step 5: The statement is therefore too absolute."
+          ],
+          "final_answer": "False; credit can support production and growth, but high-cost or risky credit can cause debt traps."
+        },
+        {
+          "id": "mc-ex3-5",
+          "question": "An SHG has 15 women who save Rs 300 each per month. After 8 months it lends Rs 20,000 at 12% simple interest for one year. Calculate the group's savings after 8 months, the interest, and the repayment amount.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Monthly savings = 15 x 300 = Rs 4,500.",
+            "Step 2: Savings after 8 months = 4,500 x 8 = Rs 36,000.",
+            "Step 3: Interest = (20,000 x 12 x 1) / 100 = Rs 2,400.",
+            "Step 4: Repayment = 20,000 + 2,400 = Rs 22,400.",
+            "Step 5: The interest strengthens the group's fund for future loans."
+          ],
+          "final_answer": "Savings Rs 36,000; interest Rs 2,400; repayment Rs 22,400."
+        },
+        {
+          "id": "mc-ex3-6",
+          "question": "A small shop needs Rs 40,000 for stock. A bank offers 12% for one year with collateral; a moneylender offers 30% with no paperwork. Compare the interest and advise the shopkeeper.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Bank interest = (40,000 x 12 x 1) / 100 = Rs 4,800.",
+            "Step 2: Moneylender interest = (40,000 x 30 x 1) / 100 = Rs 12,000.",
+            "Step 3: The moneylender costs Rs 7,200 more in interest.",
+            "Step 4: The bank is cheaper and regulated, but requires collateral and documents.",
+            "Step 5: If the shop can meet the bank's conditions, it should prefer the bank loan.",
+            "Step 6: If not, an SHG or cooperative may offer a safer alternative than a high-cost moneylender."
+          ],
+          "final_answer": "Bank interest Rs 4,800 versus moneylender Rs 12,000; prefer formal credit if eligible, otherwise seek an SHG or cooperative."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-mc-s-1",
+        "question": "Money is primarily used as a:",
+        "options": [
+          "Medium of exchange",
+          "Natural resource",
+          "Type of tax",
+          "Form of land"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Money is generally accepted in exchange for goods and services.",
+          "wrong_options": {
+            "1": "Money is not a natural resource.",
+            "2": "A tax is a payment to government, not money itself.",
+            "3": "Land is a separate asset."
+          }
+        }
+      },
+      {
+        "id": "q-mc-s-2",
+        "question": "The double coincidence of wants is a problem of:",
+        "options": [
+          "Barter",
+          "Banking",
+          "Taxation",
+          "Insurance"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Barter requires both parties to want each other's goods.",
+          "wrong_options": {
+            "1": "Banking uses money and does not require this match.",
+            "2": "Taxation is a compulsory payment.",
+            "3": "Insurance is a risk-sharing service."
+          }
+        }
+      },
+      {
+        "id": "q-mc-s-3",
+        "question": "Which is a modern form of money?",
+        "options": [
+          "Demand deposit",
+          "Wheat",
+          "Gold jewellery only",
+          "A bus ticket"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Demand deposits in bank accounts are accepted as money.",
+          "wrong_options": {
+            "1": "Wheat is a good used in barter.",
+            "2": "Jewellery is an asset but not the general form of money.",
+            "3": "A bus ticket is a service token, not money."
+          }
+        }
+      },
+      {
+        "id": "q-mc-s-4",
+        "question": "In India, currency notes are issued by:",
+        "options": [
+          "The Reserve Bank of India",
+          "The WTO",
+          "Private banks only",
+          "The stock exchange"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The RBI issues currency notes on behalf of the central government.",
+          "wrong_options": {
+            "1": "The WTO deals with trade.",
+            "2": "Private banks cannot issue currency notes.",
+            "3": "A stock exchange trades securities."
+          }
+        }
+      },
+      {
+        "id": "q-mc-s-5",
+        "question": "Credit is:",
+        "options": [
+          "A loan repaid later with interest",
+          "A gift that is never repaid",
+          "A tax on income",
+          "A type of currency"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Credit involves repayment, usually with interest.",
+          "wrong_options": {
+            "1": "A gift is not credit.",
+            "2": "A tax is a compulsory government payment.",
+            "3": "Credit is a loan, not currency."
+          }
+        }
+      },
+      {
+        "id": "q-mc-s-6",
+        "question": "Which is a formal source of credit?",
+        "options": [
+          "A bank",
+          "A moneylender",
+          "A landlord",
+          "A trader"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Banks are regulated formal lenders.",
+          "wrong_options": {
+            "1": "Moneylenders are informal sources.",
+            "2": "Landlords are informal sources.",
+            "3": "Traders are informal sources."
+          }
+        }
+      },
+      {
+        "id": "q-mc-s-7",
+        "question": "Collateral is:",
+        "options": [
+          "An asset pledged as security for a loan",
+          "The interest rate",
+          "A bank branch",
+          "A type of cheque"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The lender can sell the collateral if the loan is not repaid.",
+          "wrong_options": {
+            "1": "Interest is the cost of borrowing.",
+            "2": "A branch is a bank office.",
+            "3": "A cheque is a payment instrument."
+          }
+        }
+      },
+      {
+        "id": "q-mc-s-8",
+        "question": "A self-help group usually lends:",
+        "options": [
+          "To its own members",
+          "Only to large factories",
+          "Only to foreign firms",
+          "Only to the government"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Members pool savings and lend to one another.",
+          "wrong_options": {
+            "1": "SHGs focus on small member loans.",
+            "2": "They do not lend to foreign firms.",
+            "3": "They are not government lenders."
+          }
+        }
+      },
+      {
+        "id": "q-mc-s-9",
+        "question": "Demand deposits can be withdrawn:",
+        "options": [
+          "On demand",
+          "Only after 10 years",
+          "Only by the government",
+          "Never"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "They are called demand deposits because the depositor can demand payment.",
+          "wrong_options": {
+            "1": "That describes a long-term deposit.",
+            "2": "The depositor controls the account.",
+            "3": "Withdrawal is allowed."
+          }
+        }
+      },
+      {
+        "id": "q-mc-s-10",
+        "question": "Financial inclusion means:",
+        "options": [
+          "Access to affordable financial services for all",
+          "Only opening accounts for the rich",
+          "Banning all loans",
+          "Closing banks"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "It aims to bring everyone into the formal financial system.",
+          "wrong_options": {
+            "1": "It specifically targets excluded groups.",
+            "2": "Credit is part of inclusion.",
+            "3": "It strengthens, rather than closes, financial services."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-mc-m-1",
+        "question": "Which function of money allows prices to be compared?",
+        "options": [
+          "Unit of account",
+          "Store of value",
+          "Medium of exchange",
+          "Legal tender"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Money provides a common unit for measuring and comparing prices.",
+          "wrong_options": {
+            "1": "Store of value is about saving.",
+            "2": "Medium of exchange is about payment.",
+            "3": "Legal tender is about legal acceptance."
+          }
+        }
+      },
+      {
+        "id": "q-mc-m-2",
+        "question": "Simple interest on Rs 10,000 at 10% for 2 years is:",
+        "options": [
+          "Rs 2,000",
+          "Rs 1,000",
+          "Rs 200",
+          "Rs 12,000"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "(10,000 x 10 x 2) / 100 = Rs 2,000.",
+          "wrong_options": {
+            "1": "This is interest for one year.",
+            "2": "This divides by 100 twice.",
+            "3": "This is the total repayment, not interest."
+          }
+        }
+      },
+      {
+        "id": "q-mc-m-3",
+        "question": "Banks earn mainly from the difference between:",
+        "options": [
+          "Lending rate and deposit rate",
+          "Exports and imports",
+          "Tax and subsidy",
+          "Savings and population"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The spread between interest charged and interest paid supports bank income.",
+          "wrong_options": {
+            "1": "That is the trade balance.",
+            "2": "That is fiscal policy.",
+            "3": "This is not the bank's main margin."
+          }
+        }
+      },
+      {
+        "id": "q-mc-m-4",
+        "question": "Which borrower is most likely to face a debt trap?",
+        "options": [
+          "A farmer borrowing at very high interest before an uncertain harvest",
+          "A salaried worker with a low-interest loan",
+          "A firm with stable cash flow",
+          "A government with tax revenue"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "High interest plus uncertain income makes repayment difficult.",
+          "wrong_options": {
+            "1": "Low interest and stable salary reduce risk.",
+            "2": "Stable cash flow supports repayment.",
+            "3": "Governments have broad revenue sources."
+          }
+        }
+      },
+      {
+        "id": "q-mc-m-5",
+        "question": "Informal credit is often risky because:",
+        "options": [
+          "It is unregulated and can carry very high interest",
+          "It is always cheaper",
+          "It requires no repayment",
+          "It is controlled by the RBI"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Moneylenders and traders are not regulated like banks and may charge exploitative rates.",
+          "wrong_options": {
+            "1": "Informal credit is often more expensive.",
+            "2": "It must be repaid.",
+            "3": "It is outside RBI regulation."
+          }
+        }
+      },
+      {
+        "id": "q-mc-m-6",
+        "question": "A bank keeps 20% of a Rs 5,000 deposit as reserves. The loan amount is:",
+        "options": [
+          "Rs 4,000",
+          "Rs 1,000",
+          "Rs 5,000",
+          "Rs 200"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Reserves = 1,000; loan = 5,000 - 1,000 = Rs 4,000.",
+          "wrong_options": {
+            "1": "This is the reserve amount.",
+            "2": "The full deposit is not lent.",
+            "3": "This is 4% of the deposit."
+          }
+        }
+      },
+      {
+        "id": "q-mc-m-7",
+        "question": "The main advantage of an SHG loan is that it usually:",
+        "options": [
+          "Needs no collateral and uses group trust",
+          "Charges the highest interest",
+          "Requires a large factory",
+          "Is available only to the rich"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Group savings and peer monitoring substitute for collateral.",
+          "wrong_options": {
+            "1": "SHG credit is often cheaper than moneylender credit.",
+            "2": "SHGs are small community groups.",
+            "3": "They target excluded households."
+          }
+        }
+      },
+      {
+        "id": "q-mc-m-8",
+        "question": "Which is a productive use of credit?",
+        "options": [
+          "Buying seeds and fertiliser",
+          "Gambling",
+          "A luxury trip",
+          "Paying a fine for a repeated offence"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Farm inputs can raise output and income, helping repayment.",
+          "wrong_options": {
+            "1": "Gambling does not create income.",
+            "2": "A luxury trip does not generate returns.",
+            "3": "A fine is a penalty, not an investment."
+          }
+        }
+      },
+      {
+        "id": "q-mc-m-9",
+        "question": "Currency has value mainly because:",
+        "options": [
+          "The government authorises it and people accept it",
+          "It contains costly metal",
+          "It can be eaten",
+          "It is issued by every shop"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Modern currency is fiat money backed by state authority and public confidence.",
+          "wrong_options": {
+            "1": "Modern notes have little intrinsic value.",
+            "2": "Currency is not food.",
+            "3": "Shops cannot issue legal currency."
+          }
+        }
+      },
+      {
+        "id": "q-mc-m-10",
+        "question": "The money multiplier is:",
+        "options": [
+          "1 divided by the reserve ratio",
+          "The interest rate",
+          "The tax rate",
+          "The population growth rate"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "With a 20% reserve ratio, the multiplier is 1 / 0.20 = 5.",
+          "wrong_options": {
+            "1": "The interest rate is a price of credit.",
+            "2": "The tax rate is a fiscal variable.",
+            "3": "Population growth is demographic."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-mc-x-1",
+        "question": "A bank has a 25% reserve ratio. The money multiplier is:",
+        "options": [
+          "4",
+          "25",
+          "0.25",
+          "2.5"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Multiplier = 1 / 0.25 = 4.",
+          "wrong_options": {
+            "1": "This is the percentage, not the multiplier.",
+            "2": "This is the ratio as a decimal.",
+            "3": "This is 10 times the ratio."
+          }
+        }
+      },
+      {
+        "id": "q-mc-x-2",
+        "question": "A loan of Rs 50,000 at 18% simple interest for 3 years costs:",
+        "options": [
+          "Rs 27,000",
+          "Rs 9,000",
+          "Rs 54,000",
+          "Rs 18,000"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "(50,000 x 18 x 3) / 100 = Rs 27,000.",
+          "wrong_options": {
+            "1": "This is one year's interest.",
+            "2": "This is not the correct product.",
+            "3": "This is two years' interest."
+          }
+        }
+      },
+      {
+        "id": "q-mc-x-3",
+        "question": "Which sequence correctly describes credit creation?",
+        "options": [
+          "Deposit -> reserves kept -> loan given -> loan redeposited",
+          "Loan given -> deposit -> no reserves",
+          "Reserves -> deposit -> bank closes",
+          "Tax -> deposit -> loan"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Banks keep reserves, lend the rest, and redeposits support further lending.",
+          "wrong_options": {
+            "1": "Reserves are part of the process.",
+            "2": "Banks do not close after taking reserves.",
+            "3": "Taxes are not the source of bank deposits."
+          }
+        }
+      },
+      {
+        "id": "q-mc-x-4",
+        "question": "A borrower repays Rs 11,200 on a Rs 10,000 loan after one year. The simple interest rate is:",
+        "options": [
+          "12%",
+          "10%",
+          "1.2%",
+          "112%"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Interest = 1,200; rate = (1,200 / 10,000) x 100 = 12%.",
+          "wrong_options": {
+            "1": "10% would give Rs 1,000 interest.",
+            "2": "This misplaces the decimal.",
+            "3": "This is the repayment ratio, not the rate."
+          }
+        }
+      },
+      {
+        "id": "q-mc-x-5",
+        "question": "Which situation is most likely to create a debt trap?",
+        "options": [
+          "Borrowing at 36% for a crop that may fail",
+          "Borrowing at 8% for a proven machine",
+          "Saving regularly in a bank",
+          "Receiving a subsidy"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "High interest and uncertain returns make repayment very difficult.",
+          "wrong_options": {
+            "1": "Low interest and proven returns reduce risk.",
+            "2": "Saving does not create a debt trap.",
+            "3": "A subsidy is a transfer, not a loan."
+          }
+        }
+      },
+      {
+        "id": "q-mc-x-6",
+        "question": "A deposit of Rs 8,000 with a 20% reserve ratio can support maximum total deposits of:",
+        "options": [
+          "Rs 40,000",
+          "Rs 8,000",
+          "Rs 1,600",
+          "Rs 6,400"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Multiplier = 1 / 0.20 = 5; 8,000 x 5 = Rs 40,000.",
+          "wrong_options": {
+            "1": "This is the initial deposit.",
+            "2": "This is the reserve amount.",
+            "3": "This is the first loan."
+          }
+        }
+      },
+      {
+        "id": "q-mc-x-7",
+        "question": "Which pair correctly matches a source with its regulation status?",
+        "options": [
+          "Bank - regulated by RBI",
+          "Moneylender - regulated by RBI",
+          "Trader - regulated by RBI",
+          "Landlord - regulated by RBI"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Banks are formal lenders regulated by the RBI.",
+          "wrong_options": {
+            "1": "Moneylenders are informal.",
+            "2": "Traders are informal lenders.",
+            "3": "Landlords are informal lenders."
+          }
+        }
+      },
+      {
+        "id": "q-mc-x-8",
+        "question": "An SHG lends Rs 15,000 at 12% for one year. The interest is:",
+        "options": [
+          "Rs 1,800",
+          "Rs 180",
+          "Rs 18,000",
+          "Rs 1,200"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "(15,000 x 12 x 1) / 100 = Rs 1,800.",
+          "wrong_options": {
+            "1": "This misplaces the decimal.",
+            "2": "This is ten times the correct interest.",
+            "3": "This is the interest on Rs 10,000."
+          }
+        }
+      },
+      {
+        "id": "q-mc-x-9",
+        "question": "Which policy best reduces dependence on informal credit?",
+        "options": [
+          "Expanding formal credit and simplifying procedures",
+          "Raising informal interest rates",
+          "Removing all bank branches",
+          "Banning savings"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Accessible formal credit gives borrowers a cheaper and safer alternative.",
+          "wrong_options": {
+            "1": "Higher informal rates worsen exploitation.",
+            "2": "Fewer branches reduce access.",
+            "3": "Savings support credit access."
+          }
+        }
+      },
+      {
+        "id": "q-mc-x-10",
+        "question": "A shop borrows Rs 40,000 at 12% for one year and earns an extra profit of Rs 6,000 from the stock. Is the loan worthwhile before other costs?",
+        "options": [
+          "Yes, because profit exceeds interest by Rs 1,200",
+          "No, because interest is Rs 12,000",
+          "Yes, because interest is zero",
+          "No, because profit is Rs 4,800"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Interest = 4,800; extra profit 6,000; net gain = 1,200, so the loan is worthwhile before other costs.",
+          "wrong_options": {
+            "1": "Interest is Rs 4,800, not Rs 12,000.",
+            "2": "Interest is not zero.",
+            "3": "Profit is Rs 6,000, not Rs 4,800."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Money and Credit - Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Money",
+        "group": "core"
+      },
+      {
+        "id": "n2",
+        "label": "Barter",
+        "group": "origin"
+      },
+      {
+        "id": "n3",
+        "label": "Currency",
+        "group": "form"
+      },
+      {
+        "id": "n4",
+        "label": "Demand Deposits",
+        "group": "form"
+      },
+      {
+        "id": "n5",
+        "label": "Banks",
+        "group": "institution"
+      },
+      {
+        "id": "n6",
+        "label": "Credit",
+        "group": "core"
+      },
+      {
+        "id": "n7",
+        "label": "Terms of Credit",
+        "group": "condition"
+      },
+      {
+        "id": "n8",
+        "label": "Formal Sources",
+        "group": "source"
+      },
+      {
+        "id": "n9",
+        "label": "Informal Sources",
+        "group": "source"
+      },
+      {
+        "id": "n10",
+        "label": "Self-Help Groups",
+        "group": "institution"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n1",
+        "n4"
+      ],
+      [
+        "n3",
+        "n5"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n5",
+        "n6"
+      ],
+      [
+        "n6",
+        "n7"
+      ],
+      [
+        "n7",
+        "n8"
+      ],
+      [
+        "n7",
+        "n9"
+      ],
+      [
+        "n8",
+        "n10"
+      ],
+      [
+        "n9",
+        "n10"
+      ],
+      [
+        "n1",
+        "n6"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Money and Credit - Mind Map",
+    "type": "hierarchical",
+    "root": "Money and Credit",
+    "branches": [
+      {
+        "concept": "Functions of Money",
+        "sub_nodes": [
+          "Medium of exchange",
+          "Store of value",
+          "Unit of account",
+          "Standard of deferred payment"
+        ],
+        "connections": "Solves the problems of barter"
+      },
+      {
+        "concept": "Modern Forms of Money",
+        "sub_nodes": [
+          "Currency notes and coins",
+          "RBI issues notes",
+          "Demand deposits",
+          "Cheques and electronic transfers"
+        ],
+        "connections": "Currency is legal tender; deposits are money"
+      },
+      {
+        "concept": "Banks",
+        "sub_nodes": [
+          "Accept deposits",
+          "Lend at higher interest",
+          "Keep fractional reserves",
+          "Create credit"
+        ],
+        "connections": "Link savers and borrowers"
+      },
+      {
+        "concept": "Credit and Terms",
+        "sub_nodes": [
+          "Interest rate",
+          "Collateral",
+          "Documentation",
+          "Mode of repayment"
+        ],
+        "connections": "Terms determine whether credit helps or harms"
+      },
+      {
+        "concept": "Formal and Informal Credit",
+        "sub_nodes": [
+          "Banks and cooperatives are formal",
+          "Moneylenders and traders are informal",
+          "Formal credit is regulated",
+          "Informal credit is often costly"
+        ],
+        "connections": "Expand formal credit to reduce exploitation"
+      },
+      {
+        "concept": "Self-Help Groups",
+        "sub_nodes": [
+          "15 to 20 members, often women",
+          "Regular small savings",
+          "Collateral-free group loans",
+          "Financial inclusion and empowerment"
+        ],
+        "connections": "Build trust and access to bank credit"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "Money is valuable because notes are made of costly paper - FALSE: modern currency is fiat money backed by state authority.",
+    "Barter is easier than using money - FALSE: barter requires a double coincidence of wants and makes saving and price comparison difficult.",
+    "Only cash is money - FALSE: demand deposits in bank accounts are also money.",
+    "Banks keep all deposits in their vaults - FALSE: they keep a fraction as reserves and lend the rest.",
+    "All credit is harmful - FALSE: productive credit at fair terms can raise incomes and investment.",
+    "Informal credit is always cheaper - FALSE: moneylenders often charge much higher interest than formal lenders.",
+    "Self-help groups require collateral from every member - FALSE: group trust and savings usually replace collateral.",
+    "A high money multiplier means unlimited credit - FALSE: cash withdrawals, excess reserves, and weak demand limit credit creation."
+  ],
+  "chapterId": "money-and-credit",
+  "subjectId": "social-science",
+  "subjectName": "Social Science",
+  "unitId": "social-science-4",
+  "unitName": "Understanding Economic Development",
+  "examWeightage": 20,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

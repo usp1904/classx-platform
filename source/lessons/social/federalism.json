@@ -1,0 +1,1298 @@
+{
+  "id": "federalism",
+  "subject": "Civics",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 2,
+  "chapter": "Federalism",
+  "lesson": 2,
+  "title": "Federalism - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Explain the meaning and defining features of federalism",
+    "Distinguish coming-together from holding-together federations",
+    "Classify subjects under the Union, State and Concurrent Lists",
+    "Describe how India's federal structure has evolved in practice",
+    "Explain India's language policy and its role in national unity",
+    "Outline the 1992 constitutional amendments and the three-tier local government",
+    "Evaluate the strengths and limitations of Indian federalism",
+    "Answer board-style questions on decentralisation and centre-state relations"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS9_CONSTITUTIONAL_DESIGN",
+    "SOCIAL_CLASS9_DEMOCRATIC_RIGHTS",
+    "SOCIAL_CLASS8_INDIAN_CONSTITUTION",
+    "SOCIAL_CLASS7_STATE_GOVERNMENT"
+  ],
+  "concepts": [
+    {
+      "id": "fed-c1",
+      "name": "Meaning and Features of Federalism",
+      "title": "Meaning and Features of Federalism",
+      "explanation": "Federalism is a system of government in which power is divided between a central authority and constituent units such as states or provinces. A federation usually has two or more levels of government, each with its own jurisdiction defined by the constitution. Citizens are subject to both levels. The constitution guarantees the existence and authority of each level, so neither can abolish the other. Fundamental provisions cannot be changed by one level alone. Courts interpret the constitution and resolve disputes. Each level also needs independent financial resources.",
+      "purpose": "To identify the institutional features that make a system genuinely federal rather than merely decentralised.",
+      "real_life_application": "A student in India is governed by the Union government for defence and currency, by the state government for police and schools, and by the panchayat for local roads.",
+      "key_points": [
+        "Two or more levels of government share authority.",
+        "The constitution defines the powers of each level.",
+        "Each level has constitutionally guaranteed existence.",
+        "Fundamental provisions need consent of both levels.",
+        "Courts interpret the constitution and settle disputes.",
+        "Each level needs independent sources of revenue.",
+        "Federalism combines unity with regional diversity."
+      ],
+      "day_to_day_usage": [
+        "Union government issuing currency",
+        "State government running police stations",
+        "Panchayat maintaining village roads",
+        "High court resolving a centre-state dispute",
+        "State collecting local taxes"
+      ]
+    },
+    {
+      "id": "fed-c2",
+      "name": "Coming Together and Holding Together Federations",
+      "title": "Coming Together and Holding Together Federations",
+      "explanation": "In a coming-together federation, independent states join to form a larger union, usually to pool strength for defence or economic cooperation. The United States, Australia and Switzerland are examples. The constituent units often retain substantial powers and may have equal representation in the upper house. In a holding-together federation, a large country divides its power between the centre and the states to manage diversity and size. India, Spain and Belgium are examples. The central government tends to be stronger, states may have unequal powers, and some units may have special arrangements.",
+      "purpose": "To explain why federations are formed and why the balance of power differs from country to country.",
+      "real_life_application": "Thirteen former colonies joining as the United States is coming together. A large, diverse country like India keeping unity while giving states power is holding together.",
+      "key_points": [
+        "Coming together: independent units join to form a federation.",
+        "Examples include the USA, Australia and Switzerland.",
+        "Holding together: a large country divides power internally.",
+        "Examples include India, Spain and Belgium.",
+        "Holding-together federations often have a stronger centre.",
+        "State powers may be unequal in holding-together systems.",
+        "Both types aim to combine unity with diversity."
+      ],
+      "day_to_day_usage": [
+        "Comparing the US Senate with the Indian Rajya Sabha",
+        "Understanding why Indian states have different powers",
+        "Debating greater autonomy for states",
+        "Studying the formation of the United States",
+        "Comparing constitutions in civics projects"
+      ]
+    },
+    {
+      "id": "fed-c3",
+      "name": "Division of Powers and the Three Lists",
+      "title": "Division of Powers and the Three Lists",
+      "explanation": "The Indian Constitution divides legislative subjects into three lists. The Union List contains subjects of national importance such as defence, foreign affairs, banking, communications and currency. The State List contains subjects of local and state importance such as police, trade, commerce, agriculture and irrigation. The Concurrent List contains subjects on which both the Union and states can make laws, such as education, forests, marriage, succession and adoption. Residuary powers, which are not mentioned in any list, belong to the Union Parliament. If a Union and state law conflict on a Concurrent subject, the Union law usually prevails.",
+      "purpose": "To learn how the Constitution allocates authority and how conflicts between laws are resolved.",
+      "real_life_application": "Both the Union and a state can legislate on education, but if the laws conflict, the Union law prevails. Police and agriculture are mainly state responsibilities.",
+      "key_points": [
+        "Union List: defence, foreign affairs, banking, communications, currency.",
+        "State List: police, trade, commerce, agriculture, irrigation.",
+        "Concurrent List: education, forests, marriage, succession, adoption.",
+        "Residuary powers belong to the Union Parliament.",
+        "Both levels can legislate on Concurrent subjects.",
+        "Union law prevails if there is a conflict on a Concurrent subject.",
+        "The 42nd Amendment shifted education, forests and some other subjects to the Concurrent List."
+      ],
+      "day_to_day_usage": [
+        "Union government regulating banking",
+        "State government managing agriculture",
+        "Both levels making education policy",
+        "Union law on marriage and succession",
+        "State police investigating local crimes"
+      ]
+    },
+    {
+      "id": "fed-c4",
+      "name": "Centre-State Relations in Practice",
+      "title": "Centre-State Relations in Practice",
+      "explanation": "The Constitution gives the Union a strong role. The Governor is appointed by the President and can report on state administration. The Union can also impose President's rule in a state under specified circumstances. However, Indian federalism has become more balanced in practice. Coalition governments since the 1990s increased the influence of regional parties. The Supreme Court has protected state powers in important cases. The Finance Commission allocates tax revenues between the Union and states. The GST Council, set up after a constitutional amendment, is an example of cooperative federalism in taxation.",
+      "purpose": "To understand that federalism is shaped by politics and institutions, not only by the constitutional text.",
+      "real_life_application": "A regional party in a coalition can bargain for more funds for its state. A state can challenge a central law in the Supreme Court if it believes the law exceeds Union powers.",
+      "key_points": [
+        "The Governor is appointed by the President.",
+        "President's rule allows temporary Union control of a state.",
+        "Coalition politics strengthened regional parties after the 1990s.",
+        "The Supreme Court settles centre-state disputes.",
+        "The Finance Commission shares tax revenue.",
+        "The GST Council is a forum for cooperative federalism.",
+        "Indian federalism combines a strong centre with growing state influence."
+      ],
+      "day_to_day_usage": [
+        "State demands for more funds from the Finance Commission",
+        "Regional parties negotiating in a coalition",
+        "States challenging central laws in court",
+        "GST rate decisions taken with states",
+        "Governor's reports on state government functioning"
+      ]
+    },
+    {
+      "id": "fed-c5",
+      "name": "Language Policy and Federalism",
+      "title": "Language Policy and Federalism",
+      "explanation": "India has no national language. Hindi is the official language of the Union, and English continues as an associate official language. The Eighth Schedule lists 22 languages. States can adopt their own official languages, and linguistic minorities have protections. The creation of linguistic states after 1956 recognised that people with a common language could form a state. This helped reduce the fear that one language would dominate all others. However, the promotion of Hindi has sometimes caused protests, especially in Tamil Nadu. The language policy has generally helped hold the country together.",
+      "purpose": "To show how a sensitive cultural issue can be managed through federal compromise rather than imposed uniformity.",
+      "real_life_application": "A Tamil speaker can use Tamil in the state government, while Hindi and English are used for Union government communication. Official forms may be available in multiple languages.",
+      "key_points": [
+        "India has no national language.",
+        "Hindi is the official language of the Union.",
+        "English is an associate official language.",
+        "The Eighth Schedule lists 22 languages.",
+        "States may have their own official languages.",
+        "Linguistic states were reorganised in 1956.",
+        "Promotion of Hindi has caused protests in some states.",
+        "The policy avoids forcing one language on all citizens."
+      ],
+      "day_to_day_usage": [
+        "State government business in the regional language",
+        "English used in national courts and official communication",
+        "Language-based state boundaries",
+        "Protests against compulsory Hindi",
+        "Signboards in multiple languages"
+      ]
+    },
+    {
+      "id": "fed-c6",
+      "name": "Decentralisation and Local Government",
+      "title": "Decentralisation and Local Government",
+      "explanation": "Decentralisation means taking power away from the central and state governments and giving it to local bodies. The 73rd and 74th Constitutional Amendment Acts of 1992 gave constitutional status to panchayats and municipalities. Panchayats have a three-tier structure: Gram Panchayat at the village level, Panchayat Samiti at the block level and Zila Parishad at the district level. Municipalities govern urban areas. The Eleventh Schedule lists 29 subjects for panchayats and the Twelfth Schedule lists 18 subjects for municipalities. Seats are reserved for Scheduled Castes, Scheduled Tribes and women. State Election Commissions conduct local elections and State Finance Commissions recommend funds.",
+      "purpose": "To explain how local democracy works and why it is important for participation and accountability.",
+      "real_life_application": "A Gram Sabha approves village development plans. A municipal corporation manages water supply and waste collection in a city.",
+      "key_points": [
+        "Decentralisation transfers power to local bodies.",
+        "The 73rd and 74th Amendments were passed in 1992.",
+        "Panchayats have village, block and district tiers.",
+        "Municipalities govern urban areas.",
+        "29 subjects are assigned to panchayats.",
+        "18 subjects are assigned to municipalities.",
+        "Seats are reserved for Scheduled Castes, Scheduled Tribes and women.",
+        "State Election Commissions conduct local elections.",
+        "State Finance Commissions recommend local funds.",
+        "Gram Sabha includes all adult villagers."
+      ],
+      "day_to_day_usage": [
+        "Village meetings deciding on road repairs",
+        "Municipal waste collection",
+        "Local water supply schemes",
+        "Women sarpanches leading panchayats",
+        "Ward councillors raising local issues"
+      ]
+    }
+  ],
+  "theorems": [],
+  "worked_examples": [
+    {
+      "id": "we-fed-1",
+      "title": "Classifying Subjects into Lists",
+      "topic": "Application",
+      "problem": "Place each subject in the correct list: defence, police, education, currency, agriculture, marriage. Explain your choices.",
+      "solution": [
+        "Step 1: Defence is a subject of national importance, so it belongs to the Union List.",
+        "Step 2: Police is a state responsibility, so it belongs to the State List.",
+        "Step 3: Education is a Concurrent subject, so both the Union and states can legislate on it.",
+        "Step 4: Currency is a Union subject because a single national currency is essential.",
+        "Step 5: Agriculture is a State subject because it depends on local conditions.",
+        "Step 6: Marriage is a Concurrent subject, allowing uniform and state-specific laws."
+      ],
+      "board_mode": [
+        "Draw a three-column table for Union, State and Concurrent.",
+        "Write the subject in the correct column and add a one-line reason.",
+        "Do not put education in the State List; it is Concurrent.",
+        "Remember that residuary powers go to the Union."
+      ],
+      "answer": "Union: defence, currency. State: police, agriculture. Concurrent: education, marriage.",
+      "board_tip": "Learn at least five examples for each list; board questions often ask for classification."
+    },
+    {
+      "id": "we-fed-2",
+      "title": "Why India Is a Holding-Together Federation",
+      "topic": "Explanation",
+      "problem": "Explain why India is described as a holding-together federation rather than a coming-together federation.",
+      "solution": [
+        "Step 1: India was not formed by independent states joining together; it was a single country that divided power among the Union and states.",
+        "Step 2: The Constitution created states and Union Territories within one union.",
+        "Step 3: The Union government has a strong role, including residuary powers.",
+        "Step 4: States have unequal powers, and some regions have special provisions.",
+        "Step 5: The purpose was to hold a large and diverse country together while allowing regional self-government.",
+        "Step 6: Therefore India is a holding-together federation."
+      ],
+      "board_mode": [
+        "Define both types briefly.",
+        "State that India divided power internally rather than joining separate states.",
+        "Mention the stronger centre and unequal state powers.",
+        "Conclude with the purpose: unity with diversity."
+      ],
+      "answer": "India is holding together because a large, diverse country divided power between the Union and states to preserve unity, with a strong centre and unequal state powers.",
+      "board_tip": "Use the USA as the standard coming-together example and India as the standard holding-together example."
+    },
+    {
+      "id": "we-fed-3",
+      "title": "Hindi Is Not the National Language",
+      "topic": "Language policy",
+      "problem": "A student says: 'Hindi is the national language of India.' Correct the statement and explain India's language policy.",
+      "solution": [
+        "Step 1: Correct the statement: India has no national language.",
+        "Step 2: Hindi is the official language of the Union.",
+        "Step 3: English continues as an associate official language.",
+        "Step 4: The Eighth Schedule lists 22 languages, and states can have their own official languages.",
+        "Step 5: Linguistic states were created after 1956 to recognise language communities.",
+        "Step 6: The policy has generally reduced language conflict, though promotion of Hindi has sometimes caused protests."
+      ],
+      "board_mode": [
+        "Start with the correction, then give the constitutional position.",
+        "Mention the Eighth Schedule and the 1956 reorganisation.",
+        "Add one example of protest, such as Tamil Nadu."
+      ],
+      "answer": "India has no national language. Hindi is the Union's official language, English is an associate official language, and states may have their own official languages.",
+      "board_tip": "The words official and national are not interchangeable in this answer."
+    },
+    {
+      "id": "we-fed-4",
+      "title": "The 1992 Local Government Reforms",
+      "topic": "Decentralisation",
+      "problem": "Describe the main features of the 73rd and 74th Constitutional Amendment Acts.",
+      "solution": [
+        "Step 1: The 73rd Amendment deals with panchayats; the 74th deals with municipalities.",
+        "Step 2: Both were passed in 1992 and gave constitutional status to local bodies.",
+        "Step 3: Panchayats have a three-tier structure at village, block and district levels.",
+        "Step 4: The Eleventh Schedule lists 29 subjects for panchayats; the Twelfth Schedule lists 18 subjects for municipalities.",
+        "Step 5: Seats are reserved for Scheduled Castes, Scheduled Tribes and women.",
+        "Step 6: State Election Commissions conduct elections and State Finance Commissions recommend funds.",
+        "Step 7: The Gram Sabha includes all adult members of the village."
+      ],
+      "board_mode": [
+        "Separate the two amendments clearly.",
+        "Give the three tiers and the two schedules.",
+        "Mention reservations and the two state commissions.",
+        "End with the purpose: participation and accountability."
+      ],
+      "answer": "The 1992 amendments gave constitutional status to panchayats and municipalities, created three tiers, assigned 29 and 18 subjects, reserved seats and set up election and finance commissions.",
+      "board_tip": "Do not confuse the Eleventh Schedule (panchayats) with the Twelfth Schedule (municipalities)."
+    },
+    {
+      "id": "we-fed-5",
+      "title": "Evaluating Indian Federalism",
+      "topic": "Evaluation",
+      "problem": "Indian federalism is often described as 'federal in form but unitary in spirit'. Evaluate this statement.",
+      "solution": [
+        "Step 1: Explain the federal features: two levels, division of powers, written constitution, independent judiciary and state governments.",
+        "Step 2: Explain the unitary features: strong centre, residuary powers with the Union, appointed Governor and President's rule.",
+        "Step 3: Show that practice has moved towards greater federalism: coalition politics, Supreme Court decisions and stronger regional parties.",
+        "Step 4: Note that states still depend on the centre for many funds and that some central laws affect state autonomy.",
+        "Step 5: Conclude that India is a federal system with a strong centralising tendency, not a pure unitary state."
+      ],
+      "board_mode": [
+        "Use a two-part structure: federal features and unitary features.",
+        "Add a paragraph on changing practice after the 1990s.",
+        "Give a balanced conclusion rather than choosing one extreme."
+      ],
+      "answer": "India has federal institutions but a strong centre; coalition politics and courts have made it more federal in practice, so the statement is partly true.",
+      "board_tip": "A balanced answer with examples scores better than a one-sided verdict."
+    }
+  ],
+  "exercises": {
+    "exercise_1_1": {
+      "title": "Foundation Questions on Federalism",
+      "objective": "Recall definitions, lists and local government basics",
+      "problems": [
+        {
+          "id": "fed-ex1-1",
+          "question": "Define federalism.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Federalism is a system of government in which power is divided between a central authority and constituent units.",
+            "Step 2: Each level has its own jurisdiction defined by the constitution.",
+            "Step 3: Both levels are constitutionally guaranteed."
+          ],
+          "final_answer": "Federalism is a system in which power is constitutionally divided between a central government and state or provincial governments, each with its own defined jurisdiction."
+        },
+        {
+          "id": "fed-ex1-2",
+          "question": "Name the two levels of government in a federation.",
+          "difficulty": "simple",
+          "marks": 1,
+          "solution": [
+            "Step 1: The central or Union level.",
+            "Step 2: The state or provincial level.",
+            "Step 3: Many federations also have a local level."
+          ],
+          "final_answer": "The central government and the state or provincial governments."
+        },
+        {
+          "id": "fed-ex1-3",
+          "question": "Give two examples of subjects in the Union List.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Defence is a national subject.",
+            "Step 2: Foreign affairs is a national subject.",
+            "Step 3: Currency, banking and communications are other examples."
+          ],
+          "final_answer": "Defence and foreign affairs; currency and banking are also Union subjects."
+        },
+        {
+          "id": "fed-ex1-4",
+          "question": "Give two examples of subjects in the State List.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Police is a state subject.",
+            "Step 2: Agriculture is a state subject.",
+            "Step 3: Trade, commerce and irrigation are other examples."
+          ],
+          "final_answer": "Police and agriculture; irrigation and local trade are also State subjects."
+        },
+        {
+          "id": "fed-ex1-5",
+          "question": "Give two examples of subjects in the Concurrent List.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Education is a Concurrent subject.",
+            "Step 2: Marriage is a Concurrent subject.",
+            "Step 3: Forests, succession and adoption are other examples."
+          ],
+          "final_answer": "Education and marriage; forests and succession are also Concurrent subjects."
+        },
+        {
+          "id": "fed-ex1-6",
+          "question": "What is decentralisation?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Decentralisation means transferring power from central and state governments to local bodies.",
+            "Step 2: It gives local people a role in decisions that affect them.",
+            "Step 3: It improves accountability and uses local knowledge."
+          ],
+          "final_answer": "Decentralisation is the transfer of decision-making power and resources from higher levels of government to elected local bodies."
+        }
+      ]
+    },
+    "exercise_1_2": {
+      "title": "Federalism in Practice",
+      "objective": "Explain lists, language policy, centre-state relations and local government",
+      "problems": [
+        {
+          "id": "fed-ex2-1",
+          "question": "Explain any four features of federalism.",
+          "difficulty": "medium",
+          "marks": 4,
+          "solution": [
+            "Step 1: Two or more levels of government share authority.",
+            "Step 2: The constitution defines the powers of each level.",
+            "Step 3: Each level has constitutionally guaranteed existence.",
+            "Step 4: Courts interpret the constitution and settle disputes.",
+            "Step 5: Each level has independent financial resources."
+          ],
+          "final_answer": "Federalism has multiple levels, a constitutional division of powers, guaranteed existence for each level, judicial interpretation and financial autonomy."
+        },
+        {
+          "id": "fed-ex2-2",
+          "question": "Distinguish between coming-together and holding-together federations.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Coming together means independent states join to form a federation.",
+            "Step 2: Holding together means a large country divides power internally.",
+            "Step 3: The USA is a coming-together example; India is a holding-together example.",
+            "Step 4: Holding-together federations often have a stronger centre."
+          ],
+          "final_answer": "Coming-together federations are formed by independent units joining; holding-together federations divide power within an existing country. The USA and India are examples."
+        },
+        {
+          "id": "fed-ex2-3",
+          "question": "Explain India's language policy in three points.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: India has no national language; Hindi is the official language of the Union.",
+            "Step 2: English continues as an associate official language.",
+            "Step 3: The Eighth Schedule lists 22 languages, and states can have their own official languages.",
+            "Step 4: Linguistic states were created after 1956."
+          ],
+          "final_answer": "India avoids a national language, uses Hindi and English for Union purposes, recognises 22 languages in the Eighth Schedule and allows states their own official languages."
+        },
+        {
+          "id": "fed-ex2-4",
+          "question": "What did the 73rd and 74th Amendments do?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The 73rd Amendment gave constitutional status to panchayats.",
+            "Step 2: The 74th Amendment gave constitutional status to municipalities.",
+            "Step 3: Both were passed in 1992.",
+            "Step 4: They created three-tier local government and reserved seats for weaker sections and women."
+          ],
+          "final_answer": "The 1992 amendments constitutionalised panchayats and municipalities, created local tiers and introduced reservations and independent election and finance commissions."
+        },
+        {
+          "id": "fed-ex2-5",
+          "question": "Describe the three-tier structure of Panchayati Raj.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Gram Panchayat at the village level.",
+            "Step 2: Panchayat Samiti at the block level.",
+            "Step 3: Zila Parishad at the district level.",
+            "Step 4: The Gram Sabha includes all adult villagers and oversees the Gram Panchayat."
+          ],
+          "final_answer": "The three tiers are Gram Panchayat (village), Panchayat Samiti (block) and Zila Parishad (district), with the Gram Sabha as the village assembly."
+        },
+        {
+          "id": "fed-ex2-6",
+          "question": "How has coalition politics affected centre-state relations in India?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Coalition governments since the 1990s increased the influence of regional parties.",
+            "Step 2: Regional parties bargained for more funds and policy concessions.",
+            "Step 3: The centre could not ignore state demands as easily.",
+            "Step 4: This made Indian federalism more balanced in practice."
+          ],
+          "final_answer": "Coalition politics strengthened regional parties and made the centre more responsive to state demands, making federalism more balanced in practice."
+        }
+      ]
+    },
+    "exercise_1_3": {
+      "title": "Evaluation and Case-Based Questions",
+      "objective": "Assess federalism, decentralisation and language policy",
+      "problems": [
+        {
+          "id": "fed-ex3-1",
+          "question": "India is federal in form but unitary in spirit. Discuss.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Federal features include two levels, a written constitution, division of powers and an independent judiciary.",
+            "Step 2: Unitary features include a strong centre, residuary powers with the Union, an appointed Governor and President's rule.",
+            "Step 3: The Union List gives the centre control over key national subjects.",
+            "Step 4: Coalition politics and Supreme Court judgments have strengthened state powers in practice.",
+            "Step 5: States still depend on central funds and face central influence.",
+            "Step 6: Conclude that India combines federal structure with a strong centralising tendency."
+          ],
+          "final_answer": "India has federal institutions and a strong centre; practice has become more federal since the 1990s, so the statement is broadly accurate but incomplete."
+        },
+        {
+          "id": "fed-ex3-2",
+          "question": "Decentralisation strengthens democracy. Evaluate this statement with reference to local government.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Decentralisation brings government closer to people.",
+            "Step 2: It increases participation, especially of women and weaker sections through reservations.",
+            "Step 3: Local bodies can use local knowledge and respond faster.",
+            "Step 4: It creates accountability because voters can see local decisions.",
+            "Step 5: Limitations include insufficient funds, unclear functions and dependence on state governments.",
+            "Step 6: Conclude that decentralisation strengthens democracy when powers and resources are actually devolved."
+          ],
+          "final_answer": "Decentralisation strengthens participation and accountability, but it works only if local bodies receive real powers, funds and administrative capacity."
+        },
+        {
+          "id": "fed-ex3-3",
+          "question": "How has India's language policy helped avoid conflict? What tensions remain?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: India did not declare one national language.",
+            "Step 2: Hindi is only the Union's official language, with English as an associate.",
+            "Step 3: States can use their own languages, and 22 languages are in the Eighth Schedule.",
+            "Step 4: Linguistic states gave language communities a political home.",
+            "Step 5: Tensions remain over the promotion of Hindi and the use of English in higher education and jobs.",
+            "Step 6: Conclude that compromise has reduced conflict but not ended language politics."
+          ],
+          "final_answer": "The policy avoided imposing one language and allowed state languages, which reduced conflict; tensions remain over Hindi promotion and unequal access to English."
+        },
+        {
+          "id": "fed-ex3-4",
+          "question": "Why can the Concurrent List create conflict between the Union and states? Give an example and explain how conflict is resolved.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Both levels can make laws on Concurrent subjects.",
+            "Step 2: Education, forests and marriage are Concurrent subjects where both may act.",
+            "Step 3: A state may feel that a central law interferes with its priorities.",
+            "Step 4: If the laws conflict, the Union law prevails.",
+            "Step 5: Courts can interpret the division of powers and strike down laws that exceed a level's authority.",
+            "Step 6: Conclude that the Concurrent List requires cooperation and judicial clarity."
+          ],
+          "final_answer": "Both levels can legislate on Concurrent subjects, so disputes arise; Union law prevails in a conflict, and courts interpret the Constitution."
+        },
+        {
+          "id": "fed-ex3-5",
+          "question": "Indian federalism has become more federal since the 1990s. Assess this statement.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Coalition governments gave regional parties national influence.",
+            "Step 2: The Supreme Court protected state powers in several cases.",
+            "Step 3: The Finance Commission increased transfers to states.",
+            "Step 4: The GST Council created a forum for joint decisions.",
+            "Step 5: However, the centre retains strong fiscal and administrative powers.",
+            "Step 6: Conclude that practice has become more federal, but the constitutional structure still has a strong centre."
+          ],
+          "final_answer": "The statement is largely true: coalitions, courts and fiscal institutions strengthened states, though the centre remains powerful."
+        },
+        {
+          "id": "fed-ex3-6",
+          "question": "A district has a shortage of drinking water. Explain how the panchayat, the state government and the Union government could each contribute, and identify one limitation of local action.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The Gram Panchayat can identify local needs, maintain wells and tanks and organise water conservation.",
+            "Step 2: The state government can fund major water projects and regulate groundwater.",
+            "Step 3: The Union government can support national schemes and inter-state river coordination.",
+            "Step 4: The three levels must cooperate rather than work in isolation.",
+            "Step 5: Limitation: local bodies may lack funds, technical staff and authority over water sources.",
+            "Step 6: Conclude that decentralisation helps but does not remove the need for higher-level support."
+          ],
+          "final_answer": "The panchayat can manage local works, the state can fund and regulate, and the Union can support national schemes; local action is limited by money, staff and legal authority."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "fed-q-s-1",
+        "question": "Federalism divides power between:",
+        "options": [
+          "The legislature and the army",
+          "The central government and state governments",
+          "Political parties only",
+          "Religious groups only"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Federalism shares power between a central authority and constituent units.",
+          "wrong_options": {
+            "0": "The army is not a federal level.",
+            "2": "Parties are not the constitutional levels of federalism.",
+            "3": "Religious groups are not federal units."
+          }
+        }
+      },
+      {
+        "id": "fed-q-s-2",
+        "question": "Which of these is a Union List subject?",
+        "options": [
+          "Defence",
+          "Police",
+          "Agriculture",
+          "Local roads"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Defence is a subject of national importance and belongs to the Union List.",
+          "wrong_options": {
+            "1": "Police is a State List subject.",
+            "2": "Agriculture is a State List subject.",
+            "3": "Local roads are mainly a local government responsibility."
+          }
+        }
+      },
+      {
+        "id": "fed-q-s-3",
+        "question": "Which of these is a State List subject?",
+        "options": [
+          "Currency",
+          "Foreign affairs",
+          "Banking",
+          "Police"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Police is a state responsibility.",
+          "wrong_options": {
+            "0": "Currency is a Union subject.",
+            "1": "Foreign affairs is a Union subject.",
+            "2": "Banking is a Union subject."
+          }
+        }
+      },
+      {
+        "id": "fed-q-s-4",
+        "question": "Education is a subject in the:",
+        "options": [
+          "Union List",
+          "State List",
+          "Concurrent List",
+          "Residuary List"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Education is a Concurrent subject, so both the Union and states can legislate on it.",
+          "wrong_options": {
+            "0": "It is not exclusively a Union subject.",
+            "1": "It is not exclusively a State subject.",
+            "3": "Residuary powers cover subjects not listed elsewhere."
+          }
+        }
+      },
+      {
+        "id": "fed-q-s-5",
+        "question": "Who has residuary powers in India?",
+        "options": [
+          "The state legislatures only",
+          "The Union Parliament",
+          "The panchayats",
+          "The Supreme Court"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Subjects not mentioned in any list belong to the Union Parliament.",
+          "wrong_options": {
+            "0": "States do not hold residuary powers.",
+            "2": "Panchayats have delegated local subjects.",
+            "3": "The Supreme Court interprets laws but does not legislate."
+          }
+        }
+      },
+      {
+        "id": "fed-q-s-6",
+        "question": "How many languages are listed in the Eighth Schedule?",
+        "options": [
+          "22",
+          "18",
+          "29",
+          "14"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Eighth Schedule lists 22 languages.",
+          "wrong_options": {
+            "1": "18 is the number of subjects in the Twelfth Schedule.",
+            "2": "29 is the number of subjects in the Eleventh Schedule.",
+            "3": "14 is not the correct number."
+          }
+        }
+      },
+      {
+        "id": "fed-q-s-7",
+        "question": "The 73rd Constitutional Amendment deals with:",
+        "options": [
+          "Municipalities",
+          "The Union List",
+          "The Election Commission",
+          "Panchayats"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "The 73rd Amendment gave constitutional status to panchayats.",
+          "wrong_options": {
+            "0": "Municipalities are covered by the 74th Amendment.",
+            "1": "The Union List is part of the original Constitution.",
+            "2": "The Election Commission is a constitutional body, not the subject of this amendment."
+          }
+        }
+      },
+      {
+        "id": "fed-q-s-8",
+        "question": "The 74th Constitutional Amendment deals with:",
+        "options": [
+          "Panchayats",
+          "Languages",
+          "Municipalities",
+          "The judiciary"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "The 74th Amendment gave constitutional status to municipalities.",
+          "wrong_options": {
+            "0": "Panchayats are covered by the 73rd Amendment.",
+            "1": "Languages are dealt with in the Eighth Schedule.",
+            "3": "The judiciary is not the subject of this amendment."
+          }
+        }
+      },
+      {
+        "id": "fed-q-s-9",
+        "question": "Which body conducts panchayat elections?",
+        "options": [
+          "The Election Commission of India",
+          "The State Election Commission",
+          "The Finance Commission",
+          "The Gram Sabha"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "State Election Commissions conduct local body elections.",
+          "wrong_options": {
+            "0": "The Election Commission of India conducts Lok Sabha and state assembly elections.",
+            "2": "The Finance Commission recommends funds.",
+            "3": "The Gram Sabha is a village assembly, not an election authority."
+          }
+        }
+      },
+      {
+        "id": "fed-q-s-10",
+        "question": "India's language policy does not declare a:",
+        "options": [
+          "National language",
+          "Official language for the Union",
+          "State language",
+          "Classical language"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "India has no national language; Hindi is the official language of the Union.",
+          "wrong_options": {
+            "1": "Hindi is the Union's official language.",
+            "2": "States can have official languages.",
+            "3": "Some languages have been classified as classical."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "fed-q-m-1",
+        "question": "Which feature is essential for a federation?",
+        "options": [
+          "All power in the central government",
+          "A single political party",
+          "No independent judiciary",
+          "A constitutional division of powers between levels"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "A federation requires a constitutional division of powers among levels.",
+          "wrong_options": {
+            "0": "That is a unitary system.",
+            "1": "Federations can have multiple parties.",
+            "2": "An independent judiciary is important in a federation."
+          }
+        }
+      },
+      {
+        "id": "fed-q-m-2",
+        "question": "India is called a holding-together federation because:",
+        "options": [
+          "Independent states joined to create India",
+          "States have more power than the Union",
+          "A large country divided power between the Union and states",
+          "There are no Union Territories"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "India divided power internally to hold a diverse country together.",
+          "wrong_options": {
+            "0": "That describes a coming-together federation.",
+            "1": "The Union has substantial powers.",
+            "3": "India has Union Territories."
+          }
+        }
+      },
+      {
+        "id": "fed-q-m-3",
+        "question": "If a Union law and a state law conflict on a Concurrent subject, which usually prevails?",
+        "options": [
+          "The state law",
+          "The Union law",
+          "Neither law",
+          "The law passed by the panchayat"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Union law prevails in a conflict on a Concurrent subject.",
+          "wrong_options": {
+            "0": "State law does not prevail over Union law in this case.",
+            "2": "One law must prevail.",
+            "3": "Panchayats do not decide this conflict."
+          }
+        }
+      },
+      {
+        "id": "fed-q-m-4",
+        "question": "The creation of linguistic states after 1956 helped because it:",
+        "options": [
+          "Recognised language communities within the union",
+          "Abolished all state languages",
+          "Made Hindi the national language",
+          "Ended all language disputes"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Linguistic states gave language communities a political home within India.",
+          "wrong_options": {
+            "1": "State languages were recognised, not abolished.",
+            "2": "Hindi was not declared a national language.",
+            "3": "Language disputes did not end completely."
+          }
+        }
+      },
+      {
+        "id": "fed-q-m-5",
+        "question": "The Eleventh Schedule lists subjects for:",
+        "options": [
+          "Municipalities",
+          "The Union government",
+          "The Supreme Court",
+          "Panchayats"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "The Eleventh Schedule lists 29 subjects for panchayats.",
+          "wrong_options": {
+            "0": "The Twelfth Schedule lists municipal subjects.",
+            "1": "Union subjects are in the Union List.",
+            "2": "The Supreme Court is not assigned subjects by this schedule."
+          }
+        }
+      },
+      {
+        "id": "fed-q-m-6",
+        "question": "Which of these is an example of cooperative federalism?",
+        "options": [
+          "The Union abolishing state governments",
+          "A state refusing to collect any taxes",
+          "The GST Council deciding tax rates with states",
+          "The judiciary ruling on a state law"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "The GST Council brings the Union and states together to decide indirect tax rates.",
+          "wrong_options": {
+            "0": "Abolishing state governments is not cooperative federalism.",
+            "1": "Refusing taxes is not cooperation.",
+            "3": "Judicial review is not the same as cooperative federalism."
+          }
+        }
+      },
+      {
+        "id": "fed-q-m-7",
+        "question": "Which of these is a limitation of local government in India?",
+        "options": [
+          "Local bodies have no elections",
+          "Local bodies often lack adequate funds and staff",
+          "Local bodies control defence",
+          "Local bodies cannot make any decisions"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Many local bodies have limited financial and administrative capacity.",
+          "wrong_options": {
+            "0": "Local bodies are elected.",
+            "2": "Defence is a Union subject.",
+            "3": "Local bodies do make decisions within their subjects."
+          }
+        }
+      },
+      {
+        "id": "fed-q-m-8",
+        "question": "The Finance Commission mainly recommends:",
+        "options": [
+          "The division of tax revenues between the Union and states",
+          "The appointment of judges",
+          "The language policy",
+          "The number of political parties"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "It recommends how tax revenues should be shared between the centre and states.",
+          "wrong_options": {
+            "1": "Judicial appointments are not its role.",
+            "2": "Language policy is not its role.",
+            "3": "It does not decide the number of parties."
+          }
+        }
+      },
+      {
+        "id": "fed-q-m-9",
+        "question": "Which statement about the Governor is correct?",
+        "options": [
+          "The Governor is elected directly by the people of the state",
+          "The Governor is appointed by the Chief Justice",
+          "The Governor is chosen by the panchayats",
+          "The Governor is appointed by the President"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "The Governor is appointed by the President and represents the Union in the state.",
+          "wrong_options": {
+            "0": "The Governor is not directly elected.",
+            "1": "The Chief Justice does not appoint the Governor.",
+            "2": "Panchayats do not choose the Governor."
+          }
+        }
+      },
+      {
+        "id": "fed-q-m-10",
+        "question": "Which is the best example of vertical power sharing in India?",
+        "options": [
+          "The Supreme Court reviewing a law",
+          "Two parties forming a coalition",
+          "The Union, a state and a panchayat each handling different subjects",
+          "A community government running schools"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Vertical sharing distributes power among central, state and local levels.",
+          "wrong_options": {
+            "0": "Judicial review is horizontal sharing.",
+            "1": "Coalition politics is party sharing.",
+            "3": "A community government is social-group sharing."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "fed-q-x-1",
+        "question": "India is federal in form but unitary in spirit. Which evidence best supports the unitary part of this statement?",
+        "options": [
+          "States have their own elected governments",
+          "The Union has residuary powers and can impose President's rule",
+          "The Constitution divides subjects into lists",
+          "Courts can interpret the Constitution"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Residuary powers and President's rule strengthen the Union's authority.",
+          "wrong_options": {
+            "0": "Elected state governments are a federal feature.",
+            "2": "The lists are a federal feature.",
+            "3": "Judicial interpretation supports constitutional government, not unitarism specifically."
+          }
+        }
+      },
+      {
+        "id": "fed-q-x-2",
+        "question": "Which change would most strengthen decentralisation in practice?",
+        "options": [
+          "Giving local bodies more funds and clearly defined functions",
+          "Abolishing the Gram Sabha",
+          "Transferring all local subjects to the Union",
+          "Cancelling local elections"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Real devolution requires funds, functions and functionaries.",
+          "wrong_options": {
+            "1": "The Gram Sabha is a forum for participation.",
+            "2": "Centralising local subjects weakens decentralisation.",
+            "3": "Elections are essential to local democracy."
+          }
+        }
+      },
+      {
+        "id": "fed-q-x-3",
+        "question": "The Concurrent List can be a source of tension because:",
+        "options": [
+          "Only the Union can legislate on it",
+          "Only states can legislate on it",
+          "It has no subjects",
+          "Both levels can legislate, and Union law prevails in a conflict"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Shared legislative power can produce disputes, resolved in favour of Union law.",
+          "wrong_options": {
+            "0": "States can also legislate on Concurrent subjects.",
+            "1": "The Union can also legislate on them.",
+            "2": "It contains subjects such as education and marriage."
+          }
+        }
+      },
+      {
+        "id": "fed-q-x-4",
+        "question": "Why is an independent judiciary important in a federation?",
+        "options": [
+          "It can abolish state governments",
+          "It can make all laws",
+          "It can interpret the constitution and resolve disputes between levels",
+          "It can decide language policy alone"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Courts umpire the constitutional division of powers.",
+          "wrong_options": {
+            "0": "Courts do not abolish state governments at will.",
+            "1": "Courts interpret laws; legislatures make them.",
+            "3": "Language policy is a political and constitutional matter, not solely judicial."
+          }
+        }
+      },
+      {
+        "id": "fed-q-x-5",
+        "question": "A state refuses to implement a central law on a Concurrent subject, claiming it harms local interests. What does the Constitution generally provide?",
+        "options": [
+          "State law always prevails",
+          "Union law prevails in a conflict, but states can challenge the law in court",
+          "The panchayat decides the dispute",
+          "The Governor makes the final law"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Union law prevails in a Concurrent conflict, but states can seek judicial review.",
+          "wrong_options": {
+            "0": "State law does not always prevail.",
+            "2": "Panchayats do not decide constitutional disputes.",
+            "3": "The Governor does not legislate in this way."
+          }
+        }
+      },
+      {
+        "id": "fed-q-x-6",
+        "question": "Which statement best evaluates India's language policy?",
+        "options": [
+          "It combined official Hindi, continued English and state languages, reducing but not ending tensions",
+          "It imposed one language and ended conflict",
+          "It abolished all state languages",
+          "It made every language equal in every government office"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The policy is a compromise that has reduced conflict without eliminating language politics.",
+          "wrong_options": {
+            "1": "India did not impose one language.",
+            "2": "State languages are recognised.",
+            "3": "All languages are not equal in every office."
+          }
+        }
+      },
+      {
+        "id": "fed-q-x-7",
+        "question": "Which of these is the strongest federal feature of the Indian Constitution?",
+        "options": [
+          "The Union can impose President's rule",
+          "The Governor is appointed by the President",
+          "The Union has residuary powers",
+          "States have their own legislatures and defined subjects"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "State legislatures and defined subjects give states constitutional standing.",
+          "wrong_options": {
+            "0": "President's rule is a unitary feature.",
+            "1": "The appointed Governor is a centralising feature.",
+            "2": "Residuary powers with the Union are a centralising feature."
+          }
+        }
+      },
+      {
+        "id": "fed-q-x-8",
+        "question": "The 29 subjects in the Eleventh Schedule are:",
+        "options": [
+          "Subjects reserved only for the Union",
+          "Subjects reserved only for the Supreme Court",
+          "Subjects that panchayats may handle",
+          "Subjects that states cannot legislate on"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "The Eleventh Schedule lists subjects for panchayats.",
+          "wrong_options": {
+            "0": "They are local subjects, not exclusively Union subjects.",
+            "1": "The Supreme Court does not handle these subjects.",
+            "3": "States also have powers over many local matters."
+          }
+        }
+      },
+      {
+        "id": "fed-q-x-9",
+        "question": "Which argument best supports the claim that decentralisation improves accountability?",
+        "options": [
+          "Local bodies never make mistakes",
+          "Local voters can directly see how decisions affect their area",
+          "Local bodies are appointed by the centre",
+          "Local bodies have unlimited funds"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Closer government makes it easier for citizens to monitor performance.",
+          "wrong_options": {
+            "0": "Local bodies can make mistakes.",
+            "2": "Local bodies are elected, not appointed by the centre.",
+            "3": "Local bodies often have limited funds."
+          }
+        }
+      },
+      {
+        "id": "fed-q-x-10",
+        "question": "Which conclusion about Indian federalism is most balanced?",
+        "options": [
+          "It has federal institutions with a strong centre, and practice has become more federal",
+          "It is purely unitary",
+          "It is purely confederal",
+          "It has no division of powers"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "India combines federal structure with central strength; politics and courts have made it more federal over time.",
+          "wrong_options": {
+            "1": "It has federal features.",
+            "2": "It is not a confederation.",
+            "3": "It has clear lists and levels."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Federalism - Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Federalism",
+        "group": "core"
+      },
+      {
+        "id": "n2",
+        "label": "Constitution",
+        "group": "foundation"
+      },
+      {
+        "id": "n3",
+        "label": "Two Levels",
+        "group": "feature"
+      },
+      {
+        "id": "n4",
+        "label": "Union List",
+        "group": "powers"
+      },
+      {
+        "id": "n5",
+        "label": "State List",
+        "group": "powers"
+      },
+      {
+        "id": "n6",
+        "label": "Concurrent List",
+        "group": "powers"
+      },
+      {
+        "id": "n7",
+        "label": "Language Policy",
+        "group": "practice"
+      },
+      {
+        "id": "n8",
+        "label": "Decentralisation",
+        "group": "practice"
+      },
+      {
+        "id": "n9",
+        "label": "Local Government",
+        "group": "practice"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n3",
+        "n4"
+      ],
+      [
+        "n3",
+        "n5"
+      ],
+      [
+        "n3",
+        "n6"
+      ],
+      [
+        "n1",
+        "n7"
+      ],
+      [
+        "n1",
+        "n8"
+      ],
+      [
+        "n8",
+        "n9"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n2",
+        "n5"
+      ],
+      [
+        "n2",
+        "n6"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Federalism - Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Federalism",
+    "branches": [
+      {
+        "concept": "Features",
+        "sub_nodes": [
+          "Two or more levels",
+          "Constitutional division of powers",
+          "Guaranteed existence of each level",
+          "Independent judiciary",
+          "Financial autonomy"
+        ],
+        "connections": "These features distinguish federalism from simple delegation"
+      },
+      {
+        "concept": "Types",
+        "sub_nodes": [
+          "Coming together: USA, Australia, Switzerland",
+          "Holding together: India, Spain, Belgium",
+          "Coming together often has stronger states",
+          "Holding together often has a stronger centre"
+        ]
+      },
+      {
+        "concept": "Three Lists",
+        "sub_nodes": [
+          "Union List: defence, foreign affairs, banking",
+          "State List: police, agriculture, irrigation",
+          "Concurrent List: education, forests, marriage",
+          "Residuary powers with the Union"
+        ]
+      },
+      {
+        "concept": "Centre-State Relations",
+        "sub_nodes": [
+          "Governor appointed by the President",
+          "President's rule",
+          "Coalition politics strengthened regional parties",
+          "Supreme Court settles disputes",
+          "Finance Commission and GST Council"
+        ]
+      },
+      {
+        "concept": "Language Policy",
+        "sub_nodes": [
+          "No national language",
+          "Hindi is the Union's official language",
+          "English is an associate official language",
+          "22 languages in the Eighth Schedule",
+          "States can have official languages"
+        ]
+      },
+      {
+        "concept": "Local Government",
+        "sub_nodes": [
+          "73rd and 74th Amendments, 1992",
+          "Gram Panchayat, Panchayat Samiti, Zila Parishad",
+          "Municipalities for urban areas",
+          "29 and 18 subjects in the two schedules",
+          "Reservations for Scheduled Castes, Scheduled Tribes and women"
+        ]
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "India is a unitary state because the centre is strong - FALSE: India has federal institutions, a division of powers and elected state governments, even though the centre is powerful.",
+    "Hindi is the national language of India - FALSE: India has no national language; Hindi is the official language of the Union.",
+    "Education is only a state subject - FALSE: education is in the Concurrent List, so both the Union and states can legislate on it.",
+    "The Union List contains all important subjects, so states have no real power - FALSE: states have exclusive powers over police, agriculture, irrigation and other subjects.",
+    "Federalism means states can ignore Union laws - FALSE: Union law prevails in conflicts on Concurrent subjects, and the Constitution binds both levels.",
+    "Decentralisation is the same as federalism - FALSE: decentralisation transfers power to local bodies within a state; federalism divides power between the Union and states.",
+    "The 73rd Amendment created municipalities - FALSE: the 73rd Amendment deals with panchayats; the 74th deals with municipalities.",
+    "Local bodies have complete financial independence - FALSE: they depend significantly on state grants and taxes, and their funds are often limited."
+  ]
+}

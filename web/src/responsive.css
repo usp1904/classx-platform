@@ -1,0 +1,155 @@
+@media (max-width: 1240px) {
+  .dashboard-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dashboard-main { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dashboard-main .span-2 { grid-column: span 2; }
+  .mock-layout, .practice-layout, .tutor-layout, .planner-layout, .progress-layout { grid-template-columns: minmax(0, 1fr) 260px; }
+  .chapter-layout { grid-template-columns: minmax(0, 1fr) 254px; }
+  .chapter-grid { grid-template-columns: 1fr; }
+  .chart-bars { height: 130px; }
+}
+
+@media (max-width: 1080px) {
+  .chapter-layout, .practice-layout, .mock-layout, .tutor-layout, .planner-layout, .progress-layout { grid-template-columns: 1fr; }
+  .chapter-rail, .practice-rail, .mock-rail, .tutor-context, .planner-rail, .progress-rail { position: static; }
+  .chapter-rail { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rail-cta { grid-column: span 2; }
+  .exam-body { grid-template-columns: 1fr; }
+  .exam-submit-rail { position: static; display: grid; grid-template-columns: 1fr 1fr; align-items: start; }
+  .flashcard-layout { grid-template-columns: 1fr; }
+  .flashcard-rail { display: grid; grid-template-columns: 1fr 1fr; }
+  .practice-rail, .mock-rail { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .practice-rail .card:last-child { grid-column: span 2; }
+  .formula-library-grid { grid-template-columns: 1fr; }
+  .blueprint-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 900px) {
+  .topbar-meta { display: none; }
+  .subject-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dashboard-main { grid-template-columns: 1fr; }
+  .dashboard-main .span-2 { grid-column: auto; }
+  .hero-panel { flex-direction: column; align-items: flex-start; }
+  .hero-side { width: 100%; justify-content: space-between; flex-direction: row-reverse; align-items: center; }
+  .course-hero { flex-direction: column; align-items: flex-start; }
+  .course-hero-progress { width: 100%; }
+  .chapter-header { flex-direction: column; align-items: flex-start; }
+  .chapter-header-side { width: 100%; justify-content: space-between; }
+  .chapter-actions { flex-direction: row; }
+  .outcome-grid { grid-template-columns: 1fr; }
+  .syllabus-facts { grid-template-columns: repeat(2, 1fr); }
+  .chat-empty h2 { font-size: 1.5rem; }
+  .prompt-grid { grid-template-columns: 1fr; }
+  .chat-scroll { padding: 16px; }
+  .citation-strip { grid-template-columns: 1fr; }
+  .practice-subject-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .config-split { grid-template-columns: 1fr; gap: 14px; }
+  .runner-layout { grid-template-columns: 1fr; }
+  .question-palette { border-left: 0; border-top: 1px solid var(--line); padding: 12px 0 0; }
+  .palette-dots { grid-template-columns: repeat(8, 1fr); }
+  .week-row { grid-template-columns: 28px minmax(0, 1fr); }
+  .subject-tab small { display: none; }
+  .exam-submit-rail { grid-template-columns: 1fr; }
+  .chart-side { display: none; }
+}
+
+@media (max-width: 780px) {
+  .app-shell { display: block; }
+  .sidebar { display: none; }
+  .sidebar.open {
+    display: flex; position: fixed; inset: 0 auto 0 0; width: min(286px, 86vw);
+    height: 100vh; z-index: 45; box-shadow: 24px 0 60px rgba(10,14,24,.35);
+  }
+  .mobile-close, .mobile-menu { display: grid; place-items: center; }
+  .continue-card { grid-template-columns: 1fr; padding: 20px; }
+  .continue-art { display: none; }
+  .topbar { padding: 10px 16px; gap: 10px; }
+  .topbar-left { flex: 0 0 auto; }
+  .topbar-right { gap: 4px; min-width: 0; }
+  .topbar .search-trigger, .crumb { display: none; }
+  .topbar .mobile-search-btn { display: grid; place-items: center; }
+  .streak-chip { padding: 5px 8px; }
+  .grow { flex: 1; }
+  .mobile-search { display: flex; }
+  .search-box.desktop-search { display: none; }
+  .mobile-brand { display: flex; }
+  .main { padding: 20px 16px 48px; }
+  .page-head, .hero-panel, .course-hero { border-radius: 15px; }
+  .page-head { padding: 20px; }
+  .quick-action-grid { grid-template-columns: 1fr; }
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .chart-card .card-head { flex-direction: column; align-items: flex-start; }
+  .two-col { grid-template-columns: 1fr; }
+  .chapter-rail { grid-template-columns: 1fr; }
+  .rail-cta { grid-column: auto; }
+  .mindmap { grid-template-columns: 1fr; }
+  .practice-rail, .mock-rail { grid-template-columns: 1fr; }
+  .practice-rail .card:last-child { grid-column: auto; }
+  .flashcard-rail { grid-template-columns: 1fr; }
+  .planner-hero { flex-direction: column; align-items: flex-start; }
+  .planner-hero-ring { flex-direction: row; gap: 12px; }
+  .week-card-head { flex-direction: column; }
+  .week-card-actions { align-self: flex-start; }
+  .blueprint-grid { grid-template-columns: 1fr; }
+  .chapter-check-grid { grid-template-columns: 1fr; }
+  .library-toolbar { gap: 8px; }
+  .library-toolbar .search-box { max-width: none; flex: 1 1 100%; }
+  .library-toolbar .segmented { width: 100%; }
+  .library-toolbar .segmented button { flex: 1; }
+  .modal-card { max-height: 92vh; }
+  .exam-header h2 { font-size: 1.45rem; }
+  .chapter-tabs-row { align-items: stretch; }
+  .chapter-tabs { width: 100%; }
+  .chapter-quick-actions { justify-content: flex-end; }
+}
+
+@media (max-width: 560px) {
+  .shell-content { padding: 10px 11px 32px; }
+  .main { padding: 15px 11px 36px; }
+  .topbar { padding: 8px 11px; }
+  .topbar-actions .icon-btn { width: 28px; height: 28px; }
+  .page-head { padding: 17px; }
+  .page-head h1 { font-size: 1.8rem; }
+  .page-actions { width: 100%; }
+  .page-actions .btn { flex: 1; justify-content: center; }
+  .subject-grid { grid-template-columns: 1fr; }
+  .metric-row, .stat-grid { grid-template-columns: 1fr 1fr; }
+  .hero-panel { padding: 18px; }
+  .course-hero { padding: 18px; }
+  .chapter-header h1 { font-size: 1.9rem; }
+  .chapter-tabs button { padding: 5px 7px; font-size: 9px; }
+  .lesson-card, .example-card, .outcome-card, .misconception-card { padding: 16px; }
+  .chapter-meta-line { gap: 10px; }
+  .chapter-side { display: none; }
+  .chapter-card { padding: 12px; }
+  .weightage { display: none; }
+  .practice-config, .mock-config, .practice-runner, .result-card { padding: 16px; }
+  .practice-subject-grid { grid-template-columns: 1fr 1fr; }
+  .runner-head { flex-direction: column; gap: 7px; }
+  .runner-nav .btn { flex: 1; justify-content: center; }
+  .review-options, .review-explanation, .review-answer, .review-steps { margin-left: 0; }
+  .tutor-chat { min-height: 560px; }
+  .chat-scroll { max-height: 470px; }
+  .chat-bubble { max-width: 88%; }
+  .exam-question { padding: 12px; }
+  .exam-header { gap: 10px; }
+  .flashcard { height: 280px; }
+  .flashcard-face { padding: 20px; }
+  .flashcard-face.front h3 { font-size: 1.25rem; }
+  .flashcard-face.back p { font-size: 11.5px; }
+  .weekly-bar-list .bar-row { grid-template-columns: 1fr 43px; gap: 5px; }
+  .week-row { grid-template-columns: 24px minmax(0, 1fr); gap: 8px; }
+  .week-dot { width: 24px; height: 24px; font-size: 8px; }
+  .week-card { padding: 14px; }
+  .week-details { gap: 6px 12px; }
+  .toast-stack { left: 11px; right: 11px; bottom: 11px; }
+  .toast { max-width: none; }
+  .syllabus-facts { grid-template-columns: 1fr 1fr; }
+  .exam-table > div { grid-template-columns: 60px 1fr 50px; }
+  .exam-table > div > :nth-child(4) { display: none; }
+  .filter-row { flex-wrap: wrap; }
+  .formula-library-card { padding: 14px; }
+  .score-chart { height: 100px; }
+  .dashboard-grid, .dashboard-main { gap: 10px; }
+  .card { border-radius: 12px; }
+  .segmented button { padding: 5px 8px; font-size: 9px; }
+}

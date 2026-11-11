@@ -1,0 +1,1298 @@
+{
+  "id": "power-sharing",
+  "subject": "Civics",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 1,
+  "chapter": "Power Sharing",
+  "lesson": 1,
+  "title": "Power Sharing - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Explain why power sharing is desirable in a democracy",
+    "Compare the accommodation model of Belgium with the majoritarian model of Sri Lanka",
+    "Define majoritarianism and describe how it alienated Sri Lankan Tamils",
+    "Identify horizontal, vertical, social-group and political-party forms of power sharing",
+    "Distinguish prudential from moral reasons for power sharing",
+    "Interpret constitutional arrangements such as Belgium's community government",
+    "Evaluate the consequences of sharing and concentrating power in plural societies",
+    "Answer board-style case, comparison and assertion-reason questions on power sharing"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS9_DEMOCRACY",
+    "SOCIAL_CLASS9_ELECTORAL_POLITICS",
+    "SOCIAL_CLASS8_CONSTITUTION",
+    "SOCIAL_CLASS7_EQUALITY"
+  ],
+  "concepts": [
+    {
+      "id": "ps-c1",
+      "name": "Power Sharing in a Democracy",
+      "title": "Power Sharing in a Democracy",
+      "explanation": "Power sharing means distributing the authority to take decisions among different organs, levels and groups instead of concentrating it in one person or body. A democratic constitution normally divides powers between the legislature, executive and judiciary, between the Union and the States, and among social and political groups. Sharing does not mean that every group has equal power in every matter. It means that no single group can take all decisions without consultation and accountability.",
+      "purpose": "To understand why democracies avoid concentrated power and how institutions are designed so that different voices are heard.",
+      "real_life_application": "A school divides work among the principal, teachers, student council and parents' association. If the principal alone decided everything, the school would lose cooperation and local knowledge.",
+      "key_points": [
+        "Power sharing distributes decision-making authority.",
+        "It gives different groups a stake in the system.",
+        "It reduces the chance of conflict and resentment.",
+        "It is a defining feature of democratic government.",
+        "It operates through written rules and constitutional arrangements.",
+        "It does not eliminate differences of opinion; it manages them."
+      ],
+      "day_to_day_usage": [
+        "Student councils sharing decisions with teachers",
+        "Municipal corporations sharing civic work with state agencies",
+        "Families dividing household responsibilities",
+        "Housing societies electing managing committees",
+        "Workplaces consulting workers before major changes"
+      ]
+    },
+    {
+      "id": "ps-c2",
+      "name": "Belgium's Accommodation Model",
+      "title": "Belgium's Accommodation Model",
+      "explanation": "Belgium is a small European country with Dutch-speaking, French-speaking and German-speaking communities. Dutch speakers are about 59 per cent, French speakers about 40 per cent and German speakers about 1 per cent. Brussels, the capital, has a French-speaking majority and a Dutch-speaking minority. Belgian leaders amended the constitution four times between 1970 and 1993 to share power. The central government has equal numbers of Dutch and French-speaking ministers. Regional governments exist for Flanders and Wallonia. A community government, elected by people of one language community, handles cultural, educational and language matters.",
+      "purpose": "To study a working example of accommodation in a plural society and to see how constitutional design can prevent a language conflict from becoming a civil war.",
+      "real_life_application": "A bilingual city such as Brussels needs official forms, schools and public services in both languages. A community government lets each language group manage its own culture without controlling the other.",
+      "key_points": [
+        "Belgium has Dutch-speaking, French-speaking and German-speaking communities.",
+        "The constitution was amended four times between 1970 and 1993.",
+        "Central government has equal Dutch and French-speaking ministers.",
+        "Regional governments serve Flanders and Wallonia.",
+        "The community government handles culture, education and language.",
+        "Brussels has special arrangements because it is bilingual.",
+        "Belgium avoided a civil war by accommodating diversity."
+      ],
+      "day_to_day_usage": [
+        "Bilingual signboards and official documents in Brussels",
+        "Separate language schools managed by community governments",
+        "Regional roads and transport managed by regional governments",
+        "Coalition governments balancing language groups",
+        "Local cultural festivals supported by community funds"
+      ]
+    },
+    {
+      "id": "ps-c3",
+      "name": "Majoritarianism in Sri Lanka",
+      "title": "Majoritarianism in Sri Lanka",
+      "explanation": "Sri Lanka became independent in 1948. Sinhala speakers are about 74 per cent, Sri Lankan Tamils about 13 per cent, Indian Tamils about 5 per cent and Muslims about 7 per cent. In 1956 the government passed an Act recognising Sinhala as the only official language. Later policies favoured Sinhala applicants for university places and government jobs. The 1972 constitution gave Buddhism a special protected status. These majoritarian measures made Tamils feel that their language, culture and religion were not respected. The demand for a separate Tamil state led to a long civil war.",
+      "purpose": "To show how majority rule can turn into majority tyranny when a community uses its numbers to dominate others.",
+      "real_life_application": "If a school makes one language compulsory for every student and gives that language group all scholarships, other students feel excluded even if the rule is passed by a majority vote.",
+      "key_points": [
+        "Sinhala is the language of about 74 per cent of Sri Lankans.",
+        "The 1956 Act made Sinhala the only official language.",
+        "University and job policies favoured Sinhala applicants.",
+        "The 1972 constitution protected Buddhism specially.",
+        "Tamils felt alienated and demanded a separate state.",
+        "Majoritarianism means rule by the majority community, not simply majority opinion.",
+        "The conflict became a devastating civil war."
+      ],
+      "day_to_day_usage": [
+        "Language rules in government offices",
+        "University admission policies",
+        "Public employment quotas",
+        "State support for one religion",
+        "Protests by linguistic minorities"
+      ]
+    },
+    {
+      "id": "ps-c4",
+      "name": "Horizontal and Vertical Power Sharing",
+      "title": "Horizontal and Vertical Power Sharing",
+      "explanation": "Horizontal power sharing divides power among the organs of government at the same level: the legislature makes laws, the executive implements them and the judiciary interprets them. Each organ checks the others, so no organ can act without limits. Vertical power sharing divides power among different levels of government: the Union or central government, state governments and local governments. The lower levels have their own elected bodies and defined responsibilities. India uses both forms.",
+      "purpose": "To recognise the two basic directions in which constitutional power is divided and to explain checks and balances.",
+      "real_life_application": "In a state, the assembly passes a law, the police and administration implement it, and the high court can strike it down if it violates the Constitution. At the same time, the state shares subjects with the Union and with panchayats.",
+      "key_points": [
+        "Horizontal sharing is among legislature, executive and judiciary.",
+        "Each organ checks the other organs.",
+        "Vertical sharing is among central, state and local levels.",
+        "The levels have separate powers and elected bodies.",
+        "India uses both horizontal and vertical sharing.",
+        "No single organ or level can claim unlimited authority."
+      ],
+      "day_to_day_usage": [
+        "Parliament making a law and courts reviewing it",
+        "State governments running police and agriculture",
+        "Panchayats maintaining village roads",
+        "Municipalities managing local water supply",
+        "Union government handling defence and foreign affairs"
+      ]
+    },
+    {
+      "id": "ps-c5",
+      "name": "Sharing among Social Groups and Political Parties",
+      "title": "Sharing among Social Groups and Political Parties",
+      "explanation": "Power can also be shared among religious and linguistic groups, castes and other social communities. Belgium's community government is an example. Reserved constituencies give Scheduled Castes and Scheduled Tribes a share in legislatures. Power is shared among political parties when no single party wins a majority and parties form a coalition. Pressure groups, such as trade unions, farmers' organisations and business associations, influence policy without contesting elections. All these arrangements bring more people into decision making.",
+      "purpose": "To show that power sharing is not only a legal division of offices but also a political and social process.",
+      "real_life_application": "A coalition government gives cabinet posts to several parties. A farmers' union may not win seats but can still negotiate minimum support prices with the government.",
+      "key_points": [
+        "Social groups can share power through community governments and reserved seats.",
+        "Reserved constituencies protect political representation of Scheduled Castes and Scheduled Tribes.",
+        "Coalition governments share power among parties.",
+        "Pressure groups influence policy without fighting elections.",
+        "Trade unions, farmers' groups and business associations are pressure groups.",
+        "Power sharing widens the social base of democracy."
+      ],
+      "day_to_day_usage": [
+        "Coalition cabinets with ministers from several parties",
+        "Reserved seats in legislatures",
+        "Farmers' unions negotiating with government",
+        "Trade unions representing workers",
+        "Residents' associations influencing municipal decisions"
+      ]
+    },
+    {
+      "id": "ps-c6",
+      "name": "Why Power Sharing Is Desirable",
+      "title": "Why Power Sharing Is Desirable",
+      "explanation": "There are two sets of reasons for power sharing. Prudential reasons focus on consequences: sharing power reduces conflict, prevents violence, keeps the country stable and improves the quality of decisions because more information is considered. Moral reasons focus on the principle of democracy: people have a right to be consulted, and a government that excludes whole communities lacks legitimacy. The two sets often overlap. Belgium's arrangements can be defended both because they preserved peace and because they respected language communities.",
+      "purpose": "To evaluate power sharing using both practical and normative arguments, which is a common board question.",
+      "real_life_application": "A housing society that consults all wings before raising maintenance avoids protests. It is also more legitimate because every wing had a voice.",
+      "key_points": [
+        "Prudential reasons stress stability and better decisions.",
+        "Moral reasons stress participation and legitimacy.",
+        "Power sharing reduces the risk of civil conflict.",
+        "It gives citizens a sense of ownership.",
+        "It is part of the spirit of democracy.",
+        "The two types of reasons can support the same arrangement."
+      ],
+      "day_to_day_usage": [
+        "Consulting residents before a society rule change",
+        "Including workers in factory safety decisions",
+        "Balancing language groups in official appointments",
+        "Coalition negotiations before forming a government",
+        "Student representation on university committees"
+      ]
+    }
+  ],
+  "theorems": [],
+  "worked_examples": [
+    {
+      "id": "we-ps-1",
+      "title": "Compare Belgium and Sri Lanka",
+      "topic": "Comparative case study",
+      "problem": "Compare the ways in which Belgium and Sri Lanka handled linguistic diversity. Which approach was more successful and why?",
+      "solution": [
+        "Step 1: State the social composition. Belgium has Dutch, French and German speakers, with Dutch speakers about 59 per cent and French speakers about 40 per cent. Sri Lanka has Sinhala speakers about 74 per cent and Tamils about 18 per cent, including Sri Lankan and Indian Tamils.",
+        "Step 2: Describe Belgium's method. Belgian leaders amended the constitution four times between 1970 and 1993. They gave Dutch and French-speaking ministers equal representation in the central government, created regional governments and set up a community government for culture, education and language.",
+        "Step 3: Describe Sri Lanka's method. The 1956 Act made Sinhala the only official language. University and government job policies favoured Sinhala applicants. The 1972 constitution gave Buddhism a special status.",
+        "Step 4: State the result. Belgium accommodated diversity and avoided civil war. Sri Lanka's majoritarian policies alienated Tamils and contributed to a long civil war.",
+        "Step 5: Conclude. Belgium's accommodation model was more successful because it shared power instead of concentrating it in the majority community."
+      ],
+      "board_mode": [
+        "Use a two-column comparison: Belgium on the left, Sri Lanka on the right.",
+        "Under each case, mention the social groups, the policy, and the result.",
+        "Use the terms accommodation and majoritarianism explicitly.",
+        "End with a judgement, not only a description."
+      ],
+      "answer": "Belgium adopted accommodation through constitutional amendments, equal representation and a community government, while Sri Lanka adopted majoritarian language and employment policies. Belgium avoided civil war; Sri Lanka suffered one.",
+      "board_tip": "Mention the four Belgian amendments (1970-1993) and the Sri Lankan Act of 1956 for full marks."
+    },
+    {
+      "id": "we-ps-2",
+      "title": "Majority Rule versus Majoritarianism",
+      "topic": "Concept clarification",
+      "problem": "A student says: 'In a democracy the majority must always get its way, so Sri Lanka's policies were democratic.' Evaluate this statement.",
+      "solution": [
+        "Step 1: Define majority rule. Majority rule means that decisions are taken by the greater number of elected representatives, with rights and procedures respected.",
+        "Step 2: Define majoritarianism. Majoritarianism means rule by the majority community, often ignoring the needs of minorities. It is not the same as majority opinion.",
+        "Step 3: Apply to Sri Lanka. The Sinhala majority used its numerical strength to make Sinhala the only official language and to favour its community in jobs and universities.",
+        "Step 4: Identify the violation. A democracy must protect the rights of minorities and give them a share in power. Sri Lanka's policies excluded Tamils from equal citizenship.",
+        "Step 5: Conclude. The policies were majoritarian, not genuinely democratic, because democracy is more than counting heads."
+      ],
+      "board_mode": [
+        "Begin by defining both terms.",
+        "Show the difference with the Sri Lankan example.",
+        "Link the answer to minority rights and power sharing.",
+        "Use the phrase 'majority of the community, not majority opinion'."
+      ],
+      "answer": "Majority rule respects rights and procedures, while majoritarianism is domination by the majority community. Sri Lanka's policies were majoritarian and undermined democracy.",
+      "board_tip": "This distinction is a favourite assertion-reason question. State it in one clear sentence."
+    },
+    {
+      "id": "we-ps-3",
+      "title": "Identifying Forms of Power Sharing",
+      "topic": "Application",
+      "problem": "Identify the form of power sharing in each case: (a) a coalition cabinet with ministers from three parties, (b) a village panchayat managing local roads, (c) a court striking down a law passed by parliament, (d) a community government running language schools.",
+      "solution": [
+        "Step 1: (a) Coalition cabinet: power shared among political parties.",
+        "Step 2: (b) Village panchayat: vertical power sharing between state and local government.",
+        "Step 3: (c) Court striking down a law: horizontal power sharing between judiciary and legislature.",
+        "Step 4: (d) Community government running language schools: power shared among social groups.",
+        "Step 5: Note that one arrangement can combine forms. A coalition cabinet may also reflect social groups."
+      ],
+      "board_mode": [
+        "Name the form first, then give a one-line reason.",
+        "Do not confuse vertical sharing with federalism only; local government is also vertical.",
+        "Use the four standard headings: horizontal, vertical, social groups, political parties."
+      ],
+      "answer": "(a) political parties, (b) vertical, (c) horizontal, (d) social groups.",
+      "board_tip": "If the question gives a scenario, always quote the part of the scenario that supports your label."
+    },
+    {
+      "id": "we-ps-4",
+      "title": "Prudential and Moral Reasons",
+      "topic": "Evaluation",
+      "problem": "Explain two prudential and two moral reasons for power sharing.",
+      "solution": [
+        "Step 1: Prudential reason one. Power sharing reduces the possibility of conflict between social groups and prevents violence.",
+        "Step 2: Prudential reason two. It gives different groups a stake in the system, so they cooperate and the government can make better-informed decisions.",
+        "Step 3: Moral reason one. Power sharing is the spirit of democracy because people have the right to participate in decisions that affect them.",
+        "Step 4: Moral reason two. A government that excludes whole communities from power lacks legitimacy and cannot claim to represent all citizens.",
+        "Step 5: Conclude that both sets of reasons are complementary."
+      ],
+      "board_mode": [
+        "Write the two headings clearly: Prudential and Moral.",
+        "Give two points under each heading.",
+        "Add one example, such as Belgium, to support the answer."
+      ],
+      "answer": "Prudential reasons: reduce conflict and improve decisions. Moral reasons: participation is a democratic right and exclusion destroys legitimacy.",
+      "board_tip": "Do not give four prudential reasons and no moral reasons. The examiner looks for both categories."
+    },
+    {
+      "id": "we-ps-5",
+      "title": "Designing a Power-Sharing Arrangement",
+      "topic": "Case application",
+      "problem": "A country has two large language communities and several smaller ones. Suggest three power-sharing arrangements that could reduce conflict, and explain one limitation of each.",
+      "solution": [
+        "Step 1: Suggest equal representation in the central cabinet. Limitation: it can make decision making slow and may ignore smaller groups.",
+        "Step 2: Suggest regional governments with language and cultural powers. Limitation: regions may still discriminate against minorities inside them.",
+        "Step 3: Suggest reserved seats or community governments for smaller groups. Limitation: reservations can be token if the bodies have no real funds or powers.",
+        "Step 4: Add a constitutional court or independent commission to protect rights. Limitation: courts act slowly and need public support.",
+        "Step 5: Conclude that power sharing must be combined with rights protection and real resources."
+      ],
+      "board_mode": [
+        "Use 'arrangement plus limitation' pairs.",
+        "Keep each limitation specific, not vague.",
+        "End with a principle: sharing must be meaningful, not symbolic."
+      ],
+      "answer": "Use equal cabinet representation, regional governments and community or reserved representation; each can fail if it is symbolic, slow or leaves internal minorities unprotected.",
+      "board_tip": "Higher-order questions reward limitations, not just suggestions."
+    }
+  ],
+  "exercises": {
+    "exercise_1_1": {
+      "title": "Foundation Questions on Power Sharing",
+      "objective": "Recall definitions, cases and basic forms of power sharing",
+      "problems": [
+        {
+          "id": "ps-ex1-1",
+          "question": "Define power sharing.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Power sharing means distributing decision-making authority among different organs, levels or groups.",
+            "Step 2: It prevents concentration of power in one person or institution.",
+            "Step 3: It gives different groups a role in government."
+          ],
+          "final_answer": "Power sharing is the distribution of decision-making power among organs, levels and social or political groups so that no single group controls everything."
+        },
+        {
+          "id": "ps-ex1-2",
+          "question": "What is majoritarianism?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Majoritarianism is a belief that the majority community should rule the country.",
+            "Step 2: It may ignore the interests and rights of minorities.",
+            "Step 3: It is different from majority rule, which respects rights and procedures."
+          ],
+          "final_answer": "Majoritarianism is rule by the majority community, often at the expense of minority rights; it is not the same as democratic majority rule."
+        },
+        {
+          "id": "ps-ex1-3",
+          "question": "Name the three main language communities of Belgium.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The largest group is Dutch-speaking.",
+            "Step 2: The second group is French-speaking.",
+            "Step 3: A small German-speaking community also exists."
+          ],
+          "final_answer": "Dutch-speaking, French-speaking and German-speaking communities."
+        },
+        {
+          "id": "ps-ex1-4",
+          "question": "What is a community government?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: A community government is elected by people of one language community.",
+            "Step 2: It handles cultural, educational and language matters.",
+            "Step 3: Belgium has such a government for each major language community."
+          ],
+          "final_answer": "A community government is a body elected by one language community to manage its culture, education and language."
+        },
+        {
+          "id": "ps-ex1-5",
+          "question": "Which Act made Sinhala the only official language of Sri Lanka?",
+          "difficulty": "simple",
+          "marks": 1,
+          "solution": [
+            "Step 1: The Act was passed in 1956.",
+            "Step 2: It recognised Sinhala as the only official language.",
+            "Step 3: It disregarded Tamil."
+          ],
+          "final_answer": "The Official Language Act of 1956."
+        },
+        {
+          "id": "ps-ex1-6",
+          "question": "What is horizontal power sharing?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Horizontal sharing is among organs at the same level.",
+            "Step 2: The organs are the legislature, executive and judiciary.",
+            "Step 3: Each organ checks the others."
+          ],
+          "final_answer": "Horizontal power sharing distributes power among the legislature, executive and judiciary so that each checks the others."
+        }
+      ]
+    },
+    "exercise_1_2": {
+      "title": "Understanding the Cases and Forms",
+      "objective": "Explain the Belgian and Sri Lankan cases and the main forms of sharing",
+      "problems": [
+        {
+          "id": "ps-ex2-1",
+          "question": "Why did Sri Lankan Tamils feel alienated after 1956? Give three reasons.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The 1956 Act made Sinhala the only official language, ignoring Tamil.",
+            "Step 2: Government policies favoured Sinhala applicants for university places and jobs.",
+            "Step 3: The 1972 constitution gave Buddhism a special protected status.",
+            "Step 4: Tamils felt that their language, culture and religion were not treated equally."
+          ],
+          "final_answer": "They were alienated by the Sinhala-only language policy, preferential treatment of Sinhala applicants in education and jobs, and the special status given to Buddhism."
+        },
+        {
+          "id": "ps-ex2-2",
+          "question": "Describe three features of Belgium's power-sharing model.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The central government has equal numbers of Dutch and French-speaking ministers.",
+            "Step 2: Regional governments exist for Flanders and Wallonia.",
+            "Step 3: A community government elected by each language community handles culture, education and language.",
+            "Step 4: The constitution was amended four times between 1970 and 1993."
+          ],
+          "final_answer": "Belgium used equal central representation, regional governments and community governments, supported by four constitutional amendments between 1970 and 1993."
+        },
+        {
+          "id": "ps-ex2-3",
+          "question": "Explain vertical power sharing with two examples.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Vertical sharing divides power among different levels of government.",
+            "Step 2: The levels are central, state and local.",
+            "Step 3: Example one: the Union government handles defence while states handle police.",
+            "Step 4: Example two: panchayats manage local roads and water while states manage higher-level services."
+          ],
+          "final_answer": "Vertical power sharing distributes authority among central, state and local governments, for example defence versus police, and state administration versus panchayat work."
+        },
+        {
+          "id": "ps-ex2-4",
+          "question": "How is power shared among political parties and pressure groups?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: In a coalition, several parties share ministerial positions and influence policy.",
+            "Step 2: Parties compete in elections and then cooperate to form a government.",
+            "Step 3: Pressure groups do not contest elections but influence decisions through lobbying, protests and negotiations.",
+            "Step 4: Examples include trade unions, farmers' organisations and business associations."
+          ],
+          "final_answer": "Parties share power through coalitions and alliances, while pressure groups influence policy through organised negotiation and protest outside elections."
+        },
+        {
+          "id": "ps-ex2-5",
+          "question": "Distinguish between prudential and moral reasons for power sharing.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Prudential reasons are based on consequences, such as stability and conflict reduction.",
+            "Step 2: Moral reasons are based on democratic principles, such as participation and legitimacy.",
+            "Step 3: Prudential: sharing power prevents violence and improves decisions.",
+            "Step 4: Moral: exclusion violates the right of citizens to be consulted."
+          ],
+          "final_answer": "Prudential reasons focus on practical benefits such as stability; moral reasons focus on the democratic right to participate and the legitimacy of government."
+        },
+        {
+          "id": "ps-ex2-6",
+          "question": "Why is Brussels important in Belgium's power-sharing arrangement?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Brussels is the capital of Belgium.",
+            "Step 2: It has a French-speaking majority and a Dutch-speaking minority.",
+            "Step 3: The constitution provides special arrangements so that both language groups are represented.",
+            "Step 4: This prevents the capital from becoming a source of language conflict."
+          ],
+          "final_answer": "Brussels is a bilingual capital with special representation arrangements that protect both French-speaking and Dutch-speaking residents."
+        }
+      ]
+    },
+    "exercise_1_3": {
+      "title": "Evaluation and Case-Based Questions",
+      "objective": "Apply power-sharing ideas to new situations and evaluate arguments",
+      "problems": [
+        {
+          "id": "ps-ex3-1",
+          "question": "Power sharing is the very spirit of democracy. Justify the statement.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Democracy is not only majority rule; it requires consultation and accountability.",
+            "Step 2: Power sharing gives different groups a voice in decisions that affect them.",
+            "Step 3: It prevents the concentration of power and protects minority rights.",
+            "Step 4: It increases the legitimacy of the government because people feel included.",
+            "Step 5: Belgium's accommodation model shows that sharing can preserve unity in diversity.",
+            "Step 6: Therefore power sharing is central to the spirit of democracy, not an optional extra."
+          ],
+          "final_answer": "Power sharing expresses democracy's core values of participation, accountability and minority rights, and it helps keep plural societies united."
+        },
+        {
+          "id": "ps-ex3-2",
+          "question": "Majoritarian policies in Sri Lanka undermined democracy. Evaluate this statement.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Majority rule is democratic only when rights and procedures are respected.",
+            "Step 2: Sri Lanka's 1956 language Act and job policies excluded Tamils from equal citizenship.",
+            "Step 3: The special status given to Buddhism made the state appear to belong to one community.",
+            "Step 4: Exclusion led to alienation, protest and civil war.",
+            "Step 5: A democratic government must protect minorities and share power, not merely win elections.",
+            "Step 6: The statement is valid: majoritarianism weakened democracy and destroyed peace."
+          ],
+          "final_answer": "Yes. Sri Lanka's majoritarian language, education and religion policies excluded Tamils and turned a democratic majority into domination, leading to civil war."
+        },
+        {
+          "id": "ps-ex3-3",
+          "question": "A country has one dominant community and several small minorities. Its leaders say that sharing power will make the government weak. How would you respond?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Acknowledge the concern: sharing can slow decisions and require negotiation.",
+            "Step 2: Explain the cost of exclusion: resentment, protest, instability and possible violence.",
+            "Step 3: Distinguish short-term speed from long-term stability.",
+            "Step 4: Give examples of arrangements: minority representation, regional autonomy, community bodies and rights protection.",
+            "Step 5: Argue that legitimate decisions are more likely to be accepted and implemented.",
+            "Step 6: Conclude that sharing power strengthens, rather than weakens, the state in a plural society."
+          ],
+          "final_answer": "Sharing may slow some decisions but it prevents exclusion and conflict, making the state more stable and legitimate."
+        },
+        {
+          "id": "ps-ex3-4",
+          "question": "Explain how Belgium's community government differs from its regional government.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: A regional government is based on territory, such as Flanders or Wallonia.",
+            "Step 2: A community government is based on language community, not territory.",
+            "Step 3: The community government handles culture, education and language.",
+            "Step 4: Regional governments handle regional economic and administrative matters.",
+            "Step 5: The two overlap in some areas but have different constituencies and purposes.",
+            "Step 6: Together they give both territorial and cultural communities a share in power."
+          ],
+          "final_answer": "Regional governments represent territorial regions, while community governments represent language communities and manage culture, education and language."
+        },
+        {
+          "id": "ps-ex3-5",
+          "question": "Are the different forms of power sharing watertight compartments? Explain with examples.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The forms are analytical categories, not separate boxes.",
+            "Step 2: A coalition cabinet shares power among parties and may also represent social groups.",
+            "Step 3: A federal system shares power vertically and also horizontally within each level.",
+            "Step 4: Reserved constituencies share power among social groups through the electoral system.",
+            "Step 5: Belgium's arrangements combine territorial, community and party sharing.",
+            "Step 6: Therefore the forms overlap in practice."
+          ],
+          "final_answer": "No. The forms overlap: federalism includes horizontal checks, coalitions combine party and social sharing, and Belgium combines territorial and community arrangements."
+        },
+        {
+          "id": "ps-ex3-6",
+          "question": "Design a power-sharing plan for a fictional state with two equal language groups and one small tribal community. Include at least four institutions and one safeguard.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Create a central executive with equal representation from the two language groups.",
+            "Step 2: Create regional governments for the two language regions with cultural and educational powers.",
+            "Step 3: Reserve seats in the legislature for the tribal community and guarantee its consultation on land and forest laws.",
+            "Step 4: Set up an independent constitutional court to protect minority rights.",
+            "Step 5: Add a safeguard: any change to language or land laws requires a special majority including minority consent.",
+            "Step 6: Explain that the plan shares power without giving either large group a veto over all decisions."
+          ],
+          "final_answer": "A workable plan combines equal central representation, regional autonomy, reserved tribal representation, a constitutional court and a special-majority safeguard for minority-sensitive laws."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "ps-q-s-1",
+        "question": "Power sharing is desirable in a democracy because it:",
+        "options": [
+          "Distributes decision making among different groups and organs",
+          "Concentrates decision making in one body",
+          "Eliminates the need for elections",
+          "Gives all power to the majority community"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Power sharing distributes authority so that no single group or organ controls everything.",
+          "wrong_options": {
+            "1": "Concentration is the opposite of power sharing.",
+            "2": "Elections remain essential in a democracy.",
+            "3": "Majority domination is majoritarianism, not power sharing."
+          }
+        }
+      },
+      {
+        "id": "ps-q-s-2",
+        "question": "Which country is used in the textbook as an example of accommodation of linguistic diversity?",
+        "options": [
+          "Sri Lanka",
+          "Pakistan",
+          "Nepal",
+          "Belgium"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Belgium amended its constitution and shared power among language communities.",
+          "wrong_options": {
+            "0": "Sri Lanka is the example of majoritarianism.",
+            "1": "Pakistan is not the textbook case here.",
+            "2": "Nepal is not the textbook case here."
+          }
+        }
+      },
+      {
+        "id": "ps-q-s-3",
+        "question": "The 1956 Act in Sri Lanka:",
+        "options": [
+          "Made Tamil the only official language",
+          "Gave equal status to all languages",
+          "Made Sinhala the only official language",
+          "Banned all languages except English"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "The Act recognised Sinhala as the only official language and disregarded Tamil.",
+          "wrong_options": {
+            "0": "Tamil was not made the only official language.",
+            "1": "The Act did not give equal status to all languages.",
+            "3": "English was not made the only language."
+          }
+        }
+      },
+      {
+        "id": "ps-q-s-4",
+        "question": "Horizontal power sharing is among:",
+        "options": [
+          "Central, state and local governments",
+          "Legislature, executive and judiciary",
+          "Political parties",
+          "Religious communities"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Horizontal sharing divides power among the three organs at the same level.",
+          "wrong_options": {
+            "0": "That is vertical power sharing.",
+            "2": "Party sharing is a different form.",
+            "3": "Community sharing is a different form."
+          }
+        }
+      },
+      {
+        "id": "ps-q-s-5",
+        "question": "The community government in Belgium deals mainly with:",
+        "options": [
+          "Culture, education and language",
+          "Defence and foreign affairs",
+          "Currency and banking",
+          "Police and prisons"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "It is elected by one language community and handles cultural, educational and language matters.",
+          "wrong_options": {
+            "1": "Defence and foreign affairs belong to the central government.",
+            "2": "Currency and banking are central subjects.",
+            "3": "Police and prisons are not its main responsibility."
+          }
+        }
+      },
+      {
+        "id": "ps-q-s-6",
+        "question": "Majoritarianism means:",
+        "options": [
+          "Rule by the majority opinion after debate",
+          "Rule by a coalition of all parties",
+          "Rule by the judiciary",
+          "Rule by the majority community, often ignoring minorities"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "It is the belief that the majority community should dominate the state.",
+          "wrong_options": {
+            "0": "Majority opinion with rights is democratic majority rule.",
+            "1": "Coalition rule is a form of power sharing.",
+            "2": "Judicial rule is not majoritarianism."
+          }
+        }
+      },
+      {
+        "id": "ps-q-s-7",
+        "question": "Which of these is a pressure group?",
+        "options": [
+          "A political party in parliament",
+          "The Election Commission",
+          "A farmers' organisation negotiating with the government",
+          "The Supreme Court"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "A farmers' organisation tries to influence policy without contesting elections.",
+          "wrong_options": {
+            "0": "A party contests elections and seeks power.",
+            "1": "The Election Commission is a constitutional body.",
+            "3": "The Supreme Court is a judicial organ."
+          }
+        }
+      },
+      {
+        "id": "ps-q-s-8",
+        "question": "Belgium amended its constitution four times between:",
+        "options": [
+          "1947 and 1960",
+          "1970 and 1993",
+          "1980 and 2000",
+          "1956 and 1972"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The four amendments were made between 1970 and 1993.",
+          "wrong_options": {
+            "0": "This is not the period given in the textbook.",
+            "2": "This is not the period given in the textbook.",
+            "3": "These years relate to Sri Lanka, not Belgium."
+          }
+        }
+      },
+      {
+        "id": "ps-q-s-9",
+        "question": "Power sharing among social groups can take the form of:",
+        "options": [
+          "Reserved constituencies",
+          "A single-party dictatorship",
+          "Abolition of local government",
+          "Cancelling elections"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Reserved constituencies give Scheduled Castes and Scheduled Tribes representation.",
+          "wrong_options": {
+            "1": "Dictatorship concentrates power.",
+            "2": "Local government is a form of vertical sharing.",
+            "3": "Cancelling elections destroys democracy."
+          }
+        }
+      },
+      {
+        "id": "ps-q-s-10",
+        "question": "A prudential reason for power sharing is that it:",
+        "options": [
+          "Is required by religious tradition",
+          "Gives all power to the majority",
+          "Removes the need for a constitution",
+          "Makes government more stable and reduces conflict"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Prudential reasons focus on practical consequences such as stability and conflict reduction.",
+          "wrong_options": {
+            "0": "Power sharing is not justified here by religious tradition.",
+            "1": "Majority domination is the opposite of sharing.",
+            "2": "A constitution is still necessary."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "ps-q-m-1",
+        "question": "Which statement best explains why Sri Lanka's majoritarian policies led to civil war?",
+        "options": [
+          "Tamils were given more university seats than Sinhalese",
+          "Sri Lanka had no constitution",
+          "Tamils felt excluded from language, education and government jobs",
+          "Sri Lanka shared power equally among all communities"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Exclusion from language status, education and jobs created deep alienation.",
+          "wrong_options": {
+            "0": "Tamils were not favoured over Sinhalese.",
+            "1": "Sri Lanka had a constitution, but it protected Buddhism specially.",
+            "3": "Power was not shared equally."
+          }
+        }
+      },
+      {
+        "id": "ps-q-m-2",
+        "question": "Belgium's central government has equal numbers of Dutch and French-speaking ministers. This is an example of power sharing among:",
+        "options": [
+          "Different levels of government",
+          "Social groups",
+          "Different organs of government",
+          "Judicial and legislative organs only"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The arrangement shares power between language communities, which are social groups.",
+          "wrong_options": {
+            "0": "Vertical sharing is between central, state and local levels.",
+            "2": "Horizontal sharing is among legislature, executive and judiciary.",
+            "3": "The arrangement is not limited to judicial and legislative organs."
+          }
+        }
+      },
+      {
+        "id": "ps-q-m-3",
+        "question": "A coalition government is an example of power sharing because:",
+        "options": [
+          "Several parties share ministerial positions and influence",
+          "One party takes all cabinet posts",
+          "The judiciary appoints the cabinet",
+          "The army controls policy"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Coalitions require parties to share ministries and negotiate policy.",
+          "wrong_options": {
+            "1": "That describes single-party dominance, not a coalition.",
+            "2": "The judiciary does not appoint the cabinet.",
+            "3": "Army control is not democratic power sharing."
+          }
+        }
+      },
+      {
+        "id": "ps-q-m-4",
+        "question": "Which pair correctly matches the form of power sharing with its example?",
+        "options": [
+          "Vertical - court reviewing a law",
+          "Horizontal - panchayat managing local roads",
+          "Political parties - reserved constituencies",
+          "Social groups - community government in Belgium"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Belgium's community government shares power among language communities.",
+          "wrong_options": {
+            "0": "Court review is horizontal sharing.",
+            "1": "Panchayats are part of vertical sharing.",
+            "2": "Reserved constituencies are social-group sharing."
+          }
+        }
+      },
+      {
+        "id": "ps-q-m-5",
+        "question": "The moral reason for power sharing is that:",
+        "options": [
+          "It always speeds up decision making",
+          "It increases the power of the majority",
+          "People have a right to participate in decisions that affect them",
+          "It removes the need for political parties"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Moral reasons rest on democratic participation and legitimacy.",
+          "wrong_options": {
+            "0": "Sharing can slow decisions.",
+            "1": "Sharing limits majority domination.",
+            "3": "Parties remain important."
+          }
+        }
+      },
+      {
+        "id": "ps-q-m-6",
+        "question": "Which of these is a consequence of Belgium's power-sharing model?",
+        "options": [
+          "A long civil war",
+          "A peaceful accommodation of language communities",
+          "The abolition of regional governments",
+          "The end of elections"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Belgium avoided civil war by accommodating its language communities.",
+          "wrong_options": {
+            "0": "Sri Lanka, not Belgium, experienced the long civil war.",
+            "2": "Belgium created regional governments.",
+            "3": "Elections continue in Belgium."
+          }
+        }
+      },
+      {
+        "id": "ps-q-m-7",
+        "question": "In Sri Lanka, the 1972 constitution:",
+        "options": [
+          "Gave Buddhism a special protected status",
+          "Made Tamil the official language",
+          "Abolished the office of President",
+          "Created a community government"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The constitution stipulated that the state would protect and foster Buddhism.",
+          "wrong_options": {
+            "1": "Sinhala, not Tamil, was favoured.",
+            "2": "The constitution did not abolish the presidency.",
+            "3": "Community government is a Belgian institution."
+          }
+        }
+      },
+      {
+        "id": "ps-q-m-8",
+        "question": "A student says: 'Power sharing is undemocratic because it gives minorities more power than their numbers.' Which response is most accurate?",
+        "options": [
+          "Power sharing always gives minorities a veto over every law",
+          "Power sharing means abolishing majority rule completely",
+          "Power sharing is only used in Belgium",
+          "Power sharing protects minorities and prevents domination, so it strengthens democracy"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Power sharing protects rights and gives groups a voice; it does not give minorities unlimited power.",
+          "wrong_options": {
+            "0": "It does not create a universal minority veto.",
+            "1": "Majority rule continues within a rights-respecting framework.",
+            "2": "Many democracies use power-sharing arrangements."
+          }
+        }
+      },
+      {
+        "id": "ps-q-m-9",
+        "question": "Which of these best describes the relationship between power sharing and stability?",
+        "options": [
+          "Sharing power always causes civil war",
+          "Stability requires concentrating all power in the centre",
+          "Sharing power can reduce conflict by giving groups a stake in the system",
+          "Stability is unrelated to power sharing"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Inclusion reduces resentment and gives groups reasons to cooperate.",
+          "wrong_options": {
+            "0": "Belgium shows the opposite.",
+            "1": "Concentration can cause exclusion and conflict.",
+            "3": "The textbook links sharing with stability."
+          }
+        }
+      },
+      {
+        "id": "ps-q-m-10",
+        "question": "Why is the Belgian model called an accommodation model?",
+        "options": [
+          "It forced all communities to adopt one language",
+          "It adjusted institutions to accommodate different language groups",
+          "It abolished regional identities",
+          "It gave all power to the French-speaking minority"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The constitution was changed to accommodate language communities through shared institutions.",
+          "wrong_options": {
+            "0": "It did not force one language on everyone.",
+            "2": "It recognised regional identities.",
+            "3": "Power was shared, not given to one minority."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "ps-q-x-1",
+        "question": "Which statement best captures the difference between majority rule and majoritarianism?",
+        "options": [
+          "Majority rule respects rights and procedures; majoritarianism ignores minority rights",
+          "Majority rule is always dictatorship; majoritarianism is democracy",
+          "Majority rule and majoritarianism are identical",
+          "Majoritarianism protects minorities better than majority rule"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Democratic majority rule operates within constitutional limits and protects rights; majoritarianism is community domination.",
+          "wrong_options": {
+            "1": "Majority rule is not dictatorship.",
+            "2": "The textbook treats them as different.",
+            "3": "Majoritarianism is associated with minority exclusion."
+          }
+        }
+      },
+      {
+        "id": "ps-q-x-2",
+        "question": "Belgium's four constitutional amendments between 1970 and 1993 show that:",
+        "options": [
+          "Constitutions should never be amended",
+          "Majoritarianism is the best way to handle diversity",
+          "Language communities cannot coexist",
+          "Power sharing can be built gradually through negotiation"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "The amendments were step-by-step compromises among language communities.",
+          "wrong_options": {
+            "0": "The Belgian case shows amendment can be constructive.",
+            "1": "Sri Lanka's majoritarianism had the opposite result.",
+            "2": "Belgium shows coexistence is possible."
+          }
+        }
+      },
+      {
+        "id": "ps-q-x-3",
+        "question": "A country gives its two largest communities equal cabinet posts but ignores a small tribal community. This arrangement is:",
+        "options": [
+          "Complete power sharing",
+          "Majoritarianism by the tribal community",
+          "Partial power sharing that still excludes a group",
+          "Horizontal power sharing only"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Sharing between two groups can still leave others excluded, so it is incomplete.",
+          "wrong_options": {
+            "0": "The tribal community is excluded.",
+            "1": "The tribal community is not dominant.",
+            "3": "The arrangement is social-group sharing, not only horizontal."
+          }
+        }
+      },
+      {
+        "id": "ps-q-x-4",
+        "question": "Which of these is the strongest argument that power sharing improves decision quality?",
+        "options": [
+          "It makes every decision unanimous",
+          "It brings diverse information and local knowledge into decisions",
+          "It removes the need for debate",
+          "It gives one leader final authority"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Including more groups can improve information and implementation.",
+          "wrong_options": {
+            "0": "Unanimity is not required.",
+            "2": "Debate is central to sharing.",
+            "3": "One leader's final authority is concentration."
+          }
+        }
+      },
+      {
+        "id": "ps-q-x-5",
+        "question": "The Sri Lankan civil war is best explained as a consequence of:",
+        "options": [
+          "Majoritarian policies that alienated the Tamil minority",
+          "Power sharing that gave Tamils too much influence",
+          "The absence of any language policy",
+          "Belgian interference in Sri Lanka"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Sinhala-only policies and discrimination created Tamil alienation and conflict.",
+          "wrong_options": {
+            "1": "Tamils did not have excessive influence.",
+            "2": "There was a clear Sinhala-only language policy.",
+            "3": "Belgium was not involved."
+          }
+        }
+      },
+      {
+        "id": "ps-q-x-6",
+        "question": "Which situation best illustrates vertical power sharing?",
+        "options": [
+          "The Supreme Court invalidating a statute",
+          "Two parties forming a coalition",
+          "A community government running language schools",
+          "A state government running police while the Union handles defence"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Vertical sharing divides power between different levels of government.",
+          "wrong_options": {
+            "0": "That is horizontal sharing.",
+            "1": "That is party sharing.",
+            "2": "That is social-group sharing."
+          }
+        }
+      },
+      {
+        "id": "ps-q-x-7",
+        "question": "A critic says power sharing makes governments slow. The best response is that:",
+        "options": [
+          "Speed is the only measure of good government",
+          "Power should always be concentrated to save time",
+          "Slow but legitimate decisions are often more stable and accepted",
+          "Democracy should be abandoned if it is slow"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Legitimacy and acceptance matter, and exclusion can cause costly conflict.",
+          "wrong_options": {
+            "0": "Speed is not the only measure.",
+            "1": "Concentration can create resentment and instability.",
+            "3": "Slowness is not a reason to abandon democracy."
+          }
+        }
+      },
+      {
+        "id": "ps-q-x-8",
+        "question": "Which combination best represents the forms of power sharing used in India?",
+        "options": [
+          "Only horizontal sharing",
+          "Horizontal, vertical and social-group sharing",
+          "Only community government",
+          "Only one-party rule"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "India separates organs, has central-state-local levels and uses reserved constituencies.",
+          "wrong_options": {
+            "0": "India also uses vertical and social-group sharing.",
+            "2": "India does not have Belgium-style community governments.",
+            "3": "India has a multi-party democracy."
+          }
+        }
+      },
+      {
+        "id": "ps-q-x-9",
+        "question": "The statement 'power sharing is desirable because it gives everyone a share in power' is:",
+        "options": [
+          "A moral argument",
+          "A purely economic argument",
+          "A military argument",
+          "A claim that power sharing removes all conflict"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "It rests on the democratic principle of participation and legitimacy.",
+          "wrong_options": {
+            "1": "It is not primarily about economic efficiency.",
+            "2": "It is not a military argument.",
+            "3": "Sharing manages conflict but does not remove it entirely."
+          }
+        }
+      },
+      {
+        "id": "ps-q-x-10",
+        "question": "Which lesson for plural societies follows most directly from comparing Belgium and Sri Lanka?",
+        "options": [
+          "Majority communities should always impose their language",
+          "Diversity inevitably leads to civil war",
+          "Small countries cannot be democratic",
+          "Accommodating diversity through power sharing is safer than exclusion"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Belgium's accommodation avoided war, while Sri Lanka's exclusion contributed to it.",
+          "wrong_options": {
+            "0": "Imposing language was a cause of conflict.",
+            "1": "Diversity can be managed peacefully.",
+            "2": "Size does not determine democracy."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Power Sharing - Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Power Sharing",
+        "group": "core"
+      },
+      {
+        "id": "n2",
+        "label": "Diversity",
+        "group": "context"
+      },
+      {
+        "id": "n3",
+        "label": "Belgium",
+        "group": "case"
+      },
+      {
+        "id": "n4",
+        "label": "Sri Lanka",
+        "group": "case"
+      },
+      {
+        "id": "n5",
+        "label": "Majoritarianism",
+        "group": "concept"
+      },
+      {
+        "id": "n6",
+        "label": "Horizontal Sharing",
+        "group": "form"
+      },
+      {
+        "id": "n7",
+        "label": "Vertical Sharing",
+        "group": "form"
+      },
+      {
+        "id": "n8",
+        "label": "Social Groups",
+        "group": "form"
+      },
+      {
+        "id": "n9",
+        "label": "Political Parties",
+        "group": "form"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n1",
+        "n4"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n1",
+        "n6"
+      ],
+      [
+        "n1",
+        "n7"
+      ],
+      [
+        "n1",
+        "n8"
+      ],
+      [
+        "n1",
+        "n9"
+      ],
+      [
+        "n2",
+        "n3"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n3",
+        "n8"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Power Sharing - Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Power Sharing",
+    "branches": [
+      {
+        "concept": "Why Share Power",
+        "sub_nodes": [
+          "Reduces conflict and violence",
+          "Gives groups a stake in the system",
+          "Improves information and decisions",
+          "Respects democratic participation"
+        ],
+        "connections": "Prudential and moral reasons support the same institutions"
+      },
+      {
+        "concept": "Forms of Sharing",
+        "sub_nodes": [
+          "Horizontal: legislature, executive, judiciary",
+          "Vertical: central, state, local",
+          "Social groups: community government, reserved seats",
+          "Political parties: coalitions and alliances",
+          "Pressure groups influence policy"
+        ]
+      },
+      {
+        "concept": "Belgium",
+        "sub_nodes": [
+          "Dutch, French and German speakers",
+          "Four amendments between 1970 and 1993",
+          "Equal central representation",
+          "Regional governments",
+          "Community government for culture and education"
+        ]
+      },
+      {
+        "concept": "Sri Lanka",
+        "sub_nodes": [
+          "Sinhala majority and Tamil minority",
+          "1956 Sinhala-only Act",
+          "Preference in university and jobs",
+          "1972 constitution protected Buddhism",
+          "Alienation led to civil war"
+        ]
+      },
+      {
+        "concept": "Majoritarianism",
+        "sub_nodes": [
+          "Rule by the majority community",
+          "Different from majority rule",
+          "Ignores minority rights",
+          "Undermines democratic legitimacy"
+        ]
+      },
+      {
+        "concept": "Lessons",
+        "sub_nodes": [
+          "Accommodation is safer than exclusion",
+          "Sharing must be meaningful, not symbolic",
+          "Constitutions can be amended gradually",
+          "Democracy is more than counting heads"
+        ]
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "Power sharing means giving every group equal power in every decision - FALSE: it means no group is excluded and authority is distributed through rules, not identical power for all.",
+    "Majority rule and majoritarianism are the same - FALSE: majority rule respects rights and procedures; majoritarianism is domination by the majority community.",
+    "Belgium has no central government - FALSE: Belgium has a central government, regional governments and community governments.",
+    "Sri Lanka's conflict was only about language - FALSE: language, university and job discrimination, and the special status of Buddhism all contributed.",
+    "Power sharing always slows down government - FALSE: it can slow some decisions but often improves implementation and stability.",
+    "Only federal countries share power - FALSE: unitary states also share power through local government and other arrangements.",
+    "A community government is the same as a regional government - FALSE: community government is based on language community; regional government is based on territory.",
+    "Power sharing eliminates all conflict - FALSE: it manages conflict and reduces the risk of domination; disagreements remain."
+  ],
+  "chapterId": "power-sharing",
+  "subjectId": "social-science",
+  "subjectName": "Social Science",
+  "unitId": "social-science-3",
+  "unitName": "Democratic Politics - II",
+  "examWeightage": 20,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

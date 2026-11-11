@@ -1,0 +1,1238 @@
+{
+  "subject": "Physics",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 1,
+  "chapter": "Light - Reflection and Refraction",
+  "id": "light-reflection-and-refraction",
+  "lesson": 1,
+  "title": "Light - Reflection and Refraction - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "State and apply the laws of reflection",
+    "Describe the terms and image formation of concave and convex spherical mirrors",
+    "Apply the mirror formula and magnification with the Cartesian sign convention",
+    "Explain refraction and use the refractive index to relate speed and bending",
+    "Apply the lens formula and magnification for convex and concave lenses",
+    "Calculate the power of a lens and the power of lenses in contact",
+    "Solve board-style numericals on mirrors, lenses, and refraction"
+  ],
+  "concepts": [
+    {
+      "id": "reflection-laws",
+      "title": "Reflection of Light and the Laws of Reflection",
+      "explanation": "Light is a form of energy that travels in straight lines in a homogeneous medium. When it strikes a polished surface, it bounces back; this is reflection. The incident ray, the reflected ray, and the normal at the point of incidence all lie in the same plane. The angle of incidence is always equal to the angle of reflection. Regular reflection from a smooth surface gives a clear image, while diffused reflection from a rough surface scatters light in many directions.",
+      "key_points": [
+        "Angle of incidence equals angle of reflection.",
+        "Incident ray, reflected ray, and normal lie in the same plane.",
+        "Regular reflection forms images; diffused reflection makes objects visible from all directions.",
+        "A plane mirror forms a virtual, erect image of the same size, with lateral inversion."
+      ],
+      "real_life_example": "A bathroom mirror reflects light regularly and gives a clear image, while a rough wall reflects light diffusely and does not form an image."
+    },
+    {
+      "id": "spherical-mirrors",
+      "title": "Spherical Mirrors and Image Formation",
+      "explanation": "A spherical mirror is a part of a hollow sphere whose one surface is silvered. A concave mirror has its reflecting surface curved inward, while a convex mirror has it curved outward. The pole is the centre of the mirror, the centre of curvature is the centre of the sphere, and the principal focus is the point where rays parallel to the principal axis meet or appear to meet after reflection. The focal length is half the radius of curvature, f = R/2 for a mirror of small aperture. Concave mirrors can form real or virtual images, but a convex mirror always forms a virtual, erect, and diminished image.",
+      "key_points": [
+        "A concave mirror converges parallel rays; a convex mirror diverges them.",
+        "For a spherical mirror of small aperture, f = R/2.",
+        "A concave mirror forms real or virtual images depending on the object distance.",
+        "Concave mirrors are used in torches and shaving mirrors; convex mirrors in rear-view and security mirrors."
+      ],
+      "real_life_example": "A convex rear-view mirror in a car always gives an erect, diminished image and a wide field of view behind the vehicle."
+    },
+    {
+      "id": "mirror-formula-magnification",
+      "title": "Mirror Formula and Magnification",
+      "explanation": "The mirror formula relates object distance u, image distance v, and focal length f as 1/v + 1/u = 1/f. Distances are measured from the pole using the Cartesian sign convention: distances measured along the incident light are negative, and those measured opposite to it are positive. Magnification is m = -v/u = height of image / height of object. A negative magnification means a real, inverted image, while a positive magnification means a virtual, erect image.",
+      "key_points": [
+        "Mirror formula: 1/v + 1/u = 1/f.",
+        "Object distance u is negative for a real object in front of the mirror.",
+        "Magnification: m = -v/u = h'/h.",
+        "Negative m means real and inverted; positive m means virtual and erect."
+      ],
+      "real_life_example": "A concave shaving mirror held close to the face gives an erect, magnified virtual image because the face lies within the focal length."
+    },
+    {
+      "id": "refraction-refractive-index",
+      "title": "Refraction and Refractive Index",
+      "explanation": "Refraction is the bending of light as it passes from one transparent medium to another because its speed changes. When light enters an optically denser medium, it slows down and bends towards the normal; when it enters a rarer medium, it speeds up and bends away from the normal. Snell's law states that sin i / sin r is constant for a given pair of media. The absolute refractive index is n = c/v, where c is the speed of light in vacuum and v is the speed in the medium.",
+      "key_points": [
+        "Refraction occurs because the speed of light changes between media.",
+        "Snell's law: n1 sin i = n2 sin r, or sin i / sin r = n21.",
+        "Absolute refractive index n = c/v; it is greater than 1 for any material medium.",
+        "Light bends towards the normal when entering a denser medium and away from it when entering a rarer medium."
+      ],
+      "real_life_example": "A straw in a glass of water appears bent at the water surface because light from the submerged part refracts as it leaves water and enters air."
+    },
+    {
+      "id": "spherical-lenses",
+      "title": "Spherical Lenses and the Lens Formula",
+      "explanation": "A lens is a transparent refracting medium bounded by two spherical surfaces. A convex lens is thicker in the middle and converges parallel rays, while a concave lens is thinner in the middle and diverges them. The lens formula is 1/v - 1/u = 1/f, using the same Cartesian sign convention as mirrors. Magnification is m = v/u; a negative m gives a real inverted image and a positive m gives a virtual erect image.",
+      "key_points": [
+        "A convex lens is converging and a concave lens is diverging.",
+        "Lens formula: 1/v - 1/u = 1/f.",
+        "Magnification: m = v/u = h'/h.",
+        "A convex lens forms real images for objects beyond f and virtual images for objects within f; a concave lens always forms virtual, erect, diminished images."
+      ],
+      "real_life_example": "A magnifying glass is a convex lens; when the object is inside its focal length it gives an erect, enlarged virtual image."
+    },
+    {
+      "id": "power-of-lens",
+      "title": "Power of a Lens and Its Applications",
+      "explanation": "The power of a lens measures its ability to converge or diverge light and is defined as P = 1/f, where f is the focal length in metres. Its SI unit is the dioptre (D), and 1 D = 1 m^-1. A convex lens has positive power and a concave lens has negative power. When thin lenses are placed in contact, their powers add: P = P1 + P2 + ..., which is used in spectacles and camera lenses.",
+      "key_points": [
+        "Power P = 1/f, with f in metres.",
+        "SI unit of power is the dioptre, D.",
+        "Convex lens: positive power; concave lens: negative power.",
+        "For thin lenses in contact, P = P1 + P2; the combined focal length follows 1/f = 1/f1 + 1/f2."
+      ],
+      "real_life_example": "Opticians write spectacle prescriptions in dioptres, such as +2.0 D for a converging reading lens and -1.5 D for a diverging distance lens."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-light-1",
+      "title": "Concave mirror: focal length and magnification",
+      "problem": "An object is placed 10 cm in front of a concave mirror. A real image is formed 30 cm in front of the mirror. Find the focal length and the magnification.",
+      "solution": [
+        "Step 1: Use the Cartesian sign convention. The object is in front of the mirror, so u = -10 cm.",
+        "Step 2: A real image in front of the mirror means v = -30 cm.",
+        "Step 3: Apply the mirror formula 1/f = 1/v + 1/u = -1/30 - 1/10.",
+        "Step 4: Take a common denominator of 30: -1/30 - 3/30 = -4/30, so f = -7.5 cm.",
+        "Step 5: Magnification m = -v/u = -(-30)/(-10) = -3.",
+        "Step 6: Negative f confirms a concave mirror; negative m means the image is real, inverted, and 3 times magnified."
+      ],
+      "answer": "Focal length f = -7.5 cm (concave mirror); magnification m = -3, so the image is real, inverted, and 3 times larger.",
+      "board_tip": "Write the sign convention explicitly before substituting; most lost marks come from using u = +10 cm.",
+      "exam_tip": "Check the sign of f against the mirror type: concave negative, convex positive."
+    },
+    {
+      "id": "we-light-2",
+      "title": "Convex mirror: image position and nature",
+      "problem": "An object is placed 15 cm in front of a convex mirror of focal length 10 cm. Find the image distance and magnification.",
+      "solution": [
+        "Step 1: Object distance u = -15 cm and, for a convex mirror, f = +10 cm.",
+        "Step 2: Use 1/v = 1/f - 1/u = 1/10 + 1/15.",
+        "Step 3: Take a common denominator of 30: 3/30 + 2/30 = 5/30 = 1/6.",
+        "Step 4: Therefore v = +6 cm. The positive sign means the image is behind the mirror.",
+        "Step 5: m = -v/u = -6/(-15) = +0.4.",
+        "Step 6: A positive magnification less than 1 means a virtual, erect, diminished image."
+      ],
+      "answer": "Image distance v = +6 cm behind the mirror; m = +0.4, so the image is virtual, erect, and diminished.",
+      "board_tip": "For a convex mirror, v is always positive, so the image is always behind the mirror and virtual.",
+      "exam_tip": "A convex mirror never forms a real image of a real object."
+    },
+    {
+      "id": "we-light-3",
+      "title": "Refractive index and speed of light in glass",
+      "problem": "A ray of light travels from air into glass. The refractive index of glass with respect to air is 1.5 and the speed of light in air is 3 x 10^8 m/s. Find the speed of light in glass and the refractive index of air with respect to glass.",
+      "solution": [
+        "Step 1: Absolute refractive index n = c/v, so v = c/n.",
+        "Step 2: v_glass = (3 x 10^8) / 1.5 = 2 x 10^8 m/s.",
+        "Step 3: The refractive index of air with respect to glass is n_air,glass = n_air / n_glass.",
+        "Step 4: Taking n_air = 1, n_air,glass = 1 / 1.5 = 0.67.",
+        "Step 5: Light slows down in glass, which is why it bends towards the normal."
+      ],
+      "answer": "Speed of light in glass = 2 x 10^8 m/s; refractive index of air with respect to glass = 0.67.",
+      "board_tip": "Keep the ratio the right way round: n_21 = n2 / n1, not n1 / n2.",
+      "exam_tip": "The relative refractive index of a rarer medium with respect to a denser medium is less than 1."
+    },
+    {
+      "id": "we-light-4",
+      "title": "Convex lens: image position and magnification",
+      "problem": "An object is placed 30 cm in front of a convex lens of focal length 20 cm. Find the image distance, magnification, and nature of the image.",
+      "solution": [
+        "Step 1: Use the Cartesian sign convention: u = -30 cm and f = +20 cm.",
+        "Step 2: Apply 1/v = 1/f + 1/u = 1/20 - 1/30.",
+        "Step 3: Take a common denominator of 60: 3/60 - 2/60 = 1/60.",
+        "Step 4: Therefore v = +60 cm. The positive sign means the image is on the opposite side of the lens.",
+        "Step 5: m = v/u = 60/(-30) = -2.",
+        "Step 6: A negative magnification with positive v means a real, inverted image twice the size of the object."
+      ],
+      "answer": "Image distance v = +60 cm on the other side of the lens; m = -2, so the image is real, inverted, and 2 times magnified.",
+      "board_tip": "For a lens, use 1/v - 1/u = 1/f. Do not mix it with the mirror formula, which has a plus sign.",
+      "exam_tip": "A convex lens gives a real image when the object is beyond f and a virtual image when it is within f."
+    },
+    {
+      "id": "we-light-5",
+      "title": "Power of two thin lenses in contact",
+      "problem": "A convex lens of power +5 D is placed in contact with a concave lens of power -3 D. Find the power and focal length of the combination and state whether it converges or diverges.",
+      "solution": [
+        "Step 1: For thin lenses in contact, the powers add: P = P1 + P2.",
+        "Step 2: P = (+5 D) + (-3 D) = +2 D.",
+        "Step 3: Use P = 1/f with f in metres, so f = 1/P = 1/2 = 0.5 m.",
+        "Step 4: Convert to centimetres: f = 50 cm.",
+        "Step 5: A positive power means the combination behaves as a converging lens."
+      ],
+      "answer": "P = +2 D; f = +0.5 m = +50 cm; the combination is converging.",
+      "board_tip": "Powers add only when the lenses are in contact. If there is a gap, the simple addition rule does not apply.",
+      "exam_tip": "Always convert focal length to metres before using P = 1/f."
+    }
+  ],
+  "exercises": {
+    "simple": {
+      "title": "Simple Practice - Reflection and Refraction Basics",
+      "objective": "Recall definitions, laws, and apply one-step formulae",
+      "problems": [
+        {
+          "id": "light-s-1",
+          "question": "State the two laws of reflection of light.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The incident ray, the reflected ray, and the normal at the point of incidence all lie in the same plane.",
+            "Step 2: The angle of incidence is equal to the angle of reflection."
+          ],
+          "final_answer": "Both rays and the normal lie in one plane, and angle i = angle r."
+        },
+        {
+          "id": "light-s-2",
+          "question": "Define the principal focus of a concave mirror.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Consider rays parallel to the principal axis of a concave mirror.",
+            "Step 2: After reflection, these rays converge at a point on the principal axis.",
+            "Step 3: That point is called the principal focus of the concave mirror."
+          ],
+          "final_answer": "The principal focus is the point on the principal axis where rays parallel to the axis converge after reflection."
+        },
+        {
+          "id": "light-s-3",
+          "question": "An object is placed 20 cm in front of a concave mirror of focal length 10 cm. Find the image distance and magnification.",
+          "difficulty": "simple",
+          "marks": 3,
+          "solution": [
+            "Step 1: u = -20 cm and f = -10 cm.",
+            "Step 2: Use 1/v = 1/f - 1/u = -1/10 + 1/20.",
+            "Step 3: 1/v = -2/20 + 1/20 = -1/20, so v = -20 cm.",
+            "Step 4: m = -v/u = -(-20)/(-20) = -1."
+          ],
+          "final_answer": "v = -20 cm; m = -1, so the image is real, inverted, and the same size as the object."
+        },
+        {
+          "id": "light-s-4",
+          "question": "The refractive index of glass is 1.5. If the speed of light in air is 3 x 10^8 m/s, find the speed of light in glass.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Use n = c/v, so v = c/n.",
+            "Step 2: v = (3 x 10^8) / 1.5.",
+            "Step 3: v = 2 x 10^8 m/s."
+          ],
+          "final_answer": "Speed of light in glass = 2 x 10^8 m/s."
+        },
+        {
+          "id": "light-s-5",
+          "question": "An object is placed 15 cm in front of a convex lens of focal length 10 cm. Find the image distance and magnification.",
+          "difficulty": "simple",
+          "marks": 3,
+          "solution": [
+            "Step 1: u = -15 cm and f = +10 cm.",
+            "Step 2: Use 1/v = 1/f + 1/u = 1/10 - 1/15.",
+            "Step 3: 1/v = 3/30 - 2/30 = 1/30, so v = +30 cm.",
+            "Step 4: m = v/u = 30/(-15) = -2."
+          ],
+          "final_answer": "v = +30 cm; m = -2, so the image is real, inverted, and 2 times magnified."
+        },
+        {
+          "id": "light-s-6",
+          "question": "Find the power of (i) a convex lens of focal length 50 cm and (ii) a concave lens of focal length 20 cm.",
+          "difficulty": "simple",
+          "marks": 3,
+          "solution": [
+            "Step 1: Convert focal lengths to metres: f1 = 0.50 m and f2 = -0.20 m.",
+            "Step 2: For the convex lens, P1 = 1/f1 = 1/0.50 = +2 D.",
+            "Step 3: For the concave lens, P2 = 1/f2 = 1/(-0.20) = -5 D."
+          ],
+          "final_answer": "(i) +2 D; (ii) -5 D."
+        }
+      ]
+    },
+    "medium": {
+      "title": "Medium Practice - Mirror, Lens, and Refraction Numericals",
+      "objective": "Apply sign conventions and two-step calculations accurately",
+      "problems": [
+        {
+          "id": "light-m-1",
+          "question": "An object is placed 10 cm in front of a concave mirror of focal length 15 cm. Find the image distance, magnification, and nature of the image.",
+          "difficulty": "medium",
+          "marks": 4,
+          "solution": [
+            "Step 1: u = -10 cm and f = -15 cm.",
+            "Step 2: Use 1/v = 1/f - 1/u = -1/15 + 1/10.",
+            "Step 3: 1/v = -2/30 + 3/30 = 1/30, so v = +30 cm.",
+            "Step 4: A positive v means the image is behind the mirror, so it is virtual.",
+            "Step 5: m = -v/u = -30/(-10) = +3, so the image is virtual, erect, and 3 times magnified."
+          ],
+          "final_answer": "v = +30 cm behind the mirror; m = +3; virtual, erect, magnified."
+        },
+        {
+          "id": "light-m-2",
+          "question": "An object is placed 30 cm in front of a convex mirror of focal length 15 cm. Find the image distance and magnification.",
+          "difficulty": "medium",
+          "marks": 4,
+          "solution": [
+            "Step 1: u = -30 cm and f = +15 cm.",
+            "Step 2: Use 1/v = 1/f - 1/u = 1/15 + 1/30.",
+            "Step 3: 1/v = 2/30 + 1/30 = 3/30 = 1/10, so v = +10 cm.",
+            "Step 4: m = -v/u = -10/(-30) = +1/3.",
+            "Step 5: The image is virtual, erect, and diminished."
+          ],
+          "final_answer": "v = +10 cm behind the mirror; m = +1/3; virtual, erect, diminished."
+        },
+        {
+          "id": "light-m-3",
+          "question": "The refractive index of water is 4/3. A ray of light travelling in air strikes the water surface at an angle of incidence of 30 degrees. Find the angle of refraction and the speed of light in water. Take c = 3 x 10^8 m/s.",
+          "difficulty": "medium",
+          "marks": 4,
+          "solution": [
+            "Step 1: Use Snell's law: n_air sin i = n_water sin r, with n_air = 1.",
+            "Step 2: sin r = sin 30 / (4/3) = (1/2) x (3/4) = 3/8 = 0.375.",
+            "Step 3: r = sin^-1(0.375), which is about 22 degrees.",
+            "Step 4: v = c/n = (3 x 10^8) / (4/3) = 2.25 x 10^8 m/s."
+          ],
+          "final_answer": "Angle of refraction is about 22 degrees; speed of light in water = 2.25 x 10^8 m/s."
+        },
+        {
+          "id": "light-m-4",
+          "question": "A convex lens of focal length 20 cm is placed in contact with a concave lens of focal length 25 cm. Find the power and focal length of the combination.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: P1 = 1/0.20 = +5 D and P2 = 1/(-0.25) = -4 D.",
+            "Step 2: P = P1 + P2 = +5 - 4 = +1 D.",
+            "Step 3: f = 1/P = 1/1 = +1 m = +100 cm.",
+            "Step 4: The positive power means the combination is converging."
+          ],
+          "final_answer": "P = +1 D; f = +100 cm; converging combination."
+        },
+        {
+          "id": "light-m-5",
+          "question": "An object 5 cm tall is placed 25 cm in front of a concave mirror of focal length 20 cm. Find the image distance, magnification, and image height.",
+          "difficulty": "medium",
+          "marks": 5,
+          "solution": [
+            "Step 1: u = -25 cm and f = -20 cm.",
+            "Step 2: 1/v = 1/f - 1/u = -1/20 + 1/25.",
+            "Step 3: 1/v = -5/100 + 4/100 = -1/100, so v = -100 cm.",
+            "Step 4: m = -v/u = -(-100)/(-25) = -4.",
+            "Step 5: h' = m x h = -4 x 5 = -20 cm.",
+            "Step 6: The negative sign means the image is real, inverted, and 20 cm tall."
+          ],
+          "final_answer": "v = -100 cm; m = -4; image height = -20 cm (real, inverted, 20 cm tall)."
+        },
+        {
+          "id": "light-m-6",
+          "question": "Light travels in a medium at 2 x 10^8 m/s. Find the refractive index of the medium and identify whether it is closer to water or glass.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: n = c/v = (3 x 10^8) / (2 x 10^8).",
+            "Step 2: n = 1.5.",
+            "Step 3: Water has n = 1.33 and glass has n = 1.5, so the medium is glass."
+          ],
+          "final_answer": "n = 1.5; the medium is glass."
+        }
+      ]
+    },
+    "complex": {
+      "title": "Complex Practice - Multi-Step Board-Level Numericals",
+      "objective": "Combine formulae, signs, and reasoning in board-level problems",
+      "problems": [
+        {
+          "id": "light-c-1",
+          "question": "A concave mirror forms a real image 4 times the size of the object on a screen placed 60 cm from the mirror. Find the object distance and the focal length of the mirror.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: A real image is inverted, so m = -4.",
+            "Step 2: The image is on a screen in front of the mirror, so v = -60 cm.",
+            "Step 3: Use m = -v/u: -4 = -(-60)/u = 60/u, so u = -15 cm.",
+            "Step 4: Use 1/f = 1/v + 1/u = -1/60 - 1/15.",
+            "Step 5: 1/f = -1/60 - 4/60 = -5/60 = -1/12, so f = -12 cm."
+          ],
+          "final_answer": "Object distance u = -15 cm; focal length f = -12 cm (concave mirror)."
+        },
+        {
+          "id": "light-c-2",
+          "question": "A convex lens forms a real image 3 times the size of the object at a distance of 45 cm from the lens. Find the object distance and the focal length of the lens.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: A real image is inverted, so m = -3.",
+            "Step 2: v = +45 cm because a real image from a convex lens is on the opposite side.",
+            "Step 3: m = v/u gives -3 = 45/u, so u = -15 cm.",
+            "Step 4: 1/f = 1/v - 1/u = 1/45 - 1/(-15).",
+            "Step 5: 1/f = 1/45 + 3/45 = 4/45, so f = 45/4 = 11.25 cm."
+          ],
+          "final_answer": "Object distance u = -15 cm; focal length f = +11.25 cm (convex lens)."
+        },
+        {
+          "id": "light-c-3",
+          "question": "A lens of power +2.5 D is placed in contact with a lens of power -4 D. Find the power and focal length of the combination and state its nature.",
+          "difficulty": "complex",
+          "marks": 4,
+          "solution": [
+            "Step 1: P = P1 + P2 = +2.5 D + (-4 D) = -1.5 D.",
+            "Step 2: f = 1/P = 1/(-1.5) = -0.667 m.",
+            "Step 3: f = -66.7 cm.",
+            "Step 4: A negative power and negative focal length mean the combination is diverging."
+          ],
+          "final_answer": "P = -1.5 D; f = -0.667 m = -66.7 cm; diverging combination."
+        },
+        {
+          "id": "light-c-4",
+          "question": "Light travels from water (n = 4/3) into air. If the angle of incidence in water is 30 degrees, find the angle of refraction in air.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Use n_water sin i = n_air sin r, with n_air = 1.",
+            "Step 2: (4/3) x sin 30 = 1 x sin r.",
+            "Step 3: (4/3) x (1/2) = 2/3 = 0.667, so sin r = 2/3.",
+            "Step 4: r = sin^-1(0.667), which is about 41.8 degrees.",
+            "Step 5: The ray bends away from the normal because it moves from a denser to a rarer medium."
+          ],
+          "final_answer": "Angle of refraction in air is about 41.8 degrees."
+        },
+        {
+          "id": "light-c-5",
+          "question": "An object is placed 10 cm in front of a convex mirror of focal length 15 cm. Find the image distance and magnification.",
+          "difficulty": "complex",
+          "marks": 4,
+          "solution": [
+            "Step 1: u = -10 cm and f = +15 cm.",
+            "Step 2: 1/v = 1/f - 1/u = 1/15 + 1/10.",
+            "Step 3: 1/v = 2/30 + 3/30 = 5/30 = 1/6, so v = +6 cm.",
+            "Step 4: m = -v/u = -6/(-10) = +0.6.",
+            "Step 5: The image is virtual, erect, and diminished."
+          ],
+          "final_answer": "v = +6 cm behind the mirror; m = +0.6; virtual, erect, diminished."
+        },
+        {
+          "id": "light-c-6",
+          "question": "An object is placed 10 cm in front of a convex lens of focal length 15 cm. Find the image distance, magnification, and nature of the image.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: u = -10 cm and f = +15 cm.",
+            "Step 2: 1/v = 1/f + 1/u = 1/15 - 1/10.",
+            "Step 3: 1/v = 2/30 - 3/30 = -1/30, so v = -30 cm.",
+            "Step 4: A negative v means the image is on the same side as the object, so it is virtual.",
+            "Step 5: m = v/u = -30/(-10) = +3.",
+            "Step 6: The image is virtual, erect, and 3 times magnified."
+          ],
+          "final_answer": "v = -30 cm on the same side as the object; m = +3; virtual, erect, magnified."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-light-s-1",
+        "question": "According to the laws of reflection, the angle of incidence is always equal to the:",
+        "options": [
+          "Angle of refraction",
+          "Angle of reflection",
+          "Critical angle",
+          "Angle of deviation"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The second law of reflection states that the angle of incidence equals the angle of reflection.",
+          "wrong_options": {
+            "0": "Refraction involves a change of medium; the reflection law compares incidence and reflection.",
+            "2": "The critical angle is a refraction concept, not the reflection law.",
+            "3": "The angle of deviation is the net bend of a ray, not the reflected angle."
+          }
+        }
+      },
+      {
+        "id": "q-light-s-2",
+        "question": "The image formed by a plane mirror is:",
+        "options": [
+          "Real, inverted, and enlarged",
+          "Virtual, erect, and of the same size",
+          "Virtual, inverted, and diminished",
+          "Real, erect, and diminished"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A plane mirror forms a virtual, erect image of the same size as the object.",
+          "wrong_options": {
+            "0": "A plane mirror does not form a real or enlarged image.",
+            "2": "The image is erect, not inverted, and is not diminished.",
+            "3": "The image is virtual, not real."
+          }
+        }
+      },
+      {
+        "id": "q-light-s-3",
+        "question": "A concave mirror can form:",
+        "options": [
+          "Only real images",
+          "Only virtual images",
+          "Both real and virtual images",
+          "Only images of the same size"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Depending on the object distance, a concave mirror can form real or virtual images.",
+          "wrong_options": {
+            "0": "When the object is within the focal length, the image is virtual.",
+            "1": "When the object is beyond the focal length, the image is real.",
+            "3": "Image size varies with object position."
+          }
+        }
+      },
+      {
+        "id": "q-light-s-4",
+        "question": "A convex mirror is used as a rear-view mirror because it:",
+        "options": [
+          "Forms a real magnified image",
+          "Always forms an erect, diminished image and gives a wide field of view",
+          "Forms an inverted image of the same size",
+          "Has a very long focal length"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A convex mirror always forms a virtual, erect, diminished image and covers a wide field of view.",
+          "wrong_options": {
+            "0": "A convex mirror does not form a real image of a real object.",
+            "2": "Its image is erect, not inverted.",
+            "3": "Focal length is not the reason for its use."
+          }
+        }
+      },
+      {
+        "id": "q-light-s-5",
+        "question": "The focal length of a plane mirror is:",
+        "options": [
+          "Zero",
+          "Infinity",
+          "Equal to the object distance",
+          "Equal to the image distance"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A plane mirror has an infinite radius of curvature, so its focal length is taken as infinity.",
+          "wrong_options": {
+            "0": "Zero focal length would mean infinite power, which is not true here.",
+            "2": "Focal length is a property of the mirror, not the object position.",
+            "3": "Image distance changes with object distance; focal length does not."
+          }
+        }
+      },
+      {
+        "id": "q-light-s-6",
+        "question": "Refraction of light occurs because light:",
+        "options": [
+          "Changes speed when it enters another medium",
+          "Is absorbed by the medium",
+          "Is reflected at the surface",
+          "Has no energy"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A change in speed at the boundary of two media causes the ray to bend.",
+          "wrong_options": {
+            "1": "Absorption can reduce intensity but is not the cause of bending.",
+            "2": "Reflection sends light back; refraction is transmission with bending.",
+            "3": "Light carries energy; this does not explain refraction."
+          }
+        }
+      },
+      {
+        "id": "q-light-s-7",
+        "question": "The SI unit of the power of a lens is:",
+        "options": [
+          "Metre",
+          "Dioptre",
+          "Newton",
+          "Watt"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Power is measured in dioptres, where 1 D = 1 m^-1.",
+          "wrong_options": {
+            "0": "Metre is the unit of length, not power.",
+            "2": "Newton is the unit of force.",
+            "3": "Watt is the unit of power in mechanics and electricity, not lens power."
+          }
+        }
+      },
+      {
+        "id": "q-light-s-8",
+        "question": "Which lens is a converging lens?",
+        "options": [
+          "Concave lens",
+          "Convex lens",
+          "Plane lens",
+          "Cylindrical lens only"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A convex lens is thicker in the middle and converges parallel rays.",
+          "wrong_options": {
+            "0": "A concave lens is thinner in the middle and diverges rays.",
+            "2": "A plane lens does not converge parallel rays.",
+            "3": "A cylindrical lens produces line images and is not the standard converging lens."
+          }
+        }
+      },
+      {
+        "id": "q-light-s-9",
+        "question": "For a real, inverted image, the magnification is:",
+        "options": [
+          "Positive",
+          "Negative",
+          "Zero",
+          "Always equal to 1"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The magnification of a real inverted image is negative by the sign convention.",
+          "wrong_options": {
+            "0": "Positive magnification corresponds to a virtual erect image.",
+            "2": "Zero magnification would mean no image.",
+            "3": "Magnification is 1 only for an image of the same size."
+          }
+        }
+      },
+      {
+        "id": "q-light-s-10",
+        "question": "The refractive index of vacuum is:",
+        "options": [
+          "Zero",
+          "1",
+          "1.33",
+          "Infinity"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "By definition, the refractive index of vacuum is 1.",
+          "wrong_options": {
+            "0": "A refractive index of zero is not physically meaningful here.",
+            "2": "1.33 is approximately the refractive index of water.",
+            "3": "An infinite refractive index would imply zero speed of light."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-light-m-1",
+        "question": "An object is placed 20 cm in front of a concave mirror of focal length 10 cm. The image distance is:",
+        "options": [
+          "-20 cm",
+          "+20 cm",
+          "-10 cm",
+          "+10 cm"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1/v = 1/f - 1/u = -1/10 + 1/20 = -1/20, so v = -20 cm.",
+          "wrong_options": {
+            "1": "A positive v would place the image behind the mirror, which is not the case here.",
+            "2": "Substituting gives -1/20, not -1/10.",
+            "3": "The image is in front of the mirror, so v must be negative."
+          }
+        }
+      },
+      {
+        "id": "q-light-m-2",
+        "question": "An object is placed 15 cm in front of a convex lens of focal length 10 cm. The image distance is:",
+        "options": [
+          "+30 cm",
+          "-30 cm",
+          "+15 cm",
+          "+6 cm"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1/v = 1/10 - 1/15 = 1/30, so v = +30 cm.",
+          "wrong_options": {
+            "1": "The positive focal length and object position give v = +30 cm.",
+            "2": "15 cm is the object distance, not the image distance.",
+            "3": "6 cm would come from a different combination of values."
+          }
+        }
+      },
+      {
+        "id": "q-light-m-3",
+        "question": "The power of a concave lens of focal length 25 cm is:",
+        "options": [
+          "-4 D",
+          "+4 D",
+          "-0.25 D",
+          "+0.25 D"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "f = -0.25 m, so P = 1/(-0.25) = -4 D.",
+          "wrong_options": {
+            "1": "A concave lens has negative power.",
+            "2": "Power is the reciprocal of focal length in metres, not the focal length itself.",
+            "3": "The sign must be negative for a concave lens."
+          }
+        }
+      },
+      {
+        "id": "q-light-m-4",
+        "question": "The speed of light in a medium of refractive index 1.5 is:",
+        "options": [
+          "2 x 10^8 m/s",
+          "1.5 x 10^8 m/s",
+          "3 x 10^8 m/s",
+          "4.5 x 10^8 m/s"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "v = c/n = (3 x 10^8)/1.5 = 2 x 10^8 m/s.",
+          "wrong_options": {
+            "1": "This is the value of n, not the speed.",
+            "2": "This is the speed in vacuum, not in the medium.",
+            "3": "Multiplying instead of dividing gives this incorrect value."
+          }
+        }
+      },
+      {
+        "id": "q-light-m-5",
+        "question": "An object is placed between the pole and the principal focus of a concave mirror. The image formed is:",
+        "options": [
+          "Virtual, erect, and magnified",
+          "Real, inverted, and magnified",
+          "Real, inverted, and diminished",
+          "Virtual, erect, and diminished"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Inside the focal length, a concave mirror acts like a magnifying mirror and gives a virtual, erect, magnified image.",
+          "wrong_options": {
+            "1": "A real image forms only when the object is beyond the focal point.",
+            "2": "Diminished real images form when the object is beyond the centre of curvature.",
+            "3": "A concave mirror does not diminish the image in this position."
+          }
+        }
+      },
+      {
+        "id": "q-light-m-6",
+        "question": "An object is placed 30 cm in front of a convex mirror of focal length 15 cm. The image distance is:",
+        "options": [
+          "+10 cm",
+          "-10 cm",
+          "+30 cm",
+          "+15 cm"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1/v = 1/15 + 1/30 = 1/10, so v = +10 cm behind the mirror.",
+          "wrong_options": {
+            "1": "A convex mirror forms a virtual image behind the mirror, so v is positive.",
+            "2": "30 cm is the object distance.",
+            "3": "15 cm is the focal length."
+          }
+        }
+      },
+      {
+        "id": "q-light-m-7",
+        "question": "Two thin lenses of powers +3 D and -1 D are in contact. The power and focal length of the combination are:",
+        "options": [
+          "+2 D and +50 cm",
+          "+4 D and +25 cm",
+          "-2 D and -50 cm",
+          "+2 D and +0.5 cm"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "P = +3 - 1 = +2 D, so f = 1/2 m = +50 cm.",
+          "wrong_options": {
+            "1": "The powers must be added algebraically, not numerically.",
+            "2": "The net power is positive, not negative.",
+            "3": "Focal length must be in metres in the formula, giving 50 cm, not 0.5 cm."
+          }
+        }
+      },
+      {
+        "id": "q-light-m-8",
+        "question": "A magnification of -2 means the image is:",
+        "options": [
+          "Real, inverted, and twice the object size",
+          "Virtual, erect, and twice the object size",
+          "Real, erect, and half the object size",
+          "Virtual, inverted, and half the object size"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The negative sign indicates a real inverted image, and the magnitude 2 means twice the size.",
+          "wrong_options": {
+            "1": "A virtual erect image has positive magnification.",
+            "2": "A real image is inverted, and the magnitude is 2, not 1/2.",
+            "3": "A virtual image is erect, and the magnitude is 2."
+          }
+        }
+      },
+      {
+        "id": "q-light-m-9",
+        "question": "When light passes from air into glass, it bends towards the normal because:",
+        "options": [
+          "Its speed decreases in glass",
+          "Its speed increases in glass",
+          "Its frequency increases",
+          "Its wavelength increases"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Glass is optically denser than air, so light slows down and bends towards the normal.",
+          "wrong_options": {
+            "1": "Light slows down, not speeds up, in glass.",
+            "2": "Frequency stays the same across media.",
+            "3": "Wavelength decreases when speed decreases."
+          }
+        }
+      },
+      {
+        "id": "q-light-m-10",
+        "question": "Which formula is correct for a spherical lens?",
+        "options": [
+          "1/v - 1/u = 1/f",
+          "1/v + 1/u = 1/f",
+          "1/f = 1/v + 1/u only",
+          "m = -v/u"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The lens formula is 1/v - 1/u = 1/f, with the Cartesian sign convention.",
+          "wrong_options": {
+            "1": "This is the mirror formula, not the lens formula.",
+            "2": "The plus sign applies to mirrors, not lenses.",
+            "3": "m = -v/u is the mirror magnification formula; for a lens, m = v/u."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-light-x-1",
+        "question": "A concave mirror forms a real image 4 times magnified at 60 cm from the mirror. The object distance and focal length are:",
+        "options": [
+          "u = -15 cm, f = -12 cm",
+          "u = -15 cm, f = -30 cm",
+          "u = -60 cm, f = -12 cm",
+          "u = -12 cm, f = -15 cm"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "m = -4 and v = -60 cm give u = -15 cm; then 1/f = -1/60 - 1/15 = -1/12, so f = -12 cm.",
+          "wrong_options": {
+            "1": "The focal length calculation gives -12 cm, not -30 cm.",
+            "2": "The object distance is found from m = -v/u, giving -15 cm.",
+            "3": "The object and focal lengths are interchanged."
+          }
+        }
+      },
+      {
+        "id": "q-light-x-2",
+        "question": "A convex lens forms a real image 3 times magnified at 45 cm from the lens. The focal length is:",
+        "options": [
+          "11.25 cm",
+          "15 cm",
+          "22.5 cm",
+          "9 cm"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "m = -3 and v = +45 cm give u = -15 cm; 1/f = 1/45 + 1/15 = 4/45, so f = 11.25 cm.",
+          "wrong_options": {
+            "1": "15 cm is the object distance, not the focal length.",
+            "2": "This would follow from an incorrect magnification equation.",
+            "3": "This does not satisfy the lens formula with u = -15 cm and v = 45 cm."
+          }
+        }
+      },
+      {
+        "id": "q-light-x-3",
+        "question": "An object is placed 10 cm in front of a convex lens of focal length 15 cm. The image is:",
+        "options": [
+          "v = -30 cm, m = +3, virtual and erect",
+          "v = +30 cm, m = -3, real and inverted",
+          "v = -30 cm, m = -3, virtual and inverted",
+          "v = +30 cm, m = +3, real and erect"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1/v = 1/15 - 1/10 = -1/30 gives v = -30 cm; m = v/u = +3, so the image is virtual and erect.",
+          "wrong_options": {
+            "1": "The object is inside the focal length, so the image is virtual, not real.",
+            "2": "A virtual image from a convex lens is erect, so m is positive.",
+            "3": "The image is virtual, not real."
+          }
+        }
+      },
+      {
+        "id": "q-light-x-4",
+        "question": "A lens of power +2.5 D is combined with a lens of power -4 D. The combination is:",
+        "options": [
+          "P = -1.5 D, diverging",
+          "P = +1.5 D, converging",
+          "P = -6.5 D, diverging",
+          "P = +6.5 D, converging"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "P = +2.5 - 4 = -1.5 D, so the combination is diverging.",
+          "wrong_options": {
+            "1": "Algebraic addition gives -1.5 D, not +1.5 D.",
+            "2": "The powers are subtracted, not added as magnitudes.",
+            "3": "The net power is negative, not positive."
+          }
+        }
+      },
+      {
+        "id": "q-light-x-5",
+        "question": "Light travels from water (n = 4/3) to air with an angle of incidence of 30 degrees. The angle of refraction is about:",
+        "options": [
+          "41.8 degrees",
+          "22 degrees",
+          "30 degrees",
+          "48.6 degrees"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "sin r = (4/3) sin 30 = 2/3, so r = sin^-1(0.667) which is about 41.8 degrees.",
+          "wrong_options": {
+            "1": "22 degrees is the refraction angle for air to water, not water to air.",
+            "2": "The ray bends away from the normal, so r is not equal to i.",
+            "3": "This value does not satisfy Snell's law for these data."
+          }
+        }
+      },
+      {
+        "id": "q-light-x-6",
+        "question": "An object is placed 10 cm in front of a convex mirror of focal length 15 cm. The image distance and magnification are:",
+        "options": [
+          "+6 cm and +0.6",
+          "-6 cm and -0.6",
+          "+6 cm and -0.6",
+          "-6 cm and +0.6"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1/v = 1/15 + 1/10 = 1/6, so v = +6 cm; m = -v/u = +0.6.",
+          "wrong_options": {
+            "1": "A convex mirror gives a virtual image behind the mirror, so v is positive.",
+            "2": "The image is erect, so m is positive.",
+            "3": "A positive v and negative u give a positive m."
+          }
+        }
+      },
+      {
+        "id": "q-light-x-7",
+        "question": "An object is placed at the centre of curvature of a concave mirror. The image is:",
+        "options": [
+          "At the centre of curvature, real, inverted, and the same size",
+          "At the focus, real, inverted, and diminished",
+          "Behind the mirror, virtual, erect, and magnified",
+          "At infinity"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "For an object at C, u = -2f, and the mirror formula gives v = -2f, so the image is at C, real, inverted, and the same size.",
+          "wrong_options": {
+            "1": "The image at the focus occurs for an object at infinity.",
+            "2": "A virtual magnified image occurs when the object is within the focal length.",
+            "3": "The image at infinity occurs for an object at the focus."
+          }
+        }
+      },
+      {
+        "id": "q-light-x-8",
+        "question": "A concave lens always forms an image that is:",
+        "options": [
+          "Virtual, erect, and diminished",
+          "Real, inverted, and magnified",
+          "Real, erect, and diminished",
+          "Virtual, inverted, and magnified"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A concave lens diverges rays and always forms a virtual, erect, diminished image of a real object.",
+          "wrong_options": {
+            "1": "A concave lens does not form a real image of a real object.",
+            "2": "The image is virtual, not real.",
+            "3": "The image is erect, not inverted."
+          }
+        }
+      },
+      {
+        "id": "q-light-x-9",
+        "question": "An object is placed 30 cm in front of a concave mirror of focal length 10 cm. The image distance and magnification are:",
+        "options": [
+          "v = -15 cm and m = -0.5",
+          "v = -15 cm and m = +0.5",
+          "v = +15 cm and m = -0.5",
+          "v = -30 cm and m = -1"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "1/v = -1/10 + 1/30 = -2/30, so v = -15 cm; m = -v/u = -0.5.",
+          "wrong_options": {
+            "1": "A real image from a concave mirror has negative magnification.",
+            "2": "The image is in front of the mirror, so v is negative.",
+            "3": "These values would require a different object or focal length."
+          }
+        }
+      },
+      {
+        "id": "q-light-x-10",
+        "question": "Which pair of optical devices can form a real image of a real object?",
+        "options": [
+          "Concave mirror and convex lens",
+          "Convex mirror and concave lens",
+          "Plane mirror and concave lens",
+          "Convex mirror and convex lens only"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A concave mirror and a convex lens can both converge rays to form a real image.",
+          "wrong_options": {
+            "1": "A convex mirror and a concave lens both diverge rays and form virtual images of real objects.",
+            "2": "A plane mirror forms a virtual image, and a concave lens diverges.",
+            "3": "A convex mirror alone cannot form a real image of a real object."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Light - Reflection and Refraction Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Light",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Reflection",
+        "group": "phenomenon"
+      },
+      {
+        "id": "n3",
+        "label": "Refraction",
+        "group": "phenomenon"
+      },
+      {
+        "id": "n4",
+        "label": "Spherical Mirrors",
+        "group": "device"
+      },
+      {
+        "id": "n5",
+        "label": "Lenses",
+        "group": "device"
+      },
+      {
+        "id": "n6",
+        "label": "Mirror Formula",
+        "group": "formula"
+      },
+      {
+        "id": "n7",
+        "label": "Lens Formula",
+        "group": "formula"
+      },
+      {
+        "id": "n8",
+        "label": "Refractive Index",
+        "group": "quantity"
+      },
+      {
+        "id": "n9",
+        "label": "Magnification",
+        "group": "quantity"
+      },
+      {
+        "id": "n10",
+        "label": "Power of Lens",
+        "group": "quantity"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n2",
+        "n4"
+      ],
+      [
+        "n4",
+        "n6"
+      ],
+      [
+        "n6",
+        "n9"
+      ],
+      [
+        "n3",
+        "n8"
+      ],
+      [
+        "n3",
+        "n5"
+      ],
+      [
+        "n5",
+        "n7"
+      ],
+      [
+        "n7",
+        "n9"
+      ],
+      [
+        "n5",
+        "n10"
+      ],
+      [
+        "n8",
+        "n5"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Light - Reflection and Refraction Mind Map",
+    "type": "hierarchical",
+    "root": "Light",
+    "branches": [
+      {
+        "concept": "Reflection",
+        "sub_nodes": [
+          "Angle of incidence = angle of reflection",
+          "Incident ray, reflected ray, and normal in one plane",
+          "Regular reflection forms images",
+          "Diffused reflection scatters light"
+        ],
+        "connections": "Reflection at a curved surface leads to spherical mirrors"
+      },
+      {
+        "concept": "Spherical Mirrors",
+        "sub_nodes": [
+          "Concave mirror converges rays",
+          "Convex mirror diverges rays",
+          "Pole, centre of curvature, focus",
+          "f = R/2"
+        ],
+        "connections": "Mirror geometry gives the mirror formula"
+      },
+      {
+        "concept": "Mirror Formula and Magnification",
+        "sub_nodes": [
+          "1/v + 1/u = 1/f",
+          "Cartesian sign convention",
+          "m = -v/u = h'/h",
+          "Negative m: real and inverted"
+        ],
+        "connections": "Mirror formula predicts image position and size"
+      },
+      {
+        "concept": "Refraction and Refractive Index",
+        "sub_nodes": [
+          "Bending due to change in speed",
+          "Snell's law: sin i / sin r = n",
+          "n = c/v",
+          "Denser medium: bends towards normal"
+        ],
+        "connections": "Refraction through curved surfaces makes lenses work"
+      },
+      {
+        "concept": "Lenses and Lens Formula",
+        "sub_nodes": [
+          "Convex lens converges; concave lens diverges",
+          "1/v - 1/u = 1/f",
+          "m = v/u",
+          "Real or virtual image depends on object position"
+        ],
+        "connections": "Lens formula and power describe image formation"
+      },
+      {
+        "concept": "Power of a Lens",
+        "sub_nodes": [
+          "P = 1/f, f in metres",
+          "SI unit: dioptre (D)",
+          "Convex: positive; concave: negative",
+          "Lenses in contact: P = P1 + P2"
+        ],
+        "connections": "Power is used in spectacle prescriptions and optical instruments"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    {
+      "misconception": "A concave mirror always forms a real image.",
+      "correction": "A concave mirror forms a virtual, erect, magnified image when the object is between the pole and the focus."
+    },
+    {
+      "misconception": "A convex mirror can form a real image of a real object.",
+      "correction": "A convex mirror always forms a virtual, erect, diminished image of a real object, whatever the object distance."
+    },
+    {
+      "misconception": "Magnification is always positive.",
+      "correction": "Magnification is negative for a real inverted image and positive for a virtual erect image."
+    },
+    {
+      "misconception": "The focal length of a spherical mirror is equal to its radius of curvature.",
+      "correction": "The focal length is half the radius of curvature for a mirror of small aperture: f = R/2."
+    },
+    {
+      "misconception": "Light bends at a boundary because it reflects.",
+      "correction": "Refraction occurs because the speed of light changes between media; reflection is a separate phenomenon at the boundary."
+    },
+    {
+      "misconception": "A higher refractive index means light travels faster in the medium.",
+      "correction": "A higher refractive index means light travels more slowly, since n = c/v."
+    },
+    {
+      "misconception": "The lens formula is the same as the mirror formula.",
+      "correction": "The lens formula is 1/v - 1/u = 1/f, while the mirror formula is 1/v + 1/u = 1/f."
+    },
+    {
+      "misconception": "Power of a lens is measured in watts.",
+      "correction": "Power of a lens is measured in dioptres (D), where P = 1/f with f in metres."
+    }
+  ],
+  "meta": {
+    "sources": [
+      {
+        "title": "NCERT Class X Science Textbook",
+        "publisher": "NCERT",
+        "chapter": "Light - Reflection and Refraction",
+        "class": "X",
+        "subject": "Science"
+      }
+    ]
+  },
+  "chapterId": "light-reflection-and-refraction",
+  "subjectId": "science",
+  "subjectName": "Science",
+  "unitId": "science-3",
+  "unitName": "Natural Phenomena",
+  "examWeightage": 12,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

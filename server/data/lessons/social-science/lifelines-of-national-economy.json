@@ -1,0 +1,1295 @@
+{
+  "subject": "Geography",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 7,
+  "chapter": "Lifelines of National Economy",
+  "id": "lifelines-of-national-economy",
+  "lesson": 1,
+  "title": "Lifelines of National Economy - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Explain the role of transport and communication as lifelines of the economy",
+    "Describe the hierarchy and importance of roads in India",
+    "Compare railway gauges and explain the importance and problems of railways",
+    "Identify major ports and inland waterways and their roles",
+    "Explain the importance of airways and pipelines",
+    "Describe communication systems and international trade",
+    "Interpret maps, trade terms, and transport case studies",
+    "Write board-style answers using correct transport and trade terminology"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS9_TRANSPORT",
+    "SOCIAL_CLASS10_MANUFACTURING",
+    "SOCIAL_CLASS10_MINERALS_AND_ENERGY",
+    "SOCIAL_CLASS9_INTERNATIONAL_TRADE"
+  ],
+  "concepts": [
+    {
+      "id": "concept-1",
+      "name": "Transport and Its Modes",
+      "title": "Transport and Its Modes",
+      "explanation": "Transport is the movement of people, goods, and services from one place to another. It is called a lifeline of the national economy because it links farms to markets, factories to ports, and homes to workplaces. The main modes are land transport (roads and railways), water transport (inland waterways and sea routes), air transport, and pipelines. Each mode has advantages: roads offer door-to-door service, railways carry bulky goods over long distances, waterways are cheap for heavy cargo, airways are the fastest, and pipelines move fluids continuously. The choice of mode depends on distance, cost, speed, nature of the goods, and terrain. A country needs an integrated transport network so that goods and people can move efficiently. Transport also supports trade, tourism, defence, disaster relief, and regional development.",
+      "purpose": "Understanding transport modes helps explain how production and consumption are connected and why governments invest in roads, railways, ports, and airports.",
+      "real_life_application": "Vegetables reach your market by road, coal reaches power plants by rail, petrol reaches fuel stations by pipeline or tanker, and online parcels reach you by air and road.",
+      "key_points": [
+        "Transport moves people, goods, and services and links production with consumption.",
+        "Land transport includes roads and railways.",
+        "Water transport includes inland waterways and sea routes.",
+        "Air transport is the fastest but most expensive mode.",
+        "Pipelines carry crude oil, petroleum products, and natural gas.",
+        "The choice of mode depends on cost, speed, distance, goods, and terrain."
+      ],
+      "day_to_day_usage": [
+        "Vegetables and milk reach local markets by road.",
+        "Coal and iron ore move to plants by rail.",
+        "Petrol and diesel reach fuel stations through pipelines and tankers.",
+        "Online shopping parcels arrive by air and road.",
+        "Ferries and boats carry people and goods in coastal and river areas."
+      ]
+    },
+    {
+      "id": "concept-2",
+      "name": "Roadways",
+      "title": "Roadways",
+      "explanation": "Roads are the most widely used mode of transport in India because they provide door-to-door service and can reach hilly, rural, and remote areas where railways cannot go. Roads are classified by importance and administration. National Highways are the main arteries, constructed and maintained by central agencies; State Highways connect state capitals and districts; district roads link rural areas to towns; and border roads are built in frontier areas by the Border Roads Organisation. The Golden Quadrilateral super-highway network connects Delhi, Mumbai, Chennai, and Kolkata, reducing travel time and distance between major cities. The North-South corridor runs from Srinagar to Kanniyakumari, and the East-West corridor from Silchar to Porbandar. Pradhan Mantri Gram Sadak Yojana aims to connect villages with all-weather roads. Road density is high in Kerala and low in the Himalayan states. Problems include congestion, accidents, poor maintenance, and ribbon development along highways.",
+      "purpose": "Roads are essential for last-mile connectivity, rural development, disaster relief, and the movement of perishable goods.",
+      "real_life_application": "Buses, trucks, auto-rickshaws, and delivery vans all use roads. Village roads built under rural road schemes help farmers reach mandis quickly.",
+      "key_points": [
+        "Roads provide door-to-door service and reach remote and hilly areas.",
+        "National Highways are the main arteries; State Highways connect regions within a state.",
+        "District and rural roads provide local connectivity.",
+        "Border Roads Organisation builds roads in frontier areas.",
+        "The Golden Quadrilateral links Delhi, Mumbai, Chennai, and Kolkata.",
+        "North-South corridor: Srinagar to Kanniyakumari; East-West corridor: Silchar to Porbandar.",
+        "Road density is high in Kerala and low in Himalayan states."
+      ],
+      "day_to_day_usage": [
+        "School buses and city buses run on roads.",
+        "Trucks carry fruits and vegetables from farms to mandis.",
+        "Delivery bikes bring food and parcels to homes.",
+        "Hill roads connect mountain villages to towns.",
+        "Border roads support defence movement in frontier areas."
+      ]
+    },
+    {
+      "id": "concept-3",
+      "name": "Railways",
+      "title": "Railways",
+      "explanation": "Indian Railways is one of the largest railway networks in the world and the principal mode of transport for long-distance passengers and bulky freight. Railways carry coal, iron ore, fertilisers, food grains, cement, and manufactured goods at low cost over long distances. Tracks are classified by gauge: broad gauge (1.676 m), metre gauge (1.000 m), and narrow gauge (0.762 m or 0.610 m). Broad gauge now carries most traffic. The Konkan Railway, running from Roha to Mangaluru, crosses difficult coastal terrain and is an engineering achievement. Railways face problems such as ageing tracks and bridges, shortage of rolling stock, overcrowding, ticketless travel, theft, vandalism, and delays. Metro rail systems in large cities help reduce road congestion. Electrification and modern signalling improve speed, safety, and energy efficiency.",
+      "purpose": "Railways are energy-efficient for bulk transport and are vital for industry, agriculture, and mass passenger travel.",
+      "real_life_application": "Long-distance trains, suburban locals, and metro services carry millions of people daily, while freight trains move coal and grain across states.",
+      "key_points": [
+        "Indian Railways is one of the largest railway networks in the world.",
+        "It is the main mode for long-distance passengers and bulky freight.",
+        "Gauges: broad (1.676 m), metre (1.000 m), and narrow (0.762/0.610 m).",
+        "Broad gauge carries most of the traffic.",
+        "The Konkan Railway runs from Roha to Mangaluru through difficult terrain.",
+        "Problems include old tracks, overcrowding, ticketless travel, theft, and delays.",
+        "Metro rail and electrification improve urban transport and efficiency."
+      ],
+      "day_to_day_usage": [
+        "Long-distance trains carry passengers between states.",
+        "Suburban trains carry daily commuters to work.",
+        "Freight trains move coal to power plants and grain to warehouses.",
+        "Metro trains reduce road traffic in large cities.",
+        "Railway stations are hubs for local trade and transport."
+      ]
+    },
+    {
+      "id": "concept-4",
+      "name": "Ports and Inland Waterways",
+      "title": "Ports and Inland Waterways",
+      "explanation": "Ports are gateways for international trade and handle the bulk of India's overseas cargo. India has major ports administered by the central government and many minor ports managed by states. Important major ports include Kandla, Mumbai, Jawaharlal Nehru Port Trust, Marmagao, New Mangalore, Kochi, Tuticorin, Chennai, Ennore, Visakhapatnam, Paradip, and Kolkata-Haldia. Kandla handles petroleum, fertiliser, and salt; Jawaharlal Nehru Port is a leading container port; Marmagao exports iron ore; Visakhapatnam is a deep landlocked port; Chennai is an old artificial harbour; and Kolkata-Haldia is a riverine port. Inland waterways use rivers and canals for cheap, fuel-efficient transport of bulky goods. National Waterway 1 runs on the Ganga from Haldia to Allahabad, National Waterway 2 on the Brahmaputra from Sadiya to Dhubri, and National Waterway 3 on the West Coast Canal from Kottapuram to Kollam. Waterways face problems of silting, seasonal low flow, and diversion of water for irrigation.",
+      "purpose": "Ports connect India to world markets, while inland waterways offer a cheap and low-pollution alternative for heavy cargo.",
+      "real_life_application": "Imported crude oil, machinery, and edible oil arrive at ports; exported iron ore, textiles, and seafood leave through ports. River ferries carry people and goods in Kerala and the north-east.",
+      "key_points": [
+        "Ports are gateways for international trade and handle most overseas cargo.",
+        "Major ports include Kandla, Mumbai, JNPT, Marmagao, New Mangalore, Kochi, Tuticorin, Chennai, Ennore, Visakhapatnam, Paradip, and Kolkata-Haldia.",
+        "Kandla handles petroleum, fertiliser, and salt.",
+        "JNPT is a leading container port; Marmagao exports iron ore.",
+        "Visakhapatnam is a deep landlocked port; Chennai is an artificial harbour.",
+        "NW1: Ganga (Haldia-Allahabad); NW2: Brahmaputra (Sadiya-Dhubri); NW3: West Coast Canal (Kottapuram-Kollam).",
+        "Waterways face silting, seasonal low flow, and competing water uses."
+      ],
+      "day_to_day_usage": [
+        "Imported electronics and machinery arrive through container ports.",
+        "Petrol and diesel are refined from crude oil unloaded at ports.",
+        "Iron ore and coal are exported or moved through port terminals.",
+        "River ferries in Kerala and Assam carry people and goods.",
+        "Cruise and coastal shipping support tourism and trade."
+      ]
+    },
+    {
+      "id": "concept-5",
+      "name": "Airways and Pipelines",
+      "title": "Airways and Pipelines",
+      "explanation": "Air transport is the fastest mode of transport and is important for long-distance travel, international trade, tourism, and reaching difficult terrain. It is expensive compared with roads and railways, so it is used mainly for high-value, light goods and for passengers. Air transport in India was nationalised in 1953, with Indian Airlines serving domestic routes and Air India serving international routes. Pawan Hans provides helicopter services, including to remote areas and oil and gas installations. The UDAN scheme promotes regional air connectivity. Pipelines are used to transport crude oil, petroleum products, and natural gas. They have high initial construction costs but low operating costs, provide a continuous supply, and avoid transshipment losses. Important pipelines include those from upper Assam to Kanpur via Barauni, from Salaya to Jalandhar, from Mumbai High to Pune, and the Hazira-Vijaipur-Jagdishpur gas pipeline. Solids cannot normally be moved through pipelines, although slurry pipelines can carry some minerals.",
+      "purpose": "Airways connect India to the world and support tourism and high-value trade, while pipelines provide reliable and economical movement of oil and gas.",
+      "real_life_application": "Air travel connects families and businesses across states; LPG and natural gas reach cities through pipelines; helicopters supply remote and offshore locations.",
+      "key_points": [
+        "Air transport is the fastest but most expensive mode.",
+        "It is vital for international trade, tourism, and difficult terrain.",
+        "Air transport was nationalised in 1953; Indian Airlines served domestic and Air India international routes.",
+        "Pawan Hans provides helicopter services; UDAN promotes regional connectivity.",
+        "Pipelines carry crude oil, petroleum products, and natural gas.",
+        "Pipelines have high initial cost but low operating cost and continuous supply.",
+        "HVJ pipeline: Hazira-Vijaipur-Jagdishpur."
+      ],
+      "day_to_day_usage": [
+        "Flights carry passengers, couriers, and high-value goods.",
+        "Helicopters supply remote hill areas and offshore oil platforms.",
+        "Natural gas for kitchens and industry arrives through pipelines.",
+        "Petrol pumps are supplied through product pipelines and tankers.",
+        "Air cargo moves medicines and perishable goods quickly."
+      ]
+    },
+    {
+      "id": "concept-6",
+      "name": "Communication and International Trade",
+      "title": "Communication and International Trade",
+      "explanation": "Communication is the exchange of information and ideas through postal services, telecommunications, and mass media. India has one of the largest postal networks in the world, and the six-digit PIN code helps sort mail. Telecommunications include landlines, mobile phones, and the internet, which connect people and businesses across regions. Mass media such as newspapers, radio, television, and online platforms inform and educate the public. Communication supports trade, education, health, disaster management, and good governance. International trade is the exchange of goods and services between countries. Exports are goods sold abroad and imports are goods bought from abroad. The balance of trade is favourable when exports exceed imports and unfavourable when imports exceed exports. India exports agricultural products, textiles, gems and jewellery, software, and petroleum products, and imports petroleum, machinery, fertiliser, edible oil, and gold. Tourism earns foreign exchange, creates jobs, and promotes cultural exchange.",
+      "purpose": "Communication and trade link producers, consumers, and governments across the world and are essential for economic growth and international cooperation.",
+      "real_life_application": "Mobile phones, courier services, news channels, and online payments depend on communication networks. Imported goods in shops and exported products from local factories are results of international trade.",
+      "key_points": [
+        "Communication includes postal services, telecommunications, and mass media.",
+        "India has one of the largest postal networks in the world; the PIN code has six digits.",
+        "Telecom and internet connect people and businesses.",
+        "International trade exchanges goods and services between countries.",
+        "Exports are sold abroad; imports are bought from abroad.",
+        "Favourable balance of trade: exports exceed imports; unfavourable: imports exceed exports.",
+        "Tourism earns foreign exchange and creates employment."
+      ],
+      "day_to_day_usage": [
+        "Letters, parcels, and money orders use postal services.",
+        "Mobile phones and the internet connect families and businesses.",
+        "Newspapers, TV, and social media provide news and information.",
+        "Online shopping depends on communication and transport networks.",
+        "Imported fruits, electronics, and fuel are part of daily trade."
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-life-1",
+      "title": "Choosing Between Road and Rail for Freight",
+      "topic": "Comparison of transport modes",
+      "problem": "A company must move 500 tonnes of coal over 800 km and 50 kg of fresh flowers to a city 200 km away. Which mode suits each consignment and why?",
+      "solution": [
+        "Step 1: Coal is bulky, heavy, and non-perishable, so cost per tonne-km matters most.",
+        "Step 2: Railways are suitable for coal over long distances because they carry bulk cheaply and efficiently.",
+        "Step 3: Fresh flowers are light, perishable, and high-value, so speed matters more than cost.",
+        "Step 4: Roads provide door-to-door service and faster short-distance delivery for flowers.",
+        "Step 5: In some cases air transport may be used for very high-value flowers over longer distances."
+      ],
+      "board_mode": "Write two short cases: coal-rail with reasons, flowers-road with reasons. Mention weight, distance, and perishability.",
+      "answer": "Coal: railways, because it is bulky and carried cheaply over long distances. Flowers: roads, because they are perishable and need fast door-to-door delivery.",
+      "board_tip": "Always link the mode to the nature of the goods: bulk, distance, value, and perishability."
+    },
+    {
+      "id": "we-life-2",
+      "title": "Marking the Golden Quadrilateral",
+      "topic": "Road network",
+      "problem": "Name the four cities connected by the Golden Quadrilateral and state one benefit of the project.",
+      "solution": [
+        "Step 1: The Golden Quadrilateral connects Delhi, Mumbai, Chennai, and Kolkata.",
+        "Step 2: It forms a quadrilateral across the country.",
+        "Step 3: It reduces travel time and distance between major cities.",
+        "Step 4: It supports faster movement of goods and passengers.",
+        "Step 5: It also promotes industrial and commercial development along the route."
+      ],
+      "board_mode": "Draw a rough quadrilateral and label Delhi at the top, Kolkata at the east, Chennai at the south, and Mumbai at the west.",
+      "answer": "Delhi-Mumbai-Chennai-Kolkata; it reduces travel time and distance and boosts trade and development.",
+      "board_tip": "Learn the order clockwise. A simple labelled sketch earns map marks quickly."
+    },
+    {
+      "id": "we-life-3",
+      "title": "Matching Ports to Their Specialities",
+      "topic": "Major ports",
+      "problem": "Match the ports with their main features: Kandla, JNPT, Marmagao, Visakhapatnam, and Chennai.",
+      "solution": [
+        "Step 1: Kandla is a tidal port in the Gulf of Kachchh handling petroleum, fertiliser, and salt.",
+        "Step 2: JNPT is a leading container port near Mumbai.",
+        "Step 3: Marmagao in Goa is known for iron ore export.",
+        "Step 4: Visakhapatnam is a deep landlocked port handling iron ore and coal.",
+        "Step 5: Chennai is an old artificial harbour handling general cargo.",
+        "Step 6: Match each port with one distinctive feature rather than a long list."
+      ],
+      "board_mode": "Write a two-column table with Port on the left and Main feature on the right.",
+      "answer": "Kandla-petroleum/fertiliser/salt; JNPT-containers; Marmagao-iron ore; Visakhapatnam-deep landlocked; Chennai-artificial harbour.",
+      "board_tip": "Use one memorable feature per port. It is easier to recall in the exam."
+    },
+    {
+      "id": "we-life-4",
+      "title": "Why Pipelines Are Used for Oil and Gas",
+      "topic": "Pipelines",
+      "problem": "Explain two advantages and one limitation of pipelines for transporting petroleum and natural gas.",
+      "solution": [
+        "Step 1: Pipelines provide a continuous and reliable supply without depending on trains or trucks.",
+        "Step 2: Operating costs are low after the high initial construction cost.",
+        "Step 3: They avoid transshipment losses and reduce road traffic and accidents.",
+        "Step 4: Limitation: they can carry only fluids or slurries, not general solid goods.",
+        "Step 5: They also need maintenance and are vulnerable to damage and leakage."
+      ],
+      "board_mode": "Write two advantages as bullet points and one limitation below them.",
+      "answer": "Advantages: continuous supply and low operating cost with no transshipment. Limitation: only fluids or slurries can be carried, and leaks need monitoring.",
+      "board_tip": "Mention both initial cost and operating cost to show balanced understanding."
+    },
+    {
+      "id": "we-life-5",
+      "title": "Understanding Balance of Trade",
+      "topic": "International trade",
+      "problem": "In a hypothetical year, a country's exports are worth 500 units and imports are worth 650 units. Calculate the balance of trade and state whether it is favourable or unfavourable.",
+      "solution": [
+        "Step 1: Balance of trade = value of exports - value of imports.",
+        "Step 2: Balance = 500 - 650 = -150 units.",
+        "Step 3: A negative value means imports exceed exports.",
+        "Step 4: Therefore the balance of trade is unfavourable, also called a trade deficit.",
+        "Step 5: The country must earn foreign exchange through services, remittances, or investment to cover the gap."
+      ],
+      "board_mode": "Write the formula, substitute the values, state the sign, and conclude with favourable or unfavourable.",
+      "answer": "Balance = 500 - 650 = -150 units; unfavourable balance of trade (trade deficit).",
+      "board_tip": "Always write the formula first. It secures method marks even if arithmetic slips."
+    }
+  ],
+  "exercises": {
+    "exercise_7_1": {
+      "title": "NCERT Exercise 7.1 - Transport and Roadways",
+      "objective": "Explain transport modes and the road hierarchy",
+      "problems": [
+        {
+          "id": "life-ex1-1",
+          "question": "Why are transport and communication called the lifelines of a national economy?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Transport moves raw materials to factories and finished goods to markets.",
+            "Step 2: It connects farms, industries, ports, and consumers.",
+            "Step 3: Communication spreads information needed for trade, governance, and education.",
+            "Step 4: Together they support production, distribution, tourism, and regional development."
+          ],
+          "final_answer": "They link production with consumption and move goods, people, and information, so the economy depends on them like lifelines."
+        },
+        {
+          "id": "life-ex1-2",
+          "question": "Name the four cities connected by the Golden Quadrilateral.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Delhi in the north.",
+            "Step 2: Kolkata in the east.",
+            "Step 3: Chennai in the south.",
+            "Step 4: Mumbai in the west."
+          ],
+          "final_answer": "Delhi, Kolkata, Chennai, and Mumbai."
+        },
+        {
+          "id": "life-ex1-3",
+          "question": "Differentiate between National Highways and State Highways.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: National Highways are the main arteries connecting major cities, states, and ports.",
+            "Step 2: They are constructed and maintained by central agencies such as the National Highways Authority of India.",
+            "Step 3: State Highways connect state capitals, districts, and important towns within a state.",
+            "Step 4: They are built and maintained by the state public works departments."
+          ],
+          "final_answer": "National Highways are central main arteries; State Highways are state-level roads linking districts and towns."
+        },
+        {
+          "id": "life-ex1-4",
+          "question": "What is the importance of border roads? Who builds them?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Border roads provide access to remote frontier areas.",
+            "Step 2: They support defence movement and supply in strategic regions.",
+            "Step 3: They also connect isolated communities to markets and services.",
+            "Step 4: The Border Roads Organisation builds and maintains them."
+          ],
+          "final_answer": "Border roads give strategic and civilian access in frontier areas; the Border Roads Organisation builds them."
+        },
+        {
+          "id": "life-ex1-5",
+          "question": "Why is road transport preferred for short distances and rural areas?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Roads provide door-to-door service without the need for terminals.",
+            "Step 2: They can be built in hilly, rural, and remote areas where railways cannot reach.",
+            "Step 3: For short distances, road transport is faster and cheaper than rail.",
+            "Step 4: It is flexible and can handle small and scattered consignments."
+          ],
+          "final_answer": "Roads offer door-to-door and flexible service, reach remote terrain, and are cheaper and faster for short distances."
+        },
+        {
+          "id": "life-ex1-6",
+          "question": "Describe three problems of road transport in India and suggest one solution for each.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Congestion in cities slows traffic; solution: improve public transport and build bypasses.",
+            "Step 2: Accidents occur due to poor roads and driving; solution: enforce speed limits and improve road design.",
+            "Step 3: Poor maintenance creates potholes; solution: allocate funds for regular repair.",
+            "Step 4: Ribbon development along highways causes congestion; solution: regulate construction along road margins.",
+            "Step 5: Pollution from vehicles; solution: promote cleaner fuels and public transport."
+          ],
+          "final_answer": "Congestion, accidents, poor maintenance, ribbon development, and pollution; solve with public transport, enforcement, repairs, planning controls, and cleaner fuels."
+        }
+      ]
+    },
+    "exercise_7_2": {
+      "title": "NCERT Exercise 7.2 - Railways, Ports, and Waterways",
+      "objective": "Describe rail gauges, ports, and inland waterways",
+      "problems": [
+        {
+          "id": "life-ex2-1",
+          "question": "Name the three railway gauges in India with their widths.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Broad gauge is 1.676 metres wide.",
+            "Step 2: Metre gauge is 1.000 metre wide.",
+            "Step 3: Narrow gauge is 0.762 metre or 0.610 metre wide.",
+            "Step 4: Broad gauge carries most of the traffic."
+          ],
+          "final_answer": "Broad 1.676 m, metre 1.000 m, narrow 0.762 m or 0.610 m."
+        },
+        {
+          "id": "life-ex2-2",
+          "question": "Why are railways important for India's economy?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Railways carry bulky goods such as coal, iron ore, grain, and cement over long distances.",
+            "Step 2: They are energy-efficient and relatively cheap for bulk transport.",
+            "Step 3: They carry a large number of passengers daily.",
+            "Step 4: They connect production centres, ports, and markets."
+          ],
+          "final_answer": "Railways move bulky freight cheaply, carry mass passengers, and connect production centres with markets and ports."
+        },
+        {
+          "id": "life-ex2-3",
+          "question": "What is the Konkan Railway? Why is it considered an engineering achievement?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: The Konkan Railway runs from Roha to Mangaluru along the western coast.",
+            "Step 2: It crosses difficult terrain with hills, rivers, and heavy rainfall.",
+            "Step 3: It required many tunnels, bridges, and cuttings.",
+            "Step 4: It improved connectivity and trade along the Konkan coast."
+          ],
+          "final_answer": "The Konkan Railway is the Roha-Mangaluru coastal line, built through difficult terrain with many tunnels and bridges."
+        },
+        {
+          "id": "life-ex2-4",
+          "question": "Name any four major ports of India and one speciality of each.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Kandla handles petroleum, fertiliser, and salt.",
+            "Step 2: Jawaharlal Nehru Port is a major container port.",
+            "Step 3: Marmagao exports iron ore.",
+            "Step 4: Visakhapatnam is a deep landlocked port.",
+            "Step 5: Chennai is an old artificial harbour."
+          ],
+          "final_answer": "Kandla-petroleum/fertiliser/salt; JNPT-containers; Marmagao-iron ore; Visakhapatnam-deep landlocked; Chennai-artificial harbour."
+        },
+        {
+          "id": "life-ex2-5",
+          "question": "Name the three national waterways described in the textbook and state the river or canal used by each.",
+          "difficulty": "simple",
+          "marks": 3,
+          "solution": [
+            "Step 1: NW1 uses the Ganga-Bhagirathi-Hooghly system from Haldia to Allahabad.",
+            "Step 2: NW2 uses the Brahmaputra from Sadiya to Dhubri.",
+            "Step 3: NW3 uses the West Coast Canal in Kerala from Kottapuram to Kollam.",
+            "Step 4: NW4 and NW5 cover the Godavari-Krishna and Brahmani-Mahanadi delta areas."
+          ],
+          "final_answer": "NW1-Ganga; NW2-Brahmaputra; NW3-West Coast Canal."
+        },
+        {
+          "id": "life-ex2-6",
+          "question": "Explain the advantages and problems of inland water transport.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Waterways are fuel-efficient and cheap for bulky goods.",
+            "Step 2: They can carry heavy cargo without causing road congestion.",
+            "Step 3: They cause less air pollution per tonne-km than road transport.",
+            "Step 4: Problem: silting reduces navigability.",
+            "Step 5: Problem: seasonal low flow and diversion of water for irrigation.",
+            "Step 6: Problem: limited network and slow speed compared with roads and rail."
+          ],
+          "final_answer": "Waterways are cheap, fuel-efficient, and low-pollution for bulk cargo, but face silting, seasonal flow problems, limited routes, and slow speed."
+        }
+      ]
+    },
+    "exercise_7_3": {
+      "title": "NCERT Exercise 7.3 - Airways, Pipelines, Communication, and Trade",
+      "objective": "Explain air transport, pipelines, communication, and trade terms",
+      "problems": [
+        {
+          "id": "life-ex3-1",
+          "question": "Why is air transport important despite being expensive?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: It is the fastest mode of transport.",
+            "Step 2: It reaches difficult terrain and remote areas that roads and rail cannot easily serve.",
+            "Step 3: It is essential for international travel and high-value, perishable goods.",
+            "Step 4: It supports tourism, trade, and emergency relief."
+          ],
+          "final_answer": "Air transport is the fastest and reaches remote areas; it is vital for international travel, high-value goods, tourism, and relief."
+        },
+        {
+          "id": "life-ex3-2",
+          "question": "State two advantages and one disadvantage of pipelines.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Pipelines give a continuous supply and avoid transshipment.",
+            "Step 2: Operating costs are low after the initial construction cost.",
+            "Step 3: Disadvantage: they can carry only fluids or slurries, not general goods.",
+            "Step 4: Leakage and maintenance are also concerns."
+          ],
+          "final_answer": "Continuous supply and low operating cost; but they carry only fluids or slurries and need maintenance."
+        },
+        {
+          "id": "life-ex3-3",
+          "question": "What is the Hazira-Vijaipur-Jagdishpur pipeline used for?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: The HVJ pipeline carries natural gas.",
+            "Step 2: It runs from Hazira in Gujarat to Vijaipur in Madhya Pradesh and Jagdishpur in Uttar Pradesh.",
+            "Step 3: It supplies gas to fertiliser plants, power stations, and industries.",
+            "Step 4: It also supports city gas distribution."
+          ],
+          "final_answer": "The HVJ pipeline carries natural gas from Hazira to Vijaipur and Jagdishpur for fertiliser, power, and industry."
+        },
+        {
+          "id": "life-ex3-4",
+          "question": "Differentiate between exports and imports with one example of each.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Exports are goods and services sold to other countries.",
+            "Step 2: India exports textiles, software, gems, and petroleum products.",
+            "Step 3: Imports are goods and services bought from other countries.",
+            "Step 4: India imports petroleum, machinery, edible oil, and gold."
+          ],
+          "final_answer": "Exports are sold abroad (textiles, software); imports are bought from abroad (petroleum, machinery)."
+        },
+        {
+          "id": "life-ex3-5",
+          "question": "What is balance of trade? When is it favourable?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Balance of trade is the difference between the value of exports and imports.",
+            "Step 2: Formula: balance of trade = exports - imports.",
+            "Step 3: If exports exceed imports, the balance is favourable (trade surplus).",
+            "Step 4: If imports exceed exports, the balance is unfavourable (trade deficit)."
+          ],
+          "final_answer": "Balance of trade = exports - imports; it is favourable when exports exceed imports."
+        },
+        {
+          "id": "life-ex3-6",
+          "question": "How does tourism act as a trade lifeline? Explain with three points.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Foreign tourists spend money on travel, hotels, food, and handicrafts, earning foreign exchange.",
+            "Step 2: Tourism creates jobs in transport, hotels, guides, and local crafts.",
+            "Step 3: It supports small businesses and local economies in heritage and hill areas.",
+            "Step 4: It promotes cultural exchange and international understanding.",
+            "Step 5: It encourages the preservation of monuments, wildlife, and local arts.",
+            "Step 6: It depends on good transport and communication networks."
+          ],
+          "final_answer": "Tourism earns foreign exchange, creates jobs, supports local business and crafts, and promotes cultural exchange and conservation."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-life-s-1",
+        "question": "Which mode of transport provides door-to-door service?",
+        "options": [
+          "Roadways",
+          "Railways",
+          "Airways",
+          "Pipelines"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Road vehicles can start and stop at individual homes and shops, so they provide door-to-door service.",
+          "wrong_options": {
+            "1": "Railways need stations and terminals.",
+            "2": "Airways need airports.",
+            "3": "Pipelines carry only fluids or slurries to fixed points."
+          }
+        }
+      },
+      {
+        "id": "q-life-s-2",
+        "question": "The Golden Quadrilateral connects Delhi, Mumbai, Chennai, and:",
+        "options": [
+          "Kolkata",
+          "Jaipur",
+          "Bhopal",
+          "Guwahati"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Golden Quadrilateral links Delhi, Mumbai, Chennai, and Kolkata.",
+          "wrong_options": {
+            "1": "Jaipur is not one of the four quadrilateral cities.",
+            "2": "Bhopal is not one of the four quadrilateral cities.",
+            "3": "Guwahati is not one of the four quadrilateral cities."
+          }
+        }
+      },
+      {
+        "id": "q-life-s-3",
+        "question": "Which is the fastest mode of transport?",
+        "options": [
+          "Airways",
+          "Railways",
+          "Roadways",
+          "Waterways"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Aircraft travel much faster than trains, trucks, or ships.",
+          "wrong_options": {
+            "1": "Railways are slower than air transport.",
+            "2": "Roadways are slower than air transport.",
+            "3": "Waterways are the slowest of these modes."
+          }
+        }
+      },
+      {
+        "id": "q-life-s-4",
+        "question": "The Border Roads Organisation mainly builds roads in:",
+        "options": [
+          "Frontier areas",
+          "City centres",
+          "Shopping districts",
+          "Airport terminals"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The BRO builds and maintains roads in border and strategic areas.",
+          "wrong_options": {
+            "1": "City roads are built by municipal agencies.",
+            "2": "Shopping districts are urban areas, not border regions.",
+            "3": "Airport terminals are not roads."
+          }
+        }
+      },
+      {
+        "id": "q-life-s-5",
+        "question": "Which port is a leading container port near Mumbai?",
+        "options": [
+          "Jawaharlal Nehru Port",
+          "Kandla",
+          "Marmagao",
+          "Paradip"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Jawaharlal Nehru Port Trust is a major container port near Mumbai.",
+          "wrong_options": {
+            "1": "Kandla is in Gujarat and handles petroleum, fertiliser, and salt.",
+            "2": "Marmagao in Goa is known for iron ore export.",
+            "3": "Paradip in Odisha handles iron ore and coal."
+          }
+        }
+      },
+      {
+        "id": "q-life-s-6",
+        "question": "Broad gauge in Indian Railways is:",
+        "options": [
+          "1.676 m wide",
+          "1.000 m wide",
+          "0.762 m wide",
+          "0.610 m wide"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Broad gauge has a track width of 1.676 metres.",
+          "wrong_options": {
+            "1": "1.000 m is metre gauge.",
+            "2": "0.762 m is narrow gauge.",
+            "3": "0.610 m is also narrow gauge."
+          }
+        }
+      },
+      {
+        "id": "q-life-s-7",
+        "question": "Which pipeline carries natural gas from Hazira to Jagdishpur?",
+        "options": [
+          "HVJ pipeline",
+          "Salaya pipeline",
+          "Mumbai High pipeline",
+          "Assam pipeline"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "HVJ stands for Hazira-Vijaipur-Jagdishpur and carries natural gas.",
+          "wrong_options": {
+            "1": "The Salaya pipeline carries crude oil to Jalandhar.",
+            "2": "The Mumbai High pipeline carries crude to Pune.",
+            "3": "The Assam pipeline carries crude to Kanpur via Barauni."
+          }
+        }
+      },
+      {
+        "id": "q-life-s-8",
+        "question": "Imports are goods that a country:",
+        "options": [
+          "Buys from other countries",
+          "Sells to other countries",
+          "Produces only for itself",
+          "Stores in warehouses"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Imports are goods and services bought from other countries.",
+          "wrong_options": {
+            "1": "Goods sold abroad are exports.",
+            "2": "Production for domestic use is not trade.",
+            "3": "Storage is not the definition of imports."
+          }
+        }
+      },
+      {
+        "id": "q-life-s-9",
+        "question": "India has one of the largest networks of:",
+        "options": [
+          "Postal services",
+          "Deserts",
+          "Glaciers",
+          "Rainforests"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "India's postal network is one of the largest in the world.",
+          "wrong_options": {
+            "1": "Most of India is not desert.",
+            "2": "Glaciers are limited to high mountains.",
+            "3": "Rainforests are limited to specific regions."
+          }
+        }
+      },
+      {
+        "id": "q-life-s-10",
+        "question": "Which is a national waterway on the Ganga?",
+        "options": [
+          "NW1",
+          "NW2",
+          "NW3",
+          "NW4"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "NW1 runs on the Ganga-Bhagirathi-Hooghly system from Haldia to Allahabad.",
+          "wrong_options": {
+            "1": "NW2 is on the Brahmaputra.",
+            "2": "NW3 is the West Coast Canal in Kerala.",
+            "3": "NW4 covers the Godavari-Krishna area."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-life-m-1",
+        "question": "Why are railways preferred for transporting coal over long distances?",
+        "options": [
+          "They carry bulky goods cheaply and efficiently",
+          "They provide door-to-door service",
+          "They are the fastest mode",
+          "They need no fixed tracks"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Railways are energy-efficient and economical for bulky freight over long distances.",
+          "wrong_options": {
+            "1": "Roads provide door-to-door service, not railways.",
+            "2": "Airways are the fastest.",
+            "3": "Railways run on fixed tracks."
+          }
+        }
+      },
+      {
+        "id": "q-life-m-2",
+        "question": "Which port is known for iron ore export and is located in Goa?",
+        "options": [
+          "Marmagao",
+          "Chennai",
+          "Kochi",
+          "Paradip"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Marmagao in Goa is a major iron ore exporting port.",
+          "wrong_options": {
+            "1": "Chennai is an artificial harbour handling general cargo.",
+            "2": "Kochi handles spices, tea, and coffee.",
+            "3": "Paradip is in Odisha and handles iron ore and coal."
+          }
+        }
+      },
+      {
+        "id": "q-life-m-3",
+        "question": "Which is an advantage of inland waterways?",
+        "options": [
+          "Cheap and fuel-efficient for bulky goods",
+          "Fastest mode of transport",
+          "No dependence on rivers",
+          "Door-to-door service"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Water transport uses less fuel per tonne-km and is cheap for heavy cargo.",
+          "wrong_options": {
+            "1": "Air is the fastest mode.",
+            "2": "Waterways depend on rivers and canals.",
+            "3": "Waterways use fixed terminals and do not provide door-to-door service."
+          }
+        }
+      },
+      {
+        "id": "q-life-m-4",
+        "question": "The North-South corridor runs from:",
+        "options": [
+          "Srinagar to Kanniyakumari",
+          "Silchar to Porbandar",
+          "Delhi to Kolkata",
+          "Mumbai to Chennai"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "The North-South corridor connects Srinagar in the north to Kanniyakumari in the south.",
+          "wrong_options": {
+            "1": "Silchar to Porbandar is the East-West corridor.",
+            "2": "Delhi to Kolkata is one side of the Golden Quadrilateral.",
+            "3": "Mumbai to Chennai is another side of the Golden Quadrilateral."
+          }
+        }
+      },
+      {
+        "id": "q-life-m-5",
+        "question": "Which statement about pipelines is correct?",
+        "options": [
+          "Initial cost is high but operating cost is low",
+          "They carry general solid goods",
+          "They need reloading at every stage",
+          "They are the fastest passenger mode"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Pipelines are expensive to build but cheap to operate and provide continuous supply.",
+          "wrong_options": {
+            "1": "They normally carry fluids or slurries, not general solids.",
+            "2": "They avoid transshipment.",
+            "3": "They do not carry passengers."
+          }
+        }
+      },
+      {
+        "id": "q-life-m-6",
+        "question": "A favourable balance of trade means:",
+        "options": [
+          "Exports exceed imports",
+          "Imports exceed exports",
+          "Exports equal imports",
+          "There is no trade"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "When exports are greater than imports, the balance of trade is favourable.",
+          "wrong_options": {
+            "1": "Imports exceeding exports is an unfavourable balance.",
+            "2": "Equal values mean a balanced trade, not a favourable one.",
+            "3": "No trade would mean zero exports and imports."
+          }
+        }
+      },
+      {
+        "id": "q-life-m-7",
+        "question": "Which is a problem of Indian Railways?",
+        "options": [
+          "Overcrowding and old tracks",
+          "Too few passengers",
+          "No freight traffic",
+          "Excess unused tracks"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Railways face overcrowding, ageing tracks and bridges, and shortage of rolling stock.",
+          "wrong_options": {
+            "1": "Demand is high, not low.",
+            "2": "Railways carry large amounts of freight.",
+            "3": "Track capacity is often inadequate, not excess."
+          }
+        }
+      },
+      {
+        "id": "q-life-m-8",
+        "question": "What is the main purpose of the UDAN scheme?",
+        "options": [
+          "Promote regional air connectivity",
+          "Build border roads",
+          "Expand railways",
+          "Develop ports"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "UDAN aims to make air travel affordable and connect smaller regional airports.",
+          "wrong_options": {
+            "1": "Border roads are built by the Border Roads Organisation.",
+            "2": "Railways are expanded through railway projects.",
+            "3": "Ports are developed by port authorities."
+          }
+        }
+      },
+      {
+        "id": "q-life-m-9",
+        "question": "Why is Chennai port called an artificial harbour?",
+        "options": [
+          "It was built with breakwaters and man-made structures",
+          "It is a natural deep bay",
+          "It is located on a river",
+          "It handles only containers"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Chennai port required man-made breakwaters and dredging because it lacked a natural sheltered harbour.",
+          "wrong_options": {
+            "1": "A natural deep bay describes ports such as Visakhapatnam or Mumbai.",
+            "2": "It is a coastal port, not mainly a river port.",
+            "3": "It handles general cargo, not only containers."
+          }
+        }
+      },
+      {
+        "id": "q-life-m-10",
+        "question": "Which pair correctly matches a city with its transport role?",
+        "options": [
+          "JNPT - container port",
+          "Delhi - jute mill",
+          "Kandla - artificial harbour",
+          "Kochi - iron ore export"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Jawaharlal Nehru Port Trust is a leading container port.",
+          "wrong_options": {
+            "1": "Delhi is not a jute mill centre.",
+            "2": "Kandla is a tidal port, not mainly an artificial harbour.",
+            "3": "Kochi handles spices and general cargo, not mainly iron ore."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-life-x-1",
+        "question": "Which mode is most suitable for carrying 1,000 tonnes of iron ore from a mine to a distant steel plant?",
+        "options": [
+          "Railways, because bulk freight is cheap over long distances",
+          "Airways, because it is fastest",
+          "Pipelines, because they are continuous",
+          "Bullock carts, because they are flexible"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Railways are the most economical and practical mode for heavy bulk freight over long distances.",
+          "wrong_options": {
+            "1": "Air freight is too expensive for iron ore.",
+            "2": "Pipelines cannot carry dry bulk ore unless as a slurry, which is uncommon.",
+            "3": "Bullock carts cannot handle such volumes efficiently."
+          }
+        }
+      },
+      {
+        "id": "q-life-x-2",
+        "question": "Which sequence correctly matches waterway to river?",
+        "options": [
+          "NW2 - Brahmaputra",
+          "NW1 - Brahmaputra",
+          "NW3 - Ganga",
+          "NW2 - West Coast Canal"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "NW2 runs on the Brahmaputra from Sadiya to Dhubri.",
+          "wrong_options": {
+            "1": "NW1 is on the Ganga.",
+            "2": "NW3 is the West Coast Canal in Kerala.",
+            "3": "NW2 is the Brahmaputra, not the West Coast Canal."
+          }
+        }
+      },
+      {
+        "id": "q-life-x-3",
+        "question": "If a country's exports are 300 units and imports are 450 units, its balance of trade is:",
+        "options": [
+          "Unfavourable by 150 units",
+          "Favourable by 150 units",
+          "Balanced at 150 units",
+          "Unfavourable by 750 units"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Balance = 300 - 450 = -150, so imports exceed exports by 150 units.",
+          "wrong_options": {
+            "1": "A favourable balance would require exports above imports.",
+            "2": "Balanced trade requires equal exports and imports.",
+            "3": "750 is the sum, not the difference."
+          }
+        }
+      },
+      {
+        "id": "q-life-x-4",
+        "question": "Which statement best explains why pipelines reduce road congestion?",
+        "options": [
+          "They move fuel continuously without tanker trucks",
+          "They carry passengers instead of trucks",
+          "They are faster than aircraft",
+          "They replace railways entirely"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Pipelines move large volumes of fuel continuously, reducing the number of tanker trips on roads.",
+          "wrong_options": {
+            "1": "Pipelines do not carry passengers.",
+            "2": "They are not faster than aircraft.",
+            "3": "They complement, not replace, railways."
+          }
+        }
+      },
+      {
+        "id": "q-life-x-5",
+        "question": "Why is Visakhapatnam described as a deep landlocked port?",
+        "options": [
+          "It has deep water and is sheltered inland by land",
+          "It is located on an island",
+          "It is an artificial harbour",
+          "It handles only containers"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Visakhapatnam has a deep natural harbour sheltered by land, allowing large ships to berth.",
+          "wrong_options": {
+            "1": "It is a mainland port, not an island port.",
+            "2": "Chennai is the classic artificial harbour.",
+            "3": "It handles iron ore, coal, and general cargo, not only containers."
+          }
+        }
+      },
+      {
+        "id": "q-life-x-6",
+        "question": "Which combination of factors best explains the location of a port city?",
+        "options": [
+          "Natural harbour, hinterland, and transport links",
+          "Desert climate and high altitude",
+          "Lack of trade and isolation",
+          "Only tourism and no shipping"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "A good port needs sheltered deep water, a productive hinterland, and connections to rail and road networks.",
+          "wrong_options": {
+            "1": "Deserts and high altitude do not favour port location.",
+            "2": "Isolation and lack of trade work against port growth.",
+            "3": "Ports primarily handle cargo and passengers, not only tourism."
+          }
+        }
+      },
+      {
+        "id": "q-life-x-7",
+        "question": "Which is the best example of how communication supports trade?",
+        "options": [
+          "A trader confirms an export order by email and tracks the shipment online",
+          "A farmer grows wheat without selling it",
+          "A factory stores goods indefinitely",
+          "A ship sails without a destination"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Communication lets traders negotiate, confirm orders, make payments, and track shipments.",
+          "wrong_options": {
+            "1": "Growing without selling is subsistence, not trade.",
+            "2": "Storage alone does not complete a trade.",
+            "3": "A ship needs communication to know its destination and schedule."
+          }
+        }
+      },
+      {
+        "id": "q-life-x-8",
+        "question": "Which statement about road density in India is correct?",
+        "options": [
+          "It is high in Kerala and low in Himalayan states",
+          "It is highest in the Himalayas",
+          "It is equal in all states",
+          "It is highest in deserts"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Kerala has a dense road network, while Himalayan states have low density due to difficult terrain.",
+          "wrong_options": {
+            "1": "Himalayan terrain makes road building difficult, so density is low.",
+            "2": "Road density varies widely between states.",
+            "3": "Desert areas generally have low road density."
+          }
+        }
+      },
+      {
+        "id": "q-life-x-9",
+        "question": "Why can tourism be called an invisible export?",
+        "options": [
+          "Foreign tourists spend money in India, earning foreign exchange without goods being shipped",
+          "Tourists carry goods out of the country",
+          "Tourism involves no money",
+          "Tourism only uses roads"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Tourism earns foreign exchange through services consumed in India, so it acts like an invisible export.",
+          "wrong_options": {
+            "1": "Tourists buy services and goods in India rather than exporting them.",
+            "2": "Tourism involves substantial spending.",
+            "3": "Tourism uses many modes of transport."
+          }
+        }
+      },
+      {
+        "id": "q-life-x-10",
+        "question": "Which set of measures would most improve a country's transport lifelines?",
+        "options": [
+          "Modernise ports, maintain roads, electrify railways, and expand digital networks",
+          "Ignore maintenance and raise fares",
+          "Close ports and airports",
+          "Stop all pipeline construction"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Integrated investment across roads, rail, ports, and digital networks improves movement of goods and information.",
+          "wrong_options": {
+            "1": "Neglect and higher fares reduce use and efficiency.",
+            "2": "Closing ports and airports would cut trade.",
+            "3": "Pipelines are efficient for oil and gas and should be developed safely."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Lifelines of National Economy - Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Transport and Communication",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Roadways",
+        "group": "land"
+      },
+      {
+        "id": "n3",
+        "label": "Railways",
+        "group": "land"
+      },
+      {
+        "id": "n4",
+        "label": "Waterways",
+        "group": "water"
+      },
+      {
+        "id": "n5",
+        "label": "Ports",
+        "group": "water"
+      },
+      {
+        "id": "n6",
+        "label": "Airways",
+        "group": "air"
+      },
+      {
+        "id": "n7",
+        "label": "Pipelines",
+        "group": "network"
+      },
+      {
+        "id": "n8",
+        "label": "Communication",
+        "group": "information"
+      },
+      {
+        "id": "n9",
+        "label": "International Trade",
+        "group": "economy"
+      },
+      {
+        "id": "n10",
+        "label": "Tourism",
+        "group": "economy"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n1",
+        "n4"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n1",
+        "n6"
+      ],
+      [
+        "n1",
+        "n7"
+      ],
+      [
+        "n1",
+        "n8"
+      ],
+      [
+        "n8",
+        "n9"
+      ],
+      [
+        "n2",
+        "n9"
+      ],
+      [
+        "n3",
+        "n9"
+      ],
+      [
+        "n5",
+        "n9"
+      ],
+      [
+        "n6",
+        "n10"
+      ]
+    ]
+  },
+  "mind_maps": {
+    "title": "Lifelines of National Economy - Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Lifelines of National Economy",
+    "branches": [
+      {
+        "concept": "Transport Modes",
+        "sub_nodes": [
+          "Land: roads and railways",
+          "Water: inland waterways and sea routes",
+          "Air: fastest but expensive",
+          "Pipelines for oil and gas"
+        ],
+        "connections": "Mode choice depends on cost, speed, goods, and terrain"
+      },
+      {
+        "concept": "Roadways",
+        "sub_nodes": [
+          "National Highways and State Highways",
+          "District and rural roads",
+          "Border Roads Organisation",
+          "Golden Quadrilateral: Delhi-Mumbai-Chennai-Kolkata",
+          "North-South and East-West corridors"
+        ],
+        "connections": "Roads provide door-to-door and rural connectivity"
+      },
+      {
+        "concept": "Railways",
+        "sub_nodes": [
+          "Broad, metre, and narrow gauge",
+          "Bulk freight and mass passenger travel",
+          "Konkan Railway",
+          "Metro rail in cities",
+          "Problems: old tracks, overcrowding, delays"
+        ],
+        "connections": "Railways are efficient for long-distance bulk transport"
+      },
+      {
+        "concept": "Waterways and Ports",
+        "sub_nodes": [
+          "Major ports: Kandla, Mumbai, JNPT, Marmagao, Visakhapatnam, Chennai",
+          "JNPT for containers",
+          "Marmagao for iron ore",
+          "NW1 Ganga, NW2 Brahmaputra, NW3 West Coast Canal",
+          "Problems: silting and seasonal flow"
+        ],
+        "connections": "Ports are gateways to international trade"
+      },
+      {
+        "concept": "Airways and Pipelines",
+        "sub_nodes": [
+          "Air transport nationalised in 1953",
+          "Indian Airlines domestic, Air India international",
+          "Pawan Hans helicopters and UDAN",
+          "HVJ gas pipeline",
+          "Pipelines: high initial cost, low operating cost"
+        ],
+        "connections": "Air links the world; pipelines move fluids continuously"
+      },
+      {
+        "concept": "Communication and Trade",
+        "sub_nodes": [
+          "Postal network and six-digit PIN code",
+          "Telecom, internet, and mass media",
+          "Exports and imports",
+          "Favourable and unfavourable balance of trade",
+          "Tourism as an invisible export"
+        ],
+        "connections": "Information and trade integrate the national economy with the world"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "Transport and communication are tertiary activities with no role in production - FALSE: they connect production with consumption and are essential lifelines.",
+    "Roads are only for cities - FALSE: roads provide crucial rural, hill, and border connectivity.",
+    "The Golden Quadrilateral connects Delhi, Mumbai, Chennai, and Hyderabad - FALSE: the fourth city is Kolkata.",
+    "All railway tracks in India are broad gauge - FALSE: metre and narrow gauge tracks also exist, though broad gauge carries most traffic.",
+    "Ports only handle passenger traffic - FALSE: ports mainly handle cargo, including petroleum, containers, iron ore, and general goods.",
+    "Pipelines can carry any solid goods - FALSE: pipelines normally carry fluids or slurries, not general solid cargo.",
+    "A favourable balance of trade means imports are greater than exports - FALSE: it means exports exceed imports.",
+    "Tourism does not earn foreign exchange because no goods are exported - FALSE: foreign tourists spend in India, so tourism is an invisible export."
+  ],
+  "chapterId": "lifelines-of-national-economy",
+  "subjectId": "social-science",
+  "subjectName": "Social Science",
+  "unitId": "social-science-2",
+  "unitName": "Contemporary India - II",
+  "examWeightage": 20,
+  "stats": {
+    "concepts": 6,
+    "theorems": 0,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

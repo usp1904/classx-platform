@@ -1,0 +1,1075 @@
+{
+  "id": "statistics",
+  "chapter": "Statistics",
+  "lesson": 14,
+  "title": "Statistics — Complete Learning Module (Learn Maths with Fun)",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Calculate the mean of grouped data using direct, assumed mean, and step-deviation methods",
+    "Determine the mode of grouped data using the modal class formula",
+    "Calculate the median of grouped data using the cumulative frequency approach",
+    "Draw cumulative frequency curves (ogives) and estimate median graphically",
+    "Apply the empirical relationship: 3 Median = Mode + 2 Mean",
+    "Solve real-life data interpretation problems in the Indian context",
+    "Solve RD Sharma and RS Aggarwal extension problems for competitive readiness"
+  ],
+  "prerequisite_nodes": [
+    "MATH_CLASS9_STATISTICS_BASIC",
+    "MATH_CLASS8_DATA_HANDLING"
+  ],
+  "concepts": [
+    {
+      "name": "Mean of Grouped Data — Finding the Average",
+      "real_life_application": "A vegetable vendor in Mumbai wants to know the average daily earning for the week. But when data is grouped into ranges (₹500-1000, ₹1000-1500, etc.), we use the grouped mean formula. This is how the government calculates average income of citizens.",
+      "purpose": "The mean gives a single representative value for a large dataset. For grouped data, we use the midpoint of each class as the representative value. Three methods (direct, assumed mean, step-deviation) give the same answer — choose the one with simpler calculations.",
+      "day_to_day_usage": [
+        "Average monthly rainfall in Chennai calculated from grouped rainfall data",
+        "Average marks of a class when marks are grouped into ranges",
+        "Average household income in a sector from census grouped data",
+        "Average wait time at a railway reservation counter"
+      ]
+    },
+    {
+      "name": "Mode of Grouped Data — The Most Common",
+      "real_life_application": "A shirt manufacturer in Tirupur wants to know which size sells the most. From grouped data (size ranges), the modal class tells the most popular size range. This prevents overproduction of unpopular sizes.",
+      "purpose": "The mode identifies the most frequently occurring value. For grouped data, we locate the modal class (highest frequency) and use a formula to find the exact mode within that class. It's the only measure suitable for categorical data.",
+      "day_to_day_usage": [
+        "Most common age group of passengers on Delhi Metro",
+        "Most common shoe size sold at Bata stores in a district",
+        "Most common income tax slab for small business owners",
+        "Most common time slot for Ola/Uber bookings in Bangalore traffic"
+      ]
+    },
+    {
+      "name": "Median of Grouped Data — The Middle Value",
+      "real_life_application": "When the Prime Minister says 'average income is ₹50,000', it may be skewed by a few billionaires. The median income — the income of the person exactly in the middle — gives a more honest picture. This is why economists prefer median over mean for income data.",
+      "purpose": "The median divides data into two equal halves. It's not affected by extreme values (outliers). For grouped data, we find the median class (where cumulative frequency crosses n/2) and interpolate within it.",
+      "day_to_day_usage": [
+        "Median house price in a city — more realistic than average",
+        "Median marks in board exams — shows typical student performance",
+        "Median waiting time at AIIMS OPD — more useful than average due to extreme cases",
+        "Median age of India's population (28.2 years) — used for policy planning"
+      ]
+    },
+    {
+      "name": "Cumulative Frequency and Ogive Curves",
+      "real_life_application": "A school principal wants to know how many students scored less than 60%. The cumulative frequency table answers this instantly. The ogive (cumulative frequency graph) shows the entire distribution at a glance.",
+      "purpose": "Cumulative frequency is a running total of frequencies. The 'less than' ogive rises from left to right; the 'more than' ogive falls from left to right. Their intersection gives the median. Ogives are used for quick visual estimation of percentiles.",
+      "day_to_day_usage": [
+        "Number of employees earning less than ₹5 lakh — from cumulative salary data",
+        "Students who scored above 80% in board exams — from 'more than' ogive",
+        "Population below age 15 in a district — from cumulative age distribution"
+      ]
+    },
+    {
+      "name": "Empirical Relationship: 3 Median = Mode + 2 Mean",
+      "real_life_application": "If a teacher knows the mean and median marks of a class, the mode can be estimated without sorting all papers. For a symmetrical distribution, all three are equal. For skewed data, this formula gives an approximate mode.",
+      "purpose": "Pearson's empirical relationship holds for moderately skewed distributions. It's used when the exact mode is difficult to determine but mean and median are easily calculated.",
+      "day_to_day_usage": [
+        "Estimating modal income from published mean and median income data",
+        "Checking if exam results are skewed towards high or low scores",
+        "Quality control — checking symmetry of manufacturing defects distribution"
+      ]
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Empirical Relationship: 3 Median = Mode + 2 Mean",
+      "statement": "For a moderately skewed distribution, the empirical relationship 3 Median = Mode + 2 Mean holds approximately.",
+      "proposed_by": {
+        "name": "Karl Pearson",
+        "era": "1895 CE",
+        "location": "England",
+        "known_as": "Founder of modern statistics"
+      },
+      "historical_context": "Karl Pearson, one of the founders of modern statistics, observed this empirical relationship while studying distributions of biological data at University College London.",
+      "why_proposed": "Pearson needed a quick way to estimate the mode (most frequent value) from mean and median, which are easier to compute for large datasets.",
+      "real_world_utility": "Used in economics (estimating modal income), quality control (checking distribution symmetry), and data science (initial data exploration).",
+      "why_students_learn": "It teaches: (1) The relationship between the three measures of central tendency; (2) How to identify skewness direction; (3) How to estimate when exact calculation is impractical."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-1",
+      "topic": "Mean of Grouped Data — Direct & Step-Deviation",
+      "problem": "Find the mean daily wages of 50 workers using both direct and step-deviation methods.",
+      "table": {
+        "columns": [
+          "Daily Wages (₹)",
+          "100-120",
+          "120-140",
+          "140-160",
+          "160-180",
+          "180-200"
+        ],
+        "frequencies": [
+          12,
+          14,
+          8,
+          6,
+          10
+        ]
+      },
+      "board_mode": [
+        "Given: Class intervals and frequencies.",
+        "Direct Method:",
+        "  Step 1: Find midpoints (xi): 110, 130, 150, 170, 190",
+        "  Step 2: Multiply each xi by frequency (fi):",
+        "    110×12 = 1320, 130×14 = 1820, 150×8 = 1200, 170×6 = 1020, 190×10 = 1900",
+        "  Step 3: Σfixi = 1320 + 1820 + 1200 + 1020 + 1900 = 7260",
+        "  Step 4: Σfi = 12 + 14 + 8 + 6 + 10 = 50",
+        "  Step 5: Mean = Σfixi / Σfi = 7260/50 = ₹145.20",
+        "",
+        "Step-Deviation Method:",
+        "  Step 1: Choose assumed mean a = 150 (midpoint of class with highest frequency)",
+        "  Step 2: Find di = xi - a: -40, -20, 0, 20, 40",
+        "  Step 3: Find ui = di/h where h = 20: -2, -1, 0, 1, 2",
+        "  Step 4: Σfiui = 12(-2) + 14(-1) + 8(0) + 6(1) + 10(2) = -24 - 14 + 0 + 6 + 20 = -12",
+        "  Step 5: Mean = a + h(Σfiui/Σfi) = 150 + 20(-12/50) = 150 - 4.80 = ₹145.20",
+        "To Find: Mean = ₹145.20 (both methods match)"
+      ],
+      "speed_mode": "Golden step: Step-deviation saves time when class intervals are equal and midpoints are large numbers. Always choose the class with highest frequency as assumed mean.",
+      "competitive_shortcut": "In competitive exams, the step-deviation method is fastest because it works with smaller integers (ui values). Practice identifying the pattern."
+    },
+    {
+      "id": "we-2",
+      "topic": "Mode of Grouped Data",
+      "problem": "Find the mode of the following frequency distribution.",
+      "table": {
+        "columns": [
+          "Class",
+          "0-10",
+          "10-20",
+          "20-30",
+          "30-40",
+          "40-50",
+          "50-60",
+          "60-70"
+        ],
+        "frequencies": [
+          8,
+          12,
+          20,
+          25,
+          18,
+          10,
+          7
+        ]
+      },
+      "board_mode": [
+        "Given: Class intervals and frequencies.",
+        "Step 1: Identify the modal class — the class with highest frequency.",
+        "  Highest frequency = 25 in class 30-40. So modal class = 30-40.",
+        "Step 2: l = 30 (lower limit of modal class)",
+        "  h = 10 (class size)",
+        "  f₁ = 25 (frequency of modal class)",
+        "  f₀ = 20 (frequency of class before modal class)",
+        "  f₂ = 18 (frequency of class after modal class)",
+        "Step 3: Mode = l + h × [(f₁ - f₀) / (2f₁ - f₀ - f₂)]",
+        "  = 30 + 10 × [(25 - 20) / (50 - 20 - 18)]",
+        "  = 30 + 10 × [5 / 12]",
+        "  = 30 + 10 × 0.4167 = 30 + 4.17 = 34.17",
+        "To Find: Mode ≈ 34.17"
+      ],
+      "speed_mode": "Golden step: Identify modal class first. The formula interpolates within the modal class. The mode always lies within the modal class interval.",
+      "competitive_shortcut": "The fraction (f₁ - f₀)/(2f₁ - f₀ - f₂) is always less than 1, so the mode is between l and l+h. Use this to sanity-check your answer."
+    },
+    {
+      "id": "we-3",
+      "topic": "Median of Grouped Data",
+      "problem": "Find the median of the following distribution.",
+      "table": {
+        "columns": [
+          "Class",
+          "0-10",
+          "10-20",
+          "20-30",
+          "30-40",
+          "40-50",
+          "50-60"
+        ],
+        "frequencies": [
+          5,
+          8,
+          12,
+          15,
+          7,
+          3
+        ]
+      },
+      "board_mode": [
+        "Given: Class intervals and frequencies.",
+        "Step 1: Compute cumulative frequencies (cf):",
+        "  0-10: cf = 5",
+        "  10-20: cf = 5 + 8 = 13",
+        "  20-30: cf = 13 + 12 = 25",
+        "  30-40: cf = 25 + 15 = 40",
+        "  40-50: cf = 40 + 7 = 47",
+        "  50-60: cf = 47 + 3 = 50",
+        "Step 2: n = 50, n/2 = 25.",
+        "Step 3: Find median class — the class where cumulative frequency first exceeds n/2.",
+        "  cf = 25 at class 20-30. The next class (30-40) has cf = 40 that exceeds 25.",
+        "  So median class = 30-40.",
+        "Step 4: l = 30, h = 10, f = 15 (frequency of median class), cf = 25 (cumulative frequency before median class).",
+        "Step 5: Median = l + h × [(n/2 - cf) / f]",
+        "  = 30 + 10 × [(25 - 25) / 15]",
+        "  = 30 + 10 × 0 = 30",
+        "To Find: Median = 30"
+      ],
+      "speed_mode": "Golden step: The cumulative frequency column is essential. Find where cf crosses n/2 — that class is the median class. Then interpolate.",
+      "competitive_shortcut": "If n/2 equals the cumulative frequency of a class boundary, the median is exactly that boundary value (as in this example where median = 30)."
+    },
+    {
+      "id": "we-4",
+      "topic": "Ogive — Less Than and More Than",
+      "problem": "Draw 'less than' and 'more than' ogives for the data and find the median.",
+      "table": {
+        "columns": [
+          "Class",
+          "0-10",
+          "10-20",
+          "20-30",
+          "30-40",
+          "40-50",
+          "50-60"
+        ],
+        "frequencies": [
+          3,
+          7,
+          10,
+          12,
+          8,
+          5
+        ]
+      },
+      "board_mode": [
+        "Step 1: 'Less than' cumulative frequency:",
+        "  less than 10: 3",
+        "  less than 20: 10",
+        "  less than 30: 20",
+        "  less than 40: 32",
+        "  less than 50: 40",
+        "  less than 60: 45",
+        "Step 2: 'More than' cumulative frequency:",
+        "  more than 0: 45",
+        "  more than 10: 42",
+        "  more than 20: 35",
+        "  more than 30: 25",
+        "  more than 40: 13",
+        "  more than 50: 5",
+        "Step 3: Plot both ogives on the same graph:",
+        "  'Less than' — points (10,3), (20,10), (30,20), (40,32), (50,40), (60,45)",
+        "  'More than' — points (0,45), (10,42), (20,35), (30,25), (40,13), (50,5)",
+        "Step 4: The x-coordinate of the intersection point gives the median.",
+        "  From the graph, the curves intersect at approximately x = 33.2.",
+        "To Find: Median ≈ 33.2"
+      ],
+      "speed_mode": "Golden step: The 'less than' ogive uses upper class limits as x-coordinates. The 'more than' ogive uses lower class limits. Their intersection is always at the median."
+    }
+  ],
+  "exercises": {
+    "exercise_14_1": {
+      "title": "Exercise 14.1 — Mean of Grouped Data",
+      "objective": "Calculate mean using direct, assumed mean, and step-deviation methods",
+      "problems": [
+        {
+          "id": "ex14.1-1",
+          "question": "A survey of 50 students' pocket money (₹) was conducted. Calculate the mean using the direct method.",
+          "solution": [
+            "Data not fully shown — follow direct method: find midpoints, multiply by frequencies, sum, divide by total frequency."
+          ],
+          "final_answer": "Mean calculated using Σfixi / Σfi"
+        },
+        {
+          "id": "ex14.1-2",
+          "question": "Find the mean number of plants per house using the step-deviation method.",
+          "solution": [
+            "Choose assumed mean a = midpoint of class with highest frequency, compute ui = (xi - a)/h, then Mean = a + h(Σfiui/Σfi)."
+          ],
+          "final_answer": "Mean found using step-deviation (matches direct method)"
+        },
+        {
+          "id": "ex14.1-6",
+          "question": "Find the mean daily expenditure on food for 25 households. Using step-deviation with a = 225.",
+          "solution": [
+            "Step 1: Midpoints: 125, 175, 225, 275, 325",
+            "Step 2: di = xi - 225: -100, -50, 0, 50, 100",
+            "Step 3: ui = di/50: -2, -1, 0, 1, 2",
+            "Step 4: Frequencies: 4, 5, 12, 2, 2",
+            "Step 5: Σfiui = 4(-2)+5(-1)+12(0)+2(1)+2(2) = -8-5+0+2+4 = -7",
+            "Step 6: Σfi = 25",
+            "Step 7: Mean = 225 + 50(-7/25) = 225 - 14 = ₹211"
+          ],
+          "final_answer": "Mean daily expenditure = ₹211"
+        }
+      ]
+    },
+    "exercise_14_2": {
+      "title": "Exercise 14.2 — Mode of Grouped Data",
+      "objective": "Calculate mode using the modal class formula",
+      "problems": [
+        {
+          "id": "ex14.2-2",
+          "question": "Find the mode for the following data on ages of patients in a hospital.",
+          "table": {
+            "columns": [
+              "Age (years)",
+              "5-15",
+              "15-25",
+              "25-35",
+              "35-45",
+              "45-55",
+              "55-65"
+            ],
+            "frequencies": [
+              6,
+              11,
+              21,
+              23,
+              14,
+              5
+            ]
+          },
+          "solution": [
+            "Step 1: Modal class = 35-45 (highest frequency 23).",
+            "Step 2: l = 35, h = 10, f₁ = 23, f₀ = 21, f₂ = 14",
+            "Step 3: Mode = 35 + 10 × [(23-21)/(46-21-14)]",
+            "  = 35 + 10 × [2/11]",
+            "  = 35 + 1.82 = 36.82"
+          ],
+          "final_answer": "Mode ≈ 36.82 years"
+        }
+      ]
+    },
+    "exercise_14_3": {
+      "title": "Exercise 14.3 — Median of Grouped Data",
+      "objective": "Calculate median using cumulative frequency interpolation",
+      "problems": [
+        {
+          "id": "ex14.3-1",
+          "question": "Find the median of the following data on weight of students.",
+          "table": {
+            "columns": [
+              "Weight (kg)",
+              "40-45",
+              "45-50",
+              "50-55",
+              "55-60",
+              "60-65",
+              "65-70",
+              "70-75"
+            ],
+            "frequencies": [
+              2,
+              3,
+              8,
+              6,
+              6,
+              3,
+              2
+            ]
+          },
+          "solution": [
+            "Step 1: n = 30, n/2 = 15.",
+            "Step 2: Cumulative frequencies: 2, 5, 13, 19, 25, 28, 30",
+            "Step 3: Median class = 55-60 (cf = 19 first exceeds 15).",
+            "Step 4: l = 55, h = 5, f = 6, cf = 13",
+            "Step 5: Median = 55 + 5 × [(15 - 13)/6] = 55 + 5 × [2/6] = 55 + 1.67 = 56.67"
+          ],
+          "final_answer": "Median weight = 56.67 kg"
+        }
+      ]
+    },
+    "exercise_14_4": {
+      "title": "Exercise 14.4 — Ogive Curves",
+      "objective": "Draw cumulative frequency curves and estimate median",
+      "problems": [
+        {
+          "id": "ex14.4-2",
+          "question": "Draw a 'less than' ogive for the data on marks obtained by 100 students. Estimate the median.",
+          "solution": [
+            "Step 1: Convert to 'less than' cumulative frequencies.",
+            "Step 2: Plot upper class limits vs cumulative frequencies.",
+            "Step 3: Locate n/2 = 50 on the y-axis, draw a horizontal line to the curve, then drop to x-axis.",
+            "Step 4: The x-coordinate gives the median ≈ 55 (varies by data)."
+          ],
+          "final_answer": "Median ≈ 55 marks (graphical estimation)"
+        }
+      ]
+    }
+  },
+  "rd_sharma_extensions": {
+    "book": "RD Sharma Class 10, Chapter 15 — Statistics",
+    "topics": [
+      {
+        "name": "Missing Frequency Problems",
+        "concept": "When one frequency in grouped data is unknown, use the given mean, median, or mode to find the missing frequency.",
+        "examples": [
+          {
+            "problem": "The mean of the following distribution is 31.4. Find the missing frequency f.",
+            "solution": [
+              "Given mean = 31.4. Set up the mean formula with unknown f.",
+              "Σfixi / Σfi = 31.4 → solve linear equation for f."
+            ],
+            "final_answer": "f found by solving the equation"
+          }
+        ],
+        "competitive_note": "Missing frequency problems are a JEE Main staple. Practice setting up the equation correctly based on which measure (mean/median/mode) is given."
+      },
+      {
+        "name": "Combined Mean of Two Groups",
+        "concept": "If two groups have means x̄₁ and x̄₂ with sizes n₁ and n₂, the combined mean is (n₁x̄₁ + n₂x̄₂)/(n₁ + n₂).",
+        "competitive_note": "This concept extends to three or more groups and appears frequently in competitive exams."
+      }
+    ]
+  },
+  "rs_aggarwal_extensions": {
+    "book": "RS Aggarwal Class 10, Chapter 14 — Statistics",
+    "topics": [
+      {
+        "name": "Empirical Relationship Problems",
+        "concept": "Using 3 Median = Mode + 2 Mean to find the third when two are known, or to check consistency of data.",
+        "examples": [
+          {
+            "problem": "For a distribution, mean = 25 and median = 26. Find the mode.",
+            "solution": [
+              "Step 1: 3 × Median = Mode + 2 × Mean",
+              "Step 2: 3 × 26 = Mode + 2 × 25",
+              "Step 3: 78 = Mode + 50",
+              "Step 4: Mode = 28"
+            ],
+            "final_answer": "Mode = 28"
+          }
+        ]
+      },
+      {
+        "name": "Comparison of Central Tendencies",
+        "concept": "Mean is affected by extremes, median is not, mode is useful for categorical data. Choose the appropriate measure based on data nature.",
+        "competitive_note": "Questions asking 'which measure is most suitable' are common. Know: mean for symmetric data, median for skewed data, mode for categorical/frequent items."
+      }
+    ]
+  },
+  "model_papers": {
+    "simple": [
+      {
+        "id": "mp-stats-s-1",
+        "question": "Find the mean of the following data using the direct method:\nClass: 0-10, 10-20, 20-30, 30-40, 40-50\nFrequency: 3, 7, 12, 8, 5",
+        "answer": "Mean = Σfixi / Σfi = 1310 / 35 = 37.43.",
+        "steps": [
+          "Find midpoints xi: 5, 15, 25, 35, 45.",
+          "Compute fixi: 3×5=15, 7×15=105, 12×25=300, 8×35=280, 5×45=225.",
+          "Σfi = 3 + 7 + 12 + 8 + 5 = 35.",
+          "Σfixi = 15 + 105 + 300 + 280 + 225 = 1310.",
+          "Mean = 1310 / 35 = 37.43."
+        ],
+        "hints": [
+          "The midpoint of class a-b is (a+b)/2.",
+          "Arrange calculations in a table to avoid errors."
+        ]
+      },
+      {
+        "id": "mp-stats-s-2",
+        "question": "Find the mode of the following data:\nClass: 0-20, 20-40, 40-60, 60-80, 80-100\nFrequency: 6, 15, 20, 12, 7",
+        "answer": "Mode = 40 + 20 × [(20-15)/(40-15-12)] = 40 + 20 × (5/13) = 40 + 7.69 = 47.69.",
+        "steps": [
+          "Modal class = 40-60 (highest frequency 20).",
+          "l = 40, h = 20, f₁ = 20, f₀ = 15, f₂ = 12.",
+          "Mode = l + h × [(f₁ - f₀) / (2f₁ - f₀ - f₂)].",
+          "= 40 + 20 × [(20 - 15) / (40 - 15 - 12)] = 40 + 20 × (5/13).",
+          "= 40 + 7.69 = 47.69."
+        ],
+        "hints": [
+          "The modal class has the highest frequency.",
+          "The mode always lies within the modal class interval."
+        ]
+      }
+    ],
+    "medium": [
+      {
+        "id": "mp-stats-m-1",
+        "question": "Find the median of the following distribution:\nClass: 10-20, 20-30, 30-40, 40-50, 50-60, 60-70\nFrequency: 5, 9, 14, 10, 7, 5",
+        "answer": "Median = 30 + 10 × [(25 - 14)/14] = 30 + 7.86 = 37.86.",
+        "steps": [
+          "Compute cumulative frequencies: 5, 14, 28, 38, 45, 50.",
+          "n = 50, n/2 = 25.",
+          "Median class = 30-40 (cf = 28 first exceeds 25; cf before = 14).",
+          "l = 30, h = 10, f = 14, cf = 14.",
+          "Median = l + h × [(n/2 - cf) / f] = 30 + 10 × [(25 - 14)/14] = 30 + 10 × 11/14 = 30 + 7.86 = 37.86."
+        ],
+        "hints": [
+          "cf is the cumulative frequency BEFORE the median class.",
+          "Median always lies within the median class interval."
+        ]
+      },
+      {
+        "id": "mp-stats-m-2",
+        "question": "For a distribution, the mean is 42 and the median is 40. Find the mode using the empirical relationship. What does this tell you about the skewness of the distribution?",
+        "answer": "Mode = 3 × Median - 2 × Mean = 120 - 84 = 36. Since Mode < Median < Mean, the distribution is positively skewed.",
+        "steps": [
+          "Given Mean = 42, Median = 40.",
+          "Empirical relationship: 3 × Median = Mode + 2 × Mean.",
+          "3 × 40 = Mode + 2 × 42 → 120 = Mode + 84.",
+          "Mode = 120 - 84 = 36.",
+          "Since Mode (36) < Median (40) < Mean (42), the distribution is positively skewed (tail to the right)."
+        ],
+        "hints": [
+          "The empirical formula is 3 Median = Mode + 2 Mean.",
+          "For a symmetric distribution, Mean = Median = Mode."
+        ]
+      }
+    ],
+    "complex": [
+      {
+        "id": "mp-stats-c-1",
+        "question": "The median of the following data is 32. Find the missing frequencies f₁ and f₂ if the total frequency is 60:\nClass: 0-10, 10-20, 20-30, 30-40, 40-50, 50-60\nFrequency: 5, 9, f₁, 15, f₂, 6",
+        "answer": "Total = 5+9+f₁+15+f₂+6 = 60 → f₁ + f₂ = 25. Median = 32, so median class = 30-40. l=30, h=10, f=15, cf=14+f₁. Median = 30 + 10[(30-14-f₁)/15] = 32 → (16-f₁)/15 = 0.2 → 16-f₁ = 3 → f₁ = 13, f₂ = 12.",
+        "steps": [
+          "Sum of frequencies: 5 + 9 + f₁ + 15 + f₂ + 6 = 60 → f₁ + f₂ = 25.",
+          "Given median = 32. Median class = 30-40 (since 30 < 32 < 40).",
+          "l = 30, h = 10, f = 15, cf = 5 + 9 + f₁ = 14 + f₁.",
+          "Median = l + h × [(n/2 - cf) / f] → 32 = 30 + 10 × [(30 - 14 - f₁) / 15].",
+          "2 = 10 × [(16 - f₁) / 15] → 2 = (160 - 10f₁) / 15 → 30 = 160 - 10f₁ → 10f₁ = 130 → f₁ = 13.",
+          "f₂ = 25 - 13 = 12."
+        ],
+        "hints": [
+          "Set up two equations: one from total frequency, one from the median formula.",
+          "Identify the median class by seeing which interval contains the given median value."
+        ]
+      },
+      {
+        "id": "mp-stats-c-2",
+        "question": "Draw a 'less than' ogive for the following data and estimate the median graphically. Also verify by the median formula.\nClass: 0-10, 10-20, 20-30, 30-40, 40-50, 50-60\nFrequency: 4, 8, 14, 12, 7, 5",
+        "answer": "Median from ogive ≈ 28.5. By formula: Median = 20 + 10[(25-12)/14] = 20 + 9.29 = 29.29. Both methods agree closely.",
+        "steps": [
+          "Compute cumulative frequencies: 4, 12, 26, 38, 45, 50.",
+          "n = 50, n/2 = 25.",
+          "Less than ogive points: (10,4), (20,12), (30,26), (40,38), (50,45), (60,50).",
+          "Plot these points and join with a smooth curve.",
+          "From y = 25, draw horizontal line to curve, then vertical to x-axis. Read x ≈ 29.",
+          "By formula: median class = 20-30 (cf before = 12 < 25, next cf = 26 > 25).",
+          "l = 20, h = 10, f = 14, cf = 12. Median = 20 + 10[(25 - 12)/14] = 20 + 9.29 = 29.29."
+        ],
+        "hints": [
+          "'Less than' ogive uses upper class limits on the x-axis.",
+          "The intersection of 'less than' and 'more than' ogives gives the median."
+        ]
+      }
+    ]
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-s-1",
+        "question": "Which measure of central tendency is most affected by extreme values?",
+        "options": [
+          "Mean",
+          "Median",
+          "Mode",
+          "None"
+        ],
+        "correct": 0,
+        "explanation": "The mean is affected by every value in the dataset, so extreme values (outliers) pull the mean toward them."
+      },
+      {
+        "id": "q-s-2",
+        "question": "The mode of a dataset is the value that appears:",
+        "options": [
+          "In the middle",
+          "Most frequently",
+          "At the average",
+          "Least frequently"
+        ],
+        "correct": 1,
+        "explanation": "The mode is the most frequently occurring value in a dataset."
+      },
+      {
+        "id": "q-s-3",
+        "question": "The median is the value that divides data into:",
+        "options": [
+          "Three equal parts",
+          "Two equal parts",
+          "Four equal parts",
+          "Ten equal parts"
+        ],
+        "correct": 1,
+        "explanation": "The median divides the data into two equal halves — 50% above and 50% below."
+      },
+      {
+        "id": "q-s-4",
+        "question": "In an ogive, the intersection of 'less than' and 'more than' curves gives the:",
+        "options": [
+          "Mean",
+          "Median",
+          "Mode",
+          "Range"
+        ],
+        "correct": 1,
+        "explanation": "The two ogive curves intersect at the median value."
+      },
+      {
+        "id": "q-s-5",
+        "question": "The empirical relationship between mean, median, and mode is:",
+        "options": [
+          "Mode = 3 Mean - 2 Median",
+          "3 Median = Mode + 2 Mean",
+          "Mean = Mode + Median",
+          "Median = (Mean + Mode)/2"
+        ],
+        "correct": 1,
+        "explanation": "Karl Pearson's empirical relationship: 3 Median = Mode + 2 Mean."
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-m-1",
+        "question": "For a distribution, mean = 36, median = 34. Find the approximate mode using the empirical relationship.",
+        "options": [
+          "30",
+          "32",
+          "34",
+          "36"
+        ],
+        "correct": 0,
+        "explanation": "3 × 34 = Mode + 2 × 36 → 102 = Mode + 72 → Mode = 30."
+      },
+      {
+        "id": "q-m-2",
+        "question": "If n = 60 and the cumulative frequency before the median class is 22, and frequency of the median class is 15 with class size 10 and lower limit 30, find the median.",
+        "options": [
+          "35.33",
+          "36.67",
+          "34.00",
+          "32.50"
+        ],
+        "correct": 0,
+        "explanation": "Median = 30 + 10 × [(30 - 22)/15] = 30 + 10 × 8/15 = 30 + 5.33 = 35.33."
+      },
+      {
+        "id": "q-m-3",
+        "question": "Which method of finding the mean is most efficient when class intervals are equal?",
+        "options": [
+          "Direct method",
+          "Assumed mean method",
+          "Step-deviation method",
+          "All are equally efficient"
+        ],
+        "correct": 2,
+        "explanation": "Step-deviation reduces large numbers to small integers (ui values), making calculations faster and less error-prone."
+      },
+      {
+        "id": "q-m-4",
+        "question": "In the mode formula, if f₁ = f₀, what happens to the mode?",
+        "options": [
+          "Mode = l (lower limit)",
+          "Mode = l + h/2",
+          "Mode = l + h",
+          "Mode is undefined"
+        ],
+        "correct": 0,
+        "explanation": "If f₁ = f₀, the fraction becomes 0/(2f₁ - f₀ - f₂) = 0, so Mode = l. The mode equals the lower limit of the modal class."
+      },
+      {
+        "id": "q-m-5",
+        "question": "For a 'less than' ogive, what are the x-coordinates?",
+        "options": [
+          "Lower class limits",
+          "Upper class limits",
+          "Class midpoints",
+          "Class frequencies"
+        ],
+        "correct": 1,
+        "explanation": "The 'less than' ogive uses upper class limits on the x-axis and cumulative frequencies on the y-axis."
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-c-1",
+        "question": "The mean of 20 numbers is 18. If 3 is added to each of the first 10 numbers and 2 is subtracted from each of the last 10, find the new mean.",
+        "options": [
+          "18.5",
+          "19",
+          "19.5",
+          "18"
+        ],
+        "correct": 0,
+        "explanation": "Old sum = 20 × 18 = 360. New sum = 360 + 10×3 - 10×2 = 360 + 30 - 20 = 370. New mean = 370/20 = 18.5.",
+        "wrong_options": {
+          "1": "You might add 3 and subtract 2 from all 20, but it's only 10 each",
+          "2": "Double-counting the adjustment",
+          "3": "Mean doesn't stay same when values shift differently"
+        }
+      },
+      {
+        "id": "q-c-2",
+        "question": "The median of the following data is 28. Find the missing frequency f: Class 0-10(5), 10-20(8), 20-30(15), 30-40(f), 40-50(6), 50-60(4).",
+        "options": [
+          "8",
+          "10",
+          "12",
+          "6"
+        ],
+        "correct": 1,
+        "explanation": "n/2 = (38+f)/2. Median class = 20-30. l=20, h=10, f=15, cf=13. Median = 20 + 10[(38+f)/2 - 13]/f = 28. Solve: 20 + 5(38+f-26)/f = 28 → 5(12+f)/f = 8 → 60+5f = 8f → 60 = 3f → f = 10."
+      }
+    ]
+  },
+  "vedic_math_shortcuts": [
+    {
+      "title": "Vedic Method: Mean by Samya (Equalization)",
+      "sanskrit": "सम्य",
+      "concept": "The Vedic sutra 'Samya' (Equalization) simplifies mean calculation by shifting the assumed mean to a convenient value. Instead of using formula with large midpoints, balance deviations around a chosen center.",
+      "real_numbers_application": "For grouped data, choose the midpoint with highest frequency as assumed mean (a). The deviations (xi - a) are then small numbers, making Σfi(xi-a) easy to compute mentally.",
+      "examples": [
+        {
+          "problem": "Find mean: Class 100-120(f=4), 120-140(f=8), 140-160(f=12), 160-180(f=6).",
+          "steps": [
+            "Vedic: Choose assumed mean a = 150 (midpoint of class with highest frequency 12).",
+            "Deviations: -30, -10, +10, +30 (class sizes of 20).",
+            "Weighted sum: 4(-30) + 8(-10) + 12(10) + 6(30) = -120 - 80 + 120 + 180 = 100",
+            "Mean = 150 + 100/30 = 150 + 3.33 = 153.33"
+          ],
+          "regular_method": "Same, but Vedic approach emphasizes choosing a that makes deviations symmetric around zero."
+        }
+      ]
+    },
+    {
+      "title": "Vedic Method: Step-Deviation Using Ekadhikena (One More)",
+      "sanskrit": "एकाधिकेन",
+      "concept": "'Ekadhikena Purvena' (One more than the previous one) — when class intervals are equal, convert deviations to step-deviation ui = (xi - a)/h. The mean becomes a + h(Σfiui/Σfi), working with tiny integers.",
+      "real_numbers_application": "Divide every deviation by class size h. Numbers like -30, -10, 10, 30 become -3, -1, 1, 3 (for h=10). Mental calculation becomes trivial.",
+      "examples": [
+        {
+          "problem": "Find mean using step-deviation: Class 10-20(f=5), 20-30(f=12), 30-40(f=8).",
+          "steps": [
+            "Vedic: a = 25 (midpoint of 20-30), h = 10.",
+            "ui = (xi-25)/10 = -1, 0, 1",
+            "Σfiui = 5(-1) + 12(0) + 8(1) = 3",
+            "Mean = 25 + 10(3/25) = 25 + 1.2 = 26.2"
+          ],
+          "regular_method": "Direct method would use: 5×15 + 12×25 + 8×35 = 75+300+280 = 655/25 = 26.2. Vedic method avoids large multiplications."
+        }
+      ]
+    },
+    {
+      "title": "Vedic Method: Mode Using Vilokanam (Observation)",
+      "sanskrit": "विलोकनम्",
+      "concept": "'Vilokanam' (Observation) means finding the answer by just looking. For mode, the modal class is immediately observable — the class with highest bar in the histogram. The formula is only needed for the exact value within that class.",
+      "real_numbers_application": "Identify the modal class by scanning frequencies visually. The mode is always in this interval. Vedic approach: check if mode equals the lower limit (when f₁=f₀) or midpoint (when frequencies are symmetric) before applying the full formula.",
+      "examples": [
+        {
+          "problem": "Find mode by observation first: Class 0-10(5), 10-20(12), 20-30(18), 30-40(10), 40-50(4).",
+          "steps": [
+            "Vedic: Modal class = 20-30 (frequency 18 is highest). l = 20.",
+            "Check: f₁=18, f₀=12, f₂=10. Mode = 20 + 10(6)/(36-12-10) = 20 + 60/14 = 24.29",
+            "Vedic shortcut: Since f₀ and f₂ are close, mode ≈ midpoint ≈ 25."
+          ],
+          "regular_method": "Full formula required for exact value, but Vedic observation gives good estimate for verification."
+        }
+      ]
+    }
+  ],
+  "common_misconceptions": [
+    "Students think the mean, median, and mode are always equal — they are equal only for symmetric distributions. Most real data is skewed.",
+    "Students use the direct method for mean when step-deviation would be much faster. When class intervals are equal, always use step-deviation.",
+    "In median calculation, students mistakenly include the median class frequency in the cumulative frequency before (cf) used in the formula. cf is the cumulative frequency just BEFORE the median class, NOT including it.",
+    "In mode formula, students write the denominator as 2f₁ - f₀ + f₂ (adding instead of subtracting). The correct denominator is 2f₁ - f₀ - f₂.",
+    "Students plot 'less than' ogive using lower limits instead of upper limits. Remember: 'less than' uses upper limits (all values below this boundary).",
+    "The empirical relationship 3 Median = Mode + 2 Mean is approximate, not exact. Students apply it even when the distribution is heavily skewed, getting wrong results.",
+    "Students forget to simplify the fraction before checking decimal termination in the context of statistics (this applies to Real Numbers chapter but some confuse the concepts)."
+  ],
+  "mind_maps": {
+    "title": "Statistics — Complete Mind Map",
+    "root": "📊 Statistics (NCERT Ch 14)",
+    "branches": [
+      {
+        "concept": "Mean of Grouped Data",
+        "sub_nodes": [
+          "Direct Method: Σfixi / Σfi (use when numbers are small)",
+          "Assumed Mean Method: a + Σfidi/Σfi where di = xi - a",
+          "Step-Deviation Method: a + h(Σfiui/Σfi) where ui = di/h",
+          "All three give the SAME answer — choose the fastest"
+        ],
+        "connections": "Step-deviation is fastest for equal class intervals"
+      },
+      {
+        "concept": "Mode of Grouped Data",
+        "sub_nodes": [
+          "Modal class = class with highest frequency",
+          "Mode = l + h(f₁-f₀)/(2f₁-f₀-f₂)",
+          "Mode always lies within modal class",
+          "Can be less than or greater than class midpoint"
+        ],
+        "connections": "Mode is the most representative for categorical data"
+      },
+      {
+        "concept": "Median of Grouped Data",
+        "sub_nodes": [
+          "Find n/2, locate median class via cumulative frequency",
+          "Median = l + h(n/2 - cf)/f",
+          "Not affected by outliers (unlike mean)",
+          "Divide data into two equal halves"
+        ],
+        "connections": "Median is best for skewed income/salary data"
+      },
+      {
+        "concept": "Ogive Curves",
+        "sub_nodes": [
+          "'Less than' ogive: upper limits vs cumulative frequency",
+          "'More than' ogive: lower limits vs cumulative frequency",
+          "Intersection point gives median graphically",
+          "Used to estimate percentiles"
+        ],
+        "connections": "Graphical estimation complements formula-based median"
+      },
+      {
+        "concept": "Empirical Relationship",
+        "sub_nodes": [
+          "3 Median = Mode + 2 Mean (Karl Pearson)",
+          "Approximate — holds for moderately skewed distributions",
+          "Used when one measure is missing",
+          "Check: for symmetric data, all three are equal"
+        ],
+        "connections": "Verification tool for consistency"
+      },
+      {
+        "concept": "Board Exam Patterns",
+        "sub_nodes": [
+          "6-10 marks per exam (highest weightage in stats)",
+          "Full table completion + mean calculation (inevitable)",
+          "Mode formula — direct substitution",
+          "Median with cumulative frequency table",
+          "Ogive drawing with graph paper"
+        ],
+        "connections": "Practice table formatting for full marks"
+      }
+    ]
+  },
+  "concept_maps": {
+    "nodes": [
+      {
+        "id": "data",
+        "label": "Raw Data",
+        "group": "foundation"
+      },
+      {
+        "id": "group",
+        "label": "Grouped Data",
+        "group": "foundation"
+      },
+      {
+        "id": "cf",
+        "label": "Cumulative Frequency",
+        "group": "foundation"
+      },
+      {
+        "id": "mean",
+        "label": "Mean",
+        "group": "core"
+      },
+      {
+        "id": "mode",
+        "label": "Mode",
+        "group": "core"
+      },
+      {
+        "id": "median",
+        "label": "Median",
+        "group": "core"
+      },
+      {
+        "id": "direct",
+        "label": "Direct Method",
+        "group": "method"
+      },
+      {
+        "id": "assumed",
+        "label": "Assumed Mean Method",
+        "group": "method"
+      },
+      {
+        "id": "stepdev",
+        "label": "Step-Deviation Method",
+        "group": "method"
+      },
+      {
+        "id": "emp",
+        "label": "Empirical: 3Med=Mode+2Mean",
+        "group": "theorem"
+      },
+      {
+        "id": "ogive",
+        "label": "Ogive Graph",
+        "group": "application"
+      },
+      {
+        "id": "miss",
+        "label": "Missing Frequency",
+        "group": "application"
+      },
+      {
+        "id": "comb",
+        "label": "Combined Mean",
+        "group": "application"
+      }
+    ],
+    "edges": [
+      [
+        "data",
+        "group"
+      ],
+      [
+        "group",
+        "cf"
+      ],
+      [
+        "group",
+        "mean"
+      ],
+      [
+        "group",
+        "mode"
+      ],
+      [
+        "group",
+        "median"
+      ],
+      [
+        "mean",
+        "direct"
+      ],
+      [
+        "mean",
+        "assumed"
+      ],
+      [
+        "mean",
+        "stepdev"
+      ],
+      [
+        "median",
+        "cf"
+      ],
+      [
+        "median",
+        "ogive"
+      ],
+      [
+        "mean",
+        "emp"
+      ],
+      [
+        "median",
+        "emp"
+      ],
+      [
+        "mode",
+        "emp"
+      ],
+      [
+        "mean",
+        "miss"
+      ],
+      [
+        "mean",
+        "comb"
+      ]
+    ]
+  },
+  "flowcharts": [
+    {
+      "title": "Which Mean Method to Use?",
+      "steps": [
+        {
+          "order": 1,
+          "action": "Given: grouped data with frequencies and class intervals.",
+          "decision": false
+        },
+        {
+          "order": 2,
+          "action": "Are class intervals equal?",
+          "decision": true,
+          "if_yes": 3,
+          "if_no": 4
+        },
+        {
+          "order": 3,
+          "action": "Use Step-Deviation Method (fastest, smallest numbers)",
+          "decision": false,
+          "next": "END"
+        },
+        {
+          "order": 4,
+          "action": "Are midpoints and products easy to compute mentally?",
+          "decision": true,
+          "if_yes": 5,
+          "if_no": 6
+        },
+        {
+          "order": 5,
+          "action": "Use Direct Method (Σfixi/Σfi)",
+          "decision": false,
+          "next": "END"
+        },
+        {
+          "order": 6,
+          "action": "Use Assumed Mean Method (a + Σfidi/Σfi)",
+          "decision": false,
+          "next": "END"
+        }
+      ]
+    },
+    {
+      "title": "Find Median of Grouped Data",
+      "steps": [
+        {
+          "order": 1,
+          "action": "Create cumulative frequency (cf) column",
+          "decision": false
+        },
+        {
+          "order": 2,
+          "action": "Find n = Σfi, compute n/2",
+          "decision": false
+        },
+        {
+          "order": 3,
+          "action": "Find median class: first class where cf ≥ n/2",
+          "decision": false
+        },
+        {
+          "order": 4,
+          "action": "Note: l (lower limit), h (class size), f (frequency), cf (cf BEFORE median class)",
+          "decision": false
+        },
+        {
+          "order": 5,
+          "action": "Apply: Median = l + h(n/2 - cf)/f",
+          "decision": false
+        },
+        {
+          "order": 6,
+          "action": "Verify: median lies within median class interval",
+          "decision": false,
+          "next": "END"
+        }
+      ]
+    }
+  ],
+  "chapterNumber": 13,
+  "chapterId": "statistics",
+  "subjectId": "mathematics",
+  "subjectName": "Mathematics",
+  "unitId": "mathematics-7",
+  "unitName": "Statistics and Probability",
+  "examWeightage": 11,
+  "stats": {
+    "concepts": 5,
+    "theorems": 1,
+    "examples": 4,
+    "exercises": 6,
+    "quizzes": 12,
+    "visuals": 2,
+    "misconceptions": 7,
+    "authored": true
+  }
+}

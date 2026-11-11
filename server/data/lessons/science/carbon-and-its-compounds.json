@@ -1,0 +1,1420 @@
+{
+  "subject": "Chemistry",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 4,
+  "chapter": "Carbon and its Compounds",
+  "lesson": 1,
+  "title": "Carbon and its Compounds — Complete Learning Module",
+  "schemaVersion": "2.0",
+  "id": "carbon-and-its-compounds",
+  "outcomes": [
+    "Explain why carbon forms covalent bonds and shows tetravalency",
+    "Compare the structures and properties of diamond, graphite, and fullerene",
+    "Use catenation, tetravalency, and multiple bonding to explain the versatility of carbon",
+    "Identify functional groups and name simple carbon compounds using IUPAC rules",
+    "Recognise homologous series and distinguish them from structural isomers",
+    "Write balanced equations for combustion, oxidation, addition, and substitution reactions",
+    "Describe the preparation, properties, and uses of ethanol and ethanoic acid",
+    "Explain micelle formation, cleansing action, and the effect of hard water on soaps"
+  ],
+  "prerequisite_nodes": [
+    "SCI_CLASS9_CARBON_COMPOUNDS",
+    "SCI_CLASS9_CHEMICAL_BONDING",
+    "SCI_CLASS8_METALS_AND_NONMETALS",
+    "SCI_CLASS10_CHEMICAL_REACTIONS"
+  ],
+  "concepts": [
+    {
+      "id": "carbon-c1",
+      "title": "Covalent Bonding and Tetravalency of Carbon",
+      "name": "Covalent Bonding and Tetravalency of Carbon",
+      "explanation": "Carbon has four electrons in its valence shell and needs four more to complete an octet. It cannot gain four electrons easily because its nucleus has only six protons, and it cannot lose four electrons because that needs too much energy. Instead, carbon shares electrons with other atoms and forms four covalent bonds. Each shared pair belongs to both atoms, so the octet is completed without producing ions. Because carbon is small, its covalent bonds are short and strong.",
+      "purpose": "Carbon has four valence electrons and completes its octet by sharing, not by transferring electrons. Small size makes the shared pairs strongly held, so carbon compounds are stable and mostly covalent.",
+      "key_points": [
+        "Carbon has the electronic configuration 2, 4 and four valence electrons.",
+        "It forms four covalent bonds, one with each valence electron, which is called tetravalency.",
+        "Carbon can form single, double, and triple bonds by sharing one, two, or three pairs of electrons.",
+        "Carbon compounds are generally poor conductors because they contain no free ions or electrons."
+      ],
+      "real_life_application": "Methane in CNG, the glucose in your food, and the plastic in a water bottle are all held together by covalent bonds around carbon.",
+      "real_life_example": "Methane (CH4) burns in a kitchen stove because four strong C-H covalent bonds hold the molecule together.",
+      "day_to_day_usage": [
+        "LPG and CNG used for cooking and transport",
+        "Plastic buckets, pens, and mobile-phone cases",
+        "Sugar, starch, and cooking oil in food",
+        "Medicines such as paracetamol",
+        "Cotton and woollen clothes"
+      ]
+    },
+    {
+      "id": "carbon-c2",
+      "title": "Allotropes of Carbon: Diamond, Graphite, and Fullerene",
+      "name": "Allotropes of Carbon: Diamond, Graphite, and Fullerene",
+      "explanation": "Allotropes are different structural forms of the same element. In diamond, each carbon atom is bonded to four other carbon atoms in a rigid three-dimensional tetrahedral network, which makes diamond the hardest natural substance. In graphite, each carbon atom is bonded to three others in flat hexagonal layers; the fourth electron is free to move, so graphite conducts electricity and the layers slide over one another. Fullerene is a cage-like molecule of 60 carbon atoms shaped like a football. The very different arrangements explain why diamond is hard and non-conducting while graphite is soft and conducting.",
+      "purpose": "Diamond, graphite, and fullerene contain only carbon, yet their properties differ because the atoms are arranged differently. Structure, not the identity of the element alone, controls properties.",
+      "key_points": [
+        "Diamond has a giant tetrahedral network; it is the hardest natural substance and does not conduct electricity.",
+        "Graphite has hexagonal layers with delocalised electrons; it is soft, slippery, and a good conductor.",
+        "Fullerene (C60) is a molecular allotrope with a closed cage of 60 carbon atoms.",
+        "All three are allotropes because they are different forms of the same element, carbon."
+      ],
+      "real_life_application": "Diamond-tipped drills cut rock, graphite makes pencil leads and electrodes, and fullerene cages are studied for drug delivery.",
+      "real_life_example": "A pencil writes because graphite layers slide off onto the paper, leaving a grey mark.",
+      "day_to_day_usage": [
+        "Pencil leads made of graphite mixed with clay",
+        "Dry lubricants for locks and bicycle chains",
+        "Carbon electrodes in batteries and electrolysis",
+        "Diamond blades for cutting tiles and stone",
+        "Diamond jewellery and glass cutters"
+      ]
+    },
+    {
+      "id": "carbon-c3",
+      "title": "Versatile Nature of Carbon: Catenation, Multiple Bonds, and Isomerism",
+      "name": "Versatile Nature of Carbon: Catenation, Multiple Bonds, and Isomerism",
+      "explanation": "Carbon forms strong bonds with other carbon atoms, so it can join into long chains, branched chains, and closed rings; this self-linking is called catenation. Its tetravalency allows two carbon atoms to share two or three pairs of electrons, forming double and triple bonds. Together, catenation and multiple bonding produce millions of carbon compounds with different sizes and shapes. Because the same molecular formula can sometimes be arranged in more than one way, carbon also shows isomerism. Isomers have the same formula but different structures and therefore different physical properties.",
+      "purpose": "Catenation, tetravalency, small size, and multiple bonding allow carbon to form an enormous variety of stable compounds. Isomerism then multiplies the possible structures for a single molecular formula.",
+      "key_points": [
+        "Catenation is the ability of carbon to link with other carbon atoms to form chains, branches, or rings.",
+        "Tetravalency and multiple bonds allow single, double, and triple C-C bonds.",
+        "Butane (C4H10) has two structural isomers and pentane (C5H12) has three.",
+        "Isomers have the same molecular formula but different arrangements and different properties."
+      ],
+      "real_life_application": "Petrol contains a mixture of hydrocarbon isomers chosen to control boiling point and engine performance.",
+      "real_life_example": "n-Butane and isobutane both have the formula C4H10, but they boil at different temperatures and are used differently as fuels.",
+      "day_to_day_usage": [
+        "Different grades of petrol and diesel",
+        "Cooking gas mixtures of propane and butane",
+        "Plastics made from long carbon chains",
+        "Natural rubber and synthetic rubber",
+        "Proteins built from carbon-based amino acids"
+      ]
+    },
+    {
+      "id": "carbon-c4",
+      "title": "Homologous Series, Functional Groups, and IUPAC Nomenclature",
+      "name": "Homologous Series, Functional Groups, and IUPAC Nomenclature",
+      "explanation": "A homologous series is a family of compounds with the same functional group in which successive members differ by one CH2 unit, that is, by 14 u of molar mass. Members share a general formula and similar chemical properties, while their physical properties change gradually with chain length. A functional group is the atom or group of atoms that gives a family its characteristic reactions, such as -OH in alcohols, -COOH in carboxylic acids, and -CHO in aldehydes. IUPAC nomenclature names a compound from its longest carbon chain, its functional group suffix, and the position of any branch. For example, CH3CH2OH is ethanol and CH3COOH is ethanoic acid.",
+      "purpose": "Functional groups organise millions of carbon compounds into a few families with predictable chemistry. Homologous series and systematic naming then make it possible to describe and compare them precisely.",
+      "key_points": [
+        "A homologous series has the same functional group and a common general formula.",
+        "Successive homologous members differ by CH2, a mass difference of 14 u.",
+        "Common functional groups are -OH (alcohol), -CHO (aldehyde), -COOH (carboxylic acid), -CO- (ketone), and -COO- (ester).",
+        "General formulas include alkanes CnH2n+2, alkenes CnH2n, alkynes CnH2n-2, alcohols CnH2n+1OH, and carboxylic acids CnH2n+1COOH."
+      ],
+      "real_life_application": "Vinegar is a dilute solution of ethanoic acid, hand sanitiser contains ethanol, and formaldehyde is used to preserve biological specimens.",
+      "real_life_example": "The alcohol family starts with methanol (CH3OH), then ethanol (C2H5OH), then propanol (C3H7OH); each member adds one CH2 unit.",
+      "day_to_day_usage": [
+        "Vinegar as a food preservative and cleaning agent",
+        "Ethanol in sanitisers and medicines",
+        "Methanol as an industrial solvent",
+        "Butanoic acid in rancid butter",
+        "Esters used as fruit flavours and perfumes"
+      ]
+    },
+    {
+      "id": "carbon-c5",
+      "title": "Chemical Properties: Combustion, Oxidation, Addition, and Substitution",
+      "name": "Chemical Properties: Combustion, Oxidation, Addition, and Substitution",
+      "explanation": "Carbon compounds burn in oxygen to give carbon dioxide, water, and heat; this is combustion. Saturated hydrocarbons burn with a clean blue flame when oxygen is plentiful, but a yellow sooty flame forms when oxygen is limited. Alcohols can be oxidised to carboxylic acids by oxidising agents such as alkaline potassium permanganate or acidified potassium dichromate. Unsaturated compounds undergo addition reactions, for example ethene adds hydrogen in the presence of nickel to form ethane, and they decolourise bromine water. Saturated hydrocarbons undergo substitution, in which hydrogen atoms are replaced one by one, as in the reaction of methane with chlorine in sunlight.",
+      "purpose": "Combustion, oxidation, addition, and substitution are the four reaction patterns that explain how carbon compounds are converted into fuels, acids, and other useful products.",
+      "key_points": [
+        "Complete combustion gives CO2 and H2O with a blue flame; incomplete combustion gives soot and carbon monoxide.",
+        "Oxidation of ethanol with alkaline KMnO4 or acidified K2Cr2O7 gives ethanoic acid.",
+        "Addition occurs at double or triple bonds; ethene plus hydrogen over nickel gives ethane.",
+        "Substitution occurs in saturated compounds; methane plus chlorine in sunlight gives chloromethane and HCl."
+      ],
+      "real_life_application": "Cooking gas burns at the stove, ethanol is oxidised in the body, and bromine water is used in the laboratory to test for unsaturation.",
+      "real_life_example": "A yellow sooty flame from a gas stove shows that the air holes are blocked and the fuel is burning with too little oxygen.",
+      "day_to_day_usage": [
+        "Blue flame of an LPG stove with proper air supply",
+        "Yellow flame and soot from an improperly adjusted burner",
+        "Hydrogenation of vegetable oil to make vanaspati ghee",
+        "Bromine water test in school laboratories",
+        "Oxidation of alcohol in breath analysers"
+      ]
+    },
+    {
+      "id": "carbon-c6",
+      "title": "Ethanol, Ethanoic Acid, Soaps, Detergents, Micelles, and Hard Water",
+      "name": "Ethanol, Ethanoic Acid, Soaps, Detergents, Micelles, and Hard Water",
+      "explanation": "Ethanol (C2H5OH) is a colourless liquid that reacts with sodium to release hydrogen and dehydrates to ethene with concentrated sulphuric acid at 443 K. Ethanoic acid (CH3COOH) is a weak acid that turns blue litmus red, reacts with sodium bicarbonate to release carbon dioxide, and forms ethyl ethanoate with ethanol in the presence of concentrated sulphuric acid. Soaps are sodium or potassium salts of long-chain fatty acids, made by saponification, and detergents are synthetic sodium salts of sulphonic acids. In water, soap molecules form micelles with their hydrophobic tails inside oil droplets and their hydrophilic heads outside, so grease is lifted away. Hard water contains calcium and magnesium ions, which form an insoluble scum with soap; detergents do not form this scum, so they work even in hard water.",
+      "purpose": "Ethanol and ethanoic acid are the two most important everyday carbon compounds, while soaps and detergents apply the chemistry of long-chain carboxylic acids to cleaning.",
+      "key_points": [
+        "Ethanol reacts with sodium to give sodium ethoxide and hydrogen, and with ethanoic acid to give ethyl ethanoate.",
+        "Ethanoic acid is a weak acid; it releases CO2 from sodium bicarbonate and neutralises sodium hydroxide.",
+        "Soap is a sodium or potassium salt of a fatty acid; detergents are synthetic sulphonate salts.",
+        "A micelle has hydrophobic tails in oil and hydrophilic heads in water; hard water forms scum with soap but not with detergents."
+      ],
+      "real_life_application": "Soap removes oil from utensils, detergent works in hard water, and vinegar removes hard-water stains from a kettle.",
+      "real_life_example": "Washing oily hands with soap forms micelles that trap the oil and rinse it away with water.",
+      "day_to_day_usage": [
+        "Bathing soap and washing powder",
+        "Hand sanitiser containing ethanol",
+        "Vinegar used in cooking and cleaning",
+        "Shampoo and dishwashing liquid",
+        "Antacid and preservative chemistry in food"
+      ]
+    }
+  ],
+  "theorems": [
+    {
+      "name": "Octet Rule",
+      "statement": "Atoms tend to gain, lose, or share electrons so that each atom has eight electrons in its outermost shell, giving a stable noble-gas configuration.",
+      "proposed_by": {
+        "name": "Gilbert N. Lewis",
+        "era": "1875–1946",
+        "location": "United States",
+        "book": "The Atom and the Molecule (1916)",
+        "known_as": "Originator of the Lewis electron-dot model"
+      },
+      "historical_context": "Lewis and Kossel independently explained bonding by focusing on valence electrons rather than whole atoms. The rule successfully accounted for the formulas of many simple molecules, including methane and water.",
+      "why_proposed": "Chemists needed a simple rule that could predict how many bonds an atom would form.",
+      "real_world_utility": "It predicts the formulas of covalent compounds and explains why carbon, with four valence electrons, forms four bonds.",
+      "why_students_learn": "It is the basis for drawing electron-dot structures and for understanding tetravalency.",
+      "examples": [
+        "Methane: carbon shares four pairs, one with each hydrogen, so carbon has eight electrons.",
+        "Water: oxygen shares two pairs, one with each hydrogen, completing its octet."
+      ]
+    },
+    {
+      "name": "Tetravalency of Carbon",
+      "statement": "A carbon atom has four valence electrons and forms four covalent bonds, so its valency is four in almost all of its compounds.",
+      "proposed_by": {
+        "name": "August Kekulé",
+        "era": "1829–1896",
+        "location": "Germany",
+        "book": "On the constitution of benzene (1865)",
+        "known_as": "Founder of structural theory in organic chemistry"
+      },
+      "historical_context": "Kekulé and Couper independently proposed that carbon is tetravalent, which allowed chemists to draw connected structures for organic molecules instead of treating them as loose collections of atoms.",
+      "why_proposed": "Without a fixed valency for carbon, the growing number of known organic formulas could not be explained.",
+      "real_world_utility": "Tetravalency explains the structures of fuels, plastics, medicines, and biomolecules.",
+      "why_students_learn": "It explains why carbon forms chains and why its compounds are so numerous.",
+      "examples": [
+        "CH4: one carbon bonded to four hydrogen atoms.",
+        "C2H6: each carbon bonded to three hydrogen atoms and to the other carbon."
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-carbon-1",
+      "title": "Electron-dot structure and bonding in methane",
+      "topic": "Electron-dot structure and bonding in methane",
+      "problem": "Draw the electron-dot structure of methane and explain why it is a covalent compound with four single bonds.",
+      "solution": [
+        "Step 1: Write the valence electrons. Carbon has 4 valence electrons; each hydrogen has 1, so four hydrogen atoms supply 4 electrons.",
+        "Step 2: Carbon needs four more electrons to complete its octet; each hydrogen needs one more electron to complete its duplet.",
+        "Step 3: Carbon shares one pair with each hydrogen, so four shared pairs form around carbon.",
+        "Step 4: The structure is H-C-H with two more H atoms attached to carbon, and each C-H line represents one shared pair.",
+        "Step 5: All four bonds are single covalent bonds, and no ions are formed.",
+        "Step 6: Carbon has 8 electrons around it and each hydrogen has 2, so all atoms satisfy their requirement."
+      ],
+      "board_mode": [
+        "Step 1: Write the valence electrons. Carbon has 4 valence electrons; each hydrogen has 1, so four hydrogen atoms supply 4 electrons.",
+        "Step 2: Carbon needs four more electrons to complete its octet; each hydrogen needs one more electron to complete its duplet.",
+        "Step 3: Carbon shares one pair with each hydrogen, so four shared pairs form around carbon.",
+        "Step 4: The structure is H-C-H with two more H atoms attached to carbon, and each C-H line represents one shared pair.",
+        "Step 5: All four bonds are single covalent bonds, and no ions are formed.",
+        "Step 6: Carbon has 8 electrons around it and each hydrogen has 2, so all atoms satisfy their requirement."
+      ],
+      "answer": "CH4 contains four C-H single covalent bonds; carbon shares one electron pair with each hydrogen and completes its octet.",
+      "board_tip": "Always show the shared pairs clearly and count electrons around carbon (8) and each hydrogen (2) for full marks.",
+      "exam_tip": "Do not draw CH4 with ionic charges. Carbon and hydrogen both need electrons, so they share rather than transfer.",
+      "speed_mode": "Count valence electrons first, then pair carbon with each hydrogen one at a time.",
+      "competitive_shortcut": "Tetravalency is the key: carbon forms four bonds in methane, and the same rule predicts the structures of ethane, ethene, and ethyne."
+    },
+    {
+      "id": "we-carbon-2",
+      "title": "Finding the next member of a homologous series",
+      "topic": "Finding the next member of a homologous series",
+      "problem": "The first three members of an alcohol series are CH3OH, C2H5OH, and C3H7OH. Identify the series, write its general formula, and find the molecular formula and name of the fourth member.",
+      "solution": [
+        "Step 1: All three compounds contain the -OH functional group, so they belong to the alcohol family.",
+        "Step 2: Successive formulas differ by one carbon and two hydrogen atoms, which is a CH2 unit.",
+        "Step 3: The general formula of alcohols is CnH2n+1OH.",
+        "Step 4: The fourth member has n = 4, so its formula is C4H9OH.",
+        "Step 5: The name of C4H9OH is butanol.",
+        "Step 6: Check the mass difference: butanol minus propanol is C4H10O - C3H8O = CH2 = 14 u."
+      ],
+      "board_mode": [
+        "Step 1: All three compounds contain the -OH functional group, so they belong to the alcohol family.",
+        "Step 2: Successive formulas differ by one carbon and two hydrogen atoms, which is a CH2 unit.",
+        "Step 3: The general formula of alcohols is CnH2n+1OH.",
+        "Step 4: The fourth member has n = 4, so its formula is C4H9OH.",
+        "Step 5: The name of C4H9OH is butanol.",
+        "Step 6: Check the mass difference: butanol minus propanol is C4H10O - C3H8O = CH2 = 14 u."
+      ],
+      "answer": "The series is alcohols; general formula CnH2n+1OH; the fourth member is C4H9OH, butanol.",
+      "board_tip": "Show the CH2 difference explicitly; it is the defining feature of a homologous series.",
+      "exam_tip": "Do not confuse a homologous series with isomers. Homologous members have different molecular formulas; isomers have the same formula.",
+      "speed_mode": "Add CH2 to the previous member, then adjust hydrogen to satisfy tetravalency.",
+      "competitive_shortcut": "For any homologous series, molar mass increases by 14 g/mol per CH2 unit."
+    },
+    {
+      "id": "we-carbon-3",
+      "title": "Identifying functional groups and writing IUPAC names",
+      "topic": "Identifying functional groups and writing IUPAC names",
+      "problem": "Identify the functional group and write the IUPAC name of each compound: (i) CH3CH2OH, (ii) CH3CHO, (iii) CH3COOH, (iv) CH3COCH3.",
+      "solution": [
+        "Step 1: (i) The -OH group is attached to a carbon chain, so it is an alcohol. The two-carbon chain gives ethanol.",
+        "Step 2: (ii) The -CHO group is an aldehyde. The two-carbon chain gives ethanal.",
+        "Step 3: (iii) The -COOH group is a carboxylic acid. The two-carbon chain gives ethanoic acid.",
+        "Step 4: (iv) The -CO- group between two carbon atoms is a ketone. The three-carbon chain gives propanone.",
+        "Step 5: Check that the suffix matches the functional group: -ol for alcohol, -al for aldehyde, -oic acid for carboxylic acid, -one for ketone."
+      ],
+      "board_mode": [
+        "Step 1: (i) The -OH group is attached to a carbon chain, so it is an alcohol. The two-carbon chain gives ethanol.",
+        "Step 2: (ii) The -CHO group is an aldehyde. The two-carbon chain gives ethanal.",
+        "Step 3: (iii) The -COOH group is a carboxylic acid. The two-carbon chain gives ethanoic acid.",
+        "Step 4: (iv) The -CO- group between two carbon atoms is a ketone. The three-carbon chain gives propanone.",
+        "Step 5: Check that the suffix matches the functional group: -ol for alcohol, -al for aldehyde, -oic acid for carboxylic acid, -one for ketone."
+      ],
+      "answer": "(i) alcohol, ethanol; (ii) aldehyde, ethanal; (iii) carboxylic acid, ethanoic acid; (iv) ketone, propanone.",
+      "board_tip": "Write the functional group and the name side by side; examiners award marks for both.",
+      "exam_tip": "CH3COOH is ethanoic acid, not ethanol. The -COOH group, not -OH, controls the name.",
+      "speed_mode": "Find the heteroatom group first, then count the longest carbon chain.",
+      "competitive_shortcut": "Aldehyde -CHO is always at the end of a chain; ketone -CO- is always between two carbon atoms."
+    },
+    {
+      "id": "we-carbon-4",
+      "title": "Balancing the complete combustion of ethanol",
+      "topic": "Balancing the complete combustion of ethanol",
+      "problem": "Write the balanced equation for the complete combustion of ethanol and calculate the mass of carbon dioxide produced when 46 g of ethanol burns completely.",
+      "solution": [
+        "Step 1: Write the skeletal equation: C2H5OH + O2 → CO2 + H2O.",
+        "Step 2: Balance carbon: 2 carbon atoms on the left need 2CO2 on the right.",
+        "Step 3: Balance hydrogen: 6 hydrogen atoms on the left need 3H2O on the right.",
+        "Step 4: Count oxygen on the right: 2 × 2 + 3 × 1 = 7 oxygen atoms. The left already has 1 oxygen in ethanol, so 3O2 supply the remaining 6.",
+        "Step 5: Balanced equation: C2H5OH + 3O2 → 2CO2 + 3H2O.",
+        "Step 6: Molar mass of ethanol = 2 × 12 + 6 × 1 + 16 = 46 g/mol, so 46 g is exactly 1 mol.",
+        "Step 7: 1 mol ethanol gives 2 mol CO2. Mass of CO2 = 2 × 44 = 88 g."
+      ],
+      "board_mode": [
+        "Step 1: Write the skeletal equation: C2H5OH + O2 → CO2 + H2O.",
+        "Step 2: Balance carbon: 2 carbon atoms on the left need 2CO2 on the right.",
+        "Step 3: Balance hydrogen: 6 hydrogen atoms on the left need 3H2O on the right.",
+        "Step 4: Count oxygen on the right: 2 × 2 + 3 × 1 = 7 oxygen atoms. The left already has 1 oxygen in ethanol, so 3O2 supply the remaining 6.",
+        "Step 5: Balanced equation: C2H5OH + 3O2 → 2CO2 + 3H2O.",
+        "Step 6: Molar mass of ethanol = 2 × 12 + 6 × 1 + 16 = 46 g/mol, so 46 g is exactly 1 mol.",
+        "Step 7: 1 mol ethanol gives 2 mol CO2. Mass of CO2 = 2 × 44 = 88 g."
+      ],
+      "answer": "C2H5OH + 3O2 → 2CO2 + 3H2O; 46 g of ethanol gives 88 g of carbon dioxide.",
+      "board_tip": "Balance C, then H, then O. Remember that ethanol already supplies one oxygen atom.",
+      "exam_tip": "Do not write 2O2 or 4O2; count all seven oxygen atoms on the right before choosing the O2 coefficient.",
+      "speed_mode": "Use moles: 46 g ethanol = 1 mol, and the equation gives 2 mol CO2, so the mass is 88 g.",
+      "competitive_shortcut": "For any alcohol CnH2n+1OH, complete combustion needs (3n/2) O2 and gives n CO2."
+    },
+    {
+      "id": "we-carbon-5",
+      "title": "Soap, micelles, and hard water",
+      "topic": "Soap, micelles, and hard water",
+      "problem": "Explain how soap removes oil from cloth. Write the equation for the reaction of sodium stearate with calcium ions in hard water and explain why detergents are preferred in hard water.",
+      "solution": [
+        "Step 1: A soap molecule has a long hydrophobic hydrocarbon tail and a hydrophilic -COONa head.",
+        "Step 2: In water, the tails attach to the oil or grease droplet while the heads remain in water, forming a spherical micelle.",
+        "Step 3: The negatively charged heads keep the micelles apart, so the oil droplets do not join again.",
+        "Step 4: Agitation and rinsing carry the micelles away, removing the oil from the cloth.",
+        "Step 5: In hard water, calcium ions react with soap to form insoluble calcium stearate scum: 2C17H35COONa + CaCl2 → (C17H35COO)2Ca↓ + 2NaCl.",
+        "Step 6: The scum wastes soap and deposits on cloth, so cleaning becomes poor.",
+        "Step 7: Detergents are sodium salts of sulphonic acids; their calcium and magnesium salts are soluble, so they do not form scum and work in hard water."
+      ],
+      "board_mode": [
+        "Step 1: A soap molecule has a long hydrophobic hydrocarbon tail and a hydrophilic -COONa head.",
+        "Step 2: In water, the tails attach to the oil or grease droplet while the heads remain in water, forming a spherical micelle.",
+        "Step 3: The negatively charged heads keep the micelles apart, so the oil droplets do not join again.",
+        "Step 4: Agitation and rinsing carry the micelles away, removing the oil from the cloth.",
+        "Step 5: In hard water, calcium ions react with soap to form insoluble calcium stearate scum: 2C17H35COONa + CaCl2 → (C17H35COO)2Ca↓ + 2NaCl.",
+        "Step 6: The scum wastes soap and deposits on cloth, so cleaning becomes poor.",
+        "Step 7: Detergents are sodium salts of sulphonic acids; their calcium and magnesium salts are soluble, so they do not form scum and work in hard water."
+      ],
+      "answer": "Soap forms micelles that trap oil and rinse it away. In hard water, 2C17H35COONa + CaCl2 → (C17H35COO)2Ca↓ + 2NaCl forms scum; detergents avoid this because their calcium salts are soluble.",
+      "board_tip": "Label the hydrophobic tail and hydrophilic head in the micelle diagram; the labels carry marks.",
+      "exam_tip": "Scum is calcium or magnesium stearate, not calcium carbonate. Write the correct precipitate formula.",
+      "speed_mode": "Micelle = tails in oil, heads in water. Hard water = Ca2+ or Mg2+ scum. Detergent = no scum.",
+      "competitive_shortcut": "Detergents work in both soft and hard water because their Ca2+ and Mg2+ salts are soluble, unlike those of soap."
+    }
+  ],
+  "exercises": {
+    "exercise_4_1": {
+      "title": "NCERT Exercise 4.1 — Bonding, Allotropes, and Carbon Versatility",
+      "objective": "Build the foundation: covalent bonding, allotropy, catenation, formulas, functional groups, and combustion",
+      "problems": [
+        {
+          "id": "carbon-ex1-1",
+          "book_source": "NCERT Exercise 4.1",
+          "question": "Why does carbon form covalent bonds instead of ionic bonds?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Carbon has four valence electrons and needs four more to complete its octet.",
+            "Step 2: Gaining four electrons would create a 4- charge on a small nucleus with only six protons, which is energetically unfavourable.",
+            "Step 3: Losing four electrons would require a very large amount of energy and would leave a 4+ ion.",
+            "Step 4: Therefore carbon shares electrons with other atoms and forms four covalent bonds."
+          ],
+          "final_answer": "Carbon shares electrons rather than transferring them, so it forms covalent bonds and completes its octet."
+        },
+        {
+          "id": "carbon-ex1-2",
+          "book_source": "NCERT Exercise 4.1",
+          "question": "Define allotropy. Name three allotropes of carbon and give one characteristic property of each.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Allotropy is the existence of an element in two or more different structural forms in the same physical state.",
+            "Step 2: Diamond has a giant tetrahedral network, is the hardest natural substance, and does not conduct electricity.",
+            "Step 3: Graphite has hexagonal layers, is soft and slippery, and conducts electricity.",
+            "Step 4: Fullerene is a cage-like C60 molecule with a football-shaped structure."
+          ],
+          "final_answer": "Allotropy is the existence of different structural forms of the same element; diamond (hard, non-conducting), graphite (soft, conducting), and fullerene (C60 cage) are carbon allotropes."
+        },
+        {
+          "id": "carbon-ex1-3",
+          "book_source": "NCERT Exercise 4.1",
+          "question": "What is catenation? Why does carbon show catenation to a much greater extent than other elements?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Catenation is the ability of an element to form covalent bonds with atoms of the same element, producing chains, branches, or rings.",
+            "Step 2: Carbon-carbon bonds are strong and stable because carbon is small and forms effective overlap with other carbon atoms.",
+            "Step 3: Carbon is tetravalent, so each carbon can link to up to four other carbon atoms, allowing complex networks.",
+            "Step 4: No other element combines strong self-bonding with tetravalency to the same extent, so carbon shows catenation most strongly."
+          ],
+          "final_answer": "Catenation is self-linking of atoms; carbon shows it strongly because of strong C-C bonds and tetravalency."
+        },
+        {
+          "id": "carbon-ex1-4",
+          "book_source": "NCERT Exercise 4.1",
+          "question": "Write the general formula of alkanes, alkenes, alkynes, and alcohols.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Alkanes contain only single C-C bonds, so they are saturated: CnH2n+2.",
+            "Step 2: Alkenes contain one C=C double bond: CnH2n.",
+            "Step 3: Alkynes contain one C≡C triple bond: CnH2n-2.",
+            "Step 4: Alcohols contain the -OH group: CnH2n+1OH."
+          ],
+          "final_answer": "Alkanes CnH2n+2; alkenes CnH2n; alkynes CnH2n-2; alcohols CnH2n+1OH."
+        },
+        {
+          "id": "carbon-ex1-5",
+          "book_source": "NCERT Exercise 4.1",
+          "question": "Identify the functional group present in each compound: (i) CH3COOH, (ii) CH3CHO, (iii) CH3CH2OH, (iv) CH3COCH3.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: (i) The -COOH group is the carboxylic acid functional group.",
+            "Step 2: (ii) The -CHO group is the aldehyde functional group.",
+            "Step 3: (iii) The -OH group is the alcohol functional group.",
+            "Step 4: (iv) The -CO- group between two carbon atoms is the ketone functional group."
+          ],
+          "final_answer": "(i) carboxylic acid, (ii) aldehyde, (iii) alcohol, (iv) ketone."
+        },
+        {
+          "id": "carbon-ex1-6",
+          "book_source": "NCERT Exercise 4.1",
+          "question": "Write the balanced chemical equation for the complete combustion of methane.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Write the skeletal equation: CH4 + O2 → CO2 + H2O.",
+            "Step 2: Carbon is already balanced with one CO2.",
+            "Step 3: Four hydrogen atoms need two H2O molecules: CH4 + O2 → CO2 + 2H2O.",
+            "Step 4: The right side has 2 + 2 = 4 oxygen atoms, so write 2O2 on the left.",
+            "Step 5: Balanced equation: CH4 + 2O2 → CO2 + 2H2O."
+          ],
+          "final_answer": "CH4 + 2O2 → CO2 + 2H2O."
+        }
+      ]
+    },
+    "exercise_4_2": {
+      "title": "NCERT Exercise 4.2 — Homologous Series, Naming, and Reactions",
+      "objective": "Apply homologous series, IUPAC naming, addition, substitution, acid tests, and hard-water chemistry",
+      "problems": [
+        {
+          "id": "carbon-ex2-1",
+          "book_source": "NCERT Exercise 4.2",
+          "question": "The compounds CH3OH, C2H5OH, and C3H7OH form a homologous series. Name the series, write its general formula, and find the molecular formula of the next member.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: All three compounds contain the -OH group, so the series is the alcohol series.",
+            "Step 2: Successive members differ by CH2, confirming a homologous series.",
+            "Step 3: The general formula of alcohols is CnH2n+1OH.",
+            "Step 4: The next member has four carbon atoms, so its formula is C4H9OH.",
+            "Step 5: Its name is butanol."
+          ],
+          "final_answer": "Alcohol series; general formula CnH2n+1OH; next member C4H9OH, butanol."
+        },
+        {
+          "id": "carbon-ex2-2",
+          "book_source": "NCERT Exercise 4.2",
+          "question": "Write the IUPAC names of: (i) CH3CH2Br, (ii) CH3CHO, (iii) CH3COOH, (iv) CH3COCH3, (v) CH3CH2OH.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: (i) A two-carbon chain with a bromine substituent is bromoethane.",
+            "Step 2: (ii) A two-carbon chain ending in -CHO is ethanal.",
+            "Step 3: (iii) A two-carbon chain ending in -COOH is ethanoic acid.",
+            "Step 4: (iv) A three-carbon chain with a ketone group is propanone.",
+            "Step 5: (v) A two-carbon chain with an -OH group is ethanol."
+          ],
+          "final_answer": "(i) bromoethane, (ii) ethanal, (iii) ethanoic acid, (iv) propanone, (v) ethanol."
+        },
+        {
+          "id": "carbon-ex2-3",
+          "book_source": "NCERT Exercise 4.2",
+          "question": "Describe the addition reaction of ethene with hydrogen. State the condition and write the balanced equation. How is bromine water used to test for unsaturation?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Ethene is unsaturated because it contains a C=C double bond.",
+            "Step 2: In the presence of finely divided nickel, ethene adds one molecule of hydrogen across the double bond.",
+            "Step 3: The equation is C2H4 + H2 → C2H6; the product is ethane.",
+            "Step 4: When bromine water is added to an unsaturated compound, the reddish-brown colour disappears as bromine adds across the double bond.",
+            "Step 5: Saturated compounds such as ethane do not decolourise bromine water under ordinary conditions."
+          ],
+          "final_answer": "C2H4 + H2 → C2H6 over nickel; unsaturated compounds decolourise bromine water, saturated compounds do not."
+        },
+        {
+          "id": "carbon-ex2-4",
+          "book_source": "NCERT Exercise 4.2",
+          "question": "Write the balanced equation for the substitution reaction of methane with chlorine in sunlight. Why is sunlight necessary?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Methane is saturated and does not undergo addition, so chlorine replaces hydrogen atoms one by one.",
+            "Step 2: The first step is CH4 + Cl2 → CH3Cl + HCl.",
+            "Step 3: Chloromethane can react further to form CH2Cl2, CHCl3, and CCl4.",
+            "Step 4: Sunlight supplies the energy needed to break the Cl-Cl bond and start the reaction.",
+            "Step 5: The overall change is a substitution of hydrogen by chlorine, producing HCl as a by-product."
+          ],
+          "final_answer": "CH4 + Cl2 → CH3Cl + HCl in sunlight; light provides energy to break the Cl-Cl bond."
+        },
+        {
+          "id": "carbon-ex2-5",
+          "book_source": "NCERT Exercise 4.2",
+          "question": "How would you distinguish between ethanol and ethanoic acid using a chemical test? Write the balanced equation involved.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Add a small amount of sodium bicarbonate to each liquid.",
+            "Step 2: Ethanoic acid reacts vigorously and produces carbon dioxide bubbles; ethanol does not.",
+            "Step 3: The gas turns lime water milky, confirming CO2.",
+            "Step 4: The equation is CH3COOH + NaHCO3 → CH3COONa + H2O + CO2.",
+            "Step 5: Litmus paper can also be used: ethanoic acid turns blue litmus red, while neutral ethanol does not."
+          ],
+          "final_answer": "Ethanoic acid gives CO2 with sodium bicarbonate: CH3COOH + NaHCO3 → CH3COONa + H2O + CO2; ethanol does not."
+        },
+        {
+          "id": "carbon-ex2-6",
+          "book_source": "NCERT Exercise 4.2",
+          "question": "Why does soap not work well in hard water? Write the equation for the reaction of sodium stearate with calcium chloride and explain why detergents are preferred.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Hard water contains calcium and magnesium ions.",
+            "Step 2: These ions react with soap to form insoluble calcium or magnesium stearate, called scum.",
+            "Step 3: The equation is 2C17H35COONa + CaCl2 → (C17H35COO)2Ca↓ + 2NaCl.",
+            "Step 4: The scum uses up soap and deposits on cloth, so less soap is available for cleaning.",
+            "Step 5: Detergents form soluble calcium and magnesium salts, so they do not produce scum and clean effectively in hard water."
+          ],
+          "final_answer": "Soap forms insoluble scum with Ca2+: 2C17H35COONa + CaCl2 → (C17H35COO)2Ca↓ + 2NaCl; detergents form soluble salts and work in hard water."
+        }
+      ]
+    },
+    "exercise_4_3": {
+      "title": "NCERT Exercise 4.3 — Isomers, Esterification, Numericals, and Cleansing Action",
+      "objective": "Synthesise ideas: isomerism, esterification, saponification, combustion calculations, micelles, and classification",
+      "problems": [
+        {
+          "id": "carbon-ex3-1",
+          "book_source": "NCERT Exercise 4.3",
+          "question": "Draw and name the structural isomers of butane (C4H10) and pentane (C5H12). State how many isomers each has.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Butane has four carbon atoms. A straight chain gives n-butane, CH3-CH2-CH2-CH3.",
+            "Step 2: A branched chain gives isobutane, CH3-CH(CH3)-CH3, with a methyl branch on the middle carbon.",
+            "Step 3: Therefore butane has two structural isomers.",
+            "Step 4: Pentane has five carbon atoms. The straight chain is n-pentane, CH3-CH2-CH2-CH2-CH3.",
+            "Step 5: A single methyl branch gives isopentane, CH3-CH(CH3)-CH2-CH3.",
+            "Step 6: Two methyl branches on the middle carbon give neopentane, C(CH3)4.",
+            "Step 7: Therefore pentane has three structural isomers."
+          ],
+          "final_answer": "Butane has 2 isomers: n-butane and isobutane. Pentane has 3 isomers: n-pentane, isopentane, and neopentane."
+        },
+        {
+          "id": "carbon-ex3-2",
+          "book_source": "NCERT Exercise 4.3",
+          "question": "Define esterification and saponification. Write one balanced equation for each and state one use of the product.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Esterification is the reaction of a carboxylic acid with an alcohol in the presence of a small amount of concentrated sulphuric acid to form an ester and water.",
+            "Step 2: CH3COOH + C2H5OH ⇌ CH3COOC2H5 + H2O; the product is ethyl ethanoate, used as a fruit flavour and solvent.",
+            "Step 3: Saponification is the alkaline hydrolysis of a fat or oil with sodium hydroxide to form soap and glycerol.",
+            "Step 4: A general equation is C3H5(OOCR)3 + 3NaOH → C3H5(OH)3 + 3RCOONa.",
+            "Step 5: The soap formed is used for washing, and glycerol is used in cosmetics and medicines.",
+            "Step 6: Concentrated sulphuric acid acts as a catalyst and dehydrating agent in esterification, but it is not written as a reactant."
+          ],
+          "final_answer": "Esterification: CH3COOH + C2H5OH ⇌ CH3COOC2H5 + H2O. Saponification: C3H5(OOCR)3 + 3NaOH → C3H5(OH)3 + 3RCOONa."
+        },
+        {
+          "id": "carbon-ex3-3",
+          "book_source": "NCERT Exercise 4.3",
+          "question": "When 46 g of ethanol is burned completely, calculate the mass of carbon dioxide formed and the volume of CO2 produced at STP. Use C2H5OH + 3O2 → 2CO2 + 3H2O.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Calculate the molar mass of ethanol: 2 × 12 + 6 × 1 + 16 = 46 g/mol.",
+            "Step 2: Number of moles of ethanol = 46 g ÷ 46 g/mol = 1 mol.",
+            "Step 3: The balanced equation shows that 1 mol ethanol gives 2 mol CO2.",
+            "Step 4: Mass of CO2 = 2 mol × 44 g/mol = 88 g.",
+            "Step 5: At STP, 1 mol of any gas occupies 22.4 L, so 2 mol CO2 occupies 2 × 22.4 = 44.8 L.",
+            "Step 6: Check oxygen: 3O2 supply 6 oxygen atoms, plus 1 in ethanol, giving 7; the products have 4 in CO2 and 3 in water, also 7."
+          ],
+          "final_answer": "88 g of CO2 is formed, occupying 44.8 L at STP."
+        },
+        {
+          "id": "carbon-ex3-4",
+          "book_source": "NCERT Exercise 4.3",
+          "question": "Explain micelle formation and the cleansing action of soap. Why does soap fail in hard water, and how do detergents solve the problem?",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: A soap molecule has a long hydrophobic hydrocarbon tail and a hydrophilic ionic head.",
+            "Step 2: In water, soap molecules arrange themselves around an oil droplet with tails inside the oil and heads outside in water.",
+            "Step 3: This spherical arrangement is called a micelle; the negatively charged heads keep the micelles dispersed.",
+            "Step 4: When the cloth is agitated and rinsed, the oil-containing micelles are carried away, cleaning the cloth.",
+            "Step 5: In hard water, Ca2+ and Mg2+ ions form insoluble stearates, so soap is wasted as scum.",
+            "Step 6: Detergents are synthetic sulphonate salts whose calcium and magnesium salts are soluble; they form micelles without scum and work in hard water."
+          ],
+          "final_answer": "Soap forms micelles with tails in oil and heads in water, lifting grease away; hard water forms scum with soap, but detergents form soluble salts and still clean."
+        },
+        {
+          "id": "carbon-ex3-5",
+          "book_source": "NCERT Exercise 4.3",
+          "question": "Classify each pair as homologous members, isomers, or neither, and justify: (i) CH3OH and C2H5OH, (ii) n-butane and isobutane, (iii) C2H6 and C2H4, (iv) CH3COOH and CH3CHO.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: (i) Both contain -OH and differ by CH2, so they are homologous members of the alcohol series.",
+            "Step 2: (ii) Both have the formula C4H10 but different structures, so they are structural isomers.",
+            "Step 3: (iii) C2H6 is an alkane and C2H4 is an alkene; they have different formulas and different functional behaviour, so they are neither homologous members nor isomers.",
+            "Step 4: (iv) CH3COOH contains -COOH and CH3CHO contains -CHO; different functional groups and formulas mean they are neither homologous nor isomers.",
+            "Step 5: Homologous members share a functional group and differ by CH2; isomers share a molecular formula but differ in structure."
+          ],
+          "final_answer": "(i) homologous, (ii) isomers, (iii) neither, (iv) neither."
+        },
+        {
+          "id": "carbon-ex3-6",
+          "book_source": "NCERT Exercise 4.3",
+          "question": "Write balanced equations with conditions for: (i) ethanol to ethene, (ii) ethanol to ethanoic acid, (iii) ethanol to ethyl ethanoate, and (iv) ethanol with sodium.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: (i) Dehydration with concentrated sulphuric acid at 443 K: C2H5OH → C2H4 + H2O.",
+            "Step 2: (ii) Oxidation with alkaline KMnO4 or acidified K2Cr2O7: C2H5OH + 2[O] → CH3COOH + H2O.",
+            "Step 3: (iii) Esterification with ethanoic acid and concentrated H2SO4: C2H5OH + CH3COOH ⇌ CH3COOC2H5 + H2O.",
+            "Step 4: (iv) Reaction with sodium: 2C2H5OH + 2Na → 2C2H5ONa + H2.",
+            "Step 5: Each reaction changes a different part of the molecule: dehydration removes water, oxidation adds oxygen, esterification joins two molecules, and sodium replaces the acidic hydrogen."
+          ],
+          "final_answer": "(i) C2H5OH → C2H4 + H2O at 443 K; (ii) C2H5OH + 2[O] → CH3COOH + H2O; (iii) C2H5OH + CH3COOH ⇌ CH3COOC2H5 + H2O; (iv) 2C2H5OH + 2Na → 2C2H5ONa + H2."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-carbon-s-1",
+        "question": "How many valence electrons does a carbon atom have?",
+        "options": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Carbon has the electronic configuration 2, 4, so it has four valence electrons.",
+          "wrong_options": {
+            "0": "Two electrons fill the first shell, but carbon has four in the second shell.",
+            "2": "Six is the total number of electrons in a carbon atom, not the valence count.",
+            "3": "Eight is the octet target, not the number of valence electrons carbon already has."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-s-2",
+        "question": "Which allotrope of carbon conducts electricity?",
+        "options": [
+          "Diamond",
+          "Graphite",
+          "Fullerene",
+          "Silica"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Graphite has delocalised electrons between its layers, so it conducts electricity.",
+          "wrong_options": {
+            "0": "Diamond has no free electrons because all four valence electrons are in sigma bonds.",
+            "2": "Fullerene is a molecular solid and is not a good conductor like graphite.",
+            "3": "Silica is a compound of silicon and oxygen, not an allotrope of carbon."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-s-3",
+        "question": "The general formula of alkenes is:",
+        "options": [
+          "CnH2n+2",
+          "CnH2n",
+          "CnH2n-2",
+          "CnH2n+1OH"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Alkenes contain one C=C double bond and follow CnH2n.",
+          "wrong_options": {
+            "0": "CnH2n+2 is the alkane formula.",
+            "2": "CnH2n-2 is the alkyne formula.",
+            "3": "CnH2n+1OH is the alcohol formula."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-s-4",
+        "question": "The functional group -COOH is called:",
+        "options": [
+          "Alcohol",
+          "Aldehyde",
+          "Carboxylic acid",
+          "Ketone"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "-COOH is the carboxylic acid group, as in ethanoic acid.",
+          "wrong_options": {
+            "0": "The alcohol group is -OH.",
+            "1": "The aldehyde group is -CHO.",
+            "3": "The ketone group is -CO- between two carbon atoms."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-s-5",
+        "question": "The IUPAC name of CH3CH2OH is:",
+        "options": [
+          "Methanol",
+          "Ethanol",
+          "Ethanal",
+          "Ethanoic acid"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "A two-carbon chain with an -OH group is ethanol.",
+          "wrong_options": {
+            "0": "Methanol has only one carbon atom.",
+            "2": "Ethanal contains the -CHO group, not -OH.",
+            "3": "Ethanoic acid contains the -COOH group."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-s-6",
+        "question": "Which gas is produced when ethanoic acid reacts with sodium bicarbonate?",
+        "options": [
+          "Hydrogen",
+          "Carbon dioxide",
+          "Oxygen",
+          "Chlorine"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "CH3COOH + NaHCO3 → CH3COONa + H2O + CO2, so carbon dioxide is released.",
+          "wrong_options": {
+            "0": "Hydrogen is released by acids with reactive metals, not with bicarbonate.",
+            "2": "Oxygen is not produced in this acid-carbonate reaction.",
+            "3": "Chlorine is not involved in this reaction."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-s-7",
+        "question": "The process of making soap from oil or fat and sodium hydroxide is called:",
+        "options": [
+          "Esterification",
+          "Saponification",
+          "Hydrogenation",
+          "Oxidation"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Saponification is the alkaline hydrolysis of fats or oils to form soap and glycerol.",
+          "wrong_options": {
+            "0": "Esterification forms an ester from an acid and an alcohol.",
+            "2": "Hydrogenation adds hydrogen to unsaturated oils.",
+            "3": "Oxidation involves loss of electrons or gain of oxygen, not soap formation."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-s-8",
+        "question": "Which of the following is a saturated hydrocarbon?",
+        "options": [
+          "C2H4",
+          "C2H6",
+          "C3H6",
+          "C2H2"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "C2H6 is ethane, which contains only single C-C bonds and is saturated.",
+          "wrong_options": {
+            "0": "C2H4 is ethene, which has a C=C double bond.",
+            "2": "C3H6 is propene, which has a C=C double bond.",
+            "3": "C2H2 is ethyne, which has a C≡C triple bond."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-s-9",
+        "question": "In methane, carbon shares electrons with how many hydrogen atoms?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Carbon is tetravalent and shares one electron pair with each of four hydrogen atoms.",
+          "wrong_options": {
+            "0": "One bond would leave carbon with only five valence electrons.",
+            "1": "Two bonds would leave carbon with only six valence electrons.",
+            "2": "Three bonds would leave carbon with only seven valence electrons."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-s-10",
+        "question": "Which of the following is NOT an allotrope of carbon?",
+        "options": [
+          "Diamond",
+          "Graphite",
+          "Fullerene",
+          "Silica"
+        ],
+        "correct": 3,
+        "explanation": {
+          "correct": "Silica is silicon dioxide, a compound of silicon and oxygen, not a form of carbon.",
+          "wrong_options": {
+            "0": "Diamond is a carbon allotrope with a tetrahedral network.",
+            "1": "Graphite is a carbon allotrope with hexagonal layers.",
+            "2": "Fullerene is a molecular carbon allotrope with a C60 cage."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-carbon-m-1",
+        "question": "How many structural isomers does butane (C4H10) have?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Butane has n-butane and isobutane, so there are two structural isomers.",
+          "wrong_options": {
+            "1": "Three is the number of pentane isomers, not butane isomers.",
+            "2": "Four would require a larger carbon skeleton with more branching possibilities.",
+            "3": "One would mean no isomerism, but butane does show branching."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-m-2",
+        "question": "Successive members of a homologous series differ by:",
+        "options": [
+          "CH2, a mass difference of 14 u",
+          "CH4, a mass difference of 16 u",
+          "C2H4, a mass difference of 28 u",
+          "one hydrogen atom, a mass difference of 1 u"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Each successive member adds one carbon and two hydrogen atoms, which is CH2 and 14 u.",
+          "wrong_options": {
+            "1": "CH4 would change the end groups and break the series pattern.",
+            "2": "C2H4 would skip a member and change the formula by more than one unit.",
+            "3": "A single hydrogen difference would not preserve the same functional group and formula pattern."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-m-3",
+        "question": "The reaction C2H4 + H2 → C2H6 over nickel is an example of:",
+        "options": [
+          "Substitution",
+          "Addition",
+          "Oxidation",
+          "Combustion"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Hydrogen adds across the C=C double bond of ethene, so it is an addition reaction.",
+          "wrong_options": {
+            "0": "Substitution replaces an atom, usually in a saturated compound.",
+            "2": "Oxidation involves loss of electrons or gain of oxygen, not addition of hydrogen.",
+            "3": "Combustion requires oxygen and produces CO2 and water."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-m-4",
+        "question": "The reaction CH4 + Cl2 → CH3Cl + HCl in sunlight is an example of:",
+        "options": [
+          "Addition",
+          "Substitution",
+          "Oxidation",
+          "Decomposition"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "One hydrogen atom of methane is replaced by chlorine, so it is a substitution reaction.",
+          "wrong_options": {
+            "0": "Addition occurs at multiple bonds, but methane has only single bonds.",
+            "2": "Oxidation is not the main classification here; chlorine replaces hydrogen.",
+            "3": "The molecule does not break into simpler substances."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-m-5",
+        "question": "Which compound decolourises bromine water?",
+        "options": [
+          "C2H6",
+          "C2H4",
+          "CH4",
+          "C3H8"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Ethene is unsaturated and adds bromine across its double bond, so the brown colour disappears.",
+          "wrong_options": {
+            "0": "Ethane is saturated and does not decolourise bromine water.",
+            "2": "Methane is saturated and does not react with bromine water under ordinary conditions.",
+            "3": "Propane is saturated and does not decolourise bromine water."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-m-6",
+        "question": "Ethanol on oxidation with alkaline potassium permanganate gives:",
+        "options": [
+          "Ethane",
+          "Ethene",
+          "Ethanoic acid",
+          "Ethanal only"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Strong oxidation of ethanol with alkaline KMnO4 gives ethanoic acid.",
+          "wrong_options": {
+            "0": "Ethane is a saturated hydrocarbon, not an oxidation product of ethanol.",
+            "1": "Ethene is formed by dehydration, not by oxidation.",
+            "3": "Ethanal is an intermediate, but the final product with strong oxidising agents is ethanoic acid."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-m-7",
+        "question": "The formula of ethyl ethanoate is:",
+        "options": [
+          "CH3COOCH3",
+          "CH3COOC2H5",
+          "C2H5COOCH3",
+          "CH3CH2COOC2H5"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Ethyl ethanoate is formed from ethanoic acid and ethanol, giving CH3COOC2H5.",
+          "wrong_options": {
+            "0": "CH3COOCH3 is methyl ethanoate, made from methanol.",
+            "2": "C2H5COOCH3 is methyl propanoate, made from propanoic acid and methanol.",
+            "3": "CH3CH2COOC2H5 is ethyl propanoate, not ethyl ethanoate."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-m-8",
+        "question": "Soap is chemically a:",
+        "options": [
+          "Sodium salt of a long-chain fatty acid",
+          "Sodium salt of a sulphonic acid",
+          "Ester of glycerol",
+          "Simple alcohol"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Soap is the sodium or potassium salt of a long-chain fatty acid such as stearic acid.",
+          "wrong_options": {
+            "1": "Sodium salts of sulphonic acids are detergents, not soaps.",
+            "2": "Esters of glycerol are fats and oils, which are the raw materials for soap.",
+            "3": "An alcohol does not have the long hydrophobic chain and ionic head needed for soap action."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-m-9",
+        "question": "Detergents are preferred over soaps in hard water because:",
+        "options": [
+          "They form more scum",
+          "They do not form scum with Ca2+ and Mg2+",
+          "They are weaker acids",
+          "They contain glycerol"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Detergents form soluble calcium and magnesium salts, so they do not produce scum in hard water.",
+          "wrong_options": {
+            "0": "Scum is the problem caused by soap, not a benefit of detergents.",
+            "2": "Acid strength is not the reason detergents work in hard water.",
+            "3": "Glycerol is a by-product of saponification and is not added to detergents for this purpose."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-m-10",
+        "question": "Which pair is a pair of homologous compounds?",
+        "options": [
+          "CH3OH and C2H5OH",
+          "CH3OH and CH3OCH3",
+          "C2H6 and C2H4",
+          "CH3CHO and CH3COOH"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Both are alcohols and differ by CH2, so they are homologous members.",
+          "wrong_options": {
+            "1": "CH3OCH3 is an ether, so the functional group is different.",
+            "2": "C2H6 is an alkane and C2H4 is an alkene; they are not in the same series.",
+            "3": "CH3CHO is an aldehyde and CH3COOH is a carboxylic acid; the functional groups differ."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-carbon-x-1",
+        "question": "How many moles of oxygen are needed for the complete combustion of 1 mole of ethanol?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "C2H5OH + 3O2 → 2CO2 + 3H2O, so 3 moles of oxygen are needed.",
+          "wrong_options": {
+            "0": "Two moles would supply only four oxygen atoms, but seven are needed in the products.",
+            "2": "Four moles would supply too much oxygen and would not balance the equation.",
+            "3": "One mole cannot supply enough oxygen for two CO2 and three H2O molecules."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-x-2",
+        "question": "What mass of carbon dioxide is produced when 46 g of ethanol burns completely?",
+        "options": [
+          "44 g",
+          "88 g",
+          "22 g",
+          "46 g"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "46 g of ethanol is 1 mol, which gives 2 mol CO2; 2 × 44 = 88 g.",
+          "wrong_options": {
+            "0": "44 g is the mass of only 1 mol of CO2, but 2 mol are produced.",
+            "2": "22 g is half a mole of CO2, which is too little.",
+            "3": "46 g is the mass of ethanol, not the mass of the CO2 produced."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-x-3",
+        "question": "How many structural isomers does pentane (C5H12) have?",
+        "options": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Pentane has three isomers: n-pentane, isopentane, and neopentane.",
+          "wrong_options": {
+            "0": "Two is the number of butane isomers, not pentane isomers.",
+            "2": "Four would require another distinct branching pattern that pentane does not have.",
+            "3": "Five is the number of carbon atoms, not the number of isomers."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-x-4",
+        "question": "A compound with formula C2H4O2 turns blue litmus red and gives CO2 with sodium bicarbonate. Its functional group is:",
+        "options": [
+          "Alcohol",
+          "Aldehyde",
+          "Carboxylic acid",
+          "Ketone"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "The formula and the CO2 test identify ethanoic acid, which contains the -COOH group.",
+          "wrong_options": {
+            "0": "An alcohol does not turn litmus red or release CO2 from bicarbonate.",
+            "1": "An aldehyde may be oxidised, but it does not give CO2 with bicarbonate.",
+            "3": "A ketone is neutral and does not react with bicarbonate to give CO2."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-x-5",
+        "question": "Which is the correctly balanced equation for the complete combustion of ethanoic acid?",
+        "options": [
+          "CH3COOH + 2O2 → 2CO2 + 2H2O",
+          "CH3COOH + O2 → 2CO2 + 2H2O",
+          "2CH3COOH + 3O2 → 4CO2 + 4H2O",
+          "CH3COOH + 3O2 → 2CO2 + 3H2O"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "CH3COOH + 2O2 → 2CO2 + 2H2O balances C 2, H 4, and O 6 on both sides.",
+          "wrong_options": {
+            "1": "The left side has only 4 oxygen atoms while the right side needs 6, so it is unbalanced.",
+            "2": "This doubles the acid and gives O 10 on the left but O 12 on the right.",
+            "3": "This gives 8 oxygen atoms on the left but only 7 on the right, so it is unbalanced."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-x-6",
+        "question": "In a micelle formed in water, the soap molecules are arranged so that:",
+        "options": [
+          "Hydrophobic tails point outward and hydrophilic heads inward",
+          "Hydrophobic tails point inward toward oil and hydrophilic heads point outward toward water",
+          "Both tails and heads point toward water",
+          "Both tails and heads point toward oil"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "The hydrophobic tails dissolve in the oil droplet while the hydrophilic heads remain in the surrounding water.",
+          "wrong_options": {
+            "0": "This arrangement would expose the water-repelling tails to water and bury the water-loving heads in oil.",
+            "2": "Tails cannot point toward water because they are hydrophobic.",
+            "3": "Heads cannot point toward oil because they are hydrophilic and ionic."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-x-7",
+        "question": "The scum formed when soap is used in hard water is mainly:",
+        "options": [
+          "Calcium or magnesium stearate",
+          "Sodium stearate",
+          "Calcium carbonate",
+          "Sodium chloride"
+        ],
+        "correct": 0,
+        "explanation": {
+          "correct": "Ca2+ and Mg2+ ions displace sodium from soap and form insoluble calcium or magnesium stearate.",
+          "wrong_options": {
+            "1": "Sodium stearate is the soluble soap itself, not the scum.",
+            "2": "Calcium carbonate causes temporary hardness but is not the soap scum.",
+            "3": "Sodium chloride is soluble and does not form scum."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-x-8",
+        "question": "Ethene is converted to ethanol by:",
+        "options": [
+          "Addition of hydrogen over nickel",
+          "Addition of water in the presence of an acid catalyst",
+          "Substitution with chlorine in sunlight",
+          "Complete combustion in oxygen"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Hydration of ethene adds water across the double bond to form ethanol: C2H4 + H2O → C2H5OH.",
+          "wrong_options": {
+            "0": "Addition of hydrogen gives ethane, not ethanol.",
+            "2": "Substitution with chlorine would give a chlorinated product.",
+            "3": "Combustion destroys the molecule and gives CO2 and water."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-x-9",
+        "question": "In the reaction 2C2H5OH + 2Na → 2C2H5ONa + H2, the gas evolved is:",
+        "options": [
+          "Oxygen",
+          "Hydrogen",
+          "Carbon dioxide",
+          "Sodium vapour"
+        ],
+        "correct": 1,
+        "explanation": {
+          "correct": "Sodium displaces hydrogen from the -OH group of ethanol, releasing H2 gas.",
+          "wrong_options": {
+            "0": "Oxygen is not released when sodium reacts with an alcohol.",
+            "2": "Carbon dioxide requires a carbonate or bicarbonate, not an alcohol.",
+            "3": "Sodium is a solid metal and does not escape as a vapour at room temperature."
+          }
+        }
+      },
+      {
+        "id": "q-carbon-x-10",
+        "question": "Which statement about a homologous series is FALSE?",
+        "options": [
+          "Members have the same general formula",
+          "Successive members differ by CH2",
+          "Members have identical physical properties",
+          "Members show similar chemical properties"
+        ],
+        "correct": 2,
+        "explanation": {
+          "correct": "Physical properties change gradually along a homologous series; they are not identical.",
+          "wrong_options": {
+            "0": "A common general formula is a defining feature of a homologous series.",
+            "1": "A CH2 difference between successive members is the defining pattern.",
+            "3": "Similar chemical properties arise because the functional group is the same."
+          }
+        }
+      }
+    ]
+  },
+  "mind_maps": {
+    "title": "Carbon and its Compounds — Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Carbon and its Compounds",
+    "branches": [
+      {
+        "concept": "Covalent Bonding and Tetravalency",
+        "sub_nodes": [
+          "Carbon has 4 valence electrons",
+          "Shares electrons to complete an octet",
+          "Forms 4 covalent bonds",
+          "Single, double, and triple bonds"
+        ],
+        "connections": "Tetravalency is the foundation of carbon chemistry"
+      },
+      {
+        "concept": "Allotropes",
+        "sub_nodes": [
+          "Diamond: tetrahedral network, hardest, non-conducting",
+          "Graphite: hexagonal layers, soft, conducting",
+          "Fullerene: C60 cage",
+          "Same element, different structures"
+        ]
+      },
+      {
+        "concept": "Versatile Nature of Carbon",
+        "sub_nodes": [
+          "Catenation forms chains, branches, and rings",
+          "Strong C-C bonds",
+          "Multiple bonds increase variety",
+          "Isomerism gives same formula, different structure"
+        ]
+      },
+      {
+        "concept": "Homologous Series and Naming",
+        "sub_nodes": [
+          "Same functional group, general formula",
+          "Successive members differ by CH2 (14 u)",
+          "Functional groups: -OH, -CHO, -COOH, -CO-, -COO-",
+          "IUPAC: prefix + root + suffix"
+        ]
+      },
+      {
+        "concept": "Chemical Reactions",
+        "sub_nodes": [
+          "Combustion: fuel + O2 → CO2 + H2O",
+          "Oxidation: ethanol → ethanoic acid",
+          "Addition: unsaturated + H2 over Ni",
+          "Substitution: CH4 + Cl2 in sunlight",
+          "Bromine water tests unsaturation"
+        ]
+      },
+      {
+        "concept": "Everyday Compounds and Cleansing",
+        "sub_nodes": [
+          "Ethanol: sanitiser, fuel, solvent",
+          "Ethanoic acid: vinegar, weak acid",
+          "Esterification makes esters",
+          "Soap forms micelles; hard water gives scum",
+          "Detergents work in hard water"
+        ]
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "How Carbon Chemistry Connects — Concept Map",
+    "nodes": [
+      {
+        "id": "n1",
+        "label": "Carbon",
+        "group": "foundation"
+      },
+      {
+        "id": "n2",
+        "label": "Covalent Bonding and Tetravalency",
+        "group": "foundation"
+      },
+      {
+        "id": "n3",
+        "label": "Allotropes",
+        "group": "structure"
+      },
+      {
+        "id": "n4",
+        "label": "Catenation and Isomerism",
+        "group": "structure"
+      },
+      {
+        "id": "n5",
+        "label": "Hydrocarbons",
+        "group": "family"
+      },
+      {
+        "id": "n6",
+        "label": "Functional Groups",
+        "group": "family"
+      },
+      {
+        "id": "n7",
+        "label": "Homologous Series",
+        "group": "family"
+      },
+      {
+        "id": "n8",
+        "label": "Ethanol and Ethanoic Acid",
+        "group": "application"
+      },
+      {
+        "id": "n9",
+        "label": "Soaps and Detergents",
+        "group": "application"
+      }
+    ],
+    "edges": [
+      [
+        "n1",
+        "n2"
+      ],
+      [
+        "n1",
+        "n3"
+      ],
+      [
+        "n1",
+        "n4"
+      ],
+      [
+        "n4",
+        "n5"
+      ],
+      [
+        "n2",
+        "n5"
+      ],
+      [
+        "n5",
+        "n6"
+      ],
+      [
+        "n6",
+        "n7"
+      ],
+      [
+        "n7",
+        "n8"
+      ],
+      [
+        "n6",
+        "n8"
+      ],
+      [
+        "n6",
+        "n9"
+      ]
+    ]
+  },
+  "common_misconceptions": [
+    "Carbon compounds are ionic because carbon is a non-metal — FALSE: carbon compounds are mainly covalent because carbon shares electrons.",
+    "Diamond conducts electricity because it is made of carbon — FALSE: diamond has no free electrons, so it is a non-conductor; graphite conducts.",
+    "Graphite is soft because its covalent bonds are weak — FALSE: the covalent bonds within each layer are strong; the layers slide over one another.",
+    "All hydrocarbons burn with a blue flame — FALSE: a yellow sooty flame appears when oxygen is insufficient.",
+    "Homologous members have identical physical properties — FALSE: physical properties change gradually with chain length.",
+    "Soap cleans better in hard water — FALSE: calcium and magnesium ions form insoluble scum and waste soap.",
+    "Detergents and soaps are the same substance — FALSE: soaps are fatty-acid salts, while detergents are synthetic sulphonate salts.",
+    "Ethanoic acid is a strong acid like hydrochloric acid — FALSE: ethanoic acid is a weak acid and ionises only partially."
+  ],
+  "meta": {
+    "sources": [
+      {
+        "type": "NCERT Textbook",
+        "title": "NCERT Class X Science — Chapter 4: Carbon and its Compounds",
+        "publisher": "NCERT",
+        "class": "X",
+        "subject": "Science",
+        "edition": "2026-27"
+      },
+      {
+        "type": "CBSE Syllabus",
+        "title": "CBSE Class X Science Syllabus 2026-27 — Chemical Substances: Nature and Behaviour",
+        "publisher": "CBSE",
+        "class": "X",
+        "subject": "Science",
+        "unit": "Chemical Substances - Nature and Behaviour"
+      }
+    ],
+    "curriculum_tags": [
+      "science",
+      "Chemistry",
+      "carbon_and_its_compounds",
+      "covalent_bonding",
+      "allotropes",
+      "homologous_series",
+      "functional_groups",
+      "soaps_and_detergents"
+    ],
+    "notes": "Aligned to the CBSE Class X Science syllabus and NCERT Chapter 4. All equations are balanced and numerical values use the molar masses C = 12, H = 1, O = 16."
+  },
+  "chapterId": "carbon-and-its-compounds",
+  "subjectId": "science",
+  "subjectName": "Science",
+  "unitId": "science-1",
+  "unitName": "Chemical Substances - Nature and Behaviour",
+  "examWeightage": 25,
+  "stats": {
+    "concepts": 6,
+    "theorems": 2,
+    "examples": 5,
+    "exercises": 18,
+    "quizzes": 30,
+    "visuals": 2,
+    "misconceptions": 8,
+    "authored": true
+  }
+}

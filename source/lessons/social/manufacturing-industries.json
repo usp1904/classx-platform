@@ -1,0 +1,1053 @@
+{
+  "subject": "Geography",
+  "board_source": "CBSE_NCERT",
+  "chapterNumber": 6,
+  "chapter": "Manufacturing Industries",
+  "id": "manufacturing-industries",
+  "lesson": 1,
+  "title": "Manufacturing Industries - Complete Learning Module",
+  "schemaVersion": "2.0",
+  "outcomes": [
+    "Explain the importance of manufacturing in the national economy",
+    "Identify the factors that influence the location of industries",
+    "Describe the characteristics and distribution of agro-based industries",
+    "Describe the characteristics and distribution of mineral-based industries",
+    "Classify industrial pollution and suggest control measures",
+    "Explain the role of NTPC and sustainable practices in industry",
+    "Interpret maps and case studies related to industrial location",
+    "Write board-style answers using correct industrial terminology"
+  ],
+  "prerequisite_nodes": [
+    "SOCIAL_CLASS9_RESOURCES",
+    "SOCIAL_CLASS10_MINERALS_AND_ENERGY",
+    "SOCIAL_CLASS9_AGRICULTURE",
+    "SCI_CLASS8_COAL_AND_PETROLEUM"
+  ],
+  "concepts": [
+    {
+      "id": "concept-1",
+      "name": "Manufacturing and Its Importance",
+      "title": "Manufacturing and Its Importance",
+      "explanation": "Manufacturing is the production of goods in large quantities after processing raw materials into more valuable products. It is a secondary activity because it transforms primary products such as cotton, iron ore, sugarcane, and wood into textiles, steel, sugar, and paper. Manufacturing is called the backbone of economic development because it modernises agriculture by supplying machines, fertilisers, and pumps; provides employment to a large workforce; reduces dependence on agriculture; earns foreign exchange through exports; and helps reduce regional disparities by setting up industries in backward areas. It also supports transport, trade, and services. The value added at each stage of processing raises national income and improves the standard of living.",
+      "purpose": "Understanding manufacturing explains how raw materials become useful products and why governments promote industry for jobs, income, and development.",
+      "real_life_application": "The shirt you wear, the sugar in your tea, the steel in your bicycle, and the cement in your house are all products of manufacturing. Each passes through several processing stages before reaching you.",
+      "key_points": [
+        "Manufacturing transforms raw materials into finished goods and adds value.",
+        "It is a secondary activity and is called the backbone of economic development.",
+        "It modernises agriculture by supplying machines and inputs.",
+        "It provides employment and reduces pressure on agriculture.",
+        "It earns foreign exchange through exports.",
+        "It helps reduce regional disparities when industries are spread to backward areas."
+      ],
+      "day_to_day_usage": [
+        "Cotton fibre is spun and woven into the shirt you wear.",
+        "Sugarcane is crushed and refined into the sugar in your kitchen.",
+        "Iron ore and coal are converted into steel for bicycles and utensils.",
+        "Limestone is processed into cement for buildings.",
+        "Wood pulp is manufactured into paper and notebooks."
+      ]
+    },
+    {
+      "id": "concept-2",
+      "name": "Factors Affecting the Location of Industries",
+      "title": "Factors Affecting the Location of Industries",
+      "explanation": "Industries are not located randomly. Their location depends on the availability of raw materials, labour, capital, power, market, transport, and government policy. Industries that use bulky raw materials which lose weight during processing, such as sugar from sugarcane, are located near the raw material source. Industries that use raw materials which do not lose much weight, or whose products are bulky, tend to locate near the market. Access to cheap and skilled labour, reliable power, and good transport links lowers costs. Government incentives, industrial estates, and special economic zones also influence location. The presence of related industries creates agglomeration economies, where firms share suppliers, workers, and infrastructure. Modern footloose industries, such as software and electronics assembly, depend more on skilled labour and connectivity than on raw materials.",
+      "purpose": "Location factors explain why steel plants stand near coal and iron ore fields, why sugar mills cluster in cane-growing areas, and why IT firms concentrate in large cities.",
+      "real_life_application": "A new factory in your district is likely to be near a highway, a power supply, and a labour pool. Local politicians often offer tax incentives to attract industry.",
+      "key_points": [
+        "Raw material, labour, capital, power, market, and transport are the main location factors.",
+        "Weight-losing industries locate near raw materials, as sugar mills do near cane fields.",
+        "Weight-gaining or bulky-product industries locate near markets.",
+        "Cheap and skilled labour and reliable power reduce production costs.",
+        "Government policy and industrial estates influence location.",
+        "Agglomeration economies arise when related industries cluster together.",
+        "Footloose industries depend more on skills and connectivity than on raw materials."
+      ],
+      "day_to_day_usage": [
+        "Sugar mills are built close to sugarcane fields because cane loses weight and sucrose after cutting.",
+        "Bakery units are set up near towns so fresh bread reaches shops quickly.",
+        "Software offices locate in cities with skilled workers and internet connectivity.",
+        "Cement plants stand near limestone quarries because limestone is bulky.",
+        "Industrial estates offer plots, power, and roads to attract small factories."
+      ]
+    },
+    {
+      "id": "concept-3",
+      "name": "Agro-based Industries",
+      "title": "Agro-based Industries",
+      "explanation": "Agro-based industries use agricultural raw materials such as cotton, jute, sugarcane, silk, wool, and food grains. The cotton textile industry is one of India's oldest and largest industries; it includes ginning, spinning, weaving, and garment making. Maharashtra and Gujarat are leading centres, and Ahmedabad is called the Manchester of India. The jute industry is concentrated in the Hooghly basin of West Bengal because jute grows nearby, water is available for processing, and Kolkata provides transport and port facilities. Jute is called the golden fibre and is used for gunny bags, mats, ropes, and carpet backing. The sugar industry is located in sugarcane-growing states such as Uttar Pradesh and Maharashtra; cane must be crushed within about 24 hours of harvesting to prevent loss of sucrose. Silk, woollen textiles, leather, and food processing are other important agro-based industries. These industries face problems such as old machinery, erratic power, competition from synthetic fibres, and low productivity.",
+      "purpose": "Agro-based industries link farms to markets, raise farm incomes, create rural jobs, and reduce the waste of perishable produce.",
+      "real_life_application": "The cloth you wear, the jute bag you carry, the sugar in sweets, and the silk saree in a shop all come from agro-based industries.",
+      "key_points": [
+        "Agro-based industries use farm products such as cotton, jute, sugarcane, silk, and wool.",
+        "Cotton textiles include ginning, spinning, weaving, and garment making.",
+        "Maharashtra and Gujarat are leading cotton textile states; Ahmedabad is called the Manchester of India.",
+        "The jute industry is concentrated in the Hooghly basin of West Bengal.",
+        "Jute is called the golden fibre and is used for bags, mats, and ropes.",
+        "Sugarcane must be crushed within about 24 hours to prevent sucrose loss.",
+        "Problems include old machinery, power shortages, and synthetic competition."
+      ],
+      "day_to_day_usage": [
+        "Cotton clothes and bed sheets come from spinning and weaving mills.",
+        "Jute bags used for shopping and grain storage are made from golden fibre.",
+        "Sugar, gur, and molasses are produced from sugarcane.",
+        "Silk sarees and woollen sweaters come from silk and wool processing.",
+        "Packaged snacks and juices come from food processing units."
+      ]
+    },
+    {
+      "id": "concept-4",
+      "name": "Mineral-based Industries",
+      "title": "Mineral-based Industries",
+      "explanation": "Mineral-based industries use minerals and metals as raw materials. The iron and steel industry is called a basic or heavy industry because it supplies machines, tools, and structures to other industries. Its raw materials are iron ore, coking coal, limestone, and dolomite, so plants are located near raw material sources or markets. Important plants include Bhilai, Rourkela, Durgapur, and Bokaro in the public sector, and Jamshedpur run by Tata Iron and Steel Company. The cement industry uses limestone, silica, alumina, and gypsum; because limestone is bulky, plants locate near limestone deposits. Aluminium smelting uses bauxite and large amounts of electricity, so plants are located near cheap power. The fertiliser industry produces nitrogenous and phosphatic fertilisers, while potash is largely imported. The chemical and petrochemical industries produce plastics, synthetic fibres, dyes, and medicines. These industries are capital-intensive and can cause serious pollution without proper controls.",
+      "purpose": "Mineral-based industries provide the materials for construction, transport, agriculture, and consumer goods, and they drive infrastructure growth.",
+      "real_life_application": "Steel in bridges and vehicles, cement in buildings, aluminium in aircraft and cookware, and fertiliser on farms all come from mineral-based industries.",
+      "key_points": [
+        "Iron and steel is a basic or heavy industry that supplies other industries.",
+        "Its raw materials are iron ore, coking coal, limestone, and dolomite.",
+        "Major plants include Bhilai, Rourkela, Durgapur, Bokaro, and Jamshedpur.",
+        "Cement plants locate near limestone deposits because limestone is bulky.",
+        "Aluminium smelting needs bauxite and large amounts of electricity.",
+        "Fertiliser production includes nitrogenous and phosphatic fertilisers; potash is largely imported.",
+        "Chemical and petrochemical industries make plastics, fibres, dyes, and medicines."
+      ],
+      "day_to_day_usage": [
+        "Steel utensils, tools, and vehicle parts come from iron and steel plants.",
+        "Cement for walls and floors comes from limestone-based plants.",
+        "Aluminium foil and pressure cookers come from bauxite smelting.",
+        "Urea and other fertilisers used by farmers come from fertiliser plants.",
+        "Plastic buckets and synthetic clothes come from petrochemical industries."
+      ]
+    },
+    {
+      "id": "concept-5",
+      "name": "Industrial Pollution and Its Control",
+      "title": "Industrial Pollution and Its Control",
+      "explanation": "Industries pollute air, water, land, and the acoustic environment. Air pollution comes from smoke, dust, sulphur dioxide, nitrogen oxides, and other gases released by burning coal and oil. Water pollution results from untreated effluents containing dyes, acids, alkalis, heavy metals, and organic waste from textile, paper, chemical, and leather industries. Thermal pollution occurs when power plants and factories discharge hot water into rivers, lowering dissolved oxygen. Land pollution is caused by solid waste, slag, fly ash, and plastic. Noise pollution comes from machinery, generators, drills, and vehicles. Control measures include electrostatic precipitators and scrubbers for air, effluent treatment plants for water, safe landfill and recycling for solid waste, and noise barriers and green belts. Industries should also reuse and recycle water, harvest rainwater, and locate away from residential areas. Strict enforcement of environmental laws is essential.",
+      "purpose": "Knowing pollution types and controls helps industries grow without destroying the health of workers, nearby communities, and ecosystems.",
+      "real_life_application": "Chimneys with filters, treated wastewater used for gardening, and green belts around factories are visible signs of pollution control near industrial areas.",
+      "key_points": [
+        "Air pollution includes smoke, dust, sulphur dioxide, and nitrogen oxides.",
+        "Water pollution includes untreated chemical, dye, acid, and organic effluents.",
+        "Thermal pollution occurs when hot water is discharged into rivers.",
+        "Land pollution includes slag, fly ash, and plastic waste.",
+        "Noise pollution comes from machinery, generators, and drills.",
+        "Controls include scrubbers, electrostatic precipitators, effluent treatment, recycling, and green belts."
+      ],
+      "day_to_day_usage": [
+        "Factories use chimney filters to reduce dust in nearby localities.",
+        "Treated industrial water is sometimes reused for cooling or gardening.",
+        "Green belts along factory boundaries reduce noise and dust.",
+        "Fly ash from power plants is used to make bricks and cement.",
+        "Residents report foul smells or coloured drain water to pollution boards."
+      ]
+    },
+    {
+      "id": "concept-6",
+      "name": "Sustainable Industry and the Role of NTPC",
+      "title": "Sustainable Industry and the Role of NTPC",
+      "explanation": "Sustainable industrial development means producing goods while using resources efficiently and minimising harm to the environment. It includes cleaner production, energy efficiency, waste reduction, recycling, worker safety, and community responsibility. The National Thermal Power Corporation (NTPC), established in 1975, is a major power generation company that has adopted environment management practices. It follows ISO 14001 environmental management standards, treats and reuses water, utilises fly ash in cement and bricks, develops green belts around plants, and is diversifying into solar, hydro, and wind power. NTPC's approach shows how a large thermal power producer can reduce its environmental footprint through technology and management. Other industries can follow similar practices: install pollution-control equipment, conserve energy and water, manage waste, train workers, and comply with environmental laws.",
+      "purpose": "Sustainable industry balances economic growth with environmental protection and social responsibility, which is essential for long-term development.",
+      "real_life_application": "Fly-ash bricks used in construction, treated water used in industrial gardens, and solar power plants set up by power companies are practical outcomes of sustainable industry.",
+      "key_points": [
+        "Sustainable industry uses resources efficiently and reduces pollution and waste.",
+        "NTPC was established in 1975 and is a major power generation company.",
+        "NTPC follows ISO 14001 environmental management standards.",
+        "NTPC treats and reuses water and utilises fly ash in cement and bricks.",
+        "NTPC develops green belts and is expanding solar, hydro, and wind capacity.",
+        "Sustainable practices include cleaner production, energy efficiency, recycling, and legal compliance."
+      ],
+      "day_to_day_usage": [
+        "Fly-ash bricks and cement reduce the waste problem of thermal power plants.",
+        "Green belts around power plants improve local air quality.",
+        "Power companies are setting up solar and wind projects.",
+        "Industries reuse treated water for cooling and landscaping.",
+        "Households benefit when power generation becomes cleaner and more efficient."
+      ]
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "we-mfg-1",
+      "title": "Locating a Sugar Mill",
+      "topic": "Factors affecting industrial location",
+      "problem": "A company wants to build a sugar mill. Should it locate near the sugarcane fields or near a big city market? Justify your choice.",
+      "solution": [
+        "Step 1: Sugarcane is a bulky, weight-losing raw material.",
+        "Step 2: After harvesting, cane loses sucrose quickly, so it must be crushed within about 24 hours.",
+        "Step 3: Transporting cane long distances increases cost and reduces sugar recovery.",
+        "Step 4: Therefore the mill should be located near the cane-growing area.",
+        "Step 5: The market can be reached later because sugar is less bulky and can be stored and transported."
+      ],
+      "board_mode": "Write the decision first, then give two reasons based on weight loss and sucrose deterioration, and finish with a locational conclusion.",
+      "answer": "Near the sugarcane fields, because cane is weight-losing and loses sucrose quickly after harvesting.",
+      "board_tip": "Use the phrase weight-losing raw material and mention the 24-hour crushing requirement for full marks."
+    },
+    {
+      "id": "we-mfg-2",
+      "title": "Comparing Cotton Textile and Jute Industries",
+      "topic": "Agro-based industries",
+      "problem": "Compare the cotton textile and jute industries in terms of raw material, main location, and one major problem.",
+      "solution": [
+        "Step 1: Cotton textiles use cotton fibre, while jute uses the jute plant's fibrous stem.",
+        "Step 2: Cotton textiles are concentrated in Maharashtra and Gujarat, especially Mumbai and Ahmedabad.",
+        "Step 3: Jute is concentrated in the Hooghly basin of West Bengal, around Kolkata.",
+        "Step 4: Cotton textiles face competition from synthetic fibres and outdated machinery.",
+        "Step 5: Jute faces competition from synthetic packaging and from Bangladesh, plus old machinery.",
+        "Step 6: Present the comparison in a three-row table for clarity."
+      ],
+      "board_mode": "Draw a table with columns Cotton and Jute and rows Raw material, Main location, Major problem.",
+      "answer": "Cotton: cotton fibre, Maharashtra/Gujarat, synthetic competition. Jute: jute fibre, Hooghly basin/West Bengal, synthetic and Bangladesh competition.",
+      "board_tip": "A table is faster and clearer than paragraphs for comparison questions."
+    },
+    {
+      "id": "we-mfg-3",
+      "title": "Why Iron and Steel Plants Cluster Near Raw Materials",
+      "topic": "Mineral-based industries",
+      "problem": "Explain why iron and steel plants are usually located near iron ore and coal fields.",
+      "solution": [
+        "Step 1: Iron and steel is a heavy industry that uses large quantities of iron ore, coking coal, limestone, and dolomite.",
+        "Step 2: These raw materials are bulky and heavy, so transporting them long distances is expensive.",
+        "Step 3: A plant located near the raw materials reduces assembly costs.",
+        "Step 4: Many plants are also near water and rail links for cooling and distribution.",
+        "Step 5: Market proximity matters for finished steel, but raw material weight usually dominates location."
+      ],
+      "board_mode": "Write two weight-related reasons, one transport reason, and one example such as Bhilai or Rourkela.",
+      "answer": "Iron ore and coal are bulky and heavy; locating nearby reduces transport costs. Examples include Bhilai and Rourkela near raw material sources.",
+      "board_tip": "Name at least one plant as evidence. It turns a general answer into a scoring answer."
+    },
+    {
+      "id": "we-mfg-4",
+      "title": "Matching Pollution to Control Measures",
+      "topic": "Industrial pollution control",
+      "problem": "Match each pollution type with a suitable control measure: (a) dust from a chimney, (b) chemical effluent in a drain, (c) hot water released into a river, (d) noise from a generator.",
+      "solution": [
+        "Step 1: (a) Dust and smoke can be controlled with electrostatic precipitators, scrubbers, or fabric filters.",
+        "Step 2: (b) Chemical effluent needs an effluent treatment plant before release.",
+        "Step 3: (c) Hot water should be cooled in cooling towers or ponds before discharge.",
+        "Step 4: (d) Noise can be reduced with silencers, acoustic enclosures, and green belts.",
+        "Step 5: Each measure must match the specific pollutant and pathway."
+      ],
+      "board_mode": "Write a two-column matching table: pollution type on the left, control measure on the right.",
+      "answer": "(a) precipitator or scrubber, (b) effluent treatment plant, (c) cooling tower or pond, (d) silencer or acoustic enclosure.",
+      "board_tip": "Do not give a generic answer like 'plant trees' for every part. Match the measure to the pollutant."
+    },
+    {
+      "id": "we-mfg-5",
+      "title": "NTPC as a Case Study in Sustainable Industry",
+      "topic": "Sustainable industry and NTPC",
+      "problem": "Describe any three environment-friendly practices adopted by NTPC and explain why they matter.",
+      "solution": [
+        "Step 1: NTPC follows ISO 14001 environmental management standards, which require systematic planning and review.",
+        "Step 2: It treats and reuses water, reducing freshwater draw and effluent discharge.",
+        "Step 3: It utilises fly ash in cement and brick making, turning waste into a resource.",
+        "Step 4: It develops green belts around plants, which absorb dust and improve local air quality.",
+        "Step 5: These practices reduce pollution, save resources, and improve relations with nearby communities.",
+        "Step 6: NTPC is also expanding solar, hydro, and wind capacity to diversify its energy mix."
+      ],
+      "board_mode": "Write three numbered practices, each with one line on the benefit. Add a closing line on sustainable development.",
+      "answer": "NTPC uses ISO 14001 management, reuses treated water, utilises fly ash, and develops green belts; these reduce pollution and resource use.",
+      "board_tip": "Link each practice to a benefit. Marks are usually awarded for the benefit, not just the practice."
+    }
+  ],
+  "exercises": {
+    "exercise_6_1": {
+      "title": "NCERT Exercise 6.1 - Importance and Location of Industries",
+      "objective": "Explain the role of manufacturing and the factors that locate industries",
+      "problems": [
+        {
+          "id": "mfg-ex1-1",
+          "question": "Why is manufacturing considered the backbone of economic development?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Manufacturing adds value to raw materials and raises national income.",
+            "Step 2: It provides employment to a large workforce and reduces dependence on agriculture.",
+            "Step 3: It modernises agriculture by supplying machines and inputs.",
+            "Step 4: It earns foreign exchange through exports and supports transport and trade."
+          ],
+          "final_answer": "Manufacturing adds value, creates jobs, modernises agriculture, earns foreign exchange, and supports other sectors."
+        },
+        {
+          "id": "mfg-ex1-2",
+          "question": "Name any five factors that influence the location of an industry.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Availability of raw materials.",
+            "Step 2: Availability of labour and capital.",
+            "Step 3: Power supply and transport facilities.",
+            "Step 4: Access to markets and government policy."
+          ],
+          "final_answer": "Raw materials, labour, capital, power, transport, market, and government policy."
+        },
+        {
+          "id": "mfg-ex1-3",
+          "question": "Distinguish between weight-losing and weight-gaining industries with one example each.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Weight-losing industries use bulky raw materials that become lighter after processing.",
+            "Step 2: They locate near the raw material source; sugar mills near cane fields are an example.",
+            "Step 3: Weight-gaining industries produce goods that are bulkier or more expensive to transport than their inputs.",
+            "Step 4: They locate near the market; bakeries and soft-drink bottling plants are examples."
+          ],
+          "final_answer": "Weight-losing industries (sugar) locate near raw materials; weight-gaining industries (bakery, bottling) locate near markets."
+        },
+        {
+          "id": "mfg-ex1-4",
+          "question": "Why is Ahmedabad called the Manchester of India?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Ahmedabad became a major centre of cotton textile production.",
+            "Step 2: It had access to cotton, capital, labour, and transport.",
+            "Step 3: Manchester in England was the historic centre of the cotton textile industry.",
+            "Step 4: The comparison recognises Ahmedabad's similar dominance in Indian cotton textiles."
+          ],
+          "final_answer": "Ahmedabad is called the Manchester of India because it became a leading cotton textile centre, like Manchester in England."
+        },
+        {
+          "id": "mfg-ex1-5",
+          "question": "What are footloose industries? Give one example.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Footloose industries are not tied to raw material sources because their inputs are light or easily transported.",
+            "Step 2: They depend more on skilled labour, power, and connectivity.",
+            "Step 3: They can locate in a wide range of places, often near cities.",
+            "Step 4: Software development and electronics assembly are examples."
+          ],
+          "final_answer": "Footloose industries are location-flexible industries such as software and electronics assembly that depend on skills and connectivity."
+        },
+        {
+          "id": "mfg-ex1-6",
+          "question": "Explain how industrial agglomeration helps industries.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Agglomeration means many related industries cluster in one area.",
+            "Step 2: Firms share suppliers of parts and raw materials, reducing costs.",
+            "Step 3: They share a pool of skilled workers and training institutions.",
+            "Step 4: Common transport, power, and communication infrastructure becomes economical.",
+            "Step 5: Waste from one unit can become raw material for another.",
+            "Step 6: The cluster also attracts customers, services, and investment."
+          ],
+          "final_answer": "Agglomeration lowers costs through shared suppliers, skilled labour, infrastructure, waste reuse, and market linkages."
+        }
+      ]
+    },
+    "exercise_6_2": {
+      "title": "NCERT Exercise 6.2 - Agro-based and Mineral-based Industries",
+      "objective": "Describe the location and problems of major industries",
+      "problems": [
+        {
+          "id": "mfg-ex2-1",
+          "question": "Why is the jute industry concentrated in the Hooghly basin?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Jute grows well in the humid climate of West Bengal.",
+            "Step 2: The Hooghly river provides water for processing and transport.",
+            "Step 3: Kolkata provides port facilities for export.",
+            "Step 4: Cheap labour and rail links support the mills."
+          ],
+          "final_answer": "Jute grows nearby, the Hooghly supplies water and transport, Kolkata provides a port, and labour and rail links are available."
+        },
+        {
+          "id": "mfg-ex2-2",
+          "question": "Why must sugarcane be crushed soon after harvesting?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: After harvesting, cane begins to lose moisture and sucrose.",
+            "Step 2: Delay reduces the sugar recovery from each tonne of cane.",
+            "Step 3: Cane is bulky and costly to transport.",
+            "Step 4: Mills therefore crush it within about 24 hours."
+          ],
+          "final_answer": "Cane loses sucrose after harvesting, so it must be crushed within about 24 hours to maximise sugar recovery."
+        },
+        {
+          "id": "mfg-ex2-3",
+          "question": "What is the difference between a basic industry and a consumer industry? Give one example of each.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: A basic industry supplies goods or materials to other industries.",
+            "Step 2: Iron and steel is a basic industry because it provides steel to many sectors.",
+            "Step 3: A consumer industry makes goods for direct use by people.",
+            "Step 4: Sugar and textiles are consumer industries."
+          ],
+          "final_answer": "Basic industries supply other industries (iron and steel); consumer industries make goods for direct use (sugar, textiles)."
+        },
+        {
+          "id": "mfg-ex2-4",
+          "question": "Why are cement plants located near limestone deposits?",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Limestone is the main raw material and is used in large quantities.",
+            "Step 2: Limestone is bulky and heavy, so transport is costly.",
+            "Step 3: Cement plants therefore locate near quarries.",
+            "Step 4: Coal and gypsum are also needed but in smaller amounts."
+          ],
+          "final_answer": "Limestone is bulky and used in large quantities, so cement plants locate near limestone deposits to cut transport costs."
+        },
+        {
+          "id": "mfg-ex2-5",
+          "question": "Name three mineral-based industries and one raw material used by each.",
+          "difficulty": "simple",
+          "marks": 3,
+          "solution": [
+            "Step 1: Iron and steel uses iron ore, coking coal, and limestone.",
+            "Step 2: Cement uses limestone, silica, alumina, and gypsum.",
+            "Step 3: Aluminium smelting uses bauxite and electricity.",
+            "Step 4: Fertiliser and chemical industries also use minerals and petroleum products."
+          ],
+          "final_answer": "Iron and steel (iron ore), cement (limestone), aluminium (bauxite), fertiliser (minerals and gas)."
+        },
+        {
+          "id": "mfg-ex2-6",
+          "question": "Describe the problems faced by the cotton textile industry and suggest two remedies.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: Many mills use old machinery, which lowers productivity and quality.",
+            "Step 2: Erratic power supply interrupts production.",
+            "Step 3: Competition from synthetic fibres and imported cloth reduces demand.",
+            "Step 4: Remedy one: modernise machinery and adopt better technology.",
+            "Step 5: Remedy two: ensure reliable power and train workers in modern skills.",
+            "Step 6: Diversifying into blended fabrics and design innovation can also help."
+          ],
+          "final_answer": "Old machinery, power shortages, and synthetic competition are major problems; modernise technology, ensure reliable power, and improve skills and design."
+        }
+      ]
+    },
+    "exercise_6_3": {
+      "title": "NCERT Exercise 6.3 - Industrial Pollution and Sustainability",
+      "objective": "Identify pollution types and apply control and sustainability measures",
+      "problems": [
+        {
+          "id": "mfg-ex3-1",
+          "question": "Name the four main types of industrial pollution.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Air pollution from smoke, dust, and gases.",
+            "Step 2: Water pollution from untreated effluents.",
+            "Step 3: Land pollution from solid waste and slag.",
+            "Step 4: Noise pollution from machinery and generators; thermal pollution is a form of water pollution."
+          ],
+          "final_answer": "Air, water (including thermal), land, and noise pollution."
+        },
+        {
+          "id": "mfg-ex3-2",
+          "question": "How does thermal pollution harm aquatic life?",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Power plants and factories discharge hot water into rivers or lakes.",
+            "Step 2: Warmer water holds less dissolved oxygen.",
+            "Step 3: Fish and other aquatic organisms may suffocate or migrate.",
+            "Step 4: Sudden temperature changes also disturb breeding and food chains."
+          ],
+          "final_answer": "Hot discharges lower dissolved oxygen and disturb aquatic life, causing suffocation, migration, and breeding problems."
+        },
+        {
+          "id": "mfg-ex3-3",
+          "question": "State two control measures for industrial air pollution.",
+          "difficulty": "simple",
+          "marks": 2,
+          "solution": [
+            "Step 1: Install electrostatic precipitators or fabric filters to trap particulate matter.",
+            "Step 2: Use scrubbers to remove sulphur dioxide and other soluble gases.",
+            "Step 3: Improve fuel quality and combustion efficiency.",
+            "Step 4: Develop green belts around the plant."
+          ],
+          "final_answer": "Use precipitators or filters for dust and scrubbers for gases, along with cleaner fuel and green belts."
+        },
+        {
+          "id": "mfg-ex3-4",
+          "question": "Why is NTPC considered an environment-conscious company? Give three reasons.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: It follows ISO 14001 environmental management standards.",
+            "Step 2: It treats and reuses water and utilises fly ash in cement and bricks.",
+            "Step 3: It develops green belts around its plants.",
+            "Step 4: It is also expanding solar, hydro, and wind capacity."
+          ],
+          "final_answer": "NTPC follows ISO 14001, reuses water, utilises fly ash, develops green belts, and is expanding renewable capacity."
+        },
+        {
+          "id": "mfg-ex3-5",
+          "question": "What is sustainable industrial development? Suggest two ways industries can practise it.",
+          "difficulty": "medium",
+          "marks": 3,
+          "solution": [
+            "Step 1: Sustainable industrial development means producing goods while conserving resources and reducing pollution.",
+            "Step 2: Way one: use cleaner technologies and energy-efficient equipment.",
+            "Step 3: Way two: reduce, reuse, and recycle waste and water.",
+            "Step 4: Worker safety and community responsibility are also part of sustainability."
+          ],
+          "final_answer": "Sustainable industrial development balances production with resource conservation and pollution control; use cleaner technology and practise the three Rs."
+        },
+        {
+          "id": "mfg-ex3-6",
+          "question": "An industry discharges untreated dye water into a river. Explain the likely effects and suggest a practical control plan.",
+          "difficulty": "complex",
+          "marks": 5,
+          "solution": [
+            "Step 1: The dye colours the water and blocks sunlight, harming aquatic plants.",
+            "Step 2: Chemicals in the effluent may be toxic to fish and unsafe for downstream users.",
+            "Step 3: Organic matter in the effluent lowers dissolved oxygen.",
+            "Step 4: Control plan: install an effluent treatment plant and treat water before release.",
+            "Step 5: Reuse treated water in cooling or gardening and recover dyes where possible.",
+            "Step 6: Monitor discharge regularly and enforce pollution-board standards."
+          ],
+          "final_answer": "Dye effluent reduces light and oxygen and can poison aquatic life; treat it in an effluent plant, reuse water, recover dyes, and enforce standards."
+        }
+      ]
+    }
+  },
+  "quizzes": {
+    "simple": [
+      {
+        "id": "q-mfg-s-1",
+        "question": "Manufacturing is an example of which sector?",
+        "options": ["Secondary", "Primary", "Tertiary", "Quaternary"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Manufacturing transforms raw materials into goods, so it is a secondary activity.",
+          "wrong_options": {
+            "1": "Primary activities directly use natural resources, such as farming and mining.",
+            "2": "Tertiary activities provide services such as transport and banking.",
+            "3": "Quaternary activities involve knowledge and research."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-s-2",
+        "question": "Which city is called the Manchester of India because of its cotton textile industry?",
+        "options": ["Ahmedabad", "Bhilai", "Rourkela", "Jamshedpur"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Ahmedabad is called the Manchester of India because of its cotton textile industry.",
+          "wrong_options": {
+            "1": "Bhilai is known for steel.",
+            "2": "Rourkela is known for steel.",
+            "3": "Jamshedpur is known for steel and vehicles."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-s-3",
+        "question": "Jute is called:",
+        "options": ["The golden fibre", "The white fibre", "The steel fibre", "The synthetic fibre"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Jute has a golden colour and is traditionally called the golden fibre.",
+          "wrong_options": {
+            "1": "Cotton is sometimes called white gold, not jute.",
+            "2": "Steel is a metal, not a fibre.",
+            "3": "Jute is a natural fibre, not synthetic."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-s-4",
+        "question": "Which industry uses bauxite as its main raw material?",
+        "options": ["Aluminium", "Cement", "Sugar", "Jute"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Aluminium is smelted from bauxite using large amounts of electricity.",
+          "wrong_options": {
+            "1": "Cement uses limestone, silica, alumina, and gypsum.",
+            "2": "Sugar uses sugarcane.",
+            "3": "Jute uses the jute plant."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-s-5",
+        "question": "Which is a basic industry?",
+        "options": ["Iron and steel", "Sugar", "Bakery", "Cotton garment"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Iron and steel supplies materials and machines to many other industries.",
+          "wrong_options": {
+            "1": "Sugar is a consumer industry.",
+            "2": "A bakery makes food for direct consumption.",
+            "3": "Garment making is a consumer industry."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-s-6",
+        "question": "Cement plants are usually located near:",
+        "options": ["Limestone deposits", "Oil fields", "Cotton fields", "Fishing harbours"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Limestone is bulky and is the main raw material, so plants locate near deposits.",
+          "wrong_options": {
+            "1": "Oil fields supply petroleum, not cement raw material.",
+            "2": "Cotton fields supply textile raw material.",
+            "3": "Fishing harbours are unrelated to cement."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-s-7",
+        "question": "Smoke and dust from a factory cause:",
+        "options": ["Air pollution", "Thermal pollution", "Noise pollution", "Land pollution"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Smoke and dust are airborne pollutants, so they cause air pollution.",
+          "wrong_options": {
+            "1": "Thermal pollution involves hot water discharges.",
+            "2": "Noise pollution involves unwanted sound.",
+            "3": "Land pollution involves solid waste on land."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-s-8",
+        "question": "NTPC stands for:",
+        "options": ["National Thermal Power Corporation", "National Textile Production Company", "Northern Transport Power Cell", "National Timber and Paper Corporation"],
+        "correct": 0,
+        "explanation": {
+          "correct": "NTPC is the National Thermal Power Corporation.",
+          "wrong_options": {
+            "1": "This is not the expansion of NTPC.",
+            "2": "This is not the expansion of NTPC.",
+            "3": "This is not the expansion of NTPC."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-s-9",
+        "question": "Which raw material does the sugar industry use?",
+        "options": ["Sugarcane", "Bauxite", "Limestone", "Jute"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Sugar is made from sugarcane, which must be crushed soon after harvesting.",
+          "wrong_options": {
+            "1": "Bauxite is used for aluminium.",
+            "2": "Limestone is used for cement.",
+            "3": "Jute is used for bags and mats."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-s-10",
+        "question": "Which industry is agro-based?",
+        "options": ["Cotton textile", "Cement", "Aluminium", "Petrochemical"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Cotton textile uses cotton, an agricultural product.",
+          "wrong_options": {
+            "1": "Cement is mineral-based.",
+            "2": "Aluminium is mineral-based.",
+            "3": "Petrochemical is mineral-based."
+          }
+        }
+      }
+    ],
+    "medium": [
+      {
+        "id": "q-mfg-m-1",
+        "question": "Which factor most strongly influences the location of a sugar mill?",
+        "options": ["Proximity to sugarcane fields", "Proximity to an airport", "Proximity to a coal mine", "Proximity to a seaport"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Cane is weight-losing and loses sucrose quickly, so mills locate near cane fields.",
+          "wrong_options": {
+            "1": "Airports matter for high-value, light goods, not sugar mills.",
+            "2": "Coal is not the main locational factor for sugar.",
+            "3": "Seaports matter for export-oriented industries."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-m-2",
+        "question": "Which state is the leading centre of the jute industry?",
+        "options": ["West Bengal", "Punjab", "Kerala", "Rajasthan"],
+        "correct": 0,
+        "explanation": {
+          "correct": "The Hooghly basin in West Bengal is the main jute-producing and milling region.",
+          "wrong_options": {
+            "1": "Punjab is not a major jute centre.",
+            "2": "Kerala is known for spices, rubber, and coir.",
+            "3": "Rajasthan is not a jute centre."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-m-3",
+        "question": "Which is a weight-gaining industry?",
+        "options": ["Soft-drink bottling", "Sugar milling", "Iron and steel", "Cement"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Bottled drinks are bulky and costly to transport, so plants locate near markets.",
+          "wrong_options": {
+            "1": "Sugar milling is weight-losing and locates near cane.",
+            "2": "Iron and steel locates near raw materials.",
+            "3": "Cement locates near limestone."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-m-4",
+        "question": "Which pollution-control device removes dust particles from chimney gases?",
+        "options": ["Electrostatic precipitator", "Cooling tower", "Effluent treatment plant", "Silencer"],
+        "correct": 0,
+        "explanation": {
+          "correct": "An electrostatic precipitator charges and collects dust particles from flue gases.",
+          "wrong_options": {
+            "1": "A cooling tower reduces water temperature.",
+            "2": "An effluent plant treats wastewater.",
+            "3": "A silencer reduces noise."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-m-5",
+        "question": "Why is NTPC's fly-ash utilisation important?",
+        "options": ["It turns waste into cement and bricks", "It increases coal consumption", "It discharges ash into rivers", "It reduces power generation"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Fly ash is used in cement and brick making, reducing waste and quarrying pressure.",
+          "wrong_options": {
+            "1": "It reduces waste rather than increasing coal use.",
+            "2": "Discharging ash into rivers would be pollution, not utilisation.",
+            "3": "It does not aim to reduce power generation."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-m-6",
+        "question": "Which is a consumer industry?",
+        "options": ["Sugar", "Iron and steel", "Cement", "Aluminium smelting"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Sugar is bought and used directly by consumers.",
+          "wrong_options": {
+            "1": "Iron and steel is a basic industry.",
+            "2": "Cement is mainly used by the construction industry.",
+            "3": "Aluminium smelting supplies material to other industries."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-m-7",
+        "question": "Which is a suitable control for industrial noise pollution?",
+        "options": ["Acoustic enclosures and silencers", "Electrostatic precipitators", "Effluent treatment plants", "Cooling ponds"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Acoustic enclosures and silencers reduce machinery noise.",
+          "wrong_options": {
+            "1": "Precipitators control dust, not noise.",
+            "2": "Effluent plants treat water pollution.",
+            "3": "Cooling ponds reduce thermal pollution."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-m-8",
+        "question": "Why are iron and steel plants called heavy industries?",
+        "options": ["They use bulky raw materials and produce heavy goods", "They employ only a few workers", "They make light consumer goods", "They need no transport"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Heavy industries use large quantities of bulky raw materials and produce heavy products.",
+          "wrong_options": {
+            "1": "They employ a large workforce.",
+            "2": "They produce intermediate and capital goods, not mainly light consumer goods.",
+            "3": "They depend heavily on transport."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-m-9",
+        "question": "Which statement about industrial location is correct?",
+        "options": ["Footloose industries depend more on skills and connectivity", "All industries must be near coal mines", "Industries never need government support", "Raw material quality does not matter"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Footloose industries such as software and electronics depend on skilled labour and connectivity.",
+          "wrong_options": {
+            "1": "Only some industries need coal; many do not.",
+            "2": "Government policy and incentives often influence location.",
+            "3": "Raw material quality affects product quality and cost."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-m-10",
+        "question": "Which is the best example of sustainable industrial practice?",
+        "options": ["Reusing treated water and recycling waste", "Dumping waste in open fields", "Using old machinery without maintenance", "Discharging hot water into rivers"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Reusing water and recycling waste conserve resources and reduce pollution.",
+          "wrong_options": {
+            "1": "Open dumping causes land and water pollution.",
+            "2": "Poorly maintained machinery wastes energy and raises emissions.",
+            "3": "Hot water discharge causes thermal pollution."
+          }
+        }
+      }
+    ],
+    "complex": [
+      {
+        "id": "q-mfg-x-1",
+        "question": "A firm processes bulky limestone into cement. Where should it locate and why?",
+        "options": ["Near limestone deposits because limestone is weight-losing and bulky", "Near a software park because of skilled labour", "Near a fishing harbour because of water", "Far from transport links to reduce traffic"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Limestone is heavy and used in large quantities, so locating near deposits cuts transport costs.",
+          "wrong_options": {
+            "1": "Software parks are unrelated to cement production.",
+            "2": "Harbours do not supply limestone.",
+            "3": "Cement needs good transport links for coal and finished cement."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-x-2",
+        "question": "Which pair correctly matches industry and raw material?",
+        "options": ["Aluminium - bauxite", "Cement - sugarcane", "Sugar - limestone", "Jute - iron ore"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Aluminium is smelted from bauxite.",
+          "wrong_options": {
+            "1": "Cement uses limestone, not sugarcane.",
+            "2": "Sugar uses sugarcane, not limestone.",
+            "3": "Jute uses the jute plant, not iron ore."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-x-3",
+        "question": "Which explains why the cotton textile industry faced a decline in some mill towns?",
+        "options": ["Old machinery and competition from synthetic fibres", "Excess rainfall", "Lack of cotton farmers", "Ban on electricity"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Outdated machinery and synthetic-fibre competition reduced the competitiveness of some mills.",
+          "wrong_options": {
+            "1": "Rainfall is not the main cause of mill decline.",
+            "2": "India produces plenty of cotton.",
+            "3": "Electricity was not banned."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-x-4",
+        "question": "Which sequence correctly links a pollutant to its effect and control?",
+        "options": ["Hot water - low dissolved oxygen - cooling tower", "Dust - noise - silencer", "Dye effluent - air pollution - scrubber", "Fly ash - thermal pollution - cooling pond"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Hot water lowers dissolved oxygen, and cooling towers reduce its temperature before discharge.",
+          "wrong_options": {
+            "1": "Dust is an air pollutant, not noise.",
+            "2": "Dye effluent is a water pollutant, not air.",
+            "3": "Fly ash is solid waste, not thermal pollution."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-x-5",
+        "question": "Why does the jute industry face tough competition from Bangladesh?",
+        "options": ["Bangladesh produces jute at lower cost", "Bangladesh has no jute", "India has banned jute", "Jute is a synthetic fibre"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Bangladesh is a major low-cost jute producer and exporter.",
+          "wrong_options": {
+            "1": "Bangladesh is a leading jute producer.",
+            "2": "India has not banned jute.",
+            "3": "Jute is a natural fibre."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-x-6",
+        "question": "Which statement best describes the role of a basic industry in the economy?",
+        "options": ["It supplies materials and machines to many other industries", "It sells only to final consumers", "It depends only on imports", "It employs no workers"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Basic industries such as iron and steel provide inputs for many downstream industries.",
+          "wrong_options": {
+            "1": "Consumer industries sell to final consumers.",
+            "2": "Basic industries may use domestic raw materials.",
+            "3": "They are major employers."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-x-7",
+        "question": "A plant releases hot water into a river. Which pair of problems is most likely?",
+        "options": ["Lower dissolved oxygen and fish migration", "Higher oxygen and more fish", "Noise and dust", "Acid rain and ozone depletion"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Warmer water holds less oxygen, so fish may suffocate or move away.",
+          "wrong_options": {
+            "1": "Hot water reduces, not increases, dissolved oxygen.",
+            "2": "Noise and dust are unrelated to hot water discharge.",
+            "3": "Acid rain and ozone depletion have different causes."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-x-8",
+        "question": "Which practice best reflects the idea of cleaner production?",
+        "options": ["Redesigning a process to use less energy and generate less waste", "Increasing chimney height only", "Burning waste in the open", "Using more water to dilute effluent"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Cleaner production prevents pollution at source by improving processes and resource efficiency.",
+          "wrong_options": {
+            "1": "Taller chimneys spread pollution rather than prevent it.",
+            "2": "Open burning releases toxic gases.",
+            "3": "Dilution does not remove pollutants."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-x-9",
+        "question": "Which combination is correctly matched?",
+        "options": ["Bhilai - iron and steel", "Ahmedabad - jute", "Hooghly - cement", "Jamshedpur - sugar"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Bhilai is a major public-sector iron and steel plant.",
+          "wrong_options": {
+            "1": "Ahmedabad is a cotton textile centre.",
+            "2": "The Hooghly basin is a jute centre.",
+            "3": "Jamshedpur is a steel centre."
+          }
+        }
+      },
+      {
+        "id": "q-mfg-x-10",
+        "question": "Which set of measures would most reduce a factory's overall environmental footprint?",
+        "options": ["Energy-efficient equipment, effluent treatment, waste recycling, and green belts", "Longer chimneys and open dumping", "More water use and no maintenance", "Increased coal burning and fewer filters"],
+        "correct": 0,
+        "explanation": {
+          "correct": "Combining efficiency, treatment, recycling, and green belts addresses air, water, land, and noise impacts together.",
+          "wrong_options": {
+            "1": "Longer chimneys and open dumping do not solve pollution.",
+            "2": "More water use and poor maintenance increase waste.",
+            "3": "More coal and fewer filters increase emissions."
+          }
+        }
+      }
+    ]
+  },
+  "concept_maps": {
+    "title": "Manufacturing Industries - Concept Map",
+    "nodes": [
+      { "id": "n1", "label": "Manufacturing", "group": "foundation" },
+      { "id": "n2", "label": "Location Factors", "group": "foundation" },
+      { "id": "n3", "label": "Agro-based Industries", "group": "type" },
+      { "id": "n4", "label": "Mineral-based Industries", "group": "type" },
+      { "id": "n5", "label": "Cotton Textile", "group": "agro" },
+      { "id": "n6", "label": "Jute", "group": "agro" },
+      { "id": "n7", "label": "Sugar", "group": "agro" },
+      { "id": "n8", "label": "Iron and Steel", "group": "mineral" },
+      { "id": "n9", "label": "Industrial Pollution", "group": "impact" },
+      { "id": "n10", "label": "Sustainable Industry (NTPC)", "group": "response" }
+    ],
+    "edges": [
+      ["n1", "n2"],
+      ["n1", "n3"],
+      ["n1", "n4"],
+      ["n3", "n5"],
+      ["n3", "n6"],
+      ["n3", "n7"],
+      ["n4", "n8"],
+      ["n2", "n3"],
+      ["n2", "n4"],
+      ["n1", "n9"],
+      ["n4", "n9"],
+      ["n9", "n10"]
+    ]
+  },
+  "mind_maps": {
+    "title": "Manufacturing Industries - Complete Mind Map",
+    "type": "hierarchical",
+    "root": "Manufacturing Industries",
+    "branches": [
+      {
+        "concept": "Importance",
+        "sub_nodes": [
+          "Adds value to raw materials",
+          "Creates employment",
+          "Modernises agriculture",
+          "Earns foreign exchange",
+          "Reduces regional disparities"
+        ],
+        "connections": "Manufacturing is the backbone of development"
+      },
+      {
+        "concept": "Location Factors",
+        "sub_nodes": [
+          "Raw material, labour, capital, power",
+          "Market and transport",
+          "Government policy and industrial estates",
+          "Agglomeration economies",
+          "Weight-losing versus weight-gaining"
+        ],
+        "connections": "Location balances cost of inputs and access to markets"
+      },
+      {
+        "concept": "Agro-based Industries",
+        "sub_nodes": [
+          "Cotton textile: Maharashtra and Gujarat",
+          "Jute: Hooghly basin, West Bengal",
+          "Sugar: Uttar Pradesh and Maharashtra",
+          "Silk, wool, leather, food processing",
+          "Problems: old machinery, power, synthetic competition"
+        ],
+        "connections": "Agro-industries link farms to markets"
+      },
+      {
+        "concept": "Mineral-based Industries",
+        "sub_nodes": [
+          "Iron and steel: basic and heavy industry",
+          "Cement: near limestone",
+          "Aluminium: bauxite and cheap power",
+          "Fertiliser: nitrogenous and phosphatic",
+          "Chemical and petrochemical products"
+        ],
+        "connections": "Minerals supply construction and capital goods"
+      },
+      {
+        "concept": "Industrial Pollution",
+        "sub_nodes": [
+          "Air: smoke, dust, SO2, NOx",
+          "Water and thermal pollution",
+          "Land: slag, fly ash, plastic",
+          "Noise: machinery and generators",
+          "Controls: precipitators, scrubbers, effluent plants, green belts"
+        ],
+        "connections": "Pollution control must match the pollutant"
+      },
+      {
+        "concept": "Sustainable Industry and NTPC",
+        "sub_nodes": [
+          "NTPC established 1975",
+          "ISO 14001 environmental management",
+          "Water reuse and fly-ash utilisation",
+          "Green belts around plants",
+          "Expansion into solar, hydro, and wind"
+        ],
+        "connections": "Growth can be balanced with environmental responsibility"
+      }
+    ]
+  },
+  "common_misconceptions": [
+    "Manufacturing only means making machines - FALSE: it includes textiles, sugar, cement, paper, fertiliser, and many other products.",
+    "All industries should be located near coal mines - FALSE: only some need coal; location depends on raw material, market, labour, power, and transport.",
+    "Sugar mills should be near cities to sell sugar quickly - FALSE: sugarcane is weight-losing and loses sucrose, so mills locate near cane fields.",
+    "Jute is a synthetic fibre - FALSE: jute is a natural plant fibre, often called the golden fibre.",
+    "Iron and steel is a consumer industry - FALSE: it is a basic or heavy industry that supplies other industries.",
+    "Cement plants can be located anywhere because cement is light - FALSE: limestone is bulky, so plants locate near limestone deposits.",
+    "Diluting industrial effluent makes it safe - FALSE: dilution does not remove pollutants; treatment is required.",
+    "NTPC only builds thermal plants and ignores the environment - FALSE: NTPC follows ISO 14001, reuses water, utilises fly ash, develops green belts, and expands renewables."
+  ]
+}
