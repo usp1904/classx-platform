@@ -89,24 +89,63 @@ function safeStr(value) {
 }
 
 /**
- * Build solved exercise with step-by-step, shortcuts, formula used, why it matters.
+ * ELI5-style explanation: simplifies complex text into 5-year-old language.
  */
-function buildSolvedExercise(problem) {
+function eli5(text, subjectId) {
+  if (!text) return '';
+  let t = String(text);
+  // Replace complex words with simpler equivalents
+  const replacements = [
+    [/photosynthesis/i, 'plants making food from sunlight'],
+    [/respiration/i, 'breathing to get energy'],
+    [/democracy/i, 'everyone voting and choosing together'],
+    [/constitution/i, 'the main rulebook of a country'],
+    [/fraction/i, 'a piece of a whole'],
+    [/theorem/i, 'a math rule that is always true'],
+    [/equation/i, 'a math sentence with = sign'],
+    [/variable/i, 'a mystery number we need to find'],
+    [/polynomial/i, 'a math expression with x'],
+    [/trigonometry/i, 'measuring triangles'],
+    [/circumference/i, 'distance around a circle'],
+    [/hypotenuse/i, 'the longest side of a right triangle'],
+  ];
+  replacements.forEach(([re, repl]) => {
+    t = t.replace(re, repl);
+  });
+  return t;
+}
+
+/**
+ * Build solved exercise with ELI5 step-by-step, comments per step, formulas, why it matters.
+ */
+function buildSolvedExercise(problem, subjectId) {
   const steps = problem.solution_step_by_step || problem.solution || [];
   const finalAnswer = problem.final_answer || problem.answer || '';
   const shortcut = problem.competitive_shortcut || problem.board_tip || '';
   const bookSource = problem.book_source || 'NCERT Textbook';
 
+  // ELI5-ify each step with comments
+  const eli5Steps = steps.map((s, i) => ({
+    stepNumber: i + 1,
+    text: s,
+    eli5: eli5(s, subjectId),
+    comment: i === 0 ? 'Start here: identify what is given.' :
+             i === steps.length - 1 ? 'Final step: write the answer.' :
+             `Step ${i + 1}: follow the logic carefully.`,
+  }));
+
   return {
     id: problem.id || '',
     question: problem.question,
-    steps,
+    eli5Question: eli5(problem.question, subjectId),
+    steps: eli5Steps,
     finalAnswer,
     shortcut,
-    formulaUsed: extractFormulaUsed(steps.join(' '), problem.subjectId),
+    formulaUsed: extractFormulaUsed(steps.join(' '), subjectId),
     whyThisMethod: extractWhyThisMethod(shortcut),
     bookSource,
     difficulty: problem.difficulty || 'medium',
+    memoryHook: problem.memoryHook || `Remember: ${problem.question.slice(0, 40)}...`,
   };
 }
 
@@ -118,11 +157,14 @@ function extractFormulaUsed(text, subjectId) {
       { pattern: /a × b = lcm|a.*b.*lcm.*hcf/i, formula: 'a × b = LCM × HCF', when: 'To find one number when LCM, HCF and other number are known' },
       { pattern: /prime factorization|prime factor/i, formula: 'Prime Factorization', when: 'To break down composite numbers into prime factors' },
       { pattern: /decimal|terminat/i, formula: 'Denominator Prime Factor Rule', when: 'To check if a decimal terminates (only prime factors 2 and 5)' },
+      { pattern: /quadratic/i, formula: 'Quadratic Formula: x = (-b ± √(b²-4ac)) / 2a', when: 'To solve ax² + bx + c = 0' },
+      { pattern: /pythagoras|right.?triangle/i, formula: 'a² + b² = c² (Pythagoras)', when: 'For right-angled triangles' },
     ],
     science: [
-      { pattern: /photosynthesis/i, formula: '6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂', when: 'Photosynthesis equation — light energy to chemical energy' },
-      { pattern: /respiration/i, formula: 'C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + Energy (ATP)', when: 'Cellular respiration — glucose to energy' },
-      { pattern: /transport|xylem|phloem/i, formula: 'Xylem: Water & minerals upward', when: 'Plant transport — water and minerals move up from roots' },
+      { pattern: /photosynthesis/i, formula: '6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂', when: 'Photosynthesis — plants make food' },
+      { pattern: /respiration/i, formula: 'C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + Energy', when: 'Cellular respiration — energy from food' },
+      { pattern: /newton.*law|f = ma/i, formula: 'F = ma (Force = mass × acceleration)', when: 'Newton\'s Second Law' },
+      { pattern: /ohm/i, formula: 'V = IR (Ohm\'s Law)', when: 'Electricity — voltage, current, resistance' },
     ],
     social_science: [],
   };
@@ -130,7 +172,7 @@ function extractFormulaUsed(text, subjectId) {
   for (const { pattern, formula, when } of subjectFormulas) {
     if (pattern.test(text)) return { formula, when };
   }
-  return { formula: 'General problem-solving method', when: 'Apply step-by-step logical reasoning' };
+  return { formula: 'Step-by-step logical reasoning', when: 'Apply the concept step by step' };
 }
 
 function extractWhyThisMethod(shortcut) {
@@ -139,35 +181,36 @@ function extractWhyThisMethod(shortcut) {
 }
 
 /**
- * Build science experiment content.
+ * Build science experiments with detailed steps.
  */
-function buildScienceExperiment(lesson, chapterName) {
+function buildScienceExperiments(lesson, chapterName) {
   const concepts = lesson.concepts || [];
   const experiments = [];
 
-  // Generate experiment ideas based on chapter concepts
   concepts.forEach((c, i) => {
     const name = c.name || c.title || `Concept ${i + 1}`;
     const explanation = c.explanation || c.key_points?.[0] || '';
     const realLife = c.real_life_application || '';
+    const dayToDay = c.day_to_day_usage || [];
 
     experiments.push({
       id: `exp-${i + 1}`,
       title: `Experiment: ${name}`,
       chapter: chapterName,
       objective: `To understand and verify: ${name}`,
-      materialsRequired: ['Textbook', 'Notebook', 'Pen/Pencil', 'Related lab equipment (as per school lab)'],
+      materialsRequired: ['NCERT Textbook', 'Notebook', 'Pen/Pencil', 'Related lab equipment (as per school lab)'],
       steps: [
-        `Step 1: Read the concept "${name}" from your NCERT textbook.`,
-        `Step 2: Write down the key definition: ${safeStr(explanation).slice(0, 100)}`,
-        `Step 3: Perform the activity described in the textbook for this concept.`,
-        `Step 4: Record your observations in a table.`,
-        `Step 5: Write the conclusion linking to real life: ${safeStr(realLife).slice(0, 100)}`,
+        `Step 1: Read the concept "${name}" carefully from your NCERT textbook.`,
+        `Step 2: Write down the definition: ${safeStr(explanation).slice(0, 120)}`,
+        `Step 3: Perform the activity described in the textbook for this concept under teacher supervision.`,
+        `Step 4: Record your observations in a table with columns: What I did, What I saw, What it means.`,
+        `Step 5: Write the conclusion connecting to real life: ${safeStr(realLife).slice(0, 120)}`,
       ],
-      observations: 'Record observations as per your school science lab manual.',
-      conclusion: `The experiment confirms: ${name} works as explained in the textbook.`,
+      observations: 'Record observations as per your school science lab manual. Note down measurements, colors, changes, and results.',
+      conclusion: `The experiment confirms: ${name} works exactly as explained in the textbook.`,
       realLifeConnection: realLife || 'See textbook for real-life applications.',
-      safetyNote: 'Perform all experiments under teacher supervision. Wear safety goggles for chemistry experiments.',
+      dayToDayUsage: dayToDay,
+      safetyNote: 'Perform all experiments under teacher supervision. Wear safety goggles for chemistry experiments. Never taste chemicals.',
     });
   });
 
@@ -175,17 +218,19 @@ function buildScienceExperiment(lesson, chapterName) {
 }
 
 /**
- * Build MCQ answers with explanations.
+ * Build MCQ answers with detailed explanations.
  */
 function buildMcqAnswers(quizzes) {
   return quizzes.map((q, i) => ({
     id: q.id || `mcq-${i + 1}`,
     question: q.question,
+    eli5Question: eli5(q.question, 'general'),
     options: q.options || [],
     correctIndex: q.correct != null ? q.correct : 0,
     correctAnswer: q.options?.[q.correct] || '',
     explanation: q.explanation?.correct || q.explanation?.wrong_options || 'Refer to NCERT textbook for detailed explanation.',
     difficulty: q.difficulty || 'medium',
+    memoryHook: q.memoryHook || `Remember: ${q.question.slice(0, 40)}...`,
   }));
 }
 
@@ -200,7 +245,6 @@ function buildBibliographyAndEquations(lesson, subjectId) {
   const equations = [];
   const bibliography = [];
 
-  // Collect equations from theorems and concepts
   theorems.forEach((t, i) => {
     if (t.statement) {
       equations.push({
@@ -209,11 +253,11 @@ function buildBibliographyAndEquations(lesson, subjectId) {
         statement: t.statement,
         subject: subjectId,
         context: t.proposed_by?.name ? `Proposed by ${t.proposed_by.name} (${t.proposed_by.era})` : 'NCERT',
+        realWorldUtility: t.real_world_utility || '',
       });
     }
   });
 
-  // Bibliography from lesson metadata
   bibliography.push({
     id: 'bib-1',
     title: 'NCERT Textbook — Class X',
@@ -250,11 +294,10 @@ function buildBibliographyAndEquations(lesson, subjectId) {
 }
 
 /**
- * Build social studies historical data: dates, revolts, wars, renaissance.
+ * Build social studies historical data: dates, revolts, wars, renaissance, notes.
  */
 function buildSocialStudiesData(lesson, chapterName) {
   const concepts = lesson.concepts || [];
-  const theorems = lesson.theorems || []; // In social science, these might be historical events
 
   const historicalEvents = [];
   const revoltsAndWars = [];
@@ -267,7 +310,7 @@ function buildSocialStudiesData(lesson, chapterName) {
     const explanation = c.explanation || '';
     const keyPoints = c.key_points || [];
 
-    // Extract dates from explanation or key_points
+    // Extract dates
     const dateMatches = safeStr(explanation).match(/\b(18|19|20)\d{2}\b/g) || [];
     dateMatches.forEach((d) => {
       importantDates.push({
@@ -277,18 +320,18 @@ function buildSocialStudiesData(lesson, chapterName) {
       });
     });
 
-    // Check for revolt/war keywords
     const text = safeStr(explanation) + ' ' + safeStr(keyPoints.join(' '));
+
     if (/revolt|rebellion|uprising|mutiny|war|battle|independence|freedom/i.test(text)) {
       revoltsAndWars.push({
         name,
         type: /revolt|rebellion|uprising|mutiny/i.test(text) ? 'Revolt/Uprising' : /war|battle/i.test(text) ? 'War' : 'Movement',
         description: safeStr(explanation).slice(0, 200),
         significance: 'Important event in Indian/World history',
+        memoryHook: `Remember ${name}: ${c.key_points?.[0] || ''}`,
       });
     }
 
-    // Check for renaissance keywords
     if (/renaissance|reformation|enlightenment|industrial|colon|imperial/i.test(text)) {
       renaissanceEvents.push({
         name,
@@ -304,6 +347,7 @@ function buildSocialStudiesData(lesson, chapterName) {
       keyPoints,
       type: 'short_answer',
       marks: 3,
+      memoryHook: c.key_points?.[0] || '',
     });
   });
 
@@ -348,10 +392,11 @@ export function buildLearningAids(subjectId, chapterId) {
   ) || `This chapter covers ${chapter.name}. Study the concepts, solve the exercises, and revise using the learning aids below.`;
 
   // ---- Key Ideas ----
-  const keyideas = concepts.slice(0, 6).map((c) => ({
-    id: c.name || c.title || `idea-${i}`,
+  const keyideas = concepts.slice(0, 6).map((c, i) => ({
+    id: `key-${i}`,
     title: c.name || c.title || 'Key Concept',
     explanation: c.explanation || c.purpose || c.key_points?.[0] || '',
+    eli5: eli5(c.explanation || c.purpose || '', subjectId),
     realLife: c.real_life_application || '',
   }));
 
@@ -391,7 +436,7 @@ export function buildLearningAids(subjectId, chapterId) {
   ];
 
   // ---- Solved Exercises (Solve Like a Teacher) ----
-  const solveliketeacher = exercises.map((ex) => buildSolvedExercise(ex));
+  const solveliketeacher = exercises.map((ex) => buildSolvedExercise(ex, subjectId));
 
   // ---- Worked Examples ----
   const workedexamples = examples.map((ex) => ({
@@ -443,7 +488,7 @@ export function buildLearningAids(subjectId, chapterId) {
   let bibliographyAndEquations = { equations: [], bibliography: [] };
 
   if (subjectId === 'science') {
-    scienceExperiments = buildScienceExperiment(lesson, chapter.name);
+    scienceExperiments = buildScienceExperiments(lesson, chapter.name);
     mcqAnswers = buildMcqAnswers(quizzes);
     bibliographyAndEquations = buildBibliographyAndEquations(lesson, subjectId);
   }
@@ -581,7 +626,6 @@ export function buildLearningAids(subjectId, chapterId) {
     conceptconnections,
     learningpath,
     quizme,
-    // Subject-specific additions
     scienceExperiments,
     mcqAnswers,
     bibliographyAndEquations,

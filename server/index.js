@@ -169,17 +169,12 @@ app.get('/api/sources', (req, res) => {
 
 /* ---- SPEC-16 Video lessons (BYJU's clone) ---- */
 
-// YouTube content safety: blocked keywords (adolescent, porn, adult, obscene, violent)
+// YouTube content safety: ONLY block explicit adult/pornographic content.
+// Educational content (biology, reproduction, adolescence, etc.) is ALLOWED.
+// We do NOT block words like 'adolescent', 'teen', 'reproduction' as they are valid educational topics.
 const BLOCKED_VIDEO_KEYWORDS = [
-  'porn', 'xxx', 'adult', 'nsfw', 'nude', 'sex', 'erotic', 'seduc',
-  'adolescent', 'teen', 'strip', 'fetish', 'bdsm', 'hardcore', 'softcore',
-];
-
-// YouTube content safety: allowed educational channels
-const EDUCATIONAL_CHANNELS = [
-  'khanacademy', 'ncert', 'byjus', 'vedantu', 'toppr', 'unacademy',
-  'physicswallah', 'khan academy india', 'ncert official', 'cbse',
-  'magnet brains', 'learn cbse', 'exam fear', 'studyzone',
+  'porn', 'xxx', 'hardcore porn', 'sex video', 'nude', 'erotic', 'strip tease',
+  'bdsm', 'fetish', 'webcam girl', 'cam girl', 'onlyfans',
 ];
 
 const VIDEO_CATALOG = {
@@ -207,7 +202,8 @@ const VIDEO_CATALOG = {
   },
 };
 
-// Content safety check: scan video title and channel for blocked keywords
+// Content safety check: ONLY block truly adult/pornographic content.
+// Educational content (biology, reproduction, adolescence, etc.) is ALLOWED.
 function isVideoSafe(video) {
   const text = `${video.title} ${video.channel || ''}`.toLowerCase();
   return !BLOCKED_VIDEO_KEYWORDS.some((kw) => text.includes(kw));
