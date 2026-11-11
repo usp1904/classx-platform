@@ -4,6 +4,44 @@
   "lesson": 1,
   "title": "Real Numbers — Complete Learning Module (Learn Maths with Fun)",
   "schemaVersion": "2.0",
+  "source_references": {
+    "arihant": {
+      "book_title": "Arihant All in One Mathematics Class X",
+      "chapter": "Chapter 1: Real Numbers",
+      "page_reference": "pp. 1-45",
+      "topics_covered": ["Euclid's Division Lemma", "Fundamental Theorem of Arithmetic", "Irrational Numbers", "Decimal Expansions"],
+      "reference_type": "textbook_reference"
+    },
+    "rd_sharma": {
+      "book_title": "R.D. Sharma Mathematics Class X",
+      "chapter": "Chapter 1: Real Numbers",
+      "page_reference": "pp. 1-35",
+      "topics_covered": ["Euclid's Division Lemma", "Fundamental Theorem of Arithmetic", "Irrational Numbers"],
+      "reference_type": "reference_book"
+    },
+    "rs_aggarwal": {
+      "book_title": "R.S. Aggarwal Mathematics Class X",
+      "chapter": "Chapter 1: Real Numbers",
+      "page_reference": "pp. 1-30",
+      "topics_covered": ["Euclid's Division Lemma", "Fundamental Theorem of Arithmetic", "Decimal Expansions"],
+      "reference_type": "reference_book"
+    }
+  },
+  "web_references": [
+    {
+      "title": "NCERT Class X Mathematics - Real Numbers",
+      "url": "https://ncert.nic.in/textbook.php",
+      "type": "official_textbook",
+      "description": "Official NCERT textbook for Class X Mathematics - Real Numbers chapter"
+    },
+    {
+      "title": "CBSE Syllabus 2026-27 - Mathematics Class X",
+      "url": "https://cbseacademic.nic.in/",
+      "type": "board_syllabus",
+      "description": "Official CBSE syllabus for Class X Mathematics"
+    }
+  ],
+  "educational_disclaimer": "This content is for educational purposes only. All references to Arihant, R.D. Sharma, and R.S. Aggarwal books are for educational reference. Video content is sourced from YouTube for educational purposes only. No monetary benefit is derived from any third-party content.",
   "outcomes": [
     "Apply Euclid's Division Algorithm to find HCF of any two positive integers",
     "Explain the Fundamental Theorem of Arithmetic and use it to find LCM and HCF",

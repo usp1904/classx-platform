@@ -109,10 +109,10 @@ export function Layout() {
     <div className="app-shell">
       <aside className={`sidebar ${mobileOpen ? 'open' : ''}`} aria-label="Primary navigation">
         <div className="brand-row">
-          <NavLink to="/" className="brand" aria-label="Peak home">
+          <NavLink to="/" className="brand" aria-label="SiriLearnings home">
             <span className="brand-mark"><GraduationCap size={22} /></span>
             <span>
-              <strong className="text-gradient">Peak</strong>
+              <strong className="text-gradient">SiriLearnings</strong>
               <small>Class X Mastery</small>
             </span>
           </NavLink>

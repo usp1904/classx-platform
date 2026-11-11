@@ -497,6 +497,14 @@ export interface LearningAidsData {
   mcqAnswers: any[];
   bibliographyAndEquations: any;
   socialStudiesData: any;
+  // OKF metadata alignment
+  source_references: any;
+  web_references: any;
+  educational_disclaimer: string;
+  okf_version: string;
+  board: string;
+  class: string;
+  academicYear: string;
 }
 export interface LearningAidsIds {
   aidIds: string[];

@@ -80,6 +80,31 @@ const flatten = (value) => {
   return '';
 };
 
+// Semantic chunking: split large text into chunks under 500kB with overlap of 100
+function splitIntoChunks(text, maxChunkSize = 500 * 1024, overlap = 100) {
+  if (!text) return [''];
+  const maxSize = Math.max(maxChunkSize - overlap, 100);
+  const chunks = [];
+  let start = 0;
+  while (start < text.length) {
+    let end = Math.min(start + maxChunkSize, text.length);
+    // Try to break at sentence boundary
+    if (end < text.length) {
+      const lastPeriod = text.lastIndexOf('.', end);
+      const lastNewline = text.lastIndexOf('\n', end);
+      const breakPoint = Math.max(lastPeriod, lastNewline);
+      if (breakPoint > start && breakPoint > start + maxSize / 2) {
+        end = breakPoint + 1;
+      }
+    }
+    chunks.push(text.slice(start, end));
+    start = end - overlap;
+    if (start < 0) start = 0;
+    if (start >= text.length) break;
+  }
+  return chunks.length === 0 ? [''] : chunks;
+}
+
 class HybridIndex {
   constructor() {
     this.chunks = [];
@@ -135,157 +160,227 @@ class HybridIndex {
         };
         const lesson = getLesson(subject.id, chapter.id);
         if (!lesson) {
-          this.add({
-            ...base,
-            id: `${subject.id}:${chapter.id}:syllabus`,
-            type: 'syllabus',
-            title: `${chapter.name} — syllabus map`,
-            text: `${chapter.summary} Topics: ${(chapter.topics || []).map((t) => t.name).join(', ')}. This chapter is mapped to the official CBSE 2026-27 syllabus. Authored lesson pack is being prepared.`,
+          const text = `${chapter.summary} Topics: ${(chapter.topics || []).map((t) => t.name).join(', ')}. This chapter is mapped to the official CBSE 2026-27 syllabus. Authored lesson pack is being prepared.`;
+          const chunks = splitIntoChunks(text, 500 * 1024, 100);
+          chunks.forEach((chunkText, idx) => {
+            this.add({
+              ...base,
+              id: `${subject.id}:${chapter.id}:syllabus${idx > 0 ? `_part${idx}` : ''}`,
+              type: 'syllabus',
+              title: `${chapter.name} — syllabus map${idx > 0 ? ` (part ${idx + 1})` : ''}`,
+              text: chunkText,
+            });
           });
           continue;
         }
-        this.add({
-          ...base,
-          id: `${subject.id}:${chapter.id}:overview`,
-          type: 'overview',
-          title: `${chapter.name} — overview`,
-          text: [
-            lesson.title,
-            (lesson.outcomes || []).join(' '),
-            (lesson.concepts || []).map((c) => c.name || c.title).join(' '),
-            lesson.prerequisite_nodes ? `Prerequisites: ${lesson.prerequisite_nodes.join(', ')}` : '',
-          ].join(' '),
-        });
-        (lesson.concepts || []).forEach((concept, index) => {
+        // Overview chunk
+        const overviewText = [
+          lesson.title,
+          (lesson.outcomes || []).join(' '),
+          (lesson.concepts || []).map((c) => c.name || c.title).join(' '),
+          lesson.prerequisite_nodes ? `Prerequisites: ${lesson.prerequisite_nodes.join(', ')}` : '',
+        ].join(' ');
+        const overviewChunks = splitIntoChunks(overviewText, 500 * 1024, 100);
+        chunks.forEach((chunkText, idx) => {
           this.add({
             ...base,
-            anchor: `concept-${index}`,
-            id: `${subject.id}:${chapter.id}:concept:${index}`,
-            type: 'concept',
-            title: concept.name || concept.title,
-            text: [
-              concept.real_life_application,
-              concept.purpose || concept.explanation,
-              flatten(concept.day_to_day_usage || concept.key_points),
-            ].join(' '),
+            id: `${subject.id}:${chapter.id}:overview${idx > 0 ? `_part${idx}` : ''}`,
+            type: 'overview',
+            title: `${chapter.name} — overview${idx > 0 ? ` (part ${idx + 1})` : ''}`,
+            text: chunkText,
+          });
+        });
+        // Concepts
+        (lesson.concepts || []).forEach((concept, index) => {
+          const text = [
+            concept.real_life_application,
+            concept.purpose || concept.explanation,
+            flatten(concept.day_to_day_usage || concept.key_points),
+          ].join(' ');
+          const chunks = splitIntoChunks(text, 500 * 1024, 100);
+          chunks.forEach((chunkText, idx) => {
+            this.add({
+              ...base,
+              anchor: `concept-${index}${idx > 0 ? `_part${idx}` : ''}`,
+              id: `${subject.id}:${chapter.id}:concept:${index}${idx > 0 ? `_${idx}` : ''}`,
+              type: 'concept',
+              title: concept.name || concept.title,
+              text: chunkText,
+            });
           });
           const key = String(concept.name || concept.title).toLowerCase();
           this.conceptNodes.set(key, { subjectId: subject.id, chapterId: chapter.id, chapterName: chapter.name, label: concept.name || concept.title });
         });
+        // Theorems
         (lesson.theorems || []).forEach((theorem, index) => {
-          this.add({
-            ...base,
-            anchor: `theorem-${index}`,
-            id: `${subject.id}:${chapter.id}:theorem:${index}`,
-            type: 'theorem',
-            title: theorem.name,
-            text: [
-              theorem.statement,
-              theorem.historical_context,
-              theorem.why_proposed,
-              theorem.real_world_utility,
-              theorem.why_students_learn,
-              flatten(theorem.examples),
-            ].join(' '),
-          });
-        });
-        (lesson.worked_examples || []).forEach((example, index) => {
-          this.add({
-            ...base,
-            anchor: `example-${index}`,
-            id: `${subject.id}:${chapter.id}:example:${index}`,
-            type: 'example',
-            title: example.topic || example.title || `Worked example ${index + 1}`,
-            text: [example.problem, flatten(example.board_mode || example.solution), example.answer, example.speed_mode || example.board_tip || example.exam_tip, example.competitive_shortcut].join(' '),
-          });
-        });
-        Object.entries(lesson.exercises || {}).forEach(([groupKey, group]) => {
-          (group.problems || []).forEach((problem, index) => {
+          const text = [
+            theorem.statement,
+            theorem.historical_context,
+            theorem.why_proposed,
+            theorem.real_world_utility,
+            theorem.why_students_learn,
+            flatten(theorem.examples),
+          ].join(' ');
+          const chunks = splitIntoChunks(text, 500 * 1024, 100);
+          chunks.forEach((chunkText, idx) => {
             this.add({
               ...base,
-              anchor: `exercise-${groupKey}`,
-              id: `${subject.id}:${chapter.id}:exercise:${problem.id || index}`,
-              type: 'exercise',
-              title: `${group.title || groupKey} · ${problem.id || index + 1}`,
-              text: [problem.question, flatten(problem.solution), problem.final_answer, problem.book_source].join(' '),
+              anchor: `theorem-${index}${idx > 0 ? `_part${idx}` : ''}`,
+              id: `${subject.id}:${chapter.id}:theorem:${index}${idx > 0 ? `_${idx}` : ''}`,
+              type: 'theorem',
+              title: theorem.name,
+              text: chunkText,
             });
           });
         });
+        // Worked examples
+        (lesson.worked_examples || []).forEach((example, index) => {
+          const text = [
+            example.problem,
+            flatten(example.board_mode || example.solution),
+            example.answer,
+            example.speed_mode || example.board_tip || example.exam_tip,
+            example.competitive_shortcut,
+          ].join(' ');
+          const chunks = splitIntoChunks(text, 500 * 1024, 100);
+          chunks.forEach((chunkText, idx) => {
+            this.add({
+              ...base,
+              anchor: `example-${index}${idx > 0 ? `_part${idx}` : ''}`,
+              id: `${subject.id}:${chapter.id}:example:${index}${idx > 0 ? `_${idx}` : ''}`,
+              type: 'example',
+              title: example.topic || example.title || `Worked example ${index + 1}${idx > 0 ? ` (part ${idx + 1})` : ''}`,
+              text: chunkText,
+            });
+          });
+        });
+        // Exercises
+        Object.entries(lesson.exercises || {}).forEach(([groupKey, group]) => {
+          (group.problems || []).forEach((problem, index) => {
+            const text = [problem.question, flatten(problem.solution), problem.final_answer, problem.book_source].join(' ');
+            const chunks = splitIntoChunks(text, 500 * 1024, 100);
+            chunks.forEach((chunkText, idx) => {
+              this.add({
+                ...base,
+                anchor: `exercise-${groupKey}${idx > 0 ? `_part${idx}` : ''}`,
+                id: `${subject.id}:${chapter.id}:exercise:${problem.id || index}${idx > 0 ? `_${idx}` : ''}`,
+                type: 'exercise',
+                title: `${group.title || groupKey} · ${problem.id || index + 1}${idx > 0 ? ` (part ${idx + 1})` : ''}`,
+                text: chunkText,
+              });
+            });
+          });
+        });
+        // Quizzes
         Object.entries(lesson.quizzes || {}).forEach(([difficulty, list]) => {
           if (!Array.isArray(list)) return;
           list.forEach((quiz, index) => {
-            this.add({
-              ...base,
-              anchor: `practice-${difficulty}`,
-              id: `${subject.id}:${chapter.id}:quiz:${difficulty}:${quiz.id || index}`,
-              type: 'quiz',
-              title: `${difficulty} practice · ${chapter.name}`,
-              text: [quiz.question, flatten(quiz.options), flatten(quiz.explanation)].join(' '),
+            const text = [quiz.question, flatten(quiz.options), flatten(quiz.explanation)].join(' ');
+            const chunks = splitIntoChunks(text, 500 * 1024, 100);
+            chunks.forEach((chunkText, idx) => {
+              this.add({
+                ...base,
+                anchor: `practice-${difficulty}${idx > 0 ? `_part${idx}` : ''}`,
+                id: `${subject.id}:${chapter.id}:quiz:${difficulty}:${quiz.id || index}${idx > 0 ? `_${idx}` : ''}`,
+                type: 'quiz',
+                title: `${difficulty} practice · ${chapter.name}${idx > 0 ? ` (part ${idx + 1})` : ''}`,
+                text: chunkText,
+              });
             });
           });
         });
+        // Misconceptions
         (lesson.common_misconceptions || []).forEach((item, index) => {
-          this.add({
-            ...base,
-            anchor: `misconception-${index}`,
-            id: `${subject.id}:${chapter.id}:misconception:${index}`,
-            type: 'misconception',
-            title: 'Common misconception',
-            text: flatten(item),
+          const text = flatten(item);
+          const chunks = splitIntoChunks(text, 500 * 1024, 100);
+          chunks.forEach((chunkText, idx) => {
+            this.add({
+              ...base,
+              anchor: `misconception-${index}${idx > 0 ? `_part${idx}` : ''}`,
+              id: `${subject.id}:${chapter.id}:misconception:${index}${idx > 0 ? `_${idx}` : ''}`,
+              type: 'misconception',
+              title: 'Common misconception',
+              text: chunkText,
+            });
           });
         });
+        // Mind maps
         const branches = lesson.mind_maps?.branches || [];
         branches.forEach((branch, index) => {
-          this.add({
-            ...base,
-            anchor: `mindmap-${index}`,
-            id: `${subject.id}:${chapter.id}:mindmap:${index}`,
-            type: 'mindmap',
-            title: lesson.mind_maps.title || 'Mind map',
-            text: [branch.concept, flatten(branch.sub_nodes), branch.connections].join(' '),
+          const text = [branch.concept, flatten(branch.sub_nodes), branch.connections].join(' ');
+          const chunks = splitIntoChunks(text, 500 * 1024, 100);
+          chunks.forEach((chunkText, idx) => {
+            this.add({
+              ...base,
+              anchor: `mindmap-${index}${idx > 0 ? `_part${idx}` : ''}`,
+              id: `${subject.id}:${chapter.id}:mindmap:${index}${idx > 0 ? `_${idx}` : ''}`,
+              type: 'mindmap',
+              title: lesson.mind_maps.title || 'Mind map',
+              text: chunkText,
+            });
           });
         });
+        // Flowcharts
         (lesson.flowcharts || []).forEach((flow, index) => {
-          this.add({
-            ...base,
-            anchor: `flow-${index}`,
-            id: `${subject.id}:${chapter.id}:flow:${index}`,
-            type: 'flowchart',
-            title: flow.title,
-            text: flatten(flow.steps),
+          const text = flatten(flow.steps);
+          const chunks = splitIntoChunks(text, 500 * 1024, 100);
+          chunks.forEach((chunkText, idx) => {
+            this.add({
+              ...base,
+              anchor: `flow-${index}${idx > 0 ? `_part${idx}` : ''}`,
+              id: `${subject.id}:${chapter.id}:flow:${index}${idx > 0 ? `_${idx}` : ''}`,
+              type: 'flowchart',
+              title: flow.title,
+              text: chunkText,
+            });
           });
         });
+        // Visualizations
         (lesson.visualizations || []).forEach((visual, index) => {
           const props = visual.visualizationProperties || {};
-          this.add({
-            ...base,
-            anchor: `visual-${index}`,
-            id: `${subject.id}:${chapter.id}:visual:${index}`,
-            type: 'visual',
-            title: props.title || `Visual ${index + 1}`,
-            text: [props.title, props.type, flatten(props.markers), flatten(props.bars), flatten(props.labels), visual.syllabusSource].join(' '),
+          const text = [props.title, props.type, flatten(props.markers), flatten(props.bars), flatten(props.labels), visual.syllabusSource].join(' ');
+          const chunks = splitIntoChunks(text, 500 * 1024, 100);
+          chunks.forEach((chunkText, idx) => {
+            this.add({
+              ...base,
+              anchor: `visual-${index}${idx > 0 ? `_part${idx}` : ''}`,
+              id: `${subject.id}:${chapter.id}:visual:${index}${idx > 0 ? `_${idx}` : ''}`,
+              type: 'visual',
+              title: props.title || `Visual ${index + 1}`,
+              text: chunkText,
+            });
           });
         });
+        // Shortcuts
         (lesson.vedic_math_shortcuts || []).forEach((shortcut, index) => {
-          this.add({
-            ...base,
-            anchor: `shortcut-${index}`,
-            id: `${subject.id}:${chapter.id}:shortcut:${index}`,
-            type: 'shortcut',
-            title: shortcut.name || shortcut.title || 'Speed shortcut',
-            text: flatten(shortcut),
+          const text = flatten(shortcut);
+          const chunks = splitIntoChunks(text, 500 * 1024, 100);
+          chunks.forEach((chunkText, idx) => {
+            this.add({
+              ...base,
+              anchor: `shortcut-${index}${idx > 0 ? `_part${idx}` : ''}`,
+              id: `${subject.id}:${chapter.id}:shortcut:${index}${idx > 0 ? `_${idx}` : ''}`,
+              type: 'shortcut',
+              title: shortcut.name || shortcut.title || 'Speed shortcut',
+              text: chunkText,
+            });
           });
         });
+        // Concept maps
         if (lesson.concept_maps?.nodes) {
           for (const node of lesson.concept_maps.nodes) {
             const edges = (lesson.concept_maps.edges || []).filter(([a, b]) => a === node.id || b === node.id);
-            this.add({
-              ...base,
-              anchor: 'concept-map',
-              id: `${subject.id}:${chapter.id}:conceptmap:${node.id}`,
-              type: 'conceptmap',
-              title: `${node.label} — concept map`,
-              text: `${node.label} ${node.group || ''} ${edges.map((e) => e.join(' ')).join(' ')}`,
+            const text = `${node.label} ${node.group || ''} ${edges.map((e) => e.join(' ')).join(' ')}`;
+            const chunks = splitIntoChunks(text, 500 * 1024, 100);
+            chunks.forEach((chunkText, idx) => {
+              this.add({
+                ...base,
+                anchor: `concept-map${idx > 0 ? `_part${idx}` : ''}`,
+                id: `${subject.id}:${chapter.id}:conceptmap:${node.id}${idx > 0 ? `_${idx}` : ''}`,
+                type: 'conceptmap',
+                title: `${node.label} — concept map`,
+                text: chunkText,
+              });
             });
           }
         }

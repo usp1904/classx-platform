@@ -385,6 +385,11 @@ export function buildLearningAids(subjectId, chapterId) {
   const visualizations = (lesson && lesson.visualizations) || [];
   const chapterStats = chapter ? chapter.stats : {};
 
+  // ---- Source References (Arihant, RD Sharma, RS Aggarwal) ----
+  const source_references = lesson?.source_references || {};
+  const web_references = lesson?.web_references || [];
+  const educational_disclaimer = lesson?.educational_disclaimer || 'This content is for educational purposes only.';
+
   // ---- TL;DR ----
   const tldr = firstNonEmpty(
     lesson && lesson.outcomes && lesson.outcomes[0],
@@ -626,10 +631,18 @@ export function buildLearningAids(subjectId, chapterId) {
     conceptconnections,
     learningpath,
     quizme,
+    // Subject-specific additions
     scienceExperiments,
     mcqAnswers,
     bibliographyAndEquations,
     socialStudiesData,
+    // Source references and metadata
+    source_references,
+    okf_version: 'OKF-v1',
+    board: 'CBSE',
+    class: 'X',
+    academicYear: '2026-27',
+    educational_disclaimer,
   };
 
   const aids = [];
