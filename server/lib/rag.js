@@ -88,7 +88,6 @@ function splitIntoChunks(text, maxChunkSize = 500 * 1024, overlap = 100) {
   let start = 0;
   while (start < text.length) {
     let end = Math.min(start + maxChunkSize, text.length);
-    // Try to break at sentence boundary
     if (end < text.length) {
       const lastPeriod = text.lastIndexOf('.', end);
       const lastNewline = text.lastIndexOf('\n', end);
@@ -146,6 +145,23 @@ class HybridIndex {
     }
   }
 
+  addChunkedItems(base, chapterId, items, type, titleFn, textFn) {
+    items.forEach((item, index) => {
+      const text = textFn(item);
+      const chunks = splitIntoChunks(text, 500 * 1024, 100);
+      chunks.forEach((chunkText, idx) => {
+        this.add({
+          ...base,
+          anchor: `${type}-${index}${idx > 0 ? `_part${idx}` : ''}`,
+          id: `${base.subjectId}:${chapterId}:${type}:${index}${idx > 0 ? `_${idx}` : ''}`,
+          type,
+          title: titleFn(item, index, idx > 0 ? idx + 1 : undefined),
+          text: chunkText,
+        });
+      });
+    });
+  }
+
   build() {
     for (const subject of subjects) {
       for (const chapter of subject.chapters) {
@@ -174,40 +190,20 @@ class HybridIndex {
           continue;
         }
         // Overview chunk
-        const overviewText = [
-          lesson.title,
-          (lesson.outcomes || []).join(' '),
-          (lesson.concepts || []).map((c) => c.name || c.title).join(' '),
-          lesson.prerequisite_nodes ? `Prerequisites: ${lesson.prerequisite_nodes.join(', ')}` : '',
-        ].join(' ');
-        const overviewChunks = splitIntoChunks(overviewText, 500 * 1024, 100);
-        chunks.forEach((chunkText, idx) => {
-          this.add({
-            ...base,
-            id: `${subject.id}:${chapter.id}:overview${idx > 0 ? `_part${idx}` : ''}`,
-            type: 'overview',
-            title: `${chapter.name} — overview${idx > 0 ? ` (part ${idx + 1})` : ''}`,
-            text: chunkText,
-          });
-        });
+        this.addChunkedItems(base, chapter.id, [lesson], 'overview',
+          (lesson) => lesson.title,
+          (lesson) => [
+            lesson.title,
+            (lesson.outcomes || []).join(' '),
+            (lesson.concepts || []).map((c) => c.name || c.title).join(' '),
+            lesson.prerequisite_nodes ? `Prerequisites: ${lesson.prerequisite_nodes.join(', ')}` : '',
+          ].join(' '));
         // Concepts
-        (lesson.concepts || []).forEach((concept, index) => {
-          const text = [
-            concept.real_life_application,
-            concept.purpose || concept.explanation,
-            flatten(concept.day_to_day_usage || concept.key_points),
-          ].join(' ');
-          const chunks = splitIntoChunks(text, 500 * 1024, 100);
-          chunks.forEach((chunkText, idx) => {
-            this.add({
-              ...base,
-              anchor: `concept-${index}${idx > 0 ? `_part${idx}` : ''}`,
-              id: `${subject.id}:${chapter.id}:concept:${index}${idx > 0 ? `_${idx}` : ''}`,
-              type: 'concept',
-              title: concept.name || concept.title,
-              text: chunkText,
-            });
-          });
+        this.addChunkedItems(base, chapter.id, lesson.concepts || [], 'concept',
+          (c) => c.name || c.title,
+          (c) => [c.real_life_application, c.purpose || c.explanation, flatten(c.day_to_day_usage || c.key_points)].join(' '));
+        const concepts = lesson.concepts || [];
+        concepts.forEach((concept) => {
           const key = String(concept.name || concept.title).toLowerCase();
           this.conceptNodes.set(key, { subjectId: subject.id, chapterId: chapter.id, chapterName: chapter.name, label: concept.name || concept.title });
         });
@@ -262,7 +258,7 @@ class HybridIndex {
             chunks.forEach((chunkText, idx) => {
               this.add({
                 ...base,
-                anchor: `exercise-${groupKey}${idx > 0 ? `_part${idx}` : ''}`,
+                anchor: `exercise-${groupKey}`,
                 id: `${subject.id}:${chapter.id}:exercise:${problem.id || index}${idx > 0 ? `_${idx}` : ''}`,
                 type: 'exercise',
                 title: `${group.title || groupKey} · ${problem.id || index + 1}${idx > 0 ? ` (part ${idx + 1})` : ''}`,
@@ -489,7 +485,7 @@ class HybridIndex {
     const qTokens = new Set(tokens);
     const hintedTypes = TYPE_HINTS.filter((hint) => hint.re.test(phrase)).flatMap((hint) => hint.types);
     const queryNorm = phrase.replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
-    for (let id = 0; id < this.chunks.length; id += 1) {
+    for (let id = 0; id < this.chunks.length; i += 1) {
       const chunk = this.chunks[id];
       let bonus = 0;
       if (queryNorm && chunk.title.toLowerCase().includes(queryNorm)) bonus += 0.14;
