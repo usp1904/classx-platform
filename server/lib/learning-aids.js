@@ -11,7 +11,7 @@ const AID_IDS = [
   'storymethodwithmemoryhooks', 'conceptconnections', 'learningpath', 'quizme',
 ];
 
-const AID_LABELS = {
+export const AID_LABELS = {
   tldr: 'TL;DR',
   keyideas: 'Key Ideas',
   bigpicture: 'Big Picture',

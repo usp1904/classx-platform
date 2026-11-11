@@ -11,7 +11,7 @@ import { curriculum, subjects, getChapter, getLesson, getPlan, getStats, getSubj
 import { getConceptGraph, getIndex, ragStats } from './lib/rag.js';
 import { getMultimodelRag } from './lib/rag-multimodel.js';
 import { okfIndex } from './lib/okf-metadata.js';
-import { getLearningAids, getAllAidIds, getAidLabel, getAidGroups, getAidGroup } from './lib/learning-aids.js';
+import { getLearningAids, getAllAidIds, getAidLabel, getAidGroups, getAidGroup, AID_LABELS } from './lib/learning-aids.js';
 import { askTutor } from './lib/ai.js';
 import { startPractice, startExam, submitSession, getExamKey } from './lib/practice.js';
 import { getProgress, updateProgress, awardXp, getBadges, getLeaderboard, getParentView, linkParent } from './lib/progress.js';
