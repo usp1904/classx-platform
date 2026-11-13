@@ -17,7 +17,8 @@ import { okfIndex } from './lib/okf-metadata.js';
 import { getLearningAids, getAllAidIds, getAidLabel, getAidGroups, getAidGroup, AID_LABELS } from './lib/learning-aids.js';
 import { askTutor } from './lib/ai.js';
 import { startPractice, startExam, submitSession, getExamKey } from './lib/practice.js';
-import { getProgressAsync as getProgress, updateProgressAsync as updateProgress, awardXpAsync as awardXp, getBadges, getLeaderboard, getParentView, linkParent } from './lib/progress.js';import { initRedis, isRedisReady, sessionSet, sessionGet, sessionDel, sessionExists } from './lib/session-store.js';
+import { getProgressAsync as getProgress, updateProgressAsync as updateProgress, awardXpAsync as awardXp, getBadges, getLeaderboard, getParentView, linkParent } from './lib/progress.js';
+import { initRedis, isRedisReady, sessionSet, sessionGet, sessionDel, sessionExists } from './lib/session-store.js';
 import { QdrantClient } from '@qdrant/js-client-rest';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -56,7 +57,15 @@ async function bootstrap() {
 }
 bootstrap();
 
-const RedisStoreInstance = RedisStore(session);
+// connect-redis v7+ default export is a class (not a factory function).
+// Instantiate directly with client + session in options.
+let RedisStoreInstance;
+try {
+  RedisStoreInstance = new RedisStore({ client: redisClient, session });
+} catch (err) {
+  console.warn('[connect-redis] init with session failed, retrying without session:', err.message);
+  RedisStoreInstance = new RedisStore({ client: redisClient });
+}
 
 app.use(compression());
 app.use(cors({ origin: process.env.CORS_ORIGIN || true, credentials: true }));
@@ -64,7 +73,7 @@ app.use(express.json({ limit: '2mb' }));
 
 // ---- Redis-backed session middleware ----
 app.use(session({
-  store: new RedisStoreInstance({ client: redisClient }),
+  store: RedisStoreInstance,
   secret: process.env.SESSION_SECRET || 'classx-dev-secret-change-me',
   resave: false,
   saveUninitialized: false,
