@@ -50,13 +50,18 @@ try {
   console.warn('[qdrant] not available:', err.message);
 }
 
-// Session store: Redis if available, else in-memory fallback
+// Session store: Redis if available, else built-in MemoryStore fallback
 let RedisStoreInstance;
 try {
-  RedisStoreInstance = new RedisStore({ client: redisClient, session });
+  if (redisClient && redisReady) {
+    RedisStoreInstance = new RedisStore({ client: redisClient, session });
+  } else {
+    throw new Error('redis not ready');
+  }
 } catch (err) {
-  console.warn('[connect-redis] init failed:', err.message);
-  RedisStoreInstance = new RedisStore({ client: redisClient });
+  console.warn('[connect-redis] using MemoryStore fallback:', err.message);
+  const MemoryStore = session.MemoryStore;
+  RedisStoreInstance = new MemoryStore();
 }
 
 app.use(compression());
