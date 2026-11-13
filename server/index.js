@@ -27,20 +27,27 @@ const PORT = Number(process.env.PORT || 8787);
 const startedAt = Date.now();
 const searchCache = new Map();
 
-// ---- Redis client (optional - non-blocking) ----
+// ============================================================================
+// SERVICES COMMENTED OUT — NOT AVAILABLE ON RENDER FREE TIER
+// Uncomment when Redis/Qdrant services are provisioned on Render
+// ============================================================================
+
+// ---- Redis client (commented out — Redis not available on Render free) ----
+/*
 let redisClient = null;
 let redisReady = false;
 try {
   redisClient = createRedisClient({ url: process.env.REDIS_URL || 'redis://127.0.0.1:6379' });
   redisClient.on('error', (err) => { redisReady = false; console.error('[redis] error:', err.message); });
   redisClient.on('connect', () => { redisReady = true; });
-  // Non-blocking: start server immediately, Redis connects in background
   redisClient.connect().then(() => { redisReady = true; }).catch(() => { redisReady = false; });
 } catch (err) {
   console.warn('[redis] not available:', err.message);
 }
+*/
 
-// ---- Qdrant client (optional - non-blocking) ----
+// ---- Qdrant client (commented out — Qdrant not available on Render free) ----
+/*
 let qdrant = null;
 export function getQdrant() { return qdrant; }
 try {
@@ -49,22 +56,20 @@ try {
 } catch (err) {
   console.warn('[qdrant] not available:', err.message);
 }
+*/
 
-// Session store: Redis if available, else built-in MemoryStore fallback
+// Session store: MemoryStore only (Redis commented out)
 let RedisStoreInstance;
 try {
-  if (redisClient && redisReady) {
-    RedisStoreInstance = new RedisStore({ client: redisClient, session });
-  } else {
-    throw new Error('redis not ready');
-  }
-} catch (err) {
-  console.warn('[connect-redis] using MemoryStore fallback:', err.message);
   const MemoryStore = session.MemoryStore;
   RedisStoreInstance = new MemoryStore();
+  console.warn('[session] using MemoryStore — sessions not persistent across restarts');
+} catch (err) {
+  console.error('[session] MemoryStore init failed:', err.message);
 }
+// End of commented-out services block
+// ============================================================================
 
-app.use(compression());
 app.use(cors({ origin: process.env.CORS_ORIGIN || true, credentials: true }));
 app.use(express.json({ limit: '2mb' }));
 
@@ -82,6 +87,10 @@ app.use(session({
   },
   name: 'classx_sid',
 }));
+
+app.use(compression());
+app.use(cors({ origin: process.env.CORS_ORIGIN || true, credentials: true }));
+app.use(express.json({ limit: '2mb' }));
 
 // ---- Auth routes ----
 app.post('/api/auth/register', async (req, res) => {
