@@ -3,7 +3,7 @@ services:
     name: classx-platform
     env: docker
     region: singapore
-    branch: main
+    branch: Siri_ClassX-Platform
     rootDir: .
     dockerfilePath: Dockerfile
     healthCheckPath: /api/health
