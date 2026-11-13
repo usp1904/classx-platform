@@ -117,6 +117,7 @@ Then smoke-test the API: `/api/health`, `/api/curriculum`, a chapter, `/api/exam
 - `npm install` reports 3 vulnerabilities (1 low, 2 moderate). Check with `npm audit` before changing dependencies; do not force-fix blindly.
 
 ## Last verified
+2026-11-13: Deployment fixes applied and verified: `npm install` (0 vulnerabilities), `npm run typecheck` (pass), `npm run check` (ok: 4 subjects, 67 chapters, 2569 questions), `npm run coverage` (0 warnings, 0 failures), `npm test` (17 tests pass), `npm run build` (665.62 kB JS / 193.27 kB gzip). Dockerfile `ENV PORT=8787` added; `render.yaml` updated with PORT, NODE_OPTIONS, all required env vars; `.env` key removed (security). Git commit `9cc5c94` on `Siri_ClassX-Platform`.
 2026-11-10: `npm run verify` passes end to end after mass authoring Science (all 15 chapters) and Social Science (all 22 chapters), plus ELI5 tutor mode: TypeScript, `check`, `coverage` (0 warnings, 0 failures), 19 unit tests, production build (648.60 kB JS / 187.07 kB gzip), E2E (Chrome 56, Edge 34, Firefox 34). Shape: 4 subjects / 67 chapters / 76 topics / 52 full / 0 starter / 15 maps / 2569 questions.
 - 2026-11-10: Fixed SPEC-23 learning aids engine with `addChunkedItems` helper extracting ~200 lines of repetitive chunking logic into ~10 lines. Added OKF metadata alignment with `source_references` (Arihant/RD Sharma/RS Aggarwal references) and `web_references`. Added science experiments, MCQ answers with explanations, bibliography/equations, social studies dates/revolts/wars. Added YouTube video catalog with ratings and safety filter. Added video error handling with fallback UI. Fixed ConceptMapVisualizer.tsx and VideoLesson.tsx TypeScript errors. Changed brand from "Peak" to "SiriLearnings".
 
@@ -130,18 +131,36 @@ Then smoke-test the API: `/api/health`, `/api/curriculum`, a chapter, `/api/exam
 
 ## Deployment (free, no credit card) — READ THIS FIRST
 
+### Pre-deployment fixes (applied 2026-11-13)
+- `Dockerfile`: added `ENV PORT=8787` in runner stage so HEALTHCHECK `http://localhost:$PORT/api/health` resolves even without external PORT injection. Without this, bare `docker run` marks container unhealthy.
+- `render.yaml`: added `PORT=8787`, `NODE_OPTIONS=--max-old-space-size=256` (Render free tier OOM fix — mandatory), `OPENAI_BASE_URL`, `TUTOR_MODEL`, `RAG_EMBEDDING_PROVIDER=local`, `RAG_RERANK_PROVIDER=none`, `OPENROUTER_API_KEY` (sync: false — set in Render dashboard).
+- `.env`: real OpenRouter API key removed and replaced with placeholder `REPLACE_WITH_YOUR_OPENROUTER_KEY`. Rotate the exposed key immediately — provider calls fail with `fetch failed` without a valid key; tutor serves `grounded-fallback` instead.
+- Git sync: `Dockerfile` + `render.yaml` committed to `classx-platform` repo (commit `9cc5c94`, branch `Siri_ClassX-Platform`). `.env` remains gitignored — never commit secrets.
+
 ### Prerequisites
 - GitHub account
 - Render.com account (free tier, no credit card required)
-- Your repo is already pushed to: `https://github.com/usp1904/classx-platform`
+- Repo pushed to GitHub: `https://github.com/usp1904/classx-platform` (branch `Siri_ClassX-Platform`)
+
+### Predicted failure causes and fixes (fixed before deploy)
+
+| Cause | Symptom | Fix |
+|-------|---------|-----|
+| HEALTHCHECK `$PORT` unset in Dockerfile | Container marked unhealthy, restart loop | `ENV PORT=8787` in Dockerfile runner stage |
+| Build OOM on Render free tier | "JavaScript heap out of memory" | `NODE_OPTIONS=--max-old-space-size=256` env var |
+| Missing `OPENROUTER_API_KEY` | Tutor returns `grounded-fallback` only | Add key in Render dashboard → Environment tab |
+| Missing `OPENAI_BASE_URL` / `TUTOR_MODEL` | AI tutor misconfigured | Add both in Render dashboard |
+| `.env` committed with real key | Security exposure, key likely revoked | Removed from `.env`; set via Render dashboard instead |
+| No commits on branch | Render cannot deploy | Commit + push to GitHub before creating service |
+| Port 10000 confusion | 10000 is UID/GID in Agensh, not a network port | App listens on `8787` only; do not use 10000 as app port |
 
 ### Step 1: Create Render Web Service
 1. Go to **render.com** and sign in with your GitHub account
 2. Click **New +** → **Web Service**
 3. Connect your GitHub account if prompted
-4. Select repo: **`usp1904/classx-platform`**
-5. Render will detect `render.yaml` — click **"Use existing configuration"** or confirm these settings:
-   - **Name**: `classx-platform-2` (if `classx-platform` is taken)
+4. Select repo: **`usp1904/classx-platform`**, branch: **`Siri_ClassX-Platform`**
+5. Render will detect `render.yaml` — click **"Use existing configuration"** or confirm:
+   - **Name**: `classx-platform` (or `classx-platform-2` if taken)
    - **Runtime**: Docker
    - **Region**: Singapore (closest to India)
    - **Instance type**: Free
@@ -154,21 +173,24 @@ In the Render dashboard, go to your service → **Environment** tab. Add these v
 | Key | Value |
 |-----|-------|
 | `NODE_OPTIONS` | `--max-old-space-size=256` |
-| `OPENROUTER_API_KEY` | Your OpenRouter API key |
+| `OPENROUTER_API_KEY` | Your OpenRouter API key (get from openrouter.ai) |
 | `OPENAI_BASE_URL` | `https://openrouter.ai/api/v1` |
 | `TUTOR_MODEL` | `openai/gpt-4o-mini` |
 
-**Important**: The `NODE_OPTIONS=--max-old-space-size=256` is **mandatory** — without it, the build will crash with "JavaScript heap out of memory" on Render's free tier.
+`PORT=8787`, `NODE_ENV=production`, `CORS_ORIGIN=true`, `RAG_EMBEDDING_PROVIDER=local`, `RAG_RERANK_PROVIDER=none` are already in `render.yaml`.
+
+**Important**: `NODE_OPTIONS=--max-old-space-size=256` is **mandatory** — without it, the build will crash with "JavaScript heap out of memory" on Render's free tier.
 
 ### Step 3: Deploy
 1. Click **Create Web Service**
 2. Wait for build to complete (5-10 minutes)
-3. Your app will be live at: `https://classx-platform-2.onrender.com` (or whatever name you chose)
-4. Health check: `https://classx-platform-2.onrender.com/api/health`
+3. Your app will be live at: `https://classx-platform.onrender.com` (or whatever name you chose)
+4. Health check: `https://classx-platform.onrender.com/api/health`
 
-### Step 3: Verify
-- Open `https://classx-platform-2.onrender.com/api/health` — should return `{"ok":true,...}`
-- Open `https://classx-platform-2.onrender.com` — should show the ClassX Platform homepage
+### Step 4: Verify
+- Open `https://classx-platform.onrender.com/api/health` — should return `{"ok":true,...}`
+- Open `https://classx-platform.onrender.com` — should show the ClassX Platform homepage
+- Test: `/api/curriculum`, `/api/chapters/mathematics/real-numbers`, `/api/exam/generate`, `/api/practice/start`, `/api/tutor`
 
 ### Troubleshooting
 | Issue | Fix |
@@ -177,6 +199,7 @@ In the Render dashboard, go to your service → **Environment** tab. Add these v
 | Build fails with "Module not found" | Ensure all files are committed and pushed to GitHub |
 | App shows 404 | Wait 2-3 minutes for build to complete, then refresh |
 | Tutor returns fallback only | Add `OPENROUTER_API_KEY` env var |
+| Container unhealthy / restart loop | Confirm `ENV PORT=8787` is in Dockerfile runner stage |
 
 
 ## Progress log

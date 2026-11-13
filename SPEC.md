@@ -201,6 +201,15 @@ npm run e2e
 - TutorMode opens the grounded AI tutor for the chapter
 - LearningPath shows the chapter's position in the subject curriculum
 
+## SPEC-24 Deployment and port configuration
+
+- API binds to `PORT` env var, default `8787` (`server/index.js:21`). Port `10000` is never a network port — it appears only as UID/GID in Agensh compose. Do not configure the app to listen on `10000`.
+- Dockerfile runner stage sets `ENV PORT=8787` so HEALTHCHECK `http://localhost:$PORT/api/health` resolves without external injection.
+- `render.yaml` declares `PORT=8787`, `NODE_OPTIONS=--max-old-space-size=256` (mandatory on Render free tier to prevent build OOM), `NODE_ENV=production`, `CORS_ORIGIN=true`, `OPENAI_BASE_URL`, `TUTOR_MODEL`, `RAG_EMBEDDING_PROVIDER=local`, `RAG_RERANK_PROVIDER=none`.
+- `OPENROUTER_API_KEY` is `sync: false` in `render.yaml` — must be set in the Render dashboard Environment tab. Without it, tutor serves `grounded-fallback` (not a regression).
+- `.env` must never contain real API keys; it is gitignored. Rotate any exposed key immediately.
+- Git repo must have at least one commit on the deploy branch before Render can create the service.
+
 ## Known accepted decisions
 
 - The ~622 kB JS chunk is accepted. Gzip is ~182 kB, the app is local-first, and code splitting is not needed. Do not revisit unless the chunk grows past 750 kB or load time regresses.
