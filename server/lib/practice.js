@@ -1,8 +1,8 @@
 import crypto from 'node:crypto';
 import { getChapter, getQuestions, subjects } from './data.js';
+import { sessionSet, sessionGet, sessionDel, sessionExists, isRedisReady } from './session-store.js';
 
-const sessions = new Map();
-const TTL = 3 * 60 * 60 * 1000;
+const TTL_SECONDS = 3 * 60 * 60; // 3 hours
 
 const shuffle = (list) => {
   const copy = [...list];
@@ -26,9 +26,8 @@ const publicQuestion = (q) => ({
   source: q.source,
 });
 
-function prune() {
-  const now = Date.now();
-  for (const [id, session] of sessions) if (now - session.createdAt > TTL) sessions.delete(id);
+function sessionKey(id) {
+  return `classx:sess:${id}`;
 }
 
 export function startPractice({ subjectId = 'mathematics', chapterId, count = 12, difficulty }) {
@@ -45,8 +44,13 @@ export function startPractice({ subjectId = 'mathematics', chapterId, count = 12
     chapterId: chapterId || null,
     durationMin: Math.max(5, Math.ceil(picked.length * 1.2)),
   };
-  sessions.set(session.id, session);
-  prune();
+  if (isRedisReady()) {
+    sessionSet(session.id, session, TTL_SECONDS).catch(() => {});
+  } else {
+    // in-memory fallback (single-instance dev)
+    global.__practiceSessions ||= new Map();
+    global.__practiceSessions.set(session.id, session);
+  }
   return {
     ok: true,
     sessionId: session.id,
@@ -89,8 +93,12 @@ export function startExam({ subjectId = 'mathematics', chapterIds, counts } = {}
     totalMarks,
     subjectName: subject?.name || subjectId,
   };
-  sessions.set(session.id, session);
-  prune();
+  if (isRedisReady()) {
+    sessionSet(session.id, session, TTL_SECONDS).catch(() => {});
+  } else {
+    global.__practiceSessions ||= new Map();
+    global.__practiceSessions.set(session.id, session);
+  }
   return {
     ok: true,
     paperId: session.id,
@@ -109,8 +117,23 @@ export function startExam({ subjectId = 'mathematics', chapterIds, counts } = {}
   };
 }
 
-export function submitSession({ sessionId, answers = {}, subjectiveMarks = {} }) {
-  const session = sessions.get(sessionId);
+async function getSessionFromStore(sessionId) {
+  if (isRedisReady()) {
+    return await sessionGet(sessionId);
+  }
+  return global.__practiceSessions?.get(sessionId) || null;
+}
+
+async function delSessionFromStore(sessionId) {
+  if (isRedisReady()) {
+    await sessionDel(sessionId);
+  } else {
+    global.__practiceSessions?.delete(sessionId);
+  }
+}
+
+export async function submitSession({ sessionId, answers = {}, subjectiveMarks = {} }) {
+  const session = await getSessionFromStore(sessionId);
   if (!session) return { ok: false, error: 'Session expired. Start a new test.' };
   const flat = session.kind === 'practice' ? session.questions : session.sections.flatMap((s) => s.questions);
   let score = 0;
@@ -162,7 +185,7 @@ export function submitSession({ sessionId, answers = {}, subjectiveMarks = {} })
       source: q.source,
     };
   });
-  sessions.delete(sessionId);
+  await delSessionFromStore(sessionId);
   return {
     ok: true,
     sessionId,
@@ -177,8 +200,8 @@ export function submitSession({ sessionId, answers = {}, subjectiveMarks = {} })
   };
 }
 
-export function getExamKey(paperId) {
-  const session = sessions.get(paperId);
+export async function getExamKey(paperId) {
+  const session = await getSessionFromStore(paperId);
   if (!session || session.kind !== 'exam') return { ok: false, error: 'Paper expired. Generate a new mock test.' };
   return {
     ok: true,
@@ -199,6 +222,6 @@ export function getExamKey(paperId) {
   };
 }
 
-export function getSession(sessionId) {
-  return sessions.get(sessionId) || null;
+export async function getSession(sessionId) {
+  return await getSessionFromStore(sessionId);
 }

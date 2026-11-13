@@ -202,6 +202,83 @@ In the Render dashboard, go to your service → **Environment** tab. Add these v
 | Container unhealthy / restart loop | Confirm `ENV PORT=8787` is in Dockerfile runner stage |
 
 
+## Alternative: Self-hosted VPS (recommended for 500-1000 concurrent users)
+
+Render free tier spins down after inactivity and has 512MB RAM — not suitable for 500+ students. For a trustworthy, always-on platform serving Class X students, self-host on a VPS.
+
+### Recommended stack
+- **VPS**: Hostinger KVM 2+ (2 vCPU, 4GB RAM, Ubuntu 22.04) — ~$6-12/month
+- **Domain**: .in or .com via Hostinger/Namecheap — ~$10-15/year
+- **SSL**: Let's Encrypt (Certbot) — free
+- **Process manager**: PM2 (cluster/fork mode, auto-restart)
+- **Reverse proxy**: Nginx (gzip, static caching, rate limiting, SSL termination)
+
+### Production config files (added)
+- `nginx.production.conf` — Nginx reverse proxy, rate limiting, gzip, static asset caching, SPA fallback
+- `ecosystem.config.js` — PM2 process manager (fork mode, single instance keeps in-memory sessions intact)
+- `.env.production` — Production environment template (copy to `.env`, replace placeholders)
+
+### VPS deployment steps
+1. Buy VPS (Ubuntu 22.04), note IP + root password.
+2. Buy domain, point A record to VPS IP.
+3. SSH into VPS and install stack:
+   ```bash
+   apt update && apt install -y nodejs npm nginx git curl
+   curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && apt install -y nodejs
+   npm install -g pm2
+   ```
+4. Clone repo:
+   ```bash
+   git clone -b Siri_ClassX-Platform https://github.com/usp1904/classx-platform.git /var/www/classx
+   cd /var/www/classx
+   npm ci --production
+   npm run build
+   ```
+5. Copy env:
+   ```bash
+   cp .env.production .env
+   # Edit .env: set OPENROUTER_API_KEY, CORS_ORIGIN=https://yourdomain.com
+   mkdir -p logs
+   ```
+6. Start with PM2:
+   ```bash
+   pm2 start ecosystem.config.js --env production
+   pm2 save && pm2 startup
+   ```
+7. Install Nginx config:
+   ```bash
+   cp nginx.production.conf /etc/nginx/sites-available/classx
+   ln -s /etc/nginx/sites-available/classx /etc/nginx/sites-enabled/classx
+   # Edit: replace yourdomain.com with your actual domain
+   nginx -t && systemctl reload nginx
+   ```
+8. SSL with Certbot:
+   ```bash
+   apt install -y certbot python3-certbot-nginx
+   certbot --nginx -d yourdomain.com -d www.yourdomain.com
+   ```
+9. Firewall:
+   ```bash
+   ufw allow 22/tcp; ufw allow 80/tcp; ufw allow 443/tcp; ufw enable
+   ```
+10. Verify: `https://yourdomain.com/api/health` returns `{"ok":true,...}`
+
+### Why fork mode (single instance)
+The app uses in-memory session stores (`server/lib/practice.js`, `server/lib/progress.js`). PM2 cluster mode splits memory across workers, breaking sessions. Fork mode (single process) keeps all session data in one place. A single Node process with Nginx in front easily handles 500-1000 concurrent read-heavy users (lessons, videos, questions are read-mostly). For write-heavy bursts (exam submissions), add Redis session store later and switch `instances` to `'max'`.
+
+### Trust factors for students
+- HTTPS padlock (Let's Encrypt)
+- Custom domain (not `onrender.com` or `netlify.app`)
+- No ads (free tiers inject ads; VPS doesn't)
+- Privacy policy page (required if collecting any user data)
+- pm2 auto-restart on crash; Nginx buffers slow clients
+
+### Latency expectations (4GB VPS, 500-1000 users)
+- Static assets served by Nginx (gzipped, 1-year cache)
+- Curriculum/questions loaded in memory at startup (no DB reads per request)
+- API responses are JSON from memory
+- Tutor calls OpenRouter (add rate limiting if needed)
+- Expect <200ms API response time under normal load; monitor with `pm2 monit`
 ## Progress log
 - 2026-10-26: baseline verified (15 full Maths, 8 starters, 44 maps, 778 questions).
 - 2026-10-28: authored Science `Chemical Reactions and Equations` as a full lesson; refreshed graph; full `npm run verify` green. Shape now 16 full / 7 starter / 44 maps / 831 questions.

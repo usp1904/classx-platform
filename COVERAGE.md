@@ -1,6 +1,6 @@
 # ClassX Coverage Audit
 
-Generated 2026-11-13T13:03:06.360Z from `server/data`.
+Generated 2026-11-13T13:55:33.395Z from `server/data`.
 
 Legend: `[x]` authored and verified by structure, `[~]` starter notes, `[ ]` syllabus map only. A tick is structural coverage, not a claim of pedagogical completeness.
 

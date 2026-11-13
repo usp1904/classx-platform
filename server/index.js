@@ -7,6 +7,9 @@ import cors from 'cors';
 import path from 'node:path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
+import session from 'express-session';
+import RedisStore from 'connect-redis';
+import { createClient as createRedisClient } from 'redis';
 import { curriculum, subjects, getChapter, getLesson, getPlan, getStats, getSubject, sources, getQuestions } from './lib/data.js';
 import { getConceptGraph, getIndex, ragStats } from './lib/rag.js';
 import { getMultimodelRag } from './lib/rag-multimodel.js';
@@ -14,7 +17,8 @@ import { okfIndex } from './lib/okf-metadata.js';
 import { getLearningAids, getAllAidIds, getAidLabel, getAidGroups, getAidGroup, AID_LABELS } from './lib/learning-aids.js';
 import { askTutor } from './lib/ai.js';
 import { startPractice, startExam, submitSession, getExamKey } from './lib/practice.js';
-import { getProgress, updateProgress, awardXp, getBadges, getLeaderboard, getParentView, linkParent } from './lib/progress.js';
+import { getProgressAsync as getProgress, updateProgressAsync as updateProgress, awardXpAsync as awardXp, getBadges, getLeaderboard, getParentView, linkParent } from './lib/progress.js';import { initRedis, isRedisReady, sessionSet, sessionGet, sessionDel, sessionExists } from './lib/session-store.js';
+import { QdrantClient } from '@qdrant/js-client-rest';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -22,9 +26,104 @@ const PORT = Number(process.env.PORT || 8787);
 const startedAt = Date.now();
 const searchCache = new Map();
 
+// ---- Redis client ----
+const redisClient = createRedisClient({ url: process.env.REDIS_URL || 'redis://127.0.0.1:6379' });
+redisClient.on('error', (err) => console.error('[redis] client error:', err.message));
+
+// ---- Qdrant client (vector search upgrade) ----
+let qdrant = null;
+export function getQdrant() { return qdrant; }
+
+async function initQdrant() {
+  try {
+    qdrant = new QdrantClient({ url: process.env.QDRANT_URL || 'http://127.0.0.1:6333' });
+    await qdrant.getCollections();
+    console.log('[qdrant] connected');
+  } catch (err) {
+    console.warn('[qdrant] not available, falling back to local RAG:', err.message);
+    qdrant = null;
+  }
+}
+
+async function bootstrap() {
+  try {
+    await redisClient.connect();
+    console.log('[redis] connected');
+  } catch (err) {
+    console.warn('[redis] not available, sessions will use in-memory fallback:', err.message);
+  }
+  await initQdrant();
+}
+bootstrap();
+
+const RedisStoreInstance = RedisStore(session);
+
 app.use(compression());
-app.use(cors({ origin: process.env.CORS_ORIGIN || true }));
+app.use(cors({ origin: process.env.CORS_ORIGIN || true, credentials: true }));
 app.use(express.json({ limit: '2mb' }));
+
+// ---- Redis-backed session middleware ----
+app.use(session({
+  store: new RedisStoreInstance({ client: redisClient }),
+  secret: process.env.SESSION_SECRET || 'classx-dev-secret-change-me',
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: process.env.NODE_ENV === 'production' ? 'lax' : false,
+    maxAge: 3 * 60 * 60 * 1000, // 3 hours
+  },
+  name: 'classx_sid',
+}));
+
+// ---- Auth routes ----
+app.post('/api/auth/register', async (req, res) => {
+  const { userId, password } = req.body || {};
+  if (!userId || !password) return res.status(400).json({ ok: false, error: 'userId and password required' });
+  if (userId.length < 3 || userId.length > 32) return res.status(400).json({ ok: false, error: 'userId must be 3-32 chars' });
+  if (password.length < 6) return res.status(400).json({ ok: false, error: 'password must be 6+ chars' });
+
+  const existing = await sessionGet(`user:${userId}`);
+  if (existing) return res.status(409).json({ ok: false, error: 'userId already exists' });
+
+  const { hashSync } = await import('bcryptjs');
+  const hash = hashSync(password, 10);
+  await sessionSet(`user:${userId}`, { userId, passwordHash: hash, createdAt: Date.now() }, 0); // no TTL for user accounts
+  req.session.userId = userId;
+  req.session.save(() => res.json({ ok: true, userId }));
+});
+
+app.post('/api/auth/login', async (req, res) => {
+  const { userId, password } = req.body || {};
+  if (!userId || !password) return res.status(400).json({ ok: false, error: 'userId and password required' });
+
+  const user = await sessionGet(`user:${userId}`);
+  if (!user) return res.status(401).json({ ok: false, error: 'Invalid credentials' });
+
+  const { compareSync } = await import('bcryptjs');
+  if (!compareSync(password, user.passwordHash)) return res.status(401).json({ ok: false, error: 'Invalid credentials' });
+
+  req.session.userId = userId;
+  req.session.save(() => res.json({ ok: true, userId }));
+});
+
+app.post('/api/auth/logout', (req, res) => {
+  const userId = req.session.userId;
+  req.session.destroy(() => {
+    res.clearCookie('classx_sid');
+    res.json({ ok: true, loggedOut: true, userId });
+  });
+});
+
+app.get('/api/auth/me', (req, res) => {
+  res.json({ ok: true, userId: req.session.userId || null, authenticated: Boolean(req.session.userId) });
+});
+
+function requireAuth(req, res, next) {
+  if (!req.session.userId) return res.status(401).json({ ok: false, error: 'Login required' });
+  next();
+}
 
 app.use('/api', (req, res, next) => {
   res.setHeader('Cache-Control', 'no-store');
@@ -114,14 +213,14 @@ app.post('/api/tutor', async (req, res) => {
   }
 });
 
-app.post('/api/practice/start', (req, res) => {
+app.post('/api/practice/start', requireAuth, (req, res) => {
   const { subjectId, chapterId, count, difficulty } = req.body || {};
   const result = startPractice({ subjectId: subjectId || 'mathematics', chapterId, count, difficulty });
   if (!result.ok) return res.status(422).json(result);
   res.json(result);
 });
 
-app.post('/api/practice/submit', (req, res) => {
+app.post('/api/practice/submit', requireAuth, (req, res) => {
   const { sessionId, answers } = req.body || {};
   if (!sessionId) return res.status(400).json({ ok: false, error: 'sessionId is required' });
   const result = submitSession({ sessionId, answers: answers || {} });
@@ -129,20 +228,20 @@ app.post('/api/practice/submit', (req, res) => {
   res.json(result);
 });
 
-app.post('/api/exam/generate', (req, res) => {
+app.post('/api/exam/generate', requireAuth, (req, res) => {
   const { subjectId, chapterIds, counts } = req.body || {};
   const result = startExam({ subjectId: subjectId || 'mathematics', chapterIds, counts });
   if (!result.ok) return res.status(422).json(result);
   res.json(result);
 });
 
-app.get('/api/exam/:paperId/key', (req, res) => {
+app.get('/api/exam/:paperId/key', requireAuth, (req, res) => {
   const result = getExamKey(String(req.params.paperId || ''));
   if (!result.ok) return res.status(410).json(result);
   res.json(result);
 });
 
-app.post('/api/exam/submit', (req, res) => {
+app.post('/api/exam/submit', requireAuth, (req, res) => {
   const { paperId, answers, subjectiveMarks } = req.body || {};
   if (!paperId) return res.status(400).json({ ok: false, error: 'paperId is required' });
   const result = submitSession({ sessionId: paperId, answers: answers || {}, subjectiveMarks: subjectiveMarks || {} });
@@ -154,13 +253,16 @@ app.get('/api/plan', (req, res) => {
   res.json({ ok: true, plan: getPlan() });
 });
 
-app.get('/api/progress', (req, res) => {
-  res.json({ ok: true, progress: getProgress(String(req.query.userId || 'guest')) });
+app.get('/api/progress', requireAuth, async (req, res) => {
+  const progress = await getProgress(String(req.query.userId || req.session.userId));
+  res.json({ ok: true, progress });
 });
 
-app.put('/api/progress', (req, res) => {
+app.put('/api/progress', requireAuth, async (req, res) => {
   const { userId, ...patch } = req.body || {};
-  res.json({ ok: true, progress: updateProgress(String(userId || 'guest'), patch) });
+  const targetUserId = userId || req.session.userId;
+  const progress = await updateProgress(targetUserId, patch);
+  res.json({ ok: true, progress });
 });
 
 app.get('/api/sources', (req, res) => {
@@ -222,7 +324,7 @@ app.get('/api/video/:subjectId/:chapterId', (req, res) => {
   res.json({ ok: true, video, chapterId, subjectId, gating: { requiredMastery: 80 } });
 });
 
-app.post('/api/video/progress', (req, res) => {
+app.post('/api/video/progress', requireAuth, (req, res) => {
   const { userId, chapterId, positionSec, durationSec, bookmarked } = req.body || {};
   if (!userId || !chapterId) return res.status(400).json({ ok: false, error: 'userId and chapterId required' });
   updateProgress(userId, { videoProgress: { ...(getProgress(userId).videoProgress || {}), [chapterId]: { positionSec, durationSec, bookmarked: Boolean(bookmarked), updatedAt: new Date().toISOString() } } });
@@ -232,10 +334,10 @@ app.post('/api/video/progress', (req, res) => {
 /* ---- SPEC-18 Gamification (BYJU's clone) ---- */
 app.get('/api/gamify/badges', (req, res) => res.json({ ok: true, badges: getBadges() }));
 app.get('/api/gamify/leaderboard', (req, res) => res.json({ ok: true, leaderboard: getLeaderboard(Number(req.query.limit) || 20) }));
-app.post('/api/gamify/xp', (req, res) => {
+app.post('/api/gamify/xp', requireAuth, async (req, res) => {
   const { userId = 'guest', amount, reason } = req.body || {};
   if (!amount) return res.status(400).json({ ok: false, error: 'amount required' });
-  const result = awardXp(userId, Number(amount), reason || 'activity');
+  const result = await awardXp(userId, Number(amount), reason || 'activity');
   res.json({ ok: true, ...result });
 });
 
@@ -244,7 +346,7 @@ app.get('/api/parent/:childUserId', (req, res) => res.json({ ok: true, parent: g
 app.post('/api/parent/link', (req, res) => res.json({ ok: true, ...linkParent(req.body.childUserId) }));
 
 /* ---- SPEC-17 Adaptive practice (BYJU's clone) - difficulty hint ---- */
-app.post('/api/practice/adaptive', (req, res) => {
+app.post('/api/practice/adaptive', requireAuth, (req, res) => {
   const { subjectId = 'mathematics', chapterId, count = 10, currentDifficulty = 'simple', accuracy } = req.body || {};
   let difficulty = currentDifficulty;
   if (accuracy !== undefined) {

@@ -1,0 +1,2 @@
+npm notice run classx-platform@1.0.0 npx
+npm notice run lt --port 8787 --subdomain classx-companion-siri
