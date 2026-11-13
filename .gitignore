@@ -10,6 +10,9 @@ build/
 server/public/
 artifacts/
 *.log
+.tunnel*
+tunnel.err
+tunnel.log
 .DS_Store
 .web/
 graphify-out/
