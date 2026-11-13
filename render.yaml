@@ -15,7 +15,7 @@ services:
       - key: CORS_ORIGIN
         value: true
       - key: NODE_OPTIONS
-        value: --max-old-space-size=256
+        value: --max-old-space-size=512
       - key: OPENAI_BASE_URL
         value: https://openrouter.ai/api/v1
       - key: TUTOR_MODEL

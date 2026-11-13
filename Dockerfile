@@ -2,6 +2,7 @@
 
 FROM node:26-alpine AS builder
 WORKDIR /app
+ENV NODE_OPTIONS=--max-old-space-size=256
 COPY package.json package-lock.json ./
 RUN npm ci
 ENV VITE_API_BASE_URL=/api
@@ -12,6 +13,7 @@ FROM node:26-alpine AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=8787
+ENV NODE_OPTIONS=--max-old-space-size=256
 COPY --from=builder /app/server ./server
 COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/node_modules ./node_modules
