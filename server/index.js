@@ -457,7 +457,7 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500).json({ ok: false, error: err.message || 'Internal server error' });
 });
 
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, () => {
   console.log(`ClassX Platform API on http://0.0.0.0:${PORT}`);
   console.log(`curriculum: ${getStats().chapters} chapters · ${getStats().questions} questions · ${ragStats().chunks} RAG chunks`);
 });
