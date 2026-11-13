@@ -210,6 +210,19 @@ npm run e2e
 - `.env` must never contain real API keys; it is gitignored. Rotate any exposed key immediately.
 - Git repo must have at least one commit on the deploy branch before Render can create the service.
 
+## SPEC-25 Session and authentication
+
+- Users can register with `userId` (3-32 chars) and password (6+ chars); passwords stored bcryptjs-hashed in Redis.
+- Users can log in; session cookie `classx_sid` is httpOnly, same-site lax, 3-hour max age.
+- `GET /api/auth/me` returns authenticated userId or null.
+- `POST /api/auth/logout` destroys session and clears cookie.
+- Protected routes require authentication: practice start/submit, exam generate/key/submit, progress read/write, gamify/xp, video progress.
+- Sessions stored in Redis with TTL (3 hours for practice/exam, persistent for user accounts). Survive server restarts.
+- Without Redis, falls back to in-memory Map (single instance only; sessions lost on restart).
+- Progress data (XP, streak, badges, completed chapters) stored in Redis keyed by `classx:progress:<userId>`.
+- Without Redis, falls back to file-based `server/data/progress.json`.
+- Rate limiting on auth endpoints via Nginx `limit_req_zone`.
+
 ## Known accepted decisions
 
 - The ~622 kB JS chunk is accepted. Gzip is ~182 kB, the app is local-first, and code splitting is not needed. Do not revisit unless the chunk grows past 750 kB or load time regresses.

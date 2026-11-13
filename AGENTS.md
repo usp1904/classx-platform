@@ -279,6 +279,50 @@ The app uses in-memory session stores (`server/lib/practice.js`, `server/lib/pro
 - API responses are JSON from memory
 - Tutor calls OpenRouter (add rate limiting if needed)
 - Expect <200ms API response time under normal load; monitor with `pm2 monit`
+
+## Session/Auth Architecture — Redis + Qdrant + HTMX
+
+### Redis (session store)
+Replaced in-memory `Map` sessions (`server/lib/practice.js`) and file-based progress (`server/lib/progress.json`) with Redis-backed store (`server/lib/session-store.js`).
+- Sessions survive server restarts (critical for 500-1000 concurrent students)
+- Scales across PM2 cluster instances (switch `instances` to `'max'` when ready)
+- TTL-based auto-expiry: 3 hours for practice/exam sessions, persistent for user accounts
+- Files: `server/lib/session-store.js`, `server/lib/qdrant-client.js`
+
+### Auth routes (added to `server/index.js`)
+- `POST /api/auth/register` — bcryptjs-hashed password registration
+- `POST /api/auth/login` — session-based login, sets `classx_sid` cookie
+- `POST /api/auth/logout` — session destroy + cookie clear
+- `GET /api/auth/me` — current session user
+- `requireAuth` middleware protects: practice, exam, progress, gamify/xp, video/progress
+
+### Qdrant (vector search upgrade)
+- `server/lib/qdrant-client.js` — QdrantClient for semantic search over chapter content
+- Falls back to local lexical RAG when Qdrant unavailable
+- Configure `QDRANT_URL` env var (default `http://127.0.0.1:6333`)
+
+### HTMX (frontend interactivity)
+- HTMX 2.0.0 loaded via CDN in `web/index.html`
+- Enables partial page updates for login, progress, and session actions without full React re-renders
+
+### New env vars (`.env.production`)
+| Key | Example |
+|-----|---------|
+| `SESSION_SECRET` | random 32+ char string |
+| `REDIS_URL` | `redis://127.0.0.1:6379` |
+| `QDRANT_URL` | `http://127.0.0.1:6333` |
+| `CORS_ORIGIN` | `https://yourdomain.com` |
+
+### Install Redis + Qdrant on VPS
+```bash
+# Redis
+apt install -y redis-server
+systemctl enable --now redis-server
+
+# Qdrant (Docker)
+docker run -p 6333:6333 qdrant/qdrant:v1.12
+```
+
 ## Progress log
 - 2026-10-26: baseline verified (15 full Maths, 8 starters, 44 maps, 778 questions).
 - 2026-10-28: authored Science `Chemical Reactions and Equations` as a full lesson; refreshed graph; full `npm run verify` green. Shape now 16 full / 7 starter / 44 maps / 831 questions.
