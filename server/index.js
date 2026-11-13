@@ -27,43 +27,35 @@ const PORT = Number(process.env.PORT || 8787);
 const startedAt = Date.now();
 const searchCache = new Map();
 
-// ---- Redis client ----
-const redisClient = createRedisClient({ url: process.env.REDIS_URL || 'redis://127.0.0.1:6379' });
-redisClient.on('error', (err) => console.error('[redis] client error:', err.message));
+// ---- Redis client (optional - non-blocking) ----
+let redisClient = null;
+let redisReady = false;
+try {
+  redisClient = createRedisClient({ url: process.env.REDIS_URL || 'redis://127.0.0.1:6379' });
+  redisClient.on('error', (err) => { redisReady = false; console.error('[redis] error:', err.message); });
+  redisClient.on('connect', () => { redisReady = true; });
+  // Non-blocking: start server immediately, Redis connects in background
+  redisClient.connect().then(() => { redisReady = true; }).catch(() => { redisReady = false; });
+} catch (err) {
+  console.warn('[redis] not available:', err.message);
+}
 
-// ---- Qdrant client (vector search upgrade) ----
+// ---- Qdrant client (optional - non-blocking) ----
 let qdrant = null;
 export function getQdrant() { return qdrant; }
-
-async function initQdrant() {
-  try {
-    qdrant = new QdrantClient({ url: process.env.QDRANT_URL || 'http://127.0.0.1:6333' });
-    await qdrant.getCollections();
-    console.log('[qdrant] connected');
-  } catch (err) {
-    console.warn('[qdrant] not available, falling back to local RAG:', err.message);
-    qdrant = null;
-  }
+try {
+  qdrant = new QdrantClient({ url: process.env.QDRANT_URL || 'http://127.0.0.1:6333' });
+  qdrant.getCollections().then(() => { console.log('[qdrant] connected'); }).catch(() => { qdrant = null; console.warn('[qdrant] not available, falling back to local RAG'); });
+} catch (err) {
+  console.warn('[qdrant] not available:', err.message);
 }
 
-async function bootstrap() {
-  try {
-    await redisClient.connect();
-    console.log('[redis] connected');
-  } catch (err) {
-    console.warn('[redis] not available, sessions will use in-memory fallback:', err.message);
-  }
-  await initQdrant();
-}
-bootstrap();
-
-// connect-redis v7+ default export is a class (not a factory function).
-// Instantiate directly with client + session in options.
+// Session store: Redis if available, else in-memory fallback
 let RedisStoreInstance;
 try {
   RedisStoreInstance = new RedisStore({ client: redisClient, session });
 } catch (err) {
-  console.warn('[connect-redis] init with session failed, retrying without session:', err.message);
+  console.warn('[connect-redis] init failed:', err.message);
   RedisStoreInstance = new RedisStore({ client: redisClient });
 }
 
@@ -71,7 +63,7 @@ app.use(compression());
 app.use(cors({ origin: process.env.CORS_ORIGIN || true, credentials: true }));
 app.use(express.json({ limit: '2mb' }));
 
-// ---- Redis-backed session middleware ----
+// ---- Session middleware ----
 app.use(session({
   store: RedisStoreInstance,
   secret: process.env.SESSION_SECRET || 'classx-dev-secret-change-me',
