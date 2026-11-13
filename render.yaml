@@ -10,6 +10,20 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
+      - key: PORT
+        value: 8787
       - key: CORS_ORIGIN
         value: true
+      - key: NODE_OPTIONS
+        value: --max-old-space-size=256
+      - key: OPENAI_BASE_URL
+        value: https://openrouter.ai/api/v1
+      - key: TUTOR_MODEL
+        value: openai/gpt-4o-mini
+      - key: RAG_EMBEDDING_PROVIDER
+        value: local
+      - key: RAG_RERANK_PROVIDER
+        value: none
+      - key: OPENROUTER_API_KEY
+        sync: false
 
