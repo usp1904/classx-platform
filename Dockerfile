@@ -2,7 +2,7 @@
 
 FROM node:26-alpine AS builder
 WORKDIR /app
-ENV NODE_OPTIONS=--max-old-space-size=256
+ENV NODE_OPTIONS=--max-old-space-size=512
 COPY package.json package-lock.json ./
 RUN npm ci
 ENV VITE_API_BASE_URL=/api
