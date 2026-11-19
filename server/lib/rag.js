@@ -43,12 +43,42 @@ const hash = (str) => {
   return h >>> 0;
 };
 
+const hash3 = (str, i) => {
+  let h = 2166136261;
+  h ^= str.charCodeAt(i);
+  h = Math.imul(h, 16777619);
+  h ^= str.charCodeAt(i + 1);
+  h = Math.imul(h, 16777619);
+  h ^= str.charCodeAt(i + 2);
+  return Math.imul(h, 16777619) >>> 0;
+};
+
+// Token -> embedding contribution is identical for every chunk that contains it.
+// Cache it once so indexing 4k chunks does not re-hash the same vocabulary.
+// Prototype-less objects beat Maps on this hot path (profiled).
+const TOKEN_VEC_CACHE = Object.create(null);
+function tokenVec(token) {
+  const cached = TOKEN_VEC_CACHE[token];
+  if (cached !== undefined) return cached;
+  const single = hash(token) % 512;
+  const trigrams = [];
+  for (let i = 0; i < token.length - 2; i += 1) trigrams.push(hash3(token, i) % 512);
+  const entry = { single, trigrams };
+  TOKEN_VEC_CACHE[token] = entry;
+  return entry;
+}
+
+const STEM_CACHE = Object.create(null);
 const stem = (word) => {
-  if (word.length > 4 && word.endsWith('ies')) return `${word.slice(0, -3)}y`;
-  if (word.length > 4 && word.endsWith('ing')) return word.slice(0, -3);
-  if (word.length > 3 && word.endsWith('es')) return word.slice(0, -2);
-  if (word.length > 3 && word.endsWith('s')) return word.slice(0, -1);
-  return word;
+  const cached = STEM_CACHE[word];
+  if (cached !== undefined) return cached;
+  let out = word;
+  if (word.length > 4 && word.endsWith('ies')) out = `${word.slice(0, -3)}y`;
+  else if (word.length > 4 && word.endsWith('ing')) out = word.slice(0, -3);
+  else if (word.length > 3 && word.endsWith('es')) out = word.slice(0, -2);
+  else if (word.length > 3 && word.endsWith('s')) out = word.slice(0, -1);
+  STEM_CACHE[word] = out;
+  return out;
 };
 
 export function tokenize(text) {
@@ -97,9 +127,8 @@ function splitIntoChunks(text, maxChunkSize = 500 * 1024, overlap = 100) {
       }
     }
     chunks.push(text.slice(start, end));
-    start = end - overlap;
-    if (start < 0) start = 0;
-    if (start >= text.length) break;
+    if (end >= text.length) break;
+    start = Math.max(0, end - overlap);
   }
   return chunks.length === 0 ? [''] : chunks;
 }
@@ -114,34 +143,55 @@ class HybridIndex {
     this.avgdl = 0;
     this.graph = new Map();
     this.conceptNodes = new Map();
+    this.built = false;
+  }
+
+  // Building the index over ~4k chunks costs seconds. Defer it until the first
+  // retrieval request so server boot and /api/health stay fast.
+  ensureBuilt() {
+    if (this.built) return this;
+    this.built = true;
     this.build();
+    return this;
   }
 
   add(chunk) {
     const tokens = tokenize(`${chunk.title} ${chunk.text} ${chunk.chapterName} ${chunk.subjectName}`);
-    const tf = new Map();
-    for (const token of tokens) tf.set(token, (tf.get(token) || 0) + 1);
+    const tf = Object.create(null);
+    for (let k = 0; k < tokens.length; k += 1) {
+      const token = tokens[k];
+      tf[token] = (tf[token] || 0) + 1;
+    }
     const id = this.chunks.length;
     const vector = new Float32Array(512);
-    for (const [token, count] of tf) {
-      const weight = 1 + Math.log(count);
-      vector[hash(token) % 512] += weight;
-      for (let i = 0; i < token.length - 2; i += 1) {
-        vector[hash(token.slice(i, i + 3)) % 512] += weight * 0.35;
-      }
+    const unique = Object.keys(tf);
+    for (let k = 0; k < unique.length; k += 1) {
+      const token = unique[k];
+      const weight = 1 + Math.log(tf[token]);
+      const tv = tokenVec(token);
+      vector[tv.single] += weight;
+      const tri = tv.trigrams;
+      for (let i = 0; i < tri.length; i += 1) vector[tri[i]] += weight * 0.35;
     }
     let norm = 0;
-    for (const v of vector) norm += v * v;
+    for (let i = 0; i < vector.length; i += 1) norm += vector[i] * vector[i];
     norm = Math.sqrt(norm) || 1;
     for (let i = 0; i < vector.length; i += 1) vector[i] /= norm;
     chunk.tokens = tokens;
+    chunk.tf = tf;
     chunk.len = tokens.length;
     chunk.vector = vector;
     this.chunks.push(chunk);
-    for (const token of new Set(tokens)) {
+    // tf keys are already unique per chunk, so one pass builds df + postings.
+    for (let k = 0; k < unique.length; k += 1) {
+      const token = unique[k];
       this.df.set(token, (this.df.get(token) || 0) + 1);
-      if (!this.postings.has(token)) this.postings.set(token, []);
-      this.postings.get(token).push(id);
+      let list = this.postings.get(token);
+      if (list === undefined) {
+        list = [];
+        this.postings.set(token, list);
+      }
+      list.push(id);
     }
   }
 
@@ -420,7 +470,7 @@ class HybridIndex {
       for (const id of ids) {
         const chunk = this.chunks[id];
         if (filter && !filter(chunk)) continue;
-        const tf = chunk.tokens.reduce((count, t) => count + (t === token ? 1 : 0), 0);
+        const tf = chunk.tf[token] || 0;
         scores[id] += idf * ((tf * (k1 + 1)) / (tf + k1 * (1 - b + (b * chunk.len) / this.avgdl)));
       }
     }
@@ -430,12 +480,12 @@ class HybridIndex {
   vectorSearch(tokens) {
     const query = new Float32Array(512);
     for (const token of tokens) {
-      const weight = 1;
-      query[hash(token) % 512] += weight;
-      for (let i = 0; i < token.length - 2; i += 1) query[hash(token.slice(i, i + 3)) % 512] += weight * 0.35;
+      const tv = tokenVec(token);
+      query[tv.single] += 1;
+      for (const idx of tv.trigrams) query[idx] += 0.35;
     }
     let norm = 0;
-    for (const v of query) norm += v * v;
+    for (let i = 0; i < query.length; i += 1) norm += query[i] * query[i];
     norm = Math.sqrt(norm) || 1;
     for (let i = 0; i < query.length; i += 1) query[i] /= norm;
     const scores = new Float32Array(this.chunks.length);
@@ -458,6 +508,7 @@ class HybridIndex {
   }
 
   search(query, options = {}) {
+    this.ensureBuilt();
     const started = performance.now();
     const normalized = String(query || '').trim();
     if (!normalized) return { results: [], diagnostics: { query: '', strategy: 'none', latencyMs: 0 } };
@@ -485,7 +536,7 @@ class HybridIndex {
     const qTokens = new Set(tokens);
     const hintedTypes = TYPE_HINTS.filter((hint) => hint.re.test(phrase)).flatMap((hint) => hint.types);
     const queryNorm = phrase.replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
-    for (let id = 0; id < this.chunks.length; i += 1) {
+    for (let id = 0; id < this.chunks.length; id += 1) {
       const chunk = this.chunks[id];
       let bonus = 0;
       if (queryNorm && chunk.title.toLowerCase().includes(queryNorm)) bonus += 0.14;
@@ -546,6 +597,7 @@ class HybridIndex {
   }
 
   similar(chapterId, limit = 5) {
+    this.ensureBuilt();
     const anchor = this.chunks.find((c) => c.chapterId === chapterId && c.type === 'concept') || this.chunks.find((c) => c.chapterId === chapterId);
     if (!anchor) return [];
     const scores = new Float32Array(this.chunks.length);
@@ -602,7 +654,11 @@ export function getSourcePdfs() {
   return sources;
 }
 
-export const ragStats = () => ({
-  chunks: getIndex().chunks.length,
-  graphNodes: getIndex().conceptNodes.size,
-});
+export const ragStats = () => {
+  const index = getIndex();
+  return {
+    indexed: index.built,
+    chunks: index.built ? index.chunks.length : 0,
+    graphNodes: index.built ? index.conceptNodes.size : 0,
+  };
+};

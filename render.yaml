@@ -3,15 +3,19 @@ services:
     name: classx-platform
     env: docker
     region: singapore
-    branch: Siri_ClassX-Platform
+    branch: main
     rootDir: .
     dockerfilePath: Dockerfile
     healthCheckPath: /api/health
     envVars:
       - key: NODE_ENV
         value: production
+      - key: COOKIE_SECURE
+        value: true
       - key: CORS_ORIGIN
         value: true
+      - key: SESSION_SECRET
+        generateValue: true
       - key: NODE_OPTIONS
         value: --max-old-space-size=512
       - key: OPENAI_BASE_URL
@@ -24,4 +28,3 @@ services:
         value: none
       - key: OPENROUTER_API_KEY
         sync: false
-

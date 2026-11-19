@@ -25,6 +25,8 @@ npm test                 # node:test suite
 npm run coverage         # regenerate COVERAGE.md from data
 npm run coverage:strict  # fail if any authored chapter lacks depth
 npm run e2e              # build + Chrome/Edge/Firefox smoke matrix
+npm run verify:sync      # local vs Git vs runtime-contract drift check
+npm run verify:sync:docker  # + docker build, run, /api/health commit match
 npm run verify           # typecheck + check + coverage + tests + e2e
 ```
 Launchers: double-click `Start-ClassX.cmd`, or run `Start-ClassX.cmd --all` to open every installed browser. The launcher starts the API, waits for health, opens the app, and logs to `%TEMP%\classx-platform.log`.
@@ -97,10 +99,25 @@ CSS is split because one large write failed:
 - [x] Chapter rail rendered RD Sharma / RS Aggarwal topic objects as `[object Object]`; `topicNames()` now unwraps names. E2E checks every chapter tab for stringified objects.
 - [x] Bundle size: ~622 kB JS / ~182 kB gzip accepted. Do not revisit unless it passes 750 kB or load time regresses.
 - [x] TypeScript: `ConceptMap` memo deps, `VisualBlock` max calc, Button `on-dark` variant.
+- [x] RAG index infinite loop: `splitIntoChunks()` re-used `end - overlap` when `end === text.length`. Now breaks when the tail chunk is reached, and `search()` increments `id` (was `i`). Index over 4k chunks builds and tutor tests exit.
+- [x] Practice/exam API was using async session helpers synchronously. `/api/practice/submit`, `/api/exam/:paperId/key`, `/api/exam/submit`, and `/api/video/progress` are now `async` + `await`. Tests updated to await `submitSession`/`getExamKey`.
+- [x] `redis` package import blocked boot for 10-27s on Windows. `session-store.js` now dynamically imports `redis` inside `initRedis()`; Express imports the module without loading Redis or Qdrant clients.
+- [x] Hybrid RAG index no longer builds in the constructor; `ensureBuilt()` defers it to the first `search()`/`similar()` call. `/api/health` reports `rag.indexed=false` until then, keeping boot and health checks fast.
+- [x] Duplicate `cors()` + `express.json()` middleware removed from `server/index.js`.
+
+## Sync contract — local, Git, Docker, Render
+Single join key is the Git commit SHA. `GIT_SHA` is baked into the Docker image, reported by `/api/health` as `commit`, and falls back to `RENDER_GIT_COMMIT` on Render.
+- Run `npm run verify:sync:docker` before every deploy. It fails on dirty tree, ahead/behind upstream, tracked secrets, port/branch/version drift, or an image whose `/api/health.commit` differs from `git rev-parse HEAD`.
+- `render.yaml` deploys branch `main` (must equal the current branch). `Siri_ClassX-Platform` is kept as an identical mirror branch.
+- `COOKIE_SECURE` is explicit: `false` for local Docker over HTTP, `true` for Render/VPS over HTTPS.
+- Code uses `MemoryStore`; `docker-compose.yml` starts only `classx-api` + `nginx` until Redis/Postgres are re-enabled in code.
+- `.env.production` is untracked; `.env.production.example` is the template.
+- Full narrative: `docs/SYNC.md`. Recovery checklist: `INSTRUCTIONS.md`.
 
 ## Verification before calling work done
 ```powershell
 npm run verify
+npm run verify:sync:docker
 ```
 
 Manual equivalent: `npm run typecheck`, `npm run check`, `npm run coverage`, `npm test`, `npm run e2e`.
@@ -117,6 +134,7 @@ Then smoke-test the API: `/api/health`, `/api/curriculum`, a chapter, `/api/exam
 - `npm install` reports 3 vulnerabilities (1 low, 2 moderate). Check with `npm audit` before changing dependencies; do not force-fix blindly.
 
 ## Last verified
+2026-11-19: Sync hardening pass on `main` @ `b59ff2b`. Fixed RAG `splitIntoChunks`/`search` infinite loops (tutor tests previously hung), async practice/exam/video routes, lazy `redis` import (boot ~14s -> ~5s locally), lazy RAG index, duplicate middleware, tracked `.env.production` -> `.env.production.example`, compose/service alignment, `render.yaml` branch `main`, Docker `GIT_SHA` stamp. Added `scripts/sync-verify.mjs`, `npm run verify:sync[:docker]`, `docs/SYNC.md`, `INSTRUCTIONS.md`. `typecheck`, `check`, `coverage`, `npm test` (19/19), `npm run build` green. Docker parity run below.
 2026-11-13: Deployment fixes applied and verified: `npm install` (0 vulnerabilities), `npm run typecheck` (pass), `npm run check` (ok: 4 subjects, 67 chapters, 2569 questions), `npm run coverage` (0 warnings, 0 failures), `npm test` (17 tests pass), `npm run build` (665.62 kB JS / 193.27 kB gzip). Dockerfile `ENV PORT=8787` added; `render.yaml` updated with PORT, NODE_OPTIONS, all required env vars; `.env` key removed (security). Git commit `9cc5c94` on `Siri_ClassX-Platform`.
 2026-11-10: `npm run verify` passes end to end after mass authoring Science (all 15 chapters) and Social Science (all 22 chapters), plus ELI5 tutor mode: TypeScript, `check`, `coverage` (0 warnings, 0 failures), 19 unit tests, production build (648.60 kB JS / 187.07 kB gzip), E2E (Chrome 56, Edge 34, Firefox 34). Shape: 4 subjects / 67 chapters / 76 topics / 52 full / 0 starter / 15 maps / 2569 questions.
 - 2026-11-10: Fixed SPEC-23 learning aids engine with `addChunkedItems` helper extracting ~200 lines of repetitive chunking logic into ~10 lines. Added OKF metadata alignment with `source_references` (Arihant/RD Sharma/RS Aggarwal references) and `web_references`. Added science experiments, MCQ answers with explanations, bibliography/equations, social studies dates/revolts/wars. Added YouTube video catalog with ratings and safety filter. Added video error handling with fallback UI. Fixed ConceptMapVisualizer.tsx and VideoLesson.tsx TypeScript errors. Changed brand from "Peak" to "SiriLearnings".
@@ -131,22 +149,22 @@ Then smoke-test the API: `/api/health`, `/api/curriculum`, a chapter, `/api/exam
 
 ## Deployment (free, no credit card) — READ THIS FIRST
 
-### Pre-deployment fixes (applied 2026-11-13)
-- `Dockerfile`: added `ENV PORT=8787` in runner stage so HEALTHCHECK `http://localhost:$PORT/api/health` resolves even without external PORT injection. Without this, bare `docker run` marks container unhealthy.
-- `render.yaml`: added `PORT=8787`, `NODE_OPTIONS=--max-old-space-size=256` (Render free tier OOM fix — mandatory), `OPENAI_BASE_URL`, `TUTOR_MODEL`, `RAG_EMBEDDING_PROVIDER=local`, `RAG_RERANK_PROVIDER=none`, `OPENROUTER_API_KEY` (sync: false — set in Render dashboard).
-- `.env`: real OpenRouter API key removed and replaced with placeholder `REPLACE_WITH_YOUR_OPENROUTER_KEY`. Rotate the exposed key immediately — provider calls fail with `fetch failed` without a valid key; tutor serves `grounded-fallback` instead.
-- Git sync: `Dockerfile` + `render.yaml` committed to `classx-platform` repo (commit `9cc5c94`, branch `Siri_ClassX-Platform`). `.env` remains gitignored — never commit secrets.
+### Pre-deployment fixes (updated 2026-11-19)
+- `Dockerfile`: does **not** set `PORT` (Render injects its own). HEALTHCHECK falls back to `process.env.PORT || 8787`. Builder prunes dev deps; `ARG/ENV GIT_SHA` stamps the build.
+- `render.yaml`: branch `main`, `COOKIE_SECURE=true`, `SESSION_SECRET` generated, `NODE_OPTIONS=--max-old-space-size=512`, `OPENAI_BASE_URL`, `TUTOR_MODEL`, `RAG_EMBEDDING_PROVIDER=local`, `RAG_RERANK_PROVIDER=none`, `OPENROUTER_API_KEY` (sync: false — set in Render dashboard).
+- `.env.production` is untracked; `.env.production.example` is the template. Never commit real keys.
+- Git sync: `Dockerfile` + `render.yaml` committed to `classx-platform` repo (branch `main`; `Siri_ClassX-Platform` mirrors it).
 
 ### Prerequisites
 - GitHub account
 - Render.com account (free tier, no credit card required)
-- Repo pushed to GitHub: `https://github.com/usp1904/classx-platform` (branch `Siri_ClassX-Platform`)
+- Repo pushed to GitHub: `https://github.com/usp1904/classx-platform` (branch `main`)
 
 ### Predicted failure causes and fixes (fixed before deploy)
 
 | Cause | Symptom | Fix |
 |-------|---------|-----|
-| HEALTHCHECK `$PORT` unset in Dockerfile | Container marked unhealthy, restart loop | `ENV PORT=8787` in Dockerfile runner stage |
+| HEALTHCHECK `$PORT` unset in Dockerfile | Container marked unhealthy, restart loop | HEALTHCHECK already falls back to `process.env.PORT || 8787` |
 | Build OOM on Render free tier | "JavaScript heap out of memory" | `NODE_OPTIONS=--max-old-space-size=256` env var |
 | Missing `OPENROUTER_API_KEY` | Tutor returns `grounded-fallback` only | Add key in Render dashboard → Environment tab |
 | Missing `OPENAI_BASE_URL` / `TUTOR_MODEL` | AI tutor misconfigured | Add both in Render dashboard |
@@ -158,7 +176,7 @@ Then smoke-test the API: `/api/health`, `/api/curriculum`, a chapter, `/api/exam
 1. Go to **render.com** and sign in with your GitHub account
 2. Click **New +** → **Web Service**
 3. Connect your GitHub account if prompted
-4. Select repo: **`usp1904/classx-platform`**, branch: **`Siri_ClassX-Platform`**
+4. Select repo: **`usp1904/classx-platform`**, branch: **`main`**
 5. Render will detect `render.yaml` — click **"Use existing configuration"** or confirm:
    - **Name**: `classx-platform` (or `classx-platform-2` if taken)
    - **Runtime**: Docker
@@ -177,7 +195,7 @@ In the Render dashboard, go to your service → **Environment** tab. Add these v
 | `OPENAI_BASE_URL` | `https://openrouter.ai/api/v1` |
 | `TUTOR_MODEL` | `openai/gpt-4o-mini` |
 
-`PORT=8787`, `NODE_ENV=production`, `CORS_ORIGIN=true`, `RAG_EMBEDDING_PROVIDER=local`, `RAG_RERANK_PROVIDER=none` are already in `render.yaml`.
+`NODE_ENV=production`, `COOKIE_SECURE=true`, `CORS_ORIGIN=true`, `SESSION_SECRET` (auto), `RAG_EMBEDDING_PROVIDER=local`, `RAG_RERANK_PROVIDER=none` are already in `render.yaml`.
 
 **Important**: `NODE_OPTIONS=--max-old-space-size=256` is **mandatory** — without it, the build will crash with "JavaScript heap out of memory" on Render's free tier.
 
@@ -199,7 +217,7 @@ In the Render dashboard, go to your service → **Environment** tab. Add these v
 | Build fails with "Module not found" | Ensure all files are committed and pushed to GitHub |
 | App shows 404 | Wait 2-3 minutes for build to complete, then refresh |
 | Tutor returns fallback only | Add `OPENROUTER_API_KEY` env var |
-| Container unhealthy / restart loop | Confirm `ENV PORT=8787` is in Dockerfile runner stage |
+| Container unhealthy / restart loop | Check `/api/health` locally with `npm run verify:sync:docker`; ensure container gets `PORT` or defaults to 8787 |
 
 
 ## Alternative: Self-hosted VPS (recommended for 500-1000 concurrent users)
@@ -229,7 +247,7 @@ Render free tier spins down after inactivity and has 512MB RAM — not suitable 
    ```
 4. Clone repo:
    ```bash
-   git clone -b Siri_ClassX-Platform https://github.com/usp1904/classx-platform.git /var/www/classx
+   git clone -b main https://github.com/usp1904/classx-platform.git /var/www/classx
    cd /var/www/classx
    npm ci --production
    npm run build

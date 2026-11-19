@@ -8,8 +8,6 @@ import path from 'node:path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import session from 'express-session';
-import RedisStore from 'connect-redis';
-import { createClient as createRedisClient } from 'redis';
 import { curriculum, subjects, getChapter, getLesson, getPlan, getStats, getSubject, sources, getQuestions } from './lib/data.js';
 import { getConceptGraph, getIndex, ragStats } from './lib/rag.js';
 import { getMultimodelRag } from './lib/rag-multimodel.js';
@@ -18,8 +16,7 @@ import { getLearningAids, getAllAidIds, getAidLabel, getAidGroups, getAidGroup, 
 import { askTutor } from './lib/ai.js';
 import { startPractice, startExam, submitSession, getExamKey } from './lib/practice.js';
 import { getProgressAsync as getProgress, updateProgressAsync as updateProgress, awardXpAsync as awardXp, getBadges, getLeaderboard, getParentView, linkParent } from './lib/progress.js';
-import { initRedis, isRedisReady, sessionSet, sessionGet, sessionDel, sessionExists } from './lib/session-store.js';
-import { QdrantClient } from '@qdrant/js-client-rest';
+import { sessionSet, sessionGet } from './lib/session-store.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -73,6 +70,12 @@ try {
 app.use(cors({ origin: process.env.CORS_ORIGIN || true, credentials: true }));
 app.use(express.json({ limit: '2mb' }));
 
+// Cookie security is explicit: HTTPS deployments set COOKIE_SECURE=true.
+// Local Docker (http://localhost) keeps cookies working even with NODE_ENV=production.
+const COOKIE_SECURE = process.env.COOKIE_SECURE
+  ? process.env.COOKIE_SECURE === 'true'
+  : process.env.NODE_ENV === 'production';
+
 // ---- Session middleware ----
 app.use(session({
   store: RedisStoreInstance,
@@ -81,16 +84,14 @@ app.use(session({
   saveUninitialized: false,
   cookie: {
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: process.env.NODE_ENV === 'production' ? 'lax' : false,
+    secure: COOKIE_SECURE,
+    sameSite: COOKIE_SECURE ? 'lax' : false,
     maxAge: 3 * 60 * 60 * 1000, // 3 hours
   },
   name: 'classx_sid',
 }));
 
 app.use(compression());
-app.use(cors({ origin: process.env.CORS_ORIGIN || true, credentials: true }));
-app.use(express.json({ limit: '2mb' }));
 
 // ---- Auth routes ----
 app.post('/api/auth/register', async (req, res) => {
@@ -149,7 +150,8 @@ app.get('/api/health', (req, res) => {
   res.json({
     ok: true,
     service: 'ClassX Platform API',
-    version: '1.0.0',
+    version: process.env.APP_VERSION || '1.0.0',
+    commit: process.env.GIT_SHA || process.env.RENDER_GIT_COMMIT || 'dev',
     uptimeSec: Math.round((Date.now() - startedAt) / 1000),
     curriculum: getStats(),
     rag: ragStats(),
@@ -235,10 +237,10 @@ app.post('/api/practice/start', requireAuth, (req, res) => {
   res.json(result);
 });
 
-app.post('/api/practice/submit', requireAuth, (req, res) => {
+app.post('/api/practice/submit', requireAuth, async (req, res) => {
   const { sessionId, answers } = req.body || {};
   if (!sessionId) return res.status(400).json({ ok: false, error: 'sessionId is required' });
-  const result = submitSession({ sessionId, answers: answers || {} });
+  const result = await submitSession({ sessionId, answers: answers || {} });
   if (!result.ok) return res.status(410).json(result);
   res.json(result);
 });
@@ -250,16 +252,16 @@ app.post('/api/exam/generate', requireAuth, (req, res) => {
   res.json(result);
 });
 
-app.get('/api/exam/:paperId/key', requireAuth, (req, res) => {
-  const result = getExamKey(String(req.params.paperId || ''));
+app.get('/api/exam/:paperId/key', requireAuth, async (req, res) => {
+  const result = await getExamKey(String(req.params.paperId || ''));
   if (!result.ok) return res.status(410).json(result);
   res.json(result);
 });
 
-app.post('/api/exam/submit', requireAuth, (req, res) => {
+app.post('/api/exam/submit', requireAuth, async (req, res) => {
   const { paperId, answers, subjectiveMarks } = req.body || {};
   if (!paperId) return res.status(400).json({ ok: false, error: 'paperId is required' });
-  const result = submitSession({ sessionId: paperId, answers: answers || {}, subjectiveMarks: subjectiveMarks || {} });
+  const result = await submitSession({ sessionId: paperId, answers: answers || {}, subjectiveMarks: subjectiveMarks || {} });
   if (!result.ok) return res.status(410).json(result);
   res.json(result);
 });
@@ -339,10 +341,11 @@ app.get('/api/video/:subjectId/:chapterId', (req, res) => {
   res.json({ ok: true, video, chapterId, subjectId, gating: { requiredMastery: 80 } });
 });
 
-app.post('/api/video/progress', requireAuth, (req, res) => {
+app.post('/api/video/progress', requireAuth, async (req, res) => {
   const { userId, chapterId, positionSec, durationSec, bookmarked } = req.body || {};
   if (!userId || !chapterId) return res.status(400).json({ ok: false, error: 'userId and chapterId required' });
-  updateProgress(userId, { videoProgress: { ...(getProgress(userId).videoProgress || {}), [chapterId]: { positionSec, durationSec, bookmarked: Boolean(bookmarked), updatedAt: new Date().toISOString() } } });
+  const current = await getProgress(userId);
+  await updateProgress(userId, { videoProgress: { ...(current.videoProgress || {}), [chapterId]: { positionSec, durationSec, bookmarked: Boolean(bookmarked), updatedAt: new Date().toISOString() } } });
   res.json({ ok: true, saved: true });
 });
 

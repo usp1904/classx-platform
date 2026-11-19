@@ -69,6 +69,7 @@ export class MultimodelRag {
   }
 
   stats() {
+    this.base.ensureBuilt();
     const base = this.base;
     return {
       chunks: base.chunks.length,

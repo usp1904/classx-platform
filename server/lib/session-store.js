@@ -1,10 +1,11 @@
-import { createClient } from 'redis';
-
 let redisClient = null;
 let redisReady = false;
 
 export async function initRedis({ url = 'redis://127.0.0.1:6379' } = {}) {
   if (redisClient) return redisClient;
+  // Loaded lazily: the redis package costs ~10s of module init on Windows,
+  // and Redis is optional (MemoryStore fallback), so it must not block boot.
+  const { createClient } = await import('redis');
   redisClient = createClient({ url });
   redisClient.on('error', (err) => {
     console.error('[redis] client error:', err.message);

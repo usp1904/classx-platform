@@ -2,22 +2,25 @@
 
 FROM node:26-alpine AS builder
 WORKDIR /app
+ARG GIT_SHA=dev
 ENV NODE_OPTIONS=--max-old-space-size=512
 COPY package.json package-lock.json ./
 RUN npm ci
 ENV VITE_API_BASE_URL=/api
 COPY . .
-RUN npm run build
+RUN npm run build && npm prune --omit=dev
 
 FROM node:26-alpine AS runner
 WORKDIR /app
+ARG GIT_SHA=dev
 ENV NODE_ENV=production
 ENV NODE_OPTIONS=--max-old-space-size=512
+ENV GIT_SHA=${GIT_SHA}
 COPY --from=builder /app/server ./server
 COPY --from=builder /app/package.json ./package.json
+COPY --from=builder /app/package-lock.json ./package-lock.json
 COPY --from=builder /app/node_modules ./node_modules
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
   CMD node -e "require('http').get('http://localhost:'+(process.env.PORT||8787)+'/api/health', r=>process.exit(r.statusCode===200?0:1)).on('error',()=>process.exit(1))"
 CMD ["node", "server/index.js"]
-

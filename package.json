@@ -16,6 +16,8 @@
     "coverage:strict": "node scripts/coverage.mjs --strict",
     "e2e": "npm run build && node scripts/e2e.mjs",
     "e2e:install": "playwright-core install firefox",
+    "verify:sync": "node scripts/sync-verify.mjs",
+    "verify:sync:docker": "node scripts/sync-verify.mjs --docker",
     "verify": "npm run typecheck && npm run check && npm run coverage && npm test && npm run e2e"
   },
   "dependencies": {

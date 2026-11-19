@@ -1,5 +1,7 @@
 node_modules
 .env
+.env.*
+!.env.production.example
 *.log
 artifacts
 server/public
@@ -7,5 +9,8 @@ dist
 build
 .web
 .git
+.gitignore
 .DS_Store
 npm-debug.log
+docs
+tests
