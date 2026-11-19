@@ -20,3 +20,4 @@ tunnel.log
 .DS_Store
 .web/
 graphify-out/
+server/data/progress.json

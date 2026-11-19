@@ -16,3 +16,4 @@ build
 npm-debug.log
 docs
 tests
+server/data/progress.json
