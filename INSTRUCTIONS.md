@@ -146,3 +146,26 @@ Work one phase per commit. Do not start a phase until the previous gate passes.
 2. Keep `guest` behavior for the public app; authenticated users are pinned to their session id.
 3. Gate: security review + Docker parity + Render smoke (`/api/health`, one deep link, one API read).
 
+### Current phase status (2026-11-19)
+
+| Phase | Status | Next action |
+|-------|--------|-------------|
+| 0 Baseline | DONE | none |
+| 1 Provenance/chunk contract | PENDING | start here: add `docId`, `sectionPath`, `chunkIndex`, `checksum` |
+| 2 Multimodal ingestion | PENDING | needs asset manifest + PDF text extraction decision |
+| 3 Real embeddings | PENDING | needs provider/cost/latency decision |
+| 4 Query planning/graph | PENDING | extend `TYPE_HINTS` into planner result |
+| 5 Validation gates | PENDING | citation existence check + answerability threshold |
+| 6 Observability/eval | PENDING | golden set + metrics surface |
+| 7 Control plane | PENDING | only after product/security decision |
+
+Full alignment is **not** achieved. Missing layers and reasons are in `AGENTS.md` ("Alignment verdict").
+
+## 10. Start here next session
+
+1. `npm run verify:sync` and `npm run verify:sync:docker`.
+2. Read `artifacts/sync-status.json` and the phase table above.
+3. Pick the first `PENDING` phase; confirm scope with the user before editing.
+4. Use the start/end prompts in `AGENTS.md` ("Session protocol") to keep every session repeatable.
+
+

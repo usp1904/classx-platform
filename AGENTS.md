@@ -86,6 +86,37 @@ Rules for agents:
 - Do not hand-edit generated data; fix `source/**`, then `npm run sync`.
 - At the end of a pipeline change, update the `Last verified` entry and the matching phase status in `INSTRUCTIONS.md`.
 
+### Alignment verdict (2026-11-19): NOT fully aligned
+
+The system is a working local GraphRAG subset, not the production multimodal agentic platform in the reference image. Gaps and why:
+
+| Missing layer | Why it is missing today |
+|---------------|-------------------------|
+| Connectors (LMS/S3/Drive, webhook/batch) | Content is a static `source/**` snapshot; no cloud SDKs or tenant credentials in scope. |
+| OCR, layout parsing, table/figure/equation extraction, audio transcripts (L2–L3) | Lessons are authored JSON; PDFs are only catalogued, not parsed. Offline, dependency-free constraint. |
+| Page/bbox/checksum provenance (L3) | JSON lessons have no page coordinates; adding fake coordinates would be dishonest. Needs real PDF extraction first (Phase 2). |
+| Vector DB/object store, entity-resolution graph, incremental updates, deletion propagation (L4) | Index is in-memory BM25 + 512-dim hashed vectors + chapter co-occurrence/authorsed concept maps. Qdrant was removed (undici advisories, Render free has no services). |
+| LLM query planner, decomposition, tool routing (L5) | Heuristic `TYPE_HINTS` + synonym expansion only. Provider key is optional and cost-bearing; fallback must work offline. |
+| Image/table indices, real cross-encoder rerank (L6) | No multimodal assets in the index; rerank is a lexical blend (stub). No embedding runtime by default. |
+| Claim-citation verifier, answerability threshold, moderation (L7) | Current guarantee is retrieved citations + extractive fallback; no second model pass to verify claims. |
+| Multi-tenant/RBAC, KMS, quotas, audit, retention (control plane) | App is single-tenant public; auth is session-based with bcrypt and a rate limit. |
+| Recall@K, golden set, traces, A/B, drift (observability) | Only `/api/health` and per-query latency diagnostics; no telemetry backend. |
+
+Graph harness status: authored concept maps + one-hop chapter-neighbor boost. No entity/relation extraction, graph versioning, or graph-specific evaluation. Treat "optimised graph harness" as pending, not delivered.
+
+## Session protocol
+
+Start of every session (paste to the agent):
+1. Read `AGENTS.md` and `INSTRUCTIONS.md`.
+2. Run `npm run verify:sync`, then `npm run verify:sync:docker` if Docker is healthy.
+3. Read `artifacts/sync-status.json`; report drift and the next open phase from `INSTRUCTIONS.md` section 9.
+4. Do not change code until the user confirms the phase.
+
+End of every session (paste to the agent):
+1. Run the gates for the touched area (`npm test`, `npm run typecheck`, `npm run check`, `npm run e2e` for UI).
+2. Update `AGENTS.md` capability row + `Last verified`; update the phase status in `INSTRUCTIONS.md`.
+3. Commit, push `main` and `Siri_ClassX-Platform`, run `npm run verify:sync:docker`, and report live Render smoke if deployed.
+
 ## Frontend map
 - `web/src/App.tsx`: all routes + `BrowserRouter` + `AppDataProvider`. `main.tsx` renders `<App />` and owns global CSS import order.
 - Screens: `Dashboard`, `Courses`, `Chapter`, `Practice`, `MockTests`, `Tutor`, `Planner`, `Progress`, `Library`, `VideoLesson`, `Gamification`, `ParentDashboard`, `AdaptivePractice`, `DoubtTutor`, `ConceptMapVisualizer`, `OKFMetadataBrowser`, `OfflineStatus`, `RAGSearchViewer`, `LearningAids`.
