@@ -93,6 +93,6 @@ Local uses `COOKIE_SECURE=false` (plain HTTP); Render/VPS use `true` (HTTPS).
 
 - Never edit `server/public/**`, `server/data/**`, or `artifacts/**` to make a check pass.
   Fix source (`web/**`, `source/**`, `server/lib/**`) and regenerate.
-- Never commit `.env`, `.env.production`, keys, or tunnel logs.
+- Never commit `.env`, `.env.production`, `.secrets`, keys, or tunnel logs. Local secrets belong in `.secrets` (gitignored, Docker-ignored); the server loads `.env` then `.secrets`.
 - Never `git push --force` to `main` or `Siri_ClassX-Platform`.
 - One drift class per commit; run section 2 again before pushing.

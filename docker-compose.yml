@@ -13,15 +13,17 @@ services:
     restart: always
     ports:
       - "8787:8787"
+    env_file:
+      - path: .env
+        required: false
+      - path: .secrets
+        required: false
     environment:
       - NODE_ENV=production
       - PORT=8787
       - HOST=0.0.0.0
       - COOKIE_SECURE=${COOKIE_SECURE:-false}
-      - CORS_ORIGIN=${CORS_ORIGIN:-true}
       - SESSION_SECRET=${SESSION_SECRET:-classx-dev-secret-change-me}
-      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
-      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
       - OPENAI_BASE_URL=${OPENAI_BASE_URL:-}
       - TUTOR_MODEL=${TUTOR_MODEL:-}
       - RAG_EMBEDDING_PROVIDER=${RAG_EMBEDDING_PROVIDER:-local}

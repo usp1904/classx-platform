@@ -16,10 +16,13 @@ ARG GIT_SHA=dev
 ENV NODE_ENV=production
 ENV NODE_OPTIONS=--max-old-space-size=512
 ENV GIT_SHA=${GIT_SHA}
-COPY --from=builder /app/server ./server
-COPY --from=builder /app/package.json ./package.json
-COPY --from=builder /app/package-lock.json ./package-lock.json
-COPY --from=builder /app/node_modules ./node_modules
+COPY --chown=node:node --from=builder /app/server ./server
+COPY --chown=node:node --from=builder /app/package.json ./package.json
+COPY --chown=node:node --from=builder /app/package-lock.json ./package-lock.json
+COPY --chown=node:node --from=builder /app/node_modules ./node_modules
+
+# Drop root: runtime only reads app files and writes server/data/progress.json.
+USER node
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
   CMD node -e "require('http').get('http://localhost:'+(process.env.PORT||8787)+'/api/health', r=>process.exit(r.statusCode===200?0:1)).on('error',()=>process.exit(1))"

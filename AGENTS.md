@@ -105,14 +105,19 @@ CSS is split because one large write failed:
 - [x] Hybrid RAG index no longer builds in the constructor; `ensureBuilt()` defers it to the first `search()`/`similar()` call. `/api/health` reports `rag.indexed=false` until then, keeping boot and health checks fast.
 - [x] Duplicate `cors()` + `express.json()` middleware removed from `server/index.js`.
 - [x] `nginx.conf` used invalid `server_tokens { ... }` block, so `classx-nginx` restarted forever in Compose. Changed to `server_tokens off;`; proxy now serves `/api/health`.
+- [x] Register/login crashed the process: `bcryptjs` is CommonJS, so `(await import()).hashSync` was undefined. Now uses `(await import('bcryptjs')).default`. Async route rejections are wrapped into the JSON error middleware instead of killing Express 4.
+- [x] Auth/session silently failed without Redis (`sessionGet` always `null`, and `key()` was async). `session-store.js` now falls back to an in-process TTL map, and `key()` is synchronous.
+- [x] Dependabot/`undici` advisories came from the unused Qdrant client. Removed `@qdrant/js-client-rest`, `qdrant-client.js`, and `connect-redis`; `npm audit` reports 0 vulnerabilities.
+- [x] CORS reflected any origin with credentials. Cross-origin is now opt-in (`CORS_ORIGIN`), plus security headers, auth rate limiting, `trust proxy`, and rootless Docker runtime.
+- [x] `OPENROUTER_API_KEY` moved from the Windows user environment into `.secrets` (gitignored, Docker-ignored); `.secrets.example` documents the format and `verify:sync` scans tracked files for key patterns.
 
 ## Sync contract — local, Git, Docker, Render
 Single join key is the Git commit SHA. `GIT_SHA` is baked into the Docker image, reported by `/api/health` as `commit`, and falls back to `RENDER_GIT_COMMIT` on Render.
 - Run `npm run verify:sync:docker` before every deploy. It fails on dirty tree, ahead/behind upstream, tracked secrets, port/branch/version drift, or an image whose `/api/health.commit` differs from `git rev-parse HEAD`.
 - `render.yaml` deploys branch `main` (must equal the current branch). `Siri_ClassX-Platform` is kept as an identical mirror branch.
 - `COOKIE_SECURE` is explicit: `false` for local Docker over HTTP, `true` for Render/VPS over HTTPS.
-- Code uses `MemoryStore`; `docker-compose.yml` starts only `classx-api` + `nginx` until Redis/Postgres are re-enabled in code.
-- `.env.production` is untracked; `.env.production.example` is the template.
+- Sessions use an in-process store with a Redis backend when `initRedis()` is enabled; auth and progress keep working without Redis. `docker-compose.yml` starts only `classx-api` + `nginx`.
+- `.env.production` is untracked; `.env.production.example` is the template. Local keys live in `.secrets` (gitignored, excluded from Docker context); `.secrets.example` is the template. Cross-origin is opt-in via `CORS_ORIGIN` (same-origin SPA needs none).
 - Full narrative: `docs/SYNC.md`. Recovery checklist: `INSTRUCTIONS.md`.
 
 ## Verification before calling work done
@@ -135,6 +140,7 @@ Then smoke-test the API: `/api/health`, `/api/curriculum`, a chapter, `/api/exam
 - `npm install` reports 3 vulnerabilities (1 low, 2 moderate). Check with `npm audit` before changing dependencies; do not force-fix blindly.
 
 ## Last verified
+2026-11-19 (security pass): Moved the OpenRouter key out of the Windows user environment into gitignored `.secrets`; verified no key in working tree or Git history. Removed unused Qdrant/connect-redis dependencies (`npm audit`: 0 vulnerabilities), fixed the `bcryptjs` CommonJS import that crashed register/login, added a TTL memory fallback to `session-store.js`, wrapped async Express 4 handlers, made CORS opt-in, added security headers, auth rate limiting, `trust proxy`, and a rootless Docker runtime. `.dockerignore`/`.gitignore` exclude `.secrets`; `verify:sync` scans tracked files for key patterns and requires `.secrets.example`. `typecheck`, `check`, `npm test` (22/22), `build`, auth smoke (register/login/logout/me with `sessionStore=memory`), and rate limiting (20 ok then 429) green.
 2026-11-19: Sync hardening pass on `main` @ `b59ff2b`. Fixed RAG `splitIntoChunks`/`search` infinite loops (tutor tests previously hung), async practice/exam/video routes, lazy `redis` import (boot ~14s -> ~5s locally), lazy RAG index, duplicate middleware, tracked `.env.production` -> `.env.production.example`, compose/service alignment, `render.yaml` branch `main`, Docker `GIT_SHA` stamp. Added `scripts/sync-verify.mjs`, `npm run verify:sync[:docker]`, `docs/SYNC.md`, `INSTRUCTIONS.md`. `typecheck`, `check`, `coverage` (0 warnings/0 failures), `npm test` (19/19), `npm run build` green. Docker parity PASSED: image builds, container healthy, `/api/health.commit == HEAD`. Compose stack PASSED: `classx-api` healthy, `classx-nginx` proxies `/api/health` with matching commit. Pushed `main` + mirror `Siri_ClassX-Platform`.
 2026-11-13: Deployment fixes applied and verified: `npm install` (0 vulnerabilities), `npm run typecheck` (pass), `npm run check` (ok: 4 subjects, 67 chapters, 2569 questions), `npm run coverage` (0 warnings, 0 failures), `npm test` (17 tests pass), `npm run build` (665.62 kB JS / 193.27 kB gzip). Dockerfile `ENV PORT=8787` added; `render.yaml` updated with PORT, NODE_OPTIONS, all required env vars; `.env` key removed (security). Git commit `9cc5c94` on `Siri_ClassX-Platform`.
 2026-11-10: `npm run verify` passes end to end after mass authoring Science (all 15 chapters) and Social Science (all 22 chapters), plus ELI5 tutor mode: TypeScript, `check`, `coverage` (0 warnings, 0 failures), 19 unit tests, production build (648.60 kB JS / 187.07 kB gzip), E2E (Chrome 56, Edge 34, Firefox 34). Shape: 4 subjects / 67 chapters / 76 topics / 52 full / 0 starter / 15 maps / 2569 questions.
@@ -196,7 +202,7 @@ In the Render dashboard, go to your service → **Environment** tab. Add these v
 | `OPENAI_BASE_URL` | `https://openrouter.ai/api/v1` |
 | `TUTOR_MODEL` | `openai/gpt-4o-mini` |
 
-`NODE_ENV=production`, `COOKIE_SECURE=true`, `CORS_ORIGIN=true`, `SESSION_SECRET` (auto), `RAG_EMBEDDING_PROVIDER=local`, `RAG_RERANK_PROVIDER=none` are already in `render.yaml`.
+`NODE_ENV=production`, `COOKIE_SECURE=true`, `SESSION_SECRET` (auto), `RAG_EMBEDDING_PROVIDER=local`, `RAG_RERANK_PROVIDER=none` are already in `render.yaml`. `CORS_ORIGIN` is intentionally unset (the SPA is same-origin).
 
 **Important**: `NODE_OPTIONS=--max-old-space-size=256` is **mandatory** — without it, the build will crash with "JavaScript heap out of memory" on Render's free tier.
 

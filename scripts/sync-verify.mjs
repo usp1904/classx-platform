@@ -133,10 +133,40 @@ async function main() {
   check('no secrets tracked', () => {
     const tracked = sh('git', ['ls-files']).split('\n');
     const forbidden = tracked.filter((f) =>
-      /(^|\/)\.env$/.test(f) || /(^|\/)\.env\.(production|local)$/.test(f) || /\.(pem|key)$/.test(f));
+      /(^|\/)\.env$/.test(f)
+      || /(^|\/)\.env\.(production|local)$/.test(f)
+      || (/(^|\/)\.secrets(\.|$)/.test(f) && !/\.secrets\.example$/.test(f))
+      || /\.(pem|key)$/.test(f));
     assert(forbidden.length === 0, `tracked secret files: ${forbidden.join(', ')}`);
+
+    const suspicious = [];
+    for (const f of tracked) {
+      if (!/\.(?:js|mjs|cjs|ts|tsx|jsx|json|ya?ml|md|txt|env|example|conf|toml|ini|sh|ps1)$/.test(f)) continue;
+      const abs = path.join(ROOT, f);
+      let stat;
+      try { stat = fs.statSync(abs); } catch { continue; }
+      if (stat.size > 512 * 1024) continue;
+      const text = fs.readFileSync(abs, 'utf8');
+      if (/sk-or-v1-[0-9a-f]{16,}|sk-[A-Za-z0-9]{32,}|ghp_[A-Za-z0-9]{20,}|AKIA[0-9A-Z]{16}/.test(text)) {
+        suspicious.push(f);
+      }
+    }
+    assert(suspicious.length === 0, `key-like strings in tracked files: ${suspicious.join(', ')}`);
+
     assert(fs.existsSync(path.join(ROOT, '.env.production.example')), '.env.production.example missing');
-    return 'env templates only';
+    assert(fs.existsSync(path.join(ROOT, '.secrets.example')), '.secrets.example missing');
+    if (fs.existsSync(path.join(ROOT, '.secrets'))) {
+      const ignored = trySh('git', ['check-ignore', '-q', '.secrets']);
+      assert(ignored.ok, '.secrets exists but is not gitignored');
+    }
+    return 'templates only; no key patterns in tracked files';
+  });
+
+  check('docker context excludes secrets', () => {
+    const ignore = read('.dockerignore').split(/\r?\n/).map((line) => line.trim());
+    assert(ignore.includes('.env'), '.dockerignore must exclude .env');
+    assert(ignore.includes('.secrets'), '.dockerignore must exclude .secrets');
+    return '.env and .secrets excluded from build context';
   });
 
   check('package version parity', () => {

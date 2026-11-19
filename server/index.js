@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-dotenv.config();
+dotenv.config({ path: ['.env', '.secrets'] });
 
 import express from 'express';
 import compression from 'compression';
@@ -16,13 +16,25 @@ import { getLearningAids, getAllAidIds, getAidLabel, getAidGroups, getAidGroup, 
 import { askTutor } from './lib/ai.js';
 import { startPractice, startExam, submitSession, getExamKey } from './lib/practice.js';
 import { getProgressAsync as getProgress, updateProgressAsync as updateProgress, awardXpAsync as awardXp, getBadges, getLeaderboard, getParentView, linkParent } from './lib/progress.js';
-import { sessionSet, sessionGet } from './lib/session-store.js';
+import { sessionSet, sessionGet, sessionStoreKind } from './lib/session-store.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 const PORT = Number(process.env.PORT || 8787);
 const startedAt = Date.now();
 const searchCache = new Map();
+
+// Express 4 does not forward rejected promises from async handlers. Wrap every
+// route so a thrown error reaches the JSON error middleware instead of killing
+// the process. Middleware with (req, res, next) is left untouched.
+for (const method of ['get', 'post', 'put', 'patch', 'delete']) {
+  const register = app[method].bind(app);
+  app[method] = (routePath, ...handlers) => register(routePath, ...handlers.map((handler) => {
+    if (typeof handler !== 'function' || handler.length >= 3) return handler;
+    return (req, res, next) => Promise.resolve(handler(req, res, next)).catch(next);
+  }));
+}
+
 
 // ============================================================================
 // SERVICES COMMENTED OUT — NOT AVAILABLE ON RENDER FREE TIER
@@ -67,8 +79,52 @@ try {
 // End of commented-out services block
 // ============================================================================
 
-app.use(cors({ origin: process.env.CORS_ORIGIN || true, credentials: true }));
+// Cross-origin is opt-in. The bundled SPA is same-origin, so the safe default
+// is "no cross-origin" instead of reflecting any origin with credentials.
+const CORS_ORIGIN = (process.env.CORS_ORIGIN || '').trim();
+const corsOrigin = !CORS_ORIGIN || CORS_ORIGIN === 'false'
+  ? false
+  : CORS_ORIGIN === 'true'
+    ? true
+    : CORS_ORIGIN.split(',').map((value) => value.trim()).filter(Boolean);
+
+app.set('trust proxy', 1);
+app.disable('x-powered-by');
+app.use((req, res, next) => {
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
+  if (process.env.COOKIE_SECURE === 'true') {
+    res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+  }
+  next();
+});
+app.use(cors({ origin: corsOrigin, credentials: true }));
 app.use(express.json({ limit: '2mb' }));
+
+// In-memory auth throttle. Resets after a minute; process-local is enough
+// because the app runs as a single fork (see ecosystem.config.js).
+const authAttempts = new Map();
+const AUTH_WINDOW_MS = 60 * 1000;
+const AUTH_MAX_ATTEMPTS = 20;
+function authRateLimit(req, res, next) {
+  const ip = req.ip || 'unknown';
+  const now = Date.now();
+  if (authAttempts.size > 5000) authAttempts.clear();
+  const entry = authAttempts.get(ip);
+  if (!entry || entry.resetAt <= now) {
+    authAttempts.set(ip, { count: 1, resetAt: now + AUTH_WINDOW_MS });
+    return next();
+  }
+  entry.count += 1;
+  if (entry.count > AUTH_MAX_ATTEMPTS) {
+    res.setHeader('Retry-After', Math.ceil((entry.resetAt - now) / 1000));
+    return res.status(429).json({ ok: false, error: 'Too many attempts. Try again shortly.' });
+  }
+  return next();
+}
+
 
 // Cookie security is explicit: HTTPS deployments set COOKIE_SECURE=true.
 // Local Docker (http://localhost) keeps cookies working even with NODE_ENV=production.
@@ -77,9 +133,13 @@ const COOKIE_SECURE = process.env.COOKIE_SECURE
   : process.env.NODE_ENV === 'production';
 
 // ---- Session middleware ----
+const SESSION_SECRET = process.env.SESSION_SECRET;
+if (!SESSION_SECRET) {
+  console.warn('[session] SESSION_SECRET unset — using an insecure development default. Set it in production.');
+}
 app.use(session({
   store: RedisStoreInstance,
-  secret: process.env.SESSION_SECRET || 'classx-dev-secret-change-me',
+  secret: SESSION_SECRET || 'classx-dev-secret-change-me',
   resave: false,
   saveUninitialized: false,
   cookie: {
@@ -94,7 +154,7 @@ app.use(session({
 app.use(compression());
 
 // ---- Auth routes ----
-app.post('/api/auth/register', async (req, res) => {
+app.post('/api/auth/register', authRateLimit, async (req, res) => {
   const { userId, password } = req.body || {};
   if (!userId || !password) return res.status(400).json({ ok: false, error: 'userId and password required' });
   if (userId.length < 3 || userId.length > 32) return res.status(400).json({ ok: false, error: 'userId must be 3-32 chars' });
@@ -103,21 +163,21 @@ app.post('/api/auth/register', async (req, res) => {
   const existing = await sessionGet(`user:${userId}`);
   if (existing) return res.status(409).json({ ok: false, error: 'userId already exists' });
 
-  const { hashSync } = await import('bcryptjs');
+  const { hashSync } = (await import('bcryptjs')).default;
   const hash = hashSync(password, 10);
   await sessionSet(`user:${userId}`, { userId, passwordHash: hash, createdAt: Date.now() }, 0); // no TTL for user accounts
   req.session.userId = userId;
   req.session.save(() => res.json({ ok: true, userId }));
 });
 
-app.post('/api/auth/login', async (req, res) => {
+app.post('/api/auth/login', authRateLimit, async (req, res) => {
   const { userId, password } = req.body || {};
   if (!userId || !password) return res.status(400).json({ ok: false, error: 'userId and password required' });
 
   const user = await sessionGet(`user:${userId}`);
   if (!user) return res.status(401).json({ ok: false, error: 'Invalid credentials' });
 
-  const { compareSync } = await import('bcryptjs');
+  const { compareSync } = (await import('bcryptjs')).default;
   if (!compareSync(password, user.passwordHash)) return res.status(401).json({ ok: false, error: 'Invalid credentials' });
 
   req.session.userId = userId;
@@ -155,6 +215,7 @@ app.get('/api/health', (req, res) => {
     uptimeSec: Math.round((Date.now() - startedAt) / 1000),
     curriculum: getStats(),
     rag: ragStats(),
+    sessionStore: sessionStoreKind(),
     aiProvider: Boolean(process.env.OPENAI_API_KEY || process.env.openAI_API_KEY || process.env.OPENROUTER_API_KEY),
   });
 });
@@ -466,6 +527,7 @@ app.use('/api', (req, res) => res.status(404).json({ ok: false, error: 'API rout
 
 app.use((err, req, res, next) => {
   console.error('[api]', err);
+  if (res.headersSent) return next(err);
   res.status(err.status || 500).json({ ok: false, error: err.message || 'Internal server error' });
 });
 
