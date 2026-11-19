@@ -85,7 +85,8 @@
   border: 1px solid var(--line); flex-wrap: wrap;
 }
 .chapter-tabs { padding-left: 4px; }
-.chapter-quick-actions { display: flex; gap: 4px; padding-right: 3px; }
+.chapter-quick-actions { display: flex; gap: 4px; padding-right: 3px; flex-wrap: wrap; min-width: 0; justify-content: flex-end; }
+.chapter-quick-actions .btn { min-width: 0; flex: 0 1 auto; }
 .chapter-layout { display: grid; grid-template-columns: minmax(0, 1fr) 286px; gap: 24px; align-items: start; }
 .chapter-content { min-width: 0; }
 .chapter-rail { display: flex; flex-direction: column; gap: 12px; position: sticky; top: 76px; }

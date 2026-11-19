@@ -103,6 +103,9 @@
 }
 
 @media (max-width: 560px) {
+  .chapter-tabs-row { align-items: stretch; }
+  .chapter-tabs { width: 100%; }
+  .chapter-quick-actions { width: 100%; justify-content: flex-start; }
   .shell-content { padding: 10px 11px 32px; }
   .main { padding: 15px 11px 36px; }
   .topbar { padding: 8px 11px; }

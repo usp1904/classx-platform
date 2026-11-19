@@ -1,4 +1,4 @@
-# ClassX Platform — Agent Notes
+﻿# ClassX Platform â€” Agent Notes
 
 ## Purpose
 CBSE Class X (2026-27) study platform: 4 subjects, 67 chapters, 52 fully authored lessons (all Mathematics, Science, Social Science), 0 starter packs, 15 English syllabus maps, practice, mock exams with self-marked written answers, Mathematics planner, progress, revision library, grounded tutor.
@@ -62,6 +62,30 @@ Launchers: double-click `Start-ClassX.cmd`, or run `Start-ClassX.cmd --all` to o
 - Exam flow: generate paper -> attempt -> `GET /api/exam/:paperId/key` reveals written steps -> student self-marks written -> `POST /api/exam/submit` combines MCQ auto-score and written self-marks.
 - Sessions are in memory. Restarting the API invalidates active practice/exam sessions.
 
+## RAG pipeline — target architecture vs current code
+
+Target reference: 8-layer production multimodal GraphRAG (connectors → ingestion → structure-aware extraction → graph/indexing → agentic query routing → hybrid retrieval → grounded validation → delivery) plus control plane and observability. This repo implements a local, in-memory subset. Owner split: this section says **what must stay true and who is responsible**; `INSTRUCTIONS.md` says **how to execute each upgrade step**. Keep the two in sync by capability, not by copy-paste.
+
+| Layer | Current code | Status |
+|-------|--------------|--------|
+| 1 Sources & connectors | `source/**` JSON + 4 PDFs; no LMS/S3/Drive adapters | partial: files only |
+| 2 Ingestion | `scripts/sync-content.mjs` text normalization; no OCR, malware scan, vision, audio transcripts | partial |
+| 3 Structure-aware extraction | chapter/type/anchor chunks, OKF metadata, no page/bbox/provenance chain | partial |
+| 4 Graph + indexes | BM25 postings, 512-dim hashed vectors, concept co-occurrence graph, in-memory only; no vector DB/object store | partial |
+| 5 Query understanding | tokenizer, synonym expansion, `TYPE_HINTS` intent, chapter filters; no LLM planner or decomposition | partial |
+| 6 Hybrid retrieval | BM25 + vector RRF fusion, title/chapter boosts, graph neighbor boost, per-chapter cap; rerank is lexical stub | partial |
+| 7 Grounded generation | OpenAI-compatible provider call + `grounded-fallback` with citations; no claim-level validation gate | partial |
+| 8 Experience & delivery | SPA search/tutor/chapter UI; no LMS, SSO, roles | partial |
+| Control plane | session auth (bcrypt), rate limit, security headers, secrets in env/`.secrets`; no multi-tenant, RBAC, KMS, moderation | partial |
+| Observability | `/api/health`, RAG `diagnostics.latencyMs`; no Recall@K, golden set, traces | partial |
+
+Rules for agents:
+- Never claim a layer exists because the target diagram shows it. Update the row only after code + test exist.
+- Retrieval changes must keep `tests/tutor.test.js` grounded-citation behavior and add a test for the new behavior.
+- Keep the pipeline dependency-free by default (`RAG_EMBEDDING_PROVIDER=local`, no network). External providers are opt-in via env.
+- Do not hand-edit generated data; fix `source/**`, then `npm run sync`.
+- At the end of a pipeline change, update the `Last verified` entry and the matching phase status in `INSTRUCTIONS.md`.
+
 ## Frontend map
 - `web/src/App.tsx`: all routes + `BrowserRouter` + `AppDataProvider`. `main.tsx` renders `<App />` and owns global CSS import order.
 - Screens: `Dashboard`, `Courses`, `Chapter`, `Practice`, `MockTests`, `Tutor`, `Planner`, `Progress`, `Library`, `VideoLesson`, `Gamification`, `ParentDashboard`, `AdaptivePractice`, `DoubtTutor`, `ConceptMapVisualizer`, `OKFMetadataBrowser`, `OfflineStatus`, `RAGSearchViewer`, `LearningAids`.
@@ -83,7 +107,7 @@ CSS is split because one large write failed:
 - Desktop must show exactly one search control. `.topbar .mobile-search-btn { display: none }` needs the topbar specificity because `.icon-btn` sets `display: grid` later.
 - Mobile drawer is `.sidebar.open` with `.mobile-scrim`; `.mobile-close` is visible only on mobile.
 
-## Fixed issues — do not revisit
+## Fixed issues â€” do not revisit
 - [x] Mobile horizontal overflow: module CSS import order + `.app-shell` + drawer selectors fixed. All 10 routes pass at 390x844.
 - [x] Duplicate desktop search icon: `.topbar .mobile-search-btn` specificity fixed.
 - [x] Planner title: now derives from `weeks.length` (15), not hardcoded 22.
@@ -111,7 +135,7 @@ CSS is split because one large write failed:
 - [x] CORS reflected any origin with credentials. Cross-origin is now opt-in (`CORS_ORIGIN`), plus security headers, auth rate limiting, `trust proxy`, and rootless Docker runtime.
 - [x] `OPENROUTER_API_KEY` moved from the Windows user environment into `.secrets` (gitignored, Docker-ignored); `.secrets.example` documents the format and `verify:sync` scans tracked files for key patterns.
 
-## Sync contract — local, Git, Docker, Render
+## Sync contract â€” local, Git, Docker, Render
 Single join key is the Git commit SHA. `GIT_SHA` is baked into the Docker image, reported by `/api/health` as `commit`, and falls back to `RENDER_GIT_COMMIT` on Render.
 - Run `npm run verify:sync:docker` before every deploy. It fails on dirty tree, ahead/behind upstream, tracked secrets, port/branch/version drift, or an image whose `/api/health.commit` differs from `git rev-parse HEAD`.
 - `render.yaml` deploys branch `main` (must equal the current branch). `Siri_ClassX-Platform` is kept as an identical mirror branch.
@@ -130,7 +154,7 @@ Manual equivalent: `npm run typecheck`, `npm run check`, `npm run coverage`, `np
 Then smoke-test the API: `/api/health`, `/api/curriculum`, a chapter, `/api/exam/generate` + `/api/exam/:paperId/key`, `/api/practice/start` + submit, `/api/library`, `/api/plan`, `/api/tutor`.
 
 ## Gotchas
-- PowerShell console may render `·`, `√`, `³`, em dashes as mojibake. Files are UTF-8; verify with Node char codes before "fixing" encoding.
+- PowerShell console may render `Â·`, `âˆš`, `Â³`, em dashes as mojibake. Files are UTF-8; verify with Node char codes before "fixing" encoding.
 - `npm run check` expects exactly 4 subjects and 67 chapters. Update those expectations only with a deliberate curriculum change.
 - One known content defect was fixed: 987/10500 is terminating (47/500 = 0.094). Keep model answers consistent with steps.
 - `server/public` is generated; rebuild after frontend changes.
@@ -140,6 +164,7 @@ Then smoke-test the API: `/api/health`, `/api/curriculum`, a chapter, `/api/exam
 - `npm install` reports 3 vulnerabilities (1 low, 2 moderate). Check with `npm audit` before changing dependencies; do not force-fix blindly.
 
 ## Last verified
+2026-11-19 (UI + pipeline mapping): Restored guest-first practice/exam/progress access (the SPA defaults to `guest`; anonymous callers cannot read other users' progress). Fixed 64px mobile overflow on `.chapter-quick-actions` and stabilized two E2E flakiness sources (exact Practice link, drawer detach wait). Added the RAG target-vs-current capability matrix and the phase runbook (`INSTRUCTIONS.md` section 9). E2E green: Chrome 56, Edge 34, Firefox 34; `npm test` 22/22; live Render asset parity checked.
 2026-11-19 (security pass): Moved the OpenRouter key out of the Windows user environment into gitignored `.secrets`; verified no key in working tree or Git history. Removed unused Qdrant/connect-redis dependencies (`npm audit`: 0 vulnerabilities), fixed the `bcryptjs` CommonJS import that crashed register/login, added a TTL memory fallback to `session-store.js`, wrapped async Express 4 handlers, made CORS opt-in, added security headers, auth rate limiting, `trust proxy`, and a rootless Docker runtime. `.dockerignore`/`.gitignore` exclude `.secrets`; `verify:sync` scans tracked files for key patterns and requires `.secrets.example`. `typecheck`, `check`, `npm test` (22/22), `build`, auth smoke (register/login/logout/me with `sessionStore=memory`), and rate limiting (20 ok then 429) green.
 2026-11-19: Sync hardening pass on `main` @ `b59ff2b`. Fixed RAG `splitIntoChunks`/`search` infinite loops (tutor tests previously hung), async practice/exam/video routes, lazy `redis` import (boot ~14s -> ~5s locally), lazy RAG index, duplicate middleware, tracked `.env.production` -> `.env.production.example`, compose/service alignment, `render.yaml` branch `main`, Docker `GIT_SHA` stamp. Added `scripts/sync-verify.mjs`, `npm run verify:sync[:docker]`, `docs/SYNC.md`, `INSTRUCTIONS.md`. `typecheck`, `check`, `coverage` (0 warnings/0 failures), `npm test` (19/19), `npm run build` green. Docker parity PASSED: image builds, container healthy, `/api/health.commit == HEAD`. Compose stack PASSED: `classx-api` healthy, `classx-nginx` proxies `/api/health` with matching commit. Pushed `main` + mirror `Siri_ClassX-Platform`.
 2026-11-13: Deployment fixes applied and verified: `npm install` (0 vulnerabilities), `npm run typecheck` (pass), `npm run check` (ok: 4 subjects, 67 chapters, 2569 questions), `npm run coverage` (0 warnings, 0 failures), `npm test` (17 tests pass), `npm run build` (665.62 kB JS / 193.27 kB gzip). Dockerfile `ENV PORT=8787` added; `render.yaml` updated with PORT, NODE_OPTIONS, all required env vars; `.env` key removed (security). Git commit `9cc5c94` on `Siri_ClassX-Platform`.
@@ -147,18 +172,18 @@ Then smoke-test the API: `/api/health`, `/api/curriculum`, a chapter, `/api/exam
 - 2026-11-10: Fixed SPEC-23 learning aids engine with `addChunkedItems` helper extracting ~200 lines of repetitive chunking logic into ~10 lines. Added OKF metadata alignment with `source_references` (Arihant/RD Sharma/RS Aggarwal references) and `web_references`. Added science experiments, MCQ answers with explanations, bibliography/equations, social studies dates/revolts/wars. Added YouTube video catalog with ratings and safety filter. Added video error handling with fallback UI. Fixed ConceptMapVisualizer.tsx and VideoLesson.tsx TypeScript errors. Changed brand from "Peak" to "SiriLearnings".
 
 ## Tooling and offline capability
-- `graphify` 0.9.49 CLI is installed; code graph lives in `graphify-out/` (728 nodes / 1332 edges / 41 communities as of 2026-11-19). Refresh with `graphify update .` — code-only extraction needs no key or network.
+- `graphify` 0.9.49 CLI is installed; code graph lives in `graphify-out/` (728 nodes / 1332 edges / 41 communities as of 2026-11-19). Refresh with `graphify update .` â€” code-only extraction needs no key or network.
 - Local skill/tool libraries: `C:\Users\Admin\ECC` (71 agents, 311 skills, 97 legacy commands, hooks, orchestration workflows), `C:\Users\Admin\.agents\skills` (64), `C:\Users\Admin\.config\opencode\skills\google-skills\skills` (25), `C:\Users\Admin\.claude\skills` (11).
 - Best offline authoring aids: `.agents/skills/curriculum-guard`, `master-architectural-system-prompt`, `dual-mode-router`, `math-formatter`, `viz-generator`; ECC `article-writing`, `verification-loop`, `docs-governance`; Google `constraint-driven-development`, `test-driven-development`, `code-review-and-quality`.
 - `playwright-core` 1.64.1 is project-local with Chrome, Edge, and cached Playwright Firefox. `npm run verify` is fully offline.
 - `jev-ultrafast` needs `TYPESAFE_API_KEY` + `TEXT_MODEL_API_KEY` and has no `.venv`; not usable offline. `supermemory` CLI has no API key; not usable offline. Existing `n8n` workflows need OpenAI/vector-store credentials.
 - Tutor env keys are present (`openAI_API_KEY`, `OPENROUTER_API_KEY`, `OPENAI_BASE_URL`) but provider calls fail with `fetch failed`; the tutor correctly serves `grounded-fallback`. Do not treat that as a code regression.
 
-## Deployment (free, no credit card) — READ THIS FIRST
+## Deployment (free, no credit card) â€” READ THIS FIRST
 
 ### Pre-deployment fixes (updated 2026-11-19)
 - `Dockerfile`: does **not** set `PORT` (Render injects its own). HEALTHCHECK falls back to `process.env.PORT || 8787`. Builder prunes dev deps; `ARG/ENV GIT_SHA` stamps the build.
-- `render.yaml`: branch `main`, `COOKIE_SECURE=true`, `SESSION_SECRET` generated, `NODE_OPTIONS=--max-old-space-size=512`, `OPENAI_BASE_URL`, `TUTOR_MODEL`, `RAG_EMBEDDING_PROVIDER=local`, `RAG_RERANK_PROVIDER=none`, `OPENROUTER_API_KEY` (sync: false — set in Render dashboard).
+- `render.yaml`: branch `main`, `COOKIE_SECURE=true`, `SESSION_SECRET` generated, `NODE_OPTIONS=--max-old-space-size=512`, `OPENAI_BASE_URL`, `TUTOR_MODEL`, `RAG_EMBEDDING_PROVIDER=local`, `RAG_RERANK_PROVIDER=none`, `OPENROUTER_API_KEY` (sync: false â€” set in Render dashboard).
 - `.env.production` is untracked; `.env.production.example` is the template. Never commit real keys.
 - Git sync: `Dockerfile` + `render.yaml` committed to `classx-platform` repo (branch `main`; `Siri_ClassX-Platform` mirrors it).
 
@@ -173,7 +198,7 @@ Then smoke-test the API: `/api/health`, `/api/curriculum`, a chapter, `/api/exam
 |-------|---------|-----|
 | HEALTHCHECK `$PORT` unset in Dockerfile | Container marked unhealthy, restart loop | HEALTHCHECK already falls back to `process.env.PORT || 8787` |
 | Build OOM on Render free tier | "JavaScript heap out of memory" | `NODE_OPTIONS=--max-old-space-size=256` env var |
-| Missing `OPENROUTER_API_KEY` | Tutor returns `grounded-fallback` only | Add key in Render dashboard → Environment tab |
+| Missing `OPENROUTER_API_KEY` | Tutor returns `grounded-fallback` only | Add key in Render dashboard â†’ Environment tab |
 | Missing `OPENAI_BASE_URL` / `TUTOR_MODEL` | AI tutor misconfigured | Add both in Render dashboard |
 | `.env` committed with real key | Security exposure, key likely revoked | Removed from `.env`; set via Render dashboard instead |
 | No commits on branch | Render cannot deploy | Commit + push to GitHub before creating service |
@@ -181,10 +206,10 @@ Then smoke-test the API: `/api/health`, `/api/curriculum`, a chapter, `/api/exam
 
 ### Step 1: Create Render Web Service
 1. Go to **render.com** and sign in with your GitHub account
-2. Click **New +** → **Web Service**
+2. Click **New +** â†’ **Web Service**
 3. Connect your GitHub account if prompted
 4. Select repo: **`usp1904/classx-platform`**, branch: **`main`**
-5. Render will detect `render.yaml` — click **"Use existing configuration"** or confirm:
+5. Render will detect `render.yaml` â€” click **"Use existing configuration"** or confirm:
    - **Name**: `classx-platform` (or `classx-platform-2` if taken)
    - **Runtime**: Docker
    - **Region**: Singapore (closest to India)
@@ -193,7 +218,7 @@ Then smoke-test the API: `/api/health`, `/api/curriculum`, a chapter, `/api/exam
 6. Click **Create Web Service**
 
 ### Step 2: Add Environment Variables (REQUIRED)
-In the Render dashboard, go to your service → **Environment** tab. Add these variables:
+In the Render dashboard, go to your service â†’ **Environment** tab. Add these variables:
 
 | Key | Value |
 |-----|-------|
@@ -204,7 +229,7 @@ In the Render dashboard, go to your service → **Environment** tab. Add these v
 
 `NODE_ENV=production`, `COOKIE_SECURE=true`, `SESSION_SECRET` (auto), `RAG_EMBEDDING_PROVIDER=local`, `RAG_RERANK_PROVIDER=none` are already in `render.yaml`. `CORS_ORIGIN` is intentionally unset (the SPA is same-origin).
 
-**Important**: `NODE_OPTIONS=--max-old-space-size=256` is **mandatory** — without it, the build will crash with "JavaScript heap out of memory" on Render's free tier.
+**Important**: `NODE_OPTIONS=--max-old-space-size=256` is **mandatory** â€” without it, the build will crash with "JavaScript heap out of memory" on Render's free tier.
 
 ### Step 3: Deploy
 1. Click **Create Web Service**
@@ -213,8 +238,8 @@ In the Render dashboard, go to your service → **Environment** tab. Add these v
 4. Health check: `https://classx-platform.onrender.com/api/health`
 
 ### Step 4: Verify
-- Open `https://classx-platform.onrender.com/api/health` — should return `{"ok":true,...}`
-- Open `https://classx-platform.onrender.com` — should show the ClassX Platform homepage
+- Open `https://classx-platform.onrender.com/api/health` â€” should return `{"ok":true,...}`
+- Open `https://classx-platform.onrender.com` â€” should show the ClassX Platform homepage
 - Test: `/api/curriculum`, `/api/chapters/mathematics/real-numbers`, `/api/exam/generate`, `/api/practice/start`, `/api/tutor`
 
 ### Troubleshooting
@@ -229,19 +254,19 @@ In the Render dashboard, go to your service → **Environment** tab. Add these v
 
 ## Alternative: Self-hosted VPS (recommended for 500-1000 concurrent users)
 
-Render free tier spins down after inactivity and has 512MB RAM — not suitable for 500+ students. For a trustworthy, always-on platform serving Class X students, self-host on a VPS.
+Render free tier spins down after inactivity and has 512MB RAM â€” not suitable for 500+ students. For a trustworthy, always-on platform serving Class X students, self-host on a VPS.
 
 ### Recommended stack
-- **VPS**: Hostinger KVM 2+ (2 vCPU, 4GB RAM, Ubuntu 22.04) — ~$6-12/month
-- **Domain**: .in or .com via Hostinger/Namecheap — ~$10-15/year
-- **SSL**: Let's Encrypt (Certbot) — free
+- **VPS**: Hostinger KVM 2+ (2 vCPU, 4GB RAM, Ubuntu 22.04) â€” ~$6-12/month
+- **Domain**: .in or .com via Hostinger/Namecheap â€” ~$10-15/year
+- **SSL**: Let's Encrypt (Certbot) â€” free
 - **Process manager**: PM2 (cluster/fork mode, auto-restart)
 - **Reverse proxy**: Nginx (gzip, static caching, rate limiting, SSL termination)
 
 ### Production config files (added)
-- `nginx.production.conf` — Nginx reverse proxy, rate limiting, gzip, static asset caching, SPA fallback
-- `ecosystem.config.js` — PM2 process manager (fork mode, single instance keeps in-memory sessions intact)
-- `.env.production` — Production environment template (copy to `.env`, replace placeholders)
+- `nginx.production.conf` â€” Nginx reverse proxy, rate limiting, gzip, static asset caching, SPA fallback
+- `ecosystem.config.js` â€” PM2 process manager (fork mode, single instance keeps in-memory sessions intact)
+- `.env.production` â€” Production environment template (copy to `.env`, replace placeholders)
 
 ### VPS deployment steps
 1. Buy VPS (Ubuntu 22.04), note IP + root password.
@@ -305,7 +330,7 @@ The app uses in-memory session stores (`server/lib/practice.js`, `server/lib/pro
 - Tutor calls OpenRouter (add rate limiting if needed)
 - Expect <200ms API response time under normal load; monitor with `pm2 monit`
 
-## Session/Auth Architecture — Redis + Qdrant + HTMX
+## Session/Auth Architecture â€” Redis + Qdrant + HTMX
 
 ### Redis (session store)
 Replaced in-memory `Map` sessions (`server/lib/practice.js`) and file-based progress (`server/lib/progress.json`) with Redis-backed store (`server/lib/session-store.js`).
@@ -315,14 +340,14 @@ Replaced in-memory `Map` sessions (`server/lib/practice.js`) and file-based prog
 - Files: `server/lib/session-store.js`, `server/lib/qdrant-client.js`
 
 ### Auth routes (added to `server/index.js`)
-- `POST /api/auth/register` — bcryptjs-hashed password registration
-- `POST /api/auth/login` — session-based login, sets `classx_sid` cookie
-- `POST /api/auth/logout` — session destroy + cookie clear
-- `GET /api/auth/me` — current session user
-- `requireAuth` middleware protects: practice, exam, progress, gamify/xp, video/progress
+- `POST /api/auth/register` â€” bcryptjs-hashed password registration
+- `POST /api/auth/login` â€” session-based login, sets `classx_sid` cookie
+- `POST /api/auth/logout` â€” session destroy + cookie clear
+- `GET /api/auth/me` â€” current session user
+- Guest-first: practice, exam, progress, gamify/xp, and video/progress accept the shared `guest` id. Logged-in users are pinned to their session id, so anonymous callers cannot read another user's progress.
 
 ### Qdrant (vector search upgrade)
-- `server/lib/qdrant-client.js` — QdrantClient for semantic search over chapter content
+- `server/lib/qdrant-client.js` â€” QdrantClient for semantic search over chapter content
 - Falls back to local lexical RAG when Qdrant unavailable
 - Configure `QDRANT_URL` env var (default `http://127.0.0.1:6333`)
 
@@ -351,13 +376,13 @@ docker run -p 6333:6333 qdrant/qdrant:v1.12
 ## Progress log
 - 2026-10-26: baseline verified (15 full Maths, 8 starters, 44 maps, 778 questions).
 - 2026-10-28: authored Science `Chemical Reactions and Equations` as a full lesson; refreshed graph; full `npm run verify` green. Shape now 16 full / 7 starter / 44 maps / 831 questions.
-- 2026-10-28: authored Science batch S1 — upgraded `Life Processes` (replaced legacy `biology.json` in place) and added `Control and Coordination` + `How do Organisms Reproduce`. `npm run verify` green; API smoke on `:8788` confirmed practice, 3-section exam, and grounded tutor citations from `Life Processes`. Shape now 19 full / 6 starter / 42 maps / 992 questions / 1664 chunks.
+- 2026-10-28: authored Science batch S1 â€” upgraded `Life Processes` (replaced legacy `biology.json` in place) and added `Control and Coordination` + `How do Organisms Reproduce`. `npm run verify` green; API smoke on `:8788` confirmed practice, 3-section exam, and grounded tutor citations from `Life Processes`. Shape now 19 full / 6 starter / 42 maps / 992 questions / 1664 chunks.
 - 2026-11-10: mass authored all Science (15 chapters) and all Social Science (22 chapters). Shape now 52 full / 0 starter / 15 maps / 2569 questions / 1664 chunks. `npm run verify` green (typecheck, check, coverage, tests).
 - 2026-11-10: added BYJU's clone engagement layer (SPEC-16..21): video lessons, adaptive practice, gamification, parent dashboard, doubt tutor, offline/PWA. Added ELI5 tutor mode (SPEC-22) across Maths, Science, Social Science. Dockerized with nginx+redis+postgres. Multimodel RAG + OKF metadata alignment. New frontend screens: VideoLesson, AdaptivePractice, DoubtTutor, Gamification, ParentDashboard, ConceptMapVisualizer, OKFMetadataBrowser, OfflineStatus, RAGSearchViewer. Refreshed graphify code graph (533 nodes / 909 edges / 27 communities). Deployment: Dockerfile, docker-compose.yml, nginx.conf, render.yaml for free Render deployment.
 - 2026-11-10: Fixed SPEC-23 learning aids engine with `addChunkedItems` helper extracting ~200 lines of repetitive chunking logic into ~10 lines. Added OKF metadata alignment with `source_references` (Arihant/RD Sharma/RS Aggarwal references) and `web_references`. Added science experiments, MCQ answers with explanations, bibliography/equations, social studies dates/revolts/wars. Added YouTube video catalog with ratings and safety filter. Added video error handling with fallback UI. Fixed ConceptMapVisualizer.tsx and VideoLesson.tsx TypeScript errors. Changed brand from "Peak" to "SiriLearnings". Refactored `server/lib/rag.js` with `addChunkedItems` helper reducing ~200 lines of repetitive chunking logic into ~10 lines. Semantic chunking with OKF metadata alignment and `attachOfficialTopics()` integrity check.
 
-## Backlog — remaining authoring
-- English: 15 chapters — enable `lessonDir: 'english'` in `sync-content.mjs` first; then Literature 3, Reading 2, Grammar 5, Writing 5.
+## Backlog â€” remaining authoring
+- English: 15 chapters â€” enable `lessonDir: 'english'` in `sync-content.mjs` first; then Literature 3, Reading 2, Grammar 5, Writing 5.
 
 ## Preconditions before mass authoring
 - `matchLesson()` now does exact normalized match first, then longest containment; `&` normalizes to `and`. Regression coverage lives in `tests/sync.test.js`.

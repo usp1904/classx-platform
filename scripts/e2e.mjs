@@ -63,7 +63,12 @@ async function stopServer(child) {
 
 function watch(page, state) {
   page.on('console', (message) => {
-    if (message.type() === 'error') state.errors.push(`console: ${message.text()}`);
+    if (message.type() !== 'error') return;
+    // Third-party fonts/video thumbnails are best-effort; only same-origin
+    // failures indicate an app or API regression.
+    const source = message.location()?.url || '';
+    if (source && !source.startsWith(base)) return;
+    state.errors.push(`console: ${message.text()}${source ? ` (${source.replace(base, '')})` : ''}`);
   });
   page.on('pageerror', (error) => state.errors.push(`page: ${error.message}`));
   page.on('response', (response) => {
@@ -245,8 +250,9 @@ async function mobileFlow(browser, state) {
   await open(page, '/');
   await page.getByRole('button', { name: 'Open navigation' }).click();
   await check(state, await page.locator('.sidebar.open').isVisible(), 'mobile drawer opens');
-  await page.locator('.sidebar.open').getByRole('link', { name: /Practice/ }).click();
+  await page.locator('.sidebar.open').getByRole('link', { name: 'Practice', exact: true }).click();
   await page.waitForURL(/\/practice/);
+  await page.locator('.sidebar.open').waitFor({ state: 'detached', timeout: 5000 }).catch(() => undefined);
   await check(state, (await page.locator('.sidebar.open').count()) === 0, 'mobile drawer closes on navigation');
   for (const route of ['/', '/courses', '/courses/mathematics/real-numbers', '/practice', '/mock-tests', '/tutor', '/planner', '/progress', '/library']) {
     await open(page, route);

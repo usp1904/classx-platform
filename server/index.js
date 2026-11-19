@@ -196,11 +196,6 @@ app.get('/api/auth/me', (req, res) => {
   res.json({ ok: true, userId: req.session.userId || null, authenticated: Boolean(req.session.userId) });
 });
 
-function requireAuth(req, res, next) {
-  if (!req.session.userId) return res.status(401).json({ ok: false, error: 'Login required' });
-  next();
-}
-
 app.use('/api', (req, res, next) => {
   res.setHeader('Cache-Control', 'no-store');
   next();
@@ -291,14 +286,23 @@ app.post('/api/tutor', async (req, res) => {
   }
 });
 
-app.post('/api/practice/start', requireAuth, (req, res) => {
+// The product is guest-first (the SPA defaults to userId "guest"). Authenticated
+// sessions may only touch their own progress; anonymous callers are limited to
+// the shared guest bucket instead of arbitrary user ids.
+function resolveUserId(req, requested) {
+  if (req.session?.userId) return req.session.userId;
+  if (!requested || requested === 'guest') return 'guest';
+  return null;
+}
+
+app.post('/api/practice/start', (req, res) => {
   const { subjectId, chapterId, count, difficulty } = req.body || {};
   const result = startPractice({ subjectId: subjectId || 'mathematics', chapterId, count, difficulty });
   if (!result.ok) return res.status(422).json(result);
   res.json(result);
 });
 
-app.post('/api/practice/submit', requireAuth, async (req, res) => {
+app.post('/api/practice/submit', async (req, res) => {
   const { sessionId, answers } = req.body || {};
   if (!sessionId) return res.status(400).json({ ok: false, error: 'sessionId is required' });
   const result = await submitSession({ sessionId, answers: answers || {} });
@@ -306,20 +310,20 @@ app.post('/api/practice/submit', requireAuth, async (req, res) => {
   res.json(result);
 });
 
-app.post('/api/exam/generate', requireAuth, (req, res) => {
+app.post('/api/exam/generate', (req, res) => {
   const { subjectId, chapterIds, counts } = req.body || {};
   const result = startExam({ subjectId: subjectId || 'mathematics', chapterIds, counts });
   if (!result.ok) return res.status(422).json(result);
   res.json(result);
 });
 
-app.get('/api/exam/:paperId/key', requireAuth, async (req, res) => {
+app.get('/api/exam/:paperId/key', async (req, res) => {
   const result = await getExamKey(String(req.params.paperId || ''));
   if (!result.ok) return res.status(410).json(result);
   res.json(result);
 });
 
-app.post('/api/exam/submit', requireAuth, async (req, res) => {
+app.post('/api/exam/submit', async (req, res) => {
   const { paperId, answers, subjectiveMarks } = req.body || {};
   if (!paperId) return res.status(400).json({ ok: false, error: 'paperId is required' });
   const result = await submitSession({ sessionId: paperId, answers: answers || {}, subjectiveMarks: subjectiveMarks || {} });
@@ -331,15 +335,18 @@ app.get('/api/plan', (req, res) => {
   res.json({ ok: true, plan: getPlan() });
 });
 
-app.get('/api/progress', requireAuth, async (req, res) => {
-  const progress = await getProgress(String(req.query.userId || req.session.userId));
+app.get('/api/progress', async (req, res) => {
+  const userId = resolveUserId(req, String(req.query.userId || ''));
+  if (!userId) return res.status(403).json({ ok: false, error: 'Not allowed' });
+  const progress = await getProgress(userId);
   res.json({ ok: true, progress });
 });
 
-app.put('/api/progress', requireAuth, async (req, res) => {
-  const { userId, ...patch } = req.body || {};
-  const targetUserId = userId || req.session.userId;
-  const progress = await updateProgress(targetUserId, patch);
+app.put('/api/progress', async (req, res) => {
+  const { userId: requestedUserId, ...patch } = req.body || {};
+  const userId = resolveUserId(req, requestedUserId);
+  if (!userId) return res.status(403).json({ ok: false, error: 'Not allowed' });
+  const progress = await updateProgress(userId, patch);
   res.json({ ok: true, progress });
 });
 
@@ -402,8 +409,9 @@ app.get('/api/video/:subjectId/:chapterId', (req, res) => {
   res.json({ ok: true, video, chapterId, subjectId, gating: { requiredMastery: 80 } });
 });
 
-app.post('/api/video/progress', requireAuth, async (req, res) => {
-  const { userId, chapterId, positionSec, durationSec, bookmarked } = req.body || {};
+app.post('/api/video/progress', async (req, res) => {
+  const { userId: requestedUserId, chapterId, positionSec, durationSec, bookmarked } = req.body || {};
+  const userId = resolveUserId(req, requestedUserId);
   if (!userId || !chapterId) return res.status(400).json({ ok: false, error: 'userId and chapterId required' });
   const current = await getProgress(userId);
   await updateProgress(userId, { videoProgress: { ...(current.videoProgress || {}), [chapterId]: { positionSec, durationSec, bookmarked: Boolean(bookmarked), updatedAt: new Date().toISOString() } } });
@@ -413,8 +421,10 @@ app.post('/api/video/progress', requireAuth, async (req, res) => {
 /* ---- SPEC-18 Gamification (BYJU's clone) ---- */
 app.get('/api/gamify/badges', (req, res) => res.json({ ok: true, badges: getBadges() }));
 app.get('/api/gamify/leaderboard', (req, res) => res.json({ ok: true, leaderboard: getLeaderboard(Number(req.query.limit) || 20) }));
-app.post('/api/gamify/xp', requireAuth, async (req, res) => {
-  const { userId = 'guest', amount, reason } = req.body || {};
+app.post('/api/gamify/xp', async (req, res) => {
+  const { userId: requestedUserId = 'guest', amount, reason } = req.body || {};
+  const userId = resolveUserId(req, requestedUserId);
+  if (!userId) return res.status(403).json({ ok: false, error: 'Not allowed' });
   if (!amount) return res.status(400).json({ ok: false, error: 'amount required' });
   const result = await awardXp(userId, Number(amount), reason || 'activity');
   res.json({ ok: true, ...result });
@@ -425,7 +435,7 @@ app.get('/api/parent/:childUserId', (req, res) => res.json({ ok: true, parent: g
 app.post('/api/parent/link', (req, res) => res.json({ ok: true, ...linkParent(req.body.childUserId) }));
 
 /* ---- SPEC-17 Adaptive practice (BYJU's clone) - difficulty hint ---- */
-app.post('/api/practice/adaptive', requireAuth, (req, res) => {
+app.post('/api/practice/adaptive', (req, res) => {
   const { subjectId = 'mathematics', chapterId, count = 10, currentDifficulty = 'simple', accuracy } = req.body || {};
   let difficulty = currentDifficulty;
   if (accuracy !== undefined) {

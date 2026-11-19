@@ -10,7 +10,8 @@ This file is the recovery checklist. `docs/SYNC.md` explains the contract.
   gitlink was removed because it was a nested repo with no `.gitmodules`. Do not re-add it.
 - Canonical branch: `main`. `Siri_ClassX-Platform` is an identical mirror.
 - Canonical runtime: Node 26 in Docker, Express on `:8787`, SPA in `server/public`.
-- Sessions/practice state: in-memory (`MemoryStore`, `global.__practiceSessions`). No Redis/Postgres running.
+- Sessions/practice state: in-memory TTL store (Redis optional via `initRedis()`). No Redis/Postgres running.
+
 
 ## 2. Health check — run first
 
@@ -33,7 +34,7 @@ npm run build
 npm start                      # http://localhost:8787/api/health
 ```
 
-Expected: 4 subjects, 67 chapters, 2569 questions, 19/19 tests, build ~665 kB JS.
+Expected: 4 subjects, 67 chapters, 2569 questions, 22/22 tests, build ~665 kB JS.
 If `npm test` hangs: it is a synchronous loop, not a slow test. The last known one was
 `splitIntoChunks()` in `server/lib/rag.js` (fixed). Re-introducing a tail-overlap loop
 will hang the tutor tests again.
@@ -96,3 +97,52 @@ Local uses `COOKIE_SECURE=false` (plain HTTP); Render/VPS use `true` (HTTPS).
 - Never commit `.env`, `.env.production`, `.secrets`, keys, or tunnel logs. Local secrets belong in `.secrets` (gitignored, Docker-ignored); the server loads `.env` then `.secrets`.
 - Never `git push --force` to `main` or `Siri_ClassX-Platform`.
 - One drift class per commit; run section 2 again before pushing.
+
+## 9. RAG pipeline upgrade runbook
+
+Target: production multimodal agentic GraphRAG diagram. Current code covers a local subset.
+`AGENTS.md` owns the capability matrix and agent rules; this section owns the execution order.
+Work one phase per commit. Do not start a phase until the previous gate passes.
+
+### Phase 0 — Baseline (done)
+1. `npm test`, `npm run check`, `npm run verify:sync:docker`.
+2. Gate: 22/22 tests, Docker `/api/health.commit == HEAD`.
+
+### Phase 1 — Provenance and chunk contract
+1. Add `docId`, `sectionPath`, `chunkIndex`, `checksum` to every chunk in `server/lib/rag.js`.
+2. Surface them in `getCitations()` and `/api/search` result objects (keep `page: null` until OCR).
+3. Add a unit test asserting every chunk has provenance and no duplicate `docId + chunkIndex`.
+4. Gate: `npm test`; tutor citations still pass.
+
+### Phase 2 — Multimodal ingestion (text first)
+1. Keep `source/**` authoritative; add an asset manifest for PDFs (`sha256`, page count).
+2. Add text extraction for PDFs already listed in `server/data/sources.json`; no new runtime dependency unless opt-in.
+3. Store extracted page text under generated data, never commit it.
+4. Gate: `npm run check` + idempotent `npm run sync` (second run changes nothing).
+
+### Phase 3 — Real embeddings behind the existing provider switch
+1. Implement `openai` (or local ONNX) in `server/lib/rag-multimodel.js` only when `RAG_EMBEDDING_PROVIDER` is set and a key exists.
+2. Add batching + timeout + fallback to `local`; never block boot.
+3. Add an offline test that fakes the provider and asserts the fallback path.
+4. Gate: default env (`local`, no network) still passes all tests.
+
+### Phase 4 — Query planning and graph traversal
+1. Extend `TYPE_HINTS` into an explicit planner result: `{ intent, chapters, needsGraph }`.
+2. Add one-hop graph expansion for multi-hop questions; cap expansion.
+3. Gate: new test for a multi-chapter query plus the existing unrelated-topic refusal test.
+
+### Phase 5 — Grounding and validation gates
+1. After generation, verify each citation id exists in the retrieved set; drop unsupported claims.
+2. Add an answerability threshold: below it, return the grounded skeleton plus "insufficient evidence".
+3. Gate: `tests/tutor.test.js` still green; add one low-evidence test.
+
+### Phase 6 — Observability and evaluation
+1. Log per-query latency, candidate count, and top score to `/api/health` aggregates (no PII).
+2. Add a small golden set (10 questions) under `tests/` with expected chapter hits.
+3. Gate: `npm test`; metrics visible in health or a dedicated read-only endpoint.
+
+### Phase 7 — Control plane (only if deployment requires it)
+1. Multi-tenant/RBAC, quotas, moderation, retention: each needs an owner decision before code.
+2. Keep `guest` behavior for the public app; authenticated users are pinned to their session id.
+3. Gate: security review + Docker parity + Render smoke (`/api/health`, one deep link, one API read).
+
