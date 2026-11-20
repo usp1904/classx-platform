@@ -79,8 +79,17 @@ export function Layout() {
   const { progress, toasts, dismissToast, curriculum } = useApp();
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [targetTrack, setTargetTrack] = useState<'boards' | 'competitive'>(() => {
+    return (localStorage.getItem('classx_target_track') as 'boards' | 'competitive') || 'boards';
+  });
   const location = useLocation();
   const navigate = useNavigate();
+
+  const toggleTrack = () => {
+    const next = targetTrack === 'boards' ? 'competitive' : 'boards';
+    setTargetTrack(next);
+    localStorage.setItem('classx_target_track', next);
+  };
 
   useEffect(() => {
     const handler = (event: KeyboardEvent) => {
@@ -119,13 +128,13 @@ export function Layout() {
           <button className="mobile-close" onClick={() => setMobileOpen(false)} aria-label="Close navigation"><X size={20} /></button>
         </div>
 
-        <div className="board-chip">
+        <button className="board-chip" onClick={toggleTrack} title="Click to toggle track: School (10-18y) vs Competitive (DSC/UPSC)">
           <span className="pulse-dot" />
-          <div>
-            <strong>CBSE 2026-27 · DSC & UPSC</strong>
-            <small>{daysToBoards} days to target exams</small>
+          <div style={{ textAlign: 'left' }}>
+            <strong>{targetTrack === 'boards' ? 'CBSE Class X (10-18y)' : 'DSC & UPSC Foundation'}</strong>
+            <small>{targetTrack === 'boards' ? `${daysToBoards} days to board exams` : 'Active competitive track · Click to switch'}</small>
           </div>
-        </div>
+        </button>
 
         <nav className="side-nav">
           {nav.map((group) => (

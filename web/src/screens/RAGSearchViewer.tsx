@@ -34,7 +34,7 @@ export default function RAGSearchViewer() {
         <div className="relative">
           <Search size={18} className="absolute left-3 top-3 text-muted" />
           <input
-            className="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-700 bg-gray-900 text-white focus:ring-2 focus:ring-indigo-500"
+            className="w-full pl-10 pr-4 py-3 rounded-xl border border-white/15 bg-white/5 text-white focus:ring-2 focus:ring-indigo-500 placeholder-white/30 outline-none backdrop-blur-md"
             placeholder="Search curriculum (e.g. quadratic formula, photosynthesis, French Revolution)"
             value={query}
             onChange={(e) => setQuery(e.target.value)}

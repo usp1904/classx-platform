@@ -25,7 +25,7 @@ import { useApp } from '../lib/store';
 import { Badge, Button, Card, SectionHeader, Segmented } from '../components/ui';
 import { RichText } from '../components/RichText';
 
-type Mode = 'socratic' | 'board' | 'competitive';
+type Mode = 'socratic' | 'board' | 'competitive' | 'eli5';
 
 interface Message {
   id: string;
@@ -36,14 +36,16 @@ interface Message {
 
 const modes = [
   { id: 'socratic' as const, label: 'Socratic' },
-  { id: 'board' as const, label: 'Board mode' },
-  { id: 'competitive' as const, label: 'JEE / NEET' },
+  { id: 'board' as const, label: 'Board Mode' },
+  { id: 'competitive' as const, label: 'DSC / UPSC / JEE' },
+  { id: 'eli5' as const, label: 'ELI5 (Story)' },
 ];
 
 const modeCopy: Record<Mode, { title: string; description: string; icon: ReactNode }> = {
   socratic: { title: 'Socratic tutor', description: 'Asks the next question instead of dumping the answer.', icon: <Compass size={16} /> },
   board: { title: 'Board answer', description: 'Full-marks structure: given, formula, steps, conclusion.', icon: <ScrollText size={16} /> },
-  competitive: { title: 'Competitive edge', description: 'Shortcut, pattern recognition, and time saved.', icon: <Zap size={16} /> },
+  competitive: { title: 'Competitive edge', description: 'Shortcut, pattern recognition, and time saved for DSC, UPSC & JEE.', icon: <Zap size={16} /> },
+  eli5: { title: "Explain Like I'm 5", description: 'Simple analogies, visual mental models, and warm intuitive explanations.', icon: <Sparkles size={16} /> },
 };
 
 const starterPrompts: Record<string, string[]> = {

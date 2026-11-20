@@ -129,10 +129,10 @@ export default function AdaptivePractice() {
                 <button
                   key={chapter.id}
                   onClick={() => chooseChapter(chapter.id)}
-                  className={`w-full text-left px-3 py-2 rounded border transition ${chapter.id === chapterId ? 'border-indigo-500 bg-indigo-500/10 text-indigo-400' : 'border-gray-700 hover:border-gray-500'}`}
+                  className={`w-full text-left px-3 py-2.5 rounded-xl border transition flex items-center justify-between ${chapter.id === chapterId ? 'border-indigo-500/80 bg-indigo-500/15 text-indigo-300 shadow-[0_0_15px_rgba(99,102,241,0.2)]' : 'border-white/10 bg-white/5 hover:border-white/20 text-slate-200'}`}
                 >
-                  <span>{chapter.name}</span>
-                  <span className="ml-auto text-xs text-muted">×{chapter.stats.quizzes} questions</span>
+                  <span className="font-medium text-sm">{chapter.name}</span>
+                  <span className="text-xs text-muted">×{chapter.stats.quizzes} MCQs</span>
                 </button>
               ))}
             </div>
@@ -233,7 +233,7 @@ export default function AdaptivePractice() {
                     <button
                       key={oi}
                       onClick={() => setAnswers({ ...answers, [q.id]: oi })}
-                      className={`w-full text-left px-3 py-2 rounded border transition ${selected ? 'border-indigo-500 bg-indigo-500/10 text-indigo-400' : 'border-gray-700 hover:border-gray-500'}`}
+                      className={`w-full text-left px-4 py-3 rounded-xl border transition ${selected ? 'border-indigo-500/80 bg-indigo-500/15 text-indigo-200 shadow-[0_0_20px_rgba(99,102,241,0.25)]' : 'border-white/10 bg-white/5 hover:border-white/20 text-slate-200'}`}
                     >
                       {opt}
                     </button>
@@ -245,7 +245,7 @@ export default function AdaptivePractice() {
               <div className="pt-2">
                 <p className="text-xs text-muted mb-1">Type your answer (open-ended):</p>
                 <textarea
-                  className="w-full px-3 py-2 rounded border border-gray-700 bg-gray-900 text-white focus:ring-2 focus:ring-indigo-500 resize-none"
+                  className="w-full px-3 py-2 rounded-xl border border-white/10 bg-white/5 text-white focus:ring-2 focus:ring-indigo-500 resize-none outline-none"
                   rows={3}
                   placeholder="Write your answer…"
                   onChange={(e) => setAnswers({ ...answers, [q.id]: parseInt(e.target.value) || 0 })}

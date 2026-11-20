@@ -21,7 +21,7 @@ export default function ParentDashboard() {
       <SectionHeader title="Parent Dashboard" description="Read-only view of your child's ClassX progress"/>
       <div className="flex gap-2 items-end">
         <input
-          className="border border-gray-700 rounded px-3 py-2 bg-gray-900 text-white focus:ring-2 focus:ring-blue-500"
+          className="border border-white/15 rounded-xl px-4 py-2.5 bg-white/5 text-white focus:ring-2 focus:ring-indigo-500 placeholder-white/30 outline-none backdrop-blur-md text-sm"
           placeholder="Child user id (default: guest)"
           value={childId}
           onChange={(e) => setChildId(e.target.value)}
@@ -34,22 +34,22 @@ export default function ParentDashboard() {
       ) : parent ? (
         <>
           <div className="grid grid-cols-3 gap-4">
-            <Stat label="Child XP" value={parent.xp.toLocaleString()} icon={<Activity size={20} className="text-blue-400"/>}/>
-            <Stat label="Streak" value={parent.streak} icon={<Clock size={20} className="text-orange-500"/>}/>
-            <Stat label="Chapters" value={parent.completedChapters} icon={<BookIcon size={20} className="text-green-400"/>}/>
+            <Stat label="Child XP" value={parent.xp.toLocaleString()} icon={<Activity size={20} className="text-indigo-400"/>}/>
+            <Stat label="Streak" value={parent.streak} icon={<Clock size={20} className="text-amber-400"/>}/>
+            <Stat label="Chapters" value={parent.completedChapters} icon={<BookIcon size={20} className="text-mint-400"/>}/>
           </div>
           <Card>
             <SectionHeader title="Recent exams" description="Last 10 attempts"/>
             <div className="overflow-x-auto">
-              <table className="w-full text-left text-sm">
-                <thead><tr className="border-b text-muted"><th className="pb-2">Subject</th><th className="pb-2">Score</th><th className="pb-2">Total</th><th className="pb-2">At</th></tr></thead>
+              <table className="w-full text-left text-sm border-collapse">
+                <thead><tr className="border-b border-white/10 text-muted"><th className="pb-2.5">Subject</th><th className="pb-2.5">Score</th><th className="pb-2.5">Total</th><th className="pb-2.5">At</th></tr></thead>
                 <tbody>
                   {parent.exams.map((exam, i) => (
-                    <tr key={i} className="border-b hover:bg-gray-800/30">
-                      <td className="py-2">{exam.subjectId}</td>
-                      <td className="py-2 font-medium">{exam.score}</td>
-                      <td className="py-2">{exam.total}</td>
-                      <td className="py-2 text-muted text-xs">{new Date(exam.at).toLocaleDateString()}</td>
+                    <tr key={i} className="border-b border-white/5 hover:bg-white/5 transition">
+                      <td className="py-2.5 font-medium">{exam.subjectId}</td>
+                      <td className="py-2.5 font-semibold text-mint-400">{exam.score}</td>
+                      <td className="py-2.5">{exam.total}</td>
+                      <td className="py-2.5 text-muted text-xs">{new Date(exam.at).toLocaleDateString()}</td>
                     </tr>
                   ))}
                   {!parent.exams.length && <tr><td colSpan={4} className="py-4 text-center text-muted">No exams yet.</td></tr>}
@@ -61,7 +61,7 @@ export default function ParentDashboard() {
             <SectionHeader title="Badges earned" description={parent.badges.length ? `${parent.badges.length} badge(s)` : 'No badges yet'}/>
             <div className="flex gap-2 flex-wrap">
               {parent.badges.map((b) => (
-                <Badge key={b.id} tone="neutral" className="bg-amber-500/10 border-amber-500/30 text-amber-400">{b.name}</Badge>
+                <Badge key={b.id} tone="saffron">{b.name}</Badge>
               ))}
               {!parent.badges.length && <span className="text-muted">None yet.</span>}
             </div>

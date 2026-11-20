@@ -61,11 +61,11 @@ export default function DoubtTutor() {
             <SectionHeader eyebrow="Ask a question" title="Your doubt" action={
               <div className="flex gap-2">
                 <Badge tone={mode === 'socratic' ? 'indigo' : mode === 'board' ? 'mint' : mode === 'eli5' ? 'rose' : 'saffron'} className="text-xs">{mode.toUpperCase()}</Badge>
-                <select value={mode} onChange={(e) => setMode(e.target.value as any)} className="bg-gray-900 border border-gray-700 text-white px-2 py-1 rounded text-xs">
-                  <option value="socratic">Socratic</option>
-                  <option value="board">Board</option>
-                  <option value="eli5">Explain like I'm 5</option>
-                  <option value="competitive">Competitive</option>
+                <select value={mode} onChange={(e) => setMode(e.target.value as any)} className="bg-white/10 border border-white/15 text-white px-2.5 py-1.5 rounded-lg text-xs backdrop-blur-md outline-none">
+                  <option value="socratic" className="bg-slate-900">Socratic</option>
+                  <option value="board" className="bg-slate-900">Board Mode</option>
+                  <option value="eli5" className="bg-slate-900">Explain like I'm 5</option>
+                  <option value="competitive" className="bg-slate-900">DSC / UPSC / JEE</option>
                 </select>
               </div>
             } />
@@ -73,7 +73,7 @@ export default function DoubtTutor() {
               <div className="relative">
                 <input
                   ref={inputRef}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-700 bg-gray-900 text-white focus:ring-2 focus:ring-indigo-500 placeholder-gray-500"
+                  className="w-full px-4 py-3 rounded-xl border border-white/15 bg-white/5 text-white focus:ring-2 focus:ring-indigo-500 placeholder-white/30 outline-none backdrop-blur-md"
                   placeholder="e.g. How do I prove the Pythagorean theorem?"
                   value={question}
                   onChange={(e) => setQuestion(e.target.value)}
@@ -131,7 +131,7 @@ export default function DoubtTutor() {
                   {answer}
                 </div>
               {provider && (
-                <div className="chat-meta-row flex items-center justify-between px-2 py-2 rounded bg-gray-800/50 text-xs text-muted border border-gray-700/50">
+                <div className="chat-meta-row flex items-center justify-between px-3 py-2 rounded-xl bg-white/5 text-xs text-muted border border-white/10 backdrop-blur-md">
                   <span>Provider: {provider.mode === 'grounded-fallback' ? 'grounded fallback' : provider.mode} · {provider.model}</span>
                   <span className="flex items-center gap-1"><BookOpen size={12} /> {sources.length} citation(s)</span>
                 </div>
@@ -140,10 +140,10 @@ export default function DoubtTutor() {
                 <div className="space-y-1">
                   <div className="text-xs font-semibold text-muted mb-1">Sources</div>
                   {sources.map((src, i) => (
-                    <div key={i} className="citation-card flex items-start gap-2 px-3 py-1 rounded border border-gray-700/50 text-xs bg-gray-900/30">
-                      <span className="text-indigo-400">[S{i + 1}]</span>
+                    <div key={i} className="citation-card flex items-start gap-2 px-3 py-2 rounded-xl border border-white/10 text-xs bg-white/5 backdrop-blur-md">
+                      <span className="text-indigo-400 font-semibold">[S{i + 1}]</span>
                       <div>
-                        <div className="font-medium">{src.title}</div>
+                        <div className="font-medium text-slate-200">{src.title}</div>
                         <div className="text-muted">{src.subject} · {src.chapter}</div>
                       </div>
                     </div>
