@@ -228,26 +228,55 @@ export default function LearningAids() {
 
   const [data, setData] = useState<LearningAidsData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [fetchError, setFetchError] = useState(false);
   const [expandedAid, setExpandedAid] = useState<string | null>(null);
   const [searchFilter, setSearchFilter] = useState('');
   const [selectedGroup, setSelectedGroup] = useState<string>('all');
 
-  useEffect(() => {
+  const loadData = () => {
     setLoading(true);
+    setFetchError(false);
     api.learningAids(subjectId, chapterId).then((payload) => {
-      setData(payload);
+      if (payload && payload.aids && payload.aids.length > 0) {
+        setData(payload);
+        setFetchError(false);
+      } else {
+        setFetchError(true);
+      }
       setLoading(false);
     }).catch((err) => {
       console.error('LearningAids load error:', err);
+      setFetchError(true);
       setLoading(false);
     });
+  };
+
+  useEffect(() => {
+    loadData();
   }, [subjectId, chapterId]);
 
   const currentSubject = curriculum?.subjects?.find((s) => s.id === subjectId);
   const currentChapter = currentSubject?.chapters?.find((c) => c.id === chapterId);
 
   if (loading) return <div className="page-loading"><div className="loader-ring" /><span>Compiling 30 Master Learning Aids…</span></div>;
-  if (!data) return <div className="p-8 text-center text-muted">No learning aids available for this chapter.</div>;
+
+  if (fetchError || !data) {
+    return (
+      <div className="page space-y-6">
+        <Card className="empty-state p-10">
+          <AlertTriangle size={36} className="text-amber-400 mb-2" />
+          <h2>Learning Aids Temporarily Unavailable</h2>
+          <p>We encountered a brief hiccup loading learning aids for <strong>{currentChapter?.name || chapterId}</strong>.</p>
+          <div className="flex gap-3 mt-4">
+            <Button variant="primary" onClick={loadData}>Retry Loading</Button>
+            <Button variant="secondary" onClick={() => navigate('/learning-aids/mathematics/real-numbers')}>
+              Explore Real Numbers
+            </Button>
+          </div>
+        </Card>
+      </div>
+    );
+  }
 
   const { aids, aidsWithContent } = data;
 
@@ -378,22 +407,22 @@ export default function LearningAids() {
           return (
             <Card
               key={aid.id}
-              className={`transition-all duration-200 border ${isExpanded ? 'border-indigo-500/50 ring-1 ring-indigo-500/30 bg-gray-900/80 md:col-span-2 lg:col-span-3' : 'hover:border-white/20'}`}
+              className={`transition-all duration-200 ${isExpanded ? 'border-[var(--primary)] ring-1 ring-[var(--primary)] md:col-span-2 lg:col-span-3' : ''}`}
             >
               <div
                 className="flex items-start justify-between gap-3 cursor-pointer p-4"
                 onClick={() => setExpandedAid(isExpanded ? null : aid.id)}
               >
                 <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-10 h-10 rounded-xl bg-[var(--surface-2)] border border-[var(--glass-border)] flex items-center justify-center flex-shrink-0 mt-0.5">
                     <GroupIcon size={18} className={groupInfo.color} />
                   </div>
                   <div>
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-sm font-bold text-gray-100">{aid.label}</span>
-                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-white/10 text-gray-400 uppercase">{aid.id}</span>
+                      <span className="text-sm font-bold text-[var(--ink)]">{aid.label}</span>
+                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-[var(--surface-2)] text-[var(--muted)] uppercase">{aid.id}</span>
                     </div>
-                    <span className="text-xs text-gray-400 block">{groupInfo.label}</span>
+                    <span className="text-xs text-[var(--muted)] block">{groupInfo.label}</span>
                   </div>
                 </div>
 
@@ -424,12 +453,12 @@ export default function LearningAids() {
 
               {/* Expanded Accordion Body */}
               {isExpanded && (
-                <div className="px-4 pb-5 pt-2 border-t border-white/10 mt-1 space-y-3">
-                  <div className="flex justify-between items-center text-xs text-gray-400 pt-2">
-                    <span className="font-semibold text-indigo-300">Detailed Cognitive Aid Content:</span>
+                <div className="px-4 pb-5 pt-2 border-t border-[var(--glass-border)] mt-1 space-y-3">
+                  <div className="flex justify-between items-center text-xs text-[var(--muted)] pt-2">
+                    <span className="font-semibold text-[var(--primary)]">Detailed Cognitive Aid Content:</span>
                     <span className="text-[11px]">Click title to collapse</span>
                   </div>
-                  <div className="p-4 rounded-xl bg-black/40 border border-white/10 overflow-hidden">
+                  <div className="p-4 rounded-xl bg-[var(--surface-2)] border border-[var(--glass-border)] overflow-hidden">
                     {renderAidData(aid.data, aid.id)}
                   </div>
                 </div>

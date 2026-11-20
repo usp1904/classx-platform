@@ -1,4 +1,4 @@
-import { getLesson, subjects, sources } from './data.js';
+import { getLesson, getChapter, subjects, sources } from './data.js';
 
 const STOP = new Set('a an and are as at be but by for from has have how in into is it its of on or that the their then there these this to was were what when where which who why will with you your'.split(' '));
 const SYNONYMS = new Map(Object.entries({
@@ -630,9 +630,18 @@ export function getConceptGraph(subjectId, chapterId) {
       source: 'Authored concept map',
     };
   }
-  const nodes = (lesson?.concepts || []).map((c, i) => ({ id: `n${i}`, label: c.name, group: 'concept' }));
-  const edges = nodes.slice(1).map((node, i) => [nodes[0].id, node.id]);
-  return { title: lesson?.chapter || 'Chapter map', nodes, edges, source: 'Derived from lesson concepts' };
+  const chapter = getChapter(subjectId, chapterId);
+  const fallbackTopics = (chapter?.topics || []).map((t) => typeof t === 'string' ? t : t.name || t.topic || '');
+  const rawConcepts = lesson?.concepts?.length
+    ? lesson.concepts.map((c) => c.name || c.title)
+    : (fallbackTopics.length ? fallbackTopics : [chapter?.name || 'Core Concept', 'Fundamental Principles', 'Standard Methodology', 'Exam Problem Patterns', 'Real-World Applications']);
+  const nodes = rawConcepts.map((name, i) => ({
+    id: `n${i}`,
+    label: name,
+    group: i === 0 ? 'foundation' : i % 3 === 0 ? 'method' : i % 3 === 1 ? 'analysis' : 'concept',
+  }));
+  const edges = nodes.slice(1).map((node, i) => [nodes[Math.floor(i / 2)].id, node.id]);
+  return { title: chapter?.name || lesson?.chapter || 'Chapter map', nodes, edges, source: lesson ? 'Derived from lesson concepts' : 'Derived from syllabus topics' };
 }
 
 export function getCitations(results) {

@@ -38,19 +38,26 @@ export default function App() {
               <Route path="courses/:subjectId/:chapterId" element={<ChapterPage />} />
               <Route path="practice" element={<Practice />} />
               <Route path="mock-tests" element={<MockTests />} />
+              <Route path="mock-exams" element={<Navigate to="/mock-tests" replace />} />
               <Route path="tutor" element={<DoubtTutor />} />
               <Route path="doubt" element={<Navigate to="/tutor" replace />} />
               <Route path="planner" element={<Planner />} />
+              <Route path="study-plans" element={<Navigate to="/planner" replace />} />
               <Route path="progress" element={<ProgressPage />} />
               <Route path="library" element={<Library />} />
+              <Route path="video" element={<Navigate to="/video/mathematics/real-numbers" replace />} />
               <Route path="video/:subjectId/:chapterId" element={<VideoLesson />} />
               <Route path="adaptive-practice" element={<AdaptivePractice />} />
+              <Route path="daily-quizzes" element={<Navigate to="/adaptive-practice" replace />} />
+              <Route path="concept-map" element={<Navigate to="/concept-map/mathematics/real-numbers" replace />} />
               <Route path="concept-map/:subjectId/:chapterId" element={<ConceptMapVisualizer />} />
               <Route path="okf-metadata" element={<OKFMetadataBrowser />} />
               <Route path="offline-status" element={<OfflineStatus />} />
               <Route path="rag-search" element={<RAGSearchViewer />} />
               <Route path="gamification" element={<Gamification />} />
               <Route path="parent" element={<ParentDashboard />} />
+              <Route path="analytics" element={<Navigate to="/parent" replace />} />
+              <Route path="learning-aids" element={<Navigate to="/learning-aids/mathematics/real-numbers" replace />} />
               <Route path="learning-aids/:subjectId/:chapterId" element={<LearningAids />} />
               <Route path="dashboard" element={<Navigate to="/" replace />} />
               <Route path="*" element={<NotFound />} />

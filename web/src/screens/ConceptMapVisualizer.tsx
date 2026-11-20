@@ -162,8 +162,8 @@ export default function ConceptMapVisualizer() {
       {error || !graph || !graph.nodes.length ? (
         <Card className="p-12 text-center">
           <AlertCircle size={40} className="mx-auto mb-3 text-amber-400" />
-          <h3 className="text-lg font-bold text-white mb-2">No Visual Graph for this Chapter</h3>
-          <p className="text-gray-400 text-xs max-width-md mx-auto mb-4">
+          <h3 className="text-lg font-bold text-[var(--ink)] mb-2">No Visual Graph for this Chapter</h3>
+          <p className="text-[var(--muted)] text-xs max-width-md mx-auto mb-4">
             This syllabus chapter is currently indexed as raw topic text. Visual concept maps are available for all authored Mathematics, Science, and Social Science chapters.
           </p>
           <div className="flex gap-2 justify-center">
@@ -179,12 +179,12 @@ export default function ConceptMapVisualizer() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
           {/* Main SVG Graph Canvas */}
           <Card className="lg:col-span-3 p-4 overflow-hidden relative min-h-[460px]">
-            <div className="flex items-center justify-between mb-3 text-xs text-gray-400 border-b border-white/10 pb-2">
-              <span className="flex items-center gap-2 font-semibold text-gray-200">
+            <div className="flex items-center justify-between mb-3 text-xs text-[var(--muted)] border-b border-[var(--glass-border)] pb-2">
+              <span className="flex items-center gap-2 font-semibold text-[var(--ink)]">
                 <Layers size={14} className="text-indigo-400" />
                 <span>Click any node to inspect semantic connections</span>
               </span>
-              <span className="font-mono text-[11px] text-gray-500">860 × {height}</span>
+              <span className="font-mono text-[11px] text-[var(--muted-2)]">860 × {height}</span>
             </div>
 
             <div className="overflow-auto max-h-[580px] p-2">
@@ -287,18 +287,18 @@ export default function ConceptMapVisualizer() {
 
           {/* Node Inspector Side Panel */}
           <div className="space-y-4">
-            <Card className="p-5 border-indigo-500/30">
-              <div className="eyebrow light mb-2 text-indigo-400">Node Inspector</div>
+            <Card className="p-5 border-[var(--primary)]/30">
+              <div className="eyebrow light mb-2 text-[var(--primary)]">Node Inspector</div>
               {selectedNode ? (
                 <div className="space-y-3">
-                  <h3 className="text-base font-bold text-white">{selectedNode.label}</h3>
+                  <h3 className="text-base font-bold text-[var(--ink)]">{selectedNode.label}</h3>
                   <div className="flex items-center gap-2">
                     <Badge tone="indigo" className="text-xs uppercase">{selectedNode.group || 'concept'}</Badge>
-                    <span className="text-[11px] font-mono text-gray-400">ID: {selectedNode.id}</span>
+                    <span className="text-[11px] font-mono text-[var(--muted)]">ID: {selectedNode.id}</span>
                   </div>
 
-                  <div className="pt-3 border-t border-white/10 space-y-2">
-                    <span className="text-xs font-semibold text-gray-300 block">Direct Connections ({connectedEdges.length}):</span>
+                  <div className="pt-3 border-t border-[var(--glass-border)] space-y-2">
+                    <span className="text-xs font-semibold text-[var(--ink)] block">Direct Connections ({connectedEdges.length}):</span>
                     {connectedEdges.length === 0 ? (
                       <span className="text-xs text-muted block">No incoming or outgoing links</span>
                     ) : (
@@ -310,11 +310,11 @@ export default function ConceptMapVisualizer() {
                           return (
                             <button
                               key={i}
-                              className="w-full text-left p-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-xs flex items-center justify-between text-gray-200 transition-colors"
+                              className="w-full text-left p-2 rounded-lg bg-[var(--surface-2)] hover:bg-[var(--surface)] border border-[var(--glass-border)] text-xs flex items-center justify-between text-[var(--ink)] transition-colors"
                               onClick={() => otherNode && setSelectedNode(otherNode)}
                             >
                               <span>{isOutgoing ? '→ ' : '← '} {otherNode?.label || otherId}</span>
-                              <ArrowRight size={12} className="text-gray-400" />
+                              <ArrowRight size={12} className="text-[var(--muted)]" />
                             </button>
                           );
                         })}
@@ -328,8 +328,8 @@ export default function ConceptMapVisualizer() {
             </Card>
 
             <Card className="p-4 space-y-2">
-              <span className="text-xs font-semibold text-gray-300 block">Pedagogical Value</span>
-              <p className="text-[11px] text-gray-400 leading-relaxed">
+              <span className="text-xs font-semibold text-[var(--ink)] block">Pedagogical Value</span>
+              <p className="text-[11px] text-[var(--muted)] leading-relaxed">
                 Graph-structured learning enhances retention for Class X Board reasoning questions and builds deep mental schemata for UPSC/DSC analytical sections.
               </p>
             </Card>

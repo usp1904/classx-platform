@@ -16,9 +16,11 @@ import {
   LibraryBig,
   Lightbulb,
   Menu,
+  Moon,
   Network,
   Search,
   Sparkles,
+  Sun,
   Target,
   Trophy,
   Users,
@@ -79,11 +81,24 @@ export function Layout() {
   const { progress, toasts, dismissToast, curriculum } = useApp();
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [theme, setTheme] = useState<'dark' | 'light'>(() => {
+    return (localStorage.getItem('classx_theme') as 'dark' | 'light') || 'dark';
+  });
   const [targetTrack, setTargetTrack] = useState<'boards' | 'competitive'>(() => {
     return (localStorage.getItem('classx_target_track') as 'boards' | 'competitive') || 'boards';
   });
   const location = useLocation();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    document.body.setAttribute('data-theme', theme);
+    localStorage.setItem('classx_theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
 
   const toggleTrack = () => {
     const next = targetTrack === 'boards' ? 'competitive' : 'boards';
@@ -197,11 +212,70 @@ export function Layout() {
               <kbd>Ctrl K</kbd>
             </button>
             <button className="icon-btn ghost mobile-search-btn" onClick={() => setPaletteOpen(true)} aria-label="Search curriculum"><Search size={18} /></button>
+            <button
+              className="icon-btn ghost"
+              onClick={toggleTheme}
+              title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} mode`}
+              aria-label="Toggle light and dark theme"
+            >
+              {theme === 'dark' ? <Sun size={18} className="text-amber-400" /> : <Moon size={18} className="text-indigo-600" />}
+            </button>
             <button className="streak-chip" title="Daily streak"><Flame size={16} /><span>{progress.streak}</span></button>
             <button className="icon-btn ghost" aria-label="Notifications"><Bell size={18} /><span className="notif-dot" /></button>
             <button className="avatar avatar-sm" onClick={() => navigate('/progress')} aria-label="Open profile">AS</button>
           </div>
         </header>
+
+        {/* One-Tap Quick Access Navigation Bar */}
+        <div className="quick-access-bar" role="navigation" aria-label="One-Tap Quick Access">
+          <div className="quick-access-scroll">
+            <span className="quick-label">⚡ Quick Access:</span>
+            <NavLink to="/courses" className={({ isActive }) => `quick-chip ${isActive ? 'active' : ''}`}>
+              <BookOpen size={13} />
+              <span>Courses</span>
+            </NavLink>
+            <NavLink to="/practice" className={({ isActive }) => `quick-chip ${isActive ? 'active' : ''}`}>
+              <Target size={13} />
+              <span>Practice Tests</span>
+            </NavLink>
+            <NavLink to="/mock-tests" className={({ isActive }) => `quick-chip ${isActive ? 'active' : ''}`}>
+              <FileQuestion size={13} />
+              <span>Mock Exams</span>
+            </NavLink>
+            <NavLink to="/adaptive-practice" className={({ isActive }) => `quick-chip ${isActive ? 'active' : ''}`}>
+              <Zap size={13} />
+              <span>Daily Quizzes</span>
+            </NavLink>
+            <NavLink to="/planner" className={({ isActive }) => `quick-chip ${isActive ? 'active' : ''}`}>
+              <CalendarDays size={13} />
+              <span>Study Plans</span>
+            </NavLink>
+            <NavLink to="/progress" className={({ isActive }) => `quick-chip ${isActive ? 'active' : ''}`}>
+              <ChartNoAxesColumnIncreasing size={13} />
+              <span>Progress Tracking</span>
+            </NavLink>
+            <NavLink to="/parent" className={({ isActive }) => `quick-chip ${isActive ? 'active' : ''}`}>
+              <Users size={13} />
+              <span>Performance Analytics</span>
+            </NavLink>
+            <NavLink to="/learning-aids/mathematics/real-numbers" className={({ isActive }) => `quick-chip ${isActive ? 'active' : ''}`}>
+              <Lightbulb size={13} />
+              <span>Learning Aids</span>
+            </NavLink>
+            <NavLink to="/concept-map/mathematics/real-numbers" className={({ isActive }) => `quick-chip ${isActive ? 'active' : ''}`}>
+              <Network size={13} />
+              <span>Concept Maps</span>
+            </NavLink>
+            <NavLink to="/video/mathematics/real-numbers" className={({ isActive }) => `quick-chip ${isActive ? 'active' : ''}`}>
+              <Film size={13} />
+              <span>Video Lessons</span>
+            </NavLink>
+            <NavLink to="/gamification" className={({ isActive }) => `quick-chip ${isActive ? 'active' : ''}`}>
+              <Trophy size={13} />
+              <span>Leaderboard</span>
+            </NavLink>
+          </div>
+        </div>
 
         <main className="main-content">
           <Outlet />
