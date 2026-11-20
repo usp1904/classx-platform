@@ -1,4 +1,4 @@
-﻿# ClassX Platform â€” Agent Notes
+# ClassX Platform â€” Agent Notes
 
 ## Purpose
 CBSE Class X (2026-27) study platform: 4 subjects, 67 chapters, 52 fully authored lessons (all Mathematics, Science, Social Science), 0 starter packs, 15 English syllabus maps, practice, mock exams with self-marked written answers, Mathematics planner, progress, revision library, grounded tutor.
