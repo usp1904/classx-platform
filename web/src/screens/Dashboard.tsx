@@ -74,11 +74,14 @@ export default function Dashboard() {
     <div className="dashboard page">
       <div className="page-head">
         <div>
-          <div className="eyebrow"><span className="pulse-dot" /> {daysToBoards} days to boards</div>
-          <h1>{Greeting()}, learner.</h1>
-          <p>One focused block today beats five distracted hours. Your next move is ready.</p>
+          <div className="eyebrow"><span className="pulse-dot" /> {daysToBoards} days to CBSE & Foundation Exams</div>
+          <h1>{Greeting()}, scholar.</h1>
+          <p>Structured, distraction-free environment for Class X Board Mastery and DSC / UPSC Foundation preparation.</p>
         </div>
-        <Button variant="secondary" icon={<Sparkles size={16} />} onClick={() => navigate('/tutor')}>Ask a doubt</Button>
+        <div className="flex gap-2">
+          <Button variant="secondary" icon={<Sparkles size={16} />} onClick={() => navigate('/tutor')}>Ask Tutor</Button>
+          <Button variant="primary" icon={<Play size={16} />} onClick={() => navigate('/video/mathematics/real-numbers')}>Video Lessons</Button>
+        </div>
       </div>
 
       <div className="dashboard-grid">

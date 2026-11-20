@@ -459,6 +459,7 @@ export default function ChapterPage() {
         <Tabs items={tabs} value={tab} onChange={setTab} className="chapter-tabs" />
           <div className="chapter-quick-actions">
             <Button variant="ghost" size="sm" icon={<Sparkles size={15} />} onClick={() => navigate(`/tutor?subject=${subjectId}&chapter=${chapterId}`)}>Ask tutor</Button>
+            <Button variant="ghost" size="sm" icon={<Lightbulb size={15} />} onClick={() => navigate(`/learning-aids/${subjectId}/${chapterId}`)}>Learning aids</Button>
             <Button variant="ghost" size="sm" icon={<Target size={15} />} onClick={() => navigate(`/practice?subject=${subjectId}&chapter=${chapterId}`)}>Practice</Button>
             <Button variant="ghost" size="sm" icon={<Film size={15} />} onClick={() => navigate(`/video/${subjectId}/${chapterId}`)}>Video lesson</Button>
             <Button variant="ghost" size="sm" icon={<Network size={15} />} onClick={() => navigate(`/concept-map/${subjectId}/${chapterId}`)}>Concept map</Button>

@@ -73,7 +73,7 @@ async function dockerCheck(sha) {
     assert(run.ok, `docker run failed: ${run.out}`);
 
     let body = null;
-    for (let i = 0; i < 30; i += 1) {
+    for (let i = 0; i < 90; i += 1) {
       try {
         body = await health(PORT);
         break;

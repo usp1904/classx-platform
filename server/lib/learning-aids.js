@@ -669,6 +669,16 @@ export function buildLearningAids(subjectId, chapterId) {
     stats: chapterStats,
     aids,
     aidsWithContent: aids.filter((a) => a.hasContent),
+    scienceExperiments,
+    mcqAnswers,
+    bibliographyAndEquations,
+    socialStudiesData,
+    source_references,
+    educational_disclaimer,
+    okf_version: 'OKF-v1',
+    board: 'CBSE',
+    class: 'X',
+    academicYear: '2026-27',
   };
 }
 

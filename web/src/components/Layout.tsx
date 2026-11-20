@@ -122,8 +122,8 @@ export function Layout() {
         <div className="board-chip">
           <span className="pulse-dot" />
           <div>
-            <strong>CBSE 2026-27</strong>
-            <small>{daysToBoards} days to boards</small>
+            <strong>CBSE 2026-27 · DSC & UPSC</strong>
+            <small>{daysToBoards} days to target exams</small>
           </div>
         </div>
 
