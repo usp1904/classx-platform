@@ -94,7 +94,7 @@ function HeightDistance({ props }: { props: Record<string, unknown> }) {
         <g>
           <line x1="60" y1="285" x2="60" y2={285 - clamp} stroke={palette.ink} strokeWidth="7" strokeLinecap="round" />
           <rect x="52" y={285 - clamp - 10} width="18" height="10" fill={palette.saffron} />
-          <line x1="60" y1="285" x2="60 + base" y2="285" stroke={palette.indigo} strokeWidth="3" />
+          <line x1="60" y1="285" x2={60 + base} y2="285" stroke={palette.indigo} strokeWidth="3" />
           <line x1="60" y1="285" x2="60" y2={285 - clamp} stroke={palette.mint} strokeWidth="2" strokeDasharray="5 4" />
           <line x1="60" y1="285" x2={"60"} y2={285 - clamp} stroke={palette.rose} strokeWidth="2" />
           <path d={`M 112 285 A 52 52 0 0 0 ${60 + 52 * Math.cos((angle * Math.PI) / 180)} ${285 - 52 * Math.sin((angle * Math.PI) / 180)}`} fill="none" stroke={palette.saffron} strokeWidth="2.5" />

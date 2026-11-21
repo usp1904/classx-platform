@@ -1,0 +1,187 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ClassXKnowledgeRAGSchemas",
+  "description": "JSON Schemas for ClassX Platform Agent Skill CLI tools, graph traversal, and RAG retrieval",
+  "definitions": {
+    "ConceptNode": {
+      "type": "object",
+      "required": ["id", "label"],
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string" },
+        "group": { "type": "string" },
+        "inDegree": { "type": "integer" },
+        "outDegree": { "type": "integer" }
+      }
+    },
+    "DirectedEdge": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 2,
+      "maxItems": 2,
+      "description": "Directed edge tuple [sourceNodeId, targetNodeId]"
+    },
+    "ConceptGraphOutput": {
+      "type": "object",
+      "required": ["ok", "subjectId", "chapterId", "title", "nodes", "edges"],
+      "properties": {
+        "ok": { "type": "boolean" },
+        "subjectId": { "type": "string" },
+        "chapterId": { "type": "string" },
+        "title": { "type": "string" },
+        "source": { "type": "string" },
+        "nodes": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/ConceptNode" }
+        },
+        "edges": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/DirectedEdge" }
+        },
+        "rootConcepts": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "leafConcepts": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "groups": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "neighbors": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "topologicalOrder": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "TopologicalSortOutput": {
+      "type": "object",
+      "required": ["ok", "subjectId", "chapterId", "isDAG", "hasCycle"],
+      "properties": {
+        "ok": { "type": "boolean" },
+        "subjectId": { "type": "string" },
+        "chapterId": { "type": "string" },
+        "isDAG": { "type": "boolean" },
+        "hasCycle": { "type": "boolean" },
+        "order": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "cycle": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "learningPath": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["step", "id", "label"],
+            "properties": {
+              "step": { "type": "integer" },
+              "id": { "type": "string" },
+              "label": { "type": "string" },
+              "group": { "type": "string" },
+              "prerequisites": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "unlocks": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "PrereqChainOutput": {
+      "type": "object",
+      "required": ["ok", "subjectId", "chapterId"],
+      "properties": {
+        "ok": { "type": "boolean" },
+        "subjectId": { "type": "string" },
+        "chapterId": { "type": "string" },
+        "conceptId": { "type": "string" },
+        "conceptLabel": { "type": "string" },
+        "direction": { "type": "string", "enum": ["backward", "forward", "both"] },
+        "upstreamPrerequisites": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "label", "distance"],
+            "properties": {
+              "id": { "type": "string" },
+              "label": { "type": "string" },
+              "group": { "type": "string" },
+              "distance": { "type": "integer" }
+            }
+          }
+        },
+        "downstreamUnlocked": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "label", "distance"],
+            "properties": {
+              "id": { "type": "string" },
+              "label": { "type": "string" },
+              "group": { "type": "string" },
+              "distance": { "type": "integer" }
+            }
+          }
+        },
+        "chapterPrerequisites": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "RAGChunk": {
+      "type": "object",
+      "required": ["id", "type", "title", "subjectId", "chapterId", "text", "score"],
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "type": "string" },
+        "title": { "type": "string" },
+        "subjectId": { "type": "string" },
+        "chapterId": { "type": "string" },
+        "anchor": { "type": "string" },
+        "score": { "type": "number" },
+        "text": { "type": "string" }
+      }
+    },
+    "RAGSearchOutput": {
+      "type": "object",
+      "required": ["ok", "query", "results", "diagnostics"],
+      "properties": {
+        "ok": { "type": "boolean" },
+        "query": { "type": "string" },
+        "results": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/RAGChunk" }
+        },
+        "diagnostics": {
+          "type": "object",
+          "properties": {
+            "strategy": { "type": "string" },
+            "candidates": { "type": "integer" },
+            "latencyMs": { "type": "number" },
+            "intent": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

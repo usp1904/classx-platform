@@ -234,10 +234,10 @@ export default function ConceptMapVisualizer() {
                       style={{ transformOrigin: `${p.x}px ${p.y}px` }}
                     >
                       <rect
-                        x={p.x - 65}
-                        y={p.y - 20}
-                        width={130}
-                        height={40}
+                        x={p.x - 68}
+                        y={p.y - 21}
+                        width={136}
+                        height={42}
                         rx={10}
                         fill={isSelected ? '#1e1b4b' : style.fill}
                         stroke={isSelected ? '#818cf8' : isConnected ? '#34d399' : style.stroke}
@@ -245,22 +245,69 @@ export default function ConceptMapVisualizer() {
                         className="transition-colors shadow-lg"
                       />
                       <rect
-                        x={p.x - 65}
-                        y={p.y - 20}
+                        x={p.x - 68}
+                        y={p.y - 21}
                         width={5}
-                        height={40}
+                        height={42}
                         rx={2}
                         fill={isSelected ? '#818cf8' : style.accent}
                       />
-                      <text
-                        x={p.x - 52}
-                        y={p.y + 4}
-                        fontSize={11}
-                        fontWeight="600"
-                        fill={isSelected ? '#ffffff' : style.text}
-                      >
-                        {String(node.label).length > 15 ? `${String(node.label).slice(0, 14)}…` : String(node.label)}
-                      </text>
+                      {(() => {
+                        const lbl = String(node.label || '');
+                        if (lbl.length <= 15) {
+                          return (
+                            <text
+                              x={p.x - 54}
+                              y={p.y + 4}
+                              fontSize={10.5}
+                              fontWeight="600"
+                              fill={isSelected ? '#ffffff' : style.text}
+                            >
+                              {lbl}
+                            </text>
+                          );
+                        }
+                        const words = lbl.split(' ');
+                        let l1 = '';
+                        let l2 = '';
+                        if (words.length > 1) {
+                          let acc = '';
+                          let i = 0;
+                          while (i < words.length && (acc + (acc ? ' ' : '') + words[i]).length <= 15) {
+                            acc += (acc ? ' ' : '') + words[i];
+                            i++;
+                          }
+                          l1 = acc || words[0];
+                          l2 = words.slice(i).join(' ');
+                          if (l2.length > 16) l2 = l2.slice(0, 15) + '…';
+                        } else {
+                          l1 = lbl.slice(0, 13);
+                          l2 = lbl.slice(13, 26) + (lbl.length > 26 ? '…' : '');
+                        }
+                        return (
+                          <>
+                            <text
+                              x={p.x - 54}
+                              y={p.y - 3}
+                              fontSize={10}
+                              fontWeight="600"
+                              fill={isSelected ? '#ffffff' : style.text}
+                            >
+                              {l1}
+                            </text>
+                            <text
+                              x={p.x - 54}
+                              y={p.y + 11}
+                              fontSize={9}
+                              fontWeight="500"
+                              fill={isSelected ? '#ffffff' : style.text}
+                              opacity={0.88}
+                            >
+                              {l2}
+                            </text>
+                          </>
+                        );
+                      })()}
                     </g>
                   );
                 })}

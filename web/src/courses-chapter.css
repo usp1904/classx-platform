@@ -179,7 +179,7 @@
 
 .chapter-layout { display: grid; grid-template-columns: minmax(0, 1fr) 296px; gap: 26px; align-items: start; }
 .chapter-content { min-width: 0; }
-.chapter-rail { display: flex; flex-direction: column; gap: 14px; position: sticky; top: 76px; }
+.chapter-rail { display: flex; flex-direction: column; gap: 14px; position: sticky; top: calc(var(--header-total-height, 109px) + 16px); }
 .rail-card {
   padding: 20px; border-radius: 18px; background: var(--glass-surface);
   border: 1px solid var(--glass-border); backdrop-filter: var(--glass-blur); box-shadow: var(--glass-shadow);

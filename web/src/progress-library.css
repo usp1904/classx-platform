@@ -8,7 +8,7 @@
 .level-badge small { color: var(--muted-2); font-size: 9.5px; margin-bottom: 6px; }
 .progress-layout { display: grid; grid-template-columns: minmax(0, 1fr) 310px; gap: 24px; align-items: start; margin-top: 22px; }
 .progress-main { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
-.progress-rail { display: flex; flex-direction: column; gap: 16px; position: sticky; top: 76px; }
+.progress-rail { display: flex; flex-direction: column; gap: 16px; position: sticky; top: calc(var(--header-total-height, 109px) + 16px); }
 .mastery-list { display: flex; flex-direction: column; gap: 16px; }
 .mastery-row { display: flex; align-items: center; gap: 14px; }
 .mastery-copy { flex: 1; min-width: 0; }
