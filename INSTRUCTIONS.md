@@ -168,4 +168,17 @@ Full alignment is **not** achieved. Missing layers and reasons are in `AGENTS.md
 3. Pick the first `PENDING` phase; confirm scope with the user before editing.
 4. Use the start/end prompts in `AGENTS.md` ("Session protocol") to keep every session repeatable.
 
+## 11. Modular Subsystem Instructions (instructions.d)
+
+Detailed operational runbooks and implementation specifications for platform subsystems are maintained in modular `.d` guides:
+
+- **[instructions.d/00_OVERVIEW.md](instructions.d/00_OVERVIEW.md)**: Architectural overview, formatting rules, and subsystem index.
+- **[instructions.d/01_THEME_AND_NAVIGATION.md](instructions.d/01_THEME_AND_NAVIGATION.md)**: Dual theme (Glass/Neumorphism), CSS variables, theme switcher, and one-tap quick access bar.
+- **[instructions.d/02_LEARNING_AIDS.md](instructions.d/02_LEARNING_AIDS.md)**: Resilient 30 learning aids engine, STEM/non-STEM handling, and error fallback card.
+- **[instructions.d/03_CONCEPT_GRAPHS.md](instructions.d/03_CONCEPT_GRAPHS.md)**: RAG concept graph derivation, fallback trees, and interactive 2D SVG visualizer.
+- **[instructions.d/04_GAMIFICATION.md](instructions.d/04_GAMIFICATION.md)**: XP accrual, level progress ring, badges catalog, and offline leaderboard resilience.
+- **[instructions.d/05_ROUTING_AND_FALLBACKS.md](instructions.d/05_ROUTING_AND_FALLBACKS.md)**: Client routing table, canonical route redirects, and wildcard 404 boundaries.
+- **[VALIDATION_CHECKLIST.md](VALIDATION_CHECKLIST.md)**: Comprehensive production readiness checklist with itemized verification evidence.
+
+
 

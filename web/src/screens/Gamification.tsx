@@ -39,7 +39,9 @@ export default function Gamification() {
 
   const award = () => {
     api.gamifyXp({ userId: 'guest', amount: 50, reason: 'study-momentum' }).then((result) => {
-      setBadges(result.badges || []);
+      if (result.badges?.length) {
+        setBadges((prev) => [...prev, ...result.badges.filter((nb) => !prev.some((b) => b.id === nb.id))]);
+      }
       if (addXp) addXp(50);
       setXpAwardedMsg('+50 XP study momentum bonus unlocked!');
       setTimeout(() => setXpAwardedMsg(null), 3000);
@@ -188,7 +190,7 @@ export default function Gamification() {
             </thead>
             <tbody className="divide-y divide-[var(--glass-border)]">
               {leaderboard.map((entry, i) => {
-                const isMe = entry.userId.includes('You');
+                const isMe = (entry.userId || '').includes('You');
                 const rankMedal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `#${i + 1}`;
                 return (
                   <tr
@@ -198,9 +200,9 @@ export default function Gamification() {
                     <td className="py-3 pl-2 font-mono font-bold">{rankMedal}</td>
                     <td className="py-3 font-medium flex items-center gap-2">
                       <div className="w-7 h-7 rounded-full bg-[var(--surface-2)] border border-[var(--glass-border)] flex items-center justify-center text-[10px] font-bold text-[var(--ink)]">
-                        {entry.userId.slice(0, 2).toUpperCase()}
+                        {(entry.userId || '??').slice(0, 2).toUpperCase()}
                       </div>
-                      <span>{entry.userId}</span>
+                      <span>{entry.userId || 'Scholar'}</span>
                       {isMe && <Badge tone="indigo" className="text-[9px] py-0 px-1.5 ml-1">You</Badge>}
                     </td>
                     <td className="py-3 font-mono font-bold text-[var(--ink)]">{entry.xp.toLocaleString()}</td>
