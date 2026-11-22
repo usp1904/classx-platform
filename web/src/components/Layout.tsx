@@ -29,6 +29,7 @@ import {
 } from 'lucide-react';
 import { useApp } from '../lib/store';
 import { CommandPalette } from './CommandPalette';
+import { MockModeBanner, OfflineIndicatorPill } from './OfflineStatus';
 
 const nav = [
   { section: 'Learn', items: [
@@ -221,6 +222,7 @@ export function Layout() {
               {theme === 'dark' ? <Sun size={18} className="text-amber-400" /> : <Moon size={18} className="text-indigo-600" />}
             </button>
             <button className="streak-chip" title="Daily streak"><Flame size={16} /><span>{progress.streak}</span></button>
+            <OfflineIndicatorPill />
             <button className="icon-btn ghost" aria-label="Notifications"><Bell size={18} /><span className="notif-dot" /></button>
             <button className="avatar avatar-sm" onClick={() => navigate('/progress')} aria-label="Open profile">AS</button>
           </div>
@@ -276,6 +278,8 @@ export function Layout() {
             </NavLink>
           </div>
         </div>
+
+        <MockModeBanner />
 
         <main className="main-content">
           <Outlet />

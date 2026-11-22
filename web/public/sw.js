@@ -1,8 +1,7 @@
 const CACHE = 'classx-v1';
 const ASSETS = [
-  '/',
-  '/manifest.json',
-  '/api/health',
+  './',
+  './manifest.json',
 ];
 
 self.addEventListener('install', (event) => {
@@ -22,7 +21,7 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(request.url);
 
   // API calls: try network, fall back to cache; never cache POST/mutations.
-  if (url.pathname.startsWith('/api/')) {
+  if (url.pathname.includes('/api/')) {
     if (request.method !== 'GET') return;
     event.respondWith(
       fetch(request).then((response) => {

@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { validateSlug } from './security.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.resolve(__dirname, '..', 'data');
@@ -32,6 +33,7 @@ export function getChapter(subjectId, chapterId) {
 }
 
 export function getLesson(subjectId, chapterId) {
+  if (!validateSlug(subjectId) || !validateSlug(chapterId)) return null;
   const key = `${subjectId}:${chapterId}`;
   if (lessonCache.has(key)) return lessonCache.get(key);
   const file = path.join(DATA_DIR, 'lessons', subjectId, `${chapterId}.json`);

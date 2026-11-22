@@ -21,3 +21,5 @@ tunnel.log
 .web/
 graphify-out/
 server/data/progress.json
+
+logs/

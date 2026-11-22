@@ -23,17 +23,57 @@ import type {
   TutorResponse,
   VideoCatalog,
 } from './types';
+import { handleMockRequest, isMockMode, setMockMode } from './services/mockApi.ts';
+
+export { isMockMode, setMockMode, handleMockRequest };
+
+function engageAutoMock() {
+  if (typeof window !== 'undefined') {
+    (window as unknown as { __classx_auto_mock?: boolean }).__classx_auto_mock = true;
+  }
+  try {
+    if (typeof localStorage !== 'undefined') {
+      localStorage.setItem('classx_mock_mode', 'true');
+    }
+  } catch {
+    // Ignore storage issues
+  }
+}
 
 const json = async <T>(url: string, init?: RequestInit): Promise<T> => {
-  const response = await fetch(url, {
-    headers: { 'Content-Type': 'application/json', ...(init?.headers || {}) },
-    ...init,
-  });
-  const payload = await response.json().catch(() => null);
-  if (!response.ok) {
-    throw new Error(payload?.error || `Request failed (${response.status})`);
+  // Explicit or active mock mode: dispatch straight to client-side mock service
+  if (isMockMode()) {
+    return handleMockRequest<T>(url, init);
   }
-  return payload as T;
+
+  try {
+    const response = await fetch(url, {
+      headers: { 'Content-Type': 'application/json', ...(init?.headers || {}) },
+      ...init,
+    });
+
+    const contentType = response.headers.get('content-type') || '';
+
+    // Check for SPA HTML catch-all (GitHub Pages / Cloudflare 404 returning index.html)
+    if (contentType.includes('text/html') || response.status === 404) {
+      engageAutoMock();
+      return handleMockRequest<T>(url, init);
+    }
+
+    const payload = await response.json().catch(() => null);
+
+    // Check for service-worker offline response { ok: false, error: 'offline' } or non-OK response
+    if (!response.ok || (payload && payload.ok === false && payload.error === 'offline')) {
+      engageAutoMock();
+      return handleMockRequest<T>(url, init);
+    }
+
+    return payload as T;
+  } catch (_networkError) {
+    // Network failure, CORS issue, or server offline -> fallback to mock without crashing
+    engageAutoMock();
+    return handleMockRequest<T>(url, init);
+  }
 };
 
 export const api = {

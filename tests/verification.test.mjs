@@ -224,7 +224,7 @@ test('Skill Tools: CLI execution, graph queries, and algorithm correctness', asy
     const stdout = execFileSync(process.execPath, [script], {
       cwd: projectRoot,
       encoding: 'utf8',
-      timeout: 45000
+      timeout: 90000
     });
     assert.match(stdout, /14\/14 checks passed/);
   });

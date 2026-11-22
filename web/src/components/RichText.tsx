@@ -1,12 +1,25 @@
 import React from 'react';
 import katex from 'katex';
 
+export function escapeHtml(text: string): string {
+  return text.replace(/[&<>"']/g, (char) => {
+    switch (char) {
+      case '&': return '&amp;';
+      case '<': return '&lt;';
+      case '>': return '&gt;';
+      case '"': return '&quot;';
+      case "'": return '&#39;';
+      default: return char;
+    }
+  });
+}
+
 function InlineMath({ value }: { value: string }) {
   const html = React.useMemo(() => {
     try {
       return katex.renderToString(value, { throwOnError: false, displayMode: false, strict: 'ignore' });
     } catch {
-      return value;
+      return escapeHtml(value);
     }
   }, [value]);
   return <span className="math-inline" dangerouslySetInnerHTML={{ __html: html }} />;

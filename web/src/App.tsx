@@ -28,7 +28,7 @@ function NotFound() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <AppDataProvider>
         <Suspense fallback={<div className="page-loading"><div className="loader-ring" /><span>Loading…</span></div>}>
           <Routes>

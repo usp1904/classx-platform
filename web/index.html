@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#141b2d" />
     <meta name="description" content="Class X mastery platform for CBSE 2026-27: structured lessons, hybrid RAG tutor, practice, mock tests and revision." />
     <title>Peak · Class X Mastery</title>
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="%BASE_URL%manifest.json" />
     <meta name="mobile-web-app-capable" content="yes" />
   </head>
   <body>
@@ -15,7 +15,7 @@
     <script src="https://unpkg.com/htmx.org@2.0.0"></script>
     <script>
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js').catch(() => {});
+        navigator.serviceWorker.register('%BASE_URL%sw.js', { scope: '%BASE_URL%' }).catch(() => {});
       }
     </script>
   </body>
