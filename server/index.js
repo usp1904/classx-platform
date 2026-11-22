@@ -95,13 +95,62 @@ app.use((req, res, next) => {
   res.setHeader('X-Frame-Options', 'SAMEORIGIN');
   res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
   res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
+  res.setHeader('X-Robots-Tag', 'noindex, nofollow');
+  res.setHeader('Cross-Origin-Opener-Policy', 'same-origin');
+  res.setHeader('Cross-Origin-Resource-Policy', 'same-origin');
+  res.setHeader(
+    'Content-Security-Policy',
+    "default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self'; frame-ancestors 'self'",
+  );
   if (process.env.COOKIE_SECURE === 'true') {
     res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
   }
   next();
 });
 app.use(cors({ origin: corsOrigin, credentials: true }));
-app.use(express.json({ limit: '2mb' }));
+app.use(express.json({ limit: '256kb' }));
+app.use('/api', (req, res, next) => {
+  if (['POST', 'PUT', 'PATCH'].includes(req.method) && !req.is('application/json')) {
+    return res.status(415).json({ ok: false, error: 'Content-Type must be application/json' });
+  }
+  return next();
+});
+
+// Process-local rate limiting. The app runs as a single fork, so a Map is
+// sufficient; clear it if it grows unexpectedly large.
+function makeRateLimiter({ windowMs, max, message, skip }) {
+  const attempts = new Map();
+  return function rateLimiter(req, res, next) {
+    if (skip && skip(req)) return next();
+    const ip = req.ip || 'unknown';
+    const now = Date.now();
+    if (attempts.size > 10000) attempts.clear();
+    const entry = attempts.get(ip);
+    if (!entry || entry.resetAt <= now) {
+      attempts.set(ip, { count: 1, resetAt: now + windowMs });
+      return next();
+    }
+    entry.count += 1;
+    if (entry.count > max) {
+      res.setHeader('Retry-After', Math.ceil((entry.resetAt - now) / 1000));
+      return res.status(429).json({ ok: false, error: message });
+    }
+    return next();
+  };
+}
+
+const apiRateLimit = makeRateLimiter({
+  windowMs: 60 * 1000,
+  max: 180,
+  message: 'Too many requests. Try again shortly.',
+  skip: (req) => req.path === '/health',
+});
+const tutorRateLimit = makeRateLimiter({
+  windowMs: 60 * 1000,
+  max: 8,
+  message: 'Tutor rate limit reached. Try again in a minute.',
+});
+app.use('/api', apiRateLimit);
 
 // In-memory auth throttle. Resets after a minute; process-local is enough
 // because the app runs as a single fork (see ecosystem.config.js).
@@ -274,7 +323,7 @@ app.get('/api/search', (req, res) => {
   res.json(payload);
 });
 
-app.post('/api/tutor', async (req, res) => {
+app.post('/api/tutor', tutorRateLimit, async (req, res) => {
   const { question, mode, subjectId, chapterId, history } = req.body || {};
   if (!question || typeof question !== 'string') return res.status(400).json({ ok: false, error: 'question is required' });
   if (question.length > 2000) return res.status(413).json({ ok: false, error: 'question too long' });
@@ -282,7 +331,9 @@ app.post('/api/tutor', async (req, res) => {
     const result = await askTutor({ question: question.trim(), mode: ['socratic', 'board', 'competitive', 'eli5'].includes(mode) ? mode : 'socratic', subjectId, chapterId, history: Array.isArray(history) ? history.slice(-6) : [] });
     res.json(result);
   } catch (error) {
-    res.status(500).json({ ok: false, error: 'Tutor failed', detail: error.message });
+    const payload = { ok: false, error: 'Tutor failed' };
+    if (process.env.NODE_ENV !== 'production') payload.detail = error.message;
+    res.status(500).json(payload);
   }
 });
 

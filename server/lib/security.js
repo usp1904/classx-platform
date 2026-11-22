@@ -87,7 +87,7 @@ export function sanitizePromptInput(input, { maxLength = 1000 } = {}) {
   }
 
   // 5. Flag and neutralize jailbreak patterns
-  const jailbreakRegex = /(?:ignore\s+(?:all\s+)?previous\s+instructions|system\s+prompt|developer\s+mode|dan\s+mode|roleplay\s+as|bypass\s+rules)/gi;
+  const jailbreakRegex = /(?:ignore|disregard|forget)\s+(?:all\s+)?(?:previous|prior|above)\s+(?:instructions|prompts|rules)|system\s+(?:prompt|message|instructions)|(?:developer|dan|jailbreak|god)\s+mode|(?:reveal|print|show|leak|repeat)\s+(?:your\s+)?(?:system\s+)?(?:prompt|instructions)|you\s+are\s+now|prompt\s+injection|override\s+(?:your\s+)?(?:instructions|rules)|bypass\s+(?:all\s+)?(?:rules|safety|guardrails)|roleplay\s+as/gi;
   if (jailbreakRegex.test(text)) {
     flags.push('jailbreak_attempt');
     isBlocked = true;
