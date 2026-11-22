@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { handleMockRequest } from '../web/src/services/mockApi.ts';
 
@@ -28,6 +29,13 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(__dirname, '..');
 const GH_PAGES_DIR = path.join(ROOT_DIR, 'dist', 'gh-pages');
 const CLOUDFLARE_DIR = path.join(ROOT_DIR, 'dist', 'cloudflare');
+
+if (!fs.existsSync(GH_PAGES_DIR) || !fs.existsSync(CLOUDFLARE_DIR)) {
+  execFileSync(process.execPath, [path.join(ROOT_DIR, 'scripts', 'build-static.mjs'), 'all'], {
+    cwd: ROOT_DIR,
+    stdio: 'inherit',
+  });
+}
 
 // Robust helper to make local HTTP requests
 function httpRequest(options) {
