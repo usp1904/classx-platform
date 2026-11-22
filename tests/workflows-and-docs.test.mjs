@@ -88,7 +88,7 @@ test('2. GitHub Pages Workflow (.github/workflows/deploy-gh-pages.yml) structura
     assert.match(content, /runs-on:\s*ubuntu-latest/, 'Runner must be ubuntu-latest');
     assert.match(content, /uses:\s*actions\/checkout@v4/, 'Must use actions/checkout@v4');
     assert.match(content, /uses:\s*actions\/setup-node@v4/, 'Must use actions/setup-node@v4');
-    assert.match(content, /node-version:\s*['"]?20['"]?/, 'Must configure Node.js version 20');
+    assert.match(content, /node-version:\s*['"]?24['"]?/, 'Must configure Node.js version 24');
     assert.match(content, /cache:\s*['"]?npm['"]?/, 'Must cache npm packages');
     assert.match(content, /run:\s*npm\s+ci/, 'Must use deterministic non-interactive npm ci');
     assert.match(content, /npm\s+run\s+typecheck/, 'Must run npm run typecheck');
@@ -120,7 +120,7 @@ test('3. Cloudflare Pages Workflow (.github/workflows/deploy-cloudflare.yml) str
     assert.match(content, /runs-on:\s*ubuntu-latest/, 'Runner must be ubuntu-latest');
     assert.match(content, /uses:\s*actions\/checkout@v4/, 'Must use actions/checkout@v4');
     assert.match(content, /uses:\s*actions\/setup-node@v4/, 'Must use actions/setup-node@v4');
-    assert.match(content, /node-version:\s*['"]?20['"]?/, 'Must configure Node.js version 20');
+    assert.match(content, /node-version:\s*['"]?24['"]?/, 'Must configure Node.js version 24');
     assert.match(content, /cache:\s*['"]?npm['"]?/, 'Must cache npm packages');
     assert.match(content, /run:\s*npm\s+ci/, 'Must use deterministic non-interactive npm ci');
     assert.match(content, /npm\s+run\s+typecheck/, 'Must run npm run typecheck');
