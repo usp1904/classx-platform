@@ -125,8 +125,9 @@ export function isMockMode(): boolean {
   } catch {
     // Ignore storage issues
   }
-  if (typeof import.meta !== 'undefined' && (import.meta as unknown as { env?: { VITE_USE_MOCK_API?: string } }).env?.VITE_USE_MOCK_API === 'true') {
-    return true;
+  if (typeof import.meta !== 'undefined') {
+    const env = (import.meta as unknown as { env?: { VITE_USE_MOCK_API?: string; VITE_STATIC_MOCK?: string } }).env;
+    if (env?.VITE_USE_MOCK_API === 'true' || env?.VITE_STATIC_MOCK === 'true') return true;
   }
   return false;
 }

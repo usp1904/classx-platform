@@ -13,6 +13,7 @@ async function buildTarget(name, base, outRelative) {
   process.env.BUILD_TARGET = name;
   process.env.VITE_BASE = base;
   process.env.BUILD_OUT_DIR = outRelative;
+  process.env.VITE_STATIC_MOCK = 'true';
 
   await build({
     configFile: path.resolve(root, 'web', 'vite.config.ts'),

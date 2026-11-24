@@ -59,9 +59,28 @@ test('1. Package.json defines required build script aliases for static targets',
 });
 
 // ============================================================================
-// Test Suite 2: Single Consolidated Deploy Workflow
+// Test Suite 2: Static Build Mock Contract
 // ============================================================================
-test('2. Duplicate per-target deploy workflows are removed', () => {
+test('2. Static builds force client-side mock mode', () => {
+  const buildScript = readFile(path.join(ROOT_DIR, 'scripts', 'build-static.mjs'));
+  const mockSource = readFile(path.join(ROOT_DIR, 'web', 'src', 'services', 'mockApi.ts'));
+
+  assert.match(
+    buildScript,
+    /process\.env\.VITE_STATIC_MOCK\s*=\s*'true'/,
+    'build-static.mjs must set VITE_STATIC_MOCK for every static target',
+  );
+  assert.match(
+    mockSource,
+    /VITE_STATIC_MOCK\s*===\s*'true'/,
+    'isMockMode must honor VITE_STATIC_MOCK so static builds do not call the API',
+  );
+});
+
+// ============================================================================
+// Test Suite 3: Single Consolidated Deploy Workflow
+// ============================================================================
+test('3. Duplicate per-target deploy workflows are removed', () => {
   const files = fs.readdirSync(WORKFLOWS_DIR).filter((f) => f.endsWith('.yml') || f.endsWith('.yaml'));
   assert.ok(!files.includes('deploy-gh-pages.yml'), 'Standalone GitHub Pages workflow must be removed');
   assert.ok(!files.includes('deploy-cloudflare.yml'), 'Standalone Cloudflare workflow must be removed');

@@ -342,8 +342,8 @@ npm run build:cloudflare    # Outputs to dist/cloudflare
 
 | Target | Status | Evidence / Remaining Action |
 |---|---|---|
-| GitHub Pages | Live | `https://usp1904.github.io/classx-platform/` returned HTTP 200 |
-| Render API | Live | `https://classx-platform.onrender.com/api/health` returned HTTP 200; compare `commit` to `git rev-parse --short=12 HEAD` after the next deploy |
+| GitHub Pages | Live | Deploy workflow succeeded for `d0246f3`; `https://usp1904.github.io/classx-platform/` returned HTTP 200 |
+| Render API | Live | `/api/health.commit` returned `d0246f3bdba498d792fd405fa17a0ac1c1e3a231` after deploy |
 | Cloudflare Pages | Blocked | `classx-platform.pages.dev` returns NXDOMAIN (does not resolve); add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` repository secrets, then push to `main` |
 | Docker parity | Unverified in current environment | Docker daemon unavailable; run `npm run verify:sync:docker` on a Docker-capable machine before claiming parity |
 

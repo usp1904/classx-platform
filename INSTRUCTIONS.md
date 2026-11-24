@@ -119,7 +119,7 @@ Verified outcomes:
 - [ ] `[INCOMPLETE]` **Docker runtime**: not verified in the current environment because the Docker daemon is unavailable. When Docker is available, stop native Node and run `docker compose up -d`, then compare `/api/health.commit` to `git rev-parse --short=12 HEAD`.
 - [ ] `[INCOMPLETE]` **Cloudflare Pages deploy**: the duplicate workflows were removed, but `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` secrets are still not configured, so the Cloudflare job skips its deploy step.
 - [x] `[COMPLETED]` **Permanent public access**: GitHub Pages and Render provide stable public HTTPS URLs. The `trycloudflare.com` quick tunnel is development-only and must not be presented as production.
-- [ ] `[INCOMPLETE]` **Render SHA stamp**: confirm `/api/health.commit` matches the pushed SHA after the Render deploy finishes.
+- [x] `[COMPLETED]` **Render SHA stamp**: confirmed `/api/health.commit` returned `d0246f3bdba498d792fd405fa17a0ac1c1e3a231` after the Render deploy.
 - [ ] `[INCOMPLETE]` **Browser smoke test**: verify all SPA routes and the YouTube lesson embed over the public HTTPS URL, not only `/` and `/api/health`.
 - [x] `[COMPLETED]` **CI duplicate workflows**: both per-target workflows were deleted; `.github/workflows/deploy.yml` is the only deploy workflow and runs the GitHub Pages and Cloudflare jobs.
 - [ ] `[INCOMPLETE]` **Rate-limit persistence**: limits are process-local `Map`s and reset on restart; use Redis or an edge limiter for multi-instance deployments.
@@ -165,10 +165,10 @@ Verified outcomes:
 - [x] `[COMPLETED]` **Docs drift fixed**: `docs/DEPLOYMENT.md` now points at `deploy.yml` everywhere, documents one consolidated workflow table, and records the current GitHub Pages, Render, Cloudflare, and Docker status.
 - [x] `[COMPLETED]` **Keyless YouTube contract preserved**: no Google API key, no scraping, no third-party proxy; `YOUTUBE_ORIGIN` remains the only required playback setting and Education mode stays opt-in.
 - [x] `[COMPLETED]` **Live URL check**: GitHub Pages returned HTTP 200; Render `/api/health` returned HTTP 200.
-- [x] `[COMPLETED]` **GitHub Pages deploy fix**: the Pages job was failing after upload with "No artifacts named github-pages were found"; `deploy.yml` now uses `actions/configure-pages@v6`, `actions/upload-pages-artifact@v5`, and `actions/deploy-pages@v5`.
-- [x] `[COMPLETED]` **Render SHA resolution**: `/api/health.commit` preferred the Docker default `GIT_SHA=dev` over `RENDER_GIT_COMMIT`; `resolveCommit()` now prefers Render's injected SHA.
+- [x] `[COMPLETED]` **GitHub Pages deploy fix**: the Pages job was failing after upload with "No artifacts named github-pages were found"; `deploy.yml` now uses `actions/configure-pages@v6`, `actions/upload-pages-artifact@v5`, and `actions/deploy-pages@v5`. The `d0246f3` run deployed successfully.
+- [x] `[COMPLETED]` **Render SHA resolution**: `/api/health.commit` preferred the Docker default `GIT_SHA=dev` over `RENDER_GIT_COMMIT`; `resolveCommit()` now prefers Render's injected SHA and reports `d0246f3bdba498d792fd405fa17a0ac1c1e3a231`.
 - [ ] `[INCOMPLETE]` **Cloudflare DNS**: `classx-platform.pages.dev` returns NXDOMAIN until the two repository secrets are added and the workflow runs.
-- [ ] `[INCOMPLETE]` **Render SHA confirmation**: pending the next push-and-deploy; compare `/api/health.commit` to the pushed SHA.
+- [x] `[COMPLETED]` **Live deploy confirmation**: GitHub Pages root returned HTTP 200 and Render `/api/health.commit` matched `d0246f3bdba4`.
 - [ ] `[INCOMPLETE]` **Docker parity**: Docker daemon unavailable in this environment, so `verify:sync:docker` could not run.
 - [ ] `[INCOMPLETE]` **Browser QA**: public-route, theme, lazy-route, and YouTube embed smoke tests still need a real browser.
 
