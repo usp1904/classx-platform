@@ -68,9 +68,9 @@ GitHub Pages deployment is fully automated via native GitHub Actions using stand
     id-token: write
   ```
 - Deployment is executed via official GitHub actions:
-  * `actions/configure-pages@v5`
-  * `actions/upload-pages-artifact@v3` (with path `dist/gh-pages`)
-  * `actions/deploy-pages@v4` (assigns output `url: ${{ steps.deployment.outputs.page_url }}`)
+  * `actions/configure-pages@v6`
+  * `actions/upload-pages-artifact@v5` (with path `dist/gh-pages`)
+  * `actions/deploy-pages@v5` (assigns output `url: ${{ steps.deployment.outputs.page_url }}`)
 
 ---
 

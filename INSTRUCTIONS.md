@@ -36,7 +36,7 @@ npm run build
 npm start                      # http://localhost:8787/api/health
 ```
 
-Expected: 4 subjects, 67 chapters, 2569 questions, full test suite green (165 tests as of
+Expected: 4 subjects, 67 chapters, 2569 questions, full test suite green (166 tests as of
 2026-11-24), and clean production/static builds. If `npm test` hangs: it is a synchronous
 loop, not a slow test. The last known one was `splitIntoChunks()` in `server/lib/rag.js`
 (fixed). Re-introducing a tail-overlap loop will hang the tutor tests again.
@@ -165,6 +165,8 @@ Verified outcomes:
 - [x] `[COMPLETED]` **Docs drift fixed**: `docs/DEPLOYMENT.md` now points at `deploy.yml` everywhere, documents one consolidated workflow table, and records the current GitHub Pages, Render, Cloudflare, and Docker status.
 - [x] `[COMPLETED]` **Keyless YouTube contract preserved**: no Google API key, no scraping, no third-party proxy; `YOUTUBE_ORIGIN` remains the only required playback setting and Education mode stays opt-in.
 - [x] `[COMPLETED]` **Live URL check**: GitHub Pages returned HTTP 200; Render `/api/health` returned HTTP 200.
+- [x] `[COMPLETED]` **GitHub Pages deploy fix**: the Pages job was failing after upload with "No artifacts named github-pages were found"; `deploy.yml` now uses `actions/configure-pages@v6`, `actions/upload-pages-artifact@v5`, and `actions/deploy-pages@v5`.
+- [x] `[COMPLETED]` **Render SHA resolution**: `/api/health.commit` preferred the Docker default `GIT_SHA=dev` over `RENDER_GIT_COMMIT`; `resolveCommit()` now prefers Render's injected SHA.
 - [ ] `[INCOMPLETE]` **Cloudflare DNS**: `classx-platform.pages.dev` returns NXDOMAIN until the two repository secrets are added and the workflow runs.
 - [ ] `[INCOMPLETE]` **Render SHA confirmation**: pending the next push-and-deploy; compare `/api/health.commit` to the pushed SHA.
 - [ ] `[INCOMPLETE]` **Docker parity**: Docker daemon unavailable in this environment, so `verify:sync:docker` could not run.
@@ -213,7 +215,7 @@ To eliminate ambiguity and prevent agent rework, all deliverables are categorize
 
 ### 8.1 Core Platform, Curriculum & Offline Data
 - [x] `[COMPLETED]` **Curriculum Integrity**: 4 subjects (Mathematics, Science, Social Science, English), 67 chapters, 76 official topics, 52 full authored lessons, 15 syllabus maps, 2569 questions (1505 MCQs, 1064 subjective).
-- [x] `[COMPLETED]` **Baseline Unit & Contract Tests**: 165/165 tests passing (`node --test tests/*.test.js tests/*.test.mjs`) across data, tutor, coverage, practice, sync, session-store, security, YouTube, workflow, and docs contracts.
+- [x] `[COMPLETED]` **Baseline Unit & Contract Tests**: 166/166 tests passing (`node --test tests/*.test.js tests/*.test.mjs`) across data, tutor, coverage, practice, sync, session-store, security, YouTube, workflow, and docs contracts.
 - [x] `[COMPLETED]` **TypeScript Compilation**: `npm run typecheck` (`tsc --noEmit -p web/tsconfig.json`) clean with 0 compilation errors across 177 source files.
 - [x] `[COMPLETED]` **Production Bundling**: `npm run build` and `npm run build:static` compile clean; initial JS is ~319 kB raw / ~97 kB gzip with lazy routes, and the knowledge hub loads only on the video lesson route.
 - [x] `[COMPLETED]` **Docker Parity & Sync Gate**: `scripts/sync-verify.mjs` validates commit SHA equality between Git HEAD and `/api/health.commit`; Docker daemon is unavailable in the current environment, so re-run `npm run verify:sync:docker` on a Docker-capable machine.
@@ -260,7 +262,7 @@ To eliminate ambiguity and prevent agent rework, all deliverables are categorize
 ### 8.6 Automated Verification Suites & Operating Standards
 - [x] `[COMPLETED]` **Master Verification Suite (`tests/verification.test.mjs`)**: Automated test suite verifying skill package syntax, frontmatter, CLI execution, layout non-overlapping integrity, and checklist tags.
 - [x] `[COMPLETED]` **Skill Tool Verification (`skills/classx-knowledge-rag/scripts/verify-rag.mjs`)**: 10/10 automated tests passing.
-- [x] `[COMPLETED]` **Canonical Platform Verification Gates**: `npm test` (165/165 pass), `npm run typecheck` (0 errors), `node scripts/check.mjs` (0 errors), `npm run build` (clean bundle).
+- [x] `[COMPLETED]` **Canonical Platform Verification Gates**: `npm test` (166/166 pass), `npm run typecheck` (0 errors), `node scripts/check.mjs` (0 errors), `npm run build` (clean bundle).
 
 ## 9. Hard rules
 
@@ -278,7 +280,7 @@ Work one phase per commit. Do not start a phase until the previous gate passes.
 
 ### Phase 0 — Baseline (done)
 1. `npm test`, `npm run check`, `npm run verify:sync:docker`.
-2. Gate: full test suite green (165/165 as of 2026-11-24), Docker `/api/health.commit == HEAD` when Docker is available.
+2. Gate: full test suite green (166/166 as of 2026-11-24), Docker `/api/health.commit == HEAD` when Docker is available.
 
 ### Phase 1 — Provenance and chunk contract
 1. Add `docId`, `sectionPath`, `chunkIndex`, `checksum` to every chunk in `server/lib/rag.js`.

@@ -85,7 +85,9 @@ test('4. Consolidated Workflow (.github/workflows/deploy.yml) structural complia
     assert.match(content, /permissions:\s*\n[\s\S]*?pages:\s*write/, 'Must declare pages: write in GH Pages job');
     assert.match(content, /environment:\s*\n[\s\S]*?name:\s*github-pages/, 'Environment must be github-pages');
     assert.match(content, /npm\s+run\s+build:gh-pages/, 'Must build via npm run build:gh-pages');
-    assert.match(content, /actions\/deploy-pages@v4/, 'Must deploy via actions/deploy-pages@v4');
+    assert.match(content, /actions\/configure-pages@v6/, 'Must configure Pages via actions/configure-pages@v6');
+    assert.match(content, /actions\/upload-pages-artifact@v5/, 'Must upload the artifact via actions/upload-pages-artifact@v5');
+    assert.match(content, /actions\/deploy-pages@v5/, 'Must deploy via actions/deploy-pages@v5');
   });
 
   await t.test('4.3 Consolidated Cloudflare Pages Job Compliance', () => {

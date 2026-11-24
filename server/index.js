@@ -20,6 +20,7 @@ import { sessionSet, sessionGet, sessionStoreKind } from './lib/session-store.js
 import { getVideoEntry, catalogStats } from './lib/video-catalog.js';
 import { buildKnowledgeHub } from './lib/knowledge-hub.js';
 import { getPlayerConfig, searchVideos, validateVideo } from './lib/youtube.js';
+import { resolveCommit } from './lib/runtime-info.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -258,7 +259,7 @@ app.get('/api/health', (req, res) => {
     ok: true,
     service: 'ClassX Platform API',
     version: process.env.APP_VERSION || '1.0.0',
-    commit: process.env.GIT_SHA || process.env.RENDER_GIT_COMMIT || 'dev',
+    commit: resolveCommit(),
     uptimeSec: Math.round((Date.now() - startedAt) / 1000),
     curriculum: getStats(),
     rag: ragStats(),
