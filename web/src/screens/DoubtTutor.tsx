@@ -144,7 +144,7 @@ export default function DoubtTutor() {
                       <span className="text-indigo-400 font-semibold">[S{i + 1}]</span>
                       <div>
                         <div className="font-medium text-slate-200">{src.title}</div>
-                        <div className="text-muted">{src.subject} · {src.chapter}</div>
+                        <div className="text-muted">{src.subject} · {src.chapter}{src.page ? ` · p. ${src.page}` : ''}</div>
                       </div>
                     </div>
                   ))}

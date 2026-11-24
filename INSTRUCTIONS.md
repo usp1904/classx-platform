@@ -36,7 +36,7 @@ npm run build
 npm start                      # http://localhost:8787/api/health
 ```
 
-Expected: 4 subjects, 67 chapters, 2569 questions, full test suite green (166 tests as of
+Expected: 4 subjects, 67 chapters, 2569 questions, full test suite green (170 tests as of
 2026-11-24), and clean production/static builds. If `npm test` hangs: it is a synchronous
 loop, not a slow test. The last known one was `splitIntoChunks()` in `server/lib/rag.js`
 (fixed). Re-introducing a tail-overlap loop will hang the tutor tests again.
@@ -172,6 +172,15 @@ Verified outcomes:
 - [ ] `[INCOMPLETE]` **Docker parity**: Docker daemon unavailable in this environment, so `verify:sync:docker` could not run.
 - [ ] `[INCOMPLETE]` **Browser QA**: public-route, theme, lazy-route, and YouTube embed smoke tests still need a real browser.
 
+## 7f. Session Update — 2026-11-24 (Textbook OKF Ingestion & End-to-End Page Citations)
+
+- [x] `[COMPLETED]` **Textbook OKF Ingestion**: Ingested and anchored NCERT/state textbook PDF assets (`server/lib/textbook-okf.js`, `scripts/ingest-textbooks.py`, `source/textbooks/`) with page-level anchoring.
+- [x] `[COMPLETED]` **End-to-End Page Metadata**: Fixed `server/lib/rag-multimodel.js` result mapper to preserve `page`, `pdfPage`, `book`, and `source` attributes.
+- [x] `[COMPLETED]` **DoubtTutor Page Citations**: Extended `Citation` type in `web/src/types.ts` and updated `web/src/screens/DoubtTutor.tsx` to display `· p. N` page badges on textbook citations.
+- [x] `[COMPLETED]` **Deterministic Asset Manifest**: PDF `manifest.generatedAt` now derives deterministically from PDF file `mtimes`.
+- [x] `[COMPLETED]` **Textbook RAG Test Suite**: Authored `tests/textbook-rag.test.js` verifying textbook page citation retrieval, multimodel mapper metadata preservation, grounded answers with citations, and refusal when no match exists. Test suite grew from 166 to 170 passing tests.
+- [ ] `[INCOMPLETE]` **Phase 1 Provenance**: Next step is adding `docId`, `sectionPath`, `chunkIndex`, and `checksum` to all RAG chunks in `server/lib/rag.js` and `/api/search` with verification gates.
+
 ### Summary of Changed Files in the Sync Passes
 
 | File | Why |
@@ -215,7 +224,7 @@ To eliminate ambiguity and prevent agent rework, all deliverables are categorize
 
 ### 8.1 Core Platform, Curriculum & Offline Data
 - [x] `[COMPLETED]` **Curriculum Integrity**: 4 subjects (Mathematics, Science, Social Science, English), 67 chapters, 76 official topics, 52 full authored lessons, 15 syllabus maps, 2569 questions (1505 MCQs, 1064 subjective).
-- [x] `[COMPLETED]` **Baseline Unit & Contract Tests**: 166/166 tests passing (`node --test tests/*.test.js tests/*.test.mjs`) across data, tutor, coverage, practice, sync, session-store, security, YouTube, workflow, and docs contracts.
+- [x] `[COMPLETED]` **Baseline Unit & Contract Tests**: 170/170 tests passing (`node --test tests/*.test.js tests/*.test.mjs`) across data, tutor, coverage, practice, sync, session-store, security, YouTube, textbook RAG, workflow, and docs contracts.
 - [x] `[COMPLETED]` **TypeScript Compilation**: `npm run typecheck` (`tsc --noEmit -p web/tsconfig.json`) clean with 0 compilation errors across 177 source files.
 - [x] `[COMPLETED]` **Production Bundling**: `npm run build` and `npm run build:static` compile clean; initial JS is ~319 kB raw / ~97 kB gzip with lazy routes, and the knowledge hub loads only on the video lesson route.
 - [x] `[COMPLETED]` **Docker Parity & Sync Gate**: `scripts/sync-verify.mjs` validates commit SHA equality between Git HEAD and `/api/health.commit`; Docker daemon is unavailable in the current environment, so re-run `npm run verify:sync:docker` on a Docker-capable machine.
@@ -326,7 +335,7 @@ Work one phase per commit. Do not start a phase until the previous gate passes.
 |-------|--------|-------------|
 | 0 Baseline | DONE | none |
 | 1 Provenance/chunk contract | PENDING | start here: add `docId`, `sectionPath`, `chunkIndex`, `checksum` |
-| 2 Multimodal ingestion | PENDING | needs asset manifest + PDF text extraction decision |
+| 2 Multimodal ingestion | DONE (text) | PDF text extraction -> OKF v0.2 bundle + `source/textbooks/manifest.json`; OCR/vision still out of scope |
 | 3 Real embeddings | PENDING | needs provider/cost/latency decision |
 | 4 Query planning/graph | PENDING | extend `TYPE_HINTS` into planner result |
 | 5 Validation gates | PENDING | citation existence check + answerability threshold |

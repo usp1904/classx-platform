@@ -141,7 +141,8 @@ export async function askTutor({ question, mode = 'socratic', subjectId, chapter
     };
   }
   const context = results
-    .map((r, i) => `[S${i + 1}] ${r.subjectName} · ${r.chapterName} · ${r.type} · ${r.title}\n${r.text.slice(0, 1200)}`)
+    .map((r, i) => `[S${i + 1}] ${r.subjectName} - ${r.chapterName} - ${r.type}${r.page ? ` - page ${r.page}` : ''} - ${r.title}
+${r.text.slice(0, 1200)}`)
     .join('\n\n');
   const provider = resolveProvider();
   if (provider) {

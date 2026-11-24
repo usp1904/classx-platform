@@ -1,4 +1,5 @@
 import { getLesson, getChapter, subjects, sources } from './data.js';
+import { textbookChunks } from './textbook-okf.js';
 
 const STOP = new Set('a an and are as at be but by for from has have how in into is it its of on or that the their then there these this to was were what when where which who why will with you your'.split(' '));
 const SYNONYMS = new Map(Object.entries({
@@ -432,6 +433,7 @@ class HybridIndex {
         }
       }
     }
+    for (const chunk of textbookChunks()) this.add(chunk);
     for (const subject of subjects) {
       const chapterIds = subject.chapters.map((c) => c.id);
       for (const chapter of subject.chapters) {
@@ -575,11 +577,18 @@ class HybridIndex {
       .filter((item) => item.tokens.some((token) => qLexical.has(token)))
       .sort((a, b) => b.score - a.score);
     const perChapter = new Map();
+    const perChapterTextbook = new Map();
     const results = [];
     for (const item of ranked) {
-      const count = perChapter.get(item.chapterId) || 0;
-      if (count >= 3) continue;
-      perChapter.set(item.chapterId, count + 1);
+      if (item.type === 'textbook') {
+        const textbookCount = perChapterTextbook.get(item.chapterId) || 0;
+        if (textbookCount >= 1) continue;
+        perChapterTextbook.set(item.chapterId, textbookCount + 1);
+      } else {
+        const count = perChapter.get(item.chapterId) || 0;
+        if (count >= 3) continue;
+        perChapter.set(item.chapterId, count + 1);
+      }
       results.push(item);
       if (results.length >= limit) break;
     }
@@ -655,7 +664,9 @@ export function getCitations(results) {
     type: r.type,
     anchor: r.anchor,
     source: r.source,
-    page: null,
+    page: r.page ?? null,
+    pdfPage: r.pdfPage ?? null,
+    book: r.book ?? null,
   }));
 }
 
@@ -669,5 +680,6 @@ export const ragStats = () => {
     indexed: index.built,
     chunks: index.built ? index.chunks.length : 0,
     graphNodes: index.built ? index.conceptNodes.size : 0,
+    textbookChunks: index.built ? index.chunks.filter((c) => c.type === 'textbook').length : 0,
   };
 };

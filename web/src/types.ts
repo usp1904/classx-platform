@@ -225,6 +225,8 @@ export interface Citation {
   anchor: string;
   source: string;
   page: number | null;
+  pdfPage?: number | null;
+  book?: string | null;
 }
 
 export interface TutorResponse {

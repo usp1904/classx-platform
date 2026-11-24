@@ -6,6 +6,8 @@
   "description": "Class X mastery platform: CBSE 2026-27 curriculum, hybrid RAG tutor, practice and mock exams.",
   "scripts": {
     "sync": "node scripts/sync-content.mjs",
+    "sync:textbooks": "python scripts/ingest-textbooks.py",
+    "sync:backend-rag": "python ../backend/rag/ingest_okf.py",
     "dev": "concurrently -k -n api,web -c blue,magenta \"node --watch server/index.js\" \"vite --config web/vite.config.ts\"",
     "build": "vite build --config web/vite.config.ts",
     "build:gh": "node scripts/build-static.mjs gh-pages",
