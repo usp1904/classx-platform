@@ -22,6 +22,9 @@ import type {
   SearchResult,
   TutorResponse,
   VideoCatalog,
+  YouTubePlayerConfig,
+  YouTubeSearchItem,
+  YouTubeValidation,
 } from './types';
 import { handleMockRequest, isMockMode, setMockMode } from './services/mockApi.ts';
 
@@ -101,6 +104,8 @@ export const api = {
   saveProgress: (progress: Progress) => json<{ ok: boolean; progress: Progress }>('/api/progress', { method: 'PUT', body: JSON.stringify(progress) }),
   video: (subjectId: string, chapterId: string) =>
     json<VideoCatalog>(`/api/video/${subjectId}/${chapterId}`),
+  knowledgeHub: (subjectId: string, chapterId: string) =>
+    json<{ ok: boolean; hub: NonNullable<VideoCatalog['hub']>; videos: VideoCatalog['videos']; video: VideoCatalog['video']; validation: VideoCatalog['validation'] }>(`/api/knowledge-hub/${subjectId}/${chapterId}`),
   saveVideoProgress: (body: { userId: string; chapterId: string; positionSec: number; durationSec: number; bookmarked: boolean }) =>
     json<{ ok: boolean; saved: boolean }>('/api/video/progress', { method: 'POST', body: JSON.stringify(body) }),
   gamifyBadges: () => json<{ ok: boolean; badges: Badge[] }>('/api/gamify/badges'),
@@ -125,4 +130,8 @@ export const api = {
     json<{ ok: boolean } & LearningAidsData>(`/api/learning-aids/${subjectId}/${chapterId}`),
   learningAidsIds: () => json<{ ok: boolean } & LearningAidsIds>('/api/learning-aids/ids'),
   learningAidsGroup: (group: string) => json<{ ok: boolean; group: string; aids: string[] }>(`/api/learning-aids/group/${group}`),
+  youtubeConfig: () => json<YouTubePlayerConfig>('/api/youtube/player-config'),
+  youtubeValidate: (videoId: string) => json<YouTubeValidation>(`/api/youtube/validate/${encodeURIComponent(videoId)}`),
+  youtubeSearch: (q: string, limit = 12) =>
+    json<{ ok: boolean; items: YouTubeSearchItem[]; reason: string | null; source?: string }>(`/api/youtube/search?q=${encodeURIComponent(q)}&limit=${limit}`),
 };

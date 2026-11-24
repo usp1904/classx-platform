@@ -25,6 +25,20 @@ export default defineConfig(() => {
       outDir,
       emptyOutDir: true,
       sourcemap: false,
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (!id.includes('node_modules')) return;
+            const normalized = id.split('\\').join('/');
+            if (normalized.includes('/lucide-react/')) return 'vendor-icons';
+            if (normalized.includes('/react-router')) return 'vendor-router';
+            if (normalized.includes('/react/') || normalized.includes('/react-dom/') || normalized.includes('/scheduler/')) {
+              return 'vendor-react';
+            }
+            return;
+          },
+        },
+      },
     },
   };
 });

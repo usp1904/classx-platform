@@ -17,6 +17,9 @@ import { askTutor } from './lib/ai.js';
 import { startPractice, startExam, submitSession, getExamKey } from './lib/practice.js';
 import { getProgressAsync as getProgress, updateProgressAsync as updateProgress, awardXpAsync as awardXp, getBadges, getLeaderboard, getParentView, linkParent } from './lib/progress.js';
 import { sessionSet, sessionGet, sessionStoreKind } from './lib/session-store.js';
+import { getVideoEntry, catalogStats } from './lib/video-catalog.js';
+import { buildKnowledgeHub } from './lib/knowledge-hub.js';
+import { getPlayerConfig, searchVideos, validateVideo } from './lib/youtube.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -100,7 +103,7 @@ app.use((req, res, next) => {
   res.setHeader('Cross-Origin-Resource-Policy', 'same-origin');
   res.setHeader(
     'Content-Security-Policy',
-    "default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'; frame-src https://www.youtube-nocookie.com; base-uri 'self'; form-action 'self'; frame-ancestors 'self'",
+    "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.youtube.com https://www.youtube-nocookie.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https://i.ytimg.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self'; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://youtubeeducation.com https://*.youtubeeducation.com; base-uri 'self'; form-action 'self'; frame-ancestors 'self'",
   );
   if (process.env.COOKIE_SECURE === 'true') {
     res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
@@ -260,6 +263,7 @@ app.get('/api/health', (req, res) => {
     curriculum: getStats(),
     rag: ragStats(),
     sessionStore: sessionStoreKind(),
+    videos: catalogStats(),
     aiProvider: Boolean(process.env.OPENAI_API_KEY || process.env.openAI_API_KEY || process.env.OPENROUTER_API_KEY),
   });
 });
@@ -405,76 +409,98 @@ app.get('/api/sources', (req, res) => {
   res.json({ ok: true, sources });
 });
 
-/* ---- SPEC-16 Video lessons (BYJU's clone) ---- */
+/* ---- SPEC-16 Video lessons + Student Knowledge Hub for India ---- */
 
-// YouTube content safety: ONLY block explicit adult/pornographic content.
-// Educational content (biology, reproduction, adolescence, etc.) is ALLOWED.
-// We do NOT block words like 'adolescent', 'teen', 'reproduction' as they are valid educational topics.
-const BLOCKED_VIDEO_KEYWORDS = [
-  'porn', 'xxx', 'hardcore porn', 'sex video', 'nude', 'erotic', 'strip tease',
-  'bdsm', 'fetish', 'webcam girl', 'cam girl', 'onlyfans',
-];
+function publicVideo(pick, chapterId, chapter) {
+  return {
+    id: pick.id,
+    provider: 'youtube',
+    videoId: pick.id,
+    title: pick.title || pick.validatedTitle || chapter.name,
+    durationSec: Number(pick.durationSec) || 0,
+    chapterId,
+    channel: pick.channel || pick.validatedAuthor || 'Educational publisher',
+    safe: true,
+    verified: true,
+    verifiedAt: pick.validatedAt || null,
+    rating: null,
+    summary: chapter.summary || '',
+    validityScore: 1,
+    url: pick.url || `https://www.youtube.com/watch?v=${pick.id}`,
+  };
+}
 
-// Educational video catalog with ratings and summaries
-// All videos are for educational purposes only - no monetary intent
-const VIDEO_CATALOG = {
-  mathematics: {
-    'real-numbers': { id: 'math-real-numbers', provider: 'youtube', videoId: 'L6lAZ7gHQ7c', title: 'Real Numbers — Complete Class X Chapter', durationSec: 630, chapterId: 'real-numbers', channel: 'Khan Academy', safe: true, rating: 4.8, summary: 'Learn about rational and irrational numbers, Euclid\'s division lemma, and fundamental theorem of arithmetic.', validityScore: 0.95 },
-    'polynomials': { id: 'math-polynomials', provider: 'youtube', videoId: '2K_NoblbXqY', title: 'Polynomials — Complete Class X Chapter', durationSec: 720, chapterId: 'polynomials', channel: 'Khan Academy', safe: true, rating: 4.7, summary: 'Understand polynomials, zeroes, coefficients, and division algorithm.', validityScore: 0.94 },
-    'pair-of-linear-equations': { id: 'math-pair-of-linear-equations', provider: 'youtube', videoId: 'jF6sS4z6WzU', title: 'Pair of Linear Equations — Complete Class X Chapter', durationSec: 840, chapterId: 'pair-of-linear-equations', channel: 'Khan Academy', safe: true, rating: 4.6, summary: 'Learn to solve pair of linear equations in two variables graphically and algebraically.', validityScore: 0.93 },
-    'quadratic-equations': { id: 'math-quadratic-equations', provider: 'youtube', videoId: 'W7zeD_UxODU', title: 'Quadratic Equations — Complete Class X Chapter', durationSec: 780, chapterId: 'quadratic-equations', channel: 'Khan Academy', safe: true, rating: 4.9, summary: 'Master quadratic equations, discriminant, and nature of roots.', validityScore: 0.96 },
-    'arithmetic-progressions': { id: 'math-arithmetic-progressions', provider: 'youtube', videoId: 'B0XR9xX5VjA', title: 'Arithmetic Progressions — Complete Class X Chapter', durationSec: 690, chapterId: 'arithmetic-progressions', channel: 'Khan Academy', safe: true, rating: 4.7, summary: 'Learn AP, nth term, and sum of n terms with real-world applications.', validityScore: 0.94 },
-    'triangles': { id: 'math-triangles', provider: 'youtube', videoId: 'Vt3Lz0qzVtE', title: 'Triangles — Complete Class X Chapter', durationSec: 870, chapterId: 'triangles', channel: 'Khan Academy', safe: true, rating: 4.8, summary: 'Similarity of triangles, Pythagoras theorem, and areas of similar triangles.', validityScore: 0.95 },
-    'coordinate-geometry': { id: 'math-coordinate-geometry', provider: 'youtube', videoId: 'EBx6Q0f7o5M', title: 'Coordinate Geometry — Complete Class X Chapter', durationSec: 660, chapterId: 'coordinate-geometry', channel: 'Khan Academy', safe: true, rating: 4.6, summary: 'Distance formula, section formula, and area of triangle in coordinate geometry.', validityScore: 0.93 },
-    'introduction-to-trigonometry': { id: 'math-intro-trigonometry', provider: 'youtube', videoId: 'LsWAP_4BxVM', title: 'Introduction to Trigonometry — Complete Class X Chapter', durationSec: 750, chapterId: 'introduction-to-trigonometry', channel: 'Khan Academy', safe: true, rating: 4.7, summary: 'Trigonometric ratios, identities, and applications in real life.', validityScore: 0.94 },
-    'applications-of-trigonometry': { id: 'math-applications-trigonometry', provider: 'youtube', videoId: 'P2qyF9ZB_XM', title: 'Applications of Trigonometry — Complete Class X Chapter', durationSec: 720, chapterId: 'applications-of-trigonometry', channel: 'Khan Academy', safe: true, rating: 4.8, summary: 'Height and distance problems using trigonometry.', validityScore: 0.95 },
-    'circles': { id: 'math-circles', provider: 'youtube', videoId: 'W4u_0g1x7vQ', title: 'Circles — Complete Class X Chapter', durationSec: 630, chapterId: 'circles', channel: 'Khan Academy', safe: true, rating: 4.7, summary: 'Tangent to a circle, number of tangents from a point on a circle.', validityScore: 0.94 },
-    'areas-related-to-circles': { id: 'math-areas-circles', provider: 'youtube', videoId: 'M9m7D9f5LqE', title: 'Areas Related to Circles — Complete Class X Chapter', durationSec: 600, chapterId: 'areas-related-to-circles', channel: 'Khan Academy', safe: true, rating: 4.6, summary: 'Area of sectors, segments, and combinations of plane figures.', validityScore: 0.93 },
-    'surface-areas-and-volumes': { id: 'math-surface-areas-volumes', provider: 'youtube', videoId: 'L0Rq_4k7aF8', title: 'Surface Areas and Volumes — Complete Class X Chapter', durationSec: 810, chapterId: 'surface-areas-and-volumes', channel: 'Khan Academy', safe: true, rating: 4.8, summary: 'Surface area and volume of combinations of solids — cube, cuboid, cylinder, cone, sphere.', validityScore: 0.95 },
-    'statistics': { id: 'math-statistics', provider: 'youtube', videoId: 'CGbL6rN7b0U', title: 'Statistics — Complete Class X Chapter', durationSec: 690, chapterId: 'statistics', channel: 'Khan Academy', safe: true, rating: 4.7, summary: 'Mean, median, mode of grouped data and cumulative frequency graphs.', validityScore: 0.94 },
-    'probability': { id: 'math-probability', provider: 'youtube', videoId: '0mJZg0xq1Yc', title: 'Probability — Complete Class X Chapter', durationSec: 660, chapterId: 'probability', channel: 'Khan Academy', safe: true, rating: 4.7, summary: 'Theoretical probability, equally likely outcomes, and complementary events.', validityScore: 0.94 },
-  },
-  science: {
-    'chemical-reactions-and-equations': { id: 'sci-chemical-reactions', provider: 'youtube', videoId: 'L0lWm7UxLzM', title: 'Chemical Reactions and Equations — Complete Class X Chapter', durationSec: 720, chapterId: 'chemical-reactions-and-equations', channel: 'Khan Academy', safe: true, rating: 4.8, summary: 'Chemical reactions, types of reactions, and balancing chemical equations.', validityScore: 0.95 },
-    'life-processes': { id: 'sci-life-processes', provider: 'youtube', videoId: 'uWgHf6h3nW4', title: 'Life Processes — Complete Class X Chapter', durationSec: 840, chapterId: 'life-processes', channel: 'Khan Academy', safe: true, rating: 4.9, summary: 'Nutrition, respiration, transportation, and excretion in plants and animals.', validityScore: 0.96 },
-    'control-and-coordination': { id: 'sci-control-coordination', provider: 'youtube', videoId: 'IeO7eJQ1xk0', title: 'Control and Coordination — Complete Class X Chapter', durationSec: 780, chapterId: 'control-and-coordination', channel: 'Khan Academy', safe: true, rating: 4.8, summary: 'Nervous system, hormones, reflex actions, and plant movements.', validityScore: 0.95 },
-    'how-do-organisms-reproduce': { id: 'sci-reproduction', provider: 'youtube', videoId: 'Fy5q6s6x4yM', title: 'How do Organisms Reproduce — Complete Class X Chapter', durationSec: 750, chapterId: 'how-do-organisms-reproduce', channel: 'Khan Academy', safe: true, rating: 4.8, summary: 'Asexual and sexual reproduction in plants and animals.', validityScore: 0.95 },
-  },
-};
-
-// Content safety check: ONLY block truly adult/pornographic content.
-// Educational content (biology, reproduction, adolescence, etc.) is ALLOWED.
-function isVideoSafe(video) {
-  const text = `${video.title} ${video.channel || ''}`.toLowerCase();
-  return !BLOCKED_VIDEO_KEYWORDS.some((kw) => text.includes(kw));
+function buildVideoPayload(subjectId, chapterId) {
+  const chapter = getChapter(subjectId, chapterId);
+  if (!chapter) return null;
+  const entry = getVideoEntry(subjectId, chapterId);
+  const videos = (entry?.picks || []).map((pick) => publicVideo(pick, chapterId, chapter));
+  return {
+    chapter,
+    entry,
+    videos,
+    video: videos[0] || null,
+    validation: entry?.validation || null,
+    hub: buildKnowledgeHub(subjectId, chapterId),
+  };
 }
 
 app.get('/api/video/:subjectId/:chapterId', (req, res) => {
   const { subjectId, chapterId } = req.params;
-  const catalog = VIDEO_CATALOG[subjectId];
-  let video = catalog ? catalog[chapterId] : null;
-  if (!video) {
-    const ch = getChapter(subjectId, chapterId);
-    if (!ch) return res.status(404).json({ ok: false, error: 'No video lesson for this chapter yet' });
-    video = {
-      id: `${subjectId}-${chapterId}`,
-      provider: 'youtube',
-      videoId: 'L6lAZ7gHQ7c',
-      title: `${ch.name} — Class X Complete Lesson`,
-      durationSec: 840,
+  const payload = buildVideoPayload(subjectId, chapterId);
+  if (!payload) return res.status(404).json({ ok: false, error: 'Chapter not found' });
+  if (!payload.video) {
+    return res.status(503).json({
+      ok: false,
+      error: 'No validated educational video is available for this chapter yet.',
       chapterId,
-      channel: 'NCERT & Khan Academy',
-      safe: true,
-      rating: 4.8,
-      summary: `Comprehensive masterclass on ${ch.name} covering core NCERT concepts, definitions, and problem-solving techniques for CBSE and foundation exams.`,
-      validityScore: 0.95,
-      searchQuery: `CBSE Class 10 ${ch.name}`,
-    };
+      subjectId,
+      hub: payload.hub,
+    });
   }
-  if (!isVideoSafe(video)) {
-    return res.status(403).json({ ok: false, error: 'Video content blocked by safety filter' });
+  res.json({
+    ok: true,
+    video: payload.video,
+    videos: payload.videos,
+    chapterId,
+    subjectId,
+    validation: payload.validation,
+    gating: { requiredMastery: 80 },
+    hub: payload.hub,
+  });
+});
+
+app.get('/api/knowledge-hub/:subjectId/:chapterId', (req, res) => {
+  const { subjectId, chapterId } = req.params;
+  const payload = buildVideoPayload(subjectId, chapterId);
+  if (!payload) return res.status(404).json({ ok: false, error: 'Chapter not found' });
+  res.json({
+    ok: true,
+    hub: payload.hub,
+    videos: payload.videos,
+    video: payload.video,
+    validation: payload.validation,
+  });
+});
+
+app.get('/api/youtube/player-config', (req, res) => {
+  res.json(getPlayerConfig());
+});
+
+app.get('/api/youtube/validate/:videoId', async (req, res) => {
+  const result = await validateVideo(req.params.videoId);
+  if (result.reason === 'invalid-id') {
+    return res.status(400).json({ ...result, error: 'Invalid YouTube video id' });
   }
-  res.json({ ok: true, video, chapterId, subjectId, gating: { requiredMastery: 80 } });
+  res.json(result);
+});
+
+app.get('/api/youtube/search', async (req, res) => {
+  const result = await searchVideos(req.query.q, { maxResults: req.query.limit });
+  if (result.reason === 'invalid-query') {
+    return res.status(400).json({ ...result, error: 'Query must be 2-120 characters' });
+  }
+  res.json(result);
 });
 
 app.post('/api/video/progress', async (req, res) => {

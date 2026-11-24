@@ -105,3 +105,13 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy dist/cloudflare --project-name=classx-platform --branch=main --commit-dirty=true
+
+      - name: Ensure permanent Cloudflare domain
+        if: steps.check_creds.outputs.has_creds == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+          CLOUDFLARE_CUSTOM_DOMAIN: ${{ secrets.CLOUDFLARE_CUSTOM_DOMAIN }}
+          CLOUDFLARE_PROJECT: classx-platform
+        run: npm run setup:cloudflare

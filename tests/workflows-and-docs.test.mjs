@@ -7,8 +7,6 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(__dirname, '..');
 const WORKFLOWS_DIR = path.join(ROOT_DIR, '.github', 'workflows');
-const GH_WORKFLOW = path.join(WORKFLOWS_DIR, 'deploy-gh-pages.yml');
-const CF_WORKFLOW = path.join(WORKFLOWS_DIR, 'deploy-cloudflare.yml');
 const CONSOLIDATED_WORKFLOW = path.join(WORKFLOWS_DIR, 'deploy.yml');
 const DOCS_DEPLOYMENT = path.join(ROOT_DIR, 'docs', 'DEPLOYMENT.md');
 const PACKAGE_JSON = path.join(ROOT_DIR, 'package.json');
@@ -61,94 +59,13 @@ test('1. Package.json defines required build script aliases for static targets',
 });
 
 // ============================================================================
-// Test Suite 2: GitHub Pages Workflow (.github/workflows/deploy-gh-pages.yml)
+// Test Suite 2: Single Consolidated Deploy Workflow
 // ============================================================================
-test('2. GitHub Pages Workflow (.github/workflows/deploy-gh-pages.yml) structural compliance', async (t) => {
-  const content = readFile(GH_WORKFLOW);
-
-  await t.test('2.1 Triggers: push to main and workflow_dispatch', () => {
-    assert.match(content, /on:\s*\n[\s\S]*?push:\s*\n[\s\S]*?branches:\s*\n[\s\S]*?-\s*main/, 'Must trigger on push to main branch');
-    assert.match(content, /workflow_dispatch:/, 'Must support workflow_dispatch manual trigger');
-  });
-
-  await t.test('2.2 Permissions: read contents, write pages, write id-token', () => {
-    assert.match(content, /permissions:\s*\n[\s\S]*?contents:\s*read/, 'Must declare contents: read');
-    assert.match(content, /permissions:\s*\n[\s\S]*?pages:\s*write/, 'Must declare pages: write');
-    assert.match(content, /permissions:\s*\n[\s\S]*?id-token:\s*write/, 'Must declare id-token: write');
-  });
-
-  await t.test('2.3 Concurrency and Environment setup', () => {
-    assert.match(content, /concurrency:\s*\n[\s\S]*?group:\s*['"]?pages['"]?/, 'Concurrency group must be pages');
-    assert.match(content, /cancel-in-progress:\s*false/, 'cancel-in-progress must be false for github-pages queue');
-    assert.match(content, /environment:\s*\n[\s\S]*?name:\s*github-pages/, 'Environment name must be github-pages');
-    assert.match(content, /url:\s*\${{\s*steps\.deployment\.outputs\.page_url\s*}}/, 'Must capture deployed page_url from deployment output');
-  });
-
-  await t.test('2.4 Runner and Non-Interactive Steps execution', () => {
-    assert.match(content, /runs-on:\s*ubuntu-latest/, 'Runner must be ubuntu-latest');
-    assert.match(content, /uses:\s*actions\/checkout@v4/, 'Must use actions/checkout@v4');
-    assert.match(content, /uses:\s*actions\/setup-node@v4/, 'Must use actions/setup-node@v4');
-    assert.match(content, /node-version:\s*['"]?24['"]?/, 'Must configure Node.js version 24');
-    assert.match(content, /cache:\s*['"]?npm['"]?/, 'Must cache npm packages');
-    assert.match(content, /run:\s*npm\s+ci/, 'Must use deterministic non-interactive npm ci');
-    assert.match(content, /npm\s+run\s+typecheck/, 'Must run npm run typecheck');
-    assert.match(content, /npm\s+test/, 'Must run npm test');
-    assert.match(content, /npm\s+run\s+build:gh-pages/, 'Must build via npm run build:gh-pages');
-    assert.match(content, /VITE_BASE_PATH:\s*\/classx-platform\//, 'Must inject VITE_BASE_PATH: /classx-platform/');
-    assert.match(content, /VITE_STATIC_MOCK:\s*['"]?true['"]?/, 'Must inject VITE_STATIC_MOCK: "true"');
-    assert.match(content, /uses:\s*actions\/configure-pages@v5/, 'Must use actions/configure-pages@v5');
-    assert.match(content, /uses:\s*actions\/upload-pages-artifact@v3/, 'Must use actions/upload-pages-artifact@v3');
-    assert.match(content, /path:\s*dist\/gh-pages/, 'Artifact path must be dist/gh-pages');
-    assert.match(content, /id:\s*deployment[\s\S]*?uses:\s*actions\/deploy-pages@v4/, 'Must deploy via actions/deploy-pages@v4 with id deployment');
-  });
-});
-
-// ============================================================================
-// Test Suite 3: Cloudflare Pages Workflow (.github/workflows/deploy-cloudflare.yml)
-// ============================================================================
-test('3. Cloudflare Pages Workflow (.github/workflows/deploy-cloudflare.yml) structural compliance', async (t) => {
-  const content = readFile(CF_WORKFLOW);
-
-  await t.test('3.1 Triggers and Concurrency', () => {
-    assert.match(content, /on:\s*\n[\s\S]*?push:\s*\n[\s\S]*?branches:\s*\n[\s\S]*?-\s*main/, 'Must trigger on push to main branch');
-    assert.match(content, /workflow_dispatch:/, 'Must support workflow_dispatch manual trigger');
-    assert.match(content, /concurrency:\s*\n[\s\S]*?group:\s*['"]?cloudflare-pages['"]?/, 'Concurrency group must be cloudflare-pages');
-    assert.match(content, /cancel-in-progress:\s*true/, 'cancel-in-progress must be true for cloudflare-pages');
-  });
-
-  await t.test('3.2 Runner and Build Steps', () => {
-    assert.match(content, /runs-on:\s*ubuntu-latest/, 'Runner must be ubuntu-latest');
-    assert.match(content, /uses:\s*actions\/checkout@v4/, 'Must use actions/checkout@v4');
-    assert.match(content, /uses:\s*actions\/setup-node@v4/, 'Must use actions/setup-node@v4');
-    assert.match(content, /node-version:\s*['"]?24['"]?/, 'Must configure Node.js version 24');
-    assert.match(content, /cache:\s*['"]?npm['"]?/, 'Must cache npm packages');
-    assert.match(content, /run:\s*npm\s+ci/, 'Must use deterministic non-interactive npm ci');
-    assert.match(content, /npm\s+run\s+typecheck/, 'Must run npm run typecheck');
-    assert.match(content, /npm\s+test/, 'Must run npm test');
-    assert.match(content, /npm\s+run\s+build:cloudflare/, 'Must build via npm run build:cloudflare');
-    assert.match(content, /VITE_BASE_PATH:\s*\//, 'Must inject VITE_BASE_PATH: /');
-    assert.match(content, /VITE_STATIC_MOCK:\s*['"]?true['"]?/, 'Must inject VITE_STATIC_MOCK: "true"');
-  });
-
-  await t.test('3.3 Credential Check Guardrail (Fork & Secret Safety)', () => {
-    assert.match(content, /id:\s*check_creds/, 'Must define check_creds step id');
-    assert.match(content, /secrets\.CLOUDFLARE_API_TOKEN/, 'Must reference secrets.CLOUDFLARE_API_TOKEN');
-    assert.match(content, /secrets\.CLOUDFLARE_ACCOUNT_ID/, 'Must reference secrets.CLOUDFLARE_ACCOUNT_ID');
-    assert.match(content, /has_creds=false/, 'Must set has_creds=false when secrets are missing');
-    assert.match(content, /has_creds=true/, 'Must set has_creds=true when secrets are provided');
-    assert.match(content, /::warning/, 'Must emit GitHub Actions warning notice when credentials are missing');
-  });
-
-  await t.test('3.4 Deployment Step and Wrangler Flags', () => {
-    assert.match(content, /if:\s*steps\.check_creds\.outputs\.has_creds\s*==\s*['"]?true['"]?/, 'Deployment step must be conditioned on has_creds == true');
-    assert.match(content, /uses:\s*cloudflare\/wrangler-action@v3/, 'Must use cloudflare/wrangler-action@v3');
-    assert.match(content, /apiToken:\s*\${{\s*secrets\.CLOUDFLARE_API_TOKEN\s*}}/, 'Must pass apiToken from secret');
-    assert.match(content, /accountId:\s*\${{\s*secrets\.CLOUDFLARE_ACCOUNT_ID\s*}}/, 'Must pass accountId from secret');
-    assert.match(content, /command:[\s\S]*?pages\s+deploy\s+dist\/cloudflare/, 'Command must deploy dist/cloudflare');
-    assert.match(content, /--project-name=classx-platform/, 'Command must specify --project-name=classx-platform');
-    assert.match(content, /--branch=main/, 'Command must specify --branch=main');
-    assert.match(content, /--commit-dirty=true/, 'Command must specify --commit-dirty=true for non-interactive execution');
-  });
+test('2. Duplicate per-target deploy workflows are removed', () => {
+  const files = fs.readdirSync(WORKFLOWS_DIR).filter((f) => f.endsWith('.yml') || f.endsWith('.yaml'));
+  assert.ok(!files.includes('deploy-gh-pages.yml'), 'Standalone GitHub Pages workflow must be removed');
+  assert.ok(!files.includes('deploy-cloudflare.yml'), 'Standalone Cloudflare workflow must be removed');
+  assert.deepEqual(files, ['deploy.yml'], 'Only the consolidated deploy.yml workflow must remain');
 });
 
 // ============================================================================
@@ -184,7 +101,7 @@ test('4. Consolidated Workflow (.github/workflows/deploy.yml) structural complia
 // ============================================================================
 test('5. Security Audit: Zero hardcoded secrets, plaintext tokens, or interactive prompts', () => {
   const workflowFiles = fs.readdirSync(WORKFLOWS_DIR).filter((f) => f.endsWith('.yml') || f.endsWith('.yaml'));
-  assert.ok(workflowFiles.length >= 3, 'Must have at least 3 workflow files');
+  assert.ok(workflowFiles.length >= 1, 'Must have at least one deploy workflow file');
 
   // Regex patterns detecting potential credentials
   const suspiciousPatterns = [
@@ -316,5 +233,14 @@ test('6. Documentation (docs/DEPLOYMENT.md) comprehensive content validation', a
     assert.match(doc, /npm\s+run\s+typecheck/i, 'Must list npm run typecheck');
     assert.match(doc, /npm\s+test/i, 'Must list npm test');
     assert.match(doc, /node\s+scripts\/build-static\.mjs\s+all/i, 'Must list static build command');
+  });
+
+  await t.test('6.11 Single workflow and remote status references', () => {
+    assert.match(doc, /\.github\/workflows\/deploy\.yml/, 'Must reference the consolidated deploy workflow');
+    assert.ok(!doc.includes('deploy-gh-pages.yml'), 'Must not reference the deleted standalone GitHub Pages workflow');
+    assert.ok(!doc.includes('deploy-cloudflare.yml'), 'Must not reference the deleted standalone Cloudflare workflow');
+    assert.match(doc, /##\s*10\.\s*Current\s+Remote\s+Status/i, 'Must contain Section 10 heading');
+    assert.match(doc, /Docker\s+parity/i, 'Must record Docker parity status');
+    assert.match(doc, /NXDOMAIN/i, 'Must record the unresolved Cloudflare Pages hostname');
   });
 });

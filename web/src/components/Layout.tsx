@@ -28,6 +28,7 @@ import {
   X,
 } from 'lucide-react';
 import { useApp } from '../lib/store';
+import { useTheme } from '../lib/theme';
 import { CommandPalette } from './CommandPalette';
 import { MockModeBanner, OfflineIndicatorPill } from './OfflineStatus';
 
@@ -80,26 +81,14 @@ const titleFor = (path: string) => {
 
 export function Layout() {
   const { progress, toasts, dismissToast, curriculum } = useApp();
+  const { theme, toggleTheme } = useTheme();
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [theme, setTheme] = useState<'dark' | 'light'>(() => {
-    return (localStorage.getItem('classx_theme') as 'dark' | 'light') || 'dark';
-  });
   const [targetTrack, setTargetTrack] = useState<'boards' | 'competitive'>(() => {
     return (localStorage.getItem('classx_target_track') as 'boards' | 'competitive') || 'boards';
   });
   const location = useLocation();
   const navigate = useNavigate();
-
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-    document.body.setAttribute('data-theme', theme);
-    localStorage.setItem('classx_theme', theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
-  };
 
   const toggleTrack = () => {
     const next = targetTrack === 'boards' ? 'competitive' : 'boards';

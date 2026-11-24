@@ -113,7 +113,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background-color: var(--canvas); }
 body {
   margin: 0;
   background:
@@ -740,3 +740,30 @@ kbd {
   border: 1px solid var(--glass-border);
   box-shadow: var(--neu-well-shadow);
 }
+
+/* Student Knowledge Hub */
+.hub-section { position: relative; overflow: hidden; }
+.hub-section::after {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: var(--accent);
+  opacity: .8;
+}
+.hub-mint::after { background: var(--green); }
+.hub-saffron::after { background: #f59e0b; }
+.hub-rose::after { background: #f43f5e; }
+.hub-section-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.hub-section summary { list-style: none; }
+.hub-section summary::-webkit-details-marker { display: none; }
+.hub-section details[open] summary { color: var(--accent); }

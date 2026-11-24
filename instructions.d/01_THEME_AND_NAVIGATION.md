@@ -3,12 +3,18 @@
 ## 1. Operational Status
 
 - **Status**: **PRODUCTION READY**
-- **Target Git SHA**: `b7a11e2`
+- **Target Git SHA**: `b7a11e2` (light-default + app-wide sync added 2026-11-23)
 - **Affected Files**:
-  - `web/src/styles.css` (lines 3-96, 571-574)
-  - `web/src/components/Layout.tsx` (lines 84-101, 215-278)
+  - `web/src/styles.css` (lines 3-113, 135-142)
+  - `web/src/utilities.css` (theme-aware `.text-muted`, `.text-dim`, `.bg-canvas`, `.border-border`)
+  - `web/src/lib/theme.tsx` (single source of truth: default light, persistence, cross-tab sync)
+  - `web/src/components/Layout.tsx` (theme toggle consumes `useTheme()`)
+  - `web/index.html` (pre-paint `data-theme` + `theme-color` bootstrap)
+  - `web/public/manifest.json` (light `theme_color` / `background_color`)
 - **Verified Capabilities**:
-  - Complete dual-theme support (Dark default via `:root` and Light via `[data-theme="light"], :root.light`).
+  - Complete dual-theme support with **Light as the default** (`:root` holds dark tokens, `[data-theme="light"], :root.light` overrides them; no stored choice resolves to `light`).
+  - Theme is applied once at `<html>` level and inherited by every route, modal, and overlay, so switching reflects across the whole application, not only the current screen.
+  - Toggle choice persists in `localStorage('classx_theme')` and syncs across browser tabs through the `storage` event.
   - Cohesive design tokens: Primary (`#2563EB`), Secondary (`#7C3AED`), Accent (`#06B6D4`), Success (`#10B981`), Light (`#F8FAFC`), Dark (`#0F172A`).
   - Glassmorphic card styling (`blur(24px)`) and modern Neumorphic soft depth (`--neu-light`, `--neu-dark`).
   - Persistent theme switching synchronized across `<html>`, `<body>`, and `localStorage('classx_theme')`.
@@ -80,16 +86,15 @@ body, .sidebar, .topbar, .quick-access-bar {
 The theme toggle component is embedded within the top navigation bar (`Layout.tsx`).
 
 #### State Management Lifecycle
-1. **Initial Resolution**: Read `localStorage.getItem('classx_theme')`. Default to `'dark'` if unset.
-2. **DOM Attachment**: On state change, apply `data-theme` attribute to both `document.documentElement` and `document.body`:
+1. **Initial Resolution**: `resolveInitialTheme()` in `web/src/lib/theme.tsx` reads `localStorage.getItem('classx_theme')`. It defaults to `'light'` when unset or invalid. `web/index.html` repeats this check before React mounts to prevent a flash of the wrong theme.
+2. **DOM Attachment**: On state change, `applyTheme()` sets `data-theme` on `document.documentElement`, mirrors it on `document.body`, updates `color-scheme`, and updates `meta[name="theme-color"]`:
    ```typescript
    useEffect(() => {
-     document.documentElement.setAttribute('data-theme', theme);
-     document.body.setAttribute('data-theme', theme);
-     localStorage.setItem('classx_theme', theme);
+     applyTheme(theme);
    }, [theme]);
    ```
-3. **Toggle Handler**: The topbar button switches between `'dark'` and `'light'`.
+3. **Cross-Tab Sync**: A `storage` listener updates the theme when another tab writes `classx_theme`, so open tabs stay consistent.
+4. **Toggle Handler**: The topbar button reads `useTheme()` and switches between `'dark'` and `'light'`.
    - Dark mode displays `<Sun size={18} className="text-amber-400" />`.
    - Light mode displays `<Moon size={18} className="text-indigo-600" />`.
 

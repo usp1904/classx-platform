@@ -33,6 +33,83 @@ import type {
 const PROGRESS_KEY = 'peak.classx.progress.v1';
 const MOCK_MODE_KEY = 'classx_mock_mode';
 
+type CatalogPick = {
+  id: string;
+  title?: string;
+  channel?: string;
+  durationSec?: number;
+  validatedAt?: string;
+  url?: string;
+};
+
+type CatalogEntry = {
+  subjectId: string;
+  chapterId: string;
+  picks?: CatalogPick[];
+  validation?: VideoCatalog['validation'];
+};
+
+type VideoCatalogFile = { generatedAt: string; entries: CatalogEntry[] };
+type KnowledgeHubFile = { hubs: Record<string, NonNullable<VideoCatalog['hub']>> };
+
+let videoCatalogPromise: Promise<VideoCatalogFile> | null = null;
+let knowledgeHubPromise: Promise<KnowledgeHubFile> | null = null;
+
+function loadVideoCatalog(): Promise<VideoCatalogFile> {
+  videoCatalogPromise ??= import('../../../server/data/video-catalog.json', { with: { type: 'json' } })
+    .then((mod) => mod.default as unknown as VideoCatalogFile);
+  return videoCatalogPromise;
+}
+
+function loadKnowledgeHub(): Promise<KnowledgeHubFile> {
+  knowledgeHubPromise ??= import('../data/knowledge-hub.json', { with: { type: 'json' } })
+    .then((mod) => mod.default as unknown as KnowledgeHubFile);
+  return knowledgeHubPromise;
+}
+
+async function getMockVideoPayload(subjectId: string, chapterId: string): Promise<VideoCatalog | null> {
+  const [videoCatalogData, knowledgeHubData] = await Promise.all([loadVideoCatalog(), loadKnowledgeHub()]);
+  const entry = videoCatalogData.entries.find(
+    (item) => item.subjectId === subjectId && item.chapterId === chapterId,
+  );
+  const hub = knowledgeHubData.hubs[`${subjectId}:${chapterId}`];
+  if (!entry || !entry.picks?.length) return null;
+
+  const videos = entry.picks.map((pick) => ({
+    id: pick.id,
+    provider: 'youtube' as const,
+    videoId: pick.id,
+    title: pick.title || hub?.chapterName || chapterId,
+    durationSec: Number(pick.durationSec) || 0,
+    chapterId,
+    channel: pick.channel || 'Educational publisher',
+    safe: true,
+    verified: true,
+    verifiedAt: pick.validatedAt || null,
+    rating: null,
+    summary: hub?.summary || '',
+    validityScore: 1,
+    url: pick.url || `https://www.youtube.com/watch?v=${pick.id}`,
+  }));
+
+  return {
+    ok: true,
+    subjectId,
+    chapterId,
+    video: videos[0],
+    videos,
+    validation: entry.validation || {
+      provider: 'youtube',
+      method: 'YouTube oEmbed HTTP 200 + title/channel match + safety keyword filter',
+      generatedAt: videoCatalogData.generatedAt,
+      verified: true,
+      safetyFilter: 'adult/obscene/irrelevant keyword block',
+    },
+    gating: { requiredMastery: 80 },
+    hub,
+  };
+}
+
 // ---------------------------------------------------------------------------
 // Mode state and detection
 // ---------------------------------------------------------------------------
@@ -1910,10 +1987,18 @@ export async function handleMockRequest<T>(url: string, init?: RequestInit): Pro
   }
 
   // 15. GET /api/video/:subjectId/:chapterId
-  if (method === 'GET' && pathname.startsWith('/api/video/')) {
+  if (method === 'GET' && pathname.startsWith('/api/video/') && pathname !== '/api/video/progress') {
     const parts = pathname.replace('/api/video/', '').split('/');
     const subjectId = parts[0] || 'mathematics';
     const chapterId = parts[1] || 'real-numbers';
+
+    const [payload, knowledgeHubData] = await Promise.all([
+      getMockVideoPayload(subjectId, chapterId),
+      loadKnowledgeHub(),
+    ]);
+    const hub = knowledgeHubData.hubs[`${subjectId}:${chapterId}`];
+
+    if (payload) return { ...payload, hub } as unknown as T;
 
     const catalog: VideoCatalog = {
       ok: true,
@@ -1933,8 +2018,56 @@ export async function handleMockRequest<T>(url: string, init?: RequestInit): Pro
         validityScore: 0.95,
       },
       gating: { requiredMastery: 80 },
+      hub,
     };
     return catalog as unknown as T;
+  }
+
+  // 30. GET /api/knowledge-hub/:subjectId/:chapterId (lazy, static builds)
+  if (method === 'GET' && pathname.startsWith('/api/knowledge-hub/')) {
+    const parts = pathname.replace('/api/knowledge-hub/', '').split('/');
+    const subjectId = parts[0] || 'mathematics';
+    const chapterId = parts[1] || 'real-numbers';
+
+    const [payload, knowledgeHubData] = await Promise.all([
+      getMockVideoPayload(subjectId, chapterId),
+      loadKnowledgeHub(),
+    ]);
+    const hub = knowledgeHubData.hubs[`${subjectId}:${chapterId}`];
+    if (!hub) return { ok: false, error: 'Knowledge hub not found' } as unknown as T;
+
+    return {
+      ok: true,
+      hub,
+      videos: payload?.videos ?? [],
+      video: payload?.video ?? null,
+      validation: payload?.validation ?? null,
+    } as unknown as T;
+  }
+
+  if (method === 'GET' && pathname === '/api/youtube/player-config') {
+    return {
+      ok: true,
+      educationEnabled: false,
+      educationBase: null,
+      educationToken: null,
+      origin: null,
+    } as unknown as T;
+  }
+
+  if (method === 'GET' && pathname.startsWith('/api/youtube/validate/')) {
+    const videoId = pathname.replace('/api/youtube/validate/', '');
+    return {
+      ok: true,
+      videoId,
+      validated: false,
+      reason: 'validation-unavailable',
+      verifiedBy: 'static-catalog',
+    } as unknown as T;
+  }
+
+  if (method === 'GET' && pathname === '/api/youtube/search') {
+    return { ok: true, items: [], reason: 'local-catalog-only', source: 'static-catalog' } as unknown as T;
   }
 
   // 16. POST /api/video/progress

@@ -57,7 +57,7 @@ GitHub Pages deployment is fully automated via native GitHub Actions using stand
 2. Go to repository **Settings** -> **Pages** (under the **Code and automation** section in the left sidebar).
 3. Under **Build and deployment**:
    - For **Source**, select **GitHub Actions** from the dropdown menu (do **not** select "Deploy from a branch").
-5. The deployment workflow `.github/workflows/deploy-gh-pages.yml` will automatically bind to the `github-pages` environment upon the next push to `main` or manual trigger.
+5. The consolidated deployment workflow `.github/workflows/deploy.yml` will automatically bind its `deploy-gh-pages` job to the `github-pages` environment upon the next push to `main` or manual trigger.
 
 ### Automated Permissions & Security
 - The workflow automatically requests the following minimal permissions:
@@ -104,6 +104,33 @@ The project name configured in the CI workflow is `classx-platform`.
 - When the workflow runs for the first time with valid credentials, `cloudflare/wrangler-action@v3` will automatically register the project under your Cloudflare account.
 - Alternatively, you can pre-create it in the Cloudflare Dashboard: **Workers & Pages** -> **Create application** -> **Pages** tab -> **Direct Upload** -> Project Name: `classx-platform`.
 
+### Step 5: Permanent URL and DNS (no more ephemeral tunnels)
+The stable production URL is `https://classx-platform.pages.dev`. It survives restarts, redeploys, and laptop shutdowns; only deleting or renaming the Pages project changes it. Do not use `trycloudflare.com` quick tunnels for production: the hostname is random and expires when the process stops.
+
+To serve the app on your own domain:
+
+1. Add the domain to Cloudflare and switch the registrar to the Cloudflare nameservers (required for proxied DNS and Universal SSL).
+2. Set two optional repository secrets:
+   - `CLOUDFLARE_CUSTOM_DOMAIN` — the hostname, for example `app.example.com`.
+   - `CLOUDFLARE_ZONE_ID` — the zone ID from the domain overview page. Without it, the setup script looks the zone up by name.
+3. On the next push to `main`, `.github/workflows/deploy.yml` runs `npm run setup:cloudflare` after the deploy. The script is idempotent:
+   - creates the Pages project if missing;
+   - creates or repairs the proxied `CNAME` record `app.example.com -> classx-platform.pages.dev`;
+   - attaches the custom domain to the Pages project;
+   - polls `https://app.example.com` until it returns HTTP 200.
+4. Run the same step locally with:
+
+   ```bash
+   CLOUDFLARE_API_TOKEN=... CLOUDFLARE_ACCOUNT_ID=... \
+   CLOUDFLARE_CUSTOM_DOMAIN=app.example.com \
+   npm run setup:cloudflare
+   ```
+
+Notes:
+- Apex domains (`example.com`) work because Cloudflare flattens the proxied `CNAME` at the zone root.
+- DNS and certificate status can take a few minutes after the first run. Re-run the workflow or the script to re-check.
+- Without `CLOUDFLARE_CUSTOM_DOMAIN`, the script only verifies `https://classx-platform.pages.dev` and leaves DNS untouched.
+
 ---
 
 ## 4. GitHub Repository Secrets Configuration
@@ -122,9 +149,10 @@ To enable Cloudflare Pages deployments from GitHub Actions, configure the two re
    - **Name**: `CLOUDFLARE_ACCOUNT_ID`
    - **Secret**: Paste the 32-character Account ID retrieved in Section 3.2.
    - Click **Add secret**.
+6. Optional, for a custom domain: add `CLOUDFLARE_CUSTOM_DOMAIN` and `CLOUDFLARE_ZONE_ID` as described in Section 3, Step 5. The default `https://classx-platform.pages.dev` URL needs no extra secret.
 
 ### Pre-Flight Credential Validation Guardrail
-Both Cloudflare deployment workflows (`deploy-cloudflare.yml` and `deploy.yml`) implement a non-blocking pre-flight secret validation step:
+The consolidated deployment workflow (`.github/workflows/deploy.yml`) implements a non-blocking pre-flight secret validation step in its `deploy-cloudflare` job:
 
 ```bash
 if [ -z "${{ secrets.CLOUDFLARE_API_TOKEN }}" ] || [ -z "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" ]; then
@@ -135,7 +163,7 @@ else
 fi
 ```
 
-- **Fork Safety**: If a developer forks the repository without configuring Cloudflare secrets, the workflow logs a GitHub Actions warning notice and completes successfully without failing the build run.
+- **Fork Safety**: If a developer forks the repository without configuring Cloudflare secrets, the workflow logs a GitHub Actions warning notice and skips only the Cloudflare deploy job; the GitHub Pages job still completes.
 - **Security**: The secret values are never printed or echoed to logs.
 
 ---
@@ -149,7 +177,7 @@ The following table summarizes the free-tier service limits across both hosting 
 | **Monthly Cost** | **$0.00** | **$0.00** | 100% free tier architectures |
 | **Bandwidth Quota** | 100 GB / month | **Unlimited** requests & bandwidth | Gzip/Brotli compression + immutable caching |
 | **Build Minutes** | Standard GitHub Actions (2,000 min/mo free) | **0 Cloudflare build minutes** | Wrangler direct static upload skips Cloudflare build queues |
-| **Max Artifact Size** | 1 GB total deployment | 25 MB per file / 20,000 files total | Vite asset chunking keeps all JS/CSS < 500 KB |
+| **Max Artifact Size** | 1 GB total deployment | 25 MB per file / 20,000 files total | Lazy route chunks keep the initial JS near 319 kB; the knowledge-hub payload loads only on the video lesson route |
 | **Custom Domains** | 1 per repository | 100 custom domains per project | Supported on both targets with apex/subdomain |
 | **SSL / HTTPS** | Automatic Let's Encrypt | Automatic Universal SSL | Enforced HTTPS with automatic renewal |
 | **SPA Deep Links** | Supported via `404.html` | Supported via `_redirects` (`/* /index.html 200`) | Seamless URL refreshes without 404 errors |
@@ -278,11 +306,11 @@ To comply with automated free-tier requirements, all GitHub Actions workflows ar
 
 ### Workflow Files Summary
 
-| File | Purpose | Concurrency Group | Environment / Secrets |
+| File | Jobs | Concurrency | Environment / Secrets |
 |---|---|---|---|
-| `.github/workflows/deploy-gh-pages.yml` | Dedicated GitHub Pages deployment | `group: 'pages'` | `github-pages` environment (`GITHUB_TOKEN`) |
-| `.github/workflows/deploy-cloudflare.yml` | Dedicated Cloudflare Pages deployment | `group: 'cloudflare-pages'` | `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` |
-| `.github/workflows/deploy.yml` | Unified multi-target deployment (parallel jobs) | Per-job concurrency | Parallel execution of both targets |
+| `.github/workflows/deploy.yml` | `deploy-gh-pages` + `deploy-cloudflare` in one workflow | `pages` (no cancel) and `cloudflare-pages` (cancel in progress) | `github-pages` environment (`GITHUB_TOKEN`) and `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` |
+
+The two former per-target workflow files were removed so a push cannot run duplicate deployments or cancel itself.
 
 ---
 
@@ -307,3 +335,16 @@ node scripts/build-static.mjs all
 npm run build:gh-pages      # Outputs to dist/gh-pages
 npm run build:cloudflare    # Outputs to dist/cloudflare
 ```
+
+---
+
+## 10. Current Remote Status (2026-11-24)
+
+| Target | Status | Evidence / Remaining Action |
+|---|---|---|
+| GitHub Pages | Live | `https://usp1904.github.io/classx-platform/` returned HTTP 200 |
+| Render API | Live | `https://classx-platform.onrender.com/api/health` returned HTTP 200; compare `commit` to `git rev-parse --short=12 HEAD` after the next deploy |
+| Cloudflare Pages | Blocked | `classx-platform.pages.dev` returns NXDOMAIN (does not resolve); add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` repository secrets, then push to `main` |
+| Docker parity | Unverified in current environment | Docker daemon unavailable; run `npm run verify:sync:docker` on a Docker-capable machine before claiming parity |
+
+`npm run verify:sync` reports the current commit and any drift in `artifacts/sync-status.json`.

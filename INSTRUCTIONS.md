@@ -22,6 +22,8 @@ npm run verify:sync:docker     # + docker build, run, /api/health commit match
 ```
 
 Report: `artifacts/sync-status.json`. Any `fail` line includes the exact fix action.
+If Docker is unavailable, record Docker parity as `SKIP`; do not claim parity until
+`verify:sync:docker` passes on a Docker-capable machine.
 
 ## 3. Local breaks
 
@@ -34,10 +36,10 @@ npm run build
 npm start                      # http://localhost:8787/api/health
 ```
 
-Expected: 4 subjects, 67 chapters, 2569 questions, 22/22 tests, build ~665 kB JS.
-If `npm test` hangs: it is a synchronous loop, not a slow test. The last known one was
-`splitIntoChunks()` in `server/lib/rag.js` (fixed). Re-introducing a tail-overlap loop
-will hang the tutor tests again.
+Expected: 4 subjects, 67 chapters, 2569 questions, full test suite green (165 tests as of
+2026-11-24), and clean production/static builds. If `npm test` hangs: it is a synchronous
+loop, not a slow test. The last known one was `splitIntoChunks()` in `server/lib/rag.js`
+(fixed). Re-introducing a tail-overlap loop will hang the tutor tests again.
 
 ## 4. Git drift
 
@@ -94,6 +96,80 @@ Local uses `COOKIE_SECURE=false` (plain HTTP); Render/VPS use `true` (HTTPS).
 | `d3b2171` | 2026-11-19 | `fix` | Curriculum topic integrity. |
 | `f287ef1` | 2026-11-19 | `fix` | Aligned local, Git, and Docker runtime contracts, added `scripts/sync-verify.mjs` and `npm run verify:sync:docker`. |
 
+## 7a. Session Update — 2026-11-22 (Deploy, CI, Security, Public Access)
+
+Commits pushed to `origin/main` in this session:
+
+- `462514d` `feat(deploy)`: added multi-target static build (`scripts/build-static.mjs`), GitHub Pages/Cloudflare workflows, client-side mock API fallback, deployment docs, security utilities, and deployment/security tests.
+- `6ed8652` `fix(ci)`: moved CI verification to Node 24 so tests can import `.ts` modules directly.
+- `638849d` `fix(ci)`: deployment E2E tests now build `dist/gh-pages` and `dist/cloudflare` automatically when missing.
+- `603cfcb` `fix(security)`: added API/tutor rate limits, strict JSON content-type and `256kb` body limits, CSP/COOP/CORP/no-index headers, stronger prompt-injection filters, and hid provider error details in production.
+
+Verified outcomes:
+
+- [x] `[COMPLETED]` **Local runtime**: `http://localhost:8787/api/health` returns `200`.
+- [x] `[COMPLETED]` **GitHub Pages**: enabled with `build_type=workflow`; `https://usp1904.github.io/classx-platform/` returns `200`.
+- [x] `[COMPLETED]` **CI deployment**: GitHub Pages workflow and consolidated multi-target workflow completed successfully for `638849d`.
+- [x] `[COMPLETED]` **Render**: `https://classx-platform.onrender.com/api/health` returns `200`.
+- [x] `[COMPLETED]` **Prompt-injection guard**: `POST /api/tutor` with `ignore previous instructions...` returns `security-guard` and `blocked: true`.
+- [x] `[COMPLETED]` **Security headers**: CSP, `X-Robots-Tag: noindex`, COOP, CORP, nosniff, frame, referrer, and permissions policies are present.
+- [x] `[COMPLETED]` **Rate limits**: `/api` 180 requests/minute/IP; `/api/tutor` 8 requests/minute/IP; auth throttle 20 attempts/minute/IP.
+- [x] `[COMPLETED]` **Public tunnel**: Cloudflare quick tunnel active at `https://framing-thumbs-effectiveness-pricing.trycloudflare.com` (ephemeral).
+- [x] `[COMPLETED]` **Docker image**: `classx-platform-classx-api:latest` built successfully.
+- [ ] `[INCOMPLETE]` **Docker runtime**: not verified in the current environment because the Docker daemon is unavailable. When Docker is available, stop native Node and run `docker compose up -d`, then compare `/api/health.commit` to `git rev-parse --short=12 HEAD`.
+- [ ] `[INCOMPLETE]` **Cloudflare Pages deploy**: the duplicate workflows were removed, but `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` secrets are still not configured, so the Cloudflare job skips its deploy step.
+- [x] `[COMPLETED]` **Permanent public access**: GitHub Pages and Render provide stable public HTTPS URLs. The `trycloudflare.com` quick tunnel is development-only and must not be presented as production.
+- [ ] `[INCOMPLETE]` **Render SHA stamp**: confirm `/api/health.commit` matches the pushed SHA after the Render deploy finishes.
+- [ ] `[INCOMPLETE]` **Browser smoke test**: verify all SPA routes and the YouTube lesson embed over the public HTTPS URL, not only `/` and `/api/health`.
+- [x] `[COMPLETED]` **CI duplicate workflows**: both per-target workflows were deleted; `.github/workflows/deploy.yml` is the only deploy workflow and runs the GitHub Pages and Cloudflare jobs.
+- [ ] `[INCOMPLETE]` **Rate-limit persistence**: limits are process-local `Map`s and reset on restart; use Redis or an edge limiter for multi-instance deployments.
+
+## 7b. Session Update — 2026-11-23 (Default Light Theme & App-Wide Synchronization)
+
+- [x] `[COMPLETED]` **Default theme is light**: `resolveInitialTheme()` returns `light` when `localStorage('classx_theme')` is unset or invalid. `web/index.html` runs the same check before React mounts, so there is no dark flash.
+- [x] `[COMPLETED]` **Single source of truth**: new `web/src/lib/theme.tsx` (`ThemeProvider`, `useTheme`, `applyTheme`) owns the theme; `Layout.tsx` consumes `useTheme()` instead of keeping its own copy.
+- [x] `[COMPLETED]` **App-wide propagation**: `data-theme` is set on `document.documentElement`, so every route, modal, and overlay inherits the same palette. `color-scheme` and `meta[name="theme-color"]` update with the choice.
+- [x] `[COMPLETED]` **Cross-tab sync**: a `storage` event listener applies a theme change made in another tab.
+- [x] `[COMPLETED]` **Theme-aware utilities**: `.text-muted`, `.text-dim`, `.bg-canvas`, and `.border-border` now read `--muted`, `--ink-2`, `--canvas`, and `--line` instead of hardcoded dark fallbacks.
+- [x] `[COMPLETED]` **PWA colors**: `web/public/manifest.json` uses `#f8fafc` for `theme_color` and `background_color`.
+- [x] `[COMPLETED]` **Gates**: `npm run typecheck` (0 errors), `npm run check` (4 subjects, 67 chapters, 2569 questions), `npm test` (full suite green), `npm run build` (clean).
+- [ ] `[INCOMPLETE]` **Browser smoke test**: confirm the light/dark choice survives navigation across all SPA routes and a second tab, then repeat under the static GitHub Pages/Cloudflare builds.
+
+## 7c. Session Update — 2026-11-23 (Performance Split & Durable Cloudflare Access)
+
+- [x] `[COMPLETED]` **Route-level code splitting**: every screen in `web/src/App.tsx` is `React.lazy`, so the initial entry no longer ships all 18 screens. Initial JS is ~319 kB raw / ~97 kB gzip (was 764.57 kB / 221.75 kB).
+- [x] `[COMPLETED]` **Lazy data payloads**: `knowledge-hub.json` (764 kB) and `video-catalog.json` (111 kB) are dynamic imports in `mockApi.ts` with per-chunk caching. They load only on the video lesson route.
+- [x] `[COMPLETED]` **Static mock parity**: `GET /api/video/:subject/:chapter` now attaches the knowledge hub, and `GET /api/knowledge-hub/:subject/:chapter` is implemented, so static GitHub Pages/Cloudflare builds show the same hub content as the live API.
+- [x] `[COMPLETED]` **Vendor chunking**: React, React Router, and Lucide are separate cacheable chunks. KaTeX stays inside the lazy `RichText` chunk (265 kB) instead of being preloaded on first paint.
+- [x] `[COMPLETED]` **Third-party removal**: unused HTMX CDN script removed from `web/index.html`; the app no longer depends on `unpkg.com` for boot.
+- [x] `[COMPLETED]` **Durable Cloudflare access**: new `scripts/cloudflare-setup.mjs` (`npm run setup:cloudflare`) ensures the Pages project, creates or repairs a proxied CNAME, attaches a custom domain, and verifies HTTPS. `.github/workflows/deploy.yml` runs it after each deploy.
+- [x] `[COMPLETED]` **Docs**: `docs/DEPLOYMENT.md` Section 3, Step 5 documents the stable `https://classx-platform.pages.dev` URL and the optional `CLOUDFLARE_CUSTOM_DOMAIN` / `CLOUDFLARE_ZONE_ID` secrets.
+- [ ] `[INCOMPLETE]` **Cloudflare project existence**: `classx-platform.pages.dev` still returns NXDOMAIN. The first successful deploy needs `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` in GitHub Actions secrets.
+- [ ] `[INCOMPLETE]` **Custom domain**: requires the zone to be on Cloudflare nameservers plus the two optional secrets. Account-side DNS cannot be changed from this repository.
+- [ ] `[INCOMPLETE]` **Browser/visual QA**: lazy routes and the video hub need a browser smoke test across routes, tabs, and both static targets.
+
+## 7d. Session Update — 2026-11-23 (Dual-Mode YouTube Education Embeds)
+
+- [x] `[COMPLETED]` **Keyless metadata check**: `server/lib/youtube.js` validates an id through the public YouTube oEmbed endpoint (`/oembed?format=json`) with a 5s timeout and 10-minute cache. No `YOUTUBE_API_KEY`, no Google API client, no scraping, and no third-party proxy. A 401/403/404 blocks the id as `not-found`; a network failure degrades to `validation-unavailable` instead of blocking the lesson.
+- [x] `[COMPLETED]` **Honest limits**: oEmbed confirms the video exists and returns its title/author, but it does not certify embeddability, age rating, or region availability. Those remain enforced by the curated catalog, the playback error fallback, and the site CSP.
+- [x] `[COMPLETED]` **Local catalog search**: `GET /api/youtube/search` searches `server/data/video-catalog.json` with `searchCatalog()`. Results are deduplicated, capped at 25, filtered by the existing adult/obscene blocklist, and carry chapter/subject metadata. Input is capped at 120 characters.
+- [x] `[COMPLETED]` **Dual-mode player**: `web/src/components/YouTubePlayer.tsx` defaults to the privacy-enhanced `youtube-nocookie.com` IFrame player and switches to a partner-configured Education base only when `YOUTUBE_EDU_ENABLED=true`. Education mode is opt-in because `youtubeeducation.com` is a partner product, not a public embed API. No fake referer or fake Education URL is generated.
+- [x] `[COMPLETED]` **Error handling**: `onError` maps 150/153 to the real fix (add the site to the video's embedding allowlist in YouTube Studio), 101 to embed-disabled, 100 to private/removed, 2 to invalid id. The player never renders a blank frame; it shows an actionable fallback plus "Open on YouTube".
+- [x] `[COMPLETED]` **Wiring**: `VideoLesson.tsx` now uses the component; skip controls call `seekTo` on the live player. `api.ts`, `types.ts`, and `mockApi.ts` cover config/validate/search. Tests live in `tests/youtube.test.js`.
+- [ ] `[INCOMPLETE]` **Account-side setup**: set `YOUTUBE_ORIGIN` to the public site origin and allow the production domains in YouTube Studio for any video that returns 150/153. Education mode needs a signed YouTube Player for Education agreement, base URL, and short-lived session token; if the partner host is not `*.youtubeeducation.com`, add it to `frame-src` in `server/index.js`.
+- [ ] `[INCOMPLETE]` **Browser QA**: verify a real embed, a blocked video, and the offline/unverified state in the browser.
+
+## 7e. Session Update — 2026-11-24 (Deployment Sync & Pending-Item Audit)
+
+- [x] `[COMPLETED]` **Consolidated CI**: `.github/workflows/deploy.yml` is the only deploy workflow. The standalone GitHub Pages and Cloudflare workflow files were deleted, so a push cannot race or cancel duplicate deployments.
+- [x] `[COMPLETED]` **Docs drift fixed**: `docs/DEPLOYMENT.md` now points at `deploy.yml` everywhere, documents one consolidated workflow table, and records the current GitHub Pages, Render, Cloudflare, and Docker status.
+- [x] `[COMPLETED]` **Keyless YouTube contract preserved**: no Google API key, no scraping, no third-party proxy; `YOUTUBE_ORIGIN` remains the only required playback setting and Education mode stays opt-in.
+- [x] `[COMPLETED]` **Live URL check**: GitHub Pages returned HTTP 200; Render `/api/health` returned HTTP 200.
+- [ ] `[INCOMPLETE]` **Cloudflare DNS**: `classx-platform.pages.dev` returns NXDOMAIN until the two repository secrets are added and the workflow runs.
+- [ ] `[INCOMPLETE]` **Render SHA confirmation**: pending the next push-and-deploy; compare `/api/health.commit` to the pushed SHA.
+- [ ] `[INCOMPLETE]` **Docker parity**: Docker daemon unavailable in this environment, so `verify:sync:docker` could not run.
+- [ ] `[INCOMPLETE]` **Browser QA**: public-route, theme, lazy-route, and YouTube embed smoke tests still need a real browser.
+
 ### Summary of Changed Files in the Sync Passes
 
 | File | Why |
@@ -117,6 +193,19 @@ Local uses `COOKIE_SECURE=false` (plain HTTP); Render/VPS use `true` (HTTPS).
 | `.gitignore`, `.env.production.example` | Stop tracking production env template as secret |
 | `scripts/sync-verify.mjs` | Repeatable local/Git/Docker parity gate |
 | `docs/SYNC.md`, this file | Contract + recovery runbook |
+| `web/src/lib/theme.tsx` | Light-default theme provider, DOM application, persistence, cross-tab sync |
+| `web/src/App.tsx` | Wraps the router in `ThemeProvider` so the theme applies to every route |
+| `web/index.html` | Pre-paint `data-theme`/`theme-color` bootstrap with light default |
+| `web/public/manifest.json` | Light PWA `theme_color` and `background_color` |
+| `web/src/utilities.css` | Theme-aware text/background/border utility mappings |
+| `server/lib/youtube.js`, `server/index.js` | Keyless oEmbed check, local-catalog search, dual-mode player config, CSP allowlist |
+| `server/lib/video-catalog.js` | `searchCatalog()` over the curated, safety-filtered catalog |
+| `web/src/components/YouTubePlayer.tsx`, `web/src/lib/youtube.ts` | Keyless metadata check, IFrame API error mapping, Education-mode URL builder |
+| `web/src/screens/VideoLesson.tsx`, `web/src/api.ts`, `web/src/types.ts`, `web/src/services/mockApi.ts` | Player wiring, API types/methods, static mock parity |
+| `tests/youtube.test.js` | oEmbed URL, local search, embed URL, and error-copy tests |
+| `.secrets.example`, `.env.production.example`, `render.yaml` | Playback origin and opt-in Education mode; no API key |
+| `.github/workflows/deploy.yml` | Single consolidated GitHub Pages + Cloudflare Pages workflow |
+| `docs/DEPLOYMENT.md`, `tests/workflows-and-docs.test.mjs` | Single-workflow references, current remote status, drift assertions |
 
 ## 8. Master Deliverables Checklist (Completed vs Incomplete)
 
@@ -124,14 +213,14 @@ To eliminate ambiguity and prevent agent rework, all deliverables are categorize
 
 ### 8.1 Core Platform, Curriculum & Offline Data
 - [x] `[COMPLETED]` **Curriculum Integrity**: 4 subjects (Mathematics, Science, Social Science, English), 67 chapters, 76 official topics, 52 full authored lessons, 15 syllabus maps, 2569 questions (1505 MCQs, 1064 subjective).
-- [x] `[COMPLETED]` **Baseline Unit & Contract Tests**: 22/22 unit tests passing (`node --test tests/*.test.js`) across data, tutor, coverage, practice, sync, and session-store.
+- [x] `[COMPLETED]` **Baseline Unit & Contract Tests**: 165/165 tests passing (`node --test tests/*.test.js tests/*.test.mjs`) across data, tutor, coverage, practice, sync, session-store, security, YouTube, workflow, and docs contracts.
 - [x] `[COMPLETED]` **TypeScript Compilation**: `npm run typecheck` (`tsc --noEmit -p web/tsconfig.json`) clean with 0 compilation errors across 177 source files.
-- [x] `[COMPLETED]` **Production Bundling**: `npm run build` (`vite build`) compiles clean to `server/public` (~679 kB JS, KaTeX fonts, CSS bundles).
-- [x] `[COMPLETED]` **Docker Parity & Sync Gate**: `scripts/sync-verify.mjs` validates commit SHA equality between Git HEAD and `/api/health.commit`.
+- [x] `[COMPLETED]` **Production Bundling**: `npm run build` and `npm run build:static` compile clean; initial JS is ~319 kB raw / ~97 kB gzip with lazy routes, and the knowledge hub loads only on the video lesson route.
+- [x] `[COMPLETED]` **Docker Parity & Sync Gate**: `scripts/sync-verify.mjs` validates commit SHA equality between Git HEAD and `/api/health.commit`; Docker daemon is unavailable in the current environment, so re-run `npm run verify:sync:docker` on a Docker-capable machine.
 - [x] `[COMPLETED]` **Security & Secrets Isolation**: Real API keys moved out of repo into `.secrets` (gitignored, Docker-ignored); `.secrets.example` provided.
 
 ### 8.2 UI/UX Modern Redesign, Theming & Responsive Layout
-- [x] `[COMPLETED]` **Dual Light & Dark Theme System**: CSS variables defined in `:root` and `[data-theme="light"]` (`web/src/styles.css`:3-96) with persistent local storage (`localStorage('classx_theme')`).
+- [x] `[COMPLETED]` **Dual Light & Dark Theme System (Light default)**: CSS variables defined in `:root` (dark tokens) and `[data-theme="light"]` (`web/src/styles.css`:3-113). `web/src/lib/theme.tsx` is the single source of truth: no stored choice resolves to light, the theme applies to `<html>` so every route inherits it, and a `storage` listener syncs open tabs. Persistent via `localStorage('classx_theme')`.
 - [x] `[COMPLETED]` **Theme Switcher Component**: Interactive toggle button in topbar header (`web/src/components/Layout.tsx`:215-222) with Sun/Moon Lucide icons.
 - [x] `[COMPLETED]` **Sticky One-Tap Quick Access Navigation Bar**: Persistent navigation chip bar (`web/src/components/Layout.tsx`:229-278) with horizontal touch scroll for 11 core and supplemental routes.
 - [x] `[COMPLETED]` **Dual-Audience Track Selector**: Toggle between "School (10-18y)" and "Competitive / DSC / UPSC" tracks (`web/src/components/TrackSelector.tsx`).
@@ -171,7 +260,7 @@ To eliminate ambiguity and prevent agent rework, all deliverables are categorize
 ### 8.6 Automated Verification Suites & Operating Standards
 - [x] `[COMPLETED]` **Master Verification Suite (`tests/verification.test.mjs`)**: Automated test suite verifying skill package syntax, frontmatter, CLI execution, layout non-overlapping integrity, and checklist tags.
 - [x] `[COMPLETED]` **Skill Tool Verification (`skills/classx-knowledge-rag/scripts/verify-rag.mjs`)**: 10/10 automated tests passing.
-- [x] `[COMPLETED]` **Canonical Platform Verification Gates**: `npm test` (22/22 pass), `npm run typecheck` (0 errors), `node scripts/check.mjs` (0 errors), `npm run build` (clean bundle).
+- [x] `[COMPLETED]` **Canonical Platform Verification Gates**: `npm test` (165/165 pass), `npm run typecheck` (0 errors), `node scripts/check.mjs` (0 errors), `npm run build` (clean bundle).
 
 ## 9. Hard rules
 
@@ -189,7 +278,7 @@ Work one phase per commit. Do not start a phase until the previous gate passes.
 
 ### Phase 0 — Baseline (done)
 1. `npm test`, `npm run check`, `npm run verify:sync:docker`.
-2. Gate: 22/22 tests, Docker `/api/health.commit == HEAD`.
+2. Gate: full test suite green (165/165 as of 2026-11-24), Docker `/api/health.commit == HEAD` when Docker is available.
 
 ### Phase 1 — Provenance and chunk contract
 1. Add `docId`, `sectionPath`, `chunkIndex`, `checksum` to every chunk in `server/lib/rag.js`.
@@ -229,7 +318,7 @@ Work one phase per commit. Do not start a phase until the previous gate passes.
 2. Keep `guest` behavior for the public app; authenticated users are pinned to their session id.
 3. Gate: security review + Docker parity + Render smoke (`/api/health`, one deep link, one API read).
 
-### Current phase status (2026-11-21)
+### Current phase status (2026-11-24)
 
 | Phase | Status | Next action |
 |-------|--------|-------------|

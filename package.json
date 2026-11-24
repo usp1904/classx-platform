@@ -13,6 +13,7 @@
     "build:cf": "node scripts/build-static.mjs cloudflare",
     "build:cloudflare": "node scripts/build-static.mjs cloudflare",
     "build:static": "node scripts/build-static.mjs all",
+    "setup:cloudflare": "node scripts/cloudflare-setup.mjs",
     "start": "node server/index.js",
     "test": "node --test tests/*.test.js tests/*.test.mjs",
     "test:e2e-deploy": "node --test tests/e2e-deployment.test.mjs",

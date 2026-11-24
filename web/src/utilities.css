@@ -170,10 +170,10 @@
 .text-center { text-align: center; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }
-.text-muted { color: var(--text-muted, #94a3b8); }
-.text-dim { color: var(--text-secondary, #cbd5e1); }
+.text-muted { color: var(--muted); }
+.text-dim { color: var(--ink-2); }
 
 /* Backgrounds & Borders */
 .bg-transparent { background-color: transparent; }
-.bg-canvas { background-color: var(--canvas-1, #0d121f); }
-.border-border { border-color: var(--border-soft, rgba(255, 255, 255, 0.08)); }
+.bg-canvas { background-color: var(--canvas); }
+.border-border { border-color: var(--line); }

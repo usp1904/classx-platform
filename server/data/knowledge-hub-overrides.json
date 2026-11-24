@@ -1,0 +1,626 @@
+{
+  "english:reading-comprehension-factual-literary-discursive": {
+    "understand": [
+      "Read the passage twice: first for the main idea, then for details and evidence.",
+      "Factual passages ask for explicit information; discursive passages ask for the writer's argument; literary passages ask about character, tone and theme.",
+      "Most answers are paraphrases of the text, not copied sentences."
+    ],
+    "visualize": [
+      "Passage map: title -> main idea -> purpose of each paragraph -> key evidence.",
+      "Question map: direct detail, inference, vocabulary, tone, purpose, summary."
+    ],
+    "remember": [
+      "Factual = what the text says. Discursive = what the writer argues. Literary = how the text makes you feel.",
+      "Reject options with 'always', 'never', 'all' unless the passage proves them.",
+      "For vocabulary, substitute the option back into the sentence and check meaning."
+    ],
+    "revise": [
+      "Practise one factual, one discursive and one literary passage in 30 minutes.",
+      "Write the main idea of each paragraph in five words or fewer.",
+      "Check every answer against a line in the passage."
+    ],
+    "apply": [
+      "Underline names, dates, numbers and contrast words while reading.",
+      "Answer in complete sentences only when the question asks for a sentence.",
+      "Use the process of elimination for inference questions."
+    ],
+    "connect": {
+      "academics": "Reading comprehension is the base skill for every CBSE subject and every competitive exam.",
+      "competitive": "CUET, CLAT, UPSC, SSC and bank exams all test unseen passages.",
+      "realLife": "Reading contracts, news, medical reports and government notices accurately.",
+      "indianContext": "Indian exams often use passages on environment, agriculture, technology, heritage and social change.",
+      "careers": ["Journalism", "Law", "Civil Services", "Content Writing", "Research", "Translation"]
+    },
+    "quickCheck": [
+      {
+        "question": "What should you read first in an unseen passage?",
+        "options": ["Every answer option", "The main idea", "The marks distribution", "The vocabulary list"],
+        "correct": 1,
+        "explanation": "The main idea anchors every detail and inference question."
+      },
+      {
+        "question": "A discursive passage mainly presents:",
+        "options": ["A story", "A writer's argument", "A poem", "A set of instructions"],
+        "correct": 1,
+        "explanation": "Discursive writing discusses a topic from a point of view."
+      }
+    ]
+  },
+  "english:case-based-passages": {
+    "understand": [
+      "A case-based passage combines a short case, data or situation with factual and inference questions.",
+      "Read the case, then the table or data, then the questions.",
+      "Answers must be supported by the case, not by personal opinion."
+    ],
+    "visualize": [
+      "Case map: who -> what happened -> data/evidence -> question focus.",
+      "Table map: title, units, highest value, lowest value, trend."
+    ],
+    "remember": [
+      "Check units before comparing numbers.",
+      "Do not add information that is not in the case.",
+      "For 'best title' questions, choose the option that covers the whole case."
+    ],
+    "revise": [
+      "Practise one case-based passage with a table and one with a notice.",
+      "Write one-line evidence for every answer.",
+      "Time yourself: 8-10 minutes per passage."
+    ],
+    "apply": [
+      "Scan the questions before reading the data so you know what to look for.",
+      "Underline the exact line or number that proves each answer.",
+      "Use elimination for options that are true but not supported by the case."
+    ],
+    "connect": {
+      "academics": "Case-based questions appear in CBSE English, Science and Social Science.",
+      "competitive": "Data interpretation and case studies are common in CUET, CLAT, CAT and UPSC.",
+      "realLife": "Reading a bill, prescription, weather report or government circular uses the same skill.",
+      "indianContext": "Cases often use Indian cities, schemes, transport, health and environment data.",
+      "careers": ["Data Analysis", "Public Policy", "Journalism", "Law", "Civil Services"]
+    },
+    "quickCheck": [
+      {
+        "question": "What should you check before comparing two numbers in a case?",
+        "options": ["Font size", "Units", "Author name", "Paragraph length"],
+        "correct": 1,
+        "explanation": "Comparing different units gives a wrong conclusion."
+      }
+    ]
+  },
+  "english:formal-letter": {
+    "understand": [
+      "A formal letter follows a fixed format: sender's address, date, receiver's address, subject, salutation, body and closing.",
+      "The body usually has three paragraphs: purpose, details/arguments, action requested.",
+      "Common types: complaint, enquiry, order, letter to the editor, application."
+    ],
+    "visualize": [
+      "Format ladder: address -> date -> receiver -> subject -> salutation -> 3 paragraphs -> closing.",
+      "Paragraph plan: why I am writing -> what happened -> what I want."
+    ],
+    "remember": [
+      "Keep the subject short and specific.",
+      "Use 'Yours faithfully' with 'Dear Sir/Madam'; use 'Yours sincerely' with a named person.",
+      "Do not use contractions, slang or emotional exaggeration."
+    ],
+    "revise": [
+      "Memorise the format once, then practise three types: complaint, enquiry and editor.",
+      "Write one letter in 15 minutes and check format, tone and spelling.",
+      "Keep a bank of formal phrases: 'I am writing to bring to your notice...', 'I request you to...'."
+    ],
+    "apply": [
+      "State the purpose in the first line.",
+      "Give facts in a logical order with dates and details.",
+      "End with a clear request and a polite closing."
+    ],
+    "connect": {
+      "academics": "Formal letters carry 5-6 marks in CBSE writing sections.",
+      "competitive": "Letter writing appears in SSC, bank, UPSC and state service exams.",
+      "realLife": "Complaints, applications, RTI requests and official enquiries all use this format.",
+      "indianContext": "Use Indian addresses, pin codes, dates and official designations correctly.",
+      "careers": ["Public Administration", "Law", "Corporate Communication", "Journalism", "Human Resources"]
+    },
+    "quickCheck": [
+      {
+        "question": "Which closing matches 'Dear Sir/Madam'?",
+        "options": ["Yours sincerely", "Yours faithfully", "Take care", "Regards"],
+        "correct": 1,
+        "explanation": "Use 'Yours faithfully' when the receiver is not named."
+      }
+    ]
+  },
+  "english:analytical-paragraph": {
+    "understand": [
+      "An analytical paragraph describes and interprets data, a chart, a table or a diagram in 100-120 words.",
+      "It has an introduction, a body with trends/comparisons and a short conclusion.",
+      "Do not give personal opinions; report what the data shows."
+    ],
+    "visualize": [
+      "Data map: title -> highest -> lowest -> trend -> comparison -> conclusion.",
+      "Use linkers: overall, however, whereas, similarly, in contrast, therefore."
+    ],
+    "remember": [
+      "Mention units and time period.",
+      "Compare, do not just list numbers.",
+      "Use 'approximately', 'nearly', 'sharp rise', 'gradual fall' for trends."
+    ],
+    "revise": [
+      "Practise one bar graph and one pie chart.",
+      "Write the trend in one sentence before writing the paragraph.",
+      "Check word limit and linkers."
+    ],
+    "apply": [
+      "Start with what the data is about.",
+      "Select the two or three most important figures.",
+      "End with a conclusion based only on the data."
+    ],
+    "connect": {
+      "academics": "Analytical paragraphs are part of CBSE Class 10 English writing skills.",
+      "competitive": "Data interpretation is tested in CAT, CUET, CLAT, UPSC and banking exams.",
+      "realLife": "Explaining sales, rainfall, pollution or budget data clearly.",
+      "indianContext": "Data often comes from Indian census, agriculture, health, education and environment reports.",
+      "careers": ["Data Journalism", "Business Analysis", "Public Policy", "Economics", "Market Research"]
+    },
+    "quickCheck": [
+      {
+        "question": "What should an analytical paragraph avoid?",
+        "options": ["Data", "Comparisons", "Personal opinions", "Linkers"],
+        "correct": 2,
+        "explanation": "It reports and interprets data; personal opinions are not required."
+      }
+    ]
+  },
+  "english:creative-writing": {
+    "understand": [
+      "Creative writing includes stories, descriptions, dialogues and diary entries.",
+      "A strong piece has a clear beginning, conflict or focus, and a satisfying end.",
+      "Show, do not only tell: use sensory details and specific actions."
+    ],
+    "visualize": [
+      "Story mountain: opening -> build-up -> problem -> climax -> resolution.",
+      "Description web: sight, sound, smell, touch, taste, feeling."
+    ],
+    "remember": [
+      "Keep tense consistent.",
+      "Use dialogue to reveal character, not to fill space.",
+      "Punctuate dialogue correctly: inverted commas, commas and new paragraphs."
+    ],
+    "revise": [
+      "Write a 100-word description of an Indian railway platform using three senses.",
+      "Write a story with a clear problem and resolution in 150 words.",
+      "Check tense, spelling and paragraphing."
+    ],
+    "apply": [
+      "Plan for two minutes before writing.",
+      "Use precise verbs and concrete nouns.",
+      "End with a line that connects to the title or theme."
+    ],
+    "connect": {
+      "academics": "Creative writing builds the writing skills tested in CBSE English papers.",
+      "competitive": "Essay and story writing appear in CUET, SSC, UPSC and school olympiads.",
+      "realLife": "Scripts, blogs, speeches, advertisements and social media storytelling.",
+      "indianContext": "Use familiar Indian settings: markets, festivals, monsoon, trains, villages and cities.",
+      "careers": ["Screenwriting", "Advertising", "Content Creation", "Publishing", "Journalism"]
+    },
+    "quickCheck": [
+      {
+        "question": "Which is the best example of 'show, do not tell'?",
+        "options": ["She was sad.", "Her hands trembled as she read the letter.", "She felt bad.", "She was upset."],
+        "correct": 1,
+        "explanation": "The action shows emotion without naming it."
+      }
+    ]
+  },
+  "english:tenses": {
+    "understand": [
+      "Tense tells when an action happens: past, present or future.",
+      "Each time has simple, continuous, perfect and perfect continuous forms.",
+      "The verb changes with the subject and with the time marker."
+    ],
+    "visualize": [
+      "Timeline: past <- present -> future.",
+      "12-tense grid: simple, continuous, perfect, perfect continuous for each time."
+    ],
+    "remember": [
+      "Present perfect: past action with present relevance (has/have + V3).",
+      "Past perfect: the earlier of two past actions (had + V3).",
+      "Time markers: since/for, already/yet, yesterday, now, tomorrow."
+    ],
+    "revise": [
+      "Write one sentence for each of the 12 tenses.",
+      "Convert five sentences from simple past to present perfect.",
+      "Check subject-verb agreement in every sentence."
+    ],
+    "apply": [
+      "Find the time marker first.",
+      "Decide whether the action is completed, ongoing or repeated.",
+      "Match the auxiliary verb to the subject."
+    ],
+    "connect": {
+      "academics": "Tenses are tested through gap-fill, error correction and editing.",
+      "competitive": "Grammar sections in CUET, SSC, bank and UPSC exams rely on tense accuracy.",
+      "realLife": "Clear tense use prevents misunderstanding in emails, reports and interviews.",
+      "indianContext": "Indian English often mixes past and present; CBSE expects standard forms.",
+      "careers": ["Teaching", "Editing", "Translation", "Journalism", "Corporate Communication"]
+    },
+    "quickCheck": [
+      {
+        "question": "Choose the correct sentence.",
+        "options": ["She has went home.", "She has gone home.", "She have gone home.", "She is went home."],
+        "correct": 1,
+        "explanation": "Present perfect uses has/have + past participle (gone)."
+      }
+    ]
+  },
+  "english:modals": {
+    "understand": [
+      "Modals are helping verbs that express ability, possibility, permission, obligation, advice or certainty.",
+      "Common modals: can, could, may, might, must, should, ought to, will, would, shall.",
+      "Modals do not change form for person or number."
+    ],
+    "visualize": [
+      "Function wheel: ability -> can/could; permission -> may/can; obligation -> must/should; possibility -> may/might/could.",
+      "Certainty scale: must (very sure) -> should -> may -> might -> could (less sure)."
+    ],
+    "remember": [
+      "Use the base verb after a modal: 'must go', not 'must goes'.",
+      "Must = strong obligation; should = advice; may = permission/possibility.",
+      "Ought to is followed by 'to' + base verb."
+    ],
+    "revise": [
+      "Write two sentences for each function: advice, obligation, possibility, permission.",
+      "Rewrite five direct commands using 'should' or 'must'.",
+      "Check that the main verb is in base form."
+    ],
+    "apply": [
+      "Identify the speaker's intention: ability, rule, advice or guess.",
+      "Choose the modal that matches the strength of the intention.",
+      "Keep the sentence polite in formal writing."
+    ],
+    "connect": {
+      "academics": "Modals appear in gap-fill, dialogue completion and editing tasks.",
+      "competitive": "Grammar questions in CUET, SSC and bank exams test modal meaning.",
+      "realLife": "Polite requests, rules, safety instructions and advice.",
+      "indianContext": "Official notices often use 'shall', 'may' and 'must' with legal force.",
+      "careers": ["Law", "Public Administration", "Teaching", "Customer Support", "Editing"]
+    },
+    "quickCheck": [
+      {
+        "question": "Which modal expresses strong obligation?",
+        "options": ["Might", "Could", "Must", "May"],
+        "correct": 2,
+        "explanation": "Must expresses strong obligation or necessity."
+      }
+    ]
+  },
+  "english:subject-verb-concord": {
+    "understand": [
+      "The verb must agree with the subject in number and person.",
+      "Singular subject takes a singular verb; plural subject takes a plural verb.",
+      "Some subjects look plural but are singular, and some look singular but are plural."
+    ],
+    "visualize": [
+      "Agreement check: find the subject -> ignore phrases in between -> match the verb.",
+      "Rule cards: each/every, either/neither, collective nouns, titles, distances."
+    ],
+    "remember": [
+      "Each, every, either, neither, everyone, somebody = singular.",
+      "Two subjects joined by 'and' usually take a plural verb.",
+      "With 'either...or' and 'neither...nor', the verb agrees with the nearer subject."
+    ],
+    "revise": [
+      "Correct ten sentences with distracting phrases between subject and verb.",
+      "Practise collective nouns: team, jury, family, police.",
+      "Check indefinite pronouns."
+    ],
+    "apply": [
+      "Underline the real subject.",
+      "Cross out prepositional phrases.",
+      "Match the verb and then read the sentence aloud."
+    ],
+    "connect": {
+      "academics": "Subject-verb concord is tested in editing, gap-fill and error correction.",
+      "competitive": "Every competitive English paper tests agreement.",
+      "realLife": "Accurate grammar improves credibility in emails, reports and interviews.",
+      "indianContext": "Collective nouns and official titles often cause errors in Indian English.",
+      "careers": ["Editing", "Proofreading", "Teaching", "Journalism", "Law"]
+    },
+    "quickCheck": [
+      {
+        "question": "Choose the correct sentence.",
+        "options": ["Each of the students are present.", "Each of the students is present.", "Each of the student are present.", "Each students is present."],
+        "correct": 1,
+        "explanation": "'Each' is singular, so it takes 'is'."
+      }
+    ]
+  },
+  "english:reported-speech": {
+    "understand": [
+      "Reported speech tells what someone said without quoting their exact words.",
+      "When the reporting verb is in the past, the reported verb usually shifts one step back.",
+      "Pronouns, time and place words also change."
+    ],
+    "visualize": [
+      "Change table: present -> past; past -> past perfect; will -> would; can -> could.",
+      "Pronoun map: I -> he/she; we -> they; my -> his/her."
+    ],
+    "remember": [
+      "Statements use 'that'.",
+      "Questions use 'if/whether' or the question word, with statement order.",
+      "Imperatives use 'to' or 'not to'."
+    ],
+    "revise": [
+      "Convert five direct statements to reported speech.",
+      "Convert two questions and two commands.",
+      "Check pronoun, tense, time and place changes."
+    ],
+    "apply": [
+      "Identify the type of sentence: statement, question, command, request or exclamation.",
+      "Change the reporting verb if needed: said to -> told; said -> asked.",
+      "Remove quotation marks and apply backshift."
+    ],
+    "connect": {
+      "academics": "Reported speech is a regular CBSE grammar question.",
+      "competitive": "Narration questions appear in SSC, bank, CUET and state exams.",
+      "realLife": "Reporting meetings, interviews, news and conversations accurately.",
+      "indianContext": "News reports often use reported speech to attribute statements.",
+      "careers": ["Journalism", "Law", "Public Relations", "Teaching", "Content Writing"]
+    },
+    "quickCheck": [
+      {
+        "question": "He said, 'I am tired.' ->",
+        "options": ["He said that he is tired.", "He said that he was tired.", "He said that I was tired.", "He says that he was tired."],
+        "correct": 1,
+        "explanation": "Present 'am' shifts to past 'was' and 'I' becomes 'he'."
+      }
+    ]
+  },
+  "english:clauses": {
+    "understand": [
+      "A clause is a group of words with a subject and a verb.",
+      "Main clauses can stand alone; subordinate clauses cannot.",
+      "Three main types: noun clause, adjective (relative) clause and adverb clause."
+    ],
+    "visualize": [
+      "Clause tree: main clause + subordinate clause.",
+      "Function map: noun = acts as noun; adjective = describes noun; adverb = tells when/where/why/how."
+    ],
+    "remember": [
+      "Noun clauses often begin with that, whether, if, what, who.",
+      "Relative clauses begin with who, whom, whose, which, that.",
+      "Adverb clauses begin with because, although, when, if, unless, while."
+    ],
+    "revise": [
+      "Underline the clause in ten sentences and name its type.",
+      "Combine two sentences using a relative pronoun.",
+      "Check punctuation with non-defining clauses."
+    ],
+    "apply": [
+      "Find the subject and verb of each clause.",
+      "Ask what job the clause does in the sentence.",
+      "Use commas for non-essential relative clauses."
+    ],
+    "connect": {
+      "academics": "Clauses are tested in sentence transformation and editing.",
+      "competitive": "Grammar and sentence correction sections rely on clause recognition.",
+      "realLife": "Complex ideas need clear clauses in reports, essays and speeches.",
+      "indianContext": "Competitive exams often use long Indian English sentences with multiple clauses.",
+      "careers": ["Editing", "Law", "Journalism", "Teaching", "Technical Writing"]
+    },
+    "quickCheck": [
+      {
+        "question": "'Because it was raining' is which type of clause?",
+        "options": ["Noun clause", "Adjective clause", "Adverb clause", "Main clause"],
+        "correct": 2,
+        "explanation": "It tells why, so it functions as an adverb clause."
+      }
+    ]
+  },
+  "english:determiners": {
+    "understand": [
+      "Determiners come before nouns and tell which one, how many or how much.",
+      "Types: articles (a/an/the), demonstratives (this/that), possessives (my/our), quantifiers (some/many), numbers.",
+      "Countable and uncountable nouns take different determiners."
+    ],
+    "visualize": [
+      "Determiner wheel: articles, demonstratives, possessives, quantifiers, numbers.",
+      "Countable vs uncountable table: many/few vs much/little."
+    ],
+    "remember": [
+      "Use 'a' before consonant sounds and 'an' before vowel sounds.",
+      "Use 'much/little' with uncountable nouns; 'many/few' with countable nouns.",
+      "Do not use 'the' with general plural or abstract nouns."
+    ],
+    "revise": [
+      "Fill ten blanks with suitable determiners.",
+      "Correct five sentences with a/an/the errors.",
+      "Practise some/any, much/many and few/little."
+    ],
+    "apply": [
+      "Identify the noun and whether it is countable.",
+      "Decide whether the noun is specific or general.",
+      "Check the sound, not only the letter, for a/an."
+    ],
+    "connect": {
+      "academics": "Determiners are tested in gap-fill and editing.",
+      "competitive": "Article and quantifier questions appear in every English paper.",
+      "realLife": "Precise quantity words matter in recipes, bills, reports and instructions.",
+      "indianContext": "Indian languages often omit articles; CBSE expects English article rules.",
+      "careers": ["Editing", "Teaching", "Journalism", "Translation", "Content Writing"]
+    },
+    "quickCheck": [
+      {
+        "question": "Choose the correct option: ___ hour.",
+        "options": ["A", "An", "The", "No article"],
+        "correct": 1,
+        "explanation": "'Hour' begins with a vowel sound, so use 'an'."
+      }
+    ]
+  },
+  "english:prepositions": {
+    "understand": [
+      "Prepositions show relationships of time, place, direction, agent and manner.",
+      "Common prepositions: in, on, at, to, from, by, with, for, of, about.",
+      "Some verbs and adjectives take fixed prepositions."
+    ],
+    "visualize": [
+      "Time map: at (clock), on (day/date), in (month/year/period).",
+      "Place map: at (point), on (surface), in (enclosed space)."
+    ],
+    "remember": [
+      "At 5 pm, on Monday, in July.",
+      "At the bus stop, on the wall, in the box.",
+      "Fixed pairs: depend on, good at, afraid of, interested in, listen to."
+    ],
+    "revise": [
+      "Fill ten blanks with at/on/in.",
+      "Learn ten verb + preposition pairs.",
+      "Correct five sentences with wrong prepositions."
+    ],
+    "apply": [
+      "Decide whether the phrase answers when, where, how or with whom.",
+      "Check fixed collocations in a dictionary.",
+      "Read the sentence aloud to catch awkward combinations."
+    ],
+    "connect": {
+      "academics": "Prepositions appear in gap-fill, editing and sentence correction.",
+      "competitive": "Preposition questions are common in SSC, bank and CUET English.",
+      "realLife": "Directions, schedules, instructions and official letters depend on precise prepositions.",
+      "indianContext": "Direct translation from Indian languages often produces wrong prepositions.",
+      "careers": ["Teaching", "Editing", "Translation", "Tourism", "Journalism"]
+    },
+    "quickCheck": [
+      {
+        "question": "Choose the correct option: She is good ___ mathematics.",
+        "options": ["in", "at", "on", "for"],
+        "correct": 1,
+        "explanation": "The fixed expression is 'good at'."
+      }
+    ]
+  },
+  "english:first-flight-prose": {
+    "understand": [
+      "First Flight prose includes A Letter to God, Nelson Mandela: Long Walk to Freedom, Two Stories about Flying, From the Diary of Anne Frank, Glimpses of India, Mijbil the Otter, Madam Rides the Bus, The Sermon at Benares and The Proposal.",
+      "Each chapter tests theme, character, conflict and the writer's message.",
+      "Answers need textual evidence, not only plot summary."
+    ],
+    "visualize": [
+      "Chapter map: title -> characters -> conflict -> turning point -> theme.",
+      "Theme web: faith, freedom, courage, childhood, travel, human relationships, social change."
+    ],
+    "remember": [
+      "A Letter to God: faith and irony.",
+      "Nelson Mandela: freedom, sacrifice and reconciliation.",
+      "Anne Frank: hope and inner strength in confinement.",
+      "The Proposal: marriage as a social and economic arrangement."
+    ],
+    "revise": [
+      "Write a five-line summary of each chapter.",
+      "Prepare two character traits with evidence for each main character.",
+      "Practise one extract-based question per chapter."
+    ],
+    "apply": [
+      "Read the extract carefully and identify the speaker and situation.",
+      "Answer in 30-40 words for short questions and 100-120 words for long answers.",
+      "Use quotes or close paraphrase as evidence."
+    ],
+    "connect": {
+      "academics": "Prose chapters carry a large share of the CBSE English literature paper.",
+      "competitive": "Literature and reading skills help in CUET, CLAT and civil services essays.",
+      "realLife": "Stories about courage, inequality and hope build empathy and ethical judgement.",
+      "indianContext": "Glimpses of India and The Proposal connect to Indian diversity, festivals and social customs.",
+      "careers": ["Journalism", "Law", "Teaching", "Publishing", "Civil Services"]
+    },
+    "quickCheck": [
+      {
+        "question": "What is the central theme of 'A Letter to God'?",
+        "options": ["Faith and irony", "War and peace", "Science and technology", "Travel and adventure"],
+        "correct": 0,
+        "explanation": "Lencho's faith is contrasted with the ironic way his help arrives."
+      }
+    ]
+  },
+  "english:first-flight-poetry": {
+    "understand": [
+      "First Flight poetry includes Dust of Snow, Fire and Ice, A Tiger in the Zoo, How to Tell Wild Animals, The Ball Poem, Amanda!, The Trees, Fog, The Tale of Custard the Dragon and For Anne Gregory.",
+      "Poetry questions test central idea, poetic devices, tone and message.",
+      "Explain the device and its effect, not only its name."
+    ],
+    "visualize": [
+      "Poem map: title -> speaker -> situation -> images -> tone -> theme.",
+      "Device cards: metaphor, simile, personification, alliteration, repetition, irony."
+    ],
+    "remember": [
+      "Dust of Snow: small moments can change a mood.",
+      "Fire and Ice: desire and hatred as forces of destruction.",
+      "A Tiger in the Zoo: freedom versus captivity.",
+      "The Trees: nature's slow reclaiming of space."
+    ],
+    "revise": [
+      "Write the central idea of each poem in two lines.",
+      "List two poetic devices per poem with examples.",
+      "Practise extract-based questions."
+    ],
+    "apply": [
+      "Identify the speaker and the situation.",
+      "Quote the image and explain its effect.",
+      "Link the device to the theme."
+    ],
+    "connect": {
+      "academics": "Poetry is tested through extract, short and long answers.",
+      "competitive": "Poetic analysis builds interpretation skills for CUET and civil services.",
+      "realLife": "Poetry trains empathy, ambiguity and precise expression.",
+      "indianContext": "Indian poets and themes of nature, freedom and identity connect to the syllabus.",
+      "careers": ["Creative Writing", "Teaching", "Publishing", "Journalism", "Translation"]
+    },
+    "quickCheck": [
+      {
+        "question": "What does the tiger in 'A Tiger in the Zoo' represent?",
+        "options": ["Freedom and captivity", "Wealth and poverty", "War and peace", "Love and friendship"],
+        "correct": 0,
+        "explanation": "The poem contrasts the tiger's natural freedom with its zoo cage."
+      }
+    ]
+  },
+  "english:footprints-without-feet-supplementary": {
+    "understand": [
+      "Footprints without Feet includes A Triumph of Surgery, The Thief's Story, The Midnight Visitor, A Question of Trust, Footprints without Feet, The Making of a Scientist, The Necklace, Bholi and The Book That Saved the Earth.",
+      "Each story explores human nature, choices, honesty, ambition or social pressure.",
+      "Questions often ask for character motivation and the lesson of the story."
+    ],
+    "visualize": [
+      "Story map: character -> problem -> choice -> consequence -> theme.",
+      "Theme web: honesty, greed, courage, education, self-respect, science and curiosity."
+    ],
+    "remember": [
+      "The Thief's Story: trust can transform a person.",
+      "A Question of Trust: appearances can deceive.",
+      "Bholi: education and self-respect empower.",
+      "The Necklace: pride and dissatisfaction can be costly."
+    ],
+    "revise": [
+      "Write a five-line summary of each story.",
+      "Prepare one turning point and one lesson per story.",
+      "Practise character-based questions."
+    ],
+    "apply": [
+      "Identify the conflict and the choice the character makes.",
+      "Use evidence from the story for every trait.",
+      "Link the ending to the theme."
+    ],
+    "connect": {
+      "academics": "Supplementary reading tests comprehension, inference and character analysis.",
+      "competitive": "Reading and interpretation skills support CUET, CLAT and civil services.",
+      "realLife": "Stories about trust, greed and self-respect guide ethical decisions.",
+      "indianContext": "Bholi and The Thief's Story reflect Indian social realities and aspirations.",
+      "careers": ["Law", "Journalism", "Teaching", "Social Work", "Publishing"]
+    },
+    "quickCheck": [
+      {
+        "question": "What is the main lesson of 'The Thief's Story'?",
+        "options": ["Trust can transform a person", "Money is everything", "Never help anyone", "Crime always pays"],
+        "correct": 0,
+        "explanation": "Anil's trust gives Hari Singh a chance to change."
+      }
+    ]
+  }
+}

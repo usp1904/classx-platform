@@ -20,6 +20,10 @@ self.addEventListener('fetch', (event) => {
   const { request } = event;
   const url = new URL(request.url);
 
+  // Cross-origin requests (fonts, unpkg, YouTube) must not go through the
+  // service worker: a rejected fetch would surface as a console error.
+  if (url.origin !== self.location.origin) return;
+
   // API calls: try network, fall back to cache; never cache POST/mutations.
   if (url.pathname.includes('/api/')) {
     if (request.method !== 'GET') return;
@@ -33,8 +37,8 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Static assets: cache-first.
+  // Static assets: cache-first, then network with a safe offline fallback.
   event.respondWith(
-    caches.match(request).then((cached) => cached || fetch(request)),
+    caches.match(request).then((cached) => cached || fetch(request).catch(() => new Response('', { status: 504 }))),
   );
 });

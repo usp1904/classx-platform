@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#141b2d" />
+    <meta name="theme-color" content="#f8fafc" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('classx_theme');
+          var theme = stored === 'dark' || stored === 'light' ? stored : 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+          document.documentElement.style.colorScheme = theme;
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute('content', theme === 'dark' ? '#0f172a' : '#f8fafc');
+        } catch (e) {}
+      })();
+    </script>
     <meta name="description" content="Class X mastery platform for CBSE 2026-27: structured lessons, hybrid RAG tutor, practice, mock tests and revision." />
     <title>Peak · Class X Mastery</title>
     <link rel="manifest" href="%BASE_URL%manifest.json" />
@@ -12,7 +24,6 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <script src="https://unpkg.com/htmx.org@2.0.0"></script>
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('%BASE_URL%sw.js', { scope: '%BASE_URL%' }).catch(() => {});

@@ -386,16 +386,139 @@ export interface VideoLesson {
   chapterId: string;
   channel?: string;
   safe?: boolean;
-  rating?: number;
+  verified?: boolean;
+  verifiedAt?: string | null;
+  rating?: number | null;
   summary?: string;
   validityScore?: number;
+  url?: string;
 }
 export interface VideoCatalog {
   ok: boolean;
   video: VideoLesson;
+  videos?: VideoLesson[];
   chapterId: string;
   subjectId: string;
   gating: { requiredMastery: number };
+  validation?: {
+    provider: string;
+    method: string;
+    generatedAt: string;
+    verified: boolean;
+    safetyFilter: string;
+  } | null;
+  hub?: KnowledgeHub;
+}
+
+export interface YouTubePlayerConfig {
+  ok: boolean;
+  educationEnabled: boolean;
+  educationBase: string | null;
+  educationToken: string | null;
+  origin: string | null;
+}
+
+export interface YouTubeValidation {
+  ok: boolean;
+  videoId: string;
+  validated: boolean;
+  reason: string | null;
+  verifiedBy?: string;
+  title?: string;
+  author?: string;
+  thumbnailUrl?: string | null;
+  embeddable?: boolean;
+  publicVideo?: boolean;
+  ageRestricted?: boolean;
+  regionBlocked?: boolean;
+  regionCode?: string;
+}
+
+export interface YouTubeSearchItem {
+  videoId: string;
+  title: string;
+  channel: string;
+  publishedAt: string | null;
+  thumbnail: string | null;
+  duration: string | null;
+}
+
+export interface HubConcept {
+  name: string;
+  purpose: string;
+  realLife: string;
+}
+
+export interface HubVisual {
+  title: string;
+  type: string;
+  description?: string;
+}
+
+export interface HubWorkedExample {
+  title: string;
+  problem: string;
+  steps: string[];
+  shortcut: string;
+}
+
+export interface HubQuickCheck {
+  level?: string;
+  question: string;
+  options: string[];
+  correct: number;
+  explanation: string;
+}
+
+export interface KnowledgeHub {
+  title: string;
+  subjectId: string;
+  subjectName: string;
+  chapterId: string;
+  chapterName: string;
+  unitName: string;
+  marks: number;
+  periods: number;
+  difficulty: string;
+  summary: string;
+  examWeightage: number;
+  topics: string[];
+  understand: {
+    outcomes: string[];
+    concepts: HubConcept[];
+  };
+  visualize: {
+    items: HubVisual[];
+    mindMap: { title: string; branches: string[] } | null;
+    flowcharts: string[];
+  };
+  remember: {
+    keyPoints: string[];
+    theorems: { name: string; statement: string }[];
+    misconceptions: string[];
+    shortcuts: { title: string; concept: string; application: string }[];
+  };
+  revise: {
+    quickCheck: HubQuickCheck[];
+    revisionPlan: string[];
+    questionBank: { total: number; mcq: number; subjective: number };
+  };
+  apply: {
+    workedExamples: HubWorkedExample[];
+    tips: string[];
+    practice: { subjectId: string; chapterId: string; suggestedCount: number };
+  };
+  connect: {
+    academics: string[];
+    competitive: string[];
+    realLife: string[];
+    indianContext: string[];
+    careers: string[];
+  };
+  sources: { title: string; url: string; type: string }[];
+  videos: VideoLesson[];
+  video: VideoLesson | null;
+  videoValidation: VideoCatalog['validation'];
 }
 export interface VideoProgress {
   chapterId: string;

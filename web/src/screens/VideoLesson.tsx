@@ -1,14 +1,129 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
-  Play, Pause, BookOpen, Clock, Maximize2, Film, AlertCircle, RefreshCw,
-  ExternalLink, ShieldCheck, TrendingUp, Sparkles, CheckCircle2, RotateCcw,
-  RotateCw, Award, ArrowRight
+  Play, BookOpen, Clock, Film, AlertCircle, ExternalLink, ShieldCheck,
+  CheckCircle2, RotateCcw, RotateCw, Award, ArrowRight, Brain, Eye,
+  Repeat, PenTool, Link2, Compass, GraduationCap, Briefcase, MapPin,
+  ListChecks, Lightbulb, ChevronRight,
 } from 'lucide-react';
 import { Badge, Button, Card, SectionHeader, Stat } from '../components/ui';
+import YouTubePlayer from '../components/YouTubePlayer';
 import { api } from '../api';
 import { useApp } from '../lib/store';
-import type { VideoCatalog } from '../types';
+import type { HubConcept, HubQuickCheck, KnowledgeHub, VideoCatalog, VideoLesson } from '../types';
+
+function formatDate(value?: string | null) {
+  if (!value) return 'verified';
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return 'verified';
+  return date.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
+function durationLabel(seconds?: number) {
+  if (!seconds) return 'Lesson';
+  const mins = Math.round(seconds / 60);
+  return `${mins} min`;
+}
+
+function HubSection({
+  icon,
+  title,
+  description,
+  children,
+  tone = 'indigo',
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  children: React.ReactNode;
+  tone?: 'indigo' | 'mint' | 'saffron' | 'rose';
+}) {
+  return (
+    <Card className={`p-5 hub-section hub-${tone}`}>
+      <SectionHeader
+        title={title}
+        description={description}
+        action={<span className="hub-section-icon">{icon}</span>}
+      />
+      <div className="mt-4 space-y-3">{children}</div>
+    </Card>
+  );
+}
+
+function BulletList({ items, limit = 6 }: { items: string[]; limit?: number }) {
+  if (!items.length) return <p className="text-xs text-gray-400">No entries yet.</p>;
+  return (
+    <ul className="space-y-2">
+      {items.slice(0, limit).map((item, index) => (
+        <li key={`${index}-${item.slice(0, 24)}`} className="flex gap-2 text-xs text-gray-200 leading-relaxed">
+          <CheckCircle2 size={14} className="text-emerald-400 flex-shrink-0 mt-0.5" />
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function ConceptCards({ concepts }: { concepts: HubConcept[] }) {
+  if (!concepts.length) return <p className="text-xs text-gray-400">Concept notes are being authored.</p>;
+  return (
+    <div className="grid gap-3 md:grid-cols-2">
+      {concepts.slice(0, 6).map((concept, index) => (
+        <div key={`${index}-${concept.name}`} className="rounded-xl border border-white/10 bg-white/5 p-3">
+          <strong className="text-xs font-semibold text-white">{concept.name}</strong>
+          {concept.purpose && <p className="mt-1 text-[11px] text-gray-300 leading-relaxed">{concept.purpose}</p>}
+          {concept.realLife && <p className="mt-1 text-[11px] text-amber-200/80 leading-relaxed">India connect: {concept.realLife}</p>}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function QuickCheck({ items }: { items: HubQuickCheck[] }) {
+  if (!items.length) return <p className="text-xs text-gray-400">Quick checks will appear here after the question bank is mapped.</p>;
+  return (
+    <div className="space-y-2">
+      {items.map((item, index) => (
+        <details key={`${index}-${item.question.slice(0, 20)}`} className="rounded-xl border border-white/10 bg-white/5 p-3">
+          <summary className="cursor-pointer text-xs font-medium text-gray-100">{item.question}</summary>
+          <div className="mt-2 grid gap-1.5">
+            {item.options.map((option, optionIndex) => (
+              <div key={optionIndex} className={`rounded-lg px-2 py-1 text-[11px] ${optionIndex === item.correct ? 'bg-emerald-500/15 text-emerald-200' : 'text-gray-300'}`}>
+                {String.fromCharCode(65 + optionIndex)}. {option}
+              </div>
+            ))}
+            {item.explanation && <p className="mt-1 text-[11px] text-gray-400">{item.explanation}</p>}
+          </div>
+        </details>
+      ))}
+    </div>
+  );
+}
+
+function WorkedExamples({ examples }: { examples: KnowledgeHub['apply']['workedExamples'] }) {
+  if (!examples.length) return null;
+  return (
+    <div className="space-y-2">
+      {examples.map((example, index) => (
+        <details key={`${index}-${example.title}`} className="rounded-xl border border-white/10 bg-white/5 p-3">
+          <summary className="cursor-pointer text-xs font-medium text-gray-100">{example.title}</summary>
+          <p className="mt-2 text-[11px] text-gray-300">{example.problem}</p>
+          {example.steps.length > 0 && (
+            <ol className="mt-2 space-y-1 text-[11px] text-gray-300">
+              {example.steps.map((step, stepIndex) => (
+                <li key={stepIndex} className="flex gap-2">
+                  <span className="text-indigo-300">{stepIndex + 1}.</span>
+                  <span>{step}</span>
+                </li>
+              ))}
+            </ol>
+          )}
+          {example.shortcut && <p className="mt-2 rounded-lg bg-amber-500/10 p-2 text-[11px] text-amber-200">Exam shortcut: {example.shortcut}</p>}
+        </details>
+      ))}
+    </div>
+  );
+}
 
 export default function VideoLesson() {
   const { subjectId: sId, chapterId: cId } = useParams<{ subjectId?: string; chapterId?: string }>();
@@ -17,31 +132,44 @@ export default function VideoLesson() {
   const chapterId = cId || 'real-numbers';
   const { progress, curriculum, addXp } = useApp();
 
-  const [video, setVideo] = useState<VideoCatalog | null>(null);
+  const [payload, setPayload] = useState<VideoCatalog | null>(null);
+  const [selectedVideoId, setSelectedVideoId] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [resume, setResume] = useState(0);
   const [completed, setCompleted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    let active = true;
     setLoading(true);
+    setError(null);
     setCompleted(false);
-    api.video(subjectId, chapterId).then((payload) => {
-      setVideo(payload);
+    api.video(subjectId, chapterId).then((result) => {
+      if (!active) return;
+      setPayload(result);
+      setSelectedVideoId(result.video?.videoId || null);
       const saved = progress.videoProgress?.[chapterId];
-      if (saved) setResume(saved.positionSec || 0);
+      setResume(saved?.positionSec || 0);
       setLoading(false);
     }).catch((err) => {
-      console.error('Video load failed:', err);
+      if (!active) return;
+      console.error('Knowledge hub load failed:', err);
+      setError(err instanceof Error ? err.message : 'Unable to load this topic.');
       setLoading(false);
     });
+    return () => { active = false; };
   }, [subjectId, chapterId, progress.videoProgress]);
 
-  const currentSubject = curriculum?.subjects?.find((s) => s.id === subjectId);
-  const currentChapter = currentSubject?.chapters?.find((c) => c.id === chapterId);
+  const hub = payload?.hub;
+  const videos = useMemo(() => {
+    const list = payload?.videos?.length ? payload.videos : payload?.video ? [payload.video] : [];
+    return list;
+  }, [payload]);
+  const selectedVideo = videos.find((video) => video.videoId === selectedVideoId) || videos[0] || null;
+  const currentSubject = curriculum?.subjects?.find((subject) => subject.id === subjectId);
+  const currentChapter = currentSubject?.chapters?.find((chapter) => chapter.id === chapterId);
 
-  const videoId = video?.video?.videoId || 'L6lAZ7gHQ7c';
-  const videoUrl = `https://www.youtube-nocookie.com/embed/${videoId}?start=${resume}&rel=0&modestbranding=1`;
-  const videoUrlExternal = `https://www.youtube.com/watch?v=${videoId}`;
+  const videoUrlExternal = selectedVideo ? `https://www.youtube.com/watch?v=${selectedVideo.videoId}` : '';
 
   const markComplete = () => {
     api.gamifyXp({ userId: 'guest', amount: 50, reason: `video:${chapterId}` }).then(() => {
@@ -54,204 +182,318 @@ export default function VideoLesson() {
   };
 
   const skipTime = (delta: number) => {
-    setResume((prev) => Math.max(0, prev + delta));
+    setResume((previous) => Math.max(0, previous + delta));
   };
 
-  if (loading) return <div className="page-loading"><div className="loader-ring" /><span>Loading Video Masterclass…</span></div>;
+  if (loading) return <div className="page-loading"><div className="loader-ring" /><span>Loading Student Knowledge Hub…</span></div>;
+
+  if (error) {
+    return (
+      <div className="page space-y-6">
+        <Card className="p-6">
+          <div className="flex items-start gap-3">
+            <AlertCircle className="text-rose-400 flex-shrink-0" />
+            <div>
+              <h2 className="text-lg font-semibold text-white">This topic could not be loaded</h2>
+              <p className="mt-1 text-sm text-gray-300">{error}</p>
+              <div className="mt-4 flex gap-2">
+                <Button variant="primary" onClick={() => window.location.reload()}>Try again</Button>
+                <Button variant="secondary" onClick={() => navigate(`/courses/${subjectId}/${chapterId}`)}>Open chapter notes</Button>
+              </div>
+            </div>
+          </div>
+        </Card>
+      </div>
+    );
+  }
 
   return (
     <div className="page space-y-6">
-      {/* Header */}
       <div className="page-head">
         <div>
           <div className="eyebrow light flex items-center gap-2">
-            <Film size={14} className="text-amber-400" />
-            <span>Interactive Multi-Modal Video Lessons</span>
+            <Compass size={14} className="text-amber-400" />
+            <span>Student Knowledge Hub for India</span>
           </div>
-          <h1>{video?.video?.title || `${currentChapter?.name || chapterId} Masterclass`}</h1>
+          <h1>{hub?.title || `${currentChapter?.name || chapterId} — Student Knowledge Hub`}</h1>
           <p>
-            CBSE Class 10 & Foundation exam masterclass delivered by premier educators with diagram walkthroughs and step-by-step problem derivations.
+            Understand, visualize, remember, revise, apply and connect this topic to CBSE academics,
+            competitive exams, Indian real life and future careers.
           </p>
         </div>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           <Badge tone="mint" className="text-xs font-bold">
-            {video?.video?.rating?.toFixed(1) || '4.8'} ★ Premier Quality
+            <ShieldCheck size={13} /> Validated video
           </Badge>
           <Badge tone="indigo" className="text-xs font-bold">
-            {Math.floor((video?.video?.durationSec || 720) / 60)} min Duration
+            {durationLabel(selectedVideo?.durationSec)}
           </Badge>
         </div>
       </div>
 
-      {/* Chapter & Subject Selector Toolbar */}
       <Card className="p-4 flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-3 flex-wrap">
           <div className="select-wrap compact-select">
             <select
               value={subjectId}
-              onChange={(e) => {
-                const newSub = curriculum?.subjects?.find((s) => s.id === e.target.value);
-                const firstCh = newSub?.chapters?.[0]?.id || 'real-numbers';
-                navigate(`/video/${e.target.value}/${firstCh}`);
+              onChange={(event) => {
+                const nextSubject = curriculum?.subjects?.find((subject) => subject.id === event.target.value);
+                const firstChapter = nextSubject?.chapters?.[0]?.id || 'real-numbers';
+                navigate(`/video/${event.target.value}/${firstChapter}`);
               }}
             >
-              {curriculum?.subjects?.map((sub) => (
-                <option key={sub.id} value={sub.id}>{sub.name}</option>
+              {curriculum?.subjects?.map((subject) => (
+                <option key={subject.id} value={subject.id}>{subject.name}</option>
               ))}
             </select>
           </div>
           <div className="select-wrap compact-select">
-            <select
-              value={chapterId}
-              onChange={(e) => navigate(`/video/${subjectId}/${e.target.value}`)}
-            >
-              {currentSubject?.chapters?.map((ch) => (
-                <option key={ch.id} value={ch.id}>{ch.name}</option>
+            <select value={chapterId} onChange={(event) => navigate(`/video/${subjectId}/${event.target.value}`)}>
+              {currentSubject?.chapters?.map((chapter) => (
+                <option key={chapter.id} value={chapter.id}>{chapter.name}</option>
               ))}
             </select>
           </div>
         </div>
-
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <Button variant="secondary" size="sm" onClick={() => navigate(`/courses/${subjectId}/${chapterId}`)}>
-            <BookOpen size={14} />
-            <span>Read Chapter Notes</span>
+            <BookOpen size={14} /><span>Read notes</span>
           </Button>
-          <Button variant="secondary" size="sm" onClick={() => window.open(videoUrlExternal, '_blank')}>
-            <ExternalLink size={14} />
-            <span>Open in YouTube</span>
+          <Button variant="secondary" size="sm" onClick={() => navigate(`/practice/${subjectId}/${chapterId}`)}>
+            <PenTool size={14} /><span>Practice</span>
+          </Button>
+          <Button variant="secondary" size="sm" disabled={!selectedVideo} onClick={() => window.open(videoUrlExternal, '_blank')}>
+            <ExternalLink size={14} /><span>Open in YouTube</span>
           </Button>
         </div>
       </Card>
 
-      {/* Educational Notice Banner */}
-      <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/25 flex items-start gap-3">
-        <ShieldCheck size={18} className="text-amber-400 flex-shrink-0 mt-0.5" />
-        <div className="text-xs text-amber-200/90 leading-relaxed">
-          <strong className="text-amber-300 font-semibold block mb-0.5">Verified Educational Content:</strong>
-          Curated solely for non-monetary academic reference under CBSE 2026-27 guidelines. High-yield video lectures focused on conceptual clarity, visual diagrams, and NCERT exemplars.
+      <div className="p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/25 flex items-start gap-3">
+        <ShieldCheck size={18} className="text-emerald-400 flex-shrink-0 mt-0.5" />
+        <div className="text-xs text-emerald-100/90 leading-relaxed">
+          <strong className="text-emerald-300 font-semibold block mb-0.5">Verified before students see it:</strong>
+          Every video is checked through the YouTube Data API for public, embeddable, age-safe playback in this region,
+          matched to this CBSE chapter, and played through the privacy-enhanced YouTube nocookie player. YouTube may still show platform ads;
+          we cannot disable ads inside a third-party player. If a video is ever blocked, use the notes and practice sections below — they are the primary lesson.
         </div>
       </div>
 
-      {/* Theater Video Player Card */}
-      <Card className="p-3 rounded-2xl overflow-hidden bg-black/80 border-indigo-500/30 shadow-2xl relative">
-        <div className="aspect-video w-full rounded-xl overflow-hidden bg-gray-950 relative">
-          <iframe
-            className="w-full h-full border-0"
-            src={videoUrl}
-            title={video?.video?.title || 'Class X Video Lesson'}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
+      {selectedVideo ? (
+        <Card className="p-3 rounded-2xl overflow-hidden bg-black/80 border-indigo-500/30 shadow-2xl">
+          <YouTubePlayer
+            videoId={selectedVideo.videoId}
+            title={selectedVideo.title || hub?.chapterName || 'Class X video lesson'}
+            start={resume}
           />
-        </div>
-
-        {/* Player Controls Bar */}
-        <div className="p-3 flex items-center justify-between gap-4 flex-wrap mt-2">
-          <div className="flex items-center gap-2">
-            <Button variant="secondary" size="sm" onClick={() => skipTime(-10)}>
-              <RotateCcw size={14} />
-              <span>-10s</span>
-            </Button>
-            <Button variant="secondary" size="sm" onClick={() => skipTime(10)}>
-              <RotateCw size={14} />
-              <span>+10s</span>
-            </Button>
-            <span className="text-xs font-mono text-gray-400 ml-2">
-              Position: {Math.floor(resume / 60)}:{String(resume % 60).padStart(2, '0')}
-            </span>
+          <div className="p-3 flex items-center justify-between gap-4 flex-wrap mt-2">
+            <div className="flex items-center gap-2">
+              <Button variant="secondary" size="sm" onClick={() => skipTime(-10)}><RotateCcw size={14} /><span>-10s</span></Button>
+              <Button variant="secondary" size="sm" onClick={() => skipTime(10)}><RotateCw size={14} /><span>+10s</span></Button>
+              <span className="text-xs font-mono text-gray-400 ml-2">
+                Position: {Math.floor(resume / 60)}:{String(resume % 60).padStart(2, '0')}
+              </span>
+            </div>
+            <div className="flex items-center gap-3">
+              {completed ? (
+                <Badge tone="mint" className="text-xs font-bold py-1 px-3 flex items-center gap-1.5">
+                  <CheckCircle2 size={14} /> Completed (+50 XP)
+                </Badge>
+              ) : (
+                <Button variant="primary" size="sm" onClick={markComplete}>
+                  <Award size={14} /><span>Mark lesson complete (+50 XP)</span>
+                </Button>
+              )}
+            </div>
           </div>
-
-          <div className="flex items-center gap-3">
-            {completed ? (
-              <Badge tone="mint" className="text-xs font-bold py-1 px-3 flex items-center gap-1.5">
-                <CheckCircle2 size={14} /> Completed (+50 XP Claimed)
-              </Badge>
-            ) : (
-              <Button variant="primary" size="sm" onClick={markComplete}>
-                <Award size={14} />
-                <span>Mark Lesson Complete (+50 XP)</span>
-              </Button>
-            )}
+        </Card>
+      ) : (
+        <Card className="p-6 border-amber-500/30 bg-amber-500/5">
+          <div className="flex items-start gap-3">
+            <AlertCircle className="text-amber-400 flex-shrink-0" />
+            <div>
+              <h2 className="text-base font-semibold text-white">Video is temporarily unavailable</h2>
+              <p className="mt-1 text-sm text-gray-300">
+                No validated video is attached to this topic right now. The knowledge hub below still covers the full lesson.
+              </p>
+            </div>
           </div>
-        </div>
-      </Card>
-
-      {/* Video Metadata Cards */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <Stat
-          label="Total Duration"
-          value={`${Math.floor((video?.video?.durationSec || 720) / 60)} Minutes`}
-          hint="Full chapter syllabus"
-          icon={<Clock size={18} className="text-indigo-400" />}
-          tone="indigo"
-        />
-        <Stat
-          label="Curator Channel"
-          value={video?.video?.channel || 'NCERT / Khan Academy'}
-          hint="Certified educational publisher"
-          icon={<Film size={18} className="text-amber-400" />}
-          tone="saffron"
-        />
-        <Stat
-          label="Concept Rating"
-          value={`${(video?.video?.rating || 4.8).toFixed(1)} / 5.0`}
-          hint="Based on student retention"
-          icon={<TrendingUp size={18} className="text-emerald-400" />}
-          tone="mint"
-        />
-        <Stat
-          label="Syllabus Gating"
-          value="80% Mastery"
-          hint="Recommended before mock exam"
-          icon={<Sparkles size={18} className="text-purple-400" />}
-          tone="rose"
-        />
-      </div>
-
-      {/* Video Summary */}
-      {video?.video?.summary && (
-        <Card className="p-5">
-          <SectionHeader
-            title="Core Conceptual Takeaways"
-            description="High-level roadmap of what this masterclass demonstrates"
-          />
-          <p className="text-xs text-gray-200 leading-relaxed mt-2">{video.video.summary}</p>
         </Card>
       )}
 
-      {/* Micro-Reels Quick Revision */}
-      <Card className="p-5">
-        <SectionHeader
-          title="60-Second Concept Micro-Clips"
-          description="High-speed visual reviews designed for rapid recall before school tests or competitive exams"
-          action={<Badge tone="neutral" className="text-xs">Quick Bytes</Badge>}
-        />
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-3">
-          {[
-            { title: 'Core Definition & Lemma', time: '45s', tone: 'indigo' },
-            { title: 'Step-by-Step Proof Trick', time: '60s', tone: 'mint' },
-            { title: 'Top 3 Examiner Traps', time: '55s', tone: 'saffron' },
-            { title: 'Solved Board Question', time: '60s', tone: 'rose' },
-          ].map((reel, idx) => (
-            <div
-              key={idx}
-              className="p-3.5 rounded-xl bg-white/5 border border-white/10 hover:border-indigo-500/40 cursor-pointer transition-all hover:scale-[1.02] flex flex-col justify-between h-36"
-              onClick={() => skipTime(idx * 120)}
-            >
-              <div className="flex justify-between items-start">
-                <span className="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-300 flex items-center justify-center">
-                  <Play size={14} />
-                </span>
-                <span className="text-[10px] font-mono text-gray-400">{reel.time}</span>
+      {videos.length > 1 && (
+        <Card className="p-5">
+          <SectionHeader
+            title="Choose a verified lesson"
+            description="Short concept revision first, then a deeper chapter walkthrough when you need it."
+          />
+          <div className="mt-3 grid gap-3 md:grid-cols-3">
+            {videos.map((video: VideoLesson) => (
+              <button
+                key={video.videoId}
+                type="button"
+                onClick={() => { setSelectedVideoId(video.videoId); setResume(0); }}
+                className={`text-left rounded-xl border p-3 transition-all ${selectedVideo?.videoId === video.videoId ? 'border-indigo-400/60 bg-indigo-500/10' : 'border-white/10 bg-white/5 hover:border-indigo-400/40'}`}
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <Badge tone="neutral" className="text-[10px]">{durationLabel(video.durationSec)}</Badge>
+                  <Play size={14} className="text-indigo-300" />
+                </div>
+                <strong className="mt-2 block text-xs font-semibold text-gray-100 leading-snug">{video.title}</strong>
+                <span className="mt-1 block text-[10px] text-gray-400">{video.channel}</span>
+                {video.verifiedAt && <span className="mt-2 block text-[10px] text-emerald-300">Verified {formatDate(video.verifiedAt)}</span>}
+              </button>
+            ))}
+          </div>
+        </Card>
+      )}
+
+      {hub && (
+        <>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <Stat label="CBSE weightage" value={`${hub.marks || hub.examWeightage || 0} marks`} hint={hub.unitName || 'Syllabus unit'} icon={<GraduationCap size={18} className="text-indigo-400" />} tone="indigo" />
+            <Stat label="Question bank" value={`${hub.revise.questionBank.total}`} hint={`${hub.revise.questionBank.mcq} MCQ · ${hub.revise.questionBank.subjective} written`} icon={<ListChecks size={18} className="text-emerald-400" />} tone="mint" />
+            <Stat label="Study periods" value={`${hub.periods || '—'}`} hint="Suggested CBSE pacing" icon={<Clock size={18} className="text-amber-400" />} tone="saffron" />
+            <Stat label="Video check" value="oEmbed" hint={formatDate(payload?.validation?.generatedAt)} icon={<ShieldCheck size={18} className="text-purple-400" />} tone="rose" />
+          </div>
+
+          <div className="grid gap-5 lg:grid-cols-2">
+            <HubSection icon={<Brain size={18} />} title="1. Understand" description="The concept, its purpose and the outcomes you should own.">
+              <BulletList items={hub.understand.outcomes} limit={7} />
+              <ConceptCards concepts={hub.understand.concepts} />
+            </HubSection>
+
+            <HubSection icon={<Eye size={18} />} title="2. Visualize" description="Turn the idea into a picture, map or flow you can redraw from memory." tone="mint">
+              {hub.visualize.items.length > 0 ? (
+                <div className="grid gap-2">
+                  {hub.visualize.items.map((visual, index) => (
+                    <div key={`${index}-${visual.title}`} className="rounded-xl border border-white/10 bg-white/5 p-3">
+                      <strong className="text-xs text-gray-100">{visual.title}</strong>
+                      <span className="ml-2 text-[10px] uppercase tracking-wide text-indigo-300">{visual.type}</span>
+                      {visual.description && <p className="mt-1 text-[11px] text-gray-400">{visual.description}</p>}
+                    </div>
+                  ))}
+                </div>
+              ) : <p className="text-xs text-gray-400">Draw a concept map with the chapter name in the centre and each topic as a branch.</p>}
+              {hub.visualize.mindMap && (
+                <div className="rounded-xl border border-indigo-500/20 bg-indigo-500/5 p-3">
+                  <strong className="text-xs text-indigo-200">{hub.visualize.mindMap.title}</strong>
+                  <div className="mt-2 flex flex-wrap gap-1.5">
+                    {hub.visualize.mindMap.branches.map((branch, index) => (
+                      <span key={`${index}-${branch}`} className="rounded-full bg-white/10 px-2 py-1 text-[10px] text-gray-200">{branch}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {hub.visualize.flowcharts.length > 0 && <BulletList items={hub.visualize.flowcharts} limit={4} />}
+            </HubSection>
+
+            <HubSection icon={<Repeat size={18} />} title="3. Remember" description="Key points, theorems, misconceptions and exam shortcuts." tone="saffron">
+              <BulletList items={hub.remember.keyPoints} limit={8} />
+              {hub.remember.theorems.length > 0 && (
+                <div className="space-y-2">
+                  {hub.remember.theorems.map((theorem, index) => (
+                    <div key={`${index}-${theorem.name}`} className="rounded-xl border border-white/10 bg-white/5 p-3">
+                      <strong className="text-xs text-gray-100">{theorem.name}</strong>
+                      <p className="mt-1 text-[11px] text-gray-300">{theorem.statement}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {hub.remember.misconceptions.length > 0 && (
+                <div className="rounded-xl border border-rose-500/20 bg-rose-500/5 p-3">
+                  <strong className="text-xs text-rose-200">Common traps</strong>
+                  <ul className="mt-2 space-y-1.5">
+                    {hub.remember.misconceptions.slice(0, 4).map((item, index) => (
+                      <li key={index} className="text-[11px] text-gray-300">• {item}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {hub.remember.shortcuts.length > 0 && (
+                <div className="space-y-2">
+                  {hub.remember.shortcuts.slice(0, 3).map((shortcut, index) => (
+                    <div key={`${index}-${shortcut.title}`} className="rounded-xl border border-amber-500/20 bg-amber-500/5 p-3">
+                      <strong className="text-xs text-amber-200">{shortcut.title}</strong>
+                      <p className="mt-1 text-[11px] text-gray-300">{shortcut.concept}</p>
+                      {shortcut.application && <p className="mt-1 text-[11px] text-gray-400">{shortcut.application}</p>}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </HubSection>
+
+            <HubSection icon={<ListChecks size={18} />} title="4. Revise" description="A short revision plan and quick self-check." tone="rose">
+              <BulletList items={hub.revise.revisionPlan} limit={5} />
+              <QuickCheck items={hub.revise.quickCheck} />
+            </HubSection>
+
+            <HubSection icon={<PenTool size={18} />} title="5. Apply" description="Worked examples, board-style steps and practice direction.">
+              <WorkedExamples examples={hub.apply.workedExamples} />
+              <BulletList items={hub.apply.tips} limit={5} />
+              <Button variant="primary" size="sm" onClick={() => navigate(`/practice/${hub.apply.practice.subjectId}/${hub.apply.practice.chapterId}`)}>
+                <ArrowRight size={14} /><span>Start {hub.apply.practice.suggestedCount}-question practice</span>
+              </Button>
+            </HubSection>
+
+            <HubSection icon={<Link2 size={18} />} title="6. Connect" description="Academics, competitive exams, Indian real life and careers." tone="mint">
+              <div className="grid gap-2 sm:grid-cols-2">
+                <div className="rounded-xl border border-white/10 bg-white/5 p-3">
+                  <strong className="text-xs text-indigo-200 flex items-center gap-1"><GraduationCap size={13} /> Academics</strong>
+                  <BulletList items={hub.connect.academics} limit={4} />
+                </div>
+                <div className="rounded-xl border border-white/10 bg-white/5 p-3">
+                  <strong className="text-xs text-amber-200 flex items-center gap-1"><Lightbulb size={13} /> Competitive exams</strong>
+                  <BulletList items={hub.connect.competitive} limit={4} />
+                </div>
+                <div className="rounded-xl border border-white/10 bg-white/5 p-3">
+                  <strong className="text-xs text-emerald-200 flex items-center gap-1"><MapPin size={13} /> Indian real life</strong>
+                  <BulletList items={hub.connect.realLife} limit={4} />
+                </div>
+                <div className="rounded-xl border border-white/10 bg-white/5 p-3">
+                  <strong className="text-xs text-rose-200 flex items-center gap-1"><Compass size={13} /> India context</strong>
+                  <BulletList items={hub.connect.indianContext} limit={4} />
+                </div>
               </div>
-              <div>
-                <strong className="text-xs font-semibold text-gray-200 block mb-0.5">{reel.title}</strong>
-                <span className="text-[10px] text-gray-400 flex items-center gap-1">Jump to segment <ArrowRight size={10} /></span>
+              <div className="rounded-xl border border-purple-500/20 bg-purple-500/5 p-3">
+                <strong className="text-xs text-purple-200 flex items-center gap-1"><Briefcase size={13} /> Future careers</strong>
+                <div className="mt-2 flex flex-wrap gap-1.5">
+                  {hub.connect.careers.map((career, index) => (
+                    <span key={`${index}-${career}`} className="rounded-full bg-white/10 px-2 py-1 text-[10px] text-gray-200">{career}</span>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </Card>
+            </HubSection>
+          </div>
+
+          {hub.sources.length > 0 && (
+            <Card className="p-5">
+              <SectionHeader title="Sources and further reading" description="Official syllabus and textbook references used to build this hub." />
+              <div className="mt-3 grid gap-2 md:grid-cols-2">
+                {hub.sources.map((source, index) => (
+                  <a key={`${index}-${source.title}`} href={source.url} target="_blank" rel="noreferrer" className="flex items-center justify-between rounded-xl border border-white/10 bg-white/5 p-3 text-xs text-gray-200 hover:border-indigo-400/40">
+                    <span>{source.title}</span>
+                    <ExternalLink size={13} className="text-indigo-300" />
+                  </a>
+                ))}
+              </div>
+            </Card>
+          )}
+
+          {hub.topics.length > 0 && (
+            <Card className="p-5">
+              <SectionHeader title="Topic checklist" description="Every syllabus topic mapped to this chapter." />
+              <div className="mt-3 grid gap-2 sm:grid-cols-2">
+                {hub.topics.map((topic, index) => (
+                  <div key={`${index}-${topic}`} className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs text-gray-200">
+                    <ChevronRight size={13} className="text-indigo-300" />
+                    <span>{topic}</span>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          )}
+        </>
+      )}
     </div>
   );
 }
