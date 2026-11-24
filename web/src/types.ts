@@ -212,6 +212,14 @@ export interface SearchResult {
   chapterName: string;
   anchor: string;
   score: number;
+  source?: string;
+  page?: number | null;
+  pdfPage?: number | null;
+  book?: string | null;
+  docId?: string;
+  sectionPath?: string[];
+  chunkIndex?: number;
+  checksum?: string;
 }
 
 export interface Citation {
@@ -227,6 +235,10 @@ export interface Citation {
   page: number | null;
   pdfPage?: number | null;
   book?: string | null;
+  docId?: string;
+  sectionPath?: string[];
+  chunkIndex?: number;
+  checksum?: string;
 }
 
 export interface TutorResponse {

@@ -1,5 +1,6 @@
 import { getLesson, getChapter, subjects, sources } from './data.js';
 import { textbookChunks } from './textbook-okf.js';
+import crypto from 'node:crypto';
 
 const STOP = new Set('a an and are as at be but by for from has have how in into is it its of on or that the their then there these this to was were what when where which who why will with you your'.split(' '));
 const SYNONYMS = new Map(Object.entries({
@@ -144,6 +145,7 @@ class HybridIndex {
     this.avgdl = 0;
     this.graph = new Map();
     this.conceptNodes = new Map();
+    this.docChunkCounters = new Map();
     this.built = false;
   }
 
@@ -157,6 +159,23 @@ class HybridIndex {
   }
 
   add(chunk) {
+    if (!chunk.docId) {
+      chunk.docId = chunk.type === 'textbook'
+        ? `textbook:${chunk.book || chunk.subjectId}:${chunk.chapterId}`
+        : `${chunk.subjectId}:${chunk.chapterId}`;
+    }
+    if (chunk.chunkIndex === undefined) {
+      const idx = this.docChunkCounters.get(chunk.docId) || 0;
+      chunk.chunkIndex = idx;
+      this.docChunkCounters.set(chunk.docId, idx + 1);
+    }
+    if (!chunk.sectionPath) {
+      chunk.sectionPath = [chunk.subjectName, chunk.chapterName, chunk.type, chunk.title].filter(Boolean);
+    }
+    if (!chunk.checksum) {
+      chunk.checksum = crypto.createHash('sha256').update(chunk.text || '').digest('hex');
+    }
+
     const tokens = tokenize(`${chunk.title} ${chunk.text} ${chunk.chapterName} ${chunk.subjectName}`);
     const tf = Object.create(null);
     for (let k = 0; k < tokens.length; k += 1) {
@@ -214,6 +233,14 @@ class HybridIndex {
   }
 
   build() {
+    this.chunks = [];
+    this.df = new Map();
+    this.postings = new Map();
+    this.vectors = [];
+    this.nodeVectors = [];
+    this.graph = new Map();
+    this.conceptNodes = new Map();
+    this.docChunkCounters = new Map();
     for (const subject of subjects) {
       for (const chapter of subject.chapters) {
         const base = {
@@ -667,6 +694,10 @@ export function getCitations(results) {
     page: r.page ?? null,
     pdfPage: r.pdfPage ?? null,
     book: r.book ?? null,
+    docId: r.docId,
+    sectionPath: r.sectionPath,
+    chunkIndex: r.chunkIndex,
+    checksum: r.checksum,
   }));
 }
 
