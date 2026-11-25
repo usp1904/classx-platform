@@ -262,7 +262,7 @@ To eliminate ambiguity and prevent agent rework, all deliverables are categorize
 ### 8.5 Agentic Graph Knowledge RAG Engine Roadmap (INSTRUCTIONS.md § 10)
 - [x] `[COMPLETED]` **Phase 0 Baseline**: In-memory BM25 postings, 512-dim hashed vectors, hybrid RRF fusion, and concept co-occurrence graph.
 - [x] `[COMPLETED]` **Phase 1: Provenance & Chunk Contract**: Added `docId`, `sectionPath`, `chunkIndex`, and SHA-256 `checksum` to every chunk in `server/lib/rag.js`, surfaced in `getCitations()`, `server/lib/rag-multimodel.js`, `/api/search`, and `web/src/types.ts`.
-- [ ] `[INCOMPLETE]` **Phase 2: Multimodal Ingestion**: Authoring PDF asset manifests (`sha256`, page counts) and text extraction pipelines for source PDFs.
+- [x] `[COMPLETED (text)]` **Phase 2: Multimodal Ingestion**: Authoring PDF asset manifests (`sha256`, page counts) and text extraction pipelines for source PDFs. OCR/vision out of scope. Reconciled with the §10 status table (DONE (text)) and §7f.
 - [ ] `[INCOMPLETE]` **Phase 3: Real Embeddings**: External/ONNX embedding provider behind `RAG_EMBEDDING_PROVIDER` switch with fallback to local hashed vectors.
 - [ ] `[INCOMPLETE]` **Phase 4: Query Planning & Graph Traversal**: Extending `TYPE_HINTS` into structured `{ intent, chapters, needsGraph }` and multi-hop graph query decomposition.
 - [ ] `[INCOMPLETE]` **Phase 5: Grounding & Validation Gates**: Post-generation claim-citation verification and dynamic answerability threshold.
@@ -308,7 +308,7 @@ Work one phase per commit. Do not start a phase until the previous gate passes.
 1. Implement `openai` (or local ONNX) in `server/lib/rag-multimodel.js` only when `RAG_EMBEDDING_PROVIDER` is set and a key exists.
 2. Add batching + timeout + fallback to `local`; never block boot.
 3. Add an offline test that fakes the provider and asserts the fallback path.
-4. Gate: default env (`local`, no network) still passes all tests.
+4. Gate: default env (`local`, no network) still passes all tests AND a test proves the configured provider output differs from `local` and that the provider endpoint was actually called; a no-op alias (`openai` -> `local` in `server/lib/rag-multimodel.js:33-34`) must fail this gate.
 
 ### Phase 4 — Query planning and graph traversal
 1. Extend `TYPE_HINTS` into an explicit planner result: `{ intent, chapters, needsGraph }`.
@@ -318,12 +318,12 @@ Work one phase per commit. Do not start a phase until the previous gate passes.
 ### Phase 5 — Grounding and validation gates
 1. After generation, verify each citation id exists in the retrieved set; drop unsupported claims.
 2. Add an answerability threshold: below it, return the grounded skeleton plus "insufficient evidence".
-3. Gate: `tests/tutor.test.js` still green; add one low-evidence test.
+3. Gate: `tests/tutor.test.js` still green, the `tests/agentic-rag-*.test.js` suite is green, and one low-evidence test asserts an "insufficient evidence" response.
 
 ### Phase 6 — Observability and evaluation
 1. Log per-query latency, candidate count, and top score to `/api/health` aggregates (no PII).
-2. Add a small golden set (10 questions) under `tests/` with expected chapter hits.
-3. Gate: `npm test`; metrics visible in health or a dedicated read-only endpoint.
+2. Add a small golden set under `tests/` with expected chapter hits per persona (student/teacher/parent/DSC/UPSC); minimum 10 questions.
+3. Gate: `npm test` (including `tests/agentic-rag-*.test.js`); metrics visible in health or a dedicated read-only endpoint; the persona golden set is part of the suite.
 
 ### Phase 7 — Control plane (only if deployment requires it)
 1. Multi-tenant/RBAC, quotas, moderation, retention: each needs an owner decision before code.
@@ -349,7 +349,7 @@ Full alignment is **not** achieved. Missing layers and reasons are in `AGENTS.md
 
 1. `npm run verify:sync` and `npm run verify:sync:docker`.
 2. Read `artifacts/sync-status.json` and the phase table above.
-3. Pick the first `PENDING` phase; confirm scope with the user before editing.
+3. Pick the first `PENDING` step from the canonical order in §15. For the persona/answer-quality goal follow §13; canonical cross-track order is §15; tool/skill routing is §14.
 4. Use the start/end prompts in `AGENTS.md` ("Session protocol") to keep every session repeatable.
 
 ## 12. Modular Subsystem Instructions (instructions.d)
@@ -363,6 +363,188 @@ Detailed operational runbooks and implementation specifications for platform sub
 - **[instructions.d/04_GAMIFICATION.md](instructions.d/04_GAMIFICATION.md)**: XP accrual, level progress ring, badges catalog, and offline leaderboard resilience.
 - **[instructions.d/05_ROUTING_AND_FALLBACKS.md](instructions.d/05_ROUTING_AND_FALLBACKS.md)**: Client routing table, canonical route redirects, and wildcard 404 boundaries.
 - **[VALIDATION_CHECKLIST.md](VALIDATION_CHECKLIST.md)**: Comprehensive production readiness checklist with itemized verification evidence.
+
+## 13. Persona Satisfaction Repair Plan (current primary goal)
+
+The platform passes its structural gates but does not yet satisfy its users. The tutor is a Class X board-shaped four-layer answer and does not adapt to persona, depth, or exam. This section is the build plan; run it before further RAG vanity work. Evidence and diagnosis live in the review captured in this section.
+
+### 13.1 What is missing today (evidence in code)
+
+| Gap | Evidence | Persona impact |
+|---|---|---|
+| `mode`/ELI5 ignored on primary path | `server/lib/agentic-rag.js:499-513`, `:640-655`; `backend/rag/synthesizer.py:459-467` | Class X student never gets ELI5 |
+| No persona model (role/exam/depth) | mode enum `server/index.js:344,358,377` | Teacher/parent/DSC/UPSC unserved |
+| Corpus is Class X NCERT only | `server/lib/textbook-okf.js`; `backend/rag/synthesizer.py:15` | DSC/UPSC cannot be answered |
+| Canned answers by topic | `backend/rag/synthesizer.py:32`, `:355-362` | Repetitive, not question-specific |
+| Fake semantic retrieval | `server/lib/rag-multimodel.js:33-34` | Paraphrase questions miss |
+| Rerank stub | `server/lib/rag-multimodel.js:49-61` | Wrong chunk ordering |
+| Hard lexical gate | `server/lib/rag.js:601-604` | Empty result on synonyms |
+| Per-chapter caps strip depth | `server/lib/rag.js:606-621` | Thin context |
+| No answerability gate | `backend/rag/graph.py:19-24` | Confident thin answers |
+| Citation/evidence mismatch | `server/lib/agentic-rag.js:744,774` | Page badges can be wrong |
+| Client sends no scope | `web/src/screens/DoubtTutor.tsx:23-29` | Analyzer guesses wrong chapter |
+| Visuals never composed into answer | `server/lib/agentic-rag.js:415-472,826` | No in-answer diagram/step visual |
+| Depth validator is shallow | `backend/rag/synthesizer.py:322-326` | Two-line answers pass |
+
+### 13.2 Build work packages (what to build -> how -> gate)
+
+- **B1 Thread persona + mode through the agentic path.** Accept `{role, exam, depth, ageBand}`; pass it into `formatLayersAsMarkdown`, both LLM prompts, and the Python synthesizer. Files: `server/lib/agentic-rag.js`, `server/lib/ai.js`, `backend/rag/synthesizer.py`, `server/index.js`, `web/src/screens/DoubtTutor.tsx`. Gate: one test per mode asserting layer order/depth changes.
+- **B2 Persona depth budgets + composer.** New `server/lib/persona-composer.js`: ELI5 = short + analogy + micro-example; Student = worked step ladder; Teacher = lesson plan + common errors + differentiation; Parent = plain summary + progress link; DSC/UPSC = exam tier + PYQ framing. Gate: unit test per persona.
+- **B3 Answerability gate (Phase 5).** Below threshold, return insufficient-evidence + nearest grounded concept + explicit missing topic; never emit a thin four-layer answer. Files: `backend/rag/grader.py`, `server/lib/agentic-rag.js`. Gate: low-evidence test.
+- **B4 Real embeddings + rerank.** Implement `openai`/local ONNX in `server/lib/rag-multimodel.js` behind `RAG_EMBEDDING_PROVIDER` with batching + timeout + local fallback; replace the rerank stub with a cross-encoder/provider rerank; wire `hyde_passage` into retrieval. Gate: fake-provider fallback test; default local/offline still green.
+- **B5 Retrieval relax.** Make the lexical gate a boost, not a hard drop; raise/parameterise per-chapter caps; extend the synonym map. File: `server/lib/rag.js`. Gate: paraphrase query test.
+- **B6 Citation alignment.** Derive `sources` from the chunks actually used by the active pipeline (Python or JS). File: `server/lib/agentic-rag.js`. Gate: citation chunk ids are a subset of used chunk ids.
+- **B7 Inline visual composition.** Attach a diagram spec / step visual / concept-map fragment plus video clip into the answer layers. Files: `server/lib/agentic-rag.js`, `web/src/screens/DoubtTutor.tsx`; reuse `viz-generator` output. Gate: answer contains a valid visual block.
+- **B8 Corpus expansion.** Add DSC/UPSC/teacher/English sources under `source/**`, extend `scripts/sync-content.mjs`, index them in `server/lib/rag.js` and the Python retriever. Gate: `npm run check` counts + idempotent sync.
+- **B9 Golden-set eval per persona.** `tests/persona-eval.test.mjs` with expected depth/step/citation/refusal per persona; surface metrics on `/api/health`. Gate: eval passes in CI.
+- **B10 Depth floor in validator.** Require a minimum number of worked steps + words per persona in `validate_answer_layers`. Gate: shallow answers are rejected.
+
+### 13.3 Sequence checklist (do not skip gates)
+
+The canonical, dependency-ordered execution (with phase mapping and how-to) is §15.2; it supersedes the ordering of this list. The set of items is identical.
+
+- [ ] 1. Thread persona/mode (B1). Gate: mode tests.
+- [ ] 2. Persona composer + depth budgets (B2). Gate: persona tests.
+- [ ] 3. Citation alignment (B6). Gate: citation-subset test.
+- [ ] 4. Answerability gate (B3). Gate: low-evidence test.
+- [ ] 5. Retrieval relax (B5). Gate: paraphrase test.
+- [ ] 6. Real embeddings + rerank (B4). Gate: fallback test, offline green.
+- [ ] 7. Depth floor (B10). Gate: shallow-reject test.
+- [ ] 8. Inline visuals (B7). Gate: visual-block test.
+- [ ] 9. Golden-set eval (B9). Gate: eval in CI.
+- [ ] 10. Corpus expansion (B8). Gate: check + sync idempotent.
+- [ ] 11. Re-run `npm run verify` + `verify:sync:docker`; update §8.5 and the §10 phase table.
+
+Order rationale: fix behaviour and quality before corpus spend; add the eval before expansion so improvement is measurable.
+
+### 13.4 Definition of done per persona
+
+| Persona | Done when |
+|---|---|
+| Class X student | ELI5 and board modes give distinct, depth-appropriate, step-by-step answers with a visual and citations |
+| Teacher | "Teacher" persona returns a lesson plan, common errors, and marking notes |
+| Parent | Plain-language summary tied to child progress, no jargon |
+| DSC aspirant | Exam-tier answer with state-syllabus/PYQ grounding, or an explicit "not in corpus" |
+| UPSC aspirant | Analytical answer with polity/history depth, or an explicit gap |
+
+Cross-persona rule: never return a thin confident answer.
+
+## 14. Agent Tooling & Skills Playbook (when to use what)
+
+Prevents discrepancy: one source of truth per concern; route each task to the minimum tool/skill that can prove the outcome; gate before claiming done; update phase status and `Last verified` every session.
+
+### 14.1 Mandatory session loop
+
+1. Read `AGENTS.md` + `INSTRUCTIONS.md` (§10 phases, §13 plan, §14 playbook).
+2. Run `npm run verify:sync` (then `verify:sync:docker` if Docker is healthy); read `artifacts/sync-status.json`.
+3. Report drift + next open phase; do not edit until scope is confirmed.
+4. Execute one work package per commit; run that package's gate.
+5. End: run gates for the touched area, update `AGENTS.md` capability row/`Last verified` + §13 checkbox + §10 phase status, commit/push `main` + `Siri_ClassX-Platform`, run `verify:sync:docker`, report Render smoke.
+
+### 14.2 Skill/agent router
+
+| Task | Use (path) | Gate |
+|---|---|---|
+| Spec before behaviour change | `google-skills/spec-driven-development`, ECC `planner` | spec updated first |
+| Plan/decompose | `google-skills/planning-and-task-breakdown`, ECC `/prp-plan`, `planner` | ordered tasks |
+| Test-first behaviour | `google-skills/test-driven-development`, ECC `tdd-guide` | RED -> GREEN |
+| Bounded bug fix | `.agents/skills/surgical-patch`, ECC `build-error-resolver` | regression test |
+| Refactor (no behaviour change) | `.agents/skills/safe-refactor`, `google-skills/code-simplification` | behaviour preserved |
+| Schema/API/config migration | `.agents/skills/migration`, `google-skills/deprecation-and-migration` | rollback + expand/contract |
+| RAG quality review | ECC `rag-pipeline-reviewer`, `iterative-retrieval` | retrieval eval |
+| ML/eval pipeline | ECC `mle-reviewer`, `eval-harness`, `ai-regression-testing` | eval gate |
+| Security-sensitive | `google-skills/security-and-hardening`, ECC `security-reviewer`/`/security-scan`, `.agents/skills/review-security` | no HIGH/CRITICAL |
+| Performance | `google-skills/performance-optimization`, ECC `performance-optimizer` | budget met |
+| Observability | `google-skills/observability-and-instrumentation` | metric visible |
+| Browser/visual QA | `google-skills/browser-testing-with-devtools`, `.agents/skills/visual-qa`, `npm run e2e` | screenshots pass |
+| Explore codebase | `.agents/skills/caveman-explore`, ECC `code-explorer`, `graphify` (`graphify update .`) | path:line map |
+| Brownfield onboarding | ECC `spec-miner` | capability matrix |
+| Constraint/quality bar | `google-skills/constraint-driven-development` | CONSTRAINTS.md |
+| Curriculum/authoring | `.agents/skills/curriculum-guard`, `dual-mode-router`, `master-architectural-system-prompt`, `historical-paper-tags` | syllabus locked |
+| Math/LaTeX | `.agents/skills/math-formatter` | renders clean |
+| Diagrams/visuals | `.agents/skills/viz-generator`, `visualize` | valid spec |
+| Student/teacher content QA | `.agents/skills/learn`, `check-understanding`, `course-guide` | answers correct |
+
+### 14.3 Available inventories (paths)
+
+- Repo skill: `skills/classx-knowledge-rag` (query-graph, topological-sort, prereq-chain, search-chunks, verify-rag, schemas).
+- `C:\Users\Admin\.agents\skills` — 65 skills: caveman-*, curriculum-guard, dual-mode-router, master-architectural-system-prompt, math-formatter, viz-generator, historical-paper-tags, learn/check-understanding/course-guide, investigate-first, lean-build, surgical-patch, safe-refactor, migration, verify-and-stop, review/review-security, multimodal-review, graphify, guard, loop.
+- `C:\Users\Admin\.config\opencode\skills\google-skills\skills` — 25 engineering skills (spec/TDD/review/security/perf/observability/CI/deploy/context).
+- `C:\Users\Admin\.claude\skills` — 11 learner/certification skills.
+- `C:\Users\Admin\ECC\agents` — 71 agents (planner, architect, code-reviewer, security-reviewer, tdd-guide, rag-pipeline-reviewer, mle-reviewer, pr-test-analyzer, performance-optimizer, silent-failure-hunter, code-explorer, spec-miner, loop-operator, harness-optimizer, agent-evaluator, e2e-runner).
+- `C:\Users\Admin\ECC\skills` — 311 skills; relevant: eval-harness, iterative-retrieval, verification-loop, autonomous-loops, continuous-agent-loop, benchmark-optimization-loop, ai-regression-testing, plan-orchestrate, test-collaboration.
+- `C:\Users\Admin\ECC\commands` — 98 commands; relevant: `/plan`, `/prp-plan`, `/feature-dev`, `/epic-*`, `/quality-gate`, `/test-coverage`, `/security-scan`, `/review-pr`, `/loop-start`, `/harness-audit`, `/model-route`.
+- Tools: `graphify` (`graphify-out/` present; `graphify update .`), Playwright (`npm run e2e`), n8n (workflows; needs credentials), offline-by-default (no key needed).
+
+### 14.4 Anti-discrepancy rules
+
+- One source of truth: `SPEC.md` = acceptance, `AGENTS.md` = capability matrix, `INSTRUCTIONS.md` §10 = phase status, §13 = build plan. Cross-link; never duplicate.
+- Never edit generated files (`server/public`, `server/data`, `artifacts`, `okf-textbooks`) to pass a check; fix `source/**` or `server/lib/**` and regenerate.
+- One drift class per commit; run §14.1 step 2 before pushing.
+- A capability exists only after code + test; update the matrix row only then.
+- End every session: update `Last verified`, the §13 checkbox, and the §10 phase status.
+- After any opencode config/agent/skill/plugin edit, tell the user to restart opencode (config is not hot-reloaded).
+
+### 14.5 Loop & harness (unattended runs)
+
+- `loop-operator` / `autonomous-loops` / `continuous-agent-loop`: run the §14.1 cycle; halt on a red gate, ambiguous scope, security finding, or N stalls; never loop past a failing gate.
+- `harness-optimizer` / `/harness-audit`: tune model choice, context budget, and retries without changing product behaviour.
+- `verification-loop` / `.agents/skills/guard`: the harness exit condition is `npm run verify` + `verify:sync:docker`, not an assertion.
+
+### 14.6 Quick decision
+
+- New behaviour? spec -> plan -> TDD -> review -> gate.
+- Failing test/gate? debug root cause, fix source, never weaken the check.
+- Unfamiliar code? graphify / code-explorer / caveman-explore first.
+- Anything shipped? observability + rollback + verify-and-stop.
+
+## 15. Phase <-> Work-Package Alignment (canonical execution order)
+
+This is the single authoritative order. §10 owns pipeline mechanics (Phase 0–7); §13 owns persona/quality packages (B1–B10); §15 ties them together and resolves conflicts. If sections disagree on ordering, §15.2 wins; on mechanics, §10 and §13 win. This section is a reconciliation, not a new fourth roadmap.
+
+### 15.1 Differences identified (audit of §8.5, §10, §13) and resolution
+
+| # | Difference | Where | Resolution applied |
+|---|---|---|---|
+| 1 | Phase 2 had three states (INCOMPLETE / DONE (text) / completed) | `§8.5:265`, `§10:339`, `§7f:177-182` | §8.5 set to `COMPLETED (text)`; OCR/vision out of scope |
+| 2 | Phase 3 gate was unsound: `openai` provider aliases `local`, so "local still passes" passes even though the switch is a no-op | `server/lib/rag-multimodel.js:33-34`, `§10:311` | Phase 3 gate strengthened: provider output must differ from `local` and the endpoint must be called |
+| 3 | Phase 5/6 gates pointed at `tests/tutor.test.js` but the live path is `runAgenticRag` | `server/index.js:345`, `§10:321`, `§10:326` | `tests/agentic-rag-*.test.js` added to both gates |
+| 4 | Phase 6 golden set was generic; cannot detect persona dissatisfaction | `§10:325` | Golden set now requires a per-persona dimension |
+| 5 | Rerank stub replacement was in no phase | `server/lib/rag-multimodel.js:49-61` | Folded into Phase 3 via B4 |
+| 6 | Two roadmaps (§10 phases, §13 packages) with partial overlap | `§10`, `§13` | Mapped 1:1 in §15.2; B1/B2/B5/B7/B8 registered as proposed Phase 8 |
+
+### 15.2 Canonical execution order
+
+Legend: "proposed Phase 8.x" = not covered by Phase 0–7; registered here as new delivery/persona work. Execute strictly top-to-bottom, one step per commit; do not start a step until the previous gate is green. This interleaved order intentionally prioritises persona satisfaction (the stated success criterion) and supersedes §10's strict phase sequence for these tracks.
+
+| Step | Track / Phase | §13 item | What to implement | How (files) | Gate |
+|---|---|---|---|---|---|
+| 1 | proposed Phase 8.1 | B1 | Thread persona + mode (`role, exam, depth, ageBand`) through the agentic path | `server/lib/agentic-rag.js`, `server/lib/ai.js`, `backend/rag/synthesizer.py`, `server/index.js`, `web/src/screens/DoubtTutor.tsx` | one test per mode asserts layer order/depth changes |
+| 2 | proposed Phase 8.2 | B2 | Persona composer + per-persona depth budgets | proposed `server/lib/persona-composer.js` | unit test per persona |
+| 3 | Phase 5 | B3 | Answerability gate: below threshold return insufficient-evidence + nearest concept + explicit gap | `backend/rag/grader.py`, `server/lib/agentic-rag.js` | low-evidence test asserts refusal |
+| 4 | Phase 5 | B6 | Citation alignment: `sources` must come from chunks actually used | `server/lib/agentic-rag.js` | citation ids are a subset of used ids |
+| 5 | Phase 5 | B10 | Depth floor in validator (min worked steps/words per persona) | `backend/rag/synthesizer.py` `validate_answer_layers` | shallow answers rejected |
+| 6 | Phase 3 | B4 | Real embeddings behind `RAG_EMBEDDING_PROVIDER` + replace rerank stub + wire `hyde_passage` | `server/lib/rag-multimodel.js` | provider output != `local`; endpoint called; offline fallback green |
+| 7 | Phase 4 (extension) | B5 | Retrieval relax: lexical gate as boost, dynamic per-chapter caps, synonym map | `server/lib/rag.js` | paraphrase query test |
+| 8 | Phase 6 | B9 | Per-persona golden-set evaluation + metrics surface | proposed `tests/persona-eval.test.mjs`, `/api/health` | eval runs in CI |
+| 9 | proposed Phase 8.3 | B7 | Inline visual composition (diagram/step visual/concept-map + video in the answer) | `server/lib/agentic-rag.js`, `web/src/screens/DoubtTutor.tsx` | answer contains a valid visual block |
+| 10 | proposed Phase 8.4 | B8 | Corpus expansion: DSC/UPSC/teacher/English sources | `source/**`, `scripts/sync-content.mjs`, `server/lib/rag.js`, Python retriever | `npm run check` counts + idempotent sync |
+| 11 | all | — | Full verify + parity | run §2 + §14.1 | `npm run verify` + `verify:sync:docker` green |
+
+### 15.3 When to implement what (rules)
+
+- Persona steps (1, 2, 9) and canonical steps 3–5 ship before Phase 3 even though Phase 3 is the oldest PENDING, because persona satisfaction is the success criterion and these are prerequisites.
+- Phase 7 (control plane) stays last and only after an explicit owner decision (§10:328-331); it is not in this order.
+- If the owner prefers pipeline-first, swap steps 1–2 with steps 6–8 and record the decision in this section before editing code.
+- One step per commit; one drift class; update the §10 status table, the §13.3 checkbox, this §15 step, and `AGENTS.md` `Last verified` in the same session.
+
+### 15.4 Eval and grounding mandate (non-negotiable)
+
+- No step is "done" without its gate plus `npm test`; a passing compile is not evidence.
+- Grounding: every answer's citations must be the chunks actually retrieved and used; B6 and B3 enforce this. Never weaken a check to pass; fix `source/**` or `server/lib/**`.
+- Run `npm run verify:sync` before and after each step; run `verify:sync:docker` when Docker is available and record `SKIP` otherwise — never claim parity without it.
+- Evals are part of the suite: B9 (persona golden set) and the low-evidence test from B3 gate every later step.
+- A capability exists on the `AGENTS.md` matrix only after code + test; update the row only then.
 
 
 

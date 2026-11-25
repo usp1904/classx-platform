@@ -1,4 +1,4 @@
-# jev-ultrafast Decision Log — BYJU'S clone scope (ClassX)
+# jev-ultrafast Decision Log — Engagement Layer Scope (ClassX)
 
 Method: one-goal decision loop (page → indexed elements → operation + target → execution). Live run not possible offline (no TYPESAFE_API_KEY / TEXT_MODEL_API_KEY / Browser Harness / Chrome). Decisions recorded here as if executed by the agent.
 

@@ -1,0 +1,1450 @@
+[
+  {
+    "id": "eval-sci-chem-001",
+    "query": "What happens when quicklime is added to water? Describe Activity 1.1 and state the type of reaction with balanced chemical equation.",
+    "subject": "science",
+    "sub_discipline": "chemistry",
+    "chapter_id": "chemical-reactions-and-equations",
+    "chapter_name": "Chemical Reactions and Equations",
+    "topic_tag": "chemical_reactions_and_equatio",
+    "category": "activity_observation",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "BOARD_EXAM",
+      "target_exam": "CBSE_BOARD",
+      "bm25_keywords": ["quicklime", "water", "activity", "slaked", "lime", "calcium", "oxide", "exothermic", "combination"],
+      "okf_filters": {
+        "subject": "science",
+        "chapter_id": "chemical-reactions-and-equations",
+        "topic_tag": "chemical_reactions_and_equatio",
+        "content_block_type": "activity",
+        "source_type": "NCERT_TEXTBOOK"
+      },
+      "hyde_expected": false,
+      "hyde_condition_rationale": "Exact NCERT Activity 1.1 query; dense hypothetical passage omitted to prevent hallucinating incorrect temperatures or observations."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "CBSE_SQP"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of NCERT Activity 1.1 observation (beaker becomes hot) and CBSE SQP 3-mark rubric for combination reaction."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Two Lego bricks snapping together to form a single solid block, releasing trapped energy as warmth.",
+      "mandatory_bold_keywords": [
+        "**calcium oxide**",
+        "**slaked lime**",
+        "**calcium hydroxide**",
+        "**combination reaction**",
+        "**exothermic reaction**"
+      ],
+      "step_mark_breakdown": [
+        "Definition of combination reaction: [1 Mark]",
+        "Balanced equation CaO(s) + H2O(l) -> Ca(OH)2(aq) + Heat: [1 Mark]",
+        "Observation (beaker becomes hot due to release of heat): [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "NEET",
+      "examiners_trap_keyword": "Confusing quicklime (CaO) with slaked lime (Ca(OH)2) or lime water."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": true,
+      "video_metadata": {
+        "video_id": "8U8F4R4o1Lw",
+        "start_sec": 42,
+        "end_sec": 105,
+        "concept_title": "Activity 1.1: Reaction of Calcium Oxide with Water",
+        "observation_cue": "Observe vigorous hissing and steam indicating intense exothermic release as solid lumps dissolve."
+      }
+    }
+  },
+  {
+    "id": "eval-sci-chem-002",
+    "query": "Explain the role of pH in daily life with special reference to tooth decay, soil fertility, and digestive system. Write the chemical formula and preparation of bleaching powder.",
+    "subject": "science",
+    "sub_discipline": "chemistry",
+    "chapter_id": "acids-bases-and-salts",
+    "chapter_name": "Acids, Bases and Salts",
+    "topic_tag": "importance_of_ph_in_everyday_",
+    "category": "conceptual_explanation",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "BOARD_EXAM",
+      "target_exam": "CBSE_BOARD",
+      "bm25_keywords": ["ph", "tooth", "decay", "soil", "digestive", "bleaching", "powder", "calcium", "oxychloride"],
+      "okf_filters": {
+        "subject": "science",
+        "chapter_id": "acids-bases-and-salts",
+        "topic_tag": "importance_of_ph_in_everyday_",
+        "content_block_type": "concept",
+        "source_type": "NCERT_TEXTBOOK"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Multi-part conceptual explanation across physiological and chemical sub-topics benefits from 3-sentence NCERT prose for dense retrieval."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "CBSE_SQP"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of critical threshold pH 5.5 for enamel corrosion, antacid action (Mg(OH)2), and Ca(OH)2 + Cl2 reaction."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Like a swimming pool's chemical balance: if the water turns too acidic, it etches the tiles and stings the eyes; exact balance is required.",
+      "mandatory_bold_keywords": [
+        "**pH 5.5**",
+        "**calcium hydroxyapatite**",
+        "**antacid**",
+        "**bleaching powder**",
+        "**calcium oxychloride**"
+      ],
+      "step_mark_breakdown": [
+        "Tooth decay mechanism when mouth pH falls below 5.5: [1 Mark]",
+        "Soil pH and digestive system antacid neutralisation: [1 Mark]",
+        "Bleaching powder Ca(OH)2 + Cl2 -> CaOCl2 + H2O: [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "NEET",
+      "examiners_trap_keyword": "Thinking tooth enamel dissolves by water directly rather than acid corroding calcium hydroxyapatite below pH 5.5."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": false,
+      "video_metadata": null
+    }
+  },
+  {
+    "id": "eval-sci-chem-003",
+    "query": "Differentiate between esterification and saponification reactions with chemical equations. How are carboxylic acids converted to esters in JEE organic synthesis mechanisms?",
+    "subject": "science",
+    "sub_discipline": "chemistry",
+    "chapter_id": "carbon-and-its-compounds",
+    "chapter_name": "Carbon and its Compounds",
+    "topic_tag": "chemical_properties_of_carbon_",
+    "category": "derivation",
+    "difficulty": "hard",
+    "expected_routing": {
+      "intent_mode": "COMPETITIVE_BRIDGE",
+      "target_exam": "JEE_MAIN",
+      "bm25_keywords": ["esterification", "saponification", "ethanoic", "acid", "ethanol", "ethyl", "ethanoate", "hydrolysis", "ester"],
+      "okf_filters": {
+        "subject": "science",
+        "chapter_id": "carbon-and-its-compounds",
+        "topic_tag": "chemical_properties_of_carbon_",
+        "content_block_type": "reaction",
+        "source_type": "NCERT_EXEMPLAR"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Comparative organic reaction mechanism with competitive examination bridging requires dense NCERT-style mechanistic context."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "NCERT_EXEMPLAR"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of Fischer esterification equilibrium conditions (conc. H2SO4) and alkaline hydrolysis mechanism producing carboxylate salt."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Esterification is weaving two threads with an acid needle into sweet-smelling perfume; saponification is unwinding it with soap alkali.",
+      "mandatory_bold_keywords": [
+        "**esterification**",
+        "**saponification**",
+        "**acid catalyst**",
+        "**sweet-smelling ester**",
+        "**sodium carboxylate**"
+      ],
+      "step_mark_breakdown": [
+        "Esterification reaction CH3COOH + C2H5OH -> CH3COOC2H5 + H2O: [1.5 Marks]",
+        "Saponification alkaline hydrolysis CH3COOC2H5 + NaOH -> CH3COONa + C2H5OH: [1.5 Marks]",
+        "Structural role of concentrated H2SO4 as dehydrating agent: [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "JEE",
+      "examiners_trap_keyword": "Omitting the acid catalyst in esterification or mistaking saponification as an acid-catalyzed process."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": true,
+      "video_metadata": {
+        "video_id": "4G3F2K1L9Vk",
+        "start_sec": 30,
+        "end_sec": 120,
+        "concept_title": "Esterification: Synthesis of Ethyl Ethanoate",
+        "observation_cue": "Notice the distinct sweet fruity odor emitted when the water bath warms the ethanol-ethanoic acid mixture."
+      }
+    }
+  },
+  {
+    "id": "eval-sci-chem-004",
+    "query": "Assertion (A): Aluminium oxide reacts with both hydrochloric acid and sodium hydroxide. Reason (R): Aluminium oxide is an amphoteric oxide that shows both acidic and basic properties. Validate this assertion-reasoning pair.",
+    "subject": "science",
+    "sub_discipline": "chemistry",
+    "chapter_id": "metals-and-non-metals",
+    "chapter_name": "Metals and Non-Metals",
+    "topic_tag": "chemical_properties_of_metals",
+    "category": "assertion_reasoning",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "COMPETITIVE_BRIDGE",
+      "target_exam": "JEE_MAIN",
+      "bm25_keywords": ["assertion", "reason", "aluminium", "oxide", "amphoteric", "hydrochloric", "sodium", "aluminate"],
+      "okf_filters": {
+        "subject": "science",
+        "chapter_id": "metals-and-non-metals",
+        "topic_tag": "chemical_properties_of_metals",
+        "content_block_type": "concept",
+        "source_type": "NCERT_EXEMPLAR"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Assertion-reasoning pair requires dense contextual retrieval across acid-base dual properties of metal oxides."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "NCERT_EXEMPLAR"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of balanced equations for Al2O3 with HCl and with NaOH producing sodium aluminate (NaAlO2)."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "An ambassador fluent in two rival languages: acting as a base before acids, and switching to an acid before bases.",
+      "mandatory_bold_keywords": [
+        "**amphoteric oxide**",
+        "**aluminium oxide**",
+        "**sodium aluminate**",
+        "**both acidic and basic properties**"
+      ],
+      "step_mark_breakdown": [
+        "Verification of Assertion (A) as TRUE with reaction equations: [1 Mark]",
+        "Verification of Reason (R) as TRUE: [1 Mark]",
+        "Confirmation that (R) is the correct explanation of (A): [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "JEE",
+      "examiners_trap_keyword": "Incorrectly writing sodium aluminate formula as NaAlO3 instead of NaAlO2."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": false,
+      "video_metadata": null
+    }
+  },
+  {
+    "id": "eval-sci-phy-005",
+    "query": "A convex lens forms a real and inverted image of a needle at a distance of 50 cm from it. Where is the needle placed in front of the convex lens if the image is equal to the size of the object? Also, find the power of the lens.",
+    "subject": "science",
+    "sub_discipline": "physics",
+    "chapter_id": "light-reflection-and-refraction",
+    "chapter_name": "Light - Reflection and Refraction",
+    "topic_tag": "refraction_lens_power",
+    "category": "numerical_calculation",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "BOARD_EXAM",
+      "target_exam": "CBSE_BOARD",
+      "bm25_keywords": ["convex", "lens", "needle", "real", "inverted", "50cm", "power", "dioptre", "focal", "length"],
+      "okf_filters": {
+        "subject": "science",
+        "chapter_id": "light-reflection-and-refraction",
+        "topic_tag": "refraction_lens_power",
+        "content_block_type": "exercise",
+        "source_type": "NCERT_TEXTBOOK"
+      },
+      "hyde_expected": false,
+      "hyde_condition_rationale": "Pure numerical calculation with given numerical parameters (v = +50 cm, m = -1); HyDE omitted to avoid hallucinating incorrect numerical results."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "CBSE_SQP"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of lens formula 1/f = 1/v - 1/u and power formula P = 1/f(m) from NCERT."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Balancing a seesaw exactly at the midpoint: object at 2F produces an equal-sized replica inverted on the opposite 2F side.",
+      "mandatory_bold_keywords": [
+        "**real and inverted**",
+        "**magnification**",
+        "**focal length**",
+        "**power of a lens**",
+        "**dioptre**"
+      ],
+      "step_mark_breakdown": [
+        "Position of needle u = -50 cm using m = -1: [1 Mark]",
+        "Calculation of focal length f = +0.25 m (+25 cm): [1 Mark]",
+        "Power calculation P = +4 D with correct positive sign and unit: [1 Mark]"
+      ],
+      "requires_si_units": true,
+      "competitive_target": "JEE",
+      "examiners_trap_keyword": "Computing power directly using focal length in cm without converting to meters, resulting in P = 0.04 D instead of +4 D."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": false,
+      "video_metadata": null
+    }
+  },
+  {
+    "id": "eval-sci-phy-006",
+    "query": "State Ohm's law and discuss the physical conditions under which it holds true. How does the V-I characteristic curve change for non-ohmic devices like semiconductors in JEE physics?",
+    "subject": "science",
+    "sub_discipline": "physics",
+    "chapter_id": "electricity",
+    "chapter_name": "Electricity",
+    "topic_tag": "ohms_law_resistance",
+    "category": "hots_competitive_bridge",
+    "difficulty": "hard",
+    "expected_routing": {
+      "intent_mode": "COMPETITIVE_BRIDGE",
+      "target_exam": "JEE_MAIN",
+      "bm25_keywords": ["ohms", "law", "resistance", "potential", "difference", "current", "temperature", "non-ohmic", "diode", "semiconductor"],
+      "okf_filters": {
+        "subject": "science",
+        "chapter_id": "electricity",
+        "topic_tag": "ohms_law_resistance",
+        "content_block_type": "concept",
+        "source_type": "NCERT_EXEMPLAR"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Theoretical law derivation extended to non-linear physical behavior requires dense NCERT-style electrical conduction concepts."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "NCERT_EXEMPLAR"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of V directly proportional to I at constant temperature, definition of R, and exemplar graphical deviations."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Water flowing through a garden pipe: doubling the pump pressure doubles the flow rate, provided the pipe diameter stays constant.",
+      "mandatory_bold_keywords": [
+        "**Ohm's law**",
+        "**potential difference**",
+        "**constant temperature**",
+        "**resistance**",
+        "**non-ohmic conductors**"
+      ],
+      "step_mark_breakdown": [
+        "Statement of Ohm's law V directly proportional to I: [1 Mark]",
+        "Condition of constant temperature and physical dimensions: [1 Mark]",
+        "Slope of V-I graph giving resistance R = V/I: [1 Mark]"
+      ],
+      "requires_si_units": true,
+      "competitive_target": "JEE",
+      "examiners_trap_keyword": "Forgetting the qualifying condition 'at constant temperature', which causes experimental points to curve upwards due to Joule heating."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": true,
+      "video_metadata": {
+        "video_id": "3Z2b3t1QwaA",
+        "start_sec": 45,
+        "end_sec": 135,
+        "concept_title": "Ohm's Law Verification & V-I Graph",
+        "observation_cue": "Watch how the straight-line plot through origin bends when the rheostat current heats the nichrome wire."
+      }
+    }
+  },
+  {
+    "id": "eval-sci-phy-007",
+    "query": "State Fleming's Left-Hand Rule and explain the underlying principle and working of an electric motor with the help of a labeled diagram description.",
+    "subject": "science",
+    "sub_discipline": "physics",
+    "chapter_id": "magnetic-effects-of-electric-current",
+    "chapter_name": "Magnetic Effects of Electric Current",
+    "topic_tag": "flemings_left_hand_rule_moto",
+    "category": "conceptual_explanation",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "BOARD_EXAM",
+      "target_exam": "CBSE_BOARD",
+      "bm25_keywords": ["flemings", "left", "hand", "rule", "magnetic", "field", "electric", "motor", "split", "rings", "commutator"],
+      "okf_filters": {
+        "subject": "science",
+        "chapter_id": "magnetic-effects-of-electric-current",
+        "topic_tag": "flemings_left_hand_rule_moto",
+        "content_block_type": "concept",
+        "source_type": "NCERT_TEXTBOOK"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Detailed mechanical and electromagnetic device operation explanation benefits from dense NCERT factual retrieval."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "CBSE_SQP"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of Forefinger (Field), Central finger (Current), Thumb (Motion) mapping and split-ring commutator reversal function."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Pivoting a revolving door: pushing forward on the left handle while pulling back on the right keeps it spinning continuously in one direction.",
+      "mandatory_bold_keywords": [
+        "**Fleming's Left-Hand Rule**",
+        "**magnetic force**",
+        "**split-ring commutator**",
+        "**reverses the direction of current**",
+        "**continuous rotation**"
+      ],
+      "step_mark_breakdown": [
+        "Statement of Fleming's Left-Hand Rule (Thumb-Motion, Forefinger-Field, Middle-Current): [1.5 Marks]",
+        "Motor principle: current-carrying coil in magnetic field experiences couple torque: [1.5 Marks]",
+        "Function of split-ring commutator reversing current every half rotation: [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "JEE",
+      "examiners_trap_keyword": "Confusing Fleming's Left-Hand Rule (motors) with Fleming's Right-Hand Rule (generators and induced current)."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": true,
+      "video_metadata": {
+        "video_id": "9B8F7E6D5C4",
+        "start_sec": 20,
+        "end_sec": 95,
+        "concept_title": "Principle and Working of Electric Motor",
+        "observation_cue": "Observe how the split rings switch brush contacts every 180 degrees to sustain clockwise torque."
+      }
+    }
+  },
+  {
+    "id": "eval-sci-phy-008",
+    "query": "Assertion (A): Stars twinkle at night while planets do not twinkle. Reason (R): Stars are point sources of light located at vast distances, so refractive index variations cause shifting apparent positions. Validate this assertion.",
+    "subject": "science",
+    "sub_discipline": "physics",
+    "chapter_id": "the-human-eye-and-the-colourful-world",
+    "chapter_name": "The Human Eye and the Colourful World",
+    "topic_tag": "atmospheric_refraction",
+    "category": "assertion_reasoning",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "COMPETITIVE_BRIDGE",
+      "target_exam": "JEE_MAIN",
+      "bm25_keywords": ["stars", "twinkle", "planets", "atmospheric", "refraction", "point", "source", "extended", "source"],
+      "okf_filters": {
+        "subject": "science",
+        "chapter_id": "the-human-eye-and-the-colourful-world",
+        "topic_tag": "atmospheric_refraction",
+        "content_block_type": "concept",
+        "source_type": "NCERT_EXEMPLAR"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Atmospheric optical phenomenon involving refractive index fluctuation requires dense conceptual textbook passage."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "NCERT_EXEMPLAR"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of point-sized star rays deviation through fluctuating atmospheric layers vs extended source planet averaging effect."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Looking at a tiny coin at the bottom of a wavy swimming pool makes it shimmer wildly; a large beach towel at the bottom stays visibly still.",
+      "mandatory_bold_keywords": [
+        "**atmospheric refraction**",
+        "**point-sized sources**",
+        "**extended sources**",
+        "**nullify the twinkling effect**",
+        "**continuous optical density change**"
+      ],
+      "step_mark_breakdown": [
+        "Explanation of atmospheric refraction causing star rays path fluctuation: [1 Mark]",
+        "Reasoning for planets as extended sources acting as a collection of point sources: [1 Mark]",
+        "Conclusion that Assertion (A) and Reason (R) are both true and (R) explains (A): [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "JEE",
+      "examiners_trap_keyword": "Believing stars actually vary their inherent light emission rather than the atmosphere bending their rays."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": false,
+      "video_metadata": null
+    }
+  },
+  {
+    "id": "eval-sci-bio-009",
+    "query": "How is the human heart designed to prevent the intermixing of oxygenated and deoxygenated blood, and why is double circulation necessary in mammals compared to amphibians?",
+    "subject": "science",
+    "sub_discipline": "biology",
+    "chapter_id": "life-processes",
+    "chapter_name": "Life Processes",
+    "topic_tag": "transportation_human_heart",
+    "category": "conceptual_explanation",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "BOARD_EXAM",
+      "target_exam": "CBSE_BOARD",
+      "bm25_keywords": ["heart", "oxygenated", "deoxygenated", "septum", "double", "circulation", "ventricles", "atria", "mammals"],
+      "okf_filters": {
+        "subject": "science",
+        "chapter_id": "life-processes",
+        "topic_tag": "transportation_human_heart",
+        "content_block_type": "concept",
+        "source_type": "NCERT_TEXTBOOK"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "High-level biological structural and physiological explanation benefits from 3-sentence NCERT prose for dense semantic retrieval."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "CBSE_SQP"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of 4-chambered heart anatomy, muscular septum partition, and pulmonary vs systemic circulation circuits."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "A dual-lane expressway separated by a concrete median so incoming clean delivery trucks never collide with departing exhaust trucks.",
+      "mandatory_bold_keywords": [
+        "**four-chambered heart**",
+        "**interventricular septum**",
+        "**double circulation**",
+        "**pulmonary circulation**",
+        "**systemic circulation**",
+        "**high energy requirements**"
+      ],
+      "step_mark_breakdown": [
+        "Structural role of thick muscular septum separating left and right sides: [1 Mark]",
+        "Route of double circulation through pulmonary and systemic loops: [1 Mark]",
+        "Energy rationale (maintaining constant warm-blooded body temperature): [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "NEET",
+      "examiners_trap_keyword": "Confusing left and right ventricle roles (thinking left receives deoxygenated blood)."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": true,
+      "video_metadata": {
+        "video_id": "7T3Z2b3t1Qw",
+        "start_sec": 15,
+        "end_sec": 85,
+        "concept_title": "Double Circulation in Human Heart",
+        "observation_cue": "Watch the sequential flow through right atrium to right ventricle to lungs, returning oxygenated to left atrium."
+      }
+    }
+  },
+  {
+    "id": "eval-sci-bio-010",
+    "query": "Trace the sequence of events when someone touches a hot object as described in Activity 7.1. Draw the reflex arc flow from receptor to effector and describe the role of neurotransmitters at the synapse in NEET neurology.",
+    "subject": "science",
+    "sub_discipline": "biology",
+    "chapter_id": "control-and-coordination",
+    "chapter_name": "Control and Coordination",
+    "topic_tag": "reflex_arc_nervous_system",
+    "category": "activity_observation",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "COMPETITIVE_BRIDGE",
+      "target_exam": "NEET_UG",
+      "bm25_keywords": ["reflex", "arc", "hot", "receptor", "sensory", "neuron", "relay", "motor", "effector", "synapse"],
+      "okf_filters": {
+        "subject": "science",
+        "chapter_id": "control-and-coordination",
+        "topic_tag": "reflex_arc_nervous_system",
+        "content_block_type": "activity",
+        "source_type": "NCERT_EXEMPLAR"
+      },
+      "hyde_expected": false,
+      "hyde_condition_rationale": "Exact NCERT Activity 7.1 reflex arc observation; HyDE suppressed to preserve physiological step precision."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "NCERT_EXEMPLAR"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of spinal cord relay pathway without initial brain delay and acetylcholine chemical transmission across synaptic cleft."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "An emergency circuit breaker right at the wall plug tripping instantly before power surges can reach the home's main computer.",
+      "mandatory_bold_keywords": [
+        "**reflex arc**",
+        "**sensory neuron**",
+        "**relay neuron in spinal cord**",
+        "**motor neuron**",
+        "**effector muscle**",
+        "**synapse**"
+      ],
+      "step_mark_breakdown": [
+        "Stimulus detection by thermoreceptors in skin: [1 Mark]",
+        "Transmission through sensory neuron to spinal cord relay: [1 Mark]",
+        "Immediate motor impulse triggering biceps muscle contraction: [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "NEET",
+      "examiners_trap_keyword": "Assuming reflex actions originate in the brain rather than the spinal cord."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": false,
+      "video_metadata": null
+    }
+  },
+  {
+    "id": "eval-sci-bio-011",
+    "query": "A pure tall pea plant with round seeds (TTRR) is crossed with a dwarf pea plant with wrinkled seeds (ttrr). Work out the F1 and F2 generations using a Punnett square. Explain Mendel's Law of Independent Assortment and its NEET genetics significance.",
+    "subject": "science",
+    "sub_discipline": "biology",
+    "chapter_id": "heredity-and-evolution",
+    "chapter_name": "Heredity and Evolution",
+    "topic_tag": "dihybrid_cross_inheritance",
+    "category": "hots_competitive_bridge",
+    "difficulty": "hard",
+    "expected_routing": {
+      "intent_mode": "COMPETITIVE_BRIDGE",
+      "target_exam": "NEET_UG",
+      "bm25_keywords": ["mendel", "dihybrid", "cross", "punnett", "square", "independent", "assortment", "round", "yellow", "tall", "wrinkled"],
+      "okf_filters": {
+        "subject": "science",
+        "chapter_id": "heredity-and-evolution",
+        "topic_tag": "dihybrid_cross_inheritance",
+        "content_block_type": "concept",
+        "source_type": "NCERT_EXEMPLAR"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Genetic law formulation and combinatorial gamete calculation requires dense NCERT genetic inheritance principles."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "NCERT_EXEMPLAR"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of 9:3:3:1 phenotypic ratio in F2 generation and definition of independent assortment of gene pairs during meiosis."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Flipping two independent coins simultaneously: whether the quarter lands heads has zero influence on whether the nickel lands tails.",
+      "mandatory_bold_keywords": [
+        "**dihybrid cross**",
+        "**Law of Independent Assortment**",
+        "**phenotypic ratio 9:3:3:1**",
+        "**recombinant phenotypes**",
+        "**segregate independently**"
+      ],
+      "step_mark_breakdown": [
+        "F1 generation genotype (TtRr) and phenotype (all Tall Round): [1 Mark]",
+        "Punnett square with 16 combinations for F2 generation: [2 Marks]",
+        "Phenotypic ratio: 9 Tall Round : 3 Tall Wrinkled : 3 Dwarf Round : 1 Dwarf Wrinkled: [1 Mark]",
+        "Statement of Law of Independent Assortment: [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "NEET",
+      "examiners_trap_keyword": "Confusing the genotypic ratio with the 9:3:3:1 phenotypic ratio."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": true,
+      "video_metadata": {
+        "video_id": "2M1L9K8J7H6",
+        "start_sec": 30,
+        "end_sec": 115,
+        "concept_title": "Mendelian Dihybrid Cross & 9:3:3:1 Ratio",
+        "observation_cue": "Observe how the novel recombinant traits (round-green and wrinkled-yellow) emerge alongside parental combinations."
+      }
+    }
+  },
+  {
+    "id": "eval-math-alg-012",
+    "query": "Solve NCERT Mathematics Chapter 4 Exercise 4.2 Question 1 (iii): Find the roots of the quadratic equation sqrt(2)*x^2 + 7*x + 5*sqrt(2) = 0 by factorisation.",
+    "subject": "mathematics",
+    "sub_discipline": "mathematics",
+    "chapter_id": "quadratic-equations",
+    "chapter_name": "Quadratic Equations",
+    "topic_tag": "solution_by_factorisation",
+    "category": "direct_exercise",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "BOARD_EXAM",
+      "target_exam": "CBSE_BOARD",
+      "bm25_keywords": ["quadratic", "equation", "exercise", "4.2", "question", "roots", "factorisation", "sqrt2", "splitting"],
+      "okf_filters": {
+        "subject": "mathematics",
+        "chapter_id": "quadratic-equations",
+        "topic_tag": "solution_by_factorisation",
+        "content_block_type": "exercise",
+        "source_type": "NCERT_TEXTBOOK"
+      },
+      "hyde_expected": false,
+      "hyde_condition_rationale": "Direct NCERT textbook back-exercise lookup; HyDE omitted to ensure exact coefficients (sqrt(2), 7, 5*sqrt(2)) are matched rather than generic polynomials."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "CBSE_SQP"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of splitting the middle term procedure where product a*c = sqrt(2)*5*sqrt(2) = 10, sum = 7 (factors 5 and 2)."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Finding two puzzle pieces whose values multiply to the outer product 10 and add to the middle sum 7.",
+      "mandatory_bold_keywords": [
+        "**splitting the middle term**",
+        "**common factor**",
+        "**roots of the equation**"
+      ],
+      "step_mark_breakdown": [
+        "Splitting middle term 7x as 2x + 5x: [1 Mark]",
+        "Factoring into (sqrt(2)x + 5)(x + sqrt(2)) = 0: [1 Mark]",
+        "Final roots x = -5/sqrt(2) and x = -sqrt(2): [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "JEE",
+      "examiners_trap_keyword": "Failing to see that 2 can be factored as sqrt(2) * sqrt(2) when grouping common terms."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": false,
+      "video_metadata": null
+    }
+  },
+  {
+    "id": "eval-math-geo-013",
+    "query": "Prove that if a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio (Basic Proportionality Theorem). How is this applied in JEE to Ceva's and Menelaus' theorems?",
+    "subject": "mathematics",
+    "sub_discipline": "mathematics",
+    "chapter_id": "triangles",
+    "chapter_name": "Triangles",
+    "topic_tag": "basic_proportionality_theorem",
+    "category": "derivation",
+    "difficulty": "hard",
+    "expected_routing": {
+      "intent_mode": "COMPETITIVE_BRIDGE",
+      "target_exam": "JEE_MAIN",
+      "bm25_keywords": ["basic", "proportionality", "theorem", "thales", "triangles", "parallel", "ratio", "ceva", "menelaus"],
+      "okf_filters": {
+        "subject": "mathematics",
+        "chapter_id": "triangles",
+        "topic_tag": "basic_proportionality_theorem",
+        "content_block_type": "theorem",
+        "source_type": "NCERT_EXEMPLAR"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Conceptual proof derivation coupled with higher-order geometry theorem bridge requires dense NCERT-style axiomatic context."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "NCERT_EXEMPLAR"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of NCERT Theorem 6.1 statement and area ratio proof + Exemplar geometry extensions."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Projecting shadows across diverging rails: sliding a horizontal bar up or down scales both sides in exact tandem.",
+      "mandatory_bold_keywords": [
+        "**Basic Proportionality Theorem**",
+        "**construction**",
+        "**ratio of areas**",
+        "**same base and between same parallels**"
+      ],
+      "step_mark_breakdown": [
+        "Given, To Prove, and Construction (drawing DM perpendicular to AC and EN to AB): [1 Mark]",
+        "Area equations ar(ADE)/ar(BDE) and ar(ADE)/ar(DEC): [2 Marks]",
+        "Equating areas using common base DE between parallel lines DE || BC to conclude AD/DB = AE/EC: [2 Marks]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "JEE",
+      "examiners_trap_keyword": "Assuming ar(BDE) = ar(DEC) without citing that triangles on the same base between the same parallels have equal area."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": true,
+      "video_metadata": {
+        "video_id": "5Y4M1K9o2Xm",
+        "start_sec": 60,
+        "end_sec": 180,
+        "concept_title": "Visual Geometric Proof of Thales Theorem",
+        "observation_cue": "Observe how shearing the vertex of triangle BDE along the parallel line preserves altitude and area."
+      }
+    }
+  },
+  {
+    "id": "eval-math-ari-014",
+    "query": "In an Arithmetic Progression, if the sum of the first n terms is given by S_n = 3n^2 + 5n, find the first term, the common difference, and the 20th term of this AP.",
+    "subject": "mathematics",
+    "sub_discipline": "mathematics",
+    "chapter_id": "arithmetic-progressions",
+    "chapter_name": "Arithmetic Progressions",
+    "topic_tag": "sum_of_first_n_terms_of_an_ap",
+    "category": "numerical_calculation",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "BOARD_EXAM",
+      "target_exam": "CBSE_BOARD",
+      "bm25_keywords": ["arithmetic", "progression", "sum", "terms", "common", "difference", "sn", "an", "20th"],
+      "okf_filters": {
+        "subject": "mathematics",
+        "chapter_id": "arithmetic-progressions",
+        "topic_tag": "sum_of_first_n_terms_of_an_ap",
+        "content_block_type": "exercise",
+        "source_type": "NCERT_TEXTBOOK"
+      },
+      "hyde_expected": false,
+      "hyde_condition_rationale": "Pure algebraic numerical calculation using S_n formula; HyDE omitted to avoid hallucinating incorrect numeric terms."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "CBSE_SQP"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of relation a_n = S_n - S_{n-1} and substitution for n=1 and n=2."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "A cumulative savings jar: you know the total savings after day n, so today's deposit is the new total minus yesterday's total.",
+      "mandatory_bold_keywords": [
+        "**sum of n terms**",
+        "**nth term**",
+        "**first term**",
+        "**common difference**"
+      ],
+      "step_mark_breakdown": [
+        "Finding first term a_1 = S_1 = 3(1)^2 + 5(1) = 8: [1 Mark]",
+        "Finding S_2 = 3(4) + 10 = 22, hence a_2 = S_2 - S_1 = 14, common difference d = 6: [1 Mark]",
+        "Calculating a_20 = a + 19d = 8 + 19(6) = 122: [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "JEE",
+      "examiners_trap_keyword": "Assuming S_1 = d rather than recognizing S_1 = a_1."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": false,
+      "video_metadata": null
+    }
+  },
+  {
+    "id": "eval-soc-hist-015",
+    "query": "Examine the significance of the Non-Cooperation Movement of 1920-1922 in India. Why did Mahatma Gandhi decide to withdraw the movement after the Chauri Chaura incident, and how is this analyzed in UPSC Modern History?",
+    "subject": "social-science",
+    "sub_discipline": "history",
+    "chapter_id": "nationalism-in-india",
+    "chapter_name": "Nationalism in India",
+    "topic_tag": "non_cooperation_movement",
+    "category": "conceptual_explanation",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "COMPETITIVE_BRIDGE",
+      "target_exam": "UPSC_CSE",
+      "bm25_keywords": ["non", "cooperation", "movement", "gandhi", "chauri", "chaura", "satyagraha", "ahimsa", "withdrawal", "1922"],
+      "okf_filters": {
+        "subject": "social-science",
+        "chapter_id": "nationalism-in-india",
+        "topic_tag": "non_cooperation_movement",
+        "content_block_type": "concept",
+        "source_type": "NCERT_TEXTBOOK"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Broad historical analytical inquiry connecting causes, events, and modern civil service historiography."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "NCERT_EXEMPLAR"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of 1920 Nagpur session resolution, boycott dimensions, Chauri Chaura violence in Feb 1922, and Gandhian philosophy of Ahimsa."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Refusing to oil the gears of an oppressive machine: when millions simply refuse to cooperate, the machine grinds to an absolute halt.",
+      "mandatory_bold_keywords": [
+        "**Non-Cooperation Movement**",
+        "**boycott of foreign cloth**",
+        "**surrender of titles**",
+        "**Chauri Chaura**",
+        "**Ahimsa**",
+        "**mass movement**"
+      ],
+      "step_mark_breakdown": [
+        "Methods of non-cooperation (titles, council elections, schools, foreign goods boycott): [2 Marks]",
+        "Chauri Chaura incident (February 1922) and burning of police station: [1 Mark]",
+        "Gandhian moral logic: masses needed thorough training in non-violent discipline before nationwide battle: [2 Marks]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "UPSC",
+      "examiners_trap_keyword": "Attributing the withdrawal to British military suppression rather than Gandhi's ideological commitment against mass mob violence."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": true,
+      "video_metadata": {
+        "video_id": "1N9C2D4e5Fg",
+        "start_sec": 30,
+        "end_sec": 110,
+        "concept_title": "Nationalism in India: From Satyagraha to Non-Cooperation",
+        "observation_cue": "Examine the archival map displaying the spread of the boycott across coastal import hubs."
+      }
+    }
+  },
+  {
+    "id": "eval-soc-hist-016",
+    "query": "Describe Frederic Sorrieu's utopian vision of the world as depicted in his first print of 1848 titled 'The Dream of Worldwide Democratic and Social Republics'. What symbols did he use?",
+    "subject": "social-science",
+    "sub_discipline": "history",
+    "chapter_id": "the-rise-of-nationalism-in-europe",
+    "chapter_name": "The Rise of Nationalism in Europe",
+    "topic_tag": "frederic_sorrieu_utopian_visi",
+    "category": "conceptual_explanation",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "BOARD_EXAM",
+      "target_exam": "CBSE_BOARD",
+      "bm25_keywords": ["frederic", "sorrieu", "utopian", "vision", "print", "1848", "statue", "liberty", "nationalism", "europe"],
+      "okf_filters": {
+        "subject": "social-science",
+        "chapter_id": "the-rise-of-nationalism-in-europe",
+        "topic_tag": "frederic_sorrieu_utopian_visi",
+        "content_block_type": "concept",
+        "source_type": "NCERT_TEXTBOOK"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Descriptive art and political historiography query benefits from 3-sentence NCERT prose for dense semantic matching."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "CBSE_SQP"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of Statue of Liberty with Torch of Enlightenment, Charter of Rights, shattered absolutist symbols, and peoples marching as distinct nations."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Painting a vision of a grand world parade where every family carries their own flag proudly, yet all walk in peace toward liberty.",
+      "mandatory_bold_keywords": [
+        "**Frederic Sorrieu**",
+        "**utopian vision**",
+        "**Statue of Liberty**",
+        "**Torch of Enlightenment**",
+        "**Charter of the Rights of Man**",
+        "**shattered symbols of absolutist institutions**"
+      ],
+      "step_mark_breakdown": [
+        "Identification of peoples marching past Statue of Liberty in distinct costumes and flags: [1.5 Marks]",
+        "Symbolism of Torch of Enlightenment and Charter of Rights: [1.5 Marks]",
+        "Shattered remains of monarchy crowns and absolutist symbols in the foreground: [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "UPSC",
+      "examiners_trap_keyword": "Claiming Sorrieu's print documented an actual historical summit rather than an idealized utopian allegorical vision."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": false,
+      "video_metadata": null
+    }
+  },
+  {
+    "id": "eval-soc-hist-017",
+    "query": "Assertion (A): European conquest of America in the 16th century was not just a result of superior military firepower. Reason (R): Smallpox germs carried by Spanish conquerors decimated native American communities who had no immunity against Eurasian diseases. Validate this assertion-reasoning pair.",
+    "subject": "social-science",
+    "sub_discipline": "history",
+    "chapter_id": "the-making-of-a-global-world",
+    "chapter_name": "The Making of a Global World",
+    "topic_tag": "conquest_disease_and_trade",
+    "category": "assertion_reasoning",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "COMPETITIVE_BRIDGE",
+      "target_exam": "UPSC_CSE",
+      "bm25_keywords": ["assertion", "reason", "conquest", "america", "smallpox", "spanish", "immunity", "biological", "warfare"],
+      "okf_filters": {
+        "subject": "social-science",
+        "chapter_id": "the-making-of-a-global-world",
+        "topic_tag": "conquest_disease_and_trade",
+        "content_block_type": "concept",
+        "source_type": "NCERT_EXEMPLAR"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Assertion-reasoning on historical epidemiology and global economic trade circuits requires dense factual context."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "NCERT_EXEMPLAR"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of biological isolation of Americas for millions of years, Spanish conquistador smallpox transmission, and complete breakdown of indigenous resistance."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "An invisible Trojan horse: conquerors won not through the sharp steel of swords, but through microscopic invaders to which locals had zero antibodies.",
+      "mandatory_bold_keywords": [
+        "**biological weapon**",
+        "**smallpox germs**",
+        "**lack of immunity**",
+        "**Spanish conquerors**",
+        "**paved the way for conquest**"
+      ],
+      "step_mark_breakdown": [
+        "Verification of Assertion (A) as TRUE (firearms alone were insufficient): [1 Mark]",
+        "Verification of Reason (R) as TRUE (smallpox was the deadliest weapon): [1 Mark]",
+        "Concluding (R) is the correct explanation of (A): [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "UPSC",
+      "examiners_trap_keyword": "Believing smallpox was deliberately genetically engineered rather than an incidental consequence of pre-modern global contact."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": false,
+      "video_metadata": null
+    }
+  },
+  {
+    "id": "eval-soc-civ-018",
+    "query": "Compare the power sharing arrangements of Belgium and Sri Lanka. Why did Belgium succeed in maintaining national unity while Sri Lanka descended into civil war?",
+    "subject": "social-science",
+    "sub_discipline": "civics",
+    "chapter_id": "power-sharing",
+    "chapter_name": "Power Sharing",
+    "topic_tag": "belgium_and_sri_lanka",
+    "category": "conceptual_explanation",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "BOARD_EXAM",
+      "target_exam": "CBSE_BOARD",
+      "bm25_keywords": ["belgium", "sri", "lanka", "power", "sharing", "majoritarianism", "accommodation", "sinhala", "tamil", "brussels"],
+      "okf_filters": {
+        "subject": "social-science",
+        "chapter_id": "power-sharing",
+        "topic_tag": "belgium_and_sri_lanka",
+        "content_block_type": "concept",
+        "source_type": "NCERT_TEXTBOOK"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Comparative conceptual political analysis requiring NCERT factual context on ethnic accommodation vs majoritarianism."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "CBSE_SQP"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of 1956 Sinhala Act provisions and the four constitutional amendments of the Belgian accommodation model (1970-1993)."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Two roommates sharing a kitchen: agreeing on mutual cooking shifts keeps peace (Belgium), while one locking the fridge sparks conflict (Sri Lanka).",
+      "mandatory_bold_keywords": [
+        "**Majoritarianism**",
+        "**Belgian Model of Accommodation**",
+        "**equal representation**",
+        "**community government**",
+        "**alienation of Sri Lankan Tamils**"
+      ],
+      "step_mark_breakdown": [
+        "Sri Lankan majoritarian measures (1956 Act making Sinhala sole official language, university preference): [2 Marks]",
+        "Belgian accommodation (equal Dutch-French ministers, power to state governments, Brussels equal council): [2 Marks]",
+        "Consequence comparison: Civil strife vs European Union headquarters selection: [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "UPSC",
+      "examiners_trap_keyword": "Confusing the geographic concentrations: assuming Tamils were majority in capital Colombo or Dutch were minority nationwide."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": false,
+      "video_metadata": null
+    }
+  },
+  {
+    "id": "eval-soc-civ-019",
+    "query": "What makes India a federal country? Explain the distribution of legislative powers between the Union and the States under the Union List, State List, and Concurrent List. Connect this to UPSC Indian Polity Constitutional Articles.",
+    "subject": "social-science",
+    "sub_discipline": "civics",
+    "chapter_id": "federalism",
+    "chapter_name": "Federalism",
+    "topic_tag": "what_makes_india_a_federal_co",
+    "category": "conceptual_explanation",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "COMPETITIVE_BRIDGE",
+      "target_exam": "UPSC_CSE",
+      "bm25_keywords": ["federalism", "union", "list", "state", "concurrent", "residuary", "powers", "constitution", "article", "seventh", "schedule"],
+      "okf_filters": {
+        "subject": "social-science",
+        "chapter_id": "federalism",
+        "topic_tag": "what_makes_india_a_federal_co",
+        "content_block_type": "concept",
+        "source_type": "NCERT_EXEMPLAR"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Constitutional analysis connecting Class 10 civics three-fold division to Seventh Schedule and civil services polity requirements."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "NCERT_EXEMPLAR"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of Union List subjects (defense, foreign affairs), State List (police, agriculture), Concurrent List (education, forests), and residuary powers with Centre."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "A joint family running a household: big family investments decided by the head, bedroom decor by individual members, and kitchen groceries jointly agreed upon.",
+      "mandatory_bold_keywords": [
+        "**three-fold distribution**",
+        "**Union List**",
+        "**State List**",
+        "**Concurrent List**",
+        "**residuary powers**",
+        "**holding together federation**"
+      ],
+      "step_mark_breakdown": [
+        "Union List subjects of national importance (Parliament has exclusive power): [1.5 Marks]",
+        "State List subjects of local importance (State legislatures have power): [1.5 Marks]",
+        "Concurrent List subjects of common interest with Union law prevailing in conflict: [1 Mark]",
+        "Residuary subjects (e.g., cyber law) vested in Union Government: [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "UPSC",
+      "examiners_trap_keyword": "Assuming in case of a conflict on the Concurrent List that the state law automatically overrides the central law."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": true,
+      "video_metadata": {
+        "video_id": "6B5C4D3E2F1",
+        "start_sec": 40,
+        "end_sec": 130,
+        "concept_title": "Three-Fold Legislative Distribution in Indian Federalism",
+        "observation_cue": "Watch the interactive diagram categorizing defense, policing, and computer software into respective constitutional lists."
+      }
+    }
+  },
+  {
+    "id": "eval-soc-civ-020",
+    "query": "Assertion (A): The Constitution of India declares India to be a secular state. Reason (R): The Indian Constitution gives full religious freedom to all citizens and prohibits discrimination on grounds of religion under Articles 15 and 25-28. Validate this assertion.",
+    "subject": "social-science",
+    "sub_discipline": "civics",
+    "chapter_id": "gender-religion-and-caste",
+    "chapter_name": "Gender, Religion and Caste",
+    "topic_tag": "secular_state",
+    "category": "assertion_reasoning",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "COMPETITIVE_BRIDGE",
+      "target_exam": "UPSC_CSE",
+      "bm25_keywords": ["assertion", "reason", "secular", "state", "constitution", "article", "discrimination", "religious", "freedom"],
+      "okf_filters": {
+        "subject": "social-science",
+        "chapter_id": "gender-religion-and-caste",
+        "topic_tag": "secular_state",
+        "content_block_type": "concept",
+        "source_type": "NCERT_EXEMPLAR"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Constitutional analysis of secularism and fundamental rights requires dense NCERT and exemplar context."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "NCERT_EXEMPLAR"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of no official religion for Indian state, freedom to profess and propagate under Art 25, and prohibition of discrimination."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "A referee in a multi-sport stadium who treats every team with equal fairness without wearing any team's jersey.",
+      "mandatory_bold_keywords": [
+        "**secular state**",
+        "**no official religion**",
+        "**freedom to profess and practice**",
+        "**prohibition of discrimination**",
+        "**Articles 15 and 25**"
+      ],
+      "step_mark_breakdown": [
+        "Verification of Assertion (A) as TRUE (no state religion like Buddhism in Sri Lanka or Islam in Pakistan): [1 Mark]",
+        "Verification of Reason (R) as TRUE (constitutional provisions ensuring equality): [1 Mark]",
+        "Concluding (R) is the direct explanation of (A): [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "UPSC",
+      "examiners_trap_keyword": "Believing Indian secularism means total hostility toward religion (strict separation) rather than principled equal respect for all faiths."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": false,
+      "video_metadata": null
+    }
+  },
+  {
+    "id": "eval-soc-geo-021",
+    "query": "Distinguish between gully erosion and sheet erosion. Suggest four effective soil conservation measures practiced in hilly and dry terrains in India.",
+    "subject": "social-science",
+    "sub_discipline": "geography",
+    "chapter_id": "resources-and-development",
+    "chapter_name": "Resources and Development",
+    "topic_tag": "soil_erosion_and_soil_conserv",
+    "category": "conceptual_explanation",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "BOARD_EXAM",
+      "target_exam": "CBSE_BOARD",
+      "bm25_keywords": ["gully", "erosion", "sheet", "soil", "conservation", "contour", "ploughing", "terrace", "farming", "strip", "cropping"],
+      "okf_filters": {
+        "subject": "social-science",
+        "chapter_id": "resources-and-development",
+        "topic_tag": "soil_erosion_and_soil_conserv",
+        "content_block_type": "concept",
+        "source_type": "NCERT_TEXTBOOK"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Comparative geomorphological and agronomic soil conservation query benefits from 3-sentence NCERT prose for dense retrieval."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "CBSE_SQP"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of running water carving deep ravines (gullies) vs topsoil washed over large plains (sheet) and terrace farming."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Rain on dry sand: a concentrated hose carves deep ravines (gully), while a gentle flood sweeps away the entire smooth top layer (sheet).",
+      "mandatory_bold_keywords": [
+        "**gully erosion**",
+        "**bad land or ravines**",
+        "**sheet erosion**",
+        "**contour ploughing**",
+        "**terrace farming**",
+        "**shelter belts**"
+      ],
+      "step_mark_breakdown": [
+        "Distinction between gully erosion (deep channels) and sheet erosion (broad uniform wash): [2 Marks]",
+        "Contour ploughing and terrace farming in hilly areas: [1.5 Marks]",
+        "Strip cropping and planting shelter belts in arid regions: [1.5 Marks]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "DSC",
+      "examiners_trap_keyword": "Confusing contour ploughing (cutting steps) with shelter belts (planting rows of trees to break wind force)."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": true,
+      "video_metadata": {
+        "video_id": "4D3C2B1A9Z8",
+        "start_sec": 35,
+        "end_sec": 110,
+        "concept_title": "Soil Erosion Mechanisms: Gully vs Sheet Erosion",
+        "observation_cue": "Observe how water streams carve jagged Chambal ravines compared to flat sheet run-off over topsoil."
+      }
+    }
+  },
+  {
+    "id": "eval-soc-geo-022",
+    "query": "Solve NCERT Geography Chapter 4 Exercise Question: State the geographical conditions required for the growth of rice in India. Name the major rice-producing states.",
+    "subject": "social-science",
+    "sub_discipline": "geography",
+    "chapter_id": "agriculture",
+    "chapter_name": "Agriculture",
+    "topic_tag": "major_crops_rice",
+    "category": "direct_exercise",
+    "difficulty": "easy",
+    "expected_routing": {
+      "intent_mode": "BOARD_EXAM",
+      "target_exam": "CBSE_BOARD",
+      "bm25_keywords": ["rice", "kharif", "crop", "temperature", "rainfall", "alluvial", "soil", "west", "bengal", "punjab"],
+      "okf_filters": {
+        "subject": "social-science",
+        "chapter_id": "agriculture",
+        "topic_tag": "major_crops_rice",
+        "content_block_type": "exercise",
+        "source_type": "NCERT_TEXTBOOK"
+      },
+      "hyde_expected": false,
+      "hyde_condition_rationale": "Direct NCERT textbook back-exercise lookup for crop conditions (temperature, rainfall, soil); HyDE suppressed for exact factual match."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "CBSE_SQP"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of high temperature above 25°C, annual rainfall above 100 cm, high humidity, and top producing states (West Bengal, UP, Punjab)."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Rice is a thirsty tropical swimmer: its feet must stay submerged in warm puddle water under a blazing summer sun.",
+      "mandatory_bold_keywords": [
+        "**Kharif crop**",
+        "**temperature above 25°C**",
+        "**annual rainfall above 100 cm**",
+        "**canal irrigation and tubewells**",
+        "**West Bengal, Uttar Pradesh, Punjab**"
+      ],
+      "step_mark_breakdown": [
+        "Climatic requirements (Kharif, >25°C temperature, >100 cm rainfall): [2 Marks]",
+        "Irrigation role in low rainfall regions (Punjab, Haryana, western UP): [1 Mark]",
+        "Major producing states enumeration: [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "DSC",
+      "examiners_trap_keyword": "Listing rice as a Rabi crop or citing winter temperature requirements."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": false,
+      "video_metadata": null
+    }
+  },
+  {
+    "id": "eval-soc-geo-023",
+    "query": "Differentiate between conventional and non-conventional sources of energy with examples. Why is solar energy considered the energy of the future in India?",
+    "subject": "social-science",
+    "sub_discipline": "geography",
+    "chapter_id": "minerals-and-energy-resources",
+    "chapter_name": "Minerals and Energy Resources",
+    "topic_tag": "non_conventional_sources_of_e",
+    "category": "conceptual_explanation",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "BOARD_EXAM",
+      "target_exam": "CBSE_BOARD",
+      "bm25_keywords": ["energy", "conventional", "non-conventional", "solar", "photovoltaic", "coal", "petroleum", "renewable"],
+      "okf_filters": {
+        "subject": "social-science",
+        "chapter_id": "minerals-and-energy-resources",
+        "topic_tag": "non_conventional_sources_of_e",
+        "content_block_type": "concept",
+        "source_type": "NCERT_TEXTBOOK"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Comparative energy resources overview requiring NCERT factual context on depleting fossil fuels vs renewable solar potential."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "CBSE_SQP"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of exhaustible/polluting nature of coal vs inexhaustible clean solar/wind and tropical latitude solar insolation in India."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Spending from a fixed bank savings deposit that never refills (coal) versus harvesting endless rain in your roof barrels (solar).",
+      "mandatory_bold_keywords": [
+        "**conventional sources**",
+        "**non-conventional sources**",
+        "**renewable**",
+        "**photovoltaic technology**",
+        "**tropical country**",
+        "**rural electrification**"
+      ],
+      "step_mark_breakdown": [
+        "Contrast in renewability, environmental footprint, and capital cost: [2 Marks]",
+        "India's tropical advantage with huge solar insolation: [1.5 Marks]",
+        "Socio-economic benefit reducing reliance on firewood and cow dung in villages: [1.5 Marks]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "UPSC",
+      "examiners_trap_keyword": "Classifying hydroelectricity as non-conventional simply because it is renewable (hydro is conventional in NCERT classification)."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": false,
+      "video_metadata": null
+    }
+  },
+  {
+    "id": "eval-soc-econ-024",
+    "query": "Why is modern currency accepted as a medium of exchange without any use of its own? Explain the role of the Reserve Bank of India (RBI) in supervising formal sources of loans.",
+    "subject": "social-science",
+    "sub_discipline": "economics",
+    "chapter_id": "money-and-credit",
+    "chapter_name": "Money and Credit",
+    "topic_tag": "money_as_medium_of_exchange",
+    "category": "conceptual_explanation",
+    "difficulty": "easy",
+    "expected_routing": {
+      "intent_mode": "BOARD_EXAM",
+      "target_exam": "CBSE_BOARD",
+      "bm25_keywords": ["currency", "medium", "exchange", "rbi", "reserve", "bank", "formal", "loans", "supervision", "collateral"],
+      "okf_filters": {
+        "subject": "social-science",
+        "chapter_id": "money-and-credit",
+        "topic_tag": "money_as_medium_of_exchange",
+        "content_block_type": "concept",
+        "source_type": "NCERT_TEXTBOOK"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Institutional economic explanation of sovereign legal tender and central bank oversight."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "CBSE_SQP"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of legal tender authorization by Government of India and RBI inspection of Cash Reserve Ratio (CRR) and priority lending."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "A government-certified token chip in an arcade: worthless plastic outside, but universally honored inside because the management guarantees it.",
+      "mandatory_bold_keywords": [
+        "**medium of exchange**",
+        "**authorized by the government**",
+        "**Reserve Bank of India**",
+        "**cash reserve ratio**",
+        "**priority sector lending**"
+      ],
+      "step_mark_breakdown": [
+        "Explanation of legal tender status under Indian law: [2 Marks]",
+        "RBI role monitoring minimum cash balances (liquidity): [1.5 Marks]",
+        "RBI ensuring loans are given to small cultivators and borrowers, not just profit businesses: [1.5 Marks]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "DSC",
+      "examiners_trap_keyword": "Believing modern paper notes are backed by equal physical gold deposits in the vault rather than sovereign fiat guarantee."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": false,
+      "video_metadata": null
+    }
+  },
+  {
+    "id": "eval-soc-econ-025",
+    "query": "Analyze the phenomenon of disguised unemployment in the agricultural sector of India. How does the Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA 2005) address this issue for State DSC and civil service economics?",
+    "subject": "social-science",
+    "sub_discipline": "economics",
+    "chapter_id": "sectors-of-the-indian-economy",
+    "chapter_name": "Sectors of the Indian Economy",
+    "topic_tag": "division_of_sectors_as_organi",
+    "category": "hots_competitive_bridge",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "COMPETITIVE_BRIDGE",
+      "target_exam": "DSC_STATE",
+      "bm25_keywords": ["disguised", "unemployment", "underemployment", "mgnrega", "2005", "agriculture", "rural", "employment", "guarantee"],
+      "okf_filters": {
+        "subject": "social-science",
+        "chapter_id": "sectors-of-the-indian-economy",
+        "topic_tag": "division_of_sectors_as_organi",
+        "content_block_type": "concept",
+        "source_type": "NCERT_EXEMPLAR"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Macroeconomic labor market analysis and social welfare policy intervention requires dense factual context."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "NCERT_EXEMPLAR"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of marginal productivity equal to zero in family farm plots and statutory 100 days guaranteed wage labor under MGNREGA."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Five people pushing a stalled shopping cart that needs only two: all appear busy, but the extra three add zero extra speed.",
+      "mandatory_bold_keywords": [
+        "**disguised unemployment**",
+        "**underemployment**",
+        "**marginal productivity is zero**",
+        "**MGNREGA 2005**",
+        "**100 days of guaranteed wage employment**"
+      ],
+      "step_mark_breakdown": [
+        "Definition of disguised unemployment with agricultural field example: [2 Marks]",
+        "Structural impact of moving surplus labor without reducing total farm output: [1.5 Marks]",
+        "Key provisions of MGNREGA (Right to Work, unemployment allowance): [1.5 Marks]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "DSC",
+      "examiners_trap_keyword": "Confusing disguised unemployment (working below capacity) with open unemployment (having zero job)."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": true,
+      "video_metadata": {
+        "video_id": "3A2B1C9D8E7",
+        "start_sec": 25,
+        "end_sec": 100,
+        "concept_title": "Understanding Disguised Unemployment in Agriculture",
+        "observation_cue": "Observe how Laxmi's two-hectare plot output remains identical before and after two family members take mill work."
+      }
+    }
+  },
+  {
+    "id": "eval-soc-econ-026",
+    "query": "Assertion (A): Globalization and greater competition among producers has been of uniform advantage to all sections of Indian society. Reason (R): While well-off consumers and large MNCs benefited, small producers and workers faced stiff competition and job insecurity. Validate this assertion.",
+    "subject": "social-science",
+    "sub_discipline": "economics",
+    "chapter_id": "globalisation-and-the-indian-economy",
+    "chapter_name": "Globalisation and the Indian Economy",
+    "topic_tag": "impact_of_globalisation_in_in",
+    "category": "assertion_reasoning",
+    "difficulty": "medium",
+    "expected_routing": {
+      "intent_mode": "COMPETITIVE_BRIDGE",
+      "target_exam": "DSC_STATE",
+      "bm25_keywords": ["assertion", "reason", "globalization", "competition", "small", "producers", "mnc", "unemployment", "insecurity"],
+      "okf_filters": {
+        "subject": "social-science",
+        "chapter_id": "globalisation-and-the-indian-economy",
+        "topic_tag": "impact_of_globalisation_in_in",
+        "content_block_type": "concept",
+        "source_type": "NCERT_EXEMPLAR"
+      },
+      "hyde_expected": true,
+      "hyde_condition_rationale": "Socio-economic evaluation of globalization distribution requires dense NCERT economic trade analysis."
+    },
+    "expected_grading": {
+      "required_sources": ["NCERT_TEXTBOOK", "NCERT_EXEMPLAR"],
+      "verdict": "PASS",
+      "sufficiency_check": "Presence of unequal impact: urban affluent consumers gained lower prices and quality, while small battery/toy manufacturers shut down."
+    },
+    "expected_synthesis": {
+      "required_layers": ["coreIntuition", "boardAnswer", "competitiveBridge", "examinersTrap"],
+      "core_intuition_cue": "Opening an ocean sluice gate: huge cargo ships sail smoothly through, but tiny fishing rowboats get capsized by the violent wake.",
+      "mandatory_bold_keywords": [
+        "**impact of globalisation has not been uniform**",
+        "**small producers hit hard**",
+        "**flexible employment**",
+        "**unfair trade barriers**",
+        "**fair globalisation**"
+      ],
+      "step_mark_breakdown": [
+        "Verification of Assertion (A) as FALSE (impact was distinctly non-uniform): [1 Mark]",
+        "Verification of Reason (R) as TRUE (consumers and MNCs won, small producers struggled): [1 Mark]",
+        "Concluding (A) is false but (R) is true: [1 Mark]"
+      ],
+      "requires_si_units": false,
+      "competitive_target": "DSC",
+      "examiners_trap_keyword": "Assuming Assertion (A) is true because international brands and foreign investments grew nationally."
+    },
+    "expected_video_grounding": {
+      "has_verified_video": false,
+      "video_metadata": null
+    }
+  }
+]

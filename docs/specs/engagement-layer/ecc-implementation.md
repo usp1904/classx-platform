@@ -1,4 +1,4 @@
-# ECC Implementation Approach — BYJU's clone on ClassX
+# ECC Implementation Approach — Interactive Engagement Layer on ClassX
 
 ECC (C:\Users\Admin\src\ECC): 71 agents, 311 skills. Referenced skills below for top-class feature implementation.
 

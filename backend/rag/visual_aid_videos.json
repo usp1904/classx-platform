@@ -1,0 +1,134 @@
+[
+  {
+    "topic_tag": "chemical_reactions_and_equatio",
+    "subject": "science",
+    "chapter_id": "chemical-reactions-and-equations",
+    "video_metadata": {
+      "video_id": "8U8F4R4o1Lw",
+      "start_sec": 42,
+      "end_sec": 105,
+      "concept_title": "Activity 1.1: Reaction of Calcium Oxide with Water",
+      "observation_cue": "Observe vigorous hissing and steam indicating intense exothermic release as solid lumps dissolve."
+    }
+  },
+  {
+    "topic_tag": "chemical_properties_of_carbon_",
+    "subject": "science",
+    "chapter_id": "carbon-and-its-compounds",
+    "video_metadata": {
+      "video_id": "4G3F2K1L9Vk",
+      "start_sec": 30,
+      "end_sec": 120,
+      "concept_title": "Esterification: Synthesis of Ethyl Ethanoate",
+      "observation_cue": "Notice the distinct sweet fruity odor emitted when the water bath warms the ethanol-ethanoic acid mixture."
+    }
+  },
+  {
+    "topic_tag": "ohms_law_resistance",
+    "subject": "science",
+    "chapter_id": "electricity",
+    "video_metadata": {
+      "video_id": "3Z2b3t1QwaA",
+      "start_sec": 45,
+      "end_sec": 135,
+      "concept_title": "Ohm's Law Verification & V-I Graph",
+      "observation_cue": "Watch how the straight-line plot through origin bends when the rheostat current heats the nichrome wire."
+    }
+  },
+  {
+    "topic_tag": "flemings_left_hand_rule_moto",
+    "subject": "science",
+    "chapter_id": "magnetic-effects-of-electric-current",
+    "video_metadata": {
+      "video_id": "9B8F7E6D5C4",
+      "start_sec": 20,
+      "end_sec": 95,
+      "concept_title": "Principle and Working of Electric Motor",
+      "observation_cue": "Observe how the split rings switch brush contacts every 180 degrees to sustain clockwise torque."
+    }
+  },
+  {
+    "topic_tag": "transportation_human_heart",
+    "subject": "science",
+    "chapter_id": "life-processes",
+    "video_metadata": {
+      "video_id": "7T3Z2b3t1Qw",
+      "start_sec": 15,
+      "end_sec": 85,
+      "concept_title": "Double Circulation in Human Heart",
+      "observation_cue": "Watch the sequential flow through right atrium to right ventricle to lungs, returning oxygenated to left atrium."
+    }
+  },
+  {
+    "topic_tag": "dihybrid_cross_inheritance",
+    "subject": "science",
+    "chapter_id": "heredity-and-evolution",
+    "video_metadata": {
+      "video_id": "2M1L9K8J7H6",
+      "start_sec": 30,
+      "end_sec": 115,
+      "concept_title": "Mendelian Dihybrid Cross & 9:3:3:1 Ratio",
+      "observation_cue": "Observe how the novel recombinant traits (round-green and wrinkled-yellow) emerge alongside parental combinations."
+    }
+  },
+  {
+    "topic_tag": "basic_proportionality_theorem",
+    "subject": "mathematics",
+    "chapter_id": "triangles",
+    "video_metadata": {
+      "video_id": "5Y4M1K9o2Xm",
+      "start_sec": 60,
+      "end_sec": 180,
+      "concept_title": "Visual Geometric Proof of Thales Theorem",
+      "observation_cue": "Observe how shearing the vertex of triangle BDE along the parallel line preserves altitude and area."
+    }
+  },
+  {
+    "topic_tag": "non_cooperation_movement",
+    "subject": "social-science",
+    "chapter_id": "nationalism-in-india",
+    "video_metadata": {
+      "video_id": "1N9C2D4e5Fg",
+      "start_sec": 30,
+      "end_sec": 110,
+      "concept_title": "Nationalism in India: From Satyagraha to Non-Cooperation",
+      "observation_cue": "Examine the archival map displaying the spread of the boycott across coastal import hubs."
+    }
+  },
+  {
+    "topic_tag": "what_makes_india_a_federal_co",
+    "subject": "social-science",
+    "chapter_id": "federalism",
+    "video_metadata": {
+      "video_id": "6B5C4D3E2F1",
+      "start_sec": 40,
+      "end_sec": 130,
+      "concept_title": "Three-Fold Legislative Distribution in Indian Federalism",
+      "observation_cue": "Watch the interactive diagram categorizing defense, policing, and computer software into respective constitutional lists."
+    }
+  },
+  {
+    "topic_tag": "soil_erosion_and_soil_conserv",
+    "subject": "social-science",
+    "chapter_id": "resources-and-development",
+    "video_metadata": {
+      "video_id": "4D3C2B1A9Z8",
+      "start_sec": 35,
+      "end_sec": 110,
+      "concept_title": "Soil Erosion Mechanisms: Gully vs Sheet Erosion",
+      "observation_cue": "Observe how water streams carve jagged Chambal ravines compared to flat sheet run-off over topsoil."
+    }
+  },
+  {
+    "topic_tag": "division_of_sectors_as_organi",
+    "subject": "social-science",
+    "chapter_id": "sectors-of-the-indian-economy",
+    "video_metadata": {
+      "video_id": "3A2B1C9D8E7",
+      "start_sec": 25,
+      "end_sec": 100,
+      "concept_title": "Understanding Disguised Unemployment in Agriculture",
+      "observation_cue": "Observe how Laxmi's two-hectare plot output remains identical before and after two family members take mill work."
+    }
+  }
+]

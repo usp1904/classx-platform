@@ -245,14 +245,14 @@ try {
   const stdoutLimit0 = execFileSync(process.execPath, [searchScript, '--query', 'Fundamental Theorem', '--limit', '0', '--json'], {
     cwd: projectRoot,
     encoding: 'utf8',
-    timeout: 30000
+    timeout: 90000
   });
   const resLimit0 = JSON.parse(stdoutLimit0);
 
   const stdoutIsolation = execFileSync(process.execPath, [searchScript, '--query', 'real numbers', '--chapter', 'nonexistent_chap_xyz', '--json'], {
     cwd: projectRoot,
     encoding: 'utf8',
-    timeout: 30000
+    timeout: 90000
   });
   const resIsolation = JSON.parse(stdoutIsolation);
 

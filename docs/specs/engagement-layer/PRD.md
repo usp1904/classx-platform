@@ -1,9 +1,9 @@
-# PRD — BYJU'S Clone Feature Set for ClassX Platform
+# PRD — Interactive Engagement Layer Feature Set for ClassX Platform
 
-Source of truth: classx-platform/SPEC.md + docs/specs/byjus-clone/concepts-brief.md
+Source of truth: classx-platform/SPEC.md + docs/specs/engagement-layer/concepts-brief.md
 
 ## Executive summary
-Add BYJU's top-edtech engagement layer to ClassX: video lessons, adaptive practice, gamification, parent dashboard, doubt tutor, offline access. Keep ClassX honesty contract: syllabus-mapped, no invented content, grounded tutor fallback, SPEC-03 depth labels preserved.
+Add an interactive academic engagement layer to ClassX: video lessons, adaptive practice, gamification, parent dashboard, doubt tutor, offline access. Keep ClassX honesty contract: syllabus-mapped, no invented content, grounded tutor fallback, SPEC-03 depth labels preserved.
 
 ## Users
 - Student (CBSE Class X): learns, practices, tests, tracks progress

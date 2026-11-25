@@ -1,9 +1,9 @@
-# Concepts Brief — BYJU'S-style clone on ClassX Platform
+# Concepts Brief — Interactive Engagement Layer on ClassX Platform
 
 Source of truth: classx-platform/SPEC.md (CBSE Class X, 4 subjects, 67 chapters, 15 Math + 4 Science full, tutor fallback).
 
 ## Problem
-ClassX is a study platform (lessons, practice, mocks, planner, progress, grounded tutor). It lacks the top-edtech engagement layer: video lessons, live classes, gamification, adaptive paths, parent dashboard, doubt solving, offline access. Goal: clone BYJU'S core value props while staying within ClassX honesty contract (no invented content, syllabus-mapped, grounded tutor).
+ClassX is a study platform (lessons, practice, mocks, planner, progress, grounded tutor). It lacks the top-edtech engagement layer: video lessons, live classes, gamification, adaptive paths, parent dashboard, doubt solving, offline access. Goal: provide rich interactive student engagement capabilities while staying within ClassX honesty contract (no invented content, syllabus-mapped, grounded tutor).
 
 ## Divergent lens ideas
 
@@ -24,7 +24,7 @@ UX:
 - Doubt bubble: ask tutor, returns grounded-fallback with citations
 
 Contrarian/market:
-- BYJU'S heavy video + sales funnel; ClassX should be honest-content-first, no hard sell
+- Unlike commercial edtech heavy video and sales funnels, ClassX should be honest-content-first, no hard sell
 - Avoid fake "AI tutor"; keep grounded-fallback disclosure
 - Don't over-build live classes without concurrency infra
 
@@ -43,4 +43,4 @@ Contrarian/market:
 - Offline scope: chapters only or practice too
 
 ## Handoff
-Run /eg-prd on "BYJU'S clone feature set for ClassX" to convert to PRD.
+Run /eg-prd on "Interactive engagement layer feature set for ClassX" to convert to PRD.

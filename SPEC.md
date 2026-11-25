@@ -132,37 +132,37 @@ npm run e2e
 
 `npm run verify` runs all of the above except the standalone build, because `e2e` builds first.
 
-## SPEC-16 Video lessons (BYJU'S clone)
+## SPEC-16 Video lessons (Engagement layer)
 
 - Authored chapter shows a video tile (embed or placeholder) with resume position
 - Resume position persisted per student/chapter; bookmark timestamp + note supported
 - Chapter gating: chapter N+1 unlocks when chapter N mastery >= threshold (default 80%)
 - Video source: YouTube embed initially; no self-hosted MP4 without bandwidth review
 
-## SPEC-17 Adaptive practice (BYJU'S clone)
+## SPEC-17 Adaptive practice (Engagement layer)
 
 - Practice starts at `simple`; correct streak → `medium`, incorrect → `simple`
 - Question pool drawn from chapter MCQs/subjective; valid answer indexes
 - Session summary: accuracy, time, weak topics; updates progress
 
-## SPEC-18 Gamification (BYJU'S clone)
+## SPEC-18 Gamification (Engagement layer)
 
 - XP for lesson complete, practice, mock, streak day
 - Badges: first lesson, 7-day streak, perfect mock, 50 questions
 - Leaderboard: top XP this week (class scope, opt-in)
 
-## SPEC-19 Parent dashboard (BYJU'S clone)
+## SPEC-19 Parent dashboard (Engagement layer)
 
 - Read-only: child's XP, streak, completed chapters, mock history
 - Weekly digest email placeholder (no SMTP yet)
 
-## SPEC-20 Doubt tutor bubble (BYJU'S clone)
+## SPEC-20 Doubt tutor bubble (Engagement layer)
 
 - Ask question → grounded-fallback with chapter citations
 - Disclose fallback mode; no fabricated answers
 - Citation links open correct subject/chapter/anchor
 
-## SPEC-21 Offline / PWA (BYJU'S clone)
+## SPEC-21 Offline / PWA (Engagement layer)
 
 - Service worker caches chapter assets, questions, plan
 - IndexedDB stores progress; sync on reconnect
