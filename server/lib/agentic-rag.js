@@ -79,6 +79,91 @@ const TOPIC_RULES = [
   { re: /\b(dihybrid|punnett|mendel|independent\s+assortment|ttrr|pea\s+plant)\b/i, subject: 'science', chapterId: 'heredity-and-evolution', topicTag: 'dihybrid_cross_inheritance' },
 ];
 
+// Persona contract (B1): normalizes role/exam/depth and exposes the planned
+// answer shape so callers and tests can verify adaptation instead of guessing.
+const ROLE_ALIASES = {
+  student: 'student', learner: 'student', kid: 'student', child: 'student',
+  teacher: 'teacher', tutor: 'teacher', educator: 'teacher',
+  parent: 'parent', guardian: 'parent',
+  aspirant: 'aspirant', competitive: 'aspirant', dsc: 'aspirant', upsc: 'aspirant',
+};
+
+const DEPTH_ALIASES = {
+  eli5: 'eli5', 'explain-like-im-5': 'eli5', simple: 'eli5',
+  socratic: 'socratic',
+  board: 'board', cbse: 'board', exam: 'board',
+  competitive: 'deep', deep: 'deep', advanced: 'deep',
+};
+
+export const PERSONA_PROFILES = {
+  student: {
+    layerOrder: ['coreIntuition', 'boardAnswer', 'examinersTrap', 'competitiveBridge'],
+    depthBudget: { words: 350, workedSteps: 1 },
+    visualPolicy: 'inline-if-available',
+    examBridge: 'foundation',
+  },
+  teacher: {
+    layerOrder: ['boardAnswer', 'examinersTrap', 'coreIntuition', 'competitiveBridge'],
+    depthBudget: { words: 500, workedSteps: 3 },
+    visualPolicy: 'inline-if-available',
+    examBridge: 'foundation',
+  },
+  parent: {
+    layerOrder: ['coreIntuition', 'boardAnswer', 'examinersTrap', 'competitiveBridge'],
+    depthBudget: { words: 200, workedSteps: 0 },
+    visualPolicy: 'summary-only',
+    examBridge: 'none',
+  },
+  aspirant: {
+    layerOrder: ['competitiveBridge', 'boardAnswer', 'coreIntuition', 'examinersTrap'],
+    depthBudget: { words: 500, workedSteps: 2 },
+    visualPolicy: 'inline-if-available',
+    examBridge: 'exam-tier',
+  },
+};
+
+function normalizeDepth(value) {
+  const key = String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  return DEPTH_ALIASES[key] || 'socratic';
+}
+
+function normalizeExam(value, role) {
+  const raw = String(value || '').toUpperCase().replace(/[^A-Z0-9]+/g, '_');
+  if (raw) return raw;
+  return role === 'aspirant' ? 'DSC' : 'CBSE_BOARD';
+}
+
+export function resolvePersona(input = {}) {
+  const provided = (input && typeof input.persona === 'object' && input.persona) ? input.persona : {};
+  const roleKey = String(provided.role ?? input.role ?? 'student').toLowerCase();
+  const role = ROLE_ALIASES[roleKey] || 'student';
+  const depth = normalizeDepth(provided.depth ?? input.depth ?? input.mode ?? 'socratic');
+  const exam = normalizeExam(provided.exam ?? input.exam, role);
+  const ageBand = provided.ageBand ?? input.ageBand ?? (role === 'student' ? '10-18' : null);
+  return { role, exam, depth, ageBand };
+}
+
+export function buildAnswerPlan(persona) {
+  const resolved = persona && PERSONA_PROFILES[persona.role] ? persona : resolvePersona(persona || {});
+  const profile = PERSONA_PROFILES[resolved.role];
+  return {
+    role: resolved.role,
+    exam: resolved.exam,
+    depth: resolved.depth,
+    ageBand: resolved.ageBand,
+    layerOrder: [...profile.layerOrder],
+    depthBudget: { ...profile.depthBudget },
+    visualPolicy: profile.visualPolicy,
+    examBridge: resolved.role === 'aspirant' ? 'exam-tier' : profile.examBridge,
+  };
+}
+
+export async function runAgenticRag(options = {}) {
+  const persona = resolvePersona(options);
+  const result = await runAgenticRagCore(options);
+  return { ...result, persona, answerPlan: buildAnswerPlan(persona) };
+}
+
 export function analyzeQuery(input) {
   const rawQuery = typeof input === 'string' ? input : (input?.question || '');
   const { sanitized, isBlocked } = sanitizePromptInput(rawQuery, { maxLength: 2000 });
@@ -671,7 +756,7 @@ async function synthesizeWithLlmIfConfigured({ question, analysis, chunks, subje
   }
 }
 
-export async function runAgenticRag({
+async function runAgenticRagCore({
   question,
   mode = 'socratic',
   subjectId,
