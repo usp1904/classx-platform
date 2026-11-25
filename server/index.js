@@ -337,7 +337,7 @@ app.get('/api/search', (req, res) => {
 });
 
 app.post('/api/tutor', tutorRateLimit, async (req, res) => {
-  const { question, mode, subjectId, chapterId, history, intentMode } = req.body || {};
+  const { question, mode, subjectId, chapterId, history, intentMode, persona } = req.body || {};
   if (!question || typeof question !== 'string') return res.status(400).json({ ok: false, error: 'question is required' });
   if (question.length > 2000) return res.status(413).json({ ok: false, error: 'question too long' });
   try {
@@ -345,6 +345,7 @@ app.post('/api/tutor', tutorRateLimit, async (req, res) => {
     const result = await runAgenticRag({
       question: question.trim(),
       mode: safeMode,
+      persona,
       subjectId,
       chapterId,
       intentMode,
@@ -358,6 +359,7 @@ app.post('/api/tutor', tutorRateLimit, async (req, res) => {
         mode: ['socratic', 'board', 'competitive', 'eli5'].includes(mode) ? mode : 'socratic',
         subjectId,
         chapterId,
+        persona,
         history: Array.isArray(history) ? history.slice(-6) : [],
       });
       return res.json(fallback);
@@ -370,7 +372,7 @@ app.post('/api/tutor', tutorRateLimit, async (req, res) => {
 });
 
 app.post('/api/rag/analyze', tutorRateLimit, async (req, res) => {
-  const { question, mode, subjectId, chapterId, intentMode, history } = req.body || {};
+  const { question, mode, subjectId, chapterId, intentMode, history, persona } = req.body || {};
   if (!question || typeof question !== 'string') return res.status(400).json({ ok: false, error: 'question is required' });
   if (question.length > 2000) return res.status(413).json({ ok: false, error: 'question too long' });
   try {
@@ -378,6 +380,7 @@ app.post('/api/rag/analyze', tutorRateLimit, async (req, res) => {
     const result = await runAgenticRag({
       question: question.trim(),
       mode: safeMode,
+      persona,
       subjectId,
       chapterId,
       intentMode,

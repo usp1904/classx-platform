@@ -6,6 +6,7 @@ import {
   PERSONA_PROFILES,
   runAgenticRag,
 } from '../server/lib/agentic-rag.js';
+import { modeFromPersona } from '../server/lib/ai.js';
 
 test('B1 persona: legacy mode maps to depth', () => {
   assert.equal(resolvePersona({ mode: 'eli5' }).depth, 'eli5');
@@ -53,4 +54,17 @@ test('B1 persona: runAgenticRag is exported and resolver agrees with wrapper inp
   const direct = resolvePersona({ role: 'teacher', mode: 'board' });
   assert.equal(direct.role, 'teacher');
   assert.equal(direct.depth, 'board');
+});
+
+test('B1b persona: depth maps to legacy tutor mode', () => {
+  assert.equal(modeFromPersona({ depth: 'eli5' }), 'eli5');
+  assert.equal(modeFromPersona({ depth: 'board' }), 'board');
+  assert.equal(modeFromPersona({ depth: 'deep' }), 'competitive');
+  assert.equal(modeFromPersona({ depth: 'socratic' }), 'socratic');
+});
+
+test('B1b persona: missing persona leaves mode untouched', () => {
+  assert.equal(modeFromPersona(null), null);
+  assert.equal(modeFromPersona(undefined), null);
+  assert.equal(modeFromPersona({ role: 'student' }), null);
 });

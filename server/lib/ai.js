@@ -33,6 +33,15 @@ const str = (value) => {
   return String(value);
 };
 
+export function modeFromPersona(persona) {
+  const depth = String(persona?.depth || '').toLowerCase();
+  if (depth === 'eli5' || depth === 'simple') return 'eli5';
+  if (depth === 'board' || depth === 'cbse' || depth === 'exam') return 'board';
+  if (depth === 'deep' || depth === 'competitive' || depth === 'advanced') return 'competitive';
+  if (depth === 'socratic') return 'socratic';
+  return null;
+}
+
 function buildPrompt({ question, mode, context, chapter }) {
   const { sanitized } = sanitizePromptInput(question || '');
   const modeRules = {
@@ -107,7 +116,7 @@ function fallbackAnswer({ question, mode, results, chapter }) {
   return lines.join('\n\n');
 }
 
-export async function askTutor({ question, mode = 'socratic', subjectId, chapterId, history = [] }) {
+export async function askTutor({ question, mode = 'socratic', subjectId, chapterId, history = [], persona }) {
   const sanitization = sanitizePromptInput(question || '');
   if (sanitization.isBlocked) {
     return {
@@ -119,6 +128,7 @@ export async function askTutor({ question, mode = 'socratic', subjectId, chapter
     };
   }
   const cleanQuestion = sanitization.sanitized;
+  const effectiveMode = modeFromPersona(persona) || mode;
   const chapter = subjectId && chapterId ? getChapter(subjectId, chapterId) : null;
   const lesson = chapter ? getLesson(subjectId, chapterId) : null;
   const cleanHistory = (Array.isArray(history) ? history.slice(-2) : [])
@@ -159,7 +169,7 @@ ${r.text.slice(0, 1200)}`)
           model: provider.model,
           temperature: 0.25,
           max_tokens: 900,
-          messages: buildPrompt({ question: cleanQuestion, mode, context, chapter }),
+          messages: buildPrompt({ question: cleanQuestion, mode: effectiveMode, context, chapter }),
         }),
         signal: controller.signal,
       });
@@ -179,7 +189,7 @@ ${r.text.slice(0, 1200)}`)
       clearTimeout(timeout);
       return {
         ok: true,
-        answer: fallbackAnswer({ question: cleanQuestion, mode, results, chapter }),
+        answer: fallbackAnswer({ question: cleanQuestion, mode: effectiveMode, results, chapter }),
         sources: getCitations(results),
         retrieval: { ...diagnostics, providerError: error.message },
         provider: { mode: 'grounded-fallback', model: 'curriculum-ranker' },
@@ -188,7 +198,7 @@ ${r.text.slice(0, 1200)}`)
   }
   return {
     ok: true,
-    answer: fallbackAnswer({ question: cleanQuestion, mode, results, chapter }),
+    answer: fallbackAnswer({ question: cleanQuestion, mode: effectiveMode, results, chapter }),
     sources: getCitations(results),
     retrieval: diagnostics,
     provider: { mode: 'grounded-fallback', model: 'curriculum-ranker' },
