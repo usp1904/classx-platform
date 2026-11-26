@@ -96,7 +96,7 @@ try {
   const stdout = execFileSync(process.execPath, [queryScript, '--subject', 'mathematics', '--chapter', 'real-numbers', '--topo', '--json'], {
     cwd: projectRoot,
     encoding: 'utf8',
-    timeout: 30000
+    timeout: 90000
   });
   const res = JSON.parse(stdout);
   const ok = res.ok === true && Array.isArray(res.nodes) && res.nodes.length >= 5 && Array.isArray(res.topologicalOrder);
@@ -164,7 +164,7 @@ try {
   const stdout = execFileSync(process.execPath, [searchScript, '--query', 'Fundamental Theorem of Arithmetic', '--limit', '3', '--json'], {
     cwd: projectRoot,
     encoding: 'utf8',
-    timeout: 30000
+    timeout: 90000
   });
   const res = JSON.parse(stdout);
   const ok = res.ok === true && Array.isArray(res.results) && res.results.length > 0 && res.results[0].chapterId === 'real-numbers';

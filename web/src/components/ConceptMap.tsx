@@ -96,7 +96,7 @@ export function ConceptMap({ title, nodes, edges }: Props) {
             }
             return (
               <g key={id}>
-                <rect x={position.x} y={position.y - 24} width="138" height="48" rx="12" fill="var(--canvas, #FAF9F6)" stroke={color} strokeWidth="1.6" />
+                <rect x={position.x} y={position.y - 24} width="138" height="48" rx="12" fill="var(--surface-solid, #FAF9F6)" stroke={color} strokeWidth="1.6" />
                 <circle cx={position.x + 12} cy={position.y} r="4" fill={color} />
                 {line2 ? (
                   <>
