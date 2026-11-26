@@ -36,8 +36,8 @@ npm run build
 npm start                      # http://localhost:8787/api/health
 ```
 
-Expected: 4 subjects, 67 chapters, 2569 questions, full test suite green (174 tests as of
-2026-11-24), and clean production/static builds. If `npm test` hangs: it is a synchronous
+Expected: 4 subjects, 67 chapters, 2569 questions, full test suite green (350 tests as of
+2026-11-26), and clean production/static builds. If `npm test` hangs: it is a synchronous
 loop, not a slow test. The last known one was `splitIntoChunks()` in `server/lib/rag.js`
 (fixed). Re-introducing a tail-overlap loop will hang the tutor tests again.
 
@@ -219,13 +219,24 @@ Verified outcomes:
 | `.github/workflows/deploy.yml` | Single consolidated GitHub Pages + Cloudflare Pages workflow |
 | `docs/DEPLOYMENT.md`, `tests/workflows-and-docs.test.mjs` | Single-workflow references, current remote status, drift assertions |
 
+## 7g. Session Update — 2026-11-26 (B2 composer, test-green deploy, Cloudflare gap)
+
+- [x] `[COMPLETED]` **B2 persona composer**: `server/lib/persona-composer.js` (`DEPTH_DIRECTIVES`, `ROLE_COMPOSITIONS`, `composePersonaAnswer`); `buildAnswerPlan()` attaches `composition`; `tests/persona-composer.test.js` (8 cases). Logged in §15.5.
+- [x] `[COMPLETED]` **Full suite green**: `npm test` 350/350; `npm run typecheck` 0; `npm run check` ok (4 subjects / 67 chapters / 2569 questions); `build`, `build:gh-pages`, `build:cloudflare` all clean.
+- [x] `[COMPLETED]` **Two red-gate fixes (no assertion weakened)**: `web/src/components/ConceptMap.tsx` rect fill restored to `var(--surface-solid)`; `skills/classx-knowledge-rag/scripts/verify-rag.mjs` query-graph + search-chunks spawn timeouts raised 30s -> 90s (scripts run ~30-33s on Windows; 90s already used in the same file).
+- [x] `[COMPLETED]` **Pushed `main`**: `54aee24..7be1259`; origin at 0 ahead / 0 behind, tree clean.
+- [x] `[COMPLETED]` **Render**: auto-deployed the pushed commit; `https://classx-platform.onrender.com/api/health` returns `ok: true`, `commit: 7be1259e02beb64b008aa6c298f699115bf21d30`.
+- [x] `[COMPLETED]` **GitHub Pages**: `https://usp1904.github.io/classx-platform/` returns 200.
+- [ ] `[INCOMPLETE]` **Cloudflare Pages**: `classx-platform.pages.dev` returns NXDOMAIN. The CI job skips because `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` are not set as repository secrets (optional `CLOUDFLARE_ZONE_ID` / `CLOUDFLARE_CUSTOM_DOMAIN` for a custom domain). Add them on the account/GitHub side, then re-run `deploy.yml`.
+- [ ] `[INCOMPLETE]` **Docker parity**: local Docker daemon unavailable, so `npm run verify:sync:docker` was not run locally; the Render Docker build from `7be1259` passed its healthcheck.
+
 ## 8. Master Deliverables Checklist (Completed vs Incomplete)
 
 To eliminate ambiguity and prevent agent rework, all deliverables are categorized and tagged with explicit `[COMPLETED]` and `[INCOMPLETE]` status markers:
 
 ### 8.1 Core Platform, Curriculum & Offline Data
 - [x] `[COMPLETED]` **Curriculum Integrity**: 4 subjects (Mathematics, Science, Social Science, English), 67 chapters, 76 official topics, 52 full authored lessons, 15 syllabus maps, 2569 questions (1505 MCQs, 1064 subjective).
-- [x] `[COMPLETED]` **Baseline Unit & Contract Tests**: 174/174 tests passing (`node --test tests/*.test.js tests/*.test.mjs`) across data, tutor, coverage, practice, sync, session-store, security, YouTube, textbook RAG, provenance contract, workflow, and docs contracts.
+- [x] `[COMPLETED]` **Baseline Unit & Contract Tests**: 350/350 tests passing (`node --test tests/*.test.js tests/*.test.mjs`) across data, tutor, coverage, practice, sync, session-store, security, YouTube, textbook RAG, provenance contract, workflow, and docs contracts.
 - [x] `[COMPLETED]` **TypeScript Compilation**: `npm run typecheck` (`tsc --noEmit -p web/tsconfig.json`) clean with 0 compilation errors across 177 source files.
 - [x] `[COMPLETED]` **Production Bundling**: `npm run build` and `npm run build:static` compile clean; initial JS is ~319 kB raw / ~97 kB gzip with lazy routes, and the knowledge hub loads only on the video lesson route.
 - [x] `[COMPLETED]` **Docker Parity & Sync Gate**: `scripts/sync-verify.mjs` validates commit SHA equality between Git HEAD and `/api/health.commit`; Docker daemon is unavailable in the current environment, so re-run `npm run verify:sync:docker` on a Docker-capable machine.
@@ -256,7 +267,7 @@ To eliminate ambiguity and prevent agent rework, all deliverables are categorize
 - [x] `[COMPLETED]` **Kahn's DAG Topological Sorting (`scripts/topological-sort.mjs`)**: Kahn's algorithm DAG topological sort for concept maps, cycle detection, and dynamic linear learning path generation.
 - [x] `[COMPLETED]` **Prerequisite & Unlock Chaining (`scripts/prereq-chain.mjs`)**: Backward recursive prerequisite resolution and forward unlock tree traversal.
 - [x] `[COMPLETED]` **Grounded RAG Chunk Retrieval (`scripts/search-chunks.mjs`)**: Hybrid BM25 + 512-dim hashed-vector + graph boost search across 4,377 curriculum chunks.
-- [x] `[COMPLETED]` **Skill Verification Test Suite (`scripts/verify-rag.mjs`)**: 10/10 automated programmatic verification suite for skill tools, graph queries, and RAG retrieval.
+- [x] `[COMPLETED]` **Skill Verification Test Suite (`scripts/verify-rag.mjs`)**: 14/14 automated programmatic verification suite for skill tools, graph queries, and RAG retrieval.
 - [x] `[COMPLETED]` **JSON Schema Reference (`resources/schemas.json`)**: Formal schemas for graph outputs, topological paths, prerequisite chains, and RAG chunks.
 
 ### 8.5 Agentic Graph Knowledge RAG Engine Roadmap (INSTRUCTIONS.md § 10)
@@ -271,8 +282,8 @@ To eliminate ambiguity and prevent agent rework, all deliverables are categorize
 
 ### 8.6 Automated Verification Suites & Operating Standards
 - [x] `[COMPLETED]` **Master Verification Suite (`tests/verification.test.mjs`)**: Automated test suite verifying skill package syntax, frontmatter, CLI execution, layout non-overlapping integrity, and checklist tags.
-- [x] `[COMPLETED]` **Skill Tool Verification (`skills/classx-knowledge-rag/scripts/verify-rag.mjs`)**: 10/10 automated tests passing.
-- [x] `[COMPLETED]` **Canonical Platform Verification Gates**: `npm test` (174/174 pass), `npm run typecheck` (0 errors), `node scripts/check.mjs` (0 errors), `npm run build` (clean bundle).
+- [x] `[COMPLETED]` **Skill Tool Verification (`skills/classx-knowledge-rag/scripts/verify-rag.mjs`)**: 14/14 automated tests passing.
+- [x] `[COMPLETED]` **Canonical Platform Verification Gates**: `npm test` (350/350 pass), `npm run typecheck` (0 errors), `node scripts/check.mjs` (0 errors), `npm run build` (clean bundle).
 
 ## 9. Hard rules
 
@@ -403,7 +414,7 @@ The platform passes its structural gates but does not yet satisfy its users. The
 
 The canonical, dependency-ordered execution (with phase mapping and how-to) is §15.2; it supersedes the ordering of this list. The set of items is identical.
 
-- [ ] 1. Thread persona/mode (B1). Gate: mode tests.
+- [x] 1. Thread persona/mode (B1). Gate: mode tests.
 - [x] 2. Persona composer + depth budgets (B2). Gate: persona tests.
 - [ ] 3. Citation alignment (B6). Gate: citation-subset test.
 - [ ] 4. Answerability gate (B3). Gate: low-evidence test.
