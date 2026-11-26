@@ -40,9 +40,9 @@
 | # | Name | Scope | Dependencies | Status |
 |---|------|-------|-------------|--------|
 | M1 | Academic Originality & Brand Safety Guardrail | Sanitize commercial brand references from codebase/docs/prompts/catalog; implement `tests/originality-guardrail.test.js`. | none | DONE |
-| M2 | Backend Agentic RAG Pipeline (LangGraph & OKF v0.2) | Implement `backend/rag/` nodes (`analyzer`, `grader`, `synthesizer`, `video`, `graph`), Pydantic models, verified video catalog, Express integration. | M1 | IN_PROGRESS (Conv: 23695dee-0f77-40eb-b6f4-873e20acd298) |
-| M3 | Frontend Editorial Study Workspace (React/Vite) | Warm paper CSS tokens, split-pane study workspace, layered answer tabs, monospace `<PipelineStatus />`, `<ConceptVideoPlayer />`. | M1 | IN_PROGRESS (Conv: c4a20cea-32bf-4d18-aded-26e104f9a933) |
-| E2E | E2E Testing Track | Independent opaque-box test infra, eval dataset, Tiers 1-4 test suites, publishes `TEST_READY.md`. | none | IN_PROGRESS (Conv: 0ccdc8ca-e477-4011-a3d7-c50638192856) |
+| M2 | Backend Agentic RAG Pipeline (LangGraph & OKF v0.2) | Implement `backend/rag/` nodes (`analyzer`, `grader`, `synthesizer`, `video`, `graph`), Pydantic models, verified video catalog, Express integration. | M1 | IN_PROGRESS (Conv: e7c066cc-8ba0-425b-aec3-583f3207c3c1) |
+| M3 | Frontend Editorial Study Workspace (React/Vite) | Warm paper CSS tokens, split-pane study workspace, layered answer tabs, monospace `<PipelineStatus />`, `<ConceptVideoPlayer />`. | M1 | IN_PROGRESS (Conv: 971867ca-09a6-4e0f-b3ba-d853eff65c3b) |
+| E2E | E2E Testing Track | Independent opaque-box test infra, eval dataset, Tiers 1-4 test suites, publishes `TEST_READY.md`. | none | IN_PROGRESS (Iter 3 Conv: 1e8f5f36-f352-4963-9e8f-2d2b6b28d8e1) |
 | M4 | Final Milestone: 100% E2E Pass & Adversarial Hardening | Phase 1: Pass 100% of E2E tests (Tiers 1-4). Phase 2: Tier 5 adversarial coverage hardening with Challenger. | M2, M3, E2E | PLANNED |
 
 ## Interface Contracts

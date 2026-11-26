@@ -6,8 +6,8 @@ const STORAGE_KEY = 'classx_theme';
 export const DEFAULT_THEME: Theme = 'light';
 
 const THEME_COLORS: Record<Theme, string> = {
-  light: '#f8fafc',
-  dark: '#0f172a',
+  light: '#FAF9F6',
+  dark: '#FAF9F6',
 };
 
 export function isTheme(value: string | null): value is Theme {
@@ -22,11 +22,12 @@ export function resolveInitialTheme(): Theme {
 
 export function applyTheme(theme: Theme): void {
   if (typeof document === 'undefined') return;
-  document.documentElement.setAttribute('data-theme', theme);
-  document.documentElement.style.colorScheme = theme;
-  if (document.body) document.body.setAttribute('data-theme', theme);
+  const resolved: Theme = theme === 'dark' ? 'light' : theme;
+  document.documentElement.setAttribute('data-theme', resolved);
+  document.documentElement.style.colorScheme = 'light';
+  if (document.body) document.body.setAttribute('data-theme', resolved);
   const meta = document.querySelector('meta[name="theme-color"]');
-  if (meta) meta.setAttribute('content', THEME_COLORS[theme]);
+  if (meta) meta.setAttribute('content', THEME_COLORS[resolved]);
 }
 
 type ThemeContextValue = {
@@ -45,13 +46,14 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const setTheme = useCallback((next: Theme) => {
-    setThemeState(next);
-    persist(next);
+    const normalized: Theme = next === 'dark' ? 'light' : next;
+    setThemeState(normalized);
+    persist(normalized);
   }, [persist]);
 
   const toggleTheme = useCallback(() => {
-    setThemeState((prev) => {
-      const next: Theme = prev === 'dark' ? 'light' : 'dark';
+    setThemeState(() => {
+      const next: Theme = 'light';
       persist(next);
       return next;
     });
@@ -64,7 +66,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const onStorage = (event: StorageEvent) => {
       if (event.key === STORAGE_KEY && isTheme(event.newValue)) {
-        setThemeState(event.newValue);
+        setThemeState(event.newValue === 'dark' ? 'light' : event.newValue);
       }
     };
     window.addEventListener('storage', onStorage);

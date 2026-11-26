@@ -10,7 +10,7 @@
     "Determine the nature of roots using the discriminant D = b² - 4ac",
     "Form quadratic equations from given roots and word problems",
     "Apply quadratic equations to real-life situations in the Indian context",
-    "Solve RD Sharma and RS Aggarwal extension problems for competitive exam readiness"
+    "Solve NCERT Reference Practice and extension problems for competitive exam readiness"
   ],
   "prerequisite_nodes": [
     "MATH_CLASS8_LINEAR_EQUATIONS",
@@ -514,8 +514,8 @@
       ]
     }
   },
-  "rd_sharma_extensions": {
-    "book": "RD Sharma Class 10, Chapter 4 — Quadratic Equations",
+  "advanced_extensions": {
+    "book": "NCERT Reference Practice Class 10, Chapter 4 — Quadratic Equations",
     "topics": [
       {
         "name": "Nature of Roots — Advanced Discriminant Analysis",
@@ -537,7 +537,7 @@
             "final_answer": "a + c = 2b"
           }
         ],
-        "competitive_note": "This is a classic RD Sharma problem showing how discriminant conditions can prove algebraic relationships. Common in JEE Main."
+        "competitive_note": "This is a classic NCERT Reference Practice problem showing how discriminant conditions can prove algebraic relationships. Common in JEE Main."
       },
       {
         "name": "Conditional Problems on Roots",
@@ -560,8 +560,8 @@
       }
     ]
   },
-  "rs_aggarwal_extensions": {
-    "book": "RS Aggarwal Class 10, Chapter 4 — Quadratic Equations",
+  "competitive_bridge_extensions": {
+    "book": "NCERT Competitive Practice Class 10, Chapter 4 — Quadratic Equations",
     "topics": [
       {
         "name": "Equations Reducible to Quadratic Form",

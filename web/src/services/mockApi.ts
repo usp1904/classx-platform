@@ -8,6 +8,8 @@ import type {
   ExamKey,
   ExamPaper,
   GamifyXpResult,
+  IntentMode,
+  LayeredAnswer,
   LeaderboardEntry,
   LearningAidsData,
   LearningAidsIds,
@@ -17,17 +19,20 @@ import type {
   OkfStats,
   OkfTopic,
   ParentView,
+  PipelineStage,
   Plan,
   PlanWeek,
   PracticeQuestion,
   PracticeResult,
   PracticeSession,
   Progress,
+  QueryAnalysis,
   ReviewItem,
   SearchResult,
   Subject,
   TutorResponse,
   VideoCatalog,
+  VisualAidVideo,
 } from '../types';
 
 const PROGRESS_KEY = 'peak.classx.progress.v1';
@@ -154,7 +159,7 @@ const MOCK_SUBJECTS: Subject[] = [
     id: 'mathematics',
     name: 'Mathematics',
     shortName: 'Maths',
-    accent: 'indigo',
+    accent: 'forest',
     icon: 'Sigma',
     code: '041',
     maxMarks: 80,
@@ -1476,61 +1481,211 @@ export async function handleMockRequest<T>(url: string, init?: RequestInit): Pro
     } as unknown as T;
   }
 
-  // 5. POST /api/tutor
-  if (method === 'POST' && pathname === '/api/tutor') {
+  // 5. POST /api/tutor & POST /api/rag/analyze
+  if (method === 'POST' && (pathname === '/api/tutor' || pathname === '/api/rag/analyze')) {
     const question = typeof body.question === 'string' ? body.question.trim() : '';
-    const mode = typeof body.mode === 'string' ? body.mode : 'socratic';
+    const subjectId = typeof body.subjectId === 'string' && body.subjectId ? body.subjectId : 'mathematics';
+    const chapterId = typeof body.chapterId === 'string' && body.chapterId ? body.chapterId : 'real-numbers';
+    const requestedIntent = body.intentMode === 'COMPETITIVE_BRIDGE' || body.intentMode === 'BOARD_EXAM' ? body.intentMode : null;
+    const isCompetitiveQuestion = /\b(jee|neet|upsc|dsc|olympiad|mcq|graph|extension|derive|multi-concept|bridge)\b/i.test(question);
+    const intentMode: IntentMode = requestedIntent || (isCompetitiveQuestion ? 'COMPETITIVE_BRIDGE' : 'BOARD_EXAM');
 
     if (!question) {
       return {
         ok: true,
-        answer: 'Hello! I am your CBSE Class X tutor. Ask me any question from Mathematics, Science, Social Science, or English, and I will explain it step-by-step.',
+        intentMode,
+        answer: 'Hello! Ask me any Class 10 CBSE or Competitive Bridge question across Mathematics, Science, or Social Science.',
         sources: [],
-        retrieval: { query: '', expandedTerms: [], strategy: 'mock-grounded', candidates: 0, latencyMs: 2, intent: [] },
+        graderVerdict: 'PASS',
+        answerLayers: null,
+        visualAidVideo: null,
+        pipelineStages: [],
+        retrieval: { query: '', expandedTerms: [], strategy: 'mock-grounded', candidates: 0, latencyMs: 2, intent: [], engine: 'client-offline-ranker' },
         provider: { mode: 'grounded-fallback', model: 'client-offline-ranker' },
       } as unknown as T;
     }
 
-    const answer = `### Explanation [S1]\n\nRegarding your question: **"${question}"**\n\nIn CBSE Class X Mathematics and Science, we approach this by grounding ourselves in fundamental principles:\n\n1. **Core Concept [S1]**: Every composite integer can be factored uniquely into a product of primes (Fundamental Theorem of Arithmetic), providing a deterministic basis for HCF and LCM calculations.\n2. **Step-by-Step Method [S2]**: Decompose the given terms, identify smallest powers for common factors, and verify intermediate arithmetic to safeguard every single mark in board assessments.\n\n---\n**Check for Understanding (CFU):**\nCan you state whether the product of two positive integers is always equal to the product of their HCF and LCM?`;
+    const verifiedCatalog: Record<string, VisualAidVideo> = {
+      'chemical-reactions-and-equations': {
+        video_id: '8U8F4R4o1Lw',
+        start_sec: 42,
+        end_sec: 105,
+        concept_title: 'Activity 1.1: Reaction of Calcium Oxide with Water',
+        observation_cue: 'Observe vigorous hissing and steam indicating intense exothermic release as solid lumps dissolve.',
+      },
+      'carbon-and-its-compounds': {
+        video_id: '4G3F2K1L9Vk',
+        start_sec: 30,
+        end_sec: 120,
+        concept_title: 'Esterification: Synthesis of Ethyl Ethanoate',
+        observation_cue: 'Notice the distinct sweet fruity odor emitted when the water bath warms the ethanol-ethanoic acid mixture.',
+      },
+      'electricity': {
+        video_id: '3Z2b3t1QwaA',
+        start_sec: 45,
+        end_sec: 135,
+        concept_title: "Ohm's Law Verification & V-I Graph",
+        observation_cue: 'Watch how the straight-line plot through origin bends when the rheostat current heats the nichrome wire.',
+      },
+      'magnetic-effects-of-electric-current': {
+        video_id: '9B8F7E6D5C4',
+        start_sec: 20,
+        end_sec: 95,
+        concept_title: 'Principle and Working of Electric Motor',
+        observation_cue: 'Observe how the split rings switch brush contacts every 180 degrees to sustain clockwise torque.',
+      },
+      'life-processes': {
+        video_id: '7T3Z2b3t1Qw',
+        start_sec: 15,
+        end_sec: 85,
+        concept_title: 'Double Circulation in Human Heart',
+        observation_cue: 'Watch the sequential flow through right atrium to right ventricle to lungs, returning oxygenated to left atrium.',
+      },
+      'heredity-and-evolution': {
+        video_id: '2M1L9K8J7H6',
+        start_sec: 30,
+        end_sec: 115,
+        concept_title: 'Mendelian Dihybrid Cross & 9:3:3:1 Ratio',
+        observation_cue: 'Observe how the novel recombinant traits (round-green and wrinkled-yellow) emerge alongside parental combinations.',
+      },
+      'triangles': {
+        video_id: '5Y4M1K9o2Xm',
+        start_sec: 60,
+        end_sec: 180,
+        concept_title: 'Visual Geometric Proof of Thales Theorem',
+        observation_cue: 'Observe how shearing the vertex of triangle BDE along the parallel line preserves altitude and area.',
+      },
+      'nationalism-in-india': {
+        video_id: '1N9C2D4e5Fg',
+        start_sec: 30,
+        end_sec: 110,
+        concept_title: 'Nationalism in India: From Satyagraha to Non-Cooperation',
+        observation_cue: 'Examine the archival map displaying the spread of the boycott across coastal import hubs.',
+      },
+      'federalism': {
+        video_id: '6B5C4D3E2F1',
+        start_sec: 40,
+        end_sec: 130,
+        concept_title: 'Three-Fold Legislative Distribution in Indian Federalism',
+        observation_cue: 'Watch the interactive diagram categorizing defense, policing, and computer software into respective constitutional lists.',
+      },
+      'resources-and-development': {
+        video_id: '4D3C2B1A9Z8',
+        start_sec: 35,
+        end_sec: 110,
+        concept_title: 'Soil Erosion Mechanisms: Gully vs Sheet Erosion',
+        observation_cue: 'Observe how water streams carve jagged Chambal ravines compared to flat sheet run-off over topsoil.',
+      },
+      'sectors-of-the-indian-economy': {
+        video_id: '3A2B1C9D8E7',
+        start_sec: 25,
+        end_sec: 100,
+        concept_title: 'Understanding Disguised Unemployment in Agriculture',
+        observation_cue: "Observe how Laxmi's two-hectare plot output remains identical before and after two family members take mill work.",
+      },
+    };
+
+    const isDirectLookup = /\b(exercise|activity|calculate|find the value|numerical|solve)\b/i.test(question);
+    const subjectObj = MOCK_SUBJECTS.find((s) => s.id === subjectId) || MOCK_SUBJECTS[0];
+    const chapterObj = subjectObj.chapters.find((c) => c.id === chapterId) || subjectObj.chapters[0];
+    const resolvedChapterId = chapterObj ? chapterObj.id : chapterId;
+    const resolvedChapterName = chapterObj ? chapterObj.name : 'Core Syllabus Concept';
+    const topicTag = resolvedChapterId.replace(/-/g, '_');
+
+    const analysis: QueryAnalysis = {
+      intent_mode: intentMode,
+      target_exam: intentMode === 'COMPETITIVE_BRIDGE' ? (subjectId === 'social-science' ? 'UPSC / DSC' : 'JEE / NEET') : 'CBSE Class 10 Board',
+      okf_filters: {
+        subject: subjectId,
+        chapter_id: resolvedChapterId,
+        topic_tag: topicTag,
+        content_block_type: intentMode === 'BOARD_EXAM' ? 'definition_and_proof' : 'conceptual_application',
+        source_type: intentMode === 'BOARD_EXAM' ? 'NCERT_TEXTBOOK,CBSE_SQP' : 'NCERT_TEXTBOOK,NCERT_EXEMPLAR',
+      },
+      bm25_keywords: question
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, ' ')
+        .split(/\s+/)
+        .filter((w) => w.length > 3)
+        .slice(0, 6),
+      hyde_passage: isDirectLookup
+        ? ''
+        : `In NCERT Class 10 ${subjectObj.name}, ${resolvedChapterName} establishes the foundational principle governing "${question}". Every step builds directly from textbook axioms and standard definitions with verified units or historical causes. Mastery requires separating invariant definitions from boundary conditions.`,
+      is_valid: true,
+    };
+
+    const isHumanities = subjectId === 'social-science' || subjectId === 'english';
+    const answerLayers: LayeredAnswer = {
+      coreIntuition: isHumanities
+        ? `Think of ${resolvedChapterName} like a rulebook shared between a school principal and class captains: clear boundaries decide who acts, and every historical or civic shift leaves a visible cause-and-effect trail [S1].`
+        : `Imagine ${resolvedChapterName} like sorting building blocks into indivisible prime pieces or balancing a weighing scale: if both sides must stay equal, any contradiction in indivisible factors breaks the balance immediately [S1].`,
+      boardAnswer: isHumanities
+        ? `**Board-style Answer (${resolvedChapterName}) [S1]:**\n- **Core Principle**: State the **constitutional or historical feature** directly as framed in NCERT (**1 Mark**).\n- **Supporting Evidence**: Cite **two textbook examples or articles** showing cause and impact (**2 Marks**).\n- **Conclusion**: Summarize the **institutional outcome** clearly in bullet form (**1 Mark**).`
+        : `**Board-style Answer (${resolvedChapterName}) [S1]:**\n- **Given & Principle**: Let us assume the **contrary rational or standard state** using **coprime integers** ($\\gcd(a, b) = 1$) or standard SI relations (**1 Mark**).\n- **Step-by-Step Derivation**: Apply the **Fundamental Theorem of Arithmetic** / governing law so that prime divisor $p$ divides both $a$ and $b$ (**1 Mark**).\n- **Conclusion**: This **contradiction** proves the result rigorously with proper **SI units** where applicable (**1 Mark**).`,
+      competitiveBridge: isHumanities
+        ? `**UPSC / DSC Analytical Bridge [S2]:** Link this Class 10 ${resolvedChapterName} foundation to Schedule VII legislative lists, federal fiscal transfers, and multi-statement assertion questions distinguishing constitutional provisions from statutory conventions.`
+        : `**JEE / NEET Extension [S2]:** Generalize the Class 10 ${resolvedChapterName} condition to edge cases—such as non-integral exponents, temperature-dependent deviations in $V$–$I$ curves, or irrationality proofs for $\\sqrt{p} + \\sqrt{q}$ in single-choice integer traps.`,
+      examinersTrap: isHumanities
+        ? `Students frequently mix up **Concurrent List** subjects (like education and forests after the 42nd Amendment) with State List items or omit exact NCERT terminology, losing full marks in 3-mark and 5-mark evaluations.`
+        : `Students often skip declaring that $a$ and $b$ are **coprime** ($b \\neq 0$) in proofs or forget to convert readings into standard **SI units** (e.g., amperes, ohms, meters), triggering avoidable half-mark deductions and negative-marking errors.`,
+    };
+
+    const visualAidVideo: VisualAidVideo | null = verifiedCatalog[resolvedChapterId] ?? null;
+
+    const pipelineStages: PipelineStage[] = [
+      { node: 'query_analyzer', status: 'completed', output: intentMode },
+      { node: 'retrieval_grader', status: 'completed', output: 'PASS' },
+      { node: 'pedagogical_generator', status: 'completed', output: '4 layers synthesized' },
+      { node: 'video_grounder', status: 'completed', output: visualAidVideo ? visualAidVideo.video_id : 'omitted (unverified)' },
+    ];
+
+    const answer = `### Board-style Answer [S1]\n\n**1. Core Intuition:** ${answerLayers.coreIntuition}\n\n**2. CBSE Board Answer:**\n${answerLayers.boardAnswer}\n\n**3. Competitive Exam Bridge [S2]:** ${answerLayers.competitiveBridge}\n\n**4. Examiner's Trap:** ${answerLayers.examinersTrap}`;
 
     const sources: Citation[] = [
       {
-        chunkId: 'chunk-math-real-numbers-c1',
-        title: 'Fundamental Theorem of Arithmetic',
-        chapterId: 'real-numbers',
-        subjectId: 'mathematics',
-        chapter: 'Real Numbers',
-        subject: 'Mathematics',
+        chunkId: `chunk-${subjectId}-${resolvedChapterId}-c1`,
+        title: `${resolvedChapterName} — Core NCERT Principle`,
+        chapterId: resolvedChapterId,
+        subjectId,
+        chapter: resolvedChapterName,
+        subject: subjectObj.name,
         type: 'concept',
-        anchor: '#fundamental-theorem',
-        source: 'NCERT Class X Mathematics, Chapter 1',
+        anchor: `#${resolvedChapterId}`,
+        source: `NCERT Class X ${subjectObj.name}, ${resolvedChapterName}`,
         page: 4,
       },
       {
-        chunkId: 'chunk-math-real-numbers-c2',
-        title: 'Revisiting Irrational Numbers and Decimals',
-        chapterId: 'real-numbers',
-        subjectId: 'mathematics',
-        chapter: 'Real Numbers',
-        subject: 'Mathematics',
+        chunkId: `chunk-${subjectId}-${resolvedChapterId}-c2`,
+        title: `${resolvedChapterName} — ${intentMode === 'COMPETITIVE_BRIDGE' ? 'NCERT Exemplar Extension' : 'CBSE SQP Marking Scheme'}`,
+        chapterId: resolvedChapterId,
+        subjectId,
+        chapter: resolvedChapterName,
+        subject: subjectObj.name,
         type: 'theorem',
-        anchor: '#proof-of-irrationality',
-        source: 'NCERT Class X Mathematics, Chapter 1',
+        anchor: `#${resolvedChapterId}-sqp`,
+        source: intentMode === 'COMPETITIVE_BRIDGE' ? 'NCERT Exemplar Class X' : 'CBSE Sample Question Paper',
         page: 9,
       },
     ];
 
     const res: TutorResponse = {
       ok: true,
+      intentMode,
+      analysis,
+      graderVerdict: 'PASS',
+      answerLayers,
+      visualAidVideo,
+      pipelineStages,
       answer,
       sources,
       retrieval: {
         query: question,
-        expandedTerms: ['fundamental theorem', 'prime factorisation', 'HCF LCM'],
+        expandedTerms: analysis.bm25_keywords,
         strategy: 'grounded-fallback',
-        candidates: 3,
+        candidates: 4,
         latencyMs: 14,
-        intent: ['concept_explanation'],
+        intent: [intentMode],
+        engine: 'client-offline-ranker',
       },
       provider: { mode: 'grounded-fallback', model: 'client-offline-ranker' },
     };

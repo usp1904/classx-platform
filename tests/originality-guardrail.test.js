@@ -16,6 +16,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -48,7 +49,7 @@ export const BANNED_BRAND_PATTERNS = [
   {
     brand: b64('UFcgKENvbW1lcmNpYWwgQ29hY2hpbmcp'), // Pattern 03: Commercial Edtech Platform C
     category: 'edtech',
-    regex: new RegExp(b64('XGJQV1xifFxicFwud1wufFxicC13XGI='), 'i'),
+    regex: new RegExp(b64('XGJwW1xzXy4tXSp3XGI='), 'i'),
     description: 'Commercial edtech brand abbreviation (Entity 03)',
   },
   {
@@ -130,13 +131,13 @@ export const BANNED_BRAND_PATTERNS = [
     brand: b64('UmVzb25hbmNlIChDb2FjaGluZyk='), // Pattern 16: Commercial Coaching Institute D
     category: 'coaching',
     // Must target coaching context, avoiding scientific MRI contexts
-    regex: new RegExp(b64('XGJyZXNvbmFuY2VccysoPzplZHV8Y2xhc3Nlc3xpbnN0aXR1dGV8Y29hY2hpbmd8a290YXxwY2NwfGdyb3VwKVxi'), 'i'),
+    regex: new RegExp(b64('XGJyZXNvbmFuY2VbXHNfLV0rKD86ZWR1KD86Y2F0aW9uKT98Y2xhc3Nlc3xpbnN0aXR1dGV8Y29hY2hpbmd8a290YXxwY2NwfGdyb3VwKVxi'), 'i'),
     description: 'Commercial coaching institute (Entity 16)',
   },
   {
     brand: b64('TmFyYXlhbmEgKENvYWNoaW5nKQ=='), // Pattern 17: Commercial Coaching Institute E
     category: 'coaching',
-    regex: new RegExp(b64('XGJuYXJheWFuYVxzKyg/OmVkdWNhdGlvbmFsfGdyb3VwfGNvYWNoaW5nfGlpdHxhY2FkZW15fGNsYXNzZXN8aW5zdGl0dXRlKVxi'), 'i'),
+    regex: new RegExp(b64('XGJuYXJheWFuYVtcc18tXSsoPzplZHUoPzpjYXRpb24oPzphbCk/KT98Z3JvdXB8Y29hY2hpbmd8aWl0fGFjYWQoPzplbXkpP3xjbGFzc2VzfGluc3RpdHV0ZSlcYg=='), 'i'),
     description: 'Commercial coaching institute (Entity 17)',
   },
   {
@@ -155,7 +156,7 @@ export const BANNED_BRAND_PATTERNS = [
     brand: b64('TW90aW9uIChDb2FjaGluZyk='), // Pattern 20: Commercial Coaching Institute H
     category: 'coaching',
     // Must target coaching context, avoiding physics laws of motion / equations of motion
-    regex: new RegExp(b64('XGJtb3Rpb25ccysoPzplZHVjYXRpb258Y2xhc3Nlc3xpbnN0aXR1dGV8Y29hY2hpbmd8aWl0fGtvdGEpXGI='), 'i'),
+    regex: new RegExp(b64('XGJtb3Rpb25bXHNfLV0rKD86ZWR1KD86Y2F0aW9uKT98Y2xhc3Nlc3xpbnN0aXR1dGV8Y29hY2hpbmd8aWl0fGtvdGEpXGI='), 'i'),
     description: 'Commercial coaching institute (Entity 20)',
   },
 ];
@@ -211,7 +212,7 @@ function isBinary(buffer) {
  */
 export function scanDirectory(dirPath, options = {}) {
   const {
-    extensions = ['.js', '.mjs', '.cjs', '.ts', '.tsx', '.json', '.md', '.html', '.css'],
+    extensions = ['.js', '.mjs', '.cjs', '.ts', '.tsx', '.json', '.md', '.html', '.css', '.py', '.txt', '.yml', '.yaml'],
     excludedDirs = ['node_modules', '.git', '.next', 'dist', 'build', '.coverage', '.gemini', '.agents', 'graphify-out'],
     excludedFiles = ['package-lock.json'],
   } = options;
@@ -300,27 +301,55 @@ test('T1-F10-02: Scanner detects commercial coaching institute brand names', () 
   }
 });
 
-test('T1-F10-03: Scanner inspects supported text extensions and ignores binary extensions', () => {
-  const supported = ['.js', '.mjs', '.ts', '.tsx', '.json', '.md', '.html', '.css'];
-  const ignored = ['.png', '.jpg', '.jpeg', '.gif', '.woff', '.woff2', '.zip', '.ico'];
+test('T1-F10-03: Scanner inspects supported text extensions and ignores binary extensions and NUL-byte payloads', () => {
+  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'classx-orig-ext-'));
+  const textFixtures = [
+    { name: 'sample.js', content: `export const msg = "${b64('QnlqdSdz')} notes";\n` },
+    { name: 'sample.ts', content: `export const tag: string = '${b64('VmVkYW50dQ==')}';\n` },
+    { name: 'sample.md', content: `# Guide\nAvoid ${b64('QnlqdSdz')} links.\n` },
+    { name: 'sample.py', content: `PROMPT = "Do not cite ${b64('VmVkYW50dQ==')}"\n` },
+    { name: 'sample.txt', content: `Plaintext note mentioning ${b64('QnlqdSdz')}\n` },
+    { name: 'sample.yml', content: `source: "${b64('VmVkYW50dQ==')}"\n` },
+  ];
+  const ignoredBinaryFiles = ['logo.png', 'photo.jpg', 'font.woff2', 'favicon.ico'];
 
-  for (const ext of supported) {
-    assert.ok(
-      ['.js', '.mjs', '.cjs', '.ts', '.tsx', '.json', '.md', '.html', '.css'].includes(ext),
-      `Extension ${ext} must be in supported scanner list`,
+  try {
+    for (const fixture of textFixtures) {
+      fs.writeFileSync(path.join(tempDir, fixture.name), fixture.content, 'utf8');
+    }
+    for (const binName of ignoredBinaryFiles) {
+      fs.writeFileSync(
+        path.join(tempDir, binName),
+        Buffer.concat([Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x00, 0x00]), Buffer.from(b64('QnlqdSdz'))]),
+      );
+    }
+    // Supported extension containing a NUL byte must be skipped by isBinary()
+    fs.writeFileSync(
+      path.join(tempDir, 'binary-payload.js'),
+      Buffer.concat([Buffer.from('const x = "\0'), Buffer.from(b64('VmVkYW50dQ==')), Buffer.from('";')]),
     );
-  }
 
-  for (const ext of ignored) {
-    assert.ok(
-      !['.js', '.mjs', '.cjs', '.ts', '.tsx', '.json', '.md', '.html', '.css'].includes(ext),
-      `Extension ${ext} must be excluded from scanner`,
+    const violations = scanDirectory(tempDir);
+    assert.equal(
+      violations.length,
+      textFixtures.length,
+      `Expected ${textFixtures.length} violations across supported text extensions, got ${JSON.stringify(violations)}`,
     );
+
+    const detectedFiles = violations.map((v) => path.basename(v.file));
+    for (const fixture of textFixtures) {
+      assert.ok(detectedFiles.includes(fixture.name), `Supported text file ${fixture.name} must be scanned`);
+    }
+    for (const ignored of [...ignoredBinaryFiles, 'binary-payload.js']) {
+      assert.ok(!detectedFiles.includes(ignored), `Binary/ignored file ${ignored} must not produce violations`);
+    }
+  } finally {
+    fs.rmSync(tempDir, { recursive: true, force: true });
   }
 });
 
 test('T1-F10-04: Scanner directory crawler excludes build artifacts and scans test files without self-exclusion', () => {
-  const tempRoot = path.join(PLATFORM_ROOT, 'node_modules', '.cache-originality-test-exclusions');
+  const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), 'classx-orig-excl-'));
   const tempNodeModules = path.join(tempRoot, 'node_modules');
   const tempGit = path.join(tempRoot, '.git');
   fs.mkdirSync(tempNodeModules, { recursive: true });
@@ -379,12 +408,16 @@ test('T2-F10-01: Word boundary checks avoid false positives on legitimate scient
     // Valid scientific/social text must not trigger isolated word pattern (Entity 13)
     'Democracy creates space to challenge caste hierarchy.',
     'Students face challenging questions in NCERT Exemplar.',
+    'Challenge question for NCERT Exemplar',
+    'Allene hydrocarbon C3H4',
     'A challenging conceptual derivation in geometric optics.',
 
     // Valid scientific text must not trigger standalone abbreviation pattern (Entity 03)
     'Electric power is the rate at which electrical energy is consumed.',
+    'Power P = W / t in watts',
     'A magnetic field exerts an upward force on the charged particle.',
     'The password must be stored as an encrypted hash.',
+    'Password hashing',
 
     // Valid scientific text must not trigger prefix pattern (Entity 01)
     'The statement proposed by Euclid in Book VII of the Elements.',
@@ -394,10 +427,12 @@ test('T2-F10-01: Word boundary checks avoid false positives on legitimate scient
     // Valid physics text must not trigger commercial institute pattern (Entity 20)
     'State Newton\'s first law of motion and explain inertia.',
     'Derive the second equation of motion for uniform acceleration.',
+    'Equation of motion v = u + at',
     'Brownian motion of suspended pollen grains in water.',
 
     // Valid physics/chemistry text must not trigger commercial institute pattern (Entity 16)
     'Magnetic Resonance Imaging (MRI) is used in medical diagnosis.',
+    'Resonance structure of benzene',
     'The chemical structure exhibits resonance stabilization.',
     'Resonance frequency of an oscillating pendulum.',
   ];
@@ -412,15 +447,24 @@ test('T2-F10-01: Word boundary checks avoid false positives on legitimate scient
   }
 });
 
-test('T2-F10-02: Catches punctuation, apostrophe variations, and Unicode curly apostrophes', () => {
+test('T2-F10-02: Catches punctuation, apostrophe variations, separator obfuscations, and Unicode curly apostrophes', () => {
   const variations = [
     `${b64('YnlqdXM=')} learning module`,
     `${b64('YnlqdSnigJlz')} learning module`, // U+2019 right single quotation mark
     `${b64('cC53Lg==')} test series`,
+    `${b64('UF9X')} batch notes`,
+    `${b64('UCBX')} crash course`,
     `${b64('UGh5c2ljcy1XYWxsYWg=')} online lecture`,
     `${b64('S2hhbi1BY2FkZW15')} video clip`,
     `${b64('U3JpLUNoYWl0YW55YQ==')} foundation academy`,
     `${b64('Q2FyZWVyLVBvaW50')} study package`,
+    `${b64('UmVzb25hbmNlLUtvdGE=')} module`,
+    `${b64('UmVzb25hbmNlX2VkdQ==')} sheet`,
+    `${b64('UmVzb25hbmNlIEVkdWNhdGlvbg==')} test series`,
+    `${b64('TmFyYXlhbmFfYWNhZA==')} workbook`,
+    `${b64('TmFyYXlhbmEtaWl0')} notes`,
+    `${b64('TW90aW9uLUtvdGE=')} practice paper`,
+    `${b64('TW90aW9uX2VkdQ==')} lecture`,
   ];
 
   for (const text of variations) {
@@ -489,8 +533,7 @@ test('T2-F10-06: Multiple brand names on a single line are all captured', () => 
 // ============================================================================
 
 test('T3-F10-01: Synthetic dirty fixtures directory correctly detects all violations', () => {
-  const tempDir = path.join(PLATFORM_ROOT, 'node_modules', '.cache-originality-test-dirty');
-  fs.mkdirSync(tempDir, { recursive: true });
+  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'classx-orig-dirty-'));
 
   try {
     fs.writeFileSync(
@@ -517,8 +560,7 @@ test('T3-F10-01: Synthetic dirty fixtures directory correctly detects all violat
 });
 
 test('T3-F10-02: Synthetic clean syllabus directory passes with 100% cleanliness', () => {
-  const tempDir = path.join(PLATFORM_ROOT, 'node_modules', '.cache-originality-test-clean');
-  fs.mkdirSync(tempDir, { recursive: true });
+  const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'classx-orig-clean-'));
 
   try {
     fs.writeFileSync(
@@ -553,8 +595,8 @@ test('T3-F10-03: Student-facing UI components and screens audit confirms zero br
 // TIER 4: WHOLE-PLATFORM SAFETY AUDIT
 // ============================================================================
 
-test('T4-F10-01: Whole-platform academic originality audit across server, web, docs, scripts, eval, tests', () => {
-  const targetDirs = ['server', 'web/src', 'docs', 'scripts', 'eval', 'tests']
+test('T4-F10-01: Whole-platform academic originality audit across backend, server, web, docs, scripts, eval, tests', () => {
+  const targetDirs = ['backend', 'server', 'web/src', 'docs', 'scripts', 'eval', 'tests']
     .map((p) => path.join(PLATFORM_ROOT, p))
     .filter((p) => fs.existsSync(p));
 

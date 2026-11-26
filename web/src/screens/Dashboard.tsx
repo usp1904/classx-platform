@@ -11,7 +11,6 @@ import {
   Flame,
   Play,
   Sigma,
-  Sparkles,
   Target,
   TrendingUp,
   Trophy,
@@ -21,7 +20,7 @@ import { Card, ProgressBar, ProgressRing, SectionHeader, Stat, Badge, Button, Ch
 import { useApp } from '../lib/store';
 
 const accentMap: Record<string, string> = {
-  indigo: 'var(--indigo)',
+  forest: 'var(--accent-forest)',
   emerald: 'var(--mint)',
   amber: 'var(--saffron)',
   rose: 'var(--rose)',
@@ -79,7 +78,7 @@ export default function Dashboard() {
           <p>Structured, distraction-free environment for Class X Board Mastery and DSC / UPSC Foundation preparation.</p>
         </div>
         <div className="flex gap-2">
-          <Button variant="secondary" icon={<Sparkles size={16} />} onClick={() => navigate('/tutor')}>Ask Tutor</Button>
+          <Button variant="secondary" icon={<BookOpen size={16} />} onClick={() => navigate('/tutor')}>Study Workspace</Button>
           <Button variant="primary" icon={<Play size={16} />} onClick={() => navigate('/video/mathematics/real-numbers')}>Video Lessons</Button>
         </div>
       </div>
@@ -108,28 +107,22 @@ export default function Dashboard() {
               </div>
               <div className="continue-art" aria-hidden="true">
                 <svg viewBox="0 0 320 260">
-                  <defs>
-                    <linearGradient id="heroLine" x1="0" x2="1">
-                      <stop offset="0" stopColor="#f8c26a" />
-                      <stop offset="1" stopColor="#ff8a5c" />
-                    </linearGradient>
-                  </defs>
-                  <g opacity="0.5" stroke="rgba(255,255,255,.22)" strokeWidth="1">
+                  <g stroke="rgba(24,24,27,0.12)" strokeWidth="1">
                     {[40, 80, 120, 160, 200, 240, 280].map((x) => <line key={x} x1={x} y1="20" x2={x} y2="240" />)}
                     {[40, 80, 120, 160, 200].map((y) => <line key={y} x1="20" y1={y} x2="300" y2={y} />)}
                   </g>
-                  <path d="M25 225 C 75 220, 95 170, 130 150 S 200 95, 235 70 S 280 40, 300 34" fill="none" stroke="url(#heroLine)" strokeWidth="4" strokeLinecap="round" />
-                  <circle cx="235" cy="70" r="9" fill="#ffd38a" />
-                  <circle cx="235" cy="70" r="18" fill="none" stroke="rgba(255,211,138,.45)" />
-                  <text x="32" y="58" fill="rgba(255,255,255,.82)" fontSize="14" fontFamily="Georgia">y = ax² + bx + c</text>
-                  <text x="220" y="235" fill="rgba(255,255,255,.6)" fontSize="12">your growth curve</text>
+                  <path d="M25 225 C 75 220, 95 170, 130 150 S 200 95, 235 70 S 280 40, 300 34" fill="none" stroke="#1B4332" strokeWidth="4" strokeLinecap="round" />
+                  <circle cx="235" cy="70" r="8" fill="#D95D39" />
+                  <circle cx="235" cy="70" r="16" fill="none" stroke="rgba(217,93,57,0.35)" strokeWidth="2" />
+                  <text x="32" y="58" fill="#18181B" fontSize="14" fontFamily="Georgia">y = ax² + bx + c</text>
+                  <text x="210" y="235" fill="#52525B" fontSize="12">your growth curve</text>
                 </svg>
               </div>
             </Card>
           )}
 
           <div className="stat-grid">
-            <Stat icon={<Zap size={18} />} label="XP earned" value={progress.xp.toLocaleString('en-IN')} hint="Every solved question counts" tone="indigo" />
+            <Stat icon={<Zap size={18} />} label="XP earned" value={progress.xp.toLocaleString('en-IN')} hint="Every solved question counts" tone="forest" />
             <Stat icon={<Flame size={18} />} label="Day streak" value={`${progress.streak} ${progress.streak === 1 ? 'day' : 'days'}`} hint="Keep the chain alive" tone="saffron" />
             <Stat icon={<Target size={18} />} label="Accuracy" value={`${accuracy}%`} hint={`${progress.practice.answered} questions attempted`} tone="mint" />
             <Stat icon={<Trophy size={18} />} label="Chapters done" value={`${totals.completed}/${totals.authored}`} hint="Authored chapters" tone="rose" />
@@ -152,12 +145,12 @@ export default function Dashboard() {
                   <Link key={subject.id} to={`/courses?subject=${subject.id}`} className={`subject-card accent-${subject.accent}`}>
                     <div className="subject-card-top">
                       <span className="subject-icon">{subject.id === 'mathematics' ? <Sigma size={20} /> : subject.id === 'science' ? <BrainCircuit size={20} /> : <BookOpen size={20} />}</span>
-                      <Badge tone={subject.accent as 'indigo' | 'mint' | 'saffron' | 'rose'}>{subject.coverage.total} chapters</Badge>
+                      <Badge tone={subject.accent as 'forest' | 'mint' | 'saffron' | 'rose'}>{subject.coverage.total} chapters</Badge>
                     </div>
                     <h3>{subject.name}</h3>
                     <p>{subject.description}</p>
                     <div className="subject-card-foot">
-                      <ProgressRing value={pct} size={46} stroke={4} color={accentMap[subject.accent]} />
+                      <ProgressRing value={pct} size={46} stroke={4} color={accentMap[subject.accent] || 'var(--accent-forest)'} />
                       <div>
                         <strong>{completed} of {authored.length} authored</strong>
                         <small>{pending ? `${pending} starter or syllabus chapters` : 'All chapters authored'}</small>

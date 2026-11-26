@@ -4,6 +4,7 @@ import {
   Bell,
   BookMarked,
   BookOpen,
+  BookOpenCheck,
   CalendarDays,
   ChartNoAxesColumnIncreasing,
   ChevronRight,
@@ -16,11 +17,8 @@ import {
   LibraryBig,
   Lightbulb,
   Menu,
-  Moon,
   Network,
   Search,
-  Sparkles,
-  Sun,
   Target,
   Trophy,
   Users,
@@ -28,7 +26,6 @@ import {
   X,
 } from 'lucide-react';
 import { useApp } from '../lib/store';
-import { useTheme } from '../lib/theme';
 import { CommandPalette } from './CommandPalette';
 import { MockModeBanner, OfflineIndicatorPill } from './OfflineStatus';
 
@@ -40,7 +37,7 @@ const nav = [
     { to: '/practice', label: 'Practice', icon: Target },
     { to: '/adaptive-practice', label: 'Adaptive Practice', icon: Zap },
     { to: '/mock-tests', label: 'Mock Tests', icon: FileQuestion },
-    { to: '/tutor', label: 'AI Tutor', icon: Sparkles },
+    { to: '/tutor', label: 'Study Workspace', icon: BookOpenCheck },
     { to: '/learning-aids/mathematics/real-numbers', label: 'Learning Aids', icon: Lightbulb },
   ] },
   { section: 'Plan', items: [
@@ -64,7 +61,7 @@ const titleFor = (path: string) => {
   if (path.startsWith('/practice')) return 'Practice';
   if (path.startsWith('/adaptive-practice')) return 'Adaptive Practice';
   if (path.startsWith('/mock-tests')) return 'Mock tests';
-  if (path.startsWith('/tutor')) return 'AI Tutor';
+  if (path.startsWith('/tutor')) return 'Study Workspace';
   if (path.startsWith('/planner')) return 'Study planner';
   if (path.startsWith('/library')) return 'Revision library';
   if (path.startsWith('/progress')) return 'Progress';
@@ -76,12 +73,11 @@ const titleFor = (path: string) => {
   if (path.startsWith('/rag-search')) return 'RAG Search';
   if (path.startsWith('/offline-status')) return 'Offline Status';
   if (path.startsWith('/learning-aids')) return 'Learning Aids';
-  return 'Peak';
+  return 'ClassX';
 };
 
 export function Layout() {
   const { progress, toasts, dismissToast, curriculum } = useApp();
-  const { theme, toggleTheme } = useTheme();
   const [paletteOpen, setPaletteOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [targetTrack, setTargetTrack] = useState<'boards' | 'competitive'>(() => {
@@ -123,10 +119,10 @@ export function Layout() {
     <div className="app-shell">
       <aside className={`sidebar ${mobileOpen ? 'open' : ''}`} aria-label="Primary navigation">
         <div className="brand-row">
-          <NavLink to="/" className="brand" aria-label="SiriLearnings home">
+          <NavLink to="/" className="brand" aria-label="ClassX home">
             <span className="brand-mark"><GraduationCap size={22} /></span>
             <span>
-              <strong className="text-gradient">SiriLearnings</strong>
+              <strong>ClassX</strong>
               <small>Class X Mastery</small>
             </span>
           </NavLink>
@@ -202,14 +198,6 @@ export function Layout() {
               <kbd>Ctrl K</kbd>
             </button>
             <button className="icon-btn ghost mobile-search-btn" onClick={() => setPaletteOpen(true)} aria-label="Search curriculum"><Search size={18} /></button>
-            <button
-              className="icon-btn ghost"
-              onClick={toggleTheme}
-              title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} mode`}
-              aria-label="Toggle light and dark theme"
-            >
-              {theme === 'dark' ? <Sun size={18} className="text-amber-400" /> : <Moon size={18} className="text-indigo-600" />}
-            </button>
             <button className="streak-chip" title="Daily streak"><Flame size={16} /><span>{progress.streak}</span></button>
             <OfflineIndicatorPill />
             <button className="icon-btn ghost" aria-label="Notifications"><Bell size={18} /><span className="notif-dot" /></button>

@@ -19,7 +19,17 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { isValidVideoId } from '../web/src/lib/youtube.ts';
+import fs from 'node:fs';
+import path from 'node:path';
+import {
+  isValidVideoId,
+  normalizeOrigin,
+  buildEmbedUrl as liveBuildYoutubeEmbedUrl,
+} from '../web/src/lib/youtube.ts';
+
+const PLATFORM_ROOT = path.resolve(import.meta.dirname, '..');
+const CONCEPT_PLAYER_TSX_PATH = path.join(PLATFORM_ROOT, 'web', 'src', 'components', 'ConceptVideoPlayer.tsx');
+const UTILITIES_CSS_PATH = path.join(PLATFORM_ROOT, 'web', 'src', 'utilities.css');
 
 /**
  * VisualAidVideo OKF v0.2 Interface Contract
@@ -35,12 +45,25 @@ import { isValidVideoId } from '../web/src/lib/youtube.ts';
  * Reference contract implementation for Distraction-Locked Embed URL Generation.
  * Strictly adheres to R2 & PROJECT.md specification.
  */
-export function referenceBuildConceptEmbedUrl(video) {
+export function referenceBuildConceptEmbedUrl(video, options = {}) {
   if (!video || !video.video_id) {
     throw new Error('Invalid YouTube video ID: missing video_id');
   }
   if (!isValidVideoId(video.video_id)) {
     throw new Error(`Invalid YouTube video ID: ${video.video_id}`);
+  }
+
+  if (video.start_sec !== undefined && video.start_sec !== null) {
+    const numStart = Number(video.start_sec);
+    if (!Number.isFinite(numStart)) {
+      throw new Error('Invalid video timestamp: start_sec must be a finite number');
+    }
+  }
+  if (video.end_sec !== undefined && video.end_sec !== null) {
+    const numEnd = Number(video.end_sec);
+    if (!Number.isFinite(numEnd)) {
+      throw new Error('Invalid video timestamp: end_sec must be a finite number');
+    }
   }
 
   const startSec = Math.max(0, Math.floor(Number(video.start_sec) || 0));
@@ -56,6 +79,11 @@ export function referenceBuildConceptEmbedUrl(video) {
   url.searchParams.set('start', String(startSec));
   url.searchParams.set('end', String(endSec));
 
+  const origin = normalizeOrigin(options?.origin ?? video?.origin);
+  if (origin) {
+    url.searchParams.set('origin', origin);
+  }
+
   return url.toString();
 }
 
@@ -69,10 +97,10 @@ export function referenceValidateVisualAidVideo(video) {
   if (!isValidVideoId(video.video_id)) {
     return { ok: false, reason: 'invalid-video-id' };
   }
-  if (typeof video.start_sec !== 'number' || video.start_sec < 0) {
+  if (typeof video.start_sec !== 'number' || !Number.isFinite(video.start_sec) || video.start_sec < 0) {
     return { ok: false, reason: 'invalid-start-sec' };
   }
-  if (typeof video.end_sec !== 'number' || video.end_sec < video.start_sec) {
+  if (typeof video.end_sec !== 'number' || !Number.isFinite(video.end_sec) || video.end_sec < video.start_sec) {
     return { ok: false, reason: 'invalid-end-sec' };
   }
   if (typeof video.concept_title !== 'string') {
@@ -92,10 +120,12 @@ export function referenceRenderConceptVideoPlayerModel(
   state = { isEnded: false, currentTime: 0 },
   embedBuilder = buildConceptEmbedUrl,
   validator = validateVisualAidVideo,
+  options = {},
 ) {
   if (!video) {
     return {
       mounted: false,
+      container: null,
       iframe: null,
       headerMask: null,
       observationCue: null,
@@ -104,20 +134,34 @@ export function referenceRenderConceptVideoPlayerModel(
   }
 
   const validated = validator(video);
-  if (!validated.ok && validated.reason === 'invalid-video-id') {
-    throw new Error(`Invalid video ID: ${video.video_id}`);
+  if (!validated.ok) {
+    if (validated.reason === 'invalid-video-id') {
+      throw new Error(`Invalid video ID: ${video.video_id}`);
+    }
+    if (validated.reason === 'invalid-end-sec' || validated.reason === 'invalid-start-sec') {
+      throw new Error(`Invalid video timestamp range (${validated.reason}): ${video.start_sec}..${video.end_sec}`);
+    }
   }
 
   const start = Math.max(0, Math.floor(Number(video.start_sec) || 0));
   const rawEnd = Math.floor(Number(video.end_sec) || 0);
-  const end = rawEnd >= start ? rawEnd : start;
+  const end = rawEnd > start ? rawEnd : start + 1;
 
   const conceptTitle = (video.concept_title && video.concept_title.trim()) || 'Concept Demonstration';
   const embedUrl = embedBuilder({
     ...video,
     start_sec: start,
     end_sec: end,
-  });
+  }, options);
+
+  const container = {
+    className: 'concept-player-frame relative aspect-video w-full overflow-hidden',
+    style: {
+      position: 'relative',
+      aspectRatio: '16 / 9',
+      width: '100%',
+    },
+  };
 
   const headerMask = {
     height: 60,
@@ -162,6 +206,7 @@ export function referenceRenderConceptVideoPlayerModel(
 
   return {
     mounted: true,
+    container,
     iframe: {
       src: embedUrl,
       title: conceptTitle,
@@ -176,32 +221,31 @@ export function referenceRenderConceptVideoPlayerModel(
 
 /**
  * Dynamic production module binding for Milestone 3 <ConceptVideoPlayer />.
- * Attempts to import production exports from web/src/components/ConceptVideoPlayer.tsx
- * (or companion .ts helper module), falling back to the reference contract model
- * with an explicit warning pending M3 component compilation.
+ * Probes pure .ts logic module ahead of .tsx so Node 26 native TypeScript stripping
+ * binds directly without ERR_UNKNOWN_FILE_EXTENSION fallback.
  */
 let boundBuildConceptEmbedUrl = referenceBuildConceptEmbedUrl;
 let boundValidateVisualAidVideo = referenceValidateVisualAidVideo;
-let boundRenderConceptVideoPlayerModel = (video, state) =>
-  referenceRenderConceptVideoPlayerModel(video, state, boundBuildConceptEmbedUrl, boundValidateVisualAidVideo);
+let boundRenderConceptVideoPlayerModel = (video, state, options) =>
+  referenceRenderConceptVideoPlayerModel(video, state, boundBuildConceptEmbedUrl, boundValidateVisualAidVideo, options);
 
 let playerBound = false;
-for (const candidate of ['../web/src/components/ConceptVideoPlayer.tsx', '../web/src/lib/conceptPlayer.ts']) {
+let adapterSource = 'REFERENCE_SPECIFICATION_ORACLE';
+for (const candidate of ['../web/src/lib/conceptPlayer.ts', '../web/src/components/ConceptVideoPlayer.tsx']) {
   try {
     const mod = await import(candidate);
-    if (typeof mod.buildConceptEmbedUrl === 'function') {
+    if (
+      typeof mod.buildConceptEmbedUrl === 'function' &&
+      typeof mod.validateVisualAidVideo === 'function' &&
+      typeof mod.renderConceptVideoPlayerModel === 'function'
+    ) {
       boundBuildConceptEmbedUrl = mod.buildConceptEmbedUrl;
-      playerBound = true;
-    }
-    if (typeof mod.validateVisualAidVideo === 'function') {
       boundValidateVisualAidVideo = mod.validateVisualAidVideo;
-      playerBound = true;
-    }
-    if (typeof mod.renderConceptVideoPlayerModel === 'function') {
       boundRenderConceptVideoPlayerModel = mod.renderConceptVideoPlayerModel;
       playerBound = true;
+      adapterSource = 'PRODUCTION_FRONTEND_MODULE';
+      break;
     }
-    if (playerBound) break;
   } catch {
     // Expected before M3 component compilation or when TSX loader is absent
   }
@@ -211,16 +255,22 @@ if (!playerBound) {
   console.warn('[E2E Adapter] Binding to reference contract model pending M3 component compilation');
 }
 
-export function buildConceptEmbedUrl(video) {
-  return boundBuildConceptEmbedUrl(video);
+export function buildConceptEmbedUrl(video, options = {}) {
+  const input = options && options.origin !== undefined && video && typeof video === 'object'
+    ? { ...video, origin: options.origin }
+    : video;
+  return boundBuildConceptEmbedUrl(input, options);
 }
 
 export function validateVisualAidVideo(video) {
   return boundValidateVisualAidVideo(video);
 }
 
-export function renderConceptVideoPlayerModel(video, state = { isEnded: false, currentTime: 0 }) {
-  return boundRenderConceptVideoPlayerModel(video, state);
+export function renderConceptVideoPlayerModel(video, state = { isEnded: false, currentTime: 0 }, options = {}) {
+  const input = options && options.origin !== undefined && video && typeof video === 'object'
+    ? { ...video, origin: options.origin }
+    : video;
+  return boundRenderConceptVideoPlayerModel(input, state);
 }
 
 /**
@@ -355,11 +405,55 @@ test('T1-F9-06: ConceptVideoPlayer safely handles undefined video prop without t
   assert.equal(model.iframe, null);
 });
 
+test('T1-F9-07: buildConceptEmbedUrl sets normalized origin and ignores invalid origins', () => {
+  const baseVideo = {
+    video_id: 'dQw4w9WgXcQ',
+    start_sec: 10,
+    end_sec: 45,
+    concept_title: 'Origin Verification',
+    observation_cue: 'Check normalized origin query param',
+  };
+
+  const withOrigin = new URL(
+    buildConceptEmbedUrl({ ...baseVideo, origin: 'https://classx.example.org/study/pane?tab=1' }),
+  );
+  assert.equal(withOrigin.searchParams.get('origin'), 'https://classx.example.org');
+
+  const withOptionsOrigin = new URL(
+    buildConceptEmbedUrl(baseVideo, { origin: 'http://localhost:5173/lesson' }),
+  );
+  assert.equal(withOptionsOrigin.searchParams.get('origin'), 'http://localhost:5173');
+
+  const withBadOrigin = new URL(
+    buildConceptEmbedUrl({ ...baseVideo, origin: 'javascript:alert(1)' }),
+  );
+  assert.equal(withBadOrigin.searchParams.get('origin'), null);
+});
+
+test('T1-F9-08: ConceptVideoPlayer models responsive 16:9 container matching utilities.css', () => {
+  const video = {
+    video_id: 'dQw4w9WgXcQ',
+    start_sec: 10,
+    end_sec: 50,
+    concept_title: 'Responsive 16:9 Container',
+    observation_cue: 'Verify aspect-video class and 16/9 CSS rule',
+  };
+
+  const model = renderConceptVideoPlayerModel(video);
+  assert.ok(model.container, 'Player model must include responsive container metadata');
+  assert.ok(model.container.className.includes('aspect-video'), 'Container must include aspect-video class');
+  assert.equal(model.container.style.aspectRatio, '16 / 9');
+  assert.equal(model.container.style.width, '100%');
+
+  const utilitiesCss = fs.readFileSync(UTILITIES_CSS_PATH, 'utf8');
+  assert.match(utilitiesCss, /\.aspect-video\s*\{[^}]*aspect-ratio\s*:\s*16\s*\/\s*9/i);
+});
+
 // ============================================================================
 // TIER 2: BOUNDARY & CORNER CASES (Edge limits, validation, escaping >=5 tests)
 // ============================================================================
 
-test('T2-F9-01: Handles zero-duration or start_sec == end_sec by clamping end to start + 1', () => {
+test('T2-F9-01: Handles zero-duration or start_sec == end_sec with unified end = start + 1 clamping', () => {
   const video = {
     video_id: 'd4e5f6g7h8i',
     start_sec: 45,
@@ -371,6 +465,15 @@ test('T2-F9-01: Handles zero-duration or start_sec == end_sec by clamping end to
   const url = new URL(buildConceptEmbedUrl(video));
   assert.equal(url.searchParams.get('start'), '45');
   assert.equal(url.searchParams.get('end'), '46', 'end_sec must be clamped to at least start_sec + 1');
+
+  const model = renderConceptVideoPlayerModel(video);
+  const modelUrl = new URL(model.iframe.src);
+  assert.equal(modelUrl.searchParams.get('end'), '46');
+  assert.equal(
+    model.headerMask.timeRangeText,
+    '45s–46s',
+    'headerMask timeRangeText must agree with iframe end_sec clamping (45s–46s)',
+  );
 });
 
 test('T2-F9-02: Missing or blank concept_title falls back to default title without error', () => {
@@ -443,6 +546,81 @@ test('T2-F9-06: Empty observation cue omits caption element cleanly', () => {
 
   const model = renderConceptVideoPlayerModel(video);
   assert.equal(model.observationCue, null, 'Blank observation cue must not render an empty caption container');
+});
+
+test('T2-F9-07: Inverted timestamps (end_sec < start_sec) fail validation and never mount an iframe', () => {
+  const invertedVideo = {
+    video_id: 'dQw4w9WgXcQ',
+    start_sec: 100,
+    end_sec: 50,
+    concept_title: 'Inverted Range Test',
+    observation_cue: 'Must never render inverted range',
+  };
+
+  const validation = validateVisualAidVideo(invertedVideo);
+  assert.equal(validation.ok, false);
+  assert.equal(validation.reason, 'invalid-end-sec');
+
+  let threw = false;
+  let model = null;
+  try {
+    model = renderConceptVideoPlayerModel(invertedVideo);
+  } catch {
+    threw = true;
+  }
+  assert.ok(
+    threw || (model && model.mounted === false && model.iframe === null),
+    'renderConceptVideoPlayerModel must throw or refuse to mount for invalid-end-sec',
+  );
+});
+
+test('T2-F9-08: Non-finite timestamps (NaN, Infinity, -Infinity) are rejected or safely clamped without emitting non-finite URLs', () => {
+  const nonFiniteCases = [
+    { start_sec: Infinity, end_sec: 50, expectedReason: 'invalid-start-sec' },
+    { start_sec: -Infinity, end_sec: 50, expectedReason: 'invalid-start-sec' },
+    { start_sec: Number.NaN, end_sec: 50, expectedReason: 'invalid-start-sec' },
+    { start_sec: 10, end_sec: Infinity, expectedReason: 'invalid-end-sec' },
+    { start_sec: 10, end_sec: Number.NaN, expectedReason: 'invalid-end-sec' },
+  ];
+
+  for (const tc of nonFiniteCases) {
+    const video = {
+      video_id: 'dQw4w9WgXcQ',
+      start_sec: tc.start_sec,
+      end_sec: tc.end_sec,
+      concept_title: 'Non-finite Timestamp Guard',
+      observation_cue: 'Check finite bounds',
+    };
+
+    const validation = validateVisualAidVideo(video);
+    assert.equal(validation.ok, false, `Expected invalid for ${tc.start_sec}..${tc.end_sec}`);
+    assert.equal(validation.reason, tc.expectedReason);
+
+    let urlStr = null;
+    try {
+      urlStr = buildConceptEmbedUrl(video);
+    } catch {
+      urlStr = null;
+    }
+    if (urlStr !== null) {
+      assert.doesNotMatch(urlStr, /Infinity|NaN/i);
+      const parsed = new URL(urlStr);
+      assert.ok(Number.isFinite(Number(parsed.searchParams.get('start'))));
+      assert.ok(Number.isFinite(Number(parsed.searchParams.get('end'))));
+    }
+
+    let threw = false;
+    let model = null;
+    try {
+      model = renderConceptVideoPlayerModel(video);
+    } catch {
+      threw = true;
+    }
+    assert.ok(
+      threw || (model && model.mounted === false && model.iframe === null),
+      `renderConceptVideoPlayerModel must not mount for non-finite timestamps (${tc.start_sec}..${tc.end_sec})`,
+    );
+  }
 });
 
 // ============================================================================
@@ -593,4 +771,34 @@ test('T4-F9-02: Zero-Hallucination Video Omission Flow (Unverified or missing to
   assert.equal(dom.headerMask, null);
   assert.equal(dom.observationCue, null);
   assert.equal(dom.studyCard, null);
+});
+
+test('ConceptPlayer Integration: Production module binding, live web/src/lib/youtube.ts, and M3 component verified', () => {
+  assert.equal(isValidVideoId('dQw4w9WgXcQ'), true);
+  assert.equal(isValidVideoId('bad_id'), false);
+  assert.equal(normalizeOrigin('https://classx.example.org/path'), 'https://classx.example.org');
+  assert.equal(normalizeOrigin('javascript:alert(1)'), null);
+
+  const liveEmbed = new URL(
+    liveBuildYoutubeEmbedUrl({
+      videoId: 'dQw4w9WgXcQ',
+      origin: 'https://classx.example.org/app',
+      start: 15,
+    }),
+  );
+  assert.equal(liveEmbed.hostname, 'www.youtube-nocookie.com');
+  assert.equal(liveEmbed.searchParams.get('origin'), 'https://classx.example.org');
+  assert.equal(liveEmbed.searchParams.get('start'), '15');
+
+  if (process.env.STRICT_PRODUCTION === 'true') {
+    assert.equal(
+      adapterSource,
+      'PRODUCTION_FRONTEND_MODULE',
+      'Strict production mode requires live web/src/lib/conceptPlayer.ts (or ConceptVideoPlayer.tsx)',
+    );
+    assert.ok(
+      fs.existsSync(CONCEPT_PLAYER_TSX_PATH),
+      `Strict production mode requires ${CONCEPT_PLAYER_TSX_PATH}`,
+    );
+  }
 });

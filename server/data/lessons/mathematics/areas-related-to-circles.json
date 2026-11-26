@@ -10,7 +10,7 @@
     "Solve real-world problems involving circular parks, race tracks, and decorative designs in the Indian context",
     "Analyze the area of regions formed by circles, annuli (rings), and inscribed/composite figures",
     "Derive and apply the relationship between arc length, sector area, and central angle",
-    "Solve RD Sharma and RS Aggarwal extension problems for competitive exam readiness"
+    "Solve NCERT Reference Practice and extension problems for competitive exam readiness"
   ],
   "prerequisite_nodes": [
     "MATH_CLASS7_CIRCLES_BASICS",
@@ -567,8 +567,8 @@
       ]
     }
   },
-  "rd_sharma_extensions": {
-    "book": "RD Sharma Class 10, Chapter 13 — Areas Related to Circles",
+  "advanced_extensions": {
+    "book": "NCERT Reference Practice Class 10, Chapter 13 — Areas Related to Circles",
     "topics": [
       {
         "name": "Area of a Sector with Combined Figures",
@@ -609,8 +609,8 @@
       }
     ]
   },
-  "rs_aggarwal_extensions": {
-    "book": "RS Aggarwal Class 10, Chapter 13 — Areas Related to Circles",
+  "competitive_bridge_extensions": {
+    "book": "NCERT Competitive Practice Class 10, Chapter 13 — Areas Related to Circles",
     "topics": [
       {
         "name": "Area of Paths and Borders",

@@ -10,7 +10,7 @@
     "Calculate the sum of n terms of an AP using Sₙ = n/2[2a + (n-1)d]",
     "Insert arithmetic means between given numbers",
     "Apply AP concepts to real-life Indian context problems",
-    "Solve RD Sharma and RS Aggarwal extension problems for competitive exam readiness"
+    "Solve NCERT Reference Practice and extension problems for competitive exam readiness"
   ],
   "prerequisite_nodes": [
     "MATH_CLASS7_PATTERNS",
@@ -436,8 +436,8 @@
       ]
     }
   },
-  "rd_sharma_extensions": {
-    "book": "RD Sharma Class 10, Chapter 5 — Arithmetic Progressions",
+  "advanced_extensions": {
+    "book": "NCERT Reference Practice Class 10, Chapter 5 — Arithmetic Progressions",
     "topics": [
       {
         "name": "Selection of Terms in an AP",
@@ -479,12 +479,12 @@
             "final_answer": "(7n-3)/(4n+11.5) or (14n-6)/(8n+23)"
           }
         ],
-        "competitive_note": "This is a classic RD Sharma problem. The trick: replace n by (2n-1) in the sum ratio to get the nth term ratio."
+        "competitive_note": "This is a classic NCERT Reference Practice problem. The trick: replace n by (2n-1) in the sum ratio to get the nth term ratio."
       }
     ]
   },
-  "rs_aggarwal_extensions": {
-    "book": "RS Aggarwal Class 10, Chapter 5 — Arithmetic Progressions",
+  "competitive_bridge_extensions": {
+    "book": "NCERT Competitive Practice Class 10, Chapter 5 — Arithmetic Progressions",
     "topics": [
       {
         "name": "Arithmetic Mean — Single and Multiple Means",

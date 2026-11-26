@@ -1,5 +1,13 @@
 import React from 'react';
-import { ArrowRight, BookOpen, CheckCircle2, Circle, Loader2, Sparkles } from 'lucide-react';
+import { ArrowRight, BookOpen, CheckCircle2, Circle, Loader2 } from 'lucide-react';
+
+type Tone = 'neutral' | 'forest' | 'mint' | 'saffron' | 'rose' | 'ink' | string;
+
+function resolveTone(tone: Tone, allowNeutral = false): string {
+  if (tone === 'mint' || tone === 'saffron' || tone === 'rose') return tone;
+  if (allowNeutral && (tone === 'neutral' || tone === 'ink')) return tone;
+  return 'forest';
+}
 
 export function Card({ children, className = '', as: Tag = 'div', ...rest }: { children: React.ReactNode; className?: string; as?: React.ElementType } & React.HTMLAttributes<HTMLElement>) {
   return (
@@ -9,8 +17,8 @@ export function Card({ children, className = '', as: Tag = 'div', ...rest }: { c
   );
 }
 
-export function Badge({ children, tone = 'neutral', className = '' }: { children: React.ReactNode; tone?: 'neutral' | 'indigo' | 'mint' | 'saffron' | 'rose' | 'ink'; className?: string }) {
-  return <span className={`badge badge-${tone} ${className}`}>{children}</span>;
+export function Badge({ children, tone = 'neutral', className = '' }: { children: React.ReactNode; tone?: Tone; className?: string }) {
+  return <span className={`badge badge-${resolveTone(tone, true)} ${className}`}>{children}</span>;
 }
 
 export function Button({
@@ -38,7 +46,7 @@ export function IconButton({ label, children, className = '', ...rest }: { label
   );
 }
 
-export function ProgressRing({ value, size = 56, stroke = 5, color = 'var(--indigo)', label }: { value: number; size?: number; stroke?: number; color?: string; label?: string }) {
+export function ProgressRing({ value, size = 56, stroke = 5, color = 'var(--accent-forest)', label }: { value: number; size?: number; stroke?: number; color?: string; label?: string }) {
   const radius = (size - stroke) / 2;
   const circumference = 2 * Math.PI * radius;
   const clamped = Math.max(0, Math.min(100, value));
@@ -64,10 +72,10 @@ export function ProgressRing({ value, size = 56, stroke = 5, color = 'var(--indi
   );
 }
 
-export function ProgressBar({ value, tone = 'indigo', height = 8 }: { value: number; tone?: 'indigo' | 'mint' | 'saffron' | 'rose'; height?: number }) {
+export function ProgressBar({ value, tone = 'forest', height = 8 }: { value: number; tone?: Tone; height?: number }) {
   return (
     <div className="progress-track" style={{ height }} role="progressbar" aria-valuenow={Math.round(value)} aria-valuemin={0} aria-valuemax={100}>
-      <span className={`progress-fill fill-${tone}`} style={{ width: `${Math.max(0, Math.min(100, value))}%` }} />
+      <span className={`progress-fill fill-${resolveTone(tone)}`} style={{ width: `${Math.max(0, Math.min(100, value))}%` }} />
     </div>
   );
 }
@@ -131,10 +139,10 @@ export function Skeleton({ className = '', height = 16 }: { className?: string; 
   return <div className={`skeleton ${className}`} style={{ height }} />;
 }
 
-export function Stat({ label, value, hint, icon, tone = 'indigo' }: { label: string; value: React.ReactNode; hint?: string; icon?: React.ReactNode; tone?: 'indigo' | 'mint' | 'saffron' | 'rose' }) {
+export function Stat({ label, value, hint, icon, tone = 'forest' }: { label: string; value: React.ReactNode; hint?: string; icon?: React.ReactNode; tone?: Tone }) {
   return (
     <Card className="stat-card">
-      <div className={`stat-icon tone-${tone}`}>{icon || <Sparkles size={18} />}</div>
+      <div className={`stat-icon tone-${resolveTone(tone)}`}>{icon || <BookOpen size={18} />}</div>
       <div>
         <div className="stat-value">{value}</div>
         <div className="stat-label">{label}</div>
@@ -156,9 +164,9 @@ export function CheckLine({ checked, label, hint, onChange }: { checked: boolean
   );
 }
 
-export function Callout({ children, tone = 'indigo', title }: { children: React.ReactNode; tone?: 'indigo' | 'mint' | 'saffron' | 'rose'; title?: string }) {
+export function Callout({ children, tone = 'forest', title }: { children: React.ReactNode; tone?: Tone; title?: string }) {
   return (
-    <div className={`callout callout-${tone}`}>
+    <div className={`callout callout-${resolveTone(tone)}`}>
       {title && <div className="callout-title">{title}</div>}
       {children}
     </div>

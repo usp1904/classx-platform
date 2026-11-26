@@ -74,7 +74,7 @@ export default function ProgressPage() {
       </div>
 
       <div className="stat-grid four">
-        <Stat icon={<Zap size={18} />} label="Total XP" value={progress.xp} hint={`Level ${level}`} tone="indigo" />
+        <Stat icon={<Zap size={18} />} label="Total XP" value={progress.xp} hint={`Level ${level}`} tone="forest" />
         <Stat icon={<Flame size={18} />} label="Streak" value={`${progress.streak} days`} hint={progress.lastActive ? `Last active ${new Date(progress.lastActive).toLocaleDateString('en-IN')}` : 'Start today'} tone="saffron" />
         <Stat icon={<Target size={18} />} label="Practice accuracy" value={`${accuracy}%`} hint={`${progress.practice.answered} attempted`} tone="mint" />
         <Stat icon={<Clock3 size={18} />} label="Study time" value={`${Math.round(totalMinutes / 60)}h ${totalMinutes % 60}m`} hint="Tracked in chapter reader" tone="rose" />
@@ -90,7 +90,7 @@ export default function ProgressPage() {
                   <span className={`subject-dot accent-${subject.accent}`} />
                   <div className="mastery-copy">
                     <div><strong>{subject.name}</strong><small>{subject.completedCount} of {subject.authoredCount} authored chapters · {subject.coverage.syllabusOnly} syllabus maps</small></div>
-                    <ProgressBar value={subject.pct} tone={subject.accent as 'indigo' | 'mint' | 'saffron' | 'rose'} height={7} />
+                    <ProgressBar value={subject.pct} tone={subject.accent as 'forest' | 'mint' | 'saffron' | 'rose'} height={7} />
                   </div>
                   <strong className="mastery-pct">{subject.pct}%</strong>
                   <button className="icon-btn ghost" onClick={() => navigate(`/courses?subject=${subject.id}`)} aria-label={`Open ${subject.name}`}><ArrowRight size={16} /></button>
@@ -150,7 +150,7 @@ export default function ProgressPage() {
         <aside className="progress-rail">
           <Card className="board-readiness-card">
             <div className="eyebrow light">Board readiness</div>
-            <div className="readiness-ring"><ProgressRing value={examAverage} size={104} stroke={8} color="#f8c26a" /></div>
+            <div className="readiness-ring"><ProgressRing value={examAverage} size={104} stroke={8} color="#1B4332" /></div>
             <h3>{examAverage >= 70 ? 'On a strong trajectory' : examAverage >= 40 ? 'Foundation is forming' : 'Baseline needed'}</h3>
             <p>{progress.exams.length ? `Average across ${progress.exams.length} paper${progress.exams.length === 1 ? '' : 's'}. Keep mixed-chapter practice in the loop.` : 'Take one diagnostic paper to replace guesswork with a real number.'}</p>
             <Button variant="on-dark" size="sm" onClick={() => navigate('/mock-tests')}>Open simulator</Button>

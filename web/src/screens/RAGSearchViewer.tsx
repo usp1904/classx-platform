@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Search, BookOpen, FileText, Sparkles, Activity } from 'lucide-react';
+import { Search, ArrowRight } from 'lucide-react';
 import { Badge, Button, Card, SectionHeader, Stat } from '../components/ui';
 import { api } from '../api';
 import type { OkfSearchResult } from '../types';
@@ -34,14 +34,14 @@ export default function RAGSearchViewer() {
         <div className="relative">
           <Search size={18} className="absolute left-3 top-3 text-muted" />
           <input
-            className="w-full pl-10 pr-4 py-3 rounded-xl border border-white/15 bg-white/5 text-white focus:ring-2 focus:ring-indigo-500 placeholder-white/30 outline-none backdrop-blur-md"
+            className="w-full pl-10 pr-4 py-3 rounded-xl border border-[#E4E2DD] bg-[#FAF9F6] text-[#18181B] focus:border-[#1B4332] focus:outline-none"
             placeholder="Search curriculum (e.g. quadratic formula, photosynthesis, French Revolution)"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && search()}
           />
-          <Button onClick={search} disabled={loading || !query.trim()} loading={loading} className="absolute right-3 top-2 size-8">
-            <Sparkles size={16} />
+          <Button onClick={search} disabled={loading || !query.trim()} loading={loading} className="absolute right-3 top-2">
+            <ArrowRight size={16} />
           </Button>
         </div>
         <div className="flex gap-2">
@@ -68,13 +68,13 @@ export default function RAGSearchViewer() {
           {results.length ? (
             <div className="space-y-2">
               {results.map((r, i) => (
-                <Card key={r.id} className="p-3 group hover:bg-gray-800/30">
+                <Card key={r.id} className="p-3 hover:bg-[#F3F1EC] transition-colors">
                   <div className="flex justify-between items-start mb-1">
                     <span className="text-xs font-semibold">{r.type}</span>
                     <Badge tone={r.okf?.topic?.difficulty === 'complex' ? 'rose' : r.okf?.topic?.difficulty === 'medium' ? 'saffron' : 'mint'} className="text-xs">{r.okf?.topic?.difficulty || '—'}</Badge>
                   </div>
                   <h4 className="text-sm font-medium mb-1">{r.title}</h4>
-                  <p className="text-xs text-muted line-clamp-2">{r.text?.slice(0, 200)}</p>
+                  <p className="text-xs text-muted">{r.text?.slice(0, 200)}</p>
                   <div className="flex items-center gap-2 mt-2">
                     <span className="text-[10px] text-muted">{r.subjectName} · {r.chapterName}</span>
                     {r.okf?.topic && (
@@ -85,7 +85,7 @@ export default function RAGSearchViewer() {
                   {r.okf?.tags.length && (
                     <div className="flex flex-wrap gap-1 mt-1">
                       {r.okf.tags.map((tag) => (
-                        <span key={tag} className="px-1.5 py-0.5 rounded text-[10px] border border-gray-700/30 text-gray-400 bg-gray-900/30">{tag}</span>
+                        <span key={tag} className="px-1.5 py-0.5 rounded text-[10px] border border-[#E4E2DD] text-[#52525B] bg-[#F3F1EC]">{tag}</span>
                       ))}
                     </div>
                   )}

@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import type { Visualization } from '../types';
 
-const palette = { indigo: '#4855c9', mint: '#0f9f7f', saffron: '#e79a2d', rose: '#d95c72', ink: '#1c2437' };
+const palette = { forest: '#1B4332', mint: '#15803D', saffron: '#B45309', rose: '#D95D39', ink: '#18181B' };
 
 function NumberLine({ props }: { props: Record<string, unknown> }) {
   const range = (props.range as [number, number]) || [-10, 10];
@@ -24,7 +24,7 @@ function NumberLine({ props }: { props: Record<string, unknown> }) {
         );
       })}
       {markers.map((marker, index) => {
-        const color = marker.color === 'green' ? palette.mint : marker.color === 'red' ? palette.rose : palette.indigo;
+        const color = marker.color === 'green' ? palette.mint : marker.color === 'red' ? palette.rose : palette.forest;
         const above = index % 2 === 0;
         return (
           <g key={`${marker.position}-${index}`}>
@@ -52,20 +52,20 @@ function RightTriangle({ props, interactive = false }: { props: Record<string, u
     <div className="viz-interactive">
       <svg viewBox="0 0 520 360" className="viz-svg" role="img" aria-label={String(props.title || 'Right triangle')}>
         <g transform="translate(70 300)">
-          <polygon points={`0,0 ${base},0 ${base},${-h}`} fill="rgba(72,85,201,.08)" stroke="none" />
-          <line x1="0" y1="0" x2={base} y2="0" stroke={palette.indigo} strokeWidth="4" />
+          <polygon points={`0,0 ${base},0 ${base},${-h}`} fill="rgba(27,67,50,.08)" stroke="none" />
+          <line x1="0" y1="0" x2={base} y2="0" stroke={palette.forest} strokeWidth="4" />
           <line x1={base} y1="0" x2={base} y2={-h} stroke={palette.mint} strokeWidth="4" />
           <line x1="0" y1="0" x2={base} y2={-h} stroke={palette.rose} strokeWidth="4" />
           <rect x={base - 16} y={-16} width="16" height="16" fill="none" stroke="#9aa3b7" strokeWidth="1.5" />
           <path d={`M 38 0 A 38 38 0 0 0 ${38 * Math.cos(rad)} ${-38 * Math.sin(rad)}`} fill="none" stroke={palette.saffron} strokeWidth="2.5" />
           <text x="48" y="-12" fontSize="13" fill={palette.saffron} fontWeight="700">{Math.round(angleActual)}°</text>
-          <text x={base / 2} y="24" textAnchor="middle" fill={palette.indigo} fontSize="13" fontWeight="700">{labels[1] || 'adjacent'}</text>
+          <text x={base / 2} y="24" textAnchor="middle" fill={palette.forest} fontSize="13" fontWeight="700">{labels[1] || 'adjacent'}</text>
           <text x={base + 12} y={-h / 2} fill={palette.mint} fontSize="13" fontWeight="700">{labels[0] || 'opposite'}</text>
           <text x={base / 2 - 60} y={-h / 2 - 12} fill={palette.rose} fontSize="13" fontWeight="700">{labels[2] || 'hypotenuse'}</text>
         </g>
         {Boolean(props.showSquares) && (
           <g opacity="0.85">
-            <rect x="88" y="270" width={Math.min(90, base * 0.32)} height={Math.min(90, base * 0.32)} fill="rgba(72,85,201,.12)" stroke={palette.indigo} strokeDasharray="4 4" />
+            <rect x="88" y="270" width={Math.min(90, base * 0.32)} height={Math.min(90, base * 0.32)} fill="rgba(27,67,50,.10)" stroke={palette.forest} strokeDasharray="4 4" />
             <rect x="385" y="150" width={Math.min(70, h * 0.28)} height={Math.min(70, h * 0.28)} fill="rgba(15,159,127,.12)" stroke={palette.mint} strokeDasharray="4 4" />
           </g>
         )}
@@ -94,15 +94,15 @@ function HeightDistance({ props }: { props: Record<string, unknown> }) {
         <g>
           <line x1="60" y1="285" x2="60" y2={285 - clamp} stroke={palette.ink} strokeWidth="7" strokeLinecap="round" />
           <rect x="52" y={285 - clamp - 10} width="18" height="10" fill={palette.saffron} />
-          <line x1="60" y1="285" x2={60 + base} y2="285" stroke={palette.indigo} strokeWidth="3" />
+          <line x1="60" y1="285" x2={60 + base} y2="285" stroke={palette.forest} strokeWidth="3" />
           <line x1="60" y1="285" x2="60" y2={285 - clamp} stroke={palette.mint} strokeWidth="2" strokeDasharray="5 4" />
           <line x1="60" y1="285" x2={"60"} y2={285 - clamp} stroke={palette.rose} strokeWidth="2" />
           <path d={`M 112 285 A 52 52 0 0 0 ${60 + 52 * Math.cos((angle * Math.PI) / 180)} ${285 - 52 * Math.sin((angle * Math.PI) / 180)}`} fill="none" stroke={palette.saffron} strokeWidth="2.5" />
           <text x="68" y="266" fontSize="14" fontWeight="700" fill={palette.saffron}>{angle}°</text>
-          <text x={60 + base / 2} y="307" textAnchor="middle" fontSize="12" fill={palette.indigo}>observer distance {distance} m</text>
+          <text x={60 + base / 2} y="307" textAnchor="middle" fontSize="12" fill={palette.forest}>observer distance {distance} m</text>
           <text x="78" y={285 - clamp / 2} fontSize="12" fill={palette.mint}>height ≈ {height.toFixed(1)} m</text>
           <circle cx="60" cy="285" r="4" fill={palette.ink} />
-          <circle cx={60 + base} cy="285" r="4" fill={palette.indigo} />
+          <circle cx={60 + base} cy="285" r="4" fill={palette.forest} />
         </g>
       </svg>
       <label className="viz-slider">
@@ -146,7 +146,7 @@ function CoordinateGraph({ props }: { props: Record<string, unknown> }) {
       )}
       {points.map((point, index) => (
         <g key={index}>
-          <circle cx={x(point[0])} cy={y(point[1])} r="6" fill={palette.indigo} />
+          <circle cx={x(point[0])} cy={y(point[1])} r="6" fill={palette.forest} />
           <text x={x(point[0]) + 10} y={y(point[1]) - 10} fontSize="12" fontWeight="700" fill={palette.ink}>({point[0]}, {point[1]})</text>
         </g>
       ))}
@@ -166,8 +166,8 @@ function SimilarTriangles({ props }: { props: Record<string, unknown> }) {
         const points = triangle.vertices.map(([px, py]) => `${offset + px * scale},${260 - py * scale}`).join(' ');
         return (
           <g key={index}>
-            <polygon points={points} fill={index ? 'rgba(15,159,127,.12)' : 'rgba(72,85,201,.12)'} stroke={index ? palette.mint : palette.indigo} strokeWidth="3" />
-            <text x={offset + 38} y="292" fontSize="13" fontWeight="700" fill={index ? palette.mint : palette.indigo}>{triangle.label || `Triangle ${index + 1}`}</text>
+            <polygon points={points} fill={index ? 'rgba(15,159,127,.12)' : 'rgba(27,67,50,.10)'} stroke={index ? palette.mint : palette.forest} strokeWidth="3" />
+            <text x={offset + 38} y="292" fontSize="13" fontWeight="700" fill={index ? palette.mint : palette.forest}>{triangle.label || `Triangle ${index + 1}`}</text>
           </g>
         );
       })}
@@ -189,7 +189,7 @@ function UnitCircle({ props }: { props: Record<string, unknown> }) {
       <svg viewBox="0 0 420 420" className="viz-svg" role="img" aria-label="Unit circle">
         <line x1="40" y1="210" x2="380" y2="210" stroke="#8c93a4" />
         <line x1="210" y1="40" x2="210" y2="380" stroke="#8c93a4" />
-        <circle cx="210" cy="210" r="140" fill="none" stroke={palette.indigo} strokeWidth="3" />
+        <circle cx="210" cy="210" r="140" fill="none" stroke={palette.forest} strokeWidth="3" />
         <line x1="210" y1="210" x2={px} y2={py} stroke={palette.rose} strokeWidth="3" />
         <line x1={px} y1={py} x2={px} y2="210" stroke={palette.mint} strokeWidth="2" strokeDasharray="5 4" />
         <line x1="210" y1={py} x2={px} y2={py} stroke={palette.saffron} strokeWidth="2" strokeDasharray="5 4" />
@@ -197,7 +197,7 @@ function UnitCircle({ props }: { props: Record<string, unknown> }) {
         <text x={px + 10} y={py - 10} fontSize="12" fontWeight="700" fill={palette.ink}>(cos θ, sin θ)</text>
         <text x="222" y="200" fontSize="12" fill={palette.saffron}>sin</text>
         <text x={px + 6} y="228" fontSize="12" fill={palette.mint}>cos</text>
-        <text x="48" y="50" fontSize="12" fill={palette.indigo}>radius = 1</text>
+        <text x="48" y="50" fontSize="12" fill={palette.forest}>radius = 1</text>
       </svg>
       <label className="viz-slider">
         <span>Angle <strong>{angle}°</strong></span>

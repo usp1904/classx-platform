@@ -1030,13 +1030,13 @@
       ]
     }
   },
-  "rd_sharma_extensions": {
-    "book": "RD Sharma Class 10, Chapter 4 — Triangles",
+  "advanced_extensions": {
+    "book": "NCERT Reference Practice Class 10, Chapter 4 — Triangles",
     "topics": [
       {
         "name": "Basic Proportionality Theorem — Advanced Problems",
         "concept": "BPT can be extended to multiple parallel lines, creating proportional segments. If three or more parallel lines cut two transversals, the segments on the transversals are proportional.",
-        "competitive_note": "RD Sharma includes multi-step BPT problems where you need to apply BPT consecutively or combine with algebraic equations.",
+        "competitive_note": "NCERT Reference Practice includes multi-step BPT problems where you need to apply BPT consecutively or combine with algebraic equations.",
         "examples": [
           {
             "problem": "In ∆ABC, DE ∥ BC and DF ∥ AC. Prove that AD/DB = AF/FC.",
@@ -1064,7 +1064,7 @@
       },
       {
         "name": "Pythagoras Theorem — Extended Applications",
-        "concept": "RD Sharma extends Pythagoras to obtuse and acute triangles, and includes problems involving medians and altitudes combined with Pythagoras.",
+        "concept": "NCERT Reference Practice extends Pythagoras to obtuse and acute triangles, and includes problems involving medians and altitudes combined with Pythagoras.",
         "formula": "In any triangle ABC with AD as median: AB² + AC² = 2(AD² + BD²). This is Apollonius Theorem.",
         "examples": [
           {
@@ -1087,13 +1087,13 @@
       }
     ]
   },
-  "rs_aggarwal_extensions": {
-    "book": "RS Aggarwal Class 10, Chapter 4 — Triangles",
+  "competitive_bridge_extensions": {
+    "book": "NCERT Competitive Practice Class 10, Chapter 4 — Triangles",
     "topics": [
       {
         "name": "Properties of Similar Triangles — Advanced",
         "concept": "If two triangles are similar, the ratio of their perimeters equals the ratio of corresponding sides. Also, the ratio of areas is the square of the ratio of corresponding sides.",
-        "competitive_note": "RS Aggarwal includes many word problems involving similarity in real-life contexts like shadows, mirrors, and reflections.",
+        "competitive_note": "NCERT Competitive Practice includes many word problems involving similarity in real-life contexts like shadows, mirrors, and reflections.",
         "examples": [
           {
             "problem": "A man of height 1.8 m stands in front of a mirror placed on a wall. He sees the top of a building of height 36 m in the mirror. If the distance between the man and the mirror is 2 m and the building is 40 m behind the man, find the height of the mirror from the ground.",

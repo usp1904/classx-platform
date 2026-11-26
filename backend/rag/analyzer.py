@@ -21,7 +21,19 @@ STOP_WORDS = {
     "discuss", "significance", "early", "movements", "about", "its", "be", "can", "do",
     "has", "have", "had", "not", "no", "if", "then", "than", "their", "them", "they",
     "you", "your", "our", "we", "me", "my",
+    "happens", "occur", "occurs", "observe", "observed", "write", "name", "give",
+    "mention", "differentiate", "compare", "define", "derive", "distinguish", "list",
+    "prove", "justify", "evaluate", "analyze", "analyse",
 }
+
+_CHAPTER_ALIASES: Dict[str, str] = {
+    "the-human-eye-and-the-colourful-world": "human-eye-and-colourful-world",
+}
+
+
+def _normalize_chapter_slug(chapter_id: Optional[str]) -> str:
+    slug = (chapter_id or "").strip().lower()
+    return _CHAPTER_ALIASES.get(slug, slug)
 
 COMPETITIVE_PATTERNS = [
     re.compile(r"\b(jee|neet|upsc|dsc)\b", re.I),
@@ -138,9 +150,10 @@ _TOPIC_RULES: List[Tuple[re.Pattern[str], str, str, str]] = [
     (re.compile(r"\b(euclid|irrational|fundamental\s+theorem\s+of\s+arithmetic|hcf|lcm|real\s+numbers)\b", re.I), "mathematics", "real-numbers", "fundamental_theorem_of_arithme"),
     (re.compile(r"\b(polynomial|zeroes)\b", re.I), "mathematics", "polynomials", "polynomials"),
     (re.compile(r"\b(trigonometry|sin|cos|tan)\b", re.I), "mathematics", "introduction-to-trigonometry", "trigonometric_identities"),
-    # Social Science
+    # Social Science (specific multi-word & statutory topics before broad tokens)
+    (re.compile(r"\b(disguised\s+unemployment|mgnrega|sectors\s+of\s+the\s+indian\s+economy)\b", re.I), "social-science", "sectors-of-the-indian-economy", "division_of_sectors_as_organi"),
     (re.compile(r"\b(non-cooperation|non\s+cooperation|chauri\s+chaura)\b", re.I), "social-science", "nationalism-in-india", "non_cooperation_movement"),
-    (re.compile(r"\b(satyagraha|ahimsa|champaran|kheda|gandhi)\b", re.I), "social-science", "nationalism-in-india", "nationalism_in_india"),
+    (re.compile(r"\b(satyagraha|ahimsa|champaran|kheda|gandhi(?!\s+national\s+rural))\b", re.I), "social-science", "nationalism-in-india", "nationalism_in_india"),
     (re.compile(r"\b(frederic\s+sorrieu|sorrieu|utopian\s+vision|1848)\b", re.I), "social-science", "the-rise-of-nationalism-in-europe", "frederic_sorrieu_utopian_visi"),
     (re.compile(r"\b(smallpox|conquest\s+of\s+america|spanish\s+conquerors|global\s+world)\b", re.I), "social-science", "the-making-of-a-global-world", "conquest_disease_and_trade"),
     (re.compile(r"\b(belgium|belgian|sri\s*lanka|majoritarianism|power-sharing|power\s+sharing)\b", re.I), "social-science", "power-sharing", "belgium_and_sri_lanka"),
@@ -151,7 +164,6 @@ _TOPIC_RULES: List[Tuple[re.Pattern[str], str, str, str]] = [
     (re.compile(r"\b(rice|kharif|major\s+crops|rice-producing)\b", re.I), "social-science", "agriculture", "major_crops_rice"),
     (re.compile(r"\b(non-conventional|conventional.*energy|solar\s+energy|photovoltaic)\b", re.I), "social-science", "minerals-and-energy-resources", "non_conventional_sources_of_e"),
     (re.compile(r"\b(currency|medium\s+of\s+exchange|reserve\s+bank|rbi|money\s+and\s+credit)\b", re.I), "social-science", "money-and-credit", "money_as_medium_of_exchange"),
-    (re.compile(r"\b(disguised\s+unemployment|mgnrega|sectors\s+of\s+the\s+indian\s+economy)\b", re.I), "social-science", "sectors-of-the-indian-economy", "division_of_sectors_as_organi"),
     (re.compile(r"\b(globali[sz]ation|mncs|small\s+producers|job\s+insecurity)\b", re.I), "social-science", "globalisation-and-the-indian-economy", "impact_of_globalisation_in_in"),
     # Science
     (re.compile(r"\b(quicklime|calcium\s*oxide|slaked\s*lime|magnesium\s*ribbon|redox|copper\s*oxide|lead\s*nitrate)\b", re.I), "science", "chemical-reactions-and-equations", "chemical_reactions_and_equatio"),
@@ -180,15 +192,27 @@ def _resolve_okf_filters(
     resolved_subject = subject_id or "science"
     resolved_chapter = chapter_id or "general-chapter"
     resolved_topic = "general_topic"
+    explicit_chap_slug = _normalize_chapter_slug(chapter_id)
 
-    for pattern, subj, chap, tag in _TOPIC_RULES:
-        if pattern.search(text):
-            if not subject_id:
-                resolved_subject = subj
-            if not chapter_id:
-                resolved_chapter = chap
-            resolved_topic = tag
-            break
+    matched = False
+    if explicit_chap_slug:
+        for pattern, subj, chap, tag in _TOPIC_RULES:
+            if _normalize_chapter_slug(chap) == explicit_chap_slug and pattern.search(text):
+                if not subject_id:
+                    resolved_subject = subj
+                resolved_topic = tag
+                matched = True
+                break
+
+    if not matched:
+        for pattern, subj, chap, tag in _TOPIC_RULES:
+            if pattern.search(text):
+                if not subject_id:
+                    resolved_subject = subj
+                if not chapter_id:
+                    resolved_chapter = chap
+                resolved_topic = tag
+                break
 
     # Fallback lookup against combined_syllabus_okf.json if still general_topic
     if resolved_topic == "general_topic" and SYLLABUS_OKF_PATH.exists():
@@ -330,16 +354,18 @@ def analyze_query(
     target_exam: Literal["CBSE_BOARD", "JEE_MAIN", "NEET_UG", "UPSC_CSE", "DSC_STATE"] = "CBSE_BOARD"
     if resolved_intent == "COMPETITIVE_BRIDGE":
         if re.search(
+            r"\b(state\s+dsc|dsc|state\s*commission|mgnrega|disguised\s*unemployment|underemployment|globali[sz]ation|mncs?|job\s+insecurity|soil\s*erosion|rice)\b",
+            trimmed,
+            re.I,
+        ):
+            target_exam = "DSC_STATE"
+        elif re.search(
             r"\b(upsc|civil\s*services?|governance|polity|history|sovereign|belgian|majoritarianism|linguistic\s*conflict|federal|seventh\s*schedule|constitutional\s*articles?|secular|smallpox|conquest\s*of\s*america|non-cooperation|satyagraha|sorrieu)\b",
             trimmed,
             re.I,
         ):
             target_exam = "UPSC_CSE"
-        elif re.search(
-            r"\b(dsc|state\s*commission|rural|mgnrega|disguised\s*unemployment|underemployment|globali[sz]ation|mncs?|job\s+insecurity|soil\s*erosion|rice)\b",
-            trimmed,
-            re.I,
-        ):
+        elif re.search(r"\brural\b", trimmed, re.I):
             target_exam = "DSC_STATE"
         elif re.search(
             r"\b(neet|biology|heart|circulation|mendel|dihybrid|punnett|reflex|neuron|synapse|mammals|nephron|tooth\s*decay)\b",
@@ -387,6 +413,23 @@ def query_analyzer(state: AgentState) -> Dict[str, Any]:
         intent_mode=state.intent_mode,
     )
     stages = list(state.pipeline_stages)
+    if not analysis.is_valid:
+        stages.append(
+            PipelineStage(
+                node="query_analyzer",
+                status="failed",
+                output="BLOCKED",
+            )
+        )
+        return {
+            "analysis": analysis,
+            "intent_mode": analysis.intent_mode,
+            "grader_verdict": "REWRITE_QUERY",
+            "answer_layers": None,
+            "visual_aid_video": None,
+            "pipeline_stages": stages,
+        }
+
     stages.append(
         PipelineStage(
             node="query_analyzer",

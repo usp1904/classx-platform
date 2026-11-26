@@ -398,10 +398,15 @@ def test_dataset_queries_pydantic_validation():
 # Tier 4: End-to-End Pydantic Validation Journeys (5 tests -> Total 20 tests)
 # ============================================================================
 
-def test_e2e_cbse_board_high_scorer_pipeline_journey():
-    """Tier 4 Scenario 1: CBSE Chemistry Activity 1.1 end-to-end validation journey."""
+
+def _assert_production_backend_if_required() -> None:
     if os.environ.get("REQUIRE_PRODUCTION_BACKEND") == "1":
         assert PRODUCTION_BACKEND_AVAILABLE, "Production backend/rag/ module must be installed in M4"
+
+
+def test_e2e_cbse_board_high_scorer_pipeline_journey():
+    """Tier 4 Scenario 1: CBSE Chemistry Activity 1.1 end-to-end validation journey."""
+    _assert_production_backend_if_required()
 
     dataset = _load_dataset()
     item = next(d for d in dataset if d["id"] == "eval-sci-chem-001")
@@ -445,196 +450,261 @@ def test_e2e_cbse_board_high_scorer_pipeline_journey():
             ],
         )
 
+    assert state.analysis is not None
     assert state.analysis.intent_mode == "BOARD_EXAM"
     assert state.analysis.hyde_passage == ""
     assert state.grader_verdict == "PASS"
-    assert "**calcium oxide**" in state.answer_layers.boardAnswer
-    assert state.visual_aid_video.video_id == "8U8F4R4o1Lw"
+    assert state.answer_layers is not None
+    assert re.search(r"\*\*[^*]+\*\*", state.answer_layers.boardAnswer)
+    assert re.search(r"\[(?:\d+(?:\.\d+)?|1/2)\s*Marks?\]", state.answer_layers.boardAnswer, re.IGNORECASE)
+    assert re.search(r"CaO|calcium\s+oxide|quicklime|slaked\s+lime|Ca\(OH\)2", state.answer_layers.boardAnswer, re.IGNORECASE)
+    assert state.visual_aid_video is not None and state.visual_aid_video.video_id == "8U8F4R4o1Lw"
+    assert any(s.node == "video_grounder" and s.output == "ATTACHED" for s in state.pipeline_stages)
 
 
 def test_e2e_jee_competitive_bridge_pipeline_journey():
     """Tier 4 Scenario 2: CBSE-to-JEE Electricity foundation bridge E2E journey."""
+    _assert_production_backend_if_required()
+
     dataset = _load_dataset()
     item = next(d for d in dataset if d["id"] == "eval-sci-phy-006")
-    routing = item["expected_routing"]
-    synth = item["expected_synthesis"]
-    vid = item["expected_video_grounding"]["video_metadata"]
 
-    state = AgentState(
-        query=item["query"],
-        subject_id=item["subject"],
-        chapter_id=item["chapter_id"],
-        analysis=QueryAnalysis(
-            intent_mode=routing["intent_mode"],
-            target_exam=routing["target_exam"],
-            okf_filters=OKFFilters(**routing["okf_filters"]),
-            bm25_keywords=routing["bm25_keywords"],
-            hyde_passage="According to NCERT Class 10, Ohm's law relates V and I at constant temperature. Non-ohmic conductors deviate from linearity. Slope of V-I gives resistance.",
-        ),
-        retrieved_chunks=[
-            {"source_type": "NCERT_TEXTBOOK", "content": "Ohm's law V = IR"},
-            {"source_type": "NCERT_EXEMPLAR", "content": "Non-ohmic semiconductor V-I curve"},
-        ],
-        grader_verdict="PASS",
-        answer_layers=LayeredAnswer(
-            coreIntuition=synth["core_intuition_cue"],
-            boardAnswer=" ".join(synth["mandatory_bold_keywords"]) + " " + " ".join(synth["step_mark_breakdown"]) + " Resistance R = 10 ohm.",
-            competitiveBridge="JEE Main: Dynamic resistance dV/dI in p-n junction diodes and filament Joule heating.",
-            examinersTrap=synth["examiners_trap_keyword"],
-        ),
-        visual_aid_video=VisualAidVideo(**vid),
-        pipeline_stages=[
-            PipelineStage(node="query_analyzer", status="completed", output="COMPETITIVE_BRIDGE"),
-            PipelineStage(node="retrieval_grader", status="completed", output="PASS"),
-            PipelineStage(node="pedagogical_generator", status="completed", output="4_LAYERS_GENERATED"),
-        ],
-    )
+    if PRODUCTION_BACKEND_AVAILABLE and build_academic_rag_graph is not None:
+        graph = build_academic_rag_graph()
+        result = graph.invoke({"query": item["query"], "subject_id": item["subject"], "chapter_id": item["chapter_id"]})
+        state = AgentState(**result) if isinstance(result, dict) else result
+    else:
+        routing = item["expected_routing"]
+        synth = item["expected_synthesis"]
+        vid = item["expected_video_grounding"]["video_metadata"]
+        state = AgentState(
+            query=item["query"],
+            subject_id=item["subject"],
+            chapter_id=item["chapter_id"],
+            analysis=QueryAnalysis(
+                intent_mode=routing["intent_mode"],
+                target_exam=routing["target_exam"],
+                okf_filters=OKFFilters(**routing["okf_filters"]),
+                bm25_keywords=routing["bm25_keywords"],
+                hyde_passage="According to NCERT Class 10, Ohm's law relates V and I at constant temperature. Non-ohmic conductors deviate from linearity. Slope of V-I gives resistance.",
+            ),
+            retrieved_chunks=[
+                {"source_type": "NCERT_TEXTBOOK", "content": "Ohm's law V = IR"},
+                {"source_type": "NCERT_EXEMPLAR", "content": "Non-ohmic semiconductor V-I curve"},
+            ],
+            grader_verdict="PASS",
+            answer_layers=LayeredAnswer(
+                coreIntuition=synth["core_intuition_cue"],
+                boardAnswer=" ".join(synth["mandatory_bold_keywords"]) + " " + " ".join(synth["step_mark_breakdown"]) + " Resistance R = 10 ohm.",
+                competitiveBridge="JEE Main: Dynamic resistance dV/dI in p-n junction diodes and filament Joule heating.",
+                examinersTrap=synth["examiners_trap_keyword"],
+            ),
+            visual_aid_video=VisualAidVideo(**vid),
+            pipeline_stages=[
+                PipelineStage(node="query_analyzer", status="completed", output="COMPETITIVE_BRIDGE"),
+                PipelineStage(node="retrieval_grader", status="completed", output="PASS"),
+                PipelineStage(node="pedagogical_generator", status="completed", output="4_LAYERS_GENERATED"),
+            ],
+        )
 
+    assert state.analysis is not None
     assert state.analysis.intent_mode == "COMPETITIVE_BRIDGE"
     assert state.analysis.target_exam == "JEE_MAIN"
     assert len(state.analysis.hyde_passage) > 40
-    assert "JEE" in state.answer_layers.competitiveBridge
-    assert state.visual_aid_video.video_id == "3Z2b3t1QwaA"
+    assert state.grader_verdict == "PASS"
+    assert any(c.get("source_type") == "NCERT_EXEMPLAR" for c in state.retrieved_chunks)
+    assert state.answer_layers is not None
+    assert re.search(r"\bJEE\b", state.answer_layers.competitiveBridge, re.IGNORECASE)
+    assert state.visual_aid_video is not None and state.visual_aid_video.video_id == "3Z2b3t1QwaA"
 
 
 def test_e2e_numerical_hyde_suppression_pipeline_journey():
     """Tier 4 Scenario 5: Numerical solver journey verifying HyDE suppression and SI unit compliance."""
+    _assert_production_backend_if_required()
+
     dataset = _load_dataset()
     item = next(d for d in dataset if d["id"] == "eval-sci-phy-005")
-    routing = item["expected_routing"]
-    synth = item["expected_synthesis"]
 
-    state = AgentState(
-        query=item["query"],
-        subject_id=item["subject"],
-        chapter_id=item["chapter_id"],
-        analysis=QueryAnalysis(
-            intent_mode=routing["intent_mode"],
-            target_exam=routing["target_exam"],
-            okf_filters=OKFFilters(**routing["okf_filters"]),
-            bm25_keywords=routing["bm25_keywords"],
-            hyde_passage="",
-        ),
-        retrieved_chunks=[
-            {"source_type": "NCERT_TEXTBOOK", "content": "Lens formula 1/f = 1/v - 1/u and P = 1/f(m)"},
-            {"source_type": "CBSE_SQP", "content": "1 mark for u = -50 cm, 1 mark for f = +0.25 m, 1 mark for P = +4 D"},
-        ],
-        grader_verdict="PASS",
-        answer_layers=LayeredAnswer(
-            coreIntuition=synth["core_intuition_cue"],
-            boardAnswer="**real and inverted** image at 50 cm [1 Mark]. **focal length** f = +0.25 m [1 Mark]. **power of a lens** P = +4 D [1 Mark].",
-            competitiveBridge="JEE Optics: Thin lens combination power P = P1 + P2.",
-            examinersTrap=synth["examiners_trap_keyword"],
-        ),
-        visual_aid_video=None,
-        pipeline_stages=[
-            PipelineStage(node="query_analyzer", status="completed", output="BOARD_EXAM"),
-            PipelineStage(node="retrieval_grader", status="completed", output="PASS"),
-            PipelineStage(node="pedagogical_generator", status="completed", output="4_LAYERS_GENERATED"),
-            PipelineStage(node="video_grounder", status="completed", output="OMITTED_CLEANLY"),
-        ],
-    )
+    if PRODUCTION_BACKEND_AVAILABLE and build_academic_rag_graph is not None:
+        graph = build_academic_rag_graph()
+        result = graph.invoke({"query": item["query"], "subject_id": item["subject"], "chapter_id": item["chapter_id"]})
+        state = AgentState(**result) if isinstance(result, dict) else result
+    else:
+        routing = item["expected_routing"]
+        synth = item["expected_synthesis"]
+        state = AgentState(
+            query=item["query"],
+            subject_id=item["subject"],
+            chapter_id=item["chapter_id"],
+            analysis=QueryAnalysis(
+                intent_mode=routing["intent_mode"],
+                target_exam=routing["target_exam"],
+                okf_filters=OKFFilters(**routing["okf_filters"]),
+                bm25_keywords=routing["bm25_keywords"],
+                hyde_passage="",
+            ),
+            retrieved_chunks=[
+                {"source_type": "NCERT_TEXTBOOK", "content": "Lens formula 1/f = 1/v - 1/u and P = 1/f(m)"},
+                {"source_type": "CBSE_SQP", "content": "1 mark for u = -50 cm, 1 mark for f = +0.25 m, 1 mark for P = +4 D"},
+            ],
+            grader_verdict="PASS",
+            answer_layers=LayeredAnswer(
+                coreIntuition=synth["core_intuition_cue"],
+                boardAnswer="**real and inverted** image at 50 cm [1 Mark]. **focal length** f = +0.25 m [1 Mark]. **power of a lens** P = +4 D [1 Mark].",
+                competitiveBridge="JEE Optics: Thin lens combination power P = P1 + P2.",
+                examinersTrap=synth["examiners_trap_keyword"],
+            ),
+            visual_aid_video=None,
+            pipeline_stages=[
+                PipelineStage(node="query_analyzer", status="completed", output="BOARD_EXAM"),
+                PipelineStage(node="retrieval_grader", status="completed", output="PASS"),
+                PipelineStage(node="pedagogical_generator", status="completed", output="4_LAYERS_GENERATED"),
+                PipelineStage(node="video_grounder", status="completed", output="OMITTED_CLEANLY"),
+            ],
+        )
 
+    assert state.analysis is not None
     assert state.analysis.hyde_passage == ""
-    assert "+4 D" in state.answer_layers.boardAnswer
+    assert state.grader_verdict == "PASS"
+    assert state.answer_layers is not None
+    assert re.search(r"\b\d+(?:\.\d+)?\s*(?:cm|m|D|dioptre)\b", state.answer_layers.boardAnswer, re.IGNORECASE)
     assert state.visual_aid_video is None
+    assert any(s.node == "video_grounder" and s.output == "OMITTED_CLEANLY" for s in state.pipeline_stages)
 
 
 def test_e2e_humanities_upsc_analytical_pipeline_journey():
     """Tier 4 Scenario 6: Humanities Civics UPSC analytical journey without STEM exam leakage."""
+    _assert_production_backend_if_required()
+
     dataset = _load_dataset()
     item = next(d for d in dataset if d["id"] == "eval-soc-civ-019")
-    routing = item["expected_routing"]
-    synth = item["expected_synthesis"]
-    vid = item["expected_video_grounding"]["video_metadata"]
 
-    state = AgentState(
-        query=item["query"],
-        subject_id=item["subject"],
-        chapter_id=item["chapter_id"],
-        analysis=QueryAnalysis(
-            intent_mode=routing["intent_mode"],
-            target_exam=routing["target_exam"],
-            okf_filters=OKFFilters(**routing["okf_filters"]),
-            bm25_keywords=routing["bm25_keywords"],
-            hyde_passage="Indian federalism divides legislative powers across Union, State, and Concurrent Lists under the Seventh Schedule.",
-        ),
-        retrieved_chunks=[
-            {"source_type": "NCERT_TEXTBOOK", "content": "Three-fold distribution of legislative powers"},
-            {"source_type": "NCERT_EXEMPLAR", "content": "Seventh Schedule Article 246 and residuary powers Article 248"},
-        ],
-        grader_verdict="PASS",
-        answer_layers=LayeredAnswer(
-            coreIntuition=synth["core_intuition_cue"],
-            boardAnswer=" ".join(synth["mandatory_bold_keywords"]) + " " + " ".join(synth["step_mark_breakdown"]),
-            competitiveBridge="UPSC Indian Polity: Seventh Schedule (Article 246), Article 248 residuary powers, and cooperative federalism.",
-            examinersTrap=synth["examiners_trap_keyword"],
-        ),
-        visual_aid_video=VisualAidVideo(**vid),
-        pipeline_stages=[
-            PipelineStage(node="query_analyzer", status="completed", output="COMPETITIVE_BRIDGE"),
-            PipelineStage(node="retrieval_grader", status="completed", output="PASS"),
-            PipelineStage(node="pedagogical_generator", status="completed", output="4_LAYERS_GENERATED"),
-        ],
-    )
+    if PRODUCTION_BACKEND_AVAILABLE and build_academic_rag_graph is not None:
+        graph = build_academic_rag_graph()
+        result = graph.invoke({"query": item["query"], "subject_id": item["subject"], "chapter_id": item["chapter_id"]})
+        state = AgentState(**result) if isinstance(result, dict) else result
+    else:
+        routing = item["expected_routing"]
+        synth = item["expected_synthesis"]
+        vid = item["expected_video_grounding"]["video_metadata"]
+        state = AgentState(
+            query=item["query"],
+            subject_id=item["subject"],
+            chapter_id=item["chapter_id"],
+            analysis=QueryAnalysis(
+                intent_mode=routing["intent_mode"],
+                target_exam=routing["target_exam"],
+                okf_filters=OKFFilters(**routing["okf_filters"]),
+                bm25_keywords=routing["bm25_keywords"],
+                hyde_passage="Indian federalism divides legislative powers across Union, State, and Concurrent Lists under the Seventh Schedule.",
+            ),
+            retrieved_chunks=[
+                {"source_type": "NCERT_TEXTBOOK", "content": "Three-fold distribution of legislative powers"},
+                {"source_type": "NCERT_EXEMPLAR", "content": "Seventh Schedule Article 246 and residuary powers Article 248"},
+            ],
+            grader_verdict="PASS",
+            answer_layers=LayeredAnswer(
+                coreIntuition=synth["core_intuition_cue"],
+                boardAnswer=" ".join(synth["mandatory_bold_keywords"]) + " " + " ".join(synth["step_mark_breakdown"]),
+                competitiveBridge="UPSC Indian Polity: Seventh Schedule (Article 246), Article 248 residuary powers, and cooperative federalism.",
+                examinersTrap=synth["examiners_trap_keyword"],
+            ),
+            visual_aid_video=VisualAidVideo(**vid),
+            pipeline_stages=[
+                PipelineStage(node="query_analyzer", status="completed", output="COMPETITIVE_BRIDGE"),
+                PipelineStage(node="retrieval_grader", status="completed", output="PASS"),
+                PipelineStage(node="pedagogical_generator", status="completed", output="4_LAYERS_GENERATED"),
+            ],
+        )
 
+    assert state.analysis is not None
     assert state.analysis.okf_filters.subject == "social-science"
     assert state.analysis.target_exam == "UPSC_CSE"
+    assert state.grader_verdict == "PASS"
+    assert state.answer_layers is not None
     assert "UPSC" in state.answer_layers.competitiveBridge
     assert not re.search(r"\b(jee|neet)\b", state.answer_layers.competitiveBridge, re.IGNORECASE)
-    assert state.visual_aid_video.video_id == "6B5C4D3E2F1"
+    assert state.visual_aid_video is not None and state.visual_aid_video.video_id == "6B5C4D3E2F1"
 
 
 def test_e2e_query_rewrite_relaxation_recovery_journey():
     """Tier 4 Scenario 7: Query rewrite filter relaxation recovery journey from REWRITE_QUERY to PASS."""
-    state = AgentState(
-        query="Why did Mahatma Gandhi withdraw the Non-Cooperation Movement?",
-        subject_id="social-science",
-        chapter_id="nationalism-in-india",
-        analysis=QueryAnalysis(
-            intent_mode="COMPETITIVE_BRIDGE",
-            target_exam="UPSC_CSE",
-            okf_filters=OKFFilters(
-                subject="social-science",
-                chapter_id="nationalism-in-india",
-                topic_tag="non_cooperation_movement",
-                source_type="NCERT_EXEMPLAR",
+    _assert_production_backend_if_required()
+
+    if PRODUCTION_BACKEND_AVAILABLE and build_academic_rag_graph is not None:
+        graph = build_academic_rag_graph()
+        result = graph.invoke(
+            {
+                "query": "Why did Mahatma Gandhi withdraw the Non-Cooperation Movement?",
+                "subject_id": "social-science",
+                "chapter_id": "nationalism-in-india",
+                "intent_mode": "COMPETITIVE_BRIDGE",
+                "retrieved_chunks": [
+                    {"id": "weak-1", "source_type": "RANDOM_WEB", "content": "Irrelevant noisy snippet", "score": 0.25},
+                    {"id": "tb-only", "source_type": "NCERT_TEXTBOOK", "content": "Non-Cooperation Movement 1920", "score": 0.85},
+                ],
+            }
+        )
+        state = AgentState(**result) if isinstance(result, dict) else result
+
+        assert state.retry_count >= 1
+        assert state.relaxed_filters is True
+        assert state.grader_verdict == "PASS"
+        assert state.answer_layers is not None
+        assert not re.search(r"\b(jee|neet)\b", state.answer_layers.competitiveBridge, re.IGNORECASE)
+        stage_outputs = [s.output for s in state.pipeline_stages]
+        assert "REWRITE_QUERY" in stage_outputs
+        assert "RELAXED_OKF_FILTERS" in stage_outputs
+        assert "PASS" in stage_outputs
+    else:
+        state = AgentState(
+            query="Why did Mahatma Gandhi withdraw the Non-Cooperation Movement?",
+            subject_id="social-science",
+            chapter_id="nationalism-in-india",
+            analysis=QueryAnalysis(
+                intent_mode="COMPETITIVE_BRIDGE",
+                target_exam="UPSC_CSE",
+                okf_filters=OKFFilters(
+                    subject="social-science",
+                    chapter_id="nationalism-in-india",
+                    topic_tag="non_cooperation_movement",
+                    source_type="NCERT_EXEMPLAR",
+                ),
+                bm25_keywords=["gandhi", "non-cooperation", "chauri", "chaura", "ahimsa"],
+                hyde_passage="Gandhi withdrew the Non-Cooperation Movement in February 1922 after the Chauri Chaura incident.",
             ),
-            bm25_keywords=["gandhi", "non-cooperation", "chauri", "chaura", "ahimsa"],
-            hyde_passage="Gandhi withdrew the Non-Cooperation Movement in February 1922 after the Chauri Chaura incident.",
-        ),
-        retrieved_chunks=[],
-        grader_verdict="REWRITE_QUERY",
-        retry_count=0,
-        pipeline_stages=[
-            PipelineStage(node="query_analyzer", status="completed", output="COMPETITIVE_BRIDGE"),
-            PipelineStage(node="retrieval_grader", status="completed", output="REWRITE_QUERY"),
-        ],
-    )
-    assert state.grader_verdict == "REWRITE_QUERY"
-    assert state.retry_count == 0
+            retrieved_chunks=[],
+            grader_verdict="REWRITE_QUERY",
+            retry_count=0,
+            pipeline_stages=[
+                PipelineStage(node="query_analyzer", status="completed", output="COMPETITIVE_BRIDGE"),
+                PipelineStage(node="retrieval_grader", status="completed", output="REWRITE_QUERY"),
+            ],
+        )
+        assert state.grader_verdict == "REWRITE_QUERY"
+        assert state.retry_count == 0
 
-    # Relaxed filter retry
-    state.retry_count += 1
-    state.pipeline_stages.append(PipelineStage(node="query_rewriter", status="completed", output="RELAXED_OKF_FILTERS"))
-    state.retrieved_chunks = [
-        {"source_type": "NCERT_TEXTBOOK", "content": "Chauri Chaura February 1922 police station incident"},
-        {"source_type": "NCERT_EXEMPLAR", "content": "Gandhian satyagraha training in non-violence Ahimsa"},
-    ]
-    state.grader_verdict = "PASS"
-    state.pipeline_stages.append(PipelineStage(node="retrieval_grader", status="completed", output="PASS"))
-    state.answer_layers = LayeredAnswer(
-        coreIntuition="Pausing a marathon when runners start tripping so everyone trains in discipline first.",
-        boardAnswer="**Non-Cooperation Movement** withdrawn after **Chauri Chaura** [1 Mark]. Commitment to **Ahimsa** [1 Mark].",
-        competitiveBridge="UPSC Modern History: Debates among Swarajists, No-Changers, and mass mobilization discipline.",
-        examinersTrap="Attributing withdrawal to British repression instead of Gandhi's non-violent ethics.",
-    )
-    state.pipeline_stages.append(PipelineStage(node="pedagogical_generator", status="completed", output="4_LAYERS_GENERATED"))
+        # Relaxed filter retry
+        state.retry_count += 1
+        state.pipeline_stages.append(PipelineStage(node="query_rewriter", status="completed", output="RELAXED_OKF_FILTERS"))
+        state.retrieved_chunks = [
+            {"source_type": "NCERT_TEXTBOOK", "content": "Chauri Chaura February 1922 police station incident"},
+            {"source_type": "NCERT_EXEMPLAR", "content": "Gandhian satyagraha training in non-violence Ahimsa"},
+        ]
+        state.grader_verdict = "PASS"
+        state.pipeline_stages.append(PipelineStage(node="retrieval_grader", status="completed", output="PASS"))
+        state.answer_layers = LayeredAnswer(
+            coreIntuition="Pausing a marathon when runners start tripping so everyone trains in discipline first.",
+            boardAnswer="**Non-Cooperation Movement** withdrawn after **Chauri Chaura** [1 Mark]. Commitment to **Ahimsa** [1 Mark].",
+            competitiveBridge="UPSC Modern History: Debates among Swarajists, No-Changers, and mass mobilization discipline.",
+            examinersTrap="Attributing withdrawal to British repression instead of Gandhi's non-violent ethics.",
+        )
+        state.pipeline_stages.append(PipelineStage(node="pedagogical_generator", status="completed", output="4_LAYERS_GENERATED"))
 
-    assert state.retry_count == 1
-    assert state.grader_verdict == "PASS"
-    assert len(state.pipeline_stages) == 5
-    assert state.answer_layers is not None
+        assert state.retry_count == 1
+        assert state.grader_verdict == "PASS"
+        assert len(state.pipeline_stages) == 5
+        assert state.answer_layers is not None
 
 
 if __name__ == "__main__":

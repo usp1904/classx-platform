@@ -14,7 +14,7 @@ import { getMultimodelRag } from './lib/rag-multimodel.js';
 import { okfIndex } from './lib/okf-metadata.js';
 import { getLearningAids, getAllAidIds, getAidLabel, getAidGroups, getAidGroup, AID_LABELS } from './lib/learning-aids.js';
 import { askTutor } from './lib/ai.js';
-import { runAgenticRag } from './lib/agentic-rag.js';
+import { analyzeQuery, runAgenticRag, synthesizePedagogicalAnswer } from './lib/agentic-rag.js';
 import { startPractice, startExam, submitSession, getExamKey } from './lib/practice.js';
 import { getProgressAsync as getProgress, updateProgressAsync as updateProgress, awardXpAsync as awardXp, getBadges, getLeaderboard, getParentView, linkParent } from './lib/progress.js';
 import { sessionSet, sessionGet, sessionStoreKind } from './lib/session-store.js';
@@ -152,8 +152,13 @@ const apiRateLimit = makeRateLimiter({
 });
 const tutorRateLimit = makeRateLimiter({
   windowMs: 60 * 1000,
-  max: 8,
+  max: 24,
   message: 'Tutor rate limit reached. Try again in a minute.',
+});
+const ragAnalyzeRateLimit = makeRateLimiter({
+  windowMs: 60 * 1000,
+  max: 30,
+  message: 'RAG analysis rate limit reached. Try again in a minute.',
 });
 app.use('/api', apiRateLimit);
 
@@ -340,8 +345,8 @@ app.post('/api/tutor', tutorRateLimit, async (req, res) => {
   const { question, mode, subjectId, chapterId, history, intentMode, persona } = req.body || {};
   if (!question || typeof question !== 'string') return res.status(400).json({ ok: false, error: 'question is required' });
   if (question.length > 2000) return res.status(413).json({ ok: false, error: 'question too long' });
+  const safeMode = ['socratic', 'board', 'competitive', 'eli5'].includes(mode) ? mode : 'socratic';
   try {
-    const safeMode = ['socratic', 'board', 'competitive', 'eli5'].includes(mode) ? mode : 'socratic';
     const result = await runAgenticRag({
       question: question.trim(),
       mode: safeMode,
@@ -353,25 +358,66 @@ app.post('/api/tutor', tutorRateLimit, async (req, res) => {
     });
     res.json(result);
   } catch (error) {
+    const fallbackAnalysis = analyzeQuery({
+      question: question.trim(),
+      subjectId,
+      chapterId,
+      intentMode,
+    });
     try {
       const fallback = await askTutor({
         question: question.trim(),
-        mode: ['socratic', 'board', 'competitive', 'eli5'].includes(mode) ? mode : 'socratic',
+        mode: safeMode,
         subjectId,
         chapterId,
         persona,
         history: Array.isArray(history) ? history.slice(-6) : [],
       });
-      return res.json(fallback);
+      const fallbackOk = Boolean(fallback?.ok && fallbackAnalysis.is_valid);
+      const answerLayers = fallbackOk
+        ? synthesizePedagogicalAnswer({
+            question: question.trim(),
+            intentMode: fallbackAnalysis.intent_mode,
+            analysis: fallbackAnalysis,
+            chunks: fallback.answer ? [{ source_type: 'NCERT_TEXTBOOK', content: String(fallback.answer).slice(0, 1200) }] : [],
+            subjectId: fallbackAnalysis.okf_filters.subject,
+            chapterId: fallbackAnalysis.okf_filters.chapter_id,
+            mode: safeMode,
+            persona,
+          })
+        : null;
+      return res.json({
+        ...fallback,
+        ok: fallbackOk,
+        intentMode: fallbackAnalysis.intent_mode,
+        analysis: fallbackAnalysis,
+        graderVerdict: fallbackOk ? 'PASS' : 'REWRITE_QUERY',
+        answerLayers,
+        visualAidVideo: null,
+        pipelineStages: [
+          { node: 'query_analyzer', status: fallbackAnalysis.is_valid ? 'completed' : 'failed', output: fallbackAnalysis.is_valid ? fallbackAnalysis.intent_mode : 'BLOCKED' },
+          { node: 'retrieval_grader', status: 'completed', output: fallbackOk ? 'PASS' : 'REWRITE_QUERY' },
+          { node: 'pedagogical_generator', status: fallbackOk ? 'completed' : 'failed', output: fallbackOk ? 'FALLBACK_LAYERS' : 'OMITTED' },
+        ],
+      });
     } catch {
-      const payload = { ok: false, error: 'Tutor failed' };
+      const payload = {
+        ok: false,
+        error: 'Tutor failed',
+        intentMode: fallbackAnalysis.intent_mode,
+        analysis: fallbackAnalysis,
+        graderVerdict: 'REWRITE_QUERY',
+        answerLayers: null,
+        visualAidVideo: null,
+        pipelineStages: [{ node: 'query_analyzer', status: 'failed', output: 'ERROR' }],
+      };
       if (process.env.NODE_ENV !== 'production') payload.detail = error.message;
       return res.status(500).json(payload);
     }
   }
 });
 
-app.post('/api/rag/analyze', tutorRateLimit, async (req, res) => {
+app.post('/api/rag/analyze', ragAnalyzeRateLimit, async (req, res) => {
   const { question, mode, subjectId, chapterId, intentMode, history, persona } = req.body || {};
   if (!question || typeof question !== 'string') return res.status(400).json({ ok: false, error: 'question is required' });
   if (question.length > 2000) return res.status(413).json({ ok: false, error: 'question too long' });
@@ -388,7 +434,17 @@ app.post('/api/rag/analyze', tutorRateLimit, async (req, res) => {
     });
     res.json(result);
   } catch (error) {
-    const payload = { ok: false, error: 'RAG analysis failed' };
+    const safeIntent = intentMode === 'COMPETITIVE_BRIDGE' ? 'COMPETITIVE_BRIDGE' : 'BOARD_EXAM';
+    const payload = {
+      ok: false,
+      error: 'RAG analysis failed',
+      intentMode: safeIntent,
+      analysis: null,
+      graderVerdict: 'REWRITE_QUERY',
+      answerLayers: null,
+      visualAidVideo: null,
+      pipelineStages: [{ node: 'query_analyzer', status: 'failed', output: 'ERROR' }],
+    };
     if (process.env.NODE_ENV !== 'production') payload.detail = error.message;
     res.status(500).json(payload);
   }

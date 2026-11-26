@@ -182,8 +182,8 @@ export interface Lesson {
   flowcharts?: { title?: string; steps?: FlowStep[] }[];
   visualizations?: Visualization[];
   common_misconceptions?: (string | Misconception)[];
-  rd_sharma_extensions?: { book?: string; topics?: string[] };
-  rs_aggarwal_extensions?: { book?: string; topics?: string[] };
+  advanced_extensions?: { book?: string; topics?: string[] };
+  competitive_bridge_extensions?: { book?: string; topics?: string[] };
   stats?: ChapterStats;
 }
 
@@ -241,6 +241,47 @@ export interface Citation {
   checksum?: string;
 }
 
+export type IntentMode = 'BOARD_EXAM' | 'COMPETITIVE_BRIDGE';
+
+export interface OKFFilters {
+  subject: string;
+  chapter_id: string;
+  topic_tag: string;
+  content_block_type: string;
+  source_type: string;
+}
+
+export interface QueryAnalysis {
+  intent_mode: IntentMode;
+  target_exam?: string;
+  okf_filters: OKFFilters;
+  bm25_keywords: string[];
+  hyde_passage: string;
+  is_valid?: boolean;
+}
+
+export interface LayeredAnswer {
+  coreIntuition: string;
+  boardAnswer: string;
+  competitiveBridge: string;
+  examinersTrap: string;
+}
+
+export interface VisualAidVideo {
+  video_id: string;
+  start_sec: number;
+  end_sec: number;
+  concept_title: string;
+  observation_cue: string;
+}
+
+export interface PipelineStage {
+  node: string;
+  status: 'pending' | 'running' | 'completed' | 'rewrite' | 'failed' | string;
+  output?: string;
+  error?: string;
+}
+
 export interface TutorResponse {
   ok: boolean;
   answer: string;
@@ -252,9 +293,18 @@ export interface TutorResponse {
     candidates: number;
     latencyMs: number;
     intent: string[];
+    engine?: string;
     providerError?: string;
   };
   provider?: { mode: string; model: string };
+  intentMode?: IntentMode;
+  analysis?: QueryAnalysis;
+  graderVerdict?: 'PASS' | 'REWRITE_QUERY';
+  answerLayers?: LayeredAnswer | null;
+  visualAidVideo?: VisualAidVideo | null;
+  pipelineStages?: PipelineStage[];
+  persona?: { role: string; exam: string; depth: string; ageBand?: string | null };
+  answerPlan?: Record<string, unknown>;
 }
 
 export interface PracticeQuestion {

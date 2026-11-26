@@ -19,10 +19,12 @@ export default function Practice() {
   const [params, setParams] = useSearchParams();
   const initialSubject = params.get('subject') || 'mathematics';
   const initialChapter = params.get('chapter') || '';
+  const rawCount = Number(params.get('count'));
+  const initialCount = Number.isFinite(rawCount) && rawCount >= 1 ? Math.min(20, Math.floor(rawCount)) : 10;
   const [subjectId, setSubjectId] = useState(initialSubject);
   const [chapterId, setChapterId] = useState(initialChapter);
   const [difficulty, setDifficulty] = useState('mixed');
-  const [count, setCount] = useState(10);
+  const [count, setCount] = useState(initialCount);
   const [runKey, setRunKey] = useState(0);
   const [started, setStarted] = useState(Boolean(initialChapter));
   const [last, setLast] = useState<{ percentage: number; score: number; total: number } | null>(null);
@@ -83,7 +85,7 @@ export default function Practice() {
       </div>
 
       <div className="stat-grid four">
-        <Stat icon={<Zap size={18} />} label="XP earned" value={progress.xp} hint="Practice adds XP per correct mark" tone="indigo" />
+        <Stat icon={<Zap size={18} />} label="XP earned" value={progress.xp} hint="Practice adds XP per correct mark" tone="forest" />
         <Stat icon={<Flame size={18} />} label="Current streak" value={`${progress.streak} ${progress.streak === 1 ? 'day' : 'days'}`} hint="Consistency beats intensity" tone="saffron" />
         <Stat icon={<Target size={18} />} label="Accuracy" value={`${accuracy}%`} hint="Across all practice sets" tone="mint" />
         <Stat icon={<Trophy size={18} />} label="Grounded MCQs" value={totalMcqs} hint={`${chapterOptions.length} chapters ready`} tone="rose" />
@@ -125,7 +127,7 @@ export default function Practice() {
               <div>
                 <SectionHeader eyebrow="4 · Length" title="Questions" />
                 <div className="count-pills">
-                  {countOptions.map((value) => <button key={value} className={count === value ? 'active' : ''} onClick={() => setCount(value)}>{value}</button>)}
+                  {(countOptions.includes(count) ? countOptions : [count, ...countOptions].sort((a, b) => a - b)).map((value) => <button key={value} className={count === value ? 'active' : ''} onClick={() => setCount(value)}>{value}</button>)}
                 </div>
               </div>
             </div>

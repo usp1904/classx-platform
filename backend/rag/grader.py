@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import math
 import re
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
@@ -64,18 +65,75 @@ def _load_chapter_chunks(subject_id: str, chapter_id: str) -> List[Dict[str, Any
             cleaned = re.sub(r"\n{3,}", "\n\n", body).strip()
             if len(cleaned) < 40:
                 continue
-            chunks.append(
-                {
-                    "id": f"{subject_id}:{resolved_chapter}:textbook:p{page_num}",
-                    "source_type": "NCERT_TEXTBOOK",
-                    "content_block_type": "concept",
-                    "subject": subject_id,
-                    "chapter_id": chapter_id,
-                    "title": f"{resolved_chapter} page {page_num}",
-                    "content": cleaned[:1600],
-                    "page": int(page_num) if page_num.isdigit() else None,
-                }
-            )
+            page_int = int(page_num) if page_num.isdigit() else None
+            # Split long pages along major ### subheadings or NCERT Q U E S T I O N S / E X E R C I S E S blocks
+            split_pattern = r"(?m)(?=^###\s+(?!Figure\b))|(?=\bQ\s+U\s+E\s+S\s+T\s+I\s+O\s+N\s+S\b|\bE\s+X\s+E\s+R\s+C\s+I\s+S\s+E\s+S\b)"
+            if len(cleaned) > 900 and re.search(split_pattern, cleaned, re.I):
+                parts = re.split(split_pattern, cleaned, flags=re.I)
+                merged_sections: List[str] = []
+                pending = ""
+                for part in parts:
+                    part_s = part.strip()
+                    if not part_s:
+                        continue
+                    combined_part = f"{pending}\n\n{part_s}".strip() if pending else part_s
+                    if len(combined_part) < 160:
+                        pending = combined_part
+                        continue
+                    merged_sections.append(combined_part)
+                    pending = ""
+                if pending:
+                    if merged_sections:
+                        merged_sections[-1] = f"{merged_sections[-1]}\n\n{pending}".strip()
+                    else:
+                        merged_sections.append(pending)
+
+                for sub_idx, sec_text in enumerate(merged_sections):
+                    if len(sec_text) < 40:
+                        continue
+                    first_line = sec_text.splitlines()[0].lstrip("#").strip()[:80]
+                    is_exercise_block = bool(
+                        re.match(r"^(?:Q\s+U\s+E\s+S\s+T\s+I\s+O\s+N\s+S|E\s+X\s+E\s+R\s+C\s+I\s+S\s+E\s+S)\b", sec_text, re.I)
+                    )
+                    block_type = (
+                        "exercise"
+                        if is_exercise_block
+                        else ("activity" if re.search(r"\bactivity\s+\d", sec_text, re.I) else "concept")
+                    )
+                    chunks.append(
+                        {
+                            "id": f"{subject_id}:{resolved_chapter}:textbook:p{page_num}_s{sub_idx}",
+                            "source_type": "NCERT_TEXTBOOK",
+                            "content_block_type": block_type,
+                            "subject": subject_id,
+                            "chapter_id": chapter_id,
+                            "title": f"{resolved_chapter} p{page_num}: {first_line}",
+                            "content": sec_text[:1600],
+                            "page": page_int,
+                        }
+                    )
+            else:
+                is_exercise_block = bool(
+                    re.match(r"^(?:[\w\s]+\d+\s+)?(?:Q\s+U\s+E\s+S\s+T\s+I\s+O\s+N\s+S|E\s+X\s+E\s+R\s+C\s+I\s+S\s+E\s+S)\b", cleaned, re.I)
+                    or re.search(r"\bE\s+X\s+E\s+R\s+C\s+I\s+S\s+E\s+S\s+1\.", cleaned, re.I)
+                )
+                block_type = (
+                    "exercise"
+                    if is_exercise_block
+                    else ("activity" if re.search(r"\bactivity\s+\d", cleaned, re.I) else "concept")
+                )
+                chunks.append(
+                    {
+                        "id": f"{subject_id}:{resolved_chapter}:textbook:p{page_num}",
+                        "source_type": "NCERT_TEXTBOOK",
+                        "content_block_type": block_type,
+                        "subject": subject_id,
+                        "chapter_id": chapter_id,
+                        "title": f"{resolved_chapter} page {page_num}",
+                        "content": cleaned[:1600],
+                        "page": page_int,
+                    }
+                )
 
     # 2. Authored Lesson JSONs -> NCERT_TEXTBOOK, CBSE_SQP, NCERT_EXEMPLAR
     lesson_path = LESSONS_DIR / subject_id / f"{resolved_chapter}.json"
@@ -196,6 +254,16 @@ def _load_chapter_chunks(subject_id: str, chapter_id: str) -> List[Dict[str, Any
     return chunks
 
 
+def _term_matches(term: str, lower_text: str, collapsed_text: str) -> bool:
+    if term in lower_text:
+        return True
+    if len(term) >= 6:
+        compact = term.replace("-", "")
+        if len(compact) >= 6 and compact in collapsed_text:
+            return True
+    return False
+
+
 class LocalOKFRetriever:
     """Hybrid lexical + OKF metadata retriever over local NCERT markdowns & authored lessons."""
 
@@ -231,38 +299,86 @@ class LocalOKFRetriever:
         if not query_terms:
             return []
 
-        scored: List[Dict[str, Any]] = []
-        target_chapter = resolve_chapter_slug(chapter_id)
+        prep: List[Tuple[Dict[str, Any], str, str]] = []
         for chunk in candidates:
             haystack = f"{chunk.get('title', '')} {chunk.get('content', '')}".lower()
-            hits = sum(1 for kw in query_terms if kw in haystack)
-            if hits == 0 and not relaxed:
+            collapsed = re.sub(r"[\s-]+", "", haystack)
+            prep.append((chunk, haystack, collapsed))
+
+        n_docs = len(prep)
+        term_weights: Dict[str, float] = {}
+        for kw in query_terms:
+            df = sum(1 for _, hay, col in prep if _term_matches(kw, hay, col))
+            base = 2.0 if (len(kw) >= 6 or "." in kw or any(ch.isdigit() for ch in kw)) else 1.0
+            idf = math.log(1.0 + (n_docs + 1.0) / (df + 1.0))
+            term_weights[kw] = base * (idf ** 2)
+
+        scored: List[Dict[str, Any]] = []
+        target_chapter = resolve_chapter_slug(chapter_id)
+        max_weight = sum(term_weights.values()) or 1.0
+        for chunk, haystack, collapsed in prep:
+            weighted_hits = 0.0
+            raw_hits = 0
+            for kw in query_terms:
+                if _term_matches(kw, haystack, collapsed):
+                    raw_hits += 1
+                    weighted_hits += term_weights[kw]
+            if raw_hits == 0 and not relaxed:
                 continue
-            overlap = hits / max(len(query_terms), 1)
-            score = 0.0
-            if hits > 0:
-                score = min(1.0, 0.52 + 0.48 * overlap)
-            elif relaxed and resolve_chapter_slug(chunk.get("chapter_id", "")) == target_chapter:
-                score = 0.55
+            overlap = weighted_hits / max_weight
+            same_chapter = resolve_chapter_slug(chunk.get("chapter_id", "")) == target_chapter
+            block_match = (
+                okf_filters.content_block_type
+                and chunk.get("content_block_type") == okf_filters.content_block_type
+            )
+            exercise_penalty = (
+                0.08
+                if (okf_filters.content_block_type != "exercise" and chunk.get("content_block_type") == "exercise" and chunk.get("source_type") == "NCERT_TEXTBOOK")
+                else 0.0
+            )
+            if raw_hits > 0:
+                raw_score = (
+                    0.52
+                    + 0.45 * overlap
+                    + (0.03 if same_chapter else 0.0)
+                    + (0.12 if block_match else 0.0)
+                    - exercise_penalty
+                )
+            elif relaxed and same_chapter:
+                raw_score = 0.55
             else:
-                score = 0.25
+                raw_score = 0.25
 
-            if resolve_chapter_slug(chunk.get("chapter_id", "")) == target_chapter and hits > 0:
-                score = min(1.0, score + 0.08)
+            scored.append({**chunk, "score": min(1.0, round(raw_score, 4)), "_raw_score": raw_score})
 
-            scored.append({**chunk, "score": round(score, 4)})
+        scored.sort(key=lambda c: c["_raw_score"], reverse=True)
+        for c in scored:
+            c.pop("_raw_score", None)
 
-        scored.sort(key=lambda c: c["score"], reverse=True)
+        # Pseudo-Relevance Feedback (PRF): align CBSE_SQP / NCERT_EXEMPLAR with top NCERT_TEXTBOOK concept
+        top_tb = next((c for c in scored if c["source_type"] == "NCERT_TEXTBOOK" and c["score"] >= 0.5), None)
+        prf_terms: List[str] = []
+        if top_tb is not None:
+            tb_tokens = extract_bm25_keywords(f"{top_tb.get('title', '')} {top_tb.get('content', '')}", limit=20)
+            prf_terms = [t for t in tb_tokens if t not in query_terms and len(t) >= 3][:10]
+
+        def _prf_key(item: Dict[str, Any]) -> Tuple[float, float]:
+            if not prf_terms:
+                return (item["score"], 0.0)
+            hay = f"{item.get('title', '')} {item.get('content', '')}".lower()
+            prf_hits = sum(1.0 for t in prf_terms if t in hay)
+            return (item["score"] + 0.12 * prf_hits, item["score"])
 
         # Ensure source balance across NCERT_TEXTBOOK, CBSE_SQP, and NCERT_EXEMPLAR among matching chunks
         selected: List[Dict[str, Any]] = []
         seen_ids = set()
         for needed_source in ("NCERT_TEXTBOOK", "CBSE_SQP", "NCERT_EXEMPLAR"):
-            for item in scored:
-                if item["source_type"] == needed_source and item["score"] >= 0.5 and item["id"] not in seen_ids:
-                    selected.append(item)
-                    seen_ids.add(item["id"])
-                    break
+            pool = [item for item in scored if item["source_type"] == needed_source and item["score"] >= 0.5]
+            if not pool:
+                continue
+            best_item = max(pool, key=_prf_key) if needed_source != "NCERT_TEXTBOOK" else pool[0]
+            selected.append(best_item)
+            seen_ids.add(best_item["id"])
 
         for item in scored:
             if item["id"] not in seen_ids and len(selected) < top_k:

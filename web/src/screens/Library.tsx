@@ -4,13 +4,13 @@ import {
   ArrowRight,
   BookOpen,
   Check,
+  CheckCircle2,
   ChevronLeft,
   ChevronRight,
   Copy,
   LibraryBig,
   RotateCcw,
   Search,
-  Sparkles,
   Target,
   Zap,
 } from 'lucide-react';
@@ -117,7 +117,7 @@ export default function Library() {
             {formulas.map((formula) => (
               <Card key={formula.id} className="formula-library-card">
                 <div className="formula-lib-head">
-                  <Badge tone="indigo">{formula.chapterName}</Badge>
+                  <Badge tone="forest">{formula.chapterName}</Badge>
                   <button className="icon-btn ghost" onClick={() => void copyFormula(formula.statement)} aria-label="Copy formula"><Copy size={15} /></button>
                 </div>
                 <h3>{formula.name}</h3>
@@ -176,7 +176,7 @@ export default function Library() {
                     <small>Tap to reveal the answer</small>
                   </div>
                   <div className="flashcard-face back">
-                    <span className="eyebrow"><Sparkles size={13} /> Answer</span>
+                    <span className="eyebrow"><CheckCircle2 size={13} /> Answer</span>
                     <p>{activeCard.back || 'Review the chapter for the full explanation.'}</p>
                     {activeCard.options && activeCard.correct !== undefined && <div className="flash-answer"><Check size={15} /> {activeCard.options[activeCard.correct]}</div>}
                     <small>Tap to flip back</small>
@@ -206,7 +206,7 @@ export default function Library() {
               </Card>
             </aside>
           </div>
-        ) : <EmptyState icon={<Sparkles size={24} />} title="No flashcards match" description="Clear the search or choose another subject." />
+        ) : <EmptyState icon={<BookOpen size={24} />} title="No flashcards match" description="Clear the search or choose another subject." />
       )}
     </div>
   );

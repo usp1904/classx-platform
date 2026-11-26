@@ -6,6 +6,7 @@ import {
   CalendarCheck2,
   Check,
   CheckCircle2,
+  ClipboardCheck,
   Clock3,
   Eye,
   FileQuestion,
@@ -13,7 +14,6 @@ import {
   Play,
   RotateCcw,
   ScrollText,
-  Sparkles,
   Target,
   Trophy,
   XCircle,
@@ -164,7 +164,7 @@ export default function MockTests() {
       {!paper && (
         <>
           <div className="stat-grid four">
-            <Stat icon={<Target size={18} />} label="Objective pool" value={totalMcq} hint="MCQs across authored chapters" tone="indigo" />
+            <Stat icon={<Target size={18} />} label="Objective pool" value={totalMcq} hint="MCQs across authored chapters" tone="forest" />
             <Stat icon={<ScrollText size={18} />} label="Written pool" value={subject?.chapters.reduce((sum, chapter) => sum + chapter.stats.exercises, 0) || 0} hint="Steps + model answers" tone="mint" />
             <Stat icon={<Clock3 size={18} />} label="Paper length" value={`${countPresets[mode].mcq + countPresets[mode].short + countPresets[mode].long} Q`} hint="Adjustable blueprint" tone="saffron" />
             <Stat icon={<Trophy size={18} />} label="Last score" value={progress.exams[0] ? `${Math.round((progress.exams[0].score / progress.exams[0].total) * 100)}%` : '—'} hint={progress.exams[0] ? new Date(progress.exams[0].at).toLocaleDateString('en-IN') : 'No paper yet'} tone="rose" />
@@ -242,7 +242,7 @@ export default function MockTests() {
                 </div>
               </Card>
               <Card className="practice-tip">
-                <Sparkles size={20} />
+                <ClipboardCheck size={20} />
                 <h3>Board-mode rule</h3>
                 <p>Write the formula, substitution, and final unit. Most lost marks are presentation, not knowledge.</p>
               </Card>
@@ -321,7 +321,7 @@ export default function MockTests() {
                 {paper.sections.map((section) => (
                   <section key={section.id} className="exam-section">
                     <div className="exam-section-head">
-                      <div><Badge tone="indigo">Section {section.id}</Badge><h3>{section.title}</h3><p>{section.instruction}</p></div>
+                      <div><Badge tone="forest">Section {section.id}</Badge><h3>{section.title}</h3><p>{section.instruction}</p></div>
                       <strong>{section.marks} marks</strong>
                     </div>
                     {section.questions.map((question, questionIndex) => {

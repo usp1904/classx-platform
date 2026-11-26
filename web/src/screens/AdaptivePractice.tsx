@@ -129,7 +129,7 @@ export default function AdaptivePractice() {
                 <button
                   key={chapter.id}
                   onClick={() => chooseChapter(chapter.id)}
-                  className={`w-full text-left px-3 py-2.5 rounded-xl border transition flex items-center justify-between ${chapter.id === chapterId ? 'border-indigo-500/80 bg-indigo-500/15 text-indigo-300 shadow-[0_0_15px_rgba(99,102,241,0.2)]' : 'border-white/10 bg-white/5 hover:border-white/20 text-slate-200'}`}
+                  className={`w-full text-left px-3 py-2.5 rounded-xl border transition-colors flex items-center justify-between ${chapter.id === chapterId ? 'border-[#1B4332] bg-[#DCFCE7] text-[#18181B]' : 'border-[#E4E2DD] bg-[#F3F1EC] hover:border-[#1B4332] text-[#18181B]'}`}
                 >
                   <span className="font-medium text-sm">{chapter.name}</span>
                   <span className="text-xs text-muted">×{chapter.stats.quizzes} MCQs</span>
@@ -190,15 +190,15 @@ export default function AdaptivePractice() {
       <div className="space-y-4">
         <SectionHeader title="Practice complete" description="Review your results and adaptive placement"/>
         <div className="grid grid-cols-3 gap-4">
-          <Stat label="Score" value={`${correct} / ${attempted}`} icon={<CheckCircle2 size={20} className="text-mint-400"/>}/>
-          <Stat label="Accuracy" value={`${pct}%`} icon={<TrendingUp size={20} className="text-amber-400"/>}/>
-          <Stat label="Next level" value={nextDiff.charAt(0).toUpperCase() + nextDiff.slice(1)} icon={<Zap size={20} className="text-indigo-400"/>}/>
+          <Stat label="Score" value={`${correct} / ${attempted}`} icon={<CheckCircle2 size={20} className="text-[#1B4332]"/>} tone="mint"/>
+          <Stat label="Accuracy" value={`${pct}%`} icon={<TrendingUp size={20} className="text-[#B45309]"/>} tone="saffron"/>
+          <Stat label="Next level" value={nextDiff.charAt(0).toUpperCase() + nextDiff.slice(1)} icon={<Zap size={20} className="text-[#1B4332]"/>} tone="forest"/>
         </div>
         <Card className="p-4">
           <div className="space-y-3">
             <div className="flex justify-between items-center mb-2">
               <span className="text-sm font-medium">Adaptive placement</span>
-              <Badge tone="indigo">{nextDiff}</Badge>
+              <Badge tone="forest">{nextDiff}</Badge>
             </div>
             <ProgressBar value={pct} tone={pct >= 70 ? 'mint' : pct >= 40 ? 'saffron' : 'rose'} />
             <p className="text-sm text-muted">
@@ -233,7 +233,7 @@ export default function AdaptivePractice() {
                     <button
                       key={oi}
                       onClick={() => setAnswers({ ...answers, [q.id]: oi })}
-                      className={`w-full text-left px-4 py-3 rounded-xl border transition ${selected ? 'border-indigo-500/80 bg-indigo-500/15 text-indigo-200 shadow-[0_0_20px_rgba(99,102,241,0.25)]' : 'border-white/10 bg-white/5 hover:border-white/20 text-slate-200'}`}
+                      className={`w-full text-left px-4 py-3 rounded-xl border transition-colors ${selected ? 'border-[#1B4332] bg-[#DCFCE7] text-[#18181B] font-semibold' : 'border-[#E4E2DD] bg-[#F3F1EC] hover:border-[#1B4332] text-[#18181B]'}`}
                     >
                       {opt}
                     </button>
@@ -245,7 +245,7 @@ export default function AdaptivePractice() {
               <div className="pt-2">
                 <p className="text-xs text-muted mb-1">Type your answer (open-ended):</p>
                 <textarea
-                  className="w-full px-3 py-2 rounded-xl border border-white/10 bg-white/5 text-white focus:ring-2 focus:ring-indigo-500 resize-none outline-none"
+                  className="w-full px-3 py-2 rounded-xl border border-[#E4E2DD] bg-[#FAF9F6] text-[#18181B] focus:border-[#1B4332] focus:outline-none"
                   rows={3}
                   placeholder="Write your answer…"
                   onChange={(e) => setAnswers({ ...answers, [q.id]: parseInt(e.target.value) || 0 })}

@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowRight, BookOpen, Calculator, Compass, FileQuestion, Loader2, Search, Sparkles } from 'lucide-react';
+import { ArrowRight, BookOpen, Calculator, Compass, FileQuestion, GraduationCap, Loader2, Search } from 'lucide-react';
 import { api } from '../api';
 import type { SearchResult } from '../types';
 
@@ -9,7 +9,7 @@ const quick = [
   { label: 'Course library', to: '/courses', icon: <BookOpen size={16} />, hint: 'All subjects' },
   { label: 'Practice arena', to: '/practice', icon: <FileQuestion size={16} />, hint: 'MCQ drills' },
   { label: 'Mock test studio', to: '/mock-tests', icon: <Calculator size={16} />, hint: 'Full paper' },
-  { label: 'Ask the tutor', to: '/tutor', icon: <Sparkles size={16} />, hint: 'RAG grounded' },
+  { label: 'Ask the tutor', to: '/tutor', icon: <GraduationCap size={16} />, hint: 'RAG grounded' },
 ];
 
 const tabFor = (type: string) => {

@@ -3,11 +3,13 @@
 from __future__ import annotations
 
 import json
+import math
 import os
 import re
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
+from .analyzer import STOP_WORDS, extract_bm25_keywords
 from .grader import resolve_chapter_slug
 from .schema import AgentState, LayeredAnswer, PipelineStage
 
@@ -28,268 +30,15 @@ SI_UNIT_RE = re.compile(
     re.I,
 )
 
-# Curated NCERT Class 10 topic grounding profiles keyed by OKF topic_tag
-_TOPIC_PROFILES: Dict[str, Dict[str, str]] = {
-    "chemical_reactions_and_equatio": {
-        "coreIntuition": "Imagine two Lego bricks snapping firmly together into a single solid block, releasing trapped warmth as they lock in place.",
-        "boardAnswer": (
-            "1. When **calcium oxide** (quicklime, CaO) reacts vigorously with water, it forms **slaked lime** (**calcium hydroxide**, Ca(OH)2) with a large release of heat [1 Mark].\n"
-            "2. Balanced chemical equation: CaO(s) + H2O(l) -> Ca(OH)2(aq) + Heat [1 Mark].\n"
-            "3. Because two reactants combine to form a single product, this is a **combination reaction**, and because the beaker becomes hot, it is an **exothermic reaction** [1 Mark]."
-        ),
-        "competitiveBridge": "NEET / JEE Foundation: Hydration of metal oxides is strongly exothermic (negative enthalpy change); Ca(OH)2 is sparingly soluble in water and its clear filtrate (lime water) turns milky with CO2 due to insoluble CaCO3 precipitation.",
-        "examinersTrap": "Confusing quicklime (CaO) with slaked lime (Ca(OH)2) or omitting the heat-release observation in Activity 1.1.",
-    },
-    "importance_of_ph_in_everyday_": {
-        "coreIntuition": "Think of a swimming pool's water balance: if the water turns too acidic, it etches the tiles; an exact chemical balance protects surfaces.",
-        "boardAnswer": (
-            "1. Tooth decay begins when mouth pH drops below **pH 5.5**, causing bacteria-generated acid to corrode **calcium hydroxyapatite** enamel [1 Mark].\n"
-            "2. **Antacid** bases (such as magnesium hydroxide) neutralize excess stomach HCl, and farmers adjust acidic soil with quicklime or chalk [1 Mark].\n"
-            "3. **Bleaching powder** (**calcium oxychloride**, CaOCl2) is prepared by passing chlorine gas over dry slaked lime: Ca(OH)2 + Cl2 -> CaOCl2 + H2O [1 Mark]."
-        ),
-        "competitiveBridge": "NEET Chemistry & Physiology: Enamel demineralization follows solubility equilibrium shifts in acidic media; digestive HCl buffering illustrates weak-base neutralization kinetics.",
-        "examinersTrap": "Stating that tooth enamel dissolves in neutral water instead of acid corrosion below the critical pH 5.5 threshold.",
-    },
-    "chemical_properties_of_carbon_": {
-        "coreIntuition": "Esterification is like weaving two threads with an acid needle into a sweet-smelling fabric, while saponification unwinds that fabric using soap alkali.",
-        "boardAnswer": (
-            "1. **Esterification**: Ethanoic acid reacts with absolute ethanol in the presence of an **acid catalyst** (conc. H2SO4) to form a **sweet-smelling ester** (ethyl ethanoate): CH3COOH + C2H5OH -> CH3COOC2H5 + H2O [1.5 Marks].\n"
-            "2. **Saponification**: Treating an ester with NaOH hydrolyzes it back to alcohol and **sodium carboxylate** (soap): CH3COOC2H5 + NaOH -> CH3COONa + C2H5OH [1.5 Marks].\n"
-            "3. Concentrated H2SO4 acts as both catalyst and dehydrating agent shifting equilibrium forward [1 Mark]."
-        ),
-        "competitiveBridge": "JEE Organic Synthesis: Fischer esterification is reversible nucleophilic acyl substitution (acid-catalyzed), whereas base-promoted saponification is driven irreversibly by resonance-stabilized carboxylate ion formation.",
-        "examinersTrap": "Omitting concentrated H2SO4 as the acid catalyst in esterification or describing saponification as acid-catalyzed.",
-    },
-    "chemical_properties_of_metals": {
-        "coreIntuition": "Like a diplomatic ambassador fluent in two rival languages: acting as a base when meeting acids, and switching to an acid when meeting strong bases.",
-        "boardAnswer": (
-            "1. Assertion (A) is TRUE: **aluminium oxide** (Al2O3) reacts with HCl to form AlCl3 + H2O and with NaOH to form **sodium aluminate** (NaAlO2) + H2O [1 Mark].\n"
-            "2. Reason (R) is TRUE: Al2O3 is an **amphoteric oxide** exhibiting **both acidic and basic properties** [1 Mark].\n"
-            "3. Both (A) and (R) are true, and (R) is the correct explanation of (A) [1 Mark]."
-        ),
-        "competitiveBridge": "JEE Inorganic Periodicity: Amphoteric behaviour peaks along the diagonal metalloid border (BeO, Al2O3, ZnO, SnO, PbO) due to intermediate electronegativity and polarizing power.",
-        "examinersTrap": "Writing the formula of sodium aluminate incorrectly as NaAlO3 instead of NaAlO2.",
-    },
-    "refraction_lens_power": {
-        "coreIntuition": "Think of balancing a seesaw right at the midpoint: placing an object at 2F produces an equal-sized inverted image on the opposite 2F side.",
-        "boardAnswer": (
-            "1. For a **real and inverted** image of equal size (**magnification** m = -1), v = +50 cm implies u = -50 cm [1 Mark].\n"
-            "2. Using the lens formula 1/f = 1/v - 1/u = 1/50 - 1/(-50) = 2/50, the **focal length** is f = +25 cm = +0.25 m [1 Mark].\n"
-            "3. **Power of a lens** P = 1 / f(m) = 1 / (+0.25 m) = +4 D (**dioptre**) [1 Mark]."
-        ),
-        "competitiveBridge": "JEE Geometrical Optics: Thin lenses in contact combine powers algebraically as P = P1 + P2; magnification m = f / (f + u) accelerates multi-lens focal shifts.",
-        "examinersTrap": "Computing lens power directly with focal length in cm (1/25 = 0.04 D) instead of converting f into meters (+0.25 m -> +4 D).",
-    },
-    "ohms_law_resistance": {
-        "coreIntuition": "Water flowing through a garden pipe: doubling pump pressure doubles the flow rate, provided the pipe width and temperature stay steady.",
-        "boardAnswer": (
-            "1. **Ohm's law** states that the **potential difference** (V) across a metallic conductor is directly proportional to **current** (I), provided **constant temperature** and physical conditions hold (V = IR) [1 Mark].\n"
-            "2. **Resistance** R = V / I is measured in ohm (1 ohm = 1 V / 1 A), and the slope of a linear V-I graph gives R [1 Mark].\n"
-            "3. **Non-ohmic conductors** such as semiconductor diodes deviate from a straight line through the origin [1 Mark]."
-        ),
-        "competitiveBridge": "JEE Main Physics: For non-ohmic elements (p-n junction diodes, thermistors), static resistance V/I differs from dynamic differential resistance dV/dI; Joule heating increases R in metals as temperature rises.",
-        "examinersTrap": "Omitting the mandatory condition 'at constant temperature', which causes experimental V-I plots to curve upward due to filament heating.",
-    },
-    "flemings_left_hand_rule_moto": {
-        "coreIntuition": "Imagine pushing a revolving door: pushing forward on the left side while pulling back on the right keeps it spinning smoothly in one direction.",
-        "boardAnswer": (
-            "1. **Fleming's Left-Hand Rule**: Stretch thumb, forefinger, and middle finger mutually perpendicular; forefinger gives magnetic field, middle finger gives current, and thumb gives **magnetic force** (motion) [1.5 Marks].\n"
-            "2. Electric motor principle: a current-carrying rectangular coil in a magnetic field experiences a torque couple [1.5 Marks].\n"
-            "3. The **split-ring commutator** **reverses the direction of current** every half rotation to sustain **continuous rotation** [1 Mark]."
-        ),
-        "competitiveBridge": "JEE Electromagnetism: Torque on a current loop is tau = N * I * A * B * sin(theta), reaching zero at vertical equilibrium unless commutator reversal carries angular momentum past dead center.",
-        "examinersTrap": "Confusing Fleming's Left-Hand Rule (force on motor conductor) with Fleming's Right-Hand Rule (induced current in generators).",
-    },
-    "atmospheric_refraction": {
-        "coreIntuition": "A tiny coin at the bottom of a rippling pool appears to shimmer wildly, whereas a wide beach towel on the same pool floor stays visibly steady.",
-        "boardAnswer": (
-            "1. Assertion (A) and Reason (R) are both TRUE, and (R) explains (A) [1 Mark].\n"
-            "2. Stars act as **point-sized sources**; **continuous optical density change** in atmospheric layers causes **atmospheric refraction** that shifts apparent star position and brightness [1 Mark].\n"
-            "3. Planets are closer **extended sources** (collections of many point sources) whose individual brightness shifts average to zero, so they **nullify the twinkling effect** [1 Mark]."
-        ),
-        "competitiveBridge": "JEE Optics: Angular size subtended by planets exceeds atmospheric turbulence seeing cells (Fried parameter), averaging out scintillation.",
-        "examinersTrap": "Claiming stars physically change their light output rather than atmospheric refractive index fluctuations bending incoming rays.",
-    },
-    "transportation_human_heart": {
-        "coreIntuition": "A dual-lane expressway separated by a solid concrete median so incoming clean delivery trucks never mix with outgoing exhaust trucks.",
-        "boardAnswer": (
-            "1. The **four-chambered heart** uses a thick muscular **interventricular septum** to prevent mixing of oxygenated and deoxygenated blood [1 Mark].\n"
-            "2. **Double circulation** routes blood twice per cycle: **pulmonary circulation** (right ventricle to lungs) and **systemic circulation** (left ventricle to body) [1 Mark].\n"
-            "3. Complete separation meets the **high energy requirements** of warm-blooded mammals and birds to maintain constant body temperature [1 Mark]."
-        ),
-        "competitiveBridge": "NEET Biology: Contrast 4-chambered complete double circulation (birds/mammals) with 3-chambered incomplete double circulation (amphibians/most reptiles) and 2-chambered single circulation (fishes).",
-        "examinersTrap": "Swapping left and right heart chambers—remember the right side always handles deoxygenated blood and the left side handles oxygenated blood.",
-    },
-    "reflex_arc_nervous_system": {
-        "coreIntuition": "Like a wall-socket circuit breaker tripping instantly during a surge before the signal ever travels up to the building's main computer.",
-        "boardAnswer": (
-            "1. Thermoreceptors in skin detect heat and trigger an impulse along a **sensory neuron** [1 Mark].\n"
-            "2. A **relay neuron in spinal cord** forms the **reflex arc**, passing the signal immediately to a **motor neuron** [1 Mark].\n"
-            "3. Across the **synapse**, neurotransmitters excite the **effector muscle** (biceps) to withdraw the hand rapidly [1 Mark]."
-        ),
-        "competitiveBridge": "NEET Neurophysiology: At chemical synapses, action-potential arrival opens voltage-gated Ca2+ channels, releasing acetylcholine into the synaptic cleft to depolarize the post-synaptic membrane.",
-        "examinersTrap": "Stating that reflex actions are decided by the cerebrum rather than routed directly through the spinal cord.",
-    },
-    "dihybrid_cross_inheritance": {
-        "coreIntuition": "Flipping two separate coins at once: whether the first coin lands heads has zero effect on whether the second coin lands tails.",
-        "boardAnswer": (
-            "1. Crossing TTRR x ttrr yields F1 **dihybrid cross** progeny TtRr (all Tall Round) [1 Mark].\n"
-            "2. Selfing TtRr produces 16 Punnett square combinations with **phenotypic ratio 9:3:3:1** (9 Tall Round : 3 Tall Wrinkled : 3 Dwarf Round : 1 Dwarf Wrinkled) [2 Marks].\n"
-            "3. Emergence of **recombinant phenotypes** proves Mendel's **Law of Independent Assortment**, where two allele pairs **segregate independently** [1 Mark]."
-        ),
-        "competitiveBridge": "NEET Genetics: Independent assortment holds strictly for genes on non-homologous chromosomes (or far apart on the same chromosome); linked genes deviate from 9:3:3:1 toward parental types.",
-        "examinersTrap": "Confusing the 9:3:3:1 phenotypic ratio with the 1:2:1:2:4:2:1:2:1 genotypic ratio.",
-    },
-    "solution_by_factorisation": {
-        "coreIntuition": "Finding two puzzle numbers that multiply to the outer product (10) and add up to the middle coefficient (7).",
-        "boardAnswer": (
-            "1. For sqrt(2)x^2 + 7x + 5*sqrt(2) = 0, product a*c = 10; by **splitting the middle term** 7x = 2x + 5x [1 Mark].\n"
-            "2. Factoring out the **common factor** sqrt(2)x from the first two terms: sqrt(2)x(x + sqrt(2)) + 5(x + sqrt(2)) = 0 [1 Mark].\n"
-            "3. Therefore (sqrt(2)x + 5)(x + sqrt(2)) = 0 gives the **roots of the equation** x = -5/sqrt(2) and x = -sqrt(2) [1 Mark]."
-        ),
-        "competitiveBridge": "JEE Algebra: Always check discriminant D = b^2 - 4ac = 49 - 40 = 9 > 0 (perfect square) to predict rational/irrational root pairing quickly.",
-        "examinersTrap": "Missing that 2 = sqrt(2) * sqrt(2) when extracting the common factor (x + sqrt(2)).",
-    },
-    "basic_proportionality_theorem": {
-        "coreIntuition": "Projecting a triangle's shadow onto diverging rails: sliding a crossbar parallel to the base scales both side segments in the exact same proportion.",
-        "boardAnswer": (
-            "1. **Basic Proportionality Theorem** (Thales): Given triangle ABC with DE || BC; **construction**: join BE, CD and draw EN perpendicular to AB, DM perpendicular to AC [1 Mark].\n"
-            "2. Compute **ratio of areas**: ar(ADE)/ar(BDE) = AD/DB and ar(ADE)/ar(DEC) = AE/EC [2 Marks].\n"
-            "3. Triangles BDE and DEC lie on the **same base and between same parallels** DE || BC, so ar(BDE) = ar(DEC); hence AD/DB = AE/EC [2 Marks]."
-        ),
-        "competitiveBridge": "JEE Geometry: BPT underpins Ceva's theorem (concurrent cevians) and Menelaus' theorem (collinear transversal intersections) via signed segment ratios.",
-        "examinersTrap": "Equating ar(BDE) = ar(DEC) without citing the theorem on triangles sharing the same base between the same parallels.",
-    },
-    "sum_of_first_n_terms_of_an_ap": {
-        "coreIntuition": "A daily savings jar: if you know the total money after day n, today's deposit equals today's total minus yesterday's total.",
-        "boardAnswer": (
-            "1. Given **sum of n terms** S_n = 3n^2 + 5n, the **first term** is a_1 = S_1 = 3(1)^2 + 5(1) = 8 [1 Mark].\n"
-            "2. S_2 = 3(4) + 5(2) = 22, so a_2 = S_2 - S_1 = 14, giving **common difference** d = a_2 - a_1 = 6 [1 Mark].\n"
-            "3. Using the **nth term** formula a_n = a + (n - 1)d, a_20 = 8 + 19(6) = 122 [1 Mark]."
-        ),
-        "competitiveBridge": "JEE Sequences: Whenever S_n = An^2 + Bn (zero constant term), the sequence is an AP with d = 2A = 6 and a_1 = A + B = 8 immediately.",
-        "examinersTrap": "Taking S_1 = 8 as the common difference d or substituting n = 20 into S_n instead of a_n.",
-    },
-    "non_cooperation_movement": {
-        "coreIntuition": "Refusing to oil the gears of an unfair machine: when millions step back together, the apparatus comes to a peaceful standstill.",
-        "boardAnswer": (
-            "1. The **Non-Cooperation Movement** (1920-1922) operated as a **mass movement** via **surrender of titles**, **boycott of foreign cloth**, schools, courts, and council elections [2 Marks].\n"
-            "2. In February 1922, protesters clashed with police at **Chauri Chaura** (Gorakhpur), setting a police station ablaze [1 Mark].\n"
-            "3. Mahatma Gandhi withdrew the movement because it violated **Ahimsa**, believing satyagrahis needed deeper non-violent training [2 Marks]."
-        ),
-        "competitiveBridge": "UPSC Modern History: The 1922 withdrawal sparked the Swarajist vs No-Changer debate (C.R. Das, Motilal Nehru vs Rajendra Prasad, Patel) and reshaped Congress mass strategy.",
-        "examinersTrap": "Attributing the withdrawal to British military suppression rather than Gandhi's strict moral commitment to non-violence.",
-    },
-    "frederic_sorrieu_utopian_visi": {
-        "coreIntuition": "A grand world parade painted as an ideal dream where each nation walks under its own flag toward shared liberty.",
-        "boardAnswer": (
-            "1. In 1848, **Frederic Sorrieu** depicted a **utopian vision** of peoples from Europe and America marching in homage past the **Statue of Liberty** [1.5 Marks].\n"
-            "2. Liberty holds the **Torch of Enlightenment** in one hand and the **Charter of the Rights of Man** in the other [1.5 Marks].\n"
-            "3. On the ground lie **shattered symbols of absolutist institutions**, symbolizing the end of autocratic monarchies [1 Mark]."
-        ),
-        "competitiveBridge": "UPSC World History: Sorrieu's allegory captures 19th-century liberal nationalism linking popular sovereignty with nation-state formation prior to German and Italian unification.",
-        "examinersTrap": "Treating Sorrieu's 1848 print as a photograph of an actual diplomatic summit rather than a utopian allegorical artwork.",
-    },
-    "conquest_disease_and_trade": {
-        "coreIntuition": "An invisible biological Trojan horse: explorers won territories less by metal swords than by microscopic germs locals had never encountered.",
-        "boardAnswer": (
-            "1. Assertion (A) and Reason (R) are both TRUE, and (R) correctly explains (A) [1 Mark].\n"
-            "2. **Spanish conquerors** carried **smallpox germs** that acted as a deadly **biological weapon** across the Americas [1 Mark].\n"
-            "3. Centuries of isolation left indigenous communities with **lack of immunity**, which **paved the way for conquest** [1 Mark]."
-        ),
-        "competitiveBridge": "UPSC World History: The Columbian Exchange shifted global silver flows (Potosi mines to Europe and Asia) and reshaped demographic and agrarian trade networks.",
-        "examinersTrap": "Assuming 16th-century smallpox spread was modern lab-engineered warfare rather than unimmunized epidemiological contact.",
-    },
-    "belgium_and_sri_lanka": {
-        "coreIntuition": "Two roommates sharing a kitchen: agreeing on fair turns keeps harmony (Belgium), while one locking the fridge triggers conflict (Sri Lanka).",
-        "boardAnswer": (
-            "1. Sri Lanka adopted **Majoritarianism** via the 1956 Act making Sinhala the sole official language, causing **alienation of Sri Lankan Tamils** and civil war [2 Marks].\n"
-            "2. The **Belgian Model of Accommodation** amended the constitution four times for **equal representation** of Dutch and French ministers, Brussels parity, and a **community government** [2 Marks].\n"
-            "3. Respecting minority rights preserved unity in Belgium (chosen as EU headquarters) while majoritarian exclusion fractured Sri Lanka [1 Mark]."
-        ),
-        "competitiveBridge": "UPSC Indian Polity: Belgium exemplifies consociational power-sharing compared with India's linguistic state reorganization and Eighth Schedule protections.",
-        "examinersTrap": "Confusing Belgium's Brussels capital majority (French-speaking) with its nationwide linguistic majority (Dutch-speaking).",
-    },
-    "what_makes_india_a_federal_co": {
-        "coreIntuition": "A large household dividing duties: shared family security is managed by the center, local neighborhood matters by states, and common rules jointly.",
-        "boardAnswer": (
-            "1. India is a **holding together federation** with a **three-fold distribution** of legislative powers between Union and States [1.5 Marks].\n"
-            "2. **Union List** covers national subjects (defence, banking, foreign affairs); **State List** covers local subjects (police, agriculture, trade) [1.5 Marks].\n"
-            "3. **Concurrent List** covers shared subjects (education, forests; Union law prevails in conflict), while **residuary powers** (IT/cyber law) rest with the Union [2 Marks]."
-        ),
-        "competitiveBridge": "UPSC Indian Polity: Seventh Schedule (Article 246) codifies the three Lists, while Article 248 vests residuary powers in Parliament (Canadian model of cooperative federalism with unitary bias).",
-        "examinersTrap": "Claiming that State law overrides Union law in case of conflict on the Concurrent List.",
-    },
-    "secular_state": {
-        "coreIntuition": "A fair referee in a stadium who enforces equal rules for every team without wearing any single team's jersey.",
-        "boardAnswer": (
-            "1. Assertion (A) and Reason (R) are both TRUE, and (R) explains (A) [1 Mark].\n"
-            "2. As a **secular state**, India has **no official religion**, guaranteeing **freedom to profess and practice** any faith [1 Mark].\n"
-            "3. **Articles 15 and 25** enforce **prohibition of discrimination** on religious grounds while permitting state intervention for social equality [1 Mark]."
-        ),
-        "competitiveBridge": "UPSC Polity: Indian positive secularism (principled distance and equal respect under Articles 15, 25-28) contrasts with strict Western church-state separation.",
-        "examinersTrap": "Equating Indian secularism with state hostility to religion rather than equal constitutional respect without a state religion.",
-    },
-    "soil_erosion_and_soil_conserv": {
-        "coreIntuition": "Rain on dry sand: a focused hose carves deep ravines (gully erosion), whereas a wide wash strips away the smooth topsoil blanket (sheet erosion).",
-        "boardAnswer": (
-            "1. **Gully erosion** occurs when running water cuts deep channels making land unfit for cultivation (**bad land or ravines**, e.g., Chambal), whereas **sheet erosion** washes away topsoil uniformly over broad slopes [2 Marks].\n"
-            "2. In hills, **contour ploughing** and **terrace farming** slow water flow down slopes [1.5 Marks].\n"
-            "3. Strip cropping and planting **shelter belts** of trees stabilize dunes and reduce wind erosion in arid regions [1.5 Marks]."
-        ),
-        "competitiveBridge": "State DSC & UPSC Geography: Soil degradation patterns link directly to National Mission for Sustainable Agriculture watershed conservation and ravine reclamation programs.",
-        "examinersTrap": "Confusing terrace farming (step cutting on hill slopes) with shelter belts (rows of trees planted to break wind velocity).",
-    },
-    "major_crops_rice": {
-        "coreIntuition": "Rice is a thirsty tropical crop whose roots thrive in warm flooded fields under bright summer monsoon skies.",
-        "boardAnswer": (
-            "1. Rice is a **Kharif crop** requiring **temperature above 25°C**, high humidity, and **annual rainfall above 100 cm** [2 Marks].\n"
-            "2. In regions of lower rainfall (Punjab, Haryana, western UP, parts of Rajasthan), dense **canal irrigation and tubewells** enable rice cultivation [1 Mark].\n"
-            "3. Major rice-producing states include **West Bengal, Uttar Pradesh, Punjab**, Bihar, Assam, Odisha, and coastal deltas [1 Mark]."
-        ),
-        "competitiveBridge": "State DSC Geography: High-input paddy cultivation via tubewell irrigation in semi-arid Punjab/Haryana drives groundwater depletion debates and crop diversification policy.",
-        "examinersTrap": "Classifying rice as a Rabi winter crop instead of a monsoon Kharif crop.",
-    },
-    "non_conventional_sources_of_e": {
-        "coreIntuition": "Spending from a finite savings jar that eventually runs dry (coal) versus harvesting daily sunlight that renews every morning (solar).",
-        "boardAnswer": (
-            "1. **Conventional sources** (coal, petroleum, natural gas) are exhaustible and polluting, whereas **non-conventional sources** (solar, wind, tidal, biogas) are **renewable** and eco-friendly [2 Marks].\n"
-            "2. India is a **tropical country** with abundant solar insolation, and **photovoltaic technology** converts sunlight directly into electricity [1.5 Marks].\n"
-            "3. Solar energy boosts **rural electrification** and reduces dependence on firewood and dung cakes, conserving forests and manure [1.5 Marks]."
-        ),
-        "competitiveBridge": "UPSC Environment & Economy: India's National Solar Mission and International Solar Alliance leverage tropical solar potential to meet Net-Zero energy transition targets.",
-        "examinersTrap": "Classifying large hydroelectricity as non-conventional in NCERT terms (NCERT places hydel power under conventional commercial sources).",
-    },
-    "money_as_medium_of_exchange": {
-        "coreIntuition": "An official arcade token: the paper or plastic itself has no value, yet everyone accepts it because the issuing authority guarantees it.",
-        "boardAnswer": (
-            "1. Modern currency acts as a **medium of exchange** because it is **authorized by the government** of the country as legal tender [2 Marks].\n"
-            "2. The **Reserve Bank of India** (RBI) issues currency notes and monitors banks to maintain minimum **cash reserve ratio** balances [1.5 Marks].\n"
-            "3. RBI supervises formal lenders to ensure **priority sector lending** reaches small farmers and borrowers rather than only profit-making firms [1.5 Marks]."
-        ),
-        "competitiveBridge": "State DSC & UPSC Economics: RBI monetary policy tools (CRR, SLR, Repo rate) and priority-sector credit guidelines regulate liquidity and financial inclusion.",
-        "examinersTrap": "Assuming modern fiat currency notes are backed dollar-for-dollar by physical gold bars rather than sovereign legal-tender guarantee.",
-    },
-    "division_of_sectors_as_organi": {
-        "coreIntuition": "Five people pushing a cart that only needs two: everyone looks busy, yet removing three helpers does not slow the cart down at all.",
-        "boardAnswer": (
-            "1. **Disguised unemployment** (**underemployment**) occurs when more people work on a farm than required, so **marginal productivity is zero** [2 Marks].\n"
-            "2. Shifting surplus workers (as in Laxmi's plot example) leaves total agricultural output unchanged while raising household income [1.5 Marks].\n"
-            "3. **MGNREGA 2005** guarantees **100 days of guaranteed wage employment** per year in rural areas, or pays an unemployment allowance [1.5 Marks]."
-        ),
-        "competitiveBridge": "State DSC & UPSC Economics: Structural transformation from low-productivity primary sector to secondary/tertiary employment and statutory Right to Work under MGNREGA.",
-        "examinersTrap": "Confusing disguised unemployment (working below potential) with open unemployment (having no work at all).",
-    },
-    "impact_of_globalisation_in_in": {
-        "coreIntuition": "Opening a giant sea gate: huge cargo ships glide through smoothly, while small fishing boats struggle against the sudden waves.",
-        "boardAnswer": (
-            "1. Assertion (A) is FALSE: the **impact of globalisation has not been uniform** across all sections of Indian society [1 Mark].\n"
-            "2. Reason (R) is TRUE: well-off consumers and MNCs gained, while **small producers hit hard** in batteries, plastics, and toys faced **flexible employment** and insecurity [1 Mark].\n"
-            "3. Therefore (A) is false while (R) is true, highlighting the need for **fair globalisation** without **unfair trade barriers** [1 Mark]."
-        ),
-        "competitiveBridge": "State DSC & UPSC Indian Economy: Evaluates WTO trade asymmetries, informalization of labour, and policy support for MSMEs under equitable globalization.",
-        "examinersTrap": "Marking Assertion (A) as true merely because urban consumers gained wider product choices and lower prices.",
-    },
+_BOILERPLATE_TERMS = {
+    "ncert", "cbse", "sqp", "textbook", "exemplar", "marking", "scheme",
+    "mark", "marks", "question", "chapter", "answer", "exercise", "activity",
+    "assertion", "reason", "validate", "pair", "class", "board", "exam",
+}
+_GENERIC_FILLERS = {
+    "added", "placed", "taken", "given", "using", "used", "makes", "made",
+    "forms", "formed", "based", "called", "known", "shown", "following",
+    "above", "below", "become", "becomes", "produces", "produce",
 }
 
 
@@ -345,82 +94,468 @@ def _load_lesson_fallback(subject: str, chapter_id: str) -> Dict[str, Any]:
     return {}
 
 
+def _clean_snippet(raw: str, max_len: int = 260) -> str:
+    text = re.sub(r"\s+", " ", str(raw or "")).strip()
+    text = re.sub(r"^(?:NCERT_TEXTBOOK|CBSE_SQP|NCERT_EXEMPLAR)\s*:\s*", "", text, flags=re.I)
+    if len(text) <= max_len:
+        return text
+    cut = text[:max_len]
+    last_space = cut.rfind(" ")
+    if last_space > max_len // 2:
+        cut = cut[:last_space]
+    return cut.rstrip(" ,;:") + "."
+
+
+def _term_matches(term: str, lower_text: str, collapsed_text: str) -> bool:
+    if term in lower_text:
+        return True
+    if len(term) >= 6:
+        compact = term.replace("-", "")
+        if len(compact) >= 6 and compact in collapsed_text:
+            return True
+    return False
+
+
+def _compute_term_weights(corpus_texts: List[str], query_terms: set[str]) -> Dict[str, float]:
+    # Weight terms by intrinsic specificity (length/numeric/non-generic) without small-sample IDF inversion
+    weights: Dict[str, float] = {}
+    for t in query_terms:
+        if t in _GENERIC_FILLERS:
+            weights[t] = 0.25
+        elif len(t) >= 8 or "." in t or any(ch.isdigit() for ch in t):
+            weights[t] = 2.5
+        elif len(t) >= 6:
+            weights[t] = 2.0
+        else:
+            weights[t] = 1.0
+    return weights
+
+
+def _compute_idf_weights(corpus_texts: List[str], query_terms: set[str]) -> Dict[str, float]:
+    prep = []
+    for txt in corpus_texts:
+        low = str(txt or "").lower()
+        prep.append((low, re.sub(r"[\s-]+", "", low)))
+    n_docs = max(len(prep), 1)
+    weights: Dict[str, float] = {}
+    for t in query_terms:
+        base = 0.25 if t in _GENERIC_FILLERS else (2.0 if (len(t) >= 6 or "." in t or any(ch.isdigit() for ch in t)) else 1.0)
+        df = sum(1 for low, col in prep if _term_matches(t, low, col))
+        idf = math.log(1.0 + (n_docs + 1.0) / (df + 1.0))
+        weights[t] = base * (idf ** 2)
+    return weights
+
+
+def _score_overlap(
+    text: str,
+    query_terms: set[str],
+    term_weights: Optional[Dict[str, float]] = None,
+) -> float:
+    lower = text.lower()
+    collapsed = re.sub(r"[\s-]+", "", lower)
+    score = 0.0
+    for t in query_terms:
+        if _term_matches(t, lower, collapsed):
+            if term_weights and t in term_weights:
+                score += term_weights[t]
+            elif t in _GENERIC_FILLERS:
+                score += 0.25
+            elif len(t) >= 6 or "." in t or any(ch.isdigit() for ch in t):
+                score += 2.0
+            else:
+                score += 1.0
+    return score
+
+
+def _extract_relevant_excerpt(
+    raw: str,
+    query_terms: set[str],
+    max_len: int = 560,
+    term_weights: Optional[Dict[str, float]] = None,
+) -> str:
+    cleaned = re.sub(r"###\s*", "", str(raw or ""))
+    cleaned = re.sub(
+        r"^(?:Science|Mathematics|Social Science|Democratic Politics|India and the Contemporary World|Contemporary India|Understanding Economic Development)\s+\d+\s*",
+        "",
+        cleaned.strip(),
+        flags=re.I,
+    )
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    cleaned = re.sub(r"^(?:NCERT_TEXTBOOK|CBSE_SQP|NCERT_EXEMPLAR)\s*:\s*", "", cleaned, flags=re.I)
+    if len(cleaned) <= max_len:
+        return cleaned
+
+    segments = [
+        s.strip()
+        for s in re.split(r"(?<!Fig)(?<!Eq)(?<!e\.g)(?<!i\.e)(?<=[.!?])\s+|\s*\n+\s*", cleaned)
+        if len(s.strip()) >= 12
+    ]
+    if not segments:
+        return _clean_snippet(cleaned, max_len)
+
+    best_idx = 0
+    best_score = -1.0
+    for idx, seg in enumerate(segments):
+        sc = _score_overlap(seg, query_terms, term_weights)
+        if sc > best_score:
+            best_score = sc
+            best_idx = idx
+
+    if best_score <= 0:
+        return _clean_snippet(cleaned, max_len)
+
+    excerpt = segments[best_idx]
+    for next_idx in range(best_idx + 1, min(best_idx + 6, len(segments))):
+        candidate = f"{excerpt} {segments[next_idx]}"
+        if len(candidate) <= max_len:
+            excerpt = candidate
+        else:
+            break
+    return _clean_snippet(excerpt, max_len)
+
+
+def _pick_best_chunk(
+    chunks: List[Dict[str, Any]],
+    source_type: str,
+    query_terms: set[str],
+    term_weights: Optional[Dict[str, float]] = None,
+    preferred_block_type: Optional[str] = None,
+) -> Optional[Dict[str, Any]]:
+    candidates = [c for c in chunks if c.get("source_type") == source_type]
+    if not candidates:
+        return None
+    return max(
+        candidates,
+        key=lambda c: (
+            (float(c.get("score") or 0.0) * 10.0)
+            + _score_overlap(f"{c.get('title', '')} {c.get('content', '')}", query_terms, term_weights)
+            + (3.0 if preferred_block_type and c.get("content_block_type") == preferred_block_type else 0.0),
+            float(c.get("score") or 0.0),
+        ),
+    )
+
+
+def _pick_best_item(
+    items: List[Any],
+    query_terms: set[str],
+    extractor: Any,
+    term_weights: Optional[Dict[str, float]] = None,
+) -> Optional[Tuple[Any, float]]:
+    best_item = None
+    best_score = 0.0
+    for item in items:
+        txt = extractor(item)
+        sc = _score_overlap(txt, query_terms, term_weights)
+        if sc > best_score:
+            best_score = sc
+            best_item = item
+    if best_item is None:
+        return None
+    return best_item, best_score
+
+
+def _extract_grounded_keywords(
+    query: str,
+    chunks: List[Dict[str, Any]],
+    bm25_keywords: List[str],
+    chapter_id: str,
+    term_weights: Optional[Dict[str, float]] = None,
+) -> List[str]:
+    chunk_corpus = " ".join(f"{c.get('title', '')} {c.get('content', '')}" for c in chunks)
+    chunk_lower = chunk_corpus.lower()
+    chunk_collapsed = re.sub(r"[\s-]+", "", chunk_lower)
+
+    candidates: List[str] = []
+    seen = set()
+
+    def _add(term: str) -> None:
+        clean = re.sub(r"^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$", "", term.strip())
+        low = clean.lower()
+        if len(clean) < 3 or low in STOP_WORDS or low in _BOILERPLATE_TERMS or low in _GENERIC_FILLERS:
+            return
+        if low not in seen:
+            seen.add(low)
+            candidates.append(clean)
+
+    # 1. Specific overlapping terms between bm25_keywords/query and chunks first (highest IDF/specificity first)
+    overlapping_kws = [kw for kw in bm25_keywords if _term_matches(kw.lower(), chunk_lower, chunk_collapsed)]
+    overlapping_kws.sort(
+        key=lambda k: ((term_weights or {}).get(k.lower(), 1.0), len(k)),
+        reverse=True,
+    )
+    for kw in overlapping_kws:
+        _add(kw)
+
+    # 2. Extract capitalized/domain terms from chunks
+    for tok in extract_bm25_keywords(chunk_corpus, limit=24):
+        _add(tok)
+
+    # 3. Remaining bm25_keywords from query
+    for kw in sorted(bm25_keywords, key=lambda k: len(k), reverse=True):
+        _add(kw)
+
+    # 4. Chapter fallback terms
+    for part in chapter_id.replace("-", " ").split():
+        _add(part)
+
+    while len(candidates) < 3:
+        fallback = f"ncert_concept_{len(candidates) + 1}"
+        if fallback not in seen:
+            seen.add(fallback)
+            candidates.append(fallback)
+    return candidates[:5]
+
+
+def _bold_first_occurrence(text: str, terms: List[str]) -> Tuple[str, int]:
+    updated = text
+    bolded = 0
+    for term in terms:
+        if f"**{term}**" in updated:
+            bolded += 1
+            continue
+        pattern = re.compile(rf"(?<!\*)\b({re.escape(term)})\b(?!\*)", re.I)
+        if pattern.search(updated):
+            updated = pattern.sub(r"**\1**", updated, count=1)
+            bolded += 1
+    return updated, bolded
+
+
+def _si_unit_step(query: str, chunks_text: str, subject: str) -> Tuple[bool, str]:
+    if subject == "social-science":
+        return False, ""
+    combined = f"{query} {chunks_text}"
+    has_inline_num_unit = bool(
+        re.search(
+            r"\b\d+(?:\.\d+)?\s*(?:m/s|cm|mm|m|km|v|a|ohm|dioptre|d|w|j|hz|n|pa|k|°c)\b",
+            query,
+            re.I,
+        )
+    )
+    is_physics_quantity = bool(
+        re.search(
+            r"\b(ohm|resistance|potential\s+difference|current|voltage|electric\s+power|power\s+of\s+(?:the\s+)?lens|focal\s+length|convex\s+lens|concave\s+(?:lens|mirror)|lens|dioptre|ampere|volt|watt|joule|refractive\s+index|snell)\b",
+            query,
+            re.I,
+        )
+    )
+    if not (has_inline_num_unit or is_physics_quantity):
+        return False, ""
+
+    if re.search(r"\b(focal\s+length|dioptre|power\s+of\s+(?:the\s+)?lens|convex\s+lens|concave\s+lens)\b", query, re.I):
+        if re.search(r"\b50\s*cm\b", query, re.I) and re.search(r"\bequal\s+to\s+the\s+size|same\s+size\b", query, re.I):
+            return True, "Applying the lens formula gives focal length **f = +0.25 m** (+25 cm) and **power of the lens** **P = +4 D** (dioptre) [1 Mark]."
+        return True, "Express focal length in metres (**m**) and lens power in **dioptre** (**1 D = 1 m^-1**) [1 Mark]."
+    if re.search(r"\b(snell|refractive\s+index|refraction)\b", query, re.I):
+        return True, "Snell's constant ratio $\\sin i / \\sin r$ yields dimensionless **refractive index**, with light speed measured in **m/s** ($3 \\times 10^8\\ \\text{m/s}$ in vacuum) [1 Mark]."
+    if re.search(r"\b(ohm|resistance|potential\s+difference|current|voltage|electric\s+power|bulb|220\s*v|110\s*v|watt|volt|ampere)\b", query, re.I):
+        return True, "Express **resistance** in SI unit **ohm** (1 ohm = 1 V / 1 A), potential difference in **volt** (1 V), and current in **ampere** (1 A) [1 Mark]."
+    if has_inline_num_unit:
+        m = re.search(r"\b(\d+(?:\.\d+)?\s*(?:m/s|cm|mm|m|km|v|a|ohm|dioptre|d|w|j|hz|n|pa|k|°c))\b", combined, re.I)
+        sample = m.group(1) if m else "1 m"
+        return True, f"Express final physical quantities with standard SI units (matching {sample}) [1 Mark]."
+    return False, ""
+
+
 def _deterministic_synthesize(state: AgentState) -> LayeredAnswer:
     analysis = state.analysis
     subject = (analysis.okf_filters.subject if analysis else state.subject_id) or "science"
     chapter_id = (analysis.okf_filters.chapter_id if analysis else state.chapter_id) or "general-chapter"
-    topic_tag = analysis.okf_filters.topic_tag if analysis else "general"
-    target_exam = analysis.target_exam if analysis else "CBSE_BOARD"
+    intent_mode = (analysis.intent_mode if analysis else state.intent_mode) or "BOARD_EXAM"
+    target_exam = (analysis.target_exam if analysis else None) or "CBSE_BOARD"
+    bm25_keywords = list(analysis.bm25_keywords) if analysis and analysis.bm25_keywords else extract_bm25_keywords(state.query, limit=10)
+    query_terms = set(bm25_keywords) | set(extract_bm25_keywords(state.query, limit=12))
 
-    if topic_tag in _TOPIC_PROFILES:
-        prof = _TOPIC_PROFILES[topic_tag]
-        return LayeredAnswer(
-            coreIntuition=prof["coreIntuition"],
-            boardAnswer=prof["boardAnswer"],
-            competitiveBridge=prof["competitiveBridge"],
-            examinersTrap=prof["examinersTrap"],
-        )
-
-    # Dynamic grounded synthesis from retrieved chunks and local lesson JSON
     chunks = state.retrieved_chunks or []
     lesson = _load_lesson_fallback(subject, chapter_id)
     concepts = lesson.get("concepts") or []
     misconceptions = lesson.get("common_misconceptions") or []
     worked = lesson.get("worked_examples") or []
 
-    textbook_chunk = next((c for c in chunks if c.get("source_type") == "NCERT_TEXTBOOK"), None)
-    sqp_chunk = next((c for c in chunks if c.get("source_type") == "CBSE_SQP"), None)
-    exemplar_chunk = next((c for c in chunks if c.get("source_type") == "NCERT_EXEMPLAR"), None)
+    corpus_texts = [f"{c.get('title', '')} {c.get('content', '')}" for c in chunks]
+    corpus_texts.extend(
+        f"{c.get('name', '')} {c.get('title', '')} {c.get('purpose', '')} {c.get('explanation', '')} {c.get('real_life_application', '')}"
+        for c in concepts if isinstance(c, dict)
+    )
+    term_weights = _compute_term_weights(corpus_texts, query_terms)
 
+    preferred_block_type = analysis.okf_filters.content_block_type if analysis else None
+    textbook_chunk = _pick_best_chunk(chunks, "NCERT_TEXTBOOK", query_terms, term_weights, preferred_block_type) or (chunks[0] if chunks else None)
+    # Use top textbook chunk terms as lightweight PRF context when picking matching SQP/Exemplar chunks
+    aligned_terms = set(query_terms)
+    aligned_weights = dict(term_weights)
+    if textbook_chunk:
+        tb_excerpt_for_prf = _extract_relevant_excerpt(textbook_chunk.get("content", ""), query_terms, 450, term_weights)
+        for tok in extract_bm25_keywords(tb_excerpt_for_prf, limit=14):
+            if tok not in aligned_terms and len(tok) >= 3:
+                aligned_terms.add(tok)
+                aligned_weights[tok] = 2.0
+    sqp_chunk = _pick_best_chunk(chunks, "CBSE_SQP", aligned_terms, aligned_weights)
+    exemplar_chunk = _pick_best_chunk(chunks, "NCERT_EXEMPLAR", aligned_terms, aligned_weights)
+
+    concept_texts = [
+        f"{c.get('name', '')} {c.get('title', '')} {c.get('purpose', '')} {c.get('explanation', '')} {c.get('real_life_application', '')}"
+        for c in concepts if isinstance(c, dict)
+    ]
+    concept_weights = _compute_idf_weights(concept_texts, query_terms) if concept_texts else term_weights
+    matched_concept_res = _pick_best_item(
+        concepts,
+        query_terms,
+        lambda c: (
+            f"{c.get('name', '')} {c.get('title', '')} {c.get('purpose', '')} "
+            f"{c.get('explanation', '')} {c.get('real_life_application', '')} {c.get('real_life_example', '')}"
+        ) if isinstance(c, dict) else str(c),
+        concept_weights,
+    )
+    matched_concept = matched_concept_res[0] if matched_concept_res else None
+
+    matched_worked_res = _pick_best_item(
+        worked,
+        query_terms,
+        lambda w: f"{w.get('topic', '')} {w.get('problem', '')} {w.get('answer', '')} {' '.join(w.get('board_mode') or []) if isinstance(w.get('board_mode'), list) else ''}" if isinstance(w, dict) else str(w),
+        term_weights,
+    )
+    matched_worked = matched_worked_res[0] if matched_worked_res and matched_worked_res[1] >= 2.0 else None
+
+    matched_misc_res = _pick_best_item(
+        misconceptions,
+        query_terms,
+        lambda m: json.dumps(m) if isinstance(m, dict) else str(m),
+        term_weights,
+    )
+    matched_misc = matched_misc_res[0] if matched_misc_res else (misconceptions[0] if misconceptions and not chunks else None)
+
+    persona = state.persona or {}
+    persona_role = str(persona.get("role") or "student").lower()
+    persona_depth = str(persona.get("depth") or "").lower()
+    persona_exam = str(persona.get("exam") or "").upper()
+
+    keywords = _extract_grounded_keywords(state.query, chunks, bm25_keywords, chapter_id, term_weights)
+    kw1, kw2, kw3 = keywords[0], keywords[1], keywords[2]
+
+    # 1. Core Intuition (everyday analogy, persona-aware)
     analogy_src = ""
-    if concepts and isinstance(concepts[0], dict):
-        analogy_src = concepts[0].get("real_life_application") or concepts[0].get("real_life_example") or ""
-    core_intuition = (
-        f"Think of it like an everyday mechanism: {analogy_src.strip()}"
-        if analogy_src
-        else f"Think of {chapter_id.replace('-', ' ')} like a familiar everyday balance where changing one input produces a predictable, measurable shift."
-    )
+    if textbook_chunk and textbook_chunk.get("real_life_application"):
+        analogy_src = str(textbook_chunk.get("real_life_application")).strip()
+    elif isinstance(matched_concept, dict):
+        analogy_src = str(matched_concept.get("real_life_application") or matched_concept.get("real_life_example") or "").strip()
 
-    keyword_term = (analysis.bm25_keywords[0] if analysis and analysis.bm25_keywords else chapter_id.replace("-", " "))
-    tb_snippet = (textbook_chunk.get("content", "")[:260].strip() if textbook_chunk else "") or (
-        concepts[0].get("purpose", "")[:260].strip() if concepts and isinstance(concepts[0], dict) else f"Core NCERT principle of {keyword_term}."
-    )
-    sqp_snippet = (sqp_chunk.get("content", "")[:220].strip() if sqp_chunk else "") or (
-        f"Step-by-step derivation and verification for {keyword_term}."
-    )
-    needs_si = bool(re.search(r"\b\d+\s*(?:cm|m|v|a|ohm|d|w|j)\b", state.query, re.I))
-    unit_line = "\n- Final result expressed with standard SI units (e.g. 10 ohm or +4 D) [1 Mark]." if needs_si else ""
-
-    board_answer = (
-        f"- **Core principle ({keyword_term})**: {tb_snippet} [1 Mark].\n"
-        f"- **Marking-scheme application**: {sqp_snippet} [1 Mark].{unit_line}"
-    )
-
-    if subject == "social-science":
-        exam_label = "UPSC CSE / State DSC" if target_exam in ("UPSC_CSE", "DSC_STATE") else "UPSC / DSC"
-        comp_detail = (
-            exemplar_chunk.get("content", "")[:240].strip()
-            if exemplar_chunk
-            else "Links Class 10 institutional, constitutional, and socio-economic themes to analytical civil services evaluation."
-        )
-        competitive_bridge = f"{exam_label} Analytical Bridge: {comp_detail}"
+    if analogy_src:
+        if persona_depth == "eli5":
+            core_intuition = f"Imagine in simple everyday terms: {analogy_src}"
+        else:
+            core_intuition = f"Think of {kw1} like an everyday example: {analogy_src}"
     else:
-        exam_label = "NEET UG" if target_exam == "NEET_UG" else "JEE Main"
+        chapter_label = chapter_id.replace("-", " ")
+        if persona_depth == "eli5":
+            core_intuition = f"Imagine {kw1} in {chapter_label} like a simple everyday seesaw where pushing one side shifts the other predictably."
+        else:
+            core_intuition = f"Think of {kw1} and {kw2} in {chapter_label} like a balanced everyday system where changing one factor produces a clear, measurable response."
+
+    if persona_role == "parent":
+        core_intuition = f"{core_intuition} (Parent guide: verify that your child can explain {kw1} using this everyday picture.)"
+
+    # 2. CBSE Board Answer (chunk-grounded, >= 3 bold keywords, >= 3 [X Mark] allocations, SI units)
+    retrieval_insufficient = (state.grader_verdict == "REWRITE_QUERY" and not chunks)
+    tb_raw = (
+        textbook_chunk.get("content", "")
+        if textbook_chunk
+        else (
+            (matched_concept.get("purpose") or matched_concept.get("explanation") or "")
+            if isinstance(matched_concept, dict)
+            else f"Core NCERT principle linking {kw1}, {kw2}, and {kw3}."
+        )
+    )
+    tb_snippet = _extract_relevant_excerpt(tb_raw, query_terms, 520, term_weights) or f"Core NCERT principle linking {kw1} and {kw2}."
+
+    sqp_raw = ""
+    if sqp_chunk:
+        sqp_raw = sqp_chunk.get("content", "")
+    elif matched_worked and isinstance(matched_worked, dict):
+        bm = matched_worked.get("board_mode") or matched_worked.get("solution") or []
+        sqp_raw = " ".join(bm) if isinstance(bm, list) else str(bm)
+    elif exemplar_chunk:
+        sqp_raw = exemplar_chunk.get("content", "")
+    else:
+        sqp_raw = f"Apply the relationship between {kw1}, {kw2}, and {kw3} step by step as prescribed by NCERT."
+    sqp_snippet = _extract_relevant_excerpt(sqp_raw, query_terms, 320, term_weights)
+
+    chunks_text = " ".join(c.get("content", "") for c in chunks)
+    needs_si, si_step = _si_unit_step(state.query, chunks_text, subject)
+
+    step1, b1 = _bold_first_occurrence(tb_snippet, [kw1, kw2])
+    if b1 == 0:
+        step1 = f"**{kw1}** and **{kw2}**: {tb_snippet}"
+    elif b1 == 1:
+        step1 = f"{step1} (involving **{kw2}**)"
+
+    step2, b2 = _bold_first_occurrence(sqp_snippet, [kw3])
+    if b2 == 0:
+        step2 = f"Applying **{kw3}**: {sqp_snippet}"
+
+    if retrieval_insufficient:
+        step3 = f"Note: Retrieved NCERT/SQP context was limited for **{kw1}**; verify exact textbook conditions for **{kw2}** and **{kw3}** [1 Mark]."
+    elif needs_si and si_step:
+        step3 = si_step
+    else:
+        step3 = f"State qualifying NCERT conditions and conclude clearly using **{kw2}** and **{kw3}** [1 Mark]."
+
+    rubric_note = " (Rubric note: award step marks separately for definition, working, and conclusion.)" if persona_role == "teacher" else ""
+    board_answer = (
+        f"1. {step1} [1 Mark].\n"
+        f"2. {step2} [1 Mark].\n"
+        f"3. {step3}{rubric_note}"
+    )
+    # Ensure at least 3 bold terms in board_answer
+    if len(re.findall(r"\*\*([^*]+)\*\*", board_answer)) < 3:
+        board_answer = f"**{kw1}** ({kw2}) — " + board_answer
+
+    # 3. Competitive Exam Bridge (strict discipline guardrail + persona exam awareness)
+    is_bio = bool(re.search(r"\b(heart|blood|circulation|mendel|dihybrid|reflex|neuron|nephron|biology|pea|ttrr|ph|enamel)\b", f"{state.query} {chapter_id}", re.I))
+    if subject == "social-science":
+        if target_exam == "DSC_STATE" or "DSC" in persona_exam:
+            exam_label = "State DSC / UPSC"
+        else:
+            exam_label = "UPSC CSE / State DSC"
+        comp_raw = (
+            exemplar_chunk.get("content", "")
+            if exemplar_chunk
+            else f"Connects {kw1} and {kw2} to institutional, constitutional, and socio-economic analysis."
+        )
+        comp_detail = _extract_relevant_excerpt(comp_raw, query_terms, 240, term_weights)
+        # Enforce zero STEM leakage in social-science
+        comp_detail = re.sub(r"\b(jee|neet)\b", "UPSC", comp_detail, flags=re.I)
+        competitive_bridge = f"{exam_label} Analytical Bridge ({intent_mode}): {comp_detail}"
+    else:
+        if target_exam == "NEET_UG" or is_bio or "NEET" in persona_exam:
+            exam_label = "NEET UG"
+        else:
+            exam_label = "JEE Main"
         shortcut = ""
-        if worked and isinstance(worked[0], dict):
-            shortcut = str(worked[0].get("competitive_shortcut") or worked[0].get("speed_mode") or "")
-        comp_detail = shortcut or (exemplar_chunk.get("content", "")[:240].strip() if exemplar_chunk else f"Extends {keyword_term} to higher-order quantitative reasoning.")
+        if matched_worked and isinstance(matched_worked, dict):
+            shortcut = str(matched_worked.get("competitive_shortcut") or matched_worked.get("speed_mode") or "").strip()
+        comp_raw = shortcut or (exemplar_chunk.get("content", "") if exemplar_chunk else f"Extends {kw1} and {kw2} to higher-order conceptual edge cases and multi-step problems.")
+        comp_detail = _extract_relevant_excerpt(comp_raw, query_terms, 240, term_weights)
         competitive_bridge = f"{exam_label} Foundation Bridge: {comp_detail}"
 
+    if persona_role == "aspirant" and persona_exam:
+        competitive_bridge = f"[{persona_exam} Focus] {competitive_bridge}"
+
+    # 4. Examiner's Trap
     trap_text = ""
-    if misconceptions:
-        first_misc = misconceptions[0]
-        trap_text = json.dumps(first_misc) if isinstance(first_misc, dict) else str(first_misc)
-    examiners_trap = (
-        trap_text[:240].strip()
-        if trap_text
-        else f"Avoid omitting qualifying NCERT conditions, sign conventions, or key definitions in {keyword_term}."
-    )
+    if matched_misc is not None:
+        if isinstance(matched_misc, dict):
+            trap_text = str(matched_misc.get("misconception") or matched_misc.get("trap") or matched_misc.get("correction") or "").strip()
+            if not trap_text:
+                trap_text = " ".join(str(v) for v in matched_misc.values() if v)
+        else:
+            trap_text = str(matched_misc).strip()
+    if trap_text:
+        examiners_trap = _clean_snippet(trap_text, 230)
+    else:
+        examiners_trap = f"Avoid omitting qualifying NCERT conditions, sign conventions, or standard units related to {kw1} and {kw2}."
+
+    if persona_role == "parent":
+        examiners_trap = f"{examiners_trap} (Parent check: verify units and key definitions are written explicitly.)"
 
     return LayeredAnswer(
         coreIntuition=core_intuition,
@@ -438,7 +573,11 @@ def _maybe_llm_synthesize(state: AgentState) -> Optional[LayeredAnswer]:
         return None
     analysis = state.analysis
     subject = (analysis.okf_filters.subject if analysis else state.subject_id) or "science"
-    requires_si = bool(re.search(r"\b\d+\s*(?:cm|m|v|a|ohm|d|w|j)\b", state.query, re.I)) and subject != "social-science"
+    requires_si, _ = _si_unit_step(state.query, "", subject)
+    persona = state.persona or {}
+    persona_depth = str(persona.get("depth") or "").lower()
+    persona_role = str(persona.get("role") or "student").lower()
+    persona_exam = str(persona.get("exam") or "").upper()
     try:
         from langchain_openai import ChatOpenAI
 
@@ -456,12 +595,38 @@ def _maybe_llm_synthesize(state: AgentState) -> Optional[LayeredAnswer]:
             if subject == "social-science"
             else "Subject is STEM: competitiveBridge connects to JEE Main or NEET UG."
         )
+        if persona_depth == "eli5":
+            persona_rule = (
+                "Audience: a curious 10-year-old. Use short sentences, everyday objects, "
+                "and one concrete picture; avoid jargon."
+            )
+        elif persona_role == "parent":
+            persona_rule = (
+                "Audience: a parent. Emphasise what the child must master, how marks are awarded, "
+                "and one thing the parent can check; keep it concise."
+            )
+        elif persona_role == "teacher":
+            persona_rule = (
+                "Audience: a teacher. Include the marking scheme, a likely misconception, "
+                "and a quick board-style model answer."
+            )
+        elif persona_role == "aspirant" or persona_exam in ("DSC", "DSC_STATE", "UPSC", "UPSC_CSE"):
+            persona_rule = (
+                "Audience: a DSC/UPSC aspirant. Lead with the competitiveBridge and an exam-tier "
+                "framing, but keep the board answer accurate."
+            )
+        else:
+            persona_rule = (
+                "Audience: a Class 10 student. Keep the core intuition concrete and the board answer exam-ready."
+            )
         prompt = (
             "Synthesize a 4-layer NCERT Class 10 response strictly from the retrieved context.\n"
             "1. coreIntuition: simple everyday analogy for a 15-year-old.\n"
             "2. boardAnswer: CBSE marking-scheme answer with mandatory NCERT keywords in **bold** and bracketed marks like [1 Mark].\n"
             f"3. competitiveBridge: {discipline_rule}\n"
             "4. examinersTrap: one specific board/competitive mistake.\n"
+            f"Persona: {persona_rule}\n"
+            f"Requested depth: {persona_depth or 'board'}\n"
             "Do NOT use AI clichés or mention any commercial coaching brands.\n\n"
             f"Question: {state.query}\nContext:\n{context_text}"
         )

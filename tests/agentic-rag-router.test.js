@@ -84,13 +84,15 @@ function referenceAnalyzeQuery(input) {
 
   // Conditional HyDE Policy:
   // Strictly empty string for direct exercises, exact activities, or pure numerical calculations.
-  const isDirectExercise = /\b(exercise|ex\.?)\s*\d+(\.\d+)?/i.test(trimmed) || /\bquestion\s*\d+/i.test(trimmed);
+  const isDirectExercise =
+    /\b(?:exercise|ex\.?)\s*(?:\d+(?:\.\d+)?|question\b)/i.test(trimmed) ||
+    /\bquestion\s*\d+/i.test(trimmed);
   const isActivity =
     /\bactivity\s*\d+(\.\d+)?/i.test(trimmed) ||
     /\b(reaction of .* with .* granules|touches a hot object|heating lead nitrate|magnesium ribbon.*burned|what do we see when)\b/i.test(trimmed);
   const isNumerical =
-    /\b(\d+\s*(?:cm|m|v|a|ohm|d|w|j|%|\^2))\b/i.test(trimmed) &&
-    /\b(find|calculate|determine|solve|power|focal length|resistance|consumed)\b/i.test(trimmed);
+    /(?:\b\d+(?:\.\d+)?\s*(?:cm|mm|m|km|v|a|ohm|d|w|j|hz|n|pa|k|°c|%|\^2)\b|\bS_?n\s*=)/i.test(trimmed) &&
+    /\b(find|calculate|determine|solve|power|focal length|resistance|consumed|roots|term|distance|image)\b/i.test(trimmed);
 
   const shouldOmitHyde = isDirectExercise || isActivity || isNumerical;
 
@@ -490,8 +492,16 @@ test('Router T3-01: Full benchmark dataset validation across all 26 Class 10 que
       chapterId: item.chapter_id,
     });
 
-    assert.equal(typeof analyzed.intent_mode, 'string');
-    assert.equal(typeof analyzed.hyde_passage, 'string');
+    assert.equal(
+      analyzed.intent_mode,
+      intent_mode,
+      `Item ${item.id} intent_mode mismatch: expected ${intent_mode}, got ${analyzed.intent_mode}`
+    );
+    assert.equal(
+      analyzed.hyde_passage.length > 0,
+      hyde_expected,
+      `Item ${item.id} (${item.category}) hyde_expected=${hyde_expected} mismatch`
+    );
   }
 
   assert.equal(boardCount, 13, 'Expected symmetric 13 BOARD_EXAM queries');

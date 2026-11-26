@@ -29,10 +29,10 @@ export function MockModeBanner() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        padding: '0.4rem 1rem',
-        background: 'linear-gradient(90deg, rgba(245, 158, 11, 0.15) 0%, rgba(217, 119, 6, 0.1) 100%)',
-        borderBottom: '1px solid rgba(245, 158, 11, 0.3)',
-        color: '#f59e0b',
+        padding: '0.45rem 1rem',
+        backgroundColor: '#FEF08A',
+        borderBottom: '1px solid #E4E2DD',
+        color: '#18181B',
         fontSize: '0.82rem',
         fontWeight: 500,
       }}
@@ -48,13 +48,14 @@ export function MockModeBanner() {
       <button
         onClick={handleToggle}
         style={{
-          background: 'rgba(245, 158, 11, 0.2)',
-          border: '1px solid rgba(245, 158, 11, 0.4)',
+          backgroundColor: '#FAF9F6',
+          border: '1px solid #18181B',
           borderRadius: '4px',
           padding: '0.2rem 0.6rem',
-          color: '#fef3c7',
+          color: '#18181B',
           cursor: 'pointer',
           fontSize: '0.75rem',
+          fontWeight: 600,
         }}
       >
         Switch to Live
@@ -109,10 +110,10 @@ export function OfflineIndicatorPill() {
         fontWeight: 600,
         cursor: 'pointer',
         border: '1px solid',
-        background: mockActive ? 'rgba(245, 158, 11, 0.15)' : 'rgba(16, 185, 129, 0.15)',
-        borderColor: mockActive ? 'rgba(245, 158, 11, 0.4)' : 'rgba(16, 185, 129, 0.4)',
-        color: mockActive ? '#fbbf24' : '#34d399',
-        transition: 'all 0.2s ease',
+        backgroundColor: mockActive ? '#FEF08A' : '#DCFCE7',
+        borderColor: mockActive ? '#B45309' : '#1B4332',
+        color: mockActive ? '#92400E' : '#1B4332',
+        transition: 'background-color 0.15s ease',
       }}
       aria-label={`API Status: ${mockActive ? 'Mock Mode' : 'Live Mode'}`}
     >
@@ -121,8 +122,7 @@ export function OfflineIndicatorPill() {
           width: '6px',
           height: '6px',
           borderRadius: '50%',
-          backgroundColor: mockActive ? '#f59e0b' : '#10b981',
-          boxShadow: mockActive ? '0 0 6px #f59e0b' : '0 0 6px #10b981',
+          backgroundColor: mockActive ? '#B45309' : '#1B4332',
         }}
       />
       <span>{mockActive ? 'Mock API' : (online ? 'Live API' : 'Offline')}</span>

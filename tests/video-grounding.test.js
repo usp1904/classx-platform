@@ -9,6 +9,7 @@ import { getVideoEntry, sortVideos, catalogStats } from '../server/lib/video-cat
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const EVAL_DATASET_PATH = path.resolve(__dirname, '..', 'eval', 'dataset-class10-queries.json');
+const DEFAULT_VISUAL_AID_PATH = path.resolve(__dirname, '..', 'backend', 'rag', 'visual_aid_videos.json');
 
 /**
  * Polymorphic Dynamic Adapter for Milestone 2 Production Module (server/lib/agentic-rag.js)
@@ -34,18 +35,35 @@ try {
  * Adheres strictly to PROJECT.md § Architecture and ORIGINAL_REQUEST.md § R1
  */
 export class VideoGroundingCatalog {
-  constructor(entries = []) {
+  constructor(entries) {
     this._delegate = ProductionCatalogClass ? new ProductionCatalogClass(entries) : null;
     this.catalog = new Map();
-    for (const entry of entries) {
+    let list;
+    if (Array.isArray(entries)) {
+      list = entries;
+    } else if (entries === undefined && fs.existsSync(DEFAULT_VISUAL_AID_PATH)) {
+      try {
+        list = JSON.parse(fs.readFileSync(DEFAULT_VISUAL_AID_PATH, 'utf8'));
+      } catch {
+        list = [];
+      }
+    } else {
+      list = [];
+    }
+    for (const entry of list) {
       if (entry && entry.topic_tag && entry.video_metadata) {
         const normalized = this.normalizeTag(entry.topic_tag);
-        this.catalog.set(normalized, entry.video_metadata);
+        if (normalized && this.isValidVideoMetadata(entry.video_metadata)) {
+          this.catalog.set(normalized, { ...entry.video_metadata });
+        }
       }
     }
   }
 
   normalizeTag(tag) {
+    if (this._delegate && typeof this._delegate.normalizeTag === 'function') {
+      return this._delegate.normalizeTag(tag);
+    }
     if (!tag || typeof tag !== 'string') return '';
     return tag.toLowerCase().trim().replace(/[_\s-]+/g, '_');
   }
@@ -69,6 +87,9 @@ export class VideoGroundingCatalog {
   }
 
   isValidVideoMetadata(video) {
+    if (this._delegate && typeof this._delegate.isValidVideoMetadata === 'function') {
+      return this._delegate.isValidVideoMetadata(video);
+    }
     if (!video || typeof video !== 'object') return false;
 
     // video_id validated via live server/lib/youtube.js isValidVideoId
@@ -78,6 +99,9 @@ export class VideoGroundingCatalog {
 
     // start_sec and end_sec: non-negative integers and start_sec < end_sec
     if (typeof video.start_sec !== 'number' || typeof video.end_sec !== 'number') {
+      return false;
+    }
+    if (!Number.isInteger(video.start_sec) || !Number.isInteger(video.end_sec)) {
       return false;
     }
     if (video.start_sec < 0 || video.start_sec >= video.end_sec) {
@@ -234,23 +258,23 @@ test('VideoGrounding T2-03: Invalid video_id format (non-11 chars or forbidden c
   assert.equal(invalidCatalog.groundTopic('bad_id_xss'), null);
 });
 
-test('VideoGrounding T2-04: Null video response cleanly preserves answerLayers and stages', () => {
-  const responseWithNullVideo = {
-    ok: true,
-    intentMode: 'BOARD_EXAM',
-    answerLayers: {
-      coreIntuition: 'Valid intuition.',
-      boardAnswer: '**Keyword** [1 Mark].',
-      competitiveBridge: 'Valid bridge.',
-      examinersTrap: 'Valid trap.',
-    },
-    visualAidVideo: null,
-    pipelineStages: [{ node: 'video_grounder', status: 'completed', output: 'OMITTED_CLEANLY' }],
-  };
+test('VideoGrounding T2-04: Null, empty, and non-string topic tags or metadata omit cleanly without throwing', () => {
+  const catalog = loadEvalCatalog();
 
-  assert.equal(responseWithNullVideo.visualAidVideo, null);
-  assert.ok(responseWithNullVideo.answerLayers.coreIntuition);
-  assert.equal(responseWithNullVideo.pipelineStages[0].output, 'OMITTED_CLEANLY');
+  for (const badTag of [null, undefined, '', '   \t\n  ', 12345, '---___---']) {
+    assert.equal(catalog.groundTopic(badTag), null, `Topic "${String(badTag)}" must return null`);
+  }
+
+  for (const badMeta of [
+    null,
+    undefined,
+    {},
+    { video_id: '8U8F4R4o1Lw', start_sec: 1.5, end_sec: 10, concept_title: 'Title', observation_cue: 'Cue' },
+    { video_id: '8U8F4R4o1Lw', start_sec: 0, end_sec: 10, concept_title: '   ', observation_cue: 'Cue' },
+  ]) {
+    assert.equal(catalog.isValidVideoMetadata(badMeta), false);
+    assert.equal(catalog.buildEmbedUrl(badMeta), '');
+  }
 });
 
 test('VideoGrounding T2-05: Generates valid privacy-enhanced YouTube embed URL', () => {
@@ -337,6 +361,33 @@ test('VideoGrounding T3-F45-02: Pairwise F4 + F5: Null video isolation leaves 4 
   }
 });
 
+test('VideoGrounding T3-02: Default VideoGroundingCatalog loads verified catalog without args and aligns with server catalog', () => {
+  const defaultCatalog = new VideoGroundingCatalog();
+  assert.equal(defaultCatalog.groundTopic('unindexed_quantum_topic'), null);
+  assert.equal(defaultCatalog.buildEmbedUrl(null), '');
+
+  if (fs.existsSync(DEFAULT_VISUAL_AID_PATH)) {
+    const chemVideo = defaultCatalog.groundTopic('chemical_reactions_and_equatio');
+    assert.ok(chemVideo, 'Default catalog must resolve chemical_reactions_and_equatio');
+    assert.equal(chemVideo.video_id, '8U8F4R4o1Lw');
+    assert.ok(defaultCatalog.buildEmbedUrl(chemVideo).startsWith('https://www.youtube-nocookie.com/embed/8U8F4R4o1Lw?'));
+  }
+
+  const stats = catalogStats();
+  assert.ok(stats.chapters > 0 && stats.validatedChapters > 0);
+  for (const [subj, chap] of [
+    ['science', 'chemical-reactions-and-equations'],
+    ['science', 'electricity'],
+    ['mathematics', 'triangles'],
+  ]) {
+    const entry = getVideoEntry(subj, chap);
+    assert.ok(entry, `server/data/video-catalog.json must contain ${subj}:${chap}`);
+    const validPicks = sortVideos(entry.picks);
+    assert.ok(validPicks.length > 0);
+    assert.ok(validPicks.every((v) => isValidVideoId(v.id)));
+  }
+});
+
 // ============================================================================
 // TIER 4: REAL-WORLD APPLICATION SCENARIOS
 // ============================================================================
@@ -371,9 +422,9 @@ test('VideoGrounding T4-APP-04: Zero-hallucination video omission flow (Scenario
   assert.equal(unindexedResult, null);
   assert.equal(noVideoDatasetTopic, null);
   assert.equal(catalog.buildEmbedUrl(unindexedResult), '');
-
-  const pipelineStage = { node: 'video_grounder', status: 'completed', output: 'OMITTED_CLEANLY' };
-  assert.equal(pipelineStage.output, 'OMITTED_CLEANLY');
+  assert.equal(catalog.buildEmbedUrl(noVideoDatasetTopic), '');
+  assert.equal(catalog.isValidVideoMetadata(noVideoDatasetTopic), false);
+  assert.equal(catalog.groundTopic('   '), null);
 });
 
 // ============================================================================

@@ -7,9 +7,11 @@ import {
   Bookmark,
   BookmarkCheck,
   BookOpen,
+  BookOpenCheck,
   CheckCircle2,
   ChevronRight,
   Clock3,
+  Compass,
   ExternalLink,
   FileText,
   FlaskConical,
@@ -20,13 +22,13 @@ import {
   NotebookPen,
   Play,
   ScrollText,
-  Sparkles,
   Target,
   Triangle,
   Zap,
   Film,
 } from 'lucide-react';
 import { api } from '../api';
+import { normalizeAcademicPayload } from '../lib/sanitize';
 import type { ChapterDetail, Lesson } from '../types';
 import { useApp } from '../lib/store';
 import { Badge, Button, Callout, Card, ProgressRing, SectionHeader, Tabs } from '../components/ui';
@@ -108,7 +110,7 @@ function Concepts({ lesson }: { lesson: Lesson }) {
           </div>
           {concept.real_life_application && (
             <div className="concept-real">
-              <div className="concept-real-label"><Sparkles size={15} /> Real life first</div>
+              <div className="concept-real-label"><Lightbulb size={15} /> Real life first</div>
               <p>{concept.real_life_application}</p>
             </div>
           )}
@@ -326,7 +328,7 @@ function SyllabusOnly({ detail }: { detail: ChapterDetail }) {
           The syllabus is mapped, but the full authored lesson pack for this chapter is still being built. Practice and notes avoid invented content. You can still ask the tutor for a grounded orientation.
         </Callout>
         <div className="syllabus-actions">
-          <Button icon={<Sparkles size={16} />} onClick={() => navigate(`/tutor?subject=${chapter.subjectId || ''}&chapter=${chapter.id}`)}>Ask the tutor</Button>
+          <Button icon={<BookOpenCheck size={16} />} onClick={() => navigate(`/tutor?subject=${chapter.subjectId || ''}&chapter=${chapter.id}`)}>Ask the tutor</Button>
           <Button variant="secondary" icon={<BookOpen size={16} />} onClick={() => navigate(`/courses?subject=${chapter.subjectId || 'science'}`)}>Back to syllabus</Button>
         </div>
       </Card>
@@ -430,7 +432,7 @@ export default function ChapterPage() {
       <div className="chapter-header">
         <div className="chapter-header-copy">
           <div className="chapter-badges">
-            <Badge tone={chapter.hasContent ? 'indigo' : 'neutral'}>{chapter.hasContent ? (chapter.isPartial ? 'Starter notes' : 'Full lesson') : 'Syllabus map'}</Badge>
+            <Badge tone={chapter.hasContent ? 'forest' : 'neutral'}>{chapter.hasContent ? (chapter.isPartial ? 'Starter notes' : 'Full lesson') : 'Syllabus map'}</Badge>
             <Badge tone="neutral">{chapter.unitName}</Badge>
             <Badge tone="mint">{chapter.difficulty}</Badge>
             {chapter.marks != null && <Badge tone="saffron">{chapter.marks} unit marks</Badge>}
@@ -445,7 +447,7 @@ export default function ChapterPage() {
           </div>
         </div>
         <div className="chapter-header-side">
-          <ProgressRing value={done ? 100 : 0} size={68} stroke={6} color={done ? 'var(--mint)' : 'var(--indigo)'} />
+          <ProgressRing value={done ? 100 : 0} size={68} stroke={6} color={done ? 'var(--mint)' : 'var(--accent-forest)'} />
           <div className="chapter-actions">
             <Button variant={done ? 'secondary' : 'primary'} icon={done ? <CheckCircle2 size={16} /> : <Play size={16} />} onClick={() => completeChapter(subjectId, chapterId)}>{done ? 'Mastered' : 'Mark complete'}</Button>
             <button className={`icon-btn bookmark ${bookmarked ? 'active' : ''}`} onClick={() => toggleBookmark(key)} aria-label={bookmarked ? 'Remove bookmark' : 'Bookmark chapter'}>
@@ -458,7 +460,7 @@ export default function ChapterPage() {
       <div className="chapter-tabs-row">
         <Tabs items={tabs} value={tab} onChange={setTab} className="chapter-tabs" />
           <div className="chapter-quick-actions">
-            <Button variant="ghost" size="sm" icon={<Sparkles size={15} />} onClick={() => navigate(`/tutor?subject=${subjectId}&chapter=${chapterId}`)}>Ask tutor</Button>
+            <Button variant="ghost" size="sm" icon={<BookOpenCheck size={15} />} onClick={() => navigate(`/tutor?subject=${subjectId}&chapter=${chapterId}`)}>Ask tutor</Button>
             <Button variant="ghost" size="sm" icon={<Lightbulb size={15} />} onClick={() => navigate(`/learning-aids/${subjectId}/${chapterId}`)}>Learning aids</Button>
             <Button variant="ghost" size="sm" icon={<Target size={15} />} onClick={() => navigate(`/practice?subject=${subjectId}&chapter=${chapterId}`)}>Practice</Button>
             <Button variant="ghost" size="sm" icon={<Film size={15} />} onClick={() => navigate(`/video/${subjectId}/${chapterId}`)}>Video lesson</Button>
@@ -529,8 +531,15 @@ export default function ChapterPage() {
             <div className="eyebrow">Study resources</div>
             <div className="resource-list">
               <div><BookOpen size={16} /><span><strong>NCERT core</strong><small>All examples + exercises</small></span></div>
-              {lesson?.rd_sharma_extensions && <div><FlaskConical size={16} /><span><strong>RD Sharma</strong><small>{topicNames(lesson.rd_sharma_extensions.topics).slice(0, 2).join(' · ') || 'Must-do extensions'}</small></span></div>}
-              {lesson?.rs_aggarwal_extensions && <div><BookMarked size={16} /><span><strong>RS Aggarwal</strong><small>{topicNames(lesson.rs_aggarwal_extensions.topics).slice(0, 2).join(' · ') || 'Bridge problems'}</small></span></div>}
+              {(() => {
+                const safeLesson = lesson ? normalizeAcademicPayload(lesson) : null;
+                return (
+                  <>
+                    {safeLesson?.advanced_extensions && <div><FlaskConical size={16} /><span><strong>Advanced Extensions</strong><small>{topicNames(safeLesson.advanced_extensions.topics).slice(0, 2).join(' · ') || 'Must-do extensions'}</small></span></div>}
+                    {safeLesson?.competitive_bridge_extensions && <div><BookMarked size={16} /><span><strong>Competitive Bridge</strong><small>{topicNames(safeLesson.competitive_bridge_extensions.topics).slice(0, 2).join(' · ') || 'Bridge problems'}</small></span></div>}
+                  </>
+                );
+              })()}
               <div><ScrollText size={16} /><span><strong>Official source</strong><small>{sourceLabel}</small></span></div>
             </div>
           </Card>
@@ -570,7 +579,7 @@ export default function ChapterPage() {
           )}
 
           <Card className="rail-cta">
-            <Sparkles size={18} />
+            <Compass size={18} />
             <h4>Stuck on a step?</h4>
             <p>The tutor answers only from this chapter's retrieved context, with citations.</p>
             <Button size="sm" variant="secondary" onClick={() => navigate(`/tutor?subject=${subjectId}&chapter=${chapterId}`)}>Open tutor</Button>

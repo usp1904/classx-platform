@@ -6,6 +6,7 @@ import type {
   ExamPaper,
   ExamKey,
   GamifyXpResult,
+  IntentMode,
   LeaderboardEntry,
   LearningAid,
   LearningAidsData,
@@ -27,6 +28,7 @@ import type {
   YouTubeValidation,
 } from './types';
 import { handleMockRequest, isMockMode, setMockMode } from './services/mockApi.ts';
+import { normalizeAcademicPayload } from './lib/sanitize.ts';
 
 export { isMockMode, setMockMode, handleMockRequest };
 
@@ -46,7 +48,7 @@ function engageAutoMock() {
 const json = async <T>(url: string, init?: RequestInit): Promise<T> => {
   // Explicit or active mock mode: dispatch straight to client-side mock service
   if (isMockMode()) {
-    return handleMockRequest<T>(url, init);
+    return normalizeAcademicPayload(await handleMockRequest<T>(url, init));
   }
 
   try {
@@ -60,7 +62,7 @@ const json = async <T>(url: string, init?: RequestInit): Promise<T> => {
     // Check for SPA HTML catch-all (GitHub Pages / Cloudflare 404 returning index.html)
     if (contentType.includes('text/html') || response.status === 404) {
       engageAutoMock();
-      return handleMockRequest<T>(url, init);
+      return normalizeAcademicPayload(await handleMockRequest<T>(url, init));
     }
 
     const payload = await response.json().catch(() => null);
@@ -68,14 +70,14 @@ const json = async <T>(url: string, init?: RequestInit): Promise<T> => {
     // Check for service-worker offline response { ok: false, error: 'offline' } or non-OK response
     if (!response.ok || (payload && payload.ok === false && payload.error === 'offline')) {
       engageAutoMock();
-      return handleMockRequest<T>(url, init);
+      return normalizeAcademicPayload(await handleMockRequest<T>(url, init));
     }
 
-    return payload as T;
+    return normalizeAcademicPayload(payload as T);
   } catch (_networkError) {
     // Network failure, CORS issue, or server offline -> fallback to mock without crashing
     engageAutoMock();
-    return handleMockRequest<T>(url, init);
+    return normalizeAcademicPayload(await handleMockRequest<T>(url, init));
   }
 };
 
@@ -87,8 +89,10 @@ export const api = {
     json<{ ok: boolean; results: SearchResult[]; diagnostics: { latencyMs: number; strategy: string } }>(
       `/api/search?q=${encodeURIComponent(q)}${subjectId ? `&subjectId=${encodeURIComponent(subjectId)}` : ''}&limit=${limit}`,
     ),
-  tutor: (body: { question: string; mode: string; subjectId?: string; chapterId?: string; history?: { role: string; content: string }[] }) =>
+  tutor: (body: { question: string; mode: string; subjectId?: string; chapterId?: string; intentMode?: IntentMode; persona?: { role?: string; exam?: string; depth?: string; ageBand?: string }; history?: { role: string; content: string }[] }) =>
     json<TutorResponse>('/api/tutor', { method: 'POST', body: JSON.stringify(body) }),
+  ragAnalyze: (body: { question: string; mode?: string; subjectId?: string; chapterId?: string; intentMode?: IntentMode; persona?: { role?: string; exam?: string; depth?: string; ageBand?: string }; history?: { role: string; content: string }[] }) =>
+    json<TutorResponse>('/api/rag/analyze', { method: 'POST', body: JSON.stringify(body) }),
   startPractice: (body: { subjectId: string; chapterId?: string; count?: number; difficulty?: string }) =>
     json<PracticeSession>('/api/practice/start', { method: 'POST', body: JSON.stringify(body) }),
   submitPractice: (sessionId: string, answers: Record<string, number>) =>

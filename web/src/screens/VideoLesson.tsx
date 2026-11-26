@@ -30,13 +30,13 @@ function HubSection({
   title,
   description,
   children,
-  tone = 'indigo',
+  tone = 'forest',
 }: {
   icon: React.ReactNode;
   title: string;
   description: string;
   children: React.ReactNode;
-  tone?: 'indigo' | 'mint' | 'saffron' | 'rose';
+  tone?: 'forest' | 'mint' | 'saffron' | 'rose';
 }) {
   return (
     <Card className={`p-5 hub-section hub-${tone}`}>
@@ -51,12 +51,12 @@ function HubSection({
 }
 
 function BulletList({ items, limit = 6 }: { items: string[]; limit?: number }) {
-  if (!items.length) return <p className="text-xs text-gray-400">No entries yet.</p>;
+  if (!items.length) return <p className="text-xs text-[#71717A]">No entries yet.</p>;
   return (
     <ul className="space-y-2">
       {items.slice(0, limit).map((item, index) => (
-        <li key={`${index}-${item.slice(0, 24)}`} className="flex gap-2 text-xs text-gray-200 leading-relaxed">
-          <CheckCircle2 size={14} className="text-emerald-400 flex-shrink-0 mt-0.5" />
+        <li key={`${index}-${item.slice(0, 24)}`} className="flex gap-2 text-xs text-[#18181B] leading-relaxed">
+          <CheckCircle2 size={14} className="text-[#1B4332] shrink-0 mt-0.5" />
           <span>{item}</span>
         </li>
       ))}
@@ -65,14 +65,14 @@ function BulletList({ items, limit = 6 }: { items: string[]; limit?: number }) {
 }
 
 function ConceptCards({ concepts }: { concepts: HubConcept[] }) {
-  if (!concepts.length) return <p className="text-xs text-gray-400">Concept notes are being authored.</p>;
+  if (!concepts.length) return <p className="text-xs text-[#71717A]">Concept notes are being authored.</p>;
   return (
     <div className="grid gap-3 md:grid-cols-2">
       {concepts.slice(0, 6).map((concept, index) => (
-        <div key={`${index}-${concept.name}`} className="rounded-xl border border-white/10 bg-white/5 p-3">
-          <strong className="text-xs font-semibold text-white">{concept.name}</strong>
-          {concept.purpose && <p className="mt-1 text-[11px] text-gray-300 leading-relaxed">{concept.purpose}</p>}
-          {concept.realLife && <p className="mt-1 text-[11px] text-amber-200/80 leading-relaxed">India connect: {concept.realLife}</p>}
+        <div key={`${index}-${concept.name}`} className="rounded-xl border border-[#E4E2DD] bg-[#FAF9F6] p-3">
+          <strong className="text-xs font-semibold text-[#18181B]">{concept.name}</strong>
+          {concept.purpose && <p className="mt-1 text-[11px] text-[#3F3F46] leading-relaxed">{concept.purpose}</p>}
+          {concept.realLife && <p className="mt-1 text-[11px] text-[#92400E] leading-relaxed">India connect: {concept.realLife}</p>}
         </div>
       ))}
     </div>
@@ -80,19 +80,19 @@ function ConceptCards({ concepts }: { concepts: HubConcept[] }) {
 }
 
 function QuickCheck({ items }: { items: HubQuickCheck[] }) {
-  if (!items.length) return <p className="text-xs text-gray-400">Quick checks will appear here after the question bank is mapped.</p>;
+  if (!items.length) return <p className="text-xs text-[#71717A]">Quick checks will appear here after the question bank is mapped.</p>;
   return (
     <div className="space-y-2">
       {items.map((item, index) => (
-        <details key={`${index}-${item.question.slice(0, 20)}`} className="rounded-xl border border-white/10 bg-white/5 p-3">
-          <summary className="cursor-pointer text-xs font-medium text-gray-100">{item.question}</summary>
+        <details key={`${index}-${item.question.slice(0, 20)}`} className="rounded-xl border border-[#E4E2DD] bg-[#FAF9F6] p-3">
+          <summary className="cursor-pointer text-xs font-medium text-[#18181B]">{item.question}</summary>
           <div className="mt-2 grid gap-1.5">
             {item.options.map((option, optionIndex) => (
-              <div key={optionIndex} className={`rounded-lg px-2 py-1 text-[11px] ${optionIndex === item.correct ? 'bg-emerald-500/15 text-emerald-200' : 'text-gray-300'}`}>
+              <div key={optionIndex} className={`rounded-lg px-2 py-1 text-[11px] ${optionIndex === item.correct ? 'bg-[#DCFCE7] text-[#1B4332] font-semibold' : 'text-[#3F3F46]'}`}>
                 {String.fromCharCode(65 + optionIndex)}. {option}
               </div>
             ))}
-            {item.explanation && <p className="mt-1 text-[11px] text-gray-400">{item.explanation}</p>}
+            {item.explanation && <p className="mt-1 text-[11px] text-[#52525B]">{item.explanation}</p>}
           </div>
         </details>
       ))}
@@ -105,20 +105,20 @@ function WorkedExamples({ examples }: { examples: KnowledgeHub['apply']['workedE
   return (
     <div className="space-y-2">
       {examples.map((example, index) => (
-        <details key={`${index}-${example.title}`} className="rounded-xl border border-white/10 bg-white/5 p-3">
-          <summary className="cursor-pointer text-xs font-medium text-gray-100">{example.title}</summary>
-          <p className="mt-2 text-[11px] text-gray-300">{example.problem}</p>
+        <details key={`${index}-${example.title}`} className="rounded-xl border border-[#E4E2DD] bg-[#FAF9F6] p-3">
+          <summary className="cursor-pointer text-xs font-medium text-[#18181B]">{example.title}</summary>
+          <p className="mt-2 text-[11px] text-[#3F3F46]">{example.problem}</p>
           {example.steps.length > 0 && (
-            <ol className="mt-2 space-y-1 text-[11px] text-gray-300">
+            <ol className="mt-2 space-y-1 text-[11px] text-[#3F3F46]">
               {example.steps.map((step, stepIndex) => (
                 <li key={stepIndex} className="flex gap-2">
-                  <span className="text-indigo-300">{stepIndex + 1}.</span>
+                  <span className="text-[#1B4332] font-semibold">{stepIndex + 1}.</span>
                   <span>{step}</span>
                 </li>
               ))}
             </ol>
           )}
-          {example.shortcut && <p className="mt-2 rounded-lg bg-amber-500/10 p-2 text-[11px] text-amber-200">Exam shortcut: {example.shortcut}</p>}
+          {example.shortcut && <p className="mt-2 rounded-lg bg-[#FEF08A] border border-[#E4E2DD] p-2 text-[11px] text-[#18181B]">Exam shortcut: {example.shortcut}</p>}
         </details>
       ))}
     </div>
@@ -192,10 +192,10 @@ export default function VideoLesson() {
       <div className="page space-y-6">
         <Card className="p-6">
           <div className="flex items-start gap-3">
-            <AlertCircle className="text-rose-400 flex-shrink-0" />
+            <AlertCircle className="text-[#D95D39] shrink-0" />
             <div>
-              <h2 className="text-lg font-semibold text-white">This topic could not be loaded</h2>
-              <p className="mt-1 text-sm text-gray-300">{error}</p>
+              <h2 className="text-lg font-semibold text-[#18181B]">This topic could not be loaded</h2>
+              <p className="mt-1 text-sm text-[#52525B]">{error}</p>
               <div className="mt-4 flex gap-2">
                 <Button variant="primary" onClick={() => window.location.reload()}>Try again</Button>
                 <Button variant="secondary" onClick={() => navigate(`/courses/${subjectId}/${chapterId}`)}>Open chapter notes</Button>
@@ -212,7 +212,7 @@ export default function VideoLesson() {
       <div className="page-head">
         <div>
           <div className="eyebrow light flex items-center gap-2">
-            <Compass size={14} className="text-amber-400" />
+            <Compass size={14} className="text-[#B45309]" />
             <span>Student Knowledge Hub for India</span>
           </div>
           <h1>{hub?.title || `${currentChapter?.name || chapterId} — Student Knowledge Hub`}</h1>
@@ -225,7 +225,7 @@ export default function VideoLesson() {
           <Badge tone="mint" className="text-xs font-bold">
             <ShieldCheck size={13} /> Validated video
           </Badge>
-          <Badge tone="indigo" className="text-xs font-bold">
+          <Badge tone="forest" className="text-xs font-bold">
             {durationLabel(selectedVideo?.durationSec)}
           </Badge>
         </div>
@@ -268,10 +268,10 @@ export default function VideoLesson() {
         </div>
       </Card>
 
-      <div className="p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/25 flex items-start gap-3">
-        <ShieldCheck size={18} className="text-emerald-400 flex-shrink-0 mt-0.5" />
-        <div className="text-xs text-emerald-100/90 leading-relaxed">
-          <strong className="text-emerald-300 font-semibold block mb-0.5">Verified before students see it:</strong>
+      <div className="p-3.5 rounded-xl bg-[#DCFCE7] border border-[#1B4332] flex items-start gap-3">
+        <ShieldCheck size={18} className="text-[#1B4332] shrink-0 mt-0.5" />
+        <div className="text-xs text-[#18181B] leading-relaxed">
+          <strong className="text-[#1B4332] font-semibold block mb-0.5">Verified before students see it:</strong>
           Every video is checked through the YouTube Data API for public, embeddable, age-safe playback in this region,
           matched to this CBSE chapter, and played through the privacy-enhanced YouTube nocookie player. YouTube may still show platform ads;
           we cannot disable ads inside a third-party player. If a video is ever blocked, use the notes and practice sections below — they are the primary lesson.
@@ -279,7 +279,7 @@ export default function VideoLesson() {
       </div>
 
       {selectedVideo ? (
-        <Card className="p-3 rounded-2xl overflow-hidden bg-black/80 border-indigo-500/30 shadow-2xl">
+        <Card className="p-3 rounded-2xl overflow-hidden bg-[#F3F1EC] border-[#E4E2DD]">
           <YouTubePlayer
             videoId={selectedVideo.videoId}
             title={selectedVideo.title || hub?.chapterName || 'Class X video lesson'}
@@ -289,7 +289,7 @@ export default function VideoLesson() {
             <div className="flex items-center gap-2">
               <Button variant="secondary" size="sm" onClick={() => skipTime(-10)}><RotateCcw size={14} /><span>-10s</span></Button>
               <Button variant="secondary" size="sm" onClick={() => skipTime(10)}><RotateCw size={14} /><span>+10s</span></Button>
-              <span className="text-xs font-mono text-gray-400 ml-2">
+              <span className="text-xs font-mono text-[#52525B] ml-2">
                 Position: {Math.floor(resume / 60)}:{String(resume % 60).padStart(2, '0')}
               </span>
             </div>
@@ -307,12 +307,12 @@ export default function VideoLesson() {
           </div>
         </Card>
       ) : (
-        <Card className="p-6 border-amber-500/30 bg-amber-500/5">
+        <Card className="p-6 border-[#B45309] bg-[#FEF08A]">
           <div className="flex items-start gap-3">
-            <AlertCircle className="text-amber-400 flex-shrink-0" />
+            <AlertCircle className="text-[#B45309] shrink-0" />
             <div>
-              <h2 className="text-base font-semibold text-white">Video is temporarily unavailable</h2>
-              <p className="mt-1 text-sm text-gray-300">
+              <h2 className="text-base font-semibold text-[#18181B]">Video is temporarily unavailable</h2>
+              <p className="mt-1 text-sm text-[#3F3F46]">
                 No validated video is attached to this topic right now. The knowledge hub below still covers the full lesson.
               </p>
             </div>
@@ -332,15 +332,15 @@ export default function VideoLesson() {
                 key={video.videoId}
                 type="button"
                 onClick={() => { setSelectedVideoId(video.videoId); setResume(0); }}
-                className={`text-left rounded-xl border p-3 transition-all ${selectedVideo?.videoId === video.videoId ? 'border-indigo-400/60 bg-indigo-500/10' : 'border-white/10 bg-white/5 hover:border-indigo-400/40'}`}
+                className={`text-left rounded-xl border p-3 transition-colors ${selectedVideo?.videoId === video.videoId ? 'border-[#1B4332] bg-[#DCFCE7]' : 'border-[#E4E2DD] bg-[#FAF9F6] hover:border-[#1B4332]'}`}
               >
                 <div className="flex items-center justify-between gap-2">
                   <Badge tone="neutral" className="text-[10px]">{durationLabel(video.durationSec)}</Badge>
-                  <Play size={14} className="text-indigo-300" />
+                  <Play size={14} className="text-[#1B4332]" />
                 </div>
-                <strong className="mt-2 block text-xs font-semibold text-gray-100 leading-snug">{video.title}</strong>
-                <span className="mt-1 block text-[10px] text-gray-400">{video.channel}</span>
-                {video.verifiedAt && <span className="mt-2 block text-[10px] text-emerald-300">Verified {formatDate(video.verifiedAt)}</span>}
+                <strong className="mt-2 block text-xs font-semibold text-[#18181B] leading-snug">{video.title}</strong>
+                <span className="mt-1 block text-[10px] text-[#52525B]">{video.channel}</span>
+                {video.verifiedAt && <span className="mt-2 block text-[10px] text-[#1B4332]">Verified {formatDate(video.verifiedAt)}</span>}
               </button>
             ))}
           </div>
@@ -350,10 +350,10 @@ export default function VideoLesson() {
       {hub && (
         <>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <Stat label="CBSE weightage" value={`${hub.marks || hub.examWeightage || 0} marks`} hint={hub.unitName || 'Syllabus unit'} icon={<GraduationCap size={18} className="text-indigo-400" />} tone="indigo" />
-            <Stat label="Question bank" value={`${hub.revise.questionBank.total}`} hint={`${hub.revise.questionBank.mcq} MCQ · ${hub.revise.questionBank.subjective} written`} icon={<ListChecks size={18} className="text-emerald-400" />} tone="mint" />
-            <Stat label="Study periods" value={`${hub.periods || '—'}`} hint="Suggested CBSE pacing" icon={<Clock size={18} className="text-amber-400" />} tone="saffron" />
-            <Stat label="Video check" value="oEmbed" hint={formatDate(payload?.validation?.generatedAt)} icon={<ShieldCheck size={18} className="text-purple-400" />} tone="rose" />
+            <Stat label="CBSE weightage" value={`${hub.marks || hub.examWeightage || 0} marks`} hint={hub.unitName || 'Syllabus unit'} icon={<GraduationCap size={18} className="text-[#1B4332]" />} tone="forest" />
+            <Stat label="Question bank" value={`${hub.revise.questionBank.total}`} hint={`${hub.revise.questionBank.mcq} MCQ · ${hub.revise.questionBank.subjective} written`} icon={<ListChecks size={18} className="text-[#1B4332]" />} tone="mint" />
+            <Stat label="Study periods" value={`${hub.periods || '—'}`} hint="Suggested CBSE pacing" icon={<Clock size={18} className="text-[#B45309]" />} tone="saffron" />
+            <Stat label="Video check" value="oEmbed" hint={formatDate(payload?.validation?.generatedAt)} icon={<ShieldCheck size={18} className="text-[#D95D39]" />} tone="rose" />
           </div>
 
           <div className="grid gap-5 lg:grid-cols-2">
@@ -366,20 +366,20 @@ export default function VideoLesson() {
               {hub.visualize.items.length > 0 ? (
                 <div className="grid gap-2">
                   {hub.visualize.items.map((visual, index) => (
-                    <div key={`${index}-${visual.title}`} className="rounded-xl border border-white/10 bg-white/5 p-3">
-                      <strong className="text-xs text-gray-100">{visual.title}</strong>
-                      <span className="ml-2 text-[10px] uppercase tracking-wide text-indigo-300">{visual.type}</span>
-                      {visual.description && <p className="mt-1 text-[11px] text-gray-400">{visual.description}</p>}
+                    <div key={`${index}-${visual.title}`} className="rounded-xl border border-[#E4E2DD] bg-[#FAF9F6] p-3">
+                      <strong className="text-xs text-[#18181B]">{visual.title}</strong>
+                      <span className="ml-2 text-[10px] uppercase tracking-wide text-[#1B4332]">{visual.type}</span>
+                      {visual.description && <p className="mt-1 text-[11px] text-[#52525B]">{visual.description}</p>}
                     </div>
                   ))}
                 </div>
-              ) : <p className="text-xs text-gray-400">Draw a concept map with the chapter name in the centre and each topic as a branch.</p>}
+              ) : <p className="text-xs text-[#71717A]">Draw a concept map with the chapter name in the centre and each topic as a branch.</p>}
               {hub.visualize.mindMap && (
-                <div className="rounded-xl border border-indigo-500/20 bg-indigo-500/5 p-3">
-                  <strong className="text-xs text-indigo-200">{hub.visualize.mindMap.title}</strong>
+                <div className="rounded-xl border border-[#E4E2DD] bg-[#FAF9F6] p-3">
+                  <strong className="text-xs text-[#1B4332]">{hub.visualize.mindMap.title}</strong>
                   <div className="mt-2 flex flex-wrap gap-1.5">
                     {hub.visualize.mindMap.branches.map((branch, index) => (
-                      <span key={`${index}-${branch}`} className="rounded-full bg-white/10 px-2 py-1 text-[10px] text-gray-200">{branch}</span>
+                      <span key={`${index}-${branch}`} className="rounded-full bg-[#F3F1EC] border border-[#E4E2DD] px-2 py-1 text-[10px] text-[#18181B]">{branch}</span>
                     ))}
                   </div>
                 </div>
@@ -392,19 +392,19 @@ export default function VideoLesson() {
               {hub.remember.theorems.length > 0 && (
                 <div className="space-y-2">
                   {hub.remember.theorems.map((theorem, index) => (
-                    <div key={`${index}-${theorem.name}`} className="rounded-xl border border-white/10 bg-white/5 p-3">
-                      <strong className="text-xs text-gray-100">{theorem.name}</strong>
-                      <p className="mt-1 text-[11px] text-gray-300">{theorem.statement}</p>
+                    <div key={`${index}-${theorem.name}`} className="rounded-xl border border-[#E4E2DD] bg-[#FAF9F6] p-3">
+                      <strong className="text-xs text-[#18181B]">{theorem.name}</strong>
+                      <p className="mt-1 text-[11px] text-[#3F3F46]">{theorem.statement}</p>
                     </div>
                   ))}
                 </div>
               )}
               {hub.remember.misconceptions.length > 0 && (
-                <div className="rounded-xl border border-rose-500/20 bg-rose-500/5 p-3">
-                  <strong className="text-xs text-rose-200">Common traps</strong>
+                <div className="rounded-xl border border-[#D95D39] bg-[#FEE2E2] p-3">
+                  <strong className="text-xs text-[#991B1B]">Common traps</strong>
                   <ul className="mt-2 space-y-1.5">
                     {hub.remember.misconceptions.slice(0, 4).map((item, index) => (
-                      <li key={index} className="text-[11px] text-gray-300">• {item}</li>
+                      <li key={index} className="text-[11px] text-[#18181B]">• {item}</li>
                     ))}
                   </ul>
                 </div>
@@ -412,10 +412,10 @@ export default function VideoLesson() {
               {hub.remember.shortcuts.length > 0 && (
                 <div className="space-y-2">
                   {hub.remember.shortcuts.slice(0, 3).map((shortcut, index) => (
-                    <div key={`${index}-${shortcut.title}`} className="rounded-xl border border-amber-500/20 bg-amber-500/5 p-3">
-                      <strong className="text-xs text-amber-200">{shortcut.title}</strong>
-                      <p className="mt-1 text-[11px] text-gray-300">{shortcut.concept}</p>
-                      {shortcut.application && <p className="mt-1 text-[11px] text-gray-400">{shortcut.application}</p>}
+                    <div key={`${index}-${shortcut.title}`} className="rounded-xl border border-[#B45309] bg-[#FEF08A] p-3">
+                      <strong className="text-xs text-[#92400E]">{shortcut.title}</strong>
+                      <p className="mt-1 text-[11px] text-[#18181B]">{shortcut.concept}</p>
+                      {shortcut.application && <p className="mt-1 text-[11px] text-[#3F3F46]">{shortcut.application}</p>}
                     </div>
                   ))}
                 </div>
@@ -437,28 +437,28 @@ export default function VideoLesson() {
 
             <HubSection icon={<Link2 size={18} />} title="6. Connect" description="Academics, competitive exams, Indian real life and careers." tone="mint">
               <div className="grid gap-2 sm:grid-cols-2">
-                <div className="rounded-xl border border-white/10 bg-white/5 p-3">
-                  <strong className="text-xs text-indigo-200 flex items-center gap-1"><GraduationCap size={13} /> Academics</strong>
+                <div className="rounded-xl border border-[#E4E2DD] bg-[#FAF9F6] p-3">
+                  <strong className="text-xs text-[#1B4332] flex items-center gap-1"><GraduationCap size={13} /> Academics</strong>
                   <BulletList items={hub.connect.academics} limit={4} />
                 </div>
-                <div className="rounded-xl border border-white/10 bg-white/5 p-3">
-                  <strong className="text-xs text-amber-200 flex items-center gap-1"><Lightbulb size={13} /> Competitive exams</strong>
+                <div className="rounded-xl border border-[#E4E2DD] bg-[#FAF9F6] p-3">
+                  <strong className="text-xs text-[#B45309] flex items-center gap-1"><Lightbulb size={13} /> Competitive exams</strong>
                   <BulletList items={hub.connect.competitive} limit={4} />
                 </div>
-                <div className="rounded-xl border border-white/10 bg-white/5 p-3">
-                  <strong className="text-xs text-emerald-200 flex items-center gap-1"><MapPin size={13} /> Indian real life</strong>
+                <div className="rounded-xl border border-[#E4E2DD] bg-[#FAF9F6] p-3">
+                  <strong className="text-xs text-[#1B4332] flex items-center gap-1"><MapPin size={13} /> Indian real life</strong>
                   <BulletList items={hub.connect.realLife} limit={4} />
                 </div>
-                <div className="rounded-xl border border-white/10 bg-white/5 p-3">
-                  <strong className="text-xs text-rose-200 flex items-center gap-1"><Compass size={13} /> India context</strong>
+                <div className="rounded-xl border border-[#E4E2DD] bg-[#FAF9F6] p-3">
+                  <strong className="text-xs text-[#D95D39] flex items-center gap-1"><Compass size={13} /> India context</strong>
                   <BulletList items={hub.connect.indianContext} limit={4} />
                 </div>
               </div>
-              <div className="rounded-xl border border-purple-500/20 bg-purple-500/5 p-3">
-                <strong className="text-xs text-purple-200 flex items-center gap-1"><Briefcase size={13} /> Future careers</strong>
+              <div className="rounded-xl border border-[#E4E2DD] bg-[#FAF9F6] p-3">
+                <strong className="text-xs text-[#1B4332] flex items-center gap-1"><Briefcase size={13} /> Future careers</strong>
                 <div className="mt-2 flex flex-wrap gap-1.5">
                   {hub.connect.careers.map((career, index) => (
-                    <span key={`${index}-${career}`} className="rounded-full bg-white/10 px-2 py-1 text-[10px] text-gray-200">{career}</span>
+                    <span key={`${index}-${career}`} className="rounded-full bg-[#F3F1EC] border border-[#E4E2DD] px-2 py-1 text-[10px] text-[#18181B]">{career}</span>
                   ))}
                 </div>
               </div>
@@ -470,9 +470,9 @@ export default function VideoLesson() {
               <SectionHeader title="Sources and further reading" description="Official syllabus and textbook references used to build this hub." />
               <div className="mt-3 grid gap-2 md:grid-cols-2">
                 {hub.sources.map((source, index) => (
-                  <a key={`${index}-${source.title}`} href={source.url} target="_blank" rel="noreferrer" className="flex items-center justify-between rounded-xl border border-white/10 bg-white/5 p-3 text-xs text-gray-200 hover:border-indigo-400/40">
+                  <a key={`${index}-${source.title}`} href={source.url} target="_blank" rel="noreferrer" className="flex items-center justify-between rounded-xl border border-[#E4E2DD] bg-[#FAF9F6] p-3 text-xs text-[#18181B] hover:border-[#1B4332]">
                     <span>{source.title}</span>
-                    <ExternalLink size={13} className="text-indigo-300" />
+                    <ExternalLink size={13} className="text-[#1B4332]" />
                   </a>
                 ))}
               </div>
@@ -484,8 +484,8 @@ export default function VideoLesson() {
               <SectionHeader title="Topic checklist" description="Every syllabus topic mapped to this chapter." />
               <div className="mt-3 grid gap-2 sm:grid-cols-2">
                 {hub.topics.map((topic, index) => (
-                  <div key={`${index}-${topic}`} className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs text-gray-200">
-                    <ChevronRight size={13} className="text-indigo-300" />
+                  <div key={`${index}-${topic}`} className="flex items-center gap-2 rounded-lg border border-[#E4E2DD] bg-[#FAF9F6] px-3 py-2 text-xs text-[#18181B]">
+                    <ChevronRight size={13} className="text-[#1B4332]" />
                     <span>{topic}</span>
                   </div>
                 ))}

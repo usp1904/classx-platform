@@ -14,7 +14,6 @@ import {
   MessageSquarePlus,
   ScrollText,
   ShieldCheck,
-  Sparkles,
   Target,
   Timer,
   Zap,
@@ -45,7 +44,7 @@ const modeCopy: Record<Mode, { title: string; description: string; icon: ReactNo
   socratic: { title: 'Socratic tutor', description: 'Asks the next question instead of dumping the answer.', icon: <Compass size={16} /> },
   board: { title: 'Board answer', description: 'Full-marks structure: given, formula, steps, conclusion.', icon: <ScrollText size={16} /> },
   competitive: { title: 'Competitive edge', description: 'Shortcut, pattern recognition, and time saved for DSC, UPSC & JEE.', icon: <Zap size={16} /> },
-  eli5: { title: "Explain Like I'm 5", description: 'Simple analogies, visual mental models, and warm intuitive explanations.', icon: <Sparkles size={16} /> },
+  eli5: { title: "Explain Like I'm 5", description: 'Simple analogies, visual mental models, and warm intuitive explanations.', icon: <Lightbulb size={16} /> },
 };
 
 const starterPrompts: Record<string, string[]> = {
@@ -158,13 +157,13 @@ export default function Tutor() {
     <div className="page tutor-page">
       <div className="page-head">
         <div>
-          <div className="eyebrow"><Sparkles size={14} /> Grounded AI tutor</div>
+          <div className="eyebrow"><GraduationCap size={14} /> Grounded AI tutor</div>
           <h1>Ask the chapter, not the internet.</h1>
           <p>Every answer is retrieved from the CBSE syllabus, authored lessons, and question bank — with citations.</p>
         </div>
         <div className="tutor-head-badges">
           <Badge tone="mint"><ShieldCheck size={13} /> Source-grounded</Badge>
-          <Badge tone="indigo"><BrainCircuit size={13} /> Hybrid retrieval</Badge>
+          <Badge tone="forest"><BrainCircuit size={13} /> Hybrid retrieval</Badge>
         </div>
       </div>
 
@@ -244,7 +243,7 @@ export default function Tutor() {
 
             {messages.map((message, index) => (
               <div key={message.id} className={`chat-message ${message.role}`}>
-                <div className="chat-avatar">{message.role === 'tutor' ? <Sparkles size={16} /> : 'You'}</div>
+                <div className="chat-avatar">{message.role === 'tutor' ? <GraduationCap size={16} /> : 'You'}</div>
                 <div className="chat-bubble">
                   {message.role === 'user' ? <p>{message.text}</p> : <RichText text={message.text} />}
                   {message.response && (
@@ -273,7 +272,7 @@ export default function Tutor() {
 
             {loading && (
               <div className="chat-message tutor">
-                <div className="chat-avatar"><Sparkles size={16} /></div>
+                <div className="chat-avatar"><GraduationCap size={16} /></div>
                 <div className="chat-bubble typing"><Loader2 size={16} className="spin" /> Retrieving chapter context and composing an answer…</div>
               </div>
             )}

@@ -40,26 +40,30 @@ export default function OfflineStatusIndicator() {
         <Stat
           label="Network"
           value={online ? 'Online' : 'Offline'}
-          icon={online ? <Wifi size={20} className="text-mint-400" /> : <WifiOff size={20} className="text-rose-400" />}
+          icon={online ? <Wifi size={20} className="text-[#1B4332]" /> : <WifiOff size={20} className="text-[#D95D39]" />}
+          tone={online ? 'mint' : 'rose'}
         />
         <Stat
           label="API Layer"
           value={mockMode ? 'Mock Mode' : 'Live Mode'}
-          icon={mockMode ? <Cpu size={20} className="text-amber-400" /> : <Server size={20} className="text-mint-400" />}
+          icon={mockMode ? <Cpu size={20} className="text-[#B45309]" /> : <Server size={20} className="text-[#1B4332]" />}
+          tone={mockMode ? 'saffron' : 'mint'}
         />
         <Stat
           label="Service Worker"
           value={swSupported ? 'Supported' : 'Not supported'}
-          icon={<Cloud size={20} className={swSupported ? 'text-mint-400' : 'text-gray-500'} />}
+          icon={<Cloud size={20} className={swSupported ? 'text-[#1B4332]' : 'text-[#71717A]'} />}
+          tone={swSupported ? 'mint' : 'neutral'}
         />
         <Stat
           label="Cache Ready"
           value={swReady ? 'Active' : 'Inactive'}
-          icon={<Database size={20} className={swReady ? 'text-indigo-400' : 'text-gray-500'} />}
+          icon={<Database size={20} className={swReady ? 'text-[#1B4332]' : 'text-[#71717A]'} />}
+          tone={swReady ? 'forest' : 'neutral'}
         />
       </div>
 
-      <div className="mt-4 p-3 rounded bg-surface-raised border border-border text-sm">
+      <div className="mt-4 p-3 rounded bg-[#F3F1EC] border border-[#E4E2DD] text-sm text-[#18181B]">
         <p className="mb-2">
           <strong>Static Hosting & Fallback Status:</strong>{' '}
           {mockMode
@@ -83,7 +87,7 @@ export default function OfflineStatusIndicator() {
         </Button>
 
         {!online && (
-          <div className="px-3 py-2 rounded bg-rose-500/10 border border-rose-500/20 text-rose-300 text-sm">
+          <div className="px-3 py-2 rounded bg-[#FEE2E2] border border-[#D95D39] text-[#991B1B] text-sm">
             You are offline. Mock API and cached chapters remain fully available.
           </div>
         )}

@@ -6,13 +6,13 @@ import {
   CheckCircle2,
   ChevronRight,
   Clock3,
+  FileText,
   Filter,
   FlaskConical,
   Globe2,
   Layers3,
   Search,
   Sigma,
-  Sparkles,
   Target,
 } from 'lucide-react';
 import { Badge, Button, Card, ProgressBar, ProgressRing, SectionHeader, Tabs } from '../components/ui';
@@ -26,7 +26,7 @@ const icons: Record<string, React.ReactNode> = {
   english: <BookOpen size={18} />,
 };
 
-const accents: Record<string, string> = { indigo: 'var(--indigo)', emerald: 'var(--mint)', amber: 'var(--saffron)', rose: 'var(--rose)' };
+const accents: Record<string, string> = { forest: 'var(--accent-forest)', emerald: 'var(--mint)', amber: 'var(--saffron)', rose: 'var(--rose)' };
 
 function ChapterCard({ subject, chapter, done }: { subject: Subject; chapter: Chapter; done: boolean }) {
   const navigate = useNavigate();
@@ -40,7 +40,7 @@ function ChapterCard({ subject, chapter, done }: { subject: Subject; chapter: Ch
       <div className={`chapter-num accent-${subject.accent}`}>{done ? <CheckCircle2 size={18} /> : String(chapter.number).padStart(2, '0')}</div>
       <div className="chapter-body">
         <div className="chapter-topline">
-          <Badge tone={chapter.hasContent ? (subject.accent as 'indigo' | 'mint' | 'saffron' | 'rose') : 'neutral'}>{coverage}</Badge>
+          <Badge tone={chapter.hasContent ? (subject.accent as 'forest' | 'mint' | 'saffron' | 'rose') : 'neutral'}>{coverage}</Badge>
           <span className="chapter-diff">{chapter.difficulty}</span>
         </div>
         <h3>{chapter.name}</h3>
@@ -48,7 +48,7 @@ function ChapterCard({ subject, chapter, done }: { subject: Subject; chapter: Ch
         <div className="chapter-stats">
           <span><Layers3 size={13} /> {chapter.stats.concepts} concepts</span>
           <span><Target size={13} /> {chapter.stats.quizzes} MCQs</span>
-          <span><Sparkles size={13} /> {chapter.stats.examples} examples</span>
+          <span><FileText size={13} /> {chapter.stats.examples} examples</span>
         </div>
       </div>
       <div className="chapter-side">
@@ -148,11 +148,11 @@ export default function Courses() {
           </div>
         </div>
         <div className="course-hero-progress">
-          <ProgressRing value={pct} size={94} stroke={7} color={accents[subject.accent]} />
+          <ProgressRing value={pct} size={94} stroke={7} color={accents[subject.accent] || 'var(--accent-forest)'} />
           <div>
             <strong>{completed} of {authored.length}</strong>
             <small>authored chapters complete</small>
-            <ProgressBar value={pct} tone={subject.accent as 'indigo' | 'mint' | 'saffron' | 'rose'} height={5} />
+            <ProgressBar value={pct} tone={subject.accent as 'forest' | 'mint' | 'saffron' | 'rose'} height={5} />
           </div>
         </div>
       </div>
@@ -191,7 +191,7 @@ export default function Courses() {
                   <h3>{unit.name}</h3>
                 </div>
                 <div className="unit-meta">
-                  {unit.marks != null && <Badge tone="indigo">{unit.marks} marks</Badge>}
+                  {unit.marks != null && <Badge tone="forest">{unit.marks} marks</Badge>}
                   {unit.periods != null && <span>{unit.periods} periods</span>}
                   <span>{unit.chapters.length} chapters</span>
                 </div>

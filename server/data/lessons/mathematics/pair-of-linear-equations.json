@@ -11,7 +11,7 @@
     "Interpret the solution graphically as the intersection point of two lines",
     "Solve cross-multiplication method problems efficiently",
     "Connect to Indian context scenarios like GST calculation, ration distribution, and fare systems",
-    "Solve RD Sharma and RS Aggarwal extension problems for competitive exam readiness"
+    "Solve NCERT Reference Practice and extension problems for competitive exam readiness"
   ],
   "prerequisite_nodes": [
     "MATH_CLASS7_SIMPLE_EQUATIONS",
@@ -480,8 +480,8 @@
       ]
     }
   },
-  "rd_sharma_extensions": {
-    "book": "RD Sharma Class 10, Chapter 3 — Pair of Linear Equations in Two Variables",
+  "advanced_extensions": {
+    "book": "NCERT Reference Practice Class 10, Chapter 3 — Pair of Linear Equations in Two Variables",
     "topics": [
       {
         "name": "Cross-Multiplication Method — Determinant Approach",
@@ -525,8 +525,8 @@
       }
     ]
   },
-  "rs_aggarwal_extensions": {
-    "book": "RS Aggarwal Class 10, Chapter 3 — Linear Equations in Two Variables",
+  "competitive_bridge_extensions": {
+    "book": "NCERT Competitive Practice Class 10, Chapter 3 — Linear Equations in Two Variables",
     "topics": [
       {
         "name": "Consistency Conditions — Deep Analysis",

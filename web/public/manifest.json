@@ -1,12 +1,12 @@
 {
   "name": "Class X Mastery",
   "short_name": "ClassX",
-  "description": "CBSE Class X (2026-27) mastery platform: lessons, hybrid RAG tutor, practice, mock tests, gamification, offline-first.",
+  "description": "CBSE Class X (2026-27) mastery platform: lessons, agentic RAG study workspace, practice, mock tests, gamification, offline-first.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#f8fafc",
-  "theme_color": "#f8fafc",
+  "background_color": "#FAF9F6",
+  "theme_color": "#FAF9F6",
   "orientation": "portrait",
   "icons": [
     { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },

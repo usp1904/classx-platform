@@ -167,9 +167,9 @@ export default function YouTubePlayer({ videoId, title, start = 0, className = '
 
   if (checking) {
     return (
-      <div className={`aspect-video w-full rounded-xl bg-gray-950 flex items-center justify-center ${className}`}>
-        <div className="flex items-center gap-2 text-xs text-gray-300">
-          <Loader2 size={16} className="animate-spin" />
+      <div className={`aspect-video w-full rounded-xl bg-[#F3F1EC] border border-[#E4E2DD] flex items-center justify-center ${className}`}>
+        <div className="flex items-center gap-2 text-xs text-[#52525B]">
+          <Loader2 size={16} className="spin" />
           <span>Checking video safety…</span>
         </div>
       </div>
@@ -186,7 +186,7 @@ export default function YouTubePlayer({ videoId, title, start = 0, className = '
 
   return (
     <>
-    <div className={`aspect-video w-full rounded-xl overflow-hidden bg-gray-950 ${className}`}>
+    <div className={`aspect-video w-full rounded-xl overflow-hidden bg-[#18181B] border border-[#E4E2DD] ${className}`}>
       {mode === 'education' ? (
         <iframe
           className="w-full h-full border-0"
@@ -210,7 +210,7 @@ export default function YouTubePlayer({ videoId, title, start = 0, className = '
       )}
     </div>
     {validation && !validation.validated && (
-      <p className="mt-2 px-3 py-2 rounded-lg text-[11px] text-amber-800 bg-amber-500/10 border border-amber-500/25">
+      <p className="mt-2 px-3 py-2 rounded-lg text-[11px] text-[#92400E] bg-[#FEF08A] border border-[#E4E2DD]">
         Public metadata check is unavailable offline. Playback may still be restricted by the video owner;
         if the player is blocked, use the chapter notes and practice below.
       </p>
@@ -222,13 +222,13 @@ export default function YouTubePlayer({ videoId, title, start = 0, className = '
 function Fallback({ message, videoId }: { message: string; videoId: string }) {
   const watchUrl = isValidVideoId(videoId) ? buildWatchUrl(videoId) : 'https://www.youtube.com';
   return (
-    <div className="aspect-video w-full rounded-xl bg-gray-950 border border-amber-500/25 p-5 flex items-center justify-center">
+    <div className="aspect-video w-full rounded-xl bg-[#F3F1EC] border border-[#E4E2DD] p-5 flex items-center justify-center">
       <div className="max-w-md text-center">
-        <AlertCircle className="mx-auto text-amber-400" size={22} />
-        <p className="mt-2 text-sm font-semibold text-white">Video cannot play here</p>
-        <p className="mt-1 text-xs text-gray-300 leading-relaxed">{message}</p>
+        <AlertCircle className="mx-auto text-[#B45309]" size={22} />
+        <p className="mt-2 text-sm font-semibold text-[#18181B]">Video cannot play here</p>
+        <p className="mt-1 text-xs text-[#52525B] leading-relaxed">{message}</p>
         <a
-          className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-300 hover:text-indigo-200"
+          className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-[#1B4332] hover:underline"
           href={watchUrl}
           target="_blank"
           rel="noreferrer"

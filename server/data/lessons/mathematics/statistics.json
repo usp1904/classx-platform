@@ -11,7 +11,7 @@
     "Draw cumulative frequency curves (ogives) and estimate median graphically",
     "Apply the empirical relationship: 3 Median = Mode + 2 Mean",
     "Solve real-life data interpretation problems in the Indian context",
-    "Solve RD Sharma and RS Aggarwal extension problems for competitive readiness"
+    "Solve NCERT Reference Practice and extension problems for competitive readiness"
   ],
   "prerequisite_nodes": [
     "MATH_CLASS9_STATISTICS_BASIC",
@@ -398,8 +398,8 @@
       ]
     }
   },
-  "rd_sharma_extensions": {
-    "book": "RD Sharma Class 10, Chapter 15 — Statistics",
+  "advanced_extensions": {
+    "book": "NCERT Reference Practice Class 10, Chapter 15 — Statistics",
     "topics": [
       {
         "name": "Missing Frequency Problems",
@@ -423,8 +423,8 @@
       }
     ]
   },
-  "rs_aggarwal_extensions": {
-    "book": "RS Aggarwal Class 10, Chapter 14 — Statistics",
+  "competitive_bridge_extensions": {
+    "book": "NCERT Competitive Practice Class 10, Chapter 14 — Statistics",
     "topics": [
       {
         "name": "Empirical Relationship Problems",

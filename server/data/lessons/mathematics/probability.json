@@ -11,7 +11,7 @@
     "Use complementary events: P(E) + P(not E) = 1",
     "Solve 'at least' and 'at most' probability problems",
     "Connect probability to real-life decisions and risk assessment",
-    "Solve RD Sharma and RS Aggarwal extension problems for competitive readiness"
+    "Solve NCERT Reference Practice and extension problems for competitive readiness"
   ],
   "prerequisite_nodes": [
     "MATH_CLASS9_PROBABILITY_BASIC",
@@ -249,8 +249,8 @@
       ]
     }
   },
-  "rd_sharma_extensions": {
-    "book": "RD Sharma Class 10, Chapter 16 — Probability",
+  "advanced_extensions": {
+    "book": "NCERT Reference Practice Class 10, Chapter 16 — Probability",
     "topics": [
       {
         "name": "Problems with Multiple Events",
@@ -276,8 +276,8 @@
       }
     ]
   },
-  "rs_aggarwal_extensions": {
-    "book": "RS Aggarwal Class 10, Chapter 15 — Probability",
+  "competitive_bridge_extensions": {
+    "book": "NCERT Competitive Practice Class 10, Chapter 15 — Probability",
     "topics": [
       {
         "name": "'At Least' and 'At Most' Problems",

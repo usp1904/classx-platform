@@ -16,6 +16,12 @@ from .synthesizer import pedagogical_generator
 from .video import video_grounder
 
 
+def route_after_analyzer(state: AgentState) -> Literal["retriever", "__end__"]:
+    if not state.analysis or not state.analysis.is_valid:
+        return END
+    return "retriever"
+
+
 def route_after_grader(state: AgentState) -> Literal["pedagogical_generator", "query_rewriter"]:
     if state.grader_verdict == "PASS":
         return "pedagogical_generator"
@@ -35,7 +41,14 @@ def build_academic_rag_graph():
     workflow.add_node("video_grounder", video_grounder)
 
     workflow.add_edge(START, "query_analyzer")
-    workflow.add_edge("query_analyzer", "retriever")
+    workflow.add_conditional_edges(
+        "query_analyzer",
+        route_after_analyzer,
+        {
+            "retriever": "retriever",
+            END: END,
+        },
+    )
     workflow.add_edge("retriever", "retrieval_grader")
     workflow.add_conditional_edges(
         "retrieval_grader",
@@ -79,6 +92,15 @@ def run_pipeline(payload: Dict[str, Any]) -> Dict[str, Any]:
     if intent_mode in ("BOARD_EXAM", "COMPETITIVE_BRIDGE"):
         input_state["intent_mode"] = intent_mode
 
+    persona = payload.get("persona")
+    if isinstance(persona, dict):
+        input_state["persona"] = {
+            "role": str(persona.get("role") or "student"),
+            "exam": str(persona.get("exam") or ""),
+            "depth": str(persona.get("depth") or ""),
+            "ageBand": persona.get("ageBand"),
+        }
+
     graph = get_compiled_graph()
     raw_result = graph.invoke(input_state)
     state = AgentState(**raw_result) if isinstance(raw_result, dict) else raw_result
@@ -100,13 +122,41 @@ def run_pipeline(payload: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
+def run_worker_loop() -> int:
+    # Pre-warm compiled LangGraph pipeline before signaling readiness
+    get_compiled_graph()
+    sys.stdout.write(json.dumps({"type": "ready"}) + "\n")
+    sys.stdout.flush()
+
+    for line in sys.stdin:
+        raw = line.strip()
+        if not raw:
+            continue
+        req_id = None
+        try:
+            msg = json.loads(raw)
+            req_id = msg.get("id")
+            payload = msg.get("payload", msg)
+            result = run_pipeline(payload if isinstance(payload, dict) else {})
+            out = {"id": req_id, "result": result}
+        except Exception as exc:
+            out = {"id": req_id, "result": {"ok": False, "error": str(exc)}}
+        sys.stdout.write(json.dumps(out, ensure_ascii=False) + "\n")
+        sys.stdout.flush()
+    return 0
+
+
 def main(argv: Optional[list[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="ClassX Academic Agentic RAG CLI")
+    parser.add_argument("--worker", action="store_true", help="Run persistent line-delimited JSON stdio worker")
     parser.add_argument("--query", type=str, default=None)
     parser.add_argument("--subject-id", type=str, default=None)
     parser.add_argument("--chapter-id", type=str, default=None)
     parser.add_argument("--intent-mode", type=str, default=None)
     args = parser.parse_args(argv)
+
+    if args.worker:
+        return run_worker_loop()
 
     if args.query is not None:
         payload: Dict[str, Any] = {

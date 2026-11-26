@@ -12,15 +12,15 @@ import {
   Lightbulb,
   ListChecks,
   Play,
-  Sparkles,
   Target,
   Timer,
 } from 'lucide-react';
 import { useApp } from '../lib/store';
+import { sanitizeStudyText } from '../lib/sanitize';
 import { Badge, Button, Card, CheckLine, ProgressBar, ProgressRing, SectionHeader, Tabs } from '../components/ui';
 
-const phaseTones: Record<string, 'indigo' | 'mint' | 'saffron' | 'rose'> = {
-  phase1: 'indigo',
+const phaseTones: Record<string, 'forest' | 'mint' | 'saffron' | 'rose'> = {
+  phase1: 'forest',
   phase2: 'mint',
   phase3: 'saffron',
   phase4: 'rose',
@@ -50,7 +50,7 @@ export default function Planner() {
         <div>
           <div className="eyebrow"><CalendarDays size={14} /> Study planner</div>
           <h1>{weeks.length ? `A ${weeks.length}-week climb, not a panic sprint.` : 'A steady climb, not a panic sprint.'}</h1>
-          <p>NCERT first, then RD Sharma and RS Aggarwal extensions. Each week has one target and one measurable output.</p>
+          <p>NCERT first, then Exemplar and competitive bridge extensions. Each week has one target and one measurable output.</p>
         </div>
         <div className="head-metrics">
           <div><strong>{weeks.length}</strong><small>planned weeks</small></div>
@@ -63,12 +63,12 @@ export default function Planner() {
         <Card className="planner-hero">
           <div className="planner-hero-copy">
             <div className="eyebrow light">Next checkpoint</div>
-            <h2>Week {nextWeek.week} · {nextWeek.chapterName}</h2>
-            <p>{nextWeek.target}</p>
+            <h2>Week {nextWeek.week} · {sanitizeStudyText(nextWeek.chapterName)}</h2>
+            <p>{sanitizeStudyText(nextWeek.target)}</p>
             <div className="continue-meta">
               <span><Clock3 size={14} /> {nextWeek.minutes} minutes</span>
-              <span><Target size={14} /> {nextWeek.focus}</span>
-              <span><BookOpen size={14} /> {nextWeek.resource}</span>
+              <span><Target size={14} /> {sanitizeStudyText(nextWeek.focus)}</span>
+              <span><BookOpen size={14} /> {sanitizeStudyText(nextWeek.resource)}</span>
             </div>
             <div className="continue-actions">
               <Button variant="dark" icon={<Play size={16} />} onClick={() => navigate(`/courses/${nextWeek.subjectId}/${nextWeek.chapterId}`)}>Start this week</Button>
@@ -88,7 +88,7 @@ export default function Planner() {
             <Tabs
               items={[
                 { id: 'all', label: 'Full plan', count: weeks.length },
-                ...phaseIds.map((phase) => ({ id: phase, label: plan.phases?.[phase]?.name?.split(' (')[0] || phase, count: weeks.filter((week) => week.phase === phase).length })),
+                ...phaseIds.map((phase) => ({ id: phase, label: sanitizeStudyText(plan.phases?.[phase]?.name)?.split(' (')[0] || phase, count: weeks.filter((week) => week.phase === phase).length })),
               ]}
               value={phaseFilter}
               onChange={setPhaseFilter}
@@ -105,27 +105,27 @@ export default function Planner() {
               return (
                 <div key={key} className={`week-row ${checked ? 'done' : ''}`}>
                   <div className="week-rail">
-                    <span className={`week-dot tone-${phaseTones[week.phase] || 'indigo'}`}>{checked ? <CheckCircle2 size={16} /> : week.week}</span>
+                    <span className={`week-dot tone-${phaseTones[week.phase] || 'forest'}`}>{checked ? <CheckCircle2 size={16} /> : week.week}</span>
                     {index < filtered.length - 1 && <span className="week-line" />}
                   </div>
                   <Card className="week-card">
                     <div className="week-card-head">
                       <div>
                         <div className="week-meta">
-                          <Badge tone={phaseTones[week.phase] || 'indigo'}>Week {week.week}</Badge>
-                          <span>{week.phaseName}</span>
+                          <Badge tone={phaseTones[week.phase] || 'forest'}>Week {week.week}</Badge>
+                          <span>{sanitizeStudyText(week.phaseName)}</span>
                           <span><Clock3 size={13} /> {week.minutes} min</span>
                         </div>
-                        <h3>{week.chapterName}</h3>
-                        <p>{week.target}</p>
+                        <h3>{sanitizeStudyText(week.chapterName)}</h3>
+                        <p>{sanitizeStudyText(week.target)}</p>
                       </div>
                       <div className="week-card-actions">
                         <Button variant={checked ? 'secondary' : 'primary'} size="sm" icon={checked ? <CheckCircle2 size={14} /> : <Play size={14} />} onClick={() => togglePlan(key)}>{checked ? 'Done' : 'Mark done'}</Button>
                       </div>
                     </div>
                     <div className="week-details">
-                      <span><Target size={14} /><strong>Focus</strong>{week.focus}</span>
-                      <span><BookOpen size={14} /><strong>Resource</strong>{week.resource}</span>
+                      <span><Target size={14} /><strong>Focus</strong>{sanitizeStudyText(week.focus)}</span>
+                      <span><BookOpen size={14} /><strong>Resource</strong>{sanitizeStudyText(week.resource)}</span>
                       <span><Compass size={14} /><strong>Subject</strong>{subject?.shortName || week.subjectId}</span>
                     </div>
                     <div className="week-foot">
@@ -156,7 +156,7 @@ export default function Planner() {
                 return (
                   <button key={phase} className={phaseFilter === phase ? 'active' : ''} onClick={() => setPhaseFilter(phaseFilter === phase ? 'all' : phase)}>
                     <span className={`subject-dot tone-${phaseTones[phase]}`} />
-                    <span><strong>{plan.phases?.[phase]?.name || phase}</strong><small>{phaseDone}/{phaseWeeks.length} weeks</small></span>
+                    <span><strong>{sanitizeStudyText(plan.phases?.[phase]?.name) || phase}</strong><small>{phaseDone}/{phaseWeeks.length} weeks</small></span>
                     <small>{Math.round((phaseDone / Math.max(phaseWeeks.length, 1)) * 100)}%</small>
                   </button>
                 );
@@ -166,9 +166,9 @@ export default function Planner() {
 
           {phaseFilter !== 'all' && plan.phases?.[phaseFilter] && (
             <Card>
-              <div className="eyebrow"><Sparkles size={14} /> Phase strategy</div>
-              <h3>{plan.phases[phaseFilter].name}</h3>
-              <p>{plan.phases[phaseFilter].strategy}</p>
+              <div className="eyebrow"><Compass size={14} /> Phase strategy</div>
+              <h3>{sanitizeStudyText(plan.phases[phaseFilter].name)}</h3>
+              <p>{sanitizeStudyText(plan.phases[phaseFilter].strategy)}</p>
               <div className="phase-facts">
                 <span><Timer size={14} /> {plan.phases[phaseFilter].totalTime}</span>
                 <span><Target size={14} /> {plan.phases[phaseFilter].boardExamWeightage}</span>
@@ -186,8 +186,8 @@ export default function Planner() {
             <div className="eyebrow"><BookOpen size={14} /> Reference stack</div>
             <div className="resource-list">
               <div><BookOpen size={15} /><span><strong>NCERT core</strong><small>All exercises first</small></span></div>
-              <div><BookOpen size={15} /><span><strong>RD Sharma</strong><small>Must-do + illustrations</small></span></div>
-              <div><BookOpen size={15} /><span><strong>RS Aggarwal</strong><small>Bridge and MCQ sets</small></span></div>
+              <div><BookOpen size={15} /><span><strong>NCERT Exemplar</strong><small>Higher-order illustrations</small></span></div>
+              <div><BookOpen size={15} /><span><strong>Competitive Bridge</strong><small>Assertion-reason and MCQ sets</small></span></div>
             </div>
             <Link to="/library" className="link-arrow">Open formula library <ArrowRight size={14} /></Link>
           </Card>

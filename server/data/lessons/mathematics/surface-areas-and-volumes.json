@@ -10,7 +10,7 @@
     "Calculate the volume and surface area of a frustum of a cone",
     "Apply mensuration formulas to real-world Indian context problems like storage tanks, silos, and packaging",
     "Determine the number of smaller solids that can be made from a larger solid by melting/remolding",
-    "Solve RD Sharma and RS Aggarwal extension problems for competitive exam readiness"
+    "Solve NCERT Reference Practice and extension problems for competitive exam readiness"
   ],
   "prerequisite_nodes": [
     "MATH_CLASS8_MENSURATION",
@@ -566,8 +566,8 @@
       ]
     }
   },
-  "rd_sharma_extensions": {
-    "book": "RD Sharma Class 10, Chapter 14 — Surface Areas and Volumes",
+  "advanced_extensions": {
+    "book": "NCERT Reference Practice Class 10, Chapter 14 — Surface Areas and Volumes",
     "topics": [
       {
         "name": "Maximum Volume Problems",
@@ -609,8 +609,8 @@
       }
     ]
   },
-  "rs_aggarwal_extensions": {
-    "book": "RS Aggarwal Class 10, Chapter 14 — Surface Areas and Volumes",
+  "competitive_bridge_extensions": {
+    "book": "NCERT Competitive Practice Class 10, Chapter 14 — Surface Areas and Volumes",
     "topics": [
       {
         "name": "Sphere Cut by a Plane",

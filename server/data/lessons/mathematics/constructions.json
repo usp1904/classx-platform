@@ -11,7 +11,7 @@
     "Construct a triangle with specific constraints using ruler and compass",
     "Understand why each construction works through geometric reasoning",
     "Apply construction techniques in real-world Indian contexts like land surveying and architecture",
-    "Solve RD Sharma and RS Aggarwal extension problems for competitive exam readiness"
+    "Solve NCERT Reference Practice and extension problems for competitive exam readiness"
   ],
   "prerequisite_nodes": [
     "MATH_CLASS9_CONSTRUCTIONS",
@@ -434,8 +434,8 @@
       ]
     }
   },
-  "rd_sharma_extensions": {
-    "book": "RD Sharma Class 10, Chapter 9 — Constructions",
+  "advanced_extensions": {
+    "book": "NCERT Reference Practice Class 10, Chapter 9 — Constructions",
     "topics": [
       {
         "name": "Construction of a Triangle Similar to a Given Triangle with Scale Factor m:n",
@@ -482,8 +482,8 @@
       }
     ]
   },
-  "rs_aggarwal_extensions": {
-    "book": "RS Aggarwal Class 10, Chapter 9 — Constructions",
+  "competitive_bridge_extensions": {
+    "book": "NCERT Competitive Practice Class 10, Chapter 9 — Constructions",
     "topics": [
       {
         "name": "Construction of Tangents Without Using Center",

@@ -2,23 +2,23 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
   BookOpen, Lightbulb, Zap, FileText, Target, Network, Share2, Menu,
-  ArrowRight, ChevronDown, ChevronUp, Microscope, GraduationCap,
-  History, Clock, AlertTriangle, Film, CheckCircle2, Search, Sparkles
+  ArrowRight, ChevronDown, ChevronUp, Compass,
+  AlertTriangle, CheckCircle2, Search,
 } from 'lucide-react';
-import { Badge, Button, Card, SectionHeader, Stat } from '../components/ui';
+import { Badge, Button, Card, SectionHeader } from '../components/ui';
 import { api } from '../api';
 import { useApp } from '../lib/store';
 import type { LearningAidsData } from '../types';
 
 const GROUP_LABELS: Record<string, { label: string; icon: any; color: string; desc: string }> = {
-  overview: { label: 'Chapter Overview', icon: BookOpen, color: 'text-indigo-400', desc: 'High-level architectural picture and core motivation' },
-  quickrevise: { label: 'Quick Revision', icon: FileText, color: 'text-amber-400', desc: 'Cheat sheets, formulas, and high-yield exam notes' },
-  visual: { label: 'Visual & Spatial', icon: Share2, color: 'text-emerald-400', desc: 'Mind maps, concept graphs, and visual breakdowns' },
-  practice: { label: 'Teacher-Grade Practice', icon: Target, color: 'text-rose-400', desc: 'Step-by-step solved walkthroughs and diagnostics' },
-  shortcuts: { label: 'Shortcuts & Traps', icon: Zap, color: 'text-amber-300', desc: 'Common pitfalls, examiner traps, and quick calculation tricks' },
-  deepdive: { label: 'Deep Conceptual Dive', icon: Lightbulb, color: 'text-purple-400', desc: 'Scientific stories, mechanisms, and first-principles explanations' },
-  connect: { label: 'Real-World Connections', icon: Network, color: 'text-blue-400', desc: 'Memory hooks, interdisciplinary bridges, and tutor scaffolds' },
-  other: { label: 'Additional Resources', icon: Menu, color: 'text-gray-400', desc: 'Supplemental syllabus reference tools' },
+  overview: { label: 'Chapter Overview', icon: BookOpen, color: 'text-[#1B4332]', desc: 'High-level architectural picture and core motivation' },
+  quickrevise: { label: 'Quick Revision', icon: FileText, color: 'text-[#B45309]', desc: 'Cheat sheets, formulas, and high-yield exam notes' },
+  visual: { label: 'Visual & Spatial', icon: Share2, color: 'text-[#1B4332]', desc: 'Mind maps, concept graphs, and visual breakdowns' },
+  practice: { label: 'Teacher-Grade Practice', icon: Target, color: 'text-[#D95D39]', desc: 'Step-by-step solved walkthroughs and diagnostics' },
+  shortcuts: { label: 'Shortcuts & Traps', icon: Zap, color: 'text-[#B45309]', desc: 'Common pitfalls, examiner traps, and quick calculation tricks' },
+  deepdive: { label: 'Deep Conceptual Dive', icon: Lightbulb, color: 'text-[#1B4332]', desc: 'Scientific stories, mechanisms, and first-principles explanations' },
+  connect: { label: 'Real-World Connections', icon: Network, color: 'text-[#1B4332]', desc: 'Memory hooks, interdisciplinary bridges, and tutor scaffolds' },
+  other: { label: 'Additional Resources', icon: Menu, color: 'text-[#52525B]', desc: 'Supplemental syllabus reference tools' },
 };
 
 function renderAidData(data: any, aidId: string): React.ReactNode {
@@ -30,40 +30,40 @@ function renderAidData(data: any, aidId: string): React.ReactNode {
     return (
       <div className="space-y-4">
         {items.map((ex: any, i: number) => (
-          <div key={ex.id || i} className="p-4 rounded-xl bg-gray-900/60 border border-indigo-500/20 backdrop-blur-sm">
+          <div key={ex.id || i} className="p-4 rounded-xl bg-[#FAF9F6] border border-[#E4E2DD]">
             <div className="flex justify-between items-start mb-2">
-              <span className="text-xs font-semibold text-indigo-400">Problem {ex.id || i + 1}</span>
+              <span className="text-xs font-semibold text-[#1B4332]">Problem {ex.id || i + 1}</span>
               <Badge tone="neutral" className="text-xs">{ex.difficulty || 'medium'}</Badge>
             </div>
-            <div className="text-sm text-gray-100 font-medium mb-3">{ex.question || ex.problem || ''}</div>
-            <div className="text-xs font-semibold text-emerald-400 mb-1 flex items-center gap-1.5">
+            <div className="text-sm text-[#18181B] font-medium mb-3">{ex.question || ex.problem || ''}</div>
+            <div className="text-xs font-semibold text-[#1B4332] mb-1 flex items-center gap-1.5">
               <CheckCircle2 size={13} />
               <span>Step-by-Step Pedagogical Walkthrough:</span>
             </div>
-            <ol className="list-none space-y-1.5 text-xs text-gray-300 mb-3 pl-1">
+            <ol className="list-none space-y-1.5 text-xs text-[#3F3F46] mb-3 pl-1">
               {(ex.steps || []).map((s: string, j: number) => (
                 <li key={j} className="flex gap-2.5 items-start">
-                  <span className="w-5 h-5 rounded-full bg-indigo-500/20 border border-indigo-500/40 text-indigo-300 text-xs font-mono font-bold flex items-center justify-center flex-shrink-0 mt-0.5">{j + 1}</span>
-                  <span className="text-xs leading-relaxed text-gray-200">{s}</span>
+                  <span className="w-5 h-5 rounded-full bg-[#DCFCE7] border border-[#1B4332] text-[#1B4332] text-xs font-mono font-bold flex items-center justify-center shrink-0 mt-0.5">{j + 1}</span>
+                  <span className="text-xs leading-relaxed text-[#18181B]">{s}</span>
                 </li>
               ))}
             </ol>
             {ex.finalAnswer && (
-              <div className="p-3 bg-emerald-500/10 border border-emerald-500/25 rounded-lg mb-2">
-                <span className="text-xs font-semibold text-emerald-400 block mb-0.5">Final Answer / Verdict:</span>
-                <p className="text-sm font-semibold text-emerald-200">{ex.finalAnswer}</p>
+              <div className="p-3 bg-[#DCFCE7] border border-[#1B4332] rounded-lg mb-2">
+                <span className="text-xs font-semibold text-[#1B4332] block mb-0.5">Final Answer / Verdict:</span>
+                <p className="text-sm font-semibold text-[#18181B]">{ex.finalAnswer}</p>
               </div>
             )}
             {data.shortcut && (
-              <div className="p-3 bg-amber-500/10 border border-amber-500/25 rounded-lg mb-2">
-                <span className="text-xs font-semibold text-amber-400 block mb-0.5">Competitive Shortcut (IIT/DSC/NEET):</span>
-                <p className="text-xs text-amber-200">{data.shortcut}</p>
+              <div className="p-3 bg-[#FEF08A] border border-[#B45309] rounded-lg mb-2">
+                <span className="text-xs font-semibold text-[#92400E] block mb-0.5">Competitive Shortcut (IIT/DSC/NEET):</span>
+                <p className="text-xs text-[#18181B]">{data.shortcut}</p>
               </div>
             )}
             {data.memoryHook && (
-              <div className="p-3 bg-purple-500/10 border border-purple-500/25 rounded-lg">
-                <span className="text-xs font-semibold text-purple-400 block mb-0.5">Mnemonic Memory Hook:</span>
-                <p className="text-xs text-purple-200">{data.memoryHook}</p>
+              <div className="p-3 bg-[#FEF08A] border border-[#E4E2DD] rounded-lg">
+                <span className="text-xs font-semibold text-[#92400E] block mb-0.5">Mnemonic Memory Hook:</span>
+                <p className="text-xs text-[#18181B]">{data.memoryHook}</p>
               </div>
             )}
           </div>
@@ -78,23 +78,23 @@ function renderAidData(data: any, aidId: string): React.ReactNode {
     return (
       <div className="space-y-3">
         {exps.map((exp: any, i: number) => (
-          <div key={exp.id || i} className="p-4 rounded-xl bg-blue-950/30 border border-blue-500/20 backdrop-blur-sm">
+          <div key={exp.id || i} className="p-4 rounded-xl bg-[#FAF9F6] border border-[#E4E2DD]">
             <div className="flex justify-between items-start mb-2">
-              <span className="text-sm font-semibold text-blue-300">{exp.title}</span>
-              <Badge tone="indigo" className="text-xs">NCERT Activity</Badge>
+              <span className="text-sm font-semibold text-[#18181B]">{exp.title}</span>
+              <Badge tone="forest" className="text-xs">NCERT Activity</Badge>
             </div>
-            <div className="text-xs text-gray-300 mb-2 leading-relaxed">{exp.objective}</div>
+            <div className="text-xs text-[#52525B] mb-2 leading-relaxed">{exp.objective}</div>
             <div className="mb-2">
-              <div className="text-xs font-semibold text-blue-400 mb-1.5">Experimental Procedure:</div>
-              <ol className="list-decimal pl-5 space-y-1 text-xs text-gray-300">
+              <div className="text-xs font-semibold text-[#1B4332] mb-1.5">Experimental Procedure:</div>
+              <ol className="list-decimal pl-5 space-y-1 text-xs text-[#18181B]">
                 {(exp.steps || []).map((s: string, j: number) => (
                   <li key={j} className="leading-relaxed">{s}</li>
                 ))}
               </ol>
             </div>
             {exp.conclusion && (
-              <div className="p-2.5 bg-green-500/10 border border-green-500/20 rounded-lg text-xs text-green-300 mt-2">
-                <span className="font-semibold text-green-400">Scientific Conclusion: </span>{exp.conclusion}
+              <div className="p-2.5 bg-[#DCFCE7] border border-[#1B4332] rounded-lg text-xs text-[#18181B] mt-2">
+                <span className="font-semibold text-[#1B4332]">Scientific Conclusion: </span>{exp.conclusion}
               </div>
             )}
           </div>
@@ -109,15 +109,15 @@ function renderAidData(data: any, aidId: string): React.ReactNode {
     return (
       <div className="space-y-2.5">
         {items.map((q: any, i: number) => (
-          <div key={q.id || i} className="p-3.5 rounded-xl bg-gray-900/50 border border-gray-700/40">
+          <div key={q.id || i} className="p-3.5 rounded-xl bg-[#FAF9F6] border border-[#E4E2DD]">
             <div className="flex justify-between items-start mb-1.5">
-              <span className="text-xs font-bold text-emerald-400">Question {q.id || i + 1}</span>
+              <span className="text-xs font-bold text-[#1B4332]">Question {q.id || i + 1}</span>
               <Badge tone="neutral" className="text-xs">{q.difficulty || 'medium'}</Badge>
             </div>
-            <p className="text-xs font-medium text-gray-200 mb-2 leading-relaxed">{q.question}</p>
+            <p className="text-xs font-medium text-[#18181B] mb-2 leading-relaxed">{q.question}</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
               {(q.options || []).map((opt: string, idx: number) => (
-                <div key={idx} className={`px-2.5 py-1.5 rounded-lg text-xs border ${idx === q.correctIndex ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-200 font-semibold' : 'bg-gray-800/40 border-gray-700/30 text-gray-300'}`}>
+                <div key={idx} className={`px-2.5 py-1.5 rounded-lg text-xs border ${idx === q.correctIndex ? 'bg-[#DCFCE7] border-[#1B4332] text-[#18181B] font-semibold' : 'bg-[#F3F1EC] border-[#E4E2DD] text-[#3F3F46]'}`}>
                   <span className="font-mono mr-1.5">{String.fromCharCode(65 + idx)}.</span>
                   {idx === q.correctIndex && '✓ '}
                   {opt}
@@ -125,8 +125,8 @@ function renderAidData(data: any, aidId: string): React.ReactNode {
               ))}
             </div>
             {q.explanation && (
-              <div className="mt-2 p-2.5 rounded-lg bg-gray-800/40 border border-gray-700/30 text-xs text-gray-300 leading-relaxed">
-                <span className="font-semibold text-emerald-400">Examiner Rationale: </span>{q.explanation}
+              <div className="mt-2 p-2.5 rounded-lg bg-[#F3F1EC] border border-[#E4E2DD] text-xs text-[#3F3F46] leading-relaxed">
+                <span className="font-semibold text-[#1B4332]">Examiner Rationale: </span>{q.explanation}
               </div>
             )}
           </div>
@@ -140,31 +140,31 @@ function renderAidData(data: any, aidId: string): React.ReactNode {
     const nodes = data?.nodes || [];
     const edges = data?.edges || [];
     return (
-      <div className="p-4 rounded-xl bg-gray-950/60 border border-indigo-500/20">
-        <div className="text-xs font-semibold text-indigo-300 mb-3 flex items-center justify-between">
+      <div className="p-4 rounded-xl bg-[#FAF9F6] border border-[#E4E2DD]">
+        <div className="text-xs font-semibold text-[#1B4332] mb-3 flex items-center justify-between">
           <span>Conceptual Nodes & Logical Bridges</span>
-          <Badge tone="indigo" className="text-[10px]">{nodes.length} Concepts</Badge>
+          <Badge tone="forest" className="text-[10px]">{nodes.length} Concepts</Badge>
         </div>
         <div className="flex flex-wrap gap-2.5">
           {nodes.map((node: any, idx: number) => (
-            <div key={node.id || idx} className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-indigo-500/10 border border-indigo-500/30 text-xs text-indigo-200 font-medium shadow-sm hover:border-indigo-400 transition-colors">
-              <span className="w-2 h-2 rounded-full bg-indigo-400"></span>
+            <div key={node.id || idx} className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#F3F1EC] border border-[#E4E2DD] text-xs text-[#18181B] font-medium hover:border-[#1B4332] transition-colors">
+              <span className="w-2 h-2 rounded-full bg-[#1B4332]"></span>
               <span>{node.label || node.name || node.title}</span>
             </div>
           ))}
         </div>
         {edges.length > 0 && (
-          <div className="mt-3 pt-3 border-t border-gray-800/60">
-            <span className="text-[11px] font-semibold text-gray-400 block mb-2">Relational Links:</span>
+          <div className="mt-3 pt-3 border-t border-[#E4E2DD]">
+            <span className="text-[11px] font-semibold text-[#52525B] block mb-2">Relational Links:</span>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
               {edges.slice(0, 8).map((edge: any, i: number) => {
                 const from = Array.isArray(edge) ? edge[0] : edge.from;
                 const to = Array.isArray(edge) ? edge[1] : edge.to;
                 return (
-                  <div key={i} className="text-[11px] text-gray-300 bg-gray-900/40 px-2.5 py-1 rounded border border-gray-800 flex items-center gap-1.5">
-                    <span className="text-indigo-400 font-semibold">{from}</span>
-                    <span className="text-gray-500">→</span>
-                    <span className="text-emerald-400 font-semibold">{to}</span>
+                  <div key={i} className="text-[11px] text-[#18181B] bg-[#F3F1EC] px-2.5 py-1 rounded border border-[#E4E2DD] flex items-center gap-1.5">
+                    <span className="text-[#1B4332] font-semibold">{from}</span>
+                    <span className="text-[#71717A]">→</span>
+                    <span className="text-[#D95D39] font-semibold">{to}</span>
                   </div>
                 );
               })}
@@ -180,7 +180,7 @@ function renderAidData(data: any, aidId: string): React.ReactNode {
     return (
       <div className="space-y-2">
         {data.map((item: any, i: number) => (
-          <div key={i} className="p-3 rounded-lg bg-gray-900/40 border border-gray-800 text-xs text-gray-200 leading-relaxed">
+          <div key={i} className="p-3 rounded-lg bg-[#FAF9F6] border border-[#E4E2DD] text-xs text-[#18181B] leading-relaxed">
             {typeof item === 'string' ? item : item.summary || item.title || item.statement || item.description || JSON.stringify(item)}
           </div>
         ))}
@@ -195,18 +195,18 @@ function renderAidData(data: any, aidId: string): React.ReactNode {
         {entries.map(([key, val]) => {
           const formattedKey = key.replace(/([A-Z])/g, ' $1').replace(/^./, (s) => s.toUpperCase());
           return (
-            <div key={key} className="p-2.5 rounded-lg bg-gray-900/40 border border-gray-800 text-xs">
-              <span className="font-semibold text-indigo-300 block mb-1">{formattedKey}:</span>
+            <div key={key} className="p-2.5 rounded-lg bg-[#FAF9F6] border border-[#E4E2DD] text-xs">
+              <span className="font-semibold text-[#1B4332] block mb-1">{formattedKey}:</span>
               {Array.isArray(val) ? (
-                <ul className="list-disc pl-4 space-y-1 text-gray-300">
+                <ul className="list-disc pl-4 space-y-1 text-[#3F3F46]">
                   {val.map((v: any, j: number) => (
                     <li key={j}>{typeof v === 'string' ? v : v.title || v.name || JSON.stringify(v)}</li>
                   ))}
                 </ul>
               ) : typeof val === 'object' ? (
-                <pre className="text-[11px] text-gray-300 whitespace-pre-wrap">{JSON.stringify(val, null, 2)}</pre>
+                <pre className="text-[11px] text-[#3F3F46] whitespace-pre-wrap">{JSON.stringify(val, null, 2)}</pre>
               ) : (
-                <span className="text-gray-200 leading-relaxed">{String(val)}</span>
+                <span className="text-[#18181B] leading-relaxed">{String(val)}</span>
               )}
             </div>
           );
@@ -215,7 +215,7 @@ function renderAidData(data: any, aidId: string): React.ReactNode {
     );
   }
 
-  return <p className="text-xs text-gray-200 leading-relaxed">{String(data)}</p>;
+  return <p className="text-xs text-[#18181B] leading-relaxed">{String(data)}</p>;
 }
 
 export default function LearningAids() {
@@ -264,7 +264,7 @@ export default function LearningAids() {
     return (
       <div className="page space-y-6">
         <Card className="empty-state p-10">
-          <AlertTriangle size={36} className="text-amber-400 mb-2" />
+          <AlertTriangle size={36} className="text-[#B45309] mb-2" />
           <h2>Learning Aids Temporarily Unavailable</h2>
           <p>We encountered a brief hiccup loading learning aids for <strong>{currentChapter?.name || chapterId}</strong>.</p>
           <div className="flex gap-3 mt-4">
@@ -295,8 +295,8 @@ export default function LearningAids() {
       <div className="page-head">
         <div>
           <div className="eyebrow light flex items-center gap-2">
-            <Sparkles size={14} className="text-amber-400" />
-            <span>Class X · CBSE, DSC & UPSC Foundation Companion</span>
+            <Compass size={14} className="text-[#1B4332]" />
+            <span>Class X · CBSE, DSC &amp; UPSC Foundation Companion</span>
           </div>
           <h1>30 Learning Aids</h1>
           <p>
@@ -305,7 +305,7 @@ export default function LearningAids() {
         </div>
         <div className="flex gap-2">
           <Badge tone="mint" className="text-xs font-bold">{aidsWithContent.length} / 30 Ready</Badge>
-          <Badge tone={data.hasLesson ? 'indigo' : 'neutral'} className="text-xs">{data.hasLesson ? 'Complete Lesson' : 'Syllabus Map'}</Badge>
+          <Badge tone={data.hasLesson ? 'forest' : 'neutral'} className="text-xs">{data.hasLesson ? 'Complete Lesson' : 'Syllabus Map'}</Badge>
         </div>
       </div>
 
@@ -352,7 +352,7 @@ export default function LearningAids() {
       {/* Group Switcher Tabs */}
       <div className="flex gap-2 overflow-x-auto pb-1">
         <button
-          className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all border ${selectedGroup === 'all' ? 'bg-indigo-600 text-white border-indigo-500 shadow-lg shadow-indigo-500/25' : 'bg-white/5 border-white/10 text-gray-300 hover:bg-white/10'}`}
+          className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors border ${selectedGroup === 'all' ? 'bg-[#1B4332] text-[#FAF9F6] border-[#1B4332]' : 'bg-[#F3F1EC] border-[#E4E2DD] text-[#52525B] hover:bg-[#EAE7E0]'}`}
           onClick={() => setSelectedGroup('all')}
         >
           All 30 Aids
@@ -360,13 +360,14 @@ export default function LearningAids() {
         {Object.entries(GROUP_LABELS).map(([key, info]) => {
           const count = aids.filter((a) => a.group === key && a.hasContent).length;
           const Icon = info.icon;
+          const active = selectedGroup === key;
           return (
             <button
               key={key}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-all border whitespace-nowrap ${selectedGroup === key ? 'bg-indigo-600 text-white border-indigo-500 shadow-lg shadow-indigo-500/25' : 'bg-white/5 border-white/10 text-gray-300 hover:bg-white/10'}`}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold transition-colors border whitespace-nowrap ${active ? 'bg-[#1B4332] text-[#FAF9F6] border-[#1B4332]' : 'bg-[#F3F1EC] border-[#E4E2DD] text-[#52525B] hover:bg-[#EAE7E0]'}`}
               onClick={() => setSelectedGroup(key)}
             >
-              <Icon size={14} className={info.color} />
+              <Icon size={14} className={active ? 'text-[#FAF9F6]' : info.color} />
               <span>{info.label}</span>
               <span className="text-[10px] opacity-70">({count})</span>
             </button>
@@ -376,18 +377,18 @@ export default function LearningAids() {
 
       {/* Special Sections (if data present) */}
       {data.scienceExperiments && data.scienceExperiments.length > 0 && (
-        <Card className="p-5 border-blue-500/30 bg-blue-950/20">
+        <Card className="p-5 border-[#E4E2DD] bg-[#F3F1EC]">
           <SectionHeader
             title="Science Experiments & Lab Activities"
             description="Prescribed NCERT practical activities and hands-on demonstrations"
-            action={<Badge tone="indigo" className="text-xs">Lab Portfolio</Badge>}
+            action={<Badge tone="forest" className="text-xs">Lab Portfolio</Badge>}
           />
           {renderAidData(data.scienceExperiments, 'scienceExperiments')}
         </Card>
       )}
 
       {data.mcqAnswers && data.mcqAnswers.length > 0 && (
-        <Card className="p-5 border-emerald-500/30 bg-emerald-950/20">
+        <Card className="p-5 border-[#E4E2DD] bg-[#F3F1EC]">
           <SectionHeader
             title="Diagnostic MCQ Solutions & Explanations"
             description="Verified exam-oriented questions with step explanations"
@@ -401,28 +402,28 @@ export default function LearningAids() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredAids.map((aid) => {
           const isExpanded = expandedAid === aid.id;
-          const groupInfo = GROUP_LABELS[aid.group] || { label: aid.group, icon: Menu, color: 'text-gray-400' };
+          const groupInfo = GROUP_LABELS[aid.group] || { label: aid.group, icon: Menu, color: 'text-[#52525B]' };
           const GroupIcon = groupInfo.icon;
 
           return (
             <Card
               key={aid.id}
-              className={`transition-all duration-200 ${isExpanded ? 'border-[var(--primary)] ring-1 ring-[var(--primary)] md:col-span-2 lg:col-span-3' : ''}`}
+              className={`transition-colors ${isExpanded ? 'border-[#1B4332] md:col-span-2 lg:col-span-3' : ''}`}
             >
               <div
                 className="flex items-start justify-between gap-3 cursor-pointer p-4"
                 onClick={() => setExpandedAid(isExpanded ? null : aid.id)}
               >
                 <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-[var(--surface-2)] border border-[var(--glass-border)] flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-10 h-10 rounded-xl bg-[#FAF9F6] border border-[#E4E2DD] flex items-center justify-center shrink-0 mt-0.5">
                     <GroupIcon size={18} className={groupInfo.color} />
                   </div>
                   <div>
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="text-sm font-bold text-[var(--ink)]">{aid.label}</span>
-                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-[var(--surface-2)] text-[var(--muted)] uppercase">{aid.id}</span>
+                      <span className="text-sm font-bold text-[#18181B]">{aid.label}</span>
+                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-[#FAF9F6] border border-[#E4E2DD] text-[#52525B] uppercase">{aid.id}</span>
                     </div>
-                    <span className="text-xs text-[var(--muted)] block">{groupInfo.label}</span>
+                    <span className="text-xs text-[#52525B] block">{groupInfo.label}</span>
                   </div>
                 </div>
 
@@ -453,12 +454,12 @@ export default function LearningAids() {
 
               {/* Expanded Accordion Body */}
               {isExpanded && (
-                <div className="px-4 pb-5 pt-2 border-t border-[var(--glass-border)] mt-1 space-y-3">
-                  <div className="flex justify-between items-center text-xs text-[var(--muted)] pt-2">
-                    <span className="font-semibold text-[var(--primary)]">Detailed Cognitive Aid Content:</span>
+                <div className="px-4 pb-5 pt-2 border-t border-[#E4E2DD] mt-1 space-y-3">
+                  <div className="flex justify-between items-center text-xs text-[#52525B] pt-2">
+                    <span className="font-semibold text-[#1B4332]">Detailed Cognitive Aid Content:</span>
                     <span className="text-[11px]">Click title to collapse</span>
                   </div>
-                  <div className="p-4 rounded-xl bg-[var(--surface-2)] border border-[var(--glass-border)] overflow-hidden">
+                  <div className="p-4 rounded-xl bg-[#FAF9F6] border border-[#E4E2DD] overflow-hidden">
                     {renderAidData(aid.data, aid.id)}
                   </div>
                 </div>

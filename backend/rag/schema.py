@@ -104,6 +104,7 @@ class AgentState(BaseModel):
     subject_id: Optional[str] = None
     chapter_id: Optional[str] = None
     intent_mode: Optional[Literal["BOARD_EXAM", "COMPETITIVE_BRIDGE"]] = None
+    persona: Optional[Dict[str, Any]] = None
     analysis: Optional[QueryAnalysis] = None
     retrieved_chunks: List[Dict[str, Any]] = Field(default_factory=list)
     pruned_chunks: List[Dict[str, Any]] = Field(default_factory=list)

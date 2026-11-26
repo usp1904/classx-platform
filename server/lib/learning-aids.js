@@ -268,25 +268,25 @@ function buildBibliographyAndEquations(lesson, subjectId) {
     type: 'Primary Textbook',
   });
 
-  if (lesson.rd_sharma_extensions) {
+  if (lesson.advanced_extensions) {
     bibliography.push({
       id: 'bib-2',
-      title: 'R.D. Sharma — Mathematics Class X',
-      publisher: 'Dhanpat Rai Publications',
+      title: 'Advanced Extensions — Mathematics Class X',
+      publisher: 'ClassX Academic Reference',
       year: 'Latest Edition',
       subject: subjectId,
-      type: 'Reference Book',
+      type: 'Reference Practice',
     });
   }
 
-  if (lesson.rs_aggarwal_extensions) {
+  if (lesson.competitive_bridge_extensions) {
     bibliography.push({
       id: 'bib-3',
-      title: 'R.S. Aggarwal — Mathematics Class X',
-      publisher: 'Bharati Bhawan',
+      title: 'Competitive Bridge — Mathematics Class X',
+      publisher: 'NCERT Reference Practice',
       year: 'Latest Edition',
       subject: subjectId,
-      type: 'Reference Book',
+      type: 'Reference Practice',
     });
   }
 
@@ -430,7 +430,7 @@ export function buildLearningAids(subjectId, chapterId) {
   const visualizations = (lesson && lesson.visualizations) || [];
   const chapterStats = chapter ? chapter.stats : {};
 
-  // ---- Source References (Arihant, RD Sharma, RS Aggarwal) ----
+  // ---- Source References ----
   const source_references = lesson?.source_references || {};
   const web_references = lesson?.web_references || [];
   const educational_disclaimer = lesson?.educational_disclaimer || 'This content is for educational purposes only.';

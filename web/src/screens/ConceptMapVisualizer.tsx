@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Network, Zap, Share2, AlertCircle, Sparkles, BookOpen, Layers, CheckCircle2, ArrowRight } from 'lucide-react';
-import { Badge, Button, Card, SectionHeader, Stat } from '../components/ui';
+import { Network, AlertCircle, Lightbulb, BookOpen, Layers, ArrowRight } from 'lucide-react';
+import { Button, Badge, Card } from '../components/ui';
 import { api } from '../api';
 import { useApp } from '../lib/store';
 
@@ -13,12 +13,12 @@ interface NodeColor {
 }
 
 const COLOR_MAP: Record<string, NodeColor> = {
-  foundation: { fill: '#1e1b4b', stroke: '#6366f1', text: '#c7d2fe', accent: '#818cf8' },
-  method: { fill: '#064e3b', stroke: '#10b981', text: '#a7f3d0', accent: '#34d399' },
-  analysis: { fill: '#451a03', stroke: '#f59e0b', text: '#fde68a', accent: '#fbbf24' },
-  application: { fill: '#4c0519', stroke: '#f43f5e', text: '#fecdd3', accent: '#fb7185' },
-  goal: { fill: '#3b0764', stroke: '#a855f7', text: '#f3e8ff', accent: '#c084fc' },
-  concept: { fill: '#1e293b', stroke: '#64748b', text: '#e2e8f0', accent: '#94a3b8' },
+  foundation: { fill: '#DCFCE7', stroke: '#1B4332', text: '#18181B', accent: '#1B4332' },
+  method: { fill: '#F3F1EC', stroke: '#15803D', text: '#18181B', accent: '#15803D' },
+  analysis: { fill: '#FEF08A', stroke: '#B45309', text: '#18181B', accent: '#B45309' },
+  application: { fill: '#FEE2E2', stroke: '#D95D39', text: '#18181B', accent: '#D95D39' },
+  goal: { fill: '#FAF9F6', stroke: '#18181B', text: '#18181B', accent: '#18181B' },
+  concept: { fill: '#F3F1EC', stroke: '#52525B', text: '#18181B', accent: '#52525B' },
 };
 
 export default function ConceptMapVisualizer() {
@@ -104,7 +104,7 @@ export default function ConceptMapVisualizer() {
       <div className="page-head">
         <div>
           <div className="eyebrow light flex items-center gap-2">
-            <Network size={14} className="text-indigo-400" />
+            <Network size={14} className="text-[#1B4332]" />
             <span>Interactive Cognitive Architecture</span>
           </div>
           <h1>Concept Graph Visualizer</h1>
@@ -113,7 +113,7 @@ export default function ConceptMapVisualizer() {
           </p>
         </div>
         <div className="flex gap-2">
-          <Badge tone="indigo" className="text-xs font-bold">{graph?.nodes?.length || 0} Nodes</Badge>
+          <Badge tone="forest" className="text-xs font-bold">{graph?.nodes?.length || 0} Nodes</Badge>
           <Badge tone="mint" className="text-xs font-bold">{graph?.edges?.length || 0} Relations</Badge>
         </div>
       </div>
@@ -153,7 +153,7 @@ export default function ConceptMapVisualizer() {
             <span>Read Chapter</span>
           </Button>
           <Button variant="secondary" size="sm" onClick={() => navigate(`/learning-aids/${subjectId}/${chapterId}`)}>
-            <Sparkles size={14} />
+            <Lightbulb size={14} />
             <span>Learning Aids</span>
           </Button>
         </div>
@@ -161,9 +161,9 @@ export default function ConceptMapVisualizer() {
 
       {error || !graph || !graph.nodes.length ? (
         <Card className="p-12 text-center">
-          <AlertCircle size={40} className="mx-auto mb-3 text-amber-400" />
-          <h3 className="text-lg font-bold text-[var(--ink)] mb-2">No Visual Graph for this Chapter</h3>
-          <p className="text-[var(--muted)] text-xs max-width-md mx-auto mb-4">
+          <AlertCircle size={40} className="mx-auto mb-3 text-[#B45309]" />
+          <h3 className="text-lg font-bold text-[#18181B] mb-2">No Visual Graph for this Chapter</h3>
+          <p className="text-[#52525B] text-xs max-w-md mx-auto mb-4">
             This syllabus chapter is currently indexed as raw topic text. Visual concept maps are available for all authored Mathematics, Science, and Social Science chapters.
           </p>
           <div className="flex gap-2 justify-center">
@@ -179,22 +179,22 @@ export default function ConceptMapVisualizer() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
           {/* Main SVG Graph Canvas */}
           <Card className="lg:col-span-3 p-4 overflow-hidden relative min-h-[460px]">
-            <div className="flex items-center justify-between mb-3 text-xs text-[var(--muted)] border-b border-[var(--glass-border)] pb-2">
-              <span className="flex items-center gap-2 font-semibold text-[var(--ink)]">
-                <Layers size={14} className="text-indigo-400" />
+            <div className="flex items-center justify-between mb-3 text-xs text-[#52525B] border-b border-[#E4E2DD] pb-2">
+              <span className="flex items-center gap-2 font-semibold text-[#18181B]">
+                <Layers size={14} className="text-[#1B4332]" />
                 <span>Click any node to inspect semantic connections</span>
               </span>
-              <span className="font-mono text-[11px] text-[var(--muted-2)]">860 × {height}</span>
+              <span className="font-mono text-[11px] text-[#71717A]">860 × {height}</span>
             </div>
 
             <div className="overflow-auto max-h-[580px] p-2">
               <svg viewBox={`0 0 860 ${height}`} className="w-full h-auto min-w-[720px]" role="img" aria-label={graph.title || 'Concept Map'}>
                 <defs>
                   <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="2" orient="auto">
-                    <path d="M 0,0 L 8,2 L 0,4 Z" fill="#6366f1" />
+                    <path d="M 0,0 L 8,2 L 0,4 Z" fill="#1B4332" />
                   </marker>
                   <marker id="arrow-active" markerWidth="10" markerHeight="10" refX="8" refY="2" orient="auto">
-                    <path d="M 0,0 L 8,2 L 0,4 Z" fill="#10b981" />
+                    <path d="M 0,0 L 8,2 L 0,4 Z" fill="#D95D39" />
                   </marker>
                 </defs>
 
@@ -208,12 +208,11 @@ export default function ConceptMapVisualizer() {
                     <path
                       key={`e-${index}`}
                       d={`M ${a.x} ${a.y} Q ${(a.x + b.x) / 2 + 10} ${(a.y + b.y) / 2 - 10} ${b.x} ${b.y}`}
-                      stroke={isHighlighted ? '#10b981' : 'rgba(99,102,241,0.3)'}
+                      stroke={isHighlighted ? '#D95D39' : '#D4D1CA'}
                       strokeWidth={isHighlighted ? 2.5 : 1.2}
                       strokeDasharray={isHighlighted ? 'none' : '4 3'}
                       fill="none"
                       markerEnd={isHighlighted ? 'url(#arrow-active)' : 'url(#arrow)'}
-                      className="transition-all duration-300"
                     />
                   );
                 })}
@@ -229,7 +228,7 @@ export default function ConceptMapVisualizer() {
                   return (
                     <g
                       key={node.id}
-                      className="cursor-pointer transition-transform duration-200"
+                      className="cursor-pointer"
                       onClick={() => setSelectedNode(node)}
                       style={{ transformOrigin: `${p.x}px ${p.y}px` }}
                     >
@@ -239,10 +238,9 @@ export default function ConceptMapVisualizer() {
                         width={136}
                         height={42}
                         rx={10}
-                        fill={isSelected ? '#1e1b4b' : style.fill}
-                        stroke={isSelected ? '#818cf8' : isConnected ? '#34d399' : style.stroke}
+                        fill={isSelected ? '#1B4332' : style.fill}
+                        stroke={isSelected ? '#1B4332' : isConnected ? '#D95D39' : style.stroke}
                         strokeWidth={isSelected ? 2.5 : isConnected ? 2 : 1.2}
-                        className="transition-colors shadow-lg"
                       />
                       <rect
                         x={p.x - 68}
@@ -250,7 +248,7 @@ export default function ConceptMapVisualizer() {
                         width={5}
                         height={42}
                         rx={2}
-                        fill={isSelected ? '#818cf8' : style.accent}
+                        fill={isSelected ? '#D95D39' : style.accent}
                       />
                       {(() => {
                         const lbl = String(node.label || '');
@@ -261,7 +259,7 @@ export default function ConceptMapVisualizer() {
                               y={p.y + 4}
                               fontSize={10.5}
                               fontWeight="600"
-                              fill={isSelected ? '#ffffff' : style.text}
+                              fill={isSelected ? '#FAF9F6' : style.text}
                             >
                               {lbl}
                             </text>
@@ -291,7 +289,7 @@ export default function ConceptMapVisualizer() {
                               y={p.y - 3}
                               fontSize={10}
                               fontWeight="600"
-                              fill={isSelected ? '#ffffff' : style.text}
+                              fill={isSelected ? '#FAF9F6' : style.text}
                             >
                               {l1}
                             </text>
@@ -300,7 +298,7 @@ export default function ConceptMapVisualizer() {
                               y={p.y + 11}
                               fontSize={9}
                               fontWeight="500"
-                              fill={isSelected ? '#ffffff' : style.text}
+                              fill={isSelected ? '#FAF9F6' : style.text}
                               opacity={0.88}
                             >
                               {l2}
@@ -315,7 +313,7 @@ export default function ConceptMapVisualizer() {
             </div>
 
             {/* Legend */}
-            <div className="flex gap-2 flex-wrap mt-3 pt-3 border-t border-white/10">
+            <div className="flex gap-2 flex-wrap mt-3 pt-3 border-t border-[#E4E2DD]">
               {Array.from(groups.entries()).map(([group]) => {
                 const style = COLOR_MAP[group] || COLOR_MAP.concept;
                 return (
@@ -334,18 +332,18 @@ export default function ConceptMapVisualizer() {
 
           {/* Node Inspector Side Panel */}
           <div className="space-y-4">
-            <Card className="p-5 border-[var(--primary)]/30">
-              <div className="eyebrow light mb-2 text-[var(--primary)]">Node Inspector</div>
+            <Card className="p-5 border-[#E4E2DD]">
+              <div className="eyebrow light mb-2 text-[#1B4332]">Node Inspector</div>
               {selectedNode ? (
                 <div className="space-y-3">
-                  <h3 className="text-base font-bold text-[var(--ink)]">{selectedNode.label}</h3>
+                  <h3 className="text-base font-bold text-[#18181B]">{selectedNode.label}</h3>
                   <div className="flex items-center gap-2">
-                    <Badge tone="indigo" className="text-xs uppercase">{selectedNode.group || 'concept'}</Badge>
-                    <span className="text-[11px] font-mono text-[var(--muted)]">ID: {selectedNode.id}</span>
+                    <Badge tone="forest" className="text-xs uppercase">{selectedNode.group || 'concept'}</Badge>
+                    <span className="text-[11px] font-mono text-[#52525B]">ID: {selectedNode.id}</span>
                   </div>
 
-                  <div className="pt-3 border-t border-[var(--glass-border)] space-y-2">
-                    <span className="text-xs font-semibold text-[var(--ink)] block">Direct Connections ({connectedEdges.length}):</span>
+                  <div className="pt-3 border-t border-[#E4E2DD] space-y-2">
+                    <span className="text-xs font-semibold text-[#18181B] block">Direct Connections ({connectedEdges.length}):</span>
                     {connectedEdges.length === 0 ? (
                       <span className="text-xs text-muted block">No incoming or outgoing links</span>
                     ) : (
@@ -357,11 +355,11 @@ export default function ConceptMapVisualizer() {
                           return (
                             <button
                               key={i}
-                              className="w-full text-left p-2 rounded-lg bg-[var(--surface-2)] hover:bg-[var(--surface)] border border-[var(--glass-border)] text-xs flex items-center justify-between text-[var(--ink)] transition-colors"
+                              className="w-full text-left p-2 rounded-lg bg-[#FAF9F6] hover:bg-[#EAE7E0] border border-[#E4E2DD] text-xs flex items-center justify-between text-[#18181B] transition-colors"
                               onClick={() => otherNode && setSelectedNode(otherNode)}
                             >
                               <span>{isOutgoing ? '→ ' : '← '} {otherNode?.label || otherId}</span>
-                              <ArrowRight size={12} className="text-[var(--muted)]" />
+                              <ArrowRight size={12} className="text-[#52525B]" />
                             </button>
                           );
                         })}
@@ -375,8 +373,8 @@ export default function ConceptMapVisualizer() {
             </Card>
 
             <Card className="p-4 space-y-2">
-              <span className="text-xs font-semibold text-[var(--ink)] block">Pedagogical Value</span>
-              <p className="text-[11px] text-[var(--muted)] leading-relaxed">
+              <span className="text-xs font-semibold text-[#18181B] block">Pedagogical Value</span>
+              <p className="text-[11px] text-[#52525B] leading-relaxed">
                 Graph-structured learning enhances retention for Class X Board reasoning questions and builds deep mental schemata for UPSC/DSC analytical sections.
               </p>
             </Card>

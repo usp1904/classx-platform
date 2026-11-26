@@ -1,26 +1,26 @@
 {
   "meta": {
-    "title": "NCERT Class X (2026-27) → RD Sharma & RS Aggarwal Study Plan",
+    "title": "NCERT Class X (2026-27) Structured Mastery & Competitive Extension Study Plan",
     "generatedAt": "2026-07-15",
     "curriculum": "NCERT 2026-27 Academic Year",
     "referenceBooks": [
-      "RD Sharma Class X (2026-27 Edition)",
-      "RS Aggarwal Class X (2026-27 Edition)"
+      "NCERT Class X Mathematics Textbook (2026-27 Edition)",
+      "NCERT Exemplar Problems & ClassX Competitive Extensions (2026-27 Edition)"
     ],
-    "pedagogy": "Class 6 Anchor → NCERT Core → RD Sharma / RS Aggarwal Extension",
+    "pedagogy": "Class 6 Anchor → NCERT Core → Advanced Competitive Extension",
     "scope": "Mathematics only — every NCERT topic mapped, no out-of-syllabus content"
   },
   "pedagogy": {
     "class6Anchor": "Every topic begins with a real-life analogy a Class 6 student can understand (e.g., swing for quadratic, playground slide for trigonometry, treasure map for coordinate geometry).",
     "ncertCore": "NCERT textbook is the absolute floor — all board exam questions are directly from NCERT exercises and examples.",
-    "rdSharmaEngine": "RD Sharma builds depth — advanced problem sets, multiple variations, competitive exam readiness.",
-    "rsAggarwalBridge": "RS Aggarwal bridges NCERT to competitive — pattern recognition, time-bound solving, mixed problem sets."
+    "advancedDepthEngine": "NCERT Exemplar & ClassX Problem Sets build depth — advanced problem sets, multiple variations, competitive exam readiness.",
+    "competitiveBridge": "ClassX Competitive Bridge links NCERT to competitive exams — pattern recognition, time-bound solving, mixed problem sets."
   },
   "validation": {
-    "ncertCoverage": "All 15 NCERT chapters mapped — every topic and exercise referenced in at least one reference book",
-    "noOutOfSyllabus": "No RD Sharma or RS Aggarwal chapter outside the 15 NCERT Class X chapters is included",
-    "referenceBookChaptersMapped": {
-      "rdSharma": [
+    "ncertCoverage": "All 15 NCERT chapters mapped — every topic and exercise referenced in at least one structured extension module",
+    "noOutOfSyllabus": "No advanced extension chapter outside the 15 NCERT Class X chapters is included",
+    "extensionChaptersMapped": {
+      "ncertExemplar": [
         "Ch 1 (Real Numbers)",
         "Ch 2 (Polynomials)",
         "Ch 3 (Linear Equations)",
@@ -37,7 +37,7 @@
         "Ch 15 (Statistics)",
         "Ch 16 (Probability)"
       ],
-      "rsAggarwal": [
+      "competitiveExtension": [
         "Ch 1 (Real Numbers)",
         "Ch 2 (Polynomials)",
         "Ch 3 (Linear Equations)",
@@ -80,7 +80,7 @@
         "areas-related-to-circles",
         "surface-areas-and-volumes"
       ],
-      "strategy": "Focus on theorem proofs and visualization. Draw diagrams for every problem. RD Sharma is critical for Triangles and Mensuration.",
+      "strategy": "Focus on theorem proofs and visualization. Draw diagrams for every problem. Extended NCERT Exemplar sets are critical for Triangles and Mensuration.",
       "totalTime": "8-10 weeks (1-2 chapters/week)",
       "boardExamWeightage": "~35 marks"
     },
@@ -97,8 +97,8 @@
       "boardExamWeightage": "~20 marks"
     },
     "phase4": {
-      "name": "Revision & RD Sharma / RS Aggarwal Deep-Dive",
-      "strategy": "Revisit every NCERT chapter, then solve RD Sharma + RS Aggarwal exercises flagged as 'must-do'. Focus on word problems and competitive variations.",
+      "name": "Revision & Advanced Competitive Deep-Dive",
+      "strategy": "Revisit every NCERT chapter, then solve NCERT Exemplar and ClassX extension exercises flagged as 'must-do'. Focus on word problems and competitive variations.",
       "totalTime": "4-6 weeks",
       "boardExamWeightage": "Revision + JEE/NEET foundation"
     }
@@ -114,7 +114,7 @@
       "focus": "Concept + NCERT exercises",
       "minutes": 240,
       "target": "Real Numbers: 2 focused sessions, 1 diagnostic set",
-      "resource": "NCERT core + RD Sharma must-do"
+      "resource": "NCERT core + ClassX Exemplar must-do"
     },
     {
       "week": 2,
@@ -126,7 +126,7 @@
       "focus": "Practice + error log",
       "minutes": 240,
       "target": "Polynomials: 2 focused sessions, 1 diagnostic set",
-      "resource": "NCERT core + RD Sharma must-do"
+      "resource": "NCERT core + ClassX Exemplar must-do"
     },
     {
       "week": 3,
@@ -138,7 +138,7 @@
       "focus": "Concept + NCERT exercises",
       "minutes": 240,
       "target": "Pair of Linear Equations in Two Variables: 2 focused sessions, 1 diagnostic set",
-      "resource": "NCERT core + RD Sharma must-do"
+      "resource": "NCERT core + ClassX Exemplar must-do"
     },
     {
       "week": 4,
@@ -150,7 +150,7 @@
       "focus": "Practice + error log",
       "minutes": 240,
       "target": "Quadratic Equations: 2 focused sessions, 1 diagnostic set",
-      "resource": "NCERT core + RD Sharma must-do"
+      "resource": "NCERT core + ClassX Exemplar must-do"
     },
     {
       "week": 5,
@@ -162,7 +162,7 @@
       "focus": "Concept + NCERT exercises",
       "minutes": 240,
       "target": "Arithmetic Progressions: 2 focused sessions, 1 diagnostic set",
-      "resource": "NCERT core + RD Sharma must-do"
+      "resource": "NCERT core + ClassX Exemplar must-do"
     },
     {
       "week": 6,
@@ -174,7 +174,7 @@
       "focus": "Practice + error log",
       "minutes": 240,
       "target": "Triangles: 2 focused sessions, 1 diagnostic set",
-      "resource": "NCERT core + RD Sharma must-do"
+      "resource": "NCERT core + ClassX Exemplar must-do"
     },
     {
       "week": 7,
@@ -186,7 +186,7 @@
       "focus": "Concept + NCERT exercises",
       "minutes": 240,
       "target": "Coordinate Geometry: 2 focused sessions, 1 diagnostic set",
-      "resource": "NCERT core + RD Sharma must-do"
+      "resource": "NCERT core + ClassX Exemplar must-do"
     },
     {
       "week": 8,
@@ -198,7 +198,7 @@
       "focus": "Practice + error log",
       "minutes": 240,
       "target": "Circles: 2 focused sessions, 1 diagnostic set",
-      "resource": "NCERT core + RD Sharma must-do"
+      "resource": "NCERT core + ClassX Exemplar must-do"
     },
     {
       "week": 9,
@@ -210,7 +210,7 @@
       "focus": "Concept + NCERT exercises",
       "minutes": 240,
       "target": "Constructions: 2 focused sessions, 1 diagnostic set",
-      "resource": "NCERT core + RD Sharma must-do"
+      "resource": "NCERT core + ClassX Exemplar must-do"
     },
     {
       "week": 10,
@@ -222,7 +222,7 @@
       "focus": "Practice + error log",
       "minutes": 240,
       "target": "Areas Related to Circles: 2 focused sessions, 1 diagnostic set",
-      "resource": "NCERT core + RD Sharma must-do"
+      "resource": "NCERT core + ClassX Exemplar must-do"
     },
     {
       "week": 11,
@@ -234,7 +234,7 @@
       "focus": "Concept + NCERT exercises",
       "minutes": 240,
       "target": "Surface Areas and Volumes: 2 focused sessions, 1 diagnostic set",
-      "resource": "NCERT core + RD Sharma must-do"
+      "resource": "NCERT core + ClassX Exemplar must-do"
     },
     {
       "week": 12,
@@ -246,7 +246,7 @@
       "focus": "Practice + error log",
       "minutes": 240,
       "target": "Introduction to Trigonometry: 2 focused sessions, 1 diagnostic set",
-      "resource": "NCERT core + RD Sharma must-do"
+      "resource": "NCERT core + ClassX Exemplar must-do"
     },
     {
       "week": 13,
@@ -258,7 +258,7 @@
       "focus": "Concept + NCERT exercises",
       "minutes": 240,
       "target": "Some Applications of Trigonometry: 2 focused sessions, 1 diagnostic set",
-      "resource": "NCERT core + RD Sharma must-do"
+      "resource": "NCERT core + ClassX Exemplar must-do"
     },
     {
       "week": 14,
@@ -270,7 +270,7 @@
       "focus": "Practice + error log",
       "minutes": 240,
       "target": "Statistics: 2 focused sessions, 1 diagnostic set",
-      "resource": "NCERT core + RD Sharma must-do"
+      "resource": "NCERT core + ClassX Exemplar must-do"
     },
     {
       "week": 15,
@@ -282,7 +282,7 @@
       "focus": "Concept + NCERT exercises",
       "minutes": 240,
       "target": "Probability: 2 focused sessions, 1 diagnostic set",
-      "resource": "NCERT core + RD Sharma must-do"
+      "resource": "NCERT core + ClassX Exemplar must-do"
     }
   ]
 }

@@ -7,12 +7,12 @@ interface Props {
 }
 
 const colors: Record<string, string> = {
-  foundation: '#4855c9',
-  method: '#0f9f7f',
-  analysis: '#e79a2d',
-  application: '#d95c72',
-  goal: '#7a4fbf',
-  concept: '#4855c9',
+  foundation: '#1B4332',
+  method: '#15803D',
+  analysis: '#B45309',
+  application: '#D95D39',
+  goal: '#18181B',
+  concept: '#1B4332',
 };
 
 export function ConceptMap({ title, nodes, edges }: Props) {
@@ -60,7 +60,7 @@ export function ConceptMap({ title, nodes, edges }: Props) {
                 key={index}
                 d={`M ${a.x + 69} ${a.y} C ${a.x + 112} ${a.y}, ${b.x - 112} ${b.y}, ${b.x - 69} ${b.y}`}
                 fill="none"
-                stroke="var(--glass-border-strong, #64748b)"
+                stroke="var(--line-strong, #D4D1CA)"
                 strokeWidth="1.5"
                 markerEnd="url(#arrow)"
               />
@@ -68,7 +68,7 @@ export function ConceptMap({ title, nodes, edges }: Props) {
           })}
           <defs>
             <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-              <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--glass-border-strong, #64748b)" />
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--line-strong, #D4D1CA)" />
             </marker>
           </defs>
           {[...layout.positions.entries()].map(([id, position]) => {
@@ -96,23 +96,23 @@ export function ConceptMap({ title, nodes, edges }: Props) {
             }
             return (
               <g key={id}>
-                <rect x={position.x} y={position.y - 24} width="138" height="48" rx="12" fill="var(--surface-solid, #1e293b)" stroke={color} strokeWidth="1.6" />
+                <rect x={position.x} y={position.y - 24} width="138" height="48" rx="12" fill="var(--canvas, #FAF9F6)" stroke={color} strokeWidth="1.6" />
                 <circle cx={position.x + 12} cy={position.y} r="4" fill={color} />
                 {line2 ? (
                   <>
-                    <text x={position.x + 22} y={position.y - 3} fontSize="10" fontWeight="600" fill="var(--ink, #f8fafc)">
+                    <text x={position.x + 22} y={position.y - 3} fontSize="10" fontWeight="600" fill="var(--ink, #18181B)">
                       {line1}
                     </text>
-                    <text x={position.x + 22} y={position.y + 11} fontSize="9" fill="var(--muted, #94a3b8)">
+                    <text x={position.x + 22} y={position.y + 11} fontSize="9" fill="var(--muted, #52525B)">
                       {line2}
                     </text>
                   </>
                 ) : (
-                  <text x={position.x + 22} y={position.y + 4} fontSize="10.5" fontWeight="600" fill="var(--ink, #f8fafc)">
+                  <text x={position.x + 22} y={position.y + 4} fontSize="10.5" fontWeight="600" fill="var(--ink, #18181B)">
                     {line1}
                   </text>
                 )}
-                <text x={position.x} y={position.y + 42} fontSize="8.5" fill="var(--muted-2, #9aa0ae)" letterSpacing="0.08em">{group.toUpperCase()}</text>
+                <text x={position.x} y={position.y + 42} fontSize="8.5" fill="var(--muted-2, #71717A)" letterSpacing="0.08em">{group.toUpperCase()}</text>
               </g>
             );
           })}

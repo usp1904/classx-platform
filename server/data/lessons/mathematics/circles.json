@@ -11,7 +11,7 @@
     "Prove and apply the Tangent-Secant Theorem (Alternate Segment Theorem)",
     "Solve problems involving tangents, secants, and their combinations",
     "Connect circle theorems to real-life applications in Indian context",
-    "Solve RD Sharma and RS Aggarwal extension problems for competitive readiness"
+    "Solve NCERT Reference Practice and extension problems for competitive readiness"
   ],
   "prerequisite_nodes": [
     "MATH_CLASS9_CIRCLES_BASIC",
@@ -334,8 +334,8 @@
       ]
     }
   },
-  "rd_sharma_extensions": {
-    "book": "RD Sharma Class 10, Chapter 8 — Circles (Note: chapter numbering varies by edition; verify against your copy)",
+  "advanced_extensions": {
+    "book": "NCERT Reference Practice Class 10, Chapter 8 — Circles (Note: chapter numbering varies by edition; verify against your copy)",
     "topics": [
       {
         "name": "Common Tangents to Two Circles",
@@ -372,8 +372,8 @@
       }
     ]
   },
-  "rs_aggarwal_extensions": {
-    "book": "RS Aggarwal Class 10, Chapter 10 — Circles",
+  "competitive_bridge_extensions": {
+    "book": "NCERT Competitive Practice Class 10, Chapter 10 — Circles",
     "topics": [
       {
         "name": "Cyclic Quadrilaterals with Tangents",

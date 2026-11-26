@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Trophy, Flame, Zap, Award, Sparkles, CheckCircle2, Star, ShieldCheck, Target, ArrowUpRight } from 'lucide-react';
+import { Trophy, Flame, Zap, Award, Star } from 'lucide-react';
 import { Badge, Button, Card, SectionHeader, Stat, ProgressRing } from '../components/ui';
 import { api } from '../api';
 import { useApp } from '../lib/store';
@@ -66,7 +66,7 @@ export default function Gamification() {
       <div className="page-head">
         <div>
           <div className="eyebrow light flex items-center gap-2">
-            <Trophy size={14} className="text-amber-400" />
+            <Trophy size={14} className="text-[#B45309]" />
             <span>Mastery Gamification & Peer Rankings</span>
           </div>
           <h1>Learning Motivation Engine</h1>
@@ -78,7 +78,7 @@ export default function Gamification() {
           <Badge tone="saffron" className="text-xs font-bold flex items-center gap-1">
             <Flame size={12} /> {progress.streak || 1} Day Streak
           </Badge>
-          <Badge tone="indigo" className="text-xs font-bold">
+          <Badge tone="forest" className="text-xs font-bold">
             Level {currentLevel} Scholar
           </Badge>
         </div>
@@ -86,12 +86,12 @@ export default function Gamification() {
 
       {/* Hero Stats Card */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <Card className="p-5 flex items-center gap-4 bg-[var(--surface)] border-[var(--glass-border)]">
-          <ProgressRing value={percentToNextLevel} size={64} stroke={6} color="var(--primary)" />
+        <Card className="p-5 flex items-center gap-4 bg-[#F3F1EC] border-[#E4E2DD]">
+          <ProgressRing value={percentToNextLevel} size={64} stroke={6} color="var(--accent-forest)" />
           <div>
-            <span className="text-xs text-[var(--primary)] font-semibold uppercase tracking-wider block">Level {currentLevel}</span>
-            <div className="text-xl font-bold text-[var(--ink)]">{currentXp.toLocaleString()} XP</div>
-            <small className="text-[var(--muted)] text-[11px] block">{200 - progressInLevel} XP to Level {currentLevel + 1}</small>
+            <span className="text-xs text-[#1B4332] font-semibold uppercase tracking-wider block">Level {currentLevel}</span>
+            <div className="text-xl font-bold text-[#18181B]">{currentXp.toLocaleString()} XP</div>
+            <small className="text-[#52525B] text-[11px] block">{200 - progressInLevel} XP to Level {currentLevel + 1}</small>
           </div>
         </Card>
 
@@ -99,7 +99,7 @@ export default function Gamification() {
           label="Active Study Streak"
           value={`${progress.streak || 1} Days`}
           hint="Compounding momentum"
-          icon={<Flame size={20} className="text-amber-400" />}
+          icon={<Flame size={20} className="text-[#B45309]" />}
           tone="saffron"
         />
 
@@ -107,7 +107,7 @@ export default function Gamification() {
           label="Mastery Badges"
           value={`${(progress.badges || []).length} / ${badges.length || 5}`}
           hint="Unlocked capabilities"
-          icon={<Award size={20} className="text-emerald-400" />}
+          icon={<Award size={20} className="text-[#1B4332]" />}
           tone="mint"
         />
 
@@ -115,15 +115,15 @@ export default function Gamification() {
           label="Cohort Standing"
           value="#4"
           hint="Top 5% of Class X cohort"
-          icon={<Star size={20} className="text-purple-400" />}
-          tone="indigo"
+          icon={<Star size={20} className="text-[#D95D39]" />}
+          tone="forest"
         />
       </div>
 
       {xpAwardedMsg && (
-        <div className="p-3 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-500 text-xs font-semibold flex items-center justify-between animate-fadeUp">
-          <span className="flex items-center gap-2"><Sparkles size={14} />{xpAwardedMsg}</span>
-          <span className="text-[10px] text-emerald-600 font-bold">Streak intact</span>
+        <div className="p-3 rounded-xl bg-[#DCFCE7] border border-[#1B4332] text-[#1B4332] text-xs font-semibold flex items-center justify-between">
+          <span className="flex items-center gap-2"><Award size={14} />{xpAwardedMsg}</span>
+          <span className="text-[10px] text-[#1B4332] font-bold">Streak intact</span>
         </div>
       )}
 
@@ -134,7 +134,7 @@ export default function Gamification() {
           description="Earn honors by mastering full chapters, conquering mock papers, and answering precision diagnostics"
           action={
             <Button variant="secondary" size="sm" onClick={award}>
-              <Zap size={14} className="text-amber-400" />
+              <Zap size={14} className="text-[#B45309]" />
               <span>Claim +50 XP Bonus</span>
             </Button>
           }
@@ -146,18 +146,18 @@ export default function Gamification() {
             return (
               <div
                 key={badge.id}
-                className={`p-4 rounded-2xl border text-center transition-all duration-200 flex flex-col items-center justify-between gap-3 ${
+                className={`p-4 rounded-2xl border text-center transition-colors flex flex-col items-center justify-between gap-3 ${
                   earned
-                    ? 'bg-gradient-to-b from-amber-500/15 to-transparent border-amber-500/35 shadow-lg shadow-amber-500/10'
-                    : 'bg-[var(--surface-2)] border-[var(--glass-border)] opacity-80 hover:opacity-100'
+                    ? 'bg-[#FEF08A] border-[#B45309]'
+                    : 'bg-[#FAF9F6] border-[#E4E2DD]'
                 }`}
               >
-                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center ${earned ? 'bg-amber-500/20 text-amber-500 border border-amber-500/40 shadow-md shadow-amber-500/20' : 'bg-[var(--surface)] text-[var(--muted)] border border-[var(--glass-border)]'}`}>
+                <div className={`w-14 h-14 rounded-2xl flex items-center justify-center ${earned ? 'bg-[#FAF9F6] text-[#B45309] border border-[#B45309]' : 'bg-[#F3F1EC] text-[#71717A] border border-[#E4E2DD]'}`}>
                   <Award size={28} />
                 </div>
                 <div>
-                  <strong className={`block text-xs font-bold mb-1 ${earned ? 'text-amber-500' : 'text-[var(--ink)]'}`}>{badge.name}</strong>
-                  <span className="text-[10px] text-[var(--muted)] block">+{badge.xp} XP</span>
+                  <strong className="block text-xs font-bold mb-1 text-[#18181B]">{badge.name}</strong>
+                  <span className="text-[10px] text-[#52525B] block">+{badge.xp} XP</span>
                 </div>
                 <Badge tone={earned ? 'mint' : 'neutral'} className="text-[10px] w-full justify-center">
                   {earned ? 'Unlocked ✓' : 'In Progress'}
@@ -173,13 +173,13 @@ export default function Gamification() {
         <SectionHeader
           title="State & Cohort Leaderboard"
           description="Weekly rankings based on verified chapter completions, practice accuracy, and daily consistency"
-          action={<Badge tone="indigo" className="text-xs">CBSE & Foundation Cohort</Badge>}
+          action={<Badge tone="forest" className="text-xs">CBSE & Foundation Cohort</Badge>}
         />
 
         <div className="overflow-x-auto mt-4">
           <table className="w-full text-left text-xs">
             <thead>
-              <tr className="border-b border-[var(--glass-border)] text-[var(--muted)] pb-3">
+              <tr className="border-b border-[#E4E2DD] text-[#52525B] pb-3">
                 <th className="pb-3 font-semibold pl-2">Rank</th>
                 <th className="pb-3 font-semibold">Scholar</th>
                 <th className="pb-3 font-semibold">XP Score</th>
@@ -188,28 +188,28 @@ export default function Gamification() {
                 <th className="pb-3 font-semibold pr-2">Honors</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-[var(--glass-border)]">
+            <tbody>
               {leaderboard.map((entry, i) => {
                 const isMe = (entry.userId || '').includes('You');
                 const rankMedal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `#${i + 1}`;
                 return (
                   <tr
                     key={entry.userId || i}
-                    className={`transition-colors ${isMe ? 'bg-[var(--primary-soft)] font-semibold text-[var(--primary)]' : 'hover:bg-[var(--surface-2)] text-[var(--ink)]'}`}
+                    className={`border-b border-[#E4E2DD] transition-colors ${isMe ? 'bg-[#DCFCE7] font-semibold text-[#1B4332]' : 'hover:bg-[#FAF9F6] text-[#18181B]'}`}
                   >
                     <td className="py-3 pl-2 font-mono font-bold">{rankMedal}</td>
                     <td className="py-3 font-medium flex items-center gap-2">
-                      <div className="w-7 h-7 rounded-full bg-[var(--surface-2)] border border-[var(--glass-border)] flex items-center justify-center text-[10px] font-bold text-[var(--ink)]">
+                      <div className="w-7 h-7 rounded-full bg-[#FAF9F6] border border-[#E4E2DD] flex items-center justify-center text-[10px] font-bold text-[#18181B]">
                         {(entry.userId || '??').slice(0, 2).toUpperCase()}
                       </div>
                       <span>{entry.userId || 'Scholar'}</span>
-                      {isMe && <Badge tone="indigo" className="text-[9px] py-0 px-1.5 ml-1">You</Badge>}
+                      {isMe && <Badge tone="forest" className="text-[9px] py-0 px-1.5 ml-1">You</Badge>}
                     </td>
-                    <td className="py-3 font-mono font-bold text-[var(--ink)]">{entry.xp.toLocaleString()}</td>
-                    <td className="py-3 text-amber-500 font-semibold">{entry.streak}d 🔥</td>
-                    <td className="py-3 text-[var(--muted)]">{entry.completedChapters} chapters</td>
+                    <td className="py-3 font-mono font-bold text-[#18181B]">{entry.xp.toLocaleString()}</td>
+                    <td className="py-3 text-[#B45309] font-semibold">{entry.streak}d 🔥</td>
+                    <td className="py-3 text-[#52525B]">{entry.completedChapters} chapters</td>
                     <td className="py-3 pr-2">
-                      <span className="inline-flex items-center gap-1 text-emerald-500 font-medium">
+                      <span className="inline-flex items-center gap-1 text-[#1B4332] font-medium">
                         <Award size={13} /> {entry.badges}
                       </span>
                     </td>

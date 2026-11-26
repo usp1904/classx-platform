@@ -16,16 +16,22 @@ const EVAL_DATASET_PATH = path.resolve(__dirname, '..', 'eval', 'dataset-class10
  */
 let productionGrader = null;
 let productionAnalyzer = null;
+let graderSource = 'REFERENCE_SPECIFICATION_ORACLE';
+let analyzerSource = 'REFERENCE_SPECIFICATION_ORACLE';
 let adapterSource = 'REFERENCE_SPECIFICATION_ORACLE';
 
 try {
   const prodModule = await import('../server/lib/agentic-rag.js');
   if (typeof prodModule.gradeRetrieval === 'function') {
     productionGrader = prodModule.gradeRetrieval;
-    adapterSource = 'PRODUCTION_SERVER_MODULE';
+    graderSource = 'PRODUCTION_SERVER_MODULE';
   }
   if (typeof prodModule.analyzeQuery === 'function') {
     productionAnalyzer = prodModule.analyzeQuery;
+    analyzerSource = 'PRODUCTION_SERVER_MODULE';
+  }
+  if (productionGrader && productionAnalyzer) {
+    adapterSource = 'PRODUCTION_SERVER_MODULE';
   }
 } catch (_) {
   // Pre-implementation phase: use Reference Specification Oracle
@@ -382,6 +388,16 @@ test('Grader Integration: Production module binding and live server/lib/rag.js v
   assert.ok(productionTokenize('NCERT_TEXTBOOK CBSE_SQP').length >= 2);
 
   if (process.env.STRICT_PRODUCTION === 'true') {
+    assert.equal(
+      graderSource,
+      'PRODUCTION_SERVER_MODULE',
+      'Strict production mode requires live gradeRetrieval in server/lib/agentic-rag.js'
+    );
+    assert.equal(
+      analyzerSource,
+      'PRODUCTION_SERVER_MODULE',
+      'Strict production mode requires live analyzeQuery in server/lib/agentic-rag.js'
+    );
     assert.equal(
       adapterSource,
       'PRODUCTION_SERVER_MODULE',

@@ -11,7 +11,7 @@
     "Derive relationships between zeroes and coefficients of quadratic and cubic polynomials",
     "Divide polynomials using the long division algorithm",
     "Connect polynomial concepts to real-life applications in the Indian context",
-    "Solve RD Sharma and RS Aggarwal extension problems for competitive exam readiness"
+    "Solve NCERT Reference Practice and extension problems for competitive exam readiness"
   ],
   "prerequisite_nodes": [
     "MATH_CLASS9_POLYNOMIALS_BASIC",
@@ -477,8 +477,8 @@
       ]
     }
   },
-  "rd_sharma_extensions": {
-    "book": "RD Sharma Class 10, Chapter 2 — Polynomials",
+  "advanced_extensions": {
+    "book": "NCERT Reference Practice Class 10, Chapter 2 — Polynomials",
     "topics": [
       {
         "name": "Graphical Representation of Polynomials",
@@ -520,8 +520,8 @@
       }
     ]
   },
-  "rs_aggarwal_extensions": {
-    "book": "RS Aggarwal Class 10, Chapter 2 — Polynomials",
+  "competitive_bridge_extensions": {
+    "book": "NCERT Competitive Practice Class 10, Chapter 2 — Polynomials",
     "topics": [
       {
         "name": "Division Algorithm for Polynomials",

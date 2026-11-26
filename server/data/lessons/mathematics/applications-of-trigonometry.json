@@ -339,12 +339,12 @@
       ]
     }
   },
-  "rd_sharma_extensions": {
-    "book": "RD Sharma Class 10, Chapter 8 — Applications of Trigonometry",
+  "advanced_extensions": {
+    "book": "NCERT Reference Practice Class 10, Chapter 8 — Applications of Trigonometry",
     "topics": [
       {
         "name": "Multi-Step Height-Distance Problems",
-        "concept": "RD Sharma includes problems where multiple right triangles are formed and need to be solved sequentially using different trigonometric ratios.",
+        "concept": "NCERT Reference Practice includes problems where multiple right triangles are formed and need to be solved sequentially using different trigonometric ratios.",
         "competitive_note": "These problems often appear in JEE Main as 'height and distance' questions. The key is to identify a common side between two triangles and solve simultaneously.",
         "examples": [
           {
@@ -364,7 +364,7 @@
       },
       {
         "name": "Problems with Different Angles of Elevation",
-        "concept": "RD Sharma includes scenarios where observers at different positions or heights measure the same object.",
+        "concept": "NCERT Reference Practice includes scenarios where observers at different positions or heights measure the same object.",
         "examples": [
           {
             "problem": "A person standing on the bank of a river observes that the angle of elevation of the top of a tree on the opposite bank is 60°. When he retreates 40 m from the bank, he finds the angle to be 30°. Find the height of the tree and the width of the river.",
@@ -381,12 +381,12 @@
       }
     ]
   },
-  "rs_aggarwal_extensions": {
-    "book": "RS Aggarwal Class 10, Chapter 14 — Heights and Distances",
+  "competitive_bridge_extensions": {
+    "book": "NCERT Competitive Practice Class 10, Chapter 14 — Heights and Distances",
     "topics": [
       {
         "name": "Problems with Two Observers",
-        "concept": "RS Aggarwal includes problems where two observers at different positions measure the angle of elevation to the same object, and we need to find the height or distance.",
+        "concept": "NCERT Competitive Practice includes problems where two observers at different positions measure the angle of elevation to the same object, and we need to find the height or distance.",
         "examples": [
           {
             "problem": "Two men on either side of a 75 m high building observe the angle of elevation of the top as 30° and 60°. Find the distance between the two men.",

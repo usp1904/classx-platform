@@ -471,12 +471,12 @@
       ]
     }
   },
-  "rd_sharma_extensions": {
-    "book": "RD Sharma Class 10, Chapter 6 — Coordinate Geometry",
+  "advanced_extensions": {
+    "book": "NCERT Reference Practice Class 10, Chapter 6 — Coordinate Geometry",
     "topics": [
       {
         "name": "Applications of Section Formula — Centroid, Incenter, and More",
-        "concept": "The centroid of a triangle divides each median in ratio 2:1. The coordinates of centroid G = ((x₁+x₂+x₃)/3, (y₁+y₂+y₃)/3). RD Sharma includes problems involving centroid, orthocenter, and circumcenter.",
+        "concept": "The centroid of a triangle divides each median in ratio 2:1. The coordinates of centroid G = ((x₁+x₂+x₃)/3, (y₁+y₂+y₃)/3). NCERT Reference Practice includes problems involving centroid, orthocenter, and circumcenter.",
         "competitive_note": "Centroid formula is frequently asked in JEE Main. Remember: centroid = average of all three vertices.",
         "examples": [
           {
@@ -508,8 +508,8 @@
       }
     ]
   },
-  "rs_aggarwal_extensions": {
-    "book": "RS Aggarwal Class 10, Chapter 6 — Coordinate Geometry",
+  "competitive_bridge_extensions": {
+    "book": "NCERT Competitive Practice Class 10, Chapter 6 — Coordinate Geometry",
     "topics": [
       {
         "name": "Area of Quadrilaterals and Polygons",

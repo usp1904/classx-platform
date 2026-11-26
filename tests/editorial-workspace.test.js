@@ -16,6 +16,9 @@ import path from 'node:path';
 
 const PLATFORM_ROOT = path.resolve(import.meta.dirname, '..');
 const STYLES_CSS_PATH = path.join(PLATFORM_ROOT, 'web', 'src', 'styles.css');
+const UTILITIES_CSS_PATH = path.join(PLATFORM_ROOT, 'web', 'src', 'utilities.css');
+const PIPELINE_STATUS_TSX_PATH = path.join(PLATFORM_ROOT, 'web', 'src', 'components', 'PipelineStatus.tsx');
+const STUDY_WORKSPACE_TSX_PATH = path.join(PLATFORM_ROOT, 'web', 'src', 'components', 'StudyWorkspace.tsx');
 
 /**
  * Authoritative Warm Paper Design Tokens per ORIGINAL_REQUEST.md & PROJECT.md
@@ -88,6 +91,23 @@ export function parseCssCustomProperties(cssText) {
 }
 
 /**
+ * Extracts and unescapes CSS class names defined in stylesheet selector blocks.
+ */
+export function extractDefinedCssClasses(cssText) {
+  const classes = new Set();
+  if (!cssText) return classes;
+
+  const stripped = cssText.replace(/\/\*[\s\S]*?\*\//g, '');
+  const selectorRegex = /(^|[},{\s])\.((?:\\.|[a-zA-Z0-9_:-])+)/g;
+  let match;
+  while ((match = selectorRegex.exec(stripped)) !== null) {
+    const unescaped = match[2].replace(/\\(.)/g, '$1');
+    classes.add(unescaped);
+  }
+  return classes;
+}
+
+/**
  * Scans CSS for forbidden AI visual clichés per R2:
  * No purple/indigo gradients, no neon dark glows, no glassmorphism backdrop-filters, no sparkle blobs.
  */
@@ -98,18 +118,23 @@ export function auditCssClichés(cssText) {
   const rules = [
     {
       name: 'Glassmorphism backdrop-filter',
-      regex: /backdrop-filter\s*:\s*blur/i,
+      regex: /(?:-webkit-)?backdrop-filter\s*:\s*(?:blur\s*\(|var\(\s*--glass-blur)/i,
       reason: 'Physical study workbook layout forbids translucent frosted glass',
     },
     {
       name: 'Purple / Indigo gradient cliché',
-      regex: /linear-gradient\([^)]*(?:#7c3aed|#6366f1|#a855f7|rgba\(\s*124,\s*58,\s*237)/i,
-      reason: 'Forbids generic AI purple/indigo marketing gradients',
+      regex: /(?:linear|radial)-gradient\([^)]*(?:#7c3aed|#6366f1|#a855f7|rgba\(\s*124,\s*58,\s*237|var\(\s*--primary\b|var\(\s*--secondary\b)/i,
+      reason: 'Forbids generic AI purple/indigo or CSS-variable marketing gradients',
     },
     {
       name: 'Neon dark-mode glows',
-      regex: /--primary-glow\s*:|--secondary-glow\s*:|box-shadow\s*:\s*[^;]*rgba\(\s*37,\s*99,\s*235,\s*0\.35\)/i,
+      regex: /--[a-z0-9-]*glow\s*:|box-shadow\s*:\s*[^;]*(?:rgba\(\s*37,\s*99,\s*235,\s*0\.35\)|var\(\s*--[a-z0-9-]*glow)/i,
       reason: 'Warm paper design system replaces glowing neon shadows with 1px hairline borders',
+    },
+    {
+      name: 'Floating ambient radial-gradient blob',
+      regex: /radial-gradient\(/i,
+      reason: 'Physical study workbook layout forbids ambient radial-gradient background blobs',
     },
   ];
 
@@ -147,7 +172,7 @@ export function referenceFormatStageBadge(stage) {
       badgeStyle = { color: '#B45309', backgroundColor: WARM_PAPER_DESIGN_TOKENS.highlighterYellow };
       break;
     case 'failed':
-      badgeText = `[FAIL: ${stage?.error || 'ERROR'}]`;
+      badgeText = `[FAIL: ${stage?.error ? String(stage.error).slice(0, 30) : 'ERROR'}]`;
       badgeStyle = { color: '#B91C1C', backgroundColor: WARM_PAPER_DESIGN_TOKENS.highlighterCoral };
       break;
     default:
@@ -244,39 +269,42 @@ export function referenceRenderStudyWorkspaceModel(props = {}, pipelineRenderer 
 
 /**
  * Dynamic production module binding for Milestone 3 components.
- * Attempts to import production exports from web/src/components/PipelineStatus.tsx
- * and web/src/components/StudyWorkspace.tsx (or companion .ts modules), falling back
- * to the reference contract model with an explicit warning before M3 lands.
+ * Probes pure .ts logic modules ahead of .tsx so Node 26 native TypeScript stripping
+ * binds directly without ERR_UNKNOWN_FILE_EXTENSION fallback.
  */
 let boundFormatStageBadge = referenceFormatStageBadge;
 let boundRenderPipelineStatusModel = (stages) => referenceRenderPipelineStatusModel(stages, boundFormatStageBadge);
 let boundRenderStudyWorkspaceModel = (props) => referenceRenderStudyWorkspaceModel(props, boundRenderPipelineStatusModel);
 
 let pipelineBound = false;
-for (const candidate of ['../web/src/components/PipelineStatus.tsx', '../web/src/lib/pipelineStatus.ts']) {
+let pipelineAdapterSource = 'REFERENCE_SPECIFICATION_ORACLE';
+for (const candidate of ['../web/src/lib/pipelineStatus.ts', '../web/src/components/PipelineStatus.tsx']) {
   try {
     const mod = await import(candidate);
-    if (typeof mod.formatStageBadge === 'function') {
+    if (
+      typeof mod.formatStageBadge === 'function' &&
+      typeof mod.renderPipelineStatusModel === 'function'
+    ) {
       boundFormatStageBadge = mod.formatStageBadge;
-      pipelineBound = true;
-    }
-    if (typeof mod.renderPipelineStatusModel === 'function') {
       boundRenderPipelineStatusModel = mod.renderPipelineStatusModel;
       pipelineBound = true;
+      pipelineAdapterSource = 'PRODUCTION_FRONTEND_MODULE';
+      break;
     }
-    if (pipelineBound) break;
   } catch {
     // Expected before M3 component compilation or when TSX loader is absent
   }
 }
 
 let workspaceBound = false;
-for (const candidate of ['../web/src/components/StudyWorkspace.tsx', '../web/src/lib/studyWorkspace.ts']) {
+let workspaceAdapterSource = 'REFERENCE_SPECIFICATION_ORACLE';
+for (const candidate of ['../web/src/lib/studyWorkspace.ts', '../web/src/components/StudyWorkspace.tsx']) {
   try {
     const mod = await import(candidate);
     if (typeof mod.renderStudyWorkspaceModel === 'function') {
       boundRenderStudyWorkspaceModel = mod.renderStudyWorkspaceModel;
       workspaceBound = true;
+      workspaceAdapterSource = 'PRODUCTION_FRONTEND_MODULE';
       break;
     }
   } catch {
@@ -521,6 +549,31 @@ test('T1-F8-05: Monospace container uses transparent background and warm paper h
   assert.equal(model.stages[0].badgeStyle.backgroundColor, 'transparent');
 });
 
+test('T1-F8-06: Live CSS (styles.css / utilities.css) defines --mono token and .font-mono monospace font stack', () => {
+  assert.ok(fs.existsSync(STYLES_CSS_PATH), `styles.css must exist at ${STYLES_CSS_PATH}`);
+  assert.ok(fs.existsSync(UTILITIES_CSS_PATH), `utilities.css must exist at ${UTILITIES_CSS_PATH}`);
+
+  const stylesCss = fs.readFileSync(STYLES_CSS_PATH, 'utf8');
+  const utilitiesCss = fs.readFileSync(UTILITIES_CSS_PATH, 'utf8');
+  const tokens = parseCssCustomProperties(stylesCss);
+
+  assert.ok(tokens['mono'], '--mono custom property must be defined in styles.css');
+  assert.match(
+    tokens['mono'],
+    /JetBrains Mono|Fira Code|SFMono-Regular|Consolas|ui-monospace|monospace/i,
+    '--mono must specify a monospace font stack',
+  );
+
+  const combinedCss = `${stylesCss}\n${utilitiesCss}`;
+  const definedClasses = extractDefinedCssClasses(combinedCss);
+  assert.ok(definedClasses.has('font-mono'), '.font-mono class rule must be defined in CSS');
+  assert.match(
+    combinedCss,
+    /\.font-mono\s*\{[^}]*font-family\s*:\s*[^;}]*(?:var\(--mono\)|monospace)/i,
+    '.font-mono rule must apply var(--mono) or monospace font-family',
+  );
+});
+
 // ============================================================================
 // TIER 2: BOUNDARY & CORNER CASES (Contrast, edge cases, responsive >=5 tests)
 // ============================================================================
@@ -682,6 +735,72 @@ test('T2-F8-05: Failed stage renders coral highlighter background (#FEE2E2) and 
   assert.equal(model.stages[0].badgeText, '[FAIL: CHUNKS_EMPTY]');
   assert.equal(model.stages[0].badgeStyle.backgroundColor, '#FEE2E2');
   assert.equal(model.stages[0].badgeStyle.color, '#B91C1C');
+});
+
+test('T2-F6-06: Cliché audit engine catches radial-gradient, CSS-variable gradients, glass-blur vars, and accent glow tokens', () => {
+  const stealthClichéCss = `
+    :root {
+      --accent-glow: rgba(124, 58, 237, 0.45);
+      --glass-blur: blur(20px);
+    }
+    .ambient-orb {
+      background: radial-gradient(circle, rgba(124, 58, 237, 0.2), transparent);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: var(--glass-blur);
+    }
+    .hero-btn {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      box-shadow: 0 0 20px var(--accent-glow);
+    }
+  `;
+
+  const violations = auditCssClichés(stealthClichéCss);
+  const names = violations.map((v) => v.cliché);
+  assert.ok(names.includes('Glassmorphism backdrop-filter'), 'Must catch var(--glass-blur) and -webkit-backdrop-filter');
+  assert.ok(names.includes('Purple / Indigo gradient cliché'), 'Must catch var(--primary)/var(--secondary) gradients');
+  assert.ok(names.includes('Neon dark-mode glows'), 'Must catch --accent-glow and var(--accent-glow) shadows');
+  assert.ok(names.includes('Floating ambient radial-gradient blob'), 'Must catch radial-gradient ambient blobs');
+});
+
+test('T2-F7-06: Live utilities.css and styles.css define CSS rules for every split-pane layout and border class', () => {
+  assert.ok(fs.existsSync(STYLES_CSS_PATH), `styles.css must exist at ${STYLES_CSS_PATH}`);
+  assert.ok(fs.existsSync(UTILITIES_CSS_PATH), `utilities.css must exist at ${UTILITIES_CSS_PATH}`);
+
+  const combinedCss = `${fs.readFileSync(STYLES_CSS_PATH, 'utf8')}\n${fs.readFileSync(UTILITIES_CSS_PATH, 'utf8')}`;
+  const definedClasses = extractDefinedCssClasses(combinedCss);
+  const model = renderStudyWorkspaceModel();
+
+  const emittedClasses = [
+    ...model.layout.responsiveClass.split(/\s+/),
+    ...model.leftPane.className.split(/\s+/),
+    ...model.centerPane.className.split(/\s+/),
+    ...model.mainPane.className.split(/\s+/),
+  ].filter(Boolean);
+
+  for (const cls of emittedClasses) {
+    assert.ok(
+      definedClasses.has(cls),
+      `Layout utility class "${cls}" emitted by StudyWorkspace model must be defined in styles.css or utilities.css`,
+    );
+  }
+});
+
+test('T2-F8-06: Failed stage error payload is truncated to 30 chars (<= 40 badge length) and defaults safely', () => {
+  const stages = [
+    {
+      node: 'retrieval_grader',
+      status: 'failed',
+      error: 'A_VERY_LONG_UPSTREAM_RETRIEVAL_ERROR_MESSAGE_EXCEEDING_THIRTY_CHARACTERS_LIMIT',
+    },
+    {
+      node: 'pedagogical_generator',
+      status: 'failed',
+    },
+  ];
+  const model = renderPipelineStatusModel(stages);
+  assert.ok(model.stages[0].badgeText.length <= 40, `Expected <= 40 chars, got ${model.stages[0].badgeText.length}`);
+  assert.equal(model.stages[0].badgeText, '[FAIL: A_VERY_LONG_UPSTREAM_RETRIEVAL]');
+  assert.equal(model.stages[1].badgeText, '[FAIL: ERROR]');
 });
 
 // ============================================================================
@@ -950,4 +1069,30 @@ test('T4-F678-04: Humanities Social Science UPSC/DSC Analytical Flow (Civics Pow
   assert.ok(workspace.mainPane.activeContent.includes('Article 50'));
   assert.ok(workspace.mainPane.activeContent.includes('Article 246'));
   assert.ok(workspace.mainPane.activeContent.includes('73rd/74th Constitutional Amendments'));
+});
+
+test('EditorialWorkspace Integration: Production module binding, live styles.css/utilities.css, and M3 components verified', () => {
+  assert.ok(fs.existsSync(STYLES_CSS_PATH), `styles.css must exist at ${STYLES_CSS_PATH}`);
+  assert.ok(fs.existsSync(UTILITIES_CSS_PATH), `utilities.css must exist at ${UTILITIES_CSS_PATH}`);
+
+  if (process.env.STRICT_PRODUCTION === 'true') {
+    assert.equal(
+      pipelineAdapterSource,
+      'PRODUCTION_FRONTEND_MODULE',
+      'Strict production mode requires live web/src/lib/pipelineStatus.ts (or PipelineStatus.tsx)',
+    );
+    assert.equal(
+      workspaceAdapterSource,
+      'PRODUCTION_FRONTEND_MODULE',
+      'Strict production mode requires live web/src/lib/studyWorkspace.ts (or StudyWorkspace.tsx)',
+    );
+    assert.ok(
+      fs.existsSync(PIPELINE_STATUS_TSX_PATH),
+      `Strict production mode requires ${PIPELINE_STATUS_TSX_PATH}`,
+    );
+    assert.ok(
+      fs.existsSync(STUDY_WORKSPACE_TSX_PATH),
+      `Strict production mode requires ${STUDY_WORKSPACE_TSX_PATH}`,
+    );
+  }
 });

@@ -3,21 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f8fafc" />
+    <meta name="theme-color" content="#FAF9F6" />
     <script>
       (function () {
         try {
-          var stored = localStorage.getItem('classx_theme');
-          var theme = stored === 'dark' || stored === 'light' ? stored : 'light';
-          document.documentElement.setAttribute('data-theme', theme);
-          document.documentElement.style.colorScheme = theme;
+          document.documentElement.setAttribute('data-theme', 'light');
+          document.documentElement.style.colorScheme = 'light';
           var meta = document.querySelector('meta[name="theme-color"]');
-          if (meta) meta.setAttribute('content', theme === 'dark' ? '#0f172a' : '#f8fafc');
+          if (meta) meta.setAttribute('content', '#FAF9F6');
         } catch (e) {}
       })();
     </script>
-    <meta name="description" content="Class X mastery platform for CBSE 2026-27: structured lessons, hybrid RAG tutor, practice, mock tests and revision." />
-    <title>Peak · Class X Mastery</title>
+    <meta name="description" content="Class X mastery platform for CBSE 2026-27: structured NCERT lessons, agentic RAG study workspace, practice, mock tests and revision." />
+    <title>ClassX · Class X Study Workbook</title>
     <link rel="manifest" href="%BASE_URL%manifest.json" />
     <meta name="mobile-web-app-capable" content="yes" />
   </head>

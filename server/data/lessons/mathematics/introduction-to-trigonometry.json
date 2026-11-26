@@ -581,12 +581,12 @@
       ]
     }
   },
-  "rd_sharma_extensions": {
-    "book": "RD Sharma Class 10, Chapter 5 — Trigonometric Ratios",
+  "advanced_extensions": {
+    "book": "NCERT Reference Practice Class 10, Chapter 5 — Trigonometric Ratios",
     "topics": [
       {
         "name": "Identities involving multiple ratios",
-        "concept": "RD Sharma includes complex identity problems requiring substitution and algebraic manipulation.",
+        "concept": "NCERT Reference Practice includes complex identity problems requiring substitution and algebraic manipulation.",
         "competitive_note": "These identities frequently appear in JEE Main and advanced exams. Master the three Pythagorean identities and the technique of converting everything to sin and cos.",
         "examples": [
           {
@@ -603,7 +603,7 @@
       },
       {
         "name": "Maximum and Minimum Values",
-        "concept": "RD Sharma also covers finding maximum/minimum values of trigonometric expressions.",
+        "concept": "NCERT Reference Practice also covers finding maximum/minimum values of trigonometric expressions.",
         "formula": "Maximum of a sin θ + b cos θ = √(a²+b²), Minimum = -√(a²+b²).",
         "examples": [
           {
@@ -618,12 +618,12 @@
       }
     ]
   },
-  "rs_aggarwal_extensions": {
-    "book": "RS Aggarwal Class 10, Chapter 5 — Trigonometric Ratios",
+  "competitive_bridge_extensions": {
+    "book": "NCERT Competitive Practice Class 10, Chapter 5 — Trigonometric Ratios",
     "topics": [
       {
         "name": "Conditional Trigonometric Identities",
-        "concept": "RS Aggarwal includes identities with conditions like 'if sin A + sin B = 1' or 'if cos A + sin A = √2'.",
+        "concept": "NCERT Competitive Practice includes identities with conditions like 'if sin A + sin B = 1' or 'if cos A + sin A = √2'.",
         "examples": [
           {
             "problem": "If cos A + sin A = √2, prove that cos A - sin A = ±√(2 - sin²A). Actually prove that cos A - sin A = √2 sin A.",
